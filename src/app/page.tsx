@@ -37,67 +37,63 @@ export default function HomePage() {
         </div>
 
         {/* Exam Modes Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 gap-5 mb-12">
           {/* Quick 10 */}
           <Link href="/exam/quick-10">
-            <Card className="p-6 hover:shadow-lg transition-all cursor-pointer bg-white border border-gray-200 group">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 mb-4 rounded-full bg-emerald-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Zap className="w-8 h-8 text-white" />
+            <Card className="p-6 hover:shadow-md transition-shadow cursor-pointer bg-white border border-gray-200">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                  <Zap className="w-6 h-6 text-emerald-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">Quick 10</h3>
-                <p className="text-gray-600 mb-4">
-                  Fast practice session
-                </p>
-                <span className="text-emerald-600 font-semibold text-sm">Start Practice →</span>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Quick 10</h3>
+                  <p className="text-sm text-gray-600">Fast practice session</p>
+                </div>
               </div>
             </Card>
           </Link>
 
           {/* Study by Section */}
           <Link href="/exam/study">
-            <Card className="p-6 hover:shadow-lg transition-all cursor-pointer bg-white border border-gray-200 group">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 mb-4 rounded-full bg-blue-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <BookOpen className="w-8 h-8 text-white" />
+            <Card className="p-6 hover:shadow-md transition-shadow cursor-pointer bg-white border border-gray-200">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">Study Mode</h3>
-                <p className="text-gray-600 mb-4">
-                  Learn by sections
-                </p>
-                <span className="text-blue-600 font-semibold text-sm">Start Learning →</span>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Study Mode</h3>
+                  <p className="text-sm text-gray-600">Learn by sections</p>
+                </div>
               </div>
             </Card>
           </Link>
 
           {/* Mock Exam 1 */}
           <Link href="/exam/mock-1">
-            <Card className="p-6 hover:shadow-lg transition-all cursor-pointer bg-white border border-gray-200 group">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 mb-4 rounded-full bg-indigo-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Brain className="w-8 h-8 text-white" />
+            <Card className="p-6 hover:shadow-md transition-shadow cursor-pointer bg-white border border-gray-200">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
+                  <Brain className="w-6 h-6 text-indigo-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">Mock Exam 1</h3>
-                <p className="text-gray-600 mb-4">
-                  140 questions
-                </p>
-                <span className="text-indigo-600 font-semibold text-sm">Take Exam →</span>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Mock Exam 1</h3>
+                  <p className="text-sm text-gray-600">140 questions</p>
+                </div>
               </div>
             </Card>
           </Link>
 
           {/* Mock Exam 2 */}
           <Link href="/exam/mock-2">
-            <Card className="p-6 hover:shadow-lg transition-all cursor-pointer bg-white border border-gray-200 group">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 mb-4 rounded-full bg-purple-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Brain className="w-8 h-8 text-white" />
+            <Card className="p-6 hover:shadow-md transition-shadow cursor-pointer bg-white border border-gray-200">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+                  <Brain className="w-6 h-6 text-purple-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">Mock Exam 2</h3>
-                <p className="text-gray-600 mb-4">
-                  91 questions
-                </p>
-                <span className="text-purple-600 font-semibold text-sm">Take Exam →</span>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Mock Exam 2</h3>
+                  <p className="text-sm text-gray-600">91 questions</p>
+                </div>
               </div>
             </Card>
           </Link>
