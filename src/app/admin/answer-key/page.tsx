@@ -31,40 +31,15 @@ export default function AnswerKeyAdmin() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
 
+  // All hooks must be called unconditionally
   useEffect(() => {
-    // Load parsed questions
     fetch('/parsed_questions.json')
       .then(res => res.json())
       .then(setData)
       .catch(console.error);
   }, []);
 
-  // Keyboard shortcuts
-  useEffect(() => {
-    const handleKeyPress = (e: KeyboardEvent) => {
-      if (!currentQuestion) return;
-
-      // Arrow keys for navigation
-      if (e.key === 'ArrowRight') {
-        handleNext();
-      } else if (e.key === 'ArrowLeft') {
-        handlePrevious();
-      }
-
-      // A, B, C, D keys for selecting answers
-      const key = e.key.toUpperCase();
-      if (['A', 'B', 'C', 'D'].includes(key)) {
-        const option = currentQuestion.options.find(opt => opt.letter === key);
-        if (option) {
-          handleAnswerSelect(key);
-        }
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [currentQuestion, currentIndex, currentExam]);
-
+  // Early return AFTER all hooks
   if (!data) {
     return <div className="p-8">Loading questions...</div>;
   }
@@ -98,7 +73,6 @@ export default function AnswerKeyAdmin() {
   };
 
   const handleExport = () => {
-    // Update questions with answers
     const updatedData = {
       exam1: data.exam1.map(q => ({
         ...q,
@@ -110,7 +84,6 @@ export default function AnswerKeyAdmin() {
       }))
     };
 
-    // Download as JSON
     const blob = new Blob([JSON.stringify(updatedData, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
