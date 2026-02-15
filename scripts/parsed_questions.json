@@ -1,0 +1,5789 @@
+{
+  "exam1": [
+    {
+      "id": "exam1_q1",
+      "number": 1,
+      "question": "Which\n \nvein\n \nis\n \nresponsible\n \nfor\n \nvenous\n \nreflux\n \nwhen\n \nthe\n \nvenous\n \nrefill\n \ntime\n \nnormalizes\n \nafter\n \napplication\n \nof\n \na\n \nthigh\n \ntourniquet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Perforating"
+        },
+        {
+          "letter": "B",
+          "text": "Femoral"
+        },
+        {
+          "letter": "C",
+          "text": "Small\n \nsaphenous"
+        },
+        {
+          "letter": "D",
+          "text": "Great\n \nsaphenous"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q2",
+      "number": 2,
+      "question": "After\n \ndetection\n \nof\n \na\n \nphasic\n \nDoppler\n \nsignal\n \nin\n \nthe\n \ncommon\n \nfemoral\n \nvein,\n \nfailure\n \nto\n \nproduce\n \naugmentation\n \nby\n \nthigh\n \ncompression\n \nsuggests\n \nobstruction\n \nin\n \nwhich\n \nvein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "External\n \niliac"
+        },
+        {
+          "letter": "B",
+          "text": "Femoral"
+        },
+        {
+          "letter": "C",
+          "text": "Popliteal"
+        },
+        {
+          "letter": "D",
+          "text": "Great\n \nsaphenous"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q3",
+      "number": 3,
+      "question": "Which\n \nfeature\n \nis\n \ncommon\n \nwith\n \nan\n \narterial\n \nulcer?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dry\n \nshiny\n \nskin"
+        },
+        {
+          "letter": "B",
+          "text": "Shallow\n \nwith\n \nflat\n \nmargins"
+        },
+        {
+          "letter": "C",
+          "text": "Located\n \nat\n \nthe\n \ngaiter\n \narea"
+        },
+        {
+          "letter": "D",
+          "text": "Pain\n \nimproves\n \nwith\n \nelevation\n \nand\n \nrest"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q4",
+      "number": 4,
+      "question": "Which\n \nlandmark\n \nis\n \ncommonly\n \nused\n \nfrom\n \nthe\n \ntranstemporal\n \napproach\n \nduring\n \ntranscranial\n \ndoppler?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sphenoid\n \nbone"
+        },
+        {
+          "letter": "B",
+          "text": "Mastoid\n \nbone"
+        },
+        {
+          "letter": "C",
+          "text": "Distal\n \nposterior\n \ncerebral\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "Middle\n \ncerebral\n \nartery\n \nM2\n \nbranch"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q5",
+      "number": 5,
+      "question": "Which\n \nfinding\n \nis\n \nassociated\n \nwith\n \naliasing,\n \nlow\n \nresistance\n \nwaveform\n \nand\n \nincreased\n \ndiastolic\n \nflow\n \nin\n \na\n \npatient\n \nstatus\n \npost\n \nliver\n \nbiopsy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hematoma"
+        },
+        {
+          "letter": "B",
+          "text": "Portal\n \nvein\n \nocclusion"
+        },
+        {
+          "letter": "C",
+          "text": "Arteriovenous\n \nfistula"
+        },
+        {
+          "letter": "D",
+          "text": "Hepatic\n \nvein\n \nthrombosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q6",
+      "number": 6,
+      "question": "Where\n \nis\n \nthe\n \nabdominal\n \naorta\n \nlocated?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Retroperitoneum"
+        },
+        {
+          "letter": "B",
+          "text": "Peritoneum"
+        },
+        {
+          "letter": "C",
+          "text": "Lesser\n \nsac"
+        },
+        {
+          "letter": "D",
+          "text": "Morison\n \npouch"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q7",
+      "number": 7,
+      "question": "Which\n \nside-to-side\n \nblood\n \npressure\n \ndifference\n \nis\n \nthe\n \nthreshold\n \nthat\n \nmay\n \nindicate\n \na\n \nhemodynamically\n \nsignificant\n \nlesion\n \non\n \nthe\n \nside\n \nwith\n \nthe\n \nlower\n \npressure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10\n \nmmHg"
+        },
+        {
+          "letter": "B",
+          "text": "20\n \nmmHg"
+        },
+        {
+          "letter": "C",
+          "text": "30\n \nmmHg"
+        },
+        {
+          "letter": "D",
+          "text": "40\n \nmmHg"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q8",
+      "number": 8,
+      "question": "In\n \nwhich\n \nartery\n \ndo\n \nthe\n \nmajority\n \nof\n \nperipheral\n \narterial\n \naneurysms\n \noccur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Radial"
+        },
+        {
+          "letter": "B",
+          "text": "Brachial"
+        },
+        {
+          "letter": "C",
+          "text": "Popliteal"
+        },
+        {
+          "letter": "D",
+          "text": "Posterior\n \ntibial"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q9",
+      "number": 9,
+      "question": "Which\n \nartery\n \nis\n \nlikely\n \nto\n \nbe\n \ninvolved\n \nin\n \na\n \npatient\n \nwith\n \nthromboangiitis\n \nobliterans\n \n(Buerger\u2019s\n \nDisease)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Profunda"
+        },
+        {
+          "letter": "B",
+          "text": "Femoral"
+        },
+        {
+          "letter": "C",
+          "text": "Popliteal"
+        },
+        {
+          "letter": "D",
+          "text": "Posterior\n \ntibial"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q10",
+      "number": 10,
+      "question": "How\n \ndoes\n \npeak\n \nsystolic\n \nvelocity\n \nchange\n \nin\n \na\n \nnormal\n \nceliac\n \nartery\n \nfollowing\n \na\n \nmeal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Doubles"
+        },
+        {
+          "letter": "B",
+          "text": "No\n \nappreciable\n \nincrease"
+        },
+        {
+          "letter": "C",
+          "text": "Decreases\n \nat\n \nleast\n \n50%"
+        },
+        {
+          "letter": "D",
+          "text": "Equals\n \nthe\n \naortic\n \nvelocity"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q11",
+      "number": 11,
+      "question": "Which\n \naction\n \nincreases\n \nvenous\n \nblood\n \nflow\n \nfrom\n \nthe\n \nlegs\n \ntoward\n \nthe\n \nheart?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Descension\n \nof\n \nthe\n \ndiaphragm"
+        },
+        {
+          "letter": "B",
+          "text": "Ascension\n \nof\n \nthe\n \ndiaphragm"
+        },
+        {
+          "letter": "C",
+          "text": "Increased\n \nabdominal\n \npressure"
+        },
+        {
+          "letter": "D",
+          "text": "External\n \npressure\n \non\n \nthe\n \ninferior\n \nvena\n \ncava"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q12",
+      "number": 12,
+      "question": "Which\n \ncondition\n \ncan\n \ncause\n \nnonatherosclerotic\n \nnarrowing\n \nof\n \nbrachiocephalic\n \narteries\n \noverwhelmingly\n \nin\n \nfemale\n \npatients?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Compartment\n \nsyndrome"
+        },
+        {
+          "letter": "B",
+          "text": "Raynaud\n \nSyndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Takayasu\n \narteritis"
+        },
+        {
+          "letter": "D",
+          "text": "Buerger\n \ndisease"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q13",
+      "number": 13,
+      "question": "Which\n \nhealth\n \nfactor\n \nmay\n \ncreate\n \na\n \nlow-resistance\n \nspectral\n \nDoppler\n \nwaveform\n \nin\n \nthe\n \nlower\n \nextremity\n \nof\n \na\n \nhealthy\n \nindividual?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rest"
+        },
+        {
+          "letter": "B",
+          "text": "Exercise"
+        },
+        {
+          "letter": "C",
+          "text": "Cold\n \ntemperature"
+        },
+        {
+          "letter": "D",
+          "text": "Compression\n \nstockings"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q14",
+      "number": 14,
+      "question": "What\n \nis\n \nthe\n \nmost\n \ncommon\n \ncause\n \nof\n \ntransplant\n \nfailure\n \nin\n \nan\n \nimmediate\n \npostoperative\n \nrenal\n \ntransplant\n \npatient?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Drug\n \ntoxicity"
+        },
+        {
+          "letter": "B",
+          "text": "Torsion"
+        },
+        {
+          "letter": "C",
+          "text": "Chronic\n \nrejection"
+        },
+        {
+          "letter": "D",
+          "text": "Acute\n \ntubular\n \nnecrosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q15",
+      "number": 15,
+      "question": "Which\n \nflow\n \npattern\n \nis\n \nconsistent\n \nwith\n \na\n \ncentral\n \narterial\n \nocclusion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High\n \nresistive\n \nflow\n \nin\n \nthe\n \nbrachial\n \nartery"
+        },
+        {
+          "letter": "B",
+          "text": "Increased\n \ndiastolic\n \nflow\n \nin\n \nthe\n \naxillary\n \nartery"
+        },
+        {
+          "letter": "C",
+          "text": "Pulsatile\n \nflow\n \nin\n \nthe\n \ncommon\n \ncarotid\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "Low\n \nresistive\n \nflow\n \nin\n \nthe\n \nvertebral\n \nartery"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q16",
+      "number": 16,
+      "question": "What\n \nis\n \nusually\n \nthe\n \nfirst\n \nmanifestation\n \nof\n \nchronic\n \narterial\n \nocclusive\n \ndisease\n \nof\n \nthe\n \nlower\n \nextremities?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cold\n \nfeet"
+        },
+        {
+          "letter": "B",
+          "text": "Claudication"
+        },
+        {
+          "letter": "C",
+          "text": "Night\n \ncramps"
+        },
+        {
+          "letter": "D",
+          "text": "Numbness"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q17",
+      "number": 17,
+      "question": "Which\n \ncondition\n \npresents\n \nwith\n \nfacial\n \nswelling,\n \nbilateral\n \nupper\n \nextremity\n \nedema,\n \nand\n \ndyspnea?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buerger\n \ndisease"
+        },
+        {
+          "letter": "B",
+          "text": "Thoracic\n \noutlet\n \nsyndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Paget\n \nvon\n \nSchroetter\n \ndisease"
+        },
+        {
+          "letter": "D",
+          "text": "Superior\n \nvena\n \ncava\n \nsyndrome"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q18",
+      "number": 18,
+      "question": "Which\n \nduplex\n \ntest\n \nwould\n \nbe\n \nused\n \nto\n \nconfirm\n \nthe\n \ndiagnosis\n \nof\n \nPaget\n \nvon\n \nSchroetter\n \nsyndrome?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lower\n \nextremity\n \nvenous"
+        },
+        {
+          "letter": "B",
+          "text": "Upper\n \nextremity\n \nvenous"
+        },
+        {
+          "letter": "C",
+          "text": "Lower\n \nextremity\n \narterial"
+        },
+        {
+          "letter": "D",
+          "text": "Upper\n \nextremity\n \narterial"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q19",
+      "number": 19,
+      "question": "Which\n \ncharacteristic\n \nis\n \nindicative\n \nof\n \nlower\n \nextremity\n \ncollateral\n \narteries\n \nwhen\n \ncompared\n \nto\n \nnative\n \nvessels?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Indistinguishable"
+        },
+        {
+          "letter": "B",
+          "text": "Larger"
+        },
+        {
+          "letter": "C",
+          "text": "Shorter"
+        },
+        {
+          "letter": "D",
+          "text": "More\n \nnumerous"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q20",
+      "number": 20,
+      "question": "Which\n \nspectral\n \nDoppler\n \nwaveform\n \nis\n \nconsistent\n \nwith\n \nnormal\n \nhepatoportal\n \ncirculation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Portal\n \nvein\n \nshowing\n \npulsatile\n \nhepatofugal\n \nflow"
+        },
+        {
+          "letter": "B",
+          "text": "Portal\n \nvein\n \nshowing\n \npulsatile\n \nhepatopetal\n \nflow"
+        },
+        {
+          "letter": "C",
+          "text": "Hepatic\n \nveins\n \nshowing\n \npulsatile\n \nhepatofugal\n \nflow"
+        },
+        {
+          "letter": "D",
+          "text": "Hepatic\n \nveins\n \nshowing\n \npulsatile\n \nhepatopetal\n \nflow"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q21",
+      "number": 21,
+      "question": "Which\n \nartery\n \ndemonstrates\n \nthe\n \nlowest\n \nresistive\n \nindex?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proximal\n \naorta"
+        },
+        {
+          "letter": "B",
+          "text": "Superior\n \nmesenteric\n \nartery\n \nin\n \na\n \nfasting\n \npatient"
+        },
+        {
+          "letter": "C",
+          "text": "Renal\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "Distal\n \naorta"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q22",
+      "number": 22,
+      "question": "What\n \nis\n \nthe\n \nmost\n \nlikely\n \nfinding\n \nin\n \na\n \npatient\n \npresenting\n \nwith\n \na\n \npatient\n \narteriovenous\n \nfistula,\n \nipsilateral\n \narm,\n \nand\n \nhand\n \nedema,\n \nskin\n \ndiscoloration,\n \nand\n \nprominent\n \nchest\n \nwall\n \nsuperficial\n \nveins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Occluded\n \nSuperficial\n \nvein"
+        },
+        {
+          "letter": "B",
+          "text": "Steal\n \nphenomenon"
+        },
+        {
+          "letter": "C",
+          "text": "Inflow\n \nartery\n \nocclusion"
+        },
+        {
+          "letter": "D",
+          "text": "Central\n \nvenous\n \nobstruction"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q23",
+      "number": 23,
+      "question": "The\n \nbrachiocephalic\n \nvein\n \nis\n \nformed\n \nby\n \nthe\n \nconfluence\n \nof\n \nwhich\n \ntwo\n \nveins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Internal\n \njugular\n \nand\n \nsubclavian"
+        },
+        {
+          "letter": "B",
+          "text": "Brachial\n \nand\n \ncephalic"
+        },
+        {
+          "letter": "C",
+          "text": "External\n \njugular\n \nand\n \ninnominate"
+        },
+        {
+          "letter": "D",
+          "text": "Axillary\n \nand\n \nbasilic"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q24",
+      "number": 24,
+      "question": "When\n \nevaluating\n \nthe\n \nrenal\n \narteries,\n \nwhich\n \nfinding\n \nin\n \nthe\n \nsegmental\n \narteries\n \nsuggests\n \nminimal\n \nto\n \nstenosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tardus\n \nParvus"
+        },
+        {
+          "letter": "B",
+          "text": "Early\n \nsystolic\n \npeak"
+        },
+        {
+          "letter": "C",
+          "text": "Acceleration\n \nindex\n \nless\n \nthan\n \n3m/s"
+        },
+        {
+          "letter": "D",
+          "text": "Acceleration\n \ntime\n \ngreater\n \nthan\n \n70\n \nms"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q25",
+      "number": 25,
+      "question": "When\n \nusing\n \nphotoplethysmography,\n \nwhere\n \nshould\n \nthe\n \nsensor\n \nbe\n \nplaced\n \nto\n \ndocument\n \nvenous\n \ninsufficiency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Over\n \na\n \nvaricosity"
+        },
+        {
+          "letter": "B",
+          "text": "On\n \nthe\n \nulcer"
+        },
+        {
+          "letter": "C",
+          "text": "On\n \nthe\n \nlateral\n \ncalf"
+        },
+        {
+          "letter": "D",
+          "text": "Above\n \nthe\n \nmedial\n \nmalleolus"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q26",
+      "number": 26,
+      "question": "What\n \nis\n \na\n \npotential\n \ncause\n \nof\n \nprimary\n \nvenous\n \ninsufficiency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Previous\n \ndeep\n \nvenous\n \nthrombosis"
+        },
+        {
+          "letter": "B",
+          "text": "Damaged\n \nvalves"
+        },
+        {
+          "letter": "C",
+          "text": "Persistent\n \noutflow\n \nobstruction"
+        },
+        {
+          "letter": "D",
+          "text": "Congenital\n \nabsence\n \nof\n \nvalves"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q27",
+      "number": 27,
+      "question": "Venous\n \nvalves\n \nare\n \nmost\n \nnumerous\n \nin\n \nwhich\n \nvein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inferior\n \nVena\n \nCava"
+        },
+        {
+          "letter": "B",
+          "text": "Popliteal"
+        },
+        {
+          "letter": "C",
+          "text": "Femoral"
+        },
+        {
+          "letter": "D",
+          "text": "Posterior\n \ntibial"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q28",
+      "number": 28,
+      "question": "Which\n \nvascular\n \ncomplication\n \nis\n \nmost\n \ncommonly\n \nassociated\n \nwith\n \na\n \nrenal\n \nallograft?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Renal\n \nartery\n \nstenosis"
+        },
+        {
+          "letter": "B",
+          "text": "Renal\n \nvein\n \nstenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Renal\n \nvein\n \nthrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Renal\n \nartery\n \nthrombosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q29",
+      "number": 29,
+      "question": "Compression\n \nfrom\n \nwhich\n \nmuscle\n \nmost\n \nfrequently\n \ncauses\n \nthoracic\n \noutlet\n \nsyndrome?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scalene"
+        },
+        {
+          "letter": "B",
+          "text": "Intercostal"
+        },
+        {
+          "letter": "C",
+          "text": "Pectoralis\n \nminor"
+        },
+        {
+          "letter": "D",
+          "text": "Sartorius"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q30",
+      "number": 30,
+      "question": "What\n \nis\n \na\n \ncause\n \nof\n \ncompartment\n \nsyndrome?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gangrene\n \nof\n \nan\n \nextremity"
+        },
+        {
+          "letter": "B",
+          "text": "Compression\n \nof\n \nthe\n \npopliteal\n \nartery\n \nby\n \nthe\n \ngastrocnemius\n \nmuscle?"
+        },
+        {
+          "letter": "C",
+          "text": "Severe\n \natherosclerosis\n \nof\n \nthe\n \npopliteal\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "Swelling\n \nwithin\n \nthe\n \nfascial\n \nbundles\n \nof\n \nan\n \nextremity"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q31",
+      "number": 31,
+      "question": "Which\n \nfinding\n \nresults\n \nin\n \na\n \nloss\n \nof\n \nphasicity\n \nin\n \nthe\n \ncommon\n \nfemoral\n \nvein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Partial\n \nocclusion\n \nof\n \nthe\n \niliac\n \nvein"
+        },
+        {
+          "letter": "B",
+          "text": "Partial\n \nocclusion\n \nof\n \nthe\n \nfemoral\n \nvein"
+        },
+        {
+          "letter": "C",
+          "text": "Complete\n \nocclusion\n \nof\n \nthe\n \npopliteal\n \nvein"
+        },
+        {
+          "letter": "D",
+          "text": "Complete\n \nocclusion\n \nof\n \nthe\n \nprofunda\n \nfemoris\n \nvein"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q32",
+      "number": 32,
+      "question": "In\n \nthe\n \nupper\n \narm,\n \nmoving\n \nfrom\n \nmedial\n \nto\n \nlateral,\n \nveins\n \nare\n \nnormally\n \nfound\n \nin\n \nwhich\n \norder?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cephalic,\n \nbasilic\n \nand\n \nbrachial"
+        },
+        {
+          "letter": "B",
+          "text": "Brachial,\n \nbasilic\n \nand\n \ncephalic"
+        },
+        {
+          "letter": "C",
+          "text": "Basilic,\n \nbrachial\n \nand\n \ncephalic"
+        },
+        {
+          "letter": "D",
+          "text": "Cephalic,\n \nbrachial\n \nand\n \nbasilic"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q33",
+      "number": 33,
+      "question": "What\n \nis\n \nthe\n \nmain\n \ncause\n \nof\n \nacute\n \nischemia\n \nin\n \nthe\n \nlower\n \nextremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Atherosclerosis"
+        },
+        {
+          "letter": "B",
+          "text": "Trauma"
+        },
+        {
+          "letter": "C",
+          "text": "Aneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "Emboli"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q34",
+      "number": 34,
+      "question": "What\n \ncarotid\n \nartery\n \nsegment\n \nis\n \nmost\n \ncommonly\n \naffected\n \nby\n \nfibromuscular\n \ndysplasia?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Distal\n \ninternal"
+        },
+        {
+          "letter": "B",
+          "text": "Distal\n \ncommon"
+        },
+        {
+          "letter": "C",
+          "text": "Proximal\n \ninternal"
+        },
+        {
+          "letter": "D",
+          "text": "Proximal\n \ncommon"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q35",
+      "number": 35,
+      "question": "What\n \nis\n \nthe\n \nmost\n \ncommon\n \ncause\n \nof\n \ncerebrovascular\n \nstroke?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Middle\n \ncerebral\n \nartery\n \nthromboembolism"
+        },
+        {
+          "letter": "B",
+          "text": "Rupture\n \nof\n \ncerebral\n \naneurysm\n \nin\n \nCircle\n \nof\n \nWillis"
+        },
+        {
+          "letter": "C",
+          "text": "Essential\n \nhypertension"
+        },
+        {
+          "letter": "D",
+          "text": "Brain\n \nconcussion"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q36",
+      "number": 36,
+      "question": "A\n \ncontinuous\n \nDoppler\n \nsignal\n \nin\n \nthe\n \naxillary\n \nvein\n \nsuggests\n \nthrombosis\n \nin\n \nwhich\n \nvenous\n \nsegment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Subclavian"
+        },
+        {
+          "letter": "B",
+          "text": "Internal\n \njugular"
+        },
+        {
+          "letter": "C",
+          "text": "External\n \njugular"
+        },
+        {
+          "letter": "D",
+          "text": "Brachial"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q37",
+      "number": 37,
+      "question": "Which\n \ntechnique\n \nshould\n \nbe\n \nused\n \nwhen\n \nevaluating\n \nthe\n \ncentral\n \nveins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Compression"
+        },
+        {
+          "letter": "B",
+          "text": "Distal\n \nanalysis"
+        },
+        {
+          "letter": "C",
+          "text": "Apply\n \ntourniquet"
+        },
+        {
+          "letter": "D",
+          "text": "Photoplethysmography"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q38",
+      "number": 38,
+      "question": "Which\n \nsonographic\n \nfinding\n \nis\n \nnormal\n \nin\n \na\n \npatient\n \nafter\n \na\n \ncarotid\n \nendarterectomy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dissection"
+        },
+        {
+          "letter": "B",
+          "text": "Intimal\n \nflap"
+        },
+        {
+          "letter": "C",
+          "text": "Retained\n \nplaque"
+        },
+        {
+          "letter": "D",
+          "text": "Absence\n \nof\n \nthe\n \nintima-media\n \nstripe"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q39",
+      "number": 39,
+      "question": "Which\n \ncondition\n \nis\n \nmost\n \noften\n \nassociated\n \nwith\n \nsubclavian\n \nartery\n \naneurysm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Shoulder\n \npain"
+        },
+        {
+          "letter": "B",
+          "text": "Digital\n \nischemia"
+        },
+        {
+          "letter": "C",
+          "text": "Venous\n \nthrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Cerebral\n \naneurysm"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q40",
+      "number": 40,
+      "question": "Which\n \nexam\n \nshould\n \nbe\n \nperformed\n \nfor\n \na\n \npatient\n \ndiagnosed\n \nwith\n \nHollenhurst\n \nplaque?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lower\n \nextremity\n \narterial\n \nduplex"
+        },
+        {
+          "letter": "B",
+          "text": "Mesenteric\n \nartery\n \nduplex"
+        },
+        {
+          "letter": "C",
+          "text": "Carotid\n \nartery\n \nduplex"
+        },
+        {
+          "letter": "D",
+          "text": "Abdominal\n \naorta\n \nduplex"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q41",
+      "number": 41,
+      "question": "Which\n \nfinding\n \nis\n \nseen\n \nin\n \nthe\n \nipsilateral\n \nophthalmic\n \nartery,\n \nsecondary\n \nto\n \ninternal\n \ncarotid\n \nartery\n \nocclusion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Absent\n \nflow"
+        },
+        {
+          "letter": "B",
+          "text": "Flow\n \nreversal"
+        },
+        {
+          "letter": "C",
+          "text": "Increase\n \nin\n \nmean\n \nvelocity"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease\n \nin\n \nmean\n \nvelocity"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q42",
+      "number": 42,
+      "question": "Which\n \nsymptoms\n \nare\n \nassociated\n \nwith\n \nintermittent\n \nclaudication\n \nof\n \nthe\n \nlower\n \nextremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Leg\n \nmuscle\n \npain"
+        },
+        {
+          "letter": "B",
+          "text": "Restless\n \nleg"
+        },
+        {
+          "letter": "C",
+          "text": "Calf\n \nswelling"
+        },
+        {
+          "letter": "D",
+          "text": "Foot\n \nnumbness"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q43",
+      "number": 43,
+      "question": "The\n \nonset\n \nto\n \npeak\n \nseen\n \nin\n \narterial\n \nwaveforms\n \nrepresents\n \nwhich\n \nmeasurement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pulsatility\n \nindex"
+        },
+        {
+          "letter": "B",
+          "text": "Resistivity\n \ngradient"
+        },
+        {
+          "letter": "C",
+          "text": "Acceleration\n \ntime"
+        },
+        {
+          "letter": "D",
+          "text": "Systolic-diastolic\n \nratio"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q44",
+      "number": 44,
+      "question": "Which\n \nmeasurement\n \nis\n \nthe\n \nmost\n \ndependable\n \ntool\n \nfor\n \nassessing\n \nthe\n \nseverity\n \nof\n \nstenotic\n \nlesion\n \nin\n \na\n \nbypass\n \ngraft\n \nin\n \nthe\n \nlower\n \nextremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Resistive\n \nindex"
+        },
+        {
+          "letter": "B",
+          "text": "Acceleration\n \ntime"
+        },
+        {
+          "letter": "C",
+          "text": "End-diastolic\n \nvelocity\n \nratio"
+        },
+        {
+          "letter": "D",
+          "text": "Peak\n \nsystolic\n \nvelocity\n \nratio"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q45",
+      "number": 45,
+      "question": "In\n \na\n \nnormal\n \ntransforaminal\n \ntranscranial\n \nDoppler\n \nexam,\n \nwhich\n \nartery\n \nis\n \ninsonated\n \nat\n \na\n \ndepth\n \nof\n \n60\n \nmm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Basilar"
+        },
+        {
+          "letter": "B",
+          "text": "Middle\n \ncerebral"
+        },
+        {
+          "letter": "C",
+          "text": "Posterior\n \ncerebral"
+        },
+        {
+          "letter": "D",
+          "text": "Vertebral"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q46",
+      "number": 46,
+      "question": "Which\n \npeak\n \nsystolic\n \nvelocity\n \nin\n \nan\n \ninfrainguinal\n \nbypass\n \ngraft\n \nindicates\n \na\n \nthreatened\n \ngraft?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30\n \ncm/s"
+        },
+        {
+          "letter": "B",
+          "text": "50\n \ncm/s"
+        },
+        {
+          "letter": "C",
+          "text": "70\n \ncm/s"
+        },
+        {
+          "letter": "D",
+          "text": "90\n \ncm/s"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q47",
+      "number": 47,
+      "question": "Which\n \ncondition\n \nis\n \nmost\n \nlikely\n \nassociated\n \nwith\n \nreversed\n \nflow\n \nin\n \nan\n \nenlarged\n \nleft\n \ngastric\n \nvein\n \non\n \na\n \nduplex\n \nscan?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Portal\n \nhypertension"
+        },
+        {
+          "letter": "B",
+          "text": "Budd-Chiari\n \nsyndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Splenic\n \nvein\n \nthrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Inferior\n \nvena\n \ncava\n \nthrombosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q49",
+      "number": 49,
+      "question": "Which\n \ncondition\n \nwould\n \nmost\n \nlikely\n \ncause\n \nan\n \nabnormal\n \nvolume\n \npulse\n \nrecording\n \nat\n \nthe\n \nhigh\n \nthigh\n \nlocation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Popliteal\n \nartery\n \nocclusion"
+        },
+        {
+          "letter": "B",
+          "text": "Femoral\n \nartery\n \nocclusion"
+        },
+        {
+          "letter": "C",
+          "text": "Internal\n \nIliac\n \nartery\n \nstenosis"
+        },
+        {
+          "letter": "D",
+          "text": "Significant\n \naortoiliac\n \ndisease"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q50",
+      "number": 50,
+      "question": "Which\n \ncharacteristic\n \nis\n \nconsistent\n \nwith\n \na\n \ntype\n \nII\n \nendoleak?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Blood\n \nflow\n \ninto\n \nthe\n \naneurysm\n \nsac\n \nfrom\n \nthe\n \ndistal\n \nattachment"
+        },
+        {
+          "letter": "B",
+          "text": "Endoleak\n \ndue\n \nto\n \ngraft\n \nporosity"
+        },
+        {
+          "letter": "C",
+          "text": "Retrograde\n \nflow\n \nfrom\n \nthe\n \ninferior\n \nmesenteric\n \nartery\n \nor\n \nlumbar\n \narteries"
+        },
+        {
+          "letter": "D",
+          "text": "Endoleak\n \noriginating\n \nfrom\n \na\n \nstructural\n \ndefect\n \nof\n \nthe\n \nendograft"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q51",
+      "number": 51,
+      "question": "Which\n \nartery\n \nis\n \nthe\n \nsource\n \nof\n \nemboli\n \nusually\n \ninvolved\n \nin\n \nleft\n \namaurosis\n \nfugax?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Left\n \nsubclavian"
+        },
+        {
+          "letter": "B",
+          "text": "Right\n \ninternal\n \ncarotid"
+        },
+        {
+          "letter": "C",
+          "text": "Left\n \ninternal\n \ncarotid"
+        },
+        {
+          "letter": "D",
+          "text": "Left\n \nexternal\n \ncarotid"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q52",
+      "number": 52,
+      "question": "In\n \na\n \nnormal\n \ntranscranial\n \nDoppler\n \nexam,\n \nwhich\n \ndemonstrates\n \nbilateral\n \nflow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Middle\n \ncerebral"
+        },
+        {
+          "letter": "B",
+          "text": "Anterior\n \ncerebral"
+        },
+        {
+          "letter": "C",
+          "text": "Terminal\n \ninternal\n \ncarotid"
+        },
+        {
+          "letter": "D",
+          "text": "Terminal\n \nposterior\n \ncerebral"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q53",
+      "number": 53,
+      "question": "Which\n \nfinding\n \nduring\n \nan\n \nendovenous\n \nablation\n \nwould\n \nresult\n \nin\n \na\n \ndiscontinuation\n \nof\n \nthe\n \nprocedure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Incompetent\n \nvalue"
+        },
+        {
+          "letter": "B",
+          "text": "Thrombosed\n \nvaricosity"
+        },
+        {
+          "letter": "C",
+          "text": "Acute\n \ndeep\n \nvein\n \nthrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Diameter\n \ngreater\n \nthan"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q55",
+      "number": 55,
+      "question": "Which\n \ndescription\n \nis\n \nassociated\n \nwith\n \na\n \nreversed\n \nsaphenous\n \nvein\n \ngraft?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Valves\n \nare\n \nbroken\n \nor\n \nexcised\n \nprior\n \nto\n \nsurgery"
+        },
+        {
+          "letter": "B",
+          "text": "Synthetic\n \ngraft\n \nis\n \nsewn\n \nto\n \nthe\n \nsaphenous\n \nvein"
+        },
+        {
+          "letter": "C",
+          "text": "Smallest\n \nend\n \nof\n \nthe\n \nvein\n \nis\n \nsewn\n \nto\n \nthe\n \nproximal\n \nanastomosis"
+        },
+        {
+          "letter": "D",
+          "text": "Saphenous\n \nvein\n \nis\n \nleft\n \nin\n \nthe\n \nplace\n \nand\n \nanastomosed\n \nto\n \nthe\n \nadjacent\n \narteries"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q56",
+      "number": 56,
+      "question": "Which\n \ncondition\n \nis\n \nconsistent\n \nwith\n \na\n \ndampened\n \nphotoplethysmogram\n \nwaveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hyperemia"
+        },
+        {
+          "letter": "B",
+          "text": "Complete\n \npalmar\n \narch"
+        },
+        {
+          "letter": "C",
+          "text": "Raynaud\u2019s\n \ndisease"
+        },
+        {
+          "letter": "D",
+          "text": "Arteriovenous\n \nfistula"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q57",
+      "number": 57,
+      "question": "What\n \ncan\n \ncause\n \na\n \ncontinuous\n \nwaveform\n \nin\n \nthe\n \ncommon\n \nfemoral\n \nvein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Congestive\n \nheart\n \nfailure"
+        },
+        {
+          "letter": "B",
+          "text": "Aortic\n \ndissection"
+        },
+        {
+          "letter": "C",
+          "text": "Deep\n \nvein\n \nthrombosis\n \n(DVT)\n \nin\n \na\n \ncalf\n \nvein"
+        },
+        {
+          "letter": "D",
+          "text": "Pregnancy"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q59",
+      "number": 59,
+      "question": "What\n \nis\n \nthe\n \ncharacteristic\n \nwaveform\n \nof\n \na\n \nnormal\n \nsuperior\n \nmesenteric\n \nartery\n \nin\n \na\n \nfasting\n \npatient?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High\n \nresistance\n \nand\n \nhigh\n \ndiastolic\n \nflow"
+        },
+        {
+          "letter": "B",
+          "text": "High\n \nresistance\n \nand\n \nlow\n \ndiastolic\n \nflow"
+        },
+        {
+          "letter": "C",
+          "text": "Low\n \nresistance\n \nand\n \nhigh\n \ndiastolic\n \nflow"
+        },
+        {
+          "letter": "D",
+          "text": "Low\n \nresistance\n \nand\n \nlow\n \ndiastolic\n \nflow"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q60",
+      "number": 60,
+      "question": "Which\n \ncondition\n \nmay\n \nalter\n \nthe\n \nspectral\n \nDoppler\n \nwaveform\n \ncausing\n \nit\n \nto\n \nappear\n \nabnormal\n \nin\n \nan\n \notherwise\n \nnormal\n \ncarotid\n \nartery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hypertension"
+        },
+        {
+          "letter": "B",
+          "text": "Systemic\n \nlupus"
+        },
+        {
+          "letter": "C",
+          "text": "Graves\n \ndisease"
+        },
+        {
+          "letter": "D",
+          "text": "Aortic\n \ninsufficiency"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q61",
+      "number": 61,
+      "question": "What\n \nis\n \nthe\n \nmost\n \nlikely\n \ncause\n \nof\n \na\n \ncarotid\n \nartery\n \nstent\n \nobstruction\n \nin\n \nthe\n \nabsence\n \nof\n \nstent\n \nfracture\n \nor\n \ndeformation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Intraplaque\n \nhemorrhage"
+        },
+        {
+          "letter": "B",
+          "text": "Intimal\n \nhyperplasia"
+        },
+        {
+          "letter": "C",
+          "text": "Arterial\n \nthrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Dissection"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q62",
+      "number": 62,
+      "question": "Occlusion\n \nof\n \nwhich\n \nartery\n \nis\n \nassociated\n \nwith\n \nreversal\n \nflow\n \nin\n \nthe\n \nipsilateral\n \nexternal\n \ncarotid\n \nartery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Common\n \ncarotid"
+        },
+        {
+          "letter": "B",
+          "text": "Proximal\n \ninternal\n \ncarotid"
+        },
+        {
+          "letter": "C",
+          "text": "Contralateral\n \nexternal\n \ncarotid"
+        },
+        {
+          "letter": "D",
+          "text": "Vertebral"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q63",
+      "number": 63,
+      "question": "Which\n \ncondition\n \nis\n \ncharacterized\n \nby\n \ndelamination\n \nof\n \nthe\n \nintimal\n \nand\n \nmedial\n \nlayers\n \nof\n \nthe\n \ncarotid\n \nartery\n \nwalls?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carotid\n \nbody\n \ntumor"
+        },
+        {
+          "letter": "B",
+          "text": "Carotid\n \ndissection"
+        },
+        {
+          "letter": "C",
+          "text": "Calcified\n \nplaque"
+        },
+        {
+          "letter": "D",
+          "text": "Fibromuscular\n \ndysplasia"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q64",
+      "number": 64,
+      "question": "Which\n \nfinding\n \nis\n \nconsidered\n \nnormal\n \nafter\n \na\n \ncarotid\n \nendarterectomy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increased\n \nsize\n \nof\n \nthe\n \nbulb"
+        },
+        {
+          "letter": "B",
+          "text": "Decreased\n \nsize\n \nof\n \nthe\n \nbulb"
+        },
+        {
+          "letter": "C",
+          "text": "Increased\n \nsize\n \nof\n \nthe\n \nproximal\n \nexternal\n \ncarotid\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "Decreased\n \nsize\n \nof\n \nthe\n \nproximal\n \ninternal\n \ncarotid\n \nartery"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q65",
+      "number": 65,
+      "question": "Which\n \ncondition\n \nis\n \nthe\n \nmost\n \ncommon\n \nsequela\n \nof\n \nchronic\n \ndeep\n \nvenous\n \nthrombosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pulmonary\n \nembolism"
+        },
+        {
+          "letter": "B",
+          "text": "Valvular\n \ndysfunction"
+        },
+        {
+          "letter": "C",
+          "text": "Venous\n \ngangrene"
+        },
+        {
+          "letter": "D",
+          "text": "Phlegmasia\n \ncerulea\n \ndolens"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q66",
+      "number": 66,
+      "question": "Which\n \ncondition\n \nis\n \nmost\n \nlikely\n \npresent\n \nif\n \nupper\n \nextremity\n \ndigit\n \nphotoplethysmography\n \nwaveform\n \nis\n \ndiminished\n \nwith\n \nradial\n \nartery\n \ncompression?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Subclavian\n \nsteal"
+        },
+        {
+          "letter": "B",
+          "text": "Raynaud\u2019s\n \ndisease"
+        },
+        {
+          "letter": "C",
+          "text": "Incomplete\n \npalmar\n \narch"
+        },
+        {
+          "letter": "D",
+          "text": "Proximal\n \nradial\n \nartery\n \nocclusion"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q67",
+      "number": 67,
+      "question": "Which\n \ndescription\n \nis\n \nassociated\n \nwith\n \nnormal\n \nrespiratory\n \nvariation\n \nduring\n \nevaluation\n \nof\n \nthe\n \nupper\n \nextremity\n \nveins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Venous\n \nflow\n \nincreases\n \nduring\n \ninspiration"
+        },
+        {
+          "letter": "B",
+          "text": "Venous\n \nflow\n \nincreases\n \nduring\n \nexpiration"
+        },
+        {
+          "letter": "C",
+          "text": "Venous\n \nflow\n \nis\n \nhalted\n \nduring\n \ninspiration"
+        },
+        {
+          "letter": "D",
+          "text": "Venous\n \nflow\n \nis\n \nunaffected\n \nby\n \nrespiratory\n \nvariation"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q68",
+      "number": 68,
+      "question": "Which\n \nvein\n \nis\n \nformed\n \nby\n \nthe\n \nconfluence\n \nof\n \nthe\n \nradial\n \nand\n \nulnar\n \nveins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Basilic"
+        },
+        {
+          "letter": "B",
+          "text": "Brachial"
+        },
+        {
+          "letter": "C",
+          "text": "Cephalic"
+        },
+        {
+          "letter": "D",
+          "text": "Antecubital"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q69",
+      "number": 69,
+      "question": "Which\n \nof\n \nthe\n \nfollowing\n \ndescribes\n \nwaveform\n \namplitude\n \nassociated\n \nwith\n \na\n \nnormal\n \nphotoplethysmography\n \n(PPG)\n \ndigital\n \ncold-water\n \nimmersion\n \nstress\n \ntest?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increases\n \nwhen\n \ncompared\n \nto\n \nbaseline"
+        },
+        {
+          "letter": "B",
+          "text": "Decreases\n \nfor\n \nup\n \nto\n \n15\n \nminutes\n \nbefore\n \nreturning\n \nto\n \nbaseline"
+        },
+        {
+          "letter": "C",
+          "text": "Decreases\n \nfor\n \nup\n \nto\n \n20\n \nminutes\n \nbefore\n \nreturning\n \nto\n \nbaseline"
+        },
+        {
+          "letter": "D",
+          "text": "Decreases\n \nfor\n \nless\n \nthan\n \n10\n \nminutes\n \nbefore\n \nreturning\n \nto\n \nbaseline"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q70",
+      "number": 70,
+      "question": "How\n \ndoes\n \nthe\n \nValsalva\n \nmaneuver\n \ntypically\n \naffect\n \nnormal\n \nvenous\n \nflow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Venous\n \nflow\n \nis\n \ninterrupted\n \nin\n \nboth\n \nthe\n \nlower\n \nlimbs\n \nand\n \nin\n \nthe\n \nupper\n \nlimbs"
+        },
+        {
+          "letter": "B",
+          "text": "Venous\n \nflow\n \ndecreases\n \nin\n \nthe\n \nlower\n \nlimbs\n \nand\n \nincreases\n \nin\n \nthe\n \nupper\n \nlimbs"
+        },
+        {
+          "letter": "C",
+          "text": "Venous\n \nflow\n \nincreases\n \nin\n \nthe\n \nlower\n \nlimbs\n \nand\n \ndecreases\n \nin\n \nthe\n \nupper\n \nlimbs"
+        },
+        {
+          "letter": "D",
+          "text": "Venous\n \nflow\n \nincreases\n \nin\n \nthe\n \nchest\n \nand\n \ndecreases\n \nin\n \nthe\n \nabdomen"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q71",
+      "number": 71,
+      "question": "The\n \nsubclavian\n \nartery\n \nbecomes\n \nthe\n \naxillary\n \nartery\n \nat\n \nwhich\n \nanatomic\n \nlandmark?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cervical\n \nforamina"
+        },
+        {
+          "letter": "B",
+          "text": "First\n \nrib"
+        },
+        {
+          "letter": "C",
+          "text": "Adductor\n \nhiatus"
+        },
+        {
+          "letter": "D",
+          "text": "Thyrocervical\n \ntrunk"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q72",
+      "number": 72,
+      "question": "Which\n \ncharacteristic\n \nis\n \nmost\n \nlikely\n \nto\n \nappear\n \nin\n \na\n \nspectral\n \nDoppler\n \nwaveform\n \nof\n \na\n \nnormal\n \ncommon\n \ncarotid\n \nartery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Plug\n \nflow"
+        },
+        {
+          "letter": "B",
+          "text": "Laminar\n \nflow"
+        },
+        {
+          "letter": "C",
+          "text": "Turbulence"
+        },
+        {
+          "letter": "D",
+          "text": "Spectral\n \nbroadening"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q74",
+      "number": 74,
+      "question": "The\n \ncephalic\n \nvein\n \nempties\n \nblood\n \ndirectly\n \ninto\n \nwhich\n \nvein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Brachial"
+        },
+        {
+          "letter": "B",
+          "text": "Brachiocephalic"
+        },
+        {
+          "letter": "C",
+          "text": "Axillary"
+        },
+        {
+          "letter": "D",
+          "text": "Superior\n \nvena\n \ncava"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q75",
+      "number": 75,
+      "question": "What\n \nis\n \nthe\n \nappearance\n \nof\n \nthe\n \nwaveform\n \nin\n \nthe\n \narterial\n \nsegment\n \nproximal\n \nto\n \na\n \nnormal\n \ndialysis\n \naccess?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High\n \nresistance\n \nhigh\n \ndiastolic\n \nflow"
+        },
+        {
+          "letter": "B",
+          "text": "Low\n \nresistance\n \nhigh\n \ndiastolic\n \nflow"
+        },
+        {
+          "letter": "C",
+          "text": "High\n \nresistance\n \nlow\n \ndiastolic\n \nflow"
+        },
+        {
+          "letter": "D",
+          "text": "Low\n \nresistance\n \nlow\n \ndiastolic\n \nflow"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q76",
+      "number": 76,
+      "question": "Which\n \nartery\n \nin\n \nnormal\n \nanatomy\n \nis\n \nthe\n \nthird\n \nmajor\n \nartery\n \narising\n \nfrom\n \nthe\n \naortic\n \narch?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Left\n \ncommon\n \ncarotid"
+        },
+        {
+          "letter": "B",
+          "text": "Brachiocephalic"
+        },
+        {
+          "letter": "C",
+          "text": "Left\n \nsubclavian"
+        },
+        {
+          "letter": "D",
+          "text": "Right\n \ncommon\n \ncarotid"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q77",
+      "number": 77,
+      "question": "Which\n \ncondition\n \nis\n \nassociated\n \nwith\n \nblue\n \ntoe\n \nsyndrome?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Diabetic\n \nneuropathy"
+        },
+        {
+          "letter": "B",
+          "text": "Intrinsic\n \ncompression"
+        },
+        {
+          "letter": "C",
+          "text": "Aortoiliac\n \nocclusive\n \ndisease"
+        },
+        {
+          "letter": "D",
+          "text": "Inferior\n \nvena\n \ncava\n \nthrombosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q78",
+      "number": 78,
+      "question": "What\n \ntype\n \nof\n \naneurysm\n \ncan\n \nbe\n \ntreated\n \nwith\n \nthrombin\n \ninjection?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fusiform"
+        },
+        {
+          "letter": "B",
+          "text": "Saccular"
+        },
+        {
+          "letter": "C",
+          "text": "False"
+        },
+        {
+          "letter": "D",
+          "text": "Mycotic"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q79",
+      "number": 79,
+      "question": "What\n \ndoes\n \na\n \nthigh\n \npressure\n \nindex\n \nof\n \n0.9\n \nmost\n \nlikely\n \nindicate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Distal\n \nocclusion"
+        },
+        {
+          "letter": "B",
+          "text": "Proximal\n \nocclusion"
+        },
+        {
+          "letter": "C",
+          "text": "Distal\n \nstenosis"
+        },
+        {
+          "letter": "D",
+          "text": "Proximal\n \nstenosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q80",
+      "number": 80,
+      "question": "Which\n \narterial\n \nstudy\n \nprovides\n \nthe\n \nmost\n \nanatomic\n \ninformation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Segmental\n \npressures"
+        },
+        {
+          "letter": "B",
+          "text": "Pulse\n \nvolume\n \nrecording"
+        },
+        {
+          "letter": "C",
+          "text": "Duplex\n \nultrasound"
+        },
+        {
+          "letter": "D",
+          "text": "Photoplethysmography"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q81",
+      "number": 81,
+      "question": "Which\n \ndescription\n \nis\n \ncharacteristic\n \nof\n \nrenal\n \nvessel\n \nlength?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Right\n \nrenal\n \nartery\n \nlonger\n \nthan\n \nleft"
+        },
+        {
+          "letter": "B",
+          "text": "Left\n \nrenal\n \nartery\n \nlonger\n \nthan\n \nright"
+        },
+        {
+          "letter": "C",
+          "text": "Right\n \nrenal\n \nartery\n \nand\n \nvein\n \nlonger\n \nthan\n \nleft"
+        },
+        {
+          "letter": "D",
+          "text": "Left\n \nrenal\n \nartery\n \nand\n \nvein\n \nlonger\n \nthan\n \nright"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q82",
+      "number": 82,
+      "question": "What\n \nhas\n \nthe\n \ngreatest\n \neffect\n \non\n \nvenous\n \nflow\n \nin\n \nthe\n \nlegs\n \nof\n \na\n \nnormal\n \nsupine\n \npatient?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Variations\n \nin\n \ncardiac\n \noutput"
+        },
+        {
+          "letter": "B",
+          "text": "Diaphragm\n \nmovement"
+        },
+        {
+          "letter": "C",
+          "text": "Aortic\n \ndissection\n \nand\n \nrecoil"
+        },
+        {
+          "letter": "D",
+          "text": "Superior\n \nvena\n \ncava\n \ncompression"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q83",
+      "number": 83,
+      "question": "Which\n \ncritical\n \nfinding\n \nnecessitates\n \nimmediate\n \nreporting\n \nto\n \nthe\n \nreferring\n \nphysician?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Small\n \ncaliber\n \ndistal\n \ninternal\n \ncarotid\n \nartery\n \n(ICA)\n \nwith\n \nno\n \nflow\n \nnoted"
+        },
+        {
+          "letter": "B",
+          "text": "Dilated,\n \nnoncompressible\n \ncommon\n \nfemoral\n \nvein"
+        },
+        {
+          "letter": "C",
+          "text": "Atrophied,\n \npartially\n \ncompressible\n \nbasilic\n \nvein"
+        },
+        {
+          "letter": "D",
+          "text": "Posterior\n \ntibial\n \nankle-brachial\n \nindex\n \nof"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q85",
+      "number": 85,
+      "question": "Which\n \nstatement\n \nis\n \nmost\n \naccurate\n \nregarding\n \nexercise\n \ntreadmill\n \ntesting?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ankle\n \npressure\n \nshould\n \nnot\n \nincrease\n \nafter\n \nexercise"
+        },
+        {
+          "letter": "B",
+          "text": "Proximal\n \nocclusive\n \ndisease\n \nmay\n \nbe\n \ndemonstrated"
+        },
+        {
+          "letter": "C",
+          "text": "Rapid\n \nrecovery\n \nof\n \ndecreased\n \nankle\n \npressure\n \nafter\n \nexercise\n \nsuggests\n \nnonvascular\n \nclaudication"
+        },
+        {
+          "letter": "D",
+          "text": "Pain\n \nwith\n \nexercise\n \nwithout\n \na\n \ndecrease\n \nin\n \nthe\n \nankle\n \npressure\n \nis\n \ndiagnostic\n \nof\n \nvascular\n \nclaudication"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q86",
+      "number": 86,
+      "question": "Which\n \nfinding\n \nis\n \nassociated\n \nwith\n \nvalvular\n \nincompetence\n \nof\n \nthe\n \nlower\n \nextremity\n \nafter\n \nperforming\n \ndorsiflexion\n \nexercises\n \nduring\n \nplethysmography?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increased\n \nvenous\n \nrefilling\n \ntime"
+        },
+        {
+          "letter": "B",
+          "text": "Increased\n \narterial\n \nvolume"
+        },
+        {
+          "letter": "C",
+          "text": "Decreased\n \nvenous\n \nrefilling\n \ntime"
+        },
+        {
+          "letter": "D",
+          "text": "Decreased\n \narterial\n \nvolume"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q87",
+      "number": 87,
+      "question": "Which\n \nfinding\n \nis\n \nassociated\n \nwith\n \naliasing,\n \nlow\n \nresistance\n \nwaveform\n \nand\n \nincreased\n \ndiastolic\n \nflow\n \nin\n \na\n \npatient\n \nstatus\n \npost\n \nliver\n \nbiopsy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hematoma"
+        },
+        {
+          "letter": "B",
+          "text": "Portal\n \nvein\n \nocclusion"
+        },
+        {
+          "letter": "C",
+          "text": "Arteriovenous\n \nfistula"
+        },
+        {
+          "letter": "D",
+          "text": "Hepatic\n \nvein\n \nthrombosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q88",
+      "number": 88,
+      "question": "Which\n \nlandmark\n \nis\n \ncommonly\n \nused\n \nfrom\n \nthe\n \ntranstemporal\n \napproach\n \nduring\n \ntranscranial\n \nDoppler?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sphenoid\n \nbone"
+        },
+        {
+          "letter": "B",
+          "text": "Mastoid\n \nbone"
+        },
+        {
+          "letter": "C",
+          "text": "Distal\n \nposterior\n \ncerebral\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "Middle\n \ncerebral\n \nartery\n \nM2\n \nbranch"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q90",
+      "number": 90,
+      "question": "Which\n \nacoustic\n \nwindow\n \nrequires\n \na\n \nreduction\n \nin\n \npower\n \nintensity\n \nin\n \norder\n \nto\n \nfollow\n \nthe\n \nALARA\n \n(as\n \nlow\n \nas\n \nreasonably\n \nachievable)\n \nprinciple\n \nduring\n \ntranscranial\n \nDoppler\n \nexamination?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Transtemporal"
+        },
+        {
+          "letter": "B",
+          "text": "Transorbital"
+        },
+        {
+          "letter": "C",
+          "text": "Suboccipital"
+        },
+        {
+          "letter": "D",
+          "text": "Submandibular"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q91",
+      "number": 91,
+      "question": "How\n \ndoes\n \npeak\n \nsystolic\n \nvelocity\n \nchange\n \nin\n \na\n \nnormal\n \nceliac\n \nartery\n \nfollowing\n \na\n \nmeal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Doubles"
+        },
+        {
+          "letter": "B",
+          "text": "No\n \nappreciable\n \nincrease"
+        },
+        {
+          "letter": "C",
+          "text": "Decreases\n \nat\n \nleast\n \n50%"
+        },
+        {
+          "letter": "D",
+          "text": "Equals\n \nthe\n \naortic\n \nvelocity"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q45",
+      "number": 45,
+      "question": "Which\n \nstep\n \nshould\n \nbe\n \nperformed\n \nnext\n \nin\n \nthe\n \nevaluation\n \nof\n \nlower\n \nextremity\n \nsegmental\n \npressures?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Perform\n \ncold\n \nstress\n \ntest"
+        },
+        {
+          "letter": "B",
+          "text": "Perform\n \ntreadmill\n \nstress\n \ntest"
+        },
+        {
+          "letter": "C",
+          "text": "Measure\n \ntoe\n \npressures"
+        },
+        {
+          "letter": "D",
+          "text": "Place\n \nthe\n \ncuffs\n \nhigh\n \nat\n \ncalf\n \nlevel"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q93",
+      "number": 93,
+      "question": "WHy\n \nare\n \nthe\n \ncuffs\n \nusually\n \ninflated\n \nto\n \n65\n \nmmHg\n \nduring\n \na\n \npulse\n \nvolume\n \nrecording\n \ntest?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To\n \naugment\n \narterial\n \nflow"
+        },
+        {
+          "letter": "B",
+          "text": "To\n \naugment\n \nvenous\n \nflow"
+        },
+        {
+          "letter": "C",
+          "text": "To\n \nminimize\n \narterial\n \nflow"
+        },
+        {
+          "letter": "D",
+          "text": "To\n \nminimize\n \nvenous\n \nflow"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q94",
+      "number": 94,
+      "question": "What\n \nis\n \nthe\n \nnormal\n \nduration\n \nof\n \nreflux\n \nin\n \nthe\n \ngreat\n \nsaphenous\n \nvein\n \nduring\n \nan\n \nevaluation\n \nfor\n \nchronic\n \nvenous\n \nvalvular\n \ninsufficiency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Less\n \nthan\n \n500\n \nmilliseconds"
+        },
+        {
+          "letter": "B",
+          "text": "501-600\n \nmilliseconds"
+        },
+        {
+          "letter": "C",
+          "text": "601-700\n \nmilliseconds"
+        },
+        {
+          "letter": "D",
+          "text": "Greater\n \nthan\n \n701\n \nmilliseconds"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q95",
+      "number": 95,
+      "question": "Which\n \nanomaly\n \nis\n \nmost\n \ncommon\n \nin\n \nthe\n \nupper\n \nextremity\n \narteries?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Absent\n \nradial"
+        },
+        {
+          "letter": "B",
+          "text": "Duplicated\n \nbrachial"
+        },
+        {
+          "letter": "C",
+          "text": "Ulnar\n \norigin\n \nof\n \naxillary"
+        },
+        {
+          "letter": "D",
+          "text": "High\n \nbrachial\n \nbifurcation"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q96",
+      "number": 96,
+      "question": "Upper\n \nextremity\n \nvenous\n \ncolor\n \nduplex\n \nexamination\n \nreveals\n \npatency\n \nof\n \nboth\n \ninternal\n \njuglar\n \nand\n \nsubclavian\n \nveins\u2019\n \nhowever,\n \nDoppler\n \nsignals\n \nare\n \nabnormally\n \nreduce",
+      "options": [
+        {
+          "letter": "D",
+          "text": "These\n \nresults\n \nare\n \nindicative\n \nof\n \nwhich\n \ncondition?"
+        },
+        {
+          "letter": "A",
+          "text": "Aortic\n \nstenosis"
+        },
+        {
+          "letter": "B",
+          "text": "Axillary\n \nvein\n \nobstruction"
+        },
+        {
+          "letter": "C",
+          "text": "Superior\n \nvena\n \ncava\n \nobstruction"
+        },
+        {
+          "letter": "D",
+          "text": "Thoracic\n \noutlet\n \nsyndrome"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q97",
+      "number": 97,
+      "question": "Which\n \nis\n \nconsistent\n \nwith\n \nan\n \nabnormal\n \ndigital\n \nphotoplethysmography\n \nwaveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High\n \namplitude"
+        },
+        {
+          "letter": "B",
+          "text": "Rapid\n \nupstroke"
+        },
+        {
+          "letter": "C",
+          "text": "Absent\n \ndicrotic\n \nnotch"
+        },
+        {
+          "letter": "D",
+          "text": "Downstroke\n \nbowing\n \ntoward\n \nbaseline"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q98",
+      "number": 98,
+      "question": "Which\n \nmeasurement\n \nshould\n \nbe\n \nobtained\n \nwhen\n \nperforming\n \na\n \nvein\n \nmapping\n \nexam?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Anterior\n \nto\n \nposterior\n \ndiameter"
+        },
+        {
+          "letter": "B",
+          "text": "Sagittal\n \nlength"
+        },
+        {
+          "letter": "C",
+          "text": "Peak\n \nsystolic\n \nvelocity"
+        },
+        {
+          "letter": "D",
+          "text": "Volume\n \nflow"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q99",
+      "number": 99,
+      "question": "Which\n \nceliac\n \nartery\n \npeak\n \nsystolic\n \nvelocity\n \nsuggests\n \na\n \nstenosis\n \ngreater\n \nthan\n \n70%?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100\n \ncm/s"
+        },
+        {
+          "letter": "B",
+          "text": "125\n \ncm/s"
+        },
+        {
+          "letter": "C",
+          "text": "175\n \ncm/s"
+        },
+        {
+          "letter": "D",
+          "text": "225\n \ncm/s"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q101",
+      "number": 101,
+      "question": "In\n \na\n \npatient\n \nwith\n \nmedian\n \narcuate\n \nligament\n \nsyndrome\n \n(MALS),\n \nhow\n \ndoes\n \nintermittent\n \ncompression\n \nof\n \na\n \nvisceral\n \nartery\n \nlikely\n \nchange\n \nthe\n \npeak\n \nsystolic\n \nvelocities?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increase\n \nin\n \nthe\n \nceliac\n \nartery\n \nwith\n \nmaximal\n \ninspiration"
+        },
+        {
+          "letter": "B",
+          "text": "Decrease\n \nin\n \nthe\n \nceliac\n \nartery\n \nwith\n \nmaximal\n \ninspiration"
+        },
+        {
+          "letter": "C",
+          "text": "Increase\n \nin\n \nthe\n \nsuperior\n \nmesenteric\n \nartery\n \nwith\n \nmaximal\n \ninspiration"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease\n \nin\n \nthe\n \nsuperior\n \nmesenteric\n \nartery\n \nwith\n \nmaximal\n \ninspiration"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q102",
+      "number": 102,
+      "question": "Which\n \nclinical\n \nfinding\n \nis\n \na\n \ncontraindication\n \nto\n \nperforming\n \ntreadmill\n \nexercise\n \ntesting?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal\n \nankle-brachial\n \nindex\n \nat\n \nrest"
+        },
+        {
+          "letter": "B",
+          "text": "Thigh\n \nclaudication"
+        },
+        {
+          "letter": "C",
+          "text": "Systolic\n \nblood\n \npressure\n \n>180\n \nmmHg"
+        },
+        {
+          "letter": "D",
+          "text": "Presence\n \nof\n \na\n \ncarotid\n \nbruit"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q103",
+      "number": 103,
+      "question": "A\n \ndecrease\n \nin\n \nankle\n \npressure\n \nwas\n \nnoted\n \npost\n \ntreadmill\n \ntest,\n \nand\n \nankle\n \npressure\n \nreturned\n \nto\n \nnormal\n \nafter\n \nfour\n \nminutes.\n \nWhich\n \ncondition\n \nis\n \nmost\n \nconsistent\n \nwith\n \nthese\n \nfindings?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Noncompressible\n \nvessels"
+        },
+        {
+          "letter": "B",
+          "text": "Single-level\n \ndisease"
+        },
+        {
+          "letter": "C",
+          "text": "Foot\n \nischemia"
+        },
+        {
+          "letter": "D",
+          "text": "Normal\n \nfinding"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q104",
+      "number": 104,
+      "question": "Which\n \nclinical\n \ncondition\n \nis\n \nthe\n \nmost\n \nlikely\n \nexplanation\n \nfor\n \nfinding\n \nan\n \nabnormally\n \nlong\n \nacceleration\n \ntime\n \n(200\n \nm/s)\n \nin\n \nthe\n \ncommon\n \nfemoral\n \nartery\n \nduring\n \narterial\n \nduplex\n \nexam\n \nof\n \nthe\n \nlower\n \nextremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Abdominal\n \naortic\n \naneurysm"
+        },
+        {
+          "letter": "B",
+          "text": "External\n \niliac\n \nartery\n \nstenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Common\n \nfemoral\n \nartery\n \ndissection"
+        },
+        {
+          "letter": "D",
+          "text": "Superficial\n \nfemoral\n \nartery\n \nocclusion"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q105",
+      "number": 105,
+      "question": "After\n \nthe\n \npatient\n \nperforms\n \nadequate\n \ndorsiflexions,\n \nthe\n \nvenous\n \nrefill\n \ntime\n \nmeasured\n \nby\n \nphotoplethymospgrahy\n \n(PPG)\n \nis\n \ngreater\n \nthan\n \n20\n \nseconds.\n \nWhat\n \ndoes\n \nthis\n \nindicate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Incompetent\n \nsaphenofemoral\n \njunction"
+        },
+        {
+          "letter": "B",
+          "text": "Incompetent\n \nperforators"
+        },
+        {
+          "letter": "C",
+          "text": "Incompetent\n \nsaphenopopliteal\n \njunction"
+        },
+        {
+          "letter": "D",
+          "text": "Normal\n \nstudy"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q45",
+      "number": 45,
+      "question": "Which\n \nstep\n \nshould\n \nbe\n \nperformed\n \nnext\n \nin\n \nthe\n \nevaluation\n \nof\n \nlower\n \nextremity\n \nsegmental\n \npressures?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Perform\n \ncold\n \nstress\n \ntest"
+        },
+        {
+          "letter": "B",
+          "text": "Perform\n \ntreadmill\n \nstress\n \ntest"
+        },
+        {
+          "letter": "C",
+          "text": "Measure\n \ntoe\n \npressure"
+        },
+        {
+          "letter": "D",
+          "text": "Place\n \nthe\n \ncuffs\n \nat\n \ncalf\n \nlevel"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q107",
+      "number": 107,
+      "question": "Which\n \nfinding\n \nis\n \nassociated\n \nwith\n \nan\n \nintracranial\n \ncollateral\n \npathway\n \nin\n \nthe\n \npresence\n \nof\n \ninternal\n \ncarotid\n \nartery\n \nocclusion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ipsilateral\n \nretrograde\n \nanterior\n \ncerebral\n \nartery"
+        },
+        {
+          "letter": "B",
+          "text": "Contralateral\n \nretrograde\n \nexternal\n \ncarotid\n \nartery"
+        },
+        {
+          "letter": "C",
+          "text": "Ipsilateral\n \nretrograde\n \nvertebral\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "Contralateral\n \nretrograde\n \nophthalmic\n \nartery"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q108",
+      "number": 108,
+      "question": "Occlusion\n \nof\n \nwhich\n \ncarotid\n \nartery\n \nis\n \nassociated\n \nwith\n \na\n \nsignificant\n \nincrease\n \nin\n \ndiastolic\n \nflow\n \nin\n \nthe\n \nleft\n \nexternal\n \ncarotid\n \nartery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Right\n \ninternal"
+        },
+        {
+          "letter": "B",
+          "text": "Right\n \nexternal"
+        },
+        {
+          "letter": "C",
+          "text": "Left\n \ninternal"
+        },
+        {
+          "letter": "D",
+          "text": "Left\n \ncommon"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q109",
+      "number": 109,
+      "question": "Which\n \nphysical\n \nfinding\n \nis\n \nmost\n \nconsistent\n \nwith\n \nretrograde\n \narterial\n \nflow\n \ndistal\n \nto\n \na\n \nbrachiocephalic\n \narteriovenous\n \nfistula?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pallow\n \nof\n \nthe\n \nhand"
+        },
+        {
+          "letter": "B",
+          "text": "No\n \nthrill\n \nover\n \nfistula"
+        },
+        {
+          "letter": "C",
+          "text": "Palpable\n \nlump\n \nor\n \nfistula"
+        },
+        {
+          "letter": "D",
+          "text": "Absent\n \npalpable\n \nbrachial\n \nartery\n \npulse"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q110",
+      "number": 110,
+      "question": "A\n \n30-year-old\n \nwoman\n \nwith\n \nsevere\n \nhypertension\n \nhas\n \nelevated\n \nvelocity\n \nin\n \nthe\n \nmid\n \nrenal\n \narteries\n \nbilaterally.\n \nWhat\n \nis\n \nthe\n \nmost\n \nlikely\n \netiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Essential\n \nhypertension"
+        },
+        {
+          "letter": "B",
+          "text": "Atherosclerotic\n \nrenal\n \nartery\n \nstenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Renal\n \nartery\n \nfibromuscular\n \ndysplasia"
+        },
+        {
+          "letter": "D",
+          "text": "Renal\n \nartery\n \nembolus"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q111",
+      "number": 111,
+      "question": "The\n \nprofunda\n \nand\n \ngenicular\n \ncollateral\n \nnetwork\n \nserve\n \nto\n \nminimize\n \nthe\n \nhemodynamic\n \nabnormality\n \ncaused\n \nby\n \nocclusion\n \nof\n \nwhich\n \nartery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aorta"
+        },
+        {
+          "letter": "B",
+          "text": "Superficial\n \nfemoral"
+        },
+        {
+          "letter": "C",
+          "text": "Iliac"
+        },
+        {
+          "letter": "D",
+          "text": "Hypogastric"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q112",
+      "number": 112,
+      "question": "Which\n \ncriteria\n \nis\n \nobjectively\n \nused\n \nto\n \nidentify\n \na\n \nhemodynamically\n \nsignificant\n \nstenosis\n \nin\n \nthe\n \nupper\n \nextremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High-resistance\n \nwaveform"
+        },
+        {
+          "letter": "B",
+          "text": "Doppler\n \nsignal\n \nbeginning\n \nto\n \nalias"
+        },
+        {
+          "letter": "C",
+          "text": "Doubling\n \nof\n \nthe\n \npeak\n \nsystolic\n \nvelocity"
+        },
+        {
+          "letter": "D",
+          "text": "Visible\n \ncalcified\n \nplaque"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q113",
+      "number": 113,
+      "question": "Which\n \ncondition\n \nis\n \nmost\n \nlikely\n \nto\n \ncause\n \ndecreased\n \nfemoral\n \npulses\n \nand\n \nan\n \nabnormal\n \nbruit\n \nin\n \nan\n \n18-year-old\n \nhypertensive\n \nmale?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "FIbromuscular\n \ndysplasia"
+        },
+        {
+          "letter": "B",
+          "text": "Arteriovenous\n \nfistula"
+        },
+        {
+          "letter": "C",
+          "text": "Neurovascular\n \ncompression\n \nsyndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Coarctation\n \nof\n \nthe\n \naorta"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q114",
+      "number": 114,
+      "question": "Which\n \nvessel\n \nis\n \nprimarily\n \nused\n \nto\n \nlocate\n \nthe\n \nvertebral\n \nartery\n \nduring\n \nan\n \nextracranial\n \nDoppler\n \nexamination?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Common\n \ncarotid\n \nartery"
+        },
+        {
+          "letter": "B",
+          "text": "Internal\n \ncarotid\n \nartery"
+        },
+        {
+          "letter": "C",
+          "text": "External\n \ncarotid\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "Internal\n \njugular\n \nvein"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q115",
+      "number": 115,
+      "question": "During\n \na\n \nlower\n \nextremity\n \narterial\n \nduplex\n \nexam,\n \ncircumferential\n \ncalcification\n \nis\n \nnoted\n \nin\n \nall\n \ntibial\n \narteries.\n \nWhich\n \nstatement\n \nshould\n \nbe\n \nincluded\n \non\n \nthe\n \npreliminary\n \nreport?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tibial\n \nartery\n \nassessment\n \nis\n \nlimited\n \nsecondary\n \nto\n \nacoustic\n \nshadowing"
+        },
+        {
+          "letter": "B",
+          "text": "Tibial\n \nartery\n \nassessment\n \nreveals\n \nnormal\n \nflow"
+        },
+        {
+          "letter": "C",
+          "text": "Tibial\n \nartery\n \nassessment\n \nreveals\n \nstenosis"
+        },
+        {
+          "letter": "D",
+          "text": "Tibial\n \nartery\n \nassessment\n \nsuggests\n \nocclusion"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q116",
+      "number": 116,
+      "question": "Which\n \nfinding\n \nis\n \ncharacteristic\n \nof\n \na\n \nhemodynamically\n \nsignificant\n \nstenosis\n \nin\n \nthe\n \npopliteal\n \nartery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Velocity\n \nincrease\n \nof\n \n200%\n \nfrom\n \npopliteal\n \nartery\n \nto\n \ntibioperoneal\n \ntrunk"
+        },
+        {
+          "letter": "B",
+          "text": "High-resistive\n \nwaveform\n \nin\n \nthe\n \ntibioperoneal\n \ntrunk"
+        },
+        {
+          "letter": "C",
+          "text": "Dampened\n \nsystolic\n \npeak\n \nin\n \nthe\n \ndistal\n \nfemoral\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "Velocity\n \nincrease\n \nof\n \n100%\n \nfrom\n \nthe\n \ndistal\n \nfemoral\n \nartery\n \nto\n \npopliteal\n \nartery"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q117",
+      "number": 117,
+      "question": "Which\n \nnoninvasive\n \nvascular\n \nexam\n \nshould\n \nbe\n \nperformed\n \nfirst\n \nwhen\n \na\n \npatient\n \npresents\n \nwith\n \na\n \nhistory\n \nof\n \ndizziness\n \nassociated\n \nwith\n \nleft\n \narm\n \nexercise?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vertebral\n \nartery\n \nexam"
+        },
+        {
+          "letter": "B",
+          "text": "Thoracic\n \noutlet\n \nevaluation"
+        },
+        {
+          "letter": "C",
+          "text": "Forearm\n \nand\n \ndigital\n \npressures"
+        },
+        {
+          "letter": "D",
+          "text": "Upper\n \nextremity\n \nvenous\n \nduplex"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q118",
+      "number": 118,
+      "question": "Which\n \nof\n \nthe\n \nfollowing\n \nis\n \nthe\n \nmain\n \nadvantage\n \nof\n \npulse\n \nrecording\n \nover\n \ncontinuous\n \nwave\n \nDoppler\n \nfor\n \nthe\n \nevaluation\n \nof\n \ndisease\n \nof\n \nlower\n \nextremity\n \narteries?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Allows\n \nto\n \ndistinguish\n \nbetween\n \nocclusion\n \nand\n \nstenosis\n \nin\n \nthe\n \nlimb\n \nsegment"
+        },
+        {
+          "letter": "B",
+          "text": "Provides\n \ninformation\n \nabout\n \nthe\n \ncompliance\n \nof\n \nvessels\n \nin\n \nthe\n \nlimb\n \nsegment"
+        },
+        {
+          "letter": "C",
+          "text": "Provides\n \ndirect\n \ninformation\n \nof\n \noverall\n \nperfusion\n \nof\n \na\n \nlimb\n \nsegment"
+        },
+        {
+          "letter": "D",
+          "text": "Provides\n \nindirect\n \ninformation\n \nof\n \noverall\n \nperfusion\n \nof\n \na\n \nlimb\n \nsegment\n \n(including\n \ncollaterals)"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q119",
+      "number": 119,
+      "question": "A\n \npatient\n \nis\n \nreferred\n \nfor\n \na\n \ncarotid\n \nduplex\n \nexam.\n \nNo\n \nhemodynamically\n \nsignificant\n \nstenosis\n \nis\n \nidentifie",
+      "options": [
+        {
+          "letter": "D",
+          "text": "Angiography\n \nreveals\n \nthe\n \npresence\n \nof\n \na\n \nright\n \ninternal\n \ncarotid\n \n(ICA\n \nocclusion).\n \nWhat\n \nis\n \nthe\n \nmost\n \nlikely\n \nexplanation\n \nfor\n \nthis\n \nfalse\n \nnegative\n \nstudy?"
+        },
+        {
+          "letter": "A",
+          "text": "A\n \ncontralateral\n \nstenosis\n \nmasked\n \nthe\n \nICA\n \nocclusion"
+        },
+        {
+          "letter": "B",
+          "text": "A\n \nhyperemic\n \nvenous\n \nsignal\n \nwas\n \nmisinterpreted\n \nas\n \nan\n \nICA\n \nsignal"
+        },
+        {
+          "letter": "C",
+          "text": "Color\n \nflow\n \nduplex\n \nstudy\n \nis\n \ninsensitive\n \nto\n \nocclusion"
+        },
+        {
+          "letter": "D",
+          "text": "An\n \nexternal\n \ncarotid\n \nbranch\n \nwas\n \nincorrectly\n \nidentified\n \nas\n \nthe\n \nICA"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q120",
+      "number": 120,
+      "question": "When\n \na\n \nsegmental\n \npressure\n \nexamination\n \nis\n \nperformed,\n \nwhich\n \noutcome\n \nis\n \nmost\n \nlikely\n \nto\n \nresult\n \nfrom\n \nusing\n \na\n \nthigh\n \ncuff\n \nthat\n \nis\n \ntoo\n \nnarrow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thigh\n \npressure\n \nmeasurement\n \n40\n \nmmHg\n \nlower\n \nthan\n \nbrachial\n \npressure"
+        },
+        {
+          "letter": "B",
+          "text": "Thigh\n \npressure\n \nmeasurement\n \n40\n \nmmHg\n \ngreater\n \nthan\n \nbrachial\n \npressure"
+        },
+        {
+          "letter": "C",
+          "text": "Thigh\n \npressure\n \nmeasurement\n \n20\n \nmmHg\n \ngreater\n \nthan\n \nbrachial\n \npressure"
+        },
+        {
+          "letter": "D",
+          "text": "Thigh\n \npressure\n \nmeasurement\n \n20\n \nmmHg\n \nlower\n \nthan\n \nbrachial\n \npressure"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q121",
+      "number": 121,
+      "question": "Following\n \nleft\n \nfemoral\n \nartery\n \ncatheterization,\n \nultrasound\n \nevaluation\n \nconfirmed\n \nthe\n \npresence\n \nof\n \na\n \npseudoaneurysm.\n \nWhich\n \nof\n \nthe\n \nfollowing\n \nis\n \na\n \ncontraindication\n \nto\n \nultrasound\n \nguided\n \ncompression\n \nof\n \nthis\n \npseudoaneurysm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Diameter\n \nof\n \nless\n \nthan\n \n3\n \ncm"
+        },
+        {
+          "letter": "B",
+          "text": "A\n \npedicle\n \nconnecting\n \nto\n \nthe\n \narterial\n \nlumen"
+        },
+        {
+          "letter": "C",
+          "text": "Evidence\n \nof\n \ninfection"
+        },
+        {
+          "letter": "D",
+          "text": "Duration\n \nof\n \nless\n \nthan\n \ntwo\n \nweeks"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q122",
+      "number": 122,
+      "question": "Based\n \non\n \nthis\n \nimage,\n \nwhich\n \nartery\n \nis\n \nmost\n \nlikely\n \nstenotic\n \nor\n \noccluded?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Basilar"
+        },
+        {
+          "letter": "B",
+          "text": "Ipsilateral\n \nsubclavian"
+        },
+        {
+          "letter": "C",
+          "text": "Contralateral\n \nvertebral"
+        },
+        {
+          "letter": "D",
+          "text": "Contralateral\n \nsubclavian"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q123",
+      "number": 123,
+      "question": "Which\n \nrenal\n \nartery\n \ncondition\n \nis\n \nmost\n \nlikely\n \nrepresented\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Occlusion"
+        },
+        {
+          "letter": "B",
+          "text": "Dissection"
+        },
+        {
+          "letter": "C",
+          "text": "Aneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "Fibromuscular\n \ndysplasia"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q124",
+      "number": 124,
+      "question": "Which\n \nartery\n \nis\n \nindicated\n \nby\n \nthe\n \narrow\n \non\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Common\n \ncarotid\n \nbifurcation"
+        },
+        {
+          "letter": "B",
+          "text": "Proximal\n \ninternal\n \ncarotid"
+        },
+        {
+          "letter": "C",
+          "text": "Distal\n \ncommon\n \ncarotid"
+        },
+        {
+          "letter": "D",
+          "text": "Proximal\n \nexternal\n \ncarotid"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q125",
+      "number": 125,
+      "question": "Which\n \nsymptoms\n \nare\n \ncompatible\n \nwith\n \nfindings\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Asymptomatic"
+        },
+        {
+          "letter": "B",
+          "text": "Foot\n \npain\n \nat\n \nrest"
+        },
+        {
+          "letter": "C",
+          "text": "Calf\n \npain\n \nwith\n \nwalking"
+        },
+        {
+          "letter": "D",
+          "text": "Ulcer/gangrene\n \nof\n \nthe\n \nforefoot"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q126",
+      "number": 126,
+      "question": "Which\n \nfinding\n \nis\n \nindicated\n \nby\n \nthe\n \nwaveform\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal\n \nvenous\n \nflow"
+        },
+        {
+          "letter": "B",
+          "text": "Downstream\n \nobstruction"
+        },
+        {
+          "letter": "C",
+          "text": "Congestive\n \nheart\n \nfailure"
+        },
+        {
+          "letter": "D",
+          "text": "_____stream\n \nobstruction\n \n(up?\n \nCut\n \noff)"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q127",
+      "number": 127,
+      "question": "The\n \nspectral\n \nwaveform\n \ndemonstrates\n \nflow\n \nin\n \nwhich\n \nvessel?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Segmental\n \nartery"
+        },
+        {
+          "letter": "B",
+          "text": "Interlobular\n \nartery"
+        },
+        {
+          "letter": "C",
+          "text": "Renal\n \nvein"
+        },
+        {
+          "letter": "D",
+          "text": "Renal\n \nartery"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q128",
+      "number": 128,
+      "question": "Based\n \non\n \nthis\n \nworksheet,\n \nwhich\n \nartery/arteries\n \non\n \nthe\n \nleft\n \nside\n \ndemonstrate(s)\n \na\n \nstenosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proximal\n \nradial"
+        },
+        {
+          "letter": "B",
+          "text": "Distal\n \nbrachial"
+        },
+        {
+          "letter": "C",
+          "text": "Radial\n \nand\n \nulnar"
+        },
+        {
+          "letter": "D",
+          "text": "Distal\n \nsubclavian"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q129",
+      "number": 129,
+      "question": "Which\n \nwaveform\n \nrepresents\n \nthe\n \nturbulence\n \nassociated\n \nwith\n \nthe\n \nstenosis\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A"
+        },
+        {
+          "letter": "B",
+          "text": "B"
+        },
+        {
+          "letter": "C",
+          "text": "C"
+        },
+        {
+          "letter": "D",
+          "text": "D"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q132",
+      "number": 132,
+      "question": "Which\n \nsymptom\n \nis\n \nassociated\n \nwith\n \nocclusion\n \nof\n \nthe\n \nvessel\n \nidentified\n \nby\n \nthe\n \narrow\n \non\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aphasia"
+        },
+        {
+          "letter": "B",
+          "text": "Paresthesia"
+        },
+        {
+          "letter": "C",
+          "text": "Diplopia"
+        },
+        {
+          "letter": "D",
+          "text": "Hemiparesis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q133",
+      "number": 133,
+      "question": "Which\n \nrecent\n \nhistory\n \nis\n \nmost\n \ncompatible\n \nwith\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Deep\n \nvein\n \nthrombosis"
+        },
+        {
+          "letter": "B",
+          "text": "Cardiac\n \ncatheterization"
+        },
+        {
+          "letter": "C",
+          "text": "Vein\n \nstripping\n \nsurgery"
+        },
+        {
+          "letter": "D",
+          "text": "Treatment\n \nfor\n \nvenous\n \ninsufficiency"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q134",
+      "number": 134,
+      "question": "An\n \nabdominal\n \nultrasound\n \nis\n \nperformed\n \non\n \na\n \npatient\n \nwith\n \na\n \nhistory\n \nof\n \ndeep\n \nvein\n \nthrombosis.\n \nWhich\n \nfinding\n \nis\n \nindicated\n \nby\n \nthe\n \narrow\n \non\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bowel\n \ngas"
+        },
+        {
+          "letter": "B",
+          "text": "Dissection"
+        },
+        {
+          "letter": "C",
+          "text": "DIsplaced\n \nstent"
+        },
+        {
+          "letter": "D",
+          "text": "Inferior\n \nvena\n \ncava\n \nfilter"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q135",
+      "number": 135,
+      "question": "A\n \npatient\n \npresents\n \nfor\n \npost-dissection\n \ncarotid\n \nartery\n \nimaging.\n \nWhich\n \nabnormality\n \nis\n \ndemonstrated\n \nby\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Stenosis"
+        },
+        {
+          "letter": "B",
+          "text": "Pseudoaneurysm"
+        },
+        {
+          "letter": "C",
+          "text": "Arteriovenous\n \nfistula"
+        },
+        {
+          "letter": "D",
+          "text": "Distal\n \ninternal\n \ncarotid\n \nocclusion"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q136",
+      "number": 136,
+      "question": "Which\n \nphysical\n \nfinding\n \nis\n \nmost\n \nconsistent\n \nwith\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Arm\n \nweakness"
+        },
+        {
+          "letter": "B",
+          "text": "Cervical\n \nbruit"
+        },
+        {
+          "letter": "C",
+          "text": "Slurred\n \nspeech"
+        },
+        {
+          "letter": "D",
+          "text": "Facial\n \nasymmetry"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q137",
+      "number": 137,
+      "question": "Based\n \non\n \nthis\n \nimage,\n \nwhich\n \nartery\n \nis\n \nmost\n \nlikely\n \nstenotic\n \nor\n \noccluded?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Basilar"
+        },
+        {
+          "letter": "B",
+          "text": "Ipsilateral\n \nsubclavian"
+        },
+        {
+          "letter": "C",
+          "text": "Contralateral\n \nvertebral"
+        },
+        {
+          "letter": "D",
+          "text": "Contralateral\n \nsubclavian"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q138",
+      "number": 138,
+      "question": "Which\n \nfactor\n \nis\n \na\n \nlikely\n \ncause\n \nof\n \nthe\n \nabnormal\n \nvenous\n \nflow\n \ndemonstrated\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tachypnea"
+        },
+        {
+          "letter": "B",
+          "text": "Elevated\n \nright\n \natrial\n \npressure"
+        },
+        {
+          "letter": "C",
+          "text": "Arteriovenous\n \nfistula"
+        },
+        {
+          "letter": "D",
+          "text": "Venous\n \nvalvular\n \ninsufficiency"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q139",
+      "number": 139,
+      "question": "Which\n \narteries\n \nare\n \ndemonstrated\n \nabove\n \nand\n \nbelow\n \nthe\n \nbaseline\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Right\n \nand\n \nleft\n \nmiddle\n \ncerebral"
+        },
+        {
+          "letter": "B",
+          "text": "Right\n \nand\n \nleft\n \nanterior\n \ncerebral"
+        },
+        {
+          "letter": "C",
+          "text": "Right\n \nmiddle\n \ncerebral\n \nand\n \nright\n \nanterior\n \ncerebral"
+        },
+        {
+          "letter": "D",
+          "text": "Right\n \nanterior\n \ncerebral\n \nand\n \nright\n \nposterior\n \ncerebral"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q140",
+      "number": 140,
+      "question": "Which\n \nof\n \nthe\n \nfollowing\n \nbest\n \ndescribes\n \nthe\n \netiology\n \nof\n \nthe\n \nfinding\n \ndepicted\n \nin\n \nthese\n \nimages?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Arteriovenous\n \nfistula"
+        },
+        {
+          "letter": "B",
+          "text": "Congestive\n \nheart\n \nfailure"
+        },
+        {
+          "letter": "C",
+          "text": "Proximal\n \nvein\n \nobstruction"
+        },
+        {
+          "letter": "D",
+          "text": "Axillary\n \nthrombosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q141",
+      "number": 141,
+      "question": "Which\n \nfinding\n \nis\n \ndemonstrated\n \nby\n \nthe\n \nwaveform\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Venous\n \nreflux"
+        },
+        {
+          "letter": "B",
+          "text": "Normal\n \nvenous\n \nflow"
+        },
+        {
+          "letter": "C",
+          "text": "Upstream\n \nobstruction"
+        },
+        {
+          "letter": "D",
+          "text": "Downstream\n \nobstruction"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q142",
+      "number": 142,
+      "question": "Which\n \nspectral\n \nDoppler\n \nwaveform\n \nis\n \nleast\n \nresistive?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1"
+        },
+        {
+          "letter": "B",
+          "text": "2"
+        },
+        {
+          "letter": "C",
+          "text": "3"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q143",
+      "number": 143,
+      "question": "Which\n \ncondition\n \nis\n \nmost\n \nlikely\n \nassociated\n \nwith\n \nthese\n \nimages\n \nof\n \nthe\n \ninternal\n \nand\n \nexternal\n \ncarotid\n \narteries?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal"
+        },
+        {
+          "letter": "B",
+          "text": "Enlarged\n \nthyroid"
+        },
+        {
+          "letter": "C",
+          "text": "Carotid\n \nbody\n \ntumor"
+        },
+        {
+          "letter": "D",
+          "text": "Enlarged\n \nlymph\n \nnode"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q144",
+      "number": 144,
+      "question": "Which\n \nartifact\n \nis\n \ndisplayed\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Comet\n \ntail"
+        },
+        {
+          "letter": "B",
+          "text": "Reverberation"
+        },
+        {
+          "letter": "C",
+          "text": "Enhancement"
+        },
+        {
+          "letter": "D",
+          "text": "Acoustic\n \nshadowing"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q145",
+      "number": 145,
+      "question": "This\n \nimage\n \nwas\n \ntaken\n \nduring\n \ntranscutaneous\n \ncompression\n \ntherapy\n \nof\n \na\n \npseudoaneurysm.\n \nWhat\n \nis\n \nthe\n \nnext\n \ncourse\n \nof\n \naction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Procedure\n \ncomplete"
+        },
+        {
+          "letter": "B",
+          "text": "Further\n \ncompression\n \nrequired"
+        },
+        {
+          "letter": "C",
+          "text": "Surgical\n \ntherapy\n \nrequired"
+        },
+        {
+          "letter": "D",
+          "text": "Failure\n \nof\n \ntherapy"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q146",
+      "number": 146,
+      "question": "Which\n \nartifact\n \nis\n \ndisplayed\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Color\n \nflash"
+        },
+        {
+          "letter": "B",
+          "text": "Aliasing"
+        },
+        {
+          "letter": "C",
+          "text": "Side-lobe"
+        },
+        {
+          "letter": "D",
+          "text": "?"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q147",
+      "number": 147,
+      "question": "",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dissection"
+        },
+        {
+          "letter": "B",
+          "text": "Stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Aneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "Arteriovenous\n \nfistula"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q148",
+      "number": 148,
+      "question": "Which\n \nchange\n \nshould\n \nbe\n \nmade\n \nto\n \noptimize\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increase\n \ncolor\n \nscale"
+        },
+        {
+          "letter": "A",
+          "text": "Decrease\n \ncolor\n \nscale"
+        },
+        {
+          "letter": "B",
+          "text": "Increase\n \ncolor\n \ngain"
+        },
+        {
+          "letter": "C",
+          "text": "Decrease\n \noverall\n \ngain"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam1_q149",
+      "number": 149,
+      "question": "Which\n \ncondition\n \nis\n \nmost\n \nlikely\n \nan\n \netiology\n \nof\n \nthe\n \nfinding\n \ndemonstrated\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acute\n \ncervical\n \ntrauma"
+        },
+        {
+          "letter": "B",
+          "text": "Thoracic\n \noutlet\n \nsyndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Costoclavicular\n \nspace\n \nnarrowing"
+        },
+        {
+          "letter": "D",
+          "text": "History\n \nof\n \ncentral\n \nvenous\n \ncatheter"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    }
+  ],
+  "exam2": [
+    {
+      "id": "exam2_q2",
+      "number": 2,
+      "question": "A\n \nvertebrobasilar\n \nduplex\n \nexam\n \nis\n \nclearly\n \nindicated\n \ndue\n \nto\n \nthe\n \npresence\n \nof\n \nwhich\n \nnonhemispheric\n \nsign?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hemiparesis"
+        },
+        {
+          "letter": "B",
+          "text": "Dysphasia"
+        },
+        {
+          "letter": "C",
+          "text": "Amaurosis\n \nfugax"
+        },
+        {
+          "letter": "D",
+          "text": "Syncope"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q3",
+      "number": 3,
+      "question": "Which\n \nvessel\n \nis\n \nmost\n \nlikely\n \nto\n \nbe\n \nfound\n \nas\n \na\n \nsingular\n \nvessel\n \nin\n \nthe\n \nlower\n \nextremity\n \nvenous\n \nsystem?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Peroneal"
+        },
+        {
+          "letter": "B",
+          "text": "Anterior\n \ntibial"
+        },
+        {
+          "letter": "C",
+          "text": "Posterior\n \ntibial"
+        },
+        {
+          "letter": "D",
+          "text": "Common\n \nfemoral"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q4",
+      "number": 4,
+      "question": "Which\n \ncondition\n \nis\n \nassociated\n \nwith\n \nblue\n \ntoe\n \nsyndrome?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Diabetic\n \nneuropathy"
+        },
+        {
+          "letter": "B",
+          "text": "Intrinsic\n \ncompression"
+        },
+        {
+          "letter": "C",
+          "text": "Aortoiliac\n \nocclusive\n \ndisease"
+        },
+        {
+          "letter": "D",
+          "text": "Inferior\n \nvena\n \ncava\n \nthrombosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q5",
+      "number": 5,
+      "question": "Which\n \nduplex\n \nexam\n \nfollow-up\n \ntimeframe\n \nis\n \nrecommended\n \nfor\n \npost-carotid\n \nendarterectomy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prior\n \nto\n \n1\n \nweek"
+        },
+        {
+          "letter": "B",
+          "text": "1\n \nto\n \n3\n \nweeks"
+        },
+        {
+          "letter": "C",
+          "text": "1\n \nto\n \n3\n \nmonths"
+        },
+        {
+          "letter": "D",
+          "text": "6\n \nmonths"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q6",
+      "number": 6,
+      "question": "Tumor\n \ninvasion\n \ninto\n \nthe\n \ninferior\n \nvena\n \ncava\n \nis\n \nmost\n \ncommonly\n \nassociated\n \nwith\n \nwhich\n \ncondition?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Renal\n \ncell\n \ncarcinoma"
+        },
+        {
+          "letter": "B",
+          "text": "Ovarian\n \ncarcinoma"
+        },
+        {
+          "letter": "C",
+          "text": "Hepatocellular\n \ncarcinoma"
+        },
+        {
+          "letter": "D",
+          "text": "Budd-chiari\n \nsyndrome"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q7",
+      "number": 7,
+      "question": "Which\n \ncardiac\n \ncycle\n \nevent\n \nis\n \nindicated\n \nby\n \nthe\n \narrow\n \non\n \nthe\n \nhepatic\n \nvein\n \nspectral\n \ndoppler\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Right\n \natrium\n \ncontracting"
+        },
+        {
+          "letter": "B",
+          "text": "Right\n \natrium\n \nfilling\n \nin\n \nsystole"
+        },
+        {
+          "letter": "C",
+          "text": "Right\n \natrium\n \nfilling\n \nin\n \ndiastole"
+        },
+        {
+          "letter": "D",
+          "text": "Right\n \natrium\n \noverfilling\n \nbefore\n \nthe\n \ntricuspid\n \nvalve\n \nopens"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q8",
+      "number": 8,
+      "question": "The\n \ntop\n \nimage\n \nof\n \nthe\n \nceliac\n \naxis\n \nwas\n \nobtained\n \nwith\n \nthe\n \npatient\n \nbreathing\n \nnormally.\n \nThe\n \nlower\n \nimage\n \nwas\n \nobtained\u2026most\n \nlikely\n \nrepresent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A\n \nnormal\n \nfinding"
+        },
+        {
+          "letter": "B",
+          "text": "Median\n \narcuate\n \nsyndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Celiac\n \naxis\n \nstenosis"
+        },
+        {
+          "letter": "D",
+          "text": "Leriche\n \nsyndrome"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q9",
+      "number": 9,
+      "question": "Which\n \nfinding\n \nis\n \nconsidered\n \nnormal\n \nafter\n \na\n \ncarotid\n \nendarterectomy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increased\n \nsize\n \nof\n \nbulb"
+        },
+        {
+          "letter": "B",
+          "text": "Decreased\n \nsize\n \nof\n \nbulb"
+        },
+        {
+          "letter": "C",
+          "text": "Increased\n \nsize\n \nof\n \nthe\n \nproximal\n \nexternal\n \ncarotid\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "Decreased\n \nsize\n \nof\n \nthe\n \nproximal\n \ninternal\n \ncarotid\n \nartery"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q11",
+      "number": 11,
+      "question": "What\n \ncondition\n \nis\n \nlikely\n \nwhen\n \na\n \npatient\n \npresents\n \nwith\n \nintermittent\n \npallor\n \nfollowed\n \nby\n \ncyanosis\n \nof\n \nthe\n \nha\u2026",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Peripheral\n \nemboli"
+        },
+        {
+          "letter": "B",
+          "text": "Atherosclerosis\n \ndisease"
+        },
+        {
+          "letter": "C",
+          "text": "Incomplete\n \npalmar\n \narch"
+        },
+        {
+          "letter": "D",
+          "text": "Raynaud\n \ndisease"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q12",
+      "number": 12,
+      "question": "What\n \nis\n \nthe\n \nnormal\n \ndirection\n \nof\n \nflow\n \nin\n \nthe\n \nportal\n \nand\n \nhepatic\n \nveins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both\n \nare\n \nhepatopetal"
+        },
+        {
+          "letter": "B",
+          "text": "Both\n \nare\n \nhepatofugal"
+        },
+        {
+          "letter": "C",
+          "text": "Portal\n \nvein\n \nflow\n \nis\n \nhepatopetal;\n \nhepatic\n \nvein\n \nflow\n \nis\n \nhepatofugal"
+        },
+        {
+          "letter": "D",
+          "text": "Portal\n \nvein\n \nflow\n \nis\n \nhepatofugal;\n \nhepatic\n \nvein\n \nflow\n \nis\n \nhepatopetal"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q13",
+      "number": 13,
+      "question": "Which\n \ncondition\n \nis\n \nmost\n \nlikely\n \nto\n \ncause\n \ndecreased\n \nfemoral\n \npulses\n \nand\n \nan\n \nabdominal\n \nbruit\n \nin\n \nan\n \n18-year-old\n \nhypertension\n \nm\u2026",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fibromuscular\n \ndysplasia"
+        },
+        {
+          "letter": "B",
+          "text": "Arteriovenous\n \nfistula"
+        },
+        {
+          "letter": "C",
+          "text": "Neurovascular\n \ncompression\n \nsyndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Coarctation\n \nof\n \nthe\n \naorta"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q14",
+      "number": 14,
+      "question": "Which\n \ntechnical\n \nimprovement,\n \nif\n \nany,\n \ncould\n \nbe\n \nmade\n \nin\n \nthis\n \nimage\n \nof\n \na\n \nbypass\n \ngraft?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Make\n \nno\n \nchange\n \nbecause\n \nimage\n \nis\n \ntechnically\n \nsatisfactory"
+        },
+        {
+          "letter": "B",
+          "text": "Decrease\n \nsample\n \nvolume"
+        },
+        {
+          "letter": "C",
+          "text": "Adjust\n \ndoppler\n \nspectrum\n \ncursors"
+        },
+        {
+          "letter": "D",
+          "text": "Adjust\n \ndiameter\n \nmeasurement"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q15",
+      "number": 15,
+      "question": "Obstruction\n \nof\n \nwhich\n \nvein\n \nis\n \ninferred\n \nwith\n \nthe\n \nunilateral\n \nfinding\n \nof\n \na\n \ncontinuous\n \ndoppler\n \nwaveform\n \nin\n \nthe\n \nsubclavian\n \nvein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Internal\n \njugular"
+        },
+        {
+          "letter": "B",
+          "text": "Brachiocephalic"
+        },
+        {
+          "letter": "C",
+          "text": "Azygos"
+        },
+        {
+          "letter": "D",
+          "text": "Superior\n \nvena\n \ncava"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q16",
+      "number": 16,
+      "question": "Which\n \nfinding\n \nis\n \nmost\n \nconsistent\n \nwith\n \na\n \nthumb\n \nphotoplethysmographic\n \n(PPG)\n \nwaveform\n \nthat\n \nshows\n \nno\n \nchange\n \nwith\n \nradial\n \nartery\n \ncompression?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Patent\n \nradial\n \nartery"
+        },
+        {
+          "letter": "B",
+          "text": "Occluded\n \nulnar\n \nartery"
+        },
+        {
+          "letter": "C",
+          "text": "Incomplete\n \npalmar\n \narch"
+        },
+        {
+          "letter": "D",
+          "text": "Complete\n \npalmar\n \narch"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q18",
+      "number": 18,
+      "question": "Which\n \nsonographic\n \norientation\n \nis\n \nused\n \nto\n \nassess\n \nthe\n \nlower\n \nextremity\n \nveins\n \nfor\n \ncomplete\n \ncompressibility?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Coronal"
+        },
+        {
+          "letter": "B",
+          "text": "Sagittal"
+        },
+        {
+          "letter": "C",
+          "text": "Transverse"
+        },
+        {
+          "letter": "D",
+          "text": "Oblique"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q19",
+      "number": 19,
+      "question": "Which\n \nclinical\n \nsymptom\n \nis\n \nmost\n \nconsistent\n \nwith\n \nthe\n \nfindings\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Positional\n \nnumbness"
+        },
+        {
+          "letter": "B",
+          "text": "Positional\n \nswelling"
+        },
+        {
+          "letter": "C",
+          "text": "Digital\n \nischemia"
+        },
+        {
+          "letter": "D",
+          "text": "Digital\n \nblanching"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q20",
+      "number": 20,
+      "question": "Doppler\n \nsignal\n \nthat\n \nhas\n \na\n \ncontinuous\n \nforward\n \nflow\n \nthroughout\n \nthe\n \ncardiac\n \ncycle\n \nwould\n \nnormally\n \nbe\n \nobserved\n \nin\n \nwhich\n \nartery\n \nunder\n \nresting\n \nor\n \nfasting\n \nconditions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hypogastric"
+        },
+        {
+          "letter": "B",
+          "text": "Deep\n \nfemoral"
+        },
+        {
+          "letter": "C",
+          "text": "Celiac\n \naxis"
+        },
+        {
+          "letter": "D",
+          "text": "Superior\n \nmesenteric"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q21",
+      "number": 21,
+      "question": "Which\n \nartery\n \nis\n \nindicated\n \nby\n \nthe\n \narrow\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Common\n \ncarotid\n \nbifurcation"
+        },
+        {
+          "letter": "B",
+          "text": "Proximal\n \ninternal\n \ncarotid"
+        },
+        {
+          "letter": "C",
+          "text": "Distal\n \ncommon\n \ncarotid"
+        },
+        {
+          "letter": "D",
+          "text": "Proximal\n \nexternal\n \ncarotid"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q22",
+      "number": 22,
+      "question": "Which\n \ncardiac\n \ncycle\n \nevent\n \nis\n \nassociated\n \nwith\n \nthe\n \ndeflection\n \nmarked\n \nby\n \nthe\n \narrow\n \non\n \nthis\n \nwaveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Elastic\n \nrecoil\n \nof\n \nthe\n \nvessel\n \nwall"
+        },
+        {
+          "letter": "B",
+          "text": "Ventricular\n \nsystole"
+        },
+        {
+          "letter": "C",
+          "text": "Atrial\n \nsystole"
+        },
+        {
+          "letter": "D",
+          "text": "Peripheral\n \nresistance"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q23",
+      "number": 23,
+      "question": "Which\n \nchange\n \nshould\n \nbe\n \nmade\n \nto\n \noptimize\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increase\n \ncolor\n \nscale"
+        },
+        {
+          "letter": "B",
+          "text": "Decrease\n \ncolor\n \nscale"
+        },
+        {
+          "letter": "C",
+          "text": "Increase\n \ncolor\n \ngain"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease\n \noverall\n \ngain"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q24",
+      "number": 24,
+      "question": "In\n \naddition\n \nto\n \natherosclerosis,\n \nwhat\n \nis\n \nanother\n \ncause\n \nof\n \nflow-reducing\n \nstenoses\n \nof\n \nthe\n \nmain\n \nrenal\n \narteries?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Parenchymal\n \ndisease"
+        },
+        {
+          "letter": "B",
+          "text": "Fibromuscular\n \ndysplasia"
+        },
+        {
+          "letter": "C",
+          "text": "Glomerulonephritis"
+        },
+        {
+          "letter": "D",
+          "text": "Tubular\n \nnecrosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q25",
+      "number": 25,
+      "question": "Which\n \nsituation\n \nis\n \ndemonstrated\n \nin\n \nthis\n \nimage\n \nobtained\n \nduring\n \nan\n \nendovenous\n \nablation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Venous\n \naccess\n \nsite"
+        },
+        {
+          "letter": "B",
+          "text": "Catheter\n \nplacement"
+        },
+        {
+          "letter": "C",
+          "text": "Vessel\n \ndepth\n \nmeasurement"
+        },
+        {
+          "letter": "D",
+          "text": "Tumescent\n \nanesthesia\n \ninjection"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q26",
+      "number": 26,
+      "question": "Which\n \nartifact\n \nis\n \ndemonstrated\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Color\n \nflash"
+        },
+        {
+          "letter": "B",
+          "text": "Alisasing"
+        },
+        {
+          "letter": "C",
+          "text": "Side-lobe"
+        },
+        {
+          "letter": "D",
+          "text": "Grating\n \nlobe"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q27",
+      "number": 27,
+      "question": "What\n \ndoes\n \ncontinuous\n \nflow\n \nin\n \nthe\n \ncommon\n \nfemoral\n \nvein\n \nsuggest?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chronic\n \nobstructive\n \npulmonary\n \ndisease"
+        },
+        {
+          "letter": "B",
+          "text": "Congestive\n \nheart\n \nfailure"
+        },
+        {
+          "letter": "C",
+          "text": "Distal\n \nobstruction"
+        },
+        {
+          "letter": "D",
+          "text": "Proximal\n \nobstruction"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q28",
+      "number": 28,
+      "question": "What\n \ntechnique\n \nis\n \noptimal\n \nfor\n \nevaluation\n \nof\n \npalmar\n \narch\n \npatency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1st\n \nand\n \n5th\n \ndigit\n \npressures\n \nduring\n \nbrachial\n \nand\n \naxillary\n \nartery\n \ncompression"
+        },
+        {
+          "letter": "B",
+          "text": "1st\n \nand\n \n5th\n \ndigit\n \nwaveforms\n \nduring\n \nradial\n \nand\n \nulnar\n \nartery\n \ncompression"
+        },
+        {
+          "letter": "C",
+          "text": "Radial\n \nand\n \nulnar\n \nartery\n \npressures\n \nduring\n \n1st\n \nand\n \n5th\n \ndigit\n \ncompression"
+        },
+        {
+          "letter": "D",
+          "text": "Radial\n \nand\n \nulnar\n \nartery\n \nwaveforms\n \nduring\n \nbrachial\n \nand\n \naxillary\n \nartery\n \ncompression"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q29",
+      "number": 29,
+      "question": "No\n \nquestion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gangrene"
+        },
+        {
+          "letter": "B",
+          "text": "Claudication"
+        },
+        {
+          "letter": "C",
+          "text": "Ischemic\n \nrest\n \npain"
+        },
+        {
+          "letter": "D",
+          "text": "Non-healing\n \nulcer"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q30",
+      "number": 30,
+      "question": "Which\n \nsymptom\n \nis\n \nassociated\n \nwith\n \nocclusion\n \nof\n \nthe\n \nvessel\n \nidentified\n \nby\n \nthe\n \narrow\n \non\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aphasia"
+        },
+        {
+          "letter": "B",
+          "text": "Paresthesia"
+        },
+        {
+          "letter": "C",
+          "text": "Diplopia"
+        },
+        {
+          "letter": "D",
+          "text": "Hemiparesis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q32",
+      "number": 32,
+      "question": "What\n \nis\n \nthe\n \nmost\n \nlikely\n \ncause\n \nof\n \na\n \ncarotid\n \nartery\n \nstent\n \nobstruction\n \nin\n \nthe\n \nabsence\n \nof\n \nstent\n \nfracture\n \nor\n \ndeformation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Intraplaque\n \nhemorrhage"
+        },
+        {
+          "letter": "B",
+          "text": "Intimal\n \nhyperplasia"
+        },
+        {
+          "letter": "C",
+          "text": "Arterial\n \nthrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Dissection"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q33",
+      "number": 33,
+      "question": "When\n \nthe\n \ncardiac\n \ncycle\n \ndoes\n \nreversal\n \nof\n \nflow\n \noccur\n \nin\n \na\n \nnormal\n \nlower\n \nextremity\n \narterial\n \nwaveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Peak\n \nsystole"
+        },
+        {
+          "letter": "B",
+          "text": "End\n \ndiastole"
+        },
+        {
+          "letter": "C",
+          "text": "Late\n \nsystole/early\n \ndiastole"
+        },
+        {
+          "letter": "D",
+          "text": "Late\n \ndiastole/early\n \nsystole"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q34",
+      "number": 34,
+      "question": "Which\n \nmeasurement\n \nis\n \nthe\n \nlowest\n \npeak\n \nsystolic\n \nvelocity\n \nassociated\n \nwith\n \na\n \nsuperior\n \nmesenteric\n \nartery\n \nstenosis\n \nof\n \n70%\n \nin\n \na\n \nfasting\n \npatient?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150\n \ncm/s"
+        },
+        {
+          "letter": "B",
+          "text": "200\n \ncm/s\n \n---"
+        },
+        {
+          "letter": "C",
+          "text": "275\n \ncm/s"
+        },
+        {
+          "letter": "D",
+          "text": "325\n \ncm/s"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q35",
+      "number": 35,
+      "question": "Which\n \ncondition\n \nmay\n \nbe\n \ndiagnosed\n \nbased\n \non\n \na\n \nvenous\n \nrefill\n \ntime\n \nof\n \n10\n \nseconds\n \nwithout\n \na\n \ntourniquet\n \nthat\n \nchanges\n \nto\n \n27\n \nseconds\n \nwhen\n \na\n \ntourniquet\n \nis\n \napplied\n \nabove\n \nthe\n \nknee?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Incompetence\n \nof\n \nthe\n \npopliteal\n \nvein"
+        },
+        {
+          "letter": "B",
+          "text": "Incompetence\n \nof\n \nthe\n \nfemoral\n \nvein"
+        },
+        {
+          "letter": "C",
+          "text": "Incompetence\n \nof\n \nthe\n \ngreat\n \nsaphenous\n \nvein"
+        },
+        {
+          "letter": "D",
+          "text": "Valvular\n \ninsufficiency\n \nof\n \nthe\n \nsmall\n \nsaphenous\n \nvein"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q36",
+      "number": 36,
+      "question": "Which\n \nis\n \nthe\n \nmost\n \nlikely\n \nfinding\n \nbased\n \non\n \nthis\n \nmiddle\n \ncerebral\n \nartery\n \nwaveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vasospasm"
+        },
+        {
+          "letter": "B",
+          "text": "Stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Normal\n \nflow"
+        },
+        {
+          "letter": "D",
+          "text": "Distal\n \nocclusion"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q37",
+      "number": 37,
+      "question": "A\n \nright\n \neye\n \nvisual\n \ndisturbance\n \nis\n \nmost\n \ncommonly\n \ncaused\n \nby\n \nstenosis\n \nof\n \nwhich\n \nartery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Right\n \ninternal\n \ncarotid"
+        },
+        {
+          "letter": "B",
+          "text": "Right\n \nexternal\n \ncarotid"
+        },
+        {
+          "letter": "C",
+          "text": "Left\n \nexternal\n \ncarotid"
+        },
+        {
+          "letter": "D",
+          "text": "Left\n \ninternal\n \ncarotid"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q38",
+      "number": 38,
+      "question": "Which\n \nmaneuver\n \nhelps\n \nin\n \nthe\n \ndiagnosis\n \nof\n \nan\n \niatrogenic\n \narteriovenous\n \nfistula?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Valsalva"
+        },
+        {
+          "letter": "B",
+          "text": "Distal\n \naugmentation"
+        },
+        {
+          "letter": "C",
+          "text": "Manual\n \nocclusion\n \nof\n \nproximal\n \nvein"
+        },
+        {
+          "letter": "D",
+          "text": "Repeated\n \nankle\n \nflexion\n \nand\n \nextension"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q39",
+      "number": 39,
+      "question": "What\n \ndescribes\n \nthe\n \nwaveform\n \nof\n \na\n \nnormal\n \nvertebral\n \nartery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pandiastolic\n \nflow\n \nreversal"
+        },
+        {
+          "letter": "B",
+          "text": "Multiphasic\n \ndiastolic\n \nflow"
+        },
+        {
+          "letter": "C",
+          "text": "Absence\n \nof\n \ndiastolic\n \nflow"
+        },
+        {
+          "letter": "D",
+          "text": "Forward\n \nflow\n \nthrough\n \ndiastole"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q40",
+      "number": 40,
+      "question": "What\n \noccurs\n \nduring\n \nexpiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Diaphragm\n \nascends"
+        },
+        {
+          "letter": "B",
+          "text": "Intrathoracic\n \npressure\n \ndecreases"
+        },
+        {
+          "letter": "C",
+          "text": "Intra-abdominal\n \npressure\n \nincreases"
+        },
+        {
+          "letter": "D",
+          "text": "Venous\n \nflow\n \nfrom\n \nthe\n \nupper\n \nextremities\n \nincreases"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q41",
+      "number": 41,
+      "question": "Which\n \nwaveform\n \nrepresents\n \nthe\n \nturbulence\n \nassociated\n \nwith\n \nthe\n \nstenosis\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A"
+        },
+        {
+          "letter": "B",
+          "text": "B"
+        },
+        {
+          "letter": "C",
+          "text": "C**"
+        },
+        {
+          "letter": "D",
+          "text": "D"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q42",
+      "number": 42,
+      "question": "What\n \nis\n \nthe\n \nmost\n \ncommon\n \nsite\n \nfor\n \nembolization\n \nfrom\n \na\n \nsubclavian\n \nartery\n \naneurysm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Digit"
+        },
+        {
+          "letter": "B",
+          "text": "Forearm"
+        },
+        {
+          "letter": "C",
+          "text": "Elbow"
+        },
+        {
+          "letter": "D",
+          "text": "upper\n \narm"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q43",
+      "number": 43,
+      "question": "Which\n \ncondition\n \nis\n \ncharacterized\n \nby\n \nblood\n \nflow\n \nseparating\n \nthe\n \nlayers\n \nof\n \nthe\n \nartery\n \nwall?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ectasia"
+        },
+        {
+          "letter": "B",
+          "text": "Dissection"
+        },
+        {
+          "letter": "C",
+          "text": "Adventitial\n \ncystic\n \ndisease"
+        },
+        {
+          "letter": "D",
+          "text": "medial\n \ncalcinosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q44",
+      "number": 44,
+      "question": "How\n \nis\n \nan\n \nimage\n \naffected\n \nwhen\n \nthe\n \ncolor\n \nDoppler\n \nscale\n \nis\n \nset\n \ntoo\n \nlow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "produces\n \naliasing"
+        },
+        {
+          "letter": "B",
+          "text": "aliasing\n \ncan\n \nbe\n \neliminated"
+        },
+        {
+          "letter": "C",
+          "text": "color\n \nbleed\n \nis\n \ndecreased"
+        },
+        {
+          "letter": "D",
+          "text": "no\n \ncolor\n \nis\n \nseen\n \nwithin\n \nthe\n \nvessel"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q45",
+      "number": 45,
+      "question": "Occlusion\n \nof\n \nwhich\n \nartery\n \nwould\n \ncause\n \nflow\n \nreversal\n \nto\n \nthe\n \nright\n \nvertebral\n \nartery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Innominate"
+        },
+        {
+          "letter": "B",
+          "text": "left\n \nvertebral"
+        },
+        {
+          "letter": "C",
+          "text": "left\n \nsubclavian"
+        },
+        {
+          "letter": "D",
+          "text": "right\n \ncommon\n \ncarotid"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q46",
+      "number": 46,
+      "question": "What\n \ntype\n \nof\n \naneurysm\n \ncan\n \nbe\n \ntreated\n \nwith\n \nthrombin\n \ninjection?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fusiform"
+        },
+        {
+          "letter": "B",
+          "text": "Saccular"
+        },
+        {
+          "letter": "C",
+          "text": "False"
+        },
+        {
+          "letter": "D",
+          "text": "Mycotic"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q47",
+      "number": 47,
+      "question": "Which\n \nsystolic\n \npressure\n \nis\n \nmeasured\n \nat\n \neach\n \ncuff\n \nlevel?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "artery\n \nsegment\n \nproximal\n \nto\n \ncuff"
+        },
+        {
+          "letter": "B",
+          "text": "artery\n \nsegment\n \nunder\n \ncuff"
+        },
+        {
+          "letter": "C",
+          "text": "artery\n \nsegment\n \ndistal\n \nto\n \ncuff"
+        },
+        {
+          "letter": "D",
+          "text": "artery\n \nsegment\n \nproximal\n \nand\n \ndistal\n \nto\n \ncuff"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q48",
+      "number": 48,
+      "question": "What\n \neffect\n \ndoes\n \ndeep\n \nexhalation\n \nhave\n \non\n \nvenous\n \nflow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "flow\n \nin\n \nthe\n \nupper\n \nand\n \nlower\n \nextremities\n \nincreases"
+        },
+        {
+          "letter": "B",
+          "text": "flow\n \nin\n \nthe\n \nupper\n \nand\n \nlower\n \nextremities\n \ndecreases"
+        },
+        {
+          "letter": "C",
+          "text": "flow\n \nin\n \nthe\n \nupper\n \nextremities\n \nincreases;\n \nflow\n \nin\n \nthe\n \nlower\n \nextremities\n \ndecreases"
+        },
+        {
+          "letter": "D",
+          "text": "flow\n \nin\n \nthe\n \nupper\n \nextremities\n \ndecreases;\n \nflow\n \nin\n \nthe\n \nlower\n \nextremities\n \nincreases"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q49",
+      "number": 49,
+      "question": "What\n \nis\n \nrevealed\n \nin\n \nthe\n \nspectral\n \nanalysis\n \nof\n \nthe\n \nvein\n \nin\n \nthe\n \nimage\n \nbelow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Venous\n \noutflow\n \nobstruction"
+        },
+        {
+          "letter": "B",
+          "text": "Venous\n \ninsufficiency"
+        },
+        {
+          "letter": "C",
+          "text": "Venous\n \nCompetency"
+        },
+        {
+          "letter": "D",
+          "text": "Normal\n \nvenous\n \nflow"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q50",
+      "number": 50,
+      "question": "Which\n \ndescription\n \nbest\n \ncharacterizes\n \nnormal\n \nflow\n \nin\n \nthe\n \ncortical\n \nrenal\n \narteries?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Low\n \nvelocity,\n \nHigh\n \nresistive"
+        },
+        {
+          "letter": "B",
+          "text": "low\n \nvelocity,\n \nlow\n \nresistive"
+        },
+        {
+          "letter": "C",
+          "text": "High\n \nvelocity,\n \nHigh\n \nresistive"
+        },
+        {
+          "letter": "D",
+          "text": "high\n \nvelocity,\n \nlow\n \nresistive"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q51",
+      "number": 51,
+      "question": "Which\n \ncondition\n \nis\n \nmost\n \nlikely\n \nassociated\n \nwith\n \nthe\n \nfinding\n \ndemonstrated\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "carotid\n \nbody\n \ntumor"
+        },
+        {
+          "letter": "B",
+          "text": "fibromuscular\n \ndysplasia"
+        },
+        {
+          "letter": "C",
+          "text": "carotid\n \npseudoaneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "carotid\n \ndissection"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q52",
+      "number": 52,
+      "question": "Which\n \nspectral\n \nDoppler\n \nfeature\n \nis\n \nconsistent\n \nwithin\n \nan\n \noccluded\n \narteriovenous\n \nfistula\n \n(AVF)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inflow\n \nartery,\n \nproximal\n \nto\n \nthe\n \nAVF\n \nanastomosis,\n \nshowing\n \nlow\n \nresistive\n \npattern"
+        },
+        {
+          "letter": "B",
+          "text": "outflow\n \nvein\n \nshowing\n \nno\n \narterial\n \npulsations"
+        },
+        {
+          "letter": "C",
+          "text": "inflow\n \nartery,\n \ndistal\n \nto\n \nthe\n \nAVF\n \nanastomosis,\n \nshowing\n \nreversal\n \nof\n \nflow"
+        },
+        {
+          "letter": "D",
+          "text": "outflow\n \nvein\n \nshowing\n \nno\n \nrespiratory\n \nvariations"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q54",
+      "number": 54,
+      "question": "The\n \nDoppler\n \nspectral\n \nwaveform\n \nfrom\n \nthe\n \nsuperior\n \nmesenteric\n \nartery\n \nin\n \na\n \nnormal\n \nfasting\n \nsubject\n \ndemonstrates\n \nwhich\n \nDoppler\n \npattern?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High\n \ndiastolic\n \nvelocity"
+        },
+        {
+          "letter": "B",
+          "text": "Low\n \ndiastolic\n \nvelocity"
+        },
+        {
+          "letter": "C",
+          "text": "monophasic\n \npattern"
+        },
+        {
+          "letter": "D",
+          "text": "increased\n \nPeak\n \nsystolic\n \nvelocity"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q55",
+      "number": 55,
+      "question": "Which\n \narterial\n \nlesion\n \nwould\n \nbe\n \nmost\n \namenable\n \nto\n \npercutaneous\n \ntransluminal\n \nangioplasty?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20\n \ncm\n \nocclusion\n \nof\n \nThe\n \nSuperficial\n \nfemoral\n \nartery"
+        },
+        {
+          "letter": "B",
+          "text": "focal\n \n90%\n \niliac\n \nartery\n \nstenosis"
+        },
+        {
+          "letter": "C",
+          "text": "4\n \ncm\n \nocclusion\n \nof\n \nthe\n \nposterior\n \ntibial\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "popliteal\n \nartery\n \naneurysm"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q56",
+      "number": 56,
+      "question": "Which\n \narterial\n \nanatomic\n \nlocation\n \ncorresponds\n \nwith\n \na\n \npressure\n \ngradient\n \nbetween\n \nthe\n \nbrachial\n \nartery\n \nand\n \nthe\n \nhigh\n \nthigh?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aorta"
+        },
+        {
+          "letter": "B",
+          "text": "radial\n \nartery"
+        },
+        {
+          "letter": "C",
+          "text": "popliteal\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "posterior\n \ntibial\n \nartery"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q57",
+      "number": 57,
+      "question": "Which\n \nstructure\n \nshould\n \nbe\n \ntargeted\n \nduring\n \nultrasound\n \nguided\n \ncompression\n \nof\n \na\n \npseudoaneurysm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pseudoaneurysm\n \nneck"
+        },
+        {
+          "letter": "B",
+          "text": "Pseudoaneurysm\n \nsac"
+        },
+        {
+          "letter": "C",
+          "text": "artery\n \nadjacent\n \nto\n \nthe\n \npseudoaneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "vein\n \nadjacent\n \nto\n \nthe\n \npseudoaneurysm"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q58",
+      "number": 58,
+      "question": "What\n \nwaveform\n \ncharacteristics\n \nwould\n \nbe\n \nexpected\n \non\n \nspectral\n \nDoppler\n \nanalysis\n \nof\n \na\n \nnormal\n \nophthalmic\n \nartery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Retrograde;\n \nsharp\n \nsystolic\n \nupstroke"
+        },
+        {
+          "letter": "B",
+          "text": "Antegrade;\n \nsharp\n \nsystolic\n \nupstroke"
+        },
+        {
+          "letter": "C",
+          "text": "Retrograde;\n \nslowed\n \nsystolic\n \nupstroke"
+        },
+        {
+          "letter": "D",
+          "text": "Antegrade;\n \nslowed\n \nsystolic\n \nupstroke"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q59",
+      "number": 59,
+      "question": "What\n \nis\n \nthe\n \nduplex\n \nfinding\n \nthat\n \nmost\n \naccurately\n \ndetermines\n \ninternal\n \nCarotid\n \nartery\n \nocclusion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Absence\n \nof\n \ncolor\n \nin\n \nthe\n \ninternal\n \ncarotid\n \nartery"
+        },
+        {
+          "letter": "B",
+          "text": "decreased\n \nipsilateral\n \ncommon\n \nartery\n \nflow\n \nvelocity"
+        },
+        {
+          "letter": "C",
+          "text": "absence\n \nof\n \nDoppler\n \nsignal\n \nin\n \nthe\n \ninternal\n \nCarotid\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "increased\n \ndiastolic\n \nflow\n \nin\n \nthe\n \ncommon\n \ncarotid\n \nartery"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q60",
+      "number": 60,
+      "question": "Which\n \nrenal\n \nartery\n \ncondition\n \nis\n \nmost\n \nlikely\n \nrepresented\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Occlusion"
+        },
+        {
+          "letter": "B",
+          "text": "Dissection"
+        },
+        {
+          "letter": "C",
+          "text": "Aneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "fibromuscular\n \ndysplasia"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q61",
+      "number": 61,
+      "question": "Which\n \nvessel\n \nis\n \nindicated\n \nby\n \nthe\n \narrow\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Left\n \nrenal\n \nvein"
+        },
+        {
+          "letter": "B",
+          "text": "left\n \nrenal\n \nartery"
+        },
+        {
+          "letter": "C",
+          "text": "right\n \nrenal\n \nvein"
+        },
+        {
+          "letter": "D",
+          "text": "right\n \nrenal\n \nartery"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q63",
+      "number": 63,
+      "question": "What\n \nclinical\n \nfinding\n \nis\n \nassociated\n \nwith\n \nlower\n \nextremity\n \nVenous\n \ninsufficiency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hyperpigmentation"
+        },
+        {
+          "letter": "B",
+          "text": "Dependent\n \nrubor"
+        },
+        {
+          "letter": "C",
+          "text": "Pulselessness"
+        },
+        {
+          "letter": "D",
+          "text": "hair\n \nloss"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q64",
+      "number": 64,
+      "question": "Which\n \nfinding\n \nwill\n \nbe\n \nvisualized\n \nwhen\n \na\n \npatient\n \npresents\n \nwith\n \nan\n \narteriovenous\n \nfistula\n \nfollowing\n \ntrauma?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increased\n \nproximal\n \nvenous\n \nflow"
+        },
+        {
+          "letter": "B",
+          "text": "decreased\n \nproximal\n \narterial\n \nflow"
+        },
+        {
+          "letter": "C",
+          "text": "increased\n \ndistal\n \narterial\n \nflow"
+        },
+        {
+          "letter": "D",
+          "text": "decreased\n \nproximal\n \nVenous\n \nflow"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q65",
+      "number": 65,
+      "question": "Which\n \nfinding\n \nis\n \nrepresented\n \nby\n \nthe\n \nfinely\n \nechogenic\n \ncomponent\n \nwithin\n \nthe\n \nvein\n \nindicated\n \nby\n \nthe\n \nV\n \non\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thrombosis"
+        },
+        {
+          "letter": "B",
+          "text": "Rouleaux\n \nflow"
+        },
+        {
+          "letter": "C",
+          "text": "elevated\n \nvelocity"
+        },
+        {
+          "letter": "D",
+          "text": "reverberation\n \nartifact"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q67",
+      "number": 67,
+      "question": "Which\n \nsonographic\n \nfinding\n \nis\n \nassociated\n \nwith\n \nthis\n \nlower\n \nextremity\n \nwaveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "distal\n \nobstruction"
+        },
+        {
+          "letter": "B",
+          "text": "Proximal\n \nobstruction"
+        },
+        {
+          "letter": "C",
+          "text": "collateral\n \nflow"
+        },
+        {
+          "letter": "D",
+          "text": "venous\n \ninsufficiency"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q68",
+      "number": 68,
+      "question": "An\n \nultrasound\n \nexamination\n \nwas\n \nperformed\n \none\n \nweek\n \nafter\n \nthe\n \nthermal\n \nablation\n \nof\n \nthe\n \ngreat\n \nsaphenous\n \nvein.\n \nWhich\n \n\u2026\n \nIndicated\n \nby\n \nthe\n \narrow\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal\n \nflow\n \nin\n \nThe\n \nSuperficial\n \nepigastric\n \nvein"
+        },
+        {
+          "letter": "B",
+          "text": "normal\n \nflow\n \nin\n \nThe\n \nSuperficial\n \nepigastric\n \nartery"
+        },
+        {
+          "letter": "C",
+          "text": "reversed\n \nflow\n \nin\n \nThe\n \nSuperficial\n \nepigastric\n \nvein"
+        },
+        {
+          "letter": "D",
+          "text": "reversed\n \nflow\n \nin\n \nThe\n \nSuperficial\n \nepigastric\n \nartery"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q69",
+      "number": 69,
+      "question": "What\n \nis\n \nthe\n \ncorrect\n \nsetting\n \nof\n \nthe\n \nsample\n \nvolume\n \nwhen\n \nmeasuring\n \nflow\n \nvolumes\n \nin\n \na\n \ndialysis\n \naccess?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Expanded\n \nto\n \nthe\n \nentire\n \nvessel\n \ndiameter"
+        },
+        {
+          "letter": "B",
+          "text": "narrowed\n \ndown\n \nto\n \n1\n \nmm"
+        },
+        {
+          "letter": "C",
+          "text": "adjacent\n \nto\n \nanterior\n \nvessel\n \nwall"
+        },
+        {
+          "letter": "D",
+          "text": "adjacent\n \nto\n \nposterior\n \nvessel\n \nwall"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q71",
+      "number": 71,
+      "question": "What\n \nis\n \nsuggested\n \nwhen\n \nthe\n \narterial\n \nsignal\n \npersists\n \nduring\n \nperformance\n \nof\n \nan\n \nankle-brachial\n \nindex\n \nwith\n \nthe\n \nankle\n \ncuff\n \nmaximally\n \ninflated?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "triphasic\n \nwaveform"
+        },
+        {
+          "letter": "B",
+          "text": "arterial\n \ncalcification"
+        },
+        {
+          "letter": "C",
+          "text": "pseudoaneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "arterial\n \nstenosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q72",
+      "number": 72,
+      "question": "Which\n \npatient\n \nposition\n \nis\n \ntypically\n \nused\n \nduring\n \nendovenous\n \nablation\n \nof\n \nthe\n \nsmall\n \nsaphenous\n \nvein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prone"
+        },
+        {
+          "letter": "B",
+          "text": "Supine"
+        },
+        {
+          "letter": "C",
+          "text": "Standing"
+        },
+        {
+          "letter": "D",
+          "text": "Seated"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q73",
+      "number": 73,
+      "question": "Where\n \ndoes\n \nthe\n \nblood\n \nfrom\n \nthe\n \nsoleal\n \nvenous\n \nsinuses\n \ndrain?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Deep\n \nfemoral\n \nvein"
+        },
+        {
+          "letter": "B",
+          "text": "popliteal\n \nvein"
+        },
+        {
+          "letter": "C",
+          "text": "femoral\n \nvein"
+        },
+        {
+          "letter": "D",
+          "text": "peroneal\n \nvein\n \n \nPTV"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q74",
+      "number": 74,
+      "question": "A\n \nDoppler\n \nsignal\n \nthat\n \nhas\n \na\n \ncontinuous\n \nforward\n \nflow\n \nthrough\n \nthe\n \ncardiac\n \ncycle\n \nwould\n \nnormally\n \nbe\n \nobserved\n \nin\n \nwhich\n \nartery\n \nunder\n \nres....?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hypogastric"
+        },
+        {
+          "letter": "B",
+          "text": "deep\n \nfemoral"
+        },
+        {
+          "letter": "C",
+          "text": "Celiac\n \naxis"
+        },
+        {
+          "letter": "D",
+          "text": "Superior\n \nmesenteric"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q75",
+      "number": 75,
+      "question": "Which\n \nreason\n \nbest\n \nexplains\n \nwhy\n \nthe\n \nspectral\n \nwaveforms\n \nof\n \nthe\n \nproximal\n \nabdominal\n \naorta\n \nhave\n \ndifferent\n \ncharacteristics\n \nthan\n \nthose\n \nof\n \nthe\n \ndistal\n \nabdominal\n \naorta?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proximal\n \naorta\n \nis\n \nlarger\n \nthan\n \ndistally\n \naorta\n \nalso\n \ntru"
+        },
+        {
+          "letter": "B",
+          "text": "proximal\n \naorta\n \nsupplies\n \nthe\n \nvisceral\n \narteries"
+        },
+        {
+          "letter": "C",
+          "text": "distal\n \naorta\n \nsupplies\n \nessential\n \norgans"
+        },
+        {
+          "letter": "D",
+          "text": "distal\n \naorta\n \nhas\n \nmore\n \nbranches"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q76",
+      "number": 76,
+      "question": "What\n \nlevel\n \nof\n \ndisease\n \nis\n \nexpected\n \nif\n \na\n \nsignificant\n \npressure\n \ngradient\n \nis\n \npresent\n \nfrom\n \nthe\n \nlow\n \nthigh\n \nto\n \nthe\n \ncalf?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Iliofemoral"
+        },
+        {
+          "letter": "B",
+          "text": "Femoropopliteal"
+        },
+        {
+          "letter": "C",
+          "text": "Tibioperoneal"
+        },
+        {
+          "letter": "D",
+          "text": "Aortoiliac"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q77",
+      "number": 77,
+      "question": "Which\n \ncriteria\n \nis\n \nmost\n \nimportant\n \nfor\n \nidentification\n \nof\n \nthe\n \nupper\n \nextremity\n \ndeep\n \nveins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "adjacent\n \nartery"
+        },
+        {
+          "letter": "B",
+          "text": "size\n \nof\n \nvessel"
+        },
+        {
+          "letter": "C",
+          "text": "depth\n \nof\n \nvessel"
+        },
+        {
+          "letter": "D",
+          "text": "course\n \nof\n \nvessel"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q80",
+      "number": 80,
+      "question": "Which\n \nabnormality\n \nis\n \nassociated\n \nwith\n \nintermittent\n \nbuttock\n \nand\n \nthigh\n \nclaudication?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "May-thurner\n \nsyndrome"
+        },
+        {
+          "letter": "B",
+          "text": "Buerger\n \ndisease"
+        },
+        {
+          "letter": "C",
+          "text": "aortoiliac\n \nocclusive\n \ndisease"
+        },
+        {
+          "letter": "D",
+          "text": "superficial\n \nfemoral\n \nartery\n \nstenosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q81",
+      "number": 81,
+      "question": "A\n \nyoung\n \nadult\n \nmale\n \nis\n \nseen\n \nin\n \nthe\n \nemergency\n \ndepartment\n \nafter\n \na\n \nsmall-caliber\n \ngunshot\n \n\nwound\n \nof\n \nthe\n \nleft\n \npelvis.\n \na\n \npalpable\n \nleft\n \nfemoral\n \npulse\n \nrules\n \nout\n \nwhich\n \ncondition?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Arteriovenous\n \nfistula"
+        },
+        {
+          "letter": "B",
+          "text": "Venous\n \nlaceration"
+        },
+        {
+          "letter": "C",
+          "text": "iliac\n \nvein\n \nocclusion"
+        },
+        {
+          "letter": "D",
+          "text": "iliac\n \nartery\n \nocclusion"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q82",
+      "number": 82,
+      "question": "Which\n \ntechnique\n \nshould\n \nwe\n \nuse\n \nwhen\n \nevaluating\n \nthe\n \ncentral\n \nveins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Compression"
+        },
+        {
+          "letter": "B",
+          "text": "Doppler\n \nanalysis"
+        },
+        {
+          "letter": "C",
+          "text": "apply\n \ntourniquet"
+        },
+        {
+          "letter": "D",
+          "text": "Photoplethysmography"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q84",
+      "number": 84,
+      "question": "Which\n \nfinding\n \nis\n \ndemonstrated\n \nin\n \nthis\n \nimage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Spectral\n \nbroadening"
+        },
+        {
+          "letter": "B",
+          "text": "pulse\n \nrepetition\n \nfrequency\n \nset\n \ntoo\n \nhigh"
+        },
+        {
+          "letter": "C",
+          "text": "mirror\n \nimage\n \nartifact"
+        },
+        {
+          "letter": "D",
+          "text": "aberration\n \nof\n \nnormal\n \nanatomy"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q86",
+      "number": 86,
+      "question": "Spectral\n \nanalysis\n \nof\n \nthe\n \nright\n \ncommon\n \ncarotid\n \nartery\n \ndemonstrates\n \na\n \nlow\n \nvelocity,\n \ndampened\n \nwaveform.\n \npathology\n \nin\n \nthe\n \ncommon\n \ncarotid\n \nartery\n \nis\n \nnot\n \nseen.\n \nwhat\n \nis\n \nthe\n \nmost\n \nlikely\n \ncause?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Intracranial\n \ninternal\n \ncarotid\n \nartery\n \nocclusion"
+        },
+        {
+          "letter": "B",
+          "text": "subclavian\n \nsteal"
+        },
+        {
+          "letter": "C",
+          "text": "contralateral\n \ncommon\n \ncarotid\n \nartery\n \nocclusion"
+        },
+        {
+          "letter": "D",
+          "text": "innominate\n \nartery\n \nocclusion"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q87",
+      "number": 87,
+      "question": "A\n \npatient\n \nwalked\n \non\n \na\n \ntreadmill\n \nat\n \n2\n \nmph\n \nand\n \nat\n \na\n \n10%\n \nincline\n \nfor\n \n5\n \nminutes.\n \nThe\n \npost-exercise\n \nAnkle\n \npressures\n \nimproved\n \nwhen\n \ncompared\n \nto\n \nthe\n \nresting\n \nankle\n \npressures.\n \n\nhowever\n \nthe\n \npatient\n \nexperienced\n \ncalf,\n \nthigh,\n \nand\n \nbuttock\n \npain\n \nwhen\n \nwalking.\n \nWhat\n \nis\n \nthe\n \npreliminary\n \ninterpretation\n \nof\n \nthe\n \ntest?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Single-segment\n \narterial\n \nocclusive\n \ndisease\n \nis\n \nthe\n \ncause\n \nof\n \nthe\n \npatient's\n \nsymptoms"
+        },
+        {
+          "letter": "B",
+          "text": "two-segment\n \narterial\n \nocclusive\n \ndisease\n \nis\n \nthe\n \ncause\n \nof\n \nthe\n \npatient's\n \nsymptoms"
+        },
+        {
+          "letter": "C",
+          "text": "multi-segment\n \narterial\n \nocclusive\n \ndisease\n \nis\n \nthe\n \ncause\n \nof\n \nthe\n \npatient's\n \nsymptoms"
+        },
+        {
+          "letter": "D",
+          "text": "arterial\n \nocclusive\n \ndisease\n \ncan\n \nbe\n \nruled\n \nout\n \nas\n \nthe\n \ncause\n \nof\n \nthe\n \npatient\n \nsymptoms"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q88",
+      "number": 88,
+      "question": "What\n \nis\n \nthe\n \nmost\n \nlikely\n \nfinding\n \nin\n \na\n \npatient\n \npresenting\n \nwith\n \npatent\n \narteriovenous\n \nfistula,\n \nipsilateral\n \narm\n \nand\n \nhand\n \nedema,\n \nskin\n \ndiscoloration,\n \nand\n \nprominent\n \nchest\n \nwall\n \nsuperficial\n \nveins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Occluded\n \nsuperficial\n \nvein"
+        },
+        {
+          "letter": "B",
+          "text": "steal\n \nphenomenon"
+        },
+        {
+          "letter": "C",
+          "text": "inflow\n \nartery\n \nocclusion"
+        },
+        {
+          "letter": "D",
+          "text": "central\n \nvenous\n \nobstruction"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q89",
+      "number": 89,
+      "question": "Which\n \nfinding\n \nis\n \nmost\n \nconsistent\n \nwith\n \na\n \nthumb\n \nphotoplethysmographic\n \n(PPG)\n \nwaveform\n \nthat\n \nshows\n \nno\n \nchange\n \nwith\n \nradial\n \nartery\n \ncompression?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "patent\n \nradial\n \nartery"
+        },
+        {
+          "letter": "B",
+          "text": "occluded\n \nulnar\n \nartery"
+        },
+        {
+          "letter": "C",
+          "text": "incomplete\n \npalmar\n \narch"
+        },
+        {
+          "letter": "D",
+          "text": "complete\n \npalmar\n \narch"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q90",
+      "number": 90,
+      "question": "How\n \ndoes\n \ninspiration\n \nnormally\n \naffect\n \nvenous\n \nflow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increases\n \nvenous\n \nflow\n \nin\n \nboth\n \nupper\n \nlimbs\n \nand\n \nneck"
+        },
+        {
+          "letter": "B",
+          "text": "decreases\n \nvenous\n \nflow\n \nin\n \nboth\n \nupper\n \nand\n \nlower\n \nlimbs"
+        },
+        {
+          "letter": "C",
+          "text": "decreases\n \nvenous\n \nflow\n \nin\n \nboth\n \nlower\n \nlimbs\n \nand\n \nneck"
+        },
+        {
+          "letter": "D",
+          "text": "decreases\n \nvenous\n \nreturn\n \nto\n \nheart"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q92",
+      "number": 92,
+      "question": "Which\n \nfinding\n \nis\n \ncharacteristic\n \nof\n \nacute\n \nrenal\n \nallograft\n \nswelling,\n \ntenderness,\n \nand\n \ninfarction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ureter\n \ncompression\n \ndue\n \nto\n \nperitransplant\n \nfluid\n \ncollection"
+        },
+        {
+          "letter": "B",
+          "text": "low\n \npeak\n \nsystolic\n \nvelocity\n \nin\n \nthe\n \niliac\n \nartery"
+        },
+        {
+          "letter": "C",
+          "text": "Kinking\n \nof\n \nthe\n \nmain\n \nrenal\n \nartery"
+        },
+        {
+          "letter": "D",
+          "text": "obstruction\n \nof\n \nthe\n \nmain\n \nrenal\n \nvein"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q93",
+      "number": 93,
+      "question": "Which\n \nfinding\n \nindicates\n \nthat\n \nan\n \narteriovenous\n \nfistula\n \nhas\n \nreached\n \nmaturity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Length\n \nof\n \nat\n \nleast\n \n6\n \nmillimeters\n \nfor\n \ncannulation"
+        },
+        {
+          "letter": "B",
+          "text": "Blood\n \nflow\n \nvolume\n \nof\n \nat\n \nleast\n \n600\n \nmilliliters/minute"
+        },
+        {
+          "letter": "C",
+          "text": "Depth\n \nof\n \nmore\n \nthan\n \n6\n \nmillimeters\n \nfrom\n \nthe\n \nskin\n \nsurface"
+        },
+        {
+          "letter": "D",
+          "text": "systolic\n \nvelocity\n \nof\n \nmore\n \nthan\n \n600\n \ncentimeters/second"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q94",
+      "number": 94,
+      "question": "Which\n \ncomputer\n \ntomography\n \n(CT)\n \nfinding\n \nwould\n \nmost\n \nlikely\n \nbe\n \nresponsible\n \nfor\n \nimpeded\n \nvenous\n \noutflow\n \nat\n \nthe\n \nlevel\n \nof\n \nthe\n \niliac\n \nveins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Renal\n \ncyst"
+        },
+        {
+          "letter": "B",
+          "text": "pelvic\n \nMass"
+        },
+        {
+          "letter": "C",
+          "text": "abdominal\n \naortic\n \naneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "femoral\n \nvein\n \nthrombosis"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q95",
+      "number": 95,
+      "question": "A\n \nfebrile\n \npatient\n \nwith\n \na\n \nhot,\n \nerythematous,\n \nswollen\n \ncalf\n \nand\n \nankle\n \nmost\n \nlikely\n \nhas\n \nwhich\n \ncondition?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acute\n \ndeep\n \nvein\n \nthrombosis"
+        },
+        {
+          "letter": "B",
+          "text": "chronic\n \nvenous\n \ninsufficiency"
+        },
+        {
+          "letter": "C",
+          "text": "Cellulitis"
+        },
+        {
+          "letter": "D",
+          "text": "lymphedema"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q96",
+      "number": 96,
+      "question": "What\n \nstructure\n \nis\n \nindicated\n \nby\n \nthe\n \narrow\n \non\n \nthis\n \nimage\n \nobtained\n \nfrom\n \na\n \npatient\n \nwith\n \nportal\n \nhypertension?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Right\n \nportal\n \nvein"
+        },
+        {
+          "letter": "B",
+          "text": "dilated\n \ncoronary\n \nvein"
+        },
+        {
+          "letter": "C",
+          "text": "recanalized\n \nparaumbilical\n \nvein"
+        },
+        {
+          "letter": "D",
+          "text": "transjugular\n \nintrahepatic\n \nportosystemic\n \nshunt\n \n(TIPS)"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q97",
+      "number": 97,
+      "question": "In\n \nthe\n \npresence\n \nof\n \nsevere\n \nstenosis\n \nof\n \nthe\n \ndistal\n \ncommon\n \ncarotid\n \nartery,\n \nwhich\n \nflow\n \npattern\n \nis\n \nmost\n \nlikely\n \npresent\n \nin\n \nthe\n \nipsilateral\n \nproximal\n \ninternal\n \ncarotid\n \nartery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Laminar"
+        },
+        {
+          "letter": "B",
+          "text": "Turbulent"
+        },
+        {
+          "letter": "C",
+          "text": "low\n \nresistance"
+        },
+        {
+          "letter": "D",
+          "text": "High\n \nResistance"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q98",
+      "number": 98,
+      "question": "Which\n \nvan\n \nis\n \nresponsible\n \nfor\n \nvenous\n \nreflux\n \nwhen\n \nthe\n \nvenous\n \nrefill\n \ntime\n \nnormalizes\n \nafter\n \n\napplication\n \nof\n \na\n \nthigh\n \ntourniquet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Perforating"
+        },
+        {
+          "letter": "B",
+          "text": "Femoral"
+        },
+        {
+          "letter": "C",
+          "text": "small\n \nsaphenous"
+        },
+        {
+          "letter": "D",
+          "text": "great\n \nsaphenous"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q99",
+      "number": 99,
+      "question": "Which\n \nfurther\n \nimaging\n \nmay\n \nbe\n \nneeded\n \nto\n \nconfirm\n \nan\n \nendoleak\n \nin\n \na\n \npost-repair\n \nabdominal\n \naorta?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Abdominal\n \nx-ray"
+        },
+        {
+          "letter": "B",
+          "text": "computed\n \ntomography\n \nscan"
+        },
+        {
+          "letter": "C",
+          "text": "Echocardiogram"
+        },
+        {
+          "letter": "D",
+          "text": "nuclear\n \nmedicine\n \nscan"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q100",
+      "number": 100,
+      "question": "What\n \nis\n \nthe\n \nmost\n \ncommon\n \ncause\n \nof\n \ncerebrovascular\n \nstroke?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Middle\n \ncerebral\n \nartery\n \nthromboembolism"
+        },
+        {
+          "letter": "B",
+          "text": "rupture\n \nof\n \ncerebral\n \naneurysm\n \nin\n \nCircle\n \nof\n \nWillis"
+        },
+        {
+          "letter": "C",
+          "text": "essential\n \nhypertension"
+        },
+        {
+          "letter": "D",
+          "text": "brain\n \nconcussion"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q101",
+      "number": 101,
+      "question": "What\n \nis\n \nthe\n \nnormal\n \ngradient\n \nbetween\n \nsegmental\n \npressure\n \nin\n \na\n \nlower\n \nextremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20\n \nmmHg"
+        },
+        {
+          "letter": "B",
+          "text": "25\n \nmmHg"
+        },
+        {
+          "letter": "C",
+          "text": "30\n \nmmHg"
+        },
+        {
+          "letter": "D",
+          "text": "35\n \nmmHg"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q102",
+      "number": 102,
+      "question": "Which\n \nstatement\n \nis\n \nmost\n \nconsistent\n \nwith\n \narterial\n \nocclusive\n \ndisease\n \nfollowing\n \nexercise\n \ntesting?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ankle\n \npressure\n \ndecreases\n \nbut\n \nthe\n \npressure\n \nreturns\n \nto\n \nbaseline\n \nwithin\n \n1\n \nminute"
+        },
+        {
+          "letter": "B",
+          "text": "peripheral\n \nresistance\n \ndecreases\n \nresulting\n \nin\n \ndecreased\n \nblood\n \nflow"
+        },
+        {
+          "letter": "C",
+          "text": "peripheral\n \nresistance\n \nincreases\n \nresulting\n \nin\n \nincreased\n \nblood\n \nflow"
+        },
+        {
+          "letter": "D",
+          "text": "ankle\n \npressure\n \ndecreases\n \nby\n \n20%\n \nor\n \ngreater\n \nfrom\n \nthe\n \nresting\n \nbaseline"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q103",
+      "number": 103,
+      "question": "Which\n \ncondition\n \nis\n \nconsistent\n \nwith\n \na\n \ndampened\n \nphotoplethysmogram\n \nwaveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hyperemia"
+        },
+        {
+          "letter": "B",
+          "text": "complete\n \npalmar\n \narch"
+        },
+        {
+          "letter": "C",
+          "text": "Raynaud\n \nDisease"
+        },
+        {
+          "letter": "D",
+          "text": "arteriovenous\n \nfistula"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    },
+    {
+      "id": "exam2_q105",
+      "number": 105,
+      "question": "Which\n \nduplex\n \nfindings\n \nwould\n \nsuggest\n \nisolated\n \niliac\n \nvein\n \nthrombosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dilated\n \nincompressible\n \ncommon\n \nfemoral\n \nvein\n \nwith\n \nabsent\n \nDoppler\n \nsignals"
+        },
+        {
+          "letter": "B",
+          "text": "compressible\n \ncommon\n \nfemoral\n \nvein\n \nwith\n \ncontinuous\n \nDoppler\n \nsignals"
+        },
+        {
+          "letter": "C",
+          "text": "dilated\n \nincompressible\n \npopliteal\n \nvein\n \nwith\n \nabsent\n \nDoppler\n \nsignals"
+        },
+        {
+          "letter": "D",
+          "text": "normal\n \nvenous\n \nduplex\n \nexam\n \nwith\n \nspontaneous\n \nand\n \nphasic\n \nDoppler\n \nsignals"
+        }
+      ],
+      "correctAnswer": null,
+      "explanation": null
+    }
+  ]
+}
