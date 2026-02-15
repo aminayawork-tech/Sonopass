@@ -81,42 +81,42 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
 
   if (completed && showResults) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 p-6">
+      <div className="min-h-screen bg-[#F5F7FA] p-6">
         <div className="max-w-4xl mx-auto">
-          <Card className="p-12 bg-white shadow-2xl border-4 border-purple-300">
+          <Card className="p-12 bg-white shadow-md border border-gray-200">
             <div className="text-center">
-              <h1 className="text-6xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-                🎉 Exam Complete!
+              <h1 className="text-5xl font-bold mb-6 text-gray-800">
+                Exam Complete!
               </h1>
 
               <div className="mb-12">
-                <div className="text-8xl font-black text-purple-600 mb-4">
+                <div className="text-7xl font-bold text-emerald-600 mb-4">
                   {score}%
                 </div>
-                <p className="text-3xl font-bold text-gray-700">
+                <p className="text-2xl font-semibold text-gray-700">
                   {correctAnswers} / {answeredCount} Correct
                 </p>
               </div>
 
               {/* Score breakdown */}
               <div className="grid grid-cols-3 gap-6 mb-12">
-                <div className="p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl">
-                  <div className="text-4xl font-black text-green-600 mb-2">{correctAnswers}</div>
-                  <div className="text-lg font-bold text-gray-700">Correct</div>
+                <div className="p-6 bg-emerald-50 rounded-lg">
+                  <div className="text-3xl font-bold text-emerald-600 mb-2">{correctAnswers}</div>
+                  <div className="text-sm font-medium text-gray-600">Correct</div>
                 </div>
-                <div className="p-6 bg-gradient-to-br from-red-50 to-rose-50 rounded-xl">
-                  <div className="text-4xl font-black text-red-600 mb-2">{answeredCount - correctAnswers}</div>
-                  <div className="text-lg font-bold text-gray-700">Incorrect</div>
+                <div className="p-6 bg-red-50 rounded-lg">
+                  <div className="text-3xl font-bold text-red-600 mb-2">{answeredCount - correctAnswers}</div>
+                  <div className="text-sm font-medium text-gray-600">Incorrect</div>
                 </div>
-                <div className="p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl">
-                  <div className="text-4xl font-black text-purple-600 mb-2">{questions.length}</div>
-                  <div className="text-lg font-bold text-gray-700">Total</div>
+                <div className="p-6 bg-blue-50 rounded-lg">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">{questions.length}</div>
+                  <div className="text-sm font-medium text-gray-600">Total</div>
                 </div>
               </div>
 
               <div className="flex gap-4 justify-center">
                 <Link href="/">
-                  <Button size="lg" className="font-black text-xl px-8 py-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                  <Button size="lg" className="font-semibold text-lg px-8 py-6 bg-emerald-600 hover:bg-emerald-700">
                     <Home className="mr-2" />
                     Back to Home
                   </Button>
@@ -124,7 +124,7 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
                 <Button
                   size="lg"
                   variant="outline"
-                  className="font-black text-xl px-8 py-6 border-4"
+                  className="font-semibold text-lg px-8 py-6"
                   onClick={() => {
                     setCurrentIndex(0);
                     setAnswers({});
@@ -143,17 +143,17 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
+    <div className="min-h-screen bg-[#F5F7FA]">
       {/* Header */}
-      <header className="p-6 bg-white/80 backdrop-blur-sm border-b-4 border-purple-400 shadow-lg">
+      <header className="p-6 bg-white border-b shadow-sm">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-4">
-            <h1 className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+            <h1 className="text-3xl font-bold text-gray-800">
               {title}
             </h1>
             <Link href="/">
-              <Button variant="outline" className="font-bold border-2">
-                <Home className="mr-2" />
+              <Button variant="outline" className="font-semibold">
+                <Home className="mr-2 w-5 h-5" />
                 Exit
               </Button>
             </Link>
@@ -161,11 +161,11 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
 
           {/* Progress bar */}
           <div className="space-y-2">
-            <div className="flex justify-between text-sm font-bold text-gray-700">
+            <div className="flex justify-between text-sm font-medium text-gray-600">
               <span>Question {currentIndex + 1} of {questions.length}</span>
               <span>{answeredCount} answered</span>
             </div>
-            <Progress value={progress} className="h-3 bg-purple-200" />
+            <Progress value={progress} className="h-2 bg-gray-200" />
           </div>
         </div>
       </header>
@@ -174,19 +174,19 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
       <main className="max-w-5xl mx-auto px-6 py-8">
         {/* Category Badge */}
         <div className="mb-6">
-          <span className="px-6 py-3 bg-purple-600 text-white font-black text-lg rounded-full shadow-lg">
-            📚 {currentQuestion.category}
+          <span className="px-4 py-2 bg-gray-100 text-gray-700 font-semibold text-sm rounded-lg border border-gray-200">
+            {currentQuestion.category}
           </span>
         </div>
 
         {/* Question Card */}
-        <Card className="p-10 mb-8 bg-white shadow-2xl border-4 border-purple-300">
-          <h2 className="text-3xl font-black text-gray-800 mb-8 leading-relaxed">
+        <Card className="p-8 mb-8 bg-white shadow-md border border-gray-200">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6 leading-relaxed">
             {currentQuestion.question}
           </h2>
 
           {/* Options */}
-          <div className="space-y-4">
+          <div className="space-y-3">
             {currentQuestion.options.map((option) => {
               const isSelected = answers[currentQuestion.id] === option.letter;
               const isCorrect = currentQuestion.correctAnswer === option.letter;
@@ -198,27 +198,27 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
                   onClick={() => !showAnswer && handleAnswer(option.letter)}
                   disabled={showAnswer && mode === 'practice'}
                   className={cn(
-                    "w-full p-6 rounded-2xl border-4 text-left transition-all font-bold text-xl",
-                    "hover:scale-102 hover:shadow-xl",
-                    !showAnswer && !isSelected && "bg-white border-gray-300 hover:border-purple-400",
-                    !showAnswer && isSelected && "bg-purple-100 border-purple-600 scale-102 shadow-lg",
-                    showCorrectness && isCorrect && "bg-green-100 border-green-600",
-                    showCorrectness && isSelected && !isCorrect && "bg-red-100 border-red-600",
+                    "w-full p-4 rounded-lg border-2 text-left transition-all font-medium text-base",
+                    "hover:shadow-md",
+                    !showAnswer && !isSelected && "bg-white border-gray-200 hover:border-emerald-400",
+                    !showAnswer && isSelected && "bg-emerald-50 border-emerald-500 shadow-sm",
+                    showCorrectness && isCorrect && "bg-emerald-50 border-emerald-500",
+                    showCorrectness && isSelected && !isCorrect && "bg-red-50 border-red-500",
                   )}
                 >
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-3">
                     <span className={cn(
-                      "flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-black text-xl",
-                      !showAnswer && !isSelected && "bg-gray-200 text-gray-700",
-                      !showAnswer && isSelected && "bg-purple-600 text-white",
-                      showCorrectness && isCorrect && "bg-green-600 text-white",
+                      "flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-semibold text-sm",
+                      !showAnswer && !isSelected && "bg-gray-100 text-gray-600",
+                      !showAnswer && isSelected && "bg-emerald-600 text-white",
+                      showCorrectness && isCorrect && "bg-emerald-600 text-white",
                       showCorrectness && isSelected && !isCorrect && "bg-red-600 text-white",
                     )}>
-                      {showCorrectness && isCorrect && <CheckCircle2 />}
-                      {showCorrectness && isSelected && !isCorrect && <XCircle />}
+                      {showCorrectness && isCorrect && <CheckCircle2 className="w-4 h-4" />}
+                      {showCorrectness && isSelected && !isCorrect && <XCircle className="w-4 h-4" />}
                       {(!showCorrectness || (!isCorrect && !isSelected)) && option.letter}
                     </span>
-                    <span className="flex-1 pt-2">{option.text}</span>
+                    <span className="flex-1 pt-1">{option.text}</span>
                   </div>
                 </button>
               );
@@ -227,9 +227,9 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
 
           {/* Explanation (if in practice mode and answer shown) */}
           {showAnswer && mode === 'practice' && currentQuestion.explanation && (
-            <div className="mt-8 p-6 bg-blue-50 border-4 border-blue-300 rounded-2xl">
-              <h3 className="text-2xl font-black text-blue-900 mb-3">💡 Explanation</h3>
-              <p className="text-lg font-semibold text-gray-700">{currentQuestion.explanation}</p>
+            <div className="mt-6 p-5 bg-blue-50 border-l-4 border-blue-500 rounded-lg">
+              <h3 className="text-lg font-semibold text-blue-900 mb-2">Explanation</h3>
+              <p className="text-sm text-gray-700">{currentQuestion.explanation}</p>
             </div>
           )}
         </Card>
@@ -241,9 +241,9 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
             disabled={currentIndex === 0}
             size="lg"
             variant="outline"
-            className="font-black text-xl px-8 py-6 border-4"
+            className="font-semibold text-base px-6 py-6"
           >
-            <ArrowLeft className="mr-2" />
+            <ArrowLeft className="mr-2 w-5 h-5" />
             Previous
           </Button>
 
@@ -252,7 +252,7 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
               <Button
                 onClick={handleSubmit}
                 size="lg"
-                className="font-black text-xl px-8 py-6 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700"
+                className="font-semibold text-base px-8 py-6 bg-emerald-600 hover:bg-emerald-700"
               >
                 Submit Exam
               </Button>
@@ -263,10 +263,10 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
             onClick={handleNext}
             disabled={currentIndex === questions.length - 1}
             size="lg"
-            className="font-black text-xl px-8 py-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
+            className="font-semibold text-base px-6 py-6 bg-emerald-600 hover:bg-emerald-700"
           >
             Next
-            <ArrowRight className="ml-2" />
+            <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>
       </main>

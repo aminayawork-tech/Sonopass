@@ -18,8 +18,8 @@ export default function Quick10Page() {
 
   if (questions.length === 0) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-100">
-        <div className="text-4xl font-black text-purple-600">Loading...</div>
+      <div className="min-h-screen flex items-center justify-center bg-[#F5F7FA]">
+        <div className="text-3xl font-semibold text-gray-600">Loading...</div>
       </div>
     );
   }
