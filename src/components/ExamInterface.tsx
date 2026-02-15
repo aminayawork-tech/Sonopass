@@ -186,7 +186,7 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
           </h2>
 
           {/* Options */}
-          <div className="space-y-3">
+          <div className="space-y-4">
             {currentQuestion.options.map((option) => {
               const isSelected = answers[currentQuestion.id] === option.letter;
               const isCorrect = currentQuestion.correctAnswer === option.letter;
@@ -198,27 +198,27 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
                   onClick={() => !showAnswer && handleAnswer(option.letter)}
                   disabled={showAnswer && mode === 'practice'}
                   className={cn(
-                    "w-full p-4 rounded-lg border-2 text-left transition-all font-medium text-base",
-                    "hover:shadow-md",
+                    "w-full p-5 rounded-lg border-3 text-left transition-all font-semibold text-lg",
+                    "hover:shadow-lg",
                     !showAnswer && !isSelected && "bg-white border-gray-200 hover:border-emerald-400",
-                    !showAnswer && isSelected && "bg-emerald-50 border-emerald-500 shadow-sm",
-                    showCorrectness && isCorrect && "bg-emerald-50 border-emerald-500",
-                    showCorrectness && isSelected && !isCorrect && "bg-red-50 border-red-500",
+                    !showAnswer && isSelected && "bg-emerald-50 border-emerald-500 shadow-md",
+                    showCorrectness && isCorrect && "bg-emerald-100 border-emerald-600 shadow-lg",
+                    showCorrectness && isSelected && !isCorrect && "bg-red-100 border-red-600 shadow-lg",
                   )}
                 >
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-4">
                     <span className={cn(
-                      "flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-semibold text-sm",
+                      "flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-base",
                       !showAnswer && !isSelected && "bg-gray-100 text-gray-600",
                       !showAnswer && isSelected && "bg-emerald-600 text-white",
                       showCorrectness && isCorrect && "bg-emerald-600 text-white",
                       showCorrectness && isSelected && !isCorrect && "bg-red-600 text-white",
                     )}>
-                      {showCorrectness && isCorrect && <CheckCircle2 className="w-4 h-4" />}
-                      {showCorrectness && isSelected && !isCorrect && <XCircle className="w-4 h-4" />}
+                      {showCorrectness && isCorrect && <CheckCircle2 className="w-5 h-5" />}
+                      {showCorrectness && isSelected && !isCorrect && <XCircle className="w-5 h-5" />}
                       {(!showCorrectness || (!isCorrect && !isSelected)) && option.letter}
                     </span>
-                    <span className="flex-1 pt-1">{option.text}</span>
+                    <span className="flex-1 pt-1.5">{option.text}</span>
                   </div>
                 </button>
               );
@@ -227,9 +227,11 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
 
           {/* Explanation (if in practice mode and answer shown) */}
           {showAnswer && mode === 'practice' && currentQuestion.explanation && (
-            <div className="mt-6 p-5 bg-blue-50 border-l-4 border-blue-500 rounded-lg">
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">Explanation</h3>
-              <p className="text-sm text-gray-700">{currentQuestion.explanation}</p>
+            <div className="mt-8 p-6 bg-blue-50 border-l-4 border-blue-600 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-blue-900 mb-3 flex items-center gap-2">
+                <span>💡</span> Explanation
+              </h3>
+              <p className="text-base leading-relaxed text-gray-800">{currentQuestion.explanation}</p>
             </div>
           )}
         </Card>
