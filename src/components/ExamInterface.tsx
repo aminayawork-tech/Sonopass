@@ -198,27 +198,38 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
                   onClick={() => !showAnswer && handleAnswer(option.letter)}
                   disabled={showAnswer && mode === 'practice'}
                   className={cn(
-                    "w-full p-5 rounded-lg border-3 text-left transition-all font-semibold text-lg",
-                    "hover:shadow-lg",
+                    "w-full p-5 rounded-lg border-2 text-left transition-all font-semibold text-lg relative",
+                    !showAnswer && "hover:shadow-lg",
                     !showAnswer && !isSelected && "bg-white border-gray-200 hover:border-emerald-400",
                     !showAnswer && isSelected && "bg-emerald-50 border-emerald-500 shadow-md",
-                    showCorrectness && isCorrect && "bg-emerald-100 border-emerald-600 shadow-lg",
-                    showCorrectness && isSelected && !isCorrect && "bg-red-100 border-red-600 shadow-lg",
+                    // After answer is shown:
+                    showCorrectness && isCorrect && "bg-emerald-100 border-emerald-600 border-4 shadow-xl ring-4 ring-emerald-200",
+                    showCorrectness && isSelected && !isCorrect && "bg-red-100 border-red-600 border-4 shadow-xl ring-4 ring-red-200",
+                    showCorrectness && !isCorrect && !isSelected && "opacity-50 border-gray-300",
                   )}
                 >
                   <div className="flex items-start gap-4">
                     <span className={cn(
-                      "flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-base",
+                      "flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center font-bold text-base",
                       !showAnswer && !isSelected && "bg-gray-100 text-gray-600",
                       !showAnswer && isSelected && "bg-emerald-600 text-white",
                       showCorrectness && isCorrect && "bg-emerald-600 text-white",
                       showCorrectness && isSelected && !isCorrect && "bg-red-600 text-white",
+                      showCorrectness && !isCorrect && !isSelected && "bg-gray-200 text-gray-500",
                     )}>
-                      {showCorrectness && isCorrect && <CheckCircle2 className="w-5 h-5" />}
-                      {showCorrectness && isSelected && !isCorrect && <XCircle className="w-5 h-5" />}
+                      {showCorrectness && isCorrect && <CheckCircle2 className="w-6 h-6" />}
+                      {showCorrectness && isSelected && !isCorrect && <XCircle className="w-6 h-6" />}
                       {(!showCorrectness || (!isCorrect && !isSelected)) && option.letter}
                     </span>
-                    <span className="flex-1 pt-1.5">{option.text}</span>
+                    <div className="flex-1">
+                      <span className="pt-1.5 block">{option.text}</span>
+                      {showCorrectness && isCorrect && (
+                        <span className="text-emerald-700 text-sm font-bold mt-2 block">✓ Correct Answer</span>
+                      )}
+                      {showCorrectness && isSelected && !isCorrect && (
+                        <span className="text-red-700 text-sm font-bold mt-2 block">✗ Your Answer</span>
+                      )}
+                    </div>
                   </div>
                 </button>
               );
@@ -227,11 +238,16 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
 
           {/* Explanation (if in practice mode and answer shown) */}
           {showAnswer && mode === 'practice' && currentQuestion.explanation && (
-            <div className="mt-8 p-6 bg-blue-50 border-l-4 border-blue-600 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-blue-900 mb-3 flex items-center gap-2">
-                <span>💡</span> Explanation
-              </h3>
-              <p className="text-base leading-relaxed text-gray-800">{currentQuestion.explanation}</p>
+            <div className="mt-8 p-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-600 rounded-xl shadow-lg">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl">💡</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-blue-900">Explanation</h3>
+                </div>
+              </div>
+              <p className="text-lg leading-relaxed text-gray-900 font-medium">{currentQuestion.explanation}</p>
             </div>
           )}
         </Card>
