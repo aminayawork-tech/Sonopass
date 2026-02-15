@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
-import { CheckCircle2, XCircle, ArrowRight, ArrowLeft, Home } from 'lucide-react';
+import { Check, X, Home, Info } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
@@ -143,52 +143,50 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA]">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="p-6 bg-white border-b shadow-sm">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-center mb-4">
-            <h1 className="text-3xl font-bold">
-              <span className="text-gray-800">Sono</span>
-              <span className="text-emerald-600">Pass</span>
-              <span className="text-gray-600 text-2xl ml-3">{title}</span>
-            </h1>
+      <header className="bg-white border-b">
+        <div className="max-w-6xl mx-auto px-6 py-4">
+          <div className="flex justify-between items-center mb-3">
+            <h1 className="text-xl font-semibold text-gray-800">{title}</h1>
             <Link href="/">
-              <Button variant="outline" className="font-semibold">
-                <Home className="mr-2 w-5 h-5" />
-                Exit
+              <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">
+                <Home className="mr-2 w-4 h-4" />
+                Home
               </Button>
             </Link>
           </div>
 
-          {/* Progress bar */}
-          <div className="space-y-2">
-            <div className="flex justify-between text-sm font-medium text-gray-600">
-              <span>Question {currentIndex + 1} of {questions.length}</span>
-              <span>{answeredCount} answered</span>
-            </div>
-            <Progress value={progress} className="h-2 bg-gray-200" />
+          {/* Progress and Score */}
+          <div className="flex justify-between items-center text-sm mb-2">
+            <span className="text-gray-600">Progress: {currentIndex + 1}/{questions.length}</span>
+            <span className="text-gray-600">Correct: {correctAnswers}/{answeredCount} ({score}%)</span>
           </div>
+          <Progress value={progress} className="h-2 bg-gray-200" />
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="max-w-5xl mx-auto px-6 py-8">
-        {/* Category Badge */}
-        <div className="mb-6">
-          <span className="px-4 py-2 bg-gray-100 text-gray-700 font-medium text-sm rounded-lg border border-gray-200">
-            {currentQuestion.category}
-          </span>
-        </div>
-
+      <main className="max-w-4xl mx-auto px-6 py-8">
         {/* Question Card */}
-        <Card className="p-8 mb-8 bg-white shadow-sm border border-gray-200">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6 leading-relaxed">
+        <Card className="p-8 bg-white shadow-sm border border-gray-200">
+          {/* Question header */}
+          <div className="flex justify-between items-start mb-6">
+            <span className="text-emerald-600 font-semibold text-lg">
+              Question {currentIndex + 1}
+            </span>
+            <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded">
+              {currentQuestion.category}
+            </span>
+          </div>
+
+          {/* Question text */}
+          <h2 className="text-2xl font-bold text-gray-900 mb-8 leading-relaxed">
             {currentQuestion.question}
           </h2>
 
-          {/* Options */}
-          <div className="space-y-3">
+          {/* Options - NO letter badges, checkmark/X on RIGHT */}
+          <div className="space-y-3 mb-6">
             {currentQuestion.options.map((option) => {
               const isSelected = answers[currentQuestion.id] === option.letter;
               const isCorrect = currentQuestion.correctAnswer === option.letter;
@@ -200,76 +198,87 @@ export default function ExamInterface({ questions, title, mode, showResults = tr
                   onClick={() => !showAnswer && handleAnswer(option.letter)}
                   disabled={showAnswer && mode === 'practice'}
                   className={cn(
-                    "w-full p-4 rounded-lg border-2 text-left transition-all font-medium text-base",
-                    "hover:shadow-md",
-                    !showAnswer && !isSelected && "bg-white border-gray-200 hover:border-emerald-400",
-                    !showAnswer && isSelected && "bg-emerald-50 border-emerald-500",
+                    "w-full p-4 rounded-lg border-2 text-left transition-all relative",
+                    !showAnswer && "bg-white border-gray-200 hover:border-emerald-400 hover:bg-gray-50",
                     showCorrectness && isCorrect && "bg-emerald-50 border-emerald-600",
                     showCorrectness && isSelected && !isCorrect && "bg-red-50 border-red-600",
+                    showCorrectness && !isCorrect && !isSelected && "bg-gray-50 border-gray-200 opacity-50",
                   )}
                 >
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-center justify-between pr-2">
                     <span className={cn(
-                      "flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center font-semibold text-sm",
-                      !showAnswer && !isSelected && "bg-gray-100 text-gray-600",
-                      !showAnswer && isSelected && "bg-emerald-600 text-white",
-                      showCorrectness && isCorrect && "bg-emerald-600 text-white",
-                      showCorrectness && isSelected && !isCorrect && "bg-red-600 text-white",
+                      "text-base",
+                      showCorrectness && isCorrect && "text-gray-900 font-medium",
+                      showCorrectness && isSelected && !isCorrect && "text-gray-900 font-medium",
+                      showCorrectness && !isCorrect && !isSelected && "text-gray-500",
                     )}>
-                      {showCorrectness && isCorrect && <CheckCircle2 className="w-5 h-5" />}
-                      {showCorrectness && isSelected && !isCorrect && <XCircle className="w-5 h-5" />}
-                      {(!showCorrectness || (!isCorrect && !isSelected)) && option.letter}
+                      {option.text}
                     </span>
-                    <span className="flex-1 pt-1">{option.text}</span>
+                    {showCorrectness && isCorrect && (
+                      <Check className="w-6 h-6 text-emerald-600 flex-shrink-0 ml-3" />
+                    )}
+                    {showCorrectness && isSelected && !isCorrect && (
+                      <X className="w-6 h-6 text-red-600 flex-shrink-0 ml-3" />
+                    )}
                   </div>
                 </button>
               );
             })}
           </div>
 
-          {/* Explanation (if in practice mode and answer shown) */}
+          {/* Explanation */}
           {showAnswer && mode === 'practice' && currentQuestion.explanation && (
-            <div className="mt-6 p-5 bg-blue-50 border-l-4 border-blue-500 rounded-lg">
-              <h3 className="text-lg font-bold text-blue-900 mb-2">💡 Explanation</h3>
-              <p className="text-sm leading-relaxed text-gray-800">{currentQuestion.explanation}</p>
+            <div className="mt-6 p-5 bg-blue-50 border border-blue-200 rounded-lg">
+              <div className="flex items-start gap-3">
+                <Info className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <h3 className="font-semibold text-blue-900 mb-2">Explanation</h3>
+                  <p className="text-sm text-gray-700 leading-relaxed">{currentQuestion.explanation}</p>
+                </div>
+              </div>
             </div>
           )}
         </Card>
 
         {/* Navigation */}
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mt-6">
           <Button
             onClick={handlePrevious}
             disabled={currentIndex === 0}
-            size="lg"
             variant="outline"
-            className="font-semibold text-base px-6 py-6"
+            className="px-6 py-5"
           >
-            <ArrowLeft className="mr-2 w-5 h-5" />
             Previous
           </Button>
 
-          <div className="text-center">
-            {mode === 'exam' && answeredCount === questions.length && !completed && (
+          <span className="text-sm text-gray-600 font-medium">
+            Question {currentIndex + 1} of {questions.length}
+          </span>
+
+          {currentIndex === questions.length - 1 ? (
+            mode === 'exam' && answeredCount === questions.length ? (
               <Button
                 onClick={handleSubmit}
-                size="lg"
-                className="font-semibold text-base px-8 py-6 bg-emerald-600 hover:bg-emerald-700"
+                className="px-6 py-5 bg-emerald-600 hover:bg-emerald-700"
               >
                 Submit Exam
               </Button>
-            )}
-          </div>
-
-          <Button
-            onClick={handleNext}
-            disabled={currentIndex === questions.length - 1}
-            size="lg"
-            className="font-semibold text-base px-6 py-6 bg-emerald-600 hover:bg-emerald-700"
-          >
-            Next
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
+            ) : (
+              <Button
+                onClick={() => setCompleted(true)}
+                className="px-6 py-5 bg-emerald-600 hover:bg-emerald-700"
+              >
+                Finish
+              </Button>
+            )
+          ) : (
+            <Button
+              onClick={handleNext}
+              className="px-6 py-5 bg-emerald-600 hover:bg-emerald-700"
+            >
+              Next
+            </Button>
+          )}
         </div>
       </main>
     </div>
