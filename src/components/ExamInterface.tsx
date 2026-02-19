@@ -310,31 +310,59 @@ export default function ExamInterface({ questions, title, mode, examId, showResu
               return (
                 <button
                   key={option.letter}
-                  onClick={() => !showAnswer && handleAnswer(option.letter)}
-                  disabled={showAnswer && mode === 'practice'}
+                  onClick={() => {
+                    if (showAnswer && mode === 'practice') return;
+                    handleAnswer(option.letter);
+                  }}
+                  style={
+                    showCorrectness
+                      ? isCorrect
+                        ? { backgroundColor: '#d1fae5', borderColor: '#059669', borderWidth: 2 }
+                        : isSelected
+                        ? { backgroundColor: '#fee2e2', borderColor: '#dc2626', borderWidth: 2 }
+                        : { backgroundColor: '#f3f4f6', borderColor: '#d1d5db', borderWidth: 2, opacity: 0.6 }
+                      : undefined
+                  }
                   className={cn(
                     "w-full p-4 rounded-lg border-2 text-left transition-all relative",
-                    !showAnswer && "bg-white border-gray-200 hover:border-emerald-400 hover:bg-gray-50",
-                    showCorrectness && isCorrect && "bg-emerald-50 border-emerald-600",
-                    showCorrectness && isSelected && !isCorrect && "bg-red-50 border-red-600",
-                    showCorrectness && !isCorrect && !isSelected && "bg-gray-50 border-gray-200 opacity-50",
+                    !showCorrectness && "bg-white border-gray-200 hover:border-emerald-400 hover:bg-emerald-50 cursor-pointer",
+                    showCorrectness && "cursor-default",
                   )}
                 >
                   <div className="flex items-center justify-between pr-2">
-                    <span className={cn(
-                      "text-base",
-                      showCorrectness && isCorrect && "text-gray-900 font-medium",
-                      showCorrectness && isSelected && !isCorrect && "text-gray-900 font-medium",
-                      showCorrectness && !isCorrect && !isSelected && "text-gray-500",
-                    )}>
-                      {option.text}
-                    </span>
-                    {showCorrectness && isCorrect && (
-                      <Check className="w-6 h-6 text-emerald-600 flex-shrink-0 ml-3" />
-                    )}
-                    {showCorrectness && isSelected && !isCorrect && (
-                      <X className="w-6 h-6 text-red-600 flex-shrink-0 ml-3" />
-                    )}
+                    <div className="flex items-center gap-3">
+                      <span className={cn(
+                        "flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold border-2",
+                        !showCorrectness && "bg-gray-100 border-gray-300 text-gray-600",
+                        showCorrectness && isCorrect && "bg-emerald-600 border-emerald-600 text-white",
+                        showCorrectness && isSelected && !isCorrect && "bg-red-500 border-red-500 text-white",
+                        showCorrectness && !isCorrect && !isSelected && "bg-gray-200 border-gray-300 text-gray-500",
+                      )}>
+                        {option.letter}
+                      </span>
+                      <span className={cn(
+                        "text-base",
+                        showCorrectness && isCorrect && "text-gray-900 font-semibold",
+                        showCorrectness && isSelected && !isCorrect && "text-gray-900 font-medium",
+                        showCorrectness && !isCorrect && !isSelected && "text-gray-400",
+                      )}>
+                        {option.text}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 flex-shrink-0 ml-3">
+                      {showCorrectness && isCorrect && (
+                        <>
+                          <span className="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">CORRECT</span>
+                          <Check className="w-5 h-5 text-emerald-600" />
+                        </>
+                      )}
+                      {showCorrectness && isSelected && !isCorrect && (
+                        <>
+                          <span className="text-xs font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded">WRONG</span>
+                          <X className="w-5 h-5 text-red-600" />
+                        </>
+                      )}
+                    </div>
                   </div>
                 </button>
               );
@@ -342,15 +370,30 @@ export default function ExamInterface({ questions, title, mode, examId, showResu
           </div>
 
           {/* Explanation */}
-          {showAnswer && mode === 'practice' && currentQuestion.explanation && (
-            <div className="mt-6 p-5 bg-blue-50 border border-blue-200 rounded-lg">
-              <div className="flex items-start gap-3">
-                <Info className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="font-semibold text-blue-900 mb-2">Explanation</h3>
-                  <p className="text-sm text-gray-700 leading-relaxed">{currentQuestion.explanation}</p>
+          {showAnswer && mode === 'practice' && (
+            <div className="mt-6 space-y-3">
+              {/* Show correct answer when user got it wrong */}
+              {answers[currentQuestion.id] !== currentQuestion.correctAnswer && currentQuestion.correctAnswer && (
+                <div className="p-4 bg-emerald-50 border-2 border-emerald-400 rounded-lg flex items-center gap-3">
+                  <Check className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                  <p className="text-sm font-semibold text-emerald-800">
+                    Correct answer: <span className="font-bold">{currentQuestion.correctAnswer}</span>
+                    {' — '}
+                    {currentQuestion.options.find(o => o.letter === currentQuestion.correctAnswer)?.text}
+                  </p>
                 </div>
-              </div>
+              )}
+              {currentQuestion.explanation && (
+                <div className="p-5 bg-blue-50 border border-blue-200 rounded-lg">
+                  <div className="flex items-start gap-3">
+                    <Info className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-blue-900 mb-2">Explanation</h3>
+                      <p className="text-sm text-gray-700 leading-relaxed">{currentQuestion.explanation}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </Card>
