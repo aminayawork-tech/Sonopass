@@ -24,5 +24,5 @@ export default function Quick10Page() {
     );
   }
 
-  return <ExamInterface questions={questions} title="⚡ Quick 10" mode="practice" />;
+  return <ExamInterface questions={questions} title="Quick 10" mode="practice" examId="quick-10" />;
 }
