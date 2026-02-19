@@ -46,7 +46,7 @@ export default function StudyPage() {
     return (
       <ExamInterface
         questions={questions}
-        title={`📚 ${selectedCategory}`}
+        title={selectedCategory}
         mode="practice"
       />
     );
@@ -55,45 +55,45 @@ export default function StudyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
       {/* Header */}
-      <header className="p-6 bg-white/80 backdrop-blur-sm border-b-4 border-purple-400 shadow-lg">
+      <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white/80 backdrop-blur-sm border-b-4 border-purple-400 shadow-lg">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-            📚 Study by Section
+          <h1 className="text-xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+            Study by Section
           </h1>
           <Link href="/">
-            <Button variant="outline" size="lg" className="font-bold border-2">
-              <ArrowLeft className="mr-2" />
-              Back
+            <Button variant="outline" size="sm" className="font-bold border-2 text-xs sm:text-sm px-2.5 sm:px-4">
+              <ArrowLeft className="w-4 h-4 sm:mr-2" />
+              <span className="hidden sm:inline">Back</span>
             </Button>
           </Link>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-6 py-12">
-        <div className="text-center mb-12">
-          <h2 className="text-5xl font-black text-gray-800 mb-4">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-12">
+        <div className="text-center mb-6 sm:mb-12">
+          <h2 className="text-2xl sm:text-5xl font-black text-gray-800 mb-2 sm:mb-4">
             Choose Your Topic
           </h2>
-          <p className="text-2xl font-semibold text-gray-600">
+          <p className="text-base sm:text-2xl font-semibold text-gray-600">
             Master one section at a time
           </p>
         </div>
 
         {/* Categories Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {categories.map(([category, questions], index) => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
               className="group"
             >
-              <Card className={`p-8 hover:scale-105 transition-all bg-gradient-to-br ${categoryColors[index % categoryColors.length]} border-0 shadow-xl h-full`}>
+              <Card className={`p-4 sm:p-8 hover:scale-105 transition-all bg-gradient-to-br ${categoryColors[index % categoryColors.length]} border-0 shadow-xl h-full`}>
                 <div className="flex flex-col items-center text-center text-white">
-                  <BookOpen className="w-16 h-16 mb-4 group-hover:rotate-12 transition-transform" />
-                  <h3 className="text-2xl font-black mb-3">{category}</h3>
-                  <div className="text-5xl font-black mb-2">{questions.length}</div>
-                  <p className="text-lg font-semibold">Questions</p>
+                  <BookOpen className="w-8 h-8 sm:w-16 sm:h-16 mb-2 sm:mb-4 group-hover:rotate-12 transition-transform" />
+                  <h3 className="text-xs sm:text-2xl font-black mb-1 sm:mb-3 leading-tight">{category}</h3>
+                  <div className="text-2xl sm:text-5xl font-black mb-0.5 sm:mb-2">{questions.length}</div>
+                  <p className="text-xs sm:text-lg font-semibold opacity-90">Questions</p>
                 </div>
               </Card>
             </button>

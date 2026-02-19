@@ -2317,12 +2317,8 @@
     {
       "id": "exam1_q96",
       "number": 96,
-      "question": "Upper extremity venous color duplex examination reveals patency of both internal juglar and subclavian veins\u2019 however, Doppler signals are abnormally reduce",
+      "question": "Upper extremity venous color duplex examination reveals patency of both internal jugular and subclavian veins; however, Doppler signals are abnormally reduced. These results are indicative of which condition?",
       "options": [
-        {
-          "letter": "D",
-          "text": "These results are indicative of which condition?"
-        },
         {
           "letter": "A",
           "text": "Aortic stenosis"
@@ -2893,12 +2889,8 @@
     {
       "id": "exam1_q119",
       "number": 119,
-      "question": "A patient is referred for a carotid duplex exam. No hemodynamically significant stenosis is identifie",
+      "question": "A patient is referred for a carotid duplex exam. No hemodynamically significant stenosis is identified. Angiography reveals the presence of a right internal carotid (ICA occlusion). What is the most likely explanation for this false negative study?",
       "options": [
-        {
-          "letter": "D",
-          "text": "Angiography reveals the presence of a right internal carotid (ICA occlusion). What is the most likely explanation for this false negative study?"
-        },
         {
           "letter": "A",
           "text": "A contralateral stenosis masked the ICA occlusion"
