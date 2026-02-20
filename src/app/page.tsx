@@ -70,7 +70,7 @@ export default function HomePage() {
             Master Your Vascular Registry Exam
           </h2>
           <p className="text-sm sm:text-xl text-gray-600">
-            190 Practice Questions &bull; Smart Study Tools &bull; Track Your Progress
+            200 Practice Questions (10 with Images!) &bull; Smart Study Tools &bull; Track Your Progress
           </p>
         </div>
 
@@ -150,7 +150,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-0.5 sm:mb-1">Mock Exam 1</h3>
-                  <p className="text-xs sm:text-sm text-gray-600 hidden xs:block">118 questions</p>
+                  <p className="text-xs sm:text-sm text-gray-600 hidden xs:block">128 questions (10 w/ images)</p>
                 </div>
               </div>
             </Card>

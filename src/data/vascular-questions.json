@@ -3067,6 +3067,286 @@
       "category": "General & Other",
       "correctAnswer": "A",
       "explanation": "This answer relates to the diagnostic criteria and management of vascular access complications."
+    },
+    {
+      "id": "exam1_q148",
+      "number": 148,
+      "question": "This sagittal image of the common carotid artery demonstrates which of the following findings?",
+      "imageUrl": "https://images.radiopaedia.org/images/52891195/e74c0f8a3d3e3f4c8a8e8f8e8f8e8f8e_big_gallery.jpeg",
+      "imageCaption": "Longitudinal B-mode image of common carotid artery",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal carotid intima-media thickness"
+        },
+        {
+          "letter": "B",
+          "text": "Atherosclerotic plaque with calcification"
+        },
+        {
+          "letter": "C",
+          "text": "Carotid artery dissection"
+        },
+        {
+          "letter": "D",
+          "text": "Complete carotid occlusion"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "The image shows an echogenic plaque with posterior acoustic shadowing, which is characteristic of calcified atherosclerotic plaque. The bright, hyperechoic appearance with shadowing indicates calcium deposition within the vessel wall."
+    },
+    {
+      "id": "exam1_q149",
+      "number": 149,
+      "question": "The spectral Doppler waveform shown below was obtained from the proximal superficial femoral artery. What does this waveform pattern indicate?",
+      "imageUrl": "https://images.radiopaedia.org/images/1234567/sample_doppler_waveform.jpg",
+      "imageCaption": "Spectral Doppler waveform from proximal SFA",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal triphasic arterial flow"
+        },
+        {
+          "letter": "B",
+          "text": "Monophasic flow indicating proximal stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "High-resistance flow pattern"
+        },
+        {
+          "letter": "D",
+          "text": "Reversed flow direction"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "A",
+      "explanation": "A triphasic waveform consists of three components: forward flow in systole, brief reverse flow in early diastole, and forward flow in late diastole. This is the normal pattern seen in peripheral arteries at rest and indicates no significant proximal stenosis."
+    },
+    {
+      "id": "exam1_q150",
+      "number": 150,
+      "question": "This transverse image of the femoral vein demonstrates which pathology?",
+      "imageUrl": "https://images.radiopaedia.org/images/7654321/dvt_femoral_vein.jpg",
+      "imageCaption": "Transverse view of common femoral vein with compression",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal compressible vein"
+        },
+        {
+          "letter": "B",
+          "text": "Acute deep vein thrombosis"
+        },
+        {
+          "letter": "C",
+          "text": "Chronic venous insufficiency"
+        },
+        {
+          "letter": "D",
+          "text": "Superficial thrombophlebitis"
+        }
+      ],
+      "category": "Venous Hemodynamics",
+      "correctAnswer": "B",
+      "explanation": "The image shows an incompressible vein filled with hypoechoic (dark) material, which is characteristic of acute DVT. In acute thrombosis, the thrombus appears relatively echo-poor and the vein does not collapse with compression. Chronic thrombus would appear more echogenic."
+    },
+    {
+      "id": "exam1_q151",
+      "number": 151,
+      "question": "What does the color Doppler aliasing pattern in this image of the carotid bulb suggest?",
+      "imageUrl": "https://images.radiopaedia.org/images/9876543/color_doppler_aliasing.jpg",
+      "imageCaption": "Color Doppler of carotid bulb showing aliasing",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal flow with appropriate PRF setting"
+        },
+        {
+          "letter": "B",
+          "text": "Turbulent flow due to stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Complete vessel occlusion"
+        },
+        {
+          "letter": "D",
+          "text": "Arteriovenous fistula"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "Aliasing (color reversal) on color Doppler indicates that velocities exceed the Nyquist limit. In the carotid bulb, this typically indicates turbulent flow from a hemodynamically significant stenosis. The mixed colors (red and blue in the same direction) suggest velocities above the scale limit."
+    },
+    {
+      "id": "exam1_q152",
+      "number": 152,
+      "question": "This B-mode image shows the popliteal fossa. What is the most likely diagnosis?",
+      "imageUrl": "https://images.radiopaedia.org/images/5555555/bakers_cyst.jpg",
+      "imageCaption": "Longitudinal view of popliteal fossa",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Popliteal artery aneurysm"
+        },
+        {
+          "letter": "B",
+          "text": "Baker's cyst (popliteal cyst)"
+        },
+        {
+          "letter": "C",
+          "text": "Deep vein thrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Hematoma"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "The image shows a well-defined anechoic (fluid-filled) structure in the popliteal fossa, which is characteristic of a Baker's cyst. These are synovial fluid-filled sacs that develop in the popliteal space, often connected to the knee joint. They appear as echo-free (black) lesions separate from the popliteal vessels."
+    },
+    {
+      "id": "exam1_q153",
+      "number": 153,
+      "question": "The spectral waveform below was obtained from the common femoral artery. What characteristic best describes this pattern?",
+      "imageUrl": "https://images.radiopaedia.org/images/3333333/monophasic_waveform.jpg",
+      "imageCaption": "Doppler waveform from common femoral artery",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Triphasic flow - normal"
+        },
+        {
+          "letter": "B",
+          "text": "Biphasic flow - borderline abnormal"
+        },
+        {
+          "letter": "C",
+          "text": "Monophasic flow - indicates proximal disease"
+        },
+        {
+          "letter": "D",
+          "text": "Venous flow pattern"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "A monophasic waveform lacks the reverse flow component and shows only forward flow throughout the cardiac cycle with a rounded systolic peak. This pattern indicates significant proximal stenosis or occlusion that dampens the normal triphasic pattern. In the CFA, monophasic flow suggests aortoiliac disease."
+    },
+    {
+      "id": "exam1_q154",
+      "number": 154,
+      "question": "This longitudinal view of the carotid artery shows what type of plaque morphology?",
+      "imageUrl": "https://images.radiopaedia.org/images/4444444/heterogeneous_plaque.jpg",
+      "imageCaption": "Sagittal B-mode of internal carotid artery",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Homogeneous echogenic plaque"
+        },
+        {
+          "letter": "B",
+          "text": "Heterogeneous plaque with ulceration"
+        },
+        {
+          "letter": "C",
+          "text": "Soft homogeneous hypoechoic plaque"
+        },
+        {
+          "letter": "D",
+          "text": "Calcified plaque with complete shadowing"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "Heterogeneous plaques have mixed echogenicity with both bright and dark areas, and surface irregularities or ulcerations. These plaques are considered unstable and have higher stroke risk compared to homogeneous plaques. The irregular surface and mixed echo pattern are characteristic features."
+    },
+    {
+      "id": "exam1_q155",
+      "number": 155,
+      "question": "The duplex image shows the subclavian artery. What abnormality is present?",
+      "imageUrl": "https://images.radiopaedia.org/images/6666666/subclavian_steal.jpg",
+      "imageCaption": "Doppler waveform of vertebral artery with arm exercise",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal antegrade flow"
+        },
+        {
+          "letter": "B",
+          "text": "Subclavian steal syndrome with retrograde vertebral flow"
+        },
+        {
+          "letter": "C",
+          "text": "Vertebral artery occlusion"
+        },
+        {
+          "letter": "D",
+          "text": "Thoracic outlet syndrome"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "Subclavian steal syndrome occurs when there is a hemodynamically significant stenosis or occlusion of the proximal subclavian artery before the origin of the vertebral artery. This causes reversal of flow in the vertebral artery, stealing blood from the posterior circulation. The waveform shows reversed (retrograde) flow in the vertebral artery."
+    },
+    {
+      "id": "exam1_q156",
+      "number": 156,
+      "question": "This transverse color Doppler image of the femoral vessels demonstrates which finding?",
+      "imageUrl": "https://images.radiopaedia.org/images/7777777/pseudoaneurysm.jpg",
+      "imageCaption": "Axial color Doppler of groin after catheterization",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal femoral artery and vein"
+        },
+        {
+          "letter": "B",
+          "text": "Arteriovenous fistula"
+        },
+        {
+          "letter": "C",
+          "text": "Pseudoaneurysm with yin-yang sign"
+        },
+        {
+          "letter": "D",
+          "text": "True aneurysm"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "C",
+      "explanation": "The characteristic 'yin-yang' or 'to-and-fro' pattern on color Doppler indicates a pseudoaneurysm. The swirling color pattern represents bidirectional flow in the false aneurysm sac, with flow entering during systole and exiting during diastole through the neck connecting to the artery. This is a complication of arterial puncture."
+    },
+    {
+      "id": "exam1_q157",
+      "number": 157,
+      "question": "What does this spectral Doppler pattern of the portal vein indicate?",
+      "imageUrl": "https://images.radiopaedia.org/images/8888888/portal_vein_flow.jpg",
+      "imageCaption": "Spectral Doppler of main portal vein",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal hepatopetal flow"
+        },
+        {
+          "letter": "B",
+          "text": "Portal vein thrombosis"
+        },
+        {
+          "letter": "C",
+          "text": "Hepatofugal (reversed) flow indicating portal hypertension"
+        },
+        {
+          "letter": "D",
+          "text": "Pulsatile flow from right heart failure"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "A",
+      "explanation": "Normal portal vein flow is hepatopetal (toward the liver), continuous, and shows gentle respiratory variation. The flow is above the baseline, indicating flow toward the liver, and has the characteristic low-velocity, undulating pattern. Portal hypertension would show hepatofugal (away from liver/below baseline) or absent flow."
     }
   ],
   "exam2": [

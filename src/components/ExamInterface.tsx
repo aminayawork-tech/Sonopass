@@ -22,6 +22,8 @@ interface Question {
   category: string;
   correctAnswer: string | null;
   explanation: string | null;
+  imageUrl?: string;
+  imageCaption?: string;
 }
 
 interface ExamInterfaceProps {
@@ -317,6 +319,24 @@ export default function ExamInterface({ questions, title, mode, examId, showResu
               {currentQuestion.category}
             </span>
           </div>
+
+          {/* Image (if present) */}
+          {currentQuestion.imageUrl && (
+            <div className="mb-4 sm:mb-6">
+              <div className="relative w-full max-w-2xl mx-auto bg-gray-100 rounded-lg overflow-hidden border-2 border-gray-200">
+                <img
+                  src={currentQuestion.imageUrl}
+                  alt={currentQuestion.imageCaption || 'Ultrasound image'}
+                  className="w-full h-auto"
+                />
+              </div>
+              {currentQuestion.imageCaption && (
+                <p className="text-xs sm:text-sm text-gray-600 text-center mt-2 italic">
+                  {currentQuestion.imageCaption}
+                </p>
+              )}
+            </div>
+          )}
 
           {/* Question text */}
           <h2 className="text-base sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-8 leading-relaxed">

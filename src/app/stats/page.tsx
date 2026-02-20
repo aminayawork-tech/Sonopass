@@ -15,7 +15,7 @@ export default function StatsPage() {
     setStats(getStats());
   }, []);
 
-  const totalQuestions = 190;
+  const totalQuestions = 200;
   const accuracy = stats && stats.totalAnswered > 0
     ? Math.round((stats.totalCorrect / stats.totalAnswered) * 100)
     : 0;
