@@ -1,12 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, BookOpen } from 'lucide-react';
 import questionsData from '@/data/vascular-questions.json';
 import ExamInterface from '@/components/ExamInterface';
+import { shuffleQuestions } from '@/lib/shuffle';
 
 export default function StudyPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -40,14 +41,14 @@ export default function StudyPage() {
     'from-violet-400 to-violet-600',
   ];
 
-  // If category is selected, show exam interface
+  // If category is selected, show exam interface with shuffled questions
   if (selectedCategory) {
-    const questions = categoryMap.get(selectedCategory) || [];
+    const rawQuestions = categoryMap.get(selectedCategory) || [];
     return (
-      <ExamInterface
-        questions={questions}
+      <StudyCategoryExam
+        key={selectedCategory}
+        questions={rawQuestions}
         title={selectedCategory}
-        mode="practice"
       />
     );
   }
@@ -101,5 +102,30 @@ export default function StudyPage() {
         </div>
       </main>
     </div>
+  );
+}
+
+/** Wrapper that shuffles questions on mount for study mode */
+function StudyCategoryExam({ questions, title }: { questions: any[]; title: string }) {
+  const [shuffled, setShuffled] = useState<any[]>([]);
+
+  useEffect(() => {
+    setShuffled(shuffleQuestions(questions));
+  }, [questions]);
+
+  if (shuffled.length === 0) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#F5F7FA]">
+        <div className="text-3xl font-semibold text-gray-600">Loading...</div>
+      </div>
+    );
+  }
+
+  return (
+    <ExamInterface
+      questions={shuffled}
+      title={title}
+      mode="practice"
+    />
   );
 }

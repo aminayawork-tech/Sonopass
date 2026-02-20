@@ -3,18 +3,16 @@
 import { useEffect, useState } from 'react';
 import ExamInterface from '@/components/ExamInterface';
 import questionsData from '@/data/vascular-questions.json';
+import { shuffleQuestions } from '@/lib/shuffle';
 
 export default function Quick10Page() {
   const [questions, setQuestions] = useState<any[]>([]);
+  const [key, setKey] = useState(0);
 
   useEffect(() => {
-    // Combine all questions from both exams
     const allQuestions = [...questionsData.exam1, ...questionsData.exam2];
-
-    // Randomly select 10 questions
-    const shuffled = allQuestions.sort(() => 0.5 - Math.random());
-    setQuestions(shuffled.slice(0, 10));
-  }, []);
+    setQuestions(shuffleQuestions(allQuestions).slice(0, 10));
+  }, [key]);
 
   if (questions.length === 0) {
     return (
@@ -24,5 +22,14 @@ export default function Quick10Page() {
     );
   }
 
-  return <ExamInterface questions={questions} title="Quick 10" mode="practice" examId="quick-10" />;
+  return (
+    <ExamInterface
+      key={key}
+      questions={questions}
+      title="Quick 10"
+      mode="practice"
+      examId="quick-10"
+      onRestart={() => setKey(k => k + 1)}
+    />
+  );
 }

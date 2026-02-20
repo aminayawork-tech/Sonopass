@@ -30,9 +30,10 @@ interface ExamInterfaceProps {
   mode: 'practice' | 'exam';
   examId?: string;
   showResults?: boolean;
+  onRestart?: () => void;
 }
 
-export default function ExamInterface({ questions, title, mode, examId, showResults = true }: ExamInterfaceProps) {
+export default function ExamInterface({ questions, title, mode, examId, showResults = true, onRestart }: ExamInterfaceProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [showAnswer, setShowAnswer] = useState(false);
@@ -185,10 +186,14 @@ export default function ExamInterface({ questions, title, mode, examId, showResu
                   variant="outline"
                   className="w-full sm:w-auto font-semibold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
                   onClick={() => {
-                    setCurrentIndex(0);
-                    setAnswers({});
-                    setCompleted(false);
-                    setShowAnswer(false);
+                    if (onRestart) {
+                      onRestart();
+                    } else {
+                      setCurrentIndex(0);
+                      setAnswers({});
+                      setCompleted(false);
+                      setShowAnswer(false);
+                    }
                   }}
                 >
                   Try Again
