@@ -3130,8 +3130,8 @@
       "id": "exam1_q150",
       "number": 150,
       "question": "This transverse image of the femoral vein demonstrates which pathology?",
-      "imageUrl": "https://via.placeholder.com/800x400?text=Femoral+Vein+Image",
-      "imageCaption": "Femoral vein image (placeholder)",
+      "imageUrl": "https://prod-images-static.radiopaedia.org/images/5338358/bfe4b065f3828c1db27e2040646fac.JPG",
+      "imageCaption": "Femoral vein compression ultrasound showing assessment for deep vein thrombosis (DVT). Image: Radiopaedia.org (CC BY-NC-SA)",
       "options": [
         {
           "letter": "A",
