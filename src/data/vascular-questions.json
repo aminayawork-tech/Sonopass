@@ -3158,8 +3158,8 @@
       "id": "exam1_q151",
       "number": 151,
       "question": "What does the color Doppler aliasing pattern in this image of the carotid bulb suggest?",
-      "imageUrl": "https://via.placeholder.com/800x400?text=Color+Doppler+Aliasing",
-      "imageCaption": "Color Doppler showing aliasing pattern (placeholder)",
+      "imageUrl": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/6b64/6350491/7035eb73db82/bjr.20170306.g001.jpg",
+      "imageCaption": "Color Doppler showing aliasing pattern in carotid bulb, indicating turbulent flow due to stenosis. Image: NCBI/PMC",
       "options": [
         {
           "letter": "A",
