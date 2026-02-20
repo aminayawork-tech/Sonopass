@@ -3156,8 +3156,8 @@
       "id": "exam1_q151",
       "number": 151,
       "question": "What does the color Doppler aliasing pattern in this image of the carotid bulb suggest?",
-      "imageUrl": "https://images.radiopaedia.org/images/9876543/color_doppler_aliasing.jpg",
-      "imageCaption": "Color Doppler of carotid bulb showing aliasing",
+      "imageUrl": "https://prod-images-static.radiopaedia.org/images/59787371/a377429645aa3c1486156fbaccd4704f76dd12905db93b62a9de26bb1544abe9_big_gallery.jpeg",
+      "imageCaption": "Color Doppler aliasing in carotid artery stenosis showing turbulent high-velocity flow. Image: Radiopaedia.org (CC BY-NC-SA)",
       "options": [
         {
           "letter": "A",
