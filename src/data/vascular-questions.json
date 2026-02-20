@@ -3270,8 +3270,8 @@
       "id": "exam1_q155",
       "number": 155,
       "question": "The duplex image shows the subclavian artery. What abnormality is present?",
-      "imageUrl": "https://images.radiopaedia.org/images/6666666/subclavian_steal.jpg",
-      "imageCaption": "Doppler waveform of vertebral artery with arm exercise",
+      "imageUrl": "https://prod-images-static.radiopaedia.org/images/51676880/af25f8e392371951d8109e0d87f439_big_gallery.jpeg",
+      "imageCaption": "Duplex ultrasound showing reversed/retrograde flow in vertebral artery, diagnostic of subclavian steal syndrome. Image: Radiopaedia",
       "options": [
         {
           "letter": "A",
