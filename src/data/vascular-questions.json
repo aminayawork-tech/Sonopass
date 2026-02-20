@@ -2182,7 +2182,9 @@
       ],
       "category": "Cerebrovascular",
       "correctAnswer": "B",
-      "explanation": "This question tests understanding of the hemodynamic effects of exercise on the arterial system."
+      "explanation": "This question tests understanding of the hemodynamic effects of exercise on the arterial system.",
+      "imageUrl": "https://via.placeholder.com/800x400?text=Acoustic+Window+Image",
+      "imageCaption": "Acoustic window demonstration (placeholder image)"
     },
     {
       "id": "exam1_q91",
@@ -3212,8 +3214,8 @@
       "id": "exam1_q153",
       "number": 153,
       "question": "The spectral waveform below was obtained from the common femoral artery. What characteristic best describes this pattern?",
-      "imageUrl": "https://images.radiopaedia.org/images/3333333/monophasic_waveform.jpg",
-      "imageCaption": "Doppler waveform from common femoral artery",
+      "imageUrl": "https://radiologykey.com/wp-content/uploads/2019/12/f015-007d-9780323428828.jpg",
+      "imageCaption": "Monophasic arterial waveform showing dampened single-phase pattern, indicating proximal stenosis or occlusion. Image: RadiologyKey.com",
       "options": [
         {
           "letter": "A",
