@@ -3130,8 +3130,8 @@
       "id": "exam1_q150",
       "number": 150,
       "question": "This transverse image of the femoral vein demonstrates which pathology?",
-      "imageUrl": "https://prod-images-static.radiopaedia.org/images/1947293/bac696cba3ada08ec35ea317b4890a_big_gallery.jpeg",
-      "imageCaption": "Deep vein thrombosis showing non-compressible vein with echogenic thrombus. Image: Radiopaedia.org (CC BY-NC-SA)",
+      "imageUrl": "https://via.placeholder.com/800x400?text=Femoral+Vein+Image",
+      "imageCaption": "Femoral vein image (placeholder)",
       "options": [
         {
           "letter": "A",
@@ -3242,8 +3242,8 @@
       "id": "exam1_q154",
       "number": 154,
       "question": "This longitudinal view of the carotid artery shows what type of plaque morphology?",
-      "imageUrl": "https://images.radiopaedia.org/images/4444444/heterogeneous_plaque.jpg",
-      "imageCaption": "Sagittal B-mode of internal carotid artery",
+      "imageUrl": "https://prod-images-static.radiopaedia.org/images/2555961/62b72fdfd650195c3bd3032208f4ca_big_gallery.jpeg",
+      "imageCaption": "B-mode ultrasound showing atherosclerotic plaque in carotid artery with narrowing of vessel lumen. Image: Radiopaedia.org (CC BY-NC-SA)",
       "options": [
         {
           "letter": "A",
