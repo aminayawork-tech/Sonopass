@@ -3128,8 +3128,8 @@
       "id": "exam1_q150",
       "number": 150,
       "question": "This transverse image of the femoral vein demonstrates which pathology?",
-      "imageUrl": "https://images.radiopaedia.org/images/7654321/dvt_femoral_vein.jpg",
-      "imageCaption": "Transverse view of common femoral vein with compression",
+      "imageUrl": "https://prod-images-static.radiopaedia.org/images/1947293/bac696cba3ada08ec35ea317b4890a_big_gallery.jpeg",
+      "imageCaption": "Deep vein thrombosis showing non-compressible vein with echogenic thrombus. Image: Radiopaedia.org (CC BY-NC-SA)",
       "options": [
         {
           "letter": "A",
