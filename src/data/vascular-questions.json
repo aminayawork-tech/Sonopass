@@ -3184,8 +3184,8 @@
       "id": "exam1_q152",
       "number": 152,
       "question": "This B-mode image shows the popliteal fossa. What is the most likely diagnosis?",
-      "imageUrl": "https://images.radiopaedia.org/images/5555555/bakers_cyst.jpg",
-      "imageCaption": "Longitudinal view of popliteal fossa",
+      "imageUrl": "https://prod-images-static.radiopaedia.org/images/3043430/1c21b780922b08349cd5fca0aaa1aa.jpg",
+      "imageCaption": "Baker's cyst (popliteal cyst) showing anechoic fluid collection in popliteal fossa. Image: Radiopaedia.org (CC BY-NC-SA)",
       "options": [
         {
           "letter": "A",
