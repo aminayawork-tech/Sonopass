@@ -2213,30 +2213,30 @@
       "explanation": "This answer is based on the diagnostic criteria for peripheral arterial disease using physiologic testing."
     },
     {
-      "id": "exam1_q45",
-      "number": 45,
-      "question": "Which step should be performed next in the evaluation of lower extremity segmental pressures?",
+      "id": "exam1_q92",
+      "number": 92,
+      "question": "Which finding is characteristic of acute renal allograft swelling, tenderness, and infarction?",
       "options": [
         {
           "letter": "A",
-          "text": "Perform cold stress test"
+          "text": "Ureter compression due to peritransplant fluid collection"
         },
         {
           "letter": "B",
-          "text": "Perform treadmill stress test"
+          "text": "low peak systolic velocity in the iliac artery"
         },
         {
           "letter": "C",
-          "text": "Measure toe pressures"
+          "text": "Kinking of the main renal artery"
         },
         {
           "letter": "D",
-          "text": "Place the cuffs high at calf level"
+          "text": "obstruction of the main renal vein"
         }
       ],
-      "category": "Arterial Testing",
-      "correctAnswer": "B",
-      "explanation": "This question tests knowledge of venous anatomy and physiology, specifically regarding venous valve competence and its assessment."
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "Acute renal allograft swelling, tenderness, and infarction are characteristic of main renal vein obstruction (thrombosis). Venous outflow obstruction causes venous congestion, swelling, and can lead to graft infarction."
     },
     {
       "id": "exam1_q93",
@@ -2551,8 +2551,8 @@
       "explanation": "This answer is based on the diagnostic criteria for vertebrobasilar insufficiency using duplex ultrasonography."
     },
     {
-      "id": "exam1_q45",
-      "number": 45,
+      "id": "exam1_q106",
+      "number": 106,
       "question": "Which step should be performed next in the evaluation of lower extremity segmental pressures?",
       "options": [
         {
