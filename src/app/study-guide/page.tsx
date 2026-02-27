@@ -44,12 +44,12 @@ const iconMap: Record<string, any> = {
   'book-open': BookOpen,
 };
 
-const colorMap: Record<string, { bg: string; text: string; border: string }> = {
-  'blue': { bg: 'bg-blue-50', text: 'text-blue-600', border: 'border-blue-200' },
-  'red': { bg: 'bg-red-50', text: 'text-red-600', border: 'border-red-200' },
-  'orange': { bg: 'bg-orange-50', text: 'text-orange-600', border: 'border-orange-200' },
-  'green': { bg: 'bg-green-50', text: 'text-green-600', border: 'border-green-200' },
-  'purple': { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-200' },
+const colorMap: Record<string, { bg: string; text: string; accent: string }> = {
+  'blue': { bg: 'bg-blue-50/50', text: 'text-blue-600', accent: 'bg-blue-500' },
+  'red': { bg: 'bg-red-50/50', text: 'text-red-600', accent: 'bg-red-500' },
+  'orange': { bg: 'bg-orange-50/50', text: 'text-orange-600', accent: 'bg-orange-500' },
+  'green': { bg: 'bg-green-50/50', text: 'text-green-600', accent: 'bg-green-500' },
+  'purple': { bg: 'bg-purple-50/50', text: 'text-purple-600', accent: 'bg-purple-500' },
 };
 
 export default function StudyGuidePage() {
@@ -112,35 +112,39 @@ export default function StudyGuidePage() {
 
     return (
       <div className="min-h-screen bg-[#F5F7FA]">
-        <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white border-b shadow-sm sticky top-0 z-10">
+        <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10">
           <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-4 mb-2">
+            <div className="flex items-center gap-4 mb-3">
               <Button
                 variant="ghost"
                 size="sm"
                 onClick={() => setSelectedTopic(null)}
-                className="flex items-center gap-1"
+                className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
               >
                 <ArrowLeft className="w-4 h-4" />
                 Back
               </Button>
               <div className="flex-1">
                 <div className="text-xs text-gray-500 mb-1">{selectedCategory.title}</div>
-                <h1 className="text-xl sm:text-2xl font-bold text-gray-800">{selectedTopic.title}</h1>
+                <h1 className="text-xl sm:text-2xl font-bold text-gray-900">{selectedTopic.title}</h1>
               </div>
               <Button
                 variant={completedTopics.has(selectedTopic.id) ? "default" : "outline"}
                 size="sm"
                 onClick={() => toggleTopicComplete(selectedTopic.id)}
-                className="flex items-center gap-1"
+                className={`flex items-center gap-2 ${
+                  completedTopics.has(selectedTopic.id)
+                    ? 'bg-emerald-500 hover:bg-emerald-600'
+                    : 'border-gray-200 text-gray-700 hover:bg-gray-50'
+                }`}
               >
                 {completedTopics.has(selectedTopic.id) ? (
                   <>
                     <Check className="w-4 h-4" />
-                    Completed
+                    <span className="hidden sm:inline">Completed</span>
                   </>
                 ) : (
-                  <>Mark Complete</>
+                  <><span className="hidden sm:inline">Mark Complete</span><span className="sm:hidden">Complete</span></>
                 )}
               </Button>
             </div>
@@ -148,7 +152,7 @@ export default function StudyGuidePage() {
         </header>
 
         <main className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
-          <Card className="p-6 sm:p-8 bg-white shadow-md mb-6">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8 mb-6">
             {/* Content */}
             <div className="prose prose-sm sm:prose max-w-none mb-6">
               {selectedTopic.content.split('\n\n').map((paragraph, idx) => (
@@ -161,11 +165,11 @@ export default function StudyGuidePage() {
             {/* Images */}
             {selectedTopic.images.length > 0 && (
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-3 text-gray-800">Visual References</h3>
+                <h3 className="text-lg font-semibold mb-4 text-gray-900">Visual References</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {selectedTopic.images.map((image, idx) => (
-                    <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden bg-gray-50">
-                      <div className="aspect-video flex items-center justify-center p-4 bg-white">
+                    <div key={idx} className="border border-gray-100 rounded-xl overflow-hidden bg-white shadow-sm">
+                      <div className="aspect-video flex items-center justify-center p-4 bg-gray-50">
                         <img
                           src={`/images/study-guide/${image.filename}`}
                           alt={image.caption}
@@ -200,12 +204,12 @@ export default function StudyGuidePage() {
             {/* Key Terms */}
             {selectedTopic.keyTerms.length > 0 && (
               <div>
-                <h3 className="text-lg font-semibold mb-3 text-gray-800">Key Terms</h3>
+                <h3 className="text-lg font-semibold mb-4 text-gray-900">Key Terms</h3>
                 <div className="flex flex-wrap gap-2">
                   {selectedTopic.keyTerms.map((term, idx) => (
                     <span
                       key={idx}
-                      className="px-3 py-1.5 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium border border-emerald-200"
+                      className="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
                     >
                       {term}
                     </span>
@@ -213,7 +217,7 @@ export default function StudyGuidePage() {
                 </div>
               </div>
             )}
-          </Card>
+          </div>
 
           {/* Navigation */}
           <div className="flex justify-between gap-4">
@@ -221,10 +225,10 @@ export default function StudyGuidePage() {
               <Button
                 variant="outline"
                 onClick={() => setSelectedTopic(prevTopic)}
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 border-gray-200 text-gray-700 hover:bg-gray-50"
               >
                 <ArrowLeft className="w-4 h-4" />
-                {prevTopic.title}
+                <span className="max-w-[150px] sm:max-w-none truncate">{prevTopic.title}</span>
               </Button>
             ) : (
               <div />
@@ -232,9 +236,9 @@ export default function StudyGuidePage() {
             {nextTopic && (
               <Button
                 onClick={() => setSelectedTopic(nextTopic)}
-                className="flex items-center gap-2 ml-auto"
+                className="flex items-center gap-2 ml-auto bg-blue-600 hover:bg-blue-700"
               >
-                {nextTopic.title}
+                <span className="max-w-[150px] sm:max-w-none truncate">{nextTopic.title}</span>
                 <ChevronRight className="w-4 h-4" />
               </Button>
             )}
@@ -247,34 +251,40 @@ export default function StudyGuidePage() {
   // Category Detail View
   if (selectedCategory) {
     const Icon = iconMap[selectedCategory.icon] || BookOpen;
-    const colors = colorMap[selectedCategory.color] || colorMap['blue'];
     const totalTopics = selectedCategory.topics.length;
     const completedCount = selectedCategory.topics.filter(t => completedTopics.has(t.id)).length;
     const progress = (completedCount / totalTopics) * 100;
 
     return (
       <div className="min-h-screen bg-[#F5F7FA]">
-        <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white border-b shadow-sm sticky top-0 z-10">
+        <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10">
           <div className="max-w-6xl mx-auto">
             <Button
               variant="ghost"
               size="sm"
               onClick={() => setSelectedCategory(null)}
-              className="mb-3 flex items-center gap-1"
+              className="mb-4 flex items-center gap-2 text-gray-600 hover:text-gray-900"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to Categories
             </Button>
-            <div className="flex items-center gap-4">
-              <div className={`w-12 h-12 rounded-lg ${colors.bg} flex items-center justify-center`}>
-                <Icon className={`w-6 h-6 ${colors.text}`} />
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
+                <Icon className="w-6 h-6 text-blue-600" />
               </div>
               <div className="flex-1">
-                <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">{selectedCategory.title}</h1>
-                <p className="text-sm text-gray-600 mt-1">
-                  {completedCount} of {totalTopics} topics completed ({Math.round(progress)}%)
+                <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">{selectedCategory.title}</h1>
+                <p className="text-sm text-gray-500 mt-1">
+                  {completedCount} of {totalTopics} topics completed
                 </p>
               </div>
+            </div>
+            {/* Progress Bar */}
+            <div className="w-full bg-gray-100 rounded-full h-2">
+              <div
+                className="bg-emerald-500 rounded-full h-2 transition-all duration-500"
+                style={{ width: `${progress}%` }}
+              />
             </div>
           </div>
         </header>
@@ -284,33 +294,45 @@ export default function StudyGuidePage() {
             {selectedCategory.topics.map((topic) => {
               const isCompleted = completedTopics.has(topic.id);
               return (
-                <Card
+                <div
                   key={topic.id}
-                  className="p-6 hover:shadow-md transition-all cursor-pointer bg-white border border-gray-200 relative"
+                  className="group bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-all cursor-pointer relative"
                   onClick={() => setSelectedTopic(topic)}
                 >
                   {isCompleted && (
-                    <div className="absolute top-3 right-3">
+                    <div className="absolute top-4 right-4">
                       <div className="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center">
-                        <Check className="w-4 h-4 text-white" />
+                        <Check className="w-3.5 h-3.5 text-white" />
                       </div>
                     </div>
                   )}
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2 pr-8">{topic.title}</h3>
-                  <p className="text-sm text-gray-600 mb-3 line-clamp-2">
-                    {topic.content.split('\n\n')[0]}
-                  </p>
-                  <div className="flex items-center justify-between text-xs text-gray-500">
-                    <span>{topic.keyTerms.length} key terms</span>
-                    {topic.images.length > 0 && (
-                      <span>{topic.images.length} {topic.images.length === 1 ? 'image' : 'images'}</span>
-                    )}
+                  <div className="pr-8">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                      {topic.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                      {topic.content.split('\n\n')[0]}
+                    </p>
+                    <div className="flex items-center gap-4 text-xs text-gray-500 mb-3">
+                      {topic.keyTerms.length > 0 && (
+                        <span className="flex items-center gap-1">
+                          <div className="w-1 h-1 rounded-full bg-gray-400" />
+                          {topic.keyTerms.length} key terms
+                        </span>
+                      )}
+                      {topic.images.length > 0 && (
+                        <span className="flex items-center gap-1">
+                          <div className="w-1 h-1 rounded-full bg-gray-400" />
+                          {topic.images.length} {topic.images.length === 1 ? 'image' : 'images'}
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-1 text-blue-600 font-medium text-sm">
+                      Learn more
+                      <ChevronRight className="w-4 h-4" />
+                    </div>
                   </div>
-                  <div className="mt-3 flex items-center gap-2 text-emerald-600 font-medium text-sm">
-                    Read more
-                    <ChevronRight className="w-4 h-4" />
-                  </div>
-                </Card>
+                </div>
               );
             })}
           </div>
@@ -322,19 +344,19 @@ export default function StudyGuidePage() {
   // Categories Overview
   return (
     <div className="min-h-screen bg-[#F5F7FA]">
-      <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white border-b shadow-sm">
+      <header className="px-4 sm:px-6 py-6 sm:py-8 bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-4">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
             <div>
-              <h1 className="text-2xl sm:text-4xl font-bold mb-2">
-                <span className="text-gray-800">RVT Study Guide</span>
+              <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-gray-900">
+                RVT Study Guide
               </h1>
-              <p className="text-sm sm:text-base text-gray-600">
+              <p className="text-base text-gray-500">
                 Comprehensive study materials for your vascular registry exam
               </p>
             </div>
             <Link href="/">
-              <Button variant="outline" size="sm">
+              <Button variant="outline" size="sm" className="border-gray-200 text-gray-600 hover:text-gray-900">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Home
               </Button>
@@ -349,59 +371,74 @@ export default function StudyGuidePage() {
               placeholder="Search topics, terms, concepts..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-10 bg-gray-50 border-gray-200"
+              className="pl-10 bg-white border-gray-200 focus:border-blue-400 focus:ring-blue-400"
             />
           </div>
         </div>
       </header>
 
       <main className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-12">
-        {/* Progress Overview */}
-        <Card className="p-6 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white shadow-md mb-8">
-          <h2 className="text-xl font-bold mb-2">Your Progress</h2>
-          <p className="text-emerald-50 mb-4">
-            {completedTopics.size} of {content.categories.reduce((acc, cat) => acc + cat.topics.length, 0)} topics completed
-          </p>
-          <div className="w-full bg-emerald-400/30 rounded-full h-2">
+        {/* Progress Overview - Minimal Design */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8 mb-8">
+          <div className="flex items-center gap-4 mb-4">
+            <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center">
+              <Check className="w-6 h-6 text-emerald-600" />
+            </div>
+            <div>
+              <h2 className="text-lg font-semibold text-gray-900">Your Progress</h2>
+              <p className="text-sm text-gray-500">
+                {completedTopics.size} of {content.categories.reduce((acc, cat) => acc + cat.topics.length, 0)} topics completed
+              </p>
+            </div>
+          </div>
+          <div className="w-full bg-gray-100 rounded-full h-2">
             <div
-              className="bg-white rounded-full h-2 transition-all duration-500"
+              className="bg-emerald-500 rounded-full h-2 transition-all duration-500"
               style={{
                 width: `${(completedTopics.size / content.categories.reduce((acc, cat) => acc + cat.topics.length, 0)) * 100}%`
               }}
             />
           </div>
-        </Card>
+        </div>
 
-        {/* Categories Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {filteredCategories?.map((category) => {
-            const Icon = iconMap[category.icon] || BookOpen;
-            const colors = colorMap[category.color] || colorMap['blue'];
-            const totalTopics = category.topics.length;
-            const completedCount = category.topics.filter(t => completedTopics.has(t.id)).length;
+        {/* Categories Grid - Clean Homepage Style */}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-6">Study Categories</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filteredCategories?.map((category) => {
+              const Icon = iconMap[category.icon] || BookOpen;
+              const totalTopics = category.topics.length;
+              const completedCount = category.topics.filter(t => completedTopics.has(t.id)).length;
 
-            return (
-              <Card
-                key={category.id}
-                className={`p-6 hover:shadow-lg transition-all cursor-pointer bg-white border-2 ${colors.border}`}
-                onClick={() => setSelectedCategory(category)}
-              >
-                <div className={`w-14 h-14 rounded-xl ${colors.bg} flex items-center justify-center mb-4`}>
-                  <Icon className={`w-7 h-7 ${colors.text}`} />
+              return (
+                <div
+                  key={category.id}
+                  className="group bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-all cursor-pointer"
+                  onClick={() => setSelectedCategory(category)}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
+                        {category.title}
+                      </h3>
+                      <p className="text-sm text-gray-500 mb-3">
+                        {totalTopics} {totalTopics === 1 ? 'topic' : 'topics'}
+                      </p>
+                      {completedCount > 0 && (
+                        <div className="flex items-center gap-2 text-xs text-emerald-600">
+                          <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                          {completedCount} completed
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{category.title}</h3>
-                <p className="text-sm text-gray-600 mb-4">
-                  {totalTopics} {totalTopics === 1 ? 'topic' : 'topics'}
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-gray-500">
-                    {completedCount}/{totalTopics} complete
-                  </span>
-                  <ChevronRight className={`w-5 h-5 ${colors.text}`} />
-                </div>
-              </Card>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </main>
     </div>
