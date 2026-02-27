@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Brain, Zap, BookOpen, BarChart3, Heart, Flame, Star } from 'lucide-react';
+import { Brain, Zap, BookOpen, BarChart3, Heart, Flame, Star, GraduationCap } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
@@ -108,6 +108,28 @@ export default function HomePage() {
             </span>
           </div>
         )}
+
+        {/* Study Guide Banner */}
+        <Link href="/study-guide" className="block mb-6">
+          <Card className="p-4 sm:p-6 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 transition-all cursor-pointer border-0 shadow-lg">
+            <div className="flex items-center gap-4 text-white">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+                <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8" />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg sm:text-2xl font-bold mb-1">RVT Study Guide</h3>
+                <p className="text-sm sm:text-base text-emerald-50">
+                  Theory, anatomy, protocols & key concepts - your complete study companion
+                </p>
+              </div>
+              <div className="hidden sm:block">
+                <div className="px-4 py-2 bg-white/20 rounded-lg text-sm font-semibold">
+                  Start Learning →
+                </div>
+              </div>
+            </div>
+          </Card>
+        </Link>
 
         {/* Exam Modes Grid */}
         <div className="grid grid-cols-2 md:grid-cols-2 gap-3 sm:gap-5 mb-8 sm:mb-12">
