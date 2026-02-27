@@ -1,0 +1,986 @@
+{
+  "title": "RVT Study Guide - Comprehensive Supplement",
+  "description": "Detailed study materials extracted from Vascular Study Guide 2 - comprehensive exam preparation for Registered Vascular Technologist certification",
+  "categories": {
+    "Cerebrovascular": {
+      "title": "Cerebrovascular System - Detailed Study",
+      "keyFacts": [
+        "Carotid exam performed with patient supine, neck slightly extended, head turned away from side being scanned",
+        "ICA = Internal Carotid Artery (low resistance vessel)",
+        "ECA = External Carotid Artery (high resistance vessel)",
+        "Vertebral arteries evaluated as part of cerebrovascular assessment",
+        "70-99% carotid stenosis is a CRITICAL FINDING requiring immediate attention",
+        "Linear array transducer used for carotid exams",
+        "Most common reason for underestimation of carotid stenosis = improper sample volume location",
+        "Cursor should be placed at narrowest point of stenosis initially",
+        "Move Doppler cursor through entire stenotic area to find highest velocity",
+        "Bruit can be heard with stenosis, also with branching/tortuosity"
+      ],
+      "normalValues": [
+        "ICA has increased acceleration time (AT) compared to high resistance vessels due to low resistance",
+        "AT longer in ICA and cerebral vessels vs extremity arteries",
+        "Brain vessels: Pulsatility Index (PI) normally <1.0",
+        "ICA waveform: low resistance with continuous forward diastolic flow",
+        "ECA waveform: high resistance with minimal/reversed diastolic flow"
+      ],
+      "pathologyFindings": [
+        "Carotid stenosis: 50% diameter = 75% area stenosis = hemodynamically significant",
+        "Increased PSV and EDV at stenosis site",
+        "Post-stenotic turbulence (eddy currents/vortices) distal to stenosis",
+        "Spectral broadening at stenosis",
+        "70-99% stenosis = CRITICAL FINDING"
+      ],
+      "diagnosticCriteria": [
+        "50% diameter stenosis = 75% area stenosis = hemodynamically significant",
+        "70-99% stenosis = critical finding requiring immediate attention",
+        "Increased velocities at stenosis site",
+        "ICA/CCA velocity ratio helpful for grading stenosis"
+      ],
+      "scanningTechnique": [
+        "Patient supine with neck slightly extended",
+        "Head turned away from side being scanned",
+        "Linear array transducer",
+        "Scan entire length of CCA, ICA, ECA, and vertebral arteries",
+        "Multiple angles through stenosis to find peak velocity",
+        "Doppler angle ≤60 degrees",
+        "Sample volume centered in vessel at narrowest point"
+      ]
+    },
+    "ArterialHemodynamics": {
+      "title": "Arterial Hemodynamics - Detailed Study",
+      "waveformTypes": {
+        "triphasic": {
+          "description": "Normal extremity arterial waveform",
+          "characteristics": [
+            "Systole: rapid antegrade flow",
+            "Early diastole: retrograde flow",
+            "Late diastole: small amount of forward flow",
+            "Seen in high resistance vascular beds (extremities/muscles)",
+            "Normal in healthy extremity arteries"
+          ],
+          "significance": "Normal high resistance pattern"
+        },
+        "biphasic": {
+          "description": "Mild disease or medium resistance",
+          "characteristics": [
+            "Systole: antegrade flow",
+            "Diastole: some retrograde flow (less than triphasic)",
+            "Loss of late diastolic forward component",
+            "Can be normal in older patients",
+            "ABNORMAL if seen in organ vessels"
+          ],
+          "significance": "Mild disease or vasoconstriction effect"
+        },
+        "monophasic": {
+          "description": "Low resistance or significant proximal disease",
+          "characteristics": [
+            "Antegrade flow continues through entire cardiac cycle",
+            "No retrograde component",
+            "Rounded, dampened appearance",
+            "Normal in vessels feeding organs (low resistance)",
+            "ABNORMAL if seen in extremity arteries"
+          ],
+          "significance": "Normal for organs, ABNORMAL for extremities (indicates significant proximal disease or vasodilation)"
+        },
+        "tardusParvus": {
+          "description": "Severe proximal stenosis indicator",
+          "characteristics": [
+            "Delayed systolic upstroke (tardus = slow)",
+            "Decreased amplitude (parvus = small)",
+            "Rounded peak",
+            "Prolonged acceleration time"
+          ],
+          "significance": "Indicates severe proximal stenosis or occlusion"
+        }
+      },
+      "velocityMeasurements": {
+        "PSV": {
+          "description": "Peak Systolic Velocity",
+          "keyPoints": [
+            "Increases at stenosis site due to body maintaining blood volume",
+            "Measured at narrowest point of stenosis",
+            "Velocity increases as vessel diameter decreases",
+            "Continuity principle: flow volume remains constant"
+          ]
+        },
+        "EDV": {
+          "description": "End Diastolic Velocity",
+          "keyPoints": [
+            "Increases at stenosis site",
+            "If EDV = 0 cm/s, then RI = 1.0",
+            "Reflects downstream resistance",
+            "Low in high resistance beds, higher in low resistance"
+          ]
+        }
+      },
+      "resistancePatterns": {
+        "highResistance": [
+          "Supplies extremities/muscles at rest",
+          "Triphasic waveforms with retrograde diastolic flow",
+          "Minimal or no forward diastolic flow",
+          "Examples: ECA, resting limb arteries",
+          "Vasoconstriction increases pulsatility",
+          "Clenching fist increases distal resistance and pulsatility in proximal arteries"
+        ],
+        "lowResistance": [
+          "Supplies organs needing constant blood flow",
+          "Monophasic waveforms with continuous forward flow",
+          "Significant diastolic flow component",
+          "No flow reversal",
+          "Examples: ICA, renal, mesenteric, hepatic arteries",
+          "Vasodilation decreases pulsatility"
+        ]
+      },
+      "physiologicEffects": [
+        "Vasoconstriction: changes monophasic to biphasic/triphasic",
+        "Vasodilation: changes triphasic to monophasic",
+        "Cold patient: vasoconstriction increases arterial resistance",
+        "Warm patient: vasodilation decreases arterial resistance",
+        "Exercise: vasodilation in muscles, increased flow",
+        "Fist clenching: increases resistance, more pulsatile proximally",
+        "Upon fist release: resistance drops, pulsatility reduced, flow increases"
+      ],
+      "cardiacFactors": [
+        "Decreased cardiac function = decreased output = reduced peak arterial velocities",
+        "Increased cardiac function = increased output = increased peak arterial velocities",
+        "Cardiac output affects all arterial velocities systemically",
+        "Velocity ratios help normalize for cardiac output variations"
+      ]
+    },
+    "ArterialAnatomy": {
+      "title": "Arterial Anatomy - Detailed Study",
+      "lowerExtremity": {
+        "arteries": [
+          "Abdominal aorta",
+          "Common iliac arteries",
+          "External iliac artery",
+          "Common Femoral Artery (CFA)",
+          "Superficial Femoral Artery (SFA)",
+          "Profunda femoris (deep femoral)",
+          "Popliteal artery",
+          "Anterior tibial artery",
+          "Posterior tibial artery",
+          "Peroneal (fibular) artery"
+        ],
+        "positioning": [
+          "Supine or semi-erect (if breathing problems/vertigo/back pain)",
+          "Knee slightly bent, leg abducted for medial aspect access",
+          "Decubitus/lateral for popliteal fossa and posterior calf access",
+          "Patient positioning affects hemodynamics"
+        ],
+        "normalCharacteristics": [
+          "Triphasic waveforms in healthy extremity arteries",
+          "Higher resistance than organ vessels",
+          "Pulsatility Index increases with distance from aorta",
+          "Velocities decrease distally"
+        ]
+      },
+      "upperExtremity": {
+        "arteries": [
+          "Subclavian artery",
+          "Axillary artery",
+          "Brachial artery",
+          "Radial artery",
+          "Ulnar artery"
+        ],
+        "respiratoryEffects": [
+          "Flow affected by respiration",
+          "Inspiration: increased flow toward heart",
+          "Expiration: decreased flow",
+          "Opposite of lower extremity pattern"
+        ]
+      }
+    },
+    "ArterialDisease": {
+      "title": "Arterial Disease - Detailed Study",
+      "stenosisHemodynamics": {
+        "hemodynamicSignificance": [
+          "50% diameter stenosis = 75% area stenosis = hemodynamically significant",
+          "Shape and degree of stenosis",
+          "Diameter of stenosis",
+          "Length of stenosis",
+          "Contour (smooth vs rough)",
+          "Distal peripheral resistance",
+          "Pressure gradient across stenosis",
+          "Presence/absence of collaterals",
+          "Compounding factors from other diseases"
+        ],
+        "effectsOfStenosis": [
+          "Proximal to stenosis: dampened flow velocity with increased resistance",
+          "At stenosis: increased velocity (blood escaping stenotic area)",
+          "Proximal and distal: increased velocities detected",
+          "Post-stenotic turbulence (eddy currents/vortices)",
+          "Pressure drop at stenosis with increased velocity (Bernoulli effect)",
+          "Flow volume drop at stenosis",
+          "Decreased resistance and velocity distal to stenosis"
+        ]
+      },
+      "peripheralArterialDisease": {
+        "pathophysiology": [
+          "Arterioles already dilated at rest when stenosis present",
+          "Exercise cannot further reduce resistance",
+          "Ankle pressure drops with exercise in PAD",
+          "Reduced ABI calculation",
+          "Ischemic symptoms in muscles during exercise"
+        ],
+        "findings": [
+          "Decreased or absent pulses",
+          "Monophasic waveforms distally",
+          "Tardus parvus waveforms distal to severe stenosis",
+          "Reduced velocities throughout",
+          "Spectral broadening at stenosis",
+          "Post-stenotic turbulence"
+        ]
+      },
+      "aneurysms": {
+        "definition": "Permanent focal dilation of artery >50% normal diameter",
+        "types": [
+          "True aneurysm: involves all 3 vessel layers",
+          "Pseudoaneurysm: contained rupture with fibrous capsule",
+          "Fusiform: affects entire circumference",
+          "Saccular: affects one side of vessel wall"
+        ],
+        "criticalFindings": [
+          "Splenic artery aneurysm = CRITICAL",
+          "Aneurysm rupture = CRITICAL",
+          "AAA rupture = surgical emergency"
+        ]
+      },
+      "occlusion": {
+        "acute": [
+          "Acute arterial occlusion = CRITICAL FINDING",
+          "No time for collateral formation",
+          "Sudden onset ischemia",
+          "6 P's: Pain, Pallor, Pulselessness, Paresthesia, Paralysis, Poikilothermia",
+          "Requires immediate intervention"
+        ],
+        "chronic": [
+          "Chronic obstruction allows collateral development",
+          "NOT critical due to collateral circulation",
+          "Gradual onset symptoms",
+          "Better tolerance than acute"
+        ]
+      },
+      "spectralBroadening": {
+        "causes": [
+          "Stenosis (most common)",
+          "Tortuosity",
+          "Improper sample volume location near wall",
+          "Increased sample size",
+          "Bifurcations",
+          "Turbulent flow"
+        ],
+        "interpretation": [
+          "Laminar flow = narrow bandwidth, clear spectral window",
+          "Turbulent flow = wide bandwidth, filled spectral window",
+          "Post-stenotic turbulence causes spectral broadening"
+        ]
+      }
+    },
+    "VenousHemodynamics": {
+      "title": "Venous Hemodynamics - Detailed Study",
+      "flowCharacteristics": {
+        "spontaneousFlow": [
+          "Flow detected without augmentation",
+          "Should be present in CFV, femoral, popliteal veins",
+          "Calf veins and saphenous veins normally do NOT demonstrate spontaneity",
+          "Absence indicates obstruction"
+        ],
+        "respiratoryPhasicity": [
+          "Flow moves from high to low pressure",
+          "Lower extremities - Inspiration: decreased intrathoracic pressure, increased intra-abdominal pressure → decreased flow",
+          "Lower extremities - Expiration: increased intrathoracic pressure, decreased intra-abdominal pressure → increased flow toward heart",
+          "Upper extremities - Inspiration: increased flow toward heart",
+          "Upper extremities - Expiration: decreased flow",
+          "Loss of phasicity suggests proximal obstruction"
+        ],
+        "cardiacPulsatility": [
+          "Ripples from adjacent cardiac contraction",
+          "Causes turbulent flow in upper vena cava, upper arms, hepatic veins",
+          "NORMAL in upper extremities and hepatic veins",
+          "ABNORMAL if seen in lower extremities = indicates CHF (Congestive Heart Failure)",
+          "Suggests elevated right atrial pressure"
+        ],
+        "augmentation": [
+          "Manual compression increases flow",
+          "Tests patency between compression site and probe",
+          "Tests valve competence",
+          "Brisk augmentation = normal",
+          "Blunted/absent augmentation = obstruction"
+        ],
+        "reflux": [
+          "Retrograde flow lasting >0.5-1.0 seconds indicates incompetence",
+          "CFV: >0.5 seconds abnormal",
+          "Other deep veins: >1.0 seconds abnormal",
+          "Worsens with standing position",
+          "Indicates valve incompetence"
+        ]
+      },
+      "valveFunction": {
+        "normal": [
+          "Competent valves allow unidirectional flow toward heart",
+          "Flow moves from superficial to deep system through perforators",
+          "Valves close due to hydrostatic pressure preventing retrograde flow",
+          "Close rapidly (<0.5-1.0 seconds)"
+        ],
+        "incompetent": [
+          "Reflux duration >0.5-1.0 seconds",
+          "Retrograde flow toward feet",
+          "Ineffective calf muscle pump",
+          "Increased venous stasis and pooling",
+          "Elevated venous pressure"
+        ]
+      },
+      "hydrostaticPressure": {
+        "principles": [
+          "Weight of blood column in vessels",
+          "Proportional to height of blood column",
+          "Zero at heart level in all positions",
+          "Changes with body position"
+        ],
+        "values": [
+          "Supine: hydrostatic pressure = 0mmHg everywhere",
+          "Standing at heart level: 0mmHg",
+          "Standing at ankle: +100mmHg",
+          "Standing at head: -30mmHg",
+          "Pressure increases below heart, decreases above heart"
+        ]
+      },
+      "ambulatoryVenousPressure": {
+        "normal": [
+          "Lowest pressure during exercise",
+          "Normal ambulatory pressure: ~30mmHg",
+          "Calf muscle pump decreases venous pressure with walking",
+          "Pressure drops from 100mmHg (standing) to 20-30mmHg (walking)"
+        ],
+        "abnormal": [
+          "With incompetent valves: remains at ~100mmHg (standing pressure)",
+          "Pressure does not drop adequately with exercise",
+          "Leads to venous hypertension",
+          "Causes chronic venous insufficiency symptoms"
+        ]
+      }
+    },
+    "VenousAnatomy": {
+      "title": "Venous Anatomy - Detailed Study",
+      "deepVeins": [
+        "Carry majority of blood back to heart (85-90%)",
+        "Accompanied by arteries",
+        "Located beneath muscle fascia",
+        "Include: CFV, femoral, popliteal, tibial veins",
+        "Contain valves to prevent reflux",
+        "Primary route for venous return"
+      ],
+      "superficialVeins": {
+        "GSV": [
+          "Great Saphenous Vein (GSV)",
+          "Evaluated with patient standing (preferably on stool)",
+          "Leg rotated outward for medial aspect access",
+          "Most common site for venous insufficiency",
+          "Runs from medial ankle to saphenofemoral junction",
+          "Joins CFV at groin"
+        ],
+        "SSV": [
+          "Small Saphenous Vein (SSV)",
+          "Evaluated with patient seated at bed edge, legs dependent",
+          "Runs along posterior calf",
+          "Joins popliteal vein at knee (saphenopopliteal junction)",
+          "Variable anatomy"
+        ],
+        "characteristics": [
+          "Located above muscle fascia",
+          "Carry 10-15% of venous return",
+          "Connect to deep system via perforators",
+          "Common sites for varicose veins"
+        ]
+      },
+      "perforators": [
+        "Connect superficial to deep venous system",
+        "Flow from superficial to deep during muscle relaxation",
+        "Flow from deep to superficial during muscle contraction (normal)",
+        "Incompetent perforators allow reflux from deep to superficial",
+        "Contribute to varicose veins when incompetent"
+      ],
+      "positioning": {
+        "DVTEvaluation": [
+          "Supine or semi-erect",
+          "Semi-erect increases intra-abdominal pressure",
+          "Decreases venous outflow",
+          "Veins more easily visualized when distended"
+        ],
+        "insufficiencyEvaluation": [
+          "Standing position mandatory",
+          "Patient on stool if possible",
+          "Maximizes hydrostatic pressure",
+          "Better visualization of reflux",
+          "Some labs use reverse Trendelenburg"
+        ]
+      }
+    },
+    "VenousTesting": {
+      "title": "Venous Testing - Detailed Study",
+      "compressionTechnique": {
+        "principles": [
+          "Primary method for DVT detection",
+          "Complete compression = vein completely collapses = patent",
+          "Partial/no compression = thrombus present = DVT",
+          "Compress every 1-2cm along vein length",
+          "Use adequate pressure but not excessive"
+        ],
+        "transmuralpressure": [
+          "Flattened veins with low volume: low transmural pressure",
+          "Low transmural pressure = more resistance to flow, LESS resistance to compression",
+          "Circular veins with higher volume: high transmural pressure",
+          "High transmural pressure = less resistance to flow, MORE resistance to compression",
+          "Distended veins harder to compress",
+          "Semi-erect positioning distends veins for better visualization"
+        ]
+      },
+      "dopplerTechniques": {
+        "spontaneity": [
+          "Assess if flow is present without augmentation",
+          "Should be present in large veins (CFV, femoral, popliteal)",
+          "Calf veins may not show spontaneity normally",
+          "Absence in large veins suggests obstruction"
+        ],
+        "phasicity": [
+          "Evaluate respiratory phasicity",
+          "Flow should vary with respiration",
+          "Loss of phasicity suggests proximal obstruction",
+          "Different pattern in upper vs lower extremities"
+        ],
+        "augmentation": [
+          "Distal compression increases flow",
+          "Tests patency between compression and probe",
+          "Brisk response = normal",
+          "Absent/blunted = obstruction or valve incompetence"
+        ],
+        "reflux": [
+          "Release of compression or Valsalva",
+          "Duration >0.5-1.0 seconds = abnormal",
+          "Indicates valve incompetence",
+          "Must be evaluated in standing position"
+        ]
+      },
+      "DVTdetection": {
+        "positiveFindings": [
+          "Non-compressible vein = DVT",
+          "Loss of spontaneous flow",
+          "Loss of respiratory phasicity",
+          "Absent augmentation response",
+          "Echogenic material (thrombus) within lumen",
+          "Vein distension",
+          "Collateral vessels"
+        ],
+        "criticalFindings": [
+          "Lower extremity DVT = CRITICAL",
+          "Upper extremity DVT = CRITICAL",
+          "IVC thrombus = CRITICAL",
+          "Hepatic vein thrombus = CRITICAL",
+          "Free-floating thrombus tail (not adhered to wall) = CRITICAL - high embolism risk"
+        ]
+      }
+    },
+    "VenousDisease": {
+      "title": "Venous Disease - Detailed Study",
+      "DVT": {
+        "acuteDVT": [
+          "Fresh thrombus",
+          "Echogenic to anechoic",
+          "Vein distension",
+          "Non-compressible",
+          "No flow on color Doppler",
+          "Loss of respiratory phasicity",
+          "CRITICAL FINDING"
+        ],
+        "chronicDVT": [
+          "Old, organized thrombus",
+          "More echogenic",
+          "Vein may be smaller (scarred)",
+          "Partial recanalization possible",
+          "Thickened vein walls",
+          "Collateral vessels present"
+        ]
+      },
+      "chronicVenousInsufficiency": {
+        "pathophysiology": [
+          "Incompetent valves allow reflux",
+          "Ambulatory venous pressure remains elevated",
+          "Normal: ~30mmHg with walking",
+          "CVI: remains at ~100mmHg or higher with walking",
+          "Leads to venous hypertension",
+          "Causes skin changes, edema, ulcers"
+        ],
+        "findings": [
+          "Reflux >1.0 seconds in deep veins",
+          "Reflux >0.5 seconds in superficial veins",
+          "Dilated, tortuous veins",
+          "Varicose veins",
+          "Perforator incompetence",
+          "Normal venous volume <150mL (increases with CVI)"
+        ],
+        "clinicalSigns": [
+          "Leg swelling/edema",
+          "Skin pigmentation changes",
+          "Lipodermatosclerosis",
+          "Venous stasis ulcers",
+          "Heaviness, aching, fatigue in legs"
+        ]
+      },
+      "calfMusclePump": {
+        "normal": [
+          "Muscle contraction compresses veins",
+          "Propels blood toward heart",
+          "Valves prevent reflux",
+          "Venous pressure drops with ambulation to ~30mmHg",
+          "Efficient emptying and refilling"
+        ],
+        "dysfunction": [
+          "Causes: muscle wasting, obstruction, incompetent valves",
+          "Venous pressure decreases only slightly with ambulation",
+          "Refill time significantly shortened",
+          "Ineffective venous return",
+          "Venous pooling and stasis"
+        ]
+      }
+    },
+    "ArterialTesting": {
+      "title": "Arterial Testing - Detailed Study",
+      "ABI": {
+        "description": "Ankle-Brachial Index - compares ankle pressure to brachial pressure",
+        "normalFindings": [
+          "ABI = 0.9 - 1.3 (normal)",
+          "Ankle and brachial pressures equal or ankle slightly higher",
+          "Normal: ankle pressure same or higher than arm at rest",
+          "Exercise: pressures remain same or increase slightly"
+        ],
+        "abnormalFindings": [
+          "ABI <0.9 = arterial disease",
+          "ABI <0.5 = severe PAD",
+          "ABI <0.4 = critical limb ischemia",
+          "With stenosis: ankle pressure drops",
+          "Exercise causes ankle pressure to drop with arterial disease",
+          "Reduced ABI indicates peripheral arterial disease"
+        ],
+        "calculation": "ABI = Highest ankle pressure / Highest brachial pressure"
+      },
+      "segmentalPressures": {
+        "purpose": [
+          "Identify location of arterial stenosis",
+          "Pressures measured at multiple levels",
+          "Compare adjacent segments",
+          "Pressure gradient >20mmHg between segments = significant stenosis"
+        ],
+        "levels": [
+          "Upper thigh",
+          "Above knee",
+          "Below knee",
+          "Ankle",
+          "Metatarsal/toe"
+        ]
+      },
+      "PVR": {
+        "description": "Pulse Volume Recording - measures volume changes in limb segment",
+        "normalFindings": [
+          "Rapid upstroke",
+          "Sharp systolic peak",
+          "Dicrotic notch present",
+          "Normal amplitude",
+          "Waveform mirrors arterial waveform"
+        ],
+        "abnormalFindings": [
+          "Reduced amplitude indicates stenosis",
+          "Delayed upstroke",
+          "Rounded peak",
+          "Loss of dicrotic notch",
+          "Dampened waveform suggests proximal disease"
+        ]
+      },
+      "exerciseTesting": {
+        "normalResponse": [
+          "Flow increases 3-5x resting flow with exercise",
+          "Ankle/brachial pressures same or mildly increased after exercise",
+          "Arterioles dilate to meet muscle oxygen demand",
+          "Resistance drops, flow increases",
+          "Quick recovery to baseline"
+        ],
+        "abnormalResponse": [
+          "With stenosis: arterioles already dilated at rest",
+          "Cannot further reduce resistance with exercise",
+          "Ankle pressure drops with exercise",
+          "Muscles cannot increase flow to meet demand",
+          "Ischemic symptoms occur (claudication)",
+          "Prolonged recovery time"
+        ]
+      }
+    },
+    "PhysicsInstrumentation": {
+      "title": "Physics & Instrumentation - Detailed Study",
+      "dopplerPrinciples": {
+        "basics": [
+          "Doppler effect: frequency shift when sound reflects from moving object",
+          "Flow toward transducer = positive frequency shift (above baseline)",
+          "Flow away from transducer = negative frequency shift (below baseline)",
+          "Frequency shift proportional to blood velocity",
+          "Angle dependency critical for accuracy"
+        ],
+        "dopplerEquation": "Frequency shift = (2 × velocity × transmitted frequency × cos angle) / speed of sound"
+      },
+      "angleCorrection": {
+        "principles": [
+          "Doppler angle should be <60 degrees (ideally 45-60°)",
+          "At 90°: cos(90°) = 0, no Doppler shift detected",
+          "At 0°: cos(0°) = 1, maximum Doppler shift",
+          "Larger angles = greater error in velocity calculation",
+          "Angle correction cursor must be parallel to vessel wall/blood flow"
+        ],
+        "errors": [
+          "Improper angle = inaccurate velocity calculations",
+          "Most common cause of velocity measurement error",
+          "Angles >60° exponentially increase error",
+          "Angle correction line must align with flow direction"
+        ]
+      },
+      "aliasing": {
+        "description": "Occurs when velocity exceeds Nyquist limit (PRF/2)",
+        "colorDoppler": [
+          "Mosaic pattern",
+          "Color reversal",
+          "Appears as turbulence",
+          "Post-stenotic turbulence commonly causes aliasing"
+        ],
+        "spectralDoppler": [
+          "Waveform wraps around baseline",
+          "Peak velocities cut off",
+          "Appears on opposite side of baseline"
+        ],
+        "solutions": [
+          "Increase PRF (scale)",
+          "Decrease frequency (use lower frequency transducer)",
+          "Increase Doppler angle (with caution, <60°)",
+          "Shift baseline",
+          "Use continuous wave Doppler for very high velocities"
+        ]
+      },
+      "PRF": {
+        "description": "Pulse Repetition Frequency - determines maximum velocity measurable",
+        "principles": [
+          "Higher PRF = higher velocities can be measured",
+          "Lower PRF = better sensitivity to slow flow",
+          "Nyquist limit = PRF / 2",
+          "Increase PRF to eliminate aliasing",
+          "Decrease PRF to see slow venous flow better"
+        ],
+        "settings": [
+          "Venous exams: low PRF (detect slow flow)",
+          "Arterial exams: higher PRF (measure high velocities)",
+          "Adjust based on velocities encountered"
+        ]
+      },
+      "spectralBroadening": {
+        "description": "Widening of spectral waveform, filling of spectral window",
+        "causes": [
+          "Stenosis (most common pathologic cause)",
+          "Tortuosity",
+          "Improper sample volume location (too close to wall)",
+          "Increased sample size (gate too large)",
+          "Bifurcations (normal)",
+          "Turbulent flow"
+        ],
+        "interpretation": [
+          "Laminar flow = narrow bandwidth, clear spectral window",
+          "Turbulent flow = wide bandwidth, filled spectral window",
+          "Degree of broadening suggests severity of disturbance"
+        ]
+      },
+      "bandwidth": {
+        "description": "Range of frequencies in Doppler signal",
+        "characteristics": [
+          "Narrow bandwidth = laminar flow, single velocity",
+          "Wide bandwidth = turbulent flow, range of velocities",
+          "Increases at stenosis",
+          "Increases at bifurcations"
+        ]
+      },
+      "accelerationTime": {
+        "description": "Time from onset of systole to peak systolic velocity",
+        "normalValues": [
+          "ICA/cerebral vessels: longer AT than high resistance vessels",
+          "AT increases in extremities as distance from heart increases",
+          "Measured more easily with increased sweep speed"
+        ],
+        "abnormalValues": [
+          "AT increases distal to significant stenosis",
+          "Decreased cardiac output increases AT bilaterally",
+          "Used to differentiate inflow from outflow disease",
+          "Prolonged AT suggests proximal stenosis"
+        ]
+      },
+      "resistiveIndex": {
+        "formula": "RI = (PSV - EDV) / PSV",
+        "normalValues": [
+          "Extremity arteries: 0.6-0.8",
+          "Organ vessels: <0.6",
+          "If EDV = 0, then RI = 1.0"
+        ],
+        "uses": [
+          "Evaluates tissue resistance (renal parenchyma, liver, transplants)",
+          "Demonstrates resistance changes from stenosis/occlusion",
+          "Distal occlusion causes increased resistance proximally = high RI",
+          "Not dependent on angle"
+        ]
+      },
+      "pulsatilityIndex": {
+        "formula": "PI = (PSV - EDV) / mean velocity",
+        "normalValues": [
+          "Organs: usually <1.5",
+          "Brain: <1.0",
+          "CFA: >5.0",
+          "Popliteal artery: >8.0",
+          "Values increase with distance from aorta",
+          "Higher in extremities than organs"
+        ],
+        "uses": [
+          "Compares PSV-EDV difference to average velocity",
+          "Measures variability in blood velocity during cardiac cycle",
+          "Distinguishes inflow from outflow disease",
+          "Not dependent on angle"
+        ]
+      },
+      "dampingFactor": {
+        "description": "Describes attenuation of Doppler signal with stenosis",
+        "calculation": "Compare PI proximal to PI distal to stenosis",
+        "interpretation": [
+          "Significant stenosis = higher damping factor",
+          "Mild stenosis = lower damping factor",
+          "Quantifies degree of waveform dampening"
+        ]
+      },
+      "bernoulliEffect": {
+        "principles": [
+          "Total fluid energy remains constant",
+          "Pressure energy + kinetic energy = constant",
+          "Velocity increase = pressure decrease",
+          "Velocity decrease = pressure increase"
+        ],
+        "clinical": [
+          "Slow blood = more pressure on vessel walls",
+          "Fast blood (at stenosis) = less pressure on vessel walls",
+          "Reduced pressure at stenosis with increased velocity",
+          "After stenosis: velocity decreases, pressure increases",
+          "Explains pressure drop across stenosis"
+        ]
+      },
+      "flowCharacteristics": {
+        "laminar": [
+          "Concentric layers of flow",
+          "Parabolic velocity profile",
+          "Center fastest, edges slowest",
+          "Narrow spectral bandwidth",
+          "Clear spectral window",
+          "Normal in straight vessels"
+        ],
+        "plug": [
+          "All layers same speed",
+          "Flat velocity profile",
+          "Occurs in systole in large vessels",
+          "At branch origins",
+          "Proximal to stenosis"
+        ],
+        "turbulent": [
+          "Disrupted, chaotic flow",
+          "Random velocities and directions",
+          "Wide spectral bandwidth",
+          "Spectral broadening",
+          "Filled spectral window",
+          "Post-stenotic turbulence",
+          "Eddy currents and vortices"
+        ]
+      },
+      "equipment": {
+        "ALARAprinciple": [
+          "As Low As Reasonably Achievable",
+          "Use lowest power settings possible",
+          "Limit exam times",
+          "Reduce ultrasound exposure",
+          "Especially important for obstetric exams"
+        ],
+        "transducers": [
+          "Linear array: extremities and carotids (5-10 MHz)",
+          "Curved/phased array: abdominal and large habitus (2-5 MHz)",
+          "Cannot be thermally sterilized",
+          "Heating above Curie point destroys piezoelectric elements",
+          "Cavicide wipes for most probes",
+          "Cidex for endocavity probes",
+          "NO iodine or alcohol cleaners (damages matching layer and adhesives)"
+        ],
+        "presets": [
+          "Carotid preset for carotid exams",
+          "Lower extremity arterial preset",
+          "Lower extremity venous for DVT",
+          "Lower extremity venous for insufficiency",
+          "Using wrong preset degrades image and extends exam time"
+        ]
+      },
+      "energyTypes": {
+        "kinetic": [
+          "Energy of motion",
+          "Varies with mass and velocity squared (KE = ½mv²)",
+          "Greater mass or velocity = more kinetic energy",
+          "Dominant in flowing blood"
+        ],
+        "potential": [
+          "Stored energy",
+          "Pressure energy distending vessels",
+          "Like compressed spring",
+          "Converts to kinetic energy during flow"
+        ],
+        "gravitational": [
+          "Stored energy related to elevated position",
+          "Hydrostatic pressure component",
+          "Changes with body position",
+          "Zero at heart level"
+        ]
+      },
+      "vesselResistance": [
+        "Small changes in vessel radius = most significant changes in flow",
+        "Resistance proportional to 1/radius⁴ (Poiseuille's law)",
+        "Increased vessel radius = dramatically decreased resistance",
+        "Vessel length also affects resistance but less dramatically",
+        "Blood viscosity affects resistance"
+      ]
+    },
+    "CriticalFindings": {
+      "title": "Critical Findings Requiring Immediate Attention",
+      "cerebrovascular": [
+        "70-99% carotid stenosis",
+        "Carotid occlusion",
+        "Vertebral artery occlusion with no collaterals"
+      ],
+      "arterial": [
+        "Acute arterial occlusion (no time for collaterals)",
+        "Aneurysm rupture",
+        "Splenic artery aneurysm",
+        "Pseudoaneurysm",
+        "Arteriovenous fistula"
+      ],
+      "venous": [
+        "Lower extremity DVT",
+        "Upper extremity venous thrombosis",
+        "IVC thrombus",
+        "Hepatic vein thrombus (Budd-Chiari syndrome)",
+        "Free-floating thrombus tail (not adhered to wall - high PE risk)"
+      ],
+      "other": [
+        "Congestive heart failure (CHF) indicated by cardiac pulsatility in lower extremity veins"
+      ]
+    },
+    "QuickReference": {
+      "title": "Quick Reference Values",
+      "normalValues": {
+        "indices": [
+          "RI with no diastolic flow = 1.0",
+          "PI: CFA >5.0, popliteal >8.0",
+          "PI: organs <1.5, brain <1.0",
+          "ABI: 0.9-1.3 normal",
+          "ABI <0.9 = arterial disease",
+          "ABI <0.5 = severe PAD",
+          "ABI <0.4 = critical limb ischemia"
+        ],
+        "pressures": [
+          "Ambulatory venous pressure: ~30mmHg (normal)",
+          "Standing ankle hydrostatic pressure: +100mmHg",
+          "Supine hydrostatic pressure: 0mmHg everywhere",
+          "Standing at heart: 0mmHg",
+          "Standing at head: -30mmHg"
+        ],
+        "venousVolume": [
+          "Normal venous volume: <150mL",
+          "Increases significantly with chronic venous insufficiency"
+        ],
+        "reflux": [
+          "CFV reflux >0.5 seconds = abnormal",
+          "Other deep veins reflux >1.0 seconds = abnormal",
+          "Indicates valve incompetence"
+        ]
+      },
+      "hemodynamicCriteria": [
+        "50% diameter stenosis = 75% area stenosis = hemodynamically significant",
+        "Pressure gradient >20mmHg between segments = significant",
+        "Velocity ratio >2.0 = ≥50% stenosis",
+        "Velocity ratio >3.5 = ≥75% stenosis"
+      ]
+    },
+    "PatientPositioning": {
+      "title": "Patient Positioning Guide",
+      "carotid": [
+        "Supine with neck slightly extended",
+        "Head turned away from side being scanned",
+        "Pillow under shoulders helps extend neck",
+        "Technologist usually sits at head of bed"
+      ],
+      "lowerExtremityArterial": [
+        "Supine or semi-erect (if breathing problems)",
+        "Knee slightly bent",
+        "Leg abducted for medial aspect access",
+        "Lateral/decubitus for popliteal fossa and posterior calf"
+      ],
+      "DVTevaluation": [
+        "Supine or semi-erect preferred",
+        "Semi-erect increases intra-abdominal pressure",
+        "Decreases venous outflow",
+        "Veins more easily visualized when distended"
+      ],
+      "venousInsufficiency": [
+        "Standing position MANDATORY",
+        "Patient on stool if possible",
+        "Maximizes hydrostatic pressure",
+        "Better visualization of reflux",
+        "Some labs use reverse Trendelenburg (alternative)"
+      ],
+      "GSVevaluation": [
+        "Standing on stool",
+        "Leg rotated outward for medial aspect access",
+        "Weight on opposite leg"
+      ],
+      "SSVevaluation": [
+        "Seated at bed edge",
+        "Legs dependent",
+        "Access to posterior calf"
+      ]
+    },
+    "CommonErrors": {
+      "title": "Common Errors to Avoid",
+      "stenosisUnderestimation": [
+        "Most common cause: improper sample volume placement",
+        "Must scan through ENTIRE stenotic area",
+        "Find highest velocity by moving cursor through stenosis",
+        "Don't rely on single measurement"
+      ],
+      "angleErrors": [
+        "Doppler angle >60° causes significant error",
+        "Angle correction line must be parallel to flow",
+        "Improper angle = inaccurate velocities",
+        "Cannot measure flow perpendicular to beam (90°)"
+      ],
+      "compressionErrors": [
+        "Inadequate compression may miss DVT",
+        "Excessive compression may collapse normal vein (false positive)",
+        "Must compress every 1-2cm along entire vein",
+        "Cannot adequately compress iliac veins due to depth"
+      ],
+      "refluxErrors": [
+        "Must evaluate reflux in STANDING position",
+        "Supine evaluation will miss insufficiency",
+        "Inadequate compression release may not elicit reflux",
+        "Timing: must measure duration accurately (>0.5-1.0 sec)"
+      ],
+      "waveformInterpretation": [
+        "Monophasic in extremity = ABNORMAL (not normal)",
+        "Biphasic/triphasic in organ vessel = ABNORMAL",
+        "Cardiac pulsatility in lower extremity veins = CHF (not normal)",
+        "Don't confuse respiratory phasicity with cardiac pulsatility"
+      ]
+    }
+  }
+}
