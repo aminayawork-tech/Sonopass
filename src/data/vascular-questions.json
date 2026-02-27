@@ -3069,15 +3069,15 @@
       "category": "General & Other",
       "correctAnswer": "A",
       "explanation": "This answer relates to the diagnostic criteria and management of vascular access complications.",
-      "imageUrl": "https://www.researchgate.net/publication/351772003/figure/fig1/AS:1026143796871168@1621663154060/Venous-compression-ultrasound-in-a-43-year-old-male-COVID-19-patient-requiring.jpg",
-      "imageCaption": "Venous compression ultrasound showing non-compressible vein with thrombus, diagnostic of deep vein thrombosis (DVT). Image: ResearchGate"
+      "imageUrl": "/images/study-guide/Great_saphenous_vein_thrombosis_Sag_w:thrombus.jpg",
+      "imageCaption": "Venous compression ultrasound showing non-compressible vein with thrombus, diagnostic of deep vein thrombosis (DVT)"
     },
     {
       "id": "exam1_q148",
       "number": 148,
       "question": "This sagittal image of the common carotid artery demonstrates which of the following findings?",
-      "imageUrl": "https://prod-images-static.radiopaedia.org/images/59787356/620736b3f2bae62c2796e5f7451066910f876f84502187c83312be1eea16ac7b_big_gallery.jpeg",
-      "imageCaption": "Carotid plaque with calcification showing echogenic plaque with acoustic shadowing. Image: Radiopaedia.org (CC BY-NC-SA)",
+      "imageUrl": "/images/study-guide/atherosclerotic plaque illustration 2.png",
+      "imageCaption": "Carotid plaque with calcification showing echogenic plaque with acoustic shadowing",
       "options": [
         {
           "letter": "A",
@@ -3104,8 +3104,8 @@
       "id": "exam1_q149",
       "number": 149,
       "question": "The spectral Doppler waveform shown below was obtained from the proximal superficial femoral artery. What does this waveform pattern indicate?",
-      "imageUrl": "https://prod-images-static.radiopaedia.org/images/2555989/7b2d323f95071dae8e5007ba8ec6b4_big_gallery.jpeg",
-      "imageCaption": "Triphasic arterial waveform showing normal flow pattern with sharp systolic peak, reversal phase, and late diastolic flow. Image: Radiopaedia.org (CC BY-NC-SA)",
+      "imageUrl": "/images/study-guide/Triphasic-A-biphasic-B-and-monophasic-C-Doppler-waveforms.png",
+      "imageCaption": "Triphasic arterial waveform showing normal flow pattern with sharp systolic peak, reversal phase, and late diastolic flow",
       "options": [
         {
           "letter": "A",
@@ -3132,8 +3132,8 @@
       "id": "exam1_q150",
       "number": 150,
       "question": "This transverse image of the femoral vein demonstrates which pathology?",
-      "imageUrl": "https://prod-images-static.radiopaedia.org/images/5338358/bfe4b065f3828c1db27e2040646fac.JPG",
-      "imageCaption": "Femoral vein compression ultrasound showing assessment for deep vein thrombosis (DVT). Image: Radiopaedia.org (CC BY-NC-SA)",
+      "imageUrl": "/images/study-guide/Great_saphenous_vein_thrombosis_Sag.jpg",
+      "imageCaption": "Femoral vein compression ultrasound showing assessment for deep vein thrombosis (DVT)",
       "options": [
         {
           "letter": "A",

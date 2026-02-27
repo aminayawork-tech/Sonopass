@@ -1,0 +1,353 @@
+{
+  "categories": [
+    {
+      "id": "anatomy",
+      "title": "Vascular Anatomy",
+      "icon": "brain",
+      "color": "blue",
+      "description": "Master the anatomical structures and relationships of the vascular system",
+      "topics": [
+        {
+          "id": "lower-extremity-arteries",
+          "title": "Lower Extremity Arterial Anatomy",
+          "quickSummary": "The arterial system begins at the CFA and bifurcates into the SFA and profunda femoris, continuing to supply the lower extremity through the popliteal and tibial arteries.",
+          "clinicalPearls": [
+            "The SFA is NOT a superficial vessel - it's a deep artery despite its name",
+            "The adductor hiatus is where the SFA becomes the popliteal artery - a key landmark",
+            "The profunda femoris is the main blood supply to the thigh, not the SFA"
+          ],
+          "sections": [
+            {
+              "title": "Arterial Pathway",
+              "content": "The common femoral artery (CFA) originates from the external iliac artery at the inguinal ligament. It then bifurcates into:\n\n• Superficial Femoral Artery (SFA) - continues down the thigh\n• Profunda Femoris (Deep Femoral) - supplies thigh muscles"
+            },
+            {
+              "title": "Key Anatomical Points",
+              "content": "• CFA location: At the inguinal ligament\n• SFA course: Travels through the adductor canal\n• Adductor hiatus: Transition point where SFA becomes popliteal artery\n• Popliteal trifurcation: Divides into anterior tibial, posterior tibial, and peroneal arteries"
+            },
+            {
+              "title": "Clinical Significance",
+              "content": "Understanding the arterial pathway is crucial for:\n• Identifying stenosis locations\n• Planning intervention approaches\n• Recognizing collateral pathways\n• Interpreting waveform changes"
+            }
+          ],
+          "keyTakeaways": [
+            "CFA bifurcates into SFA and profunda femoris",
+            "SFA becomes popliteal artery at adductor hiatus",
+            "Popliteal trifurcates into 3 tibial vessels",
+            "Profunda supplies thigh, not leg"
+          ],
+          "keyTerms": [
+            "Common Femoral Artery (CFA)",
+            "Superficial Femoral Artery (SFA)",
+            "Profunda Femoris",
+            "Popliteal Artery",
+            "Adductor Hiatus"
+          ],
+          "images": [
+            {
+              "filename": "Ultrasound Arterial waveform.png",
+              "caption": "Arterial waveform patterns in lower extremity"
+            }
+          ]
+        },
+        {
+          "id": "lower-extremity-veins",
+          "title": "Lower Extremity Venous Anatomy",
+          "quickSummary": "The venous system has three components: deep veins (follow arteries), superficial veins (GSV, SSV), and perforating veins that connect them.",
+          "clinicalPearls": [
+            "GSV is the longest vein in the body - runs from foot to groin",
+            "Remember: Deep veins are named same as arteries, superficial veins are not",
+            "The saphenofemoral junction (SFJ) is a common site for reflux",
+            "Perforators should only allow flow from superficial to deep"
+          ],
+          "sections": [
+            {
+              "title": "Deep Venous System",
+              "content": "The deep veins parallel the arterial system:\n\n• Common Femoral Vein (CFV)\n• Femoral Vein (FV) - formerly called superficial femoral vein\n• Popliteal Vein\n• Anterior Tibial Veins (paired)\n• Posterior Tibial Veins (paired)\n• Peroneal Veins (paired)\n\nNote: Tibial veins are typically paired (2 veins accompanying each artery)"
+            },
+            {
+              "title": "Superficial Venous System",
+              "content": "Superficial veins run in subcutaneous tissue:\n\n• Great Saphenous Vein (GSV)\n  - Longest vein in body\n  - Runs medial leg from ankle to groin\n  - Joins CFV at saphenofemoral junction (SFJ)\n\n• Small Saphenous Vein (SSV)\n  - Runs posterior calf\n  - Joins popliteal vein at saphenopopliteal junction (SPJ)\n  - Variable anatomy"
+            },
+            {
+              "title": "Perforating Veins",
+              "content": "Connect superficial to deep systems:\n\n• Allow one-way flow: superficial → deep\n• Named perforators (exam favorites):\n  - Cockett perforators (medial calf)\n  - Boyd perforator (below knee)\n  - Dodd perforator (thigh)\n• Incompetent perforators contribute to venous insufficiency"
+            }
+          ],
+          "keyTakeaways": [
+            "Deep veins follow arteries and are named similarly",
+            "GSV is medial, SSV is posterior",
+            "Perforators connect superficial to deep (one-way valves)",
+            "Three venous systems work together for venous return"
+          ],
+          "keyTerms": [
+            "Great Saphenous Vein (GSV)",
+            "Small Saphenous Vein (SSV)",
+            "Saphenofemoral Junction (SFJ)",
+            "Saphenopopliteal Junction (SPJ)",
+            "Perforating Veins"
+          ],
+          "images": [
+            {
+              "filename": "Great_saphenous_vein_thrombosis_Sag.jpg",
+              "caption": "Great saphenous vein sagittal view"
+            },
+            {
+              "filename": "Great_saphenous_vein_thrombosis_Sag_w:thrombus.jpg",
+              "caption": "GSV with visible thrombus"
+            }
+          ]
+        },
+        {
+          "id": "carotid-anatomy",
+          "title": "Carotid & Cerebrovascular Anatomy",
+          "quickSummary": "The carotid system bifurcates into ICA (supplies brain, no extracranial branches) and ECA (supplies face, multiple branches).",
+          "clinicalPearls": [
+            "ICA has NO extracranial branches - if you see branches, it's the ECA",
+            "ECA is typically smaller and anteromedial to ICA",
+            "Tap test: Temporal artery tap creates oscillations in ECA waveform",
+            "ICA waveform is low resistance (brain needs constant flow)"
+          ],
+          "sections": [
+            {
+              "title": "Carotid Bifurcation",
+              "content": "The common carotid artery (CCA) has NO branches until it bifurcates:\n\n• CCA travels in neck with no branches\n• Bifurcation typically at C3-C4 level\n• Divides into ICA and ECA\n• Carotid bulb at bifurcation - area of low resistance flow"
+            },
+            {
+              "title": "Internal Carotid Artery (ICA)",
+              "content": "Supplies the brain:\n\n• Larger diameter than ECA\n• Posterolateral position\n• NO extracranial branches\n• Low resistance waveform (continuous diastolic flow)\n• Enters skull through carotid canal"
+            },
+            {
+              "title": "External Carotid Artery (ECA)",
+              "content": "Supplies face and scalp:\n\n• Smaller diameter than ICA\n• Anteromedial position\n• Multiple branches:\n  - Superior thyroid (first branch)\n  - Lingual\n  - Facial\n  - Occipital\n  - Posterior auricular\n  - Maxillary\n  - Superficial temporal\n• High resistance waveform (less diastolic flow)"
+            },
+            {
+              "title": "Distinguishing ICA from ECA",
+              "content": "How to tell them apart:\n\n1. Branches: ECA has them, ICA doesn't\n2. Size: ICA is larger\n3. Position: ICA is posterolateral\n4. Waveform: ICA is low resistance\n5. Temporal tap test: Oscillations appear in ECA"
+            },
+            {
+              "title": "Circle of Willis",
+              "content": "Provides collateral circulation:\n\n• Connects both ICAs and vertebrobasilar system\n• Allows blood flow to brain even if one vessel is occluded\n• Anterior circulation: ICAs\n• Posterior circulation: Vertebral arteries → Basilar artery\n• Complete in only ~50% of people"
+            }
+          ],
+          "keyTakeaways": [
+            "CCA has no branches before bifurcation",
+            "ICA has no extracranial branches (key identifier)",
+            "ECA is smaller, anteromedial, with multiple branches",
+            "ICA = low resistance, ECA = high resistance"
+          ],
+          "keyTerms": [
+            "Common Carotid Artery (CCA)",
+            "Internal Carotid Artery (ICA)",
+            "External Carotid Artery (ECA)",
+            "Carotid Bulb",
+            "Circle of Willis",
+            "Temporal Tap Test"
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "hemodynamics",
+      "title": "Hemodynamics & Doppler",
+      "icon": "activity",
+      "color": "red",
+      "description": "Understand blood flow dynamics and Doppler waveform interpretation",
+      "topics": [
+        {
+          "id": "doppler-waveforms",
+          "title": "Doppler Waveform Analysis",
+          "quickSummary": "Arterial waveforms range from triphasic (normal) to monophasic (abnormal). Venous waveforms should be phasic with respiration and augment with compression.",
+          "clinicalPearls": [
+            "Loss of triphasic = proximal disease or increased resistance",
+            "Monophasic waveform = significant proximal stenosis or occlusion",
+            "Pulsatile venous flow in legs = right heart failure or TR",
+            "Non-phasic venous flow = proximal obstruction (think DVT)"
+          ],
+          "sections": [
+            {
+              "title": "Arterial Waveforms",
+              "content": "Normal arterial flow has three phases:\n\nTriphasic Waveform (Normal):\n• Phase 1: Forward flow in systole (sharp upstroke)\n• Phase 2: Brief reverse flow in early diastole\n• Phase 3: Small forward flow in late diastole\n• Indicates: Normal vessel, no proximal stenosis\n• High resistance flow pattern\n\nBiphasic Waveform:\n• Forward systolic flow\n• Reverse diastolic flow (no third phase)\n• May be normal variant OR mild disease\n• Common in older patients\n\nMonophasic Waveform (Abnormal):\n• Forward flow only\n• No reverse component\n• Rounded, dampened appearance\n• Indicates: Proximal stenosis/occlusion OR high resistance state\n• Distal to significant stenosis"
+            },
+            {
+              "title": "Venous Waveforms",
+              "content": "Venous flow characteristics:\n\nPhasic Flow (Normal):\n• Flow varies with respiration\n• Increases with expiration\n• Decreases with inspiration\n• Normal in peripheral veins\n• Indicates patent vein to heart\n\nPulsatile Flow:\n• Flow varies with cardiac cycle\n• Normal: Near heart (IVC, iliac veins)\n• Abnormal: In leg veins\n• Suggests: CHF, tricuspid regurgitation, RV dysfunction\n\nContinuous/Non-phasic Flow (Abnormal):\n• Constant flow, no respiratory variation\n• Indicates proximal obstruction\n• Common finding with DVT\n• May see collateral vessels"
+            },
+            {
+              "title": "Waveform Analysis Tips",
+              "content": "What waveforms tell you:\n\n• Sharp upstroke = good proximal flow\n• Rounded upstroke = proximal stenosis\n• High peak = stenosis at sample site\n• Loss of reverse flow = distal disease or low resistance\n• Dampened waveform = proximal occlusion\n• Aliasing on color = high velocity (stenosis)"
+            }
+          ],
+          "keyTakeaways": [
+            "Triphasic = normal, monophasic = abnormal (arterial)",
+            "Loss of phasicity in veins = proximal obstruction",
+            "Pulsatile leg veins = cardiac problem",
+            "Waveform shape reveals proximal and distal disease"
+          ],
+          "keyTerms": [
+            "Triphasic Waveform",
+            "Biphasic Waveform",
+            "Monophasic Waveform",
+            "Phasicity",
+            "Pulsatility",
+            "Augmentation"
+          ],
+          "images": [
+            {
+              "filename": "Triphasic-A-biphasic-B-and-monophasic-C-Doppler-waveforms.png",
+              "caption": "Comparison of triphasic, biphasic, and monophasic Doppler waveforms"
+            },
+            {
+              "filename": "Triphasic_Waveform.jpeg",
+              "caption": "Normal triphasic arterial waveform"
+            },
+            {
+              "filename": "Ultrasound Arterial waveform.png",
+              "caption": "Ultrasound arterial waveform examples"
+            },
+            {
+              "filename": "Ultrasound Aterial Waveform2.jpeg",
+              "caption": "Additional arterial waveform patterns"
+            },
+            {
+              "filename": "waveform classification.jpeg",
+              "caption": "Classification of arterial waveforms"
+            }
+          ]
+        },
+        {
+          "id": "spectral-analysis",
+          "title": "Spectral Doppler Optimization",
+          "quickSummary": "Proper sample gate placement, angle correction, and gain settings are essential for accurate velocity measurements and waveform interpretation.",
+          "clinicalPearls": [
+            "Doppler angle must be <60° for accurate velocities",
+            "Sample gate should be 1/2 to 2/3 vessel diameter",
+            "Keep sample gate centered in vessel",
+            "Wall filter too high = lose low velocity information"
+          ],
+          "sections": [
+            {
+              "title": "Sample Gate Placement",
+              "content": "Proper gate placement is critical:\n\n✓ Good Sample Gate:\n• Size: 1/2 to 2/3 vessel diameter\n• Position: Centered in vessel lumen\n• Length: Covers area of interest\n• Not touching vessel walls\n\n✗ Poor Sample Gate:\n• Too large: Spectral broadening artifact\n• Off-center: Inaccurate velocities\n• Too small: May miss peak velocities\n• At vessel wall: Includes low velocity boundary layer"
+            },
+            {
+              "title": "Doppler Angle",
+              "content": "Angle correction for accurate measurements:\n\n• Optimal angle: 45-60°\n• Must be <60° for accuracy\n• Angle too steep (>60°): Error increases exponentially\n• 0° angle (perpendicular): No Doppler shift detected\n• Align angle cursor parallel to vessel walls\n• In stenosis: Align with direction of flow"
+            },
+            {
+              "title": "Spectral Broadening",
+              "content": "Understanding the spectral window:\n\nNormal Spectral Window:\n• Clear area beneath systolic peak\n• Indicates laminar flow\n• Uniform RBC velocities\n\nSpectral Broadening (Filling of Window):\n• Turbulent flow pattern\n• Range of RBC velocities\n\nCauses:\n1. Pathologic:\n   • Stenosis\n   • Post-stenotic turbulence\n   • Disturbed flow\n\n2. Technical:\n   • Sample gate too large\n   • High gain settings\n   • Improper angle"
+            },
+            {
+              "title": "Optimization Settings",
+              "content": "Key Doppler controls:\n\nGain:\n• Adjust to fill spectrum without excessive noise\n• Too low: Lose weak signals\n• Too high: Noise, artifactual broadening\n\nWall Filter:\n• Removes low-frequency motion (vessel wall)\n• Too high: Lose low velocity flow\n• Too low: Wall motion artifact\n• Typical: 50-100 Hz\n\nScale/PRF:\n• Adjust to prevent aliasing\n• Too low: Aliasing artifact\n• Too high: Compressed waveform, lose detail\n\nSweep Speed:\n• Controls horizontal display\n• Faster: More detail, fewer cardiac cycles\n• Slower: More cycles, less detail"
+            }
+          ],
+          "keyTakeaways": [
+            "Sample gate = 1/2 to 2/3 vessel diameter, centered",
+            "Doppler angle must be <60° (45-60° optimal)",
+            "Clear spectral window = laminar flow",
+            "Spectral broadening = turbulence OR technical error"
+          ],
+          "keyTerms": [
+            "Sample Gate",
+            "Doppler Angle",
+            "Spectral Broadening",
+            "Spectral Window",
+            "Wall Filter",
+            "PRF (Pulse Repetition Frequency)"
+          ],
+          "images": [
+            {
+              "filename": "goodsamplegate.jpeg",
+              "caption": "Example of properly positioned sample gate"
+            },
+            {
+              "filename": "samplegate-off-center.jpeg",
+              "caption": "Off-center sample gate placement"
+            },
+            {
+              "filename": "samplegate-tobroad.jpeg",
+              "caption": "Sample gate that is too broad"
+            },
+            {
+              "filename": "spectral broadening.jpeg",
+              "caption": "Spectral broadening pattern"
+            },
+            {
+              "filename": "window filling.jpeg",
+              "caption": "Window filling due to turbulent flow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pathology",
+      "title": "Vascular Pathology",
+      "icon": "alert-triangle",
+      "color": "orange",
+      "description": "Recognize and characterize vascular diseases and abnormalities",
+      "topics": [
+        {
+          "id": "atherosclerosis",
+          "title": "Atherosclerotic Plaque & Stenosis",
+          "quickSummary": "Atherosclerosis causes arterial narrowing through plaque buildup. Stenosis severity is graded using velocity ratios and waveform analysis.",
+          "clinicalPearls": [
+            "PSV ratio >2.0 = ≥50% stenosis (peripheral arteries)",
+            "Plaque composition matters: Hypoechoic = lipid-rich, echogenic = calcified",
+            "Always measure pre-stenotic, at stenosis, and post-stenotic",
+            "Collateral vessels indicate chronic occlusion"
+          ],
+          "sections": [
+            {
+              "title": "Plaque Characteristics",
+              "content": "Understanding plaque appearance:\n\nPlaque Echogenicity:\n• Hypoechoic (dark): Lipid-rich, hemorrhage\n• Isoechoic (gray): Fibrous tissue\n• Hyperechoic (bright): Calcification, fibrosis\n• Heterogeneous: Mixed composition\n\nPlaque Surface:\n• Smooth: More stable\n• Irregular: Higher embolic risk\n• Ulcerated: Highest risk\n• Surface defect visible\n\nPlaque Texture:\n• Homogeneous: Uniform appearance\n• Heterogeneous: Variable composition\n• Calcified: Acoustic shadow\n• Soft: More likely to embolize"
+            },
+            {
+              "title": "Stenosis Grading",
+              "content": "Quantifying arterial narrowing:\n\nCarotid ICA Stenosis (NASCET Criteria):\n• Normal: PSV <125 cm/s\n• <50%: PSV <125 cm/s (with plaque)\n• 50-69%: PSV 125-230 cm/s, Ratio <4.0\n• 70-99%: PSV >230 cm/s, Ratio >4.0\n• Near occlusion: String sign, very low flow\n• Occlusion: No flow\n\nPeripheral Artery Stenosis:\n• <50%: Velocity ratio <2.0\n• 50-75%: Ratio 2.0-4.0\n• >75%: Ratio >4.0\n• Critical: Monophasic, dampened waveform"
+            },
+            {
+              "title": "Stenosis Hemodynamics",
+              "content": "What happens at stenosis:\n\nAt Stenosis:\n• ↑ Velocity (narrowing → acceleration)\n• Turbulent flow\n• Spectral broadening\n• Aliasing on color Doppler\n• Post-stenotic turbulence\n\nProximal to Stenosis:\n• Normal or slightly dampened waveform\n• May see prestenotic dilation\n\nDistal to Stenosis:\n• Dampened waveform\n• Loss of triphasic pattern\n• Delayed systolic upstroke\n• Decreased velocities\n\nWith Occlusion:\n• No flow at occlusion site\n• Dampened monophasic flow distally\n• Collateral vessels visible"
+            }
+          ],
+          "keyTakeaways": [
+            "Higher PSV and velocity ratios = more severe stenosis",
+            "Waveform changes occur proximal, at, and distal to stenosis",
+            "Plaque composition affects stability and embolic risk",
+            "Always correlate velocity with waveform and B-mode findings"
+          ],
+          "keyTerms": [
+            "Atherosclerosis",
+            "Peak Systolic Velocity (PSV)",
+            "Velocity Ratio",
+            "Spectral Broadening",
+            "Post-stenotic Turbulence",
+            "NASCET Criteria"
+          ],
+          "images": [
+            {
+              "filename": "atherosclerotic plaque illustration .png",
+              "caption": "Atherosclerotic plaque formation in arterial wall"
+            },
+            {
+              "filename": "atherosclerotic plaque illustration 2.png",
+              "caption": "Progressive plaque buildup stages"
+            },
+            {
+              "filename": "atherosclerotic plaque illustration 3.png",
+              "caption": "Advanced atherosclerotic changes"
+            },
+            {
+              "filename": "atherosclerotic plaque illustration normal.png",
+              "caption": "Normal arterial wall compared to plaque"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

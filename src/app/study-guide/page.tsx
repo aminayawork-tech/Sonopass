@@ -7,7 +7,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
   Brain, Activity, AlertTriangle, ClipboardList, Zap,
-  Search, BookOpen, ChevronRight, Check, ArrowLeft
+  Search, BookOpen, ChevronRight, Check, ArrowLeft,
+  Lightbulb, Star, ListChecks, Info
 } from 'lucide-react';
 
 interface Image {
@@ -15,10 +16,19 @@ interface Image {
   caption: string;
 }
 
+interface Section {
+  title: string;
+  content: string;
+}
+
 interface Topic {
   id: string;
   title: string;
-  content: string;
+  content?: string; // Legacy support
+  quickSummary?: string;
+  clinicalPearls?: string[];
+  sections?: Section[];
+  keyTakeaways?: string[];
   keyTerms: string[];
   images: Image[];
 }
@@ -28,6 +38,7 @@ interface Category {
   title: string;
   icon: string;
   color: string;
+  description?: string;
   topics: Topic[];
 }
 
