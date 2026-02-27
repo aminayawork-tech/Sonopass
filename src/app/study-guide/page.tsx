@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import {
   Brain, Activity, AlertTriangle, ClipboardList, Zap,
   Search, BookOpen, ChevronRight, Check, ArrowLeft,
-  Lightbulb, Star, ListChecks, Info
+  Lightbulb, Star, ListChecks, Info, CheckCircle2
 } from 'lucide-react';
 
 interface Image {
@@ -101,7 +101,8 @@ export default function StudyGuidePage() {
       category.title.toLowerCase().includes(query) ||
       category.topics.some(topic =>
         topic.title.toLowerCase().includes(query) ||
-        topic.content.toLowerCase().includes(query) ||
+        topic.content?.toLowerCase().includes(query) ||
+        topic.quickSummary?.toLowerCase().includes(query) ||
         topic.keyTerms.some(term => term.toLowerCase().includes(query))
       )
     );
@@ -164,14 +165,74 @@ export default function StudyGuidePage() {
 
         <main className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8 mb-6">
-            {/* Content */}
-            <div className="prose prose-sm sm:prose max-w-none mb-6">
-              {selectedTopic.content.split('\n\n').map((paragraph, idx) => (
-                <p key={idx} className="mb-4 text-gray-700 whitespace-pre-line">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
+            {/* Quick Summary */}
+            {selectedTopic.quickSummary && (
+              <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-xl">
+                <p className="text-blue-900 font-medium">{selectedTopic.quickSummary}</p>
+              </div>
+            )}
+
+            {/* Clinical Pearls */}
+            {selectedTopic.clinicalPearls && selectedTopic.clinicalPearls.length > 0 && (
+              <div className="mb-6 bg-amber-50 border border-amber-200 rounded-xl p-4 sm:p-6">
+                <div className="flex items-start gap-3">
+                  <Lightbulb className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold text-amber-900 mb-2">Clinical Pearls & Exam Tips</h4>
+                    <ul className="space-y-2">
+                      {selectedTopic.clinicalPearls.map((pearl, i) => (
+                        <li key={i} className="text-sm text-amber-800 flex items-start gap-2">
+                          <span className="text-amber-600 mt-1">•</span>
+                          <span>{pearl}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Sections or Content */}
+            {selectedTopic.sections && selectedTopic.sections.length > 0 ? (
+              <div className="space-y-4 mb-6">
+                {selectedTopic.sections.map((section, idx) => (
+                  <div key={idx}>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">{section.title}</h4>
+                    <div className="text-gray-700 leading-relaxed whitespace-pre-line">
+                      {section.content}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : selectedTopic.content ? (
+              <div className="prose prose-sm sm:prose max-w-none mb-6">
+                {selectedTopic.content.split('\n\n').map((paragraph, idx) => (
+                  <p key={idx} className="mb-4 text-gray-700 whitespace-pre-line">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ) : null}
+
+            {/* Key Takeaways */}
+            {selectedTopic.keyTakeaways && selectedTopic.keyTakeaways.length > 0 && (
+              <div className="mb-6 bg-emerald-50 border border-emerald-200 rounded-xl p-4 sm:p-6">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold text-emerald-900 mb-2">Key Takeaways</h4>
+                    <ul className="space-y-2">
+                      {selectedTopic.keyTakeaways.map((takeaway, i) => (
+                        <li key={i} className="text-sm text-emerald-800 flex items-start gap-2">
+                          <span className="text-emerald-600 mt-1">✓</span>
+                          <span>{takeaway}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* Images */}
             {selectedTopic.images.length > 0 && (
@@ -322,7 +383,7 @@ export default function StudyGuidePage() {
                       {topic.title}
                     </h3>
                     <p className="text-sm text-gray-600 mb-4 line-clamp-2">
-                      {topic.content.split('\n\n')[0]}
+                      {topic.quickSummary || (topic.content ? topic.content.split('\n\n')[0] : 'Click to learn more')}
                     </p>
                     <div className="flex items-center gap-4 text-xs text-gray-500 mb-3">
                       {topic.keyTerms.length > 0 && (
