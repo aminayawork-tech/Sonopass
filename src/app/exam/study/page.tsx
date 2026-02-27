@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, BookOpen } from 'lucide-react';
+import { ArrowLeft, BookOpen, Lightbulb, CheckCircle2, Brain, ArrowRight } from 'lucide-react';
 import questionsData from '@/data/vascular-questions.json';
 import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
@@ -105,13 +105,36 @@ export default function StudyPage() {
   );
 }
 
-/** Wrapper that shuffles questions on mount for study mode */
+/** Study mode with content first, then questions */
 function StudyCategoryExam({ questions, title }: { questions: any[]; title: string }) {
+  const [showContent, setShowContent] = useState(true);
   const [shuffled, setShuffled] = useState<any[]>([]);
+  const [studyContent, setStudyContent] = useState<any>(null);
 
   useEffect(() => {
     setShuffled(shuffleQuestions(questions));
-  }, [questions]);
+
+    // Load study guide content
+    fetch('/study-guide-enhanced.json')
+      .then(res => res.json())
+      .then(data => {
+        // Map category titles to study content
+        const categoryMapping: Record<string, string> = {
+          'Cerebrovascular': 'anatomy',
+          'Venous Hemodynamics': 'hemodynamics',
+          'Arterial Disease': 'pathology',
+          'Arterial Hemodynamics': 'hemodynamics',
+          'General & Other': 'protocols',
+        };
+
+        const mappedCategoryId = categoryMapping[title];
+        if (mappedCategoryId) {
+          const category = data.categories.find((c: any) => c.id === mappedCategoryId);
+          setStudyContent(category);
+        }
+      })
+      .catch(err => console.error('Failed to load study content:', err));
+  }, [questions, title]);
 
   if (shuffled.length === 0) {
     return (
@@ -121,11 +144,204 @@ function StudyCategoryExam({ questions, title }: { questions: any[]; title: stri
     );
   }
 
+  // Show questions after content
+  if (!showContent) {
+    return (
+      <ExamInterface
+        questions={shuffled}
+        title={title}
+        mode="practice"
+      />
+    );
+  }
+
+  // Show study content first
   return (
-    <ExamInterface
-      questions={shuffled}
-      title={title}
-      mode="practice"
-    />
+    <div className="min-h-screen bg-[#F5F7FA]">
+      {/* Header */}
+      <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <Link href="/exam/study">
+                <Button variant="ghost" size="sm" className="text-gray-600">
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  <span className="hidden sm:inline">Back</span>
+                </Button>
+              </Link>
+              <div>
+                <div className="flex items-center gap-2">
+                  <Brain className="w-5 h-5 text-blue-600" />
+                  <h1 className="text-xl sm:text-2xl font-bold text-gray-900">{title}</h1>
+                </div>
+                <p className="text-xs sm:text-sm text-gray-500 mt-1">Learn the concepts, then practice</p>
+              </div>
+            </div>
+            <Button
+              onClick={() => setShowContent(false)}
+              className="bg-blue-600 hover:bg-blue-700"
+            >
+              <span className="hidden sm:inline">Start Practice</span>
+              <span className="sm:hidden">Practice</span>
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
+          </div>
+        </div>
+      </header>
+
+      {/* Study Content */}
+      <main className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        {studyContent ? (
+          <div className="space-y-6">
+            {/* Category Overview */}
+            <Card className="p-6 sm:p-8 bg-white border border-gray-100 shadow-sm">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="w-6 h-6 text-blue-600" />
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-2">{studyContent.title}</h2>
+                  {studyContent.description && (
+                    <p className="text-gray-600">{studyContent.description}</p>
+                  )}
+                  <div className="mt-3 flex items-center gap-4 text-sm text-gray-500">
+                    <span>{studyContent.topics.length} topics to master</span>
+                    <span>•</span>
+                    <span>{questions.length} practice questions</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Topics */}
+            {studyContent.topics.map((topic: any, idx: number) => (
+              <Card key={topic.id} className="p-6 sm:p-8 bg-white border border-gray-100 shadow-sm">
+                {/* Topic Header */}
+                <div className="mb-6">
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-sm font-bold text-blue-600">{idx + 1}</span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">{topic.title}</h3>
+                      {topic.quickSummary && (
+                        <p className="text-base text-gray-700 leading-relaxed">{topic.quickSummary}</p>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Clinical Pearls */}
+                {topic.clinicalPearls && topic.clinicalPearls.length > 0 && (
+                  <div className="mb-6 bg-amber-50 border border-amber-200 rounded-xl p-4 sm:p-6">
+                    <div className="flex items-start gap-3">
+                      <Lightbulb className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <h4 className="font-semibold text-amber-900 mb-2">Clinical Pearls & Exam Tips</h4>
+                        <ul className="space-y-2">
+                          {topic.clinicalPearls.map((pearl: string, i: number) => (
+                            <li key={i} className="text-sm text-amber-800 flex items-start gap-2">
+                              <span className="text-amber-600 mt-1">•</span>
+                              <span>{pearl}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Sections */}
+                {topic.sections && topic.sections.length > 0 ? (
+                  <div className="space-y-4 mb-6">
+                    {topic.sections.map((section: any, i: number) => (
+                      <div key={i}>
+                        <h4 className="text-lg font-semibold text-gray-900 mb-2">{section.title}</h4>
+                        <div className="text-gray-700 leading-relaxed whitespace-pre-line">
+                          {section.content}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : topic.content && (
+                  <div className="mb-6 text-gray-700 leading-relaxed whitespace-pre-line">
+                    {topic.content}
+                  </div>
+                )}
+
+                {/* Key Takeaways */}
+                {topic.keyTakeaways && topic.keyTakeaways.length > 0 && (
+                  <div className="mb-6 bg-emerald-50 border border-emerald-200 rounded-xl p-4 sm:p-6">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <h4 className="font-semibold text-emerald-900 mb-2">Key Takeaways</h4>
+                        <ul className="space-y-2">
+                          {topic.keyTakeaways.map((takeaway: string, i: number) => (
+                            <li key={i} className="text-sm text-emerald-800 flex items-start gap-2">
+                              <span className="text-emerald-600 mt-1">✓</span>
+                              <span>{takeaway}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Key Terms */}
+                {topic.keyTerms && topic.keyTerms.length > 0 && (
+                  <div>
+                    <h4 className="text-sm font-semibold text-gray-700 mb-3">Key Terms to Remember</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {topic.keyTerms.map((term: string, i: number) => (
+                        <span
+                          key={i}
+                          className="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+                        >
+                          {term}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </Card>
+            ))}
+
+            {/* Call to Action */}
+            <Card className="p-6 sm:p-8 bg-gradient-to-r from-blue-500 to-blue-600 border-0 text-white shadow-lg">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold mb-2">Ready to Practice?</h3>
+                <p className="text-blue-100 mb-6">Test your knowledge with {questions.length} practice questions</p>
+                <Button
+                  onClick={() => setShowContent(false)}
+                  size="lg"
+                  className="bg-white text-blue-600 hover:bg-blue-50"
+                >
+                  Start Practice Questions
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </div>
+            </Card>
+          </div>
+        ) : (
+          // Fallback if no study content available
+          <Card className="p-6 sm:p-8 bg-white border border-gray-100 shadow-sm">
+            <div className="text-center">
+              <BookOpen className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
+              <p className="text-gray-600 mb-6">{questions.length} practice questions available</p>
+              <Button
+                onClick={() => setShowContent(false)}
+                className="bg-blue-600 hover:bg-blue-700"
+              >
+                Start Practice Questions
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </div>
+          </Card>
+        )}
+      </main>
+    </div>
   );
 }
