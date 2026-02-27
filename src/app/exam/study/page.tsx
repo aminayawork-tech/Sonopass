@@ -116,21 +116,12 @@ function StudyCategoryExam({ questions, title, onBack }: { questions: any[]; tit
     setShuffled(shuffleQuestions(questions));
 
     // Load study guide content
-    fetch('/study-guide-enhanced.json')
+    fetch('/study-categories.json')
       .then(res => res.json())
       .then(data => {
-        // Map category titles to study content
-        const categoryMapping: Record<string, string> = {
-          'Cerebrovascular': 'anatomy',
-          'Venous Hemodynamics': 'hemodynamics',
-          'Arterial Disease': 'pathology',
-          'Arterial Hemodynamics': 'hemodynamics',
-          'General & Other': 'protocols',
-        };
-
-        const mappedCategoryId = categoryMapping[title];
-        if (mappedCategoryId) {
-          const category = data.categories.find((c: any) => c.id === mappedCategoryId);
+        // Direct mapping: category title matches key in JSON
+        const category = data.categories[title];
+        if (category) {
           setStudyContent(category);
         }
       })
@@ -199,118 +190,106 @@ function StudyCategoryExam({ questions, title, onBack }: { questions: any[]; tit
           <div className="space-y-6">
             {/* Category Overview */}
             <Card className="p-6 sm:p-8 bg-white border border-gray-100 shadow-sm">
-              <div className="flex items-start gap-4 mb-4">
+              <div className="flex items-start gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
                   <BookOpen className="w-6 h-6 text-blue-600" />
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-2">{studyContent.title}</h2>
-                  {studyContent.description && (
-                    <p className="text-gray-600">{studyContent.description}</p>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">{studyContent.title}</h2>
+                  {studyContent.quickSummary && (
+                    <p className="text-base text-gray-700 leading-relaxed mb-4">{studyContent.quickSummary}</p>
                   )}
-                  <div className="mt-3 flex items-center gap-4 text-sm text-gray-500">
-                    <span>{studyContent.topics.length} topics to master</span>
-                    <span>•</span>
+                  <div className="flex items-center gap-4 text-sm text-gray-500">
                     <span>{questions.length} practice questions</span>
                   </div>
                 </div>
               </div>
-            </Card>
 
-            {/* Topics */}
-            {studyContent.topics.map((topic: any, idx: number) => (
-              <Card key={topic.id} className="p-6 sm:p-8 bg-white border border-gray-100 shadow-sm">
-                {/* Topic Header */}
-                <div className="mb-6">
-                  <div className="flex items-start gap-3 mb-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-sm font-bold text-blue-600">{idx + 1}</span>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">{topic.title}</h3>
-                      {topic.quickSummary && (
-                        <p className="text-base text-gray-700 leading-relaxed">{topic.quickSummary}</p>
-                      )}
+              {/* Key Points */}
+              {studyContent.keyPoints && studyContent.keyPoints.length > 0 && (
+                <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 sm:p-6">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-blue-900 mb-3">Key Points to Remember</h3>
+                      <ul className="space-y-2">
+                        {studyContent.keyPoints.map((point: string, i: number) => (
+                          <li key={i} className="text-sm text-blue-800 flex items-start gap-2">
+                            <span className="text-blue-600 mt-1">✓</span>
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </div>
+              )}
+            </Card>
 
-                {/* Clinical Pearls */}
-                {topic.clinicalPearls && topic.clinicalPearls.length > 0 && (
-                  <div className="mb-6 bg-amber-50 border border-amber-200 rounded-xl p-4 sm:p-6">
-                    <div className="flex items-start gap-3">
-                      <Lightbulb className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                      <div>
-                        <h4 className="font-semibold text-amber-900 mb-2">Clinical Pearls & Exam Tips</h4>
-                        <ul className="space-y-2">
-                          {topic.clinicalPearls.map((pearl: string, i: number) => (
-                            <li key={i} className="text-sm text-amber-800 flex items-start gap-2">
-                              <span className="text-amber-600 mt-1">•</span>
-                              <span>{pearl}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
+            {/* Clinical Pearls */}
+            {studyContent.clinicalPearls && studyContent.clinicalPearls.length > 0 && (
+              <Card className="p-6 sm:p-8 bg-amber-50 border-2 border-amber-200 shadow-sm">
+                <div className="flex items-start gap-3">
+                  <Lightbulb className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-amber-900 mb-3">Clinical Pearls & Exam Tips</h3>
+                    <ul className="space-y-2.5">
+                      {studyContent.clinicalPearls.map((pearl: string, i: number) => (
+                        <li key={i} className="text-sm text-amber-800 flex items-start gap-2">
+                          <span className="text-amber-600 mt-1 font-bold">•</span>
+                          <span className="leading-relaxed">{pearl}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                )}
+                </div>
+              </Card>
+            )}
 
-                {/* Sections */}
-                {topic.sections && topic.sections.length > 0 ? (
-                  <div className="space-y-4 mb-6">
-                    {topic.sections.map((section: any, i: number) => (
-                      <div key={i}>
-                        <h4 className="text-lg font-semibold text-gray-900 mb-2">{section.title}</h4>
-                        <div className="text-gray-700 leading-relaxed whitespace-pre-line">
-                          {section.content}
+            {/* Content Sections */}
+            {Object.entries(studyContent)
+              .filter(([key]) => !['title', 'icon', 'color', 'quickSummary', 'keyPoints', 'clinicalPearls', 'keyTerms'].includes(key))
+              .map(([sectionKey, sectionData]: [string, any], idx: number) => {
+                if (!sectionData || !sectionData.title) return null;
+
+                return (
+                  <Card key={sectionKey} className="p-6 sm:p-8 bg-white border border-gray-100 shadow-sm">
+                    {/* Section Header */}
+                    <div className="mb-6">
+                      <div className="flex items-start gap-3 mb-3">
+                        <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
+                          <span className="text-sm font-bold text-blue-600">{idx + 1}</span>
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-xl sm:text-2xl font-bold text-gray-900">{sectionData.title}</h3>
                         </div>
                       </div>
-                    ))}
-                  </div>
-                ) : topic.content && (
-                  <div className="mb-6 text-gray-700 leading-relaxed whitespace-pre-line">
-                    {topic.content}
-                  </div>
-                )}
-
-                {/* Key Takeaways */}
-                {topic.keyTakeaways && topic.keyTakeaways.length > 0 && (
-                  <div className="mb-6 bg-emerald-50 border border-emerald-200 rounded-xl p-4 sm:p-6">
-                    <div className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                      <div>
-                        <h4 className="font-semibold text-emerald-900 mb-2">Key Takeaways</h4>
-                        <ul className="space-y-2">
-                          {topic.keyTakeaways.map((takeaway: string, i: number) => (
-                            <li key={i} className="text-sm text-emerald-800 flex items-start gap-2">
-                              <span className="text-emerald-600 mt-1">✓</span>
-                              <span>{takeaway}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
                     </div>
-                  </div>
-                )}
 
-                {/* Key Terms */}
-                {topic.keyTerms && topic.keyTerms.length > 0 && (
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-700 mb-3">Key Terms to Remember</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {topic.keyTerms.map((term: string, i: number) => (
-                        <span
-                          key={i}
-                          className="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
-                        >
-                          {term}
-                        </span>
-                      ))}
+                    {/* Section Content */}
+                    <div className="text-gray-700 leading-relaxed whitespace-pre-line prose prose-sm max-w-none">
+                      {sectionData.content}
                     </div>
-                  </div>
-                )}
+                  </Card>
+                );
+              })}
+
+            {/* Key Terms */}
+            {studyContent.keyTerms && studyContent.keyTerms.length > 0 && (
+              <Card className="p-6 sm:p-8 bg-white border border-gray-100 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-900 mb-4">Key Terms to Remember</h3>
+                <div className="flex flex-wrap gap-2">
+                  {studyContent.keyTerms.map((term: string, i: number) => (
+                    <span
+                      key={i}
+                      className="px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100"
+                    >
+                      {term}
+                    </span>
+                  ))}
+                </div>
               </Card>
-            ))}
+            )}
 
             {/* Call to Action */}
             <Card className="p-6 sm:p-8 bg-gradient-to-r from-blue-500 to-blue-600 border-0 text-white shadow-lg">
