@@ -1,0 +1,115 @@
+{
+  "categories": [
+    {
+      "id": "cerebrovascular",
+      "title": "Cerebrovascular System",
+      "icon": "brain",
+      "color": "blue",
+      "topics": [
+        {
+          "id": "cerebrovascular-basics",
+          "title": "Cerebrovascular System - Key Facts",
+          "content": "Essential facts for cerebrovascular assessment and carotid scanning.\n\nKey Facts:\n• Carotid exam performed with patient supine, neck slightly extended, head turned away from side being scanned\n• ICA = Internal Carotid Artery (low resistance vessel)\n• ECA = External Carotid Artery (high resistance vessel)\n• Vertebral arteries evaluated as part of cerebrovascular assessment\n• 70-99% carotid stenosis is a CRITICAL FINDING requiring immediate attention\n• Linear array transducer used for carotid exams\n• Most common reason for underestimation of carotid stenosis = improper sample volume location\n• Cursor should be placed at narrowest point of stenosis initially\n• Move Doppler cursor through entire stenotic area to find highest velocity\n• Bruit can be heard with stenosis, also with branching/tortuosity",
+          "keyTerms": [
+            "Internal Carotid Artery (ICA)",
+            "External Carotid Artery (ECA)",
+            "Carotid Stenosis",
+            "Vertebral Arteries",
+            "Linear Array Transducer"
+          ]
+        },
+        {
+          "id": "cerebrovascular-normal-values",
+          "title": "Cerebrovascular Normal Values",
+          "content": "Normal hemodynamic values and waveform characteristics for cerebrovascular vessels.\n\nNormal Values:\n• ICA has increased acceleration time (AT) compared to high resistance vessels due to low resistance\n• AT longer in ICA and cerebral vessels vs extremity arteries\n• Brain vessels: Pulsatility Index (PI) normally <1.0\n• ICA waveform: low resistance with continuous forward diastolic flow\n• ECA waveform: high resistance with minimal/reversed diastolic flow\n\nICA Characteristics:\n• Larger diameter than ECA\n• Low resistance waveform\n• Posterolateral position\n• No extracranial branches\n\nECA Characteristics:\n• Smaller diameter\n• High resistance waveform\n• Anteromedial position\n• Multiple branches (superior thyroid, lingual, facial, etc.)",
+          "keyTerms": [
+            "Acceleration Time (AT)",
+            "Pulsatility Index (PI)",
+            "Low Resistance Waveform",
+            "High Resistance Waveform"
+          ]
+        },
+        {
+          "id": "carotid-stenosis",
+          "title": "Carotid Stenosis - Diagnostic Criteria",
+          "content": "Comprehensive criteria for grading carotid stenosis and pathology findings.\n\nHemodynamic Significance:\n• 50% diameter stenosis = 75% area stenosis = hemodynamically significant\n• 70-99% stenosis = CRITICAL FINDING requiring immediate attention\n\nPathology Findings:\n• Increased PSV and EDV at stenosis site\n• Post-stenotic turbulence (eddy currents/vortices) distal to stenosis\n• Spectral broadening at stenosis\n• ICA/CCA velocity ratio helpful for grading stenosis\n\nCarotid ICA Stenosis Criteria (NASCET):\n• Normal: PSV <125 cm/s, no plaque\n• <50%: PSV <125 cm/s, plaque present\n• 50-69%: PSV 125-230 cm/s, ICA/CCA ratio <2.0\n• 70-99%: PSV >230 cm/s, ICA/CCA ratio >4.0\n• Occlusion: No flow\n\nSigns of Stenosis:\n• Elevated PSV at stenosis\n• Turbulent flow\n• Spectral broadening\n• Post-stenotic turbulence\n• Aliasing on color Doppler\n• Dampened waveform distally",
+          "keyTerms": [
+            "NASCET Criteria",
+            "ICA/CCA Ratio",
+            "Peak Systolic Velocity (PSV)",
+            "End Diastolic Velocity (EDV)",
+            "Post-stenotic Turbulence"
+          ]
+        },
+        {
+          "id": "carotid-scanning-technique",
+          "title": "Carotid Scanning Technique",
+          "content": "Proper technique for comprehensive carotid duplex examination.\n\nPatient Position:\n• Patient supine with neck slightly extended\n• Head turned away from side being scanned\n• Pillow under shoulders if needed\n• Technologist usually sits at head of bed\n\nTransducer:\n• Linear array transducer\n• Typically 5-12 MHz\n• Lower frequency for deeper vessels\n\nScanning Protocol:\n• Scan entire length of CCA, ICA, ECA, and vertebral arteries\n• Multiple angles through stenosis to find peak velocity\n• Doppler angle ≤60 degrees (ideally 45-60°)\n• Sample volume centered in vessel at narrowest point\n• Move cursor through entire stenotic area to find highest velocity\n\nB-Mode Imaging:\n• Longitudinal and transverse views\n• CCA (proximal, mid, distal)\n• Carotid bulb\n• ICA (proximal, mid, distal)\n• ECA (proximal)\n• Vertebral artery origin and V2 segment\n\nColor Doppler:\n• Identify areas of stenosis (aliasing, turbulence)\n• Evaluate plaque morphology\n• Confirm vessel patency\n\nSpectral Doppler Measurements:\n• ICA PSV and EDV\n• CCA PSV and EDV\n• ICA/CCA ratio\n• Plaque location and characteristics",
+          "keyTerms": [
+            "Carotid Duplex",
+            "Sample Volume Placement",
+            "Doppler Angle Correction",
+            "Plaque Morphology"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arterial-hemodynamics",
+      "title": "Arterial Hemodynamics",
+      "icon": "activity",
+      "color": "red",
+      "topics": [
+        {
+          "id": "waveform-types",
+          "title": "Arterial Waveform Types",
+          "content": "Understanding different arterial waveform patterns and their clinical significance.\n\nTRIPHASIC WAVEFORM (Normal):\n• Systole: rapid antegrade flow\n• Early diastole: retrograde flow\n• Late diastole: small amount of forward flow\n• Seen in high resistance vascular beds (extremities/muscles)\n• Normal in healthy extremity arteries\n• Indicates normal resistance, no proximal stenosis\n\nBIPHASIC WAVEFORM:\n• Systole: antegrade flow\n• Diastole: some retrograde flow (less than triphasic)\n• Loss of late diastolic forward component\n• Can be normal in older patients\n• ABNORMAL if seen in organ vessels\n• May indicate mild disease or vasoconstriction\n\nMONOPHASIC WAVEFORM:\n• Antegrade flow continues through entire cardiac cycle\n• No retrograde component\n• Rounded, dampened appearance\n• Normal in vessels feeding organs (low resistance)\n• ABNORMAL if seen in extremity arteries (indicates significant proximal disease or vasodilation)\n\nTARDUS PARVUS:\n• Delayed systolic upstroke (tardus = slow)\n• Decreased amplitude (parvus = small)\n• Rounded peak\n• Prolonged acceleration time\n• Indicates severe proximal stenosis or occlusion",
+          "keyTerms": [
+            "Triphasic Waveform",
+            "Biphasic Waveform",
+            "Monophasic Waveform",
+            "Tardus Parvus",
+            "Acceleration Time"
+          ]
+        },
+        {
+          "id": "velocity-measurements",
+          "title": "Velocity Measurements & Indices",
+          "content": "Key velocity measurements and hemodynamic indices used in vascular assessment.\n\nPEAK SYSTOLIC VELOCITY (PSV):\n• Increases at stenosis site due to body maintaining blood volume\n• Measured at narrowest point of stenosis\n• Velocity increases as vessel diameter decreases\n• Continuity principle: flow volume remains constant\n\nEND DIASTOLIC VELOCITY (EDV):\n• Increases at stenosis site\n• If EDV = 0 cm/s, then RI = 1.0\n• Reflects downstream resistance\n• Low in high resistance beds, higher in low resistance\n\nRESISTIVE INDEX (RI):\n• Formula: RI = (PSV - EDV) / PSV\n• Extremity arteries: 0.6-0.8\n• Organ vessels: <0.6\n• If EDV = 0, then RI = 1.0\n• Evaluates tissue resistance\n• Not dependent on angle\n\nPULSATILITY INDEX (PI):\n• Formula: PI = (PSV - EDV) / mean velocity\n• Organs: usually <1.5\n• Brain: <1.0\n• CFA: >5.0\n• Popliteal artery: >8.0\n• Values increase with distance from aorta\n• Not dependent on angle",
+          "keyTerms": [
+            "Peak Systolic Velocity (PSV)",
+            "End Diastolic Velocity (EDV)",
+            "Resistive Index (RI)",
+            "Pulsatility Index (PI)",
+            "Velocity Ratio"
+          ]
+        },
+        {
+          "id": "resistance-patterns",
+          "title": "High vs Low Resistance Patterns",
+          "content": "Understanding vascular resistance patterns and their physiologic basis.\n\nHIGH RESISTANCE PATTERN:\n• Supplies extremities/muscles at rest\n• Triphasic waveforms with retrograde diastolic flow\n• Minimal or no forward diastolic flow\n• Examples: ECA, resting limb arteries\n• Vasoconstriction increases pulsatility\n• Clenching fist increases distal resistance and pulsatility in proximal arteries\n\nLOW RESISTANCE PATTERN:\n• Supplies organs needing constant blood flow\n• Monophasic waveforms with continuous forward flow\n• Significant diastolic flow component\n• No flow reversal\n• Examples: ICA, renal, mesenteric, hepatic arteries\n• Vasodilation decreases pulsatility\n\nPHYSIOLOGIC EFFECTS:\n• Vasoconstriction: changes monophasic to biphasic/triphasic\n• Vasodilation: changes triphasic to monophasic\n• Cold patient: vasoconstriction increases arterial resistance\n• Warm patient: vasodilation decreases arterial resistance\n• Exercise: vasodilation in muscles, increased flow\n• Fist clenching: increases resistance, more pulsatile proximally\n• Upon fist release: resistance drops, pulsatility reduced, flow increases\n\nCARDIAC FACTORS:\n• Decreased cardiac function = decreased output = reduced peak arterial velocities\n• Increased cardiac function = increased output = increased peak arterial velocities\n• Cardiac output affects all arterial velocities systemically\n• Velocity ratios help normalize for cardiac output variations",
+          "keyTerms": [
+            "High Resistance",
+            "Low Resistance",
+            "Vasoconstriction",
+            "Vasodilation",
+            "Cardiac Output"
+          ]
+        },
+        {
+          "id": "flow-principles",
+          "title": "Basic Flow Principles",
+          "content": "Fundamental principles of blood flow dynamics.\n\nLAMINAR FLOW:\n• Normal flow pattern\n• Concentric layers of flow\n• Parabolic velocity profile - fastest in center, slower near walls\n• Narrow spectral bandwidth\n• Clear spectral window\n• Normal in straight vessels\n\nPLUG FLOW:\n• All layers same speed\n• Flat velocity profile\n• Occurs in systole in large vessels\n• At branch origins\n• Proximal to stenosis\n\nTURBULENT FLOW:\n• Chaotic, disorganized flow\n• Disrupted, random velocities and directions\n• Occurs with stenosis, post-stenotic, or high velocities\n• Creates spectral broadening on Doppler\n• Wide spectral bandwidth, filled spectral window\n• Post-stenotic turbulence with eddy currents and vortices\n\nREYNOLDS NUMBER:\n• Predicts laminar vs turbulent flow\n• >2000 = turbulent flow likely\n• Factors: velocity, diameter, density, viscosity\n\nPOISEUILLE'S LAW:\n• Flow = (ΔP × π × r⁴) / (8 × η × L)\n• Flow is proportional to radius to the 4th power\n• Small changes in diameter dramatically affect flow\n• Small changes in vessel radius = most significant changes in flow\n• Resistance proportional to 1/radius⁴\n• Increased vessel radius = dramatically decreased resistance",
+          "keyTerms": [
+            "Laminar Flow",
+            "Turbulent Flow",
+            "Plug Flow",
+            "Reynolds Number",
+            "Poiseuille's Law",
+            "Spectral Broadening"
+          ]
+        }
+      ]
+    }
+  ]
+}
