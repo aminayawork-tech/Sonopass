@@ -1,0 +1,325 @@
+{
+  "categories": [
+    {
+      "id": "anatomy",
+      "title": "Vascular Anatomy",
+      "icon": "brain",
+      "color": "blue",
+      "topics": [
+        {
+          "id": "lower-extremity-arteries",
+          "title": "Lower Extremity Arterial Anatomy",
+          "content": "The arterial system of the lower extremity begins with the common femoral artery (CFA), which bifurcates into the superficial femoral artery (SFA) and profunda femoris (deep femoral artery).\n\nKey Points:\n• CFA is located at the inguinal ligament\n• SFA continues to become the popliteal artery at the adductor hiatus\n• Profunda femoris supplies the thigh muscles\n• Popliteal artery trifurcates into anterior tibial, posterior tibial, and peroneal arteries",
+          "keyTerms": [
+            "Common Femoral Artery (CFA)",
+            "Superficial Femoral Artery (SFA)",
+            "Profunda Femoris",
+            "Popliteal Artery",
+            "Adductor Hiatus"
+          ],
+          "images": [
+            {
+              "filename": "lower-extremity-arteries.jpg",
+              "caption": "Lower extremity arterial anatomy diagram"
+            }
+          ]
+        },
+        {
+          "id": "lower-extremity-veins",
+          "title": "Lower Extremity Venous Anatomy",
+          "content": "The venous system consists of deep veins, superficial veins, and perforating veins that connect them.\n\nDeep Venous System:\n• Follows the arterial system\n• Common femoral vein (CFV)\n• Femoral vein (FV)\n• Popliteal vein\n• Tibial veins (anterior, posterior)\n• Peroneal veins\n\nSuperficial Venous System:\n• Great saphenous vein (GSV) - longest vein in the body\n• Small saphenous vein (SSV)\n• Saphenofemoral junction (SFJ)\n• Saphenopopliteal junction (SPJ)\n\nPerforating Veins:\n• Connect superficial to deep system\n• Cockett perforators\n• Boyd perforator\n• Dodd perforator",
+          "keyTerms": [
+            "Great Saphenous Vein (GSV)",
+            "Small Saphenous Vein (SSV)",
+            "Saphenofemoral Junction (SFJ)",
+            "Perforating Veins"
+          ],
+          "images": [
+            {
+              "filename": "lower-extremity-veins.jpg",
+              "caption": "Lower extremity venous anatomy"
+            }
+          ]
+        },
+        {
+          "id": "carotid-anatomy",
+          "title": "Carotid & Cerebrovascular Anatomy",
+          "content": "The carotid system supplies blood to the brain and face.\n\nKey Structures:\n• Common carotid artery (CCA) - no branches\n• Internal carotid artery (ICA) - no extracranial branches\n• External carotid artery (ECA) - multiple branches\n• Carotid bulb - at the bifurcation, area of low resistance\n\nICA Characteristics:\n• Larger diameter than ECA\n• Low resistance waveform\n• Posterolateral position\n• No extracranial branches\n\nECA Characteristics:\n• Smaller diameter\n• High resistance waveform\n• Anteromedial position\n• Multiple branches (superior thyroid, lingual, facial, etc.)\n\nCircle of Willis:\n• Provides collateral circulation to the brain\n• Connects ICA and vertebrobasilar systems",
+          "keyTerms": [
+            "Common Carotid Artery (CCA)",
+            "Internal Carotid Artery (ICA)",
+            "External Carotid Artery (ECA)",
+            "Carotid Bulb",
+            "Circle of Willis"
+          ],
+          "images": [
+            {
+              "filename": "carotid-anatomy.jpg",
+              "caption": "Carotid bifurcation anatomy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hemodynamics",
+      "title": "Hemodynamics & Doppler",
+      "icon": "activity",
+      "color": "red",
+      "topics": [
+        {
+          "id": "flow-principles",
+          "title": "Basic Flow Principles",
+          "content": "Understanding blood flow dynamics is essential for vascular interpretation.\n\nKey Concepts:\n\nLaminar Flow:\n• Normal flow pattern\n• Parabolic velocity profile\n• Fastest flow in center\n• Slower flow near vessel walls\n\nTurbulent Flow:\n• Chaotic, disorganized flow\n• Occurs with stenosis, post-stenotic, or high velocities\n• Creates spectral broadening on Doppler\n\nReynolds Number:\n• Predicts laminar vs turbulent flow\n• >2000 = turbulent flow likely\n• Factors: velocity, diameter, density, viscosity\n\nPoiseuille's Law:\n• Flow = (ΔP × π × r⁴) / (8 × η × L)\n• Flow is proportional to radius to the 4th power\n• Small changes in diameter dramatically affect flow",
+          "keyTerms": [
+            "Laminar Flow",
+            "Turbulent Flow",
+            "Reynolds Number",
+            "Poiseuille's Law",
+            "Spectral Broadening"
+          ],
+          "images": [
+            {
+              "filename": "laminar-turbulent-flow.jpg",
+              "caption": "Laminar vs turbulent flow patterns"
+            }
+          ]
+        },
+        {
+          "id": "doppler-waveforms",
+          "title": "Doppler Waveform Analysis",
+          "content": "Arterial Waveforms:\n\nTriphasic (Normal):\n• Forward flow (systole)\n• Reverse flow (early diastole)\n• Forward flow (late diastole)\n• Indicates normal resistance, no proximal stenosis\n\nBiphasic:\n• Forward flow, reverse flow\n• May be normal variant or mild disease\n\nMonophasic:\n• Forward flow only\n• Indicates high resistance or proximal stenosis\n• Loss of reverse flow component\n\nVenous Waveforms:\n\nPhasic:\n• Flow varies with respiration\n• Normal in periphery\n\nPulsatile:\n• Flow varies with cardiac cycle\n• Normal near heart (IVC, iliac veins)\n• Abnormal in extremities (suggests CHF, tricuspid regurgitation)\n\nContinuous/Non-phasic:\n• Constant flow, no variation\n• Abnormal - suggests proximal obstruction",
+          "keyTerms": [
+            "Triphasic Waveform",
+            "Monophasic Waveform",
+            "Phasicity",
+            "Pulsatility"
+          ],
+          "images": [
+            {
+              "filename": "arterial-waveforms.jpg",
+              "caption": "Triphasic, biphasic, and monophasic waveforms"
+            },
+            {
+              "filename": "venous-waveforms.jpg",
+              "caption": "Normal and abnormal venous waveforms"
+            }
+          ]
+        },
+        {
+          "id": "doppler-equation",
+          "title": "Doppler Equation & Principles",
+          "content": "The Doppler Effect:\n• Change in frequency when sound reflects off moving object\n• Basis for measuring blood flow velocity\n\nDoppler Equation:\nΔF = (2 × F₀ × V × cos θ) / C\n\nWhere:\n• ΔF = Doppler shift frequency\n• F₀ = transmitted frequency\n• V = blood velocity\n• θ = Doppler angle\n• C = speed of sound in tissue (1540 m/s)\n\nAngle Correction:\n• Doppler angle should be <60°\n• Best angle: 45-60°\n• 0° = no Doppler shift (perpendicular)\n• 90° = maximum shift (parallel)\n• As angle increases, accuracy decreases\n\nSpectral Doppler Parameters:\n• Peak Systolic Velocity (PSV)\n• End Diastolic Velocity (EDV)\n• Resistive Index (RI) = (PSV - EDV) / PSV\n• Pulsatility Index (PI) = (PSV - EDV) / mean velocity",
+          "keyTerms": [
+            "Doppler Shift",
+            "Doppler Angle",
+            "Peak Systolic Velocity (PSV)",
+            "End Diastolic Velocity (EDV)",
+            "Resistive Index (RI)"
+          ],
+          "images": [
+            {
+              "filename": "doppler-angle.jpg",
+              "caption": "Proper Doppler angle placement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pathology",
+      "title": "Vascular Pathology",
+      "icon": "alert-triangle",
+      "color": "orange",
+      "topics": [
+        {
+          "id": "arterial-stenosis",
+          "title": "Arterial Stenosis & Occlusion",
+          "content": "Arterial narrowing due to atherosclerosis, most common vascular pathology.\n\nStenosis Grading Criteria:\n\nCarotid ICA Stenosis (NASCET):\n• Normal: PSV <125 cm/s, no plaque\n• <50%: PSV <125 cm/s, plaque present\n• 50-69%: PSV 125-230 cm/s, ICA/CCA ratio <2.0\n• 70-99%: PSV >230 cm/s, ICA/CCA ratio >4.0\n• Occlusion: No flow\n\nPeripheral Arterial Stenosis:\n• <50%: PSV ratio <2.0\n• 50-75%: PSV ratio 2.0-4.0\n• >75%: PSV ratio >4.0\n• Critical: Monophasic waveform, low velocities\n\nSigns of Stenosis:\n• Elevated PSV at stenosis\n• Turbulent flow\n• Spectral broadening\n• Post-stenotic turbulence\n• Aliasing on color Doppler\n• Dampened waveform distally",
+          "keyTerms": [
+            "Atherosclerosis",
+            "Peak Systolic Velocity (PSV)",
+            "Velocity Ratio",
+            "Spectral Broadening",
+            "Post-stenotic Turbulence"
+          ],
+          "images": [
+            {
+              "filename": "stenosis-doppler.jpg",
+              "caption": "Doppler findings in arterial stenosis"
+            }
+          ]
+        },
+        {
+          "id": "dvt",
+          "title": "Deep Vein Thrombosis (DVT)",
+          "content": "Blood clot in the deep venous system.\n\nDiagnostic Criteria:\n• Non-compressibility (PRIMARY criterion)\n• Visible thrombus on B-mode\n• Absent or diminished color flow\n• Absent or abnormal Doppler signal\n• Vein distension\n• Loss of phasicity\n\nAcute vs Chronic DVT:\n\nAcute DVT:\n• Hypoechoic/anechoic thrombus\n• Distended vein\n• Non-compressible\n• May see free-floating thrombus\n\nChronic DVT:\n• Echogenic (bright) thrombus\n• Vein may be small/scarred\n• Thickened vein walls\n• Possible recanalization\n• Collateral vessels present\n\nCompression Technique:\n• Apply gentle pressure every 1-2 cm\n• Vein walls should coapt completely\n• Any separation = thrombus\n• Scan CFV, FV, popliteal, tibial veins",
+          "keyTerms": [
+            "Non-compressibility",
+            "Acute DVT",
+            "Chronic DVT",
+            "Recanalization",
+            "Compression Ultrasound"
+          ],
+          "images": [
+            {
+              "filename": "dvt-compression.jpg",
+              "caption": "Compression technique showing DVT"
+            },
+            {
+              "filename": "acute-chronic-dvt.jpg",
+              "caption": "Acute vs chronic DVT appearance"
+            }
+          ]
+        },
+        {
+          "id": "venous-insufficiency",
+          "title": "Chronic Venous Insufficiency",
+          "content": "Incompetent venous valves causing reflux (reverse flow).\n\nReflux Testing:\n• Patient standing or reverse Trendelenburg\n• Distal augmentation (calf squeeze)\n• Measure reflux duration\n• >0.5 sec = abnormal (superficial veins)\n• >1.0 sec = abnormal (deep veins)\n\nCommon Sites:\n• GSV (most common)\n• SSV\n• Perforating veins\n• Deep veins (less common)\n\nSigns & Symptoms:\n• Varicose veins\n• Leg swelling\n• Skin changes (hemosiderin staining)\n• Venous ulcers\n• Pain, heaviness\n\nTreatment Considerations:\n• Compression therapy\n• Ablation (RF, laser)\n• Sclerotherapy\n• Surgical stripping\n• Perforator ligation",
+          "keyTerms": [
+            "Venous Reflux",
+            "Valve Incompetence",
+            "Augmentation",
+            "Varicose Veins",
+            "Chronic Venous Insufficiency"
+          ],
+          "images": [
+            {
+              "filename": "venous-reflux.jpg",
+              "caption": "Venous reflux on Doppler"
+            }
+          ]
+        },
+        {
+          "id": "aneurysm",
+          "title": "Aneurysms",
+          "content": "Localized dilation of a vessel, typically >50% increase in diameter.\n\nAbdominal Aortic Aneurysm (AAA):\n• Normal aorta: <3 cm\n• Ectatic: 3.0-3.9 cm\n• Aneurysm: ≥3.0 cm (some use ≥3.5 cm)\n• Large: ≥5.0 cm\n• Surgical repair considered at 5.5 cm\n\nTypes:\n• True aneurysm: All 3 vessel layers intact\n• False aneurysm (pseudoaneurysm): Contained rupture, hematoma\n• Fusiform: Circumferential dilation\n• Saccular: Localized outpouching\n\nPopliteal Artery Aneurysm:\n• ≥0.7 cm or >1.5× normal diameter\n• Risk of thrombosis and embolization\n• Associated with AAA in 50% of cases\n\nPseudoaneurysm:\n• Post-catheterization complication\n• \"Yin-yang\" sign on color Doppler\n• To-and-fro waveform in neck\n• May spontaneously thrombose\n• Ultrasound-guided compression treatment",
+          "keyTerms": [
+            "Abdominal Aortic Aneurysm (AAA)",
+            "Pseudoaneurysm",
+            "Fusiform",
+            "Saccular",
+            "Yin-Yang Sign"
+          ],
+          "images": [
+            {
+              "filename": "aaa-measurement.jpg",
+              "caption": "AAA measurement technique"
+            },
+            {
+              "filename": "pseudoaneurysm.jpg",
+              "caption": "Pseudoaneurysm with yin-yang sign"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protocols",
+      "title": "Exam Protocols",
+      "icon": "clipboard-list",
+      "color": "green",
+      "topics": [
+        {
+          "id": "carotid-protocol",
+          "title": "Carotid Duplex Protocol",
+          "content": "Standard protocol for evaluating extracranial carotid arteries.\n\nPatient Position:\n• Supine, head slightly extended\n• Turn head away from side being scanned\n• Pillow under shoulders if needed\n\nTransducer:\n• Linear array, 5-12 MHz\n• Lower frequency for deeper vessels\n\nB-Mode Imaging:\n• Longitudinal and transverse views\n• CCA (proximal, mid, distal)\n• Carotid bulb\n• ICA (proximal, mid, distal)\n• ECA (proximal)\n• Vertebral artery origin and V2 segment\n\nColor Doppler:\n• Identify areas of stenosis (aliasing, turbulence)\n• Evaluate plaque morphology\n• Confirm vessel patency\n\nSpectral Doppler:\n• Angle <60°\n• Sample volume 1.5-2 mm\n• Wall filter appropriate\n• Velocities at each segment:\n  - Proximal CCA\n  - Mid CCA\n  - Distal CCA\n  - Carotid bulb\n  - Proximal ICA\n  - Mid ICA\n  - Distal ICA\n  - Proximal ECA\n  - Vertebral artery\n\nKey Measurements:\n• ICA PSV and EDV\n• CCA PSV and EDV\n• ICA/CCA ratio\n• Plaque location and characteristics",
+          "keyTerms": [
+            "Carotid Duplex",
+            "ICA/CCA Ratio",
+            "Plaque Morphology",
+            "Vertebral Artery"
+          ],
+          "images": [
+            {
+              "filename": "carotid-protocol.jpg",
+              "caption": "Carotid duplex scanning positions"
+            }
+          ]
+        },
+        {
+          "id": "lower-extremity-arterial",
+          "title": "Lower Extremity Arterial Protocol",
+          "content": "Complete arterial evaluation from aorta to foot.\n\nPatient Position:\n• Supine for anterior approach\n• Prone or lateral for popliteal artery\n\nTransducer:\n• Linear 5-12 MHz for superficial vessels\n• Curved 2-5 MHz for iliac arteries\n\nSegments to Evaluate:\n1. Distal aorta\n2. Common iliac arteries\n3. External iliac arteries\n4. Common femoral artery\n5. Profunda femoris\n6. Superficial femoral artery\n7. Popliteal artery\n8. Anterior tibial artery\n9. Posterior tibial artery\n10. Peroneal artery\n11. Dorsalis pedis\n12. Posterior tibial at ankle\n\nFor Each Segment:\n• B-mode imaging (longitudinal/transverse)\n• Color Doppler for flow direction\n• Spectral Doppler with angle correction\n• Document PSV at stenosis\n• Assess waveform characteristics\n\nStenosis Assessment:\n• Velocity ratios (PSV ratio >2.0)\n• Waveform changes (monophasic)\n• Color aliasing\n• Post-stenotic turbulence\n• Distal dampening\n\nABI (Ankle-Brachial Index):\n• Normal: 1.0-1.3\n• Mild disease: 0.9-0.99\n• Moderate: 0.5-0.89\n• Severe: <0.5",
+          "keyTerms": [
+            "Ankle-Brachial Index (ABI)",
+            "Peripheral Arterial Disease (PAD)",
+            "Waveform Analysis",
+            "Velocity Ratio"
+          ],
+          "images": [
+            {
+              "filename": "le-arterial-protocol.jpg",
+              "caption": "Lower extremity arterial scanning technique"
+            }
+          ]
+        },
+        {
+          "id": "dvt-protocol",
+          "title": "DVT Examination Protocol",
+          "content": "Standard compression ultrasound for DVT evaluation.\n\nPatient Position:\n• Supine, leg externally rotated\n• Knee slightly bent\n• Reverse Trendelenburg to distend veins\n\nTransducer:\n• Linear array, 5-12 MHz\n• Lower frequency for obese patients\n\nCompression Technique:\n• Apply gentle, firm pressure\n• Compress every 1-2 cm along vein\n• Normal vein completely collapses\n• Any residual lumen = thrombus\n\nComplete Exam:\n1. Common femoral vein (CFV)\n2. Saphenofemoral junction (SFJ)\n3. Femoral vein (FV)\n4. Deep femoral vein (DFV)\n5. Popliteal vein\n6. Posterior tibial veins\n7. Peroneal veins\n8. Anterior tibial veins (if indicated)\n\nFor Each Segment:\n• B-mode imaging (transverse primarily)\n• Compression every 1-2 cm\n• Color Doppler to confirm flow\n• Spectral Doppler:\n  - Phasicity with respiration\n  - Augmentation with distal compression\n  - Competent valves\n\nSigns of DVT:\n• Non-compressibility (PRIMARY)\n• Visible thrombus\n• Absent color flow\n• Absent/abnormal Doppler signal\n• Loss of phasicity\n• Vein distension\n\nDocumentation:\n• Cine clip of compression (positive/negative)\n• Color Doppler images\n• Spectral Doppler waveforms\n• Measurements of thrombus if present",
+          "keyTerms": [
+            "Compression Ultrasound",
+            "Non-compressibility",
+            "Phasicity",
+            "Augmentation"
+          ],
+          "images": [
+            {
+              "filename": "compression-technique.jpg",
+              "caption": "Proper compression technique"
+            },
+            {
+              "filename": "dvt-protocol.jpg",
+              "caption": "Lower extremity vein segments"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "title": "Ultrasound Physics",
+      "icon": "zap",
+      "color": "purple",
+      "topics": [
+        {
+          "id": "basic-physics",
+          "title": "Basic Ultrasound Physics",
+          "content": "Fundamental principles of diagnostic ultrasound.\n\nSound Wave Properties:\n• Frequency: cycles per second (Hz)\n• Wavelength: distance of one cycle\n• Velocity: speed of sound through medium\n• Amplitude: strength of wave\n\nRelationship:\nVelocity = Frequency × Wavelength\nC = f × λ\n\nSpeed of Sound:\n• Soft tissue average: 1540 m/s\n• Air: 330 m/s\n• Bone: 4080 m/s\n• Fat: 1450 m/s\n• Blood: 1560 m/s\n\nFrequency Ranges:\n• Diagnostic ultrasound: 2-20 MHz\n• Vascular imaging: typically 5-12 MHz\n• Deeper structures: lower frequency\n• Superficial structures: higher frequency\n\nPenetration vs Resolution:\n• Higher frequency = better resolution, less penetration\n• Lower frequency = better penetration, less resolution\n• Must balance based on depth of interest",
+          "keyTerms": [
+            "Frequency",
+            "Wavelength",
+            "Velocity",
+            "Penetration",
+            "Resolution"
+          ],
+          "images": [
+            {
+              "filename": "sound-wave.jpg",
+              "caption": "Sound wave properties"
+            }
+          ]
+        },
+        {
+          "id": "artifacts",
+          "title": "Ultrasound Artifacts",
+          "content": "Common artifacts encountered in vascular imaging.\n\nMirror Image:\n• Strong reflector creates duplicate image\n• Common with diaphragm, pleura\n• Appears on opposite side of reflector\n\nShadowing:\n• Acoustic shadow behind highly attenuating structure\n• Calcified plaque creates shadowing\n• Prevents visualization of structures behind\n\nEnhancement:\n• Increased echoes behind fluid-filled structure\n• Through-transmission\n• Helps identify cystic structures\n\nReverberation:\n• Multiple reflections between two surfaces\n• Appears as equally spaced lines\n• Common with air, foreign bodies\n\nAliasing:\n• Color Doppler artifact\n• Velocities exceed Nyquist limit\n• Color reversal (appears to flow opposite direction)\n• Fix by: increasing scale (PRF), using lower frequency, or continuous wave Doppler\n\nSpectral Broadening:\n• Filling in of spectral window\n• Can indicate turbulent flow/stenosis\n• Also caused by large sample volume\n\nTwinkling Artifact:\n• Color Doppler behind calcification\n• Appears as rapid color changes\n• Helps identify calculi, calcification",
+          "keyTerms": [
+            "Mirror Image",
+            "Acoustic Shadowing",
+            "Aliasing",
+            "Spectral Broadening",
+            "Twinkling Artifact"
+          ],
+          "images": [
+            {
+              "filename": "ultrasound-artifacts.jpg",
+              "caption": "Common ultrasound artifacts"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
