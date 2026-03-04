@@ -1,0 +1,46 @@
+{
+  "categories": [
+    "Ultrasound Physics",
+    "Transducers",
+    "Image Optimization",
+    "Artifacts",
+    "Doppler",
+    "Bioeffects"
+  ],
+  "categoryTotals": {
+    "Ultrasound Physics": 5,
+    "Transducers": 2,
+    "Image Optimization": 5,
+    "Artifacts": 3,
+    "Doppler": 3,
+    "Bioeffects": 2
+  },
+  "examModes": [
+    {
+      "id": "quick-10",
+      "name": "Quick 10",
+      "description": "10 random SPI questions",
+      "route": "/exam/quick-10"
+    },
+    {
+      "id": "study",
+      "name": "Study Mode",
+      "description": "Learn physics & instrumentation by category",
+      "route": "/exam/study"
+    },
+    {
+      "id": "mock-1",
+      "name": "Mock Exam 1",
+      "description": "Practice exam (15 questions)",
+      "route": "/exam/mock-1"
+    },
+    {
+      "id": "mock-2",
+      "name": "Mock Exam 2",
+      "description": "Practice exam (5 questions)",
+      "route": "/exam/mock-2"
+    }
+  ],
+  "totalQuestions": 20,
+  "passingScore": 75
+}

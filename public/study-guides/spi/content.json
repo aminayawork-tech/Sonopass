@@ -1,0 +1,142 @@
+{
+  "ultrasound-physics": {
+    "overview": "Ultrasound physics forms the foundation of diagnostic sonography. Understanding wave propagation, tissue interaction, and acoustic properties is essential for producing diagnostic quality images.",
+    "keyPoints": [
+      "Sound is a mechanical wave that requires a medium for propagation",
+      "Frequency range for diagnostic ultrasound: 2-15 MHz",
+      "Average speed of sound in soft tissue: 1,540 m/s",
+      "Wavelength and frequency are inversely proportional",
+      "Higher frequencies provide better resolution but less penetration"
+    ],
+    "detailedContent": [
+      {
+        "subtitle": "Wave Properties",
+        "text": "Ultrasound waves are characterized by frequency (measured in MHz), wavelength (distance between wave peaks), amplitude (wave height), and period (time for one cycle). These properties determine how ultrasound interacts with tissue."
+      },
+      {
+        "subtitle": "Acoustic Impedance",
+        "text": "Acoustic impedance (Z) is the product of tissue density and sound velocity. Differences in acoustic impedance between tissues create reflections at interfaces. Large impedance differences (like soft tissue to bone) create strong reflections."
+      },
+      {
+        "subtitle": "Attenuation",
+        "text": "Attenuation is the decrease in sound wave amplitude and intensity as it travels through tissue. It occurs due to absorption, reflection, and scattering. Attenuation increases with frequency and depth."
+      }
+    ]
+  },
+  "transducers": {
+    "overview": "Transducers convert electrical energy to mechanical energy (sound waves) and vice versa through the piezoelectric effect. Different transducer types serve different clinical applications.",
+    "keyPoints": [
+      "Piezoelectric crystals convert electrical pulses to sound waves",
+      "Linear arrays produce rectangular images",
+      "Curved arrays produce wider field of view with curved format",
+      "Phased arrays produce sector images from small footprint",
+      "Higher frequency transducers provide better resolution"
+    ],
+    "detailedContent": [
+      {
+        "subtitle": "Transducer Types",
+        "text": "Linear array transducers fire elements sequentially to create rectangular images, ideal for vascular and superficial structures. Curved arrays provide wider field of view for abdominal imaging. Phased arrays use electronic focusing for cardiac imaging."
+      },
+      {
+        "subtitle": "Beam Formation",
+        "text": "The ultrasound beam has a focal zone where lateral resolution is best. Electronic focusing adjusts the focal depth. Beam width affects lateral resolution - narrower beams provide better lateral resolution."
+      }
+    ]
+  },
+  "image-optimization": {
+    "overview": "Proper adjustment of controls optimizes image quality. Understanding how each control affects the image is crucial for diagnostic accuracy.",
+    "keyPoints": [
+      "Overall gain adjusts brightness uniformly across the entire image",
+      "TGC (Time Gain Compensation) adjusts brightness at specific depths",
+      "Focal zone should be placed at the area of interest",
+      "Higher frequencies improve resolution but reduce penetration",
+      "Frame rate increases with smaller field of view and fewer focal zones"
+    ],
+    "detailedContent": [
+      {
+        "subtitle": "Gain Controls",
+        "text": "Overall gain amplifies all returning echoes equally. TGC compensates for attenuation by selectively amplifying echoes from deeper structures. Proper gain settings show tissue texture without excessive noise or loss of detail."
+      },
+      {
+        "subtitle": "Resolution",
+        "text": "Axial resolution (along the beam) depends on spatial pulse length - shorter is better. Lateral resolution (perpendicular to beam) depends on beam width - narrower is better. Elevational resolution (slice thickness) depends on transducer design."
+      },
+      {
+        "subtitle": "Harmonic Imaging",
+        "text": "Tissue harmonic imaging uses harmonics generated within tissue rather than fundamental frequency. This reduces artifacts, improves contrast resolution, and produces cleaner images in challenging patients."
+      }
+    ]
+  },
+  "artifacts": {
+    "overview": "Artifacts are structures on the image that don't represent actual anatomy. Recognizing artifacts prevents misdiagnosis and can provide useful diagnostic information.",
+    "keyPoints": [
+      "Reverberation: multiple equally-spaced echoes from strong reflectors",
+      "Shadowing: anechoic area behind highly attenuating structures",
+      "Enhancement: increased brightness behind fluid-filled structures",
+      "Mirror image: duplicate structure appearing on opposite side of strong reflector",
+      "Side lobes: weak off-axis beams creating spurious echoes"
+    ],
+    "detailedContent": [
+      {
+        "subtitle": "Acoustic Shadowing",
+        "text": "Shadowing appears as dark (anechoic) region behind structures that strongly attenuate or reflect sound. Common causes include bone, calcifications, and gallstones. Clean shadowing suggests calcification."
+      },
+      {
+        "subtitle": "Acoustic Enhancement",
+        "text": "Enhancement (through-transmission) appears as bright echoes behind fluid-filled structures like cysts or bladder. This occurs because fluid attenuates less than surrounding tissue, allowing more sound energy to reach deeper structures."
+      },
+      {
+        "subtitle": "Reverberation",
+        "text": "Reverberation creates multiple equally-spaced echoes when sound bounces between the transducer and a strong reflector. Comet tail is a specific type appearing as bright trailing echoes behind small reflectors."
+      }
+    ]
+  },
+  "doppler": {
+    "overview": "Doppler ultrasound detects and measures blood flow by analyzing frequency shifts in echoes from moving red blood cells. It's essential for vascular assessment.",
+    "keyPoints": [
+      "Doppler shift is proportional to blood velocity and cosine of angle",
+      "Optimal Doppler angle: 45-60 degrees (never 90 degrees)",
+      "Aliasing occurs when velocity exceeds Nyquist limit",
+      "Continuous wave Doppler: no range resolution, no aliasing limit",
+      "Pulsed wave Doppler: range specific, subject to aliasing"
+    ],
+    "detailedContent": [
+      {
+        "subtitle": "Doppler Equation",
+        "text": "The Doppler shift frequency equals: (2 × transmitted frequency × velocity × cosine of angle) / propagation speed. This relationship shows why angle correction is critical for accurate velocity measurements."
+      },
+      {
+        "subtitle": "Spectral Analysis",
+        "text": "Spectral Doppler displays velocity vs. time. The spectral window (dark area under the waveform) indicates laminar flow. Spectral broadening (filling of window) suggests turbulent flow or stenosis."
+      },
+      {
+        "subtitle": "Color Doppler",
+        "text": "Color Doppler displays mean velocity as color overlay. Red typically indicates flow toward transducer, blue away. Color aliasing appears as reversal of colors at high velocities. Wall filter removes low-velocity signals from vessel walls."
+      }
+    ]
+  },
+  "bioeffects": {
+    "overview": "Understanding biological effects of ultrasound ensures patient safety. The ALARA (As Low As Reasonably Achievable) principle guides safe ultrasound practice.",
+    "keyPoints": [
+      "No confirmed harmful effects at diagnostic levels",
+      "Thermal Index (TI): estimates potential for tissue heating",
+      "Mechanical Index (MI): estimates potential for cavitation",
+      "ALARA principle: minimize exposure time and output power",
+      "Higher concern in first trimester and with Doppler"
+    ],
+    "detailedContent": [
+      {
+        "subtitle": "Thermal Effects",
+        "text": "Tissue heating can occur from absorption of ultrasound energy. The Thermal Index displays estimated temperature rise. Risk is higher with Doppler (longer dwell time) and in bone (high absorption). Keep TI < 1.0 when possible."
+      },
+      {
+        "subtitle": "Mechanical Effects",
+        "text": "Mechanical effects include cavitation - formation and collapse of gas bubbles. The Mechanical Index indicates cavitation potential. Contrast agents increase cavitation risk. Keep MI < 0.4 for routine imaging."
+      },
+      {
+        "subtitle": "Safety Guidelines",
+        "text": "Follow ALARA: use lowest power and shortest exam time to obtain diagnostic information. Document TI and MI when elevated. Be especially cautious in early pregnancy and when using Doppler. Avoid prolonged scanning of the same area."
+      }
+    ]
+  }
+}

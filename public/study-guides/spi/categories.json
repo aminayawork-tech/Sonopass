@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ultrasound-physics",
+    "title": "Ultrasound Physics",
+    "description": "Fundamental physics principles of ultrasound propagation",
+    "icon": "⚡",
+    "color": "blue",
+    "questionCount": 5
+  },
+  {
+    "id": "transducers",
+    "title": "Transducers",
+    "description": "Transducer types, components, and beam characteristics",
+    "icon": "🔊",
+    "color": "indigo",
+    "questionCount": 2
+  },
+  {
+    "id": "image-optimization",
+    "title": "Image Optimization",
+    "description": "Controls and techniques for optimal image quality",
+    "icon": "🎯",
+    "color": "purple",
+    "questionCount": 5
+  },
+  {
+    "id": "artifacts",
+    "title": "Artifacts",
+    "description": "Recognition and understanding of ultrasound artifacts",
+    "icon": "⚠️",
+    "color": "amber",
+    "questionCount": 3
+  },
+  {
+    "id": "doppler",
+    "title": "Doppler",
+    "description": "Doppler principles and spectral analysis",
+    "icon": "📊",
+    "color": "red",
+    "questionCount": 3
+  },
+  {
+    "id": "bioeffects",
+    "title": "Bioeffects & Safety",
+    "description": "Biological effects and safety considerations",
+    "icon": "🛡️",
+    "color": "green",
+    "questionCount": 2
+  }
+]

@@ -47,9 +47,34 @@
       "icon": "activity",
       "color": "blue",
       "gradient": "from-blue-500 to-blue-600",
-      "enabled": false,
-      "questionCount": 0,
-      "examModes": []
+      "enabled": true,
+      "questionCount": 20,
+      "examModes": [
+        {
+          "id": "quick-10",
+          "name": "Quick 10",
+          "description": "10 random SPI questions",
+          "route": "/exam/quick-10"
+        },
+        {
+          "id": "study",
+          "name": "Study Mode",
+          "description": "Learn physics & instrumentation by category",
+          "route": "/exam/study"
+        },
+        {
+          "id": "mock-1",
+          "name": "Mock Exam 1",
+          "description": "Practice exam (15 questions)",
+          "route": "/exam/mock-1"
+        },
+        {
+          "id": "mock-2",
+          "name": "Mock Exam 2",
+          "description": "Practice exam (5 questions)",
+          "route": "/exam/mock-2"
+        }
+      ]
     },
     {
       "id": "abdomen",

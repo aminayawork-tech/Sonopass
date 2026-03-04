@@ -1,0 +1,286 @@
+{
+  "exam1": [
+    {
+      "id": "spi-001",
+      "number": 1,
+      "question": "What is the typical frequency range used in diagnostic medical ultrasound?",
+      "options": [
+        { "letter": "A", "text": "20 Hz to 20 kHz" },
+        { "letter": "B", "text": "2 MHz to 15 MHz" },
+        { "letter": "C", "text": "100 kHz to 500 kHz" },
+        { "letter": "D", "text": "20 MHz to 50 MHz" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Diagnostic medical ultrasound typically uses frequencies between 2 MHz and 15 MHz. Lower frequencies (2-5 MHz) provide better penetration for deeper structures, while higher frequencies (7-15 MHz) provide better resolution for superficial structures.",
+      "category": "Ultrasound Physics"
+    },
+    {
+      "id": "spi-002",
+      "number": 2,
+      "question": "Which of the following best describes the piezoelectric effect?",
+      "options": [
+        { "letter": "A", "text": "Conversion of electrical energy to mechanical energy" },
+        { "letter": "B", "text": "Reflection of sound waves at tissue interfaces" },
+        { "letter": "C", "text": "Attenuation of ultrasound beams in tissue" },
+        { "letter": "D", "text": "Doppler shift in moving blood" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The piezoelectric effect is the ability of certain materials to convert electrical energy into mechanical energy (and vice versa). This principle is fundamental to ultrasound transducers, which convert electrical signals into sound waves and returning echoes back into electrical signals.",
+      "category": "Transducers"
+    },
+    {
+      "id": "spi-003",
+      "number": 3,
+      "question": "What happens to spatial resolution as frequency increases?",
+      "options": [
+        { "letter": "A", "text": "Resolution decreases" },
+        { "letter": "B", "text": "Resolution improves" },
+        { "letter": "C", "text": "Resolution remains unchanged" },
+        { "letter": "D", "text": "Resolution becomes frequency-independent" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Higher frequencies provide better spatial resolution because they produce shorter wavelengths. However, this comes at the cost of reduced penetration depth due to increased attenuation.",
+      "category": "Image Optimization"
+    },
+    {
+      "id": "spi-004",
+      "number": 4,
+      "question": "Which artifact occurs when the ultrasound beam encounters a strong reflector, causing multiple echoes?",
+      "options": [
+        { "letter": "A", "text": "Shadowing" },
+        { "letter": "B", "text": "Reverberation" },
+        { "letter": "C", "text": "Mirror image" },
+        { "letter": "D", "text": "Side lobe" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reverberation artifact occurs when ultrasound encounters a strong reflector and bounces back and forth between the transducer and the reflector multiple times, creating equally spaced parallel echoes.",
+      "category": "Artifacts"
+    },
+    {
+      "id": "spi-005",
+      "number": 5,
+      "question": "What is the relationship between frequency and wavelength in ultrasound?",
+      "options": [
+        { "letter": "A", "text": "Directly proportional" },
+        { "letter": "B", "text": "Inversely proportional" },
+        { "letter": "C", "text": "No relationship" },
+        { "letter": "D", "text": "Exponentially related" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Frequency and wavelength are inversely proportional. As frequency increases, wavelength decreases. This relationship is described by the equation: wavelength = propagation speed / frequency.",
+      "category": "Ultrasound Physics"
+    },
+    {
+      "id": "spi-006",
+      "number": 6,
+      "question": "What is the average propagation speed of ultrasound in soft tissue?",
+      "options": [
+        { "letter": "A", "text": "330 m/s" },
+        { "letter": "B", "text": "1,540 m/s" },
+        { "letter": "C", "text": "3,000 m/s" },
+        { "letter": "D", "text": "4,080 m/s" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The average propagation speed of ultrasound in soft tissue is 1,540 m/s (or 1.54 mm/µs). This value is used by ultrasound machines to calculate distance and is the basis for accurate imaging.",
+      "category": "Ultrasound Physics"
+    },
+    {
+      "id": "spi-007",
+      "number": 7,
+      "question": "What control adjusts the brightness of echoes returning from deeper structures?",
+      "options": [
+        { "letter": "A", "text": "Gain" },
+        { "letter": "B", "text": "Time Gain Compensation (TGC)" },
+        { "letter": "C", "text": "Dynamic range" },
+        { "letter": "D", "text": "Frame rate" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Time Gain Compensation (TGC) selectively amplifies echoes returning from deeper structures to compensate for attenuation. This creates a more uniform image brightness at all depths.",
+      "category": "Image Optimization"
+    },
+    {
+      "id": "spi-008",
+      "number": 8,
+      "question": "Which type of resolution refers to the ability to distinguish two structures lying perpendicular to the beam?",
+      "options": [
+        { "letter": "A", "text": "Axial resolution" },
+        { "letter": "B", "text": "Lateral resolution" },
+        { "letter": "C", "text": "Elevational resolution" },
+        { "letter": "D", "text": "Temporal resolution" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Lateral resolution (also called azimuthal resolution) is the ability to distinguish two structures that are side-by-side, perpendicular to the ultrasound beam. It is determined by beam width.",
+      "category": "Image Optimization"
+    },
+    {
+      "id": "spi-009",
+      "number": 9,
+      "question": "What does the Doppler effect measure in ultrasound?",
+      "options": [
+        { "letter": "A", "text": "Tissue density" },
+        { "letter": "B", "text": "Frequency shift due to motion" },
+        { "letter": "C", "text": "Acoustic impedance" },
+        { "letter": "D", "text": "Beam attenuation" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The Doppler effect measures the frequency shift that occurs when ultrasound reflects off moving structures (typically blood cells). This shift is proportional to the velocity of the moving target and is used to assess blood flow.",
+      "category": "Doppler"
+    },
+    {
+      "id": "spi-010",
+      "number": 10,
+      "question": "What is acoustic impedance?",
+      "options": [
+        { "letter": "A", "text": "The resistance of tissue to ultrasound propagation" },
+        { "letter": "B", "text": "The speed of sound in tissue" },
+        { "letter": "C", "text": "The frequency of the ultrasound beam" },
+        { "letter": "D", "text": "The power output of the transducer" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Acoustic impedance is the resistance that tissue offers to the propagation of ultrasound. It is the product of tissue density and the speed of sound in that tissue. Differences in acoustic impedance between tissues create reflections.",
+      "category": "Ultrasound Physics"
+    },
+    {
+      "id": "spi-011",
+      "number": 11,
+      "question": "What artifact appears as an anechoic shadow behind highly attenuating structures?",
+      "options": [
+        { "letter": "A", "text": "Enhancement" },
+        { "letter": "B", "text": "Shadowing" },
+        { "letter": "C", "text": "Comet tail" },
+        { "letter": "D", "text": "Ring down" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Acoustic shadowing appears as a dark (anechoic) area behind structures that strongly attenuate or reflect ultrasound, such as bone, calcifications, or gallstones. This occurs because little to no sound energy passes through to deeper structures.",
+      "category": "Artifacts"
+    },
+    {
+      "id": "spi-012",
+      "number": 12,
+      "question": "Which transducer type produces a rectangular image format?",
+      "options": [
+        { "letter": "A", "text": "Sector" },
+        { "letter": "B", "text": "Curved array" },
+        { "letter": "C", "text": "Linear array" },
+        { "letter": "D", "text": "Phased array" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Linear array transducers produce a rectangular image format with uniform width throughout the image. They are commonly used for vascular imaging, musculoskeletal imaging, and small parts.",
+      "category": "Transducers"
+    },
+    {
+      "id": "spi-013",
+      "number": 13,
+      "question": "What happens to penetration as frequency increases?",
+      "options": [
+        { "letter": "A", "text": "Penetration increases" },
+        { "letter": "B", "text": "Penetration decreases" },
+        { "letter": "C", "text": "Penetration remains constant" },
+        { "letter": "D", "text": "Penetration becomes unpredictable" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "As frequency increases, penetration decreases. Higher frequency sound waves are attenuated more rapidly in tissue, limiting their ability to penetrate deeply. This is why lower frequencies are used for imaging deeper structures.",
+      "category": "Ultrasound Physics"
+    },
+    {
+      "id": "spi-014",
+      "number": 14,
+      "question": "What does the overall gain control adjust?",
+      "options": [
+        { "letter": "A", "text": "Brightness of the entire image uniformly" },
+        { "letter": "B", "text": "Brightness at specific depths only" },
+        { "letter": "C", "text": "Frame rate" },
+        { "letter": "D", "text": "Transducer frequency" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Overall gain adjusts the amplification of all returning echoes uniformly, affecting the brightness of the entire image equally at all depths. This is different from TGC, which selectively adjusts gain at different depths.",
+      "category": "Image Optimization"
+    },
+    {
+      "id": "spi-015",
+      "number": 15,
+      "question": "What is the primary advantage of harmonic imaging?",
+      "options": [
+        { "letter": "A", "text": "Increased penetration" },
+        { "letter": "B", "text": "Improved image quality and reduced artifacts" },
+        { "letter": "C", "text": "Higher frame rates" },
+        { "letter": "D", "text": "Better color Doppler sensitivity" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Harmonic imaging uses frequency components generated within tissue (usually at twice the transmitted frequency). This technique reduces artifacts, improves contrast resolution, and produces cleaner images, especially in difficult-to-image patients.",
+      "category": "Image Optimization"
+    }
+  ],
+  "exam2": [
+    {
+      "id": "spi-016",
+      "number": 16,
+      "question": "What is the optimal Doppler angle for accurate velocity measurements?",
+      "options": [
+        { "letter": "A", "text": "0 degrees" },
+        { "letter": "B", "text": "45 degrees" },
+        { "letter": "C", "text": "60 degrees" },
+        { "letter": "D", "text": "90 degrees" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The optimal Doppler angle is between 45-60 degrees. At 0 degrees, maximum Doppler shift is obtained but it may be difficult to position. At 90 degrees, no Doppler shift occurs. 60 degrees provides a good compromise between Doppler shift magnitude and beam-to-flow angle.",
+      "category": "Doppler"
+    },
+    {
+      "id": "spi-017",
+      "number": 17,
+      "question": "What causes aliasing in pulsed wave Doppler?",
+      "options": [
+        { "letter": "A", "text": "Low gain settings" },
+        { "letter": "B", "text": "Velocity exceeding the Nyquist limit" },
+        { "letter": "C", "text": "Incorrect angle correction" },
+        { "letter": "D", "text": "High wall filter settings" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Aliasing occurs when the velocity of blood flow exceeds the Nyquist limit (half the pulse repetition frequency). This causes the Doppler waveform to wrap around and appear on the opposite side of the baseline, creating ambiguous velocity information.",
+      "category": "Doppler"
+    },
+    {
+      "id": "spi-018",
+      "number": 18,
+      "question": "Which artifact appears as bright echoes behind fluid-filled structures?",
+      "options": [
+        { "letter": "A", "text": "Shadowing" },
+        { "letter": "B", "text": "Enhancement" },
+        { "letter": "C", "text": "Reverberation" },
+        { "letter": "D", "text": "Mirror image" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Acoustic enhancement (also called through-transmission) appears as increased echogenicity (brightness) behind fluid-filled structures. This occurs because fluid attenuates sound less than surrounding tissue, allowing more energy to reach deeper structures.",
+      "category": "Artifacts"
+    },
+    {
+      "id": "spi-019",
+      "number": 19,
+      "question": "What is the mechanical index (MI) used to assess?",
+      "options": [
+        { "letter": "A", "text": "Thermal bioeffects" },
+        { "letter": "B", "text": "Cavitation bioeffects" },
+        { "letter": "C", "text": "Image resolution" },
+        { "letter": "D", "text": "Penetration depth" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The Mechanical Index (MI) is used to assess the potential for non-thermal bioeffects, specifically cavitation. Cavitation is the formation and collapse of gas bubbles in tissue due to the mechanical pressure of ultrasound waves.",
+      "category": "Bioeffects"
+    },
+    {
+      "id": "spi-020",
+      "number": 20,
+      "question": "What is axial resolution dependent upon?",
+      "options": [
+        { "letter": "A", "text": "Beam width" },
+        { "letter": "B", "text": "Spatial pulse length" },
+        { "letter": "C", "text": "Frame rate" },
+        { "letter": "D", "text": "Dynamic range" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Axial resolution (also called longitudinal or range resolution) is the ability to distinguish two structures along the beam axis. It is determined by spatial pulse length - shorter pulses (fewer cycles, higher frequency) provide better axial resolution.",
+      "category": "Image Optimization"
+    }
+  ]
+}
