@@ -6,29 +6,42 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, TrendingUp, Target, Award, Calendar, Zap, Star } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
-import { getStats, BADGES, type UserStats } from '@/lib/userStats';
+import { getStats, getCurrentModalityStats, BADGES, type UserStats } from '@/lib/userStats';
+import { useModality } from '@/contexts/ModalityContext';
+import { ModalitySelectorDropdown } from '@/components/ModalitySelector';
 
 export default function StatsPage() {
   const [stats, setStats] = useState<UserStats | null>(null);
+  const [categoryTotals, setCategoryTotals] = useState<Record<string, number>>({});
+  const { currentModality, loadMetadata } = useModality();
 
   useEffect(() => {
     setStats(getStats());
   }, []);
 
-  const totalQuestions = 200;
-  const accuracy = stats && stats.totalAnswered > 0
-    ? Math.round((stats.totalCorrect / stats.totalAnswered) * 100)
-    : 0;
+  // Load metadata for category totals
+  useEffect(() => {
+    const loadData = async () => {
+      if (!currentModality) return;
 
-  // Category totals (approximate from the dataset)
-  const categoryTotals: Record<string, number> = {
-    'Cerebrovascular': 53,
-    'Arterial Anatomy': 30,
-    'Arterial Hemodynamics': 28,
-    'Physics & Instrumentation': 18,
-    'Arterial Disease': 16,
-    'General & Other': 62,
-  };
+      try {
+        const metadata = await loadMetadata();
+        setCategoryTotals(metadata.categoryTotals || {});
+      } catch (error) {
+        console.error('Failed to load metadata:', error);
+      }
+    };
+
+    loadData();
+  }, [currentModality, loadMetadata]);
+
+  // Get modality-specific stats
+  const modalityStats = stats ? getCurrentModalityStats(stats) : null;
+
+  const totalQuestions = currentModality?.questionCount || 200;
+  const accuracy = modalityStats && modalityStats.totalAnswered > 0
+    ? Math.round((modalityStats.totalCorrect / modalityStats.totalAnswered) * 100)
+    : 0;
 
   return (
     <div className="min-h-screen bg-[#F5F7FA]">
@@ -41,36 +54,41 @@ export default function StatsPage() {
               <span className="text-emerald-500">Pass</span>
               <span className="text-gray-600 text-base sm:text-2xl ml-2 sm:ml-3 font-bold">Stats</span>
             </h1>
-            <p className="text-xs sm:text-sm text-gray-500 mt-0.5 sm:mt-1">Your vascular registry exam prep</p>
+            <p className="text-xs sm:text-sm text-gray-500 mt-0.5 sm:mt-1">
+              {currentModality?.tagline || 'Your ultrasound registry exam prep'}
+            </p>
           </div>
-          <Link href="/">
-            <Button variant="outline" size="sm" className="font-semibold text-xs sm:text-sm px-2.5 sm:px-4">
-              <ArrowLeft className="w-4 h-4 sm:mr-2" />
-              <span className="hidden sm:inline">Back</span>
-            </Button>
-          </Link>
+          <div className="flex items-center gap-2">
+            <ModalitySelectorDropdown />
+            <Link href="/">
+              <Button variant="outline" size="sm" className="font-semibold text-xs sm:text-sm px-2.5 sm:px-4">
+                <ArrowLeft className="w-4 h-4 sm:mr-2" />
+                <span className="hidden sm:inline">Back</span>
+              </Button>
+            </Link>
+          </div>
         </div>
       </header>
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-12">
         {/* XP / Level Banner */}
-        {stats && (
+        {stats && modalityStats && (
           <Card className="p-4 sm:p-6 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 mb-6 sm:mb-8">
             <div className="flex items-center justify-between mb-2 sm:mb-3">
               <div className="flex items-center gap-2 sm:gap-3">
                 <Star className="w-6 h-6 sm:w-8 sm:h-8 text-amber-500" />
                 <div>
-                  <div className="text-lg sm:text-2xl font-bold text-gray-800">Level {stats.level}</div>
-                  <div className="text-xs sm:text-sm text-gray-600">{stats.xp} Total XP</div>
+                  <div className="text-lg sm:text-2xl font-bold text-gray-800">Level {modalityStats.level}</div>
+                  <div className="text-xs sm:text-sm text-gray-600">{modalityStats.xp} Total XP</div>
                 </div>
               </div>
               <div className="flex items-center gap-1 sm:gap-2">
                 <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-amber-500" />
-                <span className="text-xs sm:text-sm text-gray-600">{(stats.level * 500) - stats.xp} XP to next</span>
+                <span className="text-xs sm:text-sm text-gray-600">{(modalityStats.level * 500) - modalityStats.xp} XP to next</span>
               </div>
             </div>
-            <Progress value={((stats.xp % 500) / 500) * 100} className="h-2.5 sm:h-3 bg-amber-100" />
+            <Progress value={((modalityStats.xp % 500) / 500) * 100} className="h-2.5 sm:h-3 bg-amber-100" />
           </Card>
         )}
 
@@ -83,10 +101,10 @@ export default function StatsPage() {
               </div>
               <div className="text-xs sm:text-sm font-medium text-gray-600">Done</div>
             </div>
-            <div className="text-xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">{stats?.totalAnswered ?? 0}</div>
-            <Progress value={((stats?.totalAnswered ?? 0) / totalQuestions) * 100} className="h-1.5 sm:h-2 bg-gray-100" />
+            <div className="text-xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">{modalityStats?.totalAnswered ?? 0}</div>
+            <Progress value={((modalityStats?.totalAnswered ?? 0) / totalQuestions) * 100} className="h-1.5 sm:h-2 bg-gray-100" />
             <div className="text-[10px] sm:text-xs text-gray-500 mt-1 sm:mt-2">
-              {stats?.totalAnswered ?? 0} / {totalQuestions}
+              {modalityStats?.totalAnswered ?? 0} / {totalQuestions}
             </div>
           </Card>
 
@@ -100,7 +118,7 @@ export default function StatsPage() {
             <div className="text-xl sm:text-3xl font-bold text-emerald-600 mb-1 sm:mb-2">{accuracy}%</div>
             <Progress value={accuracy} className="h-1.5 sm:h-2 bg-emerald-100" />
             <div className="text-[10px] sm:text-xs text-gray-500 mt-1 sm:mt-2">
-              {stats?.totalCorrect ?? 0} correct
+              {modalityStats?.totalCorrect ?? 0} correct
             </div>
           </Card>
 
@@ -163,7 +181,7 @@ export default function StatsPage() {
 
           <div className="space-y-3 sm:space-y-4">
             {Object.entries(categoryTotals).map(([category, total]) => {
-              const catStats = stats?.categoryStats?.[category];
+              const catStats = modalityStats?.categoryStats?.[category];
               const answered = catStats?.answered ?? 0;
               const correct = catStats?.correct ?? 0;
               const catAccuracy = answered > 0 ? Math.round((correct / answered) * 100) : 0;

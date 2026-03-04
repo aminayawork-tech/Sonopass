@@ -2,19 +2,31 @@
 
 import { useEffect, useState } from 'react';
 import ExamInterface from '@/components/ExamInterface';
-import questionsData from '@/data/vascular-questions.json';
 import { shuffleQuestions } from '@/lib/shuffle';
+import { useModality } from '@/contexts/ModalityContext';
 
 export default function Quick10Page() {
   const [questions, setQuestions] = useState<any[]>([]);
   const [key, setKey] = useState(0);
+  const { currentModality, loadQuestions } = useModality();
 
   useEffect(() => {
-    const allQuestions = [...questionsData.exam1, ...questionsData.exam2];
-    setQuestions(shuffleQuestions(allQuestions).slice(0, 10));
-  }, [key]);
+    const loadData = async () => {
+      if (!currentModality) return;
 
-  if (questions.length === 0) {
+      try {
+        const questionsData = await loadQuestions();
+        const allQuestions = [...questionsData.exam1, ...questionsData.exam2];
+        setQuestions(shuffleQuestions(allQuestions).slice(0, 10));
+      } catch (error) {
+        console.error('Failed to load questions:', error);
+      }
+    };
+
+    loadData();
+  }, [key, currentModality, loadQuestions]);
+
+  if (questions.length === 0 || !currentModality) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#F5F7FA]">
         <div className="text-3xl font-semibold text-gray-600">Loading...</div>
@@ -29,6 +41,7 @@ export default function Quick10Page() {
       title="Quick 10"
       mode="practice"
       examId="quick-10"
+      modality={currentModality.id}
       onRestart={() => setKey(k => k + 1)}
     />
   );

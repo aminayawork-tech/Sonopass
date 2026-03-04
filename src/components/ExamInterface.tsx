@@ -31,11 +31,12 @@ interface ExamInterfaceProps {
   title: string;
   mode: 'practice' | 'exam';
   examId?: string;
+  modality?: string;
   showResults?: boolean;
   onRestart?: () => void;
 }
 
-export default function ExamInterface({ questions, title, mode, examId, showResults = true, onRestart }: ExamInterfaceProps) {
+export default function ExamInterface({ questions, title, mode, examId, modality, showResults = true, onRestart }: ExamInterfaceProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [showAnswer, setShowAnswer] = useState(false);
@@ -80,7 +81,7 @@ export default function ExamInterface({ questions, title, mode, examId, showResu
     if (mode === 'practice') {
       setShowAnswer(true);
       const isCorrect = currentQuestion.correctAnswer === letter;
-      const result = recordAnswer(isCorrect, currentQuestion.category);
+      const result = recordAnswer(isCorrect, currentQuestion.category, modality);
       setStats(result.stats);
       showXpFlash(result.xpGained, isCorrect);
       if (result.newBadges.length > 0) {
@@ -112,14 +113,14 @@ export default function ExamInterface({ questions, title, mode, examId, showResu
         const q = questions.find(q => q.id === id);
         if (q) {
           const isCorrect = q.correctAnswer === answer;
-          const result = recordAnswer(isCorrect, q.category);
+          const result = recordAnswer(isCorrect, q.category, modality);
           latestStats = result.stats;
         }
       }
       setStats(latestStats);
     }
     if (examId) {
-      const result = recordExamComplete(examId, correctAnswers, answeredCount);
+      const result = recordExamComplete(examId, correctAnswers, answeredCount, modality);
       setStats(result.stats);
       if (result.newBadges.length > 0) {
         showBadgeNotification(result.newBadges[0]);

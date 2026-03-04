@@ -5,26 +5,42 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, BookOpen, Lightbulb, CheckCircle2, Brain, ArrowRight } from 'lucide-react';
-import questionsData from '@/data/vascular-questions.json';
 import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
+import { useModality } from '@/contexts/ModalityContext';
 
 export default function StudyPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [categoryMap, setCategoryMap] = useState<Map<string, any[]>>(new Map());
+  const [categories, setCategories] = useState<[string, any[]][]>([]);
+  const { currentModality, loadQuestions } = useModality();
 
-  // Get all unique categories and count questions
-  const allQuestions = [...questionsData.exam1, ...questionsData.exam2];
-  const categoryMap = new Map<string, any[]>();
+  // Load questions and build category map
+  useEffect(() => {
+    const loadData = async () => {
+      if (!currentModality) return;
 
-  allQuestions.forEach(q => {
-    if (!categoryMap.has(q.category)) {
-      categoryMap.set(q.category, []);
-    }
-    categoryMap.get(q.category)!.push(q);
-  });
+      try {
+        const questionsData = await loadQuestions();
+        const allQuestions = [...questionsData.exam1, ...questionsData.exam2];
+        const map = new Map<string, any[]>();
 
-  const categories = Array.from(categoryMap.entries())
-    .sort((a, b) => b[1].length - a[1].length);
+        allQuestions.forEach(q => {
+          if (!map.has(q.category)) {
+            map.set(q.category, []);
+          }
+          map.get(q.category)!.push(q);
+        });
+
+        setCategoryMap(map);
+        setCategories(Array.from(map.entries()).sort((a, b) => b[1].length - a[1].length));
+      } catch (error) {
+        console.error('Failed to load questions:', error);
+      }
+    };
+
+    loadData();
+  }, [currentModality, loadQuestions]);
 
   // Category colors
   const categoryColors = [
@@ -111,24 +127,31 @@ function StudyCategoryExam({ questions, title, onBack }: { questions: any[]; tit
   const [showContent, setShowContent] = useState(true);
   const [shuffled, setShuffled] = useState<any[]>([]);
   const [studyContent, setStudyContent] = useState<any>(null);
+  const { currentModality, loadStudyCategories } = useModality();
 
   useEffect(() => {
     setShuffled(shuffleQuestions(questions));
 
-    // Load study guide content
-    fetch('/study-categories.json')
-      .then(res => res.json())
-      .then(data => {
+    // Load study guide content from modality-specific path
+    const loadContent = async () => {
+      if (!currentModality) return;
+
+      try {
+        const data = await loadStudyCategories();
         // Direct mapping: category title matches key in JSON
         const category = data.categories[title];
         if (category) {
           setStudyContent(category);
         }
-      })
-      .catch(err => console.error('Failed to load study content:', err));
-  }, [questions, title]);
+      } catch (err) {
+        console.error('Failed to load study content:', err);
+      }
+    };
 
-  if (shuffled.length === 0) {
+    loadContent();
+  }, [questions, title, currentModality, loadStudyCategories]);
+
+  if (shuffled.length === 0 || !currentModality) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#F5F7FA]">
         <div className="text-3xl font-semibold text-gray-600">Loading...</div>
@@ -143,6 +166,7 @@ function StudyCategoryExam({ questions, title, onBack }: { questions: any[]; tit
         questions={shuffled}
         title={title}
         mode="practice"
+        modality={currentModality.id}
       />
     );
   }
