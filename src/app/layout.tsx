@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ModalityProvider } from "@/contexts/ModalityContext";
 
 export const metadata: Metadata = {
-  title: "SonoPass - Vascular Registry Exam Prep",
-  description: "Ace your vascular ultrasound registry exam with 231 real practice questions",
+  title: "SonoPass - Ultrasound Registry Exam Prep",
+  description: "Master your ultrasound registry exam with comprehensive practice questions across all modalities",
 };
 
 export default function RootLayout({
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <ModalityProvider>{children}</ModalityProvider>
+      </body>
     </html>
   );
 }

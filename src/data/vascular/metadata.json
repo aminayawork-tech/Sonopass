@@ -1,0 +1,62 @@
+{
+  "modality": "vascular",
+  "categories": [
+    "Cerebrovascular",
+    "Arterial Anatomy",
+    "Arterial Hemodynamics",
+    "Physics & Instrumentation",
+    "Arterial Disease",
+    "General & Other",
+    "Venous Anatomy",
+    "Venous Hemodynamics",
+    "Venous Disease",
+    "Treatment & Procedures",
+    "Clinical Applications"
+  ],
+  "categoryTotals": {
+    "Cerebrovascular": 53,
+    "Arterial Anatomy": 30,
+    "Arterial Hemodynamics": 28,
+    "Physics & Instrumentation": 18,
+    "Arterial Disease": 16,
+    "General & Other": 62
+  },
+  "examModes": [
+    {
+      "id": "quick-10",
+      "name": "Quick 10",
+      "description": "10 random questions for quick practice",
+      "questionCount": 10,
+      "shuffle": true,
+      "showAnswers": true
+    },
+    {
+      "id": "study",
+      "name": "Study Mode",
+      "description": "Study by category with instant feedback",
+      "questionCount": null,
+      "shuffle": true,
+      "showAnswers": true
+    },
+    {
+      "id": "mock-1",
+      "name": "Mock Exam 1",
+      "description": "Full practice exam (72 questions)",
+      "questionCount": 72,
+      "shuffle": true,
+      "showAnswers": false,
+      "timed": false
+    },
+    {
+      "id": "mock-2",
+      "name": "Mock Exam 2",
+      "description": "Full practice exam (72 questions)",
+      "questionCount": 72,
+      "shuffle": true,
+      "showAnswers": false,
+      "timed": false
+    }
+  ],
+  "totalQuestions": 200,
+  "passingScore": 75
+}

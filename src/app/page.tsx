@@ -6,20 +6,26 @@ import { Brain, Zap, BookOpen, BarChart3, Heart, Flame, Star, GraduationCap } fr
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
-import { getStats, type UserStats } from '@/lib/userStats';
+import { getStats, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
+import { useModality } from '@/contexts/ModalityContext';
+import { ModalitySelectorDropdown } from '@/components/ModalitySelector';
 
 export default function HomePage() {
   const [stats, setStats] = useState<UserStats | null>(null);
+  const { currentModality } = useModality();
 
   useEffect(() => {
     setStats(getStats());
   }, []);
 
-  const accuracy = stats && stats.totalAnswered > 0
-    ? Math.round((stats.totalCorrect / stats.totalAnswered) * 100)
+  // Get modality-specific stats
+  const modalityStats = stats ? getCurrentModalityStats(stats) : null;
+
+  const accuracy = modalityStats && modalityStats.totalAnswered > 0
+    ? Math.round((modalityStats.totalCorrect / modalityStats.totalAnswered) * 100)
     : 0;
-  const xpToNext = stats ? (stats.level * 500) - stats.xp : 500;
-  const xpProgress = stats ? ((stats.xp % 500) / 500) * 100 : 0;
+  const xpToNext = modalityStats ? (modalityStats.level * 500) - modalityStats.xp : 500;
+  const xpProgress = modalityStats ? ((modalityStats.xp % 500) / 500) * 100 : 0;
 
   return (
     <div className="min-h-screen bg-[#F5F7FA]">
@@ -31,14 +37,16 @@ export default function HomePage() {
               <span className="text-gray-800">Sono</span>
               <span className="text-emerald-500">Pass</span>
             </h1>
-            <p className="text-xs sm:text-sm text-gray-500 mt-0.5 sm:mt-1">Your vascular registry exam prep</p>
+            <p className="text-xs sm:text-sm text-gray-500 mt-0.5 sm:mt-1">
+              {currentModality?.tagline || 'Your ultrasound registry exam prep'}
+            </p>
           </div>
           <div className="flex items-center gap-2 sm:gap-4">
             {/* Live stats bar — desktop only */}
-            {stats && (
+            {stats && modalityStats && (
               <div className="hidden md:flex items-center gap-3 text-sm bg-gray-50 px-4 py-2 rounded-full">
                 <span className="flex items-center gap-1 font-semibold text-amber-600">
-                  <Zap className="w-4 h-4" /> {stats.xp}
+                  <Zap className="w-4 h-4" /> {modalityStats.xp}
                 </span>
                 <span className="text-gray-300">|</span>
                 <span className="flex items-center gap-1 font-semibold text-orange-500">
@@ -55,6 +63,7 @@ export default function HomePage() {
                 </span>
               </div>
             )}
+            <ModalitySelectorDropdown />
             <Link href="/stats">
               <Button variant="outline" size="sm" className="font-semibold text-xs sm:text-sm px-2.5 sm:px-4">
                 <BarChart3 className="w-4 h-4 sm:mr-2" />
@@ -70,31 +79,31 @@ export default function HomePage() {
         {/* Welcome Message */}
         <div className="text-center mb-6 sm:mb-12">
           <h2 className="text-2xl sm:text-5xl font-bold mb-2 sm:mb-3 text-gray-800">
-            Master Your Vascular Registry Exam
+            Master Your {currentModality?.name || 'Registry Exam'}
           </h2>
           <p className="text-sm sm:text-xl text-gray-600">
-            200 Practice Questions (10 with Images!) &bull; Smart Study Tools &bull; Track Your Progress
+            {currentModality?.questionCount || 0} Practice Questions &bull; Smart Study Tools &bull; Track Your Progress
           </p>
         </div>
 
         {/* Level / XP bar */}
-        {stats && (
+        {stats && modalityStats && (
           <div className="mb-6 sm:mb-8 max-w-xl mx-auto">
             <div className="flex justify-between items-center mb-1.5 sm:mb-2 text-xs sm:text-sm">
               <span className="font-bold text-gray-700 flex items-center gap-1">
-                <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-500" /> Level {stats.level}
+                <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-500" /> Level {modalityStats.level}
               </span>
-              <span className="text-gray-500">{xpToNext} XP to Level {stats.level + 1}</span>
+              <span className="text-gray-500">{xpToNext} XP to Level {modalityStats.level + 1}</span>
             </div>
             <Progress value={xpProgress} className="h-2.5 sm:h-3 bg-gray-200" />
           </div>
         )}
 
         {/* Mobile stats row — visible on small screens */}
-        {stats && (
+        {stats && modalityStats && (
           <div className="flex md:hidden items-center justify-center gap-3 text-xs mb-6 bg-white rounded-full px-4 py-2 shadow-sm mx-auto w-fit">
             <span className="flex items-center gap-1 font-semibold text-amber-600">
-              <Zap className="w-3.5 h-3.5" /> {stats.xp} XP
+              <Zap className="w-3.5 h-3.5" /> {modalityStats.xp} XP
             </span>
             <span className="text-gray-300">|</span>
             <span className="flex items-center gap-1 font-semibold text-orange-500">
@@ -120,7 +129,7 @@ export default function HomePage() {
                 <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8" />
               </div>
               <div className="flex-1">
-                <h3 className="text-lg sm:text-2xl font-bold mb-1">RVT Study Guide</h3>
+                <h3 className="text-lg sm:text-2xl font-bold mb-1">{currentModality?.shortName || 'RVT'} Study Guide</h3>
                 <p className="text-sm sm:text-base text-emerald-50">
                   Theory, anatomy, protocols & key concepts - your complete study companion
                 </p>
@@ -202,7 +211,7 @@ export default function HomePage() {
           <h3 className="text-lg sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-800">Your Progress</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
             <div className="text-center p-3 sm:p-6 bg-gray-50 rounded-lg">
-              <div className="text-2xl sm:text-4xl font-bold text-gray-800 mb-1 sm:mb-2">{stats?.totalAnswered ?? 0}</div>
+              <div className="text-2xl sm:text-4xl font-bold text-gray-800 mb-1 sm:mb-2">{modalityStats?.totalAnswered ?? 0}</div>
               <div className="text-xs sm:text-sm font-medium text-gray-600">Questions Done</div>
             </div>
             <div className="text-center p-3 sm:p-6 bg-emerald-50 rounded-lg">

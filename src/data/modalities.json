@@ -1,0 +1,94 @@
+{
+  "modalities": [
+    {
+      "id": "vascular",
+      "name": "Vascular (RVT)",
+      "shortName": "RVT",
+      "description": "Registered Vascular Technologist exam prep",
+      "tagline": "Your vascular registry exam prep",
+      "icon": "heart",
+      "color": "emerald",
+      "gradient": "from-emerald-500 to-emerald-600",
+      "enabled": true,
+      "questionCount": 200,
+      "examModes": [
+        {
+          "id": "quick-10",
+          "name": "Quick 10",
+          "description": "10 random questions",
+          "route": "/exam/quick-10"
+        },
+        {
+          "id": "study",
+          "name": "Study Mode",
+          "description": "Learn by category with instant feedback",
+          "route": "/exam/study"
+        },
+        {
+          "id": "mock-1",
+          "name": "Mock Exam 1",
+          "description": "Full practice exam (72 questions)",
+          "route": "/exam/mock-1"
+        },
+        {
+          "id": "mock-2",
+          "name": "Mock Exam 2",
+          "description": "Full practice exam (72 questions)",
+          "route": "/exam/mock-2"
+        }
+      ]
+    },
+    {
+      "id": "spi",
+      "name": "Physics & Instrumentation (SPI)",
+      "shortName": "SPI",
+      "description": "Sonography Principles & Instrumentation exam prep",
+      "tagline": "Your SPI registry exam prep",
+      "icon": "activity",
+      "color": "blue",
+      "gradient": "from-blue-500 to-blue-600",
+      "enabled": false,
+      "questionCount": 0,
+      "examModes": []
+    },
+    {
+      "id": "abdomen",
+      "name": "Abdomen",
+      "shortName": "Abdomen",
+      "description": "Abdominal sonography exam prep",
+      "tagline": "Your abdomen registry exam prep",
+      "icon": "scanner",
+      "color": "purple",
+      "gradient": "from-purple-500 to-purple-600",
+      "enabled": false,
+      "questionCount": 0,
+      "examModes": []
+    },
+    {
+      "id": "obgyn",
+      "name": "OB/GYN",
+      "shortName": "OB/GYN",
+      "description": "Obstetrics & Gynecology sonography exam prep",
+      "tagline": "Your OB/GYN registry exam prep",
+      "icon": "baby",
+      "color": "pink",
+      "gradient": "from-pink-500 to-pink-600",
+      "enabled": false,
+      "questionCount": 0,
+      "examModes": []
+    },
+    {
+      "id": "cardiac",
+      "name": "Cardiac",
+      "shortName": "Cardiac",
+      "description": "Adult echocardiography exam prep",
+      "tagline": "Your cardiac registry exam prep",
+      "icon": "heartbeat",
+      "color": "red",
+      "gradient": "from-red-500 to-red-600",
+      "enabled": false,
+      "questionCount": 0,
+      "examModes": []
+    }
+  ]
+}

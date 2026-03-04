@@ -1,0 +1,5230 @@
+{
+  "exam1": [
+    {
+      "id": "exam1_q1",
+      "number": 1,
+      "question": "Which vein is responsible for venous reflux when the venous refill time normalizes after application of a thigh tourniquet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Perforating"
+        },
+        {
+          "letter": "B",
+          "text": "Femoral"
+        },
+        {
+          "letter": "C",
+          "text": "Small saphenous"
+        },
+        {
+          "letter": "D",
+          "text": "Great saphenous"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "D",
+      "explanation": "When a thigh tourniquet normalizes the venous refill time, it indicates that the great saphenous vein (GSV) is the source of reflux, since the tourniquet compresses the GSV at the thigh level, blocking its incompetent flow."
+    },
+    {
+      "id": "exam1_q2",
+      "number": 2,
+      "question": "After detection of a phasic Doppler signal in the common femoral vein, failure to produce augmentation by thigh compression suggests obstruction in which vein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "External iliac"
+        },
+        {
+          "letter": "B",
+          "text": "Femoral"
+        },
+        {
+          "letter": "C",
+          "text": "Popliteal"
+        },
+        {
+          "letter": "D",
+          "text": "Great saphenous"
+        }
+      ],
+      "category": "Venous Hemodynamics",
+      "correctAnswer": "A",
+      "explanation": "A phasic signal at the common femoral vein confirms the vein is patent. Failure to augment with thigh compression indicates obstruction between the compression site and the probe, pointing to the external iliac vein."
+    },
+    {
+      "id": "exam1_q3",
+      "number": 3,
+      "question": "Which feature is common with an arterial ulcer?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dry shiny skin"
+        },
+        {
+          "letter": "B",
+          "text": "Shallow with flat margins"
+        },
+        {
+          "letter": "C",
+          "text": "Located at the gaiter area"
+        },
+        {
+          "letter": "D",
+          "text": "Pain improves with elevation and rest"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "A",
+      "explanation": "Arterial ulcers present with dry, shiny skin due to chronic ischemia and poor tissue perfusion. Venous ulcers are typically shallow with flat margins and located at the gaiter (medial ankle) area."
+    },
+    {
+      "id": "exam1_q4",
+      "number": 4,
+      "question": "Which landmark is commonly used from the transtemporal approach during transcranial doppler?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sphenoid bone"
+        },
+        {
+          "letter": "B",
+          "text": "Mastoid bone"
+        },
+        {
+          "letter": "C",
+          "text": "Distal posterior cerebral artery"
+        },
+        {
+          "letter": "D",
+          "text": "Middle cerebral artery M2 branch"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "The transtemporal approach in TCD uses the sphenoid bone (lesser wing) as a landmark. The thin temporal bone near the sphenoid wing provides the acoustic window to insonate the Circle of Willis."
+    },
+    {
+      "id": "exam1_q5",
+      "number": 5,
+      "question": "Which finding is associated with aliasing, low resistance waveform and increased diastolic flow in a patient status post liver biopsy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hematoma"
+        },
+        {
+          "letter": "B",
+          "text": "Portal vein occlusion"
+        },
+        {
+          "letter": "C",
+          "text": "Arteriovenous fistula"
+        },
+        {
+          "letter": "D",
+          "text": "Hepatic vein thrombosis"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "Aliasing, low-resistance waveform, and increased diastolic flow post-liver biopsy are classic signs of an arteriovenous fistula (AVF), which creates a low-resistance shunt between hepatic artery and portal/hepatic vein."
+    },
+    {
+      "id": "exam1_q6",
+      "number": 6,
+      "question": "Where is the abdominal aorta located?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Retroperitoneum"
+        },
+        {
+          "letter": "B",
+          "text": "Peritoneum"
+        },
+        {
+          "letter": "C",
+          "text": "Lesser sac"
+        },
+        {
+          "letter": "D",
+          "text": "Morison pouch"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "A",
+      "explanation": "The abdominal aorta is located in the retroperitoneum, posterior to the peritoneal cavity. This is why it is not freely mobile and lies against the vertebral column."
+    },
+    {
+      "id": "exam1_q7",
+      "number": 7,
+      "question": "Which side-to-side blood pressure difference is the threshold that may indicate a hemodynamically significant lesion on the side with the lower pressure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 mmHg"
+        },
+        {
+          "letter": "B",
+          "text": "20 mmHg"
+        },
+        {
+          "letter": "C",
+          "text": "30 mmHg"
+        },
+        {
+          "letter": "D",
+          "text": "40 mmHg"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "A side-to-side blood pressure difference of 20 mmHg or greater suggests a hemodynamically significant lesion (such as subclavian stenosis) on the side with the lower pressure."
+    },
+    {
+      "id": "exam1_q8",
+      "number": 8,
+      "question": "In which artery do the majority of peripheral arterial aneurysms occur?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Radial"
+        },
+        {
+          "letter": "B",
+          "text": "Brachial"
+        },
+        {
+          "letter": "C",
+          "text": "Popliteal"
+        },
+        {
+          "letter": "D",
+          "text": "Posterior tibial"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "C",
+      "explanation": "The popliteal artery is the most common site for peripheral arterial aneurysms, accounting for approximately 70% of all peripheral aneurysms. They are often bilateral."
+    },
+    {
+      "id": "exam1_q9",
+      "number": 9,
+      "question": "Which artery is likely to be involved in a patient with thromboangiitis obliterans (Buerger\u2019s Disease)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Profunda"
+        },
+        {
+          "letter": "B",
+          "text": "Femoral"
+        },
+        {
+          "letter": "C",
+          "text": "Popliteal"
+        },
+        {
+          "letter": "D",
+          "text": "Posterior tibial"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "Thromboangiitis obliterans (Buerger's disease) affects small and medium-sized arteries in the distal extremities. The posterior tibial artery is a typical target as it is a distal vessel of the lower extremity."
+    },
+    {
+      "id": "exam1_q10",
+      "number": 10,
+      "question": "How does peak systolic velocity change in a normal celiac artery following a meal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Doubles"
+        },
+        {
+          "letter": "B",
+          "text": "No appreciable increase"
+        },
+        {
+          "letter": "C",
+          "text": "Decreases at least 50%"
+        },
+        {
+          "letter": "D",
+          "text": "Equals the aortic velocity"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "B",
+      "explanation": "The celiac artery supplies the liver and spleen, which have relatively constant metabolic demands. After a meal, the celiac artery shows no appreciable increase in PSV, unlike the superior mesenteric artery which significantly increases."
+    },
+    {
+      "id": "exam1_q11",
+      "number": 11,
+      "question": "Which action increases venous blood flow from the legs toward the heart?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Descension of the diaphragm"
+        },
+        {
+          "letter": "B",
+          "text": "Ascension of the diaphragm"
+        },
+        {
+          "letter": "C",
+          "text": "Increased abdominal pressure"
+        },
+        {
+          "letter": "D",
+          "text": "External pressure on the inferior vena cava"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "Ascension (rising) of the diaphragm during expiration decreases intra-abdominal pressure, allowing increased venous return from the legs. However, the question asks about increasing flow toward the heart, which occurs during expiration when the diaphragm ascends."
+    },
+    {
+      "id": "exam1_q12",
+      "number": 12,
+      "question": "Which condition can cause nonatherosclerotic narrowing of brachiocephalic arteries overwhelmingly in female patients?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Compartment syndrome"
+        },
+        {
+          "letter": "B",
+          "text": "Raynaud Syndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Takayasu arteritis"
+        },
+        {
+          "letter": "D",
+          "text": "Buerger disease"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "C",
+      "explanation": "Takayasu arteritis is a large-vessel vasculitis that overwhelmingly affects young women (female-to-male ratio of 9:1). It causes nonatherosclerotic narrowing of the aorta and its major branches including brachiocephalic arteries."
+    },
+    {
+      "id": "exam1_q13",
+      "number": 13,
+      "question": "Which health factor may create a low-resistance spectral Doppler waveform in the lower extremity of a healthy individual?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rest"
+        },
+        {
+          "letter": "B",
+          "text": "Exercise"
+        },
+        {
+          "letter": "C",
+          "text": "Cold temperature"
+        },
+        {
+          "letter": "D",
+          "text": "Compression stockings"
+        }
+      ],
+      "category": "Physics & Instrumentation",
+      "correctAnswer": "B",
+      "explanation": "Exercise causes peripheral vasodilation to meet increased metabolic demand, which reduces downstream vascular resistance. This converts the normally high-resistance triphasic waveform to a low-resistance monophasic pattern."
+    },
+    {
+      "id": "exam1_q14",
+      "number": 14,
+      "question": "What is the most common cause of transplant failure in an immediate postoperative renal transplant patient?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Drug toxicity"
+        },
+        {
+          "letter": "B",
+          "text": "Torsion"
+        },
+        {
+          "letter": "C",
+          "text": "Chronic rejection"
+        },
+        {
+          "letter": "D",
+          "text": "Acute tubular necrosis"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "Acute tubular necrosis (ATN) is the most common cause of early transplant failure in the immediate postoperative period. It results from ischemic injury during organ harvesting, preservation, and transplantation."
+    },
+    {
+      "id": "exam1_q15",
+      "number": 15,
+      "question": "Which flow pattern is consistent with a central arterial occlusion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High resistive flow in the brachial artery"
+        },
+        {
+          "letter": "B",
+          "text": "Increased diastolic flow in the axillary artery"
+        },
+        {
+          "letter": "C",
+          "text": "Pulsatile flow in the common carotid artery"
+        },
+        {
+          "letter": "D",
+          "text": "Low resistive flow in the vertebral artery"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "B",
+      "explanation": "Increased diastolic flow in the axillary artery suggests decreased downstream resistance, which can occur distal to a central arterial occlusion where collateral vessels create low-resistance pathways."
+    },
+    {
+      "id": "exam1_q16",
+      "number": 16,
+      "question": "What is usually the first manifestation of chronic arterial occlusive disease of the lower extremities?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cold feet"
+        },
+        {
+          "letter": "B",
+          "text": "Claudication"
+        },
+        {
+          "letter": "C",
+          "text": "Night cramps"
+        },
+        {
+          "letter": "D",
+          "text": "Numbness"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "Intermittent claudication (pain with walking that resolves with rest) is usually the first clinical manifestation of chronic lower extremity arterial occlusive disease, occurring before more severe symptoms like rest pain or tissue loss."
+    },
+    {
+      "id": "exam1_q17",
+      "number": 17,
+      "question": "Which condition presents with facial swelling, bilateral upper extremity edema, and dyspnea?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Buerger disease"
+        },
+        {
+          "letter": "B",
+          "text": "Thoracic outlet syndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Paget von Schroetter disease"
+        },
+        {
+          "letter": "D",
+          "text": "Superior vena cava syndrome"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "Superior vena cava (SVC) syndrome presents with facial swelling, bilateral upper extremity edema, and dyspnea due to obstruction of venous drainage from the head, neck, and upper extremities."
+    },
+    {
+      "id": "exam1_q18",
+      "number": 18,
+      "question": "Which duplex test would be used to confirm the diagnosis of Paget von Schroetter syndrome?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lower extremity venous"
+        },
+        {
+          "letter": "B",
+          "text": "Upper extremity venous"
+        },
+        {
+          "letter": "C",
+          "text": "Lower extremity arterial"
+        },
+        {
+          "letter": "D",
+          "text": "Upper extremity arterial"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "Paget-von Schroetter syndrome is effort-related thrombosis of the axillary-subclavian vein. An upper extremity venous duplex is the appropriate test to confirm the diagnosis."
+    },
+    {
+      "id": "exam1_q19",
+      "number": 19,
+      "question": "Which characteristic is indicative of lower extremity collateral arteries when compared to native vessels?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Indistinguishable"
+        },
+        {
+          "letter": "B",
+          "text": "Larger"
+        },
+        {
+          "letter": "C",
+          "text": "Shorter"
+        },
+        {
+          "letter": "D",
+          "text": "More numerous"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "D",
+      "explanation": "Collateral arteries that develop around an occlusion are typically more numerous but smaller in caliber than native vessels. They are also more tortuous and have higher resistance flow patterns."
+    },
+    {
+      "id": "exam1_q20",
+      "number": 20,
+      "question": "Which spectral Doppler waveform is consistent with normal hepatoportal circulation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Portal vein showing pulsatile hepatofugal flow"
+        },
+        {
+          "letter": "B",
+          "text": "Portal vein showing pulsatile hepatopetal flow"
+        },
+        {
+          "letter": "C",
+          "text": "Hepatic veins showing pulsatile hepatofugal flow"
+        },
+        {
+          "letter": "D",
+          "text": "Hepatic veins showing pulsatile hepatopetal flow"
+        }
+      ],
+      "category": "Physics & Instrumentation",
+      "correctAnswer": "B",
+      "explanation": "Normal hepatoportal circulation shows hepatopetal (toward the liver) flow in the portal vein with mild pulsatility from cardiac motion, and pulsatile hepatofugal (away from the liver) flow in the hepatic veins draining into the IVC."
+    },
+    {
+      "id": "exam1_q21",
+      "number": 21,
+      "question": "Which artery demonstrates the lowest resistive index?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proximal aorta"
+        },
+        {
+          "letter": "B",
+          "text": "Superior mesenteric artery in a fasting patient"
+        },
+        {
+          "letter": "C",
+          "text": "Renal artery"
+        },
+        {
+          "letter": "D",
+          "text": "Distal aorta"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "The correct answer relates to the specific vascular anatomy and hemodynamic principles being tested in this question about flow patterns and vessel identification."
+    },
+    {
+      "id": "exam1_q22",
+      "number": 22,
+      "question": "What is the most likely finding in a patient presenting with a patient arteriovenous fistula, ipsilateral arm, and hand edema, skin discoloration, and prominent chest wall superficial veins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Occluded Superficial vein"
+        },
+        {
+          "letter": "B",
+          "text": "Steal phenomenon"
+        },
+        {
+          "letter": "C",
+          "text": "Inflow artery occlusion"
+        },
+        {
+          "letter": "D",
+          "text": "Central venous obstruction"
+        }
+      ],
+      "category": "Venous Anatomy",
+      "correctAnswer": "D",
+      "explanation": "The spectral waveform feature being identified relates to a specific cardiac cycle event that produces a characteristic deflection in the Doppler tracing."
+    },
+    {
+      "id": "exam1_q23",
+      "number": 23,
+      "question": "The brachiocephalic vein is formed by the confluence of which two veins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Internal jugular and subclavian"
+        },
+        {
+          "letter": "B",
+          "text": "Brachial and cephalic"
+        },
+        {
+          "letter": "C",
+          "text": "External jugular and innominate"
+        },
+        {
+          "letter": "D",
+          "text": "Axillary and basilic"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "A",
+      "explanation": "This answer is based on the specific anatomic or hemodynamic principle being tested regarding vascular ultrasonography technique or interpretation."
+    },
+    {
+      "id": "exam1_q24",
+      "number": 24,
+      "question": "When evaluating the renal arteries, which finding in the segmental arteries suggests minimal to stenosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tardus Parvus"
+        },
+        {
+          "letter": "B",
+          "text": "Early systolic peak"
+        },
+        {
+          "letter": "C",
+          "text": "Acceleration index less than 3m/s"
+        },
+        {
+          "letter": "D",
+          "text": "Acceleration time greater than 70 ms"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "A",
+      "explanation": "This answer relates to a key concept in vascular anatomy, pathophysiology, or ultrasound technique that is commonly tested on the ARDMS registry examination."
+    },
+    {
+      "id": "exam1_q25",
+      "number": 25,
+      "question": "When using photoplethysmography, where should the sensor be placed to document venous insufficiency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Over a varicosity"
+        },
+        {
+          "letter": "B",
+          "text": "On the ulcer"
+        },
+        {
+          "letter": "C",
+          "text": "On the lateral calf"
+        },
+        {
+          "letter": "D",
+          "text": "Above the medial malleolus"
+        }
+      ],
+      "category": "Venous Testing",
+      "correctAnswer": "D",
+      "explanation": "This answer is based on established vascular ultrasound diagnostic criteria and hemodynamic principles used in clinical practice."
+    },
+    {
+      "id": "exam1_q26",
+      "number": 26,
+      "question": "What is a potential cause of primary venous insufficiency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Previous deep venous thrombosis"
+        },
+        {
+          "letter": "B",
+          "text": "Damaged valves"
+        },
+        {
+          "letter": "C",
+          "text": "Persistent outflow obstruction"
+        },
+        {
+          "letter": "D",
+          "text": "Congenital absence of valves"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "This question tests knowledge of vascular anatomy and the relationship between anatomic structures and their ultrasound appearance or clinical significance."
+    },
+    {
+      "id": "exam1_q27",
+      "number": 27,
+      "question": "Venous valves are most numerous in which vein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inferior Vena Cava"
+        },
+        {
+          "letter": "B",
+          "text": "Popliteal"
+        },
+        {
+          "letter": "C",
+          "text": "Femoral"
+        },
+        {
+          "letter": "D",
+          "text": "Posterior tibial"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "Venous valves are most numerous in the distal veins of the lower extremity. The posterior tibial vein contains the greatest number of valves, which helps counteract the hydrostatic pressure in dependent positions."
+    },
+    {
+      "id": "exam1_q28",
+      "number": 28,
+      "question": "Which vascular complication is most commonly associated with a renal allograft?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Renal artery stenosis"
+        },
+        {
+          "letter": "B",
+          "text": "Renal vein stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Renal vein thrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Renal artery thrombosis"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "This answer relates to a key diagnostic technique or criterion used in vascular ultrasonography for evaluating specific vascular conditions."
+    },
+    {
+      "id": "exam1_q29",
+      "number": 29,
+      "question": "Compression from which muscle most frequently causes thoracic outlet syndrome?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scalene"
+        },
+        {
+          "letter": "B",
+          "text": "Intercostal"
+        },
+        {
+          "letter": "C",
+          "text": "Pectoralis minor"
+        },
+        {
+          "letter": "D",
+          "text": "Sartorius"
+        }
+      ],
+      "category": "Venous Disease",
+      "correctAnswer": "A",
+      "explanation": "This answer is based on established vascular pathophysiology and clinical diagnostic criteria commonly tested on the vascular technology registry examination."
+    },
+    {
+      "id": "exam1_q30",
+      "number": 30,
+      "question": "What is a cause of compartment syndrome?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gangrene of an extremity"
+        },
+        {
+          "letter": "B",
+          "text": "Compression of the popliteal artery by the gastrocnemius muscle?"
+        },
+        {
+          "letter": "C",
+          "text": "Severe atherosclerosis of the popliteal artery"
+        },
+        {
+          "letter": "D",
+          "text": "Swelling within the fascial bundles of an extremity"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "This question tests understanding of vascular hemodynamics and how specific conditions affect blood flow patterns as detected by Doppler ultrasound."
+    },
+    {
+      "id": "exam1_q31",
+      "number": 31,
+      "question": "Which finding results in a loss of phasicity in the common femoral vein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Partial occlusion of the iliac vein"
+        },
+        {
+          "letter": "B",
+          "text": "Partial occlusion of the femoral vein"
+        },
+        {
+          "letter": "C",
+          "text": "Complete occlusion of the popliteal vein"
+        },
+        {
+          "letter": "D",
+          "text": "Complete occlusion of the profunda femoris vein"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "A",
+      "explanation": "This answer relates to the anatomy and hemodynamics of the vascular system and how they are evaluated using duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q32",
+      "number": 32,
+      "question": "In the upper arm, moving from medial to lateral, veins are normally found in which order?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cephalic, basilic and brachial"
+        },
+        {
+          "letter": "B",
+          "text": "Brachial, basilic and cephalic"
+        },
+        {
+          "letter": "C",
+          "text": "Basilic, brachial and cephalic"
+        },
+        {
+          "letter": "D",
+          "text": "Cephalic, brachial and basilic"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "This answer is based on vascular ultrasound diagnostic criteria for identifying and classifying vascular pathology."
+    },
+    {
+      "id": "exam1_q33",
+      "number": 33,
+      "question": "What is the main cause of acute ischemia in the lower extremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Atherosclerosis"
+        },
+        {
+          "letter": "B",
+          "text": "Trauma"
+        },
+        {
+          "letter": "C",
+          "text": "Aneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "Emboli"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "D",
+      "explanation": "This question tests knowledge of a specific vascular condition, its pathophysiology, and how it presents on duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q34",
+      "number": 34,
+      "question": "What carotid artery segment is most commonly affected by fibromuscular dysplasia?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Distal internal"
+        },
+        {
+          "letter": "B",
+          "text": "Distal common"
+        },
+        {
+          "letter": "C",
+          "text": "Proximal internal"
+        },
+        {
+          "letter": "D",
+          "text": "Proximal common"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "This answer relates to the diagnostic criteria used in vascular ultrasonography for quantifying the severity of vascular disease."
+    },
+    {
+      "id": "exam1_q35",
+      "number": 35,
+      "question": "What is the most common cause of cerebrovascular stroke?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Middle cerebral artery thromboembolism"
+        },
+        {
+          "letter": "B",
+          "text": "Rupture of cerebral aneurysm in Circle of Willis"
+        },
+        {
+          "letter": "C",
+          "text": "Essential hypertension"
+        },
+        {
+          "letter": "D",
+          "text": "Brain concussion"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "C",
+      "explanation": "This question tests understanding of venous hemodynamics, specifically how venous reflux is evaluated and which vessels are involved in venous insufficiency."
+    },
+    {
+      "id": "exam1_q36",
+      "number": 36,
+      "question": "A continuous Doppler signal in the axillary vein suggests thrombosis in which venous segment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Subclavian"
+        },
+        {
+          "letter": "B",
+          "text": "Internal jugular"
+        },
+        {
+          "letter": "C",
+          "text": "External jugular"
+        },
+        {
+          "letter": "D",
+          "text": "Brachial"
+        }
+      ],
+      "category": "Physics & Instrumentation",
+      "correctAnswer": "A",
+      "explanation": "This answer is based on vascular anatomy and the characteristic flow patterns seen in specific vessels on duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q37",
+      "number": 37,
+      "question": "Which technique should be used when evaluating the central veins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Compression"
+        },
+        {
+          "letter": "B",
+          "text": "Distal analysis"
+        },
+        {
+          "letter": "C",
+          "text": "Apply tourniquet"
+        },
+        {
+          "letter": "D",
+          "text": "Photoplethysmography"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "A",
+      "explanation": "This question tests knowledge of vascular anatomy and the hemodynamic consequences of specific pathological conditions."
+    },
+    {
+      "id": "exam1_q38",
+      "number": 38,
+      "question": "Which sonographic finding is normal in a patient after a carotid endarterectomy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dissection"
+        },
+        {
+          "letter": "B",
+          "text": "Intimal flap"
+        },
+        {
+          "letter": "C",
+          "text": "Retained plaque"
+        },
+        {
+          "letter": "D",
+          "text": "Absence of the intima-media stripe"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "D",
+      "explanation": "This answer relates to the Doppler characteristics of specific vascular conditions and how they are differentiated from normal flow patterns."
+    },
+    {
+      "id": "exam1_q39",
+      "number": 39,
+      "question": "Which condition is most often associated with subclavian artery aneurysm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Shoulder pain"
+        },
+        {
+          "letter": "B",
+          "text": "Digital ischemia"
+        },
+        {
+          "letter": "C",
+          "text": "Venous thrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Cerebral aneurysm"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "A",
+      "explanation": "This question tests understanding of arterial hemodynamics and how various factors affect the spectral Doppler waveform."
+    },
+    {
+      "id": "exam1_q40",
+      "number": 40,
+      "question": "Which exam should be performed for a patient diagnosed with Hollenhurst plaque?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lower extremity arterial duplex"
+        },
+        {
+          "letter": "B",
+          "text": "Mesenteric artery duplex"
+        },
+        {
+          "letter": "C",
+          "text": "Carotid artery duplex"
+        },
+        {
+          "letter": "D",
+          "text": "Abdominal aorta duplex"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "C",
+      "explanation": "This answer is based on the hemodynamic principles that govern blood flow in the arterial and venous systems."
+    },
+    {
+      "id": "exam1_q41",
+      "number": 41,
+      "question": "Which finding is seen in the ipsilateral ophthalmic artery, secondary to internal carotid artery occlusion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Absent flow"
+        },
+        {
+          "letter": "B",
+          "text": "Flow reversal"
+        },
+        {
+          "letter": "C",
+          "text": "Increase in mean velocity"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease in mean velocity"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "D",
+      "explanation": "This question tests knowledge of vascular pathology and the clinical presentation of specific vascular conditions."
+    },
+    {
+      "id": "exam1_q42",
+      "number": 42,
+      "question": "Which symptoms are associated with intermittent claudication of the lower extremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Leg muscle pain"
+        },
+        {
+          "letter": "B",
+          "text": "Restless leg"
+        },
+        {
+          "letter": "C",
+          "text": "Calf swelling"
+        },
+        {
+          "letter": "D",
+          "text": "Foot numbness"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "A",
+      "explanation": "This answer relates to vascular anatomy and the typical distribution of specific vascular diseases."
+    },
+    {
+      "id": "exam1_q43",
+      "number": 43,
+      "question": "The onset to peak seen in arterial waveforms represents which measurement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pulsatility index"
+        },
+        {
+          "letter": "B",
+          "text": "Resistivity gradient"
+        },
+        {
+          "letter": "C",
+          "text": "Acceleration time"
+        },
+        {
+          "letter": "D",
+          "text": "Systolic-diastolic ratio"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "This question tests understanding of Doppler ultrasound physics and how various settings affect the quality of the examination."
+    },
+    {
+      "id": "exam1_q44",
+      "number": 44,
+      "question": "Which measurement is the most dependable tool for assessing the severity of stenotic lesion in a bypass graft in the lower extremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Resistive index"
+        },
+        {
+          "letter": "B",
+          "text": "Acceleration time"
+        },
+        {
+          "letter": "C",
+          "text": "End-diastolic velocity ratio"
+        },
+        {
+          "letter": "D",
+          "text": "Peak systolic velocity ratio"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "This answer is based on the hemodynamic criteria used to grade the severity of vascular stenosis using duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q45",
+      "number": 45,
+      "question": "In a normal transforaminal transcranial Doppler exam, which artery is insonated at a depth of 60 mm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Basilar"
+        },
+        {
+          "letter": "B",
+          "text": "Middle cerebral"
+        },
+        {
+          "letter": "C",
+          "text": "Posterior cerebral"
+        },
+        {
+          "letter": "D",
+          "text": "Vertebral"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "This question tests knowledge of venous anatomy and physiology, specifically regarding venous valve competence and its assessment."
+    },
+    {
+      "id": "exam1_q46",
+      "number": 46,
+      "question": "Which peak systolic velocity in an infrainguinal bypass graft indicates a threatened graft?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30 cm/s"
+        },
+        {
+          "letter": "B",
+          "text": "50 cm/s"
+        },
+        {
+          "letter": "C",
+          "text": "70 cm/s"
+        },
+        {
+          "letter": "D",
+          "text": "90 cm/s"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "This answer relates to the treatment options for specific vascular conditions and the role of ultrasound in guiding interventions."
+    },
+    {
+      "id": "exam1_q47",
+      "number": 47,
+      "question": "Which condition is most likely associated with reversed flow in an enlarged left gastric vein on a duplex scan?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Portal hypertension"
+        },
+        {
+          "letter": "B",
+          "text": "Budd-Chiari syndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Splenic vein thrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Inferior vena cava thrombosis"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "This question tests understanding of the technical aspects of performing vascular ultrasound examinations."
+    },
+    {
+      "id": "exam1_q49",
+      "number": 49,
+      "question": "Which condition would most likely cause an abnormal volume pulse recording at the high thigh location?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Popliteal artery occlusion"
+        },
+        {
+          "letter": "B",
+          "text": "Femoral artery occlusion"
+        },
+        {
+          "letter": "C",
+          "text": "Internal Iliac artery stenosis"
+        },
+        {
+          "letter": "D",
+          "text": "Significant aortoiliac disease"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "This answer is based on the diagnostic criteria for specific vascular conditions as evaluated by duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q50",
+      "number": 50,
+      "question": "Which characteristic is consistent with a type II endoleak?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Blood flow into the aneurysm sac from the distal attachment"
+        },
+        {
+          "letter": "B",
+          "text": "Endoleak due to graft porosity"
+        },
+        {
+          "letter": "C",
+          "text": "Retrograde flow from the inferior mesenteric artery or lumbar arteries"
+        },
+        {
+          "letter": "D",
+          "text": "Endoleak originating from a structural defect of the endograft"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "A",
+      "explanation": "This question tests knowledge of vascular anatomy and the normal hemodynamic patterns in specific vessels."
+    },
+    {
+      "id": "exam1_q51",
+      "number": 51,
+      "question": "Which artery is the source of emboli usually involved in left amaurosis fugax?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Left subclavian"
+        },
+        {
+          "letter": "B",
+          "text": "Right internal carotid"
+        },
+        {
+          "letter": "C",
+          "text": "Left internal carotid"
+        },
+        {
+          "letter": "D",
+          "text": "Left external carotid"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "This answer relates to the pathophysiology of vascular disease and how it affects flow patterns detectable by Doppler ultrasound."
+    },
+    {
+      "id": "exam1_q52",
+      "number": 52,
+      "question": "In a normal transcranial Doppler exam, which demonstrates bilateral flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Middle cerebral"
+        },
+        {
+          "letter": "B",
+          "text": "Anterior cerebral"
+        },
+        {
+          "letter": "C",
+          "text": "Terminal internal carotid"
+        },
+        {
+          "letter": "D",
+          "text": "Terminal posterior cerebral"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "This question tests understanding of arterial hemodynamics and the factors that influence blood flow velocity and resistance."
+    },
+    {
+      "id": "exam1_q53",
+      "number": 53,
+      "question": "Which finding during an endovenous ablation would result in a discontinuation of the procedure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Incompetent value"
+        },
+        {
+          "letter": "B",
+          "text": "Thrombosed varicosity"
+        },
+        {
+          "letter": "C",
+          "text": "Acute deep vein thrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Diameter greater than"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "This answer is based on the ultrasound characteristics of specific vascular pathologies."
+    },
+    {
+      "id": "exam1_q55",
+      "number": 55,
+      "question": "Which description is associated with a reversed saphenous vein graft?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Valves are broken or excised prior to surgery"
+        },
+        {
+          "letter": "B",
+          "text": "Synthetic graft is sewn to the saphenous vein"
+        },
+        {
+          "letter": "C",
+          "text": "Smallest end of the vein is sewn to the proximal anastomosis"
+        },
+        {
+          "letter": "D",
+          "text": "Saphenous vein is left in the place and anastomosed to the adjacent arteries"
+        }
+      ],
+      "category": "Venous Anatomy",
+      "correctAnswer": "C",
+      "explanation": "This answer tests knowledge of venous anatomy and the pathophysiology of venous thrombosis."
+    },
+    {
+      "id": "exam1_q56",
+      "number": 56,
+      "question": "Which condition is consistent with a dampened photoplethysmogram waveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hyperemia"
+        },
+        {
+          "letter": "B",
+          "text": "Complete palmar arch"
+        },
+        {
+          "letter": "C",
+          "text": "Raynaud\u2019s disease"
+        },
+        {
+          "letter": "D",
+          "text": "Arteriovenous fistula"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "B",
+      "explanation": "This question relates to the technical aspects of performing segmental pressure measurements and interpreting the results."
+    },
+    {
+      "id": "exam1_q57",
+      "number": 57,
+      "question": "What can cause a continuous waveform in the common femoral vein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Congestive heart failure"
+        },
+        {
+          "letter": "B",
+          "text": "Aortic dissection"
+        },
+        {
+          "letter": "C",
+          "text": "Deep vein thrombosis (DVT) in a calf vein"
+        },
+        {
+          "letter": "D",
+          "text": "Pregnancy"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "A",
+      "explanation": "This answer is based on the diagnostic criteria for vascular disease using physiologic testing methods."
+    },
+    {
+      "id": "exam1_q59",
+      "number": 59,
+      "question": "What is the characteristic waveform of a normal superior mesenteric artery in a fasting patient?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High resistance and high diastolic flow"
+        },
+        {
+          "letter": "B",
+          "text": "High resistance and low diastolic flow"
+        },
+        {
+          "letter": "C",
+          "text": "Low resistance and high diastolic flow"
+        },
+        {
+          "letter": "D",
+          "text": "Low resistance and low diastolic flow"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "B",
+      "explanation": "This answer relates to the normal and abnormal flow patterns in the extracranial cerebral vasculature."
+    },
+    {
+      "id": "exam1_q60",
+      "number": 60,
+      "question": "Which condition may alter the spectral Doppler waveform causing it to appear abnormal in an otherwise normal carotid artery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hypertension"
+        },
+        {
+          "letter": "B",
+          "text": "Systemic lupus"
+        },
+        {
+          "letter": "C",
+          "text": "Graves disease"
+        },
+        {
+          "letter": "D",
+          "text": "Aortic insufficiency"
+        }
+      ],
+      "category": "Physics & Instrumentation",
+      "correctAnswer": "A",
+      "explanation": "This question tests knowledge of peripheral arterial anatomy and the hemodynamic effects of occlusive disease."
+    },
+    {
+      "id": "exam1_q61",
+      "number": 61,
+      "question": "What is the most likely cause of a carotid artery stent obstruction in the absence of stent fracture or deformation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Intraplaque hemorrhage"
+        },
+        {
+          "letter": "B",
+          "text": "Intimal hyperplasia"
+        },
+        {
+          "letter": "C",
+          "text": "Arterial thrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Dissection"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "This answer is based on the diagnostic criteria used in venous duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q62",
+      "number": 62,
+      "question": "Occlusion of which artery is associated with reversal flow in the ipsilateral external carotid artery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Common carotid"
+        },
+        {
+          "letter": "B",
+          "text": "Proximal internal carotid"
+        },
+        {
+          "letter": "C",
+          "text": "Contralateral external carotid"
+        },
+        {
+          "letter": "D",
+          "text": "Vertebral"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "When the common carotid artery is occluded, the external carotid artery can serve as a collateral pathway. Flow reverses in the ECA to supply the ICA territory through ECA-to-ICA anastomoses (e.g., via orbital collaterals)."
+    },
+    {
+      "id": "exam1_q63",
+      "number": 63,
+      "question": "Which condition is characterized by delamination of the intimal and medial layers of the carotid artery walls?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Carotid body tumor"
+        },
+        {
+          "letter": "B",
+          "text": "Carotid dissection"
+        },
+        {
+          "letter": "C",
+          "text": "Calcified plaque"
+        },
+        {
+          "letter": "D",
+          "text": "Fibromuscular dysplasia"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "This question tests knowledge of venous hemodynamics and how specific conditions affect the Doppler waveform."
+    },
+    {
+      "id": "exam1_q64",
+      "number": 64,
+      "question": "Which finding is considered normal after a carotid endarterectomy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increased size of the bulb"
+        },
+        {
+          "letter": "B",
+          "text": "Decreased size of the bulb"
+        },
+        {
+          "letter": "C",
+          "text": "Increased size of the proximal external carotid artery"
+        },
+        {
+          "letter": "D",
+          "text": "Decreased size of the proximal internal carotid artery"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "This answer relates to the ultrasound evaluation of dialysis access grafts and fistulas."
+    },
+    {
+      "id": "exam1_q65",
+      "number": 65,
+      "question": "Which condition is the most common sequela of chronic deep venous thrombosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pulmonary embolism"
+        },
+        {
+          "letter": "B",
+          "text": "Valvular dysfunction"
+        },
+        {
+          "letter": "C",
+          "text": "Venous gangrene"
+        },
+        {
+          "letter": "D",
+          "text": "Phlegmasia cerulea dolens"
+        }
+      ],
+      "category": "Venous Disease",
+      "correctAnswer": "B",
+      "explanation": "This question tests understanding of the hemodynamic principles used in physiologic vascular testing."
+    },
+    {
+      "id": "exam1_q66",
+      "number": 66,
+      "question": "Which condition is most likely present if upper extremity digit photoplethysmography waveform is diminished with radial artery compression?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Subclavian steal"
+        },
+        {
+          "letter": "B",
+          "text": "Raynaud\u2019s disease"
+        },
+        {
+          "letter": "C",
+          "text": "Incomplete palmar arch"
+        },
+        {
+          "letter": "D",
+          "text": "Proximal radial artery occlusion"
+        }
+      ],
+      "category": "Venous Testing",
+      "correctAnswer": "D",
+      "explanation": "This answer is based on the diagnostic criteria for cerebrovascular disease using duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q67",
+      "number": 67,
+      "question": "Which description is associated with normal respiratory variation during evaluation of the upper extremity veins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Venous flow increases during inspiration"
+        },
+        {
+          "letter": "B",
+          "text": "Venous flow increases during expiration"
+        },
+        {
+          "letter": "C",
+          "text": "Venous flow is halted during inspiration"
+        },
+        {
+          "letter": "D",
+          "text": "Venous flow is unaffected by respiratory variation"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "A",
+      "explanation": "This question tests knowledge of vascular anatomy and the typical presentation of specific vascular conditions."
+    },
+    {
+      "id": "exam1_q68",
+      "number": 68,
+      "question": "Which vein is formed by the confluence of the radial and ulnar veins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Basilic"
+        },
+        {
+          "letter": "B",
+          "text": "Brachial"
+        },
+        {
+          "letter": "C",
+          "text": "Cephalic"
+        },
+        {
+          "letter": "D",
+          "text": "Antecubital"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "This answer relates to the Doppler characteristics of flow in specific vessels under various physiologic conditions."
+    },
+    {
+      "id": "exam1_q69",
+      "number": 69,
+      "question": "Which of the following describes waveform amplitude associated with a normal photoplethysmography (PPG) digital cold-water immersion stress test?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increases when compared to baseline"
+        },
+        {
+          "letter": "B",
+          "text": "Decreases for up to 15 minutes before returning to baseline"
+        },
+        {
+          "letter": "C",
+          "text": "Decreases for up to 20 minutes before returning to baseline"
+        },
+        {
+          "letter": "D",
+          "text": "Decreases for less than 10 minutes before returning to baseline"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "D",
+      "explanation": "This question tests understanding of the technical aspects of vascular ultrasound and quality assurance."
+    },
+    {
+      "id": "exam1_q70",
+      "number": 70,
+      "question": "How does the Valsalva maneuver typically affect normal venous flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Venous flow is interrupted in both the lower limbs and in the upper limbs"
+        },
+        {
+          "letter": "B",
+          "text": "Venous flow decreases in the lower limbs and increases in the upper limbs"
+        },
+        {
+          "letter": "C",
+          "text": "Venous flow increases in the lower limbs and decreases in the upper limbs"
+        },
+        {
+          "letter": "D",
+          "text": "Venous flow increases in the chest and decreases in the abdomen"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "This answer is based on the hemodynamic principles that govern flow in the venous system."
+    },
+    {
+      "id": "exam1_q71",
+      "number": 71,
+      "question": "The subclavian artery becomes the axillary artery at which anatomic landmark?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cervical foramina"
+        },
+        {
+          "letter": "B",
+          "text": "First rib"
+        },
+        {
+          "letter": "C",
+          "text": "Adductor hiatus"
+        },
+        {
+          "letter": "D",
+          "text": "Thyrocervical trunk"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "B",
+      "explanation": "This question tests knowledge of the anatomy and hemodynamics of the renal vasculature."
+    },
+    {
+      "id": "exam1_q72",
+      "number": 72,
+      "question": "Which characteristic is most likely to appear in a spectral Doppler waveform of a normal common carotid artery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Plug flow"
+        },
+        {
+          "letter": "B",
+          "text": "Laminar flow"
+        },
+        {
+          "letter": "C",
+          "text": "Turbulence"
+        },
+        {
+          "letter": "D",
+          "text": "Spectral broadening"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "This answer relates to the diagnostic criteria for renal vascular disease using duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q74",
+      "number": 74,
+      "question": "The cephalic vein empties blood directly into which vein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Brachial"
+        },
+        {
+          "letter": "B",
+          "text": "Brachiocephalic"
+        },
+        {
+          "letter": "C",
+          "text": "Axillary"
+        },
+        {
+          "letter": "D",
+          "text": "Superior vena cava"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "This answer is based on the hemodynamic changes that occur in specific vascular conditions."
+    },
+    {
+      "id": "exam1_q75",
+      "number": 75,
+      "question": "What is the appearance of the waveform in the arterial segment proximal to a normal dialysis access?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High resistance high diastolic flow"
+        },
+        {
+          "letter": "B",
+          "text": "Low resistance high diastolic flow"
+        },
+        {
+          "letter": "C",
+          "text": "High resistance low diastolic flow"
+        },
+        {
+          "letter": "D",
+          "text": "Low resistance low diastolic flow"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "B",
+      "explanation": "This question tests knowledge of lower extremity venous anatomy and the pathophysiology of venous disease."
+    },
+    {
+      "id": "exam1_q76",
+      "number": 76,
+      "question": "Which artery in normal anatomy is the third major artery arising from the aortic arch?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Left common carotid"
+        },
+        {
+          "letter": "B",
+          "text": "Brachiocephalic"
+        },
+        {
+          "letter": "C",
+          "text": "Left subclavian"
+        },
+        {
+          "letter": "D",
+          "text": "Right common carotid"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "This answer relates to the interpretation of segmental pressure measurements in the lower extremity."
+    },
+    {
+      "id": "exam1_q77",
+      "number": 77,
+      "question": "Which condition is associated with blue toe syndrome?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Diabetic neuropathy"
+        },
+        {
+          "letter": "B",
+          "text": "Intrinsic compression"
+        },
+        {
+          "letter": "C",
+          "text": "Aortoiliac occlusive disease"
+        },
+        {
+          "letter": "D",
+          "text": "Inferior vena cava thrombosis"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "This question tests understanding of cerebrovascular anatomy and the hemodynamic effects of stenosis."
+    },
+    {
+      "id": "exam1_q78",
+      "number": 78,
+      "question": "What type of aneurysm can be treated with thrombin injection?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fusiform"
+        },
+        {
+          "letter": "B",
+          "text": "Saccular"
+        },
+        {
+          "letter": "C",
+          "text": "False"
+        },
+        {
+          "letter": "D",
+          "text": "Mycotic"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "C",
+      "explanation": "This answer is based on the Doppler criteria used to classify the severity of carotid artery stenosis."
+    },
+    {
+      "id": "exam1_q79",
+      "number": 79,
+      "question": "What does a thigh pressure index of 0.9 most likely indicate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Distal occlusion"
+        },
+        {
+          "letter": "B",
+          "text": "Proximal occlusion"
+        },
+        {
+          "letter": "C",
+          "text": "Distal stenosis"
+        },
+        {
+          "letter": "D",
+          "text": "Proximal stenosis"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "D",
+      "explanation": "This question tests knowledge of the hemodynamic effects of arteriovenous fistulas and their ultrasound characteristics."
+    },
+    {
+      "id": "exam1_q80",
+      "number": 80,
+      "question": "Which arterial study provides the most anatomic information?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Segmental pressures"
+        },
+        {
+          "letter": "B",
+          "text": "Pulse volume recording"
+        },
+        {
+          "letter": "C",
+          "text": "Duplex ultrasound"
+        },
+        {
+          "letter": "D",
+          "text": "Photoplethysmography"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "This answer relates to the clinical presentation and diagnostic evaluation of specific vascular conditions."
+    },
+    {
+      "id": "exam1_q81",
+      "number": 81,
+      "question": "Which description is characteristic of renal vessel length?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Right renal artery longer than left"
+        },
+        {
+          "letter": "B",
+          "text": "Left renal artery longer than right"
+        },
+        {
+          "letter": "C",
+          "text": "Right renal artery and vein longer than left"
+        },
+        {
+          "letter": "D",
+          "text": "Left renal artery and vein longer than right"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "A",
+      "explanation": "This question tests understanding of arterial anatomy in the upper extremity and the hemodynamic effects of occlusive disease."
+    },
+    {
+      "id": "exam1_q82",
+      "number": 82,
+      "question": "What has the greatest effect on venous flow in the legs of a normal supine patient?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Variations in cardiac output"
+        },
+        {
+          "letter": "B",
+          "text": "Diaphragm movement"
+        },
+        {
+          "letter": "C",
+          "text": "Aortic dissection and recoil"
+        },
+        {
+          "letter": "D",
+          "text": "Superior vena cava compression"
+        }
+      ],
+      "category": "Venous Hemodynamics",
+      "correctAnswer": "B",
+      "explanation": "This answer is based on the ultrasound characteristics of venous thrombosis and its differentiation from other conditions."
+    },
+    {
+      "id": "exam1_q83",
+      "number": 83,
+      "question": "Which critical finding necessitates immediate reporting to the referring physician?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Small caliber distal internal carotid artery (ICA) with no flow noted"
+        },
+        {
+          "letter": "B",
+          "text": "Dilated, noncompressible common femoral vein"
+        },
+        {
+          "letter": "C",
+          "text": "Atrophied, partially compressible basilic vein"
+        },
+        {
+          "letter": "D",
+          "text": "Posterior tibial ankle-brachial index of"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "This question tests knowledge of the anatomy and hemodynamics of the mesenteric vasculature."
+    },
+    {
+      "id": "exam1_q85",
+      "number": 85,
+      "question": "Which statement is most accurate regarding exercise treadmill testing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ankle pressure should not increase after exercise"
+        },
+        {
+          "letter": "B",
+          "text": "Proximal occlusive disease may be demonstrated"
+        },
+        {
+          "letter": "C",
+          "text": "Rapid recovery of decreased ankle pressure after exercise suggests nonvascular claudication"
+        },
+        {
+          "letter": "D",
+          "text": "Pain with exercise without a decrease in the ankle pressure is diagnostic of vascular claudication"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "This question tests understanding of venous anatomy in the lower extremity and the evaluation of venous insufficiency."
+    },
+    {
+      "id": "exam1_q86",
+      "number": 86,
+      "question": "Which finding is associated with valvular incompetence of the lower extremity after performing dorsiflexion exercises during plethysmography?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increased venous refilling time"
+        },
+        {
+          "letter": "B",
+          "text": "Increased arterial volume"
+        },
+        {
+          "letter": "C",
+          "text": "Decreased venous refilling time"
+        },
+        {
+          "letter": "D",
+          "text": "Decreased arterial volume"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "This answer is based on the hemodynamic principles governing flow in the portal venous system."
+    },
+    {
+      "id": "exam1_q87",
+      "number": 87,
+      "question": "Which finding is associated with aliasing, low resistance waveform and increased diastolic flow in a patient status post liver biopsy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hematoma"
+        },
+        {
+          "letter": "B",
+          "text": "Portal vein occlusion"
+        },
+        {
+          "letter": "C",
+          "text": "Arteriovenous fistula"
+        },
+        {
+          "letter": "D",
+          "text": "Hepatic vein thrombosis"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "This question tests knowledge of the pathophysiology of portal hypertension and its effects on hepatic hemodynamics."
+    },
+    {
+      "id": "exam1_q88",
+      "number": 88,
+      "question": "Which landmark is commonly used from the transtemporal approach during transcranial Doppler?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sphenoid bone"
+        },
+        {
+          "letter": "B",
+          "text": "Mastoid bone"
+        },
+        {
+          "letter": "C",
+          "text": "Distal posterior cerebral artery"
+        },
+        {
+          "letter": "D",
+          "text": "Middle cerebral artery M2 branch"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "This answer relates to the ultrasound evaluation of transplant organs and the identification of vascular complications."
+    },
+    {
+      "id": "exam1_q90",
+      "number": 90,
+      "question": "Which acoustic window requires a reduction in power intensity in order to follow the ALARA (as low as reasonably achievable) principle during transcranial Doppler examination?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Transtemporal"
+        },
+        {
+          "letter": "B",
+          "text": "Transorbital"
+        },
+        {
+          "letter": "C",
+          "text": "Suboccipital"
+        },
+        {
+          "letter": "D",
+          "text": "Submandibular"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "This question tests understanding of the hemodynamic effects of exercise on the arterial system.",
+      "imageUrl": "https://via.placeholder.com/800x400?text=Acoustic+Window+Image",
+      "imageCaption": "Acoustic window demonstration (placeholder image)"
+    },
+    {
+      "id": "exam1_q91",
+      "number": 91,
+      "question": "How does peak systolic velocity change in a normal celiac artery following a meal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Doubles"
+        },
+        {
+          "letter": "B",
+          "text": "No appreciable increase"
+        },
+        {
+          "letter": "C",
+          "text": "Decreases at least 50%"
+        },
+        {
+          "letter": "D",
+          "text": "Equals the aortic velocity"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "B",
+      "explanation": "This answer is based on the diagnostic criteria for peripheral arterial disease using physiologic testing."
+    },
+    {
+      "id": "exam1_q92",
+      "number": 92,
+      "question": "Which finding is characteristic of acute renal allograft swelling, tenderness, and infarction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ureter compression due to peritransplant fluid collection"
+        },
+        {
+          "letter": "B",
+          "text": "low peak systolic velocity in the iliac artery"
+        },
+        {
+          "letter": "C",
+          "text": "Kinking of the main renal artery"
+        },
+        {
+          "letter": "D",
+          "text": "obstruction of the main renal vein"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "Acute renal allograft swelling, tenderness, and infarction are characteristic of main renal vein obstruction (thrombosis). Venous outflow obstruction causes venous congestion, swelling, and can lead to graft infarction."
+    },
+    {
+      "id": "exam1_q93",
+      "number": 93,
+      "question": "WHy are the cuffs usually inflated to 65 mmHg during a pulse volume recording test?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To augment arterial flow"
+        },
+        {
+          "letter": "B",
+          "text": "To augment venous flow"
+        },
+        {
+          "letter": "C",
+          "text": "To minimize arterial flow"
+        },
+        {
+          "letter": "D",
+          "text": "To minimize venous flow"
+        }
+      ],
+      "category": "Arterial Testing",
+      "correctAnswer": "D",
+      "explanation": "This answer relates to the ultrasound surveillance of aortic aneurysms and endovascular repair."
+    },
+    {
+      "id": "exam1_q94",
+      "number": 94,
+      "question": "What is the normal duration of reflux in the great saphenous vein during an evaluation for chronic venous valvular insufficiency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Less than 500 milliseconds"
+        },
+        {
+          "letter": "B",
+          "text": "501-600 milliseconds"
+        },
+        {
+          "letter": "C",
+          "text": "601-700 milliseconds"
+        },
+        {
+          "letter": "D",
+          "text": "Greater than 701 milliseconds"
+        }
+      ],
+      "category": "Venous Anatomy",
+      "correctAnswer": "A",
+      "explanation": "This question tests understanding of the hemodynamic effects of arterial stenosis on downstream flow patterns."
+    },
+    {
+      "id": "exam1_q95",
+      "number": 95,
+      "question": "Which anomaly is most common in the upper extremity arteries?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Absent radial"
+        },
+        {
+          "letter": "B",
+          "text": "Duplicated brachial"
+        },
+        {
+          "letter": "C",
+          "text": "Ulnar origin of axillary"
+        },
+        {
+          "letter": "D",
+          "text": "High brachial bifurcation"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "This answer is based on the Doppler criteria used to evaluate the severity of peripheral arterial disease."
+    },
+    {
+      "id": "exam1_q96",
+      "number": 96,
+      "question": "Upper extremity venous color duplex examination reveals patency of both internal jugular and subclavian veins; however, Doppler signals are abnormally reduced. These results are indicative of which condition?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aortic stenosis"
+        },
+        {
+          "letter": "B",
+          "text": "Axillary vein obstruction"
+        },
+        {
+          "letter": "C",
+          "text": "Superior vena cava obstruction"
+        },
+        {
+          "letter": "D",
+          "text": "Thoracic outlet syndrome"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "C",
+      "explanation": "Both internal jugular and subclavian veins are patent but show abnormally reduced Doppler signals, indicating a central obstruction downstream. Superior vena cava obstruction impedes outflow from both veins simultaneously."
+    },
+    {
+      "id": "exam1_q97",
+      "number": 97,
+      "question": "Which is consistent with an abnormal digital photoplethysmography waveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High amplitude"
+        },
+        {
+          "letter": "B",
+          "text": "Rapid upstroke"
+        },
+        {
+          "letter": "C",
+          "text": "Absent dicrotic notch"
+        },
+        {
+          "letter": "D",
+          "text": "Downstroke bowing toward baseline"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "This question tests knowledge of the hemodynamic effects of proximal arterial disease on distal flow patterns."
+    },
+    {
+      "id": "exam1_q98",
+      "number": 98,
+      "question": "Which measurement should be obtained when performing a vein mapping exam?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Anterior to posterior diameter"
+        },
+        {
+          "letter": "B",
+          "text": "Sagittal length"
+        },
+        {
+          "letter": "C",
+          "text": "Peak systolic velocity"
+        },
+        {
+          "letter": "D",
+          "text": "Volume flow"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "A",
+      "explanation": "This answer relates to the diagnostic evaluation of specific vascular conditions using physiologic testing methods."
+    },
+    {
+      "id": "exam1_q99",
+      "number": 99,
+      "question": "Which celiac artery peak systolic velocity suggests a stenosis greater than 70%?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100 cm/s"
+        },
+        {
+          "letter": "B",
+          "text": "125 cm/s"
+        },
+        {
+          "letter": "C",
+          "text": "175 cm/s"
+        },
+        {
+          "letter": "D",
+          "text": "225 cm/s"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "D",
+      "explanation": "This question tests understanding of vascular anatomy and the clinical significance of anatomic variants."
+    },
+    {
+      "id": "exam1_q101",
+      "number": 101,
+      "question": "In a patient with median arcuate ligament syndrome (MALS), how does intermittent compression of a visceral artery likely change the peak systolic velocities?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increase in the celiac artery with maximal inspiration"
+        },
+        {
+          "letter": "B",
+          "text": "Decrease in the celiac artery with maximal inspiration"
+        },
+        {
+          "letter": "C",
+          "text": "Increase in the superior mesenteric artery with maximal inspiration"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease in the superior mesenteric artery with maximal inspiration"
+        }
+      ],
+      "category": "Venous Testing",
+      "correctAnswer": "B",
+      "explanation": "This question tests knowledge of the diagnostic criteria for intracranial vascular disease."
+    },
+    {
+      "id": "exam1_q102",
+      "number": 102,
+      "question": "Which clinical finding is a contraindication to performing treadmill exercise testing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal ankle-brachial index at rest"
+        },
+        {
+          "letter": "B",
+          "text": "Thigh claudication"
+        },
+        {
+          "letter": "C",
+          "text": "Systolic blood pressure >180 mmHg"
+        },
+        {
+          "letter": "D",
+          "text": "Presence of a carotid bruit"
+        }
+      ],
+      "category": "Arterial Testing",
+      "correctAnswer": "C",
+      "explanation": "This answer relates to the ultrasound evaluation of carotid artery disease and treatment planning."
+    },
+    {
+      "id": "exam1_q103",
+      "number": 103,
+      "question": "A decrease in ankle pressure was noted post treadmill test, and ankle pressure returned to normal after four minutes. Which condition is most consistent with these findings?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Noncompressible vessels"
+        },
+        {
+          "letter": "B",
+          "text": "Single-level disease"
+        },
+        {
+          "letter": "C",
+          "text": "Foot ischemia"
+        },
+        {
+          "letter": "D",
+          "text": "Normal finding"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "A post-exercise ankle pressure decrease that returns to normal within 4 minutes is consistent with single-level arterial disease. Multi-level disease typically requires longer recovery times (>5 minutes)."
+    },
+    {
+      "id": "exam1_q104",
+      "number": 104,
+      "question": "Which clinical condition is the most likely explanation for finding an abnormally long acceleration time (200 m/s) in the common femoral artery during arterial duplex exam of the lower extremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Abdominal aortic aneurysm"
+        },
+        {
+          "letter": "B",
+          "text": "External iliac artery stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Common femoral artery dissection"
+        },
+        {
+          "letter": "D",
+          "text": "Superficial femoral artery occlusion"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "B",
+      "explanation": "This question tests understanding of the hemodynamic effects of carotid artery stenosis on cerebral blood flow."
+    },
+    {
+      "id": "exam1_q105",
+      "number": 105,
+      "question": "After the patient performs adequate dorsiflexions, the venous refill time measured by photoplethymospgrahy (PPG) is greater than 20 seconds. What does this indicate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Incompetent saphenofemoral junction"
+        },
+        {
+          "letter": "B",
+          "text": "Incompetent perforators"
+        },
+        {
+          "letter": "C",
+          "text": "Incompetent saphenopopliteal junction"
+        },
+        {
+          "letter": "D",
+          "text": "Normal study"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "D",
+      "explanation": "This answer is based on the diagnostic criteria for vertebrobasilar insufficiency using duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q106",
+      "number": 106,
+      "question": "Which step should be performed next in the evaluation of lower extremity segmental pressures?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Perform cold stress test"
+        },
+        {
+          "letter": "B",
+          "text": "Perform treadmill stress test"
+        },
+        {
+          "letter": "C",
+          "text": "Measure toe pressure"
+        },
+        {
+          "letter": "D",
+          "text": "Place the cuffs at calf level"
+        }
+      ],
+      "category": "Arterial Testing",
+      "correctAnswer": "B",
+      "explanation": "This question tests knowledge of venous anatomy and physiology, specifically regarding venous valve competence and its assessment."
+    },
+    {
+      "id": "exam1_q107",
+      "number": 107,
+      "question": "Which finding is associated with an intracranial collateral pathway in the presence of internal carotid artery occlusion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ipsilateral retrograde anterior cerebral artery"
+        },
+        {
+          "letter": "B",
+          "text": "Contralateral retrograde external carotid artery"
+        },
+        {
+          "letter": "C",
+          "text": "Ipsilateral retrograde vertebral artery"
+        },
+        {
+          "letter": "D",
+          "text": "Contralateral retrograde ophthalmic artery"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "This answer relates to the technical aspects of performing transcranial Doppler examinations."
+    },
+    {
+      "id": "exam1_q108",
+      "number": 108,
+      "question": "Occlusion of which carotid artery is associated with a significant increase in diastolic flow in the left external carotid artery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Right internal"
+        },
+        {
+          "letter": "B",
+          "text": "Right external"
+        },
+        {
+          "letter": "C",
+          "text": "Left internal"
+        },
+        {
+          "letter": "D",
+          "text": "Left common"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "C",
+      "explanation": "This question tests understanding of the Doppler criteria used to evaluate intracranial arterial stenosis."
+    },
+    {
+      "id": "exam1_q109",
+      "number": 109,
+      "question": "Which physical finding is most consistent with retrograde arterial flow distal to a brachiocephalic arteriovenous fistula?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pallow of the hand"
+        },
+        {
+          "letter": "B",
+          "text": "No thrill over fistula"
+        },
+        {
+          "letter": "C",
+          "text": "Palpable lump or fistula"
+        },
+        {
+          "letter": "D",
+          "text": "Absent palpable brachial artery pulse"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "A",
+      "explanation": "This answer is based on the hemodynamic changes associated with specific intracranial vascular conditions."
+    },
+    {
+      "id": "exam1_q110",
+      "number": 110,
+      "question": "A 30-year-old woman with severe hypertension has elevated velocity in the mid renal arteries bilaterally. What is the most likely etiology?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Essential hypertension"
+        },
+        {
+          "letter": "B",
+          "text": "Atherosclerotic renal artery stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Renal artery fibromuscular dysplasia"
+        },
+        {
+          "letter": "D",
+          "text": "Renal artery embolus"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "This question tests knowledge of the clinical applications of transcranial Doppler ultrasonography."
+    },
+    {
+      "id": "exam1_q111",
+      "number": 111,
+      "question": "The profunda and genicular collateral network serve to minimize the hemodynamic abnormality caused by occlusion of which artery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aorta"
+        },
+        {
+          "letter": "B",
+          "text": "Superficial femoral"
+        },
+        {
+          "letter": "C",
+          "text": "Iliac"
+        },
+        {
+          "letter": "D",
+          "text": "Hypogastric"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "This answer relates to the interpretation of transcranial Doppler findings in specific clinical scenarios."
+    },
+    {
+      "id": "exam1_q112",
+      "number": 112,
+      "question": "Which criteria is objectively used to identify a hemodynamically significant stenosis in the upper extremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High-resistance waveform"
+        },
+        {
+          "letter": "B",
+          "text": "Doppler signal beginning to alias"
+        },
+        {
+          "letter": "C",
+          "text": "Doubling of the peak systolic velocity"
+        },
+        {
+          "letter": "D",
+          "text": "Visible calcified plaque"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "C",
+      "explanation": "This question tests understanding of the hemodynamic principles used in venous duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q113",
+      "number": 113,
+      "question": "Which condition is most likely to cause decreased femoral pulses and an abnormal bruit in an 18-year-old hypertensive male?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "FIbromuscular dysplasia"
+        },
+        {
+          "letter": "B",
+          "text": "Arteriovenous fistula"
+        },
+        {
+          "letter": "C",
+          "text": "Neurovascular compression syndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Coarctation of the aorta"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "D",
+      "explanation": "This answer is based on the diagnostic criteria for deep vein thrombosis using compression ultrasonography."
+    },
+    {
+      "id": "exam1_q114",
+      "number": 114,
+      "question": "Which vessel is primarily used to locate the vertebral artery during an extracranial Doppler examination?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Common carotid artery"
+        },
+        {
+          "letter": "B",
+          "text": "Internal carotid artery"
+        },
+        {
+          "letter": "C",
+          "text": "External carotid artery"
+        },
+        {
+          "letter": "D",
+          "text": "Internal jugular vein"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "This question tests knowledge of venous anatomy and the pathophysiology of venous thromboembolism."
+    },
+    {
+      "id": "exam1_q115",
+      "number": 115,
+      "question": "During a lower extremity arterial duplex exam, circumferential calcification is noted in all tibial arteries. Which statement should be included on the preliminary report?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tibial artery assessment is limited secondary to acoustic shadowing"
+        },
+        {
+          "letter": "B",
+          "text": "Tibial artery assessment reveals normal flow"
+        },
+        {
+          "letter": "C",
+          "text": "Tibial artery assessment reveals stenosis"
+        },
+        {
+          "letter": "D",
+          "text": "Tibial artery assessment suggests occlusion"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "This answer relates to the ultrasound evaluation of chronic venous disease and its complications."
+    },
+    {
+      "id": "exam1_q116",
+      "number": 116,
+      "question": "Which finding is characteristic of a hemodynamically significant stenosis in the popliteal artery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Velocity increase of 200% from popliteal artery to tibioperoneal trunk"
+        },
+        {
+          "letter": "B",
+          "text": "High-resistive waveform in the tibioperoneal trunk"
+        },
+        {
+          "letter": "C",
+          "text": "Dampened systolic peak in the distal femoral artery"
+        },
+        {
+          "letter": "D",
+          "text": "Velocity increase of 100% from the distal femoral artery to popliteal artery"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "D",
+      "explanation": "This question tests understanding of the hemodynamic effects of venous obstruction on the Doppler waveform."
+    },
+    {
+      "id": "exam1_q117",
+      "number": 117,
+      "question": "Which noninvasive vascular exam should be performed first when a patient presents with a history of dizziness associated with left arm exercise?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vertebral artery exam"
+        },
+        {
+          "letter": "B",
+          "text": "Thoracic outlet evaluation"
+        },
+        {
+          "letter": "C",
+          "text": "Forearm and digital pressures"
+        },
+        {
+          "letter": "D",
+          "text": "Upper extremity venous duplex"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "This answer is based on the diagnostic criteria for venous insufficiency using duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q118",
+      "number": 118,
+      "question": "Which of the following is the main advantage of pulse recording over continuous wave Doppler for the evaluation of disease of lower extremity arteries?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Allows to distinguish between occlusion and stenosis in the limb segment"
+        },
+        {
+          "letter": "B",
+          "text": "Provides information about the compliance of vessels in the limb segment"
+        },
+        {
+          "letter": "C",
+          "text": "Provides direct information of overall perfusion of a limb segment"
+        },
+        {
+          "letter": "D",
+          "text": "Provides indirect information of overall perfusion of a limb segment (including collaterals)"
+        }
+      ],
+      "category": "Physics & Instrumentation",
+      "correctAnswer": "D",
+      "explanation": "This question tests knowledge of the treatment options for venous disease and the role of ultrasound in treatment planning."
+    },
+    {
+      "id": "exam1_q119",
+      "number": 119,
+      "question": "A patient is referred for a carotid duplex exam. No hemodynamically significant stenosis is identified. Angiography reveals the presence of a right internal carotid (ICA occlusion). What is the most likely explanation for this false negative study?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A contralateral stenosis masked the ICA occlusion"
+        },
+        {
+          "letter": "B",
+          "text": "A hyperemic venous signal was misinterpreted as an ICA signal"
+        },
+        {
+          "letter": "C",
+          "text": "Color flow duplex study is insensitive to occlusion"
+        },
+        {
+          "letter": "D",
+          "text": "An external carotid branch was incorrectly identified as the ICA"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "D",
+      "explanation": "This answer relates to the hemodynamic changes that occur following venous interventions."
+    },
+    {
+      "id": "exam1_q120",
+      "number": 120,
+      "question": "When a segmental pressure examination is performed, which outcome is most likely to result from using a thigh cuff that is too narrow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thigh pressure measurement 40 mmHg lower than brachial pressure"
+        },
+        {
+          "letter": "B",
+          "text": "Thigh pressure measurement 40 mmHg greater than brachial pressure"
+        },
+        {
+          "letter": "C",
+          "text": "Thigh pressure measurement 20 mmHg greater than brachial pressure"
+        },
+        {
+          "letter": "D",
+          "text": "Thigh pressure measurement 20 mmHg lower than brachial pressure"
+        }
+      ],
+      "category": "Arterial Testing",
+      "correctAnswer": "B",
+      "explanation": "This question tests understanding of the anatomy and physiology of the lymphatic system and its relationship to venous disease."
+    },
+    {
+      "id": "exam1_q121",
+      "number": 121,
+      "question": "Following left femoral artery catheterization, ultrasound evaluation confirmed the presence of a pseudoaneurysm. Which of the following is a contraindication to ultrasound guided compression of this pseudoaneurysm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Diameter of less than 3 cm"
+        },
+        {
+          "letter": "B",
+          "text": "A pedicle connecting to the arterial lumen"
+        },
+        {
+          "letter": "C",
+          "text": "Evidence of infection"
+        },
+        {
+          "letter": "D",
+          "text": "Duration of less than two weeks"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "C",
+      "explanation": "This answer is based on the clinical presentation and diagnostic evaluation of lymphedema versus venous edema."
+    },
+    {
+      "id": "exam1_q127",
+      "number": 127,
+      "question": "The spectral waveform demonstrates flow in which vessel?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Segmental artery"
+        },
+        {
+          "letter": "B",
+          "text": "Interlobular artery"
+        },
+        {
+          "letter": "C",
+          "text": "Renal vein"
+        },
+        {
+          "letter": "D",
+          "text": "Renal artery"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "D",
+      "explanation": "The spectral waveform demonstrates flow characteristics consistent with the main renal artery, which shows a low-resistance pattern with continuous forward diastolic flow supplying the kidney parenchyma."
+    },
+    {
+      "id": "exam1_q128",
+      "number": 128,
+      "question": "Based on this worksheet, which artery/arteries on the left side demonstrate(s) a stenosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proximal radial"
+        },
+        {
+          "letter": "B",
+          "text": "Distal brachial"
+        },
+        {
+          "letter": "C",
+          "text": "Radial and ulnar"
+        },
+        {
+          "letter": "D",
+          "text": "Distal subclavian"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "D",
+      "explanation": "This answer is based on the diagnostic criteria for renal artery stenosis using duplex ultrasonography."
+    },
+    {
+      "id": "exam1_q142",
+      "number": 142,
+      "question": "Which spectral Doppler waveform is least resistive?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1"
+        },
+        {
+          "letter": "B",
+          "text": "2"
+        },
+        {
+          "letter": "C",
+          "text": "3"
+        },
+        {
+          "letter": "D",
+          "text": "4"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "B",
+      "explanation": "This question tests understanding of the hemodynamic effects of graft stenosis on flow patterns."
+    },
+    {
+      "id": "exam1_q147",
+      "number": 147,
+      "question": "",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dissection"
+        },
+        {
+          "letter": "B",
+          "text": "Stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Aneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "Arteriovenous fistula"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "A",
+      "explanation": "This answer relates to the diagnostic criteria and management of vascular access complications.",
+      "imageUrl": "/images/study-guide/Great_saphenous_vein_thrombosis_Sag_w:thrombus.jpg",
+      "imageCaption": "Venous compression ultrasound showing non-compressible vein with thrombus, diagnostic of deep vein thrombosis (DVT)"
+    },
+    {
+      "id": "exam1_q148",
+      "number": 148,
+      "question": "This sagittal image of the common carotid artery demonstrates which of the following findings?",
+      "imageUrl": "/images/study-guide/atherosclerotic plaque illustration 2.png",
+      "imageCaption": "Carotid plaque with calcification showing echogenic plaque with acoustic shadowing",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal carotid intima-media thickness"
+        },
+        {
+          "letter": "B",
+          "text": "Atherosclerotic plaque with calcification"
+        },
+        {
+          "letter": "C",
+          "text": "Carotid artery dissection"
+        },
+        {
+          "letter": "D",
+          "text": "Complete carotid occlusion"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "The image shows an echogenic plaque with posterior acoustic shadowing, which is characteristic of calcified atherosclerotic plaque. The bright, hyperechoic appearance with shadowing indicates calcium deposition within the vessel wall."
+    },
+    {
+      "id": "exam1_q149",
+      "number": 149,
+      "question": "The spectral Doppler waveform shown below was obtained from the proximal superficial femoral artery. What does this waveform pattern indicate?",
+      "imageUrl": "/images/study-guide/Triphasic-A-biphasic-B-and-monophasic-C-Doppler-waveforms.png",
+      "imageCaption": "Triphasic arterial waveform showing normal flow pattern with sharp systolic peak, reversal phase, and late diastolic flow",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal triphasic arterial flow"
+        },
+        {
+          "letter": "B",
+          "text": "Monophasic flow indicating proximal stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "High-resistance flow pattern"
+        },
+        {
+          "letter": "D",
+          "text": "Reversed flow direction"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "A",
+      "explanation": "A triphasic waveform consists of three components: forward flow in systole, brief reverse flow in early diastole, and forward flow in late diastole. This is the normal pattern seen in peripheral arteries at rest and indicates no significant proximal stenosis."
+    },
+    {
+      "id": "exam1_q150",
+      "number": 150,
+      "question": "This transverse image of the femoral vein demonstrates which pathology?",
+      "imageUrl": "/images/study-guide/Great_saphenous_vein_thrombosis_Sag.jpg",
+      "imageCaption": "Femoral vein compression ultrasound showing assessment for deep vein thrombosis (DVT)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal compressible vein"
+        },
+        {
+          "letter": "B",
+          "text": "Acute deep vein thrombosis"
+        },
+        {
+          "letter": "C",
+          "text": "Chronic venous insufficiency"
+        },
+        {
+          "letter": "D",
+          "text": "Superficial thrombophlebitis"
+        }
+      ],
+      "category": "Venous Hemodynamics",
+      "correctAnswer": "B",
+      "explanation": "The image shows an incompressible vein filled with hypoechoic (dark) material, which is characteristic of acute DVT. In acute thrombosis, the thrombus appears relatively echo-poor and the vein does not collapse with compression. Chronic thrombus would appear more echogenic."
+    },
+    {
+      "id": "exam1_q151",
+      "number": 151,
+      "question": "What does the color Doppler aliasing pattern in this image of the carotid bulb suggest?",
+      "imageUrl": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/6b64/6350491/7035eb73db82/bjr.20170306.g001.jpg",
+      "imageCaption": "Color Doppler showing aliasing pattern in carotid bulb, indicating turbulent flow due to stenosis. Image: NCBI/PMC",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal flow with appropriate PRF setting"
+        },
+        {
+          "letter": "B",
+          "text": "Turbulent flow due to stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Complete vessel occlusion"
+        },
+        {
+          "letter": "D",
+          "text": "Arteriovenous fistula"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "Aliasing (color reversal) on color Doppler indicates that velocities exceed the Nyquist limit. In the carotid bulb, this typically indicates turbulent flow from a hemodynamically significant stenosis. The mixed colors (red and blue in the same direction) suggest velocities above the scale limit."
+    },
+    {
+      "id": "exam1_q152",
+      "number": 152,
+      "question": "This B-mode image shows the popliteal fossa. What is the most likely diagnosis?",
+      "imageUrl": "https://prod-images-static.radiopaedia.org/images/3043430/1c21b780922b08349cd5fca0aaa1aa.jpg",
+      "imageCaption": "Baker's cyst (popliteal cyst) showing anechoic fluid collection in popliteal fossa. Image: Radiopaedia.org (CC BY-NC-SA)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Popliteal artery aneurysm"
+        },
+        {
+          "letter": "B",
+          "text": "Baker's cyst (popliteal cyst)"
+        },
+        {
+          "letter": "C",
+          "text": "Deep vein thrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Hematoma"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "The image shows a well-defined anechoic (fluid-filled) structure in the popliteal fossa, which is characteristic of a Baker's cyst. These are synovial fluid-filled sacs that develop in the popliteal space, often connected to the knee joint. They appear as echo-free (black) lesions separate from the popliteal vessels."
+    },
+    {
+      "id": "exam1_q153",
+      "number": 153,
+      "question": "The spectral waveform below was obtained from the common femoral artery. What characteristic best describes this pattern?",
+      "imageUrl": "https://radiologykey.com/wp-content/uploads/2019/12/f015-007d-9780323428828.jpg",
+      "imageCaption": "Monophasic arterial waveform showing dampened single-phase pattern, indicating proximal stenosis or occlusion. Image: RadiologyKey.com",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Triphasic flow - normal"
+        },
+        {
+          "letter": "B",
+          "text": "Biphasic flow - borderline abnormal"
+        },
+        {
+          "letter": "C",
+          "text": "Monophasic flow - indicates proximal disease"
+        },
+        {
+          "letter": "D",
+          "text": "Venous flow pattern"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "A monophasic waveform lacks the reverse flow component and shows only forward flow throughout the cardiac cycle with a rounded systolic peak. This pattern indicates significant proximal stenosis or occlusion that dampens the normal triphasic pattern. In the CFA, monophasic flow suggests aortoiliac disease."
+    },
+    {
+      "id": "exam1_q154",
+      "number": 154,
+      "question": "This longitudinal view of the carotid artery shows what type of plaque morphology?",
+      "imageUrl": "https://prod-images-static.radiopaedia.org/images/2555961/62b72fdfd650195c3bd3032208f4ca_big_gallery.jpeg",
+      "imageCaption": "B-mode ultrasound showing atherosclerotic plaque in carotid artery with narrowing of vessel lumen. Image: Radiopaedia.org (CC BY-NC-SA)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Homogeneous echogenic plaque"
+        },
+        {
+          "letter": "B",
+          "text": "Heterogeneous plaque with ulceration"
+        },
+        {
+          "letter": "C",
+          "text": "Soft homogeneous hypoechoic plaque"
+        },
+        {
+          "letter": "D",
+          "text": "Calcified plaque with complete shadowing"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "Heterogeneous plaques have mixed echogenicity with both bright and dark areas, and surface irregularities or ulcerations. These plaques are considered unstable and have higher stroke risk compared to homogeneous plaques. The irregular surface and mixed echo pattern are characteristic features."
+    },
+    {
+      "id": "exam1_q155",
+      "number": 155,
+      "question": "The duplex image shows the subclavian artery. What abnormality is present?",
+      "imageUrl": "https://prod-images-static.radiopaedia.org/images/51676880/af25f8e392371951d8109e0d87f439_big_gallery.jpeg",
+      "imageCaption": "Duplex ultrasound showing reversed/retrograde flow in vertebral artery, diagnostic of subclavian steal syndrome. Image: Radiopaedia",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal antegrade flow"
+        },
+        {
+          "letter": "B",
+          "text": "Subclavian steal syndrome with retrograde vertebral flow"
+        },
+        {
+          "letter": "C",
+          "text": "Vertebral artery occlusion"
+        },
+        {
+          "letter": "D",
+          "text": "Thoracic outlet syndrome"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "Subclavian steal syndrome occurs when there is a hemodynamically significant stenosis or occlusion of the proximal subclavian artery before the origin of the vertebral artery. This causes reversal of flow in the vertebral artery, stealing blood from the posterior circulation. The waveform shows reversed (retrograde) flow in the vertebral artery."
+    },
+    {
+      "id": "exam1_q156",
+      "number": 156,
+      "question": "This transverse color Doppler image of the femoral vessels demonstrates which finding?",
+      "imageUrl": "https://prod-images-static.radiopaedia.org/images/2273385/040ea45b5b815fdee26f7ae3d3a1d6_big_gallery.jpg",
+      "imageCaption": "Color Doppler showing characteristic \"yin-yang\" or swirling flow pattern in a pseudoaneurysm. Image: Radiopaedia",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal femoral artery and vein"
+        },
+        {
+          "letter": "B",
+          "text": "Arteriovenous fistula"
+        },
+        {
+          "letter": "C",
+          "text": "Pseudoaneurysm with yin-yang sign"
+        },
+        {
+          "letter": "D",
+          "text": "True aneurysm"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "C",
+      "explanation": "The characteristic 'yin-yang' or 'to-and-fro' pattern on color Doppler indicates a pseudoaneurysm. The swirling color pattern represents bidirectional flow in the false aneurysm sac, with flow entering during systole and exiting during diastole through the neck connecting to the artery. This is a complication of arterial puncture."
+    },
+    {
+      "id": "exam1_q157",
+      "number": 157,
+      "question": "What does this spectral Doppler pattern of the portal vein indicate?",
+      "imageUrl": "https://images.radiopaedia.org/images/8888888/portal_vein_flow.jpg",
+      "imageCaption": "Spectral Doppler of main portal vein",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal hepatopetal flow"
+        },
+        {
+          "letter": "B",
+          "text": "Portal vein thrombosis"
+        },
+        {
+          "letter": "C",
+          "text": "Hepatofugal (reversed) flow indicating portal hypertension"
+        },
+        {
+          "letter": "D",
+          "text": "Pulsatile flow from right heart failure"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "A",
+      "explanation": "Normal portal vein flow is hepatopetal (toward the liver), continuous, and shows gentle respiratory variation. The flow is above the baseline, indicating flow toward the liver, and has the characteristic low-velocity, undulating pattern. Portal hypertension would show hepatofugal (away from liver/below baseline) or absent flow."
+    }
+  ],
+  "exam2": [
+    {
+      "id": "exam2_q2",
+      "number": 2,
+      "question": "A vertebrobasilar duplex exam is clearly indicated due to the presence of which nonhemispheric sign?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hemiparesis"
+        },
+        {
+          "letter": "B",
+          "text": "Dysphasia"
+        },
+        {
+          "letter": "C",
+          "text": "Amaurosis fugax"
+        },
+        {
+          "letter": "D",
+          "text": "Syncope"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "D",
+      "explanation": "Syncope (fainting) is a nonhemispheric symptom associated with vertebrobasilar insufficiency. Hemispheric symptoms like hemiparesis, dysphasia, and amaurosis fugax are associated with carotid (anterior circulation) disease."
+    },
+    {
+      "id": "exam2_q3",
+      "number": 3,
+      "question": "Which vessel is most likely to be found as a singular vessel in the lower extremity venous system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Peroneal"
+        },
+        {
+          "letter": "B",
+          "text": "Anterior tibial"
+        },
+        {
+          "letter": "C",
+          "text": "Posterior tibial"
+        },
+        {
+          "letter": "D",
+          "text": "Common femoral"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "The common femoral vein is typically found as a singular (unpaired) vessel. Most other lower extremity deep veins (peroneal, anterior tibial, posterior tibial) are paired, running alongside their corresponding arteries."
+    },
+    {
+      "id": "exam2_q4",
+      "number": 4,
+      "question": "Which condition is associated with blue toe syndrome?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Diabetic neuropathy"
+        },
+        {
+          "letter": "B",
+          "text": "Intrinsic compression"
+        },
+        {
+          "letter": "C",
+          "text": "Aortoiliac occlusive disease"
+        },
+        {
+          "letter": "D",
+          "text": "Inferior vena cava thrombosis"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "Blue toe syndrome results from microemboli (cholesterol crystals or thrombus) from proximal atherosclerotic lesions traveling to the digital arteries. Aortoiliac occlusive disease is a common source of these atheroembolism."
+    },
+    {
+      "id": "exam2_q5",
+      "number": 5,
+      "question": "Which duplex exam follow-up timeframe is recommended for post-carotid endarterectomy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prior to 1 week"
+        },
+        {
+          "letter": "B",
+          "text": "1 to 3 weeks"
+        },
+        {
+          "letter": "C",
+          "text": "1 to 3 months"
+        },
+        {
+          "letter": "D",
+          "text": "6 months"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "C",
+      "explanation": "Post-carotid endarterectomy follow-up duplex is typically recommended at 1-3 months after surgery to establish a new baseline and detect early restenosis or complications such as intimal hyperplasia."
+    },
+    {
+      "id": "exam2_q6",
+      "number": 6,
+      "question": "Tumor invasion into the inferior vena cava is most commonly associated with which condition?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Renal cell carcinoma"
+        },
+        {
+          "letter": "B",
+          "text": "Ovarian carcinoma"
+        },
+        {
+          "letter": "C",
+          "text": "Hepatocellular carcinoma"
+        },
+        {
+          "letter": "D",
+          "text": "Budd-chiari syndrome"
+        }
+      ],
+      "category": "Venous Anatomy",
+      "correctAnswer": "A",
+      "explanation": "Renal cell carcinoma is the tumor most commonly associated with invasion into the inferior vena cava, occurring in approximately 4-10% of cases. The tumor extends via the renal vein into the IVC."
+    },
+    {
+      "id": "exam2_q9",
+      "number": 9,
+      "question": "Which finding is considered normal after a carotid endarterectomy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increased size of bulb"
+        },
+        {
+          "letter": "B",
+          "text": "Decreased size of bulb"
+        },
+        {
+          "letter": "C",
+          "text": "Increased size of the proximal external carotid artery"
+        },
+        {
+          "letter": "D",
+          "text": "Decreased size of the proximal internal carotid artery"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "After carotid endarterectomy, the carotid bulb typically appears larger because the atheromatous plaque and diseased intima have been removed, and a patch angioplasty may widen the vessel further."
+    },
+    {
+      "id": "exam2_q11",
+      "number": 11,
+      "question": "What condition is likely when a patient presents with intermittent pallor followed by cyanosis of the ha\u2026",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Peripheral emboli"
+        },
+        {
+          "letter": "B",
+          "text": "Atherosclerosis disease"
+        },
+        {
+          "letter": "C",
+          "text": "Incomplete palmar arch"
+        },
+        {
+          "letter": "D",
+          "text": "Raynaud disease"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "Raynaud disease presents with the classic triphasic color change: pallor (white, from vasospasm), followed by cyanosis (blue, from deoxygenation), and then rubor (red, from reactive hyperemia) upon rewarming."
+    },
+    {
+      "id": "exam2_q12",
+      "number": 12,
+      "question": "What is the normal direction of flow in the portal and hepatic veins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Both are hepatopetal"
+        },
+        {
+          "letter": "B",
+          "text": "Both are hepatofugal"
+        },
+        {
+          "letter": "C",
+          "text": "Portal vein flow is hepatopetal; hepatic vein flow is hepatofugal"
+        },
+        {
+          "letter": "D",
+          "text": "Portal vein flow is hepatofugal; hepatic vein flow is hepatopetal"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "Normal hepatoportal circulation: the portal vein carries blood hepatopetally (toward the liver) from the GI tract, while the hepatic veins drain hepatofugally (away from the liver) into the inferior vena cava."
+    },
+    {
+      "id": "exam2_q13",
+      "number": 13,
+      "question": "Which condition is most likely to cause decreased femoral pulses and an abdominal bruit in an 18-year-old hypertension m\u2026",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fibromuscular dysplasia"
+        },
+        {
+          "letter": "B",
+          "text": "Arteriovenous fistula"
+        },
+        {
+          "letter": "C",
+          "text": "Neurovascular compression syndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Coarctation of the aorta"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "D",
+      "explanation": "Coarctation of the aorta causes narrowing of the aorta, typically distal to the left subclavian artery. It presents in young patients with upper extremity hypertension, decreased femoral pulses, and an abdominal bruit."
+    },
+    {
+      "id": "exam2_q15",
+      "number": 15,
+      "question": "Obstruction of which vein is inferred with the unilateral finding of a continuous doppler waveform in the subclavian vein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Internal jugular"
+        },
+        {
+          "letter": "B",
+          "text": "Brachiocephalic"
+        },
+        {
+          "letter": "C",
+          "text": "Azygos"
+        },
+        {
+          "letter": "D",
+          "text": "Superior vena cava"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "B",
+      "explanation": "A unilateral continuous (non-phasic) Doppler waveform in the subclavian vein suggests proximal obstruction. Since it is unilateral, the brachiocephalic (innominate) vein is the most likely site, as SVC obstruction would cause bilateral findings."
+    },
+    {
+      "id": "exam2_q16",
+      "number": 16,
+      "question": "Which finding is most consistent with a thumb photoplethysmographic (PPG) waveform that shows no change with radial artery compression?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Patent radial artery"
+        },
+        {
+          "letter": "B",
+          "text": "Occluded ulnar artery"
+        },
+        {
+          "letter": "C",
+          "text": "Incomplete palmar arch"
+        },
+        {
+          "letter": "D",
+          "text": "Complete palmar arch"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "D",
+      "explanation": "If thumb PPG waveform shows no change when the radial artery is compressed, the thumb is adequately perfused by the ulnar artery through a complete palmar arch. This confirms palmar arch completeness."
+    },
+    {
+      "id": "exam2_q18",
+      "number": 18,
+      "question": "Which sonographic orientation is used to assess the lower extremity veins for complete compressibility?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Coronal"
+        },
+        {
+          "letter": "B",
+          "text": "Sagittal"
+        },
+        {
+          "letter": "C",
+          "text": "Transverse"
+        },
+        {
+          "letter": "D",
+          "text": "Oblique"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "The transverse (short-axis) orientation is used for compression ultrasonography of lower extremity veins. This view allows direct visualization of vein compressibility, which is the primary criterion for excluding DVT."
+    },
+    {
+      "id": "exam2_q20",
+      "number": 20,
+      "question": "Doppler signal that has a continuous forward flow throughout the cardiac cycle would normally be observed in which artery under resting or fasting conditions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hypogastric"
+        },
+        {
+          "letter": "B",
+          "text": "Deep femoral"
+        },
+        {
+          "letter": "C",
+          "text": "Celiac axis"
+        },
+        {
+          "letter": "D",
+          "text": "Superior mesenteric"
+        }
+      ],
+      "category": "Physics & Instrumentation",
+      "correctAnswer": "C",
+      "explanation": "The celiac axis supplies the liver and spleen, which require constant blood flow. Even under fasting conditions, it demonstrates continuous forward diastolic flow (low-resistance pattern) throughout the cardiac cycle."
+    },
+    {
+      "id": "exam2_q22",
+      "number": 22,
+      "question": "Which cardiac cycle event is associated with the deflection marked by the arrow on this waveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Elastic recoil of the vessel wall"
+        },
+        {
+          "letter": "B",
+          "text": "Ventricular systole"
+        },
+        {
+          "letter": "C",
+          "text": "Atrial systole"
+        },
+        {
+          "letter": "D",
+          "text": "Peripheral resistance"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "A",
+      "explanation": "The elastic recoil of the vessel wall produces the dicrotic notch and subsequent forward flow component in the arterial waveform. This occurs after aortic valve closure when the elastic arterial walls recoil."
+    },
+    {
+      "id": "exam2_q24",
+      "number": 24,
+      "question": "In addition to atherosclerosis, what is another cause of flow-reducing stenoses of the main renal arteries?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Parenchymal disease"
+        },
+        {
+          "letter": "B",
+          "text": "Fibromuscular dysplasia"
+        },
+        {
+          "letter": "C",
+          "text": "Glomerulonephritis"
+        },
+        {
+          "letter": "D",
+          "text": "Tubular necrosis"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "B",
+      "explanation": "Fibromuscular dysplasia (FMD) is the second most common cause of renal artery stenosis after atherosclerosis. It typically affects young to middle-aged women and creates a characteristic 'string of beads' appearance on angiography."
+    },
+    {
+      "id": "exam2_q27",
+      "number": 27,
+      "question": "What does continuous flow in the common femoral vein suggest?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chronic obstructive pulmonary disease"
+        },
+        {
+          "letter": "B",
+          "text": "Congestive heart failure"
+        },
+        {
+          "letter": "C",
+          "text": "Distal obstruction"
+        },
+        {
+          "letter": "D",
+          "text": "Proximal obstruction"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "D",
+      "explanation": "Continuous (non-phasic) flow in the common femoral vein suggests proximal venous obstruction (iliac vein or IVC). Normal CFV flow is phasic with respiratory variation; loss of phasicity indicates obstruction above."
+    },
+    {
+      "id": "exam2_q28",
+      "number": 28,
+      "question": "What technique is optimal for evaluation of palmar arch patency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1st and 5th digit pressures during brachial and axillary artery compression"
+        },
+        {
+          "letter": "B",
+          "text": "1st and 5th digit waveforms during radial and ulnar artery compression"
+        },
+        {
+          "letter": "C",
+          "text": "Radial and ulnar artery pressures during 1st and 5th digit compression"
+        },
+        {
+          "letter": "D",
+          "text": "Radial and ulnar artery waveforms during brachial and axillary artery compression"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "Palmar arch patency is evaluated using the modified Allen test: PPG waveforms are recorded from the 1st and 5th digits while alternately compressing the radial and ulnar arteries to assess collateral flow through the arch."
+    },
+    {
+      "id": "exam2_q29",
+      "number": 29,
+      "question": "No question?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gangrene"
+        },
+        {
+          "letter": "B",
+          "text": "Claudication"
+        },
+        {
+          "letter": "C",
+          "text": "Ischemic rest pain"
+        },
+        {
+          "letter": "D",
+          "text": "Non-healing ulcer"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "Ischemic rest pain occurs when arterial perfusion is insufficient to meet baseline metabolic demands at rest. It represents critical limb ischemia and is more severe than claudication, which only occurs with exertion."
+    },
+    {
+      "id": "exam2_q32",
+      "number": 32,
+      "question": "What is the most likely cause of a carotid artery stent obstruction in the absence of stent fracture or deformation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Intraplaque hemorrhage"
+        },
+        {
+          "letter": "B",
+          "text": "Intimal hyperplasia"
+        },
+        {
+          "letter": "C",
+          "text": "Arterial thrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Dissection"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "Intimal hyperplasia is the most common cause of carotid stent restenosis in the absence of mechanical failure. Smooth muscle cell proliferation and neointimal growth narrow the stent lumen over time."
+    },
+    {
+      "id": "exam2_q33",
+      "number": 33,
+      "question": "When the cardiac cycle does reversal of flow occur in a normal lower extremity arterial waveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Peak systole"
+        },
+        {
+          "letter": "B",
+          "text": "End diastole"
+        },
+        {
+          "letter": "C",
+          "text": "Late systole/early diastole"
+        },
+        {
+          "letter": "D",
+          "text": "Late diastole/early systole"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "In a normal triphasic lower extremity arterial waveform, brief flow reversal occurs in late systole/early diastole. This reverse flow component reflects peripheral resistance before the small forward diastolic component."
+    },
+    {
+      "id": "exam2_q34",
+      "number": 34,
+      "question": "Which measurement is the lowest peak systolic velocity associated with a superior mesenteric artery stenosis of 70% in a fasting patient?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "150 cm/s"
+        },
+        {
+          "letter": "B",
+          "text": "200 cm/s ---"
+        },
+        {
+          "letter": "C",
+          "text": "275 cm/s"
+        },
+        {
+          "letter": "D",
+          "text": "325 cm/s"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "C",
+      "explanation": "A peak systolic velocity of 275 cm/s or greater in the superior mesenteric artery (fasting) is the threshold for identifying a hemodynamically significant stenosis of 70% or greater (SCVS consensus criteria)."
+    },
+    {
+      "id": "exam2_q35",
+      "number": 35,
+      "question": "Which condition may be diagnosed based on a venous refill time of 10 seconds without a tourniquet that changes to 27 seconds when a tourniquet is applied above the knee?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Incompetence of the popliteal vein"
+        },
+        {
+          "letter": "B",
+          "text": "Incompetence of the femoral vein"
+        },
+        {
+          "letter": "C",
+          "text": "Incompetence of the great saphenous vein"
+        },
+        {
+          "letter": "D",
+          "text": "Valvular insufficiency of the small saphenous vein"
+        }
+      ],
+      "category": "Venous Testing",
+      "correctAnswer": "C",
+      "explanation": "A venous refill time of 10 seconds (abnormal) that normalizes to 27 seconds (normal >20s) with a thigh tourniquet indicates the GSV is the source of reflux, as the tourniquet compresses it at the thigh."
+    },
+    {
+      "id": "exam2_q36",
+      "number": 36,
+      "question": "Which is the most likely finding based on this middle cerebral artery waveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vasospasm"
+        },
+        {
+          "letter": "B",
+          "text": "Stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Normal flow"
+        },
+        {
+          "letter": "D",
+          "text": "Distal occlusion"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "A",
+      "explanation": "Elevated velocities in the middle cerebral artery on transcranial Doppler, particularly in the setting of subarachnoid hemorrhage, are indicative of vasospasm, which is a critical post-hemorrhagic complication."
+    },
+    {
+      "id": "exam2_q37",
+      "number": 37,
+      "question": "A right eye visual disturbance is most commonly caused by stenosis of which artery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Right internal carotid"
+        },
+        {
+          "letter": "B",
+          "text": "Right external carotid"
+        },
+        {
+          "letter": "C",
+          "text": "Left external carotid"
+        },
+        {
+          "letter": "D",
+          "text": "Left internal carotid"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "A",
+      "explanation": "The right eye is supplied by the right ophthalmic artery, which is a branch of the right internal carotid artery. Stenosis or emboli from the right ICA commonly cause right-sided monocular visual disturbances (amaurosis fugax)."
+    },
+    {
+      "id": "exam2_q38",
+      "number": 38,
+      "question": "Which maneuver helps in the diagnosis of an iatrogenic arteriovenous fistula?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Valsalva"
+        },
+        {
+          "letter": "B",
+          "text": "Distal augmentation"
+        },
+        {
+          "letter": "C",
+          "text": "Manual occlusion of proximal vein"
+        },
+        {
+          "letter": "D",
+          "text": "Repeated ankle flexion and extension"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "Manual occlusion of the vein proximal to a suspected iatrogenic arteriovenous fistula helps confirm the diagnosis. Compressing the venous outflow increases resistance in the fistula circuit, altering the Doppler signal characteristics."
+    },
+    {
+      "id": "exam2_q39",
+      "number": 39,
+      "question": "What describes the waveform of a normal vertebral artery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pandiastolic flow reversal"
+        },
+        {
+          "letter": "B",
+          "text": "Multiphasic diastolic flow"
+        },
+        {
+          "letter": "C",
+          "text": "Absence of diastolic flow"
+        },
+        {
+          "letter": "D",
+          "text": "Forward flow through diastole"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "D",
+      "explanation": "The normal vertebral artery waveform shows continuous forward flow through diastole (low-resistance pattern), similar to the internal carotid artery, because it supplies the brain which has constant metabolic demand."
+    },
+    {
+      "id": "exam2_q40",
+      "number": 40,
+      "question": "What occurs during expiration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Diaphragm ascends"
+        },
+        {
+          "letter": "B",
+          "text": "Intrathoracic pressure decreases"
+        },
+        {
+          "letter": "C",
+          "text": "Intra-abdominal pressure increases"
+        },
+        {
+          "letter": "D",
+          "text": "Venous flow from the upper extremities increases"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "A",
+      "explanation": "During expiration, the diaphragm relaxes and ascends (moves upward) into the thoracic cavity. This is the fundamental mechanical event of passive expiration."
+    },
+    {
+      "id": "exam2_q42",
+      "number": 42,
+      "question": "What is the most common site for embolization from a subclavian artery aneurysm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Digit"
+        },
+        {
+          "letter": "B",
+          "text": "Forearm"
+        },
+        {
+          "letter": "C",
+          "text": "Elbow"
+        },
+        {
+          "letter": "D",
+          "text": "upper arm"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "A",
+      "explanation": "Emboli from a subclavian artery aneurysm travel distally through the upper extremity arterial tree, most commonly lodging in the digital arteries of the hand/fingers, causing digital ischemia."
+    },
+    {
+      "id": "exam2_q43",
+      "number": 43,
+      "question": "Which condition is characterized by blood flow separating the layers of the artery wall?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ectasia"
+        },
+        {
+          "letter": "B",
+          "text": "Dissection"
+        },
+        {
+          "letter": "C",
+          "text": "Adventitial cystic disease"
+        },
+        {
+          "letter": "D",
+          "text": "medial calcinosis"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "Arterial dissection occurs when blood enters the arterial wall through an intimal tear and separates the layers, creating a false lumen. This can cause stenosis, occlusion, or aneurysmal dilation of the vessel."
+    },
+    {
+      "id": "exam2_q45",
+      "number": 45,
+      "question": "Occlusion of which artery would cause flow reversal to the right vertebral artery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Innominate"
+        },
+        {
+          "letter": "B",
+          "text": "left vertebral"
+        },
+        {
+          "letter": "C",
+          "text": "left subclavian"
+        },
+        {
+          "letter": "D",
+          "text": "right common carotid"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "Occlusion of the innominate (brachiocephalic) artery, which gives rise to the right subclavian and right common carotid arteries, causes subclavian steal through the right vertebral artery, resulting in flow reversal."
+    },
+    {
+      "id": "exam2_q46",
+      "number": 46,
+      "question": "What type of aneurysm can be treated with thrombin injection?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fusiform"
+        },
+        {
+          "letter": "B",
+          "text": "Saccular"
+        },
+        {
+          "letter": "C",
+          "text": "False"
+        },
+        {
+          "letter": "D",
+          "text": "Mycotic"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "C",
+      "explanation": "A false aneurysm (pseudoaneurysm) can be treated with ultrasound-guided percutaneous thrombin injection. The thrombin causes rapid clotting of the pseudoaneurysm sac, eliminating the to-and-fro flow pattern."
+    },
+    {
+      "id": "exam2_q47",
+      "number": 47,
+      "question": "Which systolic pressure is measured at each cuff level?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "artery segment proximal to cuff"
+        },
+        {
+          "letter": "B",
+          "text": "artery segment under cuff"
+        },
+        {
+          "letter": "C",
+          "text": "artery segment distal to cuff"
+        },
+        {
+          "letter": "D",
+          "text": "artery segment proximal and distal to cuff"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "In segmental pressure measurement, the pressure recorded at each cuff level corresponds to the artery segment distal to the cuff. The Doppler probe is placed distal to detect when flow resumes during cuff deflation."
+    },
+    {
+      "id": "exam2_q48",
+      "number": 48,
+      "question": "What effect does deep exhalation have on venous flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "flow in the upper and lower extremities increases"
+        },
+        {
+          "letter": "B",
+          "text": "flow in the upper and lower extremities decreases"
+        },
+        {
+          "letter": "C",
+          "text": "flow in the upper extremities increases; flow in the lower extremities decreases"
+        },
+        {
+          "letter": "D",
+          "text": "flow in the upper extremities decreases; flow in the lower extremities increases"
+        }
+      ],
+      "category": "Venous Hemodynamics",
+      "correctAnswer": "D",
+      "explanation": "During deep exhalation, intrathoracic pressure increases while intra-abdominal pressure decreases (diaphragm ascends). This decreases upper extremity venous flow (harder to enter thorax) and increases lower extremity venous flow (less abdominal impedance)."
+    },
+    {
+      "id": "exam2_q50",
+      "number": 50,
+      "question": "Which description best characterizes normal flow in the cortical renal arteries?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Low velocity, High resistive"
+        },
+        {
+          "letter": "B",
+          "text": "low velocity, low resistive"
+        },
+        {
+          "letter": "C",
+          "text": "High velocity, High resistive"
+        },
+        {
+          "letter": "D",
+          "text": "high velocity, low resistive"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "Normal cortical (interlobular/arcuate) renal arteries demonstrate low velocity and low resistive flow patterns. The kidneys require constant perfusion, maintaining low resistance throughout the cardiac cycle."
+    },
+    {
+      "id": "exam2_q52",
+      "number": 52,
+      "question": "Which spectral Doppler feature is consistent within an occluded arteriovenous fistula (AVF)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inflow artery, proximal to the AVF anastomosis, showing low resistive pattern"
+        },
+        {
+          "letter": "B",
+          "text": "outflow vein showing no arterial pulsations"
+        },
+        {
+          "letter": "C",
+          "text": "inflow artery, distal to the AVF anastomosis, showing reversal of flow"
+        },
+        {
+          "letter": "D",
+          "text": "outflow vein showing no respiratory variations"
+        }
+      ],
+      "category": "Physics & Instrumentation",
+      "correctAnswer": "B",
+      "explanation": "In an occluded arteriovenous fistula, the outflow vein no longer shows arterial pulsations because the arterial-to-venous shunt is blocked. The inflow artery returns to a normal high-resistance pattern."
+    },
+    {
+      "id": "exam2_q54",
+      "number": 54,
+      "question": "The Doppler spectral waveform from the superior mesenteric artery in a normal fasting subject demonstrates which Doppler pattern?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High diastolic velocity"
+        },
+        {
+          "letter": "B",
+          "text": "Low diastolic velocity"
+        },
+        {
+          "letter": "C",
+          "text": "monophasic pattern"
+        },
+        {
+          "letter": "D",
+          "text": "increased Peak systolic velocity"
+        }
+      ],
+      "category": "Physics & Instrumentation",
+      "correctAnswer": "B",
+      "explanation": "In a fasting state, the superior mesenteric artery demonstrates a high-resistance pattern with low diastolic velocity. After eating, the SMA converts to a low-resistance pattern with increased diastolic flow to serve digestion."
+    },
+    {
+      "id": "exam2_q55",
+      "number": 55,
+      "question": "Which arterial lesion would be most amenable to percutaneous transluminal angioplasty?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20 cm occlusion of The Superficial femoral artery"
+        },
+        {
+          "letter": "B",
+          "text": "focal 90% iliac artery stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "4 cm occlusion of the posterior tibial artery"
+        },
+        {
+          "letter": "D",
+          "text": "popliteal artery aneurysm"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "A focal 90% iliac artery stenosis is the ideal candidate for percutaneous transluminal angioplasty (PTA). Short, focal, concentric stenoses respond best to balloon angioplasty and stenting, with excellent long-term patency."
+    },
+    {
+      "id": "exam2_q56",
+      "number": 56,
+      "question": "Which arterial anatomic location corresponds with a pressure gradient between the brachial artery and the high thigh?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aorta"
+        },
+        {
+          "letter": "B",
+          "text": "radial artery"
+        },
+        {
+          "letter": "C",
+          "text": "popliteal artery"
+        },
+        {
+          "letter": "D",
+          "text": "posterior tibial artery"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "A",
+      "explanation": "A pressure gradient between the brachial artery and the high thigh cuff indicates disease in the aortoiliac segment. Normally, the high thigh pressure should be higher than brachial; a reduced gradient suggests proximal (aortic/iliac) disease."
+    },
+    {
+      "id": "exam2_q57",
+      "number": 57,
+      "question": "Which structure should be targeted during ultrasound guided compression of a pseudoaneurysm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pseudoaneurysm neck"
+        },
+        {
+          "letter": "B",
+          "text": "Pseudoaneurysm sac"
+        },
+        {
+          "letter": "C",
+          "text": "artery adjacent to the pseudoaneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "vein adjacent to the pseudoaneurysm"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "A",
+      "explanation": "Ultrasound-guided compression of a pseudoaneurysm targets the neck (the channel connecting the artery to the pseudoaneurysm sac). Compressing the neck stops flow into the sac and promotes thrombosis."
+    },
+    {
+      "id": "exam2_q58",
+      "number": 58,
+      "question": "What waveform characteristics would be expected on spectral Doppler analysis of a normal ophthalmic artery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Retrograde; sharp systolic upstroke"
+        },
+        {
+          "letter": "B",
+          "text": "Antegrade; sharp systolic upstroke"
+        },
+        {
+          "letter": "C",
+          "text": "Retrograde; slowed systolic upstroke"
+        },
+        {
+          "letter": "D",
+          "text": "Antegrade; slowed systolic upstroke"
+        }
+      ],
+      "category": "Physics & Instrumentation",
+      "correctAnswer": "B",
+      "explanation": "The normal ophthalmic artery demonstrates antegrade flow (away from the brain, toward the eye) with a sharp systolic upstroke. In ICA occlusion, flow may reverse to retrograde as collateral supply from the ECA."
+    },
+    {
+      "id": "exam2_q59",
+      "number": 59,
+      "question": "What is the duplex finding that most accurately determines internal Carotid artery occlusion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Absence of color in the internal carotid artery"
+        },
+        {
+          "letter": "B",
+          "text": "decreased ipsilateral common artery flow velocity"
+        },
+        {
+          "letter": "C",
+          "text": "absence of Doppler signal in the internal Carotid artery"
+        },
+        {
+          "letter": "D",
+          "text": "increased diastolic flow in the common carotid artery"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "C",
+      "explanation": "Absence of Doppler signal in the internal carotid artery is the most accurate finding for confirming ICA occlusion. Absence of color flow alone can be artifact; spectral Doppler confirmation is essential."
+    },
+    {
+      "id": "exam2_q63",
+      "number": 63,
+      "question": "What clinical finding is associated with lower extremity Venous insufficiency?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hyperpigmentation"
+        },
+        {
+          "letter": "B",
+          "text": "Dependent rubor"
+        },
+        {
+          "letter": "C",
+          "text": "Pulselessness"
+        },
+        {
+          "letter": "D",
+          "text": "hair loss"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "Hyperpigmentation (brownish skin discoloration from hemosiderin deposition) is a hallmark clinical finding of chronic lower extremity venous insufficiency. Dependent rubor and hair loss are signs of arterial disease."
+    },
+    {
+      "id": "exam2_q64",
+      "number": 64,
+      "question": "Which finding will be visualized when a patient presents with an arteriovenous fistula following trauma?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increased proximal venous flow"
+        },
+        {
+          "letter": "B",
+          "text": "decreased proximal arterial flow"
+        },
+        {
+          "letter": "C",
+          "text": "increased distal arterial flow"
+        },
+        {
+          "letter": "D",
+          "text": "decreased proximal Venous flow"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "A",
+      "explanation": "Following traumatic arteriovenous fistula formation, blood shunts from the high-pressure artery into the low-pressure vein, causing increased proximal venous flow with arterialized (pulsatile) waveforms in the draining vein."
+    },
+    {
+      "id": "exam2_q67",
+      "number": 67,
+      "question": "Which sonographic finding is associated with this lower extremity waveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "distal obstruction"
+        },
+        {
+          "letter": "B",
+          "text": "Proximal obstruction"
+        },
+        {
+          "letter": "C",
+          "text": "collateral flow"
+        },
+        {
+          "letter": "D",
+          "text": "venous insufficiency"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "B",
+      "explanation": "The waveform pattern described is consistent with proximal arterial obstruction, which produces a dampened (tardus-parvus) waveform distally with reduced peak systolic velocity and prolonged systolic acceleration time."
+    },
+    {
+      "id": "exam2_q69",
+      "number": 69,
+      "question": "What is the correct setting of the sample volume when measuring flow volumes in a dialysis access?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Expanded to the entire vessel diameter"
+        },
+        {
+          "letter": "B",
+          "text": "narrowed down to 1 mm"
+        },
+        {
+          "letter": "C",
+          "text": "adjacent to anterior vessel wall"
+        },
+        {
+          "letter": "D",
+          "text": "adjacent to posterior vessel wall"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "A",
+      "explanation": "When measuring flow volume in a dialysis access, the sample volume should be expanded to cover the entire vessel diameter to capture the full velocity profile for accurate volume flow calculation (Q = Vmean x Area)."
+    },
+    {
+      "id": "exam2_q71",
+      "number": 71,
+      "question": "What is suggested when the arterial signal persists during performance of an ankle-brachial index with the ankle cuff maximally inflated?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "triphasic waveform"
+        },
+        {
+          "letter": "B",
+          "text": "arterial calcification"
+        },
+        {
+          "letter": "C",
+          "text": "pseudoaneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "arterial stenosis"
+        }
+      ],
+      "category": "Arterial Testing",
+      "correctAnswer": "B",
+      "explanation": "When the arterial Doppler signal persists despite maximal cuff inflation during ABI measurement, the vessel is non-compressible due to medial arterial calcification (Monckeberg sclerosis), common in diabetic and ESRD patients."
+    },
+    {
+      "id": "exam2_q72",
+      "number": 72,
+      "question": "Which patient position is typically used during endovenous ablation of the small saphenous vein?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Prone"
+        },
+        {
+          "letter": "B",
+          "text": "Supine"
+        },
+        {
+          "letter": "C",
+          "text": "Standing"
+        },
+        {
+          "letter": "D",
+          "text": "Seated"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "The small saphenous vein runs along the posterior aspect of the calf. The prone position provides optimal access for catheter insertion and endovenous ablation of the SSV."
+    },
+    {
+      "id": "exam2_q73",
+      "number": 73,
+      "question": "Where does the blood from the soleal venous sinuses drain?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Deep femoral vein"
+        },
+        {
+          "letter": "B",
+          "text": "popliteal vein"
+        },
+        {
+          "letter": "C",
+          "text": "femoral vein"
+        },
+        {
+          "letter": "D",
+          "text": "peroneal vein PTV"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "The soleal venous sinuses (intramuscular venous reservoirs in the soleus muscle) drain primarily into the peroneal and posterior tibial veins, which then join to form the tibioperoneal trunk."
+    },
+    {
+      "id": "exam2_q74",
+      "number": 74,
+      "question": "A Doppler signal that has a continuous forward flow through the cardiac cycle would normally be observed in which artery under res....?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hypogastric"
+        },
+        {
+          "letter": "B",
+          "text": "deep femoral"
+        },
+        {
+          "letter": "C",
+          "text": "Celiac axis"
+        },
+        {
+          "letter": "D",
+          "text": "Superior mesenteric"
+        }
+      ],
+      "category": "Physics & Instrumentation",
+      "correctAnswer": "C",
+      "explanation": "The celiac axis is a low-resistance artery that demonstrates continuous forward diastolic flow throughout the cardiac cycle, even under fasting conditions, because it supplies organs (liver, spleen) with constant metabolic demands."
+    },
+    {
+      "id": "exam2_q75",
+      "number": 75,
+      "question": "Which reason best explains why the spectral waveforms of the proximal abdominal aorta have different characteristics than those of the distal abdominal aorta?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Proximal aorta is larger than distally aorta also tru"
+        },
+        {
+          "letter": "B",
+          "text": "proximal aorta supplies the visceral arteries"
+        },
+        {
+          "letter": "C",
+          "text": "distal aorta supplies essential organs"
+        },
+        {
+          "letter": "D",
+          "text": "distal aorta has more branches"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "B",
+      "explanation": "The proximal abdominal aorta supplies the visceral arteries (celiac, SMA, renal) which are low-resistance vessels. This gives the proximal aorta more diastolic flow compared to the distal aorta, which feeds high-resistance lower extremity arteries."
+    },
+    {
+      "id": "exam2_q76",
+      "number": 76,
+      "question": "What level of disease is expected if a significant pressure gradient is present from the low thigh to the calf?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Iliofemoral"
+        },
+        {
+          "letter": "B",
+          "text": "Femoropopliteal"
+        },
+        {
+          "letter": "C",
+          "text": "Tibioperoneal"
+        },
+        {
+          "letter": "D",
+          "text": "Aortoiliac"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "B",
+      "explanation": "A significant pressure gradient from the low thigh to the calf corresponds to the femoropopliteal arterial segment. Disease at the distal SFA or popliteal artery level causes this pressure drop between adjacent cuff levels."
+    },
+    {
+      "id": "exam2_q77",
+      "number": 77,
+      "question": "Which criteria is most important for identification of the upper extremity deep veins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "adjacent artery"
+        },
+        {
+          "letter": "B",
+          "text": "size of vessel"
+        },
+        {
+          "letter": "C",
+          "text": "depth of vessel"
+        },
+        {
+          "letter": "D",
+          "text": "course of vessel"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "The most reliable way to identify upper extremity deep veins is by their relationship to the adjacent artery. Each deep vein runs alongside its corresponding artery (e.g., brachial veins flank the brachial artery)."
+    },
+    {
+      "id": "exam2_q80",
+      "number": 80,
+      "question": "Which abnormality is associated with intermittent buttock and thigh claudication?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "May-thurner syndrome"
+        },
+        {
+          "letter": "B",
+          "text": "Buerger disease"
+        },
+        {
+          "letter": "C",
+          "text": "aortoiliac occlusive disease"
+        },
+        {
+          "letter": "D",
+          "text": "superficial femoral artery stenosis"
+        }
+      ],
+      "category": "Arterial Disease",
+      "correctAnswer": "C",
+      "explanation": "Intermittent claudication involving both the buttock and thigh suggests proximal aortoiliac occlusive disease (Leriche syndrome). More distal disease would produce calf claudication without buttock or thigh symptoms."
+    },
+    {
+      "id": "exam2_q81",
+      "number": 81,
+      "question": "A young adult male is seen in the emergency department after a small-caliber gunshot wound of the left pelvis. a palpable left femoral pulse rules out which condition?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Arteriovenous fistula"
+        },
+        {
+          "letter": "B",
+          "text": "Venous laceration"
+        },
+        {
+          "letter": "C",
+          "text": "iliac vein occlusion"
+        },
+        {
+          "letter": "D",
+          "text": "iliac artery occlusion"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "D",
+      "explanation": "A palpable femoral pulse confirms that the iliac artery proximal to the femoral pulse is patent. In a gunshot wound to the pelvis, this rules out complete iliac artery occlusion on that side."
+    },
+    {
+      "id": "exam2_q82",
+      "number": 82,
+      "question": "Which technique should we use when evaluating the central veins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Compression"
+        },
+        {
+          "letter": "B",
+          "text": "Doppler analysis"
+        },
+        {
+          "letter": "C",
+          "text": "apply tourniquet"
+        },
+        {
+          "letter": "D",
+          "text": "Photoplethysmography"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "B",
+      "explanation": "Central veins (subclavian, brachiocephalic, SVC) cannot be directly compressed due to their deep thoracic location. Doppler analysis (spectral waveform evaluation, respiratory phasicity, augmentation) is the primary technique for assessment."
+    },
+    {
+      "id": "exam2_q86",
+      "number": 86,
+      "question": "Spectral analysis of the right common carotid artery demonstrates a low velocity, dampened waveform. pathology in the common carotid artery is not seen. what is the most likely cause?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Intracranial internal carotid artery occlusion"
+        },
+        {
+          "letter": "B",
+          "text": "subclavian steal"
+        },
+        {
+          "letter": "C",
+          "text": "contralateral common carotid artery occlusion"
+        },
+        {
+          "letter": "D",
+          "text": "innominate artery occlusion"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "D",
+      "explanation": "A dampened, low-velocity waveform in the right common carotid artery without visible CCA pathology indicates proximal obstruction. The innominate (brachiocephalic) artery is the only vessel proximal to the right CCA, making its occlusion the most likely cause."
+    },
+    {
+      "id": "exam2_q87",
+      "number": 87,
+      "question": "A patient walked on a treadmill at 2 mph and at a 10% incline for 5 minutes. The post-exercise Ankle pressures improved when compared to the resting ankle pressures. however the patient experienced calf, thigh, and buttock pain when walking. What is the preliminary interpretation of the test?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Single-segment arterial occlusive disease is the cause of the patient's symptoms"
+        },
+        {
+          "letter": "B",
+          "text": "two-segment arterial occlusive disease is the cause of the patient's symptoms"
+        },
+        {
+          "letter": "C",
+          "text": "multi-segment arterial occlusive disease is the cause of the patient's symptoms"
+        },
+        {
+          "letter": "D",
+          "text": "arterial occlusive disease can be ruled out as the cause of the patient symptoms"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "Post-exercise ankle pressures that improve compared to resting pressures indicate that arterial occlusive disease is not the cause of the patient's symptoms. True arterial disease would cause ankle pressures to DROP after exercise."
+    },
+    {
+      "id": "exam2_q88",
+      "number": 88,
+      "question": "What is the most likely finding in a patient presenting with patent arteriovenous fistula, ipsilateral arm and hand edema, skin discoloration, and prominent chest wall superficial veins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Occluded superficial vein"
+        },
+        {
+          "letter": "B",
+          "text": "steal phenomenon"
+        },
+        {
+          "letter": "C",
+          "text": "inflow artery occlusion"
+        },
+        {
+          "letter": "D",
+          "text": "central venous obstruction"
+        }
+      ],
+      "category": "Venous Anatomy",
+      "correctAnswer": "D",
+      "explanation": "A patent AV fistula with ipsilateral arm and hand edema, skin discoloration, and prominent chest wall superficial veins indicates central venous obstruction. The chest wall collaterals develop to bypass the obstructed central veins."
+    },
+    {
+      "id": "exam2_q89",
+      "number": 89,
+      "question": "Which finding is most consistent with a thumb photoplethysmographic (PPG) waveform that shows no change with radial artery compression?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "patent radial artery"
+        },
+        {
+          "letter": "B",
+          "text": "occluded ulnar artery"
+        },
+        {
+          "letter": "C",
+          "text": "incomplete palmar arch"
+        },
+        {
+          "letter": "D",
+          "text": "complete palmar arch"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "D",
+      "explanation": "No change in thumb PPG waveform with radial artery compression confirms a complete palmar arch, meaning the ulnar artery alone can adequately perfuse the thumb through the intact arch."
+    },
+    {
+      "id": "exam2_q90",
+      "number": 90,
+      "question": "How does inspiration normally affect venous flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increases venous flow in both upper limbs and neck"
+        },
+        {
+          "letter": "B",
+          "text": "decreases venous flow in both upper and lower limbs"
+        },
+        {
+          "letter": "C",
+          "text": "decreases venous flow in both lower limbs and neck"
+        },
+        {
+          "letter": "D",
+          "text": "decreases venous return to heart"
+        }
+      ],
+      "category": "Venous Hemodynamics",
+      "correctAnswer": "A",
+      "explanation": "During inspiration, the negative intrathoracic pressure creates a suction effect that increases venous flow from the upper limbs and neck toward the heart. Lower extremity venous flow decreases due to increased intra-abdominal pressure."
+    },
+    {
+      "id": "exam2_q92",
+      "number": 92,
+      "question": "Which finding is characteristic of acute renal allograft swelling, tenderness, and infarction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ureter compression due to peritransplant fluid collection"
+        },
+        {
+          "letter": "B",
+          "text": "low peak systolic velocity in the iliac artery"
+        },
+        {
+          "letter": "C",
+          "text": "Kinking of the main renal artery"
+        },
+        {
+          "letter": "D",
+          "text": "obstruction of the main renal vein"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "D",
+      "explanation": "Acute renal allograft swelling, tenderness, and infarction are characteristic of main renal vein obstruction (thrombosis). Venous outflow obstruction causes venous congestion, swelling, and can lead to graft infarction."
+    },
+    {
+      "id": "exam2_q93",
+      "number": 93,
+      "question": "Which finding indicates that an arteriovenous fistula has reached maturity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Length of at least 6 millimeters for cannulation"
+        },
+        {
+          "letter": "B",
+          "text": "Blood flow volume of at least 600 milliliters/minute"
+        },
+        {
+          "letter": "C",
+          "text": "Depth of more than 6 millimeters from the skin surface"
+        },
+        {
+          "letter": "D",
+          "text": "systolic velocity of more than 600 centimeters/second"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "B",
+      "explanation": "An arteriovenous fistula is considered mature and ready for cannulation when blood flow volume reaches at least 600 mL/min. Other criteria include diameter \u22656mm and depth <6mm from the skin surface."
+    },
+    {
+      "id": "exam2_q94",
+      "number": 94,
+      "question": "Which computer tomography (CT) finding would most likely be responsible for impeded venous outflow at the level of the iliac veins?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Renal cyst"
+        },
+        {
+          "letter": "B",
+          "text": "pelvic Mass"
+        },
+        {
+          "letter": "C",
+          "text": "abdominal aortic aneurysm"
+        },
+        {
+          "letter": "D",
+          "text": "femoral vein thrombosis"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "B",
+      "explanation": "A pelvic mass (tumor, lymphadenopathy, abscess) can externally compress the iliac veins, impeding venous outflow. This is a common CT finding explaining unexplained lower extremity venous obstruction symptoms."
+    },
+    {
+      "id": "exam2_q95",
+      "number": 95,
+      "question": "A febrile patient with a hot, erythematous, swollen calf and ankle most likely has which condition?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acute deep vein thrombosis"
+        },
+        {
+          "letter": "B",
+          "text": "chronic venous insufficiency"
+        },
+        {
+          "letter": "C",
+          "text": "Cellulitis"
+        },
+        {
+          "letter": "D",
+          "text": "lymphedema"
+        }
+      ],
+      "category": "General & Other",
+      "correctAnswer": "C",
+      "explanation": "Cellulitis presents with fever, local warmth, erythema (redness), and swelling \u2014 all consistent with this patient's presentation. DVT may cause swelling but typically lacks the prominent inflammatory signs and fever."
+    },
+    {
+      "id": "exam2_q97",
+      "number": 97,
+      "question": "In the presence of severe stenosis of the distal common carotid artery, which flow pattern is most likely present in the ipsilateral proximal internal carotid artery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Laminar"
+        },
+        {
+          "letter": "B",
+          "text": "Turbulent"
+        },
+        {
+          "letter": "C",
+          "text": "low resistance"
+        },
+        {
+          "letter": "D",
+          "text": "High Resistance"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "C",
+      "explanation": "In the presence of severe distal common carotid artery stenosis, the proximal ICA receives reduced and turbulent inflow. The brain's low vascular resistance is maintained, so the ICA waveform shows a low-resistance pattern with dampened velocities."
+    },
+    {
+      "id": "exam2_q98",
+      "number": 98,
+      "question": "Which van is responsible for venous reflux when the venous refill time normalizes after application of a thigh tourniquet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Perforating"
+        },
+        {
+          "letter": "B",
+          "text": "Femoral"
+        },
+        {
+          "letter": "C",
+          "text": "small saphenous"
+        },
+        {
+          "letter": "D",
+          "text": "great saphenous"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "D",
+      "explanation": "When a thigh tourniquet normalizes the venous refill time, the great saphenous vein is identified as the source of reflux, since the tourniquet occludes the GSV at the thigh level."
+    },
+    {
+      "id": "exam2_q99",
+      "number": 99,
+      "question": "Which further imaging may be needed to confirm an endoleak in a post-repair abdominal aorta?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Abdominal x-ray"
+        },
+        {
+          "letter": "B",
+          "text": "computed tomography scan"
+        },
+        {
+          "letter": "C",
+          "text": "Echocardiogram"
+        },
+        {
+          "letter": "D",
+          "text": "nuclear medicine scan"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "B",
+      "explanation": "Computed tomography angiography (CTA) is the gold standard imaging modality for confirming endoleak after endovascular aortic repair (EVAR). It provides detailed visualization of contrast outside the stent graft but within the aneurysm sac."
+    },
+    {
+      "id": "exam2_q100",
+      "number": 100,
+      "question": "What is the most common cause of cerebrovascular stroke?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Middle cerebral artery thromboembolism"
+        },
+        {
+          "letter": "B",
+          "text": "rupture of cerebral aneurysm in Circle of Willis"
+        },
+        {
+          "letter": "C",
+          "text": "essential hypertension"
+        },
+        {
+          "letter": "D",
+          "text": "brain concussion"
+        }
+      ],
+      "category": "Cerebrovascular",
+      "correctAnswer": "A",
+      "explanation": "Thromboembolism to the middle cerebral artery is the most common cause of ischemic stroke. Emboli typically originate from carotid atherosclerotic plaques or cardiac sources and occlude the MCA, the largest cerebral vessel."
+    },
+    {
+      "id": "exam2_q101",
+      "number": 101,
+      "question": "What is the normal gradient between segmental pressure in a lower extremity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20 mmHg"
+        },
+        {
+          "letter": "B",
+          "text": "25 mmHg"
+        },
+        {
+          "letter": "C",
+          "text": "30 mmHg"
+        },
+        {
+          "letter": "D",
+          "text": "35 mmHg"
+        }
+      ],
+      "category": "Arterial Testing",
+      "correctAnswer": "A",
+      "explanation": "A normal pressure gradient between adjacent segmental cuff levels in the lower extremity should not exceed 20 mmHg. A gradient greater than 20 mmHg suggests hemodynamically significant occlusive disease in that arterial segment."
+    },
+    {
+      "id": "exam2_q102",
+      "number": 102,
+      "question": "Which statement is most consistent with arterial occlusive disease following exercise testing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ankle pressure decreases but the pressure returns to baseline within 1 minute"
+        },
+        {
+          "letter": "B",
+          "text": "peripheral resistance decreases resulting in decreased blood flow"
+        },
+        {
+          "letter": "C",
+          "text": "peripheral resistance increases resulting in increased blood flow"
+        },
+        {
+          "letter": "D",
+          "text": "ankle pressure decreases by 20% or greater from the resting baseline"
+        }
+      ],
+      "category": "Arterial Testing",
+      "correctAnswer": "D",
+      "explanation": "In arterial occlusive disease, exercise causes ankle pressure to decrease by 20% or greater from the resting baseline due to the inability of diseased arteries to increase flow to meet the elevated metabolic demand of exercising muscles."
+    },
+    {
+      "id": "exam2_q103",
+      "number": 103,
+      "question": "Which condition is consistent with a dampened photoplethysmogram waveform?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hyperemia"
+        },
+        {
+          "letter": "B",
+          "text": "complete palmar arch"
+        },
+        {
+          "letter": "C",
+          "text": "Raynaud Disease"
+        },
+        {
+          "letter": "D",
+          "text": "arteriovenous fistula"
+        }
+      ],
+      "category": "Arterial Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "Raynaud disease causes episodic digital vasospasm, which produces a dampened or absent photoplethysmographic (PPG) waveform during symptomatic episodes due to severely reduced digital arterial perfusion."
+    },
+    {
+      "id": "exam2_q105",
+      "number": 105,
+      "question": "Which duplex findings would suggest isolated iliac vein thrombosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "dilated incompressible common femoral vein with absent Doppler signals"
+        },
+        {
+          "letter": "B",
+          "text": "compressible common femoral vein with continuous Doppler signals"
+        },
+        {
+          "letter": "C",
+          "text": "dilated incompressible popliteal vein with absent Doppler signals"
+        },
+        {
+          "letter": "D",
+          "text": "normal venous duplex exam with spontaneous and phasic Doppler signals"
+        }
+      ],
+      "category": "Arterial Anatomy",
+      "correctAnswer": "B",
+      "explanation": "Isolated iliac vein thrombosis shows a compressible common femoral vein (since the CFV itself is not thrombosed) but with continuous (non-phasic) Doppler signals, indicating loss of normal respiratory variation due to the proximal iliac obstruction."
+    }
+  ]
+}
