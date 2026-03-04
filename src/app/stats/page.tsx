@@ -35,11 +35,14 @@ export default function StatsPage() {
       {/* Header */}
       <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white border-b shadow-sm">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 className="text-2xl sm:text-4xl font-bold">
-            <span className="text-gray-800">Sono</span>
-            <span className="text-emerald-500">Pass</span>
-            <span className="text-gray-600 text-base sm:text-2xl ml-2 sm:ml-3">Stats</span>
-          </h1>
+          <div>
+            <h1 className="text-2xl sm:text-4xl font-black">
+              <span className="text-gray-800">Sono</span>
+              <span className="text-emerald-500">Pass</span>
+              <span className="text-gray-600 text-base sm:text-2xl ml-2 sm:ml-3 font-bold">Stats</span>
+            </h1>
+            <p className="text-xs sm:text-sm text-gray-500 mt-0.5 sm:mt-1">Your vascular registry exam prep</p>
+          </div>
           <Link href="/">
             <Button variant="outline" size="sm" className="font-semibold text-xs sm:text-sm px-2.5 sm:px-4">
               <ArrowLeft className="w-4 h-4 sm:mr-2" />
