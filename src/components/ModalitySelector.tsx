@@ -146,7 +146,7 @@ export function ModalitySelectorCards() {
                       </div>
                     </div>
                   )}
-                </Card>
+                </div>
               </Card>
             </button>
           );

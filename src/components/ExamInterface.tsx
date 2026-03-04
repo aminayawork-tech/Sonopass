@@ -7,7 +7,7 @@ import { Progress } from '@/components/ui/progress';
 import { Check, X, Home, Info, Heart, Zap, Trophy, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
-import { getStats, recordAnswer, recordExamComplete, getBadgeInfo, type UserStats } from '@/lib/userStats';
+import { getStats, recordAnswer, recordExamComplete, getBadgeInfo, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
 
 interface Option {
   letter: string;
@@ -59,6 +59,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
   }).length;
 
   const score = answeredCount > 0 ? Math.round((correctAnswers / answeredCount) * 100) : 0;
+  const modalityStats = stats ? getCurrentModalityStats(stats) : null;
 
   const showXpFlash = useCallback((amount: number, correct: boolean) => {
     setXpFlash({ amount, correct });
@@ -151,12 +152,12 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                 </p>
               </div>
 
-              {stats && (
+              {modalityStats && (
                 <div className="mb-6 sm:mb-8 p-3 sm:p-4 bg-amber-50 border border-amber-200 rounded-lg inline-block">
                   <div className="flex items-center gap-2 sm:gap-3">
                     <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-amber-500" />
                     <span className="text-sm sm:text-lg font-bold text-amber-700">
-                      {stats.xp} Total XP &middot; Level {stats.level}
+                      {modalityStats.xp} Total XP &middot; Level {modalityStats.level}
                     </span>
                   </div>
                 </div>
@@ -220,10 +221,10 @@ export default function ExamInterface({ questions, title, mode, examId, modality
             <h1 className="text-base sm:text-xl font-semibold text-gray-800 truncate mr-2">{title}</h1>
             <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
               {/* Stats — hidden on very small screens, compact on mobile */}
-              {stats && (
+              {modalityStats && stats && (
                 <div className="hidden xs:flex items-center gap-1.5 sm:gap-3 text-xs sm:text-sm">
                   <span className="flex items-center gap-0.5 sm:gap-1 font-semibold text-amber-600">
-                    <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> {stats.xp}
+                    <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> {modalityStats.xp}
                   </span>
                   <span className="flex items-center gap-0.5">
                     {Array.from({ length: 5 }).map((_, i) => (
@@ -248,10 +249,10 @@ export default function ExamInterface({ questions, title, mode, examId, modality
           </div>
 
           {/* Mobile stats row — visible only on very small screens */}
-          {stats && (
+          {modalityStats && stats && (
             <div className="flex xs:hidden items-center justify-center gap-3 text-xs mb-2">
               <span className="flex items-center gap-1 font-semibold text-amber-600">
-                <Zap className="w-3.5 h-3.5" /> {stats.xp} XP
+                <Zap className="w-3.5 h-3.5" /> {modalityStats.xp} XP
               </span>
               <span className="text-gray-300">|</span>
               <span className="flex items-center gap-1 font-semibold text-orange-500">

@@ -206,11 +206,11 @@ export default function StatsPage() {
         </Card>
 
         {/* Exam History */}
-        {stats && stats.examScores.length > 0 && (
+        {stats && modalityStats && modalityStats.examScores.length > 0 && (
           <Card className="p-4 sm:p-8 bg-white shadow-md border border-gray-200 mb-8 sm:mb-12">
             <h2 className="text-lg sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">Exam History</h2>
             <div className="space-y-2 sm:space-y-3">
-              {stats.examScores.slice(-10).reverse().map((es, i) => (
+              {modalityStats.examScores.slice(-10).reverse().map((es, i) => (
                 <div key={i} className="flex justify-between items-center p-3 sm:p-4 bg-gray-50 rounded-lg">
                   <div>
                     <div className="font-semibold text-sm sm:text-base text-gray-800 capitalize">{es.exam.replace('-', ' ')}</div>
