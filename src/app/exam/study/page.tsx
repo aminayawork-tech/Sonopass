@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, BookOpen, Lightbulb, CheckCircle2, Brain, ArrowRight } from 'lucide-react';
+import { ArrowLeft, BookOpen, Lightbulb, CheckCircle2, Brain, ArrowRight, FileText, ExternalLink } from 'lucide-react';
 import questionsData from '@/data/vascular-questions.json';
 import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
@@ -79,6 +79,141 @@ export default function StudyPage() {
           </h2>
           <p className="text-base sm:text-2xl font-semibold text-gray-600">
             Master one section at a time
+          </p>
+        </div>
+
+        {/* Study Resources Section */}
+        <div className="mb-8">
+          <h2 className="text-2xl sm:text-3xl font-black text-gray-800 mb-4 sm:mb-6 text-center">Study Resources</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+            {/* Vascular Study Guide 1 */}
+            <a
+              href="/SonoPassresources/Vasc-Study-Guide.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl shadow-lg border-2 border-emerald-200 p-4 sm:p-6 hover:scale-105 hover:shadow-xl transition-all"
+            >
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-emerald-100 flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-emerald-200 transition-colors">
+                  <FileText className="w-6 h-6 sm:w-8 sm:h-8 text-emerald-600" />
+                </div>
+                <h3 className="text-sm sm:text-lg font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">
+                  Vascular Study Guide
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 mb-3">
+                  Comprehensive RVT material
+                </p>
+                <div className="flex items-center gap-2 text-xs sm:text-sm text-emerald-600 font-semibold">
+                  <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span>Open PDF</span>
+                </div>
+              </div>
+            </a>
+
+            {/* Vascular Study Guide 2 */}
+            <a
+              href="/SonoPassresources/Vasc-Study-guide2-compressed.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl shadow-lg border-2 border-emerald-200 p-4 sm:p-6 hover:scale-105 hover:shadow-xl transition-all"
+            >
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-emerald-100 flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-emerald-200 transition-colors">
+                  <FileText className="w-6 h-6 sm:w-8 sm:h-8 text-emerald-600" />
+                </div>
+                <h3 className="text-sm sm:text-lg font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">
+                  Vascular Study Guide 2
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 mb-3">
+                  Additional RVT review
+                </p>
+                <div className="flex items-center gap-2 text-xs sm:text-sm text-emerald-600 font-semibold">
+                  <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span>Open PDF</span>
+                </div>
+              </div>
+            </a>
+
+            {/* Practice Exam 1 Answer Key */}
+            <a
+              href="/SonoPassresources/Practice Exam 1 Answer Key May042025 vascular.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl shadow-lg border-2 border-blue-200 p-4 sm:p-6 hover:scale-105 hover:shadow-xl transition-all"
+            >
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-blue-100 flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-blue-200 transition-colors">
+                  <FileText className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" />
+                </div>
+                <h3 className="text-sm sm:text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  Practice Exam 1 Key
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 mb-3">
+                  Complete explanations
+                </p>
+                <div className="flex items-center gap-2 text-xs sm:text-sm text-blue-600 font-semibold">
+                  <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span>Open PDF</span>
+                </div>
+              </div>
+            </a>
+
+            {/* Practice Exam 2 Answer Key */}
+            <a
+              href="/SonoPassresources/Practice Exam 2 Answer Key May2025 vascular.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl shadow-lg border-2 border-blue-200 p-4 sm:p-6 hover:scale-105 hover:shadow-xl transition-all"
+            >
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-blue-100 flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-blue-200 transition-colors">
+                  <FileText className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" />
+                </div>
+                <h3 className="text-sm sm:text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  Practice Exam 2 Key
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 mb-3">
+                  Complete explanations
+                </p>
+                <div className="flex items-center gap-2 text-xs sm:text-sm text-blue-600 font-semibold">
+                  <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span>Open PDF</span>
+                </div>
+              </div>
+            </a>
+
+            {/* Vascular Sonography Cheatsheet */}
+            <a
+              href="/images/study-guide/Vascular Sonography Cheatsheet.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-2xl shadow-lg border-2 border-purple-200 p-4 sm:p-6 hover:scale-105 hover:shadow-xl transition-all lg:col-span-2"
+            >
+              <div className="flex flex-col items-center text-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-purple-100 flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-purple-200 transition-colors">
+                  <FileText className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600" />
+                </div>
+                <h3 className="text-sm sm:text-lg font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
+                  Vascular Sonography Cheatsheet
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 mb-3">
+                  Quick reference for key concepts and formulas
+                </p>
+                <div className="flex items-center gap-2 text-xs sm:text-sm text-purple-600 font-semibold">
+                  <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span>Open PDF</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div className="text-center mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-4xl font-black text-gray-800 mb-2">
+            Practice Questions by Topic
+          </h2>
+          <p className="text-sm sm:text-lg font-semibold text-gray-600">
+            Choose a category to start practicing
           </p>
         </div>
 

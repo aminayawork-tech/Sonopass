@@ -28,7 +28,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl sm:text-4xl font-bold">
             <span className="text-gray-800">Sono</span>
-            <span className="text-emerald-600">Pass</span>
+            <span className="text-emerald-500">Pass</span>
           </h1>
           <div className="flex items-center gap-2 sm:gap-4">
             {/* Live stats bar — desktop only */}

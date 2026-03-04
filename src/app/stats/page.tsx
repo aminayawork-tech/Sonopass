@@ -37,7 +37,7 @@ export default function StatsPage() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl sm:text-4xl font-bold">
             <span className="text-gray-800">Sono</span>
-            <span className="text-emerald-600">Pass</span>
+            <span className="text-emerald-500">Pass</span>
             <span className="text-gray-600 text-base sm:text-2xl ml-2 sm:ml-3">Stats</span>
           </h1>
           <Link href="/">
