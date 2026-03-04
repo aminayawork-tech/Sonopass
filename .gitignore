@@ -34,3 +34,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# PDF Extraction Scripts and Output
+extract*.py
+*_extraction.py
+debug_pdf*.py
+extracted_content/
+*_full_text.txt
+*_annotations.json
+extracted_answer_key_content.*
+EXTRACTION_COMPLETE.md
+comprehensive_exam_extraction.py
+improved_exam_extraction.py
+

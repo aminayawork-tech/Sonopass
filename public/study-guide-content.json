@@ -1796,6 +1796,229 @@
           "images": []
         }
       ]
+    },
+    {
+      "id": "quick-reference",
+      "title": "Quick Reference & Critical Values",
+      "icon": "zap",
+      "color": "orange",
+      "description": "High-yield facts, critical velocity criteria, and diagnostic values for rapid exam review",
+      "topics": [
+        {
+          "id": "velocity-criteria",
+          "title": "Critical Velocity Criteria",
+          "quickSummary": "Master the key PSV thresholds for diagnosing stenosis across all vascular territories - these are high-yield exam questions!",
+          "clinicalPearls": [
+            "Celiac artery >70% stenosis: PSV > 225 cm/s (most tested abdominal vessel)",
+            "Renal artery stenosis indicators: Tardus parvus waveform, AT >70ms, AI <3 m/s",
+            "Peripheral artery stenosis: PSV ratio >2.0, PSV >200 cm/s",
+            "Hemodialysis access stenosis: PSV >400 cm/s or PSV ratio >2:1",
+            "Post-meal response: SMA velocity doubles, minimal celiac change",
+            "Renal arteries have the LOWEST resistive index among abdominal vessels"
+          ],
+          "sections": [
+            {
+              "title": "Abdominal Velocity Criteria",
+              "content": "Celiac Artery >70% Stenosis: PSV > 225 cm/s\nRenal Artery Stenosis: Tardus parvus in segmental arteries, Acceleration time > 70 ms, Acceleration index < 3 m/s\nSMA Post-Meal Response: Velocity doubles (normal response to feeding)\nCeliac Post-Meal: Minimal velocity change"
+            },
+            {
+              "title": "Peripheral Artery Stenosis",
+              "content": "Significant Stenosis: PSV ratio >2.0, PSV >200 cm/s\nProlonged AT: >200 ms suggests proximal stenosis\nLocation: Use segmental approach to identify level"
+            },
+            {
+              "title": "Hemodialysis Access",
+              "content": "Stenosis Criteria: PSV >400 cm/s OR PSV ratio >2:1\nMaturation Time: 1-3 months typical for AVF\nIdeal Flow: >600 mL/min for adequate dialysis\nVein Requirements: >6mm diameter, <6mm depth from skin"
+            }
+          ],
+          "keyTakeaways": [
+            "Celiac >225 cm/s = >70% stenosis",
+            "Renal stenosis = tardus parvus + AT >70ms",
+            "Peripheral stenosis = PSV ratio >2.0",
+            "Dialysis access stenosis = PSV >400 cm/s",
+            "Renal arteries have lowest RI in abdomen"
+          ],
+          "keyTerms": [
+            "PSV",
+            "Tardus Parvus",
+            "Acceleration Time",
+            "Acceleration Index",
+            "PSV Ratio",
+            "Stenosis Criteria"
+          ],
+          "images": []
+        },
+        {
+          "id": "abi-interpretation",
+          "title": "Ankle-Brachial Index (ABI) & Pressure Measurements",
+          "quickSummary": "ABI is the cornerstone of PAD diagnosis. Know the interpretation ranges and what to do when values are abnormal.",
+          "clinicalPearls": [
+            "ABI >1.30-1.40 suggests medial calcification (non-compressible vessels) - measure TOE pressures instead",
+            "ABI <0.90 = PAD, <0.50 = SEVERE PAD requiring urgent evaluation",
+            "Exercise ABI decrease >20% suggests PAD even if resting ABI is normal",
+            "First symptom of PAD: Intermittent claudication",
+            "Toe pressure normal: >30 mmHg (use when vessels non-compressible)",
+            "Segmental pressure gradient >30 mmHg indicates stenosis at that level"
+          ],
+          "sections": [
+            {
+              "title": "ABI Interpretation",
+              "content": "Normal: 0.90 - 1.30 (routine follow-up)\nPAD: < 0.90 (further evaluation needed)\nSevere PAD: < 0.50 (urgent vascular evaluation)\nCalcified Vessels: > 1.30-1.40 (falsely elevated - measure toe pressures)\n\nExercise ABI: Decrease >20% from baseline suggests PAD\nClinical Pearl: Some patients with normal resting ABI have PAD revealed only with exercise testing"
+            },
+            {
+              "title": "When ABI Fails",
+              "content": "Medial Calcification Problem: Diabetes, renal disease, elderly patients may have non-compressible vessels\nFalsely Elevated ABI: >1.30-1.40 suggests calcification\nSolution: Measure TOE PRESSURES instead\nNormal Toe Pressure: >30 mmHg\nToe-Brachial Index: Can be calculated when ABI unreliable"
+            },
+            {
+              "title": "Segmental Pressures & PVR",
+              "content": "Normal Gradient: <20-30 mmHg between consecutive levels\nSignificant Drop: >30 mmHg suggests stenosis at that level\nLevels Tested: High thigh, low thigh, calf, ankle, toe\n\nPVR Waveforms:\nNormal: Sharp systolic upstroke, dicrotic notch\nMild Disease: Loss of dicrotic notch\nModerate/Severe: Flattened, delayed waveform"
+            }
+          ],
+          "keyTakeaways": [
+            "Normal ABI = 0.90-1.30",
+            "ABI >1.30 = calcification, use toe pressures",
+            "ABI <0.50 = severe PAD (urgent!)",
+            "Exercise ABI drop >20% = PAD",
+            "Gradient >30 mmHg = stenosis",
+            "Normal toe pressure >30 mmHg"
+          ],
+          "keyTerms": [
+            "ABI",
+            "Peripheral Arterial Disease (PAD)",
+            "Medial Calcification",
+            "Toe Pressures",
+            "Segmental Pressures",
+            "PVR"
+          ],
+          "images": []
+        },
+        {
+          "id": "venous-diagnostic-criteria",
+          "title": "Venous System Diagnostic Criteria",
+          "quickSummary": "DVT diagnosis relies on non-compressibility. Reflux diagnosis requires >0.5 seconds of reversed flow. Master these criteria!",
+          "clinicalPearls": [
+            "PRIMARY DVT criterion: Non-compressibility of vein (gold standard)",
+            "Augmentation failure suggests PROXIMAL obstruction (not at compression site)",
+            "Venous reflux >0.5 seconds = valve incompetence",
+            "Normal venous refill time (VRT): >20 seconds",
+            "Thigh tourniquet normalization = GSV reflux; Calf tourniquet = perforator reflux",
+            "Loss of phasicity may indicate proximal obstruction OR chronic changes"
+          ],
+          "sections": [
+            {
+              "title": "DVT Evaluation",
+              "content": "Primary Diagnostic Criterion: NON-COMPRESSIBILITY of vein\nCompression Technique: Gentle but firm pressure with transducer\nPositive Finding: Vein walls do not coapt completely\n\nSecondary Signs:\n- Loss of phasicity (suggests proximal obstruction)\n- Augmentation failure (proximal obstruction)\n- Visible thrombus\n- Venous dilation\n- Absent or dampened flow"
+            },
+            {
+              "title": "Venous Reflux Testing",
+              "content": "Reflux Duration Criteria: >0.5 seconds indicates valve incompetence\nTesting Method: Augmentation with distal compression + release OR Valsalva\nNormal Response: Brief reversal (<0.5 sec) then competent valves close\nAbnormal: Prolonged retrograde flow >0.5 seconds\n\nVenous Refill Time (VRT):\nNormal: >20 seconds\nAbnormal: <20 seconds (suggests reflux/incompetence)\nTesting: Patient stands, empties veins, observe refill time"
+            },
+            {
+              "title": "Tourniquet Testing for Reflux Source",
+              "content": "Purpose: Identify SOURCE of venous reflux\n\nThigh Tourniquet Application:\nVRT normalizes → Great Saphenous Vein (GSV) reflux\nReflux eliminated with superficial system compression\n\nCalf Tourniquet Application:\nVRT normalizes → Perforator vein reflux\nIncompetent perforators allowing deep-to-superficial flow\n\nNo Normalization:\nDeep venous insufficiency\nMay require surgical intervention"
+            }
+          ],
+          "keyTakeaways": [
+            "DVT diagnosis = non-compressibility (primary sign)",
+            "Reflux >0.5 seconds = valve incompetence",
+            "Normal VRT >20 seconds",
+            "Thigh tourniquet → GSV reflux",
+            "Calf tourniquet → perforator reflux",
+            "Augmentation failure = proximal obstruction"
+          ],
+          "keyTerms": [
+            "Non-Compressibility",
+            "Venous Reflux",
+            "Valve Incompetence",
+            "VRT",
+            "Tourniquet Test",
+            "Augmentation"
+          ],
+          "images": []
+        },
+        {
+          "id": "pathology-pearls",
+          "title": "Key Pathology & Clinical Associations",
+          "quickSummary": "Know the classic disease presentations and demographic associations - these appear frequently on exams!",
+          "clinicalPearls": [
+            "Blue toe syndrome = microemboli from PROXIMAL source (aortoiliac disease, aneurysm, ulcerated plaque)",
+            "Fibromuscular dysplasia (FMD): Young women, MID-TO-DISTAL renal artery, 'string of beads'",
+            "Buerger's disease: Young MALE smokers, small/medium vessels, distal (tibial/digital)",
+            "Popliteal artery = MOST COMMON peripheral aneurysm location",
+            "Leriche syndrome triad: Claudication + impotence + diminished femoral pulses",
+            "Paget-von-Schroetter: Effort-induced subclavian/axillary DVT in young athletes"
+          ],
+          "sections": [
+            {
+              "title": "Classic Disease Demographics",
+              "content": "Fibromuscular Dysplasia (FMD):\nDemographics: Young to middle-aged WOMEN\nVessels: Renal arteries (most common), carotid\nLocation: MID-TO-DISTAL renal artery (vs atherosclerosis = proximal/ostial)\nAppearance: 'String of beads' appearance\n\nBuerger's Disease (Thromboangiitis Obliterans):\nDemographics: Young MALE smokers (<45 years)\nVessels: Small and medium arteries\nLocation: DISTAL vessels (tibial, digital)\nPattern: Segmental involvement\n\nPaget-von-Schroetter Disease:\nDemographics: Young adults, athletes\nPresentation: Effort-induced subclavian/axillary vein thrombosis\nRisk Factors: Repetitive arm motion, thoracic outlet syndrome"
+            },
+            {
+              "title": "Pathognomonic Findings",
+              "content": "Blue Toe Syndrome:\nCause: Microemboli from proximal source\nAssociations: Aortoiliac occlusive disease, AAA, ulcerated plaque\nPresentation: Ischemic toes with palpable pulses (embolic, not flow-limiting)\n\nLeriche Syndrome:\nDefinition: Aortoiliac occlusive disease\nClassic Triad:\n1. Buttock/thigh claudication\n2. Impotence (males)\n3. Diminished/absent femoral pulses\n\nSubclavian Steal:\nFinding: REVERSED flow in vertebral artery\nCause: Proximal subclavian stenosis/occlusion\nSymptoms: Arm claudication + vertebrobasilar insufficiency"
+            },
+            {
+              "title": "Aneurysm Essentials",
+              "content": "Abdominal Aortic Aneurysm (AAA):\nDefinition: >3 cm diameter (or >1.5x normal)\nSurveillance:\n- 3.0-3.9 cm: Annually\n- 4.0-4.9 cm: Every 6 months\n- ≥5.0 cm: Consider repair, close monitoring\n\nPeripheral Aneurysms:\nMost Common Location: POPLITEAL artery\nComplications: Thrombosis, embolization, rupture (less common than AAA)\nAssociation: 50% bilateral, often associated with AAA"
+            }
+          ],
+          "keyTakeaways": [
+            "FMD = young women, mid-distal renal artery",
+            "Buerger's = young male smokers, distal vessels",
+            "Blue toe = microemboli from proximal source",
+            "Popliteal = most common peripheral aneurysm",
+            "Leriche = claudication + impotence + ↓ femoral pulses",
+            "Subclavian steal = reversed vertebral flow"
+          ],
+          "keyTerms": [
+            "Blue Toe Syndrome",
+            "Fibromuscular Dysplasia",
+            "Buerger's Disease",
+            "Leriche Syndrome",
+            "Paget-von-Schroetter",
+            "Subclavian Steal"
+          ],
+          "images": []
+        },
+        {
+          "id": "follow-up-protocols",
+          "title": "Follow-Up Intervals & Surveillance",
+          "quickSummary": "Know when to bring patients back after procedures and for aneurysm surveillance - critical for clinical practice!",
+          "clinicalPearls": [
+            "Post-carotid endarterectomy (CEA): 1-3 months first follow-up to detect restenosis",
+            "AAA 4.0-4.9 cm: Every 6 months surveillance (increased rupture risk)",
+            "AAA 3.0-3.9 cm: Annual surveillance sufficient",
+            "Renal artery post-intervention: 1, 6, 12 months, then annually",
+            "Post-intervention surveillance critical for detecting restenosis",
+            "AAA ≥5.0 cm: Consider repair, very close monitoring if not surgical candidate"
+          ],
+          "sections": [
+            {
+              "title": "Post-Surgical Follow-Up",
+              "content": "Post-Carotid Endarterectomy (CEA):\nFirst Follow-Up: 1-3 months\nPurpose: Detect restenosis at surgical site\nSubsequent: 6 months, 12 months, then annually\nFindings: Assess patency, look for intimal hyperplasia\n\nRenal Artery Stent/Angioplasty:\nProtocol: 1 month, 6 months, 12 months, then annually\nCriteria: PSV, RAR (renal-aortic ratio)\nRestenosis Risk: Highest in first 6-12 months\n\nHemodialysis Access:\nNew Access: Weekly until mature (1-3 months)\nMature Access: Every 3-4 months for surveillance\nProblem Access: As needed for stenosis/thrombosis evaluation"
+            },
+            {
+              "title": "AAA Surveillance",
+              "content": "3.0-3.9 cm Diameter:\nInterval: ANNUALLY\nRupture Risk: Low (<1% per year)\nAction: Continue surveillance\n\n4.0-4.9 cm Diameter:\nInterval: Every 6 MONTHS\nRupture Risk: Moderate (1-11% per year depending on size)\nAction: Close monitoring, discuss surgical options\n\n≥5.0 cm Diameter:\nInterval: Very close monitoring (3 months or less)\nRupture Risk: High (>10% per year for 5.5+ cm)\nAction: Strong consideration for surgical repair\n\nRapid Expansion:\n>0.5 cm in 6 months: Refer for surgical evaluation regardless of size"
+            }
+          ],
+          "keyTakeaways": [
+            "Post-CEA follow-up: 1-3 months",
+            "AAA 3.0-3.9 cm: Annual surveillance",
+            "AAA 4.0-4.9 cm: Every 6 months",
+            "AAA ≥5.0 cm: Consider repair",
+            "Renal artery post-intervention: 1, 6, 12 months",
+            "Rapid AAA expansion >0.5 cm/6 mo = urgent"
+          ],
+          "keyTerms": [
+            "Carotid Endarterectomy",
+            "AAA Surveillance",
+            "Restenosis",
+            "Follow-Up Protocol",
+            "Surveillance Intervals"
+          ],
+          "images": []
+        }
+      ]
     }
   ]
 }
