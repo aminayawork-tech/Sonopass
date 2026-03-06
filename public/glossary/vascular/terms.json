@@ -1,152 +1,717 @@
 [
   {
-    "term": "Aneurysm",
-    "definition": "Localized dilation or ballooning of a blood vessel, typically an artery, where the diameter increases by at least 50% compared to normal.",
-    "category": "pathology"
+    "term": "Abdominal aorta",
+    "definition": "The largest artery in the abdomen, supplying blood to the lower body; located in the retroperitoneum and prone to aneurysms or occlusion.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Abdominal bruit",
+    "definition": "An abnormal whooshing sound heard over the abdomen due to turbulent blood flow, often indicating arterial stenosis or aneurysm.",
+    "category": "doppler"
+  },
+  {
+    "term": "Acceleration index",
+    "definition": "A Doppler measurement used in renal artery evaluation; values less than 3 m/s² suggest stenosis by indicating delayed systolic upstroke.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Acceleration time",
+    "definition": "Time from onset of systole to peak velocity in Doppler waveforms; greater than 70 ms indicates proximal stenosis (e.g., tardus parvus pattern).",
+    "category": "doppler"
+  },
+  {
+    "term": "Acute ischemia",
+    "definition": "Sudden reduction in blood flow to tissues, often due to emboli or thrombosis, leading to pain, pallor, and potential tissue death.",
+    "category": "doppler"
+  },
+  {
+    "term": "Acute tubular necrosis",
+    "definition": "Death of tubular cells in the kidney, the most common cause of immediate postoperative renal transplant failure, often due to ischemia.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Aliasing",
+    "definition": "An artifact in Doppler ultrasound where high velocities appear wrapped around the spectrum, mimicking reversed or low flow.",
+    "category": "doppler"
+  },
+  {
+    "term": "Amaurosis fugax",
+    "definition": "Transient monocular vision loss due to temporary ischemia in the retinal artery, often a hemispheric symptom of carotid disease.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Ankle-brachial index (ABI)",
+    "definition": "A non-invasive test comparing ankle and brachial systolic pressures; normal range 0.9-1.3, lower values indicate peripheral arterial disease.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Anterior tibial vein",
+    "definition": "A deep vein in the lower leg accompanying the anterior tibial artery; often paired and drains the anterior compartment.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Aortic coarctation",
+    "definition": "Congenital narrowing of the aorta, causing hypertension in the upper body and decreased femoral pulses, often with abdominal bruit.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Aortoiliac occlusive disease",
+    "definition": "Blockage or narrowing of the aorta and iliac arteries due to atherosclerosis, leading to claudication or blue toe syndrome.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Arteriovenous fistula (AVF)",
+    "definition": "Abnormal connection between an artery and vein, causing high-flow shunting; can be post-biopsy or dialysis-related, with low-resistance waveforms.",
+    "category": "anatomy"
   },
   {
     "term": "Atherosclerosis",
-    "definition": "A disease process characterized by the buildup of plaque in arterial walls, leading to vessel narrowing and reduced blood flow.",
+    "definition": "Buildup of plaque in arteries, leading to narrowing or occlusion; common cause of peripheral arterial disease and ulcers.",
     "category": "pathology"
   },
   {
-    "term": "Biphasic Waveform",
-    "definition": "A Doppler waveform pattern showing two distinct phases: forward flow during systole and brief reversed flow during early diastole, typical of peripheral arteries.",
+    "term": "Augmentation",
+    "definition": "Increase in venous Doppler signal with distal compression (e.g., calf squeeze), used to assess patency and rule out obstruction.",
     "category": "doppler"
   },
   {
-    "term": "Carotid Bulb",
-    "definition": "The widened area at the bifurcation of the common carotid artery into the internal and external carotid arteries.",
+    "term": "Azygos vein",
+    "definition": "A thoracic vein that drains into the superior vena cava; can serve as collateral in central venous obstruction.",
     "category": "anatomy"
   },
   {
-    "term": "Collateral Circulation",
-    "definition": "Alternative pathways for blood flow that develop or become more prominent when primary vessels are obstructed or stenotic.",
+    "term": "Blue toe syndrome",
+    "definition": "Embolization of atheromatous debris to toes, causing painful blue discoloration; associated with aortoiliac disease.",
     "category": "anatomy"
   },
   {
-    "term": "Color Flow Doppler",
-    "definition": "A ultrasound technique that displays blood flow direction and velocity as colored pixels superimposed on the grayscale image.",
+    "term": "Brachial vein",
+    "definition": "Deep vein in the upper arm accompanying the brachial artery; typically paired and joins to form the axillary vein.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Brachiocephalic vein",
+    "definition": "Major vein formed by confluence of subclavian and internal jugular veins; drains upper body and can be obstructed in thoracic outlet syndrome.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Budd-Chiari syndrome",
+    "definition": "Obstruction of hepatic veins or IVC, leading to liver congestion; not typically associated with tumor invasion.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Buerger's disease (Thromboangiitis obliterans)",
+    "definition": "Inflammatory disease affecting small arteries/veins in smokers, often involving distal vessels like posterior tibial artery.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Bypass graft",
+    "definition": "Surgical conduit (e.g., vein or synthetic) to reroute blood around occluded arteries; monitored with duplex for patency and stenosis.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Carotid endarterectomy",
+    "definition": "Surgical removal of plaque from the carotid artery to prevent stroke; post-op changes include bulb size alterations.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Celiac artery (axis)",
+    "definition": "Major branch of abdominal aorta supplying foregut; velocities increase post-meal normally, but can be compressed in median arcuate syndrome.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Celiac axis stenosis",
+    "definition": "Narrowing of the celiac artery, causing turbulent flow; differentiated from compression syndromes via breathing maneuvers.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Central arterial occlusion",
+    "definition": "Blockage in major proximal arteries, leading to altered flow patterns like high resistive in distal branches.",
+    "category": "doppler"
+  },
+  {
+    "term": "Central venous obstruction",
+    "definition": "Blockage in major veins like SVC or brachiocephalic, causing edema and collateral veins; common in AVF patients with arm swelling.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Cephalic vein",
+    "definition": "Superficial vein on the lateral upper arm/forearm; drains into axillary vein and used in AVF creation.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Claudication",
+    "definition": "Leg pain from peripheral arterial disease relieved by rest; first symptom of chronic lower extremity occlusive disease.",
+    "category": "pathology"
+  },
+  {
+    "term": "Collateral arteries",
+    "definition": "Alternative pathways that develop around occlusions; typically more numerous, tortuous, and smaller than native vessels.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Common femoral vein",
+    "definition": "Major vein at groin level; assessed for phasicity and augmentation to detect iliac or femoral obstruction.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Compartment syndrome",
+    "definition": "Increased pressure within muscle fascial compartments, causing ischemia; due to swelling, not atherosclerosis.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Complete palmar arch",
+    "definition": "Full arterial loop in hand connecting radial and ulnar arteries; patency tested with PPG and compression.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Compressibility",
+    "definition": "Ultrasound test where veins are compressed transversely; lack indicates thrombosis or incompressibility.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Continuous Doppler waveform",
+    "definition": "Non-phasic, steady flow signal; indicates proximal venous obstruction (e.g., brachiocephalic or SVC).",
+    "category": "anatomy"
+  },
+  {
+    "term": "Coronal orientation",
+    "definition": "Imaging plane dividing body into front/back; not standard for vein compressibility (transverse is preferred).",
+    "category": "anatomy"
+  },
+  {
+    "term": "Cyanosis",
+    "definition": "Bluish discoloration due to low oxygen; seen in Raynaud's after pallor phase or in blue toe syndrome.",
+    "category": "pathology"
+  },
+  {
+    "term": "Deep venous thrombosis (DVT)",
+    "definition": "Blood clot in deep veins, causing secondary venous insufficiency; history can lead to reflux.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Diabetic neuropathy",
+    "definition": "Nerve damage from diabetes, causing foot issues but not directly blue toe syndrome.",
+    "category": "pathology"
+  },
+  {
+    "term": "Diastolic flow",
+    "definition": "Blood flow during heart relaxation; increased in low-resistance beds or AVFs.",
+    "category": "doppler"
+  },
+  {
+    "term": "Duplex exam",
+    "definition": "Ultrasound combining B-mode imaging and Doppler for vascular assessment; used post-endarterectomy or for veins/arteries.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Dysphasia",
+    "definition": "Difficulty speaking, a hemispheric symptom from carotid territory ischemia.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Early systolic peak",
+    "definition": "Sharp upstroke in Doppler waveform; normal in renal segmental arteries, indicating no proximal stenosis.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Emboli",
+    "definition": "Clots or debris traveling in bloodstream; main cause of acute lower extremity ischemia or blue toe.",
+    "category": "pathology"
+  },
+  {
+    "term": "Endarterectomy",
+    "definition": "See Carotid endarterectomy; general term for plaque removal from arteries.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Facial swelling",
+    "definition": "Symptom of superior vena cava syndrome or central obstruction, with edema and dyspnea.",
+    "category": "pathology"
+  },
+  {
+    "term": "Femoral vein",
+    "definition": "Deep vein in thigh; assessed for reflux or obstruction; valves are numerous here.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Fibromuscular dysplasia",
+    "definition": "Nonatherosclerotic arterial disease causing beading/narrowing; commonly affects distal internal carotid or renal arteries.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Gaiter area",
+    "definition": "Lower medial leg region where venous ulcers often occur due to insufficiency.",
+    "category": "pathology"
+  },
+  {
+    "term": "Gangrene",
+    "definition": "Tissue death from ischemia; potential complication of compartment syndrome.",
+    "category": "pathology"
+  },
+  {
+    "term": "Gastrocnemius muscle",
+    "definition": "Calf muscle; can compress popliteal artery in entrapment syndromes.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Great saphenous vein",
+    "definition": "Long superficial leg vein; common source of reflux in venous insufficiency.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Hematoma",
+    "definition": "Localized blood collection; post-biopsy complication but not typically with low-resistance flow.",
+    "category": "doppler"
+  },
+  {
+    "term": "Hemiparesis",
+    "definition": "Weakness on one body side; hemispheric symptom from carotid ischemia.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Hepatic vein",
+    "definition": "Drains liver to IVC; normal flow is hepatofugal, pulsatile due to cardiac influence.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Hepatic vein thrombosis",
+    "definition": "Clot in hepatic veins; causes Budd-Chiari-like symptoms but not aliasing post-biopsy.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Hepatocellular carcinoma",
+    "definition": "Liver cancer; can invade veins but less commonly IVC than renal cell carcinoma.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Hepatofugal",
+    "definition": "Flow away from the liver; normal for hepatic veins, abnormal for portal vein (indicates portal hypertension).",
+    "category": "anatomy"
+  },
+  {
+    "term": "Hepatopetal",
+    "definition": "Flow toward the liver; normal for portal vein, abnormal for hepatic veins.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Hepatoportal circulation",
+    "definition": "System involving portal and hepatic veins; normal portal flow is hepatopetal, non-pulsatile; hepatic is hepatofugal, pulsatile.",
+    "category": "anatomy"
+  },
+  {
+    "term": "High resistive flow",
+    "definition": "Waveform with little diastolic flow; seen in muscular arteries or proximal to occlusion.",
+    "category": "doppler"
+  },
+  {
+    "term": "Incomplete palmar arch",
+    "definition": "Partial hand arterial loop; causes no PPG change with radial compression if ulnar is occluded.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Inferior vena cava (IVC)",
+    "definition": "Major vein returning blood from lower body to heart; invaded by tumors like renal cell carcinoma; few valves.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Inflow artery occlusion",
+    "definition": "Blockage of artery supplying an AVF; causes reduced flow but not edema.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Innominate vein",
+    "definition": "Another name for brachiocephalic vein.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Internal jugular vein",
+    "definition": "Major neck vein draining brain; obstruction doesn't cause continuous subclavian flow.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Intrinsic compression",
+    "definition": "External pressure on vessels; not typical for blue toe but seen in syndromes like median arcuate.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Ipsilateral arm edema",
+    "definition": "Swelling on same side as AVF; indicates central venous obstruction.",
+    "category": "pathology"
+  },
+  {
+    "term": "Leriche syndrome",
+    "definition": "Aortoiliac occlusion causing buttock claudication, impotence; not related to celiac compression.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Lesser sac",
+    "definition": "Peritoneal space; not location of abdominal aorta.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Loss of phasicity",
+    "definition": "Absence of respiratory variation in venous Doppler; indicates proximal obstruction (e.g., partial iliac).",
+    "category": "anatomy"
+  },
+  {
+    "term": "Low-resistance waveform",
+    "definition": "High diastolic flow; normal in brain/renal arteries or post-exercise; seen in AVFs.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Mastoid bone",
+    "definition": "Skull bone behind ear; not a transtemporal landmark for TCD.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Medial arcuate syndrome",
+    "definition": "Compression of celiac axis by median arcuate ligament; velocities change with breathing.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Medial malleolus",
+    "definition": "Inner ankle bone; PPG sensor placement above it for venous insufficiency testing.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Medial wall calcification",
+    "definition": "Hardening of artery inner wall; associated with monophasic waveforms and high ABI (>1.3) in diabetics.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Middle cerebral artery M2 branch",
+    "definition": "Distal segment of MCA; landmark in transcranial Doppler for cerebral flow assessment.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Monophasic",
+    "definition": "Single-phase waveform; indicates severe disease or calcification in arteries, or obstruction in veins.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Morison pouch",
+    "definition": "Space between liver and kidney; not aorta location.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Native vessels",
+    "definition": "Original anatomical arteries/veins; compared to collaterals or grafts.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Neurovascular compression syndrome",
+    "definition": "Entrapment of vessels/nerves; e.g., thoracic outlet, causing decreased pulses.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Nonatherosclerotic",
+    "definition": "Vessel narrowing not due to plaque; e.g., fibromuscular dysplasia or Takayasu arteritis.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Nonhemispheric sign",
+    "definition": "Symptom from vertebrobasilar insufficiency, like syncope, not lateralized like hemiparesis.",
+    "category": "pathology"
+  },
+  {
+    "term": "Oblique orientation",
+    "definition": "Angled imaging plane; not standard for vein compression.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Ovarian carcinoma",
+    "definition": "Ovarian cancer; can invade veins but less commonly IVC.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Paget von Schroetter disease",
+    "definition": "Effort thrombosis of axillary/subclavian vein; confirmed with upper extremity venous duplex; causes arm edema.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Pallor",
+    "definition": "Paleness; initial phase in Raynaud's disease due to vasospasm.",
+    "category": "pathology"
+  },
+  {
+    "term": "Palmar arch",
+    "definition": "Arterial network in palm; completeness tested with PPG and artery compression.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Patency",
+    "definition": "Openness of a vessel or graft; assessed via Doppler flow or compression.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Pectoralis minor",
+    "definition": "Chest muscle; compresses axillary vessels in some thoracic outlet cases.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Perforating vein",
+    "definition": "Connects superficial to deep veins; responsible for reflux if thigh tourniquet normalizes refill time.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Peritoneal",
+    "definition": "Relating to the peritoneum cavity; not aorta location.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Peroneal vein",
+    "definition": "Deep calf vein; often singular in lower extremity venous system.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Phasic Doppler signal",
+    "definition": "Flow varying with respiration; normal in veins, lost with obstruction.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Photoplethysmography (PPG)",
+    "definition": "Non-invasive test using light to measure blood volume changes; used for venous insufficiency or arterial patency in digits.",
+    "category": "pathology"
+  },
+  {
+    "term": "Popliteal vein",
+    "definition": "Vein behind knee; numerous valves; obstruction doesn't affect CFV augmentation if proximal.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Portal vein",
+    "definition": "Carries blood from gut to liver; normal flow hepatopetal, non-pulsatile; occlusion causes high resistance.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Portal vein occlusion",
+    "definition": "Blockage of portal vein; not typically with aliasing post-liver biopsy.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Posterior cerebral artery",
+    "definition": "Brain artery; distal segment used as landmark in TCD.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Posterior tibial vein",
+    "definition": "Deep calf vein accompanying posterior tibial artery; often paired.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Primary venous insufficiency",
+    "definition": "Valve incompetence without prior thrombosis; causes include congenital absence or damage.",
+    "category": "pathology"
+  },
+  {
+    "term": "Profunda femoris vein",
+    "definition": "Deep thigh vein; complete occlusion doesn't cause CFV phasicity loss.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Pulsatile flow",
+    "definition": "Throbbing waveform synced to heartbeat; normal in arteries, abnormal in portal vein (indicates hypertension).",
+    "category": "anatomy"
+  },
+  {
+    "term": "Raynaud disease",
+    "definition": "Vasospasm of digits triggered by cold/stress, causing pallor, cyanosis, rubor; tested with PPG.",
+    "category": "pathology"
+  },
+  {
+    "term": "Renal allograft",
+    "definition": "Transplanted kidney; common complication is renal artery stenosis.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Renal artery",
+    "definition": "Supplies kidney; lowest resistive index among options; stenosis causes tardus parvus in segments.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Renal artery stenosis",
+    "definition": "Narrowing of renal artery; most common vascular issue in transplants.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Renal artery thrombosis",
+    "definition": "Clot in renal artery; less common than stenosis in allografts.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Renal cell carcinoma",
+    "definition": "Kidney cancer; most common to invade IVC via renal vein.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Renal vein stenosis",
+    "definition": "Narrowing of renal vein; rare in transplants.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Renal vein thrombosis",
+    "definition": "Clot in renal vein; can occur post-transplant but less common.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Resistive index",
+    "definition": "Measure of vascular resistance (PSV - EDV)/PSV; lowest in renal arteries (low-resistance bed).",
+    "category": "anatomy"
+  },
+  {
+    "term": "Retroperitoneum",
+    "definition": "Space behind peritoneum where abdominal aorta and IVC lie.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Sagittal orientation",
+    "definition": "Imaging plane dividing body into left/right; used in vascular ultrasound but not for compression.",
     "category": "technique"
   },
   {
-    "term": "Deep Vein Thrombosis (DVT)",
-    "definition": "Formation of a blood clot (thrombus) in a deep vein, most commonly in the lower extremity veins.",
-    "category": "pathology"
-  },
-  {
-    "term": "Diastolic Flow",
-    "definition": "Blood flow that occurs during the relaxation phase of the cardiac cycle, following systole.",
+    "term": "Sample volume",
+    "definition": "Size of Doppler gate; too large can cause artifacts in graft imaging.",
     "category": "doppler"
   },
   {
-    "term": "Echogenic",
-    "definition": "Describes tissue or material that reflects ultrasound waves strongly, appearing bright or white on the ultrasound image.",
-    "category": "terminology"
-  },
-  {
-    "term": "End-Diastolic Velocity (EDV)",
-    "definition": "The minimum velocity of blood flow at the end of diastole, just before the next systolic upstroke.",
-    "category": "doppler"
-  },
-  {
-    "term": "Hemodynamically Significant Stenosis",
-    "definition": "A vessel narrowing that results in altered blood flow patterns, typically requiring 50% or greater diameter reduction.",
-    "category": "pathology"
-  },
-  {
-    "term": "Hyperemia",
-    "definition": "Increased blood flow to a tissue or organ, often seen as increased color Doppler signal.",
-    "category": "pathology"
-  },
-  {
-    "term": "Incompetent Valve",
-    "definition": "A venous valve that fails to prevent retrograde (backward) blood flow, commonly seen in venous insufficiency.",
-    "category": "pathology"
-  },
-  {
-    "term": "Intima-Media Thickness (IMT)",
-    "definition": "The combined thickness of the intima and media layers of an arterial wall, used as a marker for atherosclerosis.",
-    "category": "measurement"
-  },
-  {
-    "term": "Monophasic Waveform",
-    "definition": "A Doppler waveform pattern showing a single phase of forward flow throughout the cardiac cycle, often indicating proximal obstruction.",
-    "category": "doppler"
-  },
-  {
-    "term": "Peak Systolic Velocity (PSV)",
-    "definition": "The maximum velocity of blood flow during systole, used to assess stenosis severity.",
-    "category": "doppler"
-  },
-  {
-    "term": "Plaque",
-    "definition": "Atherosclerotic buildup within arterial walls composed of lipids, cholesterol, calcium, and cellular debris.",
-    "category": "pathology"
-  },
-  {
-    "term": "Popliteal Artery",
-    "definition": "The continuation of the femoral artery behind the knee, which bifurcates into the anterior and posterior tibial arteries.",
+    "term": "Sartorius",
+    "definition": "Thigh muscle; not common in thoracic outlet compression.",
     "category": "anatomy"
   },
   {
-    "term": "Pulsatility Index (PI)",
-    "definition": "A calculated ratio (PSV - EDV) / Mean Velocity that reflects peripheral vascular resistance.",
-    "category": "measurement"
+    "term": "Scalene",
+    "definition": "Neck muscle; most frequent compressor in thoracic outlet syndrome.",
+    "category": "anatomy"
   },
   {
-    "term": "Reflux",
-    "definition": "Retrograde (backward) flow in veins lasting longer than 0.5-1.0 seconds, indicating venous valve incompetence.",
+    "term": "Segmental arteries",
+    "definition": "Intrarenal branches; waveforms assess for proximal stenosis (e.g., acceleration time).",
+    "category": "anatomy"
+  },
+  {
+    "term": "Small saphenous vein",
+    "definition": "Superficial posterior leg vein; can cause reflux but less than great saphenous.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Spectral Doppler",
+    "definition": "Ultrasound mode showing velocity spectrum over time; used for waveforms in hepatic/portal veins.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Sphenoid bone",
+    "definition": "Skull bone; landmark in transtemporal TCD window.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Steal phenomenon",
+    "definition": "Diversion of blood to AVF causing distal ischemia; not primary cause of edema in AVF patients.",
     "category": "pathology"
   },
   {
-    "term": "Resistivity Index (RI)",
-    "definition": "A calculated ratio (PSV - EDV) / PSV that indicates downstream resistance, typically 0.6-0.8 in normal arteries.",
-    "category": "measurement"
+    "term": "Superior mesenteric artery (SMA)",
+    "definition": "Supplies midgut; high resistance when fasting, decreases post-meal.",
+    "category": "anatomy"
   },
   {
-    "term": "Spectral Broadening",
-    "definition": "Widening of the spectral Doppler waveform indicating turbulent flow, often seen at stenoses.",
-    "category": "doppler"
+    "term": "Superior vena cava (SVC)",
+    "definition": "Major vein to right atrium; obstruction causes facial/upper edema, continuous subclavian flow.",
+    "category": "anatomy"
   },
   {
-    "term": "Stenosis",
-    "definition": "Abnormal narrowing of a blood vessel lumen, typically caused by atherosclerotic plaque or other pathology.",
+    "term": "Superior vena cava syndrome",
+    "definition": "Obstruction of SVC causing upper body edema, dyspnea; often from malignancy.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Syncope",
+    "definition": "Fainting; nonhemispheric symptom indicating vertebrobasilar insufficiency.",
     "category": "pathology"
   },
   {
-    "term": "Systolic Flow",
-    "definition": "Blood flow that occurs during the contraction phase of the cardiac cycle.",
+    "term": "Takayasu arteritis",
+    "definition": "Inflammatory vasculitis affecting large arteries like brachiocephalic; predominantly in young females.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Tardus parvus",
+    "definition": "Delayed (tardus) and reduced (parvus) systolic peak in waveforms; indicates proximal stenosis.",
     "category": "doppler"
   },
   {
-    "term": "Tardus Parvus",
-    "definition": "A Doppler waveform pattern showing delayed systolic upstroke and reduced peak velocity, indicating proximal stenosis.",
-    "category": "doppler"
-  },
-  {
-    "term": "Thrombosis",
-    "definition": "The formation of a blood clot (thrombus) within a blood vessel, obstructing blood flow.",
+    "term": "Thoracic outlet syndrome",
+    "definition": "Compression of neurovascular bundle at neck/shoulder; causes arm symptoms, confirmed with upper extremity duplex.",
     "category": "pathology"
   },
   {
-    "term": "Triphasic Waveform",
-    "definition": "A Doppler waveform showing three distinct phases: forward systolic flow, reversed early diastolic flow, and forward late diastolic flow.",
+    "term": "Transcranial Doppler (TCD)",
+    "definition": "Ultrasound through skull windows (e.g., transtemporal) to assess cerebral arteries like MCA.",
     "category": "doppler"
   },
   {
-    "term": "Valsalva Maneuver",
-    "definition": "A technique where the patient bears down or holds breath to increase intra-abdominal pressure, used to assess venous reflux.",
+    "term": "Transstemporal approach",
+    "definition": "Skull window over temple for TCD to evaluate middle cerebral artery.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Transverse orientation",
+    "definition": "Cross-sectional imaging plane; standard for assessing vein compressibility.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Tricuspid valve",
+    "definition": "Heart valve between right atrium and ventricle; overfilling before opening seen in hepatic vein waveforms.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Triphasic",
+    "definition": "Three-phase arterial waveform (forward, reverse, forward); normal in peripheral arteries.",
+    "category": "doppler"
+  },
+  {
+    "term": "Tumor invasion",
+    "definition": "Extension of cancer into vessels; e.g., renal cell carcinoma into IVC.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Ulnar artery",
+    "definition": "Forearm artery; occlusion with incomplete palmar arch shows no PPG change on radial compression.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Varicosity",
+    "definition": "Dilated, tortuous vein; PPG sensor not placed over it for insufficiency testing.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Venous insufficiency",
+    "definition": "Inability of veins to return blood; primary from valve damage, secondary from DVT; tested with refill time and PPG.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Venous refill time",
+    "definition": "Time for vein refilling after compression; normalizes with tourniquet if perforator reflux.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Venous reflux",
+    "definition": "Backward flow in veins due to incompetent valves; assessed with Doppler and tourniquets.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Venous valves",
+    "definition": "Structures preventing backflow; most numerous in calf veins like popliteal.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Vertebrobasilar duplex exam",
+    "definition": "Ultrasound of vertebral/basilar arteries; indicated for nonhemispheric symptoms like syncope.",
     "category": "technique"
   },
   {
-    "term": "Velocity Ratio",
-    "definition": "Comparison of PSV at a stenosis to PSV in the normal vessel proximal to the stenosis, used to grade stenosis severity.",
-    "category": "measurement"
-  },
-  {
-    "term": "Venous Insufficiency",
-    "definition": "Impaired venous return due to incompetent valves, resulting in venous hypertension and reflux.",
-    "category": "pathology"
+    "term": "Waveform characteristic",
+    "definition": "Shape of Doppler signal; e.g., monophasic in disease, triphasic normal.",
+    "category": "doppler"
   }
 ]
