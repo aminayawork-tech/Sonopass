@@ -1,0 +1,102 @@
+[
+  {
+    "term": "Acoustic Impedance",
+    "definition": "The resistance of tissue to the propagation of ultrasound waves, calculated as the product of tissue density and sound propagation speed.",
+    "category": "physics"
+  },
+  {
+    "term": "ALARA Principle",
+    "definition": "As Low As Reasonably Achievable - the practice of minimizing ultrasound exposure while obtaining diagnostic information.",
+    "category": "safety"
+  },
+  {
+    "term": "Aliasing",
+    "definition": "A Doppler artifact that occurs when blood flow velocity exceeds the Nyquist limit, causing the signal to wrap around and display in the wrong direction.",
+    "category": "artifact"
+  },
+  {
+    "term": "Attenuation",
+    "definition": "The progressive weakening of ultrasound intensity as it travels through tissue, caused by absorption, reflection, and scattering.",
+    "category": "physics"
+  },
+  {
+    "term": "Axial Resolution",
+    "definition": "The ability to distinguish two structures along the beam axis, primarily determined by spatial pulse length and frequency.",
+    "category": "physics"
+  },
+  {
+    "term": "Comet Tail Artifact",
+    "definition": "A reverberation artifact appearing as closely spaced echoes extending deep to a strong reflector.",
+    "category": "artifact"
+  },
+  {
+    "term": "Doppler Shift",
+    "definition": "The change in frequency of ultrasound waves reflected from moving blood cells, proportional to the velocity of flow.",
+    "category": "physics"
+  },
+  {
+    "term": "Focal Zone",
+    "definition": "The region where the ultrasound beam is narrowest and lateral resolution is best.",
+    "category": "physics"
+  },
+  {
+    "term": "Frame Rate",
+    "definition": "The number of complete images displayed per second, typically measured in frames per second (fps) or Hertz (Hz).",
+    "category": "instrumentation"
+  },
+  {
+    "term": "Frequency",
+    "definition": "The number of sound wave cycles per second, measured in Hertz (Hz). Higher frequencies provide better resolution but less penetration.",
+    "category": "physics"
+  },
+  {
+    "term": "Gain",
+    "definition": "Amplification of returning echo signals to improve image brightness without changing the transmitted power.",
+    "category": "instrumentation"
+  },
+  {
+    "term": "Lateral Resolution",
+    "definition": "The ability to distinguish two structures perpendicular to the beam axis, determined by beam width.",
+    "category": "physics"
+  },
+  {
+    "term": "Mirror Image Artifact",
+    "definition": "A duplication artifact where structures appear on both sides of a strong reflector, commonly seen at the diaphragm.",
+    "category": "artifact"
+  },
+  {
+    "term": "Nyquist Limit",
+    "definition": "The maximum Doppler shift frequency that can be accurately detected, equal to half the pulse repetition frequency.",
+    "category": "physics"
+  },
+  {
+    "term": "Piezoelectric Effect",
+    "definition": "The property of certain crystals to convert electrical energy into mechanical vibrations (sound waves) and vice versa.",
+    "category": "physics"
+  },
+  {
+    "term": "Power Doppler",
+    "definition": "A Doppler technique that displays the amplitude of Doppler signals rather than frequency shift, more sensitive to slow flow.",
+    "category": "technique"
+  },
+  {
+    "term": "Pulse Repetition Frequency (PRF)",
+    "definition": "The number of ultrasound pulses transmitted per second, determines maximum depth and Doppler velocity range.",
+    "category": "instrumentation"
+  },
+  {
+    "term": "Reverberation Artifact",
+    "definition": "Multiple equally-spaced echoes caused by ultrasound bouncing back and forth between two strong reflectors.",
+    "category": "artifact"
+  },
+  {
+    "term": "Shadowing",
+    "definition": "An artifact appearing as a dark area behind highly attenuating or reflecting structures like calcifications.",
+    "category": "artifact"
+  },
+  {
+    "term": "Time Gain Compensation (TGC)",
+    "definition": "Depth-dependent amplification that compensates for attenuation, producing uniform brightness throughout the image.",
+    "category": "instrumentation"
+  }
+]

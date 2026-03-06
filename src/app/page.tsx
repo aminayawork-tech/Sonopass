@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Brain, Zap, BookOpen, BarChart3, Heart, Flame, Star, GraduationCap } from 'lucide-react';
+import { Brain, Zap, BookOpen, BarChart3, Heart, Flame, Star, GraduationCap, Library } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
@@ -137,6 +137,28 @@ export default function HomePage() {
               <div className="hidden sm:block">
                 <div className="px-4 py-2 bg-white/20 rounded-lg text-sm font-semibold">
                   Start Learning →
+                </div>
+              </div>
+            </div>
+          </Card>
+        </Link>
+
+        {/* Glossary Banner */}
+        <Link href="/glossary" className="block mb-6">
+          <Card className="p-4 sm:p-6 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all cursor-pointer border-0 shadow-lg">
+            <div className="flex items-center gap-4 text-white">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+                <Library className="w-6 h-6 sm:w-8 sm:h-8" />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg sm:text-2xl font-bold mb-1">Ultrasound Glossary</h3>
+                <p className="text-sm sm:text-base text-blue-50">
+                  Essential terms and definitions - search, filter, and master the terminology
+                </p>
+              </div>
+              <div className="hidden sm:block">
+                <div className="px-4 py-2 bg-white/20 rounded-lg text-sm font-semibold">
+                  Browse Terms →
                 </div>
               </div>
             </div>

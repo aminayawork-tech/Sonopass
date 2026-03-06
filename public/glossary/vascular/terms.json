@@ -1,0 +1,152 @@
+[
+  {
+    "term": "Aneurysm",
+    "definition": "Localized dilation or ballooning of a blood vessel, typically an artery, where the diameter increases by at least 50% compared to normal.",
+    "category": "pathology"
+  },
+  {
+    "term": "Atherosclerosis",
+    "definition": "A disease process characterized by the buildup of plaque in arterial walls, leading to vessel narrowing and reduced blood flow.",
+    "category": "pathology"
+  },
+  {
+    "term": "Biphasic Waveform",
+    "definition": "A Doppler waveform pattern showing two distinct phases: forward flow during systole and brief reversed flow during early diastole, typical of peripheral arteries.",
+    "category": "doppler"
+  },
+  {
+    "term": "Carotid Bulb",
+    "definition": "The widened area at the bifurcation of the common carotid artery into the internal and external carotid arteries.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Collateral Circulation",
+    "definition": "Alternative pathways for blood flow that develop or become more prominent when primary vessels are obstructed or stenotic.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Color Flow Doppler",
+    "definition": "A ultrasound technique that displays blood flow direction and velocity as colored pixels superimposed on the grayscale image.",
+    "category": "technique"
+  },
+  {
+    "term": "Deep Vein Thrombosis (DVT)",
+    "definition": "Formation of a blood clot (thrombus) in a deep vein, most commonly in the lower extremity veins.",
+    "category": "pathology"
+  },
+  {
+    "term": "Diastolic Flow",
+    "definition": "Blood flow that occurs during the relaxation phase of the cardiac cycle, following systole.",
+    "category": "doppler"
+  },
+  {
+    "term": "Echogenic",
+    "definition": "Describes tissue or material that reflects ultrasound waves strongly, appearing bright or white on the ultrasound image.",
+    "category": "terminology"
+  },
+  {
+    "term": "End-Diastolic Velocity (EDV)",
+    "definition": "The minimum velocity of blood flow at the end of diastole, just before the next systolic upstroke.",
+    "category": "doppler"
+  },
+  {
+    "term": "Hemodynamically Significant Stenosis",
+    "definition": "A vessel narrowing that results in altered blood flow patterns, typically requiring 50% or greater diameter reduction.",
+    "category": "pathology"
+  },
+  {
+    "term": "Hyperemia",
+    "definition": "Increased blood flow to a tissue or organ, often seen as increased color Doppler signal.",
+    "category": "pathology"
+  },
+  {
+    "term": "Incompetent Valve",
+    "definition": "A venous valve that fails to prevent retrograde (backward) blood flow, commonly seen in venous insufficiency.",
+    "category": "pathology"
+  },
+  {
+    "term": "Intima-Media Thickness (IMT)",
+    "definition": "The combined thickness of the intima and media layers of an arterial wall, used as a marker for atherosclerosis.",
+    "category": "measurement"
+  },
+  {
+    "term": "Monophasic Waveform",
+    "definition": "A Doppler waveform pattern showing a single phase of forward flow throughout the cardiac cycle, often indicating proximal obstruction.",
+    "category": "doppler"
+  },
+  {
+    "term": "Peak Systolic Velocity (PSV)",
+    "definition": "The maximum velocity of blood flow during systole, used to assess stenosis severity.",
+    "category": "doppler"
+  },
+  {
+    "term": "Plaque",
+    "definition": "Atherosclerotic buildup within arterial walls composed of lipids, cholesterol, calcium, and cellular debris.",
+    "category": "pathology"
+  },
+  {
+    "term": "Popliteal Artery",
+    "definition": "The continuation of the femoral artery behind the knee, which bifurcates into the anterior and posterior tibial arteries.",
+    "category": "anatomy"
+  },
+  {
+    "term": "Pulsatility Index (PI)",
+    "definition": "A calculated ratio (PSV - EDV) / Mean Velocity that reflects peripheral vascular resistance.",
+    "category": "measurement"
+  },
+  {
+    "term": "Reflux",
+    "definition": "Retrograde (backward) flow in veins lasting longer than 0.5-1.0 seconds, indicating venous valve incompetence.",
+    "category": "pathology"
+  },
+  {
+    "term": "Resistivity Index (RI)",
+    "definition": "A calculated ratio (PSV - EDV) / PSV that indicates downstream resistance, typically 0.6-0.8 in normal arteries.",
+    "category": "measurement"
+  },
+  {
+    "term": "Spectral Broadening",
+    "definition": "Widening of the spectral Doppler waveform indicating turbulent flow, often seen at stenoses.",
+    "category": "doppler"
+  },
+  {
+    "term": "Stenosis",
+    "definition": "Abnormal narrowing of a blood vessel lumen, typically caused by atherosclerotic plaque or other pathology.",
+    "category": "pathology"
+  },
+  {
+    "term": "Systolic Flow",
+    "definition": "Blood flow that occurs during the contraction phase of the cardiac cycle.",
+    "category": "doppler"
+  },
+  {
+    "term": "Tardus Parvus",
+    "definition": "A Doppler waveform pattern showing delayed systolic upstroke and reduced peak velocity, indicating proximal stenosis.",
+    "category": "doppler"
+  },
+  {
+    "term": "Thrombosis",
+    "definition": "The formation of a blood clot (thrombus) within a blood vessel, obstructing blood flow.",
+    "category": "pathology"
+  },
+  {
+    "term": "Triphasic Waveform",
+    "definition": "A Doppler waveform showing three distinct phases: forward systolic flow, reversed early diastolic flow, and forward late diastolic flow.",
+    "category": "doppler"
+  },
+  {
+    "term": "Valsalva Maneuver",
+    "definition": "A technique where the patient bears down or holds breath to increase intra-abdominal pressure, used to assess venous reflux.",
+    "category": "technique"
+  },
+  {
+    "term": "Velocity Ratio",
+    "definition": "Comparison of PSV at a stenosis to PSV in the normal vessel proximal to the stenosis, used to grade stenosis severity.",
+    "category": "measurement"
+  },
+  {
+    "term": "Venous Insufficiency",
+    "definition": "Impaired venous return due to incompetent valves, resulting in venous hypertension and reflux.",
+    "category": "pathology"
+  }
+]

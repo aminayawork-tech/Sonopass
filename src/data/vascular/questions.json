@@ -24,7 +24,9 @@
       ],
       "category": "Cerebrovascular",
       "correctAnswer": "D",
-      "explanation": "When a thigh tourniquet normalizes the venous refill time, it indicates that the great saphenous vein (GSV) is the source of reflux, since the tourniquet compresses the GSV at the thigh level, blocking its incompetent flow."
+      "explanation": "When a thigh tourniquet normalizes the venous refill time, it indicates that the great saphenous vein (GSV) is the source of reflux, since the tourniquet compresses the GSV at the thigh level, blocking its incompetent flow.",
+      "hint": "Think about which superficial vein runs along the thigh and would be compressed by a thigh-level tourniquet.",
+      "keywords": ["thigh tourniquet", "venous refill time", "normalizes"]
     },
     {
       "id": "exam1_q2",
@@ -50,7 +52,9 @@
       ],
       "category": "Venous Hemodynamics",
       "correctAnswer": "A",
-      "explanation": "A phasic signal at the common femoral vein confirms the vein is patent. Failure to augment with thigh compression indicates obstruction between the compression site and the probe, pointing to the external iliac vein."
+      "explanation": "A phasic signal at the common femoral vein confirms the vein is patent. Failure to augment with thigh compression indicates obstruction between the compression site and the probe, pointing to the external iliac vein.",
+      "hint": "The obstruction must be located between the compression point (thigh) and the probe location (common femoral vein).",
+      "keywords": ["phasic Doppler signal", "augmentation", "thigh compression"]
     },
     {
       "id": "exam1_q3",
@@ -76,7 +80,9 @@
       ],
       "category": "Arterial Disease",
       "correctAnswer": "A",
-      "explanation": "Arterial ulcers present with dry, shiny skin due to chronic ischemia and poor tissue perfusion. Venous ulcers are typically shallow with flat margins and located at the gaiter (medial ankle) area."
+      "explanation": "Arterial ulcers present with dry, shiny skin due to chronic ischemia and poor tissue perfusion. Venous ulcers are typically shallow with flat margins and located at the gaiter (medial ankle) area.",
+      "hint": "Arterial ulcers result from poor blood supply (ischemia), affecting the skin's appearance and texture.",
+      "keywords": ["arterial ulcer"]
     },
     {
       "id": "exam1_q4",
@@ -128,7 +134,9 @@
       ],
       "category": "Arterial Hemodynamics",
       "correctAnswer": "C",
-      "explanation": "Aliasing, low-resistance waveform, and increased diastolic flow post-liver biopsy are classic signs of an arteriovenous fistula (AVF), which creates a low-resistance shunt between hepatic artery and portal/hepatic vein."
+      "explanation": "Aliasing, low-resistance waveform, and increased diastolic flow post-liver biopsy are classic signs of an arteriovenous fistula (AVF), which creates a low-resistance shunt between hepatic artery and portal/hepatic vein.",
+      "hint": "A connection between an artery and vein creates a low-resistance pathway with high-velocity turbulent flow.",
+      "keywords": ["aliasing", "low resistance", "increased diastolic flow"]
     },
     {
       "id": "exam1_q6",
@@ -154,7 +162,9 @@
       ],
       "category": "Arterial Anatomy",
       "correctAnswer": "A",
-      "explanation": "The abdominal aorta is located in the retroperitoneum, posterior to the peritoneal cavity. This is why it is not freely mobile and lies against the vertebral column."
+      "explanation": "The abdominal aorta is located in the retroperitoneum, posterior to the peritoneal cavity. This is why it is not freely mobile and lies against the vertebral column.",
+      "hint": "The aorta lies behind the peritoneal cavity, against the spine. Think about what 'retro' means.",
+      "keywords": ["abdominal aorta"]
     },
     {
       "id": "exam1_q7",

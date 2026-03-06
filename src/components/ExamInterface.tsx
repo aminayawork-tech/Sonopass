@@ -4,10 +4,11 @@ import { useState, useEffect, useCallback } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
-import { Check, X, Home, Info, Heart, Zap, Trophy, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Check, X, Home, Info, Heart, Zap, Trophy, ChevronLeft, ChevronRight, Lightbulb } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { getStats, recordAnswer, recordExamComplete, getBadgeInfo, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
+import { highlightKeywords } from '@/lib/highlightKeywords';
 
 interface Option {
   letter: string;
@@ -24,6 +25,8 @@ interface Question {
   explanation: string | null;
   imageUrl?: string;
   imageCaption?: string;
+  hint?: string;
+  keywords?: string[];
 }
 
 interface ExamInterfaceProps {
@@ -44,6 +47,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
   const [stats, setStats] = useState<UserStats | null>(null);
   const [xpFlash, setXpFlash] = useState<{ amount: number; correct: boolean } | null>(null);
   const [newBadge, setNewBadge] = useState<string | null>(null);
+  const [showHint, setShowHint] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     setStats(getStats());
@@ -88,6 +92,24 @@ export default function ExamInterface({ questions, title, mode, examId, modality
       if (result.newBadges.length > 0) {
         showBadgeNotification(result.newBadges[0]);
       }
+    }
+  };
+
+  const handleUseHint = () => {
+    if (!stats || stats.hearts <= 0) return;
+
+    // Deduct a heart
+    const currentStats = getStats();
+    if (currentStats.hearts > 0) {
+      currentStats.hearts -= 1;
+      localStorage.setItem('userStats', JSON.stringify(currentStats));
+      setStats(currentStats);
+
+      // Show hint for current question
+      setShowHint(prev => ({
+        ...prev,
+        [currentQuestion.id]: true
+      }));
     }
   };
 
@@ -358,9 +380,48 @@ export default function ExamInterface({ questions, title, mode, examId, modality
           )}
 
           {/* Question text */}
-          <h2 className="text-base sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-8 leading-relaxed">
-            {currentQuestion.question}
+          <h2 className="text-base sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 leading-relaxed">
+            {showHint[currentQuestion.id] && currentQuestion.keywords
+              ? highlightKeywords(currentQuestion.question, currentQuestion.keywords)
+              : currentQuestion.question}
           </h2>
+
+          {/* Hint Section */}
+          {currentQuestion.hint && mode === 'practice' && !showAnswer && (
+            <div className="mb-4 sm:mb-6">
+              {!showHint[currentQuestion.id] ? (
+                <Button
+                  onClick={handleUseHint}
+                  disabled={!stats || stats.hearts <= 0}
+                  variant="outline"
+                  size="sm"
+                  className="flex items-center gap-2 text-amber-600 border-amber-300 hover:bg-amber-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <Lightbulb className="w-4 h-4" />
+                  <span className="text-sm font-semibold">Use Hint</span>
+                  <span className="flex items-center gap-1 ml-1">
+                    <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" />
+                    <span className="text-xs">-1</span>
+                  </span>
+                </Button>
+              ) : (
+                <div className="p-3 sm:p-4 bg-amber-50 border-2 border-amber-300 rounded-lg">
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <Lightbulb className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-amber-900 mb-1 text-sm sm:text-base">Hint</h3>
+                      <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">{currentQuestion.hint}</p>
+                      {currentQuestion.keywords && currentQuestion.keywords.length > 0 && (
+                        <p className="text-xs text-amber-700 mt-2 italic">
+                          Key terms highlighted in yellow above
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Options */}
           <div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">

@@ -12,7 +12,9 @@
       ],
       "correctAnswer": "B",
       "explanation": "Diagnostic medical ultrasound typically uses frequencies between 2 MHz and 15 MHz. Lower frequencies (2-5 MHz) provide better penetration for deeper structures, while higher frequencies (7-15 MHz) provide better resolution for superficial structures.",
-      "category": "Ultrasound Physics"
+      "category": "Ultrasound Physics",
+      "hint": "Medical ultrasound uses MHz (megahertz) frequencies - much higher than human hearing but not as high as some specialized applications.",
+      "keywords": ["frequency range", "diagnostic medical ultrasound"]
     },
     {
       "id": "spi-002",
@@ -26,7 +28,9 @@
       ],
       "correctAnswer": "A",
       "explanation": "The piezoelectric effect is the ability of certain materials to convert electrical energy into mechanical energy (and vice versa). This principle is fundamental to ultrasound transducers, which convert electrical signals into sound waves and returning echoes back into electrical signals.",
-      "category": "Transducers"
+      "category": "Transducers",
+      "hint": "This is the fundamental principle that allows transducers to both create and detect ultrasound waves.",
+      "keywords": ["piezoelectric effect"]
     },
     {
       "id": "spi-003",
@@ -54,7 +58,9 @@
       ],
       "correctAnswer": "B",
       "explanation": "Reverberation artifact occurs when ultrasound encounters a strong reflector and bounces back and forth between the transducer and the reflector multiple times, creating equally spaced parallel echoes.",
-      "category": "Artifacts"
+      "category": "Artifacts",
+      "hint": "Think about what happens when sound bounces back and forth repeatedly - like an echo that echoes.",
+      "keywords": ["strong reflector", "multiple echoes"]
     },
     {
       "id": "spi-005",
