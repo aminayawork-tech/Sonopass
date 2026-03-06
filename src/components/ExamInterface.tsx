@@ -395,24 +395,24 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                   disabled={!stats || stats.hearts <= 0}
                   variant="outline"
                   size="sm"
-                  className="flex items-center gap-2 text-amber-600 border-amber-300 hover:bg-amber-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex items-center gap-2 text-blue-700 border-blue-400 hover:bg-blue-50 disabled:opacity-50 disabled:cursor-not-allowed font-semibold"
                 >
                   <Lightbulb className="w-4 h-4" />
-                  <span className="text-sm font-semibold">Use Hint</span>
+                  <span className="text-sm">Use Hint</span>
                   <span className="flex items-center gap-1 ml-1">
                     <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" />
                     <span className="text-xs">-1</span>
                   </span>
                 </Button>
               ) : (
-                <div className="p-3 sm:p-4 bg-amber-50 border-2 border-amber-300 rounded-lg">
+                <div className="p-3 sm:p-4 bg-blue-50 border-2 border-blue-400 rounded-lg">
                   <div className="flex items-start gap-2 sm:gap-3">
-                    <Lightbulb className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <Lightbulb className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-semibold text-amber-900 mb-1 text-sm sm:text-base">Hint</h3>
-                      <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">{currentQuestion.hint}</p>
+                      <h3 className="font-semibold text-blue-900 mb-1 text-sm sm:text-base">Hint</h3>
+                      <p className="text-xs sm:text-sm text-gray-800 leading-relaxed">{currentQuestion.hint}</p>
                       {currentQuestion.keywords && currentQuestion.keywords.length > 0 && (
-                        <p className="text-xs text-amber-700 mt-2 italic">
+                        <p className="text-xs text-blue-700 mt-2 italic">
                           Key terms highlighted in yellow above
                         </p>
                       )}
