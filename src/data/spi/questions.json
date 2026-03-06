@@ -116,7 +116,9 @@
       ],
       "correctAnswer": "B",
       "explanation": "Lateral resolution (also called azimuthal resolution) is the ability to distinguish two structures that are side-by-side, perpendicular to the ultrasound beam. It is determined by beam width.",
-      "category": "Image Optimization"
+      "category": "Image Optimization",
+      "hint": "Lateral = side-to-side, perpendicular to the beam. Axial = along the beam.",
+      "keywords": ["perpendicular to the beam", "Lateral resolution"]
     },
     {
       "id": "spi-009",
@@ -130,7 +132,9 @@
       ],
       "correctAnswer": "B",
       "explanation": "The Doppler effect measures the frequency shift that occurs when ultrasound reflects off moving structures (typically blood cells). This shift is proportional to the velocity of the moving target and is used to assess blood flow.",
-      "category": "Doppler"
+      "category": "Doppler",
+      "hint": "Doppler measures the frequency change when ultrasound bounces off moving blood - higher/lower pitch indicates direction and speed.",
+      "keywords": ["Doppler effect", "Frequency shift due to motion"]
     },
     {
       "id": "spi-010",
@@ -144,7 +148,9 @@
       ],
       "correctAnswer": "A",
       "explanation": "Acoustic impedance is the resistance that tissue offers to the propagation of ultrasound. It is the product of tissue density and the speed of sound in that tissue. Differences in acoustic impedance between tissues create reflections.",
-      "category": "Ultrasound Physics"
+      "category": "Ultrasound Physics",
+      "hint": "Acoustic impedance = tissue density × sound speed. Differences in impedance create reflections at tissue boundaries.",
+      "keywords": ["acoustic impedance", "resistance"]
     },
     {
       "id": "spi-011",
@@ -158,7 +164,9 @@
       ],
       "correctAnswer": "B",
       "explanation": "Acoustic shadowing appears as a dark (anechoic) area behind structures that strongly attenuate or reflect ultrasound, such as bone, calcifications, or gallstones. This occurs because little to no sound energy passes through to deeper structures.",
-      "category": "Artifacts"
+      "category": "Artifacts",
+      "hint": "Shadowing = dark area behind highly attenuating structures like bone, stones, or calcifications.",
+      "keywords": ["anechoic shadow", "Shadowing", "attenuating"]
     },
     {
       "id": "spi-012",
@@ -172,7 +180,9 @@
       ],
       "correctAnswer": "C",
       "explanation": "Linear array transducers produce a rectangular image format with uniform width throughout the image. They are commonly used for vascular imaging, musculoskeletal imaging, and small parts.",
-      "category": "Transducers"
+      "category": "Transducers",
+      "hint": "Linear = rectangular image. Sector/phased = fan-shaped. Curved = curved/trapezoidal.",
+      "keywords": ["rectangular image", "Linear array"]
     },
     {
       "id": "spi-013",
@@ -186,7 +196,9 @@
       ],
       "correctAnswer": "B",
       "explanation": "As frequency increases, penetration decreases. Higher frequency sound waves are attenuated more rapidly in tissue, limiting their ability to penetrate deeply. This is why lower frequencies are used for imaging deeper structures.",
-      "category": "Ultrasound Physics"
+      "category": "Ultrasound Physics",
+      "hint": "Higher frequency = better resolution BUT less penetration. Lower frequency = worse resolution BUT more penetration.",
+      "keywords": ["frequency increases", "Penetration decreases"]
     },
     {
       "id": "spi-014",
@@ -200,7 +212,9 @@
       ],
       "correctAnswer": "A",
       "explanation": "Overall gain adjusts the amplification of all returning echoes uniformly, affecting the brightness of the entire image equally at all depths. This is different from TGC, which selectively adjusts gain at different depths.",
-      "category": "Image Optimization"
+      "category": "Image Optimization",
+      "hint": "Overall gain = uniform brightness adjustment everywhere. TGC = depth-specific brightness adjustment.",
+      "keywords": ["overall gain", "entire image uniformly"]
     },
     {
       "id": "spi-015",
@@ -230,7 +244,9 @@
       ],
       "correctAnswer": "C",
       "explanation": "The optimal Doppler angle is between 45-60 degrees. At 0 degrees, maximum Doppler shift is obtained but it may be difficult to position. At 90 degrees, no Doppler shift occurs. 60 degrees provides a good compromise between Doppler shift magnitude and beam-to-flow angle.",
-      "category": "Doppler"
+      "category": "Doppler",
+      "hint": "Best Doppler angle is 45-60°. At 90° there's NO Doppler shift. Keep angle <60° for accurate velocities.",
+      "keywords": ["Doppler angle", "60 degrees"]
     },
     {
       "id": "spi-017",
@@ -244,7 +260,9 @@
       ],
       "correctAnswer": "B",
       "explanation": "Aliasing occurs when the velocity of blood flow exceeds the Nyquist limit (half the pulse repetition frequency). This causes the Doppler waveform to wrap around and appear on the opposite side of the baseline, creating ambiguous velocity information.",
-      "category": "Doppler"
+      "category": "Doppler",
+      "hint": "Aliasing = velocity too fast for the PRF setting. Waveform wraps around and appears on wrong side of baseline.",
+      "keywords": ["aliasing", "Nyquist limit", "Velocity exceeding"]
     },
     {
       "id": "spi-018",
@@ -258,7 +276,9 @@
       ],
       "correctAnswer": "B",
       "explanation": "Acoustic enhancement (also called through-transmission) appears as increased echogenicity (brightness) behind fluid-filled structures. This occurs because fluid attenuates sound less than surrounding tissue, allowing more energy to reach deeper structures.",
-      "category": "Artifacts"
+      "category": "Artifacts",
+      "hint": "Enhancement = bright area behind fluid (cysts, bladder). Fluid transmits sound better than solid tissue.",
+      "keywords": ["bright echoes", "fluid-filled", "Enhancement"]
     },
     {
       "id": "spi-019",
@@ -272,7 +292,9 @@
       ],
       "correctAnswer": "B",
       "explanation": "The Mechanical Index (MI) is used to assess the potential for non-thermal bioeffects, specifically cavitation. Cavitation is the formation and collapse of gas bubbles in tissue due to the mechanical pressure of ultrasound waves.",
-      "category": "Bioeffects"
+      "category": "Bioeffects",
+      "hint": "MI = Mechanical Index = cavitation risk (bubble formation). TI = Thermal Index = heating risk.",
+      "keywords": ["mechanical index", "Cavitation bioeffects"]
     },
     {
       "id": "spi-020",
@@ -286,7 +308,9 @@
       ],
       "correctAnswer": "B",
       "explanation": "Axial resolution (also called longitudinal or range resolution) is the ability to distinguish two structures along the beam axis. It is determined by spatial pulse length - shorter pulses (fewer cycles, higher frequency) provide better axial resolution.",
-      "category": "Image Optimization"
+      "category": "Image Optimization",
+      "hint": "Axial resolution depends on pulse length. Shorter pulse = better axial resolution. Higher frequency helps!",
+      "keywords": ["Axial resolution", "Spatial pulse length"]
     }
   ]
 }

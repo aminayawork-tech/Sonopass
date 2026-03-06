@@ -190,7 +190,9 @@
       ],
       "category": "Cerebrovascular",
       "correctAnswer": "B",
-      "explanation": "A side-to-side blood pressure difference of 20 mmHg or greater suggests a hemodynamically significant lesion (such as subclavian stenosis) on the side with the lower pressure."
+      "explanation": "A side-to-side blood pressure difference of 20 mmHg or greater suggests a hemodynamically significant lesion (such as subclavian stenosis) on the side with the lower pressure.",
+      "hint": "A 20 mmHg difference is the clinical threshold for detecting proximal stenosis like subclavian steal.",
+      "keywords": ["blood pressure difference", "20 mmHg", "hemodynamically significant"]
     },
     {
       "id": "exam1_q8",
@@ -216,7 +218,9 @@
       ],
       "category": "Arterial Disease",
       "correctAnswer": "C",
-      "explanation": "The popliteal artery is the most common site for peripheral arterial aneurysms, accounting for approximately 70% of all peripheral aneurysms. They are often bilateral."
+      "explanation": "The popliteal artery is the most common site for peripheral arterial aneurysms, accounting for approximately 70% of all peripheral aneurysms. They are often bilateral.",
+      "hint": "Think about the most common peripheral aneurysm location - it's behind the knee.",
+      "keywords": ["peripheral arterial aneurysms", "Popliteal"]
     },
     {
       "id": "exam1_q9",
@@ -242,7 +246,9 @@
       ],
       "category": "General & Other",
       "correctAnswer": "D",
-      "explanation": "Thromboangiitis obliterans (Buerger's disease) affects small and medium-sized arteries in the distal extremities. The posterior tibial artery is a typical target as it is a distal vessel of the lower extremity."
+      "explanation": "Thromboangiitis obliterans (Buerger's disease) affects small and medium-sized arteries in the distal extremities. The posterior tibial artery is a typical target as it is a distal vessel of the lower extremity.",
+      "hint": "Buerger's disease affects distal (far from the heart) small and medium vessels, often in young male smokers.",
+      "keywords": ["Buerger", "distal extremities", "Posterior tibial"]
     },
     {
       "id": "exam1_q10",
@@ -268,7 +274,9 @@
       ],
       "category": "Arterial Anatomy",
       "correctAnswer": "B",
-      "explanation": "The celiac artery supplies the liver and spleen, which have relatively constant metabolic demands. After a meal, the celiac artery shows no appreciable increase in PSV, unlike the superior mesenteric artery which significantly increases."
+      "explanation": "The celiac artery supplies the liver and spleen, which have relatively constant metabolic demands. After a meal, the celiac artery shows no appreciable increase in PSV, unlike the superior mesenteric artery which significantly increases.",
+      "hint": "Unlike the SMA (which feeds the intestines), the celiac artery supplies organs with constant demand - liver and spleen.",
+      "keywords": ["celiac artery", "meal", "peak systolic velocity"]
     },
     {
       "id": "exam1_q11",
@@ -320,7 +328,9 @@
       ],
       "category": "Arterial Anatomy",
       "correctAnswer": "C",
-      "explanation": "Takayasu arteritis is a large-vessel vasculitis that overwhelmingly affects young women (female-to-male ratio of 9:1). It causes nonatherosclerotic narrowing of the aorta and its major branches including brachiocephalic arteries."
+      "explanation": "Takayasu arteritis is a large-vessel vasculitis that overwhelmingly affects young women (female-to-male ratio of 9:1). It causes nonatherosclerotic narrowing of the aorta and its major branches including brachiocephalic arteries.",
+      "hint": "This is a large-vessel inflammatory disease that primarily affects young Asian women.",
+      "keywords": ["female patients", "Takayasu arteritis", "brachiocephalic"]
     },
     {
       "id": "exam1_q13",
@@ -346,7 +356,9 @@
       ],
       "category": "Physics & Instrumentation",
       "correctAnswer": "B",
-      "explanation": "Exercise causes peripheral vasodilation to meet increased metabolic demand, which reduces downstream vascular resistance. This converts the normally high-resistance triphasic waveform to a low-resistance monophasic pattern."
+      "explanation": "Exercise causes peripheral vasodilation to meet increased metabolic demand, which reduces downstream vascular resistance. This converts the normally high-resistance triphasic waveform to a low-resistance monophasic pattern.",
+      "hint": "When muscles work, they need more blood - this causes vasodilation and reduces resistance.",
+      "keywords": ["low-resistance", "Exercise", "lower extremity"]
     },
     {
       "id": "exam1_q14",
@@ -424,7 +436,9 @@
       ],
       "category": "General & Other",
       "correctAnswer": "B",
-      "explanation": "Intermittent claudication (pain with walking that resolves with rest) is usually the first clinical manifestation of chronic lower extremity arterial occlusive disease, occurring before more severe symptoms like rest pain or tissue loss."
+      "explanation": "Intermittent claudication (pain with walking that resolves with rest) is usually the first clinical manifestation of chronic lower extremity arterial occlusive disease, occurring before more severe symptoms like rest pain or tissue loss.",
+      "hint": "The earliest symptom of PAD is pain with walking that goes away with rest - this occurs before severe complications.",
+      "keywords": ["Claudication", "first manifestation", "arterial occlusive disease"]
     },
     {
       "id": "exam1_q17",
@@ -450,7 +464,9 @@
       ],
       "category": "General & Other",
       "correctAnswer": "D",
-      "explanation": "Superior vena cava (SVC) syndrome presents with facial swelling, bilateral upper extremity edema, and dyspnea due to obstruction of venous drainage from the head, neck, and upper extremities."
+      "explanation": "Superior vena cava (SVC) syndrome presents with facial swelling, bilateral upper extremity edema, and dyspnea due to obstruction of venous drainage from the head, neck, and upper extremities.",
+      "hint": "Facial and bilateral arm swelling indicates obstruction of the main vein draining the upper body.",
+      "keywords": ["facial swelling", "bilateral upper extremity edema", "Superior vena cava"]
     },
     {
       "id": "exam1_q18",
@@ -476,7 +492,9 @@
       ],
       "category": "General & Other",
       "correctAnswer": "B",
-      "explanation": "Paget-von Schroetter syndrome is effort-related thrombosis of the axillary-subclavian vein. An upper extremity venous duplex is the appropriate test to confirm the diagnosis."
+      "explanation": "Paget-von Schroetter syndrome is effort-related thrombosis of the axillary-subclavian vein. An upper extremity venous duplex is the appropriate test to confirm the diagnosis.",
+      "hint": "This is effort-related upper extremity DVT, so you need an upper extremity venous study.",
+      "keywords": ["Paget von Schroetter", "Upper extremity venous"]
     },
     {
       "id": "exam1_q19",
@@ -502,7 +520,9 @@
       ],
       "category": "Cerebrovascular",
       "correctAnswer": "D",
-      "explanation": "Collateral arteries that develop around an occlusion are typically more numerous but smaller in caliber than native vessels. They are also more tortuous and have higher resistance flow patterns."
+      "explanation": "Collateral arteries that develop around an occlusion are typically more numerous but smaller in caliber than native vessels. They are also more tortuous and have higher resistance flow patterns.",
+      "hint": "Collaterals are alternative pathways - there are many small tortuous vessels bypassing the blockage.",
+      "keywords": ["collateral arteries", "More numerous"]
     },
     {
       "id": "exam1_q20",
@@ -606,7 +626,9 @@
       ],
       "category": "Arterial Anatomy",
       "correctAnswer": "A",
-      "explanation": "This answer is based on the specific anatomic or hemodynamic principle being tested regarding vascular ultrasonography technique or interpretation."
+      "explanation": "This answer is based on the specific anatomic or hemodynamic principle being tested regarding vascular ultrasonography technique or interpretation.",
+      "hint": "The brachiocephalic vein is formed by the major neck vein (jugular) joining the major shoulder vein (subclavian).",
+      "keywords": ["brachiocephalic vein", "Internal jugular", "subclavian"]
     },
     {
       "id": "exam1_q24",
@@ -710,7 +732,9 @@
       ],
       "category": "General & Other",
       "correctAnswer": "D",
-      "explanation": "Venous valves are most numerous in the distal veins of the lower extremity. The posterior tibial vein contains the greatest number of valves, which helps counteract the hydrostatic pressure in dependent positions."
+      "explanation": "Venous valves are most numerous in the distal veins of the lower extremity. The posterior tibial vein contains the greatest number of valves, which helps counteract the hydrostatic pressure in dependent positions.",
+      "hint": "Distal veins (furthest from the heart) need more valves to fight gravity. The posterior tibial vein is the most distal major vein.",
+      "keywords": ["Venous valves", "most numerous", "Posterior tibial"]
     },
     {
       "id": "exam1_q28",
@@ -762,7 +786,9 @@
       ],
       "category": "Venous Disease",
       "correctAnswer": "A",
-      "explanation": "This answer is based on established vascular pathophysiology and clinical diagnostic criteria commonly tested on the vascular technology registry examination."
+      "explanation": "This answer is based on established vascular pathophysiology and clinical diagnostic criteria commonly tested on the vascular technology registry examination.",
+      "hint": "The scalene muscles in the neck commonly compress the neurovascular bundle causing thoracic outlet syndrome.",
+      "keywords": ["thoracic outlet syndrome", "Scalene"]
     },
     {
       "id": "exam1_q30",
@@ -788,7 +814,9 @@
       ],
       "category": "General & Other",
       "correctAnswer": "D",
-      "explanation": "This question tests understanding of vascular hemodynamics and how specific conditions affect blood flow patterns as detected by Doppler ultrasound."
+      "explanation": "This question tests understanding of vascular hemodynamics and how specific conditions affect blood flow patterns as detected by Doppler ultrasound.",
+      "hint": "Compartment syndrome occurs when pressure builds up in the closed fascial compartments, compressing vessels and nerves.",
+      "keywords": ["compartment syndrome", "fascial bundles", "Swelling"]
     },
     {
       "id": "exam1_q31",
@@ -840,7 +868,9 @@
       ],
       "category": "General & Other",
       "correctAnswer": "C",
-      "explanation": "This answer is based on vascular ultrasound diagnostic criteria for identifying and classifying vascular pathology."
+      "explanation": "This answer is based on vascular ultrasound diagnostic criteria for identifying and classifying vascular pathology.",
+      "hint": "Think medial to lateral: Basilic (medial/pinky side), Brachial (deep/central), Cephalic (lateral/thumb side).",
+      "keywords": ["medial to lateral", "Basilic", "brachial", "cephalic"]
     },
     {
       "id": "exam1_q33",
@@ -866,7 +896,9 @@
       ],
       "category": "Arterial Disease",
       "correctAnswer": "D",
-      "explanation": "This question tests knowledge of a specific vascular condition, its pathophysiology, and how it presents on duplex ultrasonography."
+      "explanation": "This question tests knowledge of a specific vascular condition, its pathophysiology, and how it presents on duplex ultrasonography.",
+      "hint": "ACUTE ischemia happens suddenly - emboli (traveling clots) are the most common sudden cause.",
+      "keywords": ["acute ischemia", "Emboli"]
     },
     {
       "id": "exam1_q34",
@@ -892,7 +924,9 @@
       ],
       "category": "Cerebrovascular",
       "correctAnswer": "A",
-      "explanation": "This answer relates to the diagnostic criteria used in vascular ultrasonography for quantifying the severity of vascular disease."
+      "explanation": "This answer relates to the diagnostic criteria used in vascular ultrasonography for quantifying the severity of vascular disease.",
+      "hint": "FMD affects the distal (far from heart) internal carotid - think 'string of beads' appearance.",
+      "keywords": ["fibromuscular dysplasia", "Distal internal"]
     },
     {
       "id": "exam1_q35",
@@ -944,7 +978,9 @@
       ],
       "category": "Physics & Instrumentation",
       "correctAnswer": "A",
-      "explanation": "This answer is based on vascular anatomy and the characteristic flow patterns seen in specific vessels on duplex ultrasonography."
+      "explanation": "This answer is based on vascular anatomy and the characteristic flow patterns seen in specific vessels on duplex ultrasonography.",
+      "hint": "Continuous (non-phasic) flow means there's obstruction upstream - the subclavian is proximal to the axillary.",
+      "keywords": ["continuous Doppler signal", "axillary vein", "Subclavian"]
     },
     {
       "id": "exam1_q37",
@@ -996,7 +1032,9 @@
       ],
       "category": "Cerebrovascular",
       "correctAnswer": "D",
-      "explanation": "This answer relates to the Doppler characteristics of specific vascular conditions and how they are differentiated from normal flow patterns."
+      "explanation": "This answer relates to the Doppler characteristics of specific vascular conditions and how they are differentiated from normal flow patterns.",
+      "hint": "After endarterectomy, the intima-media layer is removed - so its absence is normal post-op.",
+      "keywords": ["carotid endarterectomy", "intima-media stripe", "Absence"]
     },
     {
       "id": "exam1_q39",
@@ -1048,7 +1086,9 @@
       ],
       "category": "Arterial Disease",
       "correctAnswer": "C",
-      "explanation": "This answer is based on the hemodynamic principles that govern blood flow in the arterial and venous systems."
+      "explanation": "This answer is based on the hemodynamic principles that govern blood flow in the arterial and venous systems.",
+      "hint": "Hollenhurst plaque is a retinal embolus from the carotid artery - always scan the carotids!",
+      "keywords": ["Hollenhurst plaque", "Carotid artery duplex"]
     },
     {
       "id": "exam1_q41",
@@ -1100,7 +1140,9 @@
       ],
       "category": "Arterial Disease",
       "correctAnswer": "A",
-      "explanation": "This answer relates to vascular anatomy and the typical distribution of specific vascular diseases."
+      "explanation": "This answer relates to vascular anatomy and the typical distribution of specific vascular diseases.",
+      "hint": "Claudication is muscle pain that occurs with exercise and is relieved by rest - classic PAD symptom.",
+      "keywords": ["intermittent claudication", "Leg muscle pain"]
     },
     {
       "id": "exam1_q43",
@@ -1126,7 +1168,9 @@
       ],
       "category": "Arterial Hemodynamics",
       "correctAnswer": "C",
-      "explanation": "This question tests understanding of Doppler ultrasound physics and how various settings affect the quality of the examination."
+      "explanation": "This question tests understanding of Doppler ultrasound physics and how various settings affect the quality of the examination.",
+      "hint": "Acceleration time measures how fast the waveform rises from onset to peak systolic velocity.",
+      "keywords": ["onset to peak", "Acceleration time"]
     },
     {
       "id": "exam1_q44",
@@ -1152,7 +1196,9 @@
       ],
       "category": "General & Other",
       "correctAnswer": "D",
-      "explanation": "This answer is based on the hemodynamic criteria used to grade the severity of vascular stenosis using duplex ultrasonography."
+      "explanation": "This answer is based on the hemodynamic criteria used to grade the severity of vascular stenosis using duplex ultrasonography.",
+      "hint": "PSV ratio compares velocity at stenosis to normal vessel - the gold standard for grading stenosis severity.",
+      "keywords": ["stenotic lesion", "bypass graft", "Peak systolic velocity ratio"]
     },
     {
       "id": "exam1_q45",
@@ -1178,7 +1224,9 @@
       ],
       "category": "Cerebrovascular",
       "correctAnswer": "B",
-      "explanation": "This question tests knowledge of venous anatomy and physiology, specifically regarding venous valve competence and its assessment."
+      "explanation": "This question tests knowledge of venous anatomy and physiology, specifically regarding venous valve competence and its assessment.",
+      "hint": "In TCD, the middle cerebral artery (MCA) is found at 45-65mm depth through the transtemporal window.",
+      "keywords": ["transcranial Doppler", "60 mm", "Middle cerebral"]
     },
     {
       "id": "exam1_q46",
@@ -1308,7 +1356,9 @@
       ],
       "category": "General & Other",
       "correctAnswer": "C",
-      "explanation": "This answer relates to the pathophysiology of vascular disease and how it affects flow patterns detectable by Doppler ultrasound."
+      "explanation": "This answer relates to the pathophysiology of vascular disease and how it affects flow patterns detectable by Doppler ultrasound.",
+      "hint": "Amaurosis fugax is transient monocular blindness - emboli from the ipsilateral (same side) internal carotid.",
+      "keywords": ["amaurosis fugax", "left", "Left internal carotid"]
     },
     {
       "id": "exam1_q52",
