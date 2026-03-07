@@ -14,6 +14,18 @@ interface GlossaryTerm {
   category: string;
 }
 
+// Category color mapping for glossary badges
+const getCategoryColors = (category: string) => {
+  const colorMap: Record<string, { bg: string; text: string }> = {
+    'anatomy': { bg: 'bg-rose-100', text: 'text-rose-700' },
+    'doppler': { bg: 'bg-purple-100', text: 'text-purple-700' },
+    'pathology': { bg: 'bg-amber-100', text: 'text-amber-700' },
+    'technique': { bg: 'bg-blue-100', text: 'text-blue-700' },
+  };
+
+  return colorMap[category] || { bg: 'bg-emerald-100', text: 'text-emerald-700' };
+};
+
 export default function GlossaryPage() {
   const { currentModality } = useModality();
   const [terms, setTerms] = useState<GlossaryTerm[]>([]);
@@ -157,7 +169,7 @@ export default function GlossaryPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="text-lg sm:text-xl font-bold text-gray-900">{term.term}</h3>
-                      <span className="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-emerald-100 text-emerald-700">
+                      <span className={`px-2.5 py-0.5 text-xs font-semibold rounded-full ${getCategoryColors(term.category).bg} ${getCategoryColors(term.category).text}`}>
                         {term.category}
                       </span>
                     </div>
