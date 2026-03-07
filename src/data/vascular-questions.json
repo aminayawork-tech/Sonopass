@@ -2182,9 +2182,7 @@
       ],
       "category": "Cerebrovascular",
       "correctAnswer": "B",
-      "explanation": "This question tests understanding of the hemodynamic effects of exercise on the arterial system.",
-      "imageUrl": "https://via.placeholder.com/800x400?text=Acoustic+Window+Image",
-      "imageCaption": "Acoustic window demonstration (placeholder image)"
+      "explanation": "This question tests understanding of the hemodynamic effects of exercise on the arterial system."
     },
     {
       "id": "exam1_q91",
@@ -3068,16 +3066,12 @@
       ],
       "category": "General & Other",
       "correctAnswer": "A",
-      "explanation": "This answer relates to the diagnostic criteria and management of vascular access complications.",
-      "imageUrl": "/images/study-guide/Great_saphenous_vein_thrombosis_Sag_w:thrombus.jpg",
-      "imageCaption": "Venous compression ultrasound showing non-compressible vein with thrombus, diagnostic of deep vein thrombosis (DVT)"
+      "explanation": "This answer relates to the diagnostic criteria and management of vascular access complications."
     },
     {
       "id": "exam1_q148",
       "number": 148,
       "question": "This sagittal image of the common carotid artery demonstrates which of the following findings?",
-      "imageUrl": "/images/study-guide/atherosclerotic plaque illustration 2.png",
-      "imageCaption": "Carotid plaque with calcification showing echogenic plaque with acoustic shadowing",
       "options": [
         {
           "letter": "A",
@@ -3104,8 +3098,6 @@
       "id": "exam1_q149",
       "number": 149,
       "question": "The spectral Doppler waveform shown below was obtained from the proximal superficial femoral artery. What does this waveform pattern indicate?",
-      "imageUrl": "/images/study-guide/Triphasic-A-biphasic-B-and-monophasic-C-Doppler-waveforms.png",
-      "imageCaption": "Triphasic arterial waveform showing normal flow pattern with sharp systolic peak, reversal phase, and late diastolic flow",
       "options": [
         {
           "letter": "A",
@@ -3132,8 +3124,6 @@
       "id": "exam1_q150",
       "number": 150,
       "question": "This transverse image of the femoral vein demonstrates which pathology?",
-      "imageUrl": "/images/study-guide/Great_saphenous_vein_thrombosis_Sag.jpg",
-      "imageCaption": "Femoral vein compression ultrasound showing assessment for deep vein thrombosis (DVT)",
       "options": [
         {
           "letter": "A",
@@ -3160,8 +3150,6 @@
       "id": "exam1_q151",
       "number": 151,
       "question": "What does the color Doppler aliasing pattern in this image of the carotid bulb suggest?",
-      "imageUrl": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/6b64/6350491/7035eb73db82/bjr.20170306.g001.jpg",
-      "imageCaption": "Color Doppler showing aliasing pattern in carotid bulb, indicating turbulent flow due to stenosis. Image: NCBI/PMC",
       "options": [
         {
           "letter": "A",
@@ -3188,8 +3176,6 @@
       "id": "exam1_q152",
       "number": 152,
       "question": "This B-mode image shows the popliteal fossa. What is the most likely diagnosis?",
-      "imageUrl": "https://prod-images-static.radiopaedia.org/images/3043430/1c21b780922b08349cd5fca0aaa1aa.jpg",
-      "imageCaption": "Baker's cyst (popliteal cyst) showing anechoic fluid collection in popliteal fossa. Image: Radiopaedia.org (CC BY-NC-SA)",
       "options": [
         {
           "letter": "A",
@@ -3216,8 +3202,6 @@
       "id": "exam1_q153",
       "number": 153,
       "question": "The spectral waveform below was obtained from the common femoral artery. What characteristic best describes this pattern?",
-      "imageUrl": "https://radiologykey.com/wp-content/uploads/2019/12/f015-007d-9780323428828.jpg",
-      "imageCaption": "Monophasic arterial waveform showing dampened single-phase pattern, indicating proximal stenosis or occlusion. Image: RadiologyKey.com",
       "options": [
         {
           "letter": "A",
@@ -3244,8 +3228,6 @@
       "id": "exam1_q154",
       "number": 154,
       "question": "This longitudinal view of the carotid artery shows what type of plaque morphology?",
-      "imageUrl": "https://prod-images-static.radiopaedia.org/images/2555961/62b72fdfd650195c3bd3032208f4ca_big_gallery.jpeg",
-      "imageCaption": "B-mode ultrasound showing atherosclerotic plaque in carotid artery with narrowing of vessel lumen. Image: Radiopaedia.org (CC BY-NC-SA)",
       "options": [
         {
           "letter": "A",
@@ -3272,8 +3254,6 @@
       "id": "exam1_q155",
       "number": 155,
       "question": "The duplex image shows the subclavian artery. What abnormality is present?",
-      "imageUrl": "https://prod-images-static.radiopaedia.org/images/51676880/af25f8e392371951d8109e0d87f439_big_gallery.jpeg",
-      "imageCaption": "Duplex ultrasound showing reversed/retrograde flow in vertebral artery, diagnostic of subclavian steal syndrome. Image: Radiopaedia",
       "options": [
         {
           "letter": "A",
@@ -3300,8 +3280,6 @@
       "id": "exam1_q156",
       "number": 156,
       "question": "This transverse color Doppler image of the femoral vessels demonstrates which finding?",
-      "imageUrl": "https://prod-images-static.radiopaedia.org/images/2273385/040ea45b5b815fdee26f7ae3d3a1d6_big_gallery.jpg",
-      "imageCaption": "Color Doppler showing characteristic \"yin-yang\" or swirling flow pattern in a pseudoaneurysm. Image: Radiopaedia",
       "options": [
         {
           "letter": "A",
@@ -3328,8 +3306,6 @@
       "id": "exam1_q157",
       "number": 157,
       "question": "What does this spectral Doppler pattern of the portal vein indicate?",
-      "imageUrl": "https://images.radiopaedia.org/images/8888888/portal_vein_flow.jpg",
-      "imageCaption": "Spectral Doppler of main portal vein",
       "options": [
         {
           "letter": "A",
@@ -3799,7 +3775,7 @@
     {
       "id": "exam2_q29",
       "number": 29,
-      "question": "No question?",
+      "question": "Which symptom represents critical limb ischemia and occurs when arterial perfusion is insufficient to meet baseline metabolic demands at rest?",
       "options": [
         {
           "letter": "A",

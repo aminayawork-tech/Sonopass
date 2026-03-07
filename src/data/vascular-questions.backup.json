@@ -211,7 +211,7 @@
     {
       "id": "exam1_q9",
       "number": 9,
-      "question": "Which artery is likely to be involved in a patient with thromboangiitis obliterans (Buerger’s Disease)?",
+      "question": "Which artery is likely to be involved in a patient with thromboangiitis obliterans (Buerger\u2019s Disease)?",
       "options": [
         {
           "letter": "A",
@@ -1393,7 +1393,7 @@
         },
         {
           "letter": "C",
-          "text": "Raynaud’s disease"
+          "text": "Raynaud\u2019s disease"
         },
         {
           "letter": "D",
@@ -1623,7 +1623,7 @@
         },
         {
           "letter": "B",
-          "text": "Raynaud’s disease"
+          "text": "Raynaud\u2019s disease"
         },
         {
           "letter": "C",
@@ -2317,7 +2317,7 @@
     {
       "id": "exam1_q96",
       "number": 96,
-      "question": "Upper extremity venous color duplex examination reveals patency of both internal juglar and subclavian veins’ however, Doppler signals are abnormally reduce",
+      "question": "Upper extremity venous color duplex examination reveals patency of both internal juglar and subclavian veins\u2019 however, Doppler signals are abnormally reduce",
       "options": [
         {
           "letter": "D",
@@ -3809,7 +3809,7 @@
     {
       "id": "exam2_q8",
       "number": 8,
-      "question": "The top image of the celiac axis was obtained with the patient breathing normally. The lower image was obtained…most likely represent?",
+      "question": "The top image of the celiac axis was obtained with the patient breathing normally. The lower image was obtained\u2026most likely represent?",
       "options": [
         {
           "letter": "A",
@@ -3861,7 +3861,7 @@
     {
       "id": "exam2_q11",
       "number": 11,
-      "question": "What condition is likely when a patient presents with intermittent pallor followed by cyanosis of the ha…",
+      "question": "What condition is likely when a patient presents with intermittent pallor followed by cyanosis of the ha\u2026",
       "options": [
         {
           "letter": "A",
@@ -3913,7 +3913,7 @@
     {
       "id": "exam2_q13",
       "number": 13,
-      "question": "Which condition is most likely to cause decreased femoral pulses and an abdominal bruit in an 18-year-old hypertension m…",
+      "question": "Which condition is most likely to cause decreased femoral pulses and an abdominal bruit in an 18-year-old hypertension m\u2026",
       "options": [
         {
           "letter": "A",
@@ -5213,7 +5213,7 @@
     {
       "id": "exam2_q68",
       "number": 68,
-      "question": "An ultrasound examination was performed one week after the thermal ablation of the great saphenous vein. Which … Indicated by the arrow in this image?",
+      "question": "An ultrasound examination was performed one week after the thermal ablation of the great saphenous vein. Which \u2026 Indicated by the arrow in this image?",
       "options": [
         {
           "letter": "A",

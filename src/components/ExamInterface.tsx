@@ -39,6 +39,25 @@ interface ExamInterfaceProps {
   onRestart?: () => void;
 }
 
+// Category color mapping for distinguishable badges
+const getCategoryColors = (category: string) => {
+  const colorMap: Record<string, { bg: string; text: string }> = {
+    'Arterial Anatomy': { bg: 'bg-rose-100', text: 'text-rose-700' },
+    'Arterial Disease': { bg: 'bg-red-100', text: 'text-red-700' },
+    'Arterial Hemodynamics': { bg: 'bg-orange-100', text: 'text-orange-700' },
+    'Arterial Testing': { bg: 'bg-amber-100', text: 'text-amber-700' },
+    'Cerebrovascular': { bg: 'bg-purple-100', text: 'text-purple-700' },
+    'General & Other': { bg: 'bg-slate-100', text: 'text-slate-700' },
+    'Physics & Instrumentation': { bg: 'bg-cyan-100', text: 'text-cyan-700' },
+    'Venous Anatomy': { bg: 'bg-emerald-100', text: 'text-emerald-700' },
+    'Venous Disease': { bg: 'bg-teal-100', text: 'text-teal-700' },
+    'Venous Hemodynamics': { bg: 'bg-blue-100', text: 'text-blue-700' },
+    'Venous Testing': { bg: 'bg-indigo-100', text: 'text-indigo-700' },
+  };
+
+  return colorMap[category] || { bg: 'bg-gray-100', text: 'text-gray-700' };
+};
+
 export default function ExamInterface({ questions, title, mode, examId, modality, showResults = true, onRestart }: ExamInterfaceProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -339,45 +358,14 @@ export default function ExamInterface({ questions, title, mode, examId, modality
             <span className="text-emerald-600 font-semibold text-sm sm:text-lg">
               Q{currentIndex + 1}
             </span>
-            <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-blue-100 text-blue-700 text-xs sm:text-sm font-medium rounded shrink-0">
+            <span className={cn(
+              "px-2 sm:px-3 py-0.5 sm:py-1 text-xs sm:text-sm font-medium rounded shrink-0",
+              getCategoryColors(currentQuestion.category).bg,
+              getCategoryColors(currentQuestion.category).text
+            )}>
               {currentQuestion.category}
             </span>
           </div>
-
-          {/* Image (if present) */}
-          {currentQuestion.imageUrl && (
-            <div className="mb-4 sm:mb-6">
-              <div className="relative w-full max-w-2xl mx-auto bg-gray-100 rounded-lg overflow-hidden border-2 border-gray-200">
-                <img
-                  src={currentQuestion.imageUrl}
-                  alt={currentQuestion.imageCaption || 'Ultrasound image'}
-                  className="w-full h-auto"
-                  onError={(e) => {
-                    const target = e.currentTarget;
-                    target.style.display = 'none';
-                    const parent = target.parentElement;
-                    if (parent && !parent.querySelector('.image-error-message')) {
-                      parent.innerHTML = `
-                        <div class="image-error-message flex flex-col items-center justify-center p-8 sm:p-12 text-center">
-                          <svg class="w-16 h-16 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                          </svg>
-                          <p class="text-sm sm:text-base text-gray-600 font-semibold mb-2">Reference Image</p>
-                          <p class="text-xs sm:text-sm text-gray-500">${currentQuestion.imageCaption || 'Image description not available'}</p>
-                          <p class="text-xs text-gray-400 mt-3">Note: External image could not be loaded</p>
-                        </div>
-                      `;
-                    }
-                  }}
-                />
-              </div>
-              {currentQuestion.imageCaption && (
-                <p className="text-xs sm:text-sm text-gray-600 text-center mt-2 italic">
-                  {currentQuestion.imageCaption}
-                </p>
-              )}
-            </div>
-          )}
 
           {/* Question text */}
           <h2 className="text-base sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 leading-relaxed">
@@ -395,7 +383,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                   disabled={!stats || stats.hearts <= 0}
                   variant="outline"
                   size="sm"
-                  className="flex items-center gap-2 text-blue-700 border-blue-400 hover:bg-blue-50 disabled:opacity-50 disabled:cursor-not-allowed font-semibold"
+                  className="flex items-center gap-2 text-amber-700 border-amber-400 hover:bg-amber-100 hover:text-amber-800 disabled:opacity-50 disabled:cursor-not-allowed font-semibold"
                 >
                   <Lightbulb className="w-4 h-4" />
                   <span className="text-sm">Use Hint</span>
@@ -405,14 +393,14 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                   </span>
                 </Button>
               ) : (
-                <div className="p-3 sm:p-4 bg-blue-50 border-2 border-blue-400 rounded-lg">
+                <div className="p-3 sm:p-4 bg-amber-50 border-2 border-amber-400 rounded-lg">
                   <div className="flex items-start gap-2 sm:gap-3">
-                    <Lightbulb className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <Lightbulb className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h3 className="font-semibold text-blue-900 mb-1 text-sm sm:text-base">Hint</h3>
+                      <h3 className="font-semibold text-amber-900 mb-1 text-sm sm:text-base">Hint</h3>
                       <p className="text-xs sm:text-sm text-gray-800 leading-relaxed">{currentQuestion.hint}</p>
                       {currentQuestion.keywords && currentQuestion.keywords.length > 0 && (
-                        <p className="text-xs text-blue-700 mt-2 italic">
+                        <p className="text-xs text-amber-700 mt-2 italic">
                           Key terms highlighted in yellow above
                         </p>
                       )}
