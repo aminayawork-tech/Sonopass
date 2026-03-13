@@ -167,65 +167,43 @@ export default function HomePage() {
 
         {/* Exam Modes Grid */}
         <div className="grid grid-cols-2 md:grid-cols-2 gap-3 sm:gap-5 mb-8 sm:mb-12">
-          {/* Quick 10 */}
-          <Link href="/exam/quick-10">
-            <Card className="p-4 sm:p-6 hover:shadow-md transition-shadow cursor-pointer bg-white border border-gray-200 h-full">
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 text-center sm:text-left">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0">
-                  <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" />
-                </div>
-                <div>
-                  <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-0.5 sm:mb-1">Quick 10</h3>
-                  <p className="text-xs sm:text-sm text-gray-600 hidden xs:block">10 random questions</p>
-                </div>
-              </div>
-            </Card>
-          </Link>
+          {currentModality?.examModes.map((mode, index) => {
+            // Map exam mode IDs to icons and colors
+            const getIconAndColor = (modeId: string) => {
+              switch (modeId) {
+                case 'quick-10':
+                  return { Icon: Zap, bgColor: 'bg-emerald-100', iconColor: 'text-emerald-600' };
+                case 'study':
+                  return { Icon: BookOpen, bgColor: 'bg-blue-100', iconColor: 'text-blue-600' };
+                case 'mock-1':
+                  return { Icon: Brain, bgColor: 'bg-indigo-100', iconColor: 'text-indigo-600' };
+                case 'mock-2':
+                  return { Icon: Brain, bgColor: 'bg-purple-100', iconColor: 'text-purple-600' };
+                case 'mock-3':
+                  return { Icon: Brain, bgColor: 'bg-pink-100', iconColor: 'text-pink-600' };
+                default:
+                  return { Icon: Brain, bgColor: 'bg-gray-100', iconColor: 'text-gray-600' };
+              }
+            };
 
-          {/* Study by Section */}
-          <Link href="/exam/study">
-            <Card className="p-4 sm:p-6 hover:shadow-md transition-shadow cursor-pointer bg-white border border-gray-200 h-full">
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 text-center sm:text-left">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
-                  <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-0.5 sm:mb-1">Study Mode</h3>
-                  <p className="text-xs sm:text-sm text-gray-600 hidden xs:block">Browse by category</p>
-                </div>
-              </div>
-            </Card>
-          </Link>
+            const { Icon, bgColor, iconColor } = getIconAndColor(mode.id);
 
-          {/* Mock Exam 1 */}
-          <Link href="/exam/mock-1">
-            <Card className="p-4 sm:p-6 hover:shadow-md transition-shadow cursor-pointer bg-white border border-gray-200 h-full">
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 text-center sm:text-left">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
-                  <Brain className="w-5 h-5 sm:w-6 sm:h-6 text-indigo-600" />
-                </div>
-                <div>
-                  <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-0.5 sm:mb-1">Mock Exam 1</h3>
-                  <p className="text-xs sm:text-sm text-gray-600 hidden xs:block">128 questions (10 w/ images)</p>
-                </div>
-              </div>
-            </Card>
-          </Link>
-
-          {/* Mock Exam 2 */}
-          <Link href="/exam/mock-2">
-            <Card className="p-4 sm:p-6 hover:shadow-md transition-shadow cursor-pointer bg-white border border-gray-200 h-full">
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 text-center sm:text-left">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
-                  <Brain className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
-                </div>
-                <div>
-                  <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-0.5 sm:mb-1">Mock Exam 2</h3>
-                  <p className="text-xs sm:text-sm text-gray-600 hidden xs:block">72 questions</p>
-                </div>
-              </div>
-            </Card>
-          </Link>
+            return (
+              <Link key={mode.id} href={mode.route}>
+                <Card className="p-4 sm:p-6 hover:shadow-md transition-shadow cursor-pointer bg-white border border-gray-200 h-full">
+                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 text-center sm:text-left">
+                    <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg ${bgColor} flex items-center justify-center flex-shrink-0`}>
+                      <Icon className={`w-5 h-5 sm:w-6 sm:h-6 ${iconColor}`} />
+                    </div>
+                    <div>
+                      <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-0.5 sm:mb-1">{mode.name}</h3>
+                      <p className="text-xs sm:text-sm text-gray-600 hidden xs:block">{mode.description}</p>
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            );
+          })}
         </div>
 
         {/* Stats Preview */}
