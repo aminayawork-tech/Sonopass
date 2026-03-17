@@ -41,6 +41,12 @@
           "name": "Mock Exam 3",
           "description": "No images - 122 questions",
           "route": "/exam/mock-3"
+        },
+        {
+          "id": "mock-4",
+          "name": "Mock Exam 4",
+          "description": "Full practice exam - 110 questions",
+          "route": "/exam/mock-4"
         }
       ]
     },
