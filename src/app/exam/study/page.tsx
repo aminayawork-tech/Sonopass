@@ -22,7 +22,12 @@ export default function StudyPage() {
 
       try {
         const questionsData = await loadQuestions();
-        const allQuestions = [...questionsData.exam1, ...questionsData.exam2];
+        const allQuestions = [
+          ...questionsData.exam1,
+          ...questionsData.exam2,
+          ...questionsData.exam3,
+          ...questionsData.exam4
+        ];
         const map = new Map<string, any[]>();
 
         allQuestions.forEach(q => {
