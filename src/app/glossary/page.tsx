@@ -7,6 +7,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useModality } from '@/contexts/ModalityContext';
+import TabNavigation from '@/components/TabNavigation';
 
 interface GlossaryTerm {
   term: string;
@@ -87,6 +88,7 @@ export default function GlossaryPage() {
 
   return (
     <div className="min-h-screen bg-[#F5F7FA]">
+      <TabNavigation />
       {/* Header */}
       <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white border-b shadow-sm">
         <div className="max-w-7xl mx-auto">

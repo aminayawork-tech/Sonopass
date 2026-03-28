@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ModalityProvider } from "@/contexts/ModalityContext";
+import TabNavigation from "@/components/TabNavigation";
 
 export const metadata: Metadata = {
   title: "SonoPass - Ultrasound Registry Exam Prep",
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans antialiased">
-        <ModalityProvider>{children}</ModalityProvider>
+        <ModalityProvider>
+          {children}
+        </ModalityProvider>
       </body>
     </html>
   );

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import TabNavigation from '@/components/TabNavigation';
 import {
   Brain, Activity, AlertTriangle, ClipboardList, Zap,
   Search, BookOpen, ChevronRight, Check, ArrowLeft,
@@ -416,6 +417,7 @@ export default function StudyGuidePage() {
   // Categories Overview
   return (
     <div className="min-h-screen bg-[#F5F7FA]">
+      <TabNavigation />
       <header className="px-4 sm:px-6 py-6 sm:py-8 bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">

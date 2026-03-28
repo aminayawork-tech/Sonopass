@@ -9,6 +9,8 @@ import { Progress } from '@/components/ui/progress';
 import { getStats, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
 import { useModality } from '@/contexts/ModalityContext';
 import { ModalitySelectorDropdown } from '@/components/ModalitySelector';
+import TabNavigation from '@/components/TabNavigation';
+import LockMode from '@/components/LockMode';
 
 export default function HomePage() {
   const [stats, setStats] = useState<UserStats | null>(null);
@@ -63,6 +65,7 @@ export default function HomePage() {
                 </span>
               </div>
             )}
+            <LockMode />
             <ModalitySelectorDropdown />
             <Link href="/stats">
               <Button variant="outline" size="sm" className="font-semibold text-xs sm:text-sm px-2.5 sm:px-4">
@@ -73,6 +76,9 @@ export default function HomePage() {
           </div>
         </div>
       </header>
+
+      {/* Tab Navigation */}
+      <TabNavigation />
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-12">

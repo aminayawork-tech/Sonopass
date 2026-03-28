@@ -8,6 +8,7 @@ import { ArrowLeft, BookOpen, Lightbulb, CheckCircle2, Brain, ArrowRight } from 
 import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
 import { useModality } from '@/contexts/ModalityContext';
+import TabNavigation from '@/components/TabNavigation';
 
 export default function StudyPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -77,6 +78,7 @@ export default function StudyPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
+      <TabNavigation />
       {/* Header */}
       <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white/80 backdrop-blur-sm border-b-4 border-purple-400 shadow-lg">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
