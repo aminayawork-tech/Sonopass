@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, BookOpen, Lightbulb, CheckCircle2, Brain, ArrowRight } from 'lucide-react';
+import { Input } from '@/components/ui/input';
+import { ArrowLeft, BookOpen, Lightbulb, CheckCircle2, Brain, ArrowRight, Users, UserPlus } from 'lucide-react';
 import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
 import { useModality } from '@/contexts/ModalityContext';
@@ -14,7 +15,30 @@ export default function StudyPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [categoryMap, setCategoryMap] = useState<Map<string, any[]>>(new Map());
   const [categories, setCategories] = useState<[string, any[]][]>([]);
+  const [studyBuddyMode, setStudyBuddyMode] = useState(false);
+  const [userName, setUserName] = useState('');
+  const [currentSession, setCurrentSession] = useState<any>(null);
   const { currentModality, loadQuestions } = useModality();
+
+  // Load user name and check for active session
+  useEffect(() => {
+    const saved = localStorage.getItem('studyBuddyName');
+    if (saved) {
+      setUserName(saved);
+    }
+
+    // Check if user is in an active study session
+    const sessions = localStorage.getItem('studySessions');
+    if (sessions) {
+      const parsedSessions = JSON.parse(sessions);
+      const activeSession = parsedSessions.find((s: any) =>
+        s.status === 'active' && s.players.some((p: any) => p.name === saved)
+      );
+      if (activeSession) {
+        setCurrentSession(activeSession);
+      }
+    }
+  }, []);
 
   // Load questions and build category map
   useEffect(() => {
@@ -72,6 +96,10 @@ export default function StudyPage() {
         questions={rawQuestions}
         title={selectedCategory}
         onBack={() => setSelectedCategory(null)}
+        studyBuddyMode={studyBuddyMode}
+        userName={userName}
+        currentSession={currentSession}
+        setCurrentSession={setCurrentSession}
       />
     );
   }
@@ -81,16 +109,54 @@ export default function StudyPage() {
       <TabNavigation />
       {/* Header */}
       <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white/80 backdrop-blur-sm border-b-4 border-purple-400 shadow-lg">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 className="text-xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-            Study by Section
-          </h1>
-          <Link href="/">
-            <Button variant="outline" size="sm" className="font-bold border-2 text-xs sm:text-sm px-2.5 sm:px-4">
-              <ArrowLeft className="w-4 h-4 sm:mr-2" />
-              <span className="hidden sm:inline">Back</span>
-            </Button>
-          </Link>
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-center mb-4">
+            <h1 className="text-xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+              Study by Section
+            </h1>
+            <Link href="/">
+              <Button variant="outline" size="sm" className="font-bold border-2 text-xs sm:text-sm px-2.5 sm:px-4">
+                <ArrowLeft className="w-4 h-4 sm:mr-2" />
+                <span className="hidden sm:inline">Back</span>
+              </Button>
+            </Link>
+          </div>
+
+          {/* Study Buddy Toggle */}
+          <div className="bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 rounded-lg p-3 sm:p-4">
+            <div className="flex items-center justify-between gap-4 flex-wrap">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
+                  <Users className="w-5 h-5 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 text-sm sm:text-base">Study with Friends</h3>
+                  <p className="text-xs text-gray-600">Enable to see who is studying with you</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                {studyBuddyMode && (
+                  <Input
+                    type="text"
+                    placeholder="Your name..."
+                    value={userName}
+                    onChange={(e) => {
+                      setUserName(e.target.value);
+                      localStorage.setItem('studyBuddyName', e.target.value);
+                    }}
+                    className="w-32 sm:w-40 h-9 text-sm"
+                  />
+                )}
+                <Button
+                  onClick={() => setStudyBuddyMode(!studyBuddyMode)}
+                  className={`${studyBuddyMode ? 'bg-purple-600 hover:bg-purple-700' : 'bg-gray-600 hover:bg-gray-700'} text-white text-sm`}
+                  size="sm"
+                >
+                  {studyBuddyMode ? 'Enabled' : 'Enable'}
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -130,10 +196,27 @@ export default function StudyPage() {
 }
 
 /** Study mode with content first, then questions */
-function StudyCategoryExam({ questions, title, onBack }: { questions: any[]; title: string; onBack: () => void }) {
+function StudyCategoryExam({
+  questions,
+  title,
+  onBack,
+  studyBuddyMode,
+  userName,
+  currentSession,
+  setCurrentSession
+}: {
+  questions: any[];
+  title: string;
+  onBack: () => void;
+  studyBuddyMode: boolean;
+  userName: string;
+  currentSession: any;
+  setCurrentSession: (session: any) => void;
+}) {
   const [showContent, setShowContent] = useState(true);
   const [shuffled, setShuffled] = useState<any[]>([]);
   const [studyContent, setStudyContent] = useState<any>(null);
+  const [activeParticipants, setActiveParticipants] = useState<any[]>([]);
   const { currentModality, loadStudyCategories } = useModality();
 
   useEffect(() => {
@@ -156,7 +239,83 @@ function StudyCategoryExam({ questions, title, onBack }: { questions: any[]; tit
     };
 
     loadContent();
-  }, [questions, title, currentModality, loadStudyCategories]);
+
+    // Handle study buddy session
+    if (studyBuddyMode && userName) {
+      const sessions = localStorage.getItem('studySessions');
+      let parsedSessions = sessions ? JSON.parse(sessions) : [];
+
+      // Find or create a session for this category
+      let session = parsedSessions.find((s: any) =>
+        s.category === title && s.status === 'active'
+      );
+
+      if (!session) {
+        // Create new study session for this category
+        session = {
+          id: `study-${title}-${Date.now()}`,
+          name: `${title} Study Session`,
+          createdBy: userName,
+          category: title,
+          players: [{
+            id: `player-${Date.now()}`,
+            name: userName,
+            lastActive: Date.now(),
+            status: 'studying'
+          }],
+          status: 'active',
+          maxPlayers: 10,
+          questionCount: questions.length,
+        };
+        parsedSessions.push(session);
+      } else {
+        // Join existing session or update player status
+        const existingPlayer = session.players.find((p: any) => p.name === userName);
+        if (existingPlayer) {
+          existingPlayer.lastActive = Date.now();
+          existingPlayer.status = 'studying';
+        } else {
+          session.players.push({
+            id: `player-${Date.now()}`,
+            name: userName,
+            lastActive: Date.now(),
+            status: 'studying'
+          });
+        }
+      }
+
+      localStorage.setItem('studySessions', JSON.stringify(parsedSessions));
+      setCurrentSession(session);
+      setActiveParticipants(session.players);
+
+      // Update participant activity periodically
+      const interval = setInterval(() => {
+        const currentSessions = localStorage.getItem('studySessions');
+        if (currentSessions) {
+          const sessions = JSON.parse(currentSessions);
+          const activeSession = sessions.find((s: any) => s.id === session.id);
+          if (activeSession) {
+            // Filter out participants who have been inactive for more than 5 minutes
+            const now = Date.now();
+            const activeUsers = activeSession.players.filter(
+              (p: any) => now - p.lastActive < 5 * 60 * 1000
+            );
+            setActiveParticipants(activeUsers);
+
+            // Update own activity
+            const me = activeUsers.find((p: any) => p.name === userName);
+            if (me) {
+              me.lastActive = Date.now();
+              activeSession.players = activeUsers;
+              localStorage.setItem('studySessions', JSON.stringify(sessions));
+            }
+          }
+        }
+      }, 10000); // Update every 10 seconds
+
+      return () => clearInterval(interval);
+    }
+  }, [questions, title, currentModality, loadStudyCategories, studyBuddyMode, userName]);
 
   if (shuffled.length === 0 || !currentModality) {
     return (
@@ -169,12 +328,47 @@ function StudyCategoryExam({ questions, title, onBack }: { questions: any[]; tit
   // Show questions after content
   if (!showContent) {
     return (
-      <ExamInterface
-        questions={shuffled}
-        title={title}
-        mode="practice"
-        modality={currentModality.id}
-      />
+      <div className="min-h-screen bg-[#F5F7FA]">
+        {/* Participant Bar for Study Buddy */}
+        {studyBuddyMode && activeParticipants.length > 0 && (
+          <div className="bg-white border-b border-gray-100 sticky top-0 z-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2">
+              <div className="flex items-center gap-3 flex-wrap">
+                <div className="flex items-center gap-2">
+                  <Users className="w-4 h-4 text-purple-600" />
+                  <span className="text-sm font-semibold text-gray-900">
+                    Studying together ({activeParticipants.length})
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  {activeParticipants.slice(0, 8).map((participant) => (
+                    <div
+                      key={participant.id}
+                      className="flex items-center gap-1.5 bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-full px-2.5 py-0.5"
+                    >
+                      <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                      <span className="text-xs font-medium text-gray-700">
+                        {participant.name}
+                      </span>
+                    </div>
+                  ))}
+                  {activeParticipants.length > 8 && (
+                    <span className="text-xs text-gray-600 px-2">
+                      +{activeParticipants.length - 8} more
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        <ExamInterface
+          questions={shuffled}
+          title={title}
+          mode="practice"
+          modality={currentModality.id}
+        />
+      </div>
     );
   }
 
@@ -184,7 +378,7 @@ function StudyCategoryExam({ questions, title, onBack }: { questions: any[]; tit
       {/* Header */}
       <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10">
         <div className="max-w-5xl mx-auto">
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center justify-between gap-4 mb-3">
             <div className="flex items-center gap-3">
               <Button
                 variant="ghost"
@@ -212,6 +406,38 @@ function StudyCategoryExam({ questions, title, onBack }: { questions: any[]; tit
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </div>
+
+          {/* Active Participants */}
+          {studyBuddyMode && activeParticipants.length > 0 && (
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-lg p-3">
+              <div className="flex items-center gap-3 flex-wrap">
+                <div className="flex items-center gap-2">
+                  <Users className="w-4 h-4 text-purple-600" />
+                  <span className="text-sm font-semibold text-gray-900">
+                    Studying together ({activeParticipants.length})
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  {activeParticipants.slice(0, 8).map((participant, index) => (
+                    <div
+                      key={participant.id}
+                      className="flex items-center gap-1.5 bg-white border border-purple-200 rounded-full px-3 py-1"
+                    >
+                      <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                      <span className="text-xs font-medium text-gray-700">
+                        {participant.name}
+                      </span>
+                    </div>
+                  ))}
+                  {activeParticipants.length > 8 && (
+                    <span className="text-xs text-gray-600 px-2">
+                      +{activeParticipants.length - 8} more
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </header>
 
