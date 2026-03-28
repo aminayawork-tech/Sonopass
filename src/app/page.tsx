@@ -173,7 +173,9 @@ export default function HomePage() {
 
         {/* Exam Modes - Horizontal Cards */}
         <div className="space-y-4 mb-8 sm:mb-12">
-          {currentModality?.examModes.map((mode, index) => {
+          {currentModality?.examModes
+            .filter(mode => !mode.id.startsWith('mock-'))
+            .map((mode, index) => {
             // Map exam mode IDs to icons and colors
             const getCardStyle = (modeId: string) => {
               switch (modeId) {
@@ -188,30 +190,6 @@ export default function HomePage() {
                     Icon: BookOpen,
                     gradient: 'from-blue-500 to-indigo-500',
                     hoverGradient: 'hover:from-blue-600 hover:to-indigo-600'
-                  };
-                case 'mock-1':
-                  return {
-                    Icon: Brain,
-                    gradient: 'from-indigo-500 to-purple-500',
-                    hoverGradient: 'hover:from-indigo-600 hover:to-purple-600'
-                  };
-                case 'mock-2':
-                  return {
-                    Icon: Brain,
-                    gradient: 'from-purple-500 to-pink-500',
-                    hoverGradient: 'hover:from-purple-600 hover:to-pink-600'
-                  };
-                case 'mock-3':
-                  return {
-                    Icon: Brain,
-                    gradient: 'from-pink-500 to-rose-500',
-                    hoverGradient: 'hover:from-pink-600 hover:to-rose-600'
-                  };
-                case 'mock-4':
-                  return {
-                    Icon: Brain,
-                    gradient: 'from-rose-500 to-red-500',
-                    hoverGradient: 'hover:from-rose-600 hover:to-red-600'
                   };
                 default:
                   return {
@@ -247,6 +225,30 @@ export default function HomePage() {
               </Link>
             );
           })}
+
+          {/* Single Mock Exams Card */}
+          {currentModality?.examModes.some(mode => mode.id.startsWith('mock-')) && (
+            <Link href="/exam/mock-exams" className="block">
+              <Card className="p-4 sm:p-6 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 transition-all cursor-pointer border-0 shadow-lg">
+                <div className="flex items-center gap-4 text-white">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+                    <Brain className="w-6 h-6 sm:w-8 sm:h-8" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg sm:text-2xl font-bold mb-1">Mock Exams</h3>
+                    <p className="text-sm sm:text-base text-white/90">
+                      Full-length practice exams to test your knowledge
+                    </p>
+                  </div>
+                  <div className="hidden sm:block">
+                    <div className="px-4 py-2 bg-white/20 rounded-lg text-sm font-semibold">
+                      Start →
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+          )}
         </div>
 
         {/* Stats Preview */}

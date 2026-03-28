@@ -532,6 +532,18 @@ export default function StudyBuddyPage() {
           <Button
             className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white py-6 text-lg"
             disabled={currentSession.players.length < 2}
+            onClick={() => {
+              if (currentSession.players.length >= 2) {
+                // Update session status to active
+                const updatedSession = { ...currentSession, status: 'active' as const };
+                const updatedSessions = sessions.map(s =>
+                  s.id === currentSession.id ? updatedSession : s
+                );
+                saveSessions(updatedSessions);
+                // Navigate to quick-10 exam
+                window.location.href = '/exam/quick-10';
+              }
+            }}
           >
             {currentSession.players.length < 2 ? 'Waiting for more players...' : 'Start Quiz'}
             <Zap className="w-5 h-5 ml-2" />
