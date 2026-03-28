@@ -71,3 +71,46 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Focus Mode Styles */
+body.focus-mode-active {
+  /* Hide navigation and distractions when in focus mode */
+}
+
+body.focus-mode-active nav[role="navigation"],
+body.focus-mode-active header nav,
+body.focus-mode-active .tab-navigation {
+  opacity: 0.3;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+body.focus-mode-active nav[role="navigation"]:hover,
+body.focus-mode-active header nav:hover,
+body.focus-mode-active .tab-navigation:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Focus mode indicator */
+body.focus-mode-active::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #f97316, #fb923c, #f97316);
+  background-size: 200% 100%;
+  animation: focusPulse 3s ease-in-out infinite;
+  z-index: 9999;
+}
+
+@keyframes focusPulse {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}

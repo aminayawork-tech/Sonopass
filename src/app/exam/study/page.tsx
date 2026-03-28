@@ -10,6 +10,7 @@ import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
 import { useModality } from '@/contexts/ModalityContext';
 import TabNavigation from '@/components/TabNavigation';
+import StudyBuddyPanel from '@/components/StudyBuddyPanel';
 
 export default function StudyPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -217,6 +218,7 @@ function StudyCategoryExam({
   const [shuffled, setShuffled] = useState<any[]>([]);
   const [studyContent, setStudyContent] = useState<any>(null);
   const [activeParticipants, setActiveParticipants] = useState<any[]>([]);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const { currentModality, loadStudyCategories } = useModality();
 
   useEffect(() => {
@@ -329,45 +331,22 @@ function StudyCategoryExam({
   if (!showContent) {
     return (
       <div className="min-h-screen bg-[#F5F7FA]">
-        {/* Participant Bar for Study Buddy */}
-        {studyBuddyMode && activeParticipants.length > 0 && (
-          <div className="bg-white border-b border-gray-100 sticky top-0 z-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2">
-              <div className="flex items-center gap-3 flex-wrap">
-                <div className="flex items-center gap-2">
-                  <Users className="w-4 h-4 text-purple-600" />
-                  <span className="text-sm font-semibold text-gray-900">
-                    Studying together ({activeParticipants.length})
-                  </span>
-                </div>
-                <div className="flex items-center gap-2 flex-wrap">
-                  {activeParticipants.slice(0, 8).map((participant) => (
-                    <div
-                      key={participant.id}
-                      className="flex items-center gap-1.5 bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-full px-2.5 py-0.5"
-                    >
-                      <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                      <span className="text-xs font-medium text-gray-700">
-                        {participant.name}
-                      </span>
-                    </div>
-                  ))}
-                  {activeParticipants.length > 8 && (
-                    <span className="text-xs text-gray-600 px-2">
-                      +{activeParticipants.length - 8} more
-                    </span>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
         <ExamInterface
           questions={shuffled}
           title={title}
           mode="practice"
           modality={currentModality.id}
         />
+        {/* Interactive Study Buddy Panel */}
+        {studyBuddyMode && currentSession && userName && (
+          <StudyBuddyPanel
+            sessionId={currentSession.id}
+            userName={userName}
+            participants={activeParticipants}
+            currentQuestion={currentQuestionIndex}
+            totalQuestions={shuffled.length}
+          />
+        )}
       </div>
     );
   }
@@ -375,6 +354,17 @@ function StudyCategoryExam({
   // Show study content first
   return (
     <div className="min-h-screen bg-[#F5F7FA]">
+      {/* Interactive Study Buddy Panel */}
+      {studyBuddyMode && currentSession && userName && (
+        <StudyBuddyPanel
+          sessionId={currentSession.id}
+          userName={userName}
+          participants={activeParticipants}
+          currentQuestion={0}
+          totalQuestions={shuffled.length}
+          isMinimized={true}
+        />
+      )}
       {/* Header */}
       <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10">
         <div className="max-w-5xl mx-auto">
@@ -407,34 +397,19 @@ function StudyCategoryExam({
             </Button>
           </div>
 
-          {/* Active Participants */}
+          {/* Study Buddy Indicator */}
           {studyBuddyMode && activeParticipants.length > 0 && (
             <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-lg p-3">
-              <div className="flex items-center gap-3 flex-wrap">
+              <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Users className="w-4 h-4 text-purple-600" />
                   <span className="text-sm font-semibold text-gray-900">
-                    Studying together ({activeParticipants.length})
+                    {activeParticipants.length} {activeParticipants.length === 1 ? 'person' : 'people'} studying with you
                   </span>
                 </div>
-                <div className="flex items-center gap-2 flex-wrap">
-                  {activeParticipants.slice(0, 8).map((participant, index) => (
-                    <div
-                      key={participant.id}
-                      className="flex items-center gap-1.5 bg-white border border-purple-200 rounded-full px-3 py-1"
-                    >
-                      <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                      <span className="text-xs font-medium text-gray-700">
-                        {participant.name}
-                      </span>
-                    </div>
-                  ))}
-                  {activeParticipants.length > 8 && (
-                    <span className="text-xs text-gray-600 px-2">
-                      +{activeParticipants.length - 8} more
-                    </span>
-                  )}
-                </div>
+                <span className="text-xs text-purple-600">
+                  💬 Chat available in practice mode
+                </span>
               </div>
             </div>
           )}
