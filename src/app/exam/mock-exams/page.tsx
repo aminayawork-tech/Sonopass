@@ -136,7 +136,7 @@ export default function MockExamsPage() {
                 </div>
 
                 <Link href={exam.route}>
-                  <Button className={`w-full ${color.text.replace('text-', 'bg-').replace('-600', '-500')} hover:opacity-90`}>
+                  <Button className={`w-full text-white ${color.text.replace('text-', 'bg-').replace('-600', '-500')} hover:opacity-90`}>
                     {examStats.completed ? 'Retake Exam' : 'Start Exam'}
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>

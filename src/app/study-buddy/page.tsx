@@ -297,7 +297,7 @@ export default function StudyBuddyPage() {
           {/* How It Works */}
           <Card className="mt-8 p-6 sm:p-8 bg-white border border-gray-200">
             <h3 className="text-xl font-bold text-gray-900 mb-4">How Study Buddy Works</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
               <div className="text-center">
                 <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mx-auto mb-3">
                   <span className="text-xl font-bold text-purple-600">1</span>
@@ -325,6 +325,10 @@ export default function StudyBuddyPage() {
                   See who scores highest and learn together
                 </p>
               </div>
+            </div>
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-sm text-gray-700">
+              <p className="font-semibold text-gray-900 mb-2">📱 Important Note:</p>
+              <p>Study sessions are currently stored locally on your device. To study together, all participants should use the same device or join from the active sessions list above. Sessions created on other devices will not appear in your session list.</p>
             </div>
           </Card>
         </main>
@@ -444,7 +448,7 @@ export default function StudyBuddyPage() {
                 if (session) {
                   joinSession(session);
                 } else {
-                  alert('Session not found');
+                  alert('Session not found. Please make sure:\n\n1. The session code is correct\n2. The session was created on this device\n3. The session is less than 24 hours old\n\nNote: Study sessions are currently stored locally on your device. Sessions created on other devices will not appear here.');
                 }
               }}
               disabled={!userName || !sessionCode}
