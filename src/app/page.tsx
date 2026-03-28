@@ -157,7 +157,7 @@ export default function HomePage() {
                 <Library className="w-6 h-6 sm:w-8 sm:h-8" />
               </div>
               <div className="flex-1">
-                <h3 className="text-lg sm:text-2xl font-bold mb-1">Ultrasound Glossary</h3>
+                <h3 className="text-lg sm:text-2xl font-bold mb-1">Vascular Glossary</h3>
                 <p className="text-sm sm:text-base text-blue-50">
                   Essential terms and definitions - search, filter, and master the terminology
                 </p>
@@ -240,7 +240,7 @@ export default function HomePage() {
                       Full-length practice exams to test your knowledge
                     </p>
                   </div>
-                  <div className="hidden sm:block">
+                  <div className="flex-shrink-0">
                     <div className="px-4 py-2 bg-white/20 rounded-lg text-sm font-semibold">
                       Start →
                     </div>
