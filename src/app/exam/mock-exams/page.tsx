@@ -24,14 +24,20 @@ export default function MockExamsPage() {
     mode.id.startsWith('mock-')
   ) || [];
 
-  // Mock exam completion data (you can enhance this with real data)
+  // Get exam stats from examScores array
   const getExamStats = (examId: string) => {
-    const examStats = modalityStats?.exams?.[examId];
-    return {
-      completed: examStats?.completed || false,
-      bestScore: examStats?.bestScore || 0,
-      attempts: examStats?.attempts || 0,
-    };
+    if (!modalityStats) {
+      return { completed: false, bestScore: 0, attempts: 0 };
+    }
+
+    const examScores = modalityStats.examScores.filter(e => e.exam === examId);
+    const attempts = examScores.length;
+    const completed = attempts > 0;
+    const bestScore = examScores.length > 0
+      ? Math.max(...examScores.map(e => Math.round((e.score / e.total) * 100)))
+      : 0;
+
+    return { completed, bestScore, attempts };
   };
 
   return (
