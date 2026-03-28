@@ -171,39 +171,76 @@ export default function HomePage() {
           </Card>
         </Link>
 
-        {/* Exam Modes Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-3 sm:gap-5 mb-8 sm:mb-12">
+        {/* Exam Modes - Horizontal Cards */}
+        <div className="space-y-4 mb-8 sm:mb-12">
           {currentModality?.examModes.map((mode, index) => {
             // Map exam mode IDs to icons and colors
-            const getIconAndColor = (modeId: string) => {
+            const getCardStyle = (modeId: string) => {
               switch (modeId) {
                 case 'quick-10':
-                  return { Icon: Zap, bgColor: 'bg-emerald-100', iconColor: 'text-emerald-600' };
+                  return {
+                    Icon: Zap,
+                    gradient: 'from-emerald-500 to-teal-500',
+                    hoverGradient: 'hover:from-emerald-600 hover:to-teal-600'
+                  };
                 case 'study':
-                  return { Icon: BookOpen, bgColor: 'bg-blue-100', iconColor: 'text-blue-600' };
+                  return {
+                    Icon: BookOpen,
+                    gradient: 'from-blue-500 to-indigo-500',
+                    hoverGradient: 'hover:from-blue-600 hover:to-indigo-600'
+                  };
                 case 'mock-1':
-                  return { Icon: Brain, bgColor: 'bg-indigo-100', iconColor: 'text-indigo-600' };
+                  return {
+                    Icon: Brain,
+                    gradient: 'from-indigo-500 to-purple-500',
+                    hoverGradient: 'hover:from-indigo-600 hover:to-purple-600'
+                  };
                 case 'mock-2':
-                  return { Icon: Brain, bgColor: 'bg-purple-100', iconColor: 'text-purple-600' };
+                  return {
+                    Icon: Brain,
+                    gradient: 'from-purple-500 to-pink-500',
+                    hoverGradient: 'hover:from-purple-600 hover:to-pink-600'
+                  };
                 case 'mock-3':
-                  return { Icon: Brain, bgColor: 'bg-pink-100', iconColor: 'text-pink-600' };
+                  return {
+                    Icon: Brain,
+                    gradient: 'from-pink-500 to-rose-500',
+                    hoverGradient: 'hover:from-pink-600 hover:to-rose-600'
+                  };
+                case 'mock-4':
+                  return {
+                    Icon: Brain,
+                    gradient: 'from-rose-500 to-red-500',
+                    hoverGradient: 'hover:from-rose-600 hover:to-red-600'
+                  };
                 default:
-                  return { Icon: Brain, bgColor: 'bg-gray-100', iconColor: 'text-gray-600' };
+                  return {
+                    Icon: Brain,
+                    gradient: 'from-gray-500 to-gray-600',
+                    hoverGradient: 'hover:from-gray-600 hover:to-gray-700'
+                  };
               }
             };
 
-            const { Icon, bgColor, iconColor } = getIconAndColor(mode.id);
+            const { Icon, gradient, hoverGradient } = getCardStyle(mode.id);
 
             return (
-              <Link key={mode.id} href={mode.route}>
-                <Card className="p-4 sm:p-6 hover:shadow-md transition-shadow cursor-pointer bg-white border border-gray-200 h-full">
-                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 text-center sm:text-left">
-                    <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg ${bgColor} flex items-center justify-center flex-shrink-0`}>
-                      <Icon className={`w-5 h-5 sm:w-6 sm:h-6 ${iconColor}`} />
+              <Link key={mode.id} href={mode.route} className="block">
+                <Card className={`p-4 sm:p-6 bg-gradient-to-r ${gradient} ${hoverGradient} transition-all cursor-pointer border-0 shadow-lg`}>
+                  <div className="flex items-center gap-4 text-white">
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-6 h-6 sm:w-8 sm:h-8" />
                     </div>
-                    <div>
-                      <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-0.5 sm:mb-1">{mode.name}</h3>
-                      <p className="text-xs sm:text-sm text-gray-600 hidden xs:block">{mode.description}</p>
+                    <div className="flex-1">
+                      <h3 className="text-lg sm:text-2xl font-bold mb-1">{mode.name}</h3>
+                      <p className="text-sm sm:text-base text-white/90">
+                        {mode.description}
+                      </p>
+                    </div>
+                    <div className="hidden sm:block">
+                      <div className="px-4 py-2 bg-white/20 rounded-lg text-sm font-semibold">
+                        Start →
+                      </div>
                     </div>
                   </div>
                 </Card>

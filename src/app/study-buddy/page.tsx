@@ -46,39 +46,40 @@ export default function StudyBuddyPage() {
       setUserName(saved);
     }
 
-    // Load mock sessions (in real app, this would come from a backend)
+    // Load sessions from localStorage
     loadSessions();
   }, []);
 
   const loadSessions = () => {
-    // Mock data - in real app, fetch from backend
-    const mockSessions: StudySession[] = [
-      {
-        id: 'sess-1',
-        name: 'Evening Study Group',
-        createdBy: 'Sarah',
-        players: [
-          { id: '1', name: 'Sarah', score: 850, correct: 17, total: 20 },
-          { id: '2', name: 'Mike', score: 720, correct: 14, total: 20 },
-        ],
-        status: 'waiting',
-        maxPlayers: 4,
-        questionCount: 20,
-        category: 'Anatomy',
-      },
-      {
-        id: 'sess-2',
-        name: 'Quick Practice',
-        createdBy: 'Alex',
-        players: [
-          { id: '3', name: 'Alex', score: 500, correct: 10, total: 10 },
-        ],
-        status: 'waiting',
-        maxPlayers: 2,
-        questionCount: 10,
-      },
-    ];
-    setSessions(mockSessions);
+    try {
+      const savedSessions = localStorage.getItem('studySessions');
+      if (savedSessions) {
+        const parsedSessions = JSON.parse(savedSessions);
+        // Filter out old sessions (older than 24 hours)
+        const now = Date.now();
+        const validSessions = parsedSessions.filter((session: StudySession) => {
+          const sessionTime = parseInt(session.id.replace('sess-', ''));
+          return now - sessionTime < 24 * 60 * 60 * 1000; // 24 hours
+        });
+        setSessions(validSessions);
+        // Save filtered sessions back
+        localStorage.setItem('studySessions', JSON.stringify(validSessions));
+      } else {
+        setSessions([]);
+      }
+    } catch (error) {
+      console.error('Error loading sessions:', error);
+      setSessions([]);
+    }
+  };
+
+  const saveSessions = (updatedSessions: StudySession[]) => {
+    try {
+      localStorage.setItem('studySessions', JSON.stringify(updatedSessions));
+      setSessions(updatedSessions);
+    } catch (error) {
+      console.error('Error saving sessions:', error);
+    }
   };
 
   const createSession = () => {
@@ -97,14 +98,24 @@ export default function StudyBuddyPage() {
     };
 
     localStorage.setItem('studyBuddyName', userName);
-    setSessions([...sessions, newSession]);
+    const updatedSessions = [...sessions, newSession];
+    saveSessions(updatedSessions);
     setCurrentSession(newSession);
     setView('session');
+    setSessionName(''); // Clear session name for next time
   };
 
   const joinSession = (session: StudySession) => {
     if (!userName) {
       alert('Please enter your name first');
+      return;
+    }
+
+    // Check if user is already in the session
+    const alreadyJoined = session.players.some(p => p.name === userName);
+    if (alreadyJoined) {
+      setCurrentSession(session);
+      setView('session');
       return;
     }
 
@@ -121,14 +132,23 @@ export default function StudyBuddyPage() {
       players: [...session.players, newPlayer],
     };
 
+    // Update the session in the sessions list
+    const updatedSessions = sessions.map(s =>
+      s.id === session.id ? updatedSession : s
+    );
+
     localStorage.setItem('studyBuddyName', userName);
+    saveSessions(updatedSessions);
     setCurrentSession(updatedSession);
     setView('session');
   };
 
+  const [copiedSessionId, setCopiedSessionId] = useState<string | null>(null);
+
   const copySessionCode = (sessionId: string) => {
     navigator.clipboard.writeText(sessionId);
-    // Show copied feedback
+    setCopiedSessionId(sessionId);
+    setTimeout(() => setCopiedSessionId(null), 2000);
   };
 
   // Lobby View
@@ -457,14 +477,19 @@ export default function StudyBuddyPage() {
                   type="text"
                   value={currentSession.id}
                   readOnly
-                  className="w-32 text-xs bg-gray-50"
+                  className="w-40 text-xs bg-gray-50 font-mono"
                 />
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={() => copySessionCode(currentSession.id)}
+                  className={copiedSessionId === currentSession.id ? 'bg-green-50 border-green-500' : ''}
                 >
-                  <Copy className="w-4 h-4" />
+                  {copiedSessionId === currentSession.id ? (
+                    <Check className="w-4 h-4 text-green-600" />
+                  ) : (
+                    <Copy className="w-4 h-4" />
+                  )}
                 </Button>
               </div>
             </div>
