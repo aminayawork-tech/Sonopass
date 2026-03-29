@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ModalityProvider } from "@/contexts/ModalityContext";
 import TabNavigation from "@/components/TabNavigation";
@@ -6,6 +6,24 @@ import TabNavigation from "@/components/TabNavigation";
 export const metadata: Metadata = {
   title: "SonoPass - Ultrasound Registry Exam Prep",
   description: "Master your ultrasound registry exam with comprehensive practice questions across all modalities",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "SonoPass",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
+  themeColor: "#10B981",
 };
 
 export default function RootLayout({
