@@ -50,7 +50,7 @@ export default function DashboardPage() {
     <AppLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-4 sm:space-y-6">
         {/* Welcome Section */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 fade-in">
           <div>
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">{greeting}!</h1>
             <p className="text-sm sm:text-base text-gray-600 mt-1">
@@ -58,14 +58,14 @@ export default function DashboardPage() {
             </p>
           </div>
           <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl shadow-sm flex-1 touch-target">
+            <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl shadow-sm flex-1 touch-target transition-all duration-200 hover:shadow-md hover:scale-[1.02]">
               <Flame className="w-5 h-5 text-orange-500 flex-shrink-0" />
               <div>
                 <div className="text-xl sm:text-2xl font-bold text-orange-500">{stats?.streak ?? 0}</div>
                 <div className="text-[10px] sm:text-xs text-gray-600 whitespace-nowrap">day streak</div>
               </div>
             </div>
-            <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl shadow-sm flex-1 touch-target">
+            <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl shadow-sm flex-1 touch-target transition-all duration-200 hover:shadow-md hover:scale-[1.02]">
               <Star className="w-5 h-5 text-amber-500 flex-shrink-0" />
               <div>
                 <div className="text-xl sm:text-2xl font-bold text-amber-600">
@@ -79,7 +79,7 @@ export default function DashboardPage() {
 
         {/* XP Progress Bar */}
         {stats && modalityStats && (
-          <Card className="p-4 bg-gradient-to-r from-amber-50 to-orange-50 border-amber-200">
+          <Card className="p-4 bg-gradient-to-r from-amber-50 to-orange-50 border-amber-200 slide-up">
             <div className="flex justify-between items-center mb-2 text-sm">
               <span className="font-semibold text-gray-700">Level Progress</span>
               <span className="text-gray-600">{xpToNext} XP to Level {modalityStats.level + 1}</span>
@@ -153,7 +153,7 @@ export default function DashboardPage() {
         </div>
 
         {/* Study Together Spotlight */}
-        <Card className="p-5 sm:p-6 bg-gradient-to-r from-emerald-500 to-teal-500 text-white">
+        <Card className="p-5 sm:p-6 bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:shadow-lg">
           <div className="flex flex-col gap-4">
             <div className="flex items-start gap-3 sm:gap-4">
               <div className="p-3 sm:p-4 bg-white/20 rounded-xl flex-shrink-0">

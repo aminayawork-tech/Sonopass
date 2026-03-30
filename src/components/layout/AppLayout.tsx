@@ -11,7 +11,7 @@ interface AppLayoutProps {
 
 export default function AppLayout({ children }: AppLayoutProps) {
   return (
-    <div className="min-h-screen bg-[#F5F7FA]">
+    <div className="min-h-screen bg-[#F5F7FA] transition-colors duration-300">
       <GlobalHeader />
 
       <div className="flex h-[calc(100vh-4rem)]">
@@ -19,7 +19,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
         <Sidebar />
 
         {/* Main Content */}
-        <main className="flex-1 overflow-y-auto smooth-scroll pb-24 lg:pb-0"
+        <main className="flex-1 overflow-y-auto smooth-scroll pb-24 lg:pb-0 page-transition"
           style={{
             paddingBottom: 'calc(5rem + max(env(safe-area-inset-bottom), 0px))',
           }}

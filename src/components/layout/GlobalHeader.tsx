@@ -10,10 +10,10 @@ export default function GlobalHeader() {
   const { currentModality } = useModality();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-200">
       <div className="flex h-16 items-center px-4 sm:px-6 lg:px-8 max-w-[1920px] mx-auto">
         {/* Logo */}
-        <Link href="/dashboard" className="flex items-center gap-2 mr-6">
+        <Link href="/dashboard" className="flex items-center gap-2 mr-6 transition-transform duration-200 hover:scale-105 active:scale-95">
           <h1 className="text-2xl font-black">
             <span className="text-gray-800">Sono</span>
             <span className="text-emerald-500">Pass</span>
@@ -50,14 +50,14 @@ export default function GlobalHeader() {
           </Link>
 
           {/* Notifications */}
-          <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors relative hidden sm:block">
+          <button className="p-2 hover:bg-gray-100 rounded-lg transition-all duration-200 relative hidden sm:block active:scale-95">
             <Bell className="w-5 h-5 text-gray-600" />
-            <span className="absolute top-1 right-1 w-2 h-2 bg-emerald-500 rounded-full"></span>
+            <span className="absolute top-1 right-1 w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
           </button>
 
           {/* Profile */}
           <Link href="/profile">
-            <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+            <button className="p-2 hover:bg-gray-100 rounded-lg transition-all duration-200 active:scale-95">
               <User className="w-5 h-5 text-gray-600" />
             </button>
           </Link>

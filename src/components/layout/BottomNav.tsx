@@ -32,7 +32,7 @@ export default function BottomNav() {
 
   return (
     <nav
-      className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t shadow-lg"
+      className="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t shadow-lg transition-transform duration-200"
       style={{
         paddingBottom: 'max(env(safe-area-inset-bottom), 0px)',
       }}
@@ -47,13 +47,18 @@ export default function BottomNav() {
               key={item.id}
               href={item.route}
               className={`
-                flex flex-col items-center justify-center gap-1 py-2 transition-all
-                touch-target active:scale-95
-                ${active ? 'text-emerald-600 bg-emerald-50/50' : 'text-gray-600 hover:bg-gray-50'}
+                flex flex-col items-center justify-center gap-1 py-2 transition-all duration-200
+                touch-target active:scale-95 relative
+                ${active ? 'text-emerald-600' : 'text-gray-600 hover:text-gray-900'}
               `}
             >
-              <Icon className={`w-6 h-6 transition-transform ${active ? 'scale-110' : ''}`} />
-              <span className="text-[10px] font-medium leading-tight">{item.label}</span>
+              {active && (
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-1 bg-emerald-500 rounded-b-full" />
+              )}
+              <Icon className={`w-6 h-6 transition-all duration-200 ${active ? 'scale-110' : ''}`} />
+              <span className={`text-[10px] font-medium leading-tight transition-all duration-200 ${active ? 'font-bold' : ''}`}>
+                {item.label}
+              </span>
             </Link>
           );
         })}

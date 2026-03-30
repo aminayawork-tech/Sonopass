@@ -11,13 +11,17 @@ export default function HomePage() {
   }, [router]);
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA] flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-black mb-2">
-          <span className="text-gray-800">Sono</span>
-          <span className="text-emerald-500">Pass</span>
+    <div className="min-h-screen bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center">
+      <div className="text-center scale-in">
+        <h1 className="text-5xl font-black mb-4">
+          <span className="text-white">Sono</span>
+          <span className="text-emerald-100">Pass</span>
         </h1>
-        <p className="text-gray-600">Redirecting to dashboard...</p>
+        <div className="flex items-center justify-center space-x-1">
+          <div className="w-2 h-2 bg-white rounded-full animate-bounce [animation-delay:-0.3s]" />
+          <div className="w-2 h-2 bg-white rounded-full animate-bounce [animation-delay:-0.15s]" />
+          <div className="w-2 h-2 bg-white rounded-full animate-bounce" />
+        </div>
       </div>
     </div>
   );

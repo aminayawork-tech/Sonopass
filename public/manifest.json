@@ -1,12 +1,13 @@
 {
   "name": "SonoPass - Ultrasound Registry Exam Prep",
   "short_name": "SonoPass",
-  "description": "Master your ultrasound registry exam with comprehensive practice questions",
+  "description": "Master your ultrasound registry exam with comprehensive practice questions and study tools",
   "start_url": "/dashboard",
   "display": "standalone",
-  "background_color": "#F5F7FA",
+  "background_color": "#10B981",
   "theme_color": "#10B981",
-  "orientation": "portrait",
+  "orientation": "portrait-primary",
+  "scope": "/",
   "icons": [
     {
       "src": "/icon-192.png",
