@@ -41,7 +41,7 @@ export default function MockExamsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA]">
+    <div className="min-h-screen bg-[#F5F7FA] pb-20">
       <TabNavigation />
       {/* Header */}
       <header className="px-4 sm:px-6 py-6 sm:py-8 bg-white border-b border-gray-100">

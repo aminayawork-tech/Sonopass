@@ -111,7 +111,7 @@ export default function StudyGuidePage() {
 
   if (!content) {
     return (
-      <div className="min-h-screen bg-[#F5F7FA] flex items-center justify-center">
+      <div className="min-h-screen bg-[#F5F7FA] pb-20 flex items-center justify-center">
         <p className="text-gray-600">Loading study guide...</p>
       </div>
     );
@@ -124,7 +124,7 @@ export default function StudyGuidePage() {
     const nextTopic = currentIndex < selectedCategory.topics.length - 1 ? selectedCategory.topics[currentIndex + 1] : null;
 
     return (
-      <div className="min-h-screen bg-[#F5F7FA]">
+      <div className="min-h-screen bg-[#F5F7FA] pb-20">
         <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-4 mb-3">
@@ -329,7 +329,7 @@ export default function StudyGuidePage() {
     const progress = (completedCount / totalTopics) * 100;
 
     return (
-      <div className="min-h-screen bg-[#F5F7FA]">
+      <div className="min-h-screen bg-[#F5F7FA] pb-20">
         <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10">
           <div className="max-w-6xl mx-auto">
             <Button

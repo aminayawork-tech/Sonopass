@@ -87,7 +87,7 @@ export default function GlossaryPage() {
   }, [terms, selectedCategory, searchQuery]);
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA]">
+    <div className="min-h-screen bg-[#F5F7FA] pb-20">
       <TabNavigation />
       {/* Header */}
       <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white border-b shadow-sm">

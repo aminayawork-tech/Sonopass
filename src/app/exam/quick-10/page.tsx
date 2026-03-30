@@ -29,7 +29,7 @@ export default function Quick10Page() {
 
   if (questions.length === 0 || !currentModality) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#F5F7FA]">
+      <div className="min-h-screen flex items-center justify-center bg-[#F5F7FA] pb-20">
         <TabNavigation />
         <div className="text-3xl font-semibold text-gray-600">Loading...</div>
       </div>
@@ -37,7 +37,7 @@ export default function Quick10Page() {
   }
 
   return (
-    <>
+    <div className="pb-20">
       <TabNavigation />
       <ExamInterface
         key={key}
@@ -48,6 +48,6 @@ export default function Quick10Page() {
         modality={currentModality.id}
         onRestart={() => setKey(k => k + 1)}
       />
-    </>
+    </div>
   );
 }

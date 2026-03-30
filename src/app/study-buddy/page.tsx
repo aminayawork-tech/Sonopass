@@ -154,7 +154,7 @@ export default function StudyBuddyPage() {
   // Lobby View
   if (view === 'lobby') {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 pb-20">
         <TabNavigation />
         {/* Header */}
         <header className="px-4 sm:px-6 py-6 sm:py-8 bg-white border-b border-gray-100">
@@ -339,7 +339,7 @@ export default function StudyBuddyPage() {
   // Create Session View
   if (view === 'create') {
     return (
-      <div className="min-h-screen bg-[#F5F7FA]">
+      <div className="min-h-screen bg-[#F5F7FA] pb-20">
         <TabNavigation />
         <div className="flex items-center justify-center p-4 min-h-[calc(100vh-60px)]">
         <Card className="w-full max-w-md p-8">
@@ -399,7 +399,7 @@ export default function StudyBuddyPage() {
   // Join Session View
   if (view === 'join') {
     return (
-      <div className="min-h-screen bg-[#F5F7FA]">
+      <div className="min-h-screen bg-[#F5F7FA] pb-20">
         <TabNavigation />
         <div className="flex items-center justify-center p-4 min-h-[calc(100vh-60px)]">
         <Card className="w-full max-w-md p-8">
@@ -467,7 +467,7 @@ export default function StudyBuddyPage() {
   // Session View (Waiting Room / Active Game)
   if (view === 'session' && currentSession) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
+      <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 pb-20">
         <TabNavigation />
         <header className="px-4 sm:px-6 py-6 bg-white border-b border-gray-100">
           <div className="max-w-4xl mx-auto">

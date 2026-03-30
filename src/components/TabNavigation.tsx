@@ -32,32 +32,37 @@ export default function TabNavigation() {
   };
 
   return (
-    <nav className="border-b border-gray-200 bg-white sticky top-0 z-20 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex overflow-x-auto scrollbar-hide -mb-px">
-          {tabs.map((tab) => {
-            const Icon = tab.icon;
-            const active = isActive(tab.route);
+    <nav
+      className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t shadow-lg"
+      style={{
+        paddingBottom: 'max(env(safe-area-inset-bottom), 0px)',
+      }}
+    >
+      <div className="grid grid-cols-6 max-w-7xl mx-auto">
+        {tabs.map((tab) => {
+          const Icon = tab.icon;
+          const active = isActive(tab.route);
 
-            return (
-              <Link
-                key={tab.id}
-                href={tab.route}
-                className={`
-                  flex items-center gap-2 px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base font-semibold whitespace-nowrap
-                  border-b-2 transition-all flex-shrink-0
-                  ${active
-                    ? 'border-emerald-500 text-emerald-600'
-                    : 'border-transparent text-gray-600 hover:text-gray-900 hover:border-gray-300'
-                  }
-                `}
-              >
-                <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="hidden sm:inline">{tab.name}</span>
-              </Link>
-            );
-          })}
-        </div>
+          return (
+            <Link
+              key={tab.id}
+              href={tab.route}
+              className={`
+                flex flex-col items-center justify-center gap-1 py-2 transition-all duration-200
+                touch-target active:scale-95 relative
+                ${active ? 'text-emerald-600' : 'text-gray-600 hover:text-gray-900'}
+              `}
+            >
+              {active && (
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-1 bg-emerald-500 rounded-b-full" />
+              )}
+              <Icon className={`w-5 h-5 sm:w-6 sm:h-6 transition-all duration-200 ${active ? 'scale-110' : ''}`} />
+              <span className={`text-[10px] font-medium leading-tight transition-all duration-200 ${active ? 'font-bold' : ''}`}>
+                {tab.name}
+              </span>
+            </Link>
+          );
+        })}
       </div>
     </nav>
   );
