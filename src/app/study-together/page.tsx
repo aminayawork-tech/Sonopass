@@ -125,7 +125,7 @@ export default function StudyTogetherPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Friend System</h3>
               <p className="text-gray-600 text-sm mb-4">
-                Connect with other learners, track each other's progress, and motivate one another
+                Connect with other learners, track each other&apos;s progress, and motivate one another
               </p>
               <Button variant="outline" className="w-full" disabled>
                 Coming Soon

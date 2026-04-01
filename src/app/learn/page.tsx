@@ -114,7 +114,7 @@ export default function LearnPage() {
           <h3 className="font-bold text-gray-900 mb-2">💡 Study Tip</h3>
           <p className="text-gray-700">
             Start with the Study Guide to understand core concepts, then use the Glossary to
-            reinforce terminology. Once you're comfortable, move to the Practice section to
+            reinforce terminology. Once you&apos;re comfortable, move to the Practice section to
             test your knowledge!
           </p>
         </Card>

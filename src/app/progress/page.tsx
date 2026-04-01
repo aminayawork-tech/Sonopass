@@ -263,7 +263,7 @@ export default function ProgressPage() {
               <div className="flex items-start gap-3">
                 <Target className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-700">
-                  <strong>Keep Practicing:</strong> You've completed {completionRate}% of the question bank. More practice will improve your confidence!
+                  <strong>Keep Practicing:</strong> You&apos;ve completed {completionRate}% of the question bank. More practice will improve your confidence!
                 </p>
               </div>
             )}
