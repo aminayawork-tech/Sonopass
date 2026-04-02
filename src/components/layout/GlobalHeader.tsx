@@ -18,7 +18,7 @@ export default function GlobalHeader() {
       <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm transition-all duration-200">
         <div className="flex h-14 items-center px-4 justify-between max-w-[1920px] mx-auto">
           {/* Logo */}
-          <Link href="/dashboard" className="flex items-center gap-2 transition-transform duration-200 active:scale-95">
+          <Link href="/dashboard" className="flex items-center gap-2 transition-transform duration-200 active:scale-95 bg-white px-2 py-1 rounded">
             <Image
               src="/sonopass-logo.png"
               alt="SonoPass"
