@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, Search, Bell, User, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ModalitySelectorDropdown } from '@/components/ModalitySelector';
@@ -18,10 +19,14 @@ export default function GlobalHeader() {
         <div className="flex h-14 items-center px-4 justify-between max-w-[1920px] mx-auto">
           {/* Logo */}
           <Link href="/dashboard" className="flex items-center gap-2 transition-transform duration-200 active:scale-95">
-            <h1 className="text-xl font-black">
-              <span className="text-gray-800">Sono</span>
-              <span className="text-emerald-500">Pass</span>
-            </h1>
+            <Image
+              src="/sonopass-logo.png"
+              alt="SonoPass"
+              width={140}
+              height={40}
+              className="h-8 w-auto"
+              priority
+            />
           </Link>
 
           {/* Center - Modality on Desktop */}
