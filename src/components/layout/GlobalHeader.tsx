@@ -14,13 +14,13 @@ export default function GlobalHeader() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm transition-all duration-200">
+      <header className="sticky top-0 z-50 w-full border-b border-sono-gray-300 bg-white shadow-sm transition-all duration-200">
         <div className="flex h-14 items-center px-4 justify-between max-w-[1920px] mx-auto">
           {/* Logo */}
           <Link href="/dashboard" className="flex items-center gap-2 transition-transform duration-200 active:scale-95">
             <h1 className="text-xl font-black">
-              <span className="text-gray-800">Sono</span>
-              <span className="text-emerald-500">Pass</span>
+              <span className="text-sono-gray-900">Sono</span>
+              <span className="text-sono-teal-deep">Pass</span>
             </h1>
           </Link>
 
@@ -34,15 +34,16 @@ export default function GlobalHeader() {
             {/* Hamburger Menu */}
             <button
               onClick={() => setIsMenuOpen(true)}
-              className="p-2.5 hover:bg-gray-100 rounded-xl transition-all duration-200 active:scale-95"
+              className="p-2.5 hover:bg-sono-gray-100 rounded-xl transition-all duration-200 active:scale-95"
+              aria-label="Open menu"
             >
-              <Menu className="w-6 h-6 text-gray-600" />
+              <Menu className="w-6 h-6 text-sono-gray-600" />
             </button>
           </div>
         </div>
 
         {/* Modality Switcher - Mobile/Tablet (Below Header) */}
-        <div className="lg:hidden px-4 pb-3 pt-2 border-t border-gray-100">
+        <div className="lg:hidden px-4 pb-3 pt-2 border-t border-sono-gray-100">
           <ModalitySelectorDropdown />
         </div>
       </header>

@@ -18,6 +18,34 @@ const config: Config = {
     },
     extend: {
       colors: {
+        // SonoPass Professional Medical Palette
+        sono: {
+          teal: {
+            deep: "hsl(var(--sono-teal-deep))",
+            medium: "hsl(var(--sono-teal-medium))",
+          },
+          blue: {
+            soft: "hsl(var(--sono-blue-soft))",
+            light: "hsl(var(--sono-blue-light))",
+          },
+          green: {
+            ultrasound: "hsl(var(--sono-green-ultrasound))",
+            soft: "hsl(var(--sono-green-soft))",
+          },
+          gray: {
+            50: "hsl(var(--sono-gray-50))",
+            100: "hsl(var(--sono-gray-100))",
+            300: "hsl(var(--sono-gray-300))",
+            600: "hsl(var(--sono-gray-600))",
+            900: "hsl(var(--sono-gray-900))",
+          },
+          amber: "hsl(var(--sono-amber))",
+          orange: "hsl(var(--sono-orange))",
+          purple: "hsl(var(--sono-purple))",
+          red: "hsl(var(--sono-red))",
+          white: "hsl(var(--sono-white))",
+        },
+        // Mapped Tailwind Variables
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

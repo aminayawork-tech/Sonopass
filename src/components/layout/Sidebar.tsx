@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Zap, Brain, Users, TrendingUp, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Home, BookOpen, ClipboardCheck, TrendingUp, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 
 interface NavItem {
@@ -10,32 +10,55 @@ interface NavItem {
   label: string;
   icon: React.ComponentType<{ className?: string }>;
   route: string;
-  highlight?: boolean;
+  matchPaths?: string[]; // Additional paths that should trigger active state
 }
 
 const navItems: NavItem[] = [
-  { id: 'dashboard', label: 'Dashboard', icon: Home, route: '/dashboard' },
-  { id: 'learn', label: 'Learn', icon: BookOpen, route: '/learn' },
-  { id: 'practice', label: 'Practice', icon: Zap, route: '/practice' },
-  { id: 'test', label: 'Test', icon: Brain, route: '/test' },
-  { id: 'study-together', label: 'Study Together', icon: Users, route: '/study-together', highlight: true },
-  { id: 'progress', label: 'Progress', icon: TrendingUp, route: '/progress' },
+  {
+    id: 'main',
+    label: 'Main',
+    icon: Home,
+    route: '/dashboard',
+    matchPaths: ['/']
+  },
+  {
+    id: 'study',
+    label: 'Study Mode',
+    icon: BookOpen,
+    route: '/practice',
+    matchPaths: ['/exam/study', '/study-guide', '/glossary', '/study-together', '/learn']
+  },
+  {
+    id: 'exams',
+    label: 'Mock Exams',
+    icon: ClipboardCheck,
+    route: '/exam/mock-exams',
+    matchPaths: ['/exam/mock-1', '/exam/mock-2', '/exam/mock-3', '/exam/mock-4', '/exam/quick-10', '/test']
+  },
+  {
+    id: 'progress',
+    label: 'Progress',
+    icon: TrendingUp,
+    route: '/progress',
+    matchPaths: ['/stats']
+  },
 ];
 
 export default function Sidebar() {
   const pathname = usePathname();
   const [collapsed, setCollapsed] = useState(false);
 
-  const isActive = (route: string) => {
-    if (route === '/dashboard') {
-      return pathname === '/' || pathname === '/dashboard';
+  const isActive = (item: NavItem) => {
+    if (pathname === item.route) return true;
+    if (item.matchPaths) {
+      return item.matchPaths.some(path => pathname?.startsWith(path));
     }
-    return pathname?.startsWith(route);
+    return pathname?.startsWith(item.route);
   };
 
   return (
     <aside
-      className={`hidden lg:flex flex-col bg-white border-r transition-all duration-300 ${
+      className={`hidden lg:flex flex-col bg-white border-r border-sono-gray-300 transition-all duration-300 ${
         collapsed ? 'w-20' : 'w-64'
       }`}
     >
@@ -43,44 +66,39 @@ export default function Sidebar() {
       <div className="flex items-center justify-end p-4">
         <button
           onClick={() => setCollapsed(!collapsed)}
-          className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+          className="p-2 hover:bg-sono-gray-100 rounded-lg transition-colors"
+          aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
         >
           {collapsed ? (
-            <ChevronRight className="w-5 h-5 text-gray-600" />
+            <ChevronRight className="w-5 h-5 text-sono-gray-600" />
           ) : (
-            <ChevronLeft className="w-5 h-5 text-gray-600" />
+            <ChevronLeft className="w-5 h-5 text-sono-gray-600" />
           )}
         </button>
       </div>
 
       {/* Navigation Items */}
-      <nav className="flex-1 px-3 space-y-1">
+      <nav className="flex-1 px-3 space-y-2">
         {navItems.map((item) => {
           const Icon = item.icon;
-          const active = isActive(item.route);
+          const active = isActive(item);
 
           return (
             <Link
               key={item.id}
               href={item.route}
               className={`
-                flex items-center gap-3 px-3 py-3 rounded-lg transition-all
+                flex items-center gap-3 px-4 py-3.5 rounded-xl transition-all duration-200
                 ${collapsed ? 'justify-center' : ''}
                 ${
                   active
-                    ? 'bg-emerald-50 text-emerald-600 font-semibold'
-                    : 'text-gray-700 hover:bg-gray-100'
+                    ? 'bg-sono-teal-deep/10 text-sono-teal-deep font-semibold border-l-4 border-sono-teal-deep'
+                    : 'text-sono-gray-700 hover:bg-sono-gray-100'
                 }
-                ${item.highlight && !active ? 'ring-2 ring-emerald-200' : ''}
               `}
             >
-              <Icon className="w-5 h-5 flex-shrink-0" />
-              {!collapsed && <span>{item.label}</span>}
-              {item.highlight && !collapsed && !active && (
-                <span className="ml-auto text-xs bg-emerald-500 text-white px-2 py-0.5 rounded-full">
-                  New
-                </span>
-              )}
+              <Icon className="w-6 h-6 flex-shrink-0" />
+              {!collapsed && <span className="text-sm">{item.label}</span>}
             </Link>
           );
         })}
@@ -88,9 +106,12 @@ export default function Sidebar() {
 
       {/* Footer */}
       {!collapsed && (
-        <div className="p-4 border-t">
-          <div className="text-xs text-gray-500 text-center">
+        <div className="p-4 border-t border-sono-gray-300">
+          <div className="text-xs text-sono-gray-600 text-center">
             SonoPass v1.0
+            <div className="text-[10px] text-sono-gray-500 mt-1">
+              One platform. One goal.
+            </div>
           </div>
         </div>
       )}

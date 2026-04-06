@@ -21,6 +21,7 @@ import {
   AlertCircle,
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
+import RegistryReadinessWidget from '@/components/RegistryReadinessWidget';
 
 export default function ProgressPage() {
   const [stats, setStats] = useState<UserStats | null>(null);
@@ -56,134 +57,148 @@ export default function ProgressPage() {
 
   return (
     <AppLayout>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-5 sm:space-y-6">
         {/* Page Header */}
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">Progress</h1>
-            <p className="text-gray-600 mt-1">
+            <h1 className="text-2xl sm:text-3xl font-bold text-sono-gray-900">Progress</h1>
+            <p className="text-sm sm:text-base text-sono-gray-600 mt-1">
               Track your learning journey and identify areas for improvement
             </p>
           </div>
         </div>
 
+        {/* Registry Readiness - Hero Section */}
+        <Card className="p-6 sm:p-8 bg-gradient-to-br from-sono-teal-deep/5 to-sono-blue-soft/5 border border-sono-teal-deep/20 shadow-md rounded-2xl">
+          <div className="flex flex-col items-center">
+            <RegistryReadinessWidget size="large" showLabel={true} />
+          </div>
+        </Card>
+
         {/* Overall Stats Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
-          <Card className="p-5 bg-white">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
+          <Card className="p-4 sm:p-5 bg-white border border-sono-gray-300 rounded-2xl shadow-sm">
             <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 bg-emerald-100 rounded-lg">
-                <CheckCircle className="w-5 h-5 text-emerald-600" />
+              <div className="p-2 bg-sono-green-ultrasound/10 rounded-xl">
+                <CheckCircle className="w-5 h-5 text-sono-green-soft" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-gray-900">
+                <div className="text-xl sm:text-2xl font-bold text-sono-gray-900">
                   {modalityStats?.totalAnswered ?? 0}
                 </div>
-                <div className="text-xs text-gray-600">Questions Done</div>
+                <div className="text-xs text-sono-gray-600">Questions Done</div>
               </div>
             </div>
           </Card>
 
-          <Card className="p-5 bg-white">
+          <Card className="p-4 sm:p-5 bg-white border border-sono-gray-300 rounded-2xl shadow-sm">
             <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 bg-blue-100 rounded-lg">
-                <Target className="w-5 h-5 text-blue-600" />
+              <div className="p-2 bg-sono-blue-soft/10 rounded-xl">
+                <Target className="w-5 h-5 text-sono-blue-soft" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-blue-600">{accuracy}%</div>
-                <div className="text-xs text-gray-600">Accuracy</div>
+                <div className="text-xl sm:text-2xl font-bold text-sono-blue-soft">{accuracy}%</div>
+                <div className="text-xs text-sono-gray-600">Accuracy</div>
               </div>
             </div>
           </Card>
 
-          <Card className="p-5 bg-white">
+          <Card className="p-4 sm:p-5 bg-white border border-sono-gray-300 rounded-2xl shadow-sm">
             <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 bg-orange-100 rounded-lg">
-                <Flame className="w-5 h-5 text-orange-500" />
+              <div className="p-2 bg-sono-orange/10 rounded-xl">
+                <Flame className="w-5 h-5 text-sono-orange" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-orange-500">
+                <div className="text-xl sm:text-2xl font-bold text-sono-orange">
                   {stats?.streak ?? 0}
                 </div>
-                <div className="text-xs text-gray-600">Day Streak</div>
+                <div className="text-xs text-sono-gray-600">Day Streak</div>
               </div>
             </div>
           </Card>
 
-          <Card className="p-5 bg-white">
+          <Card className="p-4 sm:p-5 bg-white border border-sono-gray-300 rounded-2xl shadow-sm">
             <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 bg-amber-100 rounded-lg">
-                <Star className="w-5 h-5 text-amber-600" />
+              <div className="p-2 bg-sono-amber/10 rounded-xl">
+                <Star className="w-5 h-5 text-sono-amber" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-amber-600">
+                <div className="text-xl sm:text-2xl font-bold text-sono-amber">
                   Level {modalityStats?.level ?? 1}
                 </div>
-                <div className="text-xs text-gray-600">{modalityStats?.xp ?? 0} XP</div>
+                <div className="text-xs text-sono-gray-600">{modalityStats?.xp ?? 0} XP</div>
               </div>
             </div>
           </Card>
 
-          <Card className="p-5 bg-white">
+          <Card className="p-4 sm:p-5 bg-white border border-sono-gray-300 rounded-2xl shadow-sm">
             <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 bg-purple-100 rounded-lg">
-                <Trophy className="w-5 h-5 text-purple-600" />
+              <div className="p-2 bg-sono-purple/10 rounded-xl">
+                <Trophy className="w-5 h-5 text-sono-purple" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-purple-600">
+                <div className="text-xl sm:text-2xl font-bold text-sono-purple">
                   {stats?.badges?.length ?? 0}
                 </div>
-                <div className="text-xs text-gray-600">Badges</div>
+                <div className="text-xs text-sono-gray-600">Badges</div>
               </div>
             </div>
           </Card>
         </div>
 
         {/* Level Progress */}
-        <Card className="p-6 bg-gradient-to-r from-amber-50 to-orange-50 border-amber-200">
+        <Card className="p-5 sm:p-6 bg-gradient-to-r from-amber-50 to-orange-50 border border-sono-amber/30 rounded-2xl shadow-sm">
           <div className="flex items-center justify-between mb-3">
             <div>
-              <h3 className="text-lg font-bold text-gray-900">Level Progress</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-base sm:text-lg font-bold text-sono-gray-900">Level Progress</h3>
+              <p className="text-xs sm:text-sm text-sono-gray-600">
                 {xpToNext} XP to reach Level {(modalityStats?.level ?? 1) + 1}
               </p>
             </div>
-            <Star className="w-8 h-8 text-amber-500" />
+            <Star className="w-7 h-7 sm:w-8 sm:h-8 text-sono-amber" />
           </div>
-          <Progress value={xpProgress} className="h-4 bg-amber-100" />
+          <Progress value={xpProgress} className="h-3 sm:h-4 bg-amber-100" />
         </Card>
 
         {/* Completion Progress */}
-        <Card className="p-6 bg-white">
+        <Card className="p-5 sm:p-6 bg-white border border-sono-gray-300 rounded-2xl shadow-sm">
           <div className="flex items-center justify-between mb-3">
             <div>
-              <h3 className="text-lg font-bold text-gray-900">Question Bank Progress</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-base sm:text-lg font-bold text-sono-gray-900">Question Bank Progress</h3>
+              <p className="text-xs sm:text-sm text-sono-gray-600">
                 {modalityStats?.totalAnswered ?? 0} of {currentModality?.questionCount ?? 0} questions completed
               </p>
             </div>
-            <div className="text-3xl font-bold text-emerald-600">{completionRate}%</div>
+            <div className="text-2xl sm:text-3xl font-bold text-sono-green-soft">{completionRate}%</div>
           </div>
-          <Progress value={completionRate} className="h-4 bg-gray-100" />
+          <Progress value={completionRate} className="h-3 sm:h-4 bg-gray-100" />
         </Card>
 
         {/* Performance by Category */}
-        <Card className="p-6 bg-white">
-          <h3 className="text-lg font-bold text-gray-900 mb-4">Performance by Category</h3>
+        <Card className="p-5 sm:p-6 bg-white border border-sono-gray-300 rounded-2xl shadow-sm">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-base sm:text-lg font-bold text-sono-gray-900">Performance by Category</h3>
+            <Link href="/practice">
+              <Button variant="link" className="text-sono-teal-deep text-sm">
+                Study Now →
+              </Button>
+            </Link>
+          </div>
           <div className="space-y-4">
             {categoryPerformance.map((category) => (
               <div key={category.name}>
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex-1">
-                    <div className="font-semibold text-gray-900">{category.name}</div>
-                    <div className="text-sm text-gray-600">
+                    <div className="font-semibold text-sono-gray-900">{category.name}</div>
+                    <div className="text-xs sm:text-sm text-sono-gray-600">
                       {category.correct} / {category.total} correct
                     </div>
                   </div>
-                  <div className={`text-2xl font-bold ${
-                    category.percentage >= 80 ? 'text-emerald-600' :
-                    category.percentage >= 70 ? 'text-blue-600' :
-                    category.percentage >= 60 ? 'text-orange-500' :
-                    'text-red-500'
+                  <div className={`text-xl sm:text-2xl font-bold ${
+                    category.percentage >= 80 ? 'text-sono-green-soft' :
+                    category.percentage >= 70 ? 'text-sono-blue-soft' :
+                    category.percentage >= 60 ? 'text-sono-orange' :
+                    'text-sono-red'
                   }`}>
                     {category.percentage}%
                   </div>
@@ -191,10 +206,10 @@ export default function ProgressPage() {
                 <Progress
                   value={category.percentage}
                   className={`h-2 ${
-                    category.percentage >= 80 ? 'bg-emerald-100' :
-                    category.percentage >= 70 ? 'bg-blue-100' :
-                    category.percentage >= 60 ? 'bg-orange-100' :
-                    'bg-red-100'
+                    category.percentage >= 80 ? 'bg-sono-green-ultrasound/20' :
+                    category.percentage >= 70 ? 'bg-sono-blue-soft/20' :
+                    category.percentage >= 60 ? 'bg-sono-orange/20' :
+                    'bg-sono-red/20'
                   }`}
                 />
               </div>
@@ -204,17 +219,19 @@ export default function ProgressPage() {
 
         {/* Weak Areas Focus */}
         {weakestCategory.percentage < 75 && (
-          <Card className="p-6 bg-gradient-to-r from-orange-50 to-red-50 border-orange-200">
+          <Card className="p-5 sm:p-6 bg-gradient-to-r from-sono-teal-deep/5 to-sono-blue-soft/5 border border-sono-teal-deep/20 rounded-2xl shadow-sm">
             <div className="flex items-start gap-4">
-              <AlertCircle className="w-8 h-8 text-orange-600 flex-shrink-0" />
+              <div className="p-3 bg-sono-teal-deep/10 rounded-xl flex-shrink-0">
+                <AlertCircle className="w-6 h-6 text-sono-teal-deep" />
+              </div>
               <div className="flex-1">
-                <h3 className="text-lg font-bold text-gray-900 mb-1">Focus Area Detected</h3>
-                <p className="text-gray-700 mb-4">
+                <h3 className="text-base sm:text-lg font-bold text-sono-gray-900 mb-1">Focus Area Detected</h3>
+                <p className="text-sm sm:text-base text-sono-gray-700 mb-4">
                   Your weakest category is <strong>{weakestCategory.name}</strong> at {weakestCategory.percentage}%.
                   Focus your practice here to improve your overall score!
                 </p>
                 <Link href="/practice">
-                  <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                  <Button className="bg-sono-teal-deep hover:bg-sono-teal-medium text-white rounded-xl h-11">
                     <Target className="w-4 h-4 mr-2" />
                     Practice This Category
                   </Button>
@@ -226,22 +243,22 @@ export default function ProgressPage() {
 
         {/* Badges Section */}
         {stats && stats.badges && stats.badges.length > 0 && (
-          <Card className="p-6 bg-white">
-            <h3 className="text-lg font-bold text-gray-900 mb-4">Badges Earned</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <Card className="p-5 sm:p-6 bg-white border border-sono-gray-300 rounded-2xl shadow-sm">
+            <h3 className="text-base sm:text-lg font-bold text-sono-gray-900 mb-4">Badges Earned</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
               {stats.badges.map((badgeId, index) => {
                 const badgeInfo = getBadgeInfo(badgeId);
                 return (
                   <div
                     key={badgeId || index}
-                    className="flex flex-col items-center p-4 bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg border border-amber-200"
+                    className="flex flex-col items-center p-4 bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl border border-sono-amber/30"
                   >
                     <div className="text-3xl mb-2">{badgeInfo?.icon || '🏆'}</div>
-                    <div className="text-sm font-semibold text-center text-gray-900">
+                    <div className="text-xs sm:text-sm font-semibold text-center text-sono-gray-900">
                       {badgeInfo?.name || badgeId}
                     </div>
                     {badgeInfo?.description && (
-                      <div className="text-xs text-gray-600 text-center mt-1">
+                      <div className="text-[10px] sm:text-xs text-sono-gray-600 text-center mt-1">
                         {badgeInfo.description}
                       </div>
                     )}
@@ -253,29 +270,29 @@ export default function ProgressPage() {
         )}
 
         {/* Study Recommendations */}
-        <Card className="p-6 bg-gradient-to-r from-emerald-50 to-teal-50 border-emerald-200">
-          <h3 className="text-lg font-bold text-gray-900 mb-4">📚 Study Recommendations</h3>
+        <Card className="p-5 sm:p-6 bg-gradient-to-r from-sono-green-ultrasound/5 to-sono-green-soft/5 border border-sono-green-soft/30 rounded-2xl shadow-sm">
+          <h3 className="text-base sm:text-lg font-bold text-sono-gray-900 mb-4">📚 Study Recommendations</h3>
           <div className="space-y-3">
             {accuracy < 70 && (
               <div className="flex items-start gap-3">
-                <Brain className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                <p className="text-gray-700">
+                <Brain className="w-5 h-5 text-sono-green-soft flex-shrink-0 mt-0.5" />
+                <p className="text-sm sm:text-base text-sono-gray-700">
                   <strong>Use Study Mode:</strong> Your accuracy is below 70%. Try Study Mode for instant feedback and better understanding.
                 </p>
               </div>
             )}
             {completionRate < 50 && (
               <div className="flex items-start gap-3">
-                <Target className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                <p className="text-gray-700">
+                <Target className="w-5 h-5 text-sono-green-soft flex-shrink-0 mt-0.5" />
+                <p className="text-sm sm:text-base text-sono-gray-700">
                   <strong>Keep Practicing:</strong> You&apos;ve completed {completionRate}% of the question bank. More practice will improve your confidence!
                 </p>
               </div>
             )}
             {accuracy >= 80 && completionRate >= 60 && (
               <div className="flex items-start gap-3">
-                <Trophy className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                <p className="text-gray-700">
+                <Trophy className="w-5 h-5 text-sono-green-soft flex-shrink-0 mt-0.5" />
+                <p className="text-sm sm:text-base text-sono-gray-700">
                   <strong>Ready for Mock Exams:</strong> Your performance is strong! Time to test yourself with full-length mock exams.
                 </p>
               </div>
