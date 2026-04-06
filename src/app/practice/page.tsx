@@ -28,12 +28,14 @@ export default function StudyModePage() {
     ? Math.round((modalityStats.totalCorrect / modalityStats.totalAnswered) * 100)
     : 0;
 
-  // Mock category data - in real app this would come from API/database
+  // Vascular-only categories from study-guides/vascular/categories.json
   const categories = [
-    { id: 'vascular', name: 'Vascular Ultrasound', icon: '🫀', progress: 82, completed: 125, total: 150, color: 'sono-teal-deep' },
-    { id: 'abdominal', name: 'Abdominal Ultrasound', icon: '🫁', progress: 45, completed: 67, total: 180, color: 'sono-blue-soft' },
-    { id: 'obgyn', name: 'OB/GYN Ultrasound', icon: '👶', progress: 94, completed: 168, total: 170, color: 'sono-purple' },
-    { id: 'physics', name: 'Physics & Instrumentation', icon: '⚡', progress: 67, completed: 89, total: 130, color: 'sono-amber' },
+    { id: 'vascular', name: 'Vascular', icon: '🫀', progress: 82, completed: 125, total: 150, color: 'sono-purple' },
+    { id: 'general-other', name: 'General & Other', icon: '📖', progress: 45, completed: 67, total: 180, color: 'sono-blue-soft' },
+    { id: 'cerebrovascular', name: 'Cerebrovascular', icon: '🧠', progress: 94, completed: 168, total: 170, color: 'sono-green-ultrasound' },
+    { id: 'arterial-anatomy', name: 'Arterial Anatomy', icon: '❤️', progress: 67, completed: 89, total: 130, color: 'sono-amber' },
+    { id: 'arterial-hemodynamics', name: 'Arterial Hemodynamics', icon: '📊', progress: 55, completed: 38, total: 70, color: 'sono-red' },
+    { id: 'arterial-disease', name: 'Arterial Disease', icon: '⚠️', progress: 30, completed: 24, total: 80, color: 'sono-blue-light' },
   ];
 
   return (
@@ -181,7 +183,7 @@ export default function StudyModePage() {
             {/* Quick Actions */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
               <Link href="/exam/quick-10">
-                <Card className="p-5 bg-gradient-to-br from-sono-green-soft to-sono-green-ultrasound text-white hover:shadow-lg transition-all cursor-pointer rounded-2xl">
+                <Card className="p-5 bg-gradient-to-br from-sono-green-ultrasound to-sono-green-soft text-sono-gray-900 hover:shadow-lg transition-all cursor-pointer rounded-2xl">
                   <div className="flex items-center gap-3 mb-2">
                     <Zap className="w-6 h-6" />
                     <h3 className="font-bold text-lg">Quick 10</h3>
