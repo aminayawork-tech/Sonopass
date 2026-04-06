@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
-import { getStats, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
+import { getStats, getCurrentModalityStats, getBadgeInfo, type UserStats } from '@/lib/userStats';
 import { useModality } from '@/contexts/ModalityContext';
 import {
   TrendingUp,
@@ -229,20 +229,25 @@ export default function ProgressPage() {
           <Card className="p-6 bg-white">
             <h3 className="text-lg font-bold text-gray-900 mb-4">Badges Earned</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {stats.badges.map((badge) => (
-                <div
-                  key={badge.id}
-                  className="flex flex-col items-center p-4 bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg border border-amber-200"
-                >
-                  <Award className="w-10 h-10 text-amber-500 mb-2" />
-                  <div className="text-sm font-semibold text-center text-gray-900">
-                    {badge.name}
+              {stats.badges.map((badgeId, index) => {
+                const badgeInfo = getBadgeInfo(badgeId);
+                return (
+                  <div
+                    key={badgeId || index}
+                    className="flex flex-col items-center p-4 bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg border border-amber-200"
+                  >
+                    <div className="text-3xl mb-2">{badgeInfo?.icon || '🏆'}</div>
+                    <div className="text-sm font-semibold text-center text-gray-900">
+                      {badgeInfo?.name || badgeId}
+                    </div>
+                    {badgeInfo?.description && (
+                      <div className="text-xs text-gray-600 text-center mt-1">
+                        {badgeInfo.description}
+                      </div>
+                    )}
                   </div>
-                  <div className="text-xs text-gray-600 text-center mt-1">
-                    {new Date(badge.earnedAt).toLocaleDateString()}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </Card>
         )}
@@ -263,7 +268,7 @@ export default function ProgressPage() {
               <div className="flex items-start gap-3">
                 <Target className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-700">
-                  <strong>Keep Practicing:</strong> You've completed {completionRate}% of the question bank. More practice will improve your confidence!
+                  <strong>Keep Practicing:</strong> You&apos;ve completed {completionRate}% of the question bank. More practice will improve your confidence!
                 </p>
               </div>
             )}

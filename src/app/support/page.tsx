@@ -11,7 +11,7 @@ export default function SupportPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
         <div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Contact Support</h1>
-          <p className="text-gray-600">We're here to help you succeed</p>
+          <p className="text-gray-600">We&apos;re here to help you succeed</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -57,7 +57,7 @@ export default function SupportPage() {
               <div className="space-y-3">
                 <div className="border-l-4 border-emerald-500 pl-4">
                   <h3 className="font-semibold text-gray-900">How do I reset my password?</h3>
-                  <p className="text-sm text-gray-600">Visit the login page and click "Forgot Password"</p>
+                  <p className="text-sm text-gray-600">Visit the login page and click &quot;Forgot Password&quot;</p>
                 </div>
                 <div className="border-l-4 border-blue-500 pl-4">
                   <h3 className="font-semibold text-gray-900">Can I access SonoPass offline?</h3>

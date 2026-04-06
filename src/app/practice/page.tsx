@@ -180,7 +180,7 @@ export default function PracticePage() {
           <Card className="p-6 bg-gradient-to-r from-emerald-50 to-teal-50 border-emerald-200">
             <h3 className="font-bold text-gray-900 mb-2">🎯 Great Job!</h3>
             <p className="text-gray-700 mb-3">
-              You're performing well with {accuracy}% accuracy. Ready to test yourself with a full mock exam?
+              You&apos;re performing well with {accuracy}% accuracy. Ready to test yourself with a full mock exam?
             </p>
             <Link href="/test">
               <Button className="bg-emerald-500 hover:bg-emerald-600 text-white">
