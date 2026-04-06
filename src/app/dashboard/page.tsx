@@ -62,7 +62,7 @@ export default function DashboardPage() {
           </div>
 
           {/* Registry Readiness - Hero Section */}
-          <Card className="p-6 sm:p-8 bg-gradient-to-br from-sono-teal-deep/5 to-sono-blue-soft/5 border-sono-teal-deep/20 shadow-md rounded-2xl">
+          <Card className="p-6 sm:p-8 bg-gradient-to-br from-sono-green-ultrasound/5 to-sono-blue-soft/5 border-sono-green-ultrasound/20 shadow-md rounded-2xl">
             <div className="flex flex-col items-center">
               <RegistryReadinessWidget size="large" showLabel={true} />
             </div>
@@ -126,7 +126,7 @@ export default function DashboardPage() {
                 <div className="text-xs sm:text-sm text-sono-gray-600">Accuracy</div>
                 {accuracy < 70 && (
                   <Link href="/practice">
-                    <Button variant="link" size="sm" className="p-0 h-auto text-xs mt-1 text-sono-teal-deep">
+                    <Button variant="link" size="sm" className="p-0 h-auto text-xs mt-1 text-sono-green-ultrasound">
                       Study Now →
                     </Button>
                   </Link>
@@ -166,7 +166,7 @@ export default function DashboardPage() {
 
         {/* Personalized Recommendation Card */}
         {accuracy > 0 && accuracy < 70 && (
-          <Card className="p-6 sm:p-7 bg-gradient-to-r from-sono-teal-deep to-sono-teal-medium text-white shadow-lg hover:shadow-xl transition-all rounded-2xl active:scale-[0.99]">
+          <Card className="p-6 sm:p-7 bg-gradient-to-r from-sono-green-ultrasound to-sono-green-soft text-sono-gray-900 shadow-lg hover:shadow-xl transition-all rounded-2xl active:scale-[0.99]">
             <div className="flex flex-col gap-4">
               <div className="flex items-start gap-4 sm:gap-5">
                 <div className="p-4 bg-white/20 rounded-2xl flex-shrink-0">
@@ -180,7 +180,7 @@ export default function DashboardPage() {
                 </div>
               </div>
               <Link href="/practice" className="w-full sm:w-auto">
-                <Button className="w-full sm:w-auto bg-white text-sono-teal-deep hover:bg-gray-50 font-semibold touch-target active:scale-[0.98] rounded-xl h-12 px-6">
+                <Button className="w-full sm:w-auto bg-white text-sono-green-ultrasound hover:bg-gray-50 font-semibold touch-target active:scale-[0.98] rounded-xl h-12 px-6">
                   Study Now
                   <ChevronRight className="w-4 h-4 ml-1" />
                 </Button>
@@ -277,8 +277,8 @@ export default function DashboardPage() {
               <Card className="p-5 sm:p-6 bg-white border border-sono-gray-300 shadow-md hover:shadow-lg transition-all active:scale-[0.98] cursor-pointer touch-target rounded-2xl">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4 flex-1 min-w-0">
-                    <div className="p-3 bg-sono-teal-deep/10 rounded-xl flex-shrink-0">
-                      <BookOpen className="w-6 h-6 text-sono-teal-deep" />
+                    <div className="p-3 bg-sono-green-ultrasound/10 rounded-xl flex-shrink-0">
+                      <BookOpen className="w-6 h-6 text-sono-green-ultrasound" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="font-bold text-sono-gray-900 text-base sm:text-lg mb-1">Study Guide</h3>

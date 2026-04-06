@@ -20,7 +20,7 @@ export default function GlobalHeader() {
           <Link href="/dashboard" className="flex items-center gap-2 transition-transform duration-200 active:scale-95">
             <h1 className="text-xl font-black">
               <span className="text-sono-gray-900">Sono</span>
-              <span className="text-sono-teal-deep">Pass</span>
+              <span className="text-sono-green-ultrasound">Pass</span>
             </h1>
           </Link>
 

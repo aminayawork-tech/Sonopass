@@ -92,7 +92,7 @@ export default function Sidebar() {
                 ${collapsed ? 'justify-center' : ''}
                 ${
                   active
-                    ? 'bg-sono-teal-deep/10 text-sono-teal-deep font-semibold border-l-4 border-sono-teal-deep'
+                    ? 'bg-sono-green-ultrasound/10 text-sono-green-ultrasound font-semibold border-l-4 border-sono-green-ultrasound'
                     : 'text-sono-gray-700 hover:bg-sono-gray-100'
                 }
               `}

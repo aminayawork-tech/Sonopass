@@ -55,7 +55,7 @@ export default function StudyModePage() {
             onClick={() => setActiveTab('topics')}
             className={`flex-1 min-w-[100px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
               activeTab === 'topics'
-                ? 'bg-sono-teal-deep text-white shadow-md'
+                ? 'bg-sono-green-ultrasound text-white shadow-md'
                 : 'text-sono-gray-600 hover:bg-sono-gray-100'
             }`}
           >
@@ -66,7 +66,7 @@ export default function StudyModePage() {
             onClick={() => setActiveTab('study-guide')}
             className={`flex-1 min-w-[110px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
               activeTab === 'study-guide'
-                ? 'bg-sono-teal-deep text-white shadow-md'
+                ? 'bg-sono-green-ultrasound text-white shadow-md'
                 : 'text-sono-gray-600 hover:bg-sono-gray-100'
             }`}
           >
@@ -77,7 +77,7 @@ export default function StudyModePage() {
             onClick={() => setActiveTab('study-together')}
             className={`flex-1 min-w-[130px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
               activeTab === 'study-together'
-                ? 'bg-sono-teal-deep text-white shadow-md'
+                ? 'bg-sono-green-ultrasound text-white shadow-md'
                 : 'text-sono-gray-600 hover:bg-sono-gray-100'
             }`}
           >
@@ -88,7 +88,7 @@ export default function StudyModePage() {
             onClick={() => setActiveTab('glossary')}
             className={`flex-1 min-w-[100px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
               activeTab === 'glossary'
-                ? 'bg-sono-teal-deep text-white shadow-md'
+                ? 'bg-sono-green-ultrasound text-white shadow-md'
                 : 'text-sono-gray-600 hover:bg-sono-gray-100'
             }`}
           >
@@ -103,7 +103,7 @@ export default function StudyModePage() {
           <input
             type="text"
             placeholder={`Search ${activeTab === 'topics' ? 'topics' : activeTab === 'study-guide' ? 'study materials' : activeTab === 'glossary' ? 'terms' : 'study rooms'}...`}
-            className="w-full pl-12 pr-4 py-4 bg-white border border-sono-gray-300 rounded-2xl text-sono-gray-900 placeholder-sono-gray-500 focus:outline-none focus:ring-2 focus:ring-sono-teal-deep transition-all shadow-sm"
+            className="w-full pl-12 pr-4 py-4 bg-white border border-sono-gray-300 rounded-2xl text-sono-gray-900 placeholder-sono-gray-500 focus:outline-none focus:ring-2 focus:ring-sono-green-ultrasound transition-all shadow-sm"
           />
         </div>
 
@@ -113,7 +113,7 @@ export default function StudyModePage() {
             <div className="flex items-center justify-between">
               <h2 className="text-lg sm:text-xl font-bold text-sono-gray-900">Topic Categories</h2>
               <Link href="/exam/study">
-                <Button variant="link" className="text-sono-teal-deep text-sm">
+                <Button variant="link" className="text-sono-green-ultrasound text-sm">
                   Start Quiz →
                 </Button>
               </Link>
@@ -159,7 +159,7 @@ export default function StudyModePage() {
                           className={`flex-shrink-0 ${
                             category.progress >= 90
                               ? 'bg-sono-green-ultrasound text-sono-gray-900 hover:bg-sono-green-soft'
-                              : 'bg-sono-teal-deep text-white hover:bg-sono-teal-medium'
+                              : 'bg-sono-green-ultrasound text-white hover:bg-sono-green-soft'
                           }`}
                         >
                           {category.progress >= 90 ? (
@@ -212,8 +212,8 @@ export default function StudyModePage() {
               <Card className="p-6 bg-white border border-sono-gray-300 shadow-sm hover:shadow-lg transition-all active:scale-[0.99] cursor-pointer rounded-2xl">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4 flex-1">
-                    <div className="p-4 bg-sono-teal-deep/10 rounded-xl">
-                      <GraduationCap className="w-8 h-8 text-sono-teal-deep" />
+                    <div className="p-4 bg-sono-green-ultrasound/10 rounded-xl">
+                      <GraduationCap className="w-8 h-8 text-sono-green-ultrasound" />
                     </div>
                     <div>
                       <h3 className="font-bold text-sono-gray-900 text-lg mb-1">View Full Study Guide</h3>
@@ -273,10 +273,10 @@ export default function StudyModePage() {
 
         {/* Performance Insight */}
         {accuracy > 0 && accuracy < 75 && (
-          <Card className="p-5 sm:p-6 bg-gradient-to-r from-sono-teal-deep/5 to-sono-blue-soft/5 border border-sono-teal-deep/20 rounded-2xl">
+          <Card className="p-5 sm:p-6 bg-gradient-to-r from-sono-green-ultrasound/5 to-sono-blue-soft/5 border border-sono-green-ultrasound/20 rounded-2xl">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-sono-teal-deep/10 rounded-xl flex-shrink-0">
-                <Target className="w-6 h-6 text-sono-teal-deep" />
+              <div className="p-3 bg-sono-green-ultrasound/10 rounded-xl flex-shrink-0">
+                <Target className="w-6 h-6 text-sono-green-ultrasound" />
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-sono-gray-900 mb-1">Boost Your Registry Readiness</h3>

@@ -114,7 +114,7 @@ export default function MockExamsPage() {
               const examStats = getExamStats(exam.id);
               const colors = [
                 { bg: 'bg-sono-purple/10', text: 'text-sono-purple', border: 'border-sono-purple/30', btnBg: 'bg-sono-purple' },
-                { bg: 'bg-sono-teal-deep/10', text: 'text-sono-teal-deep', border: 'border-sono-teal-deep/30', btnBg: 'bg-sono-teal-deep' },
+                { bg: 'bg-sono-green-ultrasound/10', text: 'text-sono-green-ultrasound', border: 'border-sono-green-ultrasound/30', btnBg: 'bg-sono-green-ultrasound' },
                 { bg: 'bg-sono-blue-soft/10', text: 'text-sono-blue-soft', border: 'border-sono-blue-soft/30', btnBg: 'bg-sono-blue-soft' },
                 { bg: 'bg-sono-amber/10', text: 'text-sono-amber', border: 'border-sono-amber/30', btnBg: 'bg-sono-amber' },
               ];
@@ -173,26 +173,26 @@ export default function MockExamsPage() {
         </div>
 
         {/* Tips Section */}
-        <Card className="p-6 sm:p-8 bg-gradient-to-r from-sono-teal-deep/5 to-sono-blue-soft/5 border border-sono-teal-deep/20 rounded-2xl">
+        <Card className="p-6 sm:p-8 bg-gradient-to-r from-sono-green-ultrasound/5 to-sono-blue-soft/5 border border-sono-green-ultrasound/20 rounded-2xl">
           <h3 className="text-xl font-bold text-sono-gray-900 mb-4 flex items-center gap-2">
-            <Clock className="w-5 h-5 text-sono-teal-deep" />
+            <Clock className="w-5 h-5 text-sono-green-ultrasound" />
             Exam Tips
           </h3>
           <ul className="space-y-3 text-sm sm:text-base text-sono-gray-700">
             <li className="flex items-start gap-3">
-              <span className="text-sono-teal-deep mt-1 font-bold">•</span>
+              <span className="text-sono-green-ultrasound mt-1 font-bold">•</span>
               <span>Set aside uninterrupted time to complete each mock exam</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-sono-teal-deep mt-1 font-bold">•</span>
+              <span className="text-sono-green-ultrasound mt-1 font-bold">•</span>
               <span>Use Lock Mode to minimize distractions and simulate real exam conditions</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-sono-teal-deep mt-1 font-bold">•</span>
+              <span className="text-sono-green-ultrasound mt-1 font-bold">•</span>
               <span>Review all questions after completing to understand your mistakes</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-sono-teal-deep mt-1 font-bold">•</span>
+              <span className="text-sono-green-ultrasound mt-1 font-bold">•</span>
               <span>Retake exams to track your improvement over time</span>
             </li>
           </ul>

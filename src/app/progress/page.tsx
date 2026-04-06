@@ -69,7 +69,7 @@ export default function ProgressPage() {
         </div>
 
         {/* Registry Readiness - Hero Section */}
-        <Card className="p-6 sm:p-8 bg-gradient-to-br from-sono-teal-deep/5 to-sono-blue-soft/5 border border-sono-teal-deep/20 shadow-md rounded-2xl">
+        <Card className="p-6 sm:p-8 bg-gradient-to-br from-sono-green-ultrasound/5 to-sono-blue-soft/5 border border-sono-green-ultrasound/20 shadow-md rounded-2xl">
           <div className="flex flex-col items-center">
             <RegistryReadinessWidget size="large" showLabel={true} />
           </div>
@@ -179,7 +179,7 @@ export default function ProgressPage() {
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-base sm:text-lg font-bold text-sono-gray-900">Performance by Category</h3>
             <Link href="/practice">
-              <Button variant="link" className="text-sono-teal-deep text-sm">
+              <Button variant="link" className="text-sono-green-ultrasound text-sm">
                 Study Now →
               </Button>
             </Link>
@@ -219,10 +219,10 @@ export default function ProgressPage() {
 
         {/* Weak Areas Focus */}
         {weakestCategory.percentage < 75 && (
-          <Card className="p-5 sm:p-6 bg-gradient-to-r from-sono-teal-deep/5 to-sono-blue-soft/5 border border-sono-teal-deep/20 rounded-2xl shadow-sm">
+          <Card className="p-5 sm:p-6 bg-gradient-to-r from-sono-green-ultrasound/5 to-sono-blue-soft/5 border border-sono-green-ultrasound/20 rounded-2xl shadow-sm">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-sono-teal-deep/10 rounded-xl flex-shrink-0">
-                <AlertCircle className="w-6 h-6 text-sono-teal-deep" />
+              <div className="p-3 bg-sono-green-ultrasound/10 rounded-xl flex-shrink-0">
+                <AlertCircle className="w-6 h-6 text-sono-green-ultrasound" />
               </div>
               <div className="flex-1">
                 <h3 className="text-base sm:text-lg font-bold text-sono-gray-900 mb-1">Focus Area Detected</h3>
@@ -231,7 +231,7 @@ export default function ProgressPage() {
                   Focus your practice here to improve your overall score!
                 </p>
                 <Link href="/practice">
-                  <Button className="bg-sono-teal-deep hover:bg-sono-teal-medium text-white rounded-xl h-11">
+                  <Button className="bg-sono-green-ultrasound hover:bg-sono-green-soft text-white rounded-xl h-11">
                     <Target className="w-4 h-4 mr-2" />
                     Practice This Category
                   </Button>
