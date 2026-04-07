@@ -19,16 +19,16 @@ export default function StudyTogetherPage() {
         </div>
 
         {/* Hero Section */}
-        <Card className="p-8 bg-gradient-to-r from-emerald-500 to-teal-500 text-white">
+        <Card className="p-8 bg-gradient-to-r from-sono-green-ultrasound to-sono-green-soft text-white rounded-2xl">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="flex-1">
               <h2 className="text-3xl font-bold mb-3">Learn Better Together</h2>
-              <p className="text-emerald-50 text-lg mb-6">
+              <p className="text-white/90 text-lg mb-6">
                 Join study rooms, compete on leaderboards, and share quizzes with friends.
                 Collaborative learning helps you stay motivated and achieve better results!
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button className="bg-white text-emerald-600 hover:bg-emerald-50 font-semibold">
+                <Button className="bg-white text-sono-green-ultrasound hover:bg-gray-50 font-semibold">
                   <Plus className="w-4 h-4 mr-2" />
                   Create Study Room
                 </Button>
