@@ -50,11 +50,12 @@ export default function TabNavigation() {
               className={`
                 flex flex-col items-center justify-center gap-1 py-2 transition-all duration-200
                 touch-target active:scale-95 relative
-                ${active ? 'text-emerald-600' : 'text-gray-600 hover:text-gray-900'}
+                ${active ? '' : 'text-gray-600 hover:text-gray-900'}
               `}
+              style={active ? { color: '#39b981' } : {}}
             >
               {active && (
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-1 bg-emerald-500 rounded-b-full" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-1 rounded-b-full" style={{ backgroundColor: '#39b981' }} />
               )}
               <Icon className={`w-5 h-5 sm:w-6 sm:h-6 transition-all duration-200 ${active ? 'scale-110' : ''}`} />
               <span className={`text-[10px] font-medium leading-tight transition-all duration-200 ${active ? 'font-bold' : ''}`}>

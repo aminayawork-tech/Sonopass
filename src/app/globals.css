@@ -13,8 +13,8 @@
     --sono-blue-light: 193 76% 72%;        /* #90E0EF */
 
     /* Success & Progress - Ultrasound Green */
-    --sono-green-ultrasound: 174 64% 41%; /* #14B8A6 - Teal from Continue buttons */
-    --sono-green-soft: 174 100% 35%;      /* #00B5A0 - Softer teal */
+    --sono-green-ultrasound: 154 53% 48%; /* #39b981 - Correct brand green */
+    --sono-green-soft: 154 53% 55%;      /* Lighter version of #39b981 */
 
     /* Neutrals - Clean Medical Backgrounds */
     --sono-white: 0 0% 100%;               /* #FFFFFF */

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -13,6 +14,9 @@ import TabNavigation from '@/components/TabNavigation';
 import StudyBuddyPanel from '@/components/StudyBuddyPanel';
 
 export default function StudyPage() {
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get('category');
+
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [categoryMap, setCategoryMap] = useState<Map<string, any[]>>(new Map());
   const [categories, setCategories] = useState<[string, any[]][]>([]);
@@ -64,14 +68,20 @@ export default function StudyPage() {
         });
 
         setCategoryMap(map);
-        setCategories(Array.from(map.entries()).sort((a, b) => b[1].length - a[1].length));
+        const sortedCategories = Array.from(map.entries()).sort((a, b) => b[1].length - a[1].length);
+        setCategories(sortedCategories);
+
+        // Auto-select category if provided in URL
+        if (categoryParam && map.has(categoryParam)) {
+          setSelectedCategory(categoryParam);
+        }
       } catch (error) {
         console.error('Failed to load questions:', error);
       }
     };
 
     loadData();
-  }, [currentModality, loadQuestions]);
+  }, [currentModality, loadQuestions, categoryParam]);
 
   // Category colors
   const categoryColors = [

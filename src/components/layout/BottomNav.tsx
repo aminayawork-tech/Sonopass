@@ -73,13 +73,14 @@ export default function BottomNav() {
               className={`
                 flex flex-col items-center justify-center gap-1.5 py-3 px-2 transition-all duration-200
                 touch-target active:scale-95 relative
-                ${active ? 'text-sono-green-ultrasound' : 'text-sono-gray-600 hover:text-sono-gray-900'}
+                ${active ? '' : 'text-sono-gray-600 hover:text-sono-gray-900'}
               `}
+              style={active ? { color: '#39b981' } : {}}
             >
               {active && (
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-1 bg-sono-green-ultrasound rounded-b-full" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-1 rounded-b-full" style={{ backgroundColor: '#39b981' }} />
               )}
-              <div className={`p-2 rounded-2xl transition-all duration-200 ${active ? 'bg-sono-green-ultrasound/10' : ''}`}>
+              <div className={`p-2 rounded-2xl transition-all duration-200`} style={active ? { backgroundColor: 'rgba(57, 185, 129, 0.1)' } : {}}>
                 <Icon className={`w-6 h-6 transition-all duration-200 ${active ? 'scale-110' : ''}`} />
               </div>
               <span className={`text-[10px] font-medium leading-tight text-center transition-all duration-200 ${active ? 'font-bold' : ''}`}>
