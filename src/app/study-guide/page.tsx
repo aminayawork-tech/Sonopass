@@ -234,9 +234,9 @@ export default function StudyGuidePage() {
               </div>
 
               {/* Flashcard */}
-              <div className="perspective-1000 min-h-[450px]">
+              <div className="perspective-1000 min-h-[400px] sm:min-h-[450px]">
                 <div
-                  className={`relative w-full h-[450px] cursor-pointer transition-transform duration-500 preserve-3d`}
+                  className={`relative w-full h-[70vh] sm:h-[450px] max-h-[600px] cursor-pointer transition-transform duration-500 preserve-3d`}
                   onClick={() => setIsFlipped(!isFlipped)}
                   style={{
                     transformStyle: 'preserve-3d',
@@ -245,140 +245,144 @@ export default function StudyGuidePage() {
                 >
                   {/* Front of card - Topic Title & Summary */}
                   <Card
-                    className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 border-0 shadow-2xl flex items-center justify-center p-8 backface-hidden overflow-y-auto"
+                    className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 border-0 shadow-2xl flex items-center justify-center p-6 sm:p-8 backface-hidden overflow-y-auto"
                     style={{ backfaceVisibility: 'hidden' }}
                   >
                     <div className="text-center">
-                      <div className="mb-4">
-                        <div className="w-16 h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-4">
-                          <BookOpen className="w-8 h-8 text-white" />
+                      <div className="mb-3 sm:mb-4">
+                        <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-3 sm:mb-4">
+                          <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                         </div>
                       </div>
-                      <h2 className="text-2xl sm:text-4xl font-bold text-white mb-4">
+                      <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4 px-2">
                         {currentTopic.title}
                       </h2>
                       {currentTopic.quickSummary && (
-                        <p className="text-lg text-blue-100 mb-4 max-w-2xl mx-auto">
+                        <p className="text-base sm:text-lg text-blue-100 mb-3 sm:mb-4 max-w-2xl mx-auto px-4">
                           {currentTopic.quickSummary}
                         </p>
                       )}
-                      <p className="text-blue-100 text-sm">Click to reveal details</p>
+                      <p className="text-blue-100 text-xs sm:text-sm">Tap to reveal details</p>
                     </div>
                   </Card>
 
                   {/* Back of card - Full Content */}
                   <Card
-                    className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-600 border-0 shadow-2xl p-8 backface-hidden overflow-y-auto"
+                    className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-600 border-0 shadow-2xl p-4 sm:p-6 lg:p-8 backface-hidden overflow-y-auto"
                     style={{
                       backfaceVisibility: 'hidden',
                       transform: 'rotateY(180deg)',
                     }}
                   >
-                    <div className="text-white">
-                      <h3 className="text-xl sm:text-2xl font-bold mb-4">
+                    <div className="text-white h-full flex flex-col">
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 flex-shrink-0">
                         {currentTopic.title}
                       </h3>
 
-                      {/* Clinical Pearls */}
-                      {currentTopic.clinicalPearls && currentTopic.clinicalPearls.length > 0 && (
-                        <div className="mb-4 bg-white/10 rounded-lg p-4">
-                          <div className="flex items-start gap-2 mb-2">
-                            <Lightbulb className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                            <h4 className="font-semibold">Clinical Pearls</h4>
+                      <div className="flex-1 overflow-y-auto space-y-3 sm:space-y-4">
+                        {/* Clinical Pearls */}
+                        {currentTopic.clinicalPearls && currentTopic.clinicalPearls.length > 0 && (
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <div className="flex items-start gap-2 mb-2">
+                              <Lightbulb className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" />
+                              <h4 className="font-semibold text-sm sm:text-base">Clinical Pearls</h4>
+                            </div>
+                            <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
+                              {currentTopic.clinicalPearls.map((pearl, i) => (
+                                <li key={i} className="flex items-start gap-2">
+                                  <span className="mt-1 flex-shrink-0">•</span>
+                                  <span className="flex-1">{pearl}</span>
+                                </li>
+                              ))}
+                            </ul>
                           </div>
-                          <ul className="space-y-1 text-sm">
-                            {currentTopic.clinicalPearls.map((pearl, i) => (
-                              <li key={i} className="flex items-start gap-2">
-                                <span className="mt-1">•</span>
-                                <span>{pearl}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
+                        )}
 
-                      {/* Key Takeaways */}
-                      {currentTopic.keyTakeaways && currentTopic.keyTakeaways.length > 0 && (
-                        <div className="mb-4 bg-white/10 rounded-lg p-4">
-                          <div className="flex items-start gap-2 mb-2">
-                            <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                            <h4 className="font-semibold">Key Takeaways</h4>
+                        {/* Key Takeaways */}
+                        {currentTopic.keyTakeaways && currentTopic.keyTakeaways.length > 0 && (
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <div className="flex items-start gap-2 mb-2">
+                              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" />
+                              <h4 className="font-semibold text-sm sm:text-base">Key Takeaways</h4>
+                            </div>
+                            <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
+                              {currentTopic.keyTakeaways.map((takeaway, i) => (
+                                <li key={i} className="flex items-start gap-2">
+                                  <span className="mt-1 flex-shrink-0">✓</span>
+                                  <span className="flex-1">{takeaway}</span>
+                                </li>
+                              ))}
+                            </ul>
                           </div>
-                          <ul className="space-y-1 text-sm">
-                            {currentTopic.keyTakeaways.map((takeaway, i) => (
-                              <li key={i} className="flex items-start gap-2">
-                                <span className="mt-1">✓</span>
-                                <span>{takeaway}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
+                        )}
 
-                      {/* Key Terms */}
-                      {currentTopic.keyTerms.length > 0 && (
-                        <div className="mb-4">
-                          <h4 className="font-semibold mb-2 text-sm">Key Terms:</h4>
-                          <div className="flex flex-wrap gap-2">
-                            {currentTopic.keyTerms.map((term, i) => (
-                              <span
-                                key={i}
-                                className="px-2 py-1 bg-white/20 rounded text-xs"
-                              >
-                                {term}
-                              </span>
-                            ))}
+                        {/* Key Terms */}
+                        {currentTopic.keyTerms.length > 0 && (
+                          <div>
+                            <h4 className="font-semibold mb-2 text-xs sm:text-sm">Key Terms:</h4>
+                            <div className="flex flex-wrap gap-1.5 sm:gap-2">
+                              {currentTopic.keyTerms.map((term, i) => (
+                                <span
+                                  key={i}
+                                  className="px-2 py-1 bg-white/20 rounded text-xs"
+                                >
+                                  {term}
+                                </span>
+                              ))}
+                            </div>
                           </div>
-                        </div>
-                      )}
+                        )}
+                      </div>
 
-                      <p className="text-green-100 text-sm mt-4">Click to flip back</p>
+                      <p className="text-green-100 text-xs sm:text-sm mt-3 sm:mt-4 flex-shrink-0">Tap to flip back</p>
                     </div>
                   </Card>
                 </div>
               </div>
 
               {/* Navigation Controls */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <div className="flex gap-3 flex-1">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <div className="flex gap-2 sm:gap-3 flex-1">
                   <Button
                     onClick={handlePrevious}
                     disabled={currentCardIndex === 0}
                     variant="outline"
-                    className="flex-1"
+                    className="flex-1 h-11 sm:h-10 text-sm"
                   >
-                    <ChevronLeft className="w-4 h-4 mr-2" />
-                    Previous
+                    <ChevronLeft className="w-4 h-4 sm:mr-2" />
+                    <span className="hidden sm:inline">Previous</span>
                   </Button>
                   <Button
                     onClick={handleNext}
                     disabled={currentCardIndex === topics.length - 1}
                     variant="outline"
-                    className="flex-1"
+                    className="flex-1 h-11 sm:h-10 text-sm"
                   >
-                    Next
-                    <ChevronRight className="w-4 h-4 ml-2" />
+                    <span className="hidden sm:inline">Next</span>
+                    <ChevronRight className="w-4 h-4 sm:ml-2" />
                   </Button>
                 </div>
               </div>
 
               {/* Know / Don't Know Buttons */}
               {isFlipped && (
-                <div className="flex gap-4">
+                <div className="flex gap-2 sm:gap-4">
                   <Button
                     onClick={handleDontKnow}
                     variant="outline"
-                    className="flex-1 border-2 border-red-500 text-red-600 hover:bg-red-50"
+                    className="flex-1 h-12 sm:h-11 border-2 border-red-500 text-red-600 hover:bg-red-50 text-sm sm:text-base"
                   >
-                    <XCircle className="w-5 h-5 mr-2" />
-                    Need to Review
+                    <XCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2" />
+                    <span className="hidden xs:inline">Need to Review</span>
+                    <span className="xs:hidden">Review</span>
                   </Button>
                   <Button
                     onClick={handleKnow}
-                    className="flex-1 bg-emerald-600 hover:bg-emerald-700"
+                    className="flex-1 h-12 sm:h-11 bg-emerald-600 hover:bg-emerald-700 text-sm sm:text-base"
                   >
-                    <CheckCircle2 className="w-5 h-5 mr-2" />
-                    I Know This
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2" />
+                    <span className="hidden xs:inline">I Know This</span>
+                    <span className="xs:hidden">Know</span>
                   </Button>
                 </div>
               )}
