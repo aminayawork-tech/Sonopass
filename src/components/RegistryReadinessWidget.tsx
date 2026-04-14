@@ -63,7 +63,7 @@ export default function RegistryReadinessWidget({ size = 'large', showLabel = tr
   const getColor = () => {
     if (readiness >= 75) return 'hsl(var(--sono-green-ultrasound))'; // Registry-ready
     if (readiness >= 60) return 'hsl(var(--sono-green-soft))'; // Good progress
-    if (readiness >= 40) return 'hsl(var(--sono-blue-soft))'; // Moderate
+    if (readiness >= 40) return '#47c48e'; // Moderate
     return 'hsl(var(--sono-teal-medium))'; // Just starting
   };
 

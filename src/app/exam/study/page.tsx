@@ -6,12 +6,11 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { ArrowLeft, BookOpen, Lightbulb, CheckCircle2, Brain, ArrowRight, Users, UserPlus } from 'lucide-react';
+import { ArrowLeft, BookOpen, Lightbulb, CheckCircle2, Brain, ArrowRight } from 'lucide-react';
 import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
 import { useModality } from '@/contexts/ModalityContext';
 import AppLayout from '@/components/layout/AppLayout';
-import StudyBuddyPanel from '@/components/StudyBuddyPanel';
 
 export default function StudyPage() {
   const searchParams = useSearchParams();
@@ -20,30 +19,7 @@ export default function StudyPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [categoryMap, setCategoryMap] = useState<Map<string, any[]>>(new Map());
   const [categories, setCategories] = useState<[string, any[]][]>([]);
-  const [studyBuddyMode, setStudyBuddyMode] = useState(false);
-  const [userName, setUserName] = useState('');
-  const [currentSession, setCurrentSession] = useState<any>(null);
   const { currentModality, loadQuestions } = useModality();
-
-  // Load user name and check for active session
-  useEffect(() => {
-    const saved = localStorage.getItem('studyBuddyName');
-    if (saved) {
-      setUserName(saved);
-    }
-
-    // Check if user is in an active study session
-    const sessions = localStorage.getItem('studySessions');
-    if (sessions) {
-      const parsedSessions = JSON.parse(sessions);
-      const activeSession = parsedSessions.find((s: any) =>
-        s.status === 'active' && s.players.some((p: any) => p.name === saved)
-      );
-      if (activeSession) {
-        setCurrentSession(activeSession);
-      }
-    }
-  }, []);
 
   // Load questions and build category map
   useEffect(() => {
@@ -107,10 +83,6 @@ export default function StudyPage() {
         questions={rawQuestions}
         title={selectedCategory}
         onBack={() => setSelectedCategory(null)}
-        studyBuddyMode={studyBuddyMode}
-        userName={userName}
-        currentSession={currentSession}
-        setCurrentSession={setCurrentSession}
       />
     );
   }
@@ -131,42 +103,6 @@ export default function StudyPage() {
                 <span className="hidden sm:inline">Back</span>
               </Button>
             </Link>
-          </div>
-
-          {/* Study Buddy Toggle */}
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 rounded-lg p-3 sm:p-4">
-            <div className="flex items-center justify-between gap-4 flex-wrap">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
-                  <Users className="w-5 h-5 text-purple-600" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 text-sm sm:text-base">Study with Friends</h3>
-                  <p className="text-xs text-gray-600">Enable to see who is studying with you</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                {studyBuddyMode && (
-                  <Input
-                    type="text"
-                    placeholder="Your name..."
-                    value={userName}
-                    onChange={(e) => {
-                      setUserName(e.target.value);
-                      localStorage.setItem('studyBuddyName', e.target.value);
-                    }}
-                    className="w-32 sm:w-40 h-9 text-sm"
-                  />
-                )}
-                <Button
-                  onClick={() => setStudyBuddyMode(!studyBuddyMode)}
-                  className={`${studyBuddyMode ? 'bg-purple-600 hover:bg-purple-700' : 'bg-gray-600 hover:bg-gray-700'} text-white text-sm`}
-                  size="sm"
-                >
-                  {studyBuddyMode ? 'Enabled' : 'Enable'}
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
       </header>
@@ -210,25 +146,15 @@ export default function StudyPage() {
 function StudyCategoryExam({
   questions,
   title,
-  onBack,
-  studyBuddyMode,
-  userName,
-  currentSession,
-  setCurrentSession
+  onBack
 }: {
   questions: any[];
   title: string;
   onBack: () => void;
-  studyBuddyMode: boolean;
-  userName: string;
-  currentSession: any;
-  setCurrentSession: (session: any) => void;
 }) {
   const [showContent, setShowContent] = useState(true);
   const [shuffled, setShuffled] = useState<any[]>([]);
   const [studyContent, setStudyContent] = useState<any>(null);
-  const [activeParticipants, setActiveParticipants] = useState<any[]>([]);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const { currentModality, loadStudyCategories } = useModality();
 
   useEffect(() => {
@@ -251,83 +177,7 @@ function StudyCategoryExam({
     };
 
     loadContent();
-
-    // Handle study buddy session
-    if (studyBuddyMode && userName) {
-      const sessions = localStorage.getItem('studySessions');
-      let parsedSessions = sessions ? JSON.parse(sessions) : [];
-
-      // Find or create a session for this category
-      let session = parsedSessions.find((s: any) =>
-        s.category === title && s.status === 'active'
-      );
-
-      if (!session) {
-        // Create new study session for this category
-        session = {
-          id: `study-${title}-${Date.now()}`,
-          name: `${title} Study Session`,
-          createdBy: userName,
-          category: title,
-          players: [{
-            id: `player-${Date.now()}`,
-            name: userName,
-            lastActive: Date.now(),
-            status: 'studying'
-          }],
-          status: 'active',
-          maxPlayers: 10,
-          questionCount: questions.length,
-        };
-        parsedSessions.push(session);
-      } else {
-        // Join existing session or update player status
-        const existingPlayer = session.players.find((p: any) => p.name === userName);
-        if (existingPlayer) {
-          existingPlayer.lastActive = Date.now();
-          existingPlayer.status = 'studying';
-        } else {
-          session.players.push({
-            id: `player-${Date.now()}`,
-            name: userName,
-            lastActive: Date.now(),
-            status: 'studying'
-          });
-        }
-      }
-
-      localStorage.setItem('studySessions', JSON.stringify(parsedSessions));
-      setCurrentSession(session);
-      setActiveParticipants(session.players);
-
-      // Update participant activity periodically
-      const interval = setInterval(() => {
-        const currentSessions = localStorage.getItem('studySessions');
-        if (currentSessions) {
-          const sessions = JSON.parse(currentSessions);
-          const activeSession = sessions.find((s: any) => s.id === session.id);
-          if (activeSession) {
-            // Filter out participants who have been inactive for more than 5 minutes
-            const now = Date.now();
-            const activeUsers = activeSession.players.filter(
-              (p: any) => now - p.lastActive < 5 * 60 * 1000
-            );
-            setActiveParticipants(activeUsers);
-
-            // Update own activity
-            const me = activeUsers.find((p: any) => p.name === userName);
-            if (me) {
-              me.lastActive = Date.now();
-              activeSession.players = activeUsers;
-              localStorage.setItem('studySessions', JSON.stringify(sessions));
-            }
-          }
-        }
-      }, 10000); // Update every 10 seconds
-
-      return () => clearInterval(interval);
-    }
-  }, [questions, title, currentModality, loadStudyCategories, studyBuddyMode, userName]);
+  }, [questions, title, currentModality, loadStudyCategories]);
 
   if (shuffled.length === 0 || !currentModality) {
     return (
@@ -347,16 +197,6 @@ function StudyCategoryExam({
           mode="practice"
           modality={currentModality.id}
         />
-        {/* Interactive Study Buddy Panel */}
-        {studyBuddyMode && currentSession && userName && (
-          <StudyBuddyPanel
-            sessionId={currentSession.id}
-            userName={userName}
-            participants={activeParticipants}
-            currentQuestion={currentQuestionIndex}
-            totalQuestions={shuffled.length}
-          />
-        )}
       </div>
     );
   }
@@ -364,17 +204,6 @@ function StudyCategoryExam({
   // Show study content first
   return (
     <div className="min-h-screen bg-[#F5F7FA]">
-      {/* Interactive Study Buddy Panel */}
-      {studyBuddyMode && currentSession && userName && (
-        <StudyBuddyPanel
-          sessionId={currentSession.id}
-          userName={userName}
-          participants={activeParticipants}
-          currentQuestion={0}
-          totalQuestions={shuffled.length}
-          isMinimized={true}
-        />
-      )}
       {/* Header */}
       <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10">
         <div className="max-w-5xl mx-auto">
@@ -406,23 +235,6 @@ function StudyCategoryExam({
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </div>
-
-          {/* Study Buddy Indicator */}
-          {studyBuddyMode && activeParticipants.length > 0 && (
-            <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-lg p-3">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Users className="w-4 h-4 text-purple-600" />
-                  <span className="text-sm font-semibold text-gray-900">
-                    {activeParticipants.length} {activeParticipants.length === 1 ? 'person' : 'people'} studying with you
-                  </span>
-                </div>
-                <span className="text-xs text-purple-600">
-                  💬 Chat available in practice mode
-                </span>
-              </div>
-            </div>
-          )}
         </div>
       </header>
 
