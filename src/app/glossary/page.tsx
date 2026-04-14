@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { Search, Filter, BookOpen, ArrowLeft, ChevronLeft, ChevronRight, RotateCw, CheckCircle, XCircle, Shuffle } from 'lucide-react';
+import { Search, Filter, BookOpen, ArrowLeft, ChevronLeft, ChevronRight, RotateCw, CheckCircle2, XCircle, Shuffle } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -160,9 +160,9 @@ export default function GlossaryPage() {
         </div>
 
         {/* Flashcard */}
-        <div className="perspective-1000 min-h-[400px]">
+        <div className="perspective-1000 min-h-[350px] sm:min-h-[400px]">
           <div
-            className={`relative w-full h-[400px] cursor-pointer transition-transform duration-500 preserve-3d ${
+            className={`relative w-full h-[65vh] sm:h-[400px] max-h-[500px] cursor-pointer transition-transform duration-500 preserve-3d ${
               isFlipped ? 'rotate-y-180' : ''
             }`}
             onClick={() => setIsFlipped(!isFlipped)}
@@ -173,82 +173,83 @@ export default function GlossaryPage() {
           >
             {/* Front of card */}
             <Card
-              className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 border-0 shadow-2xl flex items-center justify-center p-8 backface-hidden"
+              className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 border-0 shadow-2xl flex items-center justify-center p-6 sm:p-8 backface-hidden"
               style={{ backfaceVisibility: 'hidden' }}
             >
-              <div className="text-center">
-                <span className={`inline-block px-3 py-1 text-xs font-semibold rounded-full mb-4 ${getCategoryColors(currentTerm.category).bg} ${getCategoryColors(currentTerm.category).text}`}>
+              <div className="text-center px-2">
+                <span className={`inline-block px-3 py-1 text-xs font-semibold rounded-full mb-3 sm:mb-4 ${getCategoryColors(currentTerm.category).bg} ${getCategoryColors(currentTerm.category).text}`}>
                   {currentTerm.category}
                 </span>
-                <h2 className="text-3xl sm:text-5xl font-bold text-white mb-4">
+                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 break-words">
                   {currentTerm.term}
                 </h2>
-                <p className="text-blue-100 text-sm">Click to reveal definition</p>
+                <p className="text-blue-100 text-xs sm:text-sm">Tap to reveal definition</p>
               </div>
             </Card>
 
             {/* Back of card */}
             <Card
-              className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-600 border-0 shadow-2xl flex items-center justify-center p-8 backface-hidden"
+              className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-600 border-0 shadow-2xl flex items-center justify-center p-6 sm:p-8 backface-hidden overflow-y-auto"
               style={{
                 backfaceVisibility: 'hidden',
                 transform: 'rotateY(180deg)',
               }}
             >
-              <div className="text-center">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
+              <div className="text-center px-2">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4 break-words">
                   {currentTerm.term}
                 </h3>
-                <p className="text-base sm:text-xl text-white leading-relaxed max-w-2xl">
+                <p className="text-sm sm:text-base lg:text-xl text-white leading-relaxed max-w-2xl px-2">
                   {currentTerm.definition}
                 </p>
-                <p className="text-green-100 text-sm mt-4">Click to flip back</p>
+                <p className="text-green-100 text-xs sm:text-sm mt-3 sm:mt-4">Tap to flip back</p>
               </div>
             </Card>
           </div>
         </div>
 
         {/* Navigation Controls */}
-        <div className="flex flex-col sm:flex-row gap-4">
-          <div className="flex gap-3 flex-1">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+          <div className="flex gap-2 sm:gap-3 flex-1">
             <Button
               onClick={handlePrevious}
               disabled={currentCardIndex === 0}
               variant="outline"
-              className="flex-1"
+              className="flex-1 h-11 sm:h-10 text-sm"
             >
-              <ChevronLeft className="w-4 h-4 mr-2" />
-              Previous
+              <ChevronLeft className="w-4 h-4 sm:mr-2" />
+              <span className="hidden sm:inline">Previous</span>
             </Button>
             <Button
               onClick={handleNext}
               disabled={currentCardIndex === filteredTerms.length - 1}
               variant="outline"
-              className="flex-1"
+              className="flex-1 h-11 sm:h-10 text-sm"
             >
-              Next
-              <ChevronRight className="w-4 h-4 ml-2" />
+              <span className="hidden sm:inline">Next</span>
+              <ChevronRight className="w-4 h-4 sm:ml-2" />
             </Button>
           </div>
         </div>
 
         {/* Know / Don't Know Buttons */}
         {isFlipped && (
-          <div className="flex gap-4">
+          <div className="flex gap-2 sm:gap-4">
             <Button
               onClick={handleDontKnow}
               variant="outline"
-              className="flex-1 border-2 border-red-500 text-red-600 hover:bg-red-50"
+              className="flex-1 h-12 sm:h-11 border-2 border-red-500 text-red-600 hover:bg-red-50 text-sm sm:text-base"
             >
-              <XCircle className="w-5 h-5 mr-2" />
-              Don&apos;t Know
+              <XCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2" />
+              <span>Don&apos;t Know</span>
             </Button>
             <Button
               onClick={handleKnow}
-              className="flex-1 bg-emerald-600 hover:bg-emerald-700"
+              className="flex-1 h-12 sm:h-11 bg-emerald-600 hover:bg-emerald-700 text-sm sm:text-base"
             >
-              <CheckCircle className="w-5 h-5 mr-2" />
-              I Know This
+              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2" />
+              <span className="hidden xs:inline">I Know This</span>
+              <span className="xs:hidden">Know</span>
             </Button>
           </div>
         )}
