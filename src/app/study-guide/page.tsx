@@ -377,7 +377,7 @@ export default function StudyGuidePage() {
                     onClick={handleKnow}
                     className="flex-1 bg-emerald-600 hover:bg-emerald-700"
                   >
-                    <CheckCircle className="w-5 h-5 mr-2" />
+                    <CheckCircle2 className="w-5 h-5 mr-2" />
                     I Know This
                   </Button>
                 </div>

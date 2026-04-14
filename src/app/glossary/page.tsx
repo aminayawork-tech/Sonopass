@@ -241,7 +241,7 @@ export default function GlossaryPage() {
               className="flex-1 border-2 border-red-500 text-red-600 hover:bg-red-50"
             >
               <XCircle className="w-5 h-5 mr-2" />
-              Don't Know
+              Don&apos;t Know
             </Button>
             <Button
               onClick={handleKnow}

@@ -139,6 +139,7 @@ export default function StudyPage() {
         </div>
       </main>
     </div>
+    </AppLayout>
   );
 }
 
@@ -379,7 +380,6 @@ function StudyCategoryExam({
           </Card>
         )}
       </main>
-      </div>
-    </AppLayout>
+    </div>
   );
 }
