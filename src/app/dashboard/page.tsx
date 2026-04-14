@@ -189,29 +189,6 @@ export default function DashboardPage() {
           </Card>
         )}
 
-        {/* Study Together Spotlight */}
-        <Card className="p-6 sm:p-7 bg-gradient-to-r from-sono-blue-soft to-sono-blue-light text-white shadow-lg hover:shadow-xl transition-all rounded-2xl active:scale-[0.99]">
-          <div className="flex flex-col gap-4">
-            <div className="flex items-start gap-4 sm:gap-5">
-              <div className="p-4 bg-white/20 rounded-2xl flex-shrink-0">
-                <Users className="w-7 h-7 sm:w-8 sm:h-8" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="text-xl sm:text-2xl font-bold mb-2">Study Together</h3>
-                <p className="text-sm sm:text-base opacity-90">
-                  Join live study rooms, compete with friends, and learn together
-                </p>
-              </div>
-            </div>
-            <Link href="/study-together" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto bg-white text-sono-blue-soft hover:bg-gray-50 font-semibold touch-target active:scale-[0.98] rounded-xl h-12 px-6">
-                Get Started
-                <ChevronRight className="w-4 h-4 ml-1" />
-              </Button>
-            </Link>
-          </div>
-        </Card>
-
         {/* Quick Actions Grid */}
         <div>
           <h2 className="text-lg sm:text-xl font-bold text-sono-gray-900 mb-3 sm:mb-4">Jump back in</h2>

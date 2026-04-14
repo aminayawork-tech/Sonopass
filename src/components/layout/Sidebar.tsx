@@ -26,7 +26,7 @@ const navItems: NavItem[] = [
     label: 'Study Mode',
     icon: BookOpen,
     route: '/practice',
-    matchPaths: ['/exam/study', '/study-guide', '/glossary', '/study-together', '/learn']
+    matchPaths: ['/exam/study', '/study-guide', '/glossary', '/learn']
   },
   {
     id: 'exams',
@@ -58,7 +58,7 @@ export default function Sidebar() {
 
   return (
     <aside
-      className={`hidden lg:flex flex-col bg-white border-r border-sono-gray-300 transition-all duration-300 ${
+      className={`flex flex-col bg-white border-r border-sono-gray-300 transition-all duration-300 ${
         collapsed ? 'w-20' : 'w-64'
       }`}
     >

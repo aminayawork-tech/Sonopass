@@ -11,7 +11,6 @@ interface MenuModalProps {
 const quickAccessItems = [
   { id: 'study-guide', label: 'Study Guide', icon: BookOpen, href: '/study-guide' },
   { id: 'mock-exams', label: 'Mock Exams', icon: Brain, href: '/exam/mock-exams' },
-  { id: 'study-together', label: 'Study Together', icon: Users, href: '/study-together' },
 ];
 
 const menuItems = [

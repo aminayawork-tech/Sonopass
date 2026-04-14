@@ -9,7 +9,7 @@ import {
   UserPlus, ArrowRight, Crown, Star
 } from 'lucide-react';
 import { useModality } from '@/contexts/ModalityContext';
-import TabNavigation from '@/components/TabNavigation';
+import AppLayout from '@/components/layout/AppLayout';
 
 interface StudySession {
   id: string;
@@ -154,9 +154,9 @@ export default function StudyBuddyPage() {
   // Lobby View
   if (view === 'lobby') {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 pb-20">
-        <TabNavigation />
-        {/* Header */}
+      <AppLayout>
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+          {/* Header */}
         <header className="px-4 sm:px-6 py-6 sm:py-8 bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto">
             <div className="flex items-center gap-4 mb-4">
@@ -332,16 +332,17 @@ export default function StudyBuddyPage() {
             </div>
           </Card>
         </main>
-      </div>
+        </div>
+      </AppLayout>
     );
   }
 
   // Create Session View
   if (view === 'create') {
     return (
-      <div className="min-h-screen bg-[#F5F7FA] pb-20">
-        <TabNavigation />
-        <div className="flex items-center justify-center p-4 min-h-[calc(100vh-60px)]">
+      <AppLayout>
+        <div className="min-h-screen bg-[#F5F7FA]">
+          <div className="flex items-center justify-center p-4 min-h-[calc(100vh-60px)]">
         <Card className="w-full max-w-md p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Create Study Session</h2>
 
@@ -392,16 +393,17 @@ export default function StudyBuddyPage() {
           </div>
         </Card>
         </div>
-      </div>
+        </div>
+      </AppLayout>
     );
   }
 
   // Join Session View
   if (view === 'join') {
     return (
-      <div className="min-h-screen bg-[#F5F7FA] pb-20">
-        <TabNavigation />
-        <div className="flex items-center justify-center p-4 min-h-[calc(100vh-60px)]">
+      <AppLayout>
+        <div className="min-h-screen bg-[#F5F7FA]">
+          <div className="flex items-center justify-center p-4 min-h-[calc(100vh-60px)]">
         <Card className="w-full max-w-md p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Join Study Session</h2>
 
@@ -460,16 +462,17 @@ export default function StudyBuddyPage() {
           </div>
         </Card>
         </div>
-      </div>
+        </div>
+      </AppLayout>
     );
   }
 
   // Session View (Waiting Room / Active Game)
   if (view === 'session' && currentSession) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 pb-20">
-        <TabNavigation />
-        <header className="px-4 sm:px-6 py-6 bg-white border-b border-gray-100">
+      <AppLayout>
+        <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
+          <header className="px-4 sm:px-6 py-6 bg-white border-b border-gray-100">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-between">
               <div>
@@ -557,7 +560,8 @@ export default function StudyBuddyPage() {
             Share the session code with your friends to invite them
           </p>
         </main>
-      </div>
+        </div>
+      </AppLayout>
     );
   }
 

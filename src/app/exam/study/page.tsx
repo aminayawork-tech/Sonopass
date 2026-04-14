@@ -10,7 +10,7 @@ import { ArrowLeft, BookOpen, Lightbulb, CheckCircle2, Brain, ArrowRight, Users,
 import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
 import { useModality } from '@/contexts/ModalityContext';
-import TabNavigation from '@/components/TabNavigation';
+import AppLayout from '@/components/layout/AppLayout';
 import StudyBuddyPanel from '@/components/StudyBuddyPanel';
 
 export default function StudyPage() {
@@ -116,10 +116,10 @@ export default function StudyPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 pb-20">
-      <TabNavigation />
-      {/* Header */}
-      <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white/80 backdrop-blur-sm border-b-4 border-purple-400 shadow-lg">
+    <AppLayout>
+      <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
+        {/* Header */}
+        <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white/80 backdrop-blur-sm border-b-4 border-purple-400 shadow-lg">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-4">
             <h1 className="text-xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
@@ -567,6 +567,7 @@ function StudyCategoryExam({
           </Card>
         )}
       </main>
-    </div>
+      </div>
+    </AppLayout>
   );
 }

@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
 
-type TabType = 'topics' | 'study-guide' | 'study-together' | 'glossary';
+type TabType = 'topics' | 'study-guide' | 'glossary';
 
 export default function StudyModePage() {
   const { currentModality } = useModality();
@@ -125,17 +125,6 @@ export default function StudyModePage() {
             Study Guide
           </button>
           <button
-            onClick={() => setActiveTab('study-together')}
-            className={`flex-1 min-w-[130px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
-              activeTab === 'study-together'
-                ? 'bg-sono-green-ultrasound text-white shadow-md'
-                : 'text-sono-gray-600 hover:bg-sono-gray-100'
-            }`}
-          >
-            <Users className="w-4 h-4 inline-block mr-1.5" />
-            Study Together
-          </button>
-          <button
             onClick={() => setActiveTab('glossary')}
             className={`flex-1 min-w-[100px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
               activeTab === 'glossary'
@@ -153,7 +142,7 @@ export default function StudyModePage() {
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-sono-gray-500" />
           <input
             type="text"
-            placeholder={`Search ${activeTab === 'topics' ? 'topics' : activeTab === 'study-guide' ? 'study materials' : activeTab === 'glossary' ? 'terms' : 'study rooms'}...`}
+            placeholder={`Search ${activeTab === 'topics' ? 'topics' : activeTab === 'study-guide' ? 'study materials' : 'terms'}...`}
             className="w-full pl-12 pr-4 py-4 bg-white border border-sono-gray-300 rounded-2xl text-sono-gray-900 placeholder-sono-gray-500 focus:outline-none focus:ring-2 focus:ring-sono-green-ultrasound transition-all shadow-sm"
           />
         </div>
@@ -274,28 +263,6 @@ export default function StudyModePage() {
                     </div>
                   </div>
                   <ChevronRight className="w-6 h-6 text-sono-gray-400" />
-                </div>
-              </Card>
-            </Link>
-          </div>
-        )}
-
-        {activeTab === 'study-together' && (
-          <div className="space-y-4">
-            <h2 className="text-lg sm:text-xl font-bold text-sono-gray-900">Study Together</h2>
-            <Link href="/study-together">
-              <Card className="p-6 bg-gradient-to-r from-sono-blue-soft to-sono-blue-light text-white shadow-lg hover:shadow-xl transition-all active:scale-[0.99] cursor-pointer rounded-2xl">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4 flex-1">
-                    <div className="p-4 bg-white/20 rounded-xl">
-                      <Users className="w-8 h-8" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg mb-1">Join Study Rooms</h3>
-                      <p className="text-sm opacity-90">Compete with friends and learn together</p>
-                    </div>
-                  </div>
-                  <ChevronRight className="w-6 h-6" />
                 </div>
               </Card>
             </Link>
