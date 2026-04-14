@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import TabNavigation from '@/components/TabNavigation';
+import AppLayout from '@/components/layout/AppLayout';
 import {
   Brain, Activity, AlertTriangle, ClipboardList, Zap,
   Search, BookOpen, ChevronRight, Check, ArrowLeft,
@@ -111,9 +111,11 @@ export default function StudyGuidePage() {
 
   if (!content) {
     return (
-      <div className="min-h-screen bg-[#F5F7FA] pb-20 flex items-center justify-center">
-        <p className="text-gray-600">Loading study guide...</p>
-      </div>
+      <AppLayout>
+        <div className="flex items-center justify-center min-h-[400px]">
+          <p className="text-gray-600">Loading study guide...</p>
+        </div>
+      </AppLayout>
     );
   }
 
@@ -124,7 +126,7 @@ export default function StudyGuidePage() {
     const nextTopic = currentIndex < selectedCategory.topics.length - 1 ? selectedCategory.topics[currentIndex + 1] : null;
 
     return (
-      <div className="min-h-screen bg-[#F5F7FA] pb-20">
+      <AppLayout>
         <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-4 mb-3">
@@ -410,14 +412,13 @@ export default function StudyGuidePage() {
             })}
           </div>
         </main>
-      </div>
+      </AppLayout>
     );
   }
 
   // Categories Overview
   return (
-    <div className="min-h-screen bg-[#F5F7FA]">
-      <TabNavigation />
+    <AppLayout>
       <header className="px-4 sm:px-6 py-6 sm:py-8 bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
@@ -515,6 +516,6 @@ export default function StudyGuidePage() {
           </div>
         </div>
       </main>
-    </div>
+    </AppLayout>
   );
 }

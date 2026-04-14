@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
 import { useModality } from '@/contexts/ModalityContext';
-import TabNavigation from '@/components/TabNavigation';
+import AppLayout from '@/components/layout/AppLayout';
 
 export default function Quick10Page() {
   const [questions, setQuestions] = useState<any[]>([]);
@@ -29,16 +29,16 @@ export default function Quick10Page() {
 
   if (questions.length === 0 || !currentModality) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#F5F7FA] pb-20">
-        <TabNavigation />
-        <div className="text-3xl font-semibold text-gray-600">Loading...</div>
-      </div>
+      <AppLayout>
+        <div className="min-h-screen flex items-center justify-center bg-[#F5F7FA]">
+          <div className="text-3xl font-semibold text-gray-600">Loading...</div>
+        </div>
+      </AppLayout>
     );
   }
 
   return (
-    <div className="pb-20">
-      <TabNavigation />
+    <AppLayout>
       <ExamInterface
         key={key}
         questions={questions}
@@ -48,6 +48,6 @@ export default function Quick10Page() {
         modality={currentModality.id}
         onRestart={() => setKey(k => k + 1)}
       />
-    </div>
+    </AppLayout>
   );
 }

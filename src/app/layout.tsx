@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ModalityProvider } from "@/contexts/ModalityContext";
-import TabNavigation from "@/components/TabNavigation";
 import AppInitializer from "@/components/AppInitializer";
 
 export const metadata: Metadata = {

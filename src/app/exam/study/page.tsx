@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -9,10 +10,13 @@ import { ArrowLeft, BookOpen, Lightbulb, CheckCircle2, Brain, ArrowRight, Users,
 import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
 import { useModality } from '@/contexts/ModalityContext';
-import TabNavigation from '@/components/TabNavigation';
+import AppLayout from '@/components/layout/AppLayout';
 import StudyBuddyPanel from '@/components/StudyBuddyPanel';
 
 export default function StudyPage() {
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get('category');
+
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [categoryMap, setCategoryMap] = useState<Map<string, any[]>>(new Map());
   const [categories, setCategories] = useState<[string, any[]][]>([]);
@@ -64,14 +68,20 @@ export default function StudyPage() {
         });
 
         setCategoryMap(map);
-        setCategories(Array.from(map.entries()).sort((a, b) => b[1].length - a[1].length));
+        const sortedCategories = Array.from(map.entries()).sort((a, b) => b[1].length - a[1].length);
+        setCategories(sortedCategories);
+
+        // Auto-select category if provided in URL
+        if (categoryParam && map.has(categoryParam)) {
+          setSelectedCategory(categoryParam);
+        }
       } catch (error) {
         console.error('Failed to load questions:', error);
       }
     };
 
     loadData();
-  }, [currentModality, loadQuestions]);
+  }, [currentModality, loadQuestions, categoryParam]);
 
   // Category colors
   const categoryColors = [
@@ -106,10 +116,10 @@ export default function StudyPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 pb-20">
-      <TabNavigation />
-      {/* Header */}
-      <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white/80 backdrop-blur-sm border-b-4 border-purple-400 shadow-lg">
+    <AppLayout>
+      <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100">
+        {/* Header */}
+        <header className="px-4 sm:px-6 py-3 sm:py-6 bg-white/80 backdrop-blur-sm border-b-4 border-purple-400 shadow-lg">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-4">
             <h1 className="text-xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
@@ -557,6 +567,7 @@ function StudyCategoryExam({
           </Card>
         )}
       </main>
-    </div>
+      </div>
+    </AppLayout>
   );
 }

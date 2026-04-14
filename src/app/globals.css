@@ -4,41 +4,60 @@
 
 @layer base {
   :root {
-    /* Clean Medical UI - White Background */
-    --background: 0 0% 100%;
-    --foreground: 222.2 47.4% 11.2%;
+    /* SonoPass Professional Medical Color System */
 
-    /* White Cards */
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
+    /* Primary - Deep Teal (Professional Medical) */
+    --sono-teal-deep: 180 100% 20%;        /* #006666 */
+    --sono-teal-medium: 180 100% 27%;      /* #008B8B */
+    --sono-blue-soft: 193 100% 42%;        /* #00B4D8 */
+    --sono-blue-light: 193 76% 72%;        /* #90E0EF */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
+    /* Success & Progress - Ultrasound Green */
+    --sono-green-ultrasound: 154 53% 48%; /* #39b981 - Correct brand green */
+    --sono-green-soft: 154 53% 55%;      /* Lighter version of #39b981 */
 
-    /* Green Primary (SonoPass Green) */
-    --primary: 142 76% 36%;
-    --primary-foreground: 0 0% 100%;
+    /* Neutrals - Clean Medical Backgrounds */
+    --sono-white: 0 0% 100%;               /* #FFFFFF */
+    --sono-gray-50: 200 30% 98%;           /* #F8FAFB */
+    --sono-gray-100: 200 25% 96%;          /* #F1F4F7 */
+    --sono-gray-300: 200 15% 82%;          /* #D1D9E0 */
+    --sono-gray-600: 210 10% 45%;          /* #6B7785 */
+    --sono-gray-900: 216 38% 14%;          /* #1A2332 */
 
-    /* Blue Secondary */
-    --secondary: 217 91% 60%;
-    --secondary-foreground: 0 0% 100%;
+    /* Accent Colors */
+    --sono-amber: 38 92% 50%;              /* #F59E0B */
+    --sono-orange: 18 95% 52%;             /* #F97316 */
+    --sono-purple: 258 90% 66%;            /* #8B5CF6 */
+    --sono-red: 0 84% 60%;                 /* #EF4444 */
 
-    /* Muted Gray */
-    --muted: 220 14% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Mapped to Tailwind Variables */
+    --background: var(--sono-gray-50);
+    --foreground: var(--sono-gray-900);
 
-    /* Light Green Accent */
-    --accent: 142 76% 36%;
-    --accent-foreground: 0 0% 100%;
+    --card: var(--sono-white);
+    --card-foreground: var(--sono-gray-900);
 
-    /* Red for errors */
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --popover: var(--sono-white);
+    --popover-foreground: var(--sono-gray-900);
 
-    /* Subtle borders */
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 142 76% 36%;
+    --primary: var(--sono-teal-deep);
+    --primary-foreground: var(--sono-white);
+
+    --secondary: var(--sono-blue-soft);
+    --secondary-foreground: var(--sono-white);
+
+    --muted: var(--sono-gray-100);
+    --muted-foreground: var(--sono-gray-600);
+
+    --accent: var(--sono-green-ultrasound);
+    --accent-foreground: var(--sono-gray-900);
+
+    --destructive: var(--sono-red);
+    --destructive-foreground: var(--sono-white);
+
+    --border: var(--sono-gray-300);
+    --input: var(--sono-gray-300);
+    --ring: var(--sono-teal-deep);
 
     --radius: 0.75rem;
   }
