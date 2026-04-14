@@ -26,8 +26,8 @@ export default function HomePage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <h1 className="text-2xl font-black">
-                <span className="text-emerald-600">Sono</span>
-                <span className="text-gray-900">Pass</span>
+                <span className="text-gray-900">Sono</span>
+                <span style={{ color: '#3abc83' }}>Pass</span>
               </h1>
             </div>
             <div className="flex items-center gap-4">
@@ -35,7 +35,7 @@ export default function HomePage() {
                 <Button variant="ghost">Dashboard</Button>
               </Link>
               <Link href="/dashboard">
-                <Button className="bg-emerald-600 hover:bg-emerald-700">
+                <Button style={{ backgroundColor: '#3abc83' }} className="hover:opacity-90">
                   Get Started
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -49,14 +49,14 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-50 to-blue-50 py-20 sm:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6" style={{ backgroundColor: '#e8f8f2', color: '#3abc83' }}>
               <Zap className="w-4 h-4" />
               Trusted by Sonography Students Nationwide
             </div>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-gray-900 mb-6">
               Pass Your Sonography
               <br />
-              <span className="text-emerald-600">Registry Exam</span>
+              <span style={{ color: '#3abc83' }}>Registry Exam</span>
             </h1>
             <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto mb-8">
               The complete exam prep platform for RVT, SPI, and ARDMS certification.
@@ -64,7 +64,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/dashboard">
-                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-lg h-14 px-8">
+                <Button size="lg" style={{ backgroundColor: '#3abc83' }} className="hover:opacity-90 text-lg h-14 px-8">
                   Start Studying Free
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -82,7 +82,7 @@ export default function HomePage() {
         </div>
 
         {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-64 h-64 bg-emerald-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+        <div className="absolute top-0 left-0 w-64 h-64 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob" style={{ backgroundColor: '#3abc83' }}></div>
         <div className="absolute top-0 right-0 w-64 h-64 bg-teal-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
         <div className="absolute bottom-0 left-1/2 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </section>
@@ -92,19 +92,19 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-black text-emerald-600 mb-2">1000+</div>
+              <div className="text-4xl font-black mb-2" style={{ color: '#3abc83' }}>1000+</div>
               <div className="text-gray-600 font-medium">Practice Questions</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black text-emerald-600 mb-2">95%</div>
+              <div className="text-4xl font-black mb-2" style={{ color: '#3abc83' }}>95%</div>
               <div className="text-gray-600 font-medium">Pass Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black text-emerald-600 mb-2">24/7</div>
+              <div className="text-4xl font-black mb-2" style={{ color: '#3abc83' }}>24/7</div>
               <div className="text-gray-600 font-medium">Study Access</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black text-emerald-600 mb-2">4.9★</div>
+              <div className="text-4xl font-black mb-2" style={{ color: '#3abc83' }}>4.9★</div>
               <div className="text-gray-600 font-medium">Student Rating</div>
             </div>
           </div>
@@ -126,8 +126,8 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Feature 1 */}
             <Card className="p-8 hover:shadow-lg transition-shadow bg-white">
-              <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
-                <Brain className="w-6 h-6 text-emerald-600" />
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: '#e8f8f2' }}>
+                <Brain className="w-6 h-6" style={{ color: '#3abc83' }} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Practice Questions</h3>
               <p className="text-gray-600">
@@ -207,7 +207,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
             <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4" style={{ backgroundColor: '#3abc83' }}>
                 1
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Choose Your Exam</h3>
@@ -217,7 +217,7 @@ export default function HomePage() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4" style={{ backgroundColor: '#3abc83' }}>
                 2
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Study & Practice</h3>
@@ -227,7 +227,7 @@ export default function HomePage() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4" style={{ backgroundColor: '#3abc83' }}>
                 3
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Pass Your Exam</h3>
@@ -240,21 +240,21 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-600 to-teal-600">
+      <section className="py-20" style={{ background: 'linear-gradient(to bottom right, #3abc83, #2a9d6f)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-5xl font-black text-white mb-6">
             Ready to Pass Your Registry Exam?
           </h2>
-          <p className="text-xl text-emerald-50 mb-8">
+          <p className="text-xl mb-8" style={{ color: '#e8f8f2' }}>
             Join thousands of successful sonographers who prepared with SonoPass
           </p>
           <Link href="/dashboard">
-            <Button size="lg" className="bg-white text-emerald-600 hover:bg-gray-100 text-lg h-14 px-8">
+            <Button size="lg" className="bg-white hover:bg-gray-100 text-lg h-14 px-8" style={{ color: '#3abc83' }}>
               Get Started Now
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
-          <p className="text-emerald-100 mt-4">
+          <p className="mt-4" style={{ color: '#e8f8f2' }}>
             Free practice questions • No credit card required
           </p>
         </div>
@@ -265,8 +265,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-white text-xl font-black mb-4">
-                <span className="text-emerald-400">Sono</span>Pass
+              <h3 className="text-xl font-black mb-4">
+                <span className="text-white">Sono</span>
+                <span style={{ color: '#3abc83' }}>Pass</span>
               </h3>
               <p className="text-sm">
                 The complete exam prep platform for sonography registry exams.
