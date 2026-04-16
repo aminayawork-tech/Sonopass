@@ -170,9 +170,8 @@ export default function StudyGuidePage() {
     };
 
     return (
-      <AppLayout>
-        <div className="min-h-screen bg-[#F5F7FA]">
-          <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10">
+      <div className="min-h-screen bg-[#F5F7FA]">
+        <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10 shadow-sm">
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center justify-between gap-4 mb-3">
                 <div className="flex items-center gap-3">
@@ -402,23 +401,22 @@ export default function StudyGuidePage() {
               </div>
             </div>
           </main>
-        </div>
 
-        <style jsx global>{`
-          .perspective-1000 {
-            perspective: 1000px;
-          }
-          .preserve-3d {
-            transform-style: preserve-3d;
-          }
-          .backface-hidden {
-            backface-visibility: hidden;
-            -webkit-backface-visibility: hidden;
-          }
-        `}</style>
-      </AppLayout>
-    );
-  }
+          <style jsx global>{`
+            .perspective-1000 {
+              perspective: 1000px;
+            }
+            .preserve-3d {
+              transform-style: preserve-3d;
+            }
+            .backface-hidden {
+              backface-visibility: hidden;
+              -webkit-backface-visibility: hidden;
+            }
+          `}</style>
+        </div>
+      );
+    }
 
   // Category Detail View (List mode)
   if (selectedCategory) {

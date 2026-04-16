@@ -304,6 +304,118 @@ export default function GlossaryPage() {
     );
   };
 
+  // Render flashcard mode without AppLayout (clean, focused experience)
+  if (viewMode === 'flashcards') {
+    return (
+      <div className="min-h-screen bg-gray-50">
+        {/* Clean Header for Flashcards */}
+        <header className="bg-white border-b sticky top-0 z-40 shadow-sm">
+          <div className="max-w-4xl mx-auto px-4 py-3 sm:py-4">
+            <div className="flex justify-between items-center mb-3">
+              <div>
+                <h1 className="text-lg sm:text-2xl font-bold text-gray-900">
+                  {currentModality?.shortName || 'Glossary'} Flashcards
+                </h1>
+                <p className="text-xs sm:text-sm text-gray-500 mt-0.5">
+                  {filteredTerms.length} terms
+                </p>
+              </div>
+              <div className="flex items-center gap-2">
+                <Button
+                  onClick={() => setViewMode('list')}
+                  variant="outline"
+                  size="sm"
+                  className="text-xs sm:text-sm"
+                >
+                  <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5" />
+                  List View
+                </Button>
+                <Link href="/practice">
+                  <Button variant="ghost" size="sm" className="text-xs sm:text-sm">
+                    <ArrowLeft className="w-3.5 h-3.5 sm:w-4 sm:h-4 sm:mr-1.5" />
+                    <span className="hidden sm:inline">Back</span>
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Search bar */}
+            <div className="relative mb-3">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+              <Input
+                type="text"
+                placeholder="Search terms..."
+                value={searchQuery}
+                onChange={(e) => {
+                  setSearchQuery(e.target.value);
+                  setCurrentCardIndex(0);
+                  setIsFlipped(false);
+                }}
+                className="pl-9 h-9 text-sm"
+              />
+            </div>
+
+            {/* Category filter */}
+            <div className="flex items-center gap-2">
+              <select
+                value={selectedCategory}
+                onChange={(e) => {
+                  setSelectedCategory(e.target.value);
+                  setCurrentCardIndex(0);
+                  setIsFlipped(false);
+                }}
+                className="flex-1 px-3 py-1.5 border border-gray-300 rounded-md bg-white text-xs sm:text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              >
+                {categories.map(cat => (
+                  <option key={cat} value={cat}>
+                    {cat === 'all' ? 'All Categories' : cat.charAt(0).toUpperCase() + cat.slice(1)}
+                  </option>
+                ))}
+              </select>
+              <Button
+                onClick={handleShuffle}
+                variant="outline"
+                size="sm"
+                className="text-xs"
+              >
+                <Shuffle className="w-3.5 h-3.5 sm:mr-1.5" />
+                <span className="hidden sm:inline">Reset</span>
+              </Button>
+            </div>
+          </div>
+        </header>
+
+        {/* Flashcard Content */}
+        <main className="max-w-4xl mx-auto px-4 py-4 sm:py-6">
+          {loading ? (
+            <div className="flex items-center justify-center min-h-[400px]">
+              <div className="text-gray-500">Loading...</div>
+            </div>
+          ) : (
+            renderFlashcardView()
+          )}
+        </main>
+
+        <style jsx global>{`
+          .perspective-1000 {
+            perspective: 1000px;
+          }
+          .preserve-3d {
+            transform-style: preserve-3d;
+          }
+          .backface-hidden {
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+          }
+          .rotate-y-180 {
+            transform: rotateY(180deg);
+          }
+        `}</style>
+      </div>
+    );
+  }
+
+  // List view keeps the full layout with navigation
   return (
     <AppLayout>
       {/* Header */}
@@ -358,16 +470,15 @@ export default function GlossaryPage() {
               <div className="flex gap-2">
                 <Button
                   onClick={() => setViewMode('flashcards')}
-                  variant={viewMode === 'flashcards' ? 'default' : 'outline'}
-                  className={viewMode === 'flashcards' ? 'bg-emerald-600 hover:bg-emerald-700' : ''}
+                  variant="outline"
                 >
                   <RotateCw className="w-4 h-4 mr-2" />
                   Flashcards
                 </Button>
                 <Button
                   onClick={() => setViewMode('list')}
-                  variant={viewMode === 'list' ? 'default' : 'outline'}
-                  className={viewMode === 'list' ? 'bg-emerald-600 hover:bg-emerald-700' : ''}
+                  variant="default"
+                  className="bg-emerald-600 hover:bg-emerald-700"
                 >
                   <BookOpen className="w-4 h-4 mr-2" />
                   List
@@ -393,18 +504,6 @@ export default function GlossaryPage() {
                   </option>
                 ))}
               </select>
-
-              {viewMode === 'flashcards' && (
-                <Button
-                  onClick={handleShuffle}
-                  variant="outline"
-                  size="sm"
-                  className="ml-auto"
-                >
-                  <Shuffle className="w-4 h-4 mr-2" />
-                  Reset Progress
-                </Button>
-              )}
             </div>
 
             {/* Results Count */}
@@ -419,8 +518,6 @@ export default function GlossaryPage() {
           <Card className="p-8 text-center bg-white">
             <div className="text-gray-500">Loading glossary terms...</div>
           </Card>
-        ) : viewMode === 'flashcards' ? (
-          renderFlashcardView()
         ) : (
           renderListView()
         )}
