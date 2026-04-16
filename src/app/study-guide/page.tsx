@@ -274,86 +274,78 @@ export default function StudyGuidePage() {
                     }}
                   >
                     <div className="h-full flex flex-col max-w-3xl mx-auto">
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 flex-shrink-0">
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-4 sm:mb-5 flex-shrink-0">
                         {currentTopic.title}
                       </h3>
 
-                      <div className="flex-1 overflow-y-auto space-y-3 sm:space-y-4">
-                        {/* Quick Summary */}
+                      <div className="flex-1 overflow-y-auto space-y-4 text-gray-700">
+                        {/* Overview */}
                         {currentTopic.quickSummary && (
-                          <div className="bg-blue-50 border-l-4 border-blue-500 p-3 sm:p-4 rounded-r-lg">
-                            <div className="flex items-start gap-2 mb-2">
-                              <svg className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                              </svg>
-                              <h4 className="font-semibold text-blue-900 text-xs sm:text-sm">Overview</h4>
-                            </div>
-                            <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                          <div>
+                            <p className="text-sm sm:text-base leading-relaxed mb-4">
                               {currentTopic.quickSummary}
                             </p>
                           </div>
                         )}
 
-                        {/* Key Takeaways */}
-                        {currentTopic.keyTakeaways && currentTopic.keyTakeaways.length > 0 && (
-                          <div className="bg-emerald-50 border-l-4 border-emerald-500 p-3 sm:p-4 rounded-r-lg">
-                            <div className="flex items-start gap-2 mb-2">
-                              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                              <h4 className="font-semibold text-emerald-900 text-xs sm:text-sm">Key Points to Remember</h4>
+                        {/* Main breakdown */}
+                        <div className="space-y-3">
+                          {currentTopic.keyTakeaways && currentTopic.keyTakeaways.length > 0 && (
+                            <div>
+                              <h4 className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Here&apos;s what you need to know:</h4>
+                              <ul className="space-y-2 ml-1">
+                                {currentTopic.keyTakeaways.map((takeaway, i) => (
+                                  <li key={i} className="flex items-start gap-2 text-xs sm:text-sm">
+                                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
+                                    <span className="flex-1 leading-relaxed">{takeaway}</span>
+                                  </li>
+                                ))}
+                              </ul>
                             </div>
-                            <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-gray-700">
-                              {currentTopic.keyTakeaways.map((takeaway, i) => (
-                                <li key={i} className="flex items-start gap-2">
-                                  <span className="text-emerald-600 mt-0.5 flex-shrink-0">✓</span>
-                                  <span className="flex-1">{takeaway}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
+                          )}
 
-                        {/* Clinical Pearls */}
-                        {currentTopic.clinicalPearls && currentTopic.clinicalPearls.length > 0 && (
-                          <div className="bg-amber-50 border-l-4 border-amber-500 p-3 sm:p-4 rounded-r-lg">
-                            <div className="flex items-start gap-2 mb-2">
-                              <Lightbulb className="w-4 h-4 sm:w-5 sm:h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                              <h4 className="font-semibold text-amber-900 text-xs sm:text-sm">Clinical Pearls & Tips</h4>
+                          {/* Clinical tips in simple format */}
+                          {currentTopic.clinicalPearls && currentTopic.clinicalPearls.length > 0 && (
+                            <div>
+                              <h4 className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Clinical tips:</h4>
+                              <ul className="space-y-2 ml-1">
+                                {currentTopic.clinicalPearls.map((pearl, i) => (
+                                  <li key={i} className="flex items-start gap-2 text-xs sm:text-sm">
+                                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
+                                    <span className="flex-1 leading-relaxed">{pearl}</span>
+                                  </li>
+                                ))}
+                              </ul>
                             </div>
-                            <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-gray-700">
-                              {currentTopic.clinicalPearls.map((pearl, i) => (
-                                <li key={i} className="flex items-start gap-2">
-                                  <span className="text-amber-600 mt-0.5 flex-shrink-0">💡</span>
-                                  <span className="flex-1">{pearl}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
+                          )}
 
-                        {/* Key Terms */}
-                        {currentTopic.keyTerms.length > 0 && (
-                          <div className="bg-purple-50 border-l-4 border-purple-500 p-3 sm:p-4 rounded-r-lg">
-                            <div className="flex items-start gap-2 mb-2">
-                              <svg className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M7 2a1 1 0 011 1v1h3a1 1 0 110 2H9.578a18.87 18.87 0 01-1.724 4.78c.29.354.596.696.914 1.026a1 1 0 11-1.44 1.389c-.188-.196-.373-.396-.554-.6a19.098 19.098 0 01-3.107 3.567 1 1 0 01-1.334-1.49 17.087 17.087 0 003.13-3.733 18.992 18.992 0 01-1.487-2.494 1 1 0 111.79-.89c.234.47.489.928.764 1.372.417-.934.752-1.913.997-2.927H3a1 1 0 110-2h3V3a1 1 0 011-1zm6 6a1 1 0 01.894.553l2.991 5.982a.869.869 0 01.02.037l.99 1.98a1 1 0 11-1.79.894L15.383 16h-4.764l-.724 1.447a1 1 0 11-1.788-.894l.99-1.98.019-.038 2.99-5.982A1 1 0 0113 8zm-1.382 6h2.764L13 11.236 11.618 14z" clipRule="evenodd" />
-                              </svg>
-                              <h4 className="font-semibold text-purple-900 text-xs sm:text-sm">Important Terms</h4>
+                          {/* Key terms - simple list */}
+                          {currentTopic.keyTerms.length > 0 && (
+                            <div className="pt-3 border-t border-gray-200">
+                              <h4 className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Important terms:</h4>
+                              <div className="flex flex-wrap gap-1.5">
+                                {currentTopic.keyTerms.map((term, i) => (
+                                  <span
+                                    key={i}
+                                    className="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium"
+                                  >
+                                    {term}
+                                  </span>
+                                ))}
+                              </div>
                             </div>
-                            <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                              {currentTopic.keyTerms.map((term, i) => (
-                                <span
-                                  key={i}
-                                  className="px-2.5 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium border border-purple-200"
-                                >
-                                  {term}
-                                </span>
-                              ))}
-                            </div>
+                          )}
+
+                          {/* Study tip at bottom */}
+                          <div className="pt-3 border-t border-gray-200">
+                            <p className="text-xs sm:text-sm text-gray-500 italic">
+                              💡 Study tip: Review these concepts multiple times and try to explain them without looking
+                            </p>
                           </div>
-                        )}
+                        </div>
                       </div>
 
-                      <p className="text-gray-400 text-xs sm:text-sm mt-4 sm:mt-6 flex-shrink-0 text-center">Tap to flip back</p>
+                      <p className="text-gray-400 text-xs sm:text-sm mt-4 sm:mt-5 flex-shrink-0 text-center">Tap to flip back</p>
                     </div>
                   </Card>
                 </div>
