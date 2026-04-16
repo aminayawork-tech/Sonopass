@@ -12,7 +12,25 @@
   {
     "term": "Acceleration index",
     "definition": "A Doppler measurement used in renal artery evaluation; values less than 3 m/s² suggest stenosis by indicating delayed systolic upstroke.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Measures how fast blood speeds up at the start of systole",
+    "breakDown": [
+      "Acceleration = how quickly velocity rises",
+      "Index = a measured value",
+      "Acceleration Index = speed of the \"upstroke\" of the waveform"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"How fast does blood hit the gas?\" 🚗💨",
+      "points": [
+        "Fast upstroke = normal",
+        "Slow upstroke = problem upstream"
+      ]
+    },
+    "clinicalUse": "Helps detect proximal stenosis (upstream blockage)",
+    "waveformClue": {
+      "normal": "sharp, steep upstroke ⬆️",
+      "abnormal": "slow, rounded upstroke"
+    }
   },
   {
     "term": "Acceleration time",

@@ -13,6 +13,17 @@ interface GlossaryTerm {
   term: string;
   definition: string;
   category: string;
+  meaning?: string;
+  breakDown?: string[];
+  memoryTrick?: {
+    title: string;
+    points: string[];
+  };
+  clinicalUse?: string;
+  waveformClue?: {
+    normal: string;
+    abnormal: string;
+  };
 }
 
 // Category color mapping for glossary badges
@@ -206,30 +217,111 @@ export default function GlossaryPage() {
                   </h3>
                 </div>
 
-                {/* Simple breakdown - ChatGPT style */}
+                {/* ChatGPT-style breakdown */}
                 <div className="space-y-4 text-gray-700">
-                  <p className="text-sm sm:text-base leading-relaxed">
-                    {currentTerm.definition}
-                  </p>
+                  {/* Meaning (if available) */}
+                  {currentTerm.meaning && (
+                    <div>
+                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-1">Meaning:</p>
+                      <p className="text-sm sm:text-base leading-relaxed">
+                        {currentTerm.meaning}
+                      </p>
+                    </div>
+                  )}
 
-                  <div className="space-y-2 text-sm sm:text-base">
-                    <p className="font-medium text-gray-900">Breaking it down:</p>
-                    <ul className="space-y-2 ml-4">
-                      <li className="flex items-start gap-2">
-                        <span className="text-blue-600 mt-1">•</span>
-                        <span>This is a <strong>{currentTerm.category}</strong> concept you&apos;ll need for the exam</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-blue-600 mt-1">•</span>
-                        <span>Focus on understanding how <strong>{currentTerm.term}</strong> relates to other concepts in {currentTerm.category}</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-blue-600 mt-1">•</span>
-                        <span>When you see this term on the test, recall the key definition above</span>
-                      </li>
-                    </ul>
-                  </div>
+                  {/* Standard definition (always show if no meaning) */}
+                  {!currentTerm.meaning && (
+                    <p className="text-sm sm:text-base leading-relaxed">
+                      {currentTerm.definition}
+                    </p>
+                  )}
 
+                  {/* Break it down section */}
+                  {currentTerm.breakDown && currentTerm.breakDown.length > 0 ? (
+                    <div>
+                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Break it down:</p>
+                      <ul className="space-y-2 ml-1">
+                        {currentTerm.breakDown.slice(0, -1).map((point, i) => (
+                          <li key={i} className="flex items-start gap-2 text-xs sm:text-sm">
+                            <span className="flex-shrink-0 mt-0.5">👉</span>
+                            <span className="flex-1 leading-relaxed">{point}</span>
+                          </li>
+                        ))}
+                        {currentTerm.breakDown.length > 0 && (
+                          <li className="flex items-start gap-2 text-xs sm:text-sm">
+                            <span className="flex-shrink-0 mt-0.5">🔷</span>
+                            <span className="flex-1 leading-relaxed">{currentTerm.breakDown[currentTerm.breakDown.length - 1]}</span>
+                          </li>
+                        )}
+                      </ul>
+                    </div>
+                  ) : (
+                    <div>
+                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Breaking it down:</p>
+                      <ul className="space-y-2 ml-1">
+                        <li className="flex items-start gap-2 text-xs sm:text-sm">
+                          <span className="text-blue-600 mt-1">•</span>
+                          <span>This is a <strong>{currentTerm.category}</strong> concept you&apos;ll need for the exam</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs sm:text-sm">
+                          <span className="text-blue-600 mt-1">•</span>
+                          <span>Focus on understanding how <strong>{currentTerm.term}</strong> relates to other concepts in {currentTerm.category}</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs sm:text-sm">
+                          <span className="text-blue-600 mt-1">•</span>
+                          <span>When you see this term on the test, recall the key definition above</span>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* Memory trick */}
+                  {currentTerm.memoryTrick && (
+                    <div>
+                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Simple memory trick:</p>
+                      <p className="text-xs sm:text-sm mb-2 leading-relaxed">
+                        {currentTerm.memoryTrick.title}
+                      </p>
+                      <ul className="space-y-1.5 ml-1">
+                        {currentTerm.memoryTrick.points.map((point, i) => (
+                          <li key={i} className="flex items-start gap-2 text-xs sm:text-sm">
+                            <span className="text-blue-600 mt-0.5">•</span>
+                            <span className="flex-1 leading-relaxed">{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* Clinical use */}
+                  {currentTerm.clinicalUse && (
+                    <div>
+                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-1">What it tells you (RVT gold):</p>
+                      <p className="flex items-start gap-2 text-xs sm:text-sm leading-relaxed">
+                        <span className="flex-shrink-0 mt-0.5">👉</span>
+                        <span className="flex-1">{currentTerm.clinicalUse}</span>
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Waveform clue */}
+                  {currentTerm.waveformClue && (
+                    <div>
+                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Waveform clue:</p>
+                      <ul className="space-y-1.5 ml-1">
+                        <li className="flex items-start gap-2 text-xs sm:text-sm">
+                          <span className="font-medium text-gray-900">Normal:</span>
+                          <span className="flex-1 leading-relaxed">{currentTerm.waveformClue.normal}</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs sm:text-sm">
+                          <span className="font-medium text-gray-900">Abnormal:</span>
+                          <span className="flex-1 leading-relaxed">{currentTerm.waveformClue.abnormal}</span>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* Tip at bottom */}
                   <div className="pt-3 border-t border-gray-200">
                     <p className="text-xs sm:text-sm text-gray-500 italic">
                       💡 Tip: Try explaining this concept in your own words to test your understanding
