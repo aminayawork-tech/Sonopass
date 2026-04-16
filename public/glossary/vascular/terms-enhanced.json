@@ -1,0 +1,206 @@
+[
+  {
+    "term": "Abdominal aorta",
+    "definition": "The largest artery in the abdomen, supplying blood to the lower body; located in the retroperitoneum and prone to aneurysms or occlusion.",
+    "category": "anatomy",
+    "meaning": "Main highway for blood to your lower body",
+    "breakDown": [
+      "Largest vessel in abdomen",
+      "Located behind the peritoneum (retroperitoneal)",
+      "Key screening target for aneurysms (AAA screening)"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"The body's main highway\" 🛣️",
+      "points": [
+        "Abdominal = belly area",
+        "Aorta = biggest artery"
+      ]
+    },
+    "clinicalUse": "Screen for aneurysms (AAA) - life-threatening if ruptures"
+  },
+  {
+    "term": "Abdominal bruit",
+    "definition": "An abnormal whooshing sound heard over the abdomen due to turbulent blood flow, often indicating arterial stenosis or aneurysm.",
+    "category": "doppler",
+    "meaning": "Abnormal \"whooshing\" sound in the belly indicating turbulent flow",
+    "breakDown": [
+      "Bruit = French word for \"noise\"",
+      "Caused by turbulent blood flow",
+      "Indicates stenosis or aneurysm"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"Turbulence makes noise\" 🌪️",
+      "points": [
+        "Smooth flow = silent",
+        "Turbulent flow = bruit (noise)"
+      ]
+    },
+    "clinicalUse": "Helps detect arterial stenosis or aneurysm before imaging"
+  },
+  {
+    "term": "Acceleration index",
+    "definition": "A Doppler measurement used in renal artery evaluation; values less than 3 m/s² suggest stenosis by indicating delayed systolic upstroke.",
+    "category": "anatomy",
+    "meaning": "Measures how fast blood speeds up at the start of systole",
+    "breakDown": [
+      "Acceleration = how quickly velocity rises",
+      "Index = a measured value",
+      "Acceleration Index = speed of the \"upstroke\" of the waveform"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"How fast does blood hit the gas?\" 🚗💨",
+      "points": [
+        "Fast upstroke = normal",
+        "Slow upstroke = problem upstream"
+      ]
+    },
+    "clinicalUse": "Helps detect proximal stenosis (upstream blockage)",
+    "waveformClue": {
+      "normal": "sharp, steep upstroke ⬆️",
+      "abnormal": "slow, rounded upstroke"
+    }
+  },
+  {
+    "term": "Acceleration time",
+    "definition": "Time from onset of systole to peak velocity in Doppler waveforms; greater than 70 ms indicates proximal stenosis (e.g., tardus parvus pattern).",
+    "category": "doppler",
+    "meaning": "Time it takes to reach peak velocity from the start of systole",
+    "breakDown": [
+      "Measured in milliseconds (ms)",
+      "Normal: Less than 70 ms",
+      "Prolonged (>70 ms) = upstream stenosis"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"Time to reach top speed\" ⏱️",
+      "points": [
+        "Quick acceleration = normal",
+        "Slow acceleration (>70ms) = tardus parvus"
+      ]
+    },
+    "clinicalUse": "Identifies proximal stenosis causing tardus parvus pattern",
+    "waveformClue": {
+      "normal": "reaches peak quickly (<70 ms)",
+      "abnormal": "delayed peak (>70 ms) - tardus parvus"
+    }
+  },
+  {
+    "term": "Acute ischemia",
+    "definition": "Sudden reduction in blood flow to tissues, often due to emboli or thrombosis, leading to pain, pallor, and potential tissue death.",
+    "category": "doppler",
+    "meaning": "Sudden loss of blood supply causing tissue emergency",
+    "breakDown": [
+      "Acute = sudden onset",
+      "Ischemia = lack of blood flow",
+      "Usually caused by clot (thrombus) or embolus"
+    ],
+    "memoryTrick": {
+      "title": "Remember the 6 P's: Pain, Pallor, Pulselessness, Paresthesia, Paralysis, Poikilothermia 🆘",
+      "points": [
+        "Sudden = acute",
+        "Emergency requiring immediate treatment"
+      ]
+    },
+    "clinicalUse": "Medical emergency - tissue death if not treated quickly"
+  },
+  {
+    "term": "Acute tubular necrosis",
+    "definition": "Death of tubular cells in the kidney, the most common cause of immediate postoperative renal transplant failure, often due to ischemia.",
+    "category": "anatomy",
+    "meaning": "Death of kidney tubule cells - most common early transplant complication",
+    "breakDown": [
+      "Tubular = kidney tubules",
+      "Necrosis = cell death",
+      "#1 cause of immediate post-transplant failure"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"ATN = After Transplant, No flow\" 💀",
+      "points": [
+        "Caused by ischemia (lack of blood)",
+        "Most common early complication"
+      ]
+    },
+    "clinicalUse": "Most common cause of immediate postop renal transplant failure"
+  },
+  {
+    "term": "Aliasing",
+    "definition": "An artifact in Doppler ultrasound where high velocities appear wrapped around the spectrum, mimicking reversed or low flow.",
+    "category": "doppler",
+    "meaning": "Artifact where fast flow looks reversed or wrapped around",
+    "breakDown": [
+      "Happens when velocity exceeds Nyquist limit",
+      "High velocity appears as reversed flow",
+      "Not real - it's an artifact!"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"Too fast to track\" 🏃‍♂️💨",
+      "points": [
+        "Velocity too high = wraps around",
+        "Fix: increase scale or use CW Doppler"
+      ]
+    },
+    "clinicalUse": "Don't mistake aliasing for reversed flow - adjust your settings!",
+    "waveformClue": {
+      "normal": "flow stays in correct direction",
+      "abnormal": "high velocity wraps to opposite side of baseline"
+    }
+  },
+  {
+    "term": "Amaurosis fugax",
+    "definition": "Transient monocular vision loss due to temporary ischemia in the retinal artery, often a hemispheric symptom of carotid disease.",
+    "category": "anatomy",
+    "meaning": "Temporary blindness in one eye from lack of blood flow",
+    "breakDown": [
+      "Amaurosis = blindness",
+      "Fugax = fleeting/temporary",
+      "Classic sign of carotid artery disease"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"Curtain falling over one eye\" 🪟",
+      "points": [
+        "One eye only (monocular)",
+        "Temporary (comes back)",
+        "Carotid stenosis warning sign"
+      ]
+    },
+    "clinicalUse": "Hemispheric symptom - indicates carotid disease, stroke risk"
+  },
+  {
+    "term": "Ankle-brachial index (ABI)",
+    "definition": "A non-invasive test comparing ankle and brachial systolic pressures; normal range 0.9-1.3, lower values indicate peripheral arterial disease.",
+    "category": "anatomy",
+    "meaning": "Ratio comparing ankle pressure to arm pressure",
+    "breakDown": [
+      "ABI = Ankle pressure ÷ Arm pressure",
+      "Normal: 0.9-1.3",
+      "Low ABI = peripheral arterial disease (PAD)"
+    ],
+    "memoryTrick": {
+      "title": "Remember: 0.9-1.3 is normal 📊",
+      "points": [
+        "<0.9 = PAD (poor circulation)",
+        ">1.3 = calcified vessels (diabetes)",
+        "0.4-0.9 = claudication range"
+      ]
+    },
+    "clinicalUse": "First-line screening for peripheral arterial disease (PAD)"
+  },
+  {
+    "term": "Anterior tibial vein",
+    "definition": "A deep vein in the lower leg accompanying the anterior tibial artery; often paired and drains the anterior compartment.",
+    "category": "anatomy",
+    "meaning": "Deep vein in front of lower leg",
+    "breakDown": [
+      "Anterior = front",
+      "Tibial = lower leg bone area",
+      "Usually comes in pairs (duplicated)"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"Anterior = front of leg\" 🦵",
+      "points": [
+        "Runs with anterior tibial artery",
+        "Often paired veins"
+      ]
+    },
+    "clinicalUse": "Check for DVT in lower leg deep veins"
+  }
+]

@@ -2,12 +2,43 @@
   {
     "term": "Abdominal aorta",
     "definition": "The largest artery in the abdomen, supplying blood to the lower body; located in the retroperitoneum and prone to aneurysms or occlusion.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "The largest artery in the abdomen",
+    "breakDown": [
+      "The largest artery in the abdomen",
+      "Supplying blood to the lower body",
+      "Located in the retroperitoneum and prone to aneurysms or occlusion."
+    ],
+    "memoryTrick": {
+      "title": "Think: Blocked road 🚫",
+      "points": [
+        "Focus on the key aspects of Abdominal aorta",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Abdominal bruit",
     "definition": "An abnormal whooshing sound heard over the abdomen due to turbulent blood flow, often indicating arterial stenosis or aneurysm.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "An abnormal whooshing sound heard over the abdomen due to turbulent blood flow",
+    "breakDown": [
+      "An abnormal whooshing sound heard over the abdomen due to turbulent blood flow",
+      "Often indicating arterial stenosis or aneurysm."
+    ],
+    "memoryTrick": {
+      "title": "Think: Narrowing = less flow 🚧",
+      "points": [
+        "Focus on the key aspects of Abdominal bruit",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation",
+    "waveformClue": {
+      "normal": "Normal waveform pattern",
+      "abnormal": "Abnormal waveform pattern"
+    }
   },
   {
     "term": "Acceleration index",
@@ -35,701 +66,2607 @@
   {
     "term": "Acceleration time",
     "definition": "Time from onset of systole to peak velocity in Doppler waveforms; greater than 70 ms indicates proximal stenosis (e.g., tardus parvus pattern).",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Time from onset of systole to peak velocity in Doppler waveforms",
+    "breakDown": [
+      "Time from onset of systole to peak velocity in Doppler waveforms",
+      "Greater than 70 ms indicates proximal stenosis (e.g.",
+      "Tardus parvus pattern)."
+    ],
+    "memoryTrick": {
+      "title": "Think: Narrowing = less flow 🚧",
+      "points": [
+        "Focus on the key aspects of Acceleration time",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions",
+    "waveformClue": {
+      "normal": "normal velocity and waveform shape",
+      "abnormal": "increased velocity, turbulence, or dampened waveform"
+    }
   },
   {
     "term": "Acute ischemia",
     "definition": "Sudden reduction in blood flow to tissues, often due to emboli or thrombosis, leading to pain, pallor, and potential tissue death.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Sudden reduction in blood flow to tissues",
+    "breakDown": [
+      "Sudden reduction in blood flow to tissues",
+      "Often due to emboli or thrombosis",
+      "Leading to pain"
+    ],
+    "memoryTrick": {
+      "title": "Think: Clot in the pot 🩸",
+      "points": [
+        "Focus on the key aspects of Acute ischemia",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Acute tubular necrosis",
     "definition": "Death of tubular cells in the kidney, the most common cause of immediate postoperative renal transplant failure, often due to ischemia.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Death of tubular cells in the kidney",
+    "breakDown": [
+      "Death of tubular cells in the kidney",
+      "The most common cause of immediate postoperative renal transplant failure",
+      "Often due to ischemia."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Acute tubular necrosis is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Acute tubular necrosis",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Aliasing",
     "definition": "An artifact in Doppler ultrasound where high velocities appear wrapped around the spectrum, mimicking reversed or low flow.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Artifact where fast flow wraps around and looks backwards",
+    "breakDown": [
+      "Happens when velocity exceeds Nyquist limit",
+      "High velocity \"wraps\" to opposite side",
+      "NOT real reversed flow - it's an artifact!"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"Too fast for the machine to track\" 🏎️💨",
+      "points": [
+        "Velocity > Nyquist limit = aliasing",
+        "FIX: Increase scale, shift baseline, or use CW Doppler",
+        "Don't confuse with actual reversed flow!"
+      ]
+    },
+    "clinicalUse": "Recognize as artifact, not pathology - adjust settings to fix it",
+    "waveformClue": {
+      "normal": "flow stays within spectrum limits",
+      "abnormal": "high velocity wraps to opposite side, cut-off peaks"
+    }
   },
   {
     "term": "Amaurosis fugax",
     "definition": "Transient monocular vision loss due to temporary ischemia in the retinal artery, often a hemispheric symptom of carotid disease.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Transient monocular vision loss due to temporary ischemia in the retinal artery",
+    "breakDown": [
+      "Transient monocular vision loss due to temporary ischemia in the retinal artery",
+      "Often a hemispheric symptom of carotid disease."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Amaurosis fugax",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Ankle-brachial index (ABI)",
     "definition": "A non-invasive test comparing ankle and brachial systolic pressures; normal range 0.9-1.3, lower values indicate peripheral arterial disease.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Ratio comparing leg pressure to arm pressure",
+    "breakDown": [
+      "ABI = Ankle systolic pressure ÷ Arm (brachial) pressure",
+      "Simple calculation to screen for PAD",
+      "Takes 5 minutes, non-invasive, highly effective"
+    ],
+    "memoryTrick": {
+      "title": "Remember the ranges: 0.9-1.3 is normal 📊",
+      "points": [
+        "<0.9 = PAD (Peripheral Arterial Disease)",
+        "0.4-0.9 = Claudication range",
+        "<0.4 = Severe PAD, rest pain",
+        ">1.3 = Calcified vessels (often diabetes)"
+      ]
+    },
+    "clinicalUse": "Gold standard screening test for peripheral arterial disease (PAD)"
   },
   {
     "term": "Anterior tibial vein",
     "definition": "A deep vein in the lower leg accompanying the anterior tibial artery; often paired and drains the anterior compartment.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "A deep vein in the lower leg accompanying the anterior tibial artery",
+    "breakDown": [
+      "A deep vein in the lower leg accompanying the anterior tibial artery",
+      "Often paired and drains the anterior compartment."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Anterior tibial vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Aortic coarctation",
     "definition": "Congenital narrowing of the aorta, causing hypertension in the upper body and decreased femoral pulses, often with abdominal bruit.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Congenital narrowing of the aorta",
+    "breakDown": [
+      "Congenital narrowing of the aorta",
+      "Causing hypertension in the upper body and decreased femoral pulses",
+      "Often with abdominal bruit."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Aortic coarctation is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Aortic coarctation",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Aortoiliac occlusive disease",
     "definition": "Blockage or narrowing of the aorta and iliac arteries due to atherosclerosis, leading to claudication or blue toe syndrome.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Blockage or narrowing of the aorta and iliac arteries due to atherosclerosis",
+    "breakDown": [
+      "Blockage or narrowing of the aorta and iliac arteries due to atherosclerosis",
+      "Leading to claudication or blue toe syndrome."
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Aortoiliac occlusive disease",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Arteriovenous fistula (AVF)",
     "definition": "Abnormal connection between an artery and vein, causing high-flow shunting; can be post-biopsy or dialysis-related, with low-resistance waveforms.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Abnormal connection between an artery and vein",
+    "breakDown": [
+      "Abnormal connection between an artery and vein",
+      "Causing high-flow shunting",
+      "Can be post-biopsy or dialysis-related"
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Arteriovenous fistula (AVF)",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation",
+    "waveformClue": {
+      "normal": "Normal waveform pattern",
+      "abnormal": "Abnormal waveform pattern"
+    }
   },
   {
     "term": "Atherosclerosis",
     "definition": "Buildup of plaque in arteries, leading to narrowing or occlusion; common cause of peripheral arterial disease and ulcers.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Buildup of plaque in arteries",
+    "breakDown": [
+      "Buildup of plaque in arteries",
+      "Leading to narrowing or occlusion",
+      "Common cause of peripheral arterial disease and ulcers."
+    ],
+    "memoryTrick": {
+      "title": "Think: Blocked road 🚫",
+      "points": [
+        "Focus on the key aspects of Atherosclerosis",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Augmentation",
     "definition": "Increase in venous Doppler signal with distal compression (e.g., calf squeeze), used to assess patency and rule out obstruction.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Increased flow signal when you squeeze below the probe",
+    "breakDown": [
+      "Squeeze distal limb (below probe)",
+      "Should see rush of blood (augmentation)",
+      "No augmentation = obstruction between squeeze and probe"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"Squeeze the toothpaste tube\" 🧴",
+      "points": [
+        "Calf squeeze = push blood toward heart",
+        "Good augmentation = patent vein",
+        "No/weak augmentation = obstruction"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Azygos vein",
     "definition": "A thoracic vein that drains into the superior vena cava; can serve as collateral in central venous obstruction.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "A thoracic vein that drains into the superior vena cava",
+    "breakDown": [
+      "A thoracic vein that drains into the superior vena cava",
+      "Can serve as collateral in central venous obstruction."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Azygos vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Blue toe syndrome",
     "definition": "Embolization of atheromatous debris to toes, causing painful blue discoloration; associated with aortoiliac disease.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Embolization of atheromatous debris to toes",
+    "breakDown": [
+      "Embolization of atheromatous debris to toes",
+      "Causing painful blue discoloration",
+      "Associated with aortoiliac disease."
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Blue toe syndrome",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Brachial vein",
     "definition": "Deep vein in the upper arm accompanying the brachial artery; typically paired and joins to form the axillary vein.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Deep vein in the upper arm accompanying the brachial artery",
+    "breakDown": [
+      "Deep vein in the upper arm accompanying the brachial artery",
+      "Typically paired and joins to form the axillary vein."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Brachial vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Brachiocephalic vein",
     "definition": "Major vein formed by confluence of subclavian and internal jugular veins; drains upper body and can be obstructed in thoracic outlet syndrome.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Major vein formed by confluence of subclavian and internal jugular veins",
+    "breakDown": [
+      "Major vein formed by confluence of subclavian and internal jugular veins",
+      "Drains upper body and can be obstructed in thoracic outlet syndrome."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Brachiocephalic vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Budd-Chiari syndrome",
     "definition": "Obstruction of hepatic veins or IVC, leading to liver congestion; not typically associated with tumor invasion.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Obstruction of hepatic veins or IVC",
+    "breakDown": [
+      "Obstruction of hepatic veins or IVC",
+      "Leading to liver congestion",
+      "Not - typically associated with tumor invasion."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Budd-Chiari syndrome",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Buerger's disease (Thromboangiitis obliterans)",
     "definition": "Inflammatory disease affecting small arteries/veins in smokers, often involving distal vessels like posterior tibial artery.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Inflammatory disease affecting small arteries/veins in smokers",
+    "breakDown": [
+      "Inflammatory disease affecting small arteries/veins in smokers",
+      "Often involving distal vessels like posterior tibial artery."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Buerger's disease (Thromboangiitis obliterans)",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Bypass graft",
     "definition": "Surgical conduit (e.g., vein or synthetic) to reroute blood around occluded arteries; monitored with duplex for patency and stenosis.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Surgical conduit (e.g.",
+    "breakDown": [
+      "Surgical conduit (e.g.",
+      "Vein or synthetic) to reroute blood around occluded arteries",
+      "Monitored with duplex for patency and stenosis."
+    ],
+    "memoryTrick": {
+      "title": "Think: Narrowing = less flow 🚧",
+      "points": [
+        "Focus on the key aspects of Bypass graft",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Carotid endarterectomy",
     "definition": "Surgical removal of plaque from the carotid artery to prevent stroke; post-op changes include bulb size alterations.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Surgical removal of plaque from the carotid artery to prevent stroke",
+    "breakDown": [
+      "Surgical removal of plaque from the carotid artery to prevent stroke",
+      "Post-op changes include bulb size alterations."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Carotid endarterectomy",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Celiac artery (axis)",
     "definition": "Major branch of abdominal aorta supplying foregut; velocities increase post-meal normally, but can be compressed in median arcuate syndrome.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Major branch of abdominal aorta supplying foregut",
+    "breakDown": [
+      "Major branch of abdominal aorta supplying foregut",
+      "Velocities increase post-meal normally",
+      "But can be compressed in median arcuate syndrome."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Celiac artery (axis)",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Celiac axis stenosis",
     "definition": "Narrowing of the celiac artery, causing turbulent flow; differentiated from compression syndromes via breathing maneuvers.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Narrowing of the celiac artery",
+    "breakDown": [
+      "Narrowing of the celiac artery",
+      "Causing turbulent flow",
+      "Differentiated from compression syndromes via breathing maneuvers."
+    ],
+    "memoryTrick": {
+      "title": "Think: Narrowing = less flow 🚧",
+      "points": [
+        "Focus on the key aspects of Celiac axis stenosis",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Central arterial occlusion",
     "definition": "Blockage in major proximal arteries, leading to altered flow patterns like high resistive in distal branches.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Blockage in major proximal arteries",
+    "breakDown": [
+      "Blockage in major proximal arteries",
+      "Leading to altered flow patterns like high resistive in distal branches."
+    ],
+    "memoryTrick": {
+      "title": "Think: Blocked road 🚫",
+      "points": [
+        "Focus on the key aspects of Central arterial occlusion",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Central venous obstruction",
     "definition": "Blockage in major veins like SVC or brachiocephalic, causing edema and collateral veins; common in AVF patients with arm swelling.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Blockage in major veins like SVC or brachiocephalic",
+    "breakDown": [
+      "Blockage in major veins like SVC or brachiocephalic",
+      "Causing edema and collateral veins",
+      "Common in avf patients with arm swelling."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Central venous obstruction",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Cephalic vein",
     "definition": "Superficial vein on the lateral upper arm/forearm; drains into axillary vein and used in AVF creation.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Superficial vein on the lateral upper arm/forearm",
+    "breakDown": [
+      "Superficial vein on the lateral upper arm/forearm",
+      "Drains into axillary vein and used in avf creation."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Cephalic vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Claudication",
     "definition": "Leg pain from peripheral arterial disease relieved by rest; first symptom of chronic lower extremity occlusive disease.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Leg pain from peripheral arterial disease relieved by rest",
+    "breakDown": [
+      "Leg pain from peripheral arterial disease relieved by rest",
+      "First symptom of chronic lower extremity occlusive disease."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Claudication is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Claudication",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Collateral arteries",
     "definition": "Alternative pathways that develop around occlusions; typically more numerous, tortuous, and smaller than native vessels.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Alternative pathways that develop around occlusions",
+    "breakDown": [
+      "Alternative pathways that develop around occlusions",
+      "Typically more numerous"
+    ],
+    "memoryTrick": {
+      "title": "Think: Blocked road 🚫",
+      "points": [
+        "Focus on the key aspects of Collateral arteries",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Common femoral vein",
     "definition": "Major vein at groin level; assessed for phasicity and augmentation to detect iliac or femoral obstruction.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Major vein at groin level",
+    "breakDown": [
+      "Major vein at groin level",
+      "Assessed for phasicity and augmentation to detect iliac or femoral obstruction."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Common femoral vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Compartment syndrome",
     "definition": "Increased pressure within muscle fascial compartments, causing ischemia; due to swelling, not atherosclerosis.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Increased pressure within muscle fascial compartments",
+    "breakDown": [
+      "Increased pressure within muscle fascial compartments",
+      "Causing ischemia",
+      "Due to swelling"
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Compartment syndrome",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Complete palmar arch",
     "definition": "Full arterial loop in hand connecting radial and ulnar arteries; patency tested with PPG and compression.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Full arterial loop in hand connecting radial and ulnar arteries",
+    "breakDown": [
+      "Full arterial loop in hand connecting radial and ulnar arteries",
+      "Patency tested with ppg and compression."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Complete palmar arch is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Complete palmar arch",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Compressibility",
     "definition": "Ultrasound test where veins are compressed transversely; lack indicates thrombosis or incompressibility.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Ultrasound test where veins are compressed transversely",
+    "breakDown": [
+      "Ultrasound test where veins are compressed transversely",
+      "Lack indicates thrombosis or incompressibility."
+    ],
+    "memoryTrick": {
+      "title": "Think: Clot in the pot 🩸",
+      "points": [
+        "Focus on the key aspects of Compressibility",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Continuous Doppler waveform",
     "definition": "Non-phasic, steady flow signal; indicates proximal venous obstruction (e.g., brachiocephalic or SVC).",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Non-phasic",
+    "breakDown": [
+      "Steady flow signal",
+      "Indicates proximal venous obstruction (e.g."
+    ],
+    "memoryTrick": {
+      "title": "Think: Blood movement through vessels 🌊",
+      "points": [
+        "Focus on the key aspects of Continuous Doppler waveform",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Coronal orientation",
     "definition": "Imaging plane dividing body into front/back; not standard for vein compressibility (transverse is preferred).",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Imaging plane dividing body into front/back",
+    "breakDown": [
+      "Imaging plane dividing body into front/back",
+      "Not standard for vein compressibility (transverse is preferred)."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Coronal orientation",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Cyanosis",
     "definition": "Bluish discoloration due to low oxygen; seen in Raynaud's after pallor phase or in blue toe syndrome.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Bluish discoloration due to low oxygen",
+    "breakDown": [
+      "Bluish discoloration due to low oxygen",
+      "Seen in raynaud's after pallor phase or in blue toe syndrome."
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Cyanosis",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Deep venous thrombosis (DVT)",
     "definition": "Blood clot in deep veins, causing secondary venous insufficiency; history can lead to reflux.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Blood clot blocking deep veins",
+    "breakDown": [
+      "Deep = deep veins (not superficial)",
+      "Venous = in the veins (not arteries)",
+      "Thrombosis = blood clot formation"
+    ],
+    "memoryTrick": {
+      "title": "Remember: \"Deep, Dark, Dangerous\" 🩸",
+      "points": [
+        "Check with compression test - can't compress = DVT",
+        "No augmentation = obstruction",
+        "Risk: pulmonary embolism if clot breaks off"
+      ]
+    },
+    "clinicalUse": "Primary test: compression ultrasound - if vein doesn't compress, it's DVT"
   },
   {
     "term": "Diabetic neuropathy",
     "definition": "Nerve damage from diabetes, causing foot issues but not directly blue toe syndrome.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Nerve damage from diabetes",
+    "breakDown": [
+      "Nerve damage from diabetes",
+      "Causing foot issues but not directly blue toe syndrome."
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Diabetic neuropathy",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Diastolic flow",
     "definition": "Blood flow during heart relaxation; increased in low-resistance beds or AVFs.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Blood flow during heart relaxation",
+    "breakDown": [
+      "Blood flow during heart relaxation",
+      "Increased in low-resistance beds or avfs."
+    ],
+    "memoryTrick": {
+      "title": "Think: How hard it is for blood to flow 💪",
+      "points": [
+        "Focus on the key aspects of Diastolic flow",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Duplex exam",
     "definition": "Ultrasound combining B-mode imaging and Doppler for vascular assessment; used post-endarterectomy or for veins/arteries.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Ultrasound combining B-mode imaging and Doppler for vascular assessment",
+    "breakDown": [
+      "Ultrasound combining B-mode imaging and Doppler for vascular assessment",
+      "Used post-endarterectomy or for veins/arteries."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Duplex exam",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Dysphasia",
     "definition": "Difficulty speaking, a hemispheric symptom from carotid territory ischemia.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Difficulty speaking",
+    "breakDown": [
+      "Difficulty speaking",
+      "A hemispheric symptom from carotid territory ischemia."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Dysphasia is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Dysphasia",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Early systolic peak",
     "definition": "Sharp upstroke in Doppler waveform; normal in renal segmental arteries, indicating no proximal stenosis.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Sharp upstroke in Doppler waveform",
+    "breakDown": [
+      "Sharp upstroke in Doppler waveform",
+      "Normal in renal segmental arteries",
+      "Indicating no proximal stenosis."
+    ],
+    "memoryTrick": {
+      "title": "Think: Narrowing = less flow 🚧",
+      "points": [
+        "Focus on the key aspects of Early systolic peak",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation",
+    "waveformClue": {
+      "normal": "normal velocity and waveform shape",
+      "abnormal": "increased velocity, turbulence, or dampened waveform"
+    }
   },
   {
     "term": "Emboli",
     "definition": "Clots or debris traveling in bloodstream; main cause of acute lower extremity ischemia or blue toe.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Clots or debris traveling in bloodstream",
+    "breakDown": [
+      "Clots or debris traveling in bloodstream",
+      "Main cause of acute lower extremity ischemia or blue toe."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Emboli is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Emboli",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Endarterectomy",
     "definition": "See Carotid endarterectomy; general term for plaque removal from arteries.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "See Carotid endarterectomy",
+    "breakDown": [
+      "See Carotid endarterectomy",
+      "General term for plaque removal from arteries."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Endarterectomy is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Endarterectomy",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Facial swelling",
     "definition": "Symptom of superior vena cava syndrome or central obstruction, with edema and dyspnea.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Symptom of superior vena cava syndrome or central obstruction",
+    "breakDown": [
+      "Symptom of superior vena cava syndrome or central obstruction",
+      "With edema and dyspnea."
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Facial swelling",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Femoral vein",
     "definition": "Deep vein in thigh; assessed for reflux or obstruction; valves are numerous here.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Deep vein in thigh",
+    "breakDown": [
+      "Deep vein in thigh",
+      "Assessed for reflux or obstruction",
+      "Valves are numerous here."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Femoral vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Fibromuscular dysplasia",
     "definition": "Nonatherosclerotic arterial disease causing beading/narrowing; commonly affects distal internal carotid or renal arteries.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Nonatherosclerotic arterial disease causing beading/narrowing",
+    "breakDown": [
+      "Nonatherosclerotic arterial disease causing beading/narrowing",
+      "Commonly affects distal internal carotid or renal arteries."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Fibromuscular dysplasia is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Fibromuscular dysplasia",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Gaiter area",
     "definition": "Lower medial leg region where venous ulcers often occur due to insufficiency.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Lower medial leg region where venous ulcers often occur due to insufficiency.",
+    "breakDown": [
+      "Lower medial leg region where venous ulcers - often occur due to insufficiency."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Gaiter area is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Gaiter area",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Gangrene",
     "definition": "Tissue death from ischemia; potential complication of compartment syndrome.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Tissue death from ischemia",
+    "breakDown": [
+      "Tissue death from ischemia",
+      "Potential complication of compartment syndrome."
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Gangrene",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Gastrocnemius muscle",
     "definition": "Calf muscle; can compress popliteal artery in entrapment syndromes.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Calf muscle",
+    "breakDown": [
+      "Calf muscle",
+      "Can compress popliteal artery in entrapment syndromes."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Gastrocnemius muscle",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Great saphenous vein",
     "definition": "Long superficial leg vein; common source of reflux in venous insufficiency.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Long superficial leg vein",
+    "breakDown": [
+      "Long superficial leg vein",
+      "Common source of reflux in venous insufficiency."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Great saphenous vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Hematoma",
     "definition": "Localized blood collection; post-biopsy complication but not typically with low-resistance flow.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Localized blood collection",
+    "breakDown": [
+      "Localized blood collection",
+      "Post-biopsy complication but not - typically with low-resistance flow."
+    ],
+    "memoryTrick": {
+      "title": "Think: How hard it is for blood to flow 💪",
+      "points": [
+        "Focus on the key aspects of Hematoma",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Hemiparesis",
     "definition": "Weakness on one body side; hemispheric symptom from carotid ischemia.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Weakness on one body side",
+    "breakDown": [
+      "Weakness on one body side",
+      "Hemispheric symptom from carotid ischemia."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Hemiparesis is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Hemiparesis",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Hepatic vein",
     "definition": "Drains liver to IVC; normal flow is hepatofugal, pulsatile due to cardiac influence.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Drains liver to IVC",
+    "breakDown": [
+      "Drains liver to IVC",
+      "Normal flow is hepatofugal",
+      "Pulsatile due to cardiac influence."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Hepatic vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Hepatic vein thrombosis",
     "definition": "Clot in hepatic veins; causes Budd-Chiari-like symptoms but not aliasing post-biopsy.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Clot in hepatic veins",
+    "breakDown": [
+      "Clot in hepatic veins",
+      "Causes budd-chiari-like symptoms but not aliasing post-biopsy."
+    ],
+    "memoryTrick": {
+      "title": "Think: Clot in the pot 🩸",
+      "points": [
+        "Focus on the key aspects of Hepatic vein thrombosis",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Hepatocellular carcinoma",
     "definition": "Liver cancer; can invade veins but less commonly IVC than renal cell carcinoma.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Liver cancer",
+    "breakDown": [
+      "Liver cancer",
+      "Can invade veins but less commonly ivc than renal cell carcinoma."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Hepatocellular carcinoma",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Hepatofugal",
     "definition": "Flow away from the liver; normal for hepatic veins, abnormal for portal vein (indicates portal hypertension).",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Flow away from the liver",
+    "breakDown": [
+      "Flow away from the liver",
+      "Normal for hepatic veins",
+      "Abnormal for portal vein (indicates portal hypertension)."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Hepatofugal",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions",
+    "waveformClue": {
+      "normal": "Normal waveform pattern",
+      "abnormal": "Abnormal waveform pattern"
+    }
   },
   {
     "term": "Hepatopetal",
     "definition": "Flow toward the liver; normal for portal vein, abnormal for hepatic veins.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Flow toward the liver",
+    "breakDown": [
+      "Flow toward the liver",
+      "Normal for portal vein",
+      "Abnormal for hepatic veins."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Hepatopetal",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation",
+    "waveformClue": {
+      "normal": "Normal waveform pattern",
+      "abnormal": "Abnormal waveform pattern"
+    }
   },
   {
     "term": "Hepatoportal circulation",
     "definition": "System involving portal and hepatic veins; normal portal flow is hepatopetal, non-pulsatile; hepatic is hepatofugal, pulsatile.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "System involving portal and hepatic veins",
+    "breakDown": [
+      "System involving portal and hepatic veins",
+      "Normal portal flow is hepatopetal",
+      "Non-pulsatile"
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Hepatoportal circulation",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "High resistive flow",
     "definition": "Waveform with little diastolic flow; seen in muscular arteries or proximal to occlusion.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Waveform with little diastolic flow",
+    "breakDown": [
+      "Waveform with little diastolic flow",
+      "Seen in muscular arteries or proximal to occlusion."
+    ],
+    "memoryTrick": {
+      "title": "Think: Blocked road 🚫",
+      "points": [
+        "Focus on the key aspects of High resistive flow",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation",
+    "waveformClue": {
+      "normal": "normal velocity and waveform shape",
+      "abnormal": "increased velocity, turbulence, or dampened waveform"
+    }
   },
   {
     "term": "Incomplete palmar arch",
     "definition": "Partial hand arterial loop; causes no PPG change with radial compression if ulnar is occluded.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Partial hand arterial loop",
+    "breakDown": [
+      "Partial hand arterial loop",
+      "Causes no ppg change with radial compression if ulnar is occluded."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Incomplete palmar arch is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Incomplete palmar arch",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Inferior vena cava (IVC)",
     "definition": "Major vein returning blood from lower body to heart; invaded by tumors like renal cell carcinoma; few valves.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Major vein returning blood from lower body to heart",
+    "breakDown": [
+      "Major vein returning blood from lower body to heart",
+      "Invaded by tumors like renal cell carcinoma",
+      "Few valves."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Inferior vena cava (IVC)",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Inflow artery occlusion",
     "definition": "Blockage of artery supplying an AVF; causes reduced flow but not edema.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Blockage of artery supplying an AVF",
+    "breakDown": [
+      "Blockage of artery supplying an AVF",
+      "Causes reduced flow but not edema."
+    ],
+    "memoryTrick": {
+      "title": "Think: Blocked road 🚫",
+      "points": [
+        "Focus on the key aspects of Inflow artery occlusion",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Innominate vein",
     "definition": "Another name for brachiocephalic vein.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Another name for brachiocephalic vein.",
+    "breakDown": [
+      "Another name for brachiocephalic vein."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Innominate vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Internal jugular vein",
     "definition": "Major neck vein draining brain; obstruction doesn't cause continuous subclavian flow.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Major neck vein draining brain",
+    "breakDown": [
+      "Major neck vein draining brain",
+      "Obstruction doesn't cause continuous subclavian flow."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Internal jugular vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Intrinsic compression",
     "definition": "External pressure on vessels; not typical for blue toe but seen in syndromes like median arcuate.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "External pressure on vessels",
+    "breakDown": [
+      "External pressure on vessels",
+      "Not typical for blue toe but seen in syndromes like median arcuate."
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Intrinsic compression",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Ipsilateral arm edema",
     "definition": "Swelling on same side as AVF; indicates central venous obstruction.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Swelling on same side as AVF",
+    "breakDown": [
+      "Swelling on same side as AVF",
+      "Indicates central venous obstruction."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Ipsilateral arm edema is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Ipsilateral arm edema",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Leriche syndrome",
     "definition": "Aortoiliac occlusion causing buttock claudication, impotence; not related to celiac compression.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Aortoiliac occlusion causing buttock claudication",
+    "breakDown": [
+      "Aortoiliac occlusion causing buttock claudication",
+      "Not related to celiac compression."
+    ],
+    "memoryTrick": {
+      "title": "Think: Blocked road 🚫",
+      "points": [
+        "Focus on the key aspects of Leriche syndrome",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Lesser sac",
     "definition": "Peritoneal space; not location of abdominal aorta.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Peritoneal space",
+    "breakDown": [
+      "Peritoneal space",
+      "Not location of abdominal aorta."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Lesser sac is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Lesser sac",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Loss of phasicity",
     "definition": "Absence of respiratory variation in venous Doppler; indicates proximal obstruction (e.g., partial iliac).",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Absence of respiratory variation in venous Doppler",
+    "breakDown": [
+      "Absence of respiratory variation in venous Doppler",
+      "Indicates proximal obstruction (e.g.",
+      "Partial iliac)."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Loss of phasicity is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Loss of phasicity",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Low-resistance waveform",
     "definition": "High diastolic flow; normal in brain/renal arteries or post-exercise; seen in AVFs.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "High diastolic flow",
+    "breakDown": [
+      "High diastolic flow",
+      "Normal in brain/renal arteries or post-exercise",
+      "Seen in avfs."
+    ],
+    "memoryTrick": {
+      "title": "Think: How hard it is for blood to flow 💪",
+      "points": [
+        "Focus on the key aspects of Low-resistance waveform",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Mastoid bone",
     "definition": "Skull bone behind ear; not a transtemporal landmark for TCD.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Skull bone behind ear",
+    "breakDown": [
+      "Skull bone behind ear",
+      "Not a transtemporal landmark for tcd."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Mastoid bone is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Mastoid bone",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Medial arcuate syndrome",
     "definition": "Compression of celiac axis by median arcuate ligament; velocities change with breathing.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Compression of celiac axis by median arcuate ligament",
+    "breakDown": [
+      "Compression of celiac axis by median arcuate ligament",
+      "Velocities change with breathing."
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Medial arcuate syndrome",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Medial malleolus",
     "definition": "Inner ankle bone; PPG sensor placement above it for venous insufficiency testing.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Inner ankle bone",
+    "breakDown": [
+      "Inner ankle bone",
+      "PPG sensor placement above it for venous insufficiency testing."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Medial malleolus is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Medial malleolus",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Medial wall calcification",
     "definition": "Hardening of artery inner wall; associated with monophasic waveforms and high ABI (>1.3) in diabetics.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Hardening of artery inner wall",
+    "breakDown": [
+      "Hardening of artery inner wall",
+      "Associated with monophasic waveforms and high abi (>1.3) in diabetics."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Medial wall calcification",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Middle cerebral artery M2 branch",
     "definition": "Distal segment of MCA; landmark in transcranial Doppler for cerebral flow assessment.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Distal segment of MCA",
+    "breakDown": [
+      "Distal segment of MCA",
+      "Landmark in transcranial doppler for cerebral flow assessment."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Middle cerebral artery M2 branch",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Monophasic",
     "definition": "Single-phase waveform; indicates severe disease or calcification in arteries, or obstruction in veins.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Single-phase waveform",
+    "breakDown": [
+      "Single-phase waveform",
+      "Indicates severe disease or calcification in arteries",
+      "Or obstruction in veins."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Monophasic",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Morison pouch",
     "definition": "Space between liver and kidney; not aorta location.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Space between liver and kidney",
+    "breakDown": [
+      "Space between liver and kidney",
+      "Not aorta location."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Morison pouch is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Morison pouch",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Native vessels",
     "definition": "Original anatomical arteries/veins; compared to collaterals or grafts.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Original anatomical arteries/veins",
+    "breakDown": [
+      "Original anatomical arteries/veins",
+      "Compared to collaterals or grafts."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Native vessels",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Neurovascular compression syndrome",
     "definition": "Entrapment of vessels/nerves; e.g., thoracic outlet, causing decreased pulses.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Entrapment of vessels/nerves",
+    "breakDown": [
+      "Entrapment of vessels/nerves",
+      "Thoracic outlet"
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Neurovascular compression syndrome",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Nonatherosclerotic",
     "definition": "Vessel narrowing not due to plaque; e.g., fibromuscular dysplasia or Takayasu arteritis.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Vessel narrowing not due to plaque",
+    "breakDown": [
+      "Vessel narrowing not due to plaque",
+      "Fibromuscular dysplasia or takayasu arteritis."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Nonatherosclerotic is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Nonatherosclerotic",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Nonhemispheric sign",
     "definition": "Symptom from vertebrobasilar insufficiency, like syncope, not lateralized like hemiparesis.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Symptom from vertebrobasilar insufficiency",
+    "breakDown": [
+      "Symptom from vertebrobasilar insufficiency",
+      "Like syncope",
+      "Not lateralized like hemiparesis."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Nonhemispheric sign is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Nonhemispheric sign",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Oblique orientation",
     "definition": "Angled imaging plane; not standard for vein compression.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Angled imaging plane",
+    "breakDown": [
+      "Angled imaging plane",
+      "Not standard for vein compression."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Oblique orientation",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Ovarian carcinoma",
     "definition": "Ovarian cancer; can invade veins but less commonly IVC.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Ovarian cancer",
+    "breakDown": [
+      "Ovarian cancer",
+      "Can invade veins but less commonly ivc."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Ovarian carcinoma",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Paget von Schroetter disease",
     "definition": "Effort thrombosis of axillary/subclavian vein; confirmed with upper extremity venous duplex; causes arm edema.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Effort thrombosis of axillary/subclavian vein",
+    "breakDown": [
+      "Effort thrombosis of axillary/subclavian vein",
+      "Confirmed with upper extremity venous duplex",
+      "Causes arm edema."
+    ],
+    "memoryTrick": {
+      "title": "Think: Clot in the pot 🩸",
+      "points": [
+        "Focus on the key aspects of Paget von Schroetter disease",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Pallor",
     "definition": "Paleness; initial phase in Raynaud's disease due to vasospasm.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Paleness",
+    "breakDown": [
+      "Initial phase in raynaud's disease due to vasospasm."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Pallor is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Pallor",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Palmar arch",
     "definition": "Arterial network in palm; completeness tested with PPG and artery compression.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Arterial network in palm",
+    "breakDown": [
+      "Arterial network in palm",
+      "Completeness tested with ppg and artery compression."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Palmar arch",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Patency",
     "definition": "Openness of a vessel or graft; assessed via Doppler flow or compression.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Openness of a vessel or graft",
+    "breakDown": [
+      "Openness of a vessel or graft",
+      "Assessed via doppler flow or compression."
+    ],
+    "memoryTrick": {
+      "title": "Think: Blood movement through vessels 🌊",
+      "points": [
+        "Focus on the key aspects of Patency",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Pectoralis minor",
     "definition": "Chest muscle; compresses axillary vessels in some thoracic outlet cases.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Chest muscle",
+    "breakDown": [
+      "Chest muscle",
+      "Compresses axillary vessels in some thoracic outlet cases."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Pectoralis minor is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Pectoralis minor",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Perforating vein",
     "definition": "Connects superficial to deep veins; responsible for reflux if thigh tourniquet normalizes refill time.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Connects superficial to deep veins",
+    "breakDown": [
+      "Connects superficial to deep veins",
+      "Responsible for reflux if thigh tourniquet normalizes refill time."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Perforating vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Peritoneal",
     "definition": "Relating to the peritoneum cavity; not aorta location.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Relating to the peritoneum cavity",
+    "breakDown": [
+      "Relating to the peritoneum cavity",
+      "Not aorta location."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Peritoneal is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Peritoneal",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Peroneal vein",
     "definition": "Deep calf vein; often singular in lower extremity venous system.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Deep calf vein",
+    "breakDown": [
+      "Deep calf vein",
+      "Often singular in lower extremity venous system."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Peroneal vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Phasic Doppler signal",
     "definition": "Flow varying with respiration; normal in veins, lost with obstruction.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Flow varying with respiration",
+    "breakDown": [
+      "Flow varying with respiration",
+      "Normal in veins",
+      "Lost with obstruction."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Phasic Doppler signal",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Photoplethysmography (PPG)",
     "definition": "Non-invasive test using light to measure blood volume changes; used for venous insufficiency or arterial patency in digits.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Non-invasive test using light to measure blood volume changes",
+    "breakDown": [
+      "Non-invasive test using light to measure blood volume changes",
+      "Used for venous insufficiency or arterial patency in digits."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Photoplethysmography (PPG) is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Photoplethysmography (PPG)",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Popliteal vein",
     "definition": "Vein behind knee; numerous valves; obstruction doesn't affect CFV augmentation if proximal.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Vein behind knee",
+    "breakDown": [
+      "Vein behind knee",
+      "Numerous valves",
+      "Obstruction doesn't affect cfv augmentation if proximal."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Popliteal vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Portal vein",
     "definition": "Carries blood from gut to liver; normal flow hepatopetal, non-pulsatile; occlusion causes high resistance.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Carries blood from gut to liver",
+    "breakDown": [
+      "Carries blood from gut to liver",
+      "Normal flow hepatopetal",
+      "Non-pulsatile"
+    ],
+    "memoryTrick": {
+      "title": "Think: Blocked road 🚫",
+      "points": [
+        "Focus on the key aspects of Portal vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions",
+    "waveformClue": {
+      "normal": "normal velocity and waveform shape",
+      "abnormal": "increased velocity, turbulence, or dampened waveform"
+    }
   },
   {
     "term": "Portal vein occlusion",
     "definition": "Blockage of portal vein; not typically with aliasing post-liver biopsy.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Blockage of portal vein",
+    "breakDown": [
+      "Blockage of portal vein",
+      "Not - typically with aliasing post-liver biopsy."
+    ],
+    "memoryTrick": {
+      "title": "Think: Blocked road 🚫",
+      "points": [
+        "Focus on the key aspects of Portal vein occlusion",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Posterior cerebral artery",
     "definition": "Brain artery; distal segment used as landmark in TCD.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Brain artery",
+    "breakDown": [
+      "Brain artery",
+      "Distal segment used as landmark in tcd."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Posterior cerebral artery",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Posterior tibial vein",
     "definition": "Deep calf vein accompanying posterior tibial artery; often paired.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Deep calf vein accompanying posterior tibial artery",
+    "breakDown": [
+      "Deep calf vein accompanying posterior tibial artery",
+      "Often paired."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Posterior tibial vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Primary venous insufficiency",
     "definition": "Valve incompetence without prior thrombosis; causes include congenital absence or damage.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Valve incompetence without prior thrombosis",
+    "breakDown": [
+      "Valve incompetence without prior thrombosis",
+      "Causes include congenital absence or damage."
+    ],
+    "memoryTrick": {
+      "title": "Think: Clot in the pot 🩸",
+      "points": [
+        "Focus on the key aspects of Primary venous insufficiency",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Profunda femoris vein",
     "definition": "Deep thigh vein; complete occlusion doesn't cause CFV phasicity loss.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Deep thigh vein",
+    "breakDown": [
+      "Deep thigh vein",
+      "Complete occlusion doesn't cause cfv phasicity loss."
+    ],
+    "memoryTrick": {
+      "title": "Think: Blocked road 🚫",
+      "points": [
+        "Focus on the key aspects of Profunda femoris vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation",
+    "waveformClue": {
+      "normal": "normal velocity and waveform shape",
+      "abnormal": "increased velocity, turbulence, or dampened waveform"
+    }
   },
   {
     "term": "Pulsatile flow",
     "definition": "Throbbing waveform synced to heartbeat; normal in arteries, abnormal in portal vein (indicates hypertension).",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Throbbing waveform synced to heartbeat",
+    "breakDown": [
+      "Throbbing waveform synced to heartbeat",
+      "Normal in arteries",
+      "Abnormal in portal vein (indicates hypertension)."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Pulsatile flow",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions",
+    "waveformClue": {
+      "normal": "Normal waveform pattern",
+      "abnormal": "Abnormal waveform pattern"
+    }
   },
   {
     "term": "Raynaud disease",
     "definition": "Vasospasm of digits triggered by cold/stress, causing pallor, cyanosis, rubor; tested with PPG.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Vasospasm of digits triggered by cold/stress",
+    "breakDown": [
+      "Vasospasm of digits triggered by cold/stress",
+      "Causing pallor"
+    ],
+    "memoryTrick": {
+      "title": "Remember: Raynaud disease is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Raynaud disease",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Renal allograft",
     "definition": "Transplanted kidney; common complication is renal artery stenosis.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Transplanted kidney",
+    "breakDown": [
+      "Transplanted kidney",
+      "Common complication is renal artery stenosis."
+    ],
+    "memoryTrick": {
+      "title": "Think: Narrowing = less flow 🚧",
+      "points": [
+        "Focus on the key aspects of Renal allograft",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Renal artery",
     "definition": "Supplies kidney; lowest resistive index among options; stenosis causes tardus parvus in segments.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Supplies kidney",
+    "breakDown": [
+      "Supplies kidney",
+      "Lowest resistive index among options",
+      "Stenosis causes tardus parvus in segments."
+    ],
+    "memoryTrick": {
+      "title": "Think: A measured value 📊",
+      "points": [
+        "Focus on the key aspects of Renal artery",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Renal artery stenosis",
     "definition": "Narrowing of renal artery; most common vascular issue in transplants.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Narrowing of renal artery",
+    "breakDown": [
+      "Narrowing of renal artery",
+      "Most common vascular issue in transplants."
+    ],
+    "memoryTrick": {
+      "title": "Think: Narrowing = less flow 🚧",
+      "points": [
+        "Focus on the key aspects of Renal artery stenosis",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Renal artery thrombosis",
     "definition": "Clot in renal artery; less common than stenosis in allografts.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Clot in renal artery",
+    "breakDown": [
+      "Clot in renal artery",
+      "Less common than stenosis in allografts."
+    ],
+    "memoryTrick": {
+      "title": "Think: Narrowing = less flow 🚧",
+      "points": [
+        "Focus on the key aspects of Renal artery thrombosis",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Renal cell carcinoma",
     "definition": "Kidney cancer; most common to invade IVC via renal vein.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Kidney cancer",
+    "breakDown": [
+      "Kidney cancer",
+      "Most common to invade ivc via renal vein."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Renal cell carcinoma",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Renal vein stenosis",
     "definition": "Narrowing of renal vein; rare in transplants.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Narrowing of renal vein",
+    "breakDown": [
+      "Narrowing of renal vein",
+      "Rare in transplants."
+    ],
+    "memoryTrick": {
+      "title": "Think: Narrowing = less flow 🚧",
+      "points": [
+        "Focus on the key aspects of Renal vein stenosis",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Renal vein thrombosis",
     "definition": "Clot in renal vein; can occur post-transplant but less common.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Clot in renal vein",
+    "breakDown": [
+      "Clot in renal vein",
+      "Can occur post-transplant but less common."
+    ],
+    "memoryTrick": {
+      "title": "Think: Clot in the pot 🩸",
+      "points": [
+        "Focus on the key aspects of Renal vein thrombosis",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Resistive index",
     "definition": "Measure of vascular resistance (PSV - EDV)/PSV; lowest in renal arteries (low-resistance bed).",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Measure of vascular resistance (PSV - EDV)/PSV",
+    "breakDown": [
+      "Measure of vascular resistance (PSV - EDV)/PSV",
+      "Lowest in renal arteries (low-resistance bed)."
+    ],
+    "memoryTrick": {
+      "title": "Think: A measured value 📊",
+      "points": [
+        "Focus on the key aspects of Resistive index",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Retroperitoneum",
     "definition": "Space behind peritoneum where abdominal aorta and IVC lie.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Space behind peritoneum where abdominal aorta and IVC lie.",
+    "breakDown": [
+      "Space behind peritoneum where abdominal aorta and IVC lie."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Retroperitoneum is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Retroperitoneum",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Sagittal orientation",
     "definition": "Imaging plane dividing body into left/right; used in vascular ultrasound but not for compression.",
-    "category": "technique"
+    "category": "technique",
+    "meaning": "Imaging plane dividing body into left/right",
+    "breakDown": [
+      "Imaging plane dividing body into left/right",
+      "Used in vascular ultrasound but not for compression."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Sagittal orientation is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Sagittal orientation",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Sample volume",
     "definition": "Size of Doppler gate; too large can cause artifacts in graft imaging.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Size of Doppler gate",
+    "breakDown": [
+      "Size of Doppler gate",
+      "Too large can cause artifacts in graft imaging."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Sample volume is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Sample volume",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Sartorius",
     "definition": "Thigh muscle; not common in thoracic outlet compression.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Thigh muscle",
+    "breakDown": [
+      "Thigh muscle",
+      "Not common in thoracic outlet compression."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Sartorius is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Sartorius",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Scalene",
     "definition": "Neck muscle; most frequent compressor in thoracic outlet syndrome.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Neck muscle",
+    "breakDown": [
+      "Neck muscle",
+      "Most frequent compressor in thoracic outlet syndrome."
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Scalene",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Segmental arteries",
     "definition": "Intrarenal branches; waveforms assess for proximal stenosis (e.g., acceleration time).",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Intrarenal branches",
+    "breakDown": [
+      "Intrarenal branches",
+      "Waveforms assess for proximal stenosis (e.g.",
+      "Acceleration time)."
+    ],
+    "memoryTrick": {
+      "title": "Think: Narrowing = less flow 🚧",
+      "points": [
+        "Focus on the key aspects of Segmental arteries",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation",
+    "waveformClue": {
+      "normal": "normal velocity and waveform shape",
+      "abnormal": "increased velocity, turbulence, or dampened waveform"
+    }
   },
   {
     "term": "Small saphenous vein",
     "definition": "Superficial posterior leg vein; can cause reflux but less than great saphenous.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Superficial posterior leg vein",
+    "breakDown": [
+      "Superficial posterior leg vein",
+      "Can cause reflux but less than great saphenous."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Small saphenous vein",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Spectral Doppler",
     "definition": "Ultrasound mode showing velocity spectrum over time; used for waveforms in hepatic/portal veins.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Ultrasound mode showing velocity spectrum over time",
+    "breakDown": [
+      "Ultrasound mode showing velocity spectrum over time",
+      "Used for waveforms in hepatic/portal veins."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Spectral Doppler",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Sphenoid bone",
     "definition": "Skull bone; landmark in transtemporal TCD window.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Skull bone",
+    "breakDown": [
+      "Landmark in transtemporal tcd window."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Sphenoid bone is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Sphenoid bone",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Steal phenomenon",
     "definition": "Diversion of blood to AVF causing distal ischemia; not primary cause of edema in AVF patients.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Diversion of blood to AVF causing distal ischemia",
+    "breakDown": [
+      "Diversion of blood to AVF causing distal ischemia",
+      "Not primary cause of edema in avf patients."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Steal phenomenon is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Steal phenomenon",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Superior mesenteric artery (SMA)",
     "definition": "Supplies midgut; high resistance when fasting, decreases post-meal.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Supplies midgut",
+    "breakDown": [
+      "Supplies midgut",
+      "High resistance when fasting",
+      "Decreases post-meal."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Superior mesenteric artery (SMA)",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Superior vena cava (SVC)",
     "definition": "Major vein to right atrium; obstruction causes facial/upper edema, continuous subclavian flow.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Major vein to right atrium",
+    "breakDown": [
+      "Major vein to right atrium",
+      "Obstruction causes facial/upper edema",
+      "Continuous subclavian flow."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Superior vena cava (SVC)",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Superior vena cava syndrome",
     "definition": "Obstruction of SVC causing upper body edema, dyspnea; often from malignancy.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Obstruction of SVC causing upper body edema",
+    "breakDown": [
+      "Obstruction of SVC causing upper body edema",
+      "Often from malignancy."
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Superior vena cava syndrome",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Syncope",
     "definition": "Fainting; nonhemispheric symptom indicating vertebrobasilar insufficiency.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Fainting",
+    "breakDown": [
+      "Nonhemispheric symptom indicating vertebrobasilar insufficiency."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Syncope is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Syncope",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Takayasu arteritis",
     "definition": "Inflammatory vasculitis affecting large arteries like brachiocephalic; predominantly in young females.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Inflammatory vasculitis affecting large arteries like brachiocephalic",
+    "breakDown": [
+      "Inflammatory vasculitis affecting large arteries like brachiocephalic",
+      "Predominantly in young females."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Takayasu arteritis is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Takayasu arteritis",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Tardus parvus",
     "definition": "Delayed (tardus) and reduced (parvus) systolic peak in waveforms; indicates proximal stenosis.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Waveform pattern showing delayed and small systolic peak",
+    "breakDown": [
+      "Tardus = delayed (slow acceleration)",
+      "Parvus = small/reduced peak",
+      "Classic sign of upstream (proximal) stenosis"
+    ],
+    "memoryTrick": {
+      "title": "Think: \"Tardy and tiny\" - Late arrival, small peak 🐢",
+      "points": [
+        "Tardus = Tardy (late/delayed upstroke)",
+        "Parvus = Puny (small peak)",
+        "Seen DISTAL to a stenosis"
+      ]
+    },
+    "clinicalUse": "Indicates significant proximal stenosis - look upstream for blockage!",
+    "waveformClue": {
+      "normal": "sharp upstroke, normal peak ⬆️",
+      "abnormal": "slow rounded upstroke (>70ms), reduced peak height"
+    }
   },
   {
     "term": "Thoracic outlet syndrome",
     "definition": "Compression of neurovascular bundle at neck/shoulder; causes arm symptoms, confirmed with upper extremity duplex.",
-    "category": "pathology"
+    "category": "pathology",
+    "meaning": "Compression of neurovascular bundle at neck/shoulder",
+    "breakDown": [
+      "Compression of neurovascular bundle at neck/shoulder",
+      "Causes arm symptoms",
+      "Confirmed with upper extremity duplex."
+    ],
+    "memoryTrick": {
+      "title": "Think: Group of symptoms together 🤝",
+      "points": [
+        "Focus on the key aspects of Thoracic outlet syndrome",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Helps identify and assess vascular conditions"
   },
   {
     "term": "Transcranial Doppler (TCD)",
     "definition": "Ultrasound through skull windows (e.g., transtemporal) to assess cerebral arteries like MCA.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Ultrasound through skull windows (e.g.",
+    "breakDown": [
+      "Ultrasound through skull windows (e.g.",
+      "Transtemporal) to assess cerebral arteries like mca."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Transcranial Doppler (TCD) is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Transcranial Doppler (TCD)",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Transstemporal approach",
     "definition": "Skull window over temple for TCD to evaluate middle cerebral artery.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Skull window over temple for TCD to evaluate middle cerebral artery.",
+    "breakDown": [
+      "Skull window over temple for TCD to evaluate middle cerebral artery."
+    ],
+    "memoryTrick": {
+      "title": "Think: Highway carrying blood away from heart ➡️",
+      "points": [
+        "Focus on the key aspects of Transstemporal approach",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Transverse orientation",
     "definition": "Cross-sectional imaging plane; standard for assessing vein compressibility.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Cross-sectional imaging plane",
+    "breakDown": [
+      "Cross-sectional imaging plane",
+      "Standard for assessing vein compressibility."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Transverse orientation",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Tricuspid valve",
     "definition": "Heart valve between right atrium and ventricle; overfilling before opening seen in hepatic vein waveforms.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Heart valve between right atrium and ventricle",
+    "breakDown": [
+      "Heart valve between right atrium and ventricle",
+      "Overfilling before opening seen in hepatic vein waveforms."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Tricuspid valve",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Triphasic",
     "definition": "Three-phase arterial waveform (forward, reverse, forward); normal in peripheral arteries.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Three-phase arterial waveform (forward",
+    "breakDown": [
+      "Three-phase arterial waveform (forward"
+    ],
+    "memoryTrick": {
+      "title": "Remember: Triphasic is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Triphasic",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Tumor invasion",
     "definition": "Extension of cancer into vessels; e.g., renal cell carcinoma into IVC.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Extension of cancer into vessels",
+    "breakDown": [
+      "Extension of cancer into vessels",
+      "Renal cell carcinoma into ivc."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Tumor invasion is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Tumor invasion",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Ulnar artery",
     "definition": "Forearm artery; occlusion with incomplete palmar arch shows no PPG change on radial compression.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Forearm artery",
+    "breakDown": [
+      "Forearm artery",
+      "Occlusion with incomplete palmar arch shows no ppg change on radial compression."
+    ],
+    "memoryTrick": {
+      "title": "Think: Blocked road 🚫",
+      "points": [
+        "Focus on the key aspects of Ulnar artery",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Varicosity",
     "definition": "Dilated, tortuous vein; PPG sensor not placed over it for insufficiency testing.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Dilated",
+    "breakDown": [
+      "Tortuous vein",
+      "PPG sensor not placed over it for insufficiency testing."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Varicosity",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Venous insufficiency",
     "definition": "Inability of veins to return blood; primary from valve damage, secondary from DVT; tested with refill time and PPG.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Inability of veins to return blood",
+    "breakDown": [
+      "Inability of veins to return blood",
+      "Primary from valve damage",
+      "Secondary from dvt"
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Venous insufficiency",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Venous refill time",
     "definition": "Time for vein refilling after compression; normalizes with tourniquet if perforator reflux.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Time for vein refilling after compression",
+    "breakDown": [
+      "Time for vein refilling after compression",
+      "Normalizes with tourniquet if perforator reflux."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Venous refill time",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Venous reflux",
     "definition": "Backward flow in veins due to incompetent valves; assessed with Doppler and tourniquets.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Backward flow in veins due to incompetent valves",
+    "breakDown": [
+      "Backward flow in veins due to incompetent valves",
+      "Assessed with doppler and tourniquets."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Venous reflux",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Venous valves",
     "definition": "Structures preventing backflow; most numerous in calf veins like popliteal.",
-    "category": "anatomy"
+    "category": "anatomy",
+    "meaning": "Structures preventing backflow",
+    "breakDown": [
+      "Structures preventing backflow",
+      "Most numerous in calf veins like popliteal."
+    ],
+    "memoryTrick": {
+      "title": "Think: Return route back to heart ⬅️",
+      "points": [
+        "Focus on the key aspects of Venous valves",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Vertebrobasilar duplex exam",
     "definition": "Ultrasound of vertebral/basilar arteries; indicated for nonhemispheric symptoms like syncope.",
-    "category": "technique"
+    "category": "technique",
+    "meaning": "Ultrasound of vertebral/basilar arteries",
+    "breakDown": [
+      "Ultrasound of vertebral/basilar arteries",
+      "Indicated for nonhemispheric symptoms like syncope."
+    ],
+    "memoryTrick": {
+      "title": "Remember: Vertebrobasilar duplex exam is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Vertebrobasilar duplex exam",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   },
   {
     "term": "Waveform characteristic",
     "definition": "Shape of Doppler signal; e.g., monophasic in disease, triphasic normal.",
-    "category": "doppler"
+    "category": "doppler",
+    "meaning": "Shape of Doppler signal",
+    "breakDown": [
+      "Shape of Doppler signal",
+      "Monophasic in disease"
+    ],
+    "memoryTrick": {
+      "title": "Remember: Waveform characteristic is key for the exam 🎯",
+      "points": [
+        "Focus on the key aspects of Waveform characteristic",
+        "Connect it to related concepts you already know"
+      ]
+    },
+    "clinicalUse": "Important for understanding vascular pathology and exam interpretation"
   }
 ]
