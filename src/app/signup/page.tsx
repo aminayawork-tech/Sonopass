@@ -16,11 +16,13 @@ export default function SignupPage() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+    setSuccess(false);
 
     // Validation
     if (password !== confirmPassword) {
@@ -36,20 +38,21 @@ export default function SignupPage() {
     setLoading(true);
 
     try {
-      // TODO: Replace with actual signup API call
-      // For now, we'll just sign them in automatically after "signup"
-      const result = await signIn('credentials', {
-        email,
-        password,
-        redirect: false,
+      const response = await fetch('/api/auth/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, password }),
       });
 
-      if (result?.error) {
-        setError('Failed to create account. Please try again.');
-      } else {
-        router.push('/dashboard');
-        router.refresh();
+      const data = await response.json();
+
+      if (!response.ok) {
+        setError(data.error || 'Failed to create account');
+        return;
       }
+
+      setSuccess(true);
+      // Don't redirect - show success message instead
     } catch (err) {
       setError('Something went wrong. Please try again.');
     } finally {
@@ -69,14 +72,32 @@ export default function SignupPage() {
           <p className="text-gray-600">Create your account</p>
         </div>
 
+        {/* Success Message */}
+        {success && (
+          <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+            <div>
+              <p className="text-sm font-semibold text-green-800 mb-1">Account created successfully!</p>
+              <p className="text-xs text-green-700">
+                Please check your email to verify your account before logging in.
+              </p>
+              <Link href="/login" className="text-xs text-green-800 underline mt-2 inline-block">
+                Go to login →
+              </Link>
+            </div>
+          </div>
+        )}
+
         {/* Error Message */}
-        {error && (
+        {error && !success && (
           <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start gap-3">
             <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
             <p className="text-sm text-red-800">{error}</p>
           </div>
         )}
 
+        {!success && (
+          <>
         {/* Benefits */}
         <div className="mb-6 space-y-2">
           <div className="flex items-start gap-2 text-sm text-gray-700">
@@ -169,6 +190,8 @@ export default function SignupPage() {
             {loading ? 'Creating account...' : 'Create Account'}
           </Button>
         </form>
+          </>
+        )}
 
         {/* Sign In Link */}
         <div className="mt-6 text-center">

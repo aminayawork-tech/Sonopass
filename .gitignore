@@ -52,3 +52,15 @@ scripts/ocr_raw_*.txt
 scripts/exam3_ocr_raw_parsed.json
 scripts/exam3_questions_parsed.json
 
+
+/src/generated/prisma
+
+# Database
+prisma/dev.db
+prisma/dev.db-journal
+
+# Environment variables
+.env
+.env.local
+dev.db
+dev.db-journal
