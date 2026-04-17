@@ -62,3 +62,5 @@ prisma/dev.db-journal
 # Environment variables
 .env
 .env.local
+dev.db
+dev.db-journal
