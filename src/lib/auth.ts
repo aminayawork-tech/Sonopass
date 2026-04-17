@@ -1,5 +1,7 @@
 import { NextAuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
+import bcrypt from 'bcryptjs';
+import { prisma } from '@/lib/prisma';
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -10,26 +12,37 @@ export const authOptions: NextAuthOptions = {
         password: { label: "Password", type: "password" }
       },
       async authorize(credentials) {
-        // For now, we'll use simple demo login
-        // TODO: Replace with real database authentication
-        if (credentials?.email && credentials?.password) {
-          // Demo user - replace with real authentication
-          if (credentials.email === "demo@sonopass.com" && credentials.password === "demo123") {
-            return {
-              id: "1",
-              email: credentials.email,
-              name: "Demo Student",
-            };
-          }
-
-          // For development, accept any email/password combination
-          return {
-            id: Math.random().toString(),
-            email: credentials.email,
-            name: credentials.email.split('@')[0],
-          };
+        if (!credentials?.email || !credentials?.password) {
+          throw new Error('Please enter your email and password');
         }
-        return null;
+
+        // Find user in database
+        const user = await prisma.user.findUnique({
+          where: { email: credentials.email },
+        });
+
+        if (!user || !user.password) {
+          throw new Error('Invalid email or password');
+        }
+
+        // Check if email is verified
+        if (!user.emailVerified) {
+          throw new Error('Please verify your email address before logging in');
+        }
+
+        // Verify password
+        const passwordMatch = await bcrypt.compare(credentials.password, user.password);
+
+        if (!passwordMatch) {
+          throw new Error('Invalid email or password');
+        }
+
+        return {
+          id: user.id,
+          email: user.email,
+          name: user.name,
+          emailVerified: user.emailVerified,
+        };
       }
     })
   ],
