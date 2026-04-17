@@ -164,31 +164,6 @@ export default function DashboardPage() {
           </Card>
         </div>
 
-        {/* Personalized Recommendation Card */}
-        {accuracy > 0 && accuracy < 70 && (
-          <Card className="p-6 sm:p-7 bg-gradient-to-r from-sono-green-ultrasound to-sono-green-soft text-sono-gray-900 shadow-lg hover:shadow-xl transition-all rounded-2xl active:scale-[0.99]">
-            <div className="flex flex-col gap-4">
-              <div className="flex items-start gap-4 sm:gap-5">
-                <div className="p-4 bg-white/20 rounded-2xl flex-shrink-0">
-                  <Target className="w-7 h-7 sm:w-8 sm:h-8" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2">Focus Area Detected</h3>
-                  <p className="text-sm sm:text-base opacity-90">
-                    Your accuracy is {accuracy}%. Study more to boost your Registry Readiness to {Math.min(100, Math.round(accuracy + 10))}%
-                  </p>
-                </div>
-              </div>
-              <Link href="/practice" className="w-full sm:w-auto">
-                <Button className="w-full sm:w-auto bg-white text-sono-green-ultrasound hover:bg-gray-50 font-semibold touch-target active:scale-[0.98] rounded-xl h-12 px-6">
-                  Study Now
-                  <ChevronRight className="w-4 h-4 ml-1" />
-                </Button>
-              </Link>
-            </div>
-          </Card>
-        )}
-
         {/* Quick Actions Grid */}
         <div>
           <h2 className="text-lg sm:text-xl font-bold text-sono-gray-900 mb-3 sm:mb-4">Jump back in</h2>

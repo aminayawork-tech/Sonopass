@@ -31,12 +31,12 @@ export default function HomePage() {
               </h1>
             </div>
             <div className="flex items-center gap-4">
-              <Link href="/dashboard">
-                <Button variant="ghost">Dashboard</Button>
+              <Link href="/login">
+                <Button variant="ghost">Log In</Button>
               </Link>
-              <Link href="/dashboard">
-                <Button style={{ backgroundColor: '#3abc83' }} className="hover:opacity-90">
-                  Get Started
+              <Link href="/signup">
+                <Button style={{ backgroundColor: '#3abc83' }} className="hover:opacity-90 text-white">
+                  Sign Up Free
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
@@ -63,15 +63,15 @@ export default function HomePage() {
               Master your exam with practice questions, study guides, and proven strategies.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/dashboard">
-                <Button size="lg" style={{ backgroundColor: '#3abc83' }} className="hover:opacity-90 text-lg h-14 px-8">
+              <Link href="/signup">
+                <Button size="lg" style={{ backgroundColor: '#3abc83' }} className="hover:opacity-90 text-white text-lg h-14 px-8">
                   Start Studying Free
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
-              <Link href="/how-it-works">
+              <Link href="/login">
                 <Button size="lg" variant="outline" className="text-lg h-14 px-8">
-                  How It Works
+                  Log In
                 </Button>
               </Link>
             </div>

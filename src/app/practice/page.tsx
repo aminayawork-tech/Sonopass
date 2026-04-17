@@ -104,7 +104,7 @@ export default function StudyModePage() {
         <div className="bg-white rounded-2xl p-1 shadow-sm border border-sono-gray-300 flex gap-1 overflow-x-auto no-scrollbar">
           <button
             onClick={() => setActiveTab('topics')}
-            className={`flex-1 min-w-[100px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
+            className={`flex-1 min-w-[110px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
               activeTab === 'topics'
                 ? 'bg-sono-green-ultrasound text-white shadow-md'
                 : 'text-sono-gray-600 hover:bg-sono-gray-100'
@@ -115,7 +115,7 @@ export default function StudyModePage() {
           </button>
           <button
             onClick={() => setActiveTab('study-guide')}
-            className={`flex-1 min-w-[110px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
+            className={`flex-1 min-w-[140px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
               activeTab === 'study-guide'
                 ? 'bg-sono-green-ultrasound text-white shadow-md'
                 : 'text-sono-gray-600 hover:bg-sono-gray-100'
@@ -126,7 +126,7 @@ export default function StudyModePage() {
           </button>
           <button
             onClick={() => setActiveTab('glossary')}
-            className={`flex-1 min-w-[100px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
+            className={`flex-1 min-w-[115px] px-4 py-3 rounded-xl font-medium text-sm transition-all duration-200 whitespace-nowrap ${
               activeTab === 'glossary'
                 ? 'bg-sono-green-ultrasound text-white shadow-md'
                 : 'text-sono-gray-600 hover:bg-sono-gray-100'

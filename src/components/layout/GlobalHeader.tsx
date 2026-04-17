@@ -2,15 +2,17 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, Search, Bell, User, Users } from 'lucide-react';
+import { Menu, Search, Bell, User, Users, LogOut } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ModalitySelectorDropdown } from '@/components/ModalitySelector';
 import { useModality } from '@/contexts/ModalityContext';
 import MenuModal from './MenuModal';
+import { useSession, signOut } from 'next-auth/react';
 
 export default function GlobalHeader() {
   const { currentModality } = useModality();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { data: session } = useSession();
 
   return (
     <>
@@ -31,6 +33,20 @@ export default function GlobalHeader() {
 
           {/* Right Side Actions */}
           <div className="flex items-center gap-1">
+            {/* User Menu - Only show when logged in */}
+            {session?.user && (
+              <div className="hidden sm:flex items-center gap-2 mr-2">
+                <span className="text-sm text-gray-600">{session.user.name || session.user.email}</span>
+                <button
+                  onClick={() => signOut({ callbackUrl: '/' })}
+                  className="p-2 hover:bg-red-50 text-red-600 rounded-xl transition-all duration-200 active:scale-95"
+                  aria-label="Log out"
+                  title="Log out"
+                >
+                  <LogOut className="w-4 h-4" />
+                </button>
+              </div>
+            )}
             {/* Hamburger Menu */}
             <button
               onClick={() => setIsMenuOpen(true)}
