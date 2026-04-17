@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ModalityProvider } from "@/contexts/ModalityContext";
 import AppInitializer from "@/components/AppInitializer";
+import SessionProvider from "@/components/providers/SessionProvider";
 
 export const metadata: Metadata = {
   title: "SonoPass - Ultrasound Registry Exam Prep",
@@ -44,11 +45,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans antialiased">
-        <AppInitializer>
-          <ModalityProvider>
-            {children}
-          </ModalityProvider>
-        </AppInitializer>
+        <SessionProvider>
+          <AppInitializer>
+            <ModalityProvider>
+              {children}
+            </ModalityProvider>
+          </AppInitializer>
+        </SessionProvider>
       </body>
     </html>
   );
