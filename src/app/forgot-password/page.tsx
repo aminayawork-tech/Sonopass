@@ -66,7 +66,7 @@ export default function ForgotPasswordPage() {
             <div>
               <p className="text-sm font-semibold text-green-800 mb-1">Check your email!</p>
               <p className="text-xs text-green-700">
-                If an account exists with that email, you'll receive password reset instructions.
+                If an account exists with that email, you&apos;ll receive password reset instructions.
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function ForgotPasswordPage() {
         {!success && (
           <>
             <p className="text-sm text-gray-600 mb-6">
-              Enter your email address and we'll send you a link to reset your password.
+              Enter your email address and we&apos;ll send you a link to reset your password.
             </p>
 
             {/* Forgot Password Form */}
