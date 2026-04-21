@@ -1,6 +1,6 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const getResend = () => new Resend(process.env.RESEND_API_KEY);
 
 const domain = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
 
@@ -8,7 +8,7 @@ export async function sendVerificationEmail(email: string, token: string) {
   const confirmLink = `${domain}/verify-email?token=${token}`;
 
   try {
-    await resend.emails.send({
+    await getResend().emails.send({
       from: 'SonoPass <onboarding@sonopass.com>',
       to: email,
       subject: 'Verify your SonoPass email address',
@@ -91,7 +91,7 @@ export async function sendPasswordResetEmail(email: string, token: string) {
   const resetLink = `${domain}/reset-password?token=${token}`;
 
   try {
-    await resend.emails.send({
+    await getResend().emails.send({
       from: 'SonoPass <onboarding@sonopass.com>',
       to: email,
       subject: 'Reset your SonoPass password',
