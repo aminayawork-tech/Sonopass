@@ -6,7 +6,9 @@ generator client {
 }
 
 datasource db {
+  // Local dev: sqlite | Production (Supabase): change to postgresql
   provider = "sqlite"
+  url      = env("DATABASE_URL")
 }
 
 model User {

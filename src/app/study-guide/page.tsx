@@ -267,85 +267,73 @@ export default function StudyGuidePage() {
 
                   {/* Back of card - Full Content */}
                   <Card
-                    className="absolute inset-0 bg-white border-0 shadow-2xl p-4 sm:p-6 lg:p-8 backface-hidden overflow-y-auto"
+                    className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-600 border-0 shadow-2xl p-4 sm:p-6 lg:p-8 backface-hidden overflow-y-auto"
                     style={{
                       backfaceVisibility: 'hidden',
                       transform: 'rotateY(180deg)',
                     }}
                   >
-                    <div className="h-full flex flex-col max-w-3xl mx-auto">
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-4 sm:mb-5 flex-shrink-0">
+                    <div className="text-white h-full flex flex-col">
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 flex-shrink-0">
                         {currentTopic.title}
                       </h3>
 
-                      <div className="flex-1 overflow-y-auto space-y-4 text-gray-700">
-                        {/* Overview */}
-                        {currentTopic.quickSummary && (
-                          <div>
-                            <p className="text-sm sm:text-base leading-relaxed mb-4">
-                              {currentTopic.quickSummary}
-                            </p>
+                      <div className="flex-1 overflow-y-auto space-y-3 sm:space-y-4">
+                        {/* Clinical Pearls */}
+                        {currentTopic.clinicalPearls && currentTopic.clinicalPearls.length > 0 && (
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <div className="flex items-start gap-2 mb-2">
+                              <Lightbulb className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" />
+                              <h4 className="font-semibold text-sm sm:text-base">Clinical Pearls</h4>
+                            </div>
+                            <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
+                              {currentTopic.clinicalPearls.map((pearl, i) => (
+                                <li key={i} className="flex items-start gap-2">
+                                  <span className="mt-1 flex-shrink-0">•</span>
+                                  <span className="flex-1">{pearl}</span>
+                                </li>
+                              ))}
+                            </ul>
                           </div>
                         )}
 
-                        {/* Main breakdown */}
-                        <div className="space-y-3">
-                          {currentTopic.keyTakeaways && currentTopic.keyTakeaways.length > 0 && (
-                            <div>
-                              <h4 className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Here&apos;s what you need to know:</h4>
-                              <ul className="space-y-2 ml-1">
-                                {currentTopic.keyTakeaways.map((takeaway, i) => (
-                                  <li key={i} className="flex items-start gap-2 text-xs sm:text-sm">
-                                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
-                                    <span className="flex-1 leading-relaxed">{takeaway}</span>
-                                  </li>
-                                ))}
-                              </ul>
+                        {/* Key Takeaways */}
+                        {currentTopic.keyTakeaways && currentTopic.keyTakeaways.length > 0 && (
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <div className="flex items-start gap-2 mb-2">
+                              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" />
+                              <h4 className="font-semibold text-sm sm:text-base">Key Takeaways</h4>
                             </div>
-                          )}
-
-                          {/* Clinical tips in simple format */}
-                          {currentTopic.clinicalPearls && currentTopic.clinicalPearls.length > 0 && (
-                            <div>
-                              <h4 className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Clinical tips:</h4>
-                              <ul className="space-y-2 ml-1">
-                                {currentTopic.clinicalPearls.map((pearl, i) => (
-                                  <li key={i} className="flex items-start gap-2 text-xs sm:text-sm">
-                                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
-                                    <span className="flex-1 leading-relaxed">{pearl}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
-
-                          {/* Key terms - simple list */}
-                          {currentTopic.keyTerms.length > 0 && (
-                            <div className="pt-3 border-t border-gray-200">
-                              <h4 className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Important terms:</h4>
-                              <div className="flex flex-wrap gap-1.5">
-                                {currentTopic.keyTerms.map((term, i) => (
-                                  <span
-                                    key={i}
-                                    className="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium"
-                                  >
-                                    {term}
-                                  </span>
-                                ))}
-                              </div>
-                            </div>
-                          )}
-
-                          {/* Study tip at bottom */}
-                          <div className="pt-3 border-t border-gray-200">
-                            <p className="text-xs sm:text-sm text-gray-500 italic">
-                              💡 Study tip: Review these concepts multiple times and try to explain them without looking
-                            </p>
+                            <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
+                              {currentTopic.keyTakeaways.map((takeaway, i) => (
+                                <li key={i} className="flex items-start gap-2">
+                                  <span className="mt-1 flex-shrink-0">✓</span>
+                                  <span className="flex-1">{takeaway}</span>
+                                </li>
+                              ))}
+                            </ul>
                           </div>
-                        </div>
+                        )}
+
+                        {/* Key Terms */}
+                        {currentTopic.keyTerms.length > 0 && (
+                          <div>
+                            <h4 className="font-semibold mb-2 text-xs sm:text-sm">Key Terms:</h4>
+                            <div className="flex flex-wrap gap-1.5 sm:gap-2">
+                              {currentTopic.keyTerms.map((term, i) => (
+                                <span
+                                  key={i}
+                                  className="px-2 py-1 bg-white/20 rounded text-xs"
+                                >
+                                  {term}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
                       </div>
 
-                      <p className="text-gray-400 text-xs sm:text-sm mt-4 sm:mt-5 flex-shrink-0 text-center">Tap to flip back</p>
+                      <p className="text-green-100 text-xs sm:text-sm mt-3 sm:mt-4 flex-shrink-0">Tap to flip back</p>
                     </div>
                   </Card>
                 </div>
