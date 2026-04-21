@@ -200,136 +200,20 @@ export default function GlossaryPage() {
 
             {/* Back of card */}
             <Card
-              className="absolute inset-0 bg-white border-0 shadow-2xl p-6 sm:p-8 backface-hidden overflow-y-auto"
+              className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-600 border-0 shadow-2xl flex items-center justify-center p-6 sm:p-8 backface-hidden overflow-y-auto"
               style={{
                 backfaceVisibility: 'hidden',
                 transform: 'rotateY(180deg)',
               }}
             >
-              <div className="max-w-2xl mx-auto">
-                {/* Term Header */}
-                <div className="mb-4">
-                  <span className={`inline-block px-3 py-1 text-xs font-semibold rounded-full mb-3 ${getCategoryColors(currentTerm.category).bg} ${getCategoryColors(currentTerm.category).text}`}>
-                    {currentTerm.category}
-                  </span>
-                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 break-words">
-                    {currentTerm.term}
-                  </h3>
-                </div>
-
-                {/* ChatGPT-style breakdown */}
-                <div className="space-y-4 text-gray-700">
-                  {/* Meaning (if available) */}
-                  {currentTerm.meaning && (
-                    <div>
-                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-1">Meaning:</p>
-                      <p className="text-sm sm:text-base leading-relaxed">
-                        {currentTerm.meaning}
-                      </p>
-                    </div>
-                  )}
-
-                  {/* Standard definition (always show if no meaning) */}
-                  {!currentTerm.meaning && (
-                    <p className="text-sm sm:text-base leading-relaxed">
-                      {currentTerm.definition}
-                    </p>
-                  )}
-
-                  {/* Break it down section */}
-                  {currentTerm.breakDown && currentTerm.breakDown.length > 0 ? (
-                    <div>
-                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Break it down:</p>
-                      <ul className="space-y-2 ml-1">
-                        {currentTerm.breakDown.slice(0, -1).map((point, i) => (
-                          <li key={i} className="flex items-start gap-2 text-xs sm:text-sm">
-                            <span className="flex-shrink-0 mt-0.5">👉</span>
-                            <span className="flex-1 leading-relaxed">{point}</span>
-                          </li>
-                        ))}
-                        {currentTerm.breakDown.length > 0 && (
-                          <li className="flex items-start gap-2 text-xs sm:text-sm">
-                            <span className="flex-shrink-0 mt-0.5">🔷</span>
-                            <span className="flex-1 leading-relaxed">{currentTerm.breakDown[currentTerm.breakDown.length - 1]}</span>
-                          </li>
-                        )}
-                      </ul>
-                    </div>
-                  ) : (
-                    <div>
-                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Breaking it down:</p>
-                      <ul className="space-y-2 ml-1">
-                        <li className="flex items-start gap-2 text-xs sm:text-sm">
-                          <span className="text-blue-600 mt-1">•</span>
-                          <span>This is a <strong>{currentTerm.category}</strong> concept you&apos;ll need for the exam</span>
-                        </li>
-                        <li className="flex items-start gap-2 text-xs sm:text-sm">
-                          <span className="text-blue-600 mt-1">•</span>
-                          <span>Focus on understanding how <strong>{currentTerm.term}</strong> relates to other concepts in {currentTerm.category}</span>
-                        </li>
-                        <li className="flex items-start gap-2 text-xs sm:text-sm">
-                          <span className="text-blue-600 mt-1">•</span>
-                          <span>When you see this term on the test, recall the key definition above</span>
-                        </li>
-                      </ul>
-                    </div>
-                  )}
-
-                  {/* Memory trick */}
-                  {currentTerm.memoryTrick && (
-                    <div>
-                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Simple memory trick:</p>
-                      <p className="text-xs sm:text-sm mb-2 leading-relaxed">
-                        {currentTerm.memoryTrick.title}
-                      </p>
-                      <ul className="space-y-1.5 ml-1">
-                        {currentTerm.memoryTrick.points.map((point, i) => (
-                          <li key={i} className="flex items-start gap-2 text-xs sm:text-sm">
-                            <span className="text-blue-600 mt-0.5">•</span>
-                            <span className="flex-1 leading-relaxed">{point}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {/* Clinical use */}
-                  {currentTerm.clinicalUse && (
-                    <div>
-                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-1">What it tells you (RVT gold):</p>
-                      <p className="flex items-start gap-2 text-xs sm:text-sm leading-relaxed">
-                        <span className="flex-shrink-0 mt-0.5">👉</span>
-                        <span className="flex-1">{currentTerm.clinicalUse}</span>
-                      </p>
-                    </div>
-                  )}
-
-                  {/* Waveform clue */}
-                  {currentTerm.waveformClue && (
-                    <div>
-                      <p className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Waveform clue:</p>
-                      <ul className="space-y-1.5 ml-1">
-                        <li className="flex items-start gap-2 text-xs sm:text-sm">
-                          <span className="font-medium text-gray-900">Normal:</span>
-                          <span className="flex-1 leading-relaxed">{currentTerm.waveformClue.normal}</span>
-                        </li>
-                        <li className="flex items-start gap-2 text-xs sm:text-sm">
-                          <span className="font-medium text-gray-900">Abnormal:</span>
-                          <span className="flex-1 leading-relaxed">{currentTerm.waveformClue.abnormal}</span>
-                        </li>
-                      </ul>
-                    </div>
-                  )}
-
-                  {/* Tip at bottom */}
-                  <div className="pt-3 border-t border-gray-200">
-                    <p className="text-xs sm:text-sm text-gray-500 italic">
-                      💡 Tip: Try explaining this concept in your own words to test your understanding
-                    </p>
-                  </div>
-                </div>
-
-                <p className="text-gray-400 text-xs sm:text-sm mt-6 text-center">Tap to flip back</p>
+              <div className="text-center px-2">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4 break-words">
+                  {currentTerm.term}
+                </h3>
+                <p className="text-sm sm:text-base lg:text-xl text-white leading-relaxed max-w-2xl px-2">
+                  {currentTerm.definition}
+                </p>
+                <p className="text-green-100 text-xs sm:text-sm mt-3 sm:mt-4">Tap to flip back</p>
               </div>
             </Card>
           </div>
