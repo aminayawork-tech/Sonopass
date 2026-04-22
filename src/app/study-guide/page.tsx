@@ -77,11 +77,19 @@ export default function StudyGuidePage() {
   const [knownTopics, setKnownTopics] = useState<Set<number>>(new Set());
   const [unknownTopics, setUnknownTopics] = useState<Set<number>>(new Set());
 
+  const [puzzleContent, setPuzzleContent] = useState<any>(null);
+  const [currentPuzzlePiece, setCurrentPuzzlePiece] = useState<any>(null);
+
   useEffect(() => {
     fetch('/study-guide-content.json')
       .then(res => res.json())
       .then(data => setContent(data))
       .catch(err => console.error('Failed to load study guide:', err));
+
+    fetch('/puzzle-study-guide.json')
+      .then(res => res.json())
+      .then(data => setPuzzleContent(data))
+      .catch(err => console.error('Failed to load puzzle guide:', err));
 
     // Load completed topics from localStorage
     const saved = localStorage.getItem('completedTopics');
@@ -130,6 +138,30 @@ export default function StudyGuidePage() {
     const topics = selectedCategory.topics;
     const currentTopic = topics[currentCardIndex];
     const progress = topics.length > 0 ? Math.round(((knownTopics.size + unknownTopics.size) / topics.length) * 100) : 0;
+
+    // Find matching puzzle piece for current topic
+    if (puzzleContent && currentTopic && !currentPuzzlePiece) {
+      const category = puzzleContent.categories.find((c: any) => c.id === selectedCategory.id);
+      if (category) {
+        const piece = category.puzzlePieces?.find((p: any) => p.id === currentTopic.id);
+        if (piece) {
+          setCurrentPuzzlePiece(piece);
+        }
+      }
+    }
+
+    // Update puzzle piece when topic changes
+    if (puzzleContent && currentTopic) {
+      const category = puzzleContent.categories.find((c: any) => c.id === selectedCategory.id);
+      if (category) {
+        const piece = category.puzzlePieces?.find((p: any) => p.id === currentTopic.id);
+        if (piece) {
+          setCurrentPuzzlePiece(piece);
+        } else {
+          setCurrentPuzzlePiece(null);
+        }
+      }
+    }
 
     const handleNext = () => {
       if (currentCardIndex < topics.length - 1) {
@@ -265,7 +297,7 @@ export default function StudyGuidePage() {
                     </div>
                   </Card>
 
-                  {/* Back of card - Full Content */}
+                  {/* Back of card - Puzzle Format */}
                   <Card
                     className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-600 border-0 shadow-2xl p-4 sm:p-6 lg:p-8 backface-hidden overflow-y-auto"
                     style={{
@@ -273,67 +305,71 @@ export default function StudyGuidePage() {
                       transform: 'rotateY(180deg)',
                     }}
                   >
-                    <div className="text-white h-full flex flex-col">
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 flex-shrink-0">
-                        {currentTopic.title}
+                    <div className="text-white h-full flex flex-col max-w-3xl">
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 flex-shrink-0">
+                        {currentPuzzlePiece?.title}
                       </h3>
 
-                      <div className="flex-1 overflow-y-auto space-y-3 sm:space-y-4">
-                        {/* Clinical Pearls */}
-                        {currentTopic.clinicalPearls && currentTopic.clinicalPearls.length > 0 && (
+                      <div className="flex-1 overflow-y-auto space-y-3 sm:space-y-4 text-xs sm:text-sm">
+                        {/* Core Piece */}
+                        {currentPuzzlePiece?.corePiece && (
                           <div className="bg-white/10 rounded-lg p-3 sm:p-4">
-                            <div className="flex items-start gap-2 mb-2">
-                              <Lightbulb className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" />
-                              <h4 className="font-semibold text-sm sm:text-base">Clinical Pearls</h4>
-                            </div>
-                            <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
-                              {currentTopic.clinicalPearls.map((pearl, i) => (
+                            <h4 className="font-semibold mb-2 flex items-center gap-2">
+                              <span>🧩</span> Core Piece
+                            </h4>
+                            <p className="leading-relaxed">{currentPuzzlePiece.corePiece}</p>
+                          </div>
+                        )}
+
+                        {/* Why Lock */}
+                        {currentPuzzlePiece?.whyLock && (
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <h4 className="font-semibold mb-2 flex items-center gap-2">
+                              <span>🔐</span> The Why Lock
+                            </h4>
+                            <p className="leading-relaxed">{currentPuzzlePiece.whyLock}</p>
+                          </div>
+                        )}
+
+                        {/* Connection Edges */}
+                        {currentPuzzlePiece?.connectionEdges && currentPuzzlePiece.connectionEdges.length > 0 && (
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <h4 className="font-semibold mb-2 flex items-center gap-2">
+                              <span>🔗</span> Connection Edges
+                            </h4>
+                            <ul className="space-y-1.5">
+                              {currentPuzzlePiece.connectionEdges.map((edge, i) => (
                                 <li key={i} className="flex items-start gap-2">
-                                  <span className="mt-1 flex-shrink-0">•</span>
-                                  <span className="flex-1">{pearl}</span>
+                                  <span className="mt-0.5 flex-shrink-0">→</span>
+                                  <span className="flex-1">{edge}</span>
                                 </li>
                               ))}
                             </ul>
                           </div>
                         )}
 
-                        {/* Key Takeaways */}
-                        {currentTopic.keyTakeaways && currentTopic.keyTakeaways.length > 0 && (
+                        {/* Registry Application */}
+                        {currentPuzzlePiece?.registryApplication && (
                           <div className="bg-white/10 rounded-lg p-3 sm:p-4">
-                            <div className="flex items-start gap-2 mb-2">
-                              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" />
-                              <h4 className="font-semibold text-sm sm:text-base">Key Takeaways</h4>
-                            </div>
-                            <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
-                              {currentTopic.keyTakeaways.map((takeaway, i) => (
-                                <li key={i} className="flex items-start gap-2">
-                                  <span className="mt-1 flex-shrink-0">✓</span>
-                                  <span className="flex-1">{takeaway}</span>
-                                </li>
-                              ))}
-                            </ul>
+                            <h4 className="font-semibold mb-2 flex items-center gap-2">
+                              <span>📋</span> Registry Application
+                            </h4>
+                            <p className="leading-relaxed italic">{currentPuzzlePiece.registryApplication}</p>
                           </div>
                         )}
 
-                        {/* Key Terms */}
-                        {currentTopic.keyTerms.length > 0 && (
-                          <div>
-                            <h4 className="font-semibold mb-2 text-xs sm:text-sm">Key Terms:</h4>
-                            <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                              {currentTopic.keyTerms.map((term, i) => (
-                                <span
-                                  key={i}
-                                  className="px-2 py-1 bg-white/20 rounded text-xs"
-                                >
-                                  {term}
-                                </span>
-                              ))}
-                            </div>
+                        {/* Puzzle Checkpoint */}
+                        {currentPuzzlePiece?.puzzleCheckpoint && (
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <h4 className="font-semibold mb-2 flex items-center gap-2">
+                              <span>✨</span> Puzzle Complete Checkpoint
+                            </h4>
+                            <p className="leading-relaxed">{currentPuzzlePiece.puzzleCheckpoint}</p>
                           </div>
                         )}
                       </div>
 
-                      <p className="text-green-100 text-xs sm:text-sm mt-3 sm:mt-4 flex-shrink-0">Tap to flip back</p>
+                      <p className="text-green-100 text-xs sm:text-sm mt-3 sm:mt-4 flex-shrink-0 text-center">Tap to flip back</p>
                     </div>
                   </Card>
                 </div>
