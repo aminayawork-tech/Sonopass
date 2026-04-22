@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -78,7 +78,6 @@ export default function StudyGuidePage() {
   const [unknownTopics, setUnknownTopics] = useState<Set<number>>(new Set());
 
   const [puzzleContent, setPuzzleContent] = useState<any>(null);
-  const [currentPuzzlePiece, setCurrentPuzzlePiece] = useState<any>(null);
 
   useEffect(() => {
     fetch('/study-guide-content.json')
@@ -123,6 +122,16 @@ export default function StudyGuidePage() {
     );
   });
 
+  const currentPuzzlePiece = useMemo(() => {
+    if (!puzzleContent || !selectedCategory) return null;
+    const topics = selectedCategory.topics;
+    const currentTopic = topics[currentCardIndex];
+    if (!currentTopic) return null;
+    const cat = puzzleContent.categories.find((c: any) => c.id === selectedCategory.id);
+    if (!cat) return null;
+    return cat.puzzlePieces?.find((p: any) => p.id === currentTopic.id) ?? null;
+  }, [puzzleContent, selectedCategory, currentCardIndex]);
+
   if (!content) {
     return (
       <AppLayout>
@@ -138,30 +147,6 @@ export default function StudyGuidePage() {
     const topics = selectedCategory.topics;
     const currentTopic = topics[currentCardIndex];
     const progress = topics.length > 0 ? Math.round(((knownTopics.size + unknownTopics.size) / topics.length) * 100) : 0;
-
-    // Find matching puzzle piece for current topic
-    if (puzzleContent && currentTopic && !currentPuzzlePiece) {
-      const category = puzzleContent.categories.find((c: any) => c.id === selectedCategory.id);
-      if (category) {
-        const piece = category.puzzlePieces?.find((p: any) => p.id === currentTopic.id);
-        if (piece) {
-          setCurrentPuzzlePiece(piece);
-        }
-      }
-    }
-
-    // Update puzzle piece when topic changes
-    if (puzzleContent && currentTopic) {
-      const category = puzzleContent.categories.find((c: any) => c.id === selectedCategory.id);
-      if (category) {
-        const piece = category.puzzlePieces?.find((p: any) => p.id === currentTopic.id);
-        if (piece) {
-          setCurrentPuzzlePiece(piece);
-        } else {
-          setCurrentPuzzlePiece(null);
-        }
-      }
-    }
 
     const handleNext = () => {
       if (currentCardIndex < topics.length - 1) {
