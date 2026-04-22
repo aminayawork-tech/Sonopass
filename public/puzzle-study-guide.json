@@ -1,0 +1,227 @@
+{
+  "categories": [
+    {
+      "id": "cerebrovascular",
+      "title": "Cerebrovascular System",
+      "puzzlePieces": [
+        {
+          "id": "cerebro-basics",
+          "title": "Piece 1: ICA vs ECA — The Brain-Face Split",
+          "corePiece": "The Internal Carotid Artery (ICA) supplies the brain with continuous low-resistance flow (PI < 1.0, triphasic waveform). The External Carotid Artery (ECA) supplies the face and scalp with high-resistance flow (reversed diastolic flow). This fundamental difference determines how you interpret Doppler waveforms and pressures throughout the cerebrovascular exam.",
+          "whyLock": "On registry exams, you must distinguish ICA from ECA by waveform shape alone. ICA's low-resistance pattern reflects the brain's constant oxygen demand; ECA's high-resistance pattern reflects intermittent perfusion needs. Missing this distinction causes misidentification of vessels and incorrect stenosis grading.",
+          "connectionEdges": [
+            "Connects to Piece 2 (Scanning Technique) — knowing ICA vs ECA guides where you place your sample volume",
+            "Connects to Piece 4 (Triphasic/Biphasic Waveforms) — ICA shows triphasic, ECA shows biphasic/monophasic",
+            "Connects to Piece 9 (Resistance Patterns) — ICA = low resistance, ECA = high resistance"
+          ],
+          "registryApplication": "Mock exams frequently show a Doppler waveform and ask 'Which vessel is this?' or 'Why is this flow pattern abnormal?' Correct identification is worth 1–2 points per question. Common trap: confusing reversed diastolic flow (normal for ECA) with pathology.",
+          "puzzleAssembly": "You're scanning a carotid bifurcation. You see a triphasic waveform with forward diastolic flow and a monophasic waveform with reversed diastolic flow in the adjacent vessel. Label each vessel and explain why their waveforms differ.",
+          "puzzleCheckpoint": "Pearl: 'ICA = brain = continuous = triphasic; ECA = face = pulsatile = monophasic.' Reflection: Can you explain why the brain needs continuous flow but the face does not?"
+        },
+        {
+          "id": "cerebro-scanning",
+          "title": "Piece 2: Carotid Scanning Technique — The Most Common Error",
+          "corePiece": "Carotid scanning requires the patient supine with neck extended and head turned away. Use a linear array transducer. Scan the entire length of the CCA, ICA bifurcation, and ECA. The MOST COMMON error causing stenosis underestimation is improper sample volume placement — you must move the Doppler cursor through the ENTIRE stenotic area to find peak velocity, not rely on a single spot. Doppler angle ≤60° is critical.",
+          "whyLock": "This is the #1 reason sonographers underestimate carotid stenosis on exams and in clinical practice. The registry exam tests whether you know to scan the full stenosis length. Missing this point can drop your score by 2–3 questions per exam.",
+          "connectionEdges": [
+            "Connects to Piece 3 (Stenosis & Critical Findings) — proper technique reveals the true stenosis grade",
+            "Connects to Piece 35 (Doppler Principles & Angle) — angle ≤60° ensures accurate velocity measurement",
+            "Connects to Piece 36 (Aliasing & PRF) — scanning the full stenosis prevents aliasing artifacts"
+          ],
+          "registryApplication": "Exam scenario: 'A patient presents with a carotid stenosis. The initial PSV is 180 cm/s at one point. When you scan through the entire stenosis, you find PSV of 250 cm/s at the narrowest point. What stenosis grade is this?' Answer: >70% (based on peak velocity). This tests whether you know to scan the full area.",
+          "puzzleAssembly": "You scan a carotid bifurcation with a visible narrowing. At one spot, PSV = 180 cm/s. At another spot in the same stenosis, PSV = 280 cm/s. Which measurement do you use for grading? Why? What would happen if you only sampled at the first spot?",
+          "puzzleCheckpoint": "Pearl: 'Always scan the entire stenosis for peak velocity — don't trust a single measurement.' Reflection: Why does stenosis velocity peak at the narrowest point, not before or after it?"
+        },
+        {
+          "id": "cerebro-stenosis",
+          "title": "Piece 3: Carotid Stenosis & Critical Findings — Registry Gold",
+          "corePiece": "Carotid stenosis is graded by peak systolic velocity (PSV) and end-diastolic velocity (EDV). <50% stenosis: PSV <125 cm/s, EDV <40 cm/s. 50–69% stenosis: PSV 125–230 cm/s, EDV 40–100 cm/s. ≥70% stenosis: PSV >230 cm/s, EDV >100 cm/s (or ICA/CCA PSV ratio >4). Near-occlusion shows very high velocity followed by post-stenotic deceleration. 100% occlusion shows no flow. A 70–99% stenosis is a CRITICAL FINDING requiring immediate notification and follow-up per protocol.",
+          "whyLock": "This is the core competency tested on every registry exam. Stenosis grading directly impacts patient management (medical management vs. endarterectomy vs. stent). Misgrading a 70–99% stenosis could delay critical intervention. The exam tests your ability to measure, compare ratios, and grade correctly.",
+          "connectionEdges": [
+            "Connects to Piece 1 (ICA vs ECA) — you must identify the ICA correctly before grading its stenosis",
+            "Connects to Piece 43 (Critical Velocity Criteria) — stenosis grades depend on memorizing velocity cutoffs",
+            "Connects to Piece 47 (Follow-Up Protocols) — stenosis grade determines follow-up interval"
+          ],
+          "registryApplication": "Most frequently tested scenario: 'ICA PSV = 280 cm/s, EDV = 120 cm/s, ICA/CCA PSV ratio = 4.5. What is the stenosis grade?' Answer: ≥70% (confirmed by PSV >230, EDV >100, and ratio >4). This is asked in nearly every mock exam.",
+          "puzzleAssembly": "A patient has ICA PSV = 200 cm/s, EDV = 60 cm/s, and a visible narrowing on B-mode. You also measure CCA PSV = 60 cm/s. Grade the stenosis using velocity, EDV, and ratio. Which criterion is most reliable and why?",
+          "puzzleCheckpoint": "Pearl: 'Stenosis velocity thresholds are registry gold — memorize them.' Reflection: Why does velocity increase through a stenosis instead of decrease? (Hint: Bernoulli Effect.)"
+        }
+      ]
+    },
+    {
+      "id": "arterial-hemodynamics",
+      "title": "Arterial Hemodynamics",
+      "puzzlePieces": [
+        {
+          "id": "waveform-triphasic",
+          "title": "Piece 4: Triphasic Waveform — Normal Distal Resistance",
+          "corePiece": "A triphasic waveform shows three phases: (1) systolic rise (forward), (2) brief diastolic reversal, and (3) slow antegrade diastolic flow. This pattern is NORMAL in healthy distal arteries (femoral, popliteal, tibial, brachial, radial) where significant peripheral resistance is present. The reversed flow in early diastole indicates elastic recoil of the arterial wall against resistance distal to the sample site.",
+          "whyLock": "Triphasic = normal in limb vessels. Seeing a triphasic waveform in a femoral artery exam is reassuring — it means no upstream stenosis or significant disease. Missing this normal pattern can cause false alarms.",
+          "connectionEdges": [
+            "Connects to Piece 5 (Biphasic Waveform) — biphasic appears when proximal stenosis reduces diastolic reversal",
+            "Connects to Piece 9 (Resistance Patterns) — triphasic reflects high peripheral resistance",
+            "Connects to Piece 13 (Stenosis Hemodynamics) — triphasic changes to biphasic or monophasic through stenosis"
+          ],
+          "registryApplication": "Exam question: 'Normal femoral artery waveform shows (A) monophasic flow, (B) triphasic with diastolic reversal, (C) biphasic with forward diastolic flow.' Answer: B. This appears in nearly every exam.",
+          "puzzleAssembly": "Sketch or describe a triphasic waveform. Label systolic, reversed diastolic, and forward diastolic phases. Now explain what change occurs if a stenosis develops proximal to this location.",
+          "puzzleCheckpoint": "Pearl: 'Triphasic + diastolic reversal = normal distal resistance.' Reflection: Why does the arterial wall 'reverse' flow in early diastole? What happens to that reversed flow?"
+        },
+        {
+          "id": "waveform-biphasic",
+          "title": "Piece 5: Biphasic Waveform — Moderate Proximal Disease",
+          "corePiece": "A biphasic waveform shows (1) systolic rise and (2) forward diastolic flow with NO diastolic reversal. This pattern appears distal to a moderate proximal stenosis (typically 50–70%) or in vessels with moderate resistance (collateral vessels, some muscular arteries at rest). The loss of diastolic reversal indicates reduced diastolic pressure gradient due to proximal flow resistance.",
+          "whyLock": "Biphasic waveforms on the registry exam often trip up students because the waveform 'looks' abnormal but is actually a normal response to proximal disease. You must recognize that biphasic distal to a stenosis is expected and guides you to look for the stenosis upstream.",
+          "connectionEdges": [
+            "Connects to Piece 4 (Triphasic) — triphasic becomes biphasic when proximal stenosis develops",
+            "Connects to Piece 13 (Stenosis Hemodynamics) — biphasic is the expected waveform distal to stenosis",
+            "Connects to Piece 14 (Peripheral Arterial Disease) — biphasic appearance in the leg suggests femoral or iliac disease"
+          ],
+          "registryApplication": "Scenario: 'Distal femoral artery shows biphasic waveform with forward diastolic flow. Proximal femoral shows triphasic. Where is the problem?' Answer: In the proximal femoral artery (stenosis between the two sample sites). This tests your ability to use waveform change to localize disease.",
+          "puzzleAssembly": "You scan a popliteal artery and see a biphasic waveform. Scan proximal to find where the triphasic pattern is lost. Describe the pattern change and what it tells you about stenosis location.",
+          "puzzleCheckpoint": "Pearl: 'Biphasic distal to a stenosis = expected finding pointing you upstream.' Reflection: Why is forward diastolic flow present in biphasic waveforms? What does this say about pressure distal to the stenosis?"
+        },
+        {
+          "id": "waveform-monophasic",
+          "title": "Piece 6: Monophasic Waveform — Severe Proximal Disease",
+          "corePiece": "A monophasic waveform is flat, sustained forward flow throughout systole and diastole with no diastolic reversal or variation. This pattern appears distal to SEVERE proximal stenosis (>70%) or occlusion, and also normally in low-resistance vessels (ICA, renal artery, umbilical artery). In limb vessels, monophasic indicates severely compromised proximal perfusion pressure.",
+          "whyLock": "On exams, monophasic in a limb vessel (femoral, popliteal, tibial) is a RED FLAG for severe proximal disease. Students often confuse monophasic with triphasic, leading to misinterpretation of disease severity.",
+          "connectionEdges": [
+            "Connects to Piece 4 (Triphasic) and Piece 5 (Biphasic) — these three form the waveform spectrum: triphasic → biphasic → monophasic as disease worsens",
+            "Connects to Piece 13 (Stenosis Hemodynamics) — monophasic is seen distal to severe stenosis",
+            "Connects to Piece 14 (Peripheral Arterial Disease) — monophasic indicates advanced PAD"
+          ],
+          "registryApplication": "Exam: 'A patient with severe claudication has monophasic waveforms throughout the lower extremities. What does this indicate?' Answer: Severe proximal disease (aortic, iliac, or femoral) reducing perfusion pressure to all distal vessels. This scenario appears frequently in mock exams.",
+          "puzzleAssembly": "Compare three waveforms: triphasic femoral, biphasic popliteal, monophasic tibial (same leg). What stenosis is present and where? Draw or describe the pressure drop from aorta to tibial artery.",
+          "puzzleCheckpoint": "Pearl: 'Triphasic → biphasic → monophasic = worsening proximal disease.' Reflection: Why does severe proximal disease flatten the entire downstream waveform?"
+        },
+        {
+          "id": "waveform-tardus-parvus",
+          "title": "Piece 7: Tardus Parvus Waveform — Proximal Stenosis Signature",
+          "corePiece": "Tardus parvus ('tardy and tiny') is a pathognomonic waveform showing delayed systolic rise (prolonged acceleration time, AT >100 ms) and reduced peak systolic velocity (PSV). This pattern indicates significant proximal stenosis (typically >70%) upstream from the sample site. The stenosis acts as a bottleneck, slowing blood acceleration and reducing peak pressure. Pulsatility Index (PI) is also reduced (<0.9). This waveform is most commonly seen in renal artery stenosis but also in other vascular territories.",
+          "whyLock": "Tardus parvus is a 'signature' waveform pattern that screams 'proximal stenosis.' Registry exams frequently show tardus parvus waveforms and ask students to identify it and localize the stenosis. Recognizing tardus parvus can earn 2–3 easy points.",
+          "connectionEdges": [
+            "Connects to Piece 38 (Acceleration Time) — AT prolongation is the key measurement in tardus parvus",
+            "Connects to Piece 39 (RI & PI) — both indices are reduced in tardus parvus",
+            "Connects to Piece 13 (Stenosis Hemodynamics) — tardus parvus represents the hemodynamic effect of proximal stenosis"
+          ],
+          "registryApplication": "Classic exam scenario: 'A patient with hypertension has a renal artery ultrasound. The renal artery waveform shows AT = 140 ms, reduced PSV, and PI = 0.8. What does this indicate?' Answer: Renal artery stenosis >70%. This is asked in nearly every renal vascular exam section.",
+          "puzzleAssembly": "Compare a normal renal artery waveform (AT = 70 ms, PSV = 90 cm/s, PI = 1.1) to a tardus parvus waveform (AT = 150 ms, PSV = 45 cm/s, PI = 0.75). Measure the differences. What proximal lesion would cause this change?",
+          "puzzleCheckpoint": "Pearl: 'Tardus parvus = proximal stenosis signature — delayed rise, low peak, low PI.' Reflection: Why does a proximal stenosis delay systolic acceleration? (Hint: The stenosis acts as a resistor, slowing flow ramp-up.)"
+        },
+        {
+          "id": "resistance-patterns",
+          "title": "Piece 8: High vs Low Resistance — Organ Perfusion Logic",
+          "corePiece": "LOW-RESISTANCE vessels supply organs needing continuous perfusion (brain, kidney, placenta, liver). These show forward diastolic flow, triphasic or biphasic patterns, PI < 1.0, and RI < 0.6. HIGH-RESISTANCE vessels supply intermittent-use tissues (limbs at rest, external carotid, splenic artery). These show reversed or minimal diastolic flow, triphasic/monophasic patterns, PI > 1.0, RI > 0.6. Resistance patterns reflect downstream vascular resistance and metabolic demand.",
+          "whyLock": "Understanding resistance patterns is fundamental to predicting waveforms in any vascular bed. Exams test this by showing a waveform and asking 'Is this a low- or high-resistance vessel?' The answer determines differential diagnosis and follow-up.",
+          "connectionEdges": [
+            "Connects to Piece 1 (ICA vs ECA) — ICA is low-resistance, ECA is high-resistance",
+            "Connects to Piece 4 (Triphasic), Piece 5 (Biphasic), Piece 6 (Monophasic) — waveform shape reflects resistance",
+            "Connects to Piece 39 (RI & PI) — resistance indices quantify resistance patterns"
+          ],
+          "registryApplication": "Exam: 'A vessel shows forward diastolic flow and PI = 0.8. Is this a low- or high-resistance vessel?' Answer: Low-resistance (PI < 1.0 and forward diastolic flow indicate low resistance). This is asked in every exam.",
+          "puzzleAssembly": "You scan several vessels: ICA (triphasic, forward diastolic), ECA (biphasic, reversed diastolic), renal artery (triphasic, forward diastolic), femoral artery (triphasic, reversed diastolic). Classify each as high or low resistance. Explain why each organ or tissue has its assigned resistance.",
+          "puzzleCheckpoint": "Pearl: 'Low resistance = continuous perfusion organs (brain, kidney); high resistance = intermittent tissues (limbs).' Reflection: Why would the brain need low resistance but a resting leg muscle need high resistance?"
+        },
+        {
+          "id": "velocity-measurements",
+          "title": "Piece 9: PSV & EDV Measurements — The Core Metrics",
+          "corePiece": "Peak Systolic Velocity (PSV) is the highest velocity during systole. End-Diastolic Velocity (EDV) is the velocity at end-diastole. These two measurements are the foundation of all vascular grading — stenosis grade, resistance assessment, and hemodynamic significance. Normal values vary by vessel: femoral PSV = 60–100 cm/s, ICA PSV = 100–180 cm/s. Both PSV and EDV increase through a stenosis. Ratio comparisons (ICA/CCA PSV ratio, for example) normalize for flow variation.",
+          "whyLock": "Every vascular diagnosis depends on accurate PSV and EDV measurements. Missing these measurements or misreading the values directly drops your exam score. The registry exam assumes you can identify and measure both metrics accurately.",
+          "connectionEdges": [
+            "Connects to Piece 3 (Stenosis Grading) — stenosis severity is based entirely on PSV and EDV thresholds",
+            "Connects to Piece 38 (Acceleration Time) and Piece 39 (RI & PI) — all derived from waveform measurements",
+            "Connects to Piece 43 (Critical Velocity Criteria) — velocity cutoffs define disease severity"
+          ],
+          "registryApplication": "Fundamental exam question asked every time: 'Measure the PSV and EDV from the spectral Doppler trace.' This is a baseline skill tested before any interpretation. Accuracy here determines if you pass.",
+          "puzzleAssembly": "Given a spectral Doppler waveform image, identify and measure PSV and EDV. Calculate the difference (PSV – EDV). Now use these values to answer a stenosis grading question.",
+          "puzzleCheckpoint": "Pearl: 'PSV and EDV are your measurement anchors — every diagnosis hangs on accurate readings.' Reflection: Why does EDV increase through a stenosis? What does high EDV distal to a stenosis tell you about pressure drop?"
+        },
+        {
+          "id": "cardiac-effects",
+          "title": "Piece 10: Cardiac Output Effects — Systemic Pressure Influence",
+          "corePiece": "Cardiac output (stroke volume × heart rate) affects all Doppler waveforms globally. Increased cardiac output (exercise, anemia, fever, thyroid storm) raises PSV and EDV throughout the body. Decreased cardiac output (heart failure, dehydration, arrhythmia) lowers PSV and EDV everywhere. This is a SYSTEMIC change that affects BOTH sides of the body equally. When comparing a normal vessel to a possibly diseased vessel, always check if the patient's overall cardiac output is abnormal before attributing high/low velocities to local stenosis.",
+          "whyLock": "Students often mistake systemic cardiac output changes for localized disease. A registry exam might show a patient with low velocities everywhere and ask 'Is there stenosis?' The answer is NO if both sides are affected equally — this suggests cardiac output reduction, not stenosis.",
+          "connectionEdges": [
+            "Connects to Piece 9 (PSV & EDV) — both are influenced by cardiac output",
+            "Connects to Piece 13 (Stenosis Hemodynamics) — stenosis shows UNILATERAL velocity change; cardiac output shows BILATERAL change",
+            "Connects to Piece 32 (ABI Testing) — low bilateral leg pressures suggest cardiac output reduction, not bilateral stenosis"
+          ],
+          "registryApplication": "Scenario: 'A patient presents with low femoral PSV bilaterally (70 cm/s each side) and low brachial PSV. Heart rate = 120, BP = 90/50. What is the most likely explanation?' Answer: Low cardiac output (decompensated heart failure, sepsis, hypovolemia) — NOT bilateral arterial disease. This tests whether you understand systemic vs. localized effects.",
+          "puzzleAssembly": "A patient has femoral PSV = 60 cm/s (left) and 65 cm/s (right), with low velocities throughout the body. Describe what this pattern suggests. Then list three conditions that could cause this global pattern.",
+          "puzzleCheckpoint": "Pearl: 'Bilateral symmetric velocity reduction suggests cardiac output problem, not stenosis.' Reflection: If a patient's cardiac output improves (fluids, inotropes), how would you expect the waveforms to change?"
+        }
+      ]
+    },
+    {
+      "id": "arterial-anatomy",
+      "title": "Arterial Anatomy",
+      "puzzlePieces": [
+        {
+          "id": "lower-extremity-anatomy",
+          "title": "Piece 11: Lower Extremity Arterial Anatomy — The Main Highway",
+          "corePiece": "Lower extremity arterial tree: Aorta → Common Iliac → External Iliac → Common Femoral → Superficial Femoral Artery (SFA, most common stenosis site) → Popliteal Artery → Anterior Tibial (AT) and Peroneal Arteries → Dorsal Pedal. Posterior Tibial arises from the popliteal and descends medially. For ABI testing, use dorsalis pedis and posterior tibial pressures. The SFA is the MOST COMMON site of atherosclerotic disease in the lower extremity (accounts for ~40% of all arterial disease). Hunter's canal (adductor canal) is the SFA's course through the medial thigh.",
+          "whyLock": "Knowing the arterial pathway is essential for scanning technique, localizing disease, understanding collateral flow patterns, and answering anatomy questions. The registry exam tests your ability to name vessels and identify their courses.",
+          "connectionEdges": [
+            "Connects to Piece 12 (Upper Extremity) — understanding the LE tree helps you compare to UE anatomy",
+            "Connects to Piece 14 (Peripheral Arterial Disease) — PAD most commonly affects the SFA",
+            "Connects to Piece 32 (ABI Testing) — ABI uses dorsalis pedis and posterior tibial pressures"
+          ],
+          "registryApplication": "Anatomy question: 'Name the major arteries of the lower extremity in order from aorta to foot.' This is a baseline knowledge question asked directly or indirectly in exams. Scoring here is easy if you know the anatomy.",
+          "puzzleAssembly": "Draw a diagram of the lower extremity arterial tree from aorta to pedal arteries. Label each major vessel. Identify Hunter's canal and the SFA course. Mark the most common PAD sites.",
+          "puzzleCheckpoint": "Pearl: 'SFA = most common LE stenosis site.' Reflection: Why is the SFA so prone to disease? (Hint: It's the longest artery in the leg with high flow and tortuosity.)"
+        },
+        {
+          "id": "upper-extremity-anatomy",
+          "title": "Piece 12: Upper Extremity Arterial Anatomy — The Smaller Scale",
+          "corePiece": "Upper extremity arterial tree: Aortic arch → Subclavian Artery → Axillary Artery → Brachial Artery (most common sample site for ABI and pressure) → Radial and Ulnar Arteries → Palmar Arch. The subclavian artery can be affected by thoracic outlet syndrome or subclavian steal syndrome (vertebral artery flow reversal when subclavian is stenotic). For ABI testing, the brachial artery is used for arm pressure. The radial and ulnar arteries are small but can be scanned for distal disease or harvested for grafts.",
+          "whyLock": "Upper extremity disease is less common than LE disease but is tested on exams, especially subclavian steal and thoracic outlet syndrome. Knowing UE anatomy helps you understand collateral pathways and perform upper extremity ABI correctly.",
+          "connectionEdges": [
+            "Connects to Piece 11 (Lower Extremity) — understanding both LE and UE allows comparison of bilateral disease patterns",
+            "Connects to Piece 32 (ABI Testing) — brachial artery is the reference for ABI calculation",
+            "Connects to Piece 14 (Peripheral Arterial Disease) — UE PAD is less common but important to recognize"
+          ],
+          "registryApplication": "Scenario: 'A patient has low blood pressure in the right arm (95 mmHg) compared to the left (140 mmHg). The right subclavian artery shows a 70% stenosis. What is the significance?' Answer: The stenosis reduces arm pressure; ABI calculation would use the higher arm pressure (left) as reference to avoid false-low ratios. This tests understanding of subclavian disease impact.",
+          "puzzleAssembly": "Draw the upper extremity arterial tree. Identify the subclavian, axillary, brachial, radial, and ulnar arteries. Label the site where you'd measure brachial pressure for ABI testing.",
+          "puzzleCheckpoint": "Pearl: 'Subclavian stenosis reduces arm pressure — always use the higher arm pressure for ABI calculation.' Reflection: In subclavian steal, why does vertebral flow reverse? What clinical symptom results?"
+        }
+      ]
+    },
+    {
+      "id": "quick-ref",
+      "title": "Quick Reference & Critical Values",
+      "puzzlePieces": [
+        {
+          "id": "velocity-criteria",
+          "title": "Piece 43: Critical Velocity Criteria — The Scorecard",
+          "corePiece": "CAROTID STENOSIS: <50% (PSV <125, EDV <40, ratio <2), 50–69% (PSV 125–230, EDV 40–100, ratio 2–4), ≥70% (PSV >230, EDV >100, ratio >4). FEMORAL STENOSIS: <50% (PSV <150), ≥50% (PSV >150, EDV >45). RENAL ARTERY STENOSIS: >60% (PSV >180 cm/s, AT >100 ms, tardus parvus pattern, RAR >3.5). These velocity thresholds are the FOUNDATION of all vascular grading. Memorizing them is non-negotiable for exam success.",
+          "whyLock": "These are the EXACT numbers tested on every single registry exam. If you don't know these cutoffs, you cannot grade stenosis, and your exam score drops dramatically. This is where you earn easy points by simple memorization.",
+          "connectionEdges": [
+            "Connects to every stenosis piece (3, 7, 13, 14, 15, etc.) — all depend on these thresholds",
+            "Connects to Piece 44 (ABI Interpretation) — ABI values are similarly memorized thresholds"
+          ],
+          "registryApplication": "Direct exam question: 'Carotid PSV = 180 cm/s, EDV = 70 cm/s, ICA/CCA ratio = 2.8. Stenosis grade?' Answer: 50–69%. This question appears in nearly every mock exam.",
+          "puzzleAssembly": "Create a study card with three columns: Stenosis Grade, PSV Range, EDV Range, Ratio Range. Fill in the values for <50%, 50–69%, and ≥70% carotid stenosis. Repeat for femoral and renal arteries.",
+          "puzzleCheckpoint": "Pearl: 'These velocity cutoffs are absolute — memorize them.' Reflection: Why does PSV increase through a stenosis? Why does the ICA/CCA ratio help identify ICA stenosis specifically?"
+        },
+        {
+          "id": "abi-interpretation",
+          "title": "Piece 44: ABI Interpretation — Pressure-Based Diagnosis",
+          "corePiece": "ANKLE-BRACHIAL INDEX (ABI) = highest ankle pressure (DP or PT) ÷ highest brachial pressure. INTERPRETATION: Normal (0.9–1.3), Borderline low (0.8–0.89), Moderate PAD (0.5–0.79), Severe PAD (<0.5), Noncompressible (>1.3 suggests calcification, medial sclerosis). ABI <0.9 indicates hemodynamically significant stenosis (>50%). ABI <0.6 suggests critical limb ischemia. Always use the HIGHER brachial pressure (if asymmetric) unless subclavian disease is confirmed.",
+          "whyLock": "ABI interpretation is a core registry competency. Every patient with leg symptoms gets an ABI, and the exam expects you to interpret it correctly. This is a high-yield, high-frequency question.",
+          "connectionEdges": [
+            "Connects to Piece 32 (ABI Testing technique) — correct technique leads to accurate interpretation",
+            "Connects to Piece 43 (Velocity Criteria) — velocity findings and ABI values should correlate",
+            "Connects to Piece 14 (PAD) — ABI determines PAD severity"
+          ],
+          "registryApplication": "Scenario: 'Patient right ankle pressure = 80 mmHg, left ankle = 110 mmHg, brachial (right arm) = 110 mmHg, brachial (left arm) = 120 mmHg. Calculate ABIs and interpret.' Answer: Right ABI = 0.73 (moderate PAD); Left ABI = 0.92 (borderline). This is asked in every exam.",
+          "puzzleAssembly": "Given ankle and brachial pressures for a patient, calculate bilateral ABI values. Classify each as normal, borderline, moderate, or severe. Predict where stenosis might be based on the ABI pattern.",
+          "puzzleCheckpoint": "Pearl: 'ABI <0.9 = abnormal; <0.6 = critical ischemia.' Reflection: If a patient has high ABI (>1.3), what does this suggest about their artery walls?"
+        }
+      ]
+    }
+  ],
+  "introduction": {
+    "title": "Welcome to the Puzzle Study Guide",
+    "content": "This guide transforms your study experience into a puzzle-solving adventure. Each topic is a 'puzzle piece' that fits together with others to reveal the complete picture of vascular sonography.\n\nHow it works:\n1. **Core Piece** — The foundational knowledge you need\n2. **The Why Lock** — Clinical reasoning and registry context\n3. **Connection Edges** — How this piece fits with others\n4. **Registry Application** — Real exam scenarios\n5. **Puzzle Assembly Exercise** — Active learning prompt\n6. **Puzzle Complete Checkpoint** — Pearls and reflection questions\n\nAs you study, you'll notice how physics connects to anatomy, how anatomy enables pathology, how pathology appears in Doppler patterns, and how all of it matters on the registry exam. This interconnected approach mirrors how the actual exam tests knowledge — not in isolation, but through complex scenarios requiring you to assemble multiple concepts.\n\nStart with any piece, but revisit the connection edges often. The real learning happens when you see how a transducer frequency (physics) limits your ability to measure a carotid stenosis (pathology) in a calcified vessel (anatomy).\n\nGood luck assembling your mastery!"
+  }
+}
