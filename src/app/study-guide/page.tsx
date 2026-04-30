@@ -22,9 +22,28 @@ interface Section {
   content: string;
 }
 
+interface ConnectionEdge {
+  piece: string;
+  title: string;
+  link: string;
+}
+
+interface Checkpoint {
+  pearl: string;
+  reflection: string;
+}
+
 interface Topic {
   id: string;
   title: string;
+  pieceNumber?: string;
+  frontClue?: string;
+  corePiece?: string;
+  whyLock?: string;
+  connectionEdges?: ConnectionEdge[];
+  registryApplication?: string;
+  puzzleAssembly?: string;
+  checkpoint?: Checkpoint;
   content?: string;
   quickSummary?: string;
   clinicalPearls?: string[];
@@ -78,7 +97,7 @@ export default function StudyGuidePage() {
   const [unknownTopics, setUnknownTopics] = useState<Set<number>>(new Set());
 
   useEffect(() => {
-    fetch('/study-guide-content.json')
+    fetch('/study-guide-puzzle.json')
       .then(res => res.json())
       .then(data => setContent(data))
       .catch(err => console.error('Failed to load study guide:', err));
@@ -253,15 +272,20 @@ export default function StudyGuidePage() {
                           <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                         </div>
                       </div>
+                      {currentTopic.pieceNumber && (
+                        <p className="text-sm sm:text-base text-blue-200 mb-2 font-medium">
+                          {currentTopic.pieceNumber}
+                        </p>
+                      )}
                       <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4 px-2">
                         {currentTopic.title}
                       </h2>
-                      {currentTopic.quickSummary && (
+                      {currentTopic.frontClue && (
                         <p className="text-base sm:text-lg text-blue-100 mb-3 sm:mb-4 max-w-2xl mx-auto px-4">
-                          {currentTopic.quickSummary}
+                          {currentTopic.frontClue}
                         </p>
                       )}
-                      <p className="text-blue-100 text-xs sm:text-sm">Tap to reveal details</p>
+                      <p className="text-blue-100 text-xs sm:text-sm">🧩 Tap to reveal the full puzzle piece</p>
                     </div>
                   </Card>
 
@@ -278,71 +302,107 @@ export default function StudyGuidePage() {
                         {currentTopic.title}
                       </h3>
 
-                      <div className="flex-1 overflow-y-auto space-y-4 text-gray-700">
-                        {/* Overview */}
-                        {currentTopic.quickSummary && (
-                          <div>
-                            <p className="text-sm sm:text-base leading-relaxed mb-4">
-                              {currentTopic.quickSummary}
+                      <div className="flex-1 overflow-y-auto space-y-4 sm:space-y-5 text-gray-700">
+                        {/* Core Piece - Rich Definition */}
+                        {currentTopic.corePiece && (
+                          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border-l-4 border-blue-500">
+                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
+                              <span className="text-blue-600">🧩</span> Core Piece
+                            </h4>
+                            <p className="text-xs sm:text-sm leading-relaxed text-gray-800">
+                              {currentTopic.corePiece}
                             </p>
                           </div>
                         )}
 
-                        {/* Main breakdown */}
-                        <div className="space-y-3">
-                          {currentTopic.keyTakeaways && currentTopic.keyTakeaways.length > 0 && (
-                            <div>
-                              <h4 className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Here&apos;s what you need to know:</h4>
-                              <ul className="space-y-2 ml-1">
-                                {currentTopic.keyTakeaways.map((takeaway, i) => (
-                                  <li key={i} className="flex items-start gap-2 text-xs sm:text-sm">
-                                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
-                                    <span className="flex-1 leading-relaxed">{takeaway}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
-
-                          {/* Clinical tips in simple format */}
-                          {currentTopic.clinicalPearls && currentTopic.clinicalPearls.length > 0 && (
-                            <div>
-                              <h4 className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Clinical tips:</h4>
-                              <ul className="space-y-2 ml-1">
-                                {currentTopic.clinicalPearls.map((pearl, i) => (
-                                  <li key={i} className="flex items-start gap-2 text-xs sm:text-sm">
-                                    <span className="text-blue-600 mt-1 flex-shrink-0">•</span>
-                                    <span className="flex-1 leading-relaxed">{pearl}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
-
-                          {/* Key terms - simple list */}
-                          {currentTopic.keyTerms.length > 0 && (
-                            <div className="pt-3 border-t border-gray-200">
-                              <h4 className="font-semibold text-gray-900 text-sm sm:text-base mb-2">Important terms:</h4>
-                              <div className="flex flex-wrap gap-1.5">
-                                {currentTopic.keyTerms.map((term, i) => (
-                                  <span
-                                    key={i}
-                                    className="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium"
-                                  >
-                                    {term}
-                                  </span>
-                                ))}
-                              </div>
-                            </div>
-                          )}
-
-                          {/* Study tip at bottom */}
-                          <div className="pt-3 border-t border-gray-200">
-                            <p className="text-xs sm:text-sm text-gray-500 italic">
-                              💡 Study tip: Review these concepts multiple times and try to explain them without looking
+                        {/* Why Lock - Deep Clinical Why */}
+                        {currentTopic.whyLock && (
+                          <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-4 rounded-lg border-l-4 border-amber-500">
+                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
+                              <span className="text-amber-600">🔐</span> The Why Lock
+                            </h4>
+                            <p className="text-xs sm:text-sm leading-relaxed text-gray-800">
+                              {currentTopic.whyLock}
                             </p>
                           </div>
-                        </div>
+                        )}
+
+                        {/* Connection Edges */}
+                        {currentTopic.connectionEdges && currentTopic.connectionEdges.length > 0 && (
+                          <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg border-l-4 border-green-500">
+                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
+                              <span className="text-green-600">🔗</span> Connection Edges
+                            </h4>
+                            <div className="space-y-2">
+                              {currentTopic.connectionEdges.map((edge, i) => (
+                                <div key={i} className="text-xs sm:text-sm">
+                                  <p className="font-semibold text-green-700">{edge.piece}: {edge.title}</p>
+                                  <p className="text-gray-700 ml-4">{edge.link}</p>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Registry Application */}
+                        {currentTopic.registryApplication && (
+                          <div className="bg-gradient-to-r from-purple-50 to-violet-50 p-4 rounded-lg border-l-4 border-purple-500">
+                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
+                              <span className="text-purple-600">📝</span> Registry Application
+                            </h4>
+                            <p className="text-xs sm:text-sm leading-relaxed text-gray-800">
+                              {currentTopic.registryApplication}
+                            </p>
+                          </div>
+                        )}
+
+                        {/* Puzzle Assembly Exercise */}
+                        {currentTopic.puzzleAssembly && (
+                          <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 rounded-lg border-l-4 border-orange-500">
+                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
+                              <span className="text-orange-600">🔨</span> Puzzle Assembly
+                            </h4>
+                            <p className="text-xs sm:text-sm leading-relaxed text-gray-800 italic">
+                              {currentTopic.puzzleAssembly}
+                            </p>
+                          </div>
+                        )}
+
+                        {/* Checkpoint - Pearl & Reflection */}
+                        {currentTopic.checkpoint && (
+                          <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-4 rounded-lg border-l-4 border-teal-500">
+                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
+                              <span className="text-teal-600">✓</span> Puzzle Complete Checkpoint
+                            </h4>
+                            <div className="space-y-2">
+                              <div>
+                                <p className="font-semibold text-teal-700 text-xs sm:text-sm">Registry Pearl:</p>
+                                <p className="text-xs sm:text-sm text-gray-800 ml-4">{currentTopic.checkpoint.pearl}</p>
+                              </div>
+                              <div>
+                                <p className="font-semibold text-teal-700 text-xs sm:text-sm">Reflection:</p>
+                                <p className="text-xs sm:text-sm text-gray-800 ml-4 italic">{currentTopic.checkpoint.reflection}</p>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Key Terms */}
+                        {currentTopic.keyTerms && currentTopic.keyTerms.length > 0 && (
+                          <div className="pt-3 border-t border-gray-200">
+                            <h4 className="font-semibold text-gray-900 text-xs sm:text-sm mb-2">Key Terms:</h4>
+                            <div className="flex flex-wrap gap-1.5">
+                              {currentTopic.keyTerms.map((term, i) => (
+                                <span
+                                  key={i}
+                                  className="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium"
+                                >
+                                  {term}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
                       </div>
 
                       <p className="text-gray-400 text-xs sm:text-sm mt-4 sm:mt-5 flex-shrink-0 text-center">Tap to flip back</p>

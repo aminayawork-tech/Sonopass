@@ -1,0 +1,3319 @@
+{
+  "intro": {
+    "title": "How to Use This Puzzle Guide",
+    "content": "Welcome to the SonoPass Puzzle Study Guide — a revolutionary approach to mastering your registry exam. Instead of memorizing isolated facts, you'll assemble a complete picture of vascular sonography by connecting puzzle pieces. Each topic is a piece that snaps together with others, revealing the 'why' behind every concept."
+  },
+  "categories": [
+    {
+      "id": "cerebrovascular",
+      "title": "Cerebrovascular System",
+      "icon": "brain",
+      "color": "blue",
+      "description": "Comprehensive study of carotid and vertebral artery anatomy, physiology, and pathology",
+      "topics": [
+        {
+          "id": "cerebro-basics",
+          "title": "Carotid Anatomy & Normal Values",
+          "quickSummary": "The ICA supplies the brain (low resistance), while the ECA supplies the face/scalp (high resistance). Understanding these differences is critical for exam success.",
+          "clinicalPearls": [
+            "Carotid exam performed with patient supine, neck slightly extended, head turned away from side being scanned",
+            "ICA = Internal Carotid Artery (low resistance vessel)",
+            "ECA = External Carotid Artery (high resistance vessel)",
+            "Vertebral arteries evaluated as part of cerebrovascular assessment",
+            "70-99% carotid stenosis is a CRITICAL FINDING requiring immediate attention",
+            "Linear array transducer used for carotid exams"
+          ],
+          "sections": [
+            {
+              "title": "ICA vs ECA Characteristics",
+              "content": "ICA (Internal Carotid Artery): Low resistance vessel supplying brain. Continuous forward diastolic flow throughout cardiac cycle. Longer acceleration time. PI < 1.0 is normal.\n\nECA (External Carotid Artery): High resistance vessel supplying face/scalp. Minimal or reversed diastolic flow. Similar pattern to resting extremity arteries."
+            },
+            {
+              "title": "Normal Values",
+              "content": "ICA has increased acceleration time (AT) compared to high resistance vessels due to low resistance\nAT longer in ICA and cerebral vessels vs extremity arteries\nBrain vessels: Pulsatility Index (PI) normally <1.0\nICA waveform: low resistance with continuous forward diastolic flow\nECA waveform: high resistance with minimal/reversed diastolic flow"
+            }
+          ],
+          "keyTakeaways": [
+            "ICA = low resistance (brain needs constant perfusion)",
+            "ECA = high resistance (face/scalp intermittent perfusion)",
+            "Brain PI normally < 1.0",
+            "AT longer in ICA than extremities"
+          ],
+          "keyTerms": [
+            "ICA",
+            "ECA",
+            "Low Resistance",
+            "High Resistance",
+            "Pulsatility Index (PI)",
+            "Acceleration Time (AT)"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 1",
+          "frontClue": "The ICA supplies the brain (low resistance), while the ECA supplies the face/scalp (high resistance). Understanding these differences is critical for exam success.",
+          "corePiece": "ICA (Internal Carotid Artery): Low resistance vessel supplying brain. Continuous forward diastolic flow throughout cardiac cycle. Longer acceleration time. PI < 1.0 is normal.\n\nECA (External Carotid Artery): High resistance vessel supplying face/scalp. Minimal or reversed diastolic flow. Similar pattern to resting extremity arteries.",
+          "whyLock": "Understanding carotid anatomy & normal values is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "ICA",
+              "link": "ICA connects directly to understanding Carotid Anatomy & Normal Values."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "ECA",
+              "link": "ECA connects directly to understanding Carotid Anatomy & Normal Values."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Low Resistance",
+              "link": "Low Resistance connects directly to understanding Carotid Anatomy & Normal Values."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test carotid anatomy & normal values through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of carotid anatomy & normal values to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "ICA = low resistance (brain needs constant perfusion)",
+            "reflection": "How does carotid anatomy & normal values integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "cerebro-scanning",
+          "title": "Carotid Scanning Technique",
+          "quickSummary": "Proper positioning and technique are crucial. The most common error causing underestimation of stenosis is improper sample volume placement.",
+          "clinicalPearls": [
+            "Most common reason for underestimation of carotid stenosis = improper sample volume location",
+            "Cursor should be placed at narrowest point of stenosis initially",
+            "Move Doppler cursor through entire stenotic area to find highest velocity",
+            "Bruit can be heard with stenosis, also with branching/tortuosity",
+            "Patient supine with neck slightly extended",
+            "Head turned away from side being scanned",
+            "Linear array transducer",
+            "Scan entire length of CCA, ICA, ECA, and vertebral arteries"
+          ],
+          "sections": [
+            {
+              "title": "Patient Positioning",
+              "content": "Patient supine with neck slightly extended\nHead turned away from side being scanned\nLinear array transducer\nScan entire length of CCA, ICA, ECA, and vertebral arteries\nMultiple angles through stenosis to find peak velocity\nDoppler angle ≤60 degrees\nSample volume centered in vessel at narrowest point"
+            },
+            {
+              "title": "Critical Technique Points",
+              "content": "MOST IMPORTANT: Move Doppler cursor through ENTIRE stenotic area to find highest velocity. Don't rely on single measurement. Doppler angle must be ≤60 degrees. Sample volume centered in vessel at narrowest point initially, then scan through entire stenosis."
+            }
+          ],
+          "keyTakeaways": [
+            "Supine, neck extended, head turned away",
+            "Linear array transducer",
+            "MUST scan entire stenosis for peak velocity",
+            "Most common error: improper sample volume placement",
+            "Doppler angle ≤60°"
+          ],
+          "keyTerms": [
+            "Linear Array Transducer",
+            "Sample Volume",
+            "Doppler Angle",
+            "Peak Velocity",
+            "Stenosis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 2",
+          "frontClue": "Proper positioning and technique are crucial. The most common error causing underestimation of stenosis is improper sample volume placement.",
+          "corePiece": "Patient supine with neck slightly extended\nHead turned away from side being scanned\nLinear array transducer\nScan entire length of CCA, ICA, ECA, and vertebral arteries\nMultiple angles through stenosis to find peak velocity\nDoppler angle ≤60 degrees\nSample volume centered in vessel at narrowest point",
+          "whyLock": "Understanding carotid scanning technique is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 3",
+              "title": "Linear Array Transducer",
+              "link": "Linear Array Transducer connects directly to understanding Carotid Scanning Technique."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Sample Volume",
+              "link": "Sample Volume connects directly to understanding Carotid Scanning Technique."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Doppler Angle",
+              "link": "Doppler Angle connects directly to understanding Carotid Scanning Technique."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test carotid scanning technique through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of carotid scanning technique to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Supine, neck extended, head turned away",
+            "reflection": "How does carotid scanning technique integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "cerebro-stenosis",
+          "title": "Carotid Stenosis & Critical Findings",
+          "quickSummary": "70-99% carotid stenosis is a CRITICAL FINDING. Understanding stenosis criteria and hemodynamic changes is essential.",
+          "clinicalPearls": [
+            "Carotid stenosis: 50% diameter = 75% area stenosis = hemodynamically significant",
+            "Increased PSV and EDV at stenosis site",
+            "Post-stenotic turbulence (eddy currents/vortices) distal to stenosis",
+            "Spectral broadening at stenosis",
+            "70-99% stenosis = CRITICAL FINDING",
+            "50% diameter stenosis = 75% area stenosis = hemodynamically significant",
+            "70-99% stenosis = critical finding requiring immediate attention",
+            "Increased velocities at stenosis site",
+            "ICA/CCA velocity ratio helpful for grading stenosis"
+          ],
+          "sections": [
+            {
+              "title": "Hemodynamic Significance",
+              "content": "50% diameter stenosis = 75% area stenosis = hemodynamically significant threshold.\n\nAt stenosis: Increased PSV and EDV, spectral broadening.\nDistal to stenosis: Post-stenotic turbulence with eddy currents and vortices."
+            },
+            {
+              "title": "Critical Findings",
+              "content": "70-99% stenosis = CRITICAL FINDING requiring immediate physician notification.\n\nVelocity criteria help grade severity. ICA/CCA ratio useful for normalizing cardiac output effects."
+            }
+          ],
+          "keyTakeaways": [
+            "50% diameter = 75% area = hemodynamically significant",
+            "70-99% = CRITICAL FINDING",
+            "Increased PSV and EDV at stenosis",
+            "Post-stenotic turbulence distal to stenosis",
+            "ICA/CCA ratio normalizes for cardiac output"
+          ],
+          "keyTerms": [
+            "Stenosis",
+            "Peak Systolic Velocity (PSV)",
+            "End Diastolic Velocity (EDV)",
+            "Critical Finding",
+            "Post-stenotic Turbulence",
+            "ICA/CCA Ratio"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 3",
+          "frontClue": "70-99% carotid stenosis is a CRITICAL FINDING. Understanding stenosis criteria and hemodynamic changes is essential.",
+          "corePiece": "50% diameter stenosis = 75% area stenosis = hemodynamically significant threshold.\n\nAt stenosis: Increased PSV and EDV, spectral broadening.\nDistal to stenosis: Post-stenotic turbulence with eddy currents and vortices.",
+          "whyLock": "Understanding carotid stenosis & critical findings is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 4",
+              "title": "Stenosis",
+              "link": "Stenosis connects directly to understanding Carotid Stenosis & Critical Findings."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Peak Systolic Velocity (PSV)",
+              "link": "Peak Systolic Velocity (PSV) connects directly to understanding Carotid Stenosis & Critical Findings."
+            },
+            {
+              "piece": "Piece 6",
+              "title": "End Diastolic Velocity (EDV)",
+              "link": "End Diastolic Velocity (EDV) connects directly to understanding Carotid Stenosis & Critical Findings."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test carotid stenosis & critical findings through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of carotid stenosis & critical findings to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "50% diameter = 75% area = hemodynamically significant",
+            "reflection": "How does carotid stenosis & critical findings integrate with other vascular concepts you've studied?"
+          }
+        }
+      ],
+      "pieceRange": "Pieces 1-3",
+      "examType": "RVT"
+    },
+    {
+      "id": "arterial-hemodynamics",
+      "title": "Arterial Hemodynamics",
+      "icon": "activity",
+      "color": "red",
+      "description": "Understanding waveform patterns, resistance, and hemodynamic principles",
+      "topics": [
+        {
+          "id": "waveform-triphasic",
+          "title": "Triphasic Waveform",
+          "quickSummary": "NORMAL pattern for resting extremity arteries. High resistance vascular bed with three phases: forward, reverse, forward.",
+          "clinicalPearls": [
+            "Systole: rapid antegrade flow",
+            "Early diastole: retrograde flow",
+            "Late diastole: small amount of forward flow",
+            "Seen in high resistance vascular beds (extremities/muscles)",
+            "Normal in healthy extremity arteries"
+          ],
+          "sections": [
+            {
+              "title": "Characteristics",
+              "content": "Normal extremity arterial waveform\n\nSystole: rapid antegrade flow\nEarly diastole: retrograde flow\nLate diastole: small amount of forward flow\nSeen in high resistance vascular beds (extremities/muscles)\nNormal in healthy extremity arteries"
+            },
+            {
+              "title": "Significance",
+              "content": "Indicates healthy high resistance vascular bed. Normal in extremities/muscles at rest. Seen in ECA. Would be ABNORMAL in organ vessels."
+            }
+          ],
+          "keyTakeaways": [
+            "Triphasic = NORMAL for extremities",
+            "High resistance pattern",
+            "Three phases: systolic forward, early diastolic reverse, late diastolic forward",
+            "Indicates healthy peripheral circulation"
+          ],
+          "keyTerms": [
+            "Triphasic Waveform",
+            "High Resistance",
+            "Antegrade Flow",
+            "Retrograde Flow"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 4",
+          "frontClue": "NORMAL pattern for resting extremity arteries. High resistance vascular bed with three phases: forward, reverse, forward.",
+          "corePiece": "Normal extremity arterial waveform\n\nSystole: rapid antegrade flow\nEarly diastole: retrograde flow\nLate diastole: small amount of forward flow\nSeen in high resistance vascular beds (extremities/muscles)\nNormal in healthy extremity arteries",
+          "whyLock": "Understanding triphasic waveform is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 5",
+              "title": "Triphasic Waveform",
+              "link": "Triphasic Waveform connects directly to understanding Triphasic Waveform."
+            },
+            {
+              "piece": "Piece 6",
+              "title": "High Resistance",
+              "link": "High Resistance connects directly to understanding Triphasic Waveform."
+            },
+            {
+              "piece": "Piece 7",
+              "title": "Antegrade Flow",
+              "link": "Antegrade Flow connects directly to understanding Triphasic Waveform."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test triphasic waveform through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of triphasic waveform to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Triphasic = NORMAL for extremities",
+            "reflection": "How does triphasic waveform integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "waveform-biphasic",
+          "title": "Biphasic Waveform",
+          "quickSummary": "Indicates mild disease OR medium resistance. Can be normal in older patients but ABNORMAL if seen in organ vessels.",
+          "clinicalPearls": [
+            "Systole: antegrade flow",
+            "Diastole: some retrograde flow (less than triphasic)",
+            "Loss of late diastolic forward component",
+            "Can be normal in older patients",
+            "ABNORMAL if seen in organ vessels"
+          ],
+          "sections": [
+            {
+              "title": "Characteristics",
+              "content": "Mild disease or medium resistance\n\nSystole: antegrade flow\nDiastole: some retrograde flow (less than triphasic)\nLoss of late diastolic forward component\nCan be normal in older patients\nABNORMAL if seen in organ vessels"
+            },
+            {
+              "title": "Clinical Significance",
+              "content": "Mild disease or vasoconstriction effect\n\nTwo components: systolic forward flow and some diastolic reverse flow (less than triphasic). Loss of late diastolic forward component."
+            }
+          ],
+          "keyTakeaways": [
+            "Biphasic = mild disease OR medium resistance",
+            "Can be normal in older patients",
+            "ABNORMAL in organ vessels",
+            "Less reverse flow than triphasic"
+          ],
+          "keyTerms": [
+            "Biphasic Waveform",
+            "Medium Resistance",
+            "Mild Disease"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 5",
+          "frontClue": "Indicates mild disease OR medium resistance. Can be normal in older patients but ABNORMAL if seen in organ vessels.",
+          "corePiece": "Mild disease or medium resistance\n\nSystole: antegrade flow\nDiastole: some retrograde flow (less than triphasic)\nLoss of late diastolic forward component\nCan be normal in older patients\nABNORMAL if seen in organ vessels",
+          "whyLock": "Understanding biphasic waveform is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 6",
+              "title": "Biphasic Waveform",
+              "link": "Biphasic Waveform connects directly to understanding Biphasic Waveform."
+            },
+            {
+              "piece": "Piece 7",
+              "title": "Medium Resistance",
+              "link": "Medium Resistance connects directly to understanding Biphasic Waveform."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Mild Disease",
+              "link": "Mild Disease connects directly to understanding Biphasic Waveform."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test biphasic waveform through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of biphasic waveform to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Biphasic = mild disease OR medium resistance",
+            "reflection": "How does biphasic waveform integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "waveform-monophasic",
+          "title": "Monophasic Waveform",
+          "quickSummary": "NORMAL for organs (continuous perfusion needed). ABNORMAL for extremities (indicates significant proximal disease).",
+          "clinicalPearls": [
+            "Antegrade flow continues through entire cardiac cycle",
+            "No retrograde component",
+            "Rounded, dampened appearance",
+            "Normal in vessels feeding organs (low resistance)",
+            "ABNORMAL if seen in extremity arteries"
+          ],
+          "sections": [
+            {
+              "title": "Characteristics",
+              "content": "Low resistance or significant proximal disease\n\nAntegrade flow continues through entire cardiac cycle\nNo retrograde component\nRounded, dampened appearance\nNormal in vessels feeding organs (low resistance)\nABNORMAL if seen in extremity arteries"
+            },
+            {
+              "title": "Normal vs Abnormal",
+              "content": "Normal for organs, ABNORMAL for extremities (indicates significant proximal disease or vasodilation)\n\nNORMAL: ICA, renal, mesenteric, hepatic arteries (organs need constant flow).\nABNORMAL: Extremity arteries (indicates proximal disease or vasodilation)."
+            }
+          ],
+          "keyTakeaways": [
+            "Monophasic = NORMAL for organs, ABNORMAL for extremities",
+            "Continuous forward flow, no reverse component",
+            "Low resistance pattern",
+            "Context determines if normal or pathologic"
+          ],
+          "keyTerms": [
+            "Monophasic Waveform",
+            "Low Resistance",
+            "Continuous Forward Flow",
+            "Organ Vessels"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 6",
+          "frontClue": "NORMAL for organs (continuous perfusion needed). ABNORMAL for extremities (indicates significant proximal disease).",
+          "corePiece": "Low resistance or significant proximal disease\n\nAntegrade flow continues through entire cardiac cycle\nNo retrograde component\nRounded, dampened appearance\nNormal in vessels feeding organs (low resistance)\nABNORMAL if seen in extremity arteries",
+          "whyLock": "Understanding monophasic waveform is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 7",
+              "title": "Monophasic Waveform",
+              "link": "Monophasic Waveform connects directly to understanding Monophasic Waveform."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Low Resistance",
+              "link": "Low Resistance connects directly to understanding Monophasic Waveform."
+            },
+            {
+              "piece": "Piece 9",
+              "title": "Continuous Forward Flow",
+              "link": "Continuous Forward Flow connects directly to understanding Monophasic Waveform."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test monophasic waveform through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of monophasic waveform to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Monophasic = NORMAL for organs, ABNORMAL for extremities",
+            "reflection": "How does monophasic waveform integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "waveform-tardus-parvus",
+          "title": "Tardus Parvus Waveform",
+          "quickSummary": "Indicates SEVERE proximal stenosis/occlusion. Tardus = delayed upstroke. Parvus = decreased amplitude.",
+          "clinicalPearls": [
+            "Delayed systolic upstroke (tardus = slow)",
+            "Decreased amplitude (parvus = small)",
+            "Rounded peak",
+            "Prolonged acceleration time"
+          ],
+          "sections": [
+            {
+              "title": "Characteristics",
+              "content": "TARDUS (slow): Delayed systolic upstroke\nPARVUS (small): Decreased amplitude\n\nDelayed systolic upstroke (tardus = slow)\nDecreased amplitude (parvus = small)\nRounded peak\nProlonged acceleration time"
+            },
+            {
+              "title": "Clinical Significance",
+              "content": "Indicates severe proximal stenosis or occlusion\n\nSeen DISTAL to severe stenosis or occlusion. Prolonged acceleration time (AT). Rounded peak instead of sharp peak. Dampened, low-amplitude appearance."
+            }
+          ],
+          "keyTakeaways": [
+            "Tardus = slow/delayed upstroke",
+            "Parvus = small/decreased amplitude",
+            "Indicates SEVERE proximal stenosis/occlusion",
+            "Prolonged acceleration time",
+            "Seen DISTAL to severe lesion"
+          ],
+          "keyTerms": [
+            "Tardus Parvus",
+            "Acceleration Time (AT)",
+            "Proximal Stenosis",
+            "Dampened Waveform"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 7",
+          "frontClue": "Indicates SEVERE proximal stenosis/occlusion. Tardus = delayed upstroke. Parvus = decreased amplitude.",
+          "corePiece": "TARDUS (slow): Delayed systolic upstroke\nPARVUS (small): Decreased amplitude\n\nDelayed systolic upstroke (tardus = slow)\nDecreased amplitude (parvus = small)\nRounded peak\nProlonged acceleration time",
+          "whyLock": "Understanding tardus parvus waveform is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "Tardus Parvus",
+              "link": "Tardus Parvus connects directly to understanding Tardus Parvus Waveform."
+            },
+            {
+              "piece": "Piece 9",
+              "title": "Acceleration Time (AT)",
+              "link": "Acceleration Time (AT) connects directly to understanding Tardus Parvus Waveform."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Proximal Stenosis",
+              "link": "Proximal Stenosis connects directly to understanding Tardus Parvus Waveform."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test tardus parvus waveform through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of tardus parvus waveform to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Tardus = slow/delayed upstroke",
+            "reflection": "How does tardus parvus waveform integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "resistance-patterns",
+          "title": "High vs Low Resistance",
+          "quickSummary": "High resistance = extremities/muscles (triphasic). Low resistance = organs (monophasic). Vasoconstriction increases, vasodilation decreases resistance.",
+          "clinicalPearls": [
+            "Supplies extremities/muscles at rest",
+            "Triphasic waveforms with retrograde diastolic flow",
+            "Minimal or no forward diastolic flow",
+            "Examples: ECA, resting limb arteries",
+            "Vasoconstriction increases pulsatility",
+            "Clenching fist increases distal resistance and pulsatility in proximal arteries",
+            "Supplies organs needing constant blood flow",
+            "Monophasic waveforms with continuous forward flow",
+            "Significant diastolic flow component",
+            "No flow reversal",
+            "Examples: ICA, renal, mesenteric, hepatic arteries",
+            "Vasodilation decreases pulsatility"
+          ],
+          "sections": [
+            {
+              "title": "High Resistance",
+              "content": "Supplies extremities/muscles at rest.\n\nSupplies extremities/muscles at rest\nTriphasic waveforms with retrograde diastolic flow\nMinimal or no forward diastolic flow\nExamples: ECA, resting limb arteries\nVasoconstriction increases pulsatility\nClenching fist increases distal resistance and pulsatility in proximal arteries"
+            },
+            {
+              "title": "Low Resistance",
+              "content": "Supplies organs needing constant blood flow.\n\nSupplies organs needing constant blood flow\nMonophasic waveforms with continuous forward flow\nSignificant diastolic flow component\nNo flow reversal\nExamples: ICA, renal, mesenteric, hepatic arteries\nVasodilation decreases pulsatility"
+            },
+            {
+              "title": "Physiologic Effects",
+              "content": "Vasoconstriction: changes monophasic to biphasic/triphasic\nVasodilation: changes triphasic to monophasic\nCold patient: vasoconstriction increases arterial resistance\nWarm patient: vasodilation decreases arterial resistance\nExercise: vasodilation in muscles, increased flow\nFist clenching: increases resistance, more pulsatile proximally\nUpon fist release: resistance drops, pulsatility reduced, flow increases"
+            }
+          ],
+          "keyTakeaways": [
+            "High resistance = muscles/extremities (triphasic)",
+            "Low resistance = organs (monophasic)",
+            "Vasoconstriction increases resistance",
+            "Vasodilation decreases resistance",
+            "Exercise: high→low resistance in muscles"
+          ],
+          "keyTerms": [
+            "High Resistance",
+            "Low Resistance",
+            "Vasoconstriction",
+            "Vasodilation",
+            "Pulsatility"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 8",
+          "frontClue": "High resistance = extremities/muscles (triphasic). Low resistance = organs (monophasic). Vasoconstriction increases, vasodilation decreases resistance.",
+          "corePiece": "Supplies extremities/muscles at rest.\n\nSupplies extremities/muscles at rest\nTriphasic waveforms with retrograde diastolic flow\nMinimal or no forward diastolic flow\nExamples: ECA, resting limb arteries\nVasoconstriction increases pulsatility\nClenching fist increases distal resistance and pulsatility in proximal arteries",
+          "whyLock": "Understanding high vs low resistance is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 9",
+              "title": "High Resistance",
+              "link": "High Resistance connects directly to understanding High vs Low Resistance."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Low Resistance",
+              "link": "Low Resistance connects directly to understanding High vs Low Resistance."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Vasoconstriction",
+              "link": "Vasoconstriction connects directly to understanding High vs Low Resistance."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test high vs low resistance through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of high vs low resistance to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "High resistance = muscles/extremities (triphasic)",
+            "reflection": "How does high vs low resistance integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "velocity-measurements",
+          "title": "PSV & EDV Measurements",
+          "quickSummary": "Both PSV and EDV INCREASE at stenosis due to continuity principle. If EDV = 0, then RI = 1.0.",
+          "clinicalPearls": [
+            "Increases at stenosis site due to body maintaining blood volume",
+            "Measured at narrowest point of stenosis",
+            "Velocity increases as vessel diameter decreases",
+            "Continuity principle: flow volume remains constant",
+            "Increases at stenosis site",
+            "If EDV = 0 cm/s, then RI = 1.0",
+            "Reflects downstream resistance",
+            "Low in high resistance beds, higher in low resistance"
+          ],
+          "sections": [
+            {
+              "title": "Peak Systolic Velocity (PSV)",
+              "content": "Increases at stenosis site due to body maintaining blood volume\nMeasured at narrowest point of stenosis\nVelocity increases as vessel diameter decreases\nContinuity principle: flow volume remains constant"
+            },
+            {
+              "title": "End Diastolic Velocity (EDV)",
+              "content": "Increases at stenosis site\nIf EDV = 0 cm/s, then RI = 1.0\nReflects downstream resistance\nLow in high resistance beds, higher in low resistance"
+            },
+            {
+              "title": "Continuity Principle",
+              "content": "Flow volume = Area × Velocity (constant). As vessel diameter decreases at stenosis, velocity must increase to maintain constant flow volume."
+            }
+          ],
+          "keyTakeaways": [
+            "PSV = peak velocity during systole",
+            "EDV = velocity at end of diastole",
+            "Both increase at stenosis (continuity principle)",
+            "If EDV = 0, then RI = 1.0",
+            "EDV reflects downstream resistance"
+          ],
+          "keyTerms": [
+            "Peak Systolic Velocity (PSV)",
+            "End Diastolic Velocity (EDV)",
+            "Continuity Principle",
+            "Resistive Index (RI)"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 9",
+          "frontClue": "Both PSV and EDV INCREASE at stenosis due to continuity principle. If EDV = 0, then RI = 1.0.",
+          "corePiece": "Increases at stenosis site due to body maintaining blood volume\nMeasured at narrowest point of stenosis\nVelocity increases as vessel diameter decreases\nContinuity principle: flow volume remains constant",
+          "whyLock": "Understanding psv & edv measurements is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Peak Systolic Velocity (PSV)",
+              "link": "Peak Systolic Velocity (PSV) connects directly to understanding PSV & EDV Measurements."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "End Diastolic Velocity (EDV)",
+              "link": "End Diastolic Velocity (EDV) connects directly to understanding PSV & EDV Measurements."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "Continuity Principle",
+              "link": "Continuity Principle connects directly to understanding PSV & EDV Measurements."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test psv & edv measurements through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of psv & edv measurements to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "PSV = peak velocity during systole",
+            "reflection": "How does psv & edv measurements integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "cardiac-effects",
+          "title": "Cardiac Output Effects",
+          "quickSummary": "Cardiac function affects ALL arterial velocities systemically. Velocity ratios help normalize for cardiac output variations.",
+          "clinicalPearls": [
+            "Decreased cardiac function = decreased output = reduced peak arterial velocities",
+            "Increased cardiac function = increased output = increased peak arterial velocities",
+            "Cardiac output affects all arterial velocities systemically",
+            "Velocity ratios help normalize for cardiac output variations"
+          ],
+          "sections": [
+            {
+              "title": "Cardiac Impact",
+              "content": "Decreased cardiac function = decreased output = reduced peak arterial velocities\nIncreased cardiac function = increased output = increased peak arterial velocities\nCardiac output affects all arterial velocities systemically\nVelocity ratios help normalize for cardiac output variations"
+            },
+            {
+              "title": "Clinical Application",
+              "content": "Use velocity RATIOS (ICA/CCA, renal/aortic) to normalize for cardiac output. Compare bilateral vessels. Both affected equally by cardiac function, so ratios remain valid."
+            }
+          ],
+          "keyTakeaways": [
+            "Decreased cardiac output = decreased velocities everywhere",
+            "Increased cardiac output = increased velocities everywhere",
+            "Velocity ratios normalize for cardiac variations",
+            "Compare bilateral vessels to identify true disease"
+          ],
+          "keyTerms": [
+            "Cardiac Output",
+            "Velocity Ratio",
+            "ICA/CCA Ratio",
+            "Bilateral Comparison"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 10",
+          "frontClue": "Cardiac function affects ALL arterial velocities systemically. Velocity ratios help normalize for cardiac output variations.",
+          "corePiece": "Decreased cardiac function = decreased output = reduced peak arterial velocities\nIncreased cardiac function = increased output = increased peak arterial velocities\nCardiac output affects all arterial velocities systemically\nVelocity ratios help normalize for cardiac output variations",
+          "whyLock": "Understanding cardiac output effects is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 11",
+              "title": "Cardiac Output",
+              "link": "Cardiac Output connects directly to understanding Cardiac Output Effects."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "Velocity Ratio",
+              "link": "Velocity Ratio connects directly to understanding Cardiac Output Effects."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "ICA/CCA Ratio",
+              "link": "ICA/CCA Ratio connects directly to understanding Cardiac Output Effects."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test cardiac output effects through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of cardiac output effects to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Decreased cardiac output = decreased velocities everywhere",
+            "reflection": "How does cardiac output effects integrate with other vascular concepts you've studied?"
+          }
+        }
+      ],
+      "pieceRange": "Pieces 4-10",
+      "examType": "RVT"
+    },
+    {
+      "id": "arterial-anatomy",
+      "title": "Arterial Anatomy",
+      "icon": "brain",
+      "color": "blue",
+      "description": "Comprehensive arterial anatomy of upper and lower extremities",
+      "topics": [
+        {
+          "id": "lower-extremity-anatomy",
+          "title": "Lower Extremity Arterial Anatomy",
+          "quickSummary": "Sequential pathway: Aorta → Iliacs → CFA → SFA/Profunda → Popliteal → Tibials. SFA is most common site of PAD.",
+          "clinicalPearls": [
+            "Aorta → Common Iliac → External Iliac → CFA → SFA and Profunda → Popliteal → Anterior/Posterior Tibial and Peroneal",
+            "CFA = Common Femoral Artery (palpable in groin)",
+            "SFA = Superficial Femoral Artery (most common PAD site)",
+            "Profunda = deep femoral, important collateral source"
+          ],
+          "sections": [
+            {
+              "title": "Arterial Sequence",
+              "content": "Abdominal aorta\nCommon iliac arteries\nExternal iliac artery\nCommon Femoral Artery (CFA)\nSuperficial Femoral Artery (SFA)\nProfunda femoris (deep femoral)\nPopliteal artery\nAnterior tibial artery\nPosterior tibial artery\nPeroneal (fibular) artery"
+            },
+            {
+              "title": "Normal Characteristics",
+              "content": "Triphasic waveforms in healthy extremity arteries\nHigher resistance than organ vessels\nPulsatility Index increases with distance from aorta\nVelocities decrease distally"
+            },
+            {
+              "title": "Positioning",
+              "content": "Supine or semi-erect (if breathing problems/vertigo/back pain)\nKnee slightly bent, leg abducted for medial aspect access\nDecubitus/lateral for popliteal fossa and posterior calf access\nPatient positioning affects hemodynamics"
+            }
+          ],
+          "keyTakeaways": [
+            "Aorta → Iliacs → CFA → SFA/Profunda → Popliteal → Tibials",
+            "SFA most common PAD site",
+            "Profunda provides collaterals",
+            "Normal: triphasic at rest",
+            "PI increases distally"
+          ],
+          "keyTerms": [
+            "Common Femoral Artery (CFA)",
+            "Superficial Femoral Artery (SFA)",
+            "Profunda Femoris",
+            "Popliteal",
+            "Tibial Arteries"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 11",
+          "frontClue": "Sequential pathway: Aorta → Iliacs → CFA → SFA/Profunda → Popliteal → Tibials. SFA is most common site of PAD.",
+          "corePiece": "Abdominal aorta\nCommon iliac arteries\nExternal iliac artery\nCommon Femoral Artery (CFA)\nSuperficial Femoral Artery (SFA)\nProfunda femoris (deep femoral)\nPopliteal artery\nAnterior tibial artery\nPosterior tibial artery\nPeroneal (fibular) artery",
+          "whyLock": "Understanding lower extremity arterial anatomy is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 12",
+              "title": "Common Femoral Artery (CFA)",
+              "link": "Common Femoral Artery (CFA) connects directly to understanding Lower Extremity Arterial Anatomy."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Superficial Femoral Artery (SFA)",
+              "link": "Superficial Femoral Artery (SFA) connects directly to understanding Lower Extremity Arterial Anatomy."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Profunda Femoris",
+              "link": "Profunda Femoris connects directly to understanding Lower Extremity Arterial Anatomy."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test lower extremity arterial anatomy through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of lower extremity arterial anatomy to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Aorta → Iliacs → CFA → SFA/Profunda → Popliteal → Tibials",
+            "reflection": "How does lower extremity arterial anatomy integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "upper-extremity-anatomy",
+          "title": "Upper Extremity Arterial Anatomy",
+          "quickSummary": "Subclavian → Axillary → Brachial → Radial/Ulnar. Respiratory effects OPPOSITE of lower extremities.",
+          "clinicalPearls": [
+            "Subclavian → Axillary → Brachial → Radial and Ulnar",
+            "Inspiration: INCREASED flow (opposite of lower extremity)",
+            "Expiration: DECREASED flow"
+          ],
+          "sections": [
+            {
+              "title": "Arterial Sequence",
+              "content": "Subclavian artery\nAxillary artery\nBrachial artery\nRadial artery\nUlnar artery"
+            },
+            {
+              "title": "Respiratory Effects",
+              "content": "Flow affected by respiration\nInspiration: increased flow toward heart\nExpiration: decreased flow\nOpposite of lower extremity pattern"
+            }
+          ],
+          "keyTakeaways": [
+            "Subclavian → Axillary → Brachial → Radial/Ulnar",
+            "Inspiration increases upper extremity flow",
+            "Expiration decreases flow",
+            "Opposite pattern from lower extremity"
+          ],
+          "keyTerms": [
+            "Subclavian",
+            "Axillary",
+            "Brachial",
+            "Radial",
+            "Ulnar",
+            "Respiratory Phasicity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 12",
+          "frontClue": "Subclavian → Axillary → Brachial → Radial/Ulnar. Respiratory effects OPPOSITE of lower extremities.",
+          "corePiece": "Subclavian artery\nAxillary artery\nBrachial artery\nRadial artery\nUlnar artery",
+          "whyLock": "Understanding upper extremity arterial anatomy is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 13",
+              "title": "Subclavian",
+              "link": "Subclavian connects directly to understanding Upper Extremity Arterial Anatomy."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Axillary",
+              "link": "Axillary connects directly to understanding Upper Extremity Arterial Anatomy."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Brachial",
+              "link": "Brachial connects directly to understanding Upper Extremity Arterial Anatomy."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test upper extremity arterial anatomy through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of upper extremity arterial anatomy to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Subclavian → Axillary → Brachial → Radial/Ulnar",
+            "reflection": "How does upper extremity arterial anatomy integrate with other vascular concepts you've studied?"
+          }
+        }
+      ],
+      "pieceRange": "Pieces 11-12",
+      "examType": "RVT"
+    },
+    {
+      "id": "arterial-disease",
+      "title": "Arterial Disease",
+      "icon": "alert-triangle",
+      "color": "orange",
+      "description": "Stenosis, occlusion, aneurysms, and arterial disease manifestations",
+      "topics": [
+        {
+          "id": "stenosis-hemodynamics",
+          "title": "Stenosis Hemodynamics",
+          "quickSummary": "50% diameter = 75% area = hemodynamically significant. Proximal: dampened. At stenosis: high velocity. Distal: turbulence.",
+          "clinicalPearls": [
+            "50% diameter stenosis = 75% area stenosis = hemodynamically significant",
+            "Shape and degree of stenosis",
+            "Diameter of stenosis",
+            "Length of stenosis",
+            "Contour (smooth vs rough)"
+          ],
+          "sections": [
+            {
+              "title": "Hemodynamic Significance",
+              "content": "50% diameter stenosis = 75% area stenosis = hemodynamically significant\nShape and degree of stenosis\nDiameter of stenosis\nLength of stenosis\nContour (smooth vs rough)\nDistal peripheral resistance\nPressure gradient across stenosis\nPresence/absence of collaterals\nCompounding factors from other diseases"
+            },
+            {
+              "title": "Effects of Stenosis",
+              "content": "Proximal to stenosis: dampened flow velocity with increased resistance\nAt stenosis: increased velocity (blood escaping stenotic area)\nProximal and distal: increased velocities detected\nPost-stenotic turbulence (eddy currents/vortices)\nPressure drop at stenosis with increased velocity (Bernoulli effect)\nFlow volume drop at stenosis\nDecreased resistance and velocity distal to stenosis"
+            }
+          ],
+          "keyTakeaways": [
+            "50% diameter = 75% area = hemodynamically significant",
+            "Proximal: dampened flow, increased resistance",
+            "At stenosis: dramatically increased velocity",
+            "Distal: post-stenotic turbulence",
+            "Bernoulli effect: pressure drops at stenosis"
+          ],
+          "keyTerms": [
+            "Stenosis",
+            "Hemodynamically Significant",
+            "Post-stenotic Turbulence",
+            "Bernoulli Effect",
+            "Spectral Broadening"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 13",
+          "frontClue": "50% diameter = 75% area = hemodynamically significant. Proximal: dampened. At stenosis: high velocity. Distal: turbulence.",
+          "corePiece": "50% diameter stenosis = 75% area stenosis = hemodynamically significant\nShape and degree of stenosis\nDiameter of stenosis\nLength of stenosis\nContour (smooth vs rough)\nDistal peripheral resistance\nPressure gradient across stenosis\nPresence/absence of collaterals\nCompounding factors from other diseases",
+          "whyLock": "Understanding stenosis hemodynamics is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 14",
+              "title": "Stenosis",
+              "link": "Stenosis connects directly to understanding Stenosis Hemodynamics."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Hemodynamically Significant",
+              "link": "Hemodynamically Significant connects directly to understanding Stenosis Hemodynamics."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Post-stenotic Turbulence",
+              "link": "Post-stenotic Turbulence connects directly to understanding Stenosis Hemodynamics."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test stenosis hemodynamics through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of stenosis hemodynamics to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "50% diameter = 75% area = hemodynamically significant",
+            "reflection": "How does stenosis hemodynamics integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "peripheral-arterial-disease",
+          "title": "Peripheral Arterial Disease (PAD)",
+          "quickSummary": "Arterioles already maximally dilated at rest with stenosis. Cannot dilate further with exercise → ankle pressure DROPS (abnormal).",
+          "clinicalPearls": [
+            "Arterioles already dilated at rest when stenosis present",
+            "Exercise cannot further reduce resistance",
+            "Ankle pressure drops with exercise in PAD",
+            "Reduced ABI calculation",
+            "Ischemic symptoms in muscles during exercise"
+          ],
+          "sections": [
+            {
+              "title": "Pathophysiology",
+              "content": "Arterioles already dilated at rest when stenosis present\nExercise cannot further reduce resistance\nAnkle pressure drops with exercise in PAD\nReduced ABI calculation\nIschemic symptoms in muscles during exercise"
+            },
+            {
+              "title": "Findings",
+              "content": "Decreased or absent pulses\nMonophasic waveforms distally\nTardus parvus waveforms distal to severe stenosis\nReduced velocities throughout\nSpectral broadening at stenosis\nPost-stenotic turbulence"
+            }
+          ],
+          "keyTakeaways": [
+            "Arterioles maximally dilated at rest with PAD",
+            "Cannot further dilate with exercise",
+            "Ankle pressure DROPS with exercise (abnormal)",
+            "Monophasic waveforms distally",
+            "ABI < 0.9 indicates disease"
+          ],
+          "keyTerms": [
+            "Peripheral Arterial Disease (PAD)",
+            "Claudication",
+            "Ankle-Brachial Index (ABI)",
+            "Monophasic",
+            "Tardus Parvus"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 14",
+          "frontClue": "Arterioles already maximally dilated at rest with stenosis. Cannot dilate further with exercise → ankle pressure DROPS (abnormal).",
+          "corePiece": "Arterioles already dilated at rest when stenosis present\nExercise cannot further reduce resistance\nAnkle pressure drops with exercise in PAD\nReduced ABI calculation\nIschemic symptoms in muscles during exercise",
+          "whyLock": "Understanding peripheral arterial disease (pad) is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 15",
+              "title": "Peripheral Arterial Disease (PAD)",
+              "link": "Peripheral Arterial Disease (PAD) connects directly to understanding Peripheral Arterial Disease (PAD)."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Claudication",
+              "link": "Claudication connects directly to understanding Peripheral Arterial Disease (PAD)."
+            },
+            {
+              "piece": "Piece 17",
+              "title": "Ankle-Brachial Index (ABI)",
+              "link": "Ankle-Brachial Index (ABI) connects directly to understanding Peripheral Arterial Disease (PAD)."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test peripheral arterial disease (pad) through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of peripheral arterial disease (pad) to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Arterioles maximally dilated at rest with PAD",
+            "reflection": "How does peripheral arterial disease (pad) integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "aneurysms",
+          "title": "Arterial Aneurysms",
+          "quickSummary": "Permanent focal dilation >50% normal diameter. TRUE = all 3 layers. PSEUDO = contained rupture. Splenic artery aneurysm = CRITICAL.",
+          "clinicalPearls": [
+            "True aneurysm: involves all 3 vessel layers",
+            "Pseudoaneurysm: contained rupture with fibrous capsule",
+            "Fusiform: affects entire circumference",
+            "Saccular: affects one side of vessel wall",
+            "Splenic artery aneurysm = CRITICAL",
+            "Aneurysm rupture = CRITICAL",
+            "AAA rupture = surgical emergency"
+          ],
+          "sections": [
+            {
+              "title": "Definition & Types",
+              "content": "Permanent focal dilation of artery >50% normal diameter\n\nTrue aneurysm: involves all 3 vessel layers\nPseudoaneurysm: contained rupture with fibrous capsule\nFusiform: affects entire circumference\nSaccular: affects one side of vessel wall"
+            },
+            {
+              "title": "Critical Findings",
+              "content": "Splenic artery aneurysm = CRITICAL\nAneurysm rupture = CRITICAL\nAAA rupture = surgical emergency"
+            }
+          ],
+          "keyTakeaways": [
+            "Aneurysm = dilation >50% normal diameter",
+            "TRUE: all 3 vessel layers",
+            "PSEUDO: contained rupture",
+            "Fusiform: entire circumference",
+            "Saccular: one side",
+            "Splenic artery aneurysm = CRITICAL"
+          ],
+          "keyTerms": [
+            "Aneurysm",
+            "True Aneurysm",
+            "Pseudoaneurysm",
+            "Fusiform",
+            "Saccular",
+            "AAA"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 15",
+          "frontClue": "Permanent focal dilation >50% normal diameter. TRUE = all 3 layers. PSEUDO = contained rupture. Splenic artery aneurysm = CRITICAL.",
+          "corePiece": "Permanent focal dilation of artery >50% normal diameter\n\nTrue aneurysm: involves all 3 vessel layers\nPseudoaneurysm: contained rupture with fibrous capsule\nFusiform: affects entire circumference\nSaccular: affects one side of vessel wall",
+          "whyLock": "Understanding arterial aneurysms is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 16",
+              "title": "Aneurysm",
+              "link": "Aneurysm connects directly to understanding Arterial Aneurysms."
+            },
+            {
+              "piece": "Piece 17",
+              "title": "True Aneurysm",
+              "link": "True Aneurysm connects directly to understanding Arterial Aneurysms."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "Pseudoaneurysm",
+              "link": "Pseudoaneurysm connects directly to understanding Arterial Aneurysms."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test arterial aneurysms through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of arterial aneurysms to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Aneurysm = dilation >50% normal diameter",
+            "reflection": "How does arterial aneurysms integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "occlusion",
+          "title": "Acute vs Chronic Occlusion",
+          "quickSummary": "ACUTE = CRITICAL FINDING (no collaterals, 6 P's, emergency). CHRONIC = NOT critical (collaterals develop, gradual onset).",
+          "clinicalPearls": [
+            "Acute arterial occlusion = CRITICAL FINDING",
+            "No time for collateral formation",
+            "Sudden onset ischemia",
+            "6 P's: Pain, Pallor, Pulselessness, Paresthesia, Paralysis, Poikilothermia",
+            "Requires immediate intervention",
+            "Chronic obstruction allows collateral development",
+            "NOT critical due to collateral circulation",
+            "Gradual onset symptoms",
+            "Better tolerance than acute"
+          ],
+          "sections": [
+            {
+              "title": "Acute Occlusion",
+              "content": "Acute arterial occlusion = CRITICAL FINDING\nNo time for collateral formation\nSudden onset ischemia\n6 P's: Pain, Pallor, Pulselessness, Paresthesia, Paralysis, Poikilothermia\nRequires immediate intervention"
+            },
+            {
+              "title": "Chronic Occlusion",
+              "content": "Chronic obstruction allows collateral development\nNOT critical due to collateral circulation\nGradual onset symptoms\nBetter tolerance than acute"
+            }
+          ],
+          "keyTakeaways": [
+            "ACUTE = CRITICAL FINDING (emergency)",
+            "Acute: no collaterals, 6 P's, severe ischemia",
+            "CHRONIC = NOT critical",
+            "Chronic: collaterals develop, gradual onset",
+            "Time determines clinical significance"
+          ],
+          "keyTerms": [
+            "Acute Occlusion",
+            "Chronic Occlusion",
+            "6 P's",
+            "Collateral Circulation",
+            "Critical Finding"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 16",
+          "frontClue": "ACUTE = CRITICAL FINDING (no collaterals, 6 P's, emergency). CHRONIC = NOT critical (collaterals develop, gradual onset).",
+          "corePiece": "Acute arterial occlusion = CRITICAL FINDING\nNo time for collateral formation\nSudden onset ischemia\n6 P's: Pain, Pallor, Pulselessness, Paresthesia, Paralysis, Poikilothermia\nRequires immediate intervention",
+          "whyLock": "Understanding acute vs chronic occlusion is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 17",
+              "title": "Acute Occlusion",
+              "link": "Acute Occlusion connects directly to understanding Acute vs Chronic Occlusion."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "Chronic Occlusion",
+              "link": "Chronic Occlusion connects directly to understanding Acute vs Chronic Occlusion."
+            },
+            {
+              "piece": "Piece 19",
+              "title": "6 P's",
+              "link": "6 P's connects directly to understanding Acute vs Chronic Occlusion."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test acute vs chronic occlusion through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of acute vs chronic occlusion to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "ACUTE = CRITICAL FINDING (emergency)",
+            "reflection": "How does acute vs chronic occlusion integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "spectral-broadening",
+          "title": "Spectral Broadening",
+          "quickSummary": "Widening of spectral waveform. LAMINAR = clear window. TURBULENT = filled window. Stenosis most common pathologic cause.",
+          "clinicalPearls": [
+            "Stenosis (most common)",
+            "Tortuosity",
+            "Improper sample volume location near wall",
+            "Increased sample size",
+            "Bifurcations",
+            "Turbulent flow"
+          ],
+          "sections": [
+            {
+              "title": "Causes",
+              "content": "Stenosis (most common)\nTortuosity\nImproper sample volume location near wall\nIncreased sample size\nBifurcations\nTurbulent flow"
+            },
+            {
+              "title": "Interpretation",
+              "content": "Laminar flow = narrow bandwidth, clear spectral window\nTurbulent flow = wide bandwidth, filled spectral window\nPost-stenotic turbulence causes spectral broadening"
+            }
+          ],
+          "keyTakeaways": [
+            "Laminar flow: narrow bandwidth, clear window",
+            "Turbulent flow: wide bandwidth, filled window",
+            "Stenosis = most common pathologic cause",
+            "Technical: improper sample volume, oversized gate",
+            "Normal at bifurcations"
+          ],
+          "keyTerms": [
+            "Spectral Broadening",
+            "Laminar Flow",
+            "Turbulent Flow",
+            "Spectral Window",
+            "Sample Volume"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 17",
+          "frontClue": "Widening of spectral waveform. LAMINAR = clear window. TURBULENT = filled window. Stenosis most common pathologic cause.",
+          "corePiece": "Stenosis (most common)\nTortuosity\nImproper sample volume location near wall\nIncreased sample size\nBifurcations\nTurbulent flow",
+          "whyLock": "Understanding spectral broadening is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 18",
+              "title": "Spectral Broadening",
+              "link": "Spectral Broadening connects directly to understanding Spectral Broadening."
+            },
+            {
+              "piece": "Piece 19",
+              "title": "Laminar Flow",
+              "link": "Laminar Flow connects directly to understanding Spectral Broadening."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Turbulent Flow",
+              "link": "Turbulent Flow connects directly to understanding Spectral Broadening."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test spectral broadening through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of spectral broadening to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Laminar flow: narrow bandwidth, clear window",
+            "reflection": "How does spectral broadening integrate with other vascular concepts you've studied?"
+          }
+        }
+      ],
+      "pieceRange": "Pieces 13-17",
+      "examType": "RVT"
+    },
+    {
+      "id": "venous-hemodynamics",
+      "title": "Venous Hemodynamics",
+      "icon": "activity",
+      "color": "purple",
+      "description": "Understanding venous flow characteristics, respiratory phasicity, and valve function",
+      "topics": [
+        {
+          "id": "venous-flow-characteristics",
+          "title": "Venous Flow Characteristics",
+          "quickSummary": "Spontaneity in large veins. Respiratory phasicity (opposite in upper vs lower extremity). Cardiac pulsatility ABNORMAL in lower extremity (indicates CHF).",
+          "clinicalPearls": [
+            "Flow detected without augmentation",
+            "Should be present in CFV, femoral, popliteal veins",
+            "Calf veins and saphenous veins normally do NOT demonstrate spontaneity",
+            "Absence indicates obstruction",
+            "Flow moves from high to low pressure",
+            "Lower extremities - Inspiration: decreased intrathoracic pressure, increased intra-abdominal pressure → decreased flow"
+          ],
+          "sections": [
+            {
+              "title": "Spontaneous Flow",
+              "content": "Flow detected without augmentation\nShould be present in CFV, femoral, popliteal veins\nCalf veins and saphenous veins normally do NOT demonstrate spontaneity\nAbsence indicates obstruction"
+            },
+            {
+              "title": "Respiratory Phasicity",
+              "content": "Flow moves from high to low pressure\nLower extremities - Inspiration: decreased intrathoracic pressure, increased intra-abdominal pressure → decreased flow\nLower extremities - Expiration: increased intrathoracic pressure, decreased intra-abdominal pressure → increased flow toward heart\nUpper extremities - Inspiration: increased flow toward heart\nUpper extremities - Expiration: decreased flow\nLoss of phasicity suggests proximal obstruction"
+            },
+            {
+              "title": "Cardiac Pulsatility",
+              "content": "Ripples from adjacent cardiac contraction\nCauses turbulent flow in upper vena cava, upper arms, hepatic veins\nNORMAL in upper extremities and hepatic veins\nABNORMAL if seen in lower extremities = indicates CHF (Congestive Heart Failure)\nSuggests elevated right atrial pressure"
+            }
+          ],
+          "keyTakeaways": [
+            "Spontaneity should be present in CFV, femoral, popliteal",
+            "Calf/saphenous veins normally lack spontaneity",
+            "Lower extremity: inspiration decreases, expiration increases flow",
+            "Upper extremity: opposite pattern",
+            "Cardiac pulsatility in lower extremity = ABNORMAL (CHF)"
+          ],
+          "keyTerms": [
+            "Spontaneity",
+            "Respiratory Phasicity",
+            "Cardiac Pulsatility",
+            "CHF",
+            "Augmentation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 18",
+          "frontClue": "Spontaneity in large veins. Respiratory phasicity (opposite in upper vs lower extremity). Cardiac pulsatility ABNORMAL in lower extremity (indicates CHF).",
+          "corePiece": "Flow detected without augmentation\nShould be present in CFV, femoral, popliteal veins\nCalf veins and saphenous veins normally do NOT demonstrate spontaneity\nAbsence indicates obstruction",
+          "whyLock": "Understanding venous flow characteristics is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 19",
+              "title": "Spontaneity",
+              "link": "Spontaneity connects directly to understanding Venous Flow Characteristics."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Respiratory Phasicity",
+              "link": "Respiratory Phasicity connects directly to understanding Venous Flow Characteristics."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Cardiac Pulsatility",
+              "link": "Cardiac Pulsatility connects directly to understanding Venous Flow Characteristics."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test venous flow characteristics through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of venous flow characteristics to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Spontaneity should be present in CFV, femoral, popliteal",
+            "reflection": "How does venous flow characteristics integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "venous-augmentation-reflux",
+          "title": "Augmentation & Reflux",
+          "quickSummary": "Augmentation tests patency. Reflux >0.5-1.0 seconds indicates valve incompetence. Must evaluate reflux in STANDING position.",
+          "clinicalPearls": [
+            "Manual compression increases flow",
+            "Tests patency between compression site and probe",
+            "Tests valve competence",
+            "Brisk augmentation = normal",
+            "Blunted/absent augmentation = obstruction",
+            "Retrograde flow lasting >0.5-1.0 seconds indicates incompetence",
+            "CFV: >0.5 seconds abnormal",
+            "Other deep veins: >1.0 seconds abnormal",
+            "Worsens with standing position",
+            "Indicates valve incompetence"
+          ],
+          "sections": [
+            {
+              "title": "Augmentation",
+              "content": "Manual compression increases flow\nTests patency between compression site and probe\nTests valve competence\nBrisk augmentation = normal\nBlunted/absent augmentation = obstruction"
+            },
+            {
+              "title": "Reflux",
+              "content": "Retrograde flow lasting >0.5-1.0 seconds indicates incompetence\nCFV: >0.5 seconds abnormal\nOther deep veins: >1.0 seconds abnormal\nWorsens with standing position\nIndicates valve incompetence"
+            }
+          ],
+          "keyTakeaways": [
+            "Augmentation: manual compression increases flow",
+            "Tests patency between compression and probe",
+            "Brisk augmentation = normal",
+            "Reflux >0.5s (CFV) or >1.0s (other veins) = incompetent",
+            "Must evaluate reflux in standing position"
+          ],
+          "keyTerms": [
+            "Augmentation",
+            "Reflux",
+            "Valve Incompetence",
+            "Standing Position"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 19",
+          "frontClue": "Augmentation tests patency. Reflux >0.5-1.0 seconds indicates valve incompetence. Must evaluate reflux in STANDING position.",
+          "corePiece": "Manual compression increases flow\nTests patency between compression site and probe\nTests valve competence\nBrisk augmentation = normal\nBlunted/absent augmentation = obstruction",
+          "whyLock": "Understanding augmentation & reflux is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 20",
+              "title": "Augmentation",
+              "link": "Augmentation connects directly to understanding Augmentation & Reflux."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Reflux",
+              "link": "Reflux connects directly to understanding Augmentation & Reflux."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Valve Incompetence",
+              "link": "Valve Incompetence connects directly to understanding Augmentation & Reflux."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test augmentation & reflux through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of augmentation & reflux to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Augmentation: manual compression increases flow",
+            "reflection": "How does augmentation & reflux integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "valve-function",
+          "title": "Venous Valve Function",
+          "quickSummary": "Competent valves allow unidirectional flow toward heart. Incompetent valves allow reflux >0.5-1.0 seconds leading to venous hypertension.",
+          "clinicalPearls": [
+            "Competent valves allow unidirectional flow toward heart",
+            "Flow moves from superficial to deep system through perforators",
+            "Valves close due to hydrostatic pressure preventing retrograde flow",
+            "Close rapidly (<0.5-1.0 seconds)",
+            "Reflux duration >0.5-1.0 seconds",
+            "Retrograde flow toward feet",
+            "Ineffective calf muscle pump",
+            "Increased venous stasis and pooling",
+            "Elevated venous pressure"
+          ],
+          "sections": [
+            {
+              "title": "Normal Valve Function",
+              "content": "Competent valves allow unidirectional flow toward heart\nFlow moves from superficial to deep system through perforators\nValves close due to hydrostatic pressure preventing retrograde flow\nClose rapidly (<0.5-1.0 seconds)"
+            },
+            {
+              "title": "Incompetent Valves",
+              "content": "Reflux duration >0.5-1.0 seconds\nRetrograde flow toward feet\nIneffective calf muscle pump\nIncreased venous stasis and pooling\nElevated venous pressure"
+            }
+          ],
+          "keyTakeaways": [
+            "Competent valves: unidirectional flow toward heart",
+            "Flow from superficial to deep via perforators",
+            "Incompetent: reflux >0.5-1.0 seconds",
+            "Leads to elevated venous pressure",
+            "Ineffective calf muscle pump"
+          ],
+          "keyTerms": [
+            "Valve Competence",
+            "Valve Incompetence",
+            "Unidirectional Flow",
+            "Perforators"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 20",
+          "frontClue": "Competent valves allow unidirectional flow toward heart. Incompetent valves allow reflux >0.5-1.0 seconds leading to venous hypertension.",
+          "corePiece": "Competent valves allow unidirectional flow toward heart\nFlow moves from superficial to deep system through perforators\nValves close due to hydrostatic pressure preventing retrograde flow\nClose rapidly (<0.5-1.0 seconds)",
+          "whyLock": "Understanding venous valve function is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 21",
+              "title": "Valve Competence",
+              "link": "Valve Competence connects directly to understanding Venous Valve Function."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Valve Incompetence",
+              "link": "Valve Incompetence connects directly to understanding Venous Valve Function."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Unidirectional Flow",
+              "link": "Unidirectional Flow connects directly to understanding Venous Valve Function."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test venous valve function through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of venous valve function to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Competent valves: unidirectional flow toward heart",
+            "reflection": "How does venous valve function integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "hydrostatic-pressure",
+          "title": "Hydrostatic Pressure",
+          "quickSummary": "Weight of blood column. Zero at heart level in all positions. Standing at ankle: +100mmHg. Standing at head: -30mmHg.",
+          "clinicalPearls": [
+            "Weight of blood column in vessels",
+            "Proportional to height of blood column",
+            "Zero at heart level in all positions",
+            "Changes with body position",
+            "Supine: hydrostatic pressure = 0mmHg everywhere",
+            "Standing at heart level: 0mmHg",
+            "Standing at ankle: +100mmHg",
+            "Standing at head: -30mmHg",
+            "Pressure increases below heart, decreases above heart"
+          ],
+          "sections": [
+            {
+              "title": "Principles",
+              "content": "Weight of blood column in vessels\nProportional to height of blood column\nZero at heart level in all positions\nChanges with body position"
+            },
+            {
+              "title": "Values",
+              "content": "Supine: hydrostatic pressure = 0mmHg everywhere\nStanding at heart level: 0mmHg\nStanding at ankle: +100mmHg\nStanding at head: -30mmHg\nPressure increases below heart, decreases above heart"
+            }
+          ],
+          "keyTakeaways": [
+            "Hydrostatic pressure = weight of blood column",
+            "Zero at heart level (all positions)",
+            "Supine: 0mmHg everywhere",
+            "Standing at ankle: +100mmHg",
+            "Standing at head: -30mmHg"
+          ],
+          "keyTerms": [
+            "Hydrostatic Pressure",
+            "Blood Column",
+            "Supine Position",
+            "Standing Position"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 21",
+          "frontClue": "Weight of blood column. Zero at heart level in all positions. Standing at ankle: +100mmHg. Standing at head: -30mmHg.",
+          "corePiece": "Weight of blood column in vessels\nProportional to height of blood column\nZero at heart level in all positions\nChanges with body position",
+          "whyLock": "Understanding hydrostatic pressure is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 22",
+              "title": "Hydrostatic Pressure",
+              "link": "Hydrostatic Pressure connects directly to understanding Hydrostatic Pressure."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Blood Column",
+              "link": "Blood Column connects directly to understanding Hydrostatic Pressure."
+            },
+            {
+              "piece": "Piece 24",
+              "title": "Supine Position",
+              "link": "Supine Position connects directly to understanding Hydrostatic Pressure."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test hydrostatic pressure through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of hydrostatic pressure to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Hydrostatic pressure = weight of blood column",
+            "reflection": "How does hydrostatic pressure integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "ambulatory-venous-pressure",
+          "title": "Ambulatory Venous Pressure",
+          "quickSummary": "Normal: drops to ~30mmHg with walking. Abnormal (incompetent valves): remains ~100mmHg. This leads to chronic venous insufficiency.",
+          "clinicalPearls": [
+            "Lowest pressure during exercise",
+            "Normal ambulatory pressure: ~30mmHg",
+            "Calf muscle pump decreases venous pressure with walking",
+            "Pressure drops from 100mmHg (standing) to 20-30mmHg (walking)",
+            "With incompetent valves: remains at ~100mmHg (standing pressure)",
+            "Pressure does not drop adequately with exercise",
+            "Leads to venous hypertension",
+            "Causes chronic venous insufficiency symptoms"
+          ],
+          "sections": [
+            {
+              "title": "Normal AVP",
+              "content": "Lowest pressure during exercise\nNormal ambulatory pressure: ~30mmHg\nCalf muscle pump decreases venous pressure with walking\nPressure drops from 100mmHg (standing) to 20-30mmHg (walking)"
+            },
+            {
+              "title": "Abnormal AVP",
+              "content": "With incompetent valves: remains at ~100mmHg (standing pressure)\nPressure does not drop adequately with exercise\nLeads to venous hypertension\nCauses chronic venous insufficiency symptoms"
+            }
+          ],
+          "keyTakeaways": [
+            "Normal AVP: ~30mmHg with walking",
+            "Calf muscle pump drops pressure from 100→30mmHg",
+            "Incompetent valves: pressure remains ~100mmHg",
+            "Leads to venous hypertension and CVI",
+            "Failure to drop pressure causes symptoms"
+          ],
+          "keyTerms": [
+            "Ambulatory Venous Pressure (AVP)",
+            "Calf Muscle Pump",
+            "Venous Hypertension",
+            "CVI"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 22",
+          "frontClue": "Normal: drops to ~30mmHg with walking. Abnormal (incompetent valves): remains ~100mmHg. This leads to chronic venous insufficiency.",
+          "corePiece": "Lowest pressure during exercise\nNormal ambulatory pressure: ~30mmHg\nCalf muscle pump decreases venous pressure with walking\nPressure drops from 100mmHg (standing) to 20-30mmHg (walking)",
+          "whyLock": "Understanding ambulatory venous pressure is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 23",
+              "title": "Ambulatory Venous Pressure (AVP)",
+              "link": "Ambulatory Venous Pressure (AVP) connects directly to understanding Ambulatory Venous Pressure."
+            },
+            {
+              "piece": "Piece 24",
+              "title": "Calf Muscle Pump",
+              "link": "Calf Muscle Pump connects directly to understanding Ambulatory Venous Pressure."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Venous Hypertension",
+              "link": "Venous Hypertension connects directly to understanding Ambulatory Venous Pressure."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test ambulatory venous pressure through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of ambulatory venous pressure to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Normal AVP: ~30mmHg with walking",
+            "reflection": "How does ambulatory venous pressure integrate with other vascular concepts you've studied?"
+          }
+        }
+      ],
+      "pieceRange": "Pieces 18-22",
+      "examType": "RVT"
+    },
+    {
+      "id": "venous-anatomy",
+      "title": "Venous Anatomy",
+      "icon": "brain",
+      "color": "purple",
+      "description": "Deep, superficial, and perforator venous anatomy with positioning",
+      "topics": [
+        {
+          "id": "deep-veins",
+          "title": "Deep Venous System",
+          "quickSummary": "Carry 85-90% of venous return. Located beneath muscle fascia. Include CFV, femoral, popliteal, tibial veins.",
+          "clinicalPearls": [
+            "Carry majority of blood back to heart (85-90%)",
+            "Accompanied by arteries",
+            "Located beneath muscle fascia",
+            "Include: CFV, femoral, popliteal, tibial veins",
+            "Contain valves to prevent reflux",
+            "Primary route for venous return"
+          ],
+          "sections": [
+            {
+              "title": "Deep Vein Characteristics",
+              "content": "Carry majority of blood back to heart (85-90%)\nAccompanied by arteries\nLocated beneath muscle fascia\nInclude: CFV, femoral, popliteal, tibial veins\nContain valves to prevent reflux\nPrimary route for venous return"
+            }
+          ],
+          "keyTakeaways": [
+            "Deep veins carry 85-90% of blood",
+            "Beneath muscle fascia",
+            "Accompanied by arteries",
+            "Include: CFV, femoral, popliteal, tibials",
+            "Contain valves to prevent reflux"
+          ],
+          "keyTerms": [
+            "Deep Veins",
+            "Common Femoral Vein (CFV)",
+            "Popliteal Vein",
+            "Tibial Veins",
+            "Muscle Fascia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 23",
+          "frontClue": "Carry 85-90% of venous return. Located beneath muscle fascia. Include CFV, femoral, popliteal, tibial veins.",
+          "corePiece": "Carry majority of blood back to heart (85-90%)\nAccompanied by arteries\nLocated beneath muscle fascia\nInclude: CFV, femoral, popliteal, tibial veins\nContain valves to prevent reflux\nPrimary route for venous return",
+          "whyLock": "Understanding deep venous system is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 24",
+              "title": "Deep Veins",
+              "link": "Deep Veins connects directly to understanding Deep Venous System."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Common Femoral Vein (CFV)",
+              "link": "Common Femoral Vein (CFV) connects directly to understanding Deep Venous System."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "Popliteal Vein",
+              "link": "Popliteal Vein connects directly to understanding Deep Venous System."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test deep venous system through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of deep venous system to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Deep veins carry 85-90% of blood",
+            "reflection": "How does deep venous system integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "superficial-veins",
+          "title": "Superficial Venous System",
+          "quickSummary": "GSV and SSV. Located above muscle fascia. Carry 10-15% of return. GSV evaluated standing. SSV evaluated seated.",
+          "clinicalPearls": [
+            "Great Saphenous Vein (GSV)",
+            "Evaluated with patient standing (preferably on stool)",
+            "Leg rotated outward for medial aspect access",
+            "Most common site for venous insufficiency",
+            "Runs from medial ankle to saphenofemoral junction",
+            "Joins CFV at groin",
+            "Small Saphenous Vein (SSV)",
+            "Evaluated with patient seated at bed edge, legs dependent",
+            "Runs along posterior calf",
+            "Joins popliteal vein at knee (saphenopopliteal junction)",
+            "Variable anatomy"
+          ],
+          "sections": [
+            {
+              "title": "Great Saphenous Vein (GSV)",
+              "content": "Great Saphenous Vein (GSV)\nEvaluated with patient standing (preferably on stool)\nLeg rotated outward for medial aspect access\nMost common site for venous insufficiency\nRuns from medial ankle to saphenofemoral junction\nJoins CFV at groin"
+            },
+            {
+              "title": "Small Saphenous Vein (SSV)",
+              "content": "Small Saphenous Vein (SSV)\nEvaluated with patient seated at bed edge, legs dependent\nRuns along posterior calf\nJoins popliteal vein at knee (saphenopopliteal junction)\nVariable anatomy"
+            },
+            {
+              "title": "General Characteristics",
+              "content": "Located above muscle fascia\nCarry 10-15% of venous return\nConnect to deep system via perforators\nCommon sites for varicose veins"
+            }
+          ],
+          "keyTakeaways": [
+            "GSV: evaluated standing, medial leg, joins CFV at groin",
+            "SSV: evaluated seated, posterior calf, joins popliteal",
+            "Superficial veins carry 10-15% of return",
+            "Above muscle fascia",
+            "Common sites for varicose veins"
+          ],
+          "keyTerms": [
+            "Great Saphenous Vein (GSV)",
+            "Small Saphenous Vein (SSV)",
+            "Superficial Veins",
+            "Varicose Veins"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 24",
+          "frontClue": "GSV and SSV. Located above muscle fascia. Carry 10-15% of return. GSV evaluated standing. SSV evaluated seated.",
+          "corePiece": "Great Saphenous Vein (GSV)\nEvaluated with patient standing (preferably on stool)\nLeg rotated outward for medial aspect access\nMost common site for venous insufficiency\nRuns from medial ankle to saphenofemoral junction\nJoins CFV at groin",
+          "whyLock": "Understanding superficial venous system is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 25",
+              "title": "Great Saphenous Vein (GSV)",
+              "link": "Great Saphenous Vein (GSV) connects directly to understanding Superficial Venous System."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "Small Saphenous Vein (SSV)",
+              "link": "Small Saphenous Vein (SSV) connects directly to understanding Superficial Venous System."
+            },
+            {
+              "piece": "Piece 27",
+              "title": "Superficial Veins",
+              "link": "Superficial Veins connects directly to understanding Superficial Venous System."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test superficial venous system through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of superficial venous system to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "GSV: evaluated standing, medial leg, joins CFV at groin",
+            "reflection": "How does superficial venous system integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "perforators-positioning",
+          "title": "Perforators & Patient Positioning",
+          "quickSummary": "Perforators connect superficial to deep system. Flow superficial→deep normally. DVT: supine/semi-erect. Insufficiency: MUST be standing.",
+          "clinicalPearls": [
+            "Connect superficial to deep venous system",
+            "Flow from superficial to deep during muscle relaxation",
+            "Flow from deep to superficial during muscle contraction (normal)",
+            "Incompetent perforators allow reflux from deep to superficial",
+            "Contribute to varicose veins when incompetent"
+          ],
+          "sections": [
+            {
+              "title": "Perforator Veins",
+              "content": "Connect superficial to deep venous system\nFlow from superficial to deep during muscle relaxation\nFlow from deep to superficial during muscle contraction (normal)\nIncompetent perforators allow reflux from deep to superficial\nContribute to varicose veins when incompetent"
+            },
+            {
+              "title": "DVT Evaluation Positioning",
+              "content": "Supine or semi-erect\nSemi-erect increases intra-abdominal pressure\nDecreases venous outflow\nVeins more easily visualized when distended"
+            },
+            {
+              "title": "Insufficiency Evaluation Positioning",
+              "content": "Standing position mandatory\nPatient on stool if possible\nMaximizes hydrostatic pressure\nBetter visualization of reflux\nSome labs use reverse Trendelenburg"
+            }
+          ],
+          "keyTakeaways": [
+            "Perforators connect superficial to deep",
+            "Normal flow: superficial→deep",
+            "Incompetent: allow deep→superficial reflux",
+            "DVT exam: supine or semi-erect",
+            "Insufficiency exam: STANDING (mandatory)"
+          ],
+          "keyTerms": [
+            "Perforator Veins",
+            "Saphenofemoral Junction",
+            "Saphenopopliteal Junction",
+            "Standing Position",
+            "Semi-erect Position"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 25",
+          "frontClue": "Perforators connect superficial to deep system. Flow superficial→deep normally. DVT: supine/semi-erect. Insufficiency: MUST be standing.",
+          "corePiece": "Connect superficial to deep venous system\nFlow from superficial to deep during muscle relaxation\nFlow from deep to superficial during muscle contraction (normal)\nIncompetent perforators allow reflux from deep to superficial\nContribute to varicose veins when incompetent",
+          "whyLock": "Understanding perforators & patient positioning is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 26",
+              "title": "Perforator Veins",
+              "link": "Perforator Veins connects directly to understanding Perforators & Patient Positioning."
+            },
+            {
+              "piece": "Piece 27",
+              "title": "Saphenofemoral Junction",
+              "link": "Saphenofemoral Junction connects directly to understanding Perforators & Patient Positioning."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Saphenopopliteal Junction",
+              "link": "Saphenopopliteal Junction connects directly to understanding Perforators & Patient Positioning."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test perforators & patient positioning through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of perforators & patient positioning to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Perforators connect superficial to deep",
+            "reflection": "How does perforators & patient positioning integrate with other vascular concepts you've studied?"
+          }
+        }
+      ],
+      "pieceRange": "Pieces 23-25",
+      "examType": "RVT"
+    },
+    {
+      "id": "venous-testing",
+      "title": "Venous Testing",
+      "icon": "clipboard-list",
+      "color": "purple",
+      "description": "Compression technique, Doppler assessment, and DVT detection",
+      "topics": [
+        {
+          "id": "compression-technique",
+          "title": "Compression Technique for DVT",
+          "quickSummary": "PRIMARY method for DVT detection. Complete compression = patent. Partial/no compression = DVT. Compress every 1-2cm.",
+          "clinicalPearls": [
+            "Primary method for DVT detection",
+            "Complete compression = vein completely collapses = patent",
+            "Partial/no compression = thrombus present = DVT",
+            "Compress every 1-2cm along vein length",
+            "Use adequate pressure but not excessive"
+          ],
+          "sections": [
+            {
+              "title": "Compression Principles",
+              "content": "Primary method for DVT detection\nComplete compression = vein completely collapses = patent\nPartial/no compression = thrombus present = DVT\nCompress every 1-2cm along vein length\nUse adequate pressure but not excessive"
+            },
+            {
+              "title": "Transmural Pressure",
+              "content": "Flattened veins with low volume: low transmural pressure\nLow transmural pressure = more resistance to flow, LESS resistance to compression\nCircular veins with higher volume: high transmural pressure\nHigh transmural pressure = less resistance to flow, MORE resistance to compression\nDistended veins harder to compress\nSemi-erect positioning distends veins for better visualization"
+            }
+          ],
+          "keyTakeaways": [
+            "Complete compression = vein collapses = patent",
+            "Partial/no compression = thrombus = DVT",
+            "Compress every 1-2cm along vein",
+            "Low transmural pressure = easier to compress",
+            "Semi-erect positioning distends veins"
+          ],
+          "keyTerms": [
+            "Compression",
+            "Transmural Pressure",
+            "DVT",
+            "Patent Vein",
+            "Non-compressible"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 26",
+          "frontClue": "PRIMARY method for DVT detection. Complete compression = patent. Partial/no compression = DVT. Compress every 1-2cm.",
+          "corePiece": "Primary method for DVT detection\nComplete compression = vein completely collapses = patent\nPartial/no compression = thrombus present = DVT\nCompress every 1-2cm along vein length\nUse adequate pressure but not excessive",
+          "whyLock": "Understanding compression technique for dvt is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 27",
+              "title": "Compression",
+              "link": "Compression connects directly to understanding Compression Technique for DVT."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Transmural Pressure",
+              "link": "Transmural Pressure connects directly to understanding Compression Technique for DVT."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "DVT",
+              "link": "DVT connects directly to understanding Compression Technique for DVT."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test compression technique for dvt through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of compression technique for dvt to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Complete compression = vein collapses = patent",
+            "reflection": "How does compression technique for dvt integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "doppler-techniques",
+          "title": "Doppler Assessment Techniques",
+          "quickSummary": "Evaluate spontaneity, phasicity, augmentation, and reflux. Loss of phasicity suggests proximal obstruction.",
+          "clinicalPearls": [
+            "Assess if flow is present without augmentation",
+            "Should be present in large veins (CFV, femoral, popliteal)",
+            "Calf veins may not show spontaneity normally",
+            "Absence in large veins suggests obstruction",
+            "Evaluate respiratory phasicity",
+            "Flow should vary with respiration"
+          ],
+          "sections": [
+            {
+              "title": "Spontaneity",
+              "content": "Assess if flow is present without augmentation\nShould be present in large veins (CFV, femoral, popliteal)\nCalf veins may not show spontaneity normally\nAbsence in large veins suggests obstruction"
+            },
+            {
+              "title": "Phasicity",
+              "content": "Evaluate respiratory phasicity\nFlow should vary with respiration\nLoss of phasicity suggests proximal obstruction\nDifferent pattern in upper vs lower extremities"
+            },
+            {
+              "title": "Augmentation",
+              "content": "Distal compression increases flow\nTests patency between compression and probe\nBrisk response = normal\nAbsent/blunted = obstruction or valve incompetence"
+            },
+            {
+              "title": "Reflux",
+              "content": "Release of compression or Valsalva\nDuration >0.5-1.0 seconds = abnormal\nIndicates valve incompetence\nMust be evaluated in standing position"
+            }
+          ],
+          "keyTakeaways": [
+            "Spontaneity in large veins (CFV, femoral, popliteal)",
+            "Phasicity varies with respiration",
+            "Loss of phasicity = proximal obstruction",
+            "Augmentation tests patency",
+            "Reflux >0.5-1.0s = incompetence"
+          ],
+          "keyTerms": [
+            "Spontaneity",
+            "Phasicity",
+            "Augmentation",
+            "Reflux",
+            "Proximal Obstruction"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 27",
+          "frontClue": "Evaluate spontaneity, phasicity, augmentation, and reflux. Loss of phasicity suggests proximal obstruction.",
+          "corePiece": "Assess if flow is present without augmentation\nShould be present in large veins (CFV, femoral, popliteal)\nCalf veins may not show spontaneity normally\nAbsence in large veins suggests obstruction",
+          "whyLock": "Understanding doppler assessment techniques is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 28",
+              "title": "Spontaneity",
+              "link": "Spontaneity connects directly to understanding Doppler Assessment Techniques."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Phasicity",
+              "link": "Phasicity connects directly to understanding Doppler Assessment Techniques."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Augmentation",
+              "link": "Augmentation connects directly to understanding Doppler Assessment Techniques."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test doppler assessment techniques through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of doppler assessment techniques to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Spontaneity in large veins (CFV, femoral, popliteal)",
+            "reflection": "How does doppler assessment techniques integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "dvt-detection",
+          "title": "DVT Detection & Critical Findings",
+          "quickSummary": "Non-compressible vein = DVT. Lower/upper extremity DVT = CRITICAL. Free-floating thrombus tail = CRITICAL (high PE risk).",
+          "clinicalPearls": [
+            "Non-compressible vein = DVT",
+            "Loss of spontaneous flow",
+            "Loss of respiratory phasicity",
+            "Absent augmentation response",
+            "Echogenic material (thrombus) within lumen",
+            "Vein distension",
+            "Collateral vessels",
+            "Lower extremity DVT = CRITICAL",
+            "Upper extremity DVT = CRITICAL",
+            "IVC thrombus = CRITICAL",
+            "Hepatic vein thrombus = CRITICAL",
+            "Free-floating thrombus tail (not adhered to wall) = CRITICAL - high embolism risk"
+          ],
+          "sections": [
+            {
+              "title": "Positive DVT Findings",
+              "content": "Non-compressible vein = DVT\nLoss of spontaneous flow\nLoss of respiratory phasicity\nAbsent augmentation response\nEchogenic material (thrombus) within lumen\nVein distension\nCollateral vessels"
+            },
+            {
+              "title": "Critical Findings",
+              "content": "Lower extremity DVT = CRITICAL\nUpper extremity DVT = CRITICAL\nIVC thrombus = CRITICAL\nHepatic vein thrombus = CRITICAL\nFree-floating thrombus tail (not adhered to wall) = CRITICAL - high embolism risk"
+            }
+          ],
+          "keyTakeaways": [
+            "Non-compressible vein = DVT",
+            "Loss of spontaneity and phasicity",
+            "Echogenic material in lumen",
+            "Lower/upper extremity DVT = CRITICAL",
+            "Free-floating thrombus = CRITICAL (high PE risk)"
+          ],
+          "keyTerms": [
+            "DVT",
+            "Non-compressible",
+            "Critical Finding",
+            "Free-floating Thrombus",
+            "Pulmonary Embolism Risk"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 28",
+          "frontClue": "Non-compressible vein = DVT. Lower/upper extremity DVT = CRITICAL. Free-floating thrombus tail = CRITICAL (high PE risk).",
+          "corePiece": "Non-compressible vein = DVT\nLoss of spontaneous flow\nLoss of respiratory phasicity\nAbsent augmentation response\nEchogenic material (thrombus) within lumen\nVein distension\nCollateral vessels",
+          "whyLock": "Understanding dvt detection & critical findings is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 29",
+              "title": "DVT",
+              "link": "DVT connects directly to understanding DVT Detection & Critical Findings."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Non-compressible",
+              "link": "Non-compressible connects directly to understanding DVT Detection & Critical Findings."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Critical Finding",
+              "link": "Critical Finding connects directly to understanding DVT Detection & Critical Findings."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test dvt detection & critical findings through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of dvt detection & critical findings to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Non-compressible vein = DVT",
+            "reflection": "How does dvt detection & critical findings integrate with other vascular concepts you've studied?"
+          }
+        }
+      ],
+      "pieceRange": "Pieces 26-28",
+      "examType": "RVT"
+    },
+    {
+      "id": "venous-disease",
+      "title": "Venous Disease",
+      "icon": "alert-triangle",
+      "color": "purple",
+      "description": "DVT, chronic venous insufficiency, and calf muscle pump dysfunction",
+      "topics": [
+        {
+          "id": "dvt-acute-chronic",
+          "title": "Acute vs Chronic DVT",
+          "quickSummary": "Acute: fresh thrombus, distended vein, CRITICAL. Chronic: organized thrombus, may recanalize, collaterals present.",
+          "clinicalPearls": [
+            "Fresh thrombus",
+            "Echogenic to anechoic",
+            "Vein distension",
+            "Non-compressible",
+            "No flow on color Doppler",
+            "Loss of respiratory phasicity",
+            "CRITICAL FINDING",
+            "Old, organized thrombus",
+            "More echogenic",
+            "Vein may be smaller (scarred)",
+            "Partial recanalization possible",
+            "Thickened vein walls",
+            "Collateral vessels present"
+          ],
+          "sections": [
+            {
+              "title": "Acute DVT",
+              "content": "Fresh thrombus\nEchogenic to anechoic\nVein distension\nNon-compressible\nNo flow on color Doppler\nLoss of respiratory phasicity\nCRITICAL FINDING"
+            },
+            {
+              "title": "Chronic DVT",
+              "content": "Old, organized thrombus\nMore echogenic\nVein may be smaller (scarred)\nPartial recanalization possible\nThickened vein walls\nCollateral vessels present"
+            }
+          ],
+          "keyTakeaways": [
+            "Acute: fresh, echogenic/anechoic, distended, CRITICAL",
+            "Chronic: organized, more echogenic, may be smaller",
+            "Chronic: partial recanalization possible",
+            "Chronic: collaterals present",
+            "Both show loss of compressibility"
+          ],
+          "keyTerms": [
+            "Acute DVT",
+            "Chronic DVT",
+            "Recanalization",
+            "Collaterals",
+            "Thrombus"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 29",
+          "frontClue": "Acute: fresh thrombus, distended vein, CRITICAL. Chronic: organized thrombus, may recanalize, collaterals present.",
+          "corePiece": "Fresh thrombus\nEchogenic to anechoic\nVein distension\nNon-compressible\nNo flow on color Doppler\nLoss of respiratory phasicity\nCRITICAL FINDING",
+          "whyLock": "Understanding acute vs chronic dvt is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 30",
+              "title": "Acute DVT",
+              "link": "Acute DVT connects directly to understanding Acute vs Chronic DVT."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Chronic DVT",
+              "link": "Chronic DVT connects directly to understanding Acute vs Chronic DVT."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Recanalization",
+              "link": "Recanalization connects directly to understanding Acute vs Chronic DVT."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test acute vs chronic dvt through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of acute vs chronic dvt to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Acute: fresh, echogenic/anechoic, distended, CRITICAL",
+            "reflection": "How does acute vs chronic dvt integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "chronic-venous-insufficiency",
+          "title": "Chronic Venous Insufficiency (CVI)",
+          "quickSummary": "Incompetent valves cause elevated ambulatory venous pressure (stays ~100mmHg vs normal 30mmHg). Leads to edema, skin changes, ulcers.",
+          "clinicalPearls": [
+            "Incompetent valves allow reflux",
+            "Ambulatory venous pressure remains elevated",
+            "Normal: ~30mmHg with walking",
+            "CVI: remains at ~100mmHg or higher with walking",
+            "Leads to venous hypertension",
+            "Causes skin changes, edema, ulcers"
+          ],
+          "sections": [
+            {
+              "title": "Pathophysiology",
+              "content": "Incompetent valves allow reflux\nAmbulatory venous pressure remains elevated\nNormal: ~30mmHg with walking\nCVI: remains at ~100mmHg or higher with walking\nLeads to venous hypertension\nCauses skin changes, edema, ulcers"
+            },
+            {
+              "title": "Ultrasound Findings",
+              "content": "Reflux >1.0 seconds in deep veins\nReflux >0.5 seconds in superficial veins\nDilated, tortuous veins\nVaricose veins\nPerforator incompetence\nNormal venous volume <150mL (increases with CVI)"
+            },
+            {
+              "title": "Clinical Signs",
+              "content": "Leg swelling/edema\nSkin pigmentation changes\nLipodermatosclerosis\nVenous stasis ulcers\nHeaviness, aching, fatigue in legs"
+            }
+          ],
+          "keyTakeaways": [
+            "Incompetent valves allow reflux",
+            "AVP remains elevated (~100mmHg vs normal 30mmHg)",
+            "Reflux >1.0s deep, >0.5s superficial",
+            "Dilated, tortuous veins",
+            "Edema, skin changes, ulcers"
+          ],
+          "keyTerms": [
+            "Chronic Venous Insufficiency (CVI)",
+            "Valve Incompetence",
+            "Ambulatory Venous Pressure",
+            "Venous Hypertension",
+            "Venous Ulcers"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 30",
+          "frontClue": "Incompetent valves cause elevated ambulatory venous pressure (stays ~100mmHg vs normal 30mmHg). Leads to edema, skin changes, ulcers.",
+          "corePiece": "Incompetent valves allow reflux\nAmbulatory venous pressure remains elevated\nNormal: ~30mmHg with walking\nCVI: remains at ~100mmHg or higher with walking\nLeads to venous hypertension\nCauses skin changes, edema, ulcers",
+          "whyLock": "Understanding chronic venous insufficiency (cvi) is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 31",
+              "title": "Chronic Venous Insufficiency (CVI)",
+              "link": "Chronic Venous Insufficiency (CVI) connects directly to understanding Chronic Venous Insufficiency (CVI)."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Valve Incompetence",
+              "link": "Valve Incompetence connects directly to understanding Chronic Venous Insufficiency (CVI)."
+            },
+            {
+              "piece": "Piece 33",
+              "title": "Ambulatory Venous Pressure",
+              "link": "Ambulatory Venous Pressure connects directly to understanding Chronic Venous Insufficiency (CVI)."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test chronic venous insufficiency (cvi) through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of chronic venous insufficiency (cvi) to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Incompetent valves allow reflux",
+            "reflection": "How does chronic venous insufficiency (cvi) integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "calf-muscle-pump",
+          "title": "Calf Muscle Pump",
+          "quickSummary": "Normal: muscle contraction propels blood toward heart, pressure drops to ~30mmHg. Dysfunction: pressure decreases only slightly.",
+          "clinicalPearls": [
+            "Muscle contraction compresses veins",
+            "Propels blood toward heart",
+            "Valves prevent reflux",
+            "Venous pressure drops with ambulation to ~30mmHg",
+            "Efficient emptying and refilling",
+            "Causes: muscle wasting, obstruction, incompetent valves",
+            "Venous pressure decreases only slightly with ambulation",
+            "Refill time significantly shortened",
+            "Ineffective venous return",
+            "Venous pooling and stasis"
+          ],
+          "sections": [
+            {
+              "title": "Normal Function",
+              "content": "Muscle contraction compresses veins\nPropels blood toward heart\nValves prevent reflux\nVenous pressure drops with ambulation to ~30mmHg\nEfficient emptying and refilling"
+            },
+            {
+              "title": "Dysfunction",
+              "content": "Causes: muscle wasting, obstruction, incompetent valves\nVenous pressure decreases only slightly with ambulation\nRefill time significantly shortened\nIneffective venous return\nVenous pooling and stasis"
+            }
+          ],
+          "keyTakeaways": [
+            "Normal: contraction propels blood toward heart",
+            "Normal: pressure drops to ~30mmHg with walking",
+            "Dysfunction: muscle wasting, obstruction, incompetent valves",
+            "Dysfunction: pressure decreases only slightly",
+            "Results in venous pooling and stasis"
+          ],
+          "keyTerms": [
+            "Calf Muscle Pump",
+            "Muscle Contraction",
+            "Venous Return",
+            "Venous Pooling"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 31",
+          "frontClue": "Normal: muscle contraction propels blood toward heart, pressure drops to ~30mmHg. Dysfunction: pressure decreases only slightly.",
+          "corePiece": "Muscle contraction compresses veins\nPropels blood toward heart\nValves prevent reflux\nVenous pressure drops with ambulation to ~30mmHg\nEfficient emptying and refilling",
+          "whyLock": "Understanding calf muscle pump is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 32",
+              "title": "Calf Muscle Pump",
+              "link": "Calf Muscle Pump connects directly to understanding Calf Muscle Pump."
+            },
+            {
+              "piece": "Piece 33",
+              "title": "Muscle Contraction",
+              "link": "Muscle Contraction connects directly to understanding Calf Muscle Pump."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Venous Return",
+              "link": "Venous Return connects directly to understanding Calf Muscle Pump."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test calf muscle pump through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of calf muscle pump to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Normal: contraction propels blood toward heart",
+            "reflection": "How does calf muscle pump integrate with other vascular concepts you've studied?"
+          }
+        }
+      ],
+      "pieceRange": "Pieces 29-31",
+      "examType": "RVT"
+    },
+    {
+      "id": "arterial-testing",
+      "title": "Arterial Testing",
+      "icon": "clipboard-list",
+      "color": "orange",
+      "description": "ABI, segmental pressures, PVR, and exercise testing",
+      "topics": [
+        {
+          "id": "abi-testing",
+          "title": "Ankle-Brachial Index (ABI)",
+          "quickSummary": "ABI = ankle pressure / brachial pressure. Normal: 0.9-1.3. <0.9 = arterial disease. <0.4 = critical limb ischemia.",
+          "clinicalPearls": [
+            "ABI = 0.9 - 1.3 (normal)",
+            "Ankle and brachial pressures equal or ankle slightly higher",
+            "Normal: ankle pressure same or higher than arm at rest",
+            "Exercise: pressures remain same or increase slightly",
+            "ABI <0.9 = arterial disease",
+            "ABI <0.5 = severe PAD",
+            "ABI <0.4 = critical limb ischemia",
+            "With stenosis: ankle pressure drops",
+            "Exercise causes ankle pressure to drop with arterial disease",
+            "Reduced ABI indicates peripheral arterial disease"
+          ],
+          "sections": [
+            {
+              "title": "Normal ABI",
+              "content": "ABI = 0.9 - 1.3 (normal)\nAnkle and brachial pressures equal or ankle slightly higher\nNormal: ankle pressure same or higher than arm at rest\nExercise: pressures remain same or increase slightly"
+            },
+            {
+              "title": "Abnormal ABI",
+              "content": "ABI <0.9 = arterial disease\nABI <0.5 = severe PAD\nABI <0.4 = critical limb ischemia\nWith stenosis: ankle pressure drops\nExercise causes ankle pressure to drop with arterial disease\nReduced ABI indicates peripheral arterial disease"
+            },
+            {
+              "title": "Calculation",
+              "content": "ABI = Highest ankle pressure / Highest brachial pressure"
+            }
+          ],
+          "keyTakeaways": [
+            "ABI = highest ankle / highest brachial",
+            "Normal: 0.9-1.3",
+            "ABI <0.9 = arterial disease",
+            "ABI <0.5 = severe PAD",
+            "ABI <0.4 = critical limb ischemia",
+            "With PAD: ankle pressure drops with exercise"
+          ],
+          "keyTerms": [
+            "Ankle-Brachial Index (ABI)",
+            "Peripheral Arterial Disease",
+            "Critical Limb Ischemia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 32",
+          "frontClue": "ABI = ankle pressure / brachial pressure. Normal: 0.9-1.3. <0.9 = arterial disease. <0.4 = critical limb ischemia.",
+          "corePiece": "ABI = 0.9 - 1.3 (normal)\nAnkle and brachial pressures equal or ankle slightly higher\nNormal: ankle pressure same or higher than arm at rest\nExercise: pressures remain same or increase slightly",
+          "whyLock": "Understanding ankle-brachial index (abi) is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 33",
+              "title": "Ankle-Brachial Index (ABI)",
+              "link": "Ankle-Brachial Index (ABI) connects directly to understanding Ankle-Brachial Index (ABI)."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Peripheral Arterial Disease",
+              "link": "Peripheral Arterial Disease connects directly to understanding Ankle-Brachial Index (ABI)."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Critical Limb Ischemia",
+              "link": "Critical Limb Ischemia connects directly to understanding Ankle-Brachial Index (ABI)."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test ankle-brachial index (abi) through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of ankle-brachial index (abi) to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "ABI = highest ankle / highest brachial",
+            "reflection": "How does ankle-brachial index (abi) integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "segmental-pressures-pvr",
+          "title": "Segmental Pressures & PVR",
+          "quickSummary": "Segmental pressures identify stenosis location. Gradient >20mmHg = significant. PVR measures volume changes - dampened waveform indicates proximal disease.",
+          "clinicalPearls": [
+            "Identify location of arterial stenosis",
+            "Pressures measured at multiple levels",
+            "Compare adjacent segments",
+            "Pressure gradient >20mmHg between segments = significant stenosis"
+          ],
+          "sections": [
+            {
+              "title": "Segmental Pressures",
+              "content": "Identify location of arterial stenosis\nPressures measured at multiple levels\nCompare adjacent segments\nPressure gradient >20mmHg between segments = significant stenosis\n\nLevels: Upper thigh, Above knee, Below knee, Ankle, Metatarsal/toe"
+            },
+            {
+              "title": "Pulse Volume Recording (PVR)",
+              "content": "Pulse Volume Recording - measures volume changes in limb segment\n\nNormal: Rapid upstroke, Sharp systolic peak, Dicrotic notch present, Normal amplitude, Waveform mirrors arterial waveform\n\nAbnormal: Reduced amplitude indicates stenosis, Delayed upstroke, Rounded peak, Loss of dicrotic notch, Dampened waveform suggests proximal disease"
+            }
+          ],
+          "keyTakeaways": [
+            "Segmental pressures identify stenosis location",
+            "Gradient >20mmHg = significant stenosis",
+            "PVR normal: rapid upstroke, sharp peak, dicrotic notch",
+            "PVR abnormal: dampened, delayed upstroke, no dicrotic notch"
+          ],
+          "keyTerms": [
+            "Segmental Pressures",
+            "Pulse Volume Recording (PVR)",
+            "Pressure Gradient",
+            "Dicrotic Notch"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 33",
+          "frontClue": "Segmental pressures identify stenosis location. Gradient >20mmHg = significant. PVR measures volume changes - dampened waveform indicates proximal disease.",
+          "corePiece": "Identify location of arterial stenosis\nPressures measured at multiple levels\nCompare adjacent segments\nPressure gradient >20mmHg between segments = significant stenosis\n\nLevels: Upper thigh, Above knee, Below knee, Ankle, Metatarsal/toe",
+          "whyLock": "Understanding segmental pressures & pvr is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 34",
+              "title": "Segmental Pressures",
+              "link": "Segmental Pressures connects directly to understanding Segmental Pressures & PVR."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Pulse Volume Recording (PVR)",
+              "link": "Pulse Volume Recording (PVR) connects directly to understanding Segmental Pressures & PVR."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Pressure Gradient",
+              "link": "Pressure Gradient connects directly to understanding Segmental Pressures & PVR."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test segmental pressures & pvr through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of segmental pressures & pvr to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Segmental pressures identify stenosis location",
+            "reflection": "How does segmental pressures & pvr integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "exercise-testing",
+          "title": "Exercise Testing",
+          "quickSummary": "Normal: ankle pressure stable/increases with exercise. PAD: ankle pressure DROPS with exercise (arterioles already maximally dilated).",
+          "clinicalPearls": [
+            "Flow increases 3-5x resting flow with exercise",
+            "Ankle/brachial pressures same or mildly increased after exercise",
+            "Arterioles dilate to meet muscle oxygen demand",
+            "Resistance drops, flow increases",
+            "Quick recovery to baseline",
+            "With stenosis: arterioles already dilated at rest",
+            "Cannot further reduce resistance with exercise",
+            "Ankle pressure drops with exercise",
+            "Muscles cannot increase flow to meet demand",
+            "Ischemic symptoms occur (claudication)",
+            "Prolonged recovery time"
+          ],
+          "sections": [
+            {
+              "title": "Normal Exercise Response",
+              "content": "Flow increases 3-5x resting flow with exercise\nAnkle/brachial pressures same or mildly increased after exercise\nArterioles dilate to meet muscle oxygen demand\nResistance drops, flow increases\nQuick recovery to baseline"
+            },
+            {
+              "title": "Abnormal Exercise Response (PAD)",
+              "content": "With stenosis: arterioles already dilated at rest\nCannot further reduce resistance with exercise\nAnkle pressure drops with exercise\nMuscles cannot increase flow to meet demand\nIschemic symptoms occur (claudication)\nProlonged recovery time"
+            }
+          ],
+          "keyTakeaways": [
+            "Normal: flow increases 3-5x with exercise",
+            "Normal: ankle pressure stable or increases",
+            "PAD: arterioles already maximally dilated at rest",
+            "PAD: cannot further dilate with exercise",
+            "PAD: ankle pressure DROPS with exercise"
+          ],
+          "keyTerms": [
+            "Exercise Testing",
+            "Claudication",
+            "Arteriole Dilation",
+            "Post-exercise Pressure"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 34",
+          "frontClue": "Normal: ankle pressure stable/increases with exercise. PAD: ankle pressure DROPS with exercise (arterioles already maximally dilated).",
+          "corePiece": "Flow increases 3-5x resting flow with exercise\nAnkle/brachial pressures same or mildly increased after exercise\nArterioles dilate to meet muscle oxygen demand\nResistance drops, flow increases\nQuick recovery to baseline",
+          "whyLock": "Understanding exercise testing is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 35",
+              "title": "Exercise Testing",
+              "link": "Exercise Testing connects directly to understanding Exercise Testing."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Claudication",
+              "link": "Claudication connects directly to understanding Exercise Testing."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Arteriole Dilation",
+              "link": "Arteriole Dilation connects directly to understanding Exercise Testing."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test exercise testing through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of exercise testing to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Normal: flow increases 3-5x with exercise",
+            "reflection": "How does exercise testing integrate with other vascular concepts you've studied?"
+          }
+        }
+      ],
+      "pieceRange": "Pieces 32-34",
+      "examType": "RVT"
+    },
+    {
+      "id": "physics-instrumentation",
+      "title": "Physics & Instrumentation",
+      "icon": "zap",
+      "color": "green",
+      "description": "Doppler principles, angle correction, aliasing, indices, and equipment",
+      "topics": [
+        {
+          "id": "doppler-principles",
+          "title": "Doppler Principles & Angle",
+          "quickSummary": "Doppler angle must be <60°. At 90°: no shift detected. At 0°: maximum shift. Frequency shift proportional to velocity and cos(angle).",
+          "clinicalPearls": [
+            "Doppler effect: frequency shift when sound reflects from moving object",
+            "Flow toward transducer = positive frequency shift (above baseline)",
+            "Flow away from transducer = negative frequency shift (below baseline)",
+            "Frequency shift proportional to blood velocity",
+            "Angle dependency critical for accuracy"
+          ],
+          "sections": [
+            {
+              "title": "Basic Doppler Principles",
+              "content": "Doppler effect: frequency shift when sound reflects from moving object\nFlow toward transducer = positive frequency shift (above baseline)\nFlow away from transducer = negative frequency shift (below baseline)\nFrequency shift proportional to blood velocity\nAngle dependency critical for accuracy\n\nDoppler Equation: Frequency shift = (2 × velocity × transmitted frequency × cos angle) / speed of sound"
+            },
+            {
+              "title": "Angle Correction",
+              "content": "Doppler angle should be <60 degrees (ideally 45-60°)\nAt 90°: cos(90°) = 0, no Doppler shift detected\nAt 0°: cos(0°) = 1, maximum Doppler shift\nLarger angles = greater error in velocity calculation\nAngle correction cursor must be parallel to vessel wall/blood flow"
+            },
+            {
+              "title": "Angle Errors",
+              "content": "Improper angle = inaccurate velocity calculations\nMost common cause of velocity measurement error\nAngles >60° exponentially increase error\nAngle correction line must align with flow direction"
+            }
+          ],
+          "keyTakeaways": [
+            "Doppler angle must be <60° (ideally 45-60°)",
+            "At 90°: cos(90)=0, no Doppler shift",
+            "At 0°: cos(0)=1, maximum shift",
+            "Larger angles = greater error",
+            "Angle cursor must be parallel to flow"
+          ],
+          "keyTerms": [
+            "Doppler Effect",
+            "Doppler Angle",
+            "Angle Correction",
+            "Frequency Shift",
+            "Cosine"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 35",
+          "frontClue": "Doppler angle must be <60°. At 90°: no shift detected. At 0°: maximum shift. Frequency shift proportional to velocity and cos(angle).",
+          "corePiece": "Doppler effect: frequency shift when sound reflects from moving object\nFlow toward transducer = positive frequency shift (above baseline)\nFlow away from transducer = negative frequency shift (below baseline)\nFrequency shift proportional to blood velocity\nAngle dependency critical for accuracy\n\nDoppler Equation: Frequency shift = (2 × velocity × transmitted frequency × cos angle) / speed of sound",
+          "whyLock": "Understanding doppler principles & angle is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Doppler Effect",
+              "link": "Doppler Effect connects directly to understanding Doppler Principles & Angle."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Doppler Angle",
+              "link": "Doppler Angle connects directly to understanding Doppler Principles & Angle."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Angle Correction",
+              "link": "Angle Correction connects directly to understanding Doppler Principles & Angle."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test doppler principles & angle through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of doppler principles & angle to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Doppler angle must be <60° (ideally 45-60°)",
+            "reflection": "How does doppler principles & angle integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "aliasing-prf",
+          "title": "Aliasing & PRF",
+          "quickSummary": "Aliasing occurs when velocity exceeds Nyquist limit (PRF/2). Solutions: increase PRF, decrease frequency, shift baseline.",
+          "clinicalPearls": [
+            "Mosaic pattern",
+            "Color reversal",
+            "Appears as turbulence",
+            "Post-stenotic turbulence commonly causes aliasing",
+            "Waveform wraps around baseline",
+            "Peak velocities cut off",
+            "Appears on opposite side of baseline"
+          ],
+          "sections": [
+            {
+              "title": "Aliasing Description",
+              "content": "Occurs when velocity exceeds Nyquist limit (PRF/2)"
+            },
+            {
+              "title": "Color Doppler Aliasing",
+              "content": "Mosaic pattern\nColor reversal\nAppears as turbulence\nPost-stenotic turbulence commonly causes aliasing"
+            },
+            {
+              "title": "Spectral Doppler Aliasing",
+              "content": "Waveform wraps around baseline\nPeak velocities cut off\nAppears on opposite side of baseline"
+            },
+            {
+              "title": "Solutions",
+              "content": "Increase PRF (scale)\nDecrease frequency (use lower frequency transducer)\nIncrease Doppler angle (with caution, <60°)\nShift baseline\nUse continuous wave Doppler for very high velocities"
+            },
+            {
+              "title": "PRF",
+              "content": "Higher PRF = higher velocities can be measured\nLower PRF = better sensitivity to slow flow\nNyquist limit = PRF / 2\nIncrease PRF to eliminate aliasing\nDecrease PRF to see slow venous flow better"
+            }
+          ],
+          "keyTakeaways": [
+            "Aliasing when velocity exceeds Nyquist limit (PRF/2)",
+            "Color: mosaic pattern, color reversal",
+            "Spectral: waveform wraps around baseline",
+            "Solutions: increase PRF, decrease frequency, shift baseline",
+            "Higher PRF = higher velocities measured"
+          ],
+          "keyTerms": [
+            "Aliasing",
+            "Nyquist Limit",
+            "PRF",
+            "Pulse Repetition Frequency",
+            "Color Reversal"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 36",
+          "frontClue": "Aliasing occurs when velocity exceeds Nyquist limit (PRF/2). Solutions: increase PRF, decrease frequency, shift baseline.",
+          "corePiece": "Occurs when velocity exceeds Nyquist limit (PRF/2)",
+          "whyLock": "Understanding aliasing & prf is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 37",
+              "title": "Aliasing",
+              "link": "Aliasing connects directly to understanding Aliasing & PRF."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Nyquist Limit",
+              "link": "Nyquist Limit connects directly to understanding Aliasing & PRF."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "PRF",
+              "link": "PRF connects directly to understanding Aliasing & PRF."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test aliasing & prf through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of aliasing & prf to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Aliasing when velocity exceeds Nyquist limit (PRF/2)",
+            "reflection": "How does aliasing & prf integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "spectral-analysis",
+          "title": "Spectral Broadening & Bandwidth",
+          "quickSummary": "Spectral broadening = widening of waveform. Laminar: narrow, clear window. Turbulent: wide, filled window.",
+          "clinicalPearls": [
+            "Stenosis (most common pathologic cause)",
+            "Tortuosity",
+            "Improper sample volume location (too close to wall)",
+            "Increased sample size (gate too large)",
+            "Bifurcations (normal)",
+            "Turbulent flow"
+          ],
+          "sections": [
+            {
+              "title": "Spectral Broadening",
+              "content": "Widening of spectral waveform, filling of spectral window\n\nCauses:\nStenosis (most common pathologic cause)\nTortuosity\nImproper sample volume location (too close to wall)\nIncreased sample size (gate too large)\nBifurcations (normal)\nTurbulent flow"
+            },
+            {
+              "title": "Interpretation",
+              "content": "Laminar flow = narrow bandwidth, clear spectral window\nTurbulent flow = wide bandwidth, filled spectral window\nDegree of broadening suggests severity of disturbance"
+            },
+            {
+              "title": "Bandwidth",
+              "content": "Narrow bandwidth = laminar flow, single velocity\nWide bandwidth = turbulent flow, range of velocities\nIncreases at stenosis\nIncreases at bifurcations"
+            }
+          ],
+          "keyTakeaways": [
+            "Laminar flow: narrow bandwidth, clear window",
+            "Turbulent flow: wide bandwidth, filled window",
+            "Causes: stenosis, tortuosity, improper sample volume",
+            "Narrow bandwidth = single velocity",
+            "Wide bandwidth = range of velocities"
+          ],
+          "keyTerms": [
+            "Spectral Broadening",
+            "Bandwidth",
+            "Laminar Flow",
+            "Turbulent Flow",
+            "Spectral Window"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 37",
+          "frontClue": "Spectral broadening = widening of waveform. Laminar: narrow, clear window. Turbulent: wide, filled window.",
+          "corePiece": "Widening of spectral waveform, filling of spectral window\n\nCauses:\nStenosis (most common pathologic cause)\nTortuosity\nImproper sample volume location (too close to wall)\nIncreased sample size (gate too large)\nBifurcations (normal)\nTurbulent flow",
+          "whyLock": "Understanding spectral broadening & bandwidth is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 38",
+              "title": "Spectral Broadening",
+              "link": "Spectral Broadening connects directly to understanding Spectral Broadening & Bandwidth."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "Bandwidth",
+              "link": "Bandwidth connects directly to understanding Spectral Broadening & Bandwidth."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Laminar Flow",
+              "link": "Laminar Flow connects directly to understanding Spectral Broadening & Bandwidth."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test spectral broadening & bandwidth through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of spectral broadening & bandwidth to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Laminar flow: narrow bandwidth, clear window",
+            "reflection": "How does spectral broadening & bandwidth integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "acceleration-time",
+          "title": "Acceleration Time (AT)",
+          "quickSummary": "Time from onset of systole to peak velocity. Longer in ICA than extremities. Increases distal to severe stenosis.",
+          "clinicalPearls": [
+            "ICA/cerebral vessels: longer AT than high resistance vessels",
+            "AT increases in extremities as distance from heart increases",
+            "Measured more easily with increased sweep speed",
+            "AT increases distal to significant stenosis",
+            "Decreased cardiac output increases AT bilaterally",
+            "Used to differentiate inflow from outflow disease",
+            "Prolonged AT suggests proximal stenosis"
+          ],
+          "sections": [
+            {
+              "title": "Definition & Normal Values",
+              "content": "Time from onset of systole to peak systolic velocity\n\nICA/cerebral vessels: longer AT than high resistance vessels\nAT increases in extremities as distance from heart increases\nMeasured more easily with increased sweep speed"
+            },
+            {
+              "title": "Abnormal Values",
+              "content": "AT increases distal to significant stenosis\nDecreased cardiac output increases AT bilaterally\nUsed to differentiate inflow from outflow disease\nProlonged AT suggests proximal stenosis"
+            }
+          ],
+          "keyTakeaways": [
+            "AT = time from onset to peak systolic velocity",
+            "Longer in ICA/cerebral vessels",
+            "Increases distal to significant stenosis",
+            "Prolonged AT suggests proximal stenosis",
+            "Measured more easily with increased sweep speed"
+          ],
+          "keyTerms": [
+            "Acceleration Time (AT)",
+            "Systolic Upstroke",
+            "Proximal Stenosis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 38",
+          "frontClue": "Time from onset of systole to peak velocity. Longer in ICA than extremities. Increases distal to severe stenosis.",
+          "corePiece": "Time from onset of systole to peak systolic velocity\n\nICA/cerebral vessels: longer AT than high resistance vessels\nAT increases in extremities as distance from heart increases\nMeasured more easily with increased sweep speed",
+          "whyLock": "Understanding acceleration time (at) is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 39",
+              "title": "Acceleration Time (AT)",
+              "link": "Acceleration Time (AT) connects directly to understanding Acceleration Time (AT)."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Systolic Upstroke",
+              "link": "Systolic Upstroke connects directly to understanding Acceleration Time (AT)."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Proximal Stenosis",
+              "link": "Proximal Stenosis connects directly to understanding Acceleration Time (AT)."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test acceleration time (at) through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of acceleration time (at) to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "AT = time from onset to peak systolic velocity",
+            "reflection": "How does acceleration time (at) integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "resistive-pulsatility-index",
+          "title": "Resistive Index (RI) & Pulsatility Index (PI)",
+          "quickSummary": "RI = (PSV-EDV)/PSV. PI = (PSV-EDV)/mean velocity. Both NOT dependent on angle. If EDV=0, RI=1.0.",
+          "clinicalPearls": [
+            "Extremity arteries: 0.6-0.8",
+            "Organ vessels: <0.6",
+            "If EDV = 0, then RI = 1.0",
+            "Organs: usually <1.5",
+            "Brain: <1.0",
+            "CFA: >5.0",
+            "Popliteal artery: >8.0",
+            "Values increase with distance from aorta",
+            "Higher in extremities than organs"
+          ],
+          "sections": [
+            {
+              "title": "Resistive Index (RI)",
+              "content": "Formula: RI = (PSV - EDV) / PSV\n\nNormal Values:\nExtremity arteries: 0.6-0.8\nOrgan vessels: <0.6\nIf EDV = 0, then RI = 1.0\n\nUses:\nEvaluates tissue resistance (renal parenchyma, liver, transplants)\nDemonstrates resistance changes from stenosis/occlusion\nDistal occlusion causes increased resistance proximally = high RI\nNot dependent on angle"
+            },
+            {
+              "title": "Pulsatility Index (PI)",
+              "content": "Formula: PI = (PSV - EDV) / mean velocity\n\nNormal Values:\nOrgans: usually <1.5\nBrain: <1.0\nCFA: >5.0\nPopliteal artery: >8.0\nValues increase with distance from aorta\nHigher in extremities than organs\n\nUses:\nCompares PSV-EDV difference to average velocity\nMeasures variability in blood velocity during cardiac cycle\nDistinguishes inflow from outflow disease\nNot dependent on angle"
+            }
+          ],
+          "keyTakeaways": [
+            "RI = (PSV-EDV)/PSV",
+            "PI = (PSV-EDV)/mean velocity",
+            "If EDV=0, then RI=1.0",
+            "Neither dependent on angle",
+            "Brain PI <1.0, CFA PI >5.0",
+            "RI extremities 0.6-0.8, organs <0.6"
+          ],
+          "keyTerms": [
+            "Resistive Index (RI)",
+            "Pulsatility Index (PI)",
+            "Angle Independent",
+            "PSV",
+            "EDV"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 39",
+          "frontClue": "RI = (PSV-EDV)/PSV. PI = (PSV-EDV)/mean velocity. Both NOT dependent on angle. If EDV=0, RI=1.0.",
+          "corePiece": "Formula: RI = (PSV - EDV) / PSV\n\nNormal Values:\nExtremity arteries: 0.6-0.8\nOrgan vessels: <0.6\nIf EDV = 0, then RI = 1.0\n\nUses:\nEvaluates tissue resistance (renal parenchyma, liver, transplants)\nDemonstrates resistance changes from stenosis/occlusion\nDistal occlusion causes increased resistance proximally = high RI\nNot dependent on angle",
+          "whyLock": "Understanding resistive index (ri) & pulsatility index (pi) is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 40",
+              "title": "Resistive Index (RI)",
+              "link": "Resistive Index (RI) connects directly to understanding Resistive Index (RI) & Pulsatility Index (PI)."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Pulsatility Index (PI)",
+              "link": "Pulsatility Index (PI) connects directly to understanding Resistive Index (RI) & Pulsatility Index (PI)."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Angle Independent",
+              "link": "Angle Independent connects directly to understanding Resistive Index (RI) & Pulsatility Index (PI)."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test resistive index (ri) & pulsatility index (pi) through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of resistive index (ri) & pulsatility index (pi) to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "RI = (PSV-EDV)/PSV",
+            "reflection": "How does resistive index (ri) & pulsatility index (pi) integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "bernoulli-flow",
+          "title": "Bernoulli Effect & Flow Patterns",
+          "quickSummary": "Bernoulli: velocity increase = pressure decrease. Laminar: parabolic profile. Plug: flat profile. Turbulent: chaotic.",
+          "clinicalPearls": [
+            "Total fluid energy remains constant",
+            "Pressure energy + kinetic energy = constant",
+            "Velocity increase = pressure decrease",
+            "Velocity decrease = pressure increase",
+            "Slow blood = more pressure on vessel walls",
+            "Fast blood (at stenosis) = less pressure on vessel walls",
+            "Reduced pressure at stenosis with increased velocity",
+            "After stenosis: velocity decreases, pressure increases",
+            "Explains pressure drop across stenosis"
+          ],
+          "sections": [
+            {
+              "title": "Bernoulli Effect",
+              "content": "Principles:\nTotal fluid energy remains constant\nPressure energy + kinetic energy = constant\nVelocity increase = pressure decrease\nVelocity decrease = pressure increase\n\nClinical:\nSlow blood = more pressure on vessel walls\nFast blood (at stenosis) = less pressure on vessel walls\nReduced pressure at stenosis with increased velocity\nAfter stenosis: velocity decreases, pressure increases\nExplains pressure drop across stenosis"
+            },
+            {
+              "title": "Laminar Flow",
+              "content": "Concentric layers of flow\nParabolic velocity profile\nCenter fastest, edges slowest\nNarrow spectral bandwidth\nClear spectral window\nNormal in straight vessels"
+            },
+            {
+              "title": "Plug Flow",
+              "content": "All layers same speed\nFlat velocity profile\nOccurs in systole in large vessels\nAt branch origins\nProximal to stenosis"
+            },
+            {
+              "title": "Turbulent Flow",
+              "content": "Disrupted, chaotic flow\nRandom velocities and directions\nWide spectral bandwidth\nSpectral broadening\nFilled spectral window\nPost-stenotic turbulence\nEddy currents and vortices"
+            }
+          ],
+          "keyTakeaways": [
+            "Bernoulli: total energy constant",
+            "Velocity increase = pressure decrease",
+            "Laminar: parabolic, center fastest",
+            "Plug: all layers same speed",
+            "Turbulent: chaotic, disturbed"
+          ],
+          "keyTerms": [
+            "Bernoulli Effect",
+            "Laminar Flow",
+            "Plug Flow",
+            "Turbulent Flow",
+            "Parabolic Profile"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 40",
+          "frontClue": "Bernoulli: velocity increase = pressure decrease. Laminar: parabolic profile. Plug: flat profile. Turbulent: chaotic.",
+          "corePiece": "Principles:\nTotal fluid energy remains constant\nPressure energy + kinetic energy = constant\nVelocity increase = pressure decrease\nVelocity decrease = pressure increase\n\nClinical:\nSlow blood = more pressure on vessel walls\nFast blood (at stenosis) = less pressure on vessel walls\nReduced pressure at stenosis with increased velocity\nAfter stenosis: velocity decreases, pressure increases\nExplains pressure drop across stenosis",
+          "whyLock": "Understanding bernoulli effect & flow patterns is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 41",
+              "title": "Bernoulli Effect",
+              "link": "Bernoulli Effect connects directly to understanding Bernoulli Effect & Flow Patterns."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Laminar Flow",
+              "link": "Laminar Flow connects directly to understanding Bernoulli Effect & Flow Patterns."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Plug Flow",
+              "link": "Plug Flow connects directly to understanding Bernoulli Effect & Flow Patterns."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test bernoulli effect & flow patterns through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of bernoulli effect & flow patterns to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Bernoulli: total energy constant",
+            "reflection": "How does bernoulli effect & flow patterns integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "equipment-alara",
+          "title": "Equipment & ALARA Principle",
+          "quickSummary": "ALARA = As Low As Reasonably Achievable. Linear array for carotids/extremities. Cannot thermally sterilize transducers (destroys piezoelectric elements).",
+          "clinicalPearls": [
+            "As Low As Reasonably Achievable",
+            "Use lowest power settings possible",
+            "Limit exam times",
+            "Reduce ultrasound exposure",
+            "Especially important for obstetric exams",
+            "Linear array: extremities and carotids (5-10 MHz)",
+            "Curved/phased array: abdominal and large habitus (2-5 MHz)",
+            "Cannot be thermally sterilized"
+          ],
+          "sections": [
+            {
+              "title": "ALARA Principle",
+              "content": "As Low As Reasonably Achievable\nUse lowest power settings possible\nLimit exam times\nReduce ultrasound exposure\nEspecially important for obstetric exams"
+            },
+            {
+              "title": "Transducers",
+              "content": "Linear array: extremities and carotids (5-10 MHz)\nCurved/phased array: abdominal and large habitus (2-5 MHz)\nCannot be thermally sterilized\nHeating above Curie point destroys piezoelectric elements\nCavicide wipes for most probes\nCidex for endocavity probes\nNO iodine or alcohol cleaners (damages matching layer and adhesives)"
+            },
+            {
+              "title": "Presets",
+              "content": "Carotid preset for carotid exams\nLower extremity arterial preset\nLower extremity venous for DVT\nLower extremity venous for insufficiency\nUsing wrong preset degrades image and extends exam time"
+            }
+          ],
+          "keyTakeaways": [
+            "ALARA: use lowest power, limit exam times",
+            "Linear array: carotids/extremities (5-10MHz)",
+            "Curved/phased: abdominal (2-5MHz)",
+            "Cannot thermally sterilize (destroys piezoelectric)",
+            "NO iodine or alcohol cleaners"
+          ],
+          "keyTerms": [
+            "ALARA",
+            "Linear Array",
+            "Curved Array",
+            "Phased Array",
+            "Piezoelectric Elements",
+            "Transducer Care"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 41",
+          "frontClue": "ALARA = As Low As Reasonably Achievable. Linear array for carotids/extremities. Cannot thermally sterilize transducers (destroys piezoelectric elements).",
+          "corePiece": "As Low As Reasonably Achievable\nUse lowest power settings possible\nLimit exam times\nReduce ultrasound exposure\nEspecially important for obstetric exams",
+          "whyLock": "Understanding equipment & alara principle is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 42",
+              "title": "ALARA",
+              "link": "ALARA connects directly to understanding Equipment & ALARA Principle."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Linear Array",
+              "link": "Linear Array connects directly to understanding Equipment & ALARA Principle."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Curved Array",
+              "link": "Curved Array connects directly to understanding Equipment & ALARA Principle."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test equipment & alara principle through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of equipment & alara principle to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "ALARA: use lowest power, limit exam times",
+            "reflection": "How does equipment & alara principle integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "energy-resistance",
+          "title": "Energy Types & Vessel Resistance",
+          "quickSummary": "Kinetic = motion energy (KE=½mv²). Potential = pressure energy. Resistance proportional to 1/radius⁴ (Poiseuille's law).",
+          "clinicalPearls": [
+            "Energy of motion",
+            "Varies with mass and velocity squared (KE = ½mv²)",
+            "Greater mass or velocity = more kinetic energy",
+            "Dominant in flowing blood",
+            "Stored energy",
+            "Pressure energy distending vessels",
+            "Like compressed spring",
+            "Converts to kinetic energy during flow"
+          ],
+          "sections": [
+            {
+              "title": "Kinetic Energy",
+              "content": "Energy of motion\nVaries with mass and velocity squared (KE = ½mv²)\nGreater mass or velocity = more kinetic energy\nDominant in flowing blood"
+            },
+            {
+              "title": "Potential Energy",
+              "content": "Stored energy\nPressure energy distending vessels\nLike compressed spring\nConverts to kinetic energy during flow"
+            },
+            {
+              "title": "Gravitational Energy",
+              "content": "Stored energy related to elevated position\nHydrostatic pressure component\nChanges with body position\nZero at heart level"
+            },
+            {
+              "title": "Vessel Resistance",
+              "content": "Small changes in vessel radius = most significant changes in flow\nResistance proportional to 1/radius⁴ (Poiseuille's law)\nIncreased vessel radius = dramatically decreased resistance\nVessel length also affects resistance but less dramatically\nBlood viscosity affects resistance"
+            }
+          ],
+          "keyTakeaways": [
+            "Kinetic energy = energy of motion (KE=½mv²)",
+            "Potential energy = pressure energy",
+            "Gravitational = hydrostatic pressure",
+            "Resistance proportional to 1/radius⁴",
+            "Small radius changes = large resistance changes"
+          ],
+          "keyTerms": [
+            "Kinetic Energy",
+            "Potential Energy",
+            "Gravitational Energy",
+            "Poiseuille's Law",
+            "Vessel Resistance"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 42",
+          "frontClue": "Kinetic = motion energy (KE=½mv²). Potential = pressure energy. Resistance proportional to 1/radius⁴ (Poiseuille's law).",
+          "corePiece": "Energy of motion\nVaries with mass and velocity squared (KE = ½mv²)\nGreater mass or velocity = more kinetic energy\nDominant in flowing blood",
+          "whyLock": "Understanding energy types & vessel resistance is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 43",
+              "title": "Kinetic Energy",
+              "link": "Kinetic Energy connects directly to understanding Energy Types & Vessel Resistance."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Potential Energy",
+              "link": "Potential Energy connects directly to understanding Energy Types & Vessel Resistance."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Gravitational Energy",
+              "link": "Gravitational Energy connects directly to understanding Energy Types & Vessel Resistance."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test energy types & vessel resistance through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of energy types & vessel resistance to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Kinetic energy = energy of motion (KE=½mv²)",
+            "reflection": "How does energy types & vessel resistance integrate with other vascular concepts you've studied?"
+          }
+        }
+      ],
+      "pieceRange": "Pieces 35-42",
+      "examType": "RVT"
+    },
+    {
+      "id": "quick-reference",
+      "title": "Quick Reference & Critical Values",
+      "icon": "zap",
+      "color": "orange",
+      "description": "High-yield facts, critical velocity criteria, and diagnostic values for rapid exam review",
+      "topics": [
+        {
+          "id": "velocity-criteria",
+          "title": "Critical Velocity Criteria",
+          "quickSummary": "Master the key PSV thresholds for diagnosing stenosis across all vascular territories - these are high-yield exam questions!",
+          "clinicalPearls": [
+            "Celiac artery >70% stenosis: PSV > 225 cm/s (most tested abdominal vessel)",
+            "Renal artery stenosis indicators: Tardus parvus waveform, AT >70ms, AI <3 m/s",
+            "Peripheral artery stenosis: PSV ratio >2.0, PSV >200 cm/s",
+            "Hemodialysis access stenosis: PSV >400 cm/s or PSV ratio >2:1",
+            "Post-meal response: SMA velocity doubles, minimal celiac change",
+            "Renal arteries have the LOWEST resistive index among abdominal vessels"
+          ],
+          "sections": [
+            {
+              "title": "Abdominal Velocity Criteria",
+              "content": "Celiac Artery >70% Stenosis: PSV > 225 cm/s\nRenal Artery Stenosis: Tardus parvus in segmental arteries, Acceleration time > 70 ms, Acceleration index < 3 m/s\nSMA Post-Meal Response: Velocity doubles (normal response to feeding)\nCeliac Post-Meal: Minimal velocity change"
+            },
+            {
+              "title": "Peripheral Artery Stenosis",
+              "content": "Significant Stenosis: PSV ratio >2.0, PSV >200 cm/s\nProlonged AT: >200 ms suggests proximal stenosis\nLocation: Use segmental approach to identify level"
+            },
+            {
+              "title": "Hemodialysis Access",
+              "content": "Stenosis Criteria: PSV >400 cm/s OR PSV ratio >2:1\nMaturation Time: 1-3 months typical for AVF\nIdeal Flow: >600 mL/min for adequate dialysis\nVein Requirements: >6mm diameter, <6mm depth from skin"
+            }
+          ],
+          "keyTakeaways": [
+            "Celiac >225 cm/s = >70% stenosis",
+            "Renal stenosis = tardus parvus + AT >70ms",
+            "Peripheral stenosis = PSV ratio >2.0",
+            "Dialysis access stenosis = PSV >400 cm/s",
+            "Renal arteries have lowest RI in abdomen"
+          ],
+          "keyTerms": [
+            "PSV",
+            "Tardus Parvus",
+            "Acceleration Time",
+            "Acceleration Index",
+            "PSV Ratio",
+            "Stenosis Criteria"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 43",
+          "frontClue": "Master the key PSV thresholds for diagnosing stenosis across all vascular territories - these are high-yield exam questions!",
+          "corePiece": "Celiac Artery >70% Stenosis: PSV > 225 cm/s\nRenal Artery Stenosis: Tardus parvus in segmental arteries, Acceleration time > 70 ms, Acceleration index < 3 m/s\nSMA Post-Meal Response: Velocity doubles (normal response to feeding)\nCeliac Post-Meal: Minimal velocity change",
+          "whyLock": "Understanding critical velocity criteria is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 44",
+              "title": "PSV",
+              "link": "PSV connects directly to understanding Critical Velocity Criteria."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Tardus Parvus",
+              "link": "Tardus Parvus connects directly to understanding Critical Velocity Criteria."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Acceleration Time",
+              "link": "Acceleration Time connects directly to understanding Critical Velocity Criteria."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test critical velocity criteria through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of critical velocity criteria to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Celiac >225 cm/s = >70% stenosis",
+            "reflection": "How does critical velocity criteria integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "abi-interpretation",
+          "title": "Ankle-Brachial Index (ABI) & Pressure Measurements",
+          "quickSummary": "ABI is the cornerstone of PAD diagnosis. Know the interpretation ranges and what to do when values are abnormal.",
+          "clinicalPearls": [
+            "ABI >1.30-1.40 suggests medial calcification (non-compressible vessels) - measure TOE pressures instead",
+            "ABI <0.90 = PAD, <0.50 = SEVERE PAD requiring urgent evaluation",
+            "Exercise ABI decrease >20% suggests PAD even if resting ABI is normal",
+            "First symptom of PAD: Intermittent claudication",
+            "Toe pressure normal: >30 mmHg (use when vessels non-compressible)",
+            "Segmental pressure gradient >30 mmHg indicates stenosis at that level"
+          ],
+          "sections": [
+            {
+              "title": "ABI Interpretation",
+              "content": "Normal: 0.90 - 1.30 (routine follow-up)\nPAD: < 0.90 (further evaluation needed)\nSevere PAD: < 0.50 (urgent vascular evaluation)\nCalcified Vessels: > 1.30-1.40 (falsely elevated - measure toe pressures)\n\nExercise ABI: Decrease >20% from baseline suggests PAD\nClinical Pearl: Some patients with normal resting ABI have PAD revealed only with exercise testing"
+            },
+            {
+              "title": "When ABI Fails",
+              "content": "Medial Calcification Problem: Diabetes, renal disease, elderly patients may have non-compressible vessels\nFalsely Elevated ABI: >1.30-1.40 suggests calcification\nSolution: Measure TOE PRESSURES instead\nNormal Toe Pressure: >30 mmHg\nToe-Brachial Index: Can be calculated when ABI unreliable"
+            },
+            {
+              "title": "Segmental Pressures & PVR",
+              "content": "Normal Gradient: <20-30 mmHg between consecutive levels\nSignificant Drop: >30 mmHg suggests stenosis at that level\nLevels Tested: High thigh, low thigh, calf, ankle, toe\n\nPVR Waveforms:\nNormal: Sharp systolic upstroke, dicrotic notch\nMild Disease: Loss of dicrotic notch\nModerate/Severe: Flattened, delayed waveform"
+            }
+          ],
+          "keyTakeaways": [
+            "Normal ABI = 0.90-1.30",
+            "ABI >1.30 = calcification, use toe pressures",
+            "ABI <0.50 = severe PAD (urgent!)",
+            "Exercise ABI drop >20% = PAD",
+            "Gradient >30 mmHg = stenosis",
+            "Normal toe pressure >30 mmHg"
+          ],
+          "keyTerms": [
+            "ABI",
+            "Peripheral Arterial Disease (PAD)",
+            "Medial Calcification",
+            "Toe Pressures",
+            "Segmental Pressures",
+            "PVR"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 44",
+          "frontClue": "ABI is the cornerstone of PAD diagnosis. Know the interpretation ranges and what to do when values are abnormal.",
+          "corePiece": "Normal: 0.90 - 1.30 (routine follow-up)\nPAD: < 0.90 (further evaluation needed)\nSevere PAD: < 0.50 (urgent vascular evaluation)\nCalcified Vessels: > 1.30-1.40 (falsely elevated - measure toe pressures)\n\nExercise ABI: Decrease >20% from baseline suggests PAD\nClinical Pearl: Some patients with normal resting ABI have PAD revealed only with exercise testing",
+          "whyLock": "Understanding ankle-brachial index (abi) & pressure measurements is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 45",
+              "title": "ABI",
+              "link": "ABI connects directly to understanding Ankle-Brachial Index (ABI) & Pressure Measurements."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Peripheral Arterial Disease (PAD)",
+              "link": "Peripheral Arterial Disease (PAD) connects directly to understanding Ankle-Brachial Index (ABI) & Pressure Measurements."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Medial Calcification",
+              "link": "Medial Calcification connects directly to understanding Ankle-Brachial Index (ABI) & Pressure Measurements."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test ankle-brachial index (abi) & pressure measurements through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of ankle-brachial index (abi) & pressure measurements to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Normal ABI = 0.90-1.30",
+            "reflection": "How does ankle-brachial index (abi) & pressure measurements integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "venous-diagnostic-criteria",
+          "title": "Venous System Diagnostic Criteria",
+          "quickSummary": "DVT diagnosis relies on non-compressibility. Reflux diagnosis requires >0.5 seconds of reversed flow. Master these criteria!",
+          "clinicalPearls": [
+            "PRIMARY DVT criterion: Non-compressibility of vein (gold standard)",
+            "Augmentation failure suggests PROXIMAL obstruction (not at compression site)",
+            "Venous reflux >0.5 seconds = valve incompetence",
+            "Normal venous refill time (VRT): >20 seconds",
+            "Thigh tourniquet normalization = GSV reflux; Calf tourniquet = perforator reflux",
+            "Loss of phasicity may indicate proximal obstruction OR chronic changes"
+          ],
+          "sections": [
+            {
+              "title": "DVT Evaluation",
+              "content": "Primary Diagnostic Criterion: NON-COMPRESSIBILITY of vein\nCompression Technique: Gentle but firm pressure with transducer\nPositive Finding: Vein walls do not coapt completely\n\nSecondary Signs:\n- Loss of phasicity (suggests proximal obstruction)\n- Augmentation failure (proximal obstruction)\n- Visible thrombus\n- Venous dilation\n- Absent or dampened flow"
+            },
+            {
+              "title": "Venous Reflux Testing",
+              "content": "Reflux Duration Criteria: >0.5 seconds indicates valve incompetence\nTesting Method: Augmentation with distal compression + release OR Valsalva\nNormal Response: Brief reversal (<0.5 sec) then competent valves close\nAbnormal: Prolonged retrograde flow >0.5 seconds\n\nVenous Refill Time (VRT):\nNormal: >20 seconds\nAbnormal: <20 seconds (suggests reflux/incompetence)\nTesting: Patient stands, empties veins, observe refill time"
+            },
+            {
+              "title": "Tourniquet Testing for Reflux Source",
+              "content": "Purpose: Identify SOURCE of venous reflux\n\nThigh Tourniquet Application:\nVRT normalizes → Great Saphenous Vein (GSV) reflux\nReflux eliminated with superficial system compression\n\nCalf Tourniquet Application:\nVRT normalizes → Perforator vein reflux\nIncompetent perforators allowing deep-to-superficial flow\n\nNo Normalization:\nDeep venous insufficiency\nMay require surgical intervention"
+            }
+          ],
+          "keyTakeaways": [
+            "DVT diagnosis = non-compressibility (primary sign)",
+            "Reflux >0.5 seconds = valve incompetence",
+            "Normal VRT >20 seconds",
+            "Thigh tourniquet → GSV reflux",
+            "Calf tourniquet → perforator reflux",
+            "Augmentation failure = proximal obstruction"
+          ],
+          "keyTerms": [
+            "Non-Compressibility",
+            "Venous Reflux",
+            "Valve Incompetence",
+            "VRT",
+            "Tourniquet Test",
+            "Augmentation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 45",
+          "frontClue": "DVT diagnosis relies on non-compressibility. Reflux diagnosis requires >0.5 seconds of reversed flow. Master these criteria!",
+          "corePiece": "Primary Diagnostic Criterion: NON-COMPRESSIBILITY of vein\nCompression Technique: Gentle but firm pressure with transducer\nPositive Finding: Vein walls do not coapt completely\n\nSecondary Signs:\n- Loss of phasicity (suggests proximal obstruction)\n- Augmentation failure (proximal obstruction)\n- Visible thrombus\n- Venous dilation\n- Absent or dampened flow",
+          "whyLock": "Understanding venous system diagnostic criteria is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 46",
+              "title": "Non-Compressibility",
+              "link": "Non-Compressibility connects directly to understanding Venous System Diagnostic Criteria."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Venous Reflux",
+              "link": "Venous Reflux connects directly to understanding Venous System Diagnostic Criteria."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Valve Incompetence",
+              "link": "Valve Incompetence connects directly to understanding Venous System Diagnostic Criteria."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test venous system diagnostic criteria through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of venous system diagnostic criteria to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "DVT diagnosis = non-compressibility (primary sign)",
+            "reflection": "How does venous system diagnostic criteria integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "pathology-pearls",
+          "title": "Key Pathology & Clinical Associations",
+          "quickSummary": "Know the classic disease presentations and demographic associations - these appear frequently on exams!",
+          "clinicalPearls": [
+            "Blue toe syndrome = microemboli from PROXIMAL source (aortoiliac disease, aneurysm, ulcerated plaque)",
+            "Fibromuscular dysplasia (FMD): Young women, MID-TO-DISTAL renal artery, 'string of beads'",
+            "Buerger's disease: Young MALE smokers, small/medium vessels, distal (tibial/digital)",
+            "Popliteal artery = MOST COMMON peripheral aneurysm location",
+            "Leriche syndrome triad: Claudication + impotence + diminished femoral pulses",
+            "Paget-von-Schroetter: Effort-induced subclavian/axillary DVT in young athletes"
+          ],
+          "sections": [
+            {
+              "title": "Classic Disease Demographics",
+              "content": "Fibromuscular Dysplasia (FMD):\nDemographics: Young to middle-aged WOMEN\nVessels: Renal arteries (most common), carotid\nLocation: MID-TO-DISTAL renal artery (vs atherosclerosis = proximal/ostial)\nAppearance: 'String of beads' appearance\n\nBuerger's Disease (Thromboangiitis Obliterans):\nDemographics: Young MALE smokers (<45 years)\nVessels: Small and medium arteries\nLocation: DISTAL vessels (tibial, digital)\nPattern: Segmental involvement\n\nPaget-von-Schroetter Disease:\nDemographics: Young adults, athletes\nPresentation: Effort-induced subclavian/axillary vein thrombosis\nRisk Factors: Repetitive arm motion, thoracic outlet syndrome"
+            },
+            {
+              "title": "Pathognomonic Findings",
+              "content": "Blue Toe Syndrome:\nCause: Microemboli from proximal source\nAssociations: Aortoiliac occlusive disease, AAA, ulcerated plaque\nPresentation: Ischemic toes with palpable pulses (embolic, not flow-limiting)\n\nLeriche Syndrome:\nDefinition: Aortoiliac occlusive disease\nClassic Triad:\n1. Buttock/thigh claudication\n2. Impotence (males)\n3. Diminished/absent femoral pulses\n\nSubclavian Steal:\nFinding: REVERSED flow in vertebral artery\nCause: Proximal subclavian stenosis/occlusion\nSymptoms: Arm claudication + vertebrobasilar insufficiency"
+            },
+            {
+              "title": "Aneurysm Essentials",
+              "content": "Abdominal Aortic Aneurysm (AAA):\nDefinition: >3 cm diameter (or >1.5x normal)\nSurveillance:\n- 3.0-3.9 cm: Annually\n- 4.0-4.9 cm: Every 6 months\n- ≥5.0 cm: Consider repair, close monitoring\n\nPeripheral Aneurysms:\nMost Common Location: POPLITEAL artery\nComplications: Thrombosis, embolization, rupture (less common than AAA)\nAssociation: 50% bilateral, often associated with AAA"
+            }
+          ],
+          "keyTakeaways": [
+            "FMD = young women, mid-distal renal artery",
+            "Buerger's = young male smokers, distal vessels",
+            "Blue toe = microemboli from proximal source",
+            "Popliteal = most common peripheral aneurysm",
+            "Leriche = claudication + impotence + ↓ femoral pulses",
+            "Subclavian steal = reversed vertebral flow"
+          ],
+          "keyTerms": [
+            "Blue Toe Syndrome",
+            "Fibromuscular Dysplasia",
+            "Buerger's Disease",
+            "Leriche Syndrome",
+            "Paget-von-Schroetter",
+            "Subclavian Steal"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 46",
+          "frontClue": "Know the classic disease presentations and demographic associations - these appear frequently on exams!",
+          "corePiece": "Fibromuscular Dysplasia (FMD):\nDemographics: Young to middle-aged WOMEN\nVessels: Renal arteries (most common), carotid\nLocation: MID-TO-DISTAL renal artery (vs atherosclerosis = proximal/ostial)\nAppearance: 'String of beads' appearance\n\nBuerger's Disease (Thromboangiitis Obliterans):\nDemographics: Young MALE smokers (<45 years)\nVessels: Small and medium arteries\nLocation: DISTAL vessels (tibial, digital)\nPattern: Segmental involvement\n\nPaget-von-Schroetter Disease:\nDemographics: Young adults, athletes\nPresentation: Effort-induced subclavian/axillary vein thrombosis\nRisk Factors: Repetitive arm motion, thoracic outlet syndrome",
+          "whyLock": "Understanding key pathology & clinical associations is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 47",
+              "title": "Blue Toe Syndrome",
+              "link": "Blue Toe Syndrome connects directly to understanding Key Pathology & Clinical Associations."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Fibromuscular Dysplasia",
+              "link": "Fibromuscular Dysplasia connects directly to understanding Key Pathology & Clinical Associations."
+            },
+            {
+              "piece": "Piece 49",
+              "title": "Buerger's Disease",
+              "link": "Buerger's Disease connects directly to understanding Key Pathology & Clinical Associations."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test key pathology & clinical associations through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of key pathology & clinical associations to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "FMD = young women, mid-distal renal artery",
+            "reflection": "How does key pathology & clinical associations integrate with other vascular concepts you've studied?"
+          }
+        },
+        {
+          "id": "follow-up-protocols",
+          "title": "Follow-Up Intervals & Surveillance",
+          "quickSummary": "Know when to bring patients back after procedures and for aneurysm surveillance - critical for clinical practice!",
+          "clinicalPearls": [
+            "Post-carotid endarterectomy (CEA): 1-3 months first follow-up to detect restenosis",
+            "AAA 4.0-4.9 cm: Every 6 months surveillance (increased rupture risk)",
+            "AAA 3.0-3.9 cm: Annual surveillance sufficient",
+            "Renal artery post-intervention: 1, 6, 12 months, then annually",
+            "Post-intervention surveillance critical for detecting restenosis",
+            "AAA ≥5.0 cm: Consider repair, very close monitoring if not surgical candidate"
+          ],
+          "sections": [
+            {
+              "title": "Post-Surgical Follow-Up",
+              "content": "Post-Carotid Endarterectomy (CEA):\nFirst Follow-Up: 1-3 months\nPurpose: Detect restenosis at surgical site\nSubsequent: 6 months, 12 months, then annually\nFindings: Assess patency, look for intimal hyperplasia\n\nRenal Artery Stent/Angioplasty:\nProtocol: 1 month, 6 months, 12 months, then annually\nCriteria: PSV, RAR (renal-aortic ratio)\nRestenosis Risk: Highest in first 6-12 months\n\nHemodialysis Access:\nNew Access: Weekly until mature (1-3 months)\nMature Access: Every 3-4 months for surveillance\nProblem Access: As needed for stenosis/thrombosis evaluation"
+            },
+            {
+              "title": "AAA Surveillance",
+              "content": "3.0-3.9 cm Diameter:\nInterval: ANNUALLY\nRupture Risk: Low (<1% per year)\nAction: Continue surveillance\n\n4.0-4.9 cm Diameter:\nInterval: Every 6 MONTHS\nRupture Risk: Moderate (1-11% per year depending on size)\nAction: Close monitoring, discuss surgical options\n\n≥5.0 cm Diameter:\nInterval: Very close monitoring (3 months or less)\nRupture Risk: High (>10% per year for 5.5+ cm)\nAction: Strong consideration for surgical repair\n\nRapid Expansion:\n>0.5 cm in 6 months: Refer for surgical evaluation regardless of size"
+            }
+          ],
+          "keyTakeaways": [
+            "Post-CEA follow-up: 1-3 months",
+            "AAA 3.0-3.9 cm: Annual surveillance",
+            "AAA 4.0-4.9 cm: Every 6 months",
+            "AAA ≥5.0 cm: Consider repair",
+            "Renal artery post-intervention: 1, 6, 12 months",
+            "Rapid AAA expansion >0.5 cm/6 mo = urgent"
+          ],
+          "keyTerms": [
+            "Carotid Endarterectomy",
+            "AAA Surveillance",
+            "Restenosis",
+            "Follow-Up Protocol",
+            "Surveillance Intervals"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 47",
+          "frontClue": "Know when to bring patients back after procedures and for aneurysm surveillance - critical for clinical practice!",
+          "corePiece": "Post-Carotid Endarterectomy (CEA):\nFirst Follow-Up: 1-3 months\nPurpose: Detect restenosis at surgical site\nSubsequent: 6 months, 12 months, then annually\nFindings: Assess patency, look for intimal hyperplasia\n\nRenal Artery Stent/Angioplasty:\nProtocol: 1 month, 6 months, 12 months, then annually\nCriteria: PSV, RAR (renal-aortic ratio)\nRestenosis Risk: Highest in first 6-12 months\n\nHemodialysis Access:\nNew Access: Weekly until mature (1-3 months)\nMature Access: Every 3-4 months for surveillance\nProblem Access: As needed for stenosis/thrombosis evaluation",
+          "whyLock": "Understanding follow-up intervals & surveillance is essential because it directly impacts clinical decision-making and patient outcomes in vascular sonography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 48",
+              "title": "Carotid Endarterectomy",
+              "link": "Carotid Endarterectomy connects directly to understanding Follow-Up Intervals & Surveillance."
+            },
+            {
+              "piece": "Piece 49",
+              "title": "AAA Surveillance",
+              "link": "AAA Surveillance connects directly to understanding Follow-Up Intervals & Surveillance."
+            },
+            {
+              "piece": "Piece 50",
+              "title": "Restenosis",
+              "link": "Restenosis connects directly to understanding Follow-Up Intervals & Surveillance."
+            }
+          ],
+          "registryApplication": "Registry exams frequently test follow-up intervals & surveillance through both image interpretation and conceptual understanding questions. Key focus areas include recognizing normal vs abnormal findings and understanding clinical significance.",
+          "puzzleAssembly": "Clinical scenario: Apply your understanding of follow-up intervals & surveillance to solve a real-world vascular case.",
+          "checkpoint": {
+            "pearl": "Post-CEA follow-up: 1-3 months",
+            "reflection": "How does follow-up intervals & surveillance integrate with other vascular concepts you've studied?"
+          }
+        }
+      ],
+      "pieceRange": "Pieces 43-47",
+      "examType": "RVT"
+    }
+  ]
+}
