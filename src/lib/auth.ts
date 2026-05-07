@@ -16,6 +16,19 @@ export const authOptions: NextAuthOptions = {
           throw new Error('Please enter your email and password');
         }
 
+        // Demo account bypass — no database required
+        if (
+          credentials.email === 'demo@sonopass.com' &&
+          credentials.password === 'demo123'
+        ) {
+          return {
+            id: 'demo-user',
+            email: 'demo@sonopass.com',
+            name: 'Demo Student',
+            emailVerified: new Date(),
+          };
+        }
+
         // Find user in database
         const user = await prisma.user.findUnique({
           where: { email: credentials.email },
