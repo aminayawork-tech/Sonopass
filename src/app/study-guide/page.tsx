@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -22,9 +22,28 @@ interface Section {
   content: string;
 }
 
+interface ConnectionEdge {
+  piece: string;
+  title: string;
+  link: string;
+}
+
+interface Checkpoint {
+  pearl: string;
+  reflection: string;
+}
+
 interface Topic {
   id: string;
   title: string;
+  pieceNumber?: string;
+  frontClue?: string;
+  corePiece?: string;
+  whyLock?: string;
+  connectionEdges?: ConnectionEdge[];
+  registryApplication?: string;
+  puzzleAssembly?: string;
+  checkpoint?: Checkpoint;
   content?: string;
   quickSummary?: string;
   clinicalPearls?: string[];
@@ -77,20 +96,12 @@ export default function StudyGuidePage() {
   const [knownTopics, setKnownTopics] = useState<Set<number>>(new Set());
   const [unknownTopics, setUnknownTopics] = useState<Set<number>>(new Set());
 
-  const [puzzleContent, setPuzzleContent] = useState<any>(null);
-
   useEffect(() => {
-    fetch('/study-guide-content.json')
+    fetch('/study-guide-puzzle.json')
       .then(res => res.json())
       .then(data => setContent(data))
       .catch(err => console.error('Failed to load study guide:', err));
 
-    fetch('/puzzle-study-guide.json')
-      .then(res => res.json())
-      .then(data => setPuzzleContent(data))
-      .catch(err => console.error('Failed to load puzzle guide:', err));
-
-    // Load completed topics from localStorage
     const saved = localStorage.getItem('completedTopics');
     if (saved) {
       setCompletedTopics(new Set(JSON.parse(saved)));
@@ -121,16 +132,6 @@ export default function StudyGuidePage() {
       )
     );
   });
-
-  const currentPuzzlePiece = useMemo(() => {
-    if (!puzzleContent || !selectedCategory) return null;
-    const topics = selectedCategory.topics;
-    const currentTopic = topics[currentCardIndex];
-    if (!currentTopic) return null;
-    const cat = puzzleContent.categories.find((c: any) => c.id === selectedCategory.id);
-    if (!cat) return null;
-    return cat.puzzlePieces?.find((p: any) => p.id === currentTopic.id) ?? null;
-  }, [puzzleContent, selectedCategory, currentCardIndex]);
 
   if (!content) {
     return (
@@ -270,15 +271,20 @@ export default function StudyGuidePage() {
                           <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                         </div>
                       </div>
+                      {currentTopic.pieceNumber && (
+                        <p className="text-sm sm:text-base text-blue-200 mb-2 font-medium">
+                          {currentTopic.pieceNumber}
+                        </p>
+                      )}
                       <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4 px-2">
                         {currentTopic.title}
                       </h2>
-                      {currentTopic.quickSummary && (
+                      {currentTopic.frontClue && (
                         <p className="text-base sm:text-lg text-blue-100 mb-3 sm:mb-4 max-w-2xl mx-auto px-4">
-                          {currentTopic.quickSummary}
+                          {currentTopic.frontClue}
                         </p>
                       )}
-                      <p className="text-blue-100 text-xs sm:text-sm">Tap to reveal details</p>
+                      <p className="text-blue-100 text-xs sm:text-sm">🧩 Tap to reveal the full puzzle piece</p>
                     </div>
                   </Card>
 
@@ -292,41 +298,43 @@ export default function StudyGuidePage() {
                   >
                     <div className="text-white h-full flex flex-col max-w-3xl">
                       <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 flex-shrink-0">
-                        {currentPuzzlePiece?.title}
+                        {currentTopic.title}
                       </h3>
 
                       <div className="flex-1 overflow-y-auto space-y-3 sm:space-y-4 text-xs sm:text-sm">
                         {/* Core Piece */}
-                        {currentPuzzlePiece?.corePiece && (
+                        {currentTopic.corePiece && (
                           <div className="bg-white/10 rounded-lg p-3 sm:p-4">
                             <h4 className="font-semibold mb-2 flex items-center gap-2">
                               <span>🧩</span> Core Piece
                             </h4>
-                            <p className="leading-relaxed">{currentPuzzlePiece.corePiece}</p>
+                            <p className="leading-relaxed">{currentTopic.corePiece}</p>
                           </div>
                         )}
 
                         {/* Why Lock */}
-                        {currentPuzzlePiece?.whyLock && (
+                        {currentTopic.whyLock && (
                           <div className="bg-white/10 rounded-lg p-3 sm:p-4">
                             <h4 className="font-semibold mb-2 flex items-center gap-2">
                               <span>🔐</span> The Why Lock
                             </h4>
-                            <p className="leading-relaxed">{currentPuzzlePiece.whyLock}</p>
+                            <p className="leading-relaxed">{currentTopic.whyLock}</p>
                           </div>
                         )}
 
                         {/* Connection Edges */}
-                        {currentPuzzlePiece?.connectionEdges && currentPuzzlePiece.connectionEdges.length > 0 && (
+                        {currentTopic.connectionEdges && currentTopic.connectionEdges.length > 0 && (
                           <div className="bg-white/10 rounded-lg p-3 sm:p-4">
                             <h4 className="font-semibold mb-2 flex items-center gap-2">
                               <span>🔗</span> Connection Edges
                             </h4>
                             <ul className="space-y-1.5">
-                              {currentPuzzlePiece.connectionEdges.map((edge: string, i: number) => (
+                              {currentTopic.connectionEdges.map((edge: any, i: number) => (
                                 <li key={i} className="flex items-start gap-2">
                                   <span className="mt-0.5 flex-shrink-0">→</span>
-                                  <span className="flex-1">{edge}</span>
+                                  <span className="flex-1">
+                                    {typeof edge === 'string' ? edge : `${edge.title}: ${edge.link}`}
+                                  </span>
                                 </li>
                               ))}
                             </ul>
@@ -334,22 +342,33 @@ export default function StudyGuidePage() {
                         )}
 
                         {/* Registry Application */}
-                        {currentPuzzlePiece?.registryApplication && (
+                        {currentTopic.registryApplication && (
                           <div className="bg-white/10 rounded-lg p-3 sm:p-4">
                             <h4 className="font-semibold mb-2 flex items-center gap-2">
                               <span>📋</span> Registry Application
                             </h4>
-                            <p className="leading-relaxed italic">{currentPuzzlePiece.registryApplication}</p>
+                            <p className="leading-relaxed italic">{currentTopic.registryApplication}</p>
                           </div>
                         )}
 
-                        {/* Puzzle Checkpoint */}
-                        {currentPuzzlePiece?.puzzleCheckpoint && (
+                        {/* Checkpoint */}
+                        {currentTopic.checkpoint && (
                           <div className="bg-white/10 rounded-lg p-3 sm:p-4">
                             <h4 className="font-semibold mb-2 flex items-center gap-2">
                               <span>✨</span> Puzzle Complete Checkpoint
                             </h4>
-                            <p className="leading-relaxed">{currentPuzzlePiece.puzzleCheckpoint}</p>
+                            {typeof currentTopic.checkpoint === 'string' ? (
+                              <p className="leading-relaxed">{currentTopic.checkpoint}</p>
+                            ) : (
+                              <div className="space-y-1.5">
+                                {currentTopic.checkpoint.pearl && (
+                                  <p className="leading-relaxed"><span className="font-medium">Pearl:</span> {currentTopic.checkpoint.pearl}</p>
+                                )}
+                                {currentTopic.checkpoint.reflection && (
+                                  <p className="leading-relaxed italic"><span className="font-medium">Reflection:</span> {currentTopic.checkpoint.reflection}</p>
+                                )}
+                              </div>
+                            )}
                           </div>
                         )}
                       </div>
