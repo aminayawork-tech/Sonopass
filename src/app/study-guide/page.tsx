@@ -102,7 +102,6 @@ export default function StudyGuidePage() {
       .then(data => setContent(data))
       .catch(err => console.error('Failed to load study guide:', err));
 
-    // Load completed topics from localStorage
     const saved = localStorage.getItem('completedTopics');
     if (saved) {
       setCompletedTopics(new Set(JSON.parse(saved)));
@@ -289,123 +288,92 @@ export default function StudyGuidePage() {
                     </div>
                   </Card>
 
-                  {/* Back of card - Full Content */}
+                  {/* Back of card - Puzzle Format */}
                   <Card
-                    className="absolute inset-0 bg-white border-0 shadow-2xl p-4 sm:p-6 lg:p-8 backface-hidden overflow-y-auto"
+                    className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-600 border-0 shadow-2xl p-4 sm:p-6 lg:p-8 backface-hidden overflow-y-auto"
                     style={{
                       backfaceVisibility: 'hidden',
                       transform: 'rotateY(180deg)',
                     }}
                   >
-                    <div className="h-full flex flex-col max-w-3xl mx-auto">
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-4 sm:mb-5 flex-shrink-0">
+                    <div className="text-white h-full flex flex-col max-w-3xl">
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 flex-shrink-0">
                         {currentTopic.title}
                       </h3>
 
-                      <div className="flex-1 overflow-y-auto space-y-4 sm:space-y-5 text-gray-700">
-                        {/* Core Piece - Rich Definition */}
+                      <div className="flex-1 overflow-y-auto space-y-3 sm:space-y-4 text-xs sm:text-sm">
+                        {/* Core Piece */}
                         {currentTopic.corePiece && (
-                          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border-l-4 border-blue-500">
-                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
-                              <span className="text-blue-600">🧩</span> Core Piece
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <h4 className="font-semibold mb-2 flex items-center gap-2">
+                              <span>🧩</span> Core Piece
                             </h4>
-                            <p className="text-xs sm:text-sm leading-relaxed text-gray-800">
-                              {currentTopic.corePiece}
-                            </p>
+                            <p className="leading-relaxed">{currentTopic.corePiece}</p>
                           </div>
                         )}
 
-                        {/* Why Lock - Deep Clinical Why */}
+                        {/* Why Lock */}
                         {currentTopic.whyLock && (
-                          <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-4 rounded-lg border-l-4 border-amber-500">
-                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
-                              <span className="text-amber-600">🔐</span> The Why Lock
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <h4 className="font-semibold mb-2 flex items-center gap-2">
+                              <span>🔐</span> The Why Lock
                             </h4>
-                            <p className="text-xs sm:text-sm leading-relaxed text-gray-800">
-                              {currentTopic.whyLock}
-                            </p>
+                            <p className="leading-relaxed">{currentTopic.whyLock}</p>
                           </div>
                         )}
 
                         {/* Connection Edges */}
                         {currentTopic.connectionEdges && currentTopic.connectionEdges.length > 0 && (
-                          <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg border-l-4 border-green-500">
-                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
-                              <span className="text-green-600">🔗</span> Connection Edges
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <h4 className="font-semibold mb-2 flex items-center gap-2">
+                              <span>🔗</span> Connection Edges
                             </h4>
-                            <div className="space-y-2">
-                              {currentTopic.connectionEdges.map((edge, i) => (
-                                <div key={i} className="text-xs sm:text-sm">
-                                  <p className="font-semibold text-green-700">{edge.piece}: {edge.title}</p>
-                                  <p className="text-gray-700 ml-4">{edge.link}</p>
-                                </div>
+                            <ul className="space-y-1.5">
+                              {currentTopic.connectionEdges.map((edge: any, i: number) => (
+                                <li key={i} className="flex items-start gap-2">
+                                  <span className="mt-0.5 flex-shrink-0">→</span>
+                                  <span className="flex-1">
+                                    {typeof edge === 'string' ? edge : `${edge.title}: ${edge.link}`}
+                                  </span>
+                                </li>
                               ))}
-                            </div>
+                            </ul>
                           </div>
                         )}
 
                         {/* Registry Application */}
                         {currentTopic.registryApplication && (
-                          <div className="bg-gradient-to-r from-purple-50 to-violet-50 p-4 rounded-lg border-l-4 border-purple-500">
-                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
-                              <span className="text-purple-600">📝</span> Registry Application
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <h4 className="font-semibold mb-2 flex items-center gap-2">
+                              <span>📋</span> Registry Application
                             </h4>
-                            <p className="text-xs sm:text-sm leading-relaxed text-gray-800">
-                              {currentTopic.registryApplication}
-                            </p>
+                            <p className="leading-relaxed italic">{currentTopic.registryApplication}</p>
                           </div>
                         )}
 
-                        {/* Puzzle Assembly Exercise */}
-                        {currentTopic.puzzleAssembly && (
-                          <div className="bg-gradient-to-r from-orange-50 to-red-50 p-4 rounded-lg border-l-4 border-orange-500">
-                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
-                              <span className="text-orange-600">🔨</span> Puzzle Assembly
-                            </h4>
-                            <p className="text-xs sm:text-sm leading-relaxed text-gray-800 italic">
-                              {currentTopic.puzzleAssembly}
-                            </p>
-                          </div>
-                        )}
-
-                        {/* Checkpoint - Pearl & Reflection */}
+                        {/* Checkpoint */}
                         {currentTopic.checkpoint && (
-                          <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-4 rounded-lg border-l-4 border-teal-500">
-                            <h4 className="font-bold text-gray-900 text-sm sm:text-base mb-2 flex items-center gap-2">
-                              <span className="text-teal-600">✓</span> Puzzle Complete Checkpoint
+                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
+                            <h4 className="font-semibold mb-2 flex items-center gap-2">
+                              <span>✨</span> Puzzle Complete Checkpoint
                             </h4>
-                            <div className="space-y-2">
-                              <div>
-                                <p className="font-semibold text-teal-700 text-xs sm:text-sm">Registry Pearl:</p>
-                                <p className="text-xs sm:text-sm text-gray-800 ml-4">{currentTopic.checkpoint.pearl}</p>
+                            {typeof currentTopic.checkpoint === 'string' ? (
+                              <p className="leading-relaxed">{currentTopic.checkpoint}</p>
+                            ) : (
+                              <div className="space-y-1.5">
+                                {currentTopic.checkpoint.pearl && (
+                                  <p className="leading-relaxed"><span className="font-medium">Pearl:</span> {currentTopic.checkpoint.pearl}</p>
+                                )}
+                                {currentTopic.checkpoint.reflection && (
+                                  <p className="leading-relaxed italic"><span className="font-medium">Reflection:</span> {currentTopic.checkpoint.reflection}</p>
+                                )}
                               </div>
-                              <div>
-                                <p className="font-semibold text-teal-700 text-xs sm:text-sm">Reflection:</p>
-                                <p className="text-xs sm:text-sm text-gray-800 ml-4 italic">{currentTopic.checkpoint.reflection}</p>
-                              </div>
-                            </div>
-                          </div>
-                        )}
-
-                        {/* Key Terms */}
-                        {currentTopic.keyTerms && currentTopic.keyTerms.length > 0 && (
-                          <div className="pt-3 border-t border-gray-200">
-                            <h4 className="font-semibold text-gray-900 text-xs sm:text-sm mb-2">Key Terms:</h4>
-                            <div className="flex flex-wrap gap-1.5">
-                              {currentTopic.keyTerms.map((term, i) => (
-                                <span
-                                  key={i}
-                                  className="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium"
-                                >
-                                  {term}
-                                </span>
-                              ))}
-                            </div>
+                            )}
                           </div>
                         )}
                       </div>
 
-                      <p className="text-gray-400 text-xs sm:text-sm mt-4 sm:mt-5 flex-shrink-0 text-center">Tap to flip back</p>
+                      <p className="text-green-100 text-xs sm:text-sm mt-3 sm:mt-4 flex-shrink-0 text-center">Tap to flip back</p>
                     </div>
                   </Card>
                 </div>
