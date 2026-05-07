@@ -35,19 +35,14 @@ export const authOptions: NextAuthOptions = {
         });
 
         if (!user || !user.password) {
-          throw new Error('Invalid email or password');
-        }
-
-        // Check if email is verified
-        if (!user.emailVerified) {
-          throw new Error('Please verify your email address before logging in');
+          throw new Error('No account found with this email');
         }
 
         // Verify password
         const passwordMatch = await bcrypt.compare(credentials.password, user.password);
 
         if (!passwordMatch) {
-          throw new Error('Invalid email or password');
+          throw new Error('Invalid password');
         }
 
         return {
