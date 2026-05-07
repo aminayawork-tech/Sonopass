@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Brain, CheckCircle2, Clock, ArrowRight, Zap, Target, FileText, Download } from 'lucide-react';
+import { Brain, CheckCircle2, Clock, ArrowRight, Zap, Target } from 'lucide-react';
 import { useModality } from '@/contexts/ModalityContext';
 import { getStats, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
 import AppLayout from '@/components/layout/AppLayout';
@@ -169,43 +169,6 @@ export default function MockExamsPage() {
                 </Card>
               );
             })}
-          </div>
-        </div>
-
-        {/* ARDMS Practice Materials */}
-        <div>
-          <h2 className="text-lg sm:text-xl font-bold text-sono-gray-900 mb-3 sm:mb-4 flex items-center gap-2">
-            <FileText className="w-5 h-5 text-sono-green-ultrasound" />
-            ARDMS Practice Materials
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-            {[
-              { label: 'Mock Registry Exam A24', file: 'ARDMS_Vascular_Mock_Registry_Exam_A24_corrected_complete.pdf' },
-              { label: 'Mock Registry Exam B24', file: 'ARDMS_Vascular_Mock_Registry_Exam_B24_corrected_complete.pdf' },
-              { label: 'Mock Registry Exam C24', file: 'ARDMS_Vascular_Mock_Registry_Exam_C24_corrected_complete.pdf' },
-              { label: 'Mock Registry Exam E24', file: 'ARDMS_Vascular_Mock_Registry_Exam_E24_questions_then_answers_CORRECTED.pdf' },
-            ].map((exam) => (
-              <a
-                key={exam.file}
-                href={`/mock-exams/${exam.file}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                download
-              >
-                <Card className="p-4 sm:p-5 bg-white border border-sono-gray-300 hover:border-sono-green-ultrasound hover:shadow-md transition-all rounded-2xl cursor-pointer group">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-sono-green-ultrasound/10 flex items-center justify-center flex-shrink-0 group-hover:bg-sono-green-ultrasound/20 transition-colors">
-                      <FileText className="w-5 h-5 text-sono-green-ultrasound" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-sono-gray-900 text-sm truncate">{exam.label}</p>
-                      <p className="text-xs text-sono-gray-600 mt-0.5">PDF — click to download</p>
-                    </div>
-                    <Download className="w-4 h-4 text-sono-gray-400 group-hover:text-sono-green-ultrasound transition-colors flex-shrink-0" />
-                  </div>
-                </Card>
-              </a>
-            ))}
           </div>
         </div>
 
