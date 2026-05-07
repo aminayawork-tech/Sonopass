@@ -248,7 +248,7 @@ export default function HomePage() {
           <p className="text-xl mb-8" style={{ color: '#e8f8f2' }}>
             Join thousands of successful sonographers who prepared with SonoPass
           </p>
-          <Link href="/dashboard">
+          <Link href="/signup">
             <Button size="lg" className="bg-white hover:bg-gray-100 text-lg h-14 px-8" style={{ color: '#3abc83' }}>
               Get Started Now
               <ArrowRight className="w-5 h-5 ml-2" />
