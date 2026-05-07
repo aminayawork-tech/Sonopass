@@ -79,7 +79,7 @@ export default function SignupPage() {
             <div>
               <p className="text-sm font-semibold text-green-800 mb-1">Account created successfully!</p>
               <p className="text-xs text-green-700">
-                Please check your email to verify your account before logging in.
+                Your account is ready. You can now log in.
               </p>
               <Link href="/login" className="text-xs text-green-800 underline mt-2 inline-block">
                 Go to login →
