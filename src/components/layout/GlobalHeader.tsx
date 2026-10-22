@@ -2,27 +2,22 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, Search, Bell, User, Users, LogOut } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Menu } from 'lucide-react';
 import { ModalitySelectorDropdown } from '@/components/ModalitySelector';
-import { useModality } from '@/contexts/ModalityContext';
 import MenuModal from './MenuModal';
-import { useSession, signOut } from 'next-auth/react';
 
 export default function GlobalHeader() {
-  const { currentModality } = useModality();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { data: session } = useSession();
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full border-b border-sono-gray-300 bg-white shadow-sm transition-all duration-200">
+      <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white shadow-sm">
         <div className="flex h-14 items-center px-4 justify-between max-w-[1920px] mx-auto">
           {/* Logo */}
-          <Link href="/dashboard" className="flex items-center gap-2 transition-transform duration-200 active:scale-95">
+          <Link href="/dashboard" className="flex items-center gap-2">
             <h1 className="text-xl font-black">
-              <span className="text-sono-gray-900">Sono</span>
-              <span className="text-sono-green-ultrasound">Pass</span>
+              <span className="text-gray-900">Sono</span>
+              <span style={{ color: '#3abc83' }}>Pass</span>
             </h1>
           </Link>
 
@@ -31,40 +26,22 @@ export default function GlobalHeader() {
             <ModalitySelectorDropdown />
           </div>
 
-          {/* Right Side Actions */}
-          <div className="flex items-center gap-1">
-            {/* User Menu - Only show when logged in */}
-            {session?.user && (
-              <div className="hidden sm:flex items-center gap-2 mr-2">
-                <span className="text-sm text-gray-600">{session.user.name || session.user.email}</span>
-                <button
-                  onClick={() => signOut({ callbackUrl: '/' })}
-                  className="p-2 hover:bg-red-50 text-red-600 rounded-xl transition-all duration-200 active:scale-95"
-                  aria-label="Log out"
-                  title="Log out"
-                >
-                  <LogOut className="w-4 h-4" />
-                </button>
-              </div>
-            )}
-            {/* Hamburger Menu */}
-            <button
-              onClick={() => setIsMenuOpen(true)}
-              className="p-2.5 hover:bg-sono-gray-100 rounded-xl transition-all duration-200 active:scale-95"
-              aria-label="Open menu"
-            >
-              <Menu className="w-6 h-6 text-sono-gray-600" />
-            </button>
-          </div>
+          {/* Hamburger */}
+          <button
+            onClick={() => setIsMenuOpen(true)}
+            className="p-2.5 hover:bg-gray-100 rounded-xl transition-all duration-200 active:scale-95"
+            aria-label="Open menu"
+          >
+            <Menu className="w-6 h-6 text-gray-600" />
+          </button>
         </div>
 
-        {/* Modality Switcher - Mobile/Tablet (Below Header) */}
-        <div className="lg:hidden px-4 pb-3 pt-2 border-t border-sono-gray-100">
+        {/* Modality Switcher — Mobile */}
+        <div className="lg:hidden px-4 pb-3 pt-2 border-t border-gray-100">
           <ModalitySelectorDropdown />
         </div>
       </header>
 
-      {/* Menu Modal */}
       <MenuModal isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
     </>
   );
