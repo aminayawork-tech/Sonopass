@@ -468,7 +468,7 @@ export default function StudyGuidePage() {
     return (
       <AppLayout>
         <div className="min-h-screen bg-[#F5F7FA] pb-20">
-          <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10">
+          <header className="px-4 sm:px-6 pt-10 pb-4 sm:pb-6 bg-white border-b border-gray-100">
             <div className="max-w-6xl mx-auto">
               <Button
                 variant="ghost"
@@ -562,14 +562,14 @@ export default function StudyGuidePage() {
   // Categories Overview
   return (
     <AppLayout>
-      <header className="px-4 sm:px-6 py-6 sm:py-8 bg-white border-b border-gray-100">
+      <header className="px-4 sm:px-6 pt-14 pb-6 sm:pb-8">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
             <div>
-              <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-gray-900">
-                RVT Study Guide
+              <h1 className="text-3xl font-black tracking-tight text-gray-900 mb-1">
+                Study Guide
               </h1>
-              <p className="text-base text-gray-500">
+              <p className="text-sm text-gray-500">
                 Study with Quizlet-style flashcards or browse comprehensive materials
               </p>
             </div>

@@ -44,18 +44,9 @@ export default function MockExamsPage() {
     <AppLayout>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-5 sm:space-y-6">
         {/* Page Header */}
-        <div>
-          <div className="flex items-center gap-4 mb-4">
-            <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-sono-purple/10 flex items-center justify-center">
-              <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-sono-purple" />
-            </div>
-            <div>
-              <h1 className="text-2xl sm:text-3xl font-bold text-sono-gray-900">Mock Exams</h1>
-              <p className="text-sm sm:text-base text-sono-gray-600 mt-1">
-                Full-length practice exams to test your knowledge
-              </p>
-            </div>
-          </div>
+        <div className="pt-10">
+          <h1 className="text-3xl font-black tracking-tight text-gray-900 mb-1">Mock Exams</h1>
+          <p className="text-sm text-gray-500 mb-4">Full-length practice exams to test your knowledge</p>
 
           {/* Stats Summary */}
           <div className="grid grid-cols-3 gap-3 sm:gap-4">

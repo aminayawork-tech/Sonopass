@@ -1,7 +1,6 @@
 'use client';
 
 import { ReactNode } from 'react';
-import GlobalHeader from './GlobalHeader';
 import Sidebar from './Sidebar';
 import BottomNav from './BottomNav';
 
@@ -12,9 +11,7 @@ interface AppLayoutProps {
 export default function AppLayout({ children }: AppLayoutProps) {
   return (
     <div className="min-h-screen bg-[#F5F7FA]">
-      <GlobalHeader />
-
-      <div className="flex h-[calc(100vh-4rem)]">
+      <div className="flex h-screen">
         {/* Sidebar - Desktop only */}
         <Sidebar />
 

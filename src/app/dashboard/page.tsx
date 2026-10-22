@@ -16,12 +16,16 @@ import {
   Clock,
   Flame,
   Star,
+  Menu,
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
+import MenuModal from '@/components/layout/MenuModal';
+import { ModalitySelectorDropdown } from '@/components/ModalitySelector';
 
 export default function DashboardPage() {
   const router = useRouter();
   const [stats, setStats] = useState<UserStats | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { currentModality } = useModality();
 
   useEffect(() => {
@@ -35,15 +39,28 @@ export default function DashboardPage() {
 
   return (
     <AppLayout>
+      <MenuModal isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
       <div className="min-h-screen pb-nav" style={{ backgroundColor: '#F5F7FA' }}>
 
         {/* Hero Header */}
-        <div className="px-5 pt-6 pb-5">
-          <h1 className="text-3xl font-black tracking-tight mb-0.5">
-            <span className="text-gray-900">Sono</span>
-            <span style={{ color: '#3abc83' }}>Pass</span>
-          </h1>
-          <p className="text-gray-500 text-[14px]">Your registry exam prep companion</p>
+        <div className="px-5 pt-14 pb-5">
+          <div className="flex items-center justify-between mb-1">
+            <h1 className="text-3xl font-black tracking-tight">
+              <span className="text-gray-900">Sono</span>
+              <span style={{ color: '#3abc83' }}>Pass</span>
+            </h1>
+            <button
+              onClick={() => setIsMenuOpen(true)}
+              className="w-10 h-10 flex items-center justify-center rounded-xl active:bg-gray-100 transition-colors"
+              aria-label="Open menu"
+            >
+              <Menu size={22} className="text-gray-700" strokeWidth={2} />
+            </button>
+          </div>
+          <p className="text-gray-500 text-[14px] font-normal">Your registry exam prep companion</p>
+          <div className="mt-3">
+            <ModalitySelectorDropdown />
+          </div>
         </div>
 
         {/* Study Modes */}

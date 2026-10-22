@@ -59,13 +59,11 @@ export default function ProgressPage() {
     <AppLayout>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-5 sm:space-y-6">
         {/* Page Header */}
-        <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-2xl sm:text-3xl font-bold text-sono-gray-900">Progress</h1>
-            <p className="text-sm sm:text-base text-sono-gray-600 mt-1">
-              Track your learning journey and identify areas for improvement
-            </p>
-          </div>
+        <div className="pt-10">
+          <h1 className="text-3xl font-black tracking-tight text-gray-900">Progress</h1>
+          <p className="text-sm text-gray-500 mt-1">
+            Track your learning journey and identify areas for improvement
+          </p>
         </div>
 
         {/* Registry Readiness - Hero Section */}
