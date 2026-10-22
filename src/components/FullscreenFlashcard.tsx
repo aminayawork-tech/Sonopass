@@ -26,6 +26,7 @@ export default function FullscreenFlashcard({ cards, initialIndex = 0, onClose, 
   const touchStartX = useRef(0);
   const touchStartY = useRef(0);
   const touchMovedX = useRef(0);
+  const lastTouchTime = useRef(0);
 
   // Lock body scroll while open
   useEffect(() => {
@@ -54,17 +55,22 @@ export default function FullscreenFlashcard({ cards, initialIndex = 0, onClose, 
   };
 
   const onTouchEnd = (e: React.TouchEvent) => {
+    lastTouchTime.current = Date.now();
     const dx = touchMovedX.current;
     const dy = e.changedTouches[0].clientY - touchStartY.current;
 
     if (Math.abs(dx) < TAP_MOVE_LIMIT && Math.abs(dy) < TAP_MOVE_LIMIT) {
-      // Tap — flip
       setFlipped(f => !f);
     } else if (Math.abs(dx) > SWIPE_THRESHOLD && Math.abs(dx) > Math.abs(dy)) {
-      // Horizontal swipe
       if (dx < 0) goTo(index + 1, 'left');
       else goTo(index - 1, 'right');
     }
+  };
+
+  const handleCardClick = () => {
+    // Ignore the ghost click the browser fires ~300ms after a touch event
+    if (Date.now() - lastTouchTime.current < 600) return;
+    setFlipped(f => !f);
   };
 
   const card = cards[index];
@@ -116,7 +122,7 @@ export default function FullscreenFlashcard({ cards, initialIndex = 0, onClose, 
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
-        onClick={() => setFlipped(f => !f)}
+        onClick={handleCardClick}
         style={{ cursor: 'pointer' }}
       >
         <div
