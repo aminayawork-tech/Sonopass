@@ -1,10 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Progress } from '@/components/ui/progress';
 import { getStats, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
 import { useModality } from '@/contexts/ModalityContext';
 import {
@@ -13,277 +11,154 @@ import {
   Brain,
   TrendingUp,
   Target,
-  Award,
-  Users,
-  Flame,
-  Star,
+  ClipboardList,
   ChevronRight,
   Clock,
-  CheckCircle,
+  Flame,
+  Star,
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
-import RegistryReadinessWidget from '@/components/RegistryReadinessWidget';
 
 export default function DashboardPage() {
+  const router = useRouter();
   const [stats, setStats] = useState<UserStats | null>(null);
   const { currentModality } = useModality();
-  const [greeting, setGreeting] = useState('Good morning');
 
   useEffect(() => {
     setStats(getStats());
-
-    // Set greeting based on time of day
-    const hour = new Date().getHours();
-    if (hour < 12) setGreeting('Good morning');
-    else if (hour < 18) setGreeting('Good afternoon');
-    else setGreeting('Good evening');
   }, []);
 
   const modalityStats = stats ? getCurrentModalityStats(stats) : null;
-
   const accuracy = modalityStats && modalityStats.totalAnswered > 0
     ? Math.round((modalityStats.totalCorrect / modalityStats.totalAnswered) * 100)
     : 0;
-  const xpToNext = modalityStats ? (modalityStats.level * 500) - modalityStats.xp : 500;
-  const xpProgress = modalityStats ? ((modalityStats.xp % 500) / 500) * 100 : 0;
 
   return (
     <AppLayout>
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-5 sm:space-y-6">
-        {/* Welcome Section with Registry Readiness */}
-        <div className="flex flex-col gap-4 fade-in">
-          <div>
-            <h1 className="text-2xl sm:text-3xl font-bold text-sono-gray-900">
-              {greeting}, Student! 🎯
-            </h1>
-            <p className="text-sm sm:text-base text-sono-gray-600 mt-1">
-              Ready to continue your {currentModality?.shortName || 'exam'} prep?
+      <div className="min-h-screen pb-nav" style={{ backgroundColor: '#F5F7FA' }}>
+
+        {/* Hero Header */}
+        <div className="px-5 pt-6 pb-5">
+          <h1 className="text-3xl font-black tracking-tight mb-0.5">
+            <span className="text-gray-900">Sono</span>
+            <span style={{ color: '#3abc83' }}>Pass</span>
+          </h1>
+          <p className="text-gray-500 text-[14px]">Your registry exam prep companion</p>
+        </div>
+
+        {/* Study Modes */}
+        <div className="px-5 mb-7">
+          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Start Studying</p>
+          <div className="flex flex-col gap-2.5">
+            <button
+              onClick={() => router.push('/exam/quick-10')}
+              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+            >
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#e8f8f2' }}>
+                <Zap size={17} style={{ color: '#3abc83' }} strokeWidth={1.75} />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-[14px] font-bold text-gray-900">Quick 10</p>
+                <p className="text-[11px] text-gray-400 leading-snug">10 random questions • ~5 minutes</p>
+              </div>
+              <ChevronRight size={16} className="text-gray-300 shrink-0" />
+            </button>
+
+            <button
+              onClick={() => router.push('/practice')}
+              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+            >
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-blue-50">
+                <BookOpen size={17} className="text-blue-500" strokeWidth={1.75} />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-[14px] font-bold text-gray-900">Study Mode</p>
+                <p className="text-[11px] text-gray-400 leading-snug">Practice by category with feedback</p>
+              </div>
+              <ChevronRight size={16} className="text-gray-300 shrink-0" />
+            </button>
+
+            <button
+              onClick={() => router.push('/exam/mock-exams')}
+              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+            >
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-purple-50">
+                <Brain size={17} className="text-purple-500" strokeWidth={1.75} />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-[14px] font-bold text-gray-900">Mock Exams</p>
+                <p className="text-[11px] text-gray-400 leading-snug">Full-length timed practice tests</p>
+              </div>
+              <ChevronRight size={16} className="text-gray-300 shrink-0" />
+            </button>
+
+            <button
+              onClick={() => router.push('/study-guide')}
+              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+            >
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-amber-50">
+                <ClipboardList size={17} className="text-amber-500" strokeWidth={1.75} />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-[14px] font-bold text-gray-900">Study Guide</p>
+                <p className="text-[11px] text-gray-400 leading-snug">Theory, anatomy & key concepts</p>
+              </div>
+              <ChevronRight size={16} className="text-gray-300 shrink-0" />
+            </button>
+          </div>
+        </div>
+
+        {/* Stats Row */}
+        <div className="px-5 mb-7">
+          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Your Stats</p>
+          <div className="grid grid-cols-3 gap-2.5">
+            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+              <Flame size={18} className="mx-auto mb-1 text-orange-400" />
+              <div className="text-xl font-black text-gray-900">{stats?.streak ?? 0}</div>
+              <div className="text-[10px] text-gray-400 font-medium">Day Streak</div>
+            </div>
+            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+              <Target size={18} className="mx-auto mb-1" style={{ color: '#3abc83' }} />
+              <div className="text-xl font-black" style={{ color: '#3abc83' }}>{accuracy}%</div>
+              <div className="text-[10px] text-gray-400 font-medium">Accuracy</div>
+            </div>
+            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+              <Star size={18} className="mx-auto mb-1 text-amber-400" />
+              <div className="text-xl font-black text-gray-900">{modalityStats?.totalAnswered ?? 0}</div>
+              <div className="text-[10px] text-gray-400 font-medium">Questions</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Today's Card */}
+        <div className="px-5 mb-7">
+          <div className="rounded-2xl overflow-hidden shadow-lg" style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)' }}>
+            <div className="flex items-center justify-between px-5 pt-5 mb-3">
+              <span className="text-[11px] font-bold uppercase tracking-widest" style={{ color: '#3abc83' }}>
+                Exam Tip
+              </span>
+              <Clock size={13} className="text-gray-500" />
+            </div>
+            <h2 className="px-5 text-[17px] font-black text-white leading-snug tracking-tight mb-2">
+              Focus on your weak areas first
+            </h2>
+            <p className="px-5 text-[14px] text-gray-300 leading-relaxed">
+              Studies show that targeted practice on weak topics improves scores faster than re-studying what you already know.
             </p>
-          </div>
-
-          {/* Registry Readiness - Hero Section */}
-          <Card className="p-6 sm:p-8 bg-gradient-to-br from-sono-green-ultrasound/5 to-sono-blue-soft/5 border-sono-green-ultrasound/20 shadow-md rounded-2xl">
-            <div className="flex flex-col items-center">
-              <RegistryReadinessWidget size="large" showLabel={true} />
-            </div>
-          </Card>
-
-          {/* Streak + Level Cards */}
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-3 bg-white px-5 py-4 rounded-2xl shadow-md flex-1 touch-target transition-all duration-200 hover:shadow-lg active:scale-[0.98] border border-sono-gray-300">
-              <Flame className="w-6 h-6 text-sono-orange flex-shrink-0" />
-              <div>
-                <div className="text-xl sm:text-2xl font-bold text-sono-orange">{stats?.streak ?? 0}</div>
-                <div className="text-[10px] sm:text-xs text-sono-gray-600 whitespace-nowrap">day streak</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 bg-white px-5 py-4 rounded-2xl shadow-md flex-1 touch-target transition-all duration-200 hover:shadow-lg active:scale-[0.98] border border-sono-gray-300">
-              <Star className="w-6 h-6 text-sono-amber flex-shrink-0" />
-              <div>
-                <div className="text-xl sm:text-2xl font-bold text-sono-amber">
-                  Level {modalityStats?.level ?? 1}
-                </div>
-                <div className="text-[10px] sm:text-xs text-sono-gray-600 whitespace-nowrap">{modalityStats?.xp ?? 0} XP</div>
-              </div>
-            </div>
+            <button
+              onClick={() => router.push('/progress')}
+              className="mx-5 mt-4 mb-5 flex items-center gap-1.5 text-[13px] font-semibold active:opacity-70 transition-opacity"
+              style={{ color: '#3abc83' }}
+            >
+              View my progress
+              <span className="text-[16px] leading-none">→</span>
+            </button>
           </div>
         </div>
 
-        {/* XP Progress Bar */}
-        {stats && modalityStats && (
-          <Card className="p-5 bg-gradient-to-r from-amber-50 to-orange-50 border border-sono-amber/30 shadow-md rounded-2xl slide-up">
-            <div className="flex justify-between items-center mb-3 text-sm">
-              <span className="font-semibold text-sono-gray-900">Level Progress</span>
-              <span className="text-sono-gray-600">{xpToNext} XP to Level {modalityStats.level + 1}</span>
-            </div>
-            <Progress value={xpProgress} className="h-3 bg-amber-100" />
-          </Card>
-        )}
-
-        {/* Quick Stats Row */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          <Card className="p-4 sm:p-5 bg-white border border-sono-gray-300 shadow-md hover:shadow-lg transition-all rounded-2xl active:scale-[0.98]">
-            <div className="flex flex-col gap-3">
-              <div className="p-3 bg-sono-blue-soft/10 rounded-xl w-fit">
-                <CheckCircle className="w-6 h-6 text-sono-blue-soft" />
-              </div>
-              <div>
-                <div className="text-2xl sm:text-3xl font-bold text-sono-gray-900">
-                  {modalityStats?.totalAnswered ?? 0}
-                </div>
-                <div className="text-xs sm:text-sm text-sono-gray-600">Questions Done</div>
-              </div>
-            </div>
-          </Card>
-
-          <Card className="p-4 sm:p-5 bg-white border border-sono-gray-300 shadow-md hover:shadow-lg transition-all rounded-2xl active:scale-[0.98]">
-            <div className="flex flex-col gap-3">
-              <div className="p-3 bg-sono-green-ultrasound/10 rounded-xl w-fit">
-                <Target className="w-6 h-6 text-sono-green-soft" />
-              </div>
-              <div>
-                <div className="text-2xl sm:text-3xl font-bold text-sono-green-soft">{accuracy}%</div>
-                <div className="text-xs sm:text-sm text-sono-gray-600">Accuracy</div>
-                {accuracy < 70 && (
-                  <Link href="/practice">
-                    <Button variant="link" size="sm" className="p-0 h-auto text-xs mt-1 text-sono-green-ultrasound">
-                      Study Now →
-                    </Button>
-                  </Link>
-                )}
-              </div>
-            </div>
-          </Card>
-
-          <Card className="p-4 sm:p-5 bg-white border border-sono-gray-300 shadow-md hover:shadow-lg transition-all rounded-2xl active:scale-[0.98]">
-            <div className="flex flex-col gap-3">
-              <div className="p-3 bg-sono-purple/10 rounded-xl w-fit">
-                <Brain className="w-6 h-6 text-sono-purple" />
-              </div>
-              <div>
-                <div className="text-2xl sm:text-3xl font-bold text-sono-gray-900">
-                  {currentModality?.questionCount ?? 0}
-                </div>
-                <div className="text-xs sm:text-sm text-sono-gray-600">Total Questions</div>
-              </div>
-            </div>
-          </Card>
-
-          <Card className="p-4 sm:p-5 bg-white border border-sono-gray-300 shadow-md hover:shadow-lg transition-all rounded-2xl active:scale-[0.98]">
-            <div className="flex flex-col gap-3">
-              <div className="p-3 bg-sono-amber/10 rounded-xl w-fit">
-                <Award className="w-6 h-6 text-sono-amber" />
-              </div>
-              <div>
-                <div className="text-2xl sm:text-3xl font-bold text-sono-gray-900">
-                  {stats?.badges?.length ?? 0}
-                </div>
-                <div className="text-xs sm:text-sm text-sono-gray-600">Badges Earned</div>
-              </div>
-            </div>
-          </Card>
+        <div className="px-5 pb-6 text-center">
+          <p className="text-[11px] text-gray-400">SonoPass · Made for sonographers</p>
         </div>
-
-        {/* Quick Actions Grid */}
-        <div>
-          <h2 className="text-lg sm:text-xl font-bold text-sono-gray-900 mb-3 sm:mb-4">Jump back in</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-            {/* Quick 10 */}
-            <Link href="/exam/quick-10">
-              <Card className="p-6 sm:p-7 bg-gradient-to-br from-sono-green-soft to-sono-green-ultrasound hover:from-sono-green-soft/90 hover:to-sono-green-ultrasound/90 text-white cursor-pointer transition-all shadow-lg hover:shadow-xl active:scale-[0.98] touch-target rounded-2xl">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="p-3 bg-white/20 rounded-xl">
-                    <Zap className="w-7 h-7" />
-                  </div>
-                  <h3 className="text-xl font-bold">Quick 10</h3>
-                </div>
-                <p className="opacity-90 text-sm mb-3">10 random questions</p>
-                <div className="flex items-center gap-2 text-xs sm:text-sm opacity-80">
-                  <Clock className="w-4 h-4" />
-                  <span>~5 minutes</span>
-                </div>
-              </Card>
-            </Link>
-
-            {/* Study Mode */}
-            <Link href="/practice">
-              <Card className="p-6 sm:p-7 bg-gradient-to-br from-sono-blue-soft to-sono-blue-light hover:from-sono-blue-soft/90 hover:to-sono-blue-light/90 text-white cursor-pointer transition-all shadow-lg hover:shadow-xl active:scale-[0.98] touch-target rounded-2xl">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="p-3 bg-white/20 rounded-xl">
-                    <BookOpen className="w-7 h-7" />
-                  </div>
-                  <h3 className="text-xl font-bold">Study Mode</h3>
-                </div>
-                <p className="opacity-90 text-sm mb-3">Practice by category with feedback</p>
-                <div className="flex items-center gap-2 text-xs sm:text-sm opacity-80">
-                  <Target className="w-4 h-4" />
-                  <span>Category-focused</span>
-                </div>
-              </Card>
-            </Link>
-
-            {/* Mock Exams */}
-            <Link href="/exam/mock-exams">
-              <Card className="p-6 sm:p-7 bg-gradient-to-br from-sono-purple to-sono-purple/80 hover:from-sono-purple/90 hover:to-sono-purple/70 text-white cursor-pointer transition-all shadow-lg hover:shadow-xl active:scale-[0.98] touch-target rounded-2xl">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="p-3 bg-white/20 rounded-xl">
-                    <Brain className="w-7 h-7" />
-                  </div>
-                  <h3 className="text-xl font-bold">Mock Exams</h3>
-                </div>
-                <p className="opacity-90 text-sm mb-3">Full-length practice tests</p>
-                <div className="flex items-center gap-2 text-xs sm:text-sm opacity-80">
-                  <Clock className="w-4 h-4" />
-                  <span>Timed simulation</span>
-                </div>
-              </Card>
-            </Link>
-          </div>
-        </div>
-
-        {/* Learning Resources */}
-        <div>
-          <h2 className="text-lg sm:text-xl font-bold text-sono-gray-900 mb-3 sm:mb-4">Learning Resources</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-            <Link href="/study-guide">
-              <Card className="p-5 sm:p-6 bg-white border border-sono-gray-300 shadow-md hover:shadow-lg transition-all active:scale-[0.98] cursor-pointer touch-target rounded-2xl">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4 flex-1 min-w-0">
-                    <div className="p-3 bg-sono-green-ultrasound/10 rounded-xl flex-shrink-0">
-                      <BookOpen className="w-6 h-6 text-sono-green-ultrasound" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-bold text-sono-gray-900 text-base sm:text-lg mb-1">Study Guide</h3>
-                      <p className="text-xs sm:text-sm text-sono-gray-600">
-                        Theory, anatomy & key concepts
-                      </p>
-                    </div>
-                  </div>
-                  <ChevronRight className="w-5 h-5 text-sono-gray-400 flex-shrink-0" />
-                </div>
-              </Card>
-            </Link>
-
-            <Link href="/glossary">
-              <Card className="p-5 sm:p-6 bg-white border border-sono-gray-300 shadow-md hover:shadow-lg transition-all active:scale-[0.98] cursor-pointer touch-target rounded-2xl">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4 flex-1 min-w-0">
-                    <div className="p-3 bg-sono-blue-soft/10 rounded-xl flex-shrink-0">
-                      <BookOpen className="w-6 h-6 text-sono-blue-soft" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-bold text-sono-gray-900 text-base sm:text-lg mb-1">Glossary</h3>
-                      <p className="text-xs sm:text-sm text-sono-gray-600">
-                        Essential terms & definitions
-                      </p>
-                    </div>
-                  </div>
-                  <ChevronRight className="w-5 h-5 text-sono-gray-400 flex-shrink-0" />
-                </div>
-              </Card>
-            </Link>
-          </div>
-        </div>
-
-        {/* View Full Progress */}
-        <Link href="/progress">
-          <Card className="p-5 sm:p-6 bg-white border border-sono-gray-300 shadow-md hover:shadow-lg transition-all active:scale-[0.98] cursor-pointer touch-target rounded-2xl">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4 flex-1 min-w-0">
-                <div className="p-3 bg-sono-green-ultrasound/10 rounded-xl flex-shrink-0">
-                  <TrendingUp className="w-6 h-6 text-sono-green-soft" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-sono-gray-900 text-base sm:text-lg mb-1">View Detailed Progress</h3>
-                  <p className="text-xs sm:text-sm text-sono-gray-600">
-                    Charts, analytics, and insights into your learning
-                  </p>
-                </div>
-              </div>
-              <ChevronRight className="w-5 h-5 text-sono-gray-400 flex-shrink-0" />
-            </div>
-          </Card>
-        </Link>
       </div>
     </AppLayout>
   );

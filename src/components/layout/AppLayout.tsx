@@ -11,7 +11,7 @@ interface AppLayoutProps {
 
 export default function AppLayout({ children }: AppLayoutProps) {
   return (
-    <div className="min-h-screen bg-[#F5F7FA] transition-colors duration-300">
+    <div className="min-h-screen bg-[#F5F7FA]">
       <GlobalHeader />
 
       <div className="flex h-[calc(100vh-4rem)]">
@@ -19,7 +19,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
         <Sidebar />
 
         {/* Main Content */}
-        <main className="flex-1 overflow-y-auto smooth-scroll page-transition pb-20 md:pb-0">
+        <main className="flex-1 overflow-y-auto pb-[72px] lg:pb-0">
           <div className="w-full max-w-7xl mx-auto">
             {children}
           </div>

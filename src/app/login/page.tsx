@@ -29,7 +29,7 @@ export default function LoginPage() {
       });
 
       if (result?.error) {
-        setError('Invalid email or password');
+        setError(result.error);
       } else {
         router.push('/dashboard');
         router.refresh();
@@ -57,7 +57,14 @@ export default function LoginPage() {
         {error && (
           <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start gap-3">
             <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-            <p className="text-sm text-red-800">{error}</p>
+            <div>
+              <p className="text-sm text-red-800">{error}</p>
+              {error === 'No account found with this email' && (
+                <Link href="/signup" className="text-sm text-red-700 underline mt-1 inline-block font-medium">
+                  Create an account →
+                </Link>
+              )}
+            </div>
           </div>
         )}
 

@@ -1,15 +1,7 @@
-export { default } from 'next-auth/middleware';
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-export const config = {
-  matcher: [
-    '/dashboard/:path*',
-    '/practice/:path*',
-    '/exam/:path*',
-    '/study-guide/:path*',
-    '/glossary/:path*',
-    '/progress/:path*',
-    '/stats/:path*',
-    '/learn/:path*',
-    '/admin/:path*',
-  ],
-};
+// No auth required — all routes are publicly accessible
+export function middleware(request: NextRequest) {
+  return NextResponse.next();
+}
