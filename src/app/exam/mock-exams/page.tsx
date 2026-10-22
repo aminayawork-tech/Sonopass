@@ -1,15 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Brain, CheckCircle2, Clock, ArrowRight, Zap, Target } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { Brain, CheckCircle2, Clock, Zap, Target, ChevronRight, Flame, Star } from 'lucide-react';
 import { useModality } from '@/contexts/ModalityContext';
 import { getStats, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
 import AppLayout from '@/components/layout/AppLayout';
 
 export default function MockExamsPage() {
+  const router = useRouter();
   const { currentModality } = useModality();
   const [stats, setStats] = useState<UserStats | null>(null);
 
@@ -19,175 +18,144 @@ export default function MockExamsPage() {
 
   const modalityStats = stats ? getCurrentModalityStats(stats) : null;
 
-  // Get mock exams from current modality
   const mockExams = currentModality?.examModes.filter(mode =>
     mode.id.startsWith('mock-')
   ) || [];
 
-  // Get exam stats from examScores array
   const getExamStats = (examId: string) => {
-    if (!modalityStats) {
-      return { completed: false, bestScore: 0, attempts: 0 };
-    }
-
+    if (!modalityStats) return { completed: false, bestScore: 0, attempts: 0 };
     const examScores = modalityStats.examScores.filter(e => e.exam === examId);
     const attempts = examScores.length;
     const completed = attempts > 0;
     const bestScore = examScores.length > 0
       ? Math.max(...examScores.map(e => Math.round((e.score / e.total) * 100)))
       : 0;
-
     return { completed, bestScore, attempts };
   };
 
+  const completedCount = mockExams.filter(e => getExamStats(e.id).completed).length;
+  const accuracy = modalityStats && modalityStats.totalAnswered > 0
+    ? Math.round((modalityStats.totalCorrect / modalityStats.totalAnswered) * 100)
+    : 0;
+
   return (
     <AppLayout>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-5 sm:space-y-6">
+      <div className="min-h-screen pb-nav" style={{ backgroundColor: '#F5F7FA' }}>
+
         {/* Page Header */}
-        <div className="pt-10">
-          <h1 className="text-3xl font-black tracking-tight text-gray-900 mb-1">Mock Exams</h1>
-          <p className="text-sm text-gray-500 mb-4">Full-length practice exams to test your knowledge</p>
+        <div className="px-5 pt-14 pb-5">
+          <h1 className="text-3xl font-black tracking-tight text-gray-900">Mock Exams</h1>
+          <p className="text-gray-500 text-[14px] mt-0.5">Full-length timed practice tests</p>
+        </div>
 
-          {/* Stats Summary */}
-          <div className="grid grid-cols-3 gap-3 sm:gap-4">
-            <Card className="bg-white border border-sono-gray-300 rounded-2xl p-4 sm:p-5">
-              <div className="text-2xl sm:text-3xl font-bold text-sono-gray-900">
-                {mockExams.filter(e => getExamStats(e.id).completed).length}/{mockExams.length}
-              </div>
-              <div className="text-xs sm:text-sm text-sono-gray-600 mt-1">Completed</div>
-            </Card>
-            <Card className="bg-white border border-sono-gray-300 rounded-2xl p-4 sm:p-5">
-              <div className="text-2xl sm:text-3xl font-bold text-sono-green-soft">
-                {Math.round(mockExams.reduce((acc, e) => acc + getExamStats(e.id).bestScore, 0) / mockExams.length) || 0}%
-              </div>
-              <div className="text-xs sm:text-sm text-sono-gray-600 mt-1">Avg Score</div>
-            </Card>
-            <Card className="bg-white border border-sono-gray-300 rounded-2xl p-4 sm:p-5">
-              <div className="text-2xl sm:text-3xl font-bold text-sono-blue-soft">
-                {mockExams.reduce((acc, e) => acc + getExamStats(e.id).attempts, 0)}
-              </div>
-              <div className="text-xs sm:text-sm text-sono-gray-600 mt-1">Total Attempts</div>
-            </Card>
+        {/* Stats Row */}
+        <div className="px-5 mb-7">
+          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Your Stats</p>
+          <div className="grid grid-cols-3 gap-2.5">
+            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+              <Brain size={18} className="mx-auto mb-1 text-purple-500" />
+              <div className="text-xl font-black text-gray-900">{completedCount}/{mockExams.length}</div>
+              <div className="text-[10px] text-gray-400 font-medium">Completed</div>
+            </div>
+            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+              <Target size={18} className="mx-auto mb-1" style={{ color: '#3abc83' }} />
+              <div className="text-xl font-black" style={{ color: '#3abc83' }}>{accuracy}%</div>
+              <div className="text-[10px] text-gray-400 font-medium">Accuracy</div>
+            </div>
+            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+              <Flame size={18} className="mx-auto mb-1 text-orange-400" />
+              <div className="text-xl font-black text-gray-900">{stats?.streak ?? 0}</div>
+              <div className="text-[10px] text-gray-400 font-medium">Day Streak</div>
+            </div>
           </div>
         </div>
 
-        {/* Quick Practice Options */}
-        <div>
-          <h2 className="text-lg sm:text-xl font-bold text-sono-gray-900 mb-3 sm:mb-4">Quick Practice</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-            <Link href="/exam/quick-10">
-              <Card className="p-5 sm:p-6 bg-gradient-to-br from-sono-green-soft to-sono-green-ultrasound text-white hover:shadow-lg transition-all active:scale-[0.99] cursor-pointer rounded-2xl">
-                <div className="flex items-center gap-3 mb-2">
-                  <Zap className="w-6 h-6" />
-                  <h3 className="font-bold text-lg">Quick 10</h3>
-                </div>
-                <p className="text-sm opacity-90">10 random questions • ~5 minutes</p>
-              </Card>
-            </Link>
-
-            <Link href="/exam/study">
-              <Card className="p-5 sm:p-6 bg-gradient-to-br from-sono-blue-soft to-sono-blue-light text-white hover:shadow-lg transition-all active:scale-[0.99] cursor-pointer rounded-2xl">
-                <div className="flex items-center gap-3 mb-2">
-                  <Target className="w-6 h-6" />
-                  <h3 className="font-bold text-lg">Study Mode</h3>
-                </div>
-                <p className="text-sm opacity-90">Practice by category with feedback</p>
-              </Card>
-            </Link>
+        {/* Quick Start */}
+        <div className="px-5 mb-7">
+          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Quick Start</p>
+          <div className="flex flex-col gap-2.5">
+            <button
+              onClick={() => router.push('/exam/quick-10')}
+              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+            >
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#e8f8f2' }}>
+                <Zap size={17} style={{ color: '#3abc83' }} strokeWidth={1.75} />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-[14px] font-bold text-gray-900">Quick 10</p>
+                <p className="text-[11px] text-gray-400 leading-snug">10 random questions • ~5 minutes</p>
+              </div>
+              <ChevronRight size={16} className="text-gray-300 shrink-0" />
+            </button>
           </div>
         </div>
 
-        {/* Mock Exams Grid */}
-        <div>
-          <h2 className="text-lg sm:text-xl font-bold text-sono-gray-900 mb-3 sm:mb-4">Full-Length Mock Exams</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+        {/* Full-Length Exams */}
+        <div className="px-5 mb-7">
+          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Full-Length Exams</p>
+          <div className="flex flex-col gap-2.5">
+            {mockExams.length === 0 && (
+              <div className="bg-white rounded-2xl px-4 py-6 text-center shadow-sm border border-gray-100">
+                <p className="text-[13px] text-gray-400">No exams available for this modality yet</p>
+              </div>
+            )}
             {mockExams.map((exam, index) => {
               const examStats = getExamStats(exam.id);
               const colors = [
-                { bg: 'bg-sono-purple/10', text: 'text-sono-purple', border: 'border-sono-purple/30', btnBg: 'bg-sono-purple' },
-                { bg: 'bg-sono-green-ultrasound/10', text: 'text-sono-green-ultrasound', border: 'border-sono-green-ultrasound/30', btnBg: 'bg-sono-green-ultrasound' },
-                { bg: 'bg-sono-blue-soft/10', text: 'text-sono-blue-soft', border: 'border-sono-blue-soft/30', btnBg: 'bg-sono-blue-soft' },
-                { bg: 'bg-sono-amber/10', text: 'text-sono-amber', border: 'border-sono-amber/30', btnBg: 'bg-sono-amber' },
+                { bg: '#faf5ff', color: '#a855f7' },
+                { bg: '#e8f8f2', color: '#3abc83' },
+                { bg: '#eff6ff', color: '#3b82f6' },
+                { bg: '#fff7ed', color: '#f97316' },
               ];
-              const color = colors[index % colors.length];
-
+              const c = colors[index % colors.length];
               return (
-                <Card
+                <button
                   key={exam.id}
-                  className={`p-6 sm:p-8 bg-white border-2 ${color.border} hover:shadow-lg transition-all relative overflow-hidden rounded-2xl`}
+                  onClick={() => router.push(exam.route)}
+                  className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
                 >
+                  <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: c.bg }}>
+                    <Brain size={17} style={{ color: c.color }} strokeWidth={1.75} />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-[14px] font-bold text-gray-900">{exam.name}</p>
+                    <p className="text-[11px] text-gray-400 leading-snug">
+                      {examStats.completed
+                        ? `Best: ${examStats.bestScore}% · ${examStats.attempts} attempt${examStats.attempts !== 1 ? 's' : ''}`
+                        : exam.description || 'Full-length timed exam'}
+                    </p>
+                  </div>
                   {examStats.completed && (
-                    <div className="absolute top-4 right-4">
-                      <div className="w-8 h-8 rounded-full bg-sono-green-ultrasound flex items-center justify-center">
-                        <CheckCircle2 className="w-5 h-5 text-sono-gray-900" />
-                      </div>
-                    </div>
+                    <CheckCircle2 size={16} style={{ color: '#3abc83' }} className="shrink-0" />
                   )}
-
-                  <div className={`w-12 h-12 sm:w-16 sm:h-16 rounded-2xl ${color.bg} flex items-center justify-center mb-4`}>
-                    <Brain className={`w-6 h-6 sm:w-8 sm:h-8 ${color.text}`} />
-                  </div>
-
-                  <h3 className="text-xl sm:text-2xl font-bold text-sono-gray-900 mb-2">
-                    {exam.name}
-                  </h3>
-                  <p className="text-sm sm:text-base text-sono-gray-600 mb-4">
-                    {exam.description}
-                  </p>
-
-                  {/* Stats */}
-                  <div className="space-y-2 mb-6">
-                    {examStats.bestScore > 0 && (
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-sono-gray-600">Best Score:</span>
-                        <span className="font-semibold text-sono-green-soft">{examStats.bestScore}%</span>
-                      </div>
-                    )}
-                    {examStats.attempts > 0 && (
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-sono-gray-600">Attempts:</span>
-                        <span className="font-semibold text-sono-gray-900">{examStats.attempts}</span>
-                      </div>
-                    )}
-                  </div>
-
-                  <Link href={exam.route}>
-                    <Button className={`w-full text-white ${color.btnBg} hover:opacity-90 rounded-xl h-12`}>
-                      {examStats.completed ? 'Retake Exam' : 'Start Exam'}
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </Link>
-                </Card>
+                  <ChevronRight size={16} className="text-gray-300 shrink-0" />
+                </button>
               );
             })}
           </div>
         </div>
 
-        {/* Tips Section */}
-        <Card className="p-6 sm:p-8 bg-gradient-to-r from-sono-green-ultrasound/5 to-sono-blue-soft/5 border border-sono-green-ultrasound/20 rounded-2xl">
-          <h3 className="text-xl font-bold text-sono-gray-900 mb-4 flex items-center gap-2">
-            <Clock className="w-5 h-5 text-sono-green-ultrasound" />
-            Exam Tips
-          </h3>
-          <ul className="space-y-3 text-sm sm:text-base text-sono-gray-700">
-            <li className="flex items-start gap-3">
-              <span className="text-sono-green-ultrasound mt-1 font-bold">•</span>
-              <span>Set aside uninterrupted time to complete each mock exam</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-sono-green-ultrasound mt-1 font-bold">•</span>
-              <span>Use Lock Mode to minimize distractions and simulate real exam conditions</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-sono-green-ultrasound mt-1 font-bold">•</span>
-              <span>Review all questions after completing to understand your mistakes</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-sono-green-ultrasound mt-1 font-bold">•</span>
-              <span>Retake exams to track your improvement over time</span>
-            </li>
-          </ul>
-        </Card>
+        {/* Tip Card */}
+        <div className="px-5 mb-7">
+          <div className="rounded-2xl overflow-hidden shadow-lg" style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)' }}>
+            <div className="flex items-center justify-between px-5 pt-5 mb-3">
+              <span className="text-[11px] font-bold uppercase tracking-widest" style={{ color: '#3abc83' }}>
+                Exam Tip
+              </span>
+              <Clock size={13} className="text-gray-500" />
+            </div>
+            <h2 className="px-5 text-[17px] font-black text-white leading-snug tracking-tight mb-2">
+              Simulate real exam conditions
+            </h2>
+            <p className="px-5 text-[14px] text-gray-300 leading-relaxed pb-5">
+              Set aside uninterrupted time and work through each mock exam from start to finish before reviewing answers.
+            </p>
+          </div>
+        </div>
+
+        <div className="px-5 pb-6 text-center">
+          <p className="text-[11px] text-gray-400">SonoPass · Made for sonographers</p>
+        </div>
       </div>
     </AppLayout>
   );
