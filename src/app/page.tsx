@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
   Brain, BookOpen, TrendingUp, ClipboardList,
-  Star, Zap, ShieldCheck, ArrowRight,
+  Star, Zap, ShieldCheck,
 } from 'lucide-react';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/sonopass';
@@ -164,25 +164,16 @@ export default function LandingPage() {
                 <AppStoreBadge />
                 <PlayStoreBadge />
               </div>
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-6">
-                <Link
-                  href="/app"
-                  className="inline-flex items-center gap-2 text-sm font-semibold transition-opacity hover:opacity-80"
-                  style={{ color: '#3abc83' }}
-                >
-                  Try the web app <ArrowRight size={14} />
-                </Link>
-                <div className="flex items-center gap-4">
-                  <div className="flex items-center gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={13} className="text-amber-400 fill-amber-400" />
-                    ))}
-                  </div>
-                  <span className="text-gray-400 text-sm">Loved by students</span>
-                  <div className="flex items-center gap-1.5">
-                    <ShieldCheck size={13} className="text-emerald-500" />
-                    <span className="text-gray-400 text-sm">Exam-accurate</span>
-                  </div>
+              <div className="flex items-center justify-center lg:justify-start gap-5 mt-6">
+                <div className="flex items-center gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={13} className="text-amber-400 fill-amber-400" />
+                  ))}
+                </div>
+                <span className="text-gray-400 text-sm">Loved by students</span>
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck size={13} className="text-emerald-500" />
+                  <span className="text-gray-400 text-sm">Exam-accurate</span>
                 </div>
               </div>
             </div>
@@ -329,12 +320,6 @@ export default function LandingPage() {
             <AppStoreBadge />
             <PlayStoreBadge />
           </div>
-          <Link
-            href="/app"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-100 hover:text-white transition-colors"
-          >
-            Or open the web app <ArrowRight size={14} />
-          </Link>
           <p className="text-emerald-200 text-xs mt-4">Free practice questions · No credit card required</p>
         </div>
       </section>
