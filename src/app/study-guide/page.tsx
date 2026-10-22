@@ -9,8 +9,9 @@ import {
   Brain, Activity, AlertTriangle, ClipboardList, Zap,
   Search, BookOpen, ChevronRight, Check, ArrowLeft,
   Lightbulb, Star, ListChecks, Info, CheckCircle2,
-  ChevronLeft, RotateCw, XCircle, Shuffle
+  ChevronLeft, RotateCw, XCircle, Shuffle, Maximize2
 } from 'lucide-react';
+import FullscreenFlashcard from '@/components/FullscreenFlashcard';
 
 interface Image {
   filename: string;
@@ -89,6 +90,7 @@ export default function StudyGuidePage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [completedTopics, setCompletedTopics] = useState<Set<string>>(new Set());
   const [viewMode, setViewMode] = useState<'flashcards' | 'list'>('flashcards');
+  const [fullscreenOpen, setFullscreenOpen] = useState(false);
 
   // Flashcard state
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -187,8 +189,52 @@ export default function StudyGuidePage() {
       setIsFlipped(false);
     };
 
+    // Build cards for fullscreen mode
+    const studyCards = topics.map((topic: any) => ({
+      front: (
+        <div className="text-center w-full">
+          {topic.pieceNumber && (
+            <p className="text-white/40 text-[12px] font-bold uppercase tracking-widest mb-3">{topic.pieceNumber}</p>
+          )}
+          <h2 className="text-2xl sm:text-4xl font-black text-white leading-tight mb-4 break-words">
+            {topic.title}
+          </h2>
+          {topic.frontClue && (
+            <p className="text-white/60 text-[15px] leading-relaxed max-w-sm mx-auto">{topic.frontClue}</p>
+          )}
+          <p className="text-white/25 text-[12px] mt-6">Tap to reveal</p>
+        </div>
+      ),
+      back: (
+        <div className="w-full">
+          <h3 className="text-[17px] font-black text-white mb-3">{topic.title}</h3>
+          {topic.corePiece && (
+            <p className="text-white/80 text-[15px] leading-relaxed mb-4">{topic.corePiece}</p>
+          )}
+          {topic.keyTerms && topic.keyTerms.length > 0 && (
+            <div className="bg-white/10 rounded-2xl p-3">
+              <p className="text-[11px] font-bold text-white/40 uppercase tracking-widest mb-2">Key Terms</p>
+              <div className="flex flex-wrap gap-1.5">
+                {topic.keyTerms.slice(0, 6).map((t: string, i: number) => (
+                  <span key={i} className="px-2 py-0.5 bg-white/10 rounded-full text-white/70 text-[12px]">{t}</span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      ),
+    }));
+
     return (
       <div className="min-h-screen bg-[#F5F7FA]">
+        {fullscreenOpen && (
+          <FullscreenFlashcard
+            cards={studyCards}
+            initialIndex={currentCardIndex}
+            onClose={() => setFullscreenOpen(false)}
+          />
+        )}
+
         <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10 shadow-sm">
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center justify-between gap-4 mb-3">
@@ -214,6 +260,14 @@ export default function StudyGuidePage() {
                   </div>
                 </div>
                 <div className="flex gap-2">
+                  <Button
+                    onClick={() => setFullscreenOpen(true)}
+                    variant="outline"
+                    size="sm"
+                  >
+                    <Maximize2 className="w-4 h-4 sm:mr-1.5" />
+                    <span className="hidden sm:inline">Fullscreen</span>
+                  </Button>
                   <Button
                     onClick={() => setViewMode('list')}
                     variant="outline"

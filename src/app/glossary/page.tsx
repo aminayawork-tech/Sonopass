@@ -2,12 +2,13 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { Search, Filter, BookOpen, ArrowLeft, ChevronLeft, ChevronRight, RotateCw, CheckCircle2, XCircle, Shuffle } from 'lucide-react';
+import { Search, Filter, BookOpen, ArrowLeft, ChevronLeft, ChevronRight, RotateCw, CheckCircle2, XCircle, Shuffle, Maximize2 } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useModality } from '@/contexts/ModalityContext';
 import AppLayout from '@/components/layout/AppLayout';
+import FullscreenFlashcard from '@/components/FullscreenFlashcard';
 
 interface GlossaryTerm {
   term: string;
@@ -51,6 +52,7 @@ export default function GlossaryPage() {
   const [isFlipped, setIsFlipped] = useState(false);
   const [knownTerms, setKnownTerms] = useState<Set<number>>(new Set());
   const [unknownTerms, setUnknownTerms] = useState<Set<number>>(new Set());
+  const [fullscreenOpen, setFullscreenOpen] = useState(false);
 
   // Load glossary terms based on current modality
   useEffect(() => {
@@ -315,10 +317,54 @@ export default function GlossaryPage() {
     );
   };
 
+  // Build cards for fullscreen mode
+  const glossaryCards = filteredTerms.map((term) => ({
+    front: (
+      <div className="text-center w-full">
+        <span className="inline-block px-3 py-1 text-[11px] font-bold uppercase tracking-widest rounded-full mb-5 bg-white/10 text-white/60">
+          {term.category}
+        </span>
+        <h2 className="text-3xl sm:text-5xl font-black text-white leading-tight mb-4 break-words">
+          {term.term}
+        </h2>
+        {term.meaning && (
+          <p className="text-white/50 text-[15px] italic">&ldquo;{term.meaning}&rdquo;</p>
+        )}
+        <p className="text-white/25 text-[12px] mt-6">Tap to reveal definition</p>
+      </div>
+    ),
+    back: (
+      <div className="w-full">
+        <h3 className="text-[18px] font-black text-white mb-4">{term.term}</h3>
+        <p className="text-white/80 text-[16px] leading-relaxed mb-5">{term.definition}</p>
+        {term.memoryTrick && (
+          <div className="bg-white/10 rounded-2xl p-4">
+            <p className="text-[11px] font-bold text-white/50 uppercase tracking-widest mb-2">{term.memoryTrick.title}</p>
+            {term.memoryTrick.points.map((pt, i) => (
+              <p key={i} className="text-white/70 text-[13px] leading-snug mb-1">• {pt}</p>
+            ))}
+          </div>
+        )}
+        {term.clinicalUse && (
+          <p className="text-white/50 text-[13px] mt-3 leading-snug">{term.clinicalUse}</p>
+        )}
+      </div>
+    ),
+  }));
+
   // Render flashcard mode without AppLayout (clean, focused experience)
   if (viewMode === 'flashcards') {
     return (
       <div className="min-h-screen bg-gray-50">
+        {/* Fullscreen overlay */}
+        {fullscreenOpen && filteredTerms.length > 0 && (
+          <FullscreenFlashcard
+            cards={glossaryCards}
+            initialIndex={currentCardIndex}
+            onClose={() => setFullscreenOpen(false)}
+          />
+        )}
+
         {/* Clean Header for Flashcards */}
         <header className="bg-white border-b sticky top-0 z-40 shadow-sm">
           <div className="max-w-4xl mx-auto px-4 py-3 sm:py-4">
@@ -332,6 +378,15 @@ export default function GlossaryPage() {
                 </p>
               </div>
               <div className="flex items-center gap-2">
+                <Button
+                  onClick={() => setFullscreenOpen(true)}
+                  variant="outline"
+                  size="sm"
+                  className="text-xs sm:text-sm"
+                >
+                  <Maximize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 sm:mr-1.5" />
+                  <span className="hidden sm:inline">Fullscreen</span>
+                </Button>
                 <Button
                   onClick={() => setViewMode('list')}
                   variant="outline"
