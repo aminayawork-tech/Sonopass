@@ -28,12 +28,24 @@ export default function StudyModePage() {
         const response = await fetch(`/study-guides/${currentModality.id}/categories.json`);
         if (response.ok) {
           const data = await response.json();
-          const mapped = Array.isArray(data) ? data.map((cat: any) => ({
-            id: cat.id,
-            name: cat.title,
-            icon: cat.icon,
-            total: cat.questionCount || 0,
-          })) : [];
+          let mapped: any[] = [];
+          if (Array.isArray(data)) {
+            // SPI format: [{id, title, icon, questionCount}]
+            mapped = data.map((cat: any) => ({
+              id: cat.id,
+              name: cat.title,
+              icon: cat.icon,
+              total: cat.questionCount || 0,
+            }));
+          } else if (data.categories && typeof data.categories === 'object') {
+            // Vascular format: {categories: {"Name": {title, icon, ...}}}
+            mapped = Object.entries(data.categories).map(([key, cat]: [string, any]) => ({
+              id: key.toLowerCase().replace(/\s+/g, '-'),
+              name: cat.title || key,
+              icon: cat.icon || 'book',
+              total: cat.keyTerms?.length || cat.questionCount || 0,
+            }));
+          }
           setCategories(mapped);
         }
       } catch {

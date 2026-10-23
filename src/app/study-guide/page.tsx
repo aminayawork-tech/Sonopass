@@ -637,68 +637,65 @@ export default function StudyGuidePage() {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-12">
-        {/* Progress Overview */}
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8 mb-8">
-          <div className="flex items-center gap-4 mb-4">
-            <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center">
-              <Check className="w-6 h-6 text-emerald-600" />
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 pb-8">
+        {/* Progress strip */}
+        {completedTopics.size > 0 && (() => {
+          const total = content.categories.reduce((acc, cat) => acc + cat.topics.length, 0);
+          const pct = Math.round((completedTopics.size / total) * 100);
+          return (
+            <div className="mb-5">
+              <div className="flex items-center justify-between mb-1.5">
+                <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest">Overall Progress</p>
+                <p className="text-[11px] font-bold" style={{ color: '#3abc83' }}>{pct}%</p>
+              </div>
+              <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: '#3abc83' }} />
+              </div>
             </div>
-            <div>
-              <h2 className="text-lg font-semibold text-gray-900">Your Progress</h2>
-              <p className="text-sm text-gray-500">
-                {completedTopics.size} of {content.categories.reduce((acc, cat) => acc + cat.topics.length, 0)} topics completed
-              </p>
-            </div>
-          </div>
-          <div className="w-full bg-gray-100 rounded-full h-2">
-            <div
-              className="bg-emerald-500 rounded-full h-2 transition-all duration-500"
-              style={{
-                width: `${(completedTopics.size / content.categories.reduce((acc, cat) => acc + cat.topics.length, 0)) * 100}%`
-              }}
-            />
-          </div>
-        </div>
+          );
+        })()}
 
-        {/* Categories Grid */}
-        <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-6">Study Categories</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredCategories?.map((category) => {
-              const Icon = iconMap[category.icon] || BookOpen;
-              const totalTopics = category.topics.length;
-              const completedCount = category.topics.filter(t => completedTopics.has(t.id)).length;
+        {/* Categories as dashboard-style list */}
+        <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Study Categories</p>
+        <div className="flex flex-col gap-2.5">
+          {filteredCategories?.map((category, idx) => {
+            const Icon = iconMap[category.icon] || BookOpen;
+            const totalTopics = category.topics.length;
+            const completedCount = category.topics.filter((t: any) => completedTopics.has(t.id)).length;
+            const iconColors = [
+              { bg: '#e8f8f2', color: '#3abc83' },
+              { bg: '#eff6ff', color: '#3b82f6' },
+              { bg: '#faf5ff', color: '#a855f7' },
+              { bg: '#fff7ed', color: '#f97316' },
+              { bg: '#fef2f2', color: '#ef4444' },
+              { bg: '#f0fdf4', color: '#22c55e' },
+            ];
+            const c = iconColors[idx % iconColors.length];
 
-              return (
-                <div
-                  key={category.id}
-                  className="group bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-all cursor-pointer"
-                  onClick={() => setSelectedCategory(category)}
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="text-base font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
-                        {category.title}
-                      </h3>
-                      <p className="text-sm text-gray-500 mb-3">
-                        {totalTopics} {totalTopics === 1 ? 'topic' : 'topics'}
-                      </p>
-                      {completedCount > 0 && (
-                        <div className="flex items-center gap-2 text-xs text-emerald-600">
-                          <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                          {completedCount} completed
-                        </div>
-                      )}
-                    </div>
-                  </div>
+            return (
+              <button
+                key={category.id}
+                onClick={() => setSelectedCategory(category)}
+                className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+              >
+                <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: c.bg }}>
+                  <Icon size={17} style={{ color: c.color }} strokeWidth={1.75} />
                 </div>
-              );
-            })}
-          </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-[14px] font-bold text-gray-900">{category.title}</p>
+                  <p className="text-[11px] text-gray-400 leading-snug">
+                    {completedCount > 0
+                      ? `${completedCount}/${totalTopics} topics completed`
+                      : `${totalTopics} ${totalTopics === 1 ? 'topic' : 'topics'}`}
+                  </p>
+                </div>
+                {completedCount === totalTopics && totalTopics > 0 && (
+                  <CheckCircle2 size={16} style={{ color: '#3abc83' }} className="shrink-0" />
+                )}
+                <ChevronRight size={16} className="text-gray-300 shrink-0" />
+              </button>
+            );
+          })}
         </div>
       </main>
     </AppLayout>
