@@ -81,30 +81,30 @@ export default function FullscreenFlashcard({ cards, initialIndex = 0, onClose, 
     : 'translate-x-0 opacity-100';
 
   return (
-    <div className="fixed inset-0 z-[100] flex flex-col" style={{ backgroundColor: '#0f0f0f' }}>
+    <div className="fixed inset-0 z-[100] flex flex-col" style={{ backgroundColor: '#F5F7FA' }}>
       {/* Top bar */}
-      <div className="flex items-center justify-between px-5 pt-safe-top pt-4 pb-3 shrink-0">
+      <div className="flex items-center justify-between px-5 pt-4 pb-3 shrink-0">
         <button
           onClick={onClose}
-          className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 active:bg-white/20"
+          className="w-9 h-9 flex items-center justify-center rounded-xl bg-white shadow-sm border border-gray-100 active:bg-gray-50"
         >
-          <X size={18} className="text-white" />
+          <X size={18} className="text-gray-600" />
         </button>
 
-        <span className="text-white/60 text-[13px] font-medium tabular-nums">
+        <span className="text-gray-400 text-[13px] font-medium tabular-nums">
           {index + 1} / {cards.length}
         </span>
 
         <button
           onClick={() => setFlipped(f => !f)}
-          className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 active:bg-white/20"
+          className="w-9 h-9 flex items-center justify-center rounded-xl bg-white shadow-sm border border-gray-100 active:bg-gray-50"
         >
-          <RotateCcw size={16} className="text-white" />
+          <RotateCcw size={16} className="text-gray-600" />
         </button>
       </div>
 
       {/* Progress bar */}
-      <div className="h-1 mx-5 rounded-full bg-white/10 shrink-0 mb-4">
+      <div className="h-1.5 mx-5 rounded-full bg-gray-200 shrink-0 mb-4">
         <div
           className="h-full rounded-full transition-all duration-300"
           style={{ width: `${((index + 1) / cards.length) * 100}%`, backgroundColor: accentColor }}
@@ -112,7 +112,7 @@ export default function FullscreenFlashcard({ cards, initialIndex = 0, onClose, 
       </div>
 
       {/* Hint */}
-      <p className="text-center text-white/30 text-[12px] mb-3 shrink-0">
+      <p className="text-center text-gray-400 text-[12px] mb-3 shrink-0">
         {flipped ? 'Tap to flip back · swipe to navigate' : 'Tap to flip · swipe to navigate'}
       </p>
 
@@ -139,24 +139,21 @@ export default function FullscreenFlashcard({ cards, initialIndex = 0, onClose, 
           >
             {/* Front */}
             <div
-              className="absolute inset-0 rounded-3xl flex items-center justify-center p-6 overflow-y-auto"
-              style={{
-                backfaceVisibility: 'hidden',
-                background: 'linear-gradient(145deg, #1e2a3a, #0f1923)',
-                border: `1px solid ${accentColor}30`,
-              }}
+              className="absolute inset-0 rounded-3xl flex items-center justify-center p-6 overflow-y-auto bg-white shadow-sm border border-gray-100"
+              style={{ backfaceVisibility: 'hidden' }}
             >
               {card?.front}
             </div>
 
             {/* Back */}
             <div
-              className="absolute inset-0 rounded-3xl flex items-start p-6 overflow-y-auto"
+              className="absolute inset-0 rounded-3xl flex items-start p-6 overflow-y-auto shadow-sm"
               style={{
                 backfaceVisibility: 'hidden',
                 transform: 'rotateY(180deg)',
-                background: `linear-gradient(145deg, ${accentColor}18, ${accentColor}08)`,
-                border: `1px solid ${accentColor}50`,
+                backgroundColor: '#fff',
+                borderTop: `4px solid ${accentColor}`,
+                border: `1px solid ${accentColor}40`,
               }}
             >
               {card?.back}
@@ -166,20 +163,20 @@ export default function FullscreenFlashcard({ cards, initialIndex = 0, onClose, 
       </div>
 
       {/* Nav buttons */}
-      <div className="flex items-center justify-between px-5 pb-safe-bottom pb-8 shrink-0 gap-4">
+      <div className="flex items-center justify-between px-5 pb-8 shrink-0 gap-4">
         <button
           onClick={() => goTo(index - 1, 'right')}
           disabled={index === 0}
-          className="flex-1 h-12 rounded-2xl flex items-center justify-center gap-2 bg-white/8 border border-white/10 disabled:opacity-30 active:bg-white/15 transition-colors"
+          className="flex-1 h-12 rounded-2xl flex items-center justify-center gap-2 bg-white border border-gray-200 shadow-sm disabled:opacity-30 active:bg-gray-50 transition-colors"
         >
-          <ChevronLeft size={18} className="text-white" />
-          <span className="text-white text-[14px] font-medium">Previous</span>
+          <ChevronLeft size={18} className="text-gray-600" />
+          <span className="text-gray-700 text-[14px] font-medium">Previous</span>
         </button>
 
         <button
           onClick={() => goTo(index + 1, 'left')}
           disabled={index === cards.length - 1}
-          className="flex-1 h-12 rounded-2xl flex items-center justify-center gap-2 active:opacity-80 transition-opacity disabled:opacity-30"
+          className="flex-1 h-12 rounded-2xl flex items-center justify-center gap-2 shadow-sm active:opacity-80 transition-opacity disabled:opacity-30"
           style={{ backgroundColor: accentColor }}
         >
           <span className="text-white text-[14px] font-bold">Next</span>
