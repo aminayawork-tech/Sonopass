@@ -226,7 +226,7 @@ export default function StudyGuidePage() {
     }));
 
     return (
-      <div className="min-h-screen bg-[#F5F7FA]">
+      <div className="h-screen overflow-hidden flex flex-col bg-[#F5F7FA]">
         {fullscreenOpen && (
           <FullscreenFlashcard
             cards={studyCards}
@@ -235,60 +235,56 @@ export default function StudyGuidePage() {
           />
         )}
 
-        <header className="px-4 sm:px-6 py-4 sm:py-6 bg-white border-b border-gray-100 sticky top-0 z-10 shadow-sm">
-            <div className="max-w-4xl mx-auto">
-              <div className="flex items-center justify-between gap-4 mb-3">
-                <div className="flex items-center gap-3">
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="text-gray-600 hover:text-gray-900"
-                    onClick={() => {
-                      setSelectedCategory(null);
-                      setViewMode('flashcards');
-                      setCurrentCardIndex(0);
-                      setIsFlipped(false);
-                    }}
-                  >
-                    <ArrowLeft className="w-4 h-4 mr-2" />
-                    <span className="hidden sm:inline">Back to Categories</span>
-                    <span className="sm:hidden">Back</span>
-                  </Button>
-                  <div>
-                    <h1 className="text-xl sm:text-2xl font-bold text-gray-900">{selectedCategory.title}</h1>
-                    <p className="text-xs sm:text-sm text-gray-500 mt-1">Flashcard mode</p>
-                  </div>
-                </div>
-                <div className="flex gap-2">
-                  <Button
-                    onClick={() => setFullscreenOpen(true)}
-                    variant="outline"
-                    size="sm"
-                  >
-                    <Maximize2 className="w-4 h-4 sm:mr-1.5" />
-                    <span className="hidden sm:inline">Fullscreen</span>
-                  </Button>
-                  <Button
-                    onClick={() => setViewMode('list')}
-                    variant="outline"
-                    size="sm"
-                  >
-                    <BookOpen className="w-4 h-4 mr-2" />
-                    <span className="hidden sm:inline">List View</span>
-                  </Button>
-                  <Button
-                    onClick={handleShuffle}
-                    variant="outline"
-                    size="sm"
-                  >
-                    <Shuffle className="w-4 h-4" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </header>
+        {/* Header — fixed height, never wraps */}
+        <header className="shrink-0 px-4 py-3 bg-white border-b border-gray-100 shadow-sm">
+          <div className="flex items-center gap-2">
+            {/* Back */}
+            <button
+              onClick={() => {
+                setSelectedCategory(null);
+                setViewMode('flashcards');
+                setCurrentCardIndex(0);
+                setIsFlipped(false);
+              }}
+              className="shrink-0 w-8 h-8 flex items-center justify-center rounded-lg text-gray-500 active:bg-gray-100"
+            >
+              <ArrowLeft className="w-4 h-4" />
+            </button>
 
-          <main className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+            {/* Title — truncates instead of pushing buttons off screen */}
+            <div className="flex-1 min-w-0">
+              <p className="text-[15px] font-bold text-gray-900 truncate leading-tight">{selectedCategory.title}</p>
+              <p className="text-[11px] text-gray-400">Flashcard mode</p>
+            </div>
+
+            {/* Icon-only action buttons */}
+            <div className="shrink-0 flex items-center gap-1.5">
+              <button
+                onClick={() => setFullscreenOpen(true)}
+                className="w-8 h-8 flex items-center justify-center rounded-lg border border-gray-200 bg-white active:bg-gray-50"
+                title="Fullscreen"
+              >
+                <Maximize2 className="w-4 h-4 text-gray-600" />
+              </button>
+              <button
+                onClick={() => setViewMode('list')}
+                className="w-8 h-8 flex items-center justify-center rounded-lg border border-gray-200 bg-white active:bg-gray-50"
+                title="List view"
+              >
+                <BookOpen className="w-4 h-4 text-gray-600" />
+              </button>
+              <button
+                onClick={handleShuffle}
+                className="w-8 h-8 flex items-center justify-center rounded-lg border border-gray-200 bg-white active:bg-gray-50"
+                title="Shuffle"
+              >
+                <Shuffle className="w-4 h-4 text-gray-600" />
+              </button>
+            </div>
+          </div>
+        </header>
+
+          <main className="flex-1 overflow-y-auto max-w-4xl w-full mx-auto px-4 sm:px-6 py-4 sm:py-6">
             <div className="space-y-6">
               {/* Progress Bar */}
               <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-200">
