@@ -321,32 +321,32 @@ export default function GlossaryPage() {
   const glossaryCards = filteredTerms.map((term) => ({
     front: (
       <div className="text-center w-full">
-        <span className="inline-block px-3 py-1 text-[11px] font-bold uppercase tracking-widest rounded-full mb-5 bg-white/10 text-white/60">
+        <span className="inline-block px-3 py-1 text-[11px] font-bold uppercase tracking-widest rounded-full mb-5 bg-gray-100 text-gray-500">
           {term.category}
         </span>
-        <h2 className="text-3xl sm:text-5xl font-black text-white leading-tight mb-4 break-words">
+        <h2 className="text-3xl sm:text-5xl font-black text-gray-900 leading-tight mb-4 break-words">
           {term.term}
         </h2>
         {term.meaning && (
-          <p className="text-white/50 text-[15px] italic">&ldquo;{term.meaning}&rdquo;</p>
+          <p className="text-gray-400 text-[15px] italic">&ldquo;{term.meaning}&rdquo;</p>
         )}
-        <p className="text-white/25 text-[12px] mt-6">Tap to reveal definition</p>
+        <p className="text-gray-300 text-[12px] mt-6">Tap to reveal definition</p>
       </div>
     ),
     back: (
       <div className="w-full">
-        <h3 className="text-[18px] font-black text-white mb-4">{term.term}</h3>
-        <p className="text-white/80 text-[16px] leading-relaxed mb-5">{term.definition}</p>
+        <h3 className="text-[18px] font-black text-gray-900 mb-4">{term.term}</h3>
+        <p className="text-gray-700 text-[16px] leading-relaxed mb-5">{term.definition}</p>
         {term.memoryTrick && (
-          <div className="bg-white/10 rounded-2xl p-4">
-            <p className="text-[11px] font-bold text-white/50 uppercase tracking-widest mb-2">{term.memoryTrick.title}</p>
+          <div className="bg-gray-50 rounded-2xl p-4 border border-gray-100">
+            <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-2">{term.memoryTrick.title}</p>
             {term.memoryTrick.points.map((pt, i) => (
-              <p key={i} className="text-white/70 text-[13px] leading-snug mb-1">• {pt}</p>
+              <p key={i} className="text-gray-600 text-[13px] leading-snug mb-1">• {pt}</p>
             ))}
           </div>
         )}
         {term.clinicalUse && (
-          <p className="text-white/50 text-[13px] mt-3 leading-snug">{term.clinicalUse}</p>
+          <p className="text-gray-400 text-[13px] mt-3 leading-snug">{term.clinicalUse}</p>
         )}
       </div>
     ),

@@ -194,29 +194,29 @@ export default function StudyGuidePage() {
       front: (
         <div className="text-center w-full">
           {topic.pieceNumber && (
-            <p className="text-white/40 text-[12px] font-bold uppercase tracking-widest mb-3">{topic.pieceNumber}</p>
+            <p className="text-gray-400 text-[12px] font-bold uppercase tracking-widest mb-3">{topic.pieceNumber}</p>
           )}
-          <h2 className="text-2xl sm:text-4xl font-black text-white leading-tight mb-4 break-words">
+          <h2 className="text-2xl sm:text-4xl font-black text-gray-900 leading-tight mb-4 break-words">
             {topic.title}
           </h2>
           {topic.frontClue && (
-            <p className="text-white/60 text-[15px] leading-relaxed max-w-sm mx-auto">{topic.frontClue}</p>
+            <p className="text-gray-500 text-[15px] leading-relaxed max-w-sm mx-auto">{topic.frontClue}</p>
           )}
-          <p className="text-white/25 text-[12px] mt-6">Tap to reveal</p>
+          <p className="text-gray-300 text-[12px] mt-6">Tap to reveal</p>
         </div>
       ),
       back: (
         <div className="w-full">
-          <h3 className="text-[17px] font-black text-white mb-3">{topic.title}</h3>
+          <h3 className="text-[17px] font-black text-gray-900 mb-3">{topic.title}</h3>
           {topic.corePiece && (
-            <p className="text-white/80 text-[15px] leading-relaxed mb-4">{topic.corePiece}</p>
+            <p className="text-gray-700 text-[15px] leading-relaxed mb-4">{topic.corePiece}</p>
           )}
           {topic.keyTerms && topic.keyTerms.length > 0 && (
-            <div className="bg-white/10 rounded-2xl p-3">
-              <p className="text-[11px] font-bold text-white/40 uppercase tracking-widest mb-2">Key Terms</p>
+            <div className="bg-gray-50 rounded-2xl p-3 border border-gray-100">
+              <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-2">Key Terms</p>
               <div className="flex flex-wrap gap-1.5">
                 {topic.keyTerms.slice(0, 6).map((t: string, i: number) => (
-                  <span key={i} className="px-2 py-0.5 bg-white/10 rounded-full text-white/70 text-[12px]">{t}</span>
+                  <span key={i} className="px-2 py-0.5 bg-white rounded-full border border-gray-200 text-gray-600 text-[12px]">{t}</span>
                 ))}
               </div>
             </div>
