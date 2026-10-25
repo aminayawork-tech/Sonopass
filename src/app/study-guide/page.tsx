@@ -5,13 +5,13 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import AppLayout from '@/components/layout/AppLayout';
+
 import {
   Brain, Activity, AlertTriangle, ClipboardList, Zap,
-  Search, BookOpen, ChevronRight, Check, ArrowLeft,
-  Lightbulb, Star, ListChecks, Info, CheckCircle2,
-  ChevronLeft, RotateCw, XCircle, Shuffle, Maximize2
+  BookOpen, ChevronRight, Check, ArrowLeft,
+  CheckCircle2, ChevronLeft, RotateCw, XCircle, Shuffle,
+  Link2, Lock, ClipboardCheck, Sparkles,
 } from 'lucide-react';
-import FullscreenFlashcard from '@/components/FullscreenFlashcard';
 
 interface Image {
   filename: string;
@@ -90,7 +90,6 @@ export default function StudyGuidePage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [completedTopics, setCompletedTopics] = useState<Set<string>>(new Set());
   const [viewMode, setViewMode] = useState<'flashcards' | 'list'>('flashcards');
-  const [fullscreenOpen, setFullscreenOpen] = useState(false);
 
   // Flashcard state
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -149,7 +148,8 @@ export default function StudyGuidePage() {
   if (selectedCategory && viewMode === 'flashcards') {
     const topics = selectedCategory.topics;
     const currentTopic = topics[currentCardIndex];
-    const progress = topics.length > 0 ? Math.round(((knownTopics.size + unknownTopics.size) / topics.length) * 100) : 0;
+    const reviewed = knownTopics.size + unknownTopics.size;
+    const progress = topics.length > 0 ? Math.round((reviewed / topics.length) * 100) : 0;
 
     const handleNext = () => {
       if (currentCardIndex < topics.length - 1) {
@@ -189,56 +189,11 @@ export default function StudyGuidePage() {
       setIsFlipped(false);
     };
 
-    // Build cards for fullscreen mode
-    const studyCards = topics.map((topic: any) => ({
-      front: (
-        <div className="text-center w-full">
-          {topic.pieceNumber && (
-            <p className="text-gray-400 text-[12px] font-bold uppercase tracking-widest mb-3">{topic.pieceNumber}</p>
-          )}
-          <h2 className="text-2xl sm:text-4xl font-black text-gray-900 leading-tight mb-4 break-words">
-            {topic.title}
-          </h2>
-          {topic.frontClue && (
-            <p className="text-gray-500 text-[15px] leading-relaxed max-w-sm mx-auto">{topic.frontClue}</p>
-          )}
-          <p className="text-gray-300 text-[12px] mt-6">Tap to reveal</p>
-        </div>
-      ),
-      back: (
-        <div className="w-full">
-          <h3 className="text-[17px] font-black text-gray-900 mb-3">{topic.title}</h3>
-          {topic.corePiece && (
-            <p className="text-gray-700 text-[15px] leading-relaxed mb-4">{topic.corePiece}</p>
-          )}
-          {topic.keyTerms && topic.keyTerms.length > 0 && (
-            <div className="bg-gray-50 rounded-2xl p-3 border border-gray-100">
-              <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-2">Key Terms</p>
-              <div className="flex flex-wrap gap-1.5">
-                {topic.keyTerms.slice(0, 6).map((t: string, i: number) => (
-                  <span key={i} className="px-2 py-0.5 bg-white rounded-full border border-gray-200 text-gray-600 text-[12px]">{t}</span>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      ),
-    }));
-
     return (
-      <div className="h-screen overflow-hidden flex flex-col bg-[#F5F7FA]">
-        {fullscreenOpen && (
-          <FullscreenFlashcard
-            cards={studyCards}
-            initialIndex={currentCardIndex}
-            onClose={() => setFullscreenOpen(false)}
-          />
-        )}
-
-        {/* Header — fixed height, never wraps */}
-        <header className="shrink-0 px-4 py-3 bg-white border-b border-gray-100 shadow-sm">
+      <div className="h-screen overflow-hidden flex flex-col" style={{ backgroundColor: '#F5F7FA' }}>
+        {/* Header */}
+        <header className="shrink-0 px-4 py-3 bg-white border-b border-gray-100">
           <div className="flex items-center gap-2">
-            {/* Back */}
             <button
               onClick={() => {
                 setSelectedCategory(null);
@@ -246,267 +201,227 @@ export default function StudyGuidePage() {
                 setCurrentCardIndex(0);
                 setIsFlipped(false);
               }}
-              className="shrink-0 w-8 h-8 flex items-center justify-center rounded-lg text-gray-500 active:bg-gray-100"
+              className="shrink-0 w-8 h-8 flex items-center justify-center rounded-xl text-gray-500 active:bg-gray-100"
             >
-              <ArrowLeft className="w-4 h-4" />
+              <ArrowLeft size={18} />
             </button>
-
-            {/* Title — truncates instead of pushing buttons off screen */}
             <div className="flex-1 min-w-0">
               <p className="text-[15px] font-bold text-gray-900 truncate leading-tight">{selectedCategory.title}</p>
-              <p className="text-[11px] text-gray-400">Flashcard mode</p>
+              <p className="text-[11px] text-gray-400">{currentCardIndex + 1} of {topics.length}</p>
             </div>
-
-            {/* Icon-only action buttons */}
             <div className="shrink-0 flex items-center gap-1.5">
               <button
-                onClick={() => setFullscreenOpen(true)}
-                className="w-8 h-8 flex items-center justify-center rounded-lg border border-gray-200 bg-white active:bg-gray-50"
-                title="Fullscreen"
-              >
-                <Maximize2 className="w-4 h-4 text-gray-600" />
-              </button>
-              <button
                 onClick={() => setViewMode('list')}
-                className="w-8 h-8 flex items-center justify-center rounded-lg border border-gray-200 bg-white active:bg-gray-50"
-                title="List view"
+                className="w-8 h-8 flex items-center justify-center rounded-xl border border-gray-200 bg-white active:bg-gray-50"
               >
-                <BookOpen className="w-4 h-4 text-gray-600" />
+                <BookOpen size={15} className="text-gray-500" />
               </button>
               <button
                 onClick={handleShuffle}
-                className="w-8 h-8 flex items-center justify-center rounded-lg border border-gray-200 bg-white active:bg-gray-50"
-                title="Shuffle"
+                className="w-8 h-8 flex items-center justify-center rounded-xl border border-gray-200 bg-white active:bg-gray-50"
               >
-                <Shuffle className="w-4 h-4 text-gray-600" />
+                <Shuffle size={15} className="text-gray-500" />
               </button>
             </div>
           </div>
+
+          {/* Progress bar */}
+          <div className="mt-2.5 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+            <div
+              className="h-full rounded-full transition-all duration-500"
+              style={{ width: `${progress}%`, backgroundColor: '#3abc83' }}
+            />
+          </div>
         </header>
 
-          <main className="flex-1 overflow-y-auto max-w-4xl w-full mx-auto px-4 sm:px-6 py-4 sm:py-6">
-            <div className="space-y-6">
-              {/* Progress Bar */}
-              <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-200">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-semibold text-gray-700">Progress</span>
-                  <span className="text-sm text-gray-600">{knownTopics.size + unknownTopics.size} / {topics.length}</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-                  <div
-                    className="h-full bg-gradient-to-r from-emerald-500 to-green-600 transition-all duration-500 rounded-full"
-                    style={{ width: `${progress}%` }}
-                  />
-                </div>
-              </div>
+        {/* Scrollable content */}
+        <main className="flex-1 overflow-y-auto px-4 py-5">
+          <div className="max-w-lg mx-auto space-y-4">
 
-              {/* Flashcard */}
-              <div className="perspective-1000 min-h-[400px] sm:min-h-[450px]">
-                <div
-                  className={`relative w-full h-[70vh] sm:h-[450px] max-h-[600px] cursor-pointer transition-transform duration-500 preserve-3d`}
-                  onClick={() => setIsFlipped(!isFlipped)}
-                  style={{
-                    transformStyle: 'preserve-3d',
-                    transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-                  }}
-                >
-                  {/* Front of card - Topic Title & Summary */}
-                  <Card
-                    className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 border-0 shadow-2xl flex items-center justify-center p-6 sm:p-8 backface-hidden overflow-y-auto"
-                    style={{ backfaceVisibility: 'hidden' }}
-                  >
-                    <div className="text-center">
-                      <div className="mb-3 sm:mb-4">
-                        <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center mb-3 sm:mb-4">
-                          <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+            {/* Card */}
+            {!isFlipped ? (
+              /* Front */
+              <button
+                onClick={() => setIsFlipped(true)}
+                className="w-full text-left bg-white rounded-3xl shadow-sm border border-gray-100 p-6 active:scale-[0.99] transition-all"
+              >
+                {currentTopic.pieceNumber && (
+                  <p className="text-[11px] font-bold uppercase tracking-widest mb-3" style={{ color: '#3abc83' }}>
+                    {currentTopic.pieceNumber}
+                  </p>
+                )}
+                <h2 className="text-[22px] font-black text-gray-900 leading-snug mb-4">
+                  {currentTopic.title}
+                </h2>
+                {currentTopic.frontClue && (
+                  <p className="text-[15px] text-gray-500 leading-relaxed mb-5">
+                    {currentTopic.frontClue}
+                  </p>
+                )}
+                <div className="flex items-center gap-2 mt-2">
+                  <div className="h-px flex-1 bg-gray-100" />
+                  <p className="text-[12px] font-semibold text-gray-300">Tap to reveal</p>
+                  <div className="h-px flex-1 bg-gray-100" />
+                </div>
+              </button>
+            ) : (
+              /* Back */
+              <button
+                onClick={() => setIsFlipped(false)}
+                className="w-full text-left bg-white rounded-3xl shadow-sm border border-gray-100 p-6 active:scale-[0.99] transition-all"
+              >
+                <h2 className="text-[18px] font-black text-gray-900 leading-snug mb-5">
+                  {currentTopic.title}
+                </h2>
+
+                <div className="space-y-4">
+                  {currentTopic.corePiece && (
+                    <div className="rounded-2xl p-4" style={{ backgroundColor: '#f0fdf4' }}>
+                      <div className="flex items-center gap-2 mb-2">
+                        <CheckCircle2 size={14} style={{ color: '#3abc83' }} />
+                        <p className="text-[11px] font-bold uppercase tracking-widest" style={{ color: '#3abc83' }}>Core Concept</p>
+                      </div>
+                      <p className="text-[15px] text-gray-700 leading-relaxed">{currentTopic.corePiece}</p>
+                    </div>
+                  )}
+
+                  {currentTopic.whyLock && (
+                    <div className="rounded-2xl p-4 bg-blue-50">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Lock size={14} className="text-blue-500" />
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-blue-500">Why It Matters</p>
+                      </div>
+                      <p className="text-[15px] text-gray-700 leading-relaxed">{currentTopic.whyLock}</p>
+                    </div>
+                  )}
+
+                  {currentTopic.connectionEdges && currentTopic.connectionEdges.length > 0 && (
+                    <div className="rounded-2xl p-4 bg-purple-50">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Link2 size={14} className="text-purple-500" />
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-purple-500">Connections</p>
+                      </div>
+                      <ul className="space-y-1.5">
+                        {currentTopic.connectionEdges.map((edge: any, i: number) => (
+                          <li key={i} className="text-[14px] text-gray-700 flex items-start gap-2">
+                            <span className="text-gray-300 mt-0.5 shrink-0">—</span>
+                            <span>{typeof edge === 'string' ? edge : `${edge.title}: ${edge.link}`}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {currentTopic.registryApplication && (
+                    <div className="rounded-2xl p-4 bg-amber-50">
+                      <div className="flex items-center gap-2 mb-2">
+                        <ClipboardCheck size={14} className="text-amber-500" />
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-amber-500">Registry Application</p>
+                      </div>
+                      <p className="text-[15px] text-gray-700 leading-relaxed">{currentTopic.registryApplication}</p>
+                    </div>
+                  )}
+
+                  {currentTopic.checkpoint && (
+                    <div className="rounded-2xl p-4 bg-gray-50">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Sparkles size={14} className="text-gray-500" />
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Checkpoint</p>
+                      </div>
+                      {typeof currentTopic.checkpoint === 'string' ? (
+                        <p className="text-[15px] text-gray-700 leading-relaxed">{currentTopic.checkpoint}</p>
+                      ) : (
+                        <div className="space-y-2">
+                          {currentTopic.checkpoint.pearl && (
+                            <p className="text-[15px] text-gray-700 leading-relaxed">{currentTopic.checkpoint.pearl}</p>
+                          )}
+                          {currentTopic.checkpoint.reflection && (
+                            <p className="text-[14px] text-gray-500 italic leading-relaxed">{currentTopic.checkpoint.reflection}</p>
+                          )}
                         </div>
-                      </div>
-                      {currentTopic.pieceNumber && (
-                        <p className="text-sm sm:text-base text-blue-200 mb-2 font-medium">
-                          {currentTopic.pieceNumber}
-                        </p>
                       )}
-                      <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4 px-2">
-                        {currentTopic.title}
-                      </h2>
-                      {currentTopic.frontClue && (
-                        <p className="text-base sm:text-lg text-blue-100 mb-3 sm:mb-4 max-w-2xl mx-auto px-4">
-                          {currentTopic.frontClue}
-                        </p>
-                      )}
-                      <p className="text-blue-100 text-xs sm:text-sm">🧩 Tap to reveal the full puzzle piece</p>
                     </div>
-                  </Card>
+                  )}
 
-                  {/* Back of card - Puzzle Format */}
-                  <Card
-                    className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-600 border-0 shadow-2xl p-4 sm:p-6 lg:p-8 backface-hidden overflow-y-auto"
-                    style={{
-                      backfaceVisibility: 'hidden',
-                      transform: 'rotateY(180deg)',
-                    }}
-                  >
-                    <div className="text-white h-full flex flex-col max-w-3xl">
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 flex-shrink-0">
-                        {currentTopic.title}
-                      </h3>
-
-                      <div className="flex-1 overflow-y-auto space-y-3 sm:space-y-4 text-xs sm:text-sm">
-                        {/* Core Piece */}
-                        {currentTopic.corePiece && (
-                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
-                            <h4 className="font-semibold mb-2 flex items-center gap-2">
-                              <span>🧩</span> Core Piece
-                            </h4>
-                            <p className="leading-relaxed">{currentTopic.corePiece}</p>
-                          </div>
-                        )}
-
-                        {/* Why Lock */}
-                        {currentTopic.whyLock && (
-                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
-                            <h4 className="font-semibold mb-2 flex items-center gap-2">
-                              <span>🔐</span> The Why Lock
-                            </h4>
-                            <p className="leading-relaxed">{currentTopic.whyLock}</p>
-                          </div>
-                        )}
-
-                        {/* Connection Edges */}
-                        {currentTopic.connectionEdges && currentTopic.connectionEdges.length > 0 && (
-                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
-                            <h4 className="font-semibold mb-2 flex items-center gap-2">
-                              <span>🔗</span> Connection Edges
-                            </h4>
-                            <ul className="space-y-1.5">
-                              {currentTopic.connectionEdges.map((edge: any, i: number) => (
-                                <li key={i} className="flex items-start gap-2">
-                                  <span className="mt-0.5 flex-shrink-0">→</span>
-                                  <span className="flex-1">
-                                    {typeof edge === 'string' ? edge : `${edge.title}: ${edge.link}`}
-                                  </span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-
-                        {/* Registry Application */}
-                        {currentTopic.registryApplication && (
-                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
-                            <h4 className="font-semibold mb-2 flex items-center gap-2">
-                              <span>📋</span> Registry Application
-                            </h4>
-                            <p className="leading-relaxed italic">{currentTopic.registryApplication}</p>
-                          </div>
-                        )}
-
-                        {/* Checkpoint */}
-                        {currentTopic.checkpoint && (
-                          <div className="bg-white/10 rounded-lg p-3 sm:p-4">
-                            <h4 className="font-semibold mb-2 flex items-center gap-2">
-                              <span>✨</span> Puzzle Complete Checkpoint
-                            </h4>
-                            {typeof currentTopic.checkpoint === 'string' ? (
-                              <p className="leading-relaxed">{currentTopic.checkpoint}</p>
-                            ) : (
-                              <div className="space-y-1.5">
-                                {currentTopic.checkpoint.pearl && (
-                                  <p className="leading-relaxed"><span className="font-medium">Pearl:</span> {currentTopic.checkpoint.pearl}</p>
-                                )}
-                                {currentTopic.checkpoint.reflection && (
-                                  <p className="leading-relaxed italic"><span className="font-medium">Reflection:</span> {currentTopic.checkpoint.reflection}</p>
-                                )}
-                              </div>
-                            )}
-                          </div>
-                        )}
+                  {currentTopic.keyTerms && currentTopic.keyTerms.length > 0 && (
+                    <div>
+                      <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-2">Key Terms</p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {currentTopic.keyTerms.slice(0, 8).map((t: string, i: number) => (
+                          <span key={i} className="px-3 py-1 bg-gray-100 rounded-full text-[13px] text-gray-600 font-medium">{t}</span>
+                        ))}
                       </div>
-
-                      <p className="text-green-100 text-xs sm:text-sm mt-3 sm:mt-4 flex-shrink-0 text-center">Tap to flip back</p>
                     </div>
-                  </Card>
+                  )}
                 </div>
-              </div>
 
-              {/* Navigation Controls */}
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                <div className="flex gap-2 sm:gap-3 flex-1">
-                  <Button
-                    onClick={handlePrevious}
-                    disabled={currentCardIndex === 0}
-                    variant="outline"
-                    className="flex-1 h-11 sm:h-10 text-sm"
-                  >
-                    <ChevronLeft className="w-4 h-4 sm:mr-2" />
-                    <span className="hidden sm:inline">Previous</span>
-                  </Button>
-                  <Button
-                    onClick={handleNext}
-                    disabled={currentCardIndex === topics.length - 1}
-                    variant="outline"
-                    className="flex-1 h-11 sm:h-10 text-sm"
-                  >
-                    <span className="hidden sm:inline">Next</span>
-                    <ChevronRight className="w-4 h-4 sm:ml-2" />
-                  </Button>
+                <div className="flex items-center gap-2 mt-5">
+                  <div className="h-px flex-1 bg-gray-100" />
+                  <p className="text-[12px] font-semibold text-gray-300">Tap to flip back</p>
+                  <div className="h-px flex-1 bg-gray-100" />
                 </div>
-              </div>
+              </button>
+            )}
 
-              {/* Know / Don't Know Buttons */}
-              {isFlipped && (
-                <div className="flex gap-2 sm:gap-4">
-                  <Button
+            {/* Know / Review buttons — always visible after flip */}
+            <div className="flex gap-3">
+              <button
+                onClick={handlePrevious}
+                disabled={currentCardIndex === 0}
+                className="w-11 h-11 flex items-center justify-center rounded-2xl border border-gray-200 bg-white disabled:opacity-30 active:bg-gray-50 shrink-0"
+              >
+                <ChevronLeft size={18} className="text-gray-500" />
+              </button>
+
+              {isFlipped ? (
+                <>
+                  <button
                     onClick={handleDontKnow}
-                    variant="outline"
-                    className="flex-1 h-12 sm:h-11 border-2 border-red-500 text-red-600 hover:bg-red-50 text-sm sm:text-base"
+                    className="flex-1 h-11 rounded-2xl border-2 border-red-200 bg-red-50 text-red-600 text-[14px] font-bold active:bg-red-100 transition-all flex items-center justify-center gap-2"
                   >
-                    <XCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2" />
-                    <span className="hidden xs:inline">Need to Review</span>
-                    <span className="xs:hidden">Review</span>
-                  </Button>
-                  <Button
+                    <XCircle size={16} />
+                    Review Again
+                  </button>
+                  <button
                     onClick={handleKnow}
-                    className="flex-1 h-12 sm:h-11 bg-emerald-600 hover:bg-emerald-700 text-sm sm:text-base"
+                    className="flex-1 h-11 rounded-2xl text-white text-[14px] font-bold active:opacity-90 transition-all flex items-center justify-center gap-2"
+                    style={{ backgroundColor: '#3abc83' }}
                   >
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2" />
-                    <span className="hidden xs:inline">I Know This</span>
-                    <span className="xs:hidden">Know</span>
-                  </Button>
-                </div>
+                    <CheckCircle2 size={16} />
+                    Got It
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={() => setIsFlipped(true)}
+                  className="flex-1 h-11 rounded-2xl bg-white border border-gray-200 text-gray-700 text-[14px] font-semibold active:bg-gray-50 transition-all"
+                >
+                  Reveal Answer
+                </button>
               )}
 
-              {/* Card Counter */}
-              <div className="text-center">
-                <p className="text-sm text-gray-600">
-                  Card {currentCardIndex + 1} of {topics.length}
-                </p>
-                {knownTopics.size > 0 || unknownTopics.size > 0 ? (
-                  <p className="text-xs text-gray-500 mt-1">
-                    <span className="text-emerald-600 font-semibold">{knownTopics.size} mastered</span>
-                    {' • '}
-                    <span className="text-red-600 font-semibold">{unknownTopics.size} to review</span>
-                  </p>
-                ) : null}
-              </div>
+              <button
+                onClick={handleNext}
+                disabled={currentCardIndex === topics.length - 1}
+                className="w-11 h-11 flex items-center justify-center rounded-2xl border border-gray-200 bg-white disabled:opacity-30 active:bg-gray-50 shrink-0"
+              >
+                <ChevronRight size={18} className="text-gray-500" />
+              </button>
             </div>
-          </main>
 
-          <style jsx global>{`
-            .perspective-1000 {
-              perspective: 1000px;
-            }
-            .preserve-3d {
-              transform-style: preserve-3d;
-            }
-            .backface-hidden {
-              backface-visibility: hidden;
-              -webkit-backface-visibility: hidden;
-            }
-          `}</style>
-        </div>
-      );
-    }
+            {/* Stats */}
+            {(knownTopics.size > 0 || unknownTopics.size > 0) && (
+              <div className="flex items-center justify-center gap-4 py-1">
+                <span className="text-[13px] font-semibold" style={{ color: '#3abc83' }}>{knownTopics.size} mastered</span>
+                <span className="text-gray-200">·</span>
+                <span className="text-[13px] font-semibold text-red-400">{unknownTopics.size} to review</span>
+              </div>
+            )}
+          </div>
+        </main>
+      </div>
+    );
+  }
 
   // Category Detail View (List mode)
   if (selectedCategory) {
