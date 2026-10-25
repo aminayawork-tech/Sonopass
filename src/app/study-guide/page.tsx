@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -97,6 +97,11 @@ export default function StudyGuidePage() {
   const [knownTopics, setKnownTopics] = useState<Set<number>>(new Set());
   const [unknownTopics, setUnknownTopics] = useState<Set<number>>(new Set());
 
+  // Swipe gesture state
+  const touchStartX = useRef(0);
+  const touchStartY = useRef(0);
+  const [swipeDelta, setSwipeDelta] = useState(0);
+
   useEffect(() => {
     fetch('/study-guide-puzzle.json')
       .then(res => res.json())
@@ -189,6 +194,41 @@ export default function StudyGuidePage() {
       setIsFlipped(false);
     };
 
+    const SWIPE_THRESHOLD = 60;
+
+    const onTouchStart = (e: React.TouchEvent) => {
+      touchStartX.current = e.touches[0].clientX;
+      touchStartY.current = e.touches[0].clientY;
+    };
+
+    const onTouchMove = (e: React.TouchEvent) => {
+      const dx = e.touches[0].clientX - touchStartX.current;
+      const dy = e.touches[0].clientY - touchStartY.current;
+      // Only track horizontal swipes; let vertical scroll pass through
+      if (Math.abs(dx) < Math.abs(dy)) return;
+      e.preventDefault();
+      setSwipeDelta(Math.max(-140, Math.min(140, dx)));
+    };
+
+    const onTouchEnd = () => {
+      if (swipeDelta > SWIPE_THRESHOLD) {
+        // Swipe right
+        if (isFlipped) { handleKnow(); }
+        else { handlePrevious(); }
+      } else if (swipeDelta < -SWIPE_THRESHOLD) {
+        // Swipe left
+        if (isFlipped) { handleDontKnow(); }
+        else { handleNext(); }
+      }
+      setSwipeDelta(0);
+    };
+
+    const swipeIntent = swipeDelta > SWIPE_THRESHOLD
+      ? (isFlipped ? 'know' : 'prev')
+      : swipeDelta < -SWIPE_THRESHOLD
+        ? (isFlipped ? 'review' : 'next')
+        : null;
+
     return (
       <div className="h-screen overflow-hidden flex flex-col" style={{ backgroundColor: '#F5F7FA' }}>
         {/* Header */}
@@ -238,12 +278,48 @@ export default function StudyGuidePage() {
         <main className="flex-1 overflow-y-auto px-4 py-5">
           <div className="max-w-lg mx-auto space-y-4">
 
-            {/* Card */}
+            {/* Card — swipeable */}
+            <div
+              onTouchStart={onTouchStart}
+              onTouchMove={onTouchMove}
+              onTouchEnd={onTouchEnd}
+              style={{
+                transform: `translateX(${swipeDelta}px) rotate(${swipeDelta * 0.025}deg)`,
+                transition: swipeDelta === 0 ? 'transform 0.3s ease' : 'none',
+                position: 'relative',
+              }}
+            >
+              {/* Swipe intent overlay */}
+              {swipeIntent === 'know' && (
+                <div className="absolute inset-0 rounded-3xl z-10 flex items-center justify-center pointer-events-none"
+                  style={{ backgroundColor: 'rgba(58,188,131,0.15)', border: '2px solid #3abc83' }}>
+                  <span className="text-[20px] font-black" style={{ color: '#3abc83' }}>Got It</span>
+                </div>
+              )}
+              {swipeIntent === 'review' && (
+                <div className="absolute inset-0 rounded-3xl z-10 flex items-center justify-center pointer-events-none"
+                  style={{ backgroundColor: 'rgba(239,68,68,0.1)', border: '2px solid #ef4444' }}>
+                  <span className="text-[20px] font-black text-red-500">Review</span>
+                </div>
+              )}
+              {swipeIntent === 'prev' && (
+                <div className="absolute inset-0 rounded-3xl z-10 flex items-center justify-start pl-5 pointer-events-none"
+                  style={{ backgroundColor: 'rgba(99,102,241,0.08)', border: '2px solid #6366f1' }}>
+                  <ChevronLeft size={28} className="text-indigo-400" />
+                </div>
+              )}
+              {swipeIntent === 'next' && (
+                <div className="absolute inset-0 rounded-3xl z-10 flex items-center justify-end pr-5 pointer-events-none"
+                  style={{ backgroundColor: 'rgba(99,102,241,0.08)', border: '2px solid #6366f1' }}>
+                  <ChevronRight size={28} className="text-indigo-400" />
+                </div>
+              )}
+
             {!isFlipped ? (
               /* Front */
               <button
                 onClick={() => setIsFlipped(true)}
-                className="w-full text-left bg-white rounded-3xl shadow-sm border border-gray-100 p-6 active:scale-[0.99] transition-all"
+                className="w-full text-left bg-white rounded-3xl shadow-sm border border-gray-100 p-6"
               >
                 {currentTopic.pieceNumber && (
                   <p className="text-[11px] font-bold uppercase tracking-widest mb-3" style={{ color: '#3abc83' }}>
@@ -260,7 +336,7 @@ export default function StudyGuidePage() {
                 )}
                 <div className="flex items-center gap-2 mt-2">
                   <div className="h-px flex-1 bg-gray-100" />
-                  <p className="text-[12px] font-semibold text-gray-300">Tap to reveal</p>
+                  <p className="text-[12px] font-semibold text-gray-300">Tap to reveal · swipe to navigate</p>
                   <div className="h-px flex-1 bg-gray-100" />
                 </div>
               </button>
@@ -268,7 +344,7 @@ export default function StudyGuidePage() {
               /* Back */
               <button
                 onClick={() => setIsFlipped(false)}
-                className="w-full text-left bg-white rounded-3xl shadow-sm border border-gray-100 p-6 active:scale-[0.99] transition-all"
+                className="w-full text-left bg-white rounded-3xl shadow-sm border border-gray-100 p-6"
               >
                 <h2 className="text-[18px] font-black text-gray-900 leading-snug mb-5">
                   {currentTopic.title}
@@ -357,11 +433,12 @@ export default function StudyGuidePage() {
 
                 <div className="flex items-center gap-2 mt-5">
                   <div className="h-px flex-1 bg-gray-100" />
-                  <p className="text-[12px] font-semibold text-gray-300">Tap to flip back</p>
+                  <p className="text-[12px] font-semibold text-gray-300">Tap to flip · swipe to rate</p>
                   <div className="h-px flex-1 bg-gray-100" />
                 </div>
               </button>
             )}
+            </div>{/* end swipeable wrapper */}
 
             {/* Know / Review buttons — always visible after flip */}
             <div className="flex gap-3">
