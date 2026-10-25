@@ -174,7 +174,7 @@ export default function ProgressPage() {
                 Your score of {weakest.percentage}% here is your biggest opportunity to raise your overall readiness.
               </p>
               <button
-                onClick={() => router.push(`/exam/study?category=${encodeURIComponent(weakest.name)}`)}
+                onClick={() => router.push('/practice')}
                 className="mx-5 mt-4 mb-5 flex items-center gap-1.5 text-[13px] font-semibold active:opacity-70 transition-opacity"
                 style={{ color: '#3abc83' }}
               >

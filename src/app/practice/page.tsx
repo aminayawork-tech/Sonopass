@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useModality } from '@/contexts/ModalityContext';
 import {
-  BookOpen, ChevronRight, Zap, Target, Heart, Brain,
-  Activity, BarChart3, AlertTriangle, Stethoscope, Waves,
+  ChevronRight, Zap, Target, Heart, Brain,
+  Activity, AlertTriangle, Stethoscope, Waves,
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
 
@@ -20,18 +20,28 @@ const CARD_GRADIENTS = [
   'linear-gradient(135deg, #b45309 0%, #d97706 100%)',
 ];
 
+// Maps generic icon keys (fallback path)
 const ICON_MAP: { [key: string]: any } = {
-  '🫀': Heart, 'heart': Heart,
-  '📖': BookOpen, 'book': BookOpen,
-  '🧠': Brain, 'brain': Brain,
-  '❤️': Heart,
-  '📊': BarChart3, 'activity': Activity,
-  '⚠️': AlertTriangle, 'alert-triangle': AlertTriangle,
-  '⚡': Zap, 'zap': Zap,
-  '🔊': Waves, 'waves': Waves,
-  '🎯': Target, 'target': Target,
-  '🛡️': Stethoscope, 'shield': Stethoscope,
-  'default': BookOpen,
+  'heart': Heart, 'brain': Brain, 'activity': Activity,
+  'alert-triangle': AlertTriangle, 'zap': Zap, 'waves': Waves,
+  'target': Target, 'shield': Stethoscope, 'default': Stethoscope,
+};
+
+// Maps category name → icon component
+const CATEGORY_ICONS: { [key: string]: any } = {
+  'Cerebrovascular': Brain,
+  'Cerebrovascular System': Brain,
+  'Arterial Anatomy': Heart,
+  'Arterial Hemodynamics': Activity,
+  'Arterial Disease': AlertTriangle,
+  'Arterial Testing': Target,
+  'Venous Anatomy': Waves,
+  'Venous Hemodynamics': Activity,
+  'Venous Disease': AlertTriangle,
+  'Venous Testing': Target,
+  'Physics & Instrumentation': Zap,
+  'General & Other': Stethoscope,
+  'Vascular': Stethoscope,
 };
 
 export default function StudyModePage() {
@@ -93,19 +103,6 @@ export default function StudyModePage() {
               <ChevronRight size={16} className="text-gray-300 shrink-0" />
             </button>
 
-            <button
-              onClick={() => router.push('/exam/study')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
-            >
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-blue-50">
-                <Target size={17} className="text-blue-500" strokeWidth={1.75} />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-[14px] font-bold text-gray-900">All Topics Quiz</p>
-                <p className="text-[11px] text-gray-400 leading-snug">Practice with instant feedback</p>
-              </div>
-              <ChevronRight size={16} className="text-gray-300 shrink-0" />
-            </button>
           </div>
         </div>
 
@@ -120,7 +117,7 @@ export default function StudyModePage() {
           ) : (
             <div className="grid grid-cols-2 gap-3">
               {categories.map((cat, idx) => {
-                const IconComponent = ICON_MAP[cat.icon] || BookOpen;
+                const IconComponent = CATEGORY_ICONS[cat.name] || ICON_MAP[cat.icon] || Stethoscope;
                 const gradient = CARD_GRADIENTS[idx % CARD_GRADIENTS.length];
                 return (
                   <button
