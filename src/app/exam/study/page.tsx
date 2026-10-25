@@ -15,6 +15,7 @@ import AppLayout from '@/components/layout/AppLayout';
 export default function StudyPage() {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get('category');
+  const directParam = searchParams.get('direct') === '1';
 
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [categoryMap, setCategoryMap] = useState<Map<string, any[]>>(new Map());
@@ -82,6 +83,7 @@ export default function StudyPage() {
         key={selectedCategory}
         questions={rawQuestions}
         title={selectedCategory}
+        skipContent={directParam}
         onBack={() => setSelectedCategory(null)}
       />
     );
@@ -147,13 +149,15 @@ export default function StudyPage() {
 function StudyCategoryExam({
   questions,
   title,
-  onBack
+  skipContent = false,
+  onBack,
 }: {
   questions: any[];
   title: string;
+  skipContent?: boolean;
   onBack: () => void;
 }) {
-  const [showContent, setShowContent] = useState(true);
+  const [showContent, setShowContent] = useState(!skipContent);
   const [shuffled, setShuffled] = useState<any[]>([]);
   const [studyContent, setStudyContent] = useState<any>(null);
   const { currentModality, loadStudyCategories } = useModality();
