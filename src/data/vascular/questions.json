@@ -92,7 +92,9 @@
       "hint": "Arterial ulcers result from poor blood supply (ischemia), affecting the skin's appearance and texture.",
       "keywords": [
         "arterial ulcer"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/atherosclerotic-plaque-moderate.png",
+      "imageCaption": "Cross-section illustration of atherosclerotic plaque causing significant arterial stenosis"
     },
     {
       "id": "exam1_q4",
@@ -252,7 +254,7 @@
     {
       "id": "exam1_q9",
       "number": 9,
-      "question": "Which artery is likely to be involved in a patient with thromboangiitis obliterans (Buerger\u2019s Disease)?",
+      "question": "Which artery is likely to be involved in a patient with thromboangiitis obliterans (Buerger’s Disease)?",
       "options": [
         {
           "letter": "A",
@@ -463,7 +465,9 @@
       "hint": "Think about how stenosis/occlusion affects flow hemodynamics.",
       "keywords": [
         "occlusion"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/arterial-waveform-types.jpeg",
+      "imageCaption": "Arterial Doppler waveform patterns — note differences in systolic peak and diastolic flow across waveform types"
     },
     {
       "id": "exam1_q16",
@@ -1637,7 +1641,7 @@
         },
         {
           "letter": "C",
-          "text": "Raynaud\u2019s disease"
+          "text": "Raynaud’s disease"
         },
         {
           "letter": "D",
@@ -1711,7 +1715,9 @@
       "hint": "Think about normal physiologic values and patterns.",
       "keywords": [
         "waveform"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/arterial-waveform-types.jpeg",
+      "imageCaption": "Doppler waveform patterns — triphasic (high resistance, normal fasting SMA), biphasic, and monophasic (low resistance)"
     },
     {
       "id": "exam1_q57",
@@ -1743,7 +1749,9 @@
         "waveform",
         "Doppler",
         "carotid"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/samplegate-off-center.jpeg",
+      "imageCaption": "Duplex ultrasound showing spectral Doppler waveform — sample gate placement affects spectral appearance"
     },
     {
       "id": "exam1_q58",
@@ -1907,7 +1915,7 @@
         },
         {
           "letter": "B",
-          "text": "Raynaud\u2019s disease"
+          "text": "Raynaud’s disease"
         },
         {
           "letter": "C",
@@ -3454,7 +3462,9 @@
       "hint": "Consider Doppler waveform characteristics and flow patterns.",
       "keywords": [
         "waveform"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/Triphasic_Waveform.jpeg",
+      "imageCaption": "Duplex ultrasound with color Doppler and spectral waveform from a lower extremity artery"
     },
     {
       "id": "exam1_q116",
@@ -3515,7 +3525,9 @@
       "keywords": [
         "waveform",
         "Doppler"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/Triphasic-A-biphasic-B-and-monophasic-C-Doppler-waveforms.png",
+      "imageCaption": "Spectral Doppler waveform types: (A) triphasic — highest resistance, (B) biphasic, (C) monophasic — lowest resistance"
     },
     {
       "id": "exam1_q118",
@@ -3575,7 +3587,9 @@
         "waveform",
         "Doppler",
         "femoral"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/goodsamplegate.jpeg",
+      "imageCaption": "Duplex ultrasound of the proximal superficial femoral artery with properly positioned sample gate"
     },
     {
       "id": "exam1_q120",
@@ -3606,7 +3620,9 @@
       "keywords": [
         "waveform",
         "femoral"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/spectral-broadening.jpeg",
+      "imageCaption": "Spectral Doppler waveform from the common femoral artery showing spectral characteristics"
     },
     {
       "id": "exam1_q121",
@@ -3636,7 +3652,9 @@
       "hint": "Carefully consider each option and the key concept being tested.",
       "keywords": [
         "carotid"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/atherosclerotic-plaque-longitudinal.png",
+      "imageCaption": "Cross-section of a vessel wall: atherosclerotic plaque with large lipid core, thin fibrous cap, and surface disruption (vulnerable plaque)"
     },
     {
       "id": "exam1_q122",
@@ -3666,7 +3684,9 @@
       "hint": "Consider Doppler waveform characteristics and flow patterns.",
       "keywords": [
         "Doppler"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/window-filling.jpeg",
+      "imageCaption": "Spectral Doppler waveform demonstrating characteristic flow pattern for interpretation"
     }
   ],
   "exam2": [
@@ -3845,7 +3865,7 @@
     {
       "id": "exam2_q7",
       "number": 7,
-      "question": "What condition is likely when a patient presents with intermittent pallor followed by cyanosis of the ha\u2026",
+      "question": "What condition is likely when a patient presents with intermittent pallor followed by cyanosis of the ha…",
       "options": [
         {
           "letter": "A",
@@ -3903,7 +3923,7 @@
     {
       "id": "exam2_q9",
       "number": 9,
-      "question": "Which condition is most likely to cause decreased femoral pulses and an abdominal bruit in an 18-year-old hypertension m\u2026",
+      "question": "Which condition is most likely to cause decreased femoral pulses and an abdominal bruit in an 18-year-old hypertension m…",
       "options": [
         {
           "letter": "A",
@@ -4077,7 +4097,9 @@
       "hint": "Consider Doppler waveform characteristics and flow patterns.",
       "keywords": [
         "waveform"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/arterial-waveform-classification.png",
+      "imageCaption": "Arterial Doppler waveform classification (Cathignol-Descotes and Saint-Bonnet systems) with labeled cardiac cycle phases"
     },
     {
       "id": "exam2_q15",
@@ -4343,7 +4365,9 @@
       "hint": "Focus on arterial anatomy and the specific vessel mentioned in the options.",
       "keywords": [
         "waveform"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/waveform-classification.jpeg",
+      "imageCaption": "Doppler waveform morphology types correlated with degree of arterial stenosis (Descotes classification, Types 2–4)"
     },
     {
       "id": "exam2_q24",
@@ -4960,7 +4984,9 @@
       "hint": "Consider Doppler waveform characteristics and flow patterns.",
       "keywords": [
         "waveform"
-      ]
+      ],
+      "imageUrl": "/images/study-guide/window-filling.jpeg",
+      "imageCaption": "Spectral Doppler waveform from a lower extremity artery — note spectral window characteristics"
     },
     {
       "id": "exam2_q45",
@@ -4988,7 +5014,9 @@
       "correctAnswer": "A",
       "explanation": "When measuring flow volume in a dialysis access, the sample volume should be expanded to cover the entire vessel diameter to capture the full velocity profile for accurate volume flow calculation (Q = Vmean x Area).",
       "hint": "Carefully consider each option and the key concept being tested.",
-      "keywords": []
+      "keywords": [],
+      "imageUrl": "/images/study-guide/samplegate-tobroad.jpeg",
+      "imageCaption": "Duplex ultrasound showing sample gate size and position within vessel lumen during flow volume measurement"
     },
     {
       "id": "exam2_q46",
@@ -5477,7 +5505,7 @@
       ],
       "category": "Cerebrovascular",
       "correctAnswer": "B",
-      "explanation": "An arteriovenous fistula is considered mature and ready for cannulation when blood flow volume reaches at least 600 mL/min. Other criteria include diameter \u22656mm and depth <6mm from the skin surface.",
+      "explanation": "An arteriovenous fistula is considered mature and ready for cannulation when blood flow volume reaches at least 600 mL/min. Other criteria include diameter ≥6mm and depth <6mm from the skin surface.",
       "hint": "Carefully consider each option and the key concept being tested.",
       "keywords": []
     },
@@ -5533,7 +5561,7 @@
       ],
       "category": "General & Other",
       "correctAnswer": "C",
-      "explanation": "Cellulitis presents with fever, local warmth, erythema (redness), and swelling \u2014 all consistent with this patient's presentation. DVT may cause swelling but typically lacks the prominent inflammatory signs and fever.",
+      "explanation": "Cellulitis presents with fever, local warmth, erythema (redness), and swelling — all consistent with this patient's presentation. DVT may cause swelling but typically lacks the prominent inflammatory signs and fever.",
       "hint": "Think about the most common or typical findings.",
       "keywords": []
     },
@@ -5884,7 +5912,7 @@
     {
       "id": "exam3_q5",
       "number": 5,
-      "question": "What is the best way to adjust the console controls to eliminate the Doppler artifact? FR 12Hz 60\u00b0 Pt 2a \u2018 EW 55% 56% 7) . WF S0H2 P Low a yt \u00e9mn HGen s cE 65% 5250Hz WF 210 Med 5 ute \u00a5",
+      "question": "What is the best way to adjust the console controls to eliminate the Doppler artifact? FR 12Hz 60° Pt 2a ‘ EW 55% 56% 7) . WF S0H2 P Low a yt émn HGen s cE 65% 5250Hz WF 210 Med 5 ute ¥",
       "options": [
         {
           "letter": "A",
@@ -5905,13 +5933,13 @@
       ],
       "category": "Vascular",
       "correctAnswer": "D",
-      "explanation": "The current settings have the baseline at 0 at the very bottom of the screen. Extremity arterial flow normally demonstrates antegrade and retrograde flow. The baseline should be raised to demonstrate the flow moving in each direction \u00bb",
+      "explanation": "The current settings have the baseline at 0 at the very bottom of the screen. Extremity arterial flow normally demonstrates antegrade and retrograde flow. The baseline should be raised to demonstrate the flow moving in each direction »",
       "imageFile": "mock-exam-3_127.png"
     },
     {
       "id": "exam3_q6",
       "number": 6,
-      "question": "Which of the following is a critical finding? \u2018A: Atherosclerotic occlusion of the superficial femoral artery",
+      "question": "Which of the following is a critical finding? ‘A: Atherosclerotic occlusion of the superficial femoral artery",
       "options": [
         {
           "letter": "A",
@@ -5992,7 +6020,7 @@
     {
       "id": "exam3_q9",
       "number": 9,
-      "question": "If the left proximal CCA demonstrates a PSV of 35cm/s and the right proximal CCA demonstrates a PSV of 115cm/s, which of the following could explain the findings? \u2018A: congestive heart failure",
+      "question": "If the left proximal CCA demonstrates a PSV of 35cm/s and the right proximal CCA demonstrates a PSV of 115cm/s, which of the following could explain the findings? ‘A: congestive heart failure",
       "options": [
         {
           "letter": "A",
@@ -6181,7 +6209,7 @@
     {
       "id": "exam3_q16",
       "number": 16,
-      "question": "Which of the following is the best patient position for performing a transcranial Doppler exam to obtain a waveform from both of the middle cerebral arteries? \u2018A: supine with chin in neutral position",
+      "question": "Which of the following is the best patient position for performing a transcranial Doppler exam to obtain a waveform from both of the middle cerebral arteries? ‘A: supine with chin in neutral position",
       "options": [
         {
           "letter": "A",
@@ -6284,7 +6312,9 @@
       "category": "Vascular",
       "correctAnswer": "A",
       "explanation": "Anytime the procedure could be detrimental to the patient, you should clarify the order with the radiologist or referring physician. This patient demonstrates symptoms and signs of a possible acute DVT. Applying pressure cuffs to a vein with thrombus in it could cause emboli propagation.",
-      "imageFile": "mock-exam-3_96.png"
+      "imageFile": "mock-exam-3_96.png",
+      "imageUrl": "/images/study-guide/gsv-thrombosis-arrow.jpg",
+      "imageCaption": "B-mode sagittal ultrasound of the great saphenous vein — arrow indicates echogenic thrombus within the lumen"
     },
     {
       "id": "exam3_q20",
@@ -6370,7 +6400,7 @@
     {
       "id": "exam3_q23",
       "number": 23,
-      "question": "Which of the following will increase the amplitude of a digital PPG tracing? \u2018A: warming the patient's foot and toes",
+      "question": "Which of the following will increase the amplitude of a digital PPG tracing? ‘A: warming the patient's foot and toes",
       "options": [
         {
           "letter": "A",
@@ -6478,7 +6508,7 @@
     {
       "id": "exam3_q27",
       "number": 27,
-      "question": "Which of the following describes a cardiovascular application of the Bernoulli Principle? \u2018A: explains the reason for aliasing of the Doppler signal at high velocities",
+      "question": "Which of the following describes a cardiovascular application of the Bernoulli Principle? ‘A: explains the reason for aliasing of the Doppler signal at high velocities",
       "options": [
         {
           "letter": "A",
@@ -6640,7 +6670,7 @@
     {
       "id": "exam3_q33",
       "number": 33,
-      "question": "A patient complains of left arm numbness and pain that increases in severity when it is cold outside. An upper extremity arterial duplex exam demonstrates a>50% stenosis in the distal subclavian artery. The PPG exam demonstrates an additional decrease in digital flow with cold exposure. What explains these findings? \u2018A: Thoracic Outlet Syndrome",
+      "question": "A patient complains of left arm numbness and pain that increases in severity when it is cold outside. An upper extremity arterial duplex exam demonstrates a>50% stenosis in the distal subclavian artery. The PPG exam demonstrates an additional decrease in digital flow with cold exposure. What explains these findings? ‘A: Thoracic Outlet Syndrome",
       "options": [
         {
           "letter": "A",
@@ -6937,7 +6967,7 @@
     {
       "id": "exam3_q44",
       "number": 44,
-      "question": "While performing an arterial Duplex exam, you obtain a triphasic waveform in the proximal femoral artery, but the rest of the leg arteries demonstrate a monophasic waveform. The brachial pressure is 140mmHg. Which of the following lists the correct expected pressures from the 4-cuff segmental exam on the same patient? \u2018A: Upper Thigh 155mmg, Distal Thigh 155mmHg, Popliteal 120mmHg, PTA 110mmHg",
+      "question": "While performing an arterial Duplex exam, you obtain a triphasic waveform in the proximal femoral artery, but the rest of the leg arteries demonstrate a monophasic waveform. The brachial pressure is 140mmHg. Which of the following lists the correct expected pressures from the 4-cuff segmental exam on the same patient? ‘A: Upper Thigh 155mmg, Distal Thigh 155mmHg, Popliteal 120mmHg, PTA 110mmHg",
       "options": [
         {
           "letter": "A",
@@ -6959,7 +6989,9 @@
       "category": "Vascular",
       "correctAnswer": "C",
       "explanation": "A drop in pressure >30mmHg between two adjacent segments indicates significant disease in the artery between the two cuffs. If there is a suspected mid SFA stenosis or occlusion, there will be a significant drop in pressure between the two thigh cuffs.",
-      "imageFile": "mock-exam-3_72.png"
+      "imageFile": "mock-exam-3_72.png",
+      "imageUrl": "/images/study-guide/Triphasic-A-biphasic-B-and-monophasic-C-Doppler-waveforms.png",
+      "imageCaption": "Comparison of triphasic vs monophasic Doppler waveforms in peripheral arterial evaluation"
     },
     {
       "id": "exam3_q45",
@@ -7072,7 +7104,7 @@
     {
       "id": "exam3_q49",
       "number": 49,
-      "question": "During a color evaluation of the common femoral vein, the patient is asked to perform the Valsalva maneuver. The blue color in the CFV changes to red for approximately 3 seconds before returning to blue. What do these color Doppler findings indicate? \u2018A: The CFV has minimal venous insufficiency.",
+      "question": "During a color evaluation of the common femoral vein, the patient is asked to perform the Valsalva maneuver. The blue color in the CFV changes to red for approximately 3 seconds before returning to blue. What do these color Doppler findings indicate? ‘A: The CFV has minimal venous insufficiency.",
       "options": [
         {
           "letter": "A",
@@ -7126,7 +7158,7 @@
     {
       "id": "exam3_q51",
       "number": 51,
-      "question": "Which of the following is a limitation of a CW Doppler evaluation of the lower extremity veins? \u2018A: Cannot be certain which vein you are evaluating",
+      "question": "Which of the following is a limitation of a CW Doppler evaluation of the lower extremity veins? ‘A: Cannot be certain which vein you are evaluating",
       "options": [
         {
           "letter": "A",
@@ -7180,7 +7212,7 @@
     {
       "id": "exam3_q53",
       "number": 53,
-      "question": "In the circle of Willis, if a difference is present between the velocities taken in the same vessel on both sides, this can indicate intracerebral disease. \u2018A: >20%",
+      "question": "In the circle of Willis, if a difference is present between the velocities taken in the same vessel on both sides, this can indicate intracerebral disease. ‘A: >20%",
       "options": [
         {
           "letter": "A",
@@ -7526,7 +7558,9 @@
       "category": "Vascular",
       "correctAnswer": "D",
       "explanation": "Venous gangrene usually involves the foot and all toes, while arterial gangrene usually involves one or two toes.",
-      "imageFile": "mock-exam-3_40.png"
+      "imageFile": "mock-exam-3_40.png",
+      "imageUrl": "/images/study-guide/atherosclerotic-plaque-advanced.png",
+      "imageCaption": "Cross-section illustration of advanced atherosclerotic plaque with superimposed thrombus, severely reducing luminal diameter"
     },
     {
       "id": "exam3_q66",
@@ -7579,7 +7613,7 @@
       ],
       "category": "Vascular",
       "correctAnswer": "B",
-      "explanation": "DVT in the deep system forces any remaining flow into areas of lower pressure, the perforators. Flow exits the deep system through the perforators to try to \u201cescape\u201d into the patent superficial system.",
+      "explanation": "DVT in the deep system forces any remaining flow into areas of lower pressure, the perforators. Flow exits the deep system through the perforators to try to “escape” into the patent superficial system.",
       "imageFile": "mock-exam-3_39.png"
     },
     {
@@ -7633,7 +7667,7 @@
       ],
       "category": "Vascular",
       "correctAnswer": "C",
-      "explanation": "The distal thigh perforators, formerly known as Dodd's perforators, drain blood from the GSV in the distal thigh into the distal femoral vein. _\u2014 Saphenofemoral junction Mid Thigh Perforator Distal Thigh Perforator Great Saphenous Vein Parat | Perforators Posterior Tibial Perforators \u2014 Posterior Accessory Saphenous Vein, Ankle Perforators ~",
+      "explanation": "The distal thigh perforators, formerly known as Dodd's perforators, drain blood from the GSV in the distal thigh into the distal femoral vein. _— Saphenofemoral junction Mid Thigh Perforator Distal Thigh Perforator Great Saphenous Vein Parat | Perforators Posterior Tibial Perforators — Posterior Accessory Saphenous Vein, Ankle Perforators ~",
       "imageFile": "mock-exam-3_37.png"
     },
     {
@@ -7795,7 +7829,7 @@
       ],
       "category": "Vascular",
       "correctAnswer": "A",
-      "explanation": "The term pulsatilty refers to repetitive flow changes demonstrated on the Doppler tracing. Veins closest to the heart will demonstrate cardiac pulsatility due to the changes in right atrial pressure. It can be equated to a \"ripple effect\u2019, like a stone being thrown into a pool of water. The variations in flow are demonstrated in vessels further from the heart as they become engorged with blood. If venous flow is pulsatile in the lower extremities, cardiac complications like CHF or severe tricuspid regurgitation should be suspected. Normal venous flow varies with respiration and has very low velocity. Spontaneous flow should also be present in most veins in the body (without any augmentation maneuvers applied) Cardiac Pulsatility malin the lower extremity vei Indicates elevated right atrial pressure; e.g. CHF Pulmonary HTN, severe tricuspid regurgita weparic v wwwiwwiw",
+      "explanation": "The term pulsatilty refers to repetitive flow changes demonstrated on the Doppler tracing. Veins closest to the heart will demonstrate cardiac pulsatility due to the changes in right atrial pressure. It can be equated to a \"ripple effect’, like a stone being thrown into a pool of water. The variations in flow are demonstrated in vessels further from the heart as they become engorged with blood. If venous flow is pulsatile in the lower extremities, cardiac complications like CHF or severe tricuspid regurgitation should be suspected. Normal venous flow varies with respiration and has very low velocity. Spontaneous flow should also be present in most veins in the body (without any augmentation maneuvers applied) Cardiac Pulsatility malin the lower extremity vei Indicates elevated right atrial pressure; e.g. CHF Pulmonary HTN, severe tricuspid regurgita weparic v wwwiwwiw",
       "imageFile": "mock-exam-3_29.png"
     },
     {
@@ -8066,7 +8100,9 @@
       "category": "Vascular",
       "correctAnswer": "B",
       "explanation": "If a clot is identified in the popliteal vein, the distal femoral vein should be evaluated next for propagation of the thrombus.",
-      "imageFile": "mock-exam-3_12.png"
+      "imageFile": "mock-exam-3_12.png",
+      "imageUrl": "/images/study-guide/Great_saphenous_vein_thrombosis_Sag.jpg",
+      "imageCaption": "B-mode ultrasound demonstrating echogenic thrombus within a superficial vein lumen (non-compressible)"
     },
     {
       "id": "exam3_q86",
@@ -9003,7 +9039,7 @@
         },
         {
           "letter": "B",
-          "text": "Raynaud\u2019s disease"
+          "text": "Raynaud’s disease"
         },
         {
           "letter": "C",
@@ -9169,7 +9205,7 @@
     {
       "id": "exam4_q26",
       "number": 26,
-      "question": "Which condition is most likely to cause decreased femoral pulses and an abdominal bruit in an 18-year-old hypertension m\u2026",
+      "question": "Which condition is most likely to cause decreased femoral pulses and an abdominal bruit in an 18-year-old hypertension m…",
       "options": [
         {
           "letter": "A",
@@ -9819,7 +9855,7 @@
     {
       "id": "exam4_q48",
       "number": 48,
-      "question": "Which artery is likely to be involved in a patient with thromboangiitis obliterans (Buerger\u2019s Disease)?",
+      "question": "Which artery is likely to be involved in a patient with thromboangiitis obliterans (Buerger’s Disease)?",
       "options": [
         {
           "letter": "A",
@@ -11131,7 +11167,7 @@
       ],
       "category": "Cerebrovascular",
       "correctAnswer": "B",
-      "explanation": "An arteriovenous fistula is considered mature and ready for cannulation when blood flow volume reaches at least 600 mL/min. Other criteria include diameter \u22656mm and depth <6mm from the skin surface.",
+      "explanation": "An arteriovenous fistula is considered mature and ready for cannulation when blood flow volume reaches at least 600 mL/min. Other criteria include diameter ≥6mm and depth <6mm from the skin surface.",
       "hint": "Carefully consider each option and the key concept being tested.",
       "keywords": []
     },
