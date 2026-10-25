@@ -325,11 +325,27 @@ export default function ExamInterface({ questions, title, mode, examId, modality
           </div>
 
           {/* Question text */}
-          <p className="text-[15px] font-bold text-gray-900 mb-5 leading-relaxed">
+          <p className="text-[15px] font-bold text-gray-900 mb-4 leading-relaxed">
             {showHint[currentQuestion.id] && currentQuestion.keywords
               ? highlightKeywords(currentQuestion.question, currentQuestion.keywords)
               : currentQuestion.question}
           </p>
+
+          {/* Question image */}
+          {currentQuestion.imageUrl && (
+            <div className="mb-5">
+              <img
+                src={currentQuestion.imageUrl}
+                alt={currentQuestion.imageCaption || 'Ultrasound image'}
+                className="w-full rounded-2xl border border-gray-100 object-contain max-h-72 bg-black"
+              />
+              {currentQuestion.imageCaption && (
+                <p className="text-[11px] text-gray-400 mt-1.5 text-center italic leading-snug px-1">
+                  {currentQuestion.imageCaption}
+                </p>
+              )}
+            </div>
+          )}
 
           {/* Hint Section */}
           {currentQuestion.hint && mode === 'practice' && !showAnswer && (
