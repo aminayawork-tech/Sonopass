@@ -240,38 +240,35 @@ export default function ExamInterface({ questions, title, mode, examId, modality
       {/* Header */}
       <header className="bg-white border-b border-gray-100 sticky top-0 z-40">
         <div className="px-4 pt-3 pb-2">
-          {/* Top row: title + home */}
-          <div className="flex justify-between items-center mb-2">
-            <h1 className="text-[16px] font-black text-gray-900 truncate mr-2">{title}</h1>
-            <div className="flex items-center gap-3 flex-shrink-0">
+          {/* Top row: stats + home */}
+          <div className="flex items-center justify-between gap-2 mb-2">
+            <div className="flex items-center gap-2 min-w-0">
               {stats && (
-                <div className="flex items-center gap-2 text-[12px]">
-                  <span className="flex items-center gap-0.5 font-bold text-amber-500">
-                    <Zap className="w-3.5 h-3.5" /> {modalityStats?.xp ?? 0} XP
+                <>
+                  <span className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-amber-50 text-[12px] font-black text-amber-600 shrink-0">
+                    <Zap className="w-3 h-3" />{modalityStats?.xp ?? 0} XP
                   </span>
-                  <span className="text-gray-200">|</span>
-                  <span className="flex items-center gap-0.5 font-bold text-orange-500">
-                    {(stats.streak ?? 0)}d streak
+                  <span className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-orange-50 text-[12px] font-black text-orange-500 shrink-0">
+                    {stats.streak ?? 0}d streak
                   </span>
-                  <span className="text-gray-200">|</span>
-                  <span className="flex items-center gap-0.5">
+                  <span className="flex items-center gap-0.5 shrink-0">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <Heart key={i} className={cn("w-3 h-3", i < (stats?.hearts ?? 0) ? "text-red-500 fill-red-500" : "text-gray-200")} />
+                      <Heart key={i} className={cn("w-3.5 h-3.5", i < (stats?.hearts ?? 0) ? "text-red-500 fill-red-500" : "text-gray-200 fill-gray-200")} />
                     ))}
                   </span>
-                </div>
+                </>
               )}
-              <Link href="/">
-                <button className="w-9 h-9 rounded-xl flex items-center justify-center shadow-sm border border-gray-100 bg-white active:bg-gray-50">
-                  <Home className="w-4 h-4 text-gray-600" />
-                </button>
-              </Link>
             </div>
+            <Link href="/">
+              <button className="w-9 h-9 rounded-xl flex items-center justify-center shadow-sm border border-gray-100 bg-white active:bg-gray-50 shrink-0">
+                <Home className="w-4 h-4 text-gray-600" />
+              </button>
+            </Link>
           </div>
 
           {/* Progress and Score */}
           <div className="flex justify-between items-center text-[11px] text-gray-400 mb-1.5">
-            <span>{currentIndex + 1}/{questions.length}</span>
+            <span className="font-medium">{currentIndex + 1} / {questions.length}</span>
             <span>{correctAnswers}/{answeredCount} correct ({score}%)</span>
           </div>
           <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
@@ -307,7 +304,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
       )}
 
       {/* Main Content */}
-      <main className="px-4 py-4 pb-10">
+      <main className="px-4 pt-8 pb-10">
         {/* Question Card */}
         <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 mb-4">
           {/* Question header */}

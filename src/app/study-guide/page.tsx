@@ -232,7 +232,7 @@ export default function StudyGuidePage() {
     return (
       <div className="h-screen overflow-hidden flex flex-col" style={{ backgroundColor: '#F5F7FA' }}>
         {/* Header */}
-        <header className="shrink-0 px-4 py-3 bg-white border-b border-gray-100">
+        <header className="shrink-0 px-4 py-3 bg-white border-b border-gray-100" style={{ isolation: 'isolate', WebkitFontSmoothing: 'antialiased' }}>
           <div className="flex items-center gap-2">
             <button
               onClick={() => {
@@ -275,7 +275,7 @@ export default function StudyGuidePage() {
         </header>
 
         {/* Scrollable content */}
-        <main className="flex-1 overflow-y-auto px-4 py-5">
+        <main className="flex-1 overflow-y-auto px-4 pt-[10vh] pb-8">
           <div className="max-w-lg mx-auto space-y-4">
 
             {/* Card — swipeable */}
@@ -287,6 +287,7 @@ export default function StudyGuidePage() {
                 transform: `translateX(${swipeDelta}px) rotate(${swipeDelta * 0.025}deg)`,
                 transition: swipeDelta === 0 ? 'transform 0.3s ease' : 'none',
                 position: 'relative',
+                willChange: 'transform',
               }}
             >
               {/* Swipe intent overlay */}
@@ -625,7 +626,7 @@ export default function StudyGuidePage() {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 pb-8">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 pb-24">
         {/* Progress strip */}
         {completedTopics.size > 0 && (() => {
           const total = content.categories.reduce((acc, cat) => acc + cat.topics.length, 0);
