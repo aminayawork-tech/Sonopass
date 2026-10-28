@@ -44,27 +44,27 @@ export default function MockExamsPage() {
 
         {/* Page Header */}
         <div className="px-5 pt-14 pb-5">
-          <h1 className="text-3xl font-black tracking-tight text-gray-900">Mock Exams</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">Mock Exams</h1>
           <p className="text-gray-500 text-[14px] mt-0.5">Full-length timed practice tests</p>
         </div>
 
         {/* Stats Row */}
         <div className="px-5 mb-7">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Your Stats</p>
+          <p className="eyebrow mb-3">Your Stats</p>
           <div className="grid grid-cols-3 gap-2.5">
-            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+            <div className="bg-white rounded-2xl p-4 text-center surface">
               <Brain size={18} className="mx-auto mb-1 text-purple-500" />
-              <div className="text-xl font-black text-gray-900">{completedCount}/{mockExams.length}</div>
+              <div className="text-xl font-extrabold text-gray-900">{completedCount}/{mockExams.length}</div>
               <div className="text-[10px] text-gray-400 font-medium">Completed</div>
             </div>
-            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+            <div className="bg-white rounded-2xl p-4 text-center surface">
               <Target size={18} className="mx-auto mb-1" style={{ color: '#3abc83' }} />
-              <div className="text-xl font-black" style={{ color: '#3abc83' }}>{accuracy}%</div>
+              <div className="text-xl font-extrabold" style={{ color: '#3abc83' }}>{accuracy}%</div>
               <div className="text-[10px] text-gray-400 font-medium">Accuracy</div>
             </div>
-            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+            <div className="bg-white rounded-2xl p-4 text-center surface">
               <Flame size={18} className="mx-auto mb-1 text-orange-400" />
-              <div className="text-xl font-black text-gray-900">{stats?.streak ?? 0}</div>
+              <div className="text-xl font-extrabold text-gray-900">{stats?.streak ?? 0}</div>
               <div className="text-[10px] text-gray-400 font-medium">Day Streak</div>
             </div>
           </div>
@@ -72,11 +72,11 @@ export default function MockExamsPage() {
 
         {/* Quick Start */}
         <div className="px-5 mb-7">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Quick Start</p>
+          <p className="eyebrow mb-3">Quick Start</p>
           <div className="flex flex-col gap-2.5">
             <button
               onClick={() => router.push('/exam/quick-10')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
             >
               <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#e8f8f2' }}>
                 <Zap size={17} style={{ color: '#3abc83' }} strokeWidth={1.75} />
@@ -92,10 +92,10 @@ export default function MockExamsPage() {
 
         {/* Full-Length Exams */}
         <div className="px-5 mb-7">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Full-Length Exams</p>
+          <p className="eyebrow mb-3">Full-Length Exams</p>
           <div className="flex flex-col gap-2.5">
             {mockExams.length === 0 && (
-              <div className="bg-white rounded-2xl px-4 py-6 text-center shadow-sm border border-gray-100">
+              <div className="bg-white rounded-2xl px-4 py-6 text-center surface">
                 <p className="text-[13px] text-gray-400">No exams available for this modality yet</p>
               </div>
             )}
@@ -112,7 +112,7 @@ export default function MockExamsPage() {
                 <button
                   key={exam.id}
                   onClick={() => router.push(exam.route)}
-                  className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+                  className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
                 >
                   <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: c.bg }}>
                     <Brain size={17} style={{ color: c.color }} strokeWidth={1.75} />
@@ -144,7 +144,7 @@ export default function MockExamsPage() {
               </span>
               <Clock size={13} className="text-gray-500" />
             </div>
-            <h2 className="px-5 text-[17px] font-black text-white leading-snug tracking-tight mb-2">
+            <h2 className="px-5 text-[17px] font-extrabold text-white leading-snug tracking-tight mb-2">
               Simulate real exam conditions
             </h2>
             <p className="px-5 text-[14px] text-gray-300 leading-relaxed pb-5">

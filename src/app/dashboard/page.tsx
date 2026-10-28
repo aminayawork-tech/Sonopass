@@ -45,7 +45,7 @@ export default function DashboardPage() {
         {/* Hero Header */}
         <div className="px-5 pt-14 pb-5">
           <div className="flex items-center justify-between mb-1">
-            <h1 className="text-3xl font-black tracking-tight">
+            <h1 className="text-3xl font-extrabold tracking-tight">
               <span className="text-gray-900">Sono</span>
               <span style={{ color: '#3abc83' }}>Pass</span>
             </h1>
@@ -65,11 +65,11 @@ export default function DashboardPage() {
 
         {/* Study Modes */}
         <div className="px-5 mb-7">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Start Studying</p>
+          <p className="eyebrow mb-3">Start Studying</p>
           <div className="flex flex-col gap-2.5">
             <button
               onClick={() => router.push('/exam/quick-10')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
             >
               <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#e8f8f2' }}>
                 <Zap size={17} style={{ color: '#3abc83' }} strokeWidth={1.75} />
@@ -83,7 +83,7 @@ export default function DashboardPage() {
 
             <button
               onClick={() => router.push('/practice')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
             >
               <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-blue-50">
                 <BookOpen size={17} className="text-blue-500" strokeWidth={1.75} />
@@ -97,7 +97,7 @@ export default function DashboardPage() {
 
             <button
               onClick={() => router.push('/exam/mock-exams')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
             >
               <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-purple-50">
                 <Brain size={17} className="text-purple-500" strokeWidth={1.75} />
@@ -111,7 +111,7 @@ export default function DashboardPage() {
 
             <button
               onClick={() => router.push('/study-guide')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
             >
               <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-amber-50">
                 <ClipboardList size={17} className="text-amber-500" strokeWidth={1.75} />
@@ -127,21 +127,21 @@ export default function DashboardPage() {
 
         {/* Stats Row */}
         <div className="px-5 mb-7">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Your Stats</p>
+          <p className="eyebrow mb-3">Your Stats</p>
           <div className="grid grid-cols-3 gap-2.5">
-            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+            <div className="bg-white rounded-2xl p-4 text-center surface">
               <Flame size={18} className="mx-auto mb-1 text-orange-400" />
-              <div className="text-xl font-black text-gray-900">{stats?.streak ?? 0}</div>
+              <div className="text-xl font-extrabold text-gray-900">{stats?.streak ?? 0}</div>
               <div className="text-[10px] text-gray-400 font-medium">Day Streak</div>
             </div>
-            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+            <div className="bg-white rounded-2xl p-4 text-center surface">
               <Target size={18} className="mx-auto mb-1" style={{ color: '#3abc83' }} />
-              <div className="text-xl font-black" style={{ color: '#3abc83' }}>{accuracy}%</div>
+              <div className="text-xl font-extrabold" style={{ color: '#3abc83' }}>{accuracy}%</div>
               <div className="text-[10px] text-gray-400 font-medium">Accuracy</div>
             </div>
-            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+            <div className="bg-white rounded-2xl p-4 text-center surface">
               <Star size={18} className="mx-auto mb-1 text-amber-400" />
-              <div className="text-xl font-black text-gray-900">{modalityStats?.totalAnswered ?? 0}</div>
+              <div className="text-xl font-extrabold text-gray-900">{modalityStats?.totalAnswered ?? 0}</div>
               <div className="text-[10px] text-gray-400 font-medium">Questions</div>
             </div>
           </div>
@@ -156,7 +156,7 @@ export default function DashboardPage() {
               </span>
               <Clock size={13} className="text-gray-500" />
             </div>
-            <h2 className="px-5 text-[17px] font-black text-white leading-snug tracking-tight mb-2">
+            <h2 className="px-5 text-[17px] font-extrabold text-white leading-snug tracking-tight mb-2">
               Focus on your weak areas first
             </h2>
             <p className="px-5 text-[14px] text-gray-300 leading-relaxed">
