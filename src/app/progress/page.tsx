@@ -46,27 +46,27 @@ export default function ProgressPage() {
 
         {/* Page Header */}
         <div className="px-5 pt-14 pb-5">
-          <h1 className="text-3xl font-black tracking-tight text-gray-900">Progress</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">Progress</h1>
           <p className="text-gray-500 text-[14px] mt-0.5">Track your learning journey</p>
         </div>
 
         {/* Stats Row */}
         <div className="px-5 mb-7">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Overview</p>
+          <p className="eyebrow mb-3">Overview</p>
           <div className="grid grid-cols-3 gap-2.5">
-            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+            <div className="bg-white rounded-2xl p-4 text-center surface">
               <Flame size={18} className="mx-auto mb-1 text-orange-400" />
-              <div className="text-xl font-black text-gray-900">{stats?.streak ?? 0}</div>
+              <div className="text-xl font-extrabold text-gray-900">{stats?.streak ?? 0}</div>
               <div className="text-[10px] text-gray-400 font-medium">Day Streak</div>
             </div>
-            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+            <div className="bg-white rounded-2xl p-4 text-center surface">
               <Target size={18} className="mx-auto mb-1" style={{ color: '#3abc83' }} />
-              <div className="text-xl font-black" style={{ color: '#3abc83' }}>{accuracy}%</div>
+              <div className="text-xl font-extrabold" style={{ color: '#3abc83' }}>{accuracy}%</div>
               <div className="text-[10px] text-gray-400 font-medium">Accuracy</div>
             </div>
-            <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100">
+            <div className="bg-white rounded-2xl p-4 text-center surface">
               <Star size={18} className="mx-auto mb-1 text-amber-400" />
-              <div className="text-xl font-black text-gray-900">{modalityStats?.totalAnswered ?? 0}</div>
+              <div className="text-xl font-extrabold text-gray-900">{modalityStats?.totalAnswered ?? 0}</div>
               <div className="text-[10px] text-gray-400 font-medium">Questions</div>
             </div>
           </div>
@@ -74,19 +74,19 @@ export default function ProgressPage() {
 
         {/* Registry Readiness */}
         <div className="px-5 mb-7">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Registry Readiness</p>
-          <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex flex-col items-center">
+          <p className="eyebrow mb-3">Registry Readiness</p>
+          <div className="bg-white rounded-2xl p-5 surface flex flex-col items-center">
             <RegistryReadinessWidget size="large" showLabel={true} />
           </div>
         </div>
 
         {/* Question Bank Progress */}
         <div className="px-5 mb-7">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Question Bank</p>
-          <div className="bg-white rounded-2xl px-4 py-4 shadow-sm border border-gray-100">
+          <p className="eyebrow mb-3">Question Bank</p>
+          <div className="bg-white rounded-2xl px-4 py-4 surface">
             <div className="flex items-center justify-between mb-2">
               <p className="text-[14px] font-bold text-gray-900">Completion</p>
-              <p className="text-[14px] font-black" style={{ color: '#3abc83' }}>{completionRate}%</p>
+              <p className="text-[14px] font-extrabold" style={{ color: '#3abc83' }}>{completionRate}%</p>
             </div>
             <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
               <div
@@ -102,7 +102,7 @@ export default function ProgressPage() {
 
         {/* Category Breakdown */}
         <div className="px-5 mb-7">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">By Category</p>
+          <p className="eyebrow mb-3">By Category</p>
           <div className="flex flex-col gap-2.5">
             {categoryPerformance.map((cat) => {
               const color = cat.percentage >= 80 ? '#3abc83'
@@ -113,12 +113,12 @@ export default function ProgressPage() {
                 <button
                   key={cat.name}
                   onClick={() => router.push(`/exam/study?category=${encodeURIComponent(cat.name)}`)}
-                  className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+                  className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
                 >
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between mb-1.5">
                       <p className="text-[14px] font-bold text-gray-900 truncate pr-2">{cat.name}</p>
-                      <p className="text-[14px] font-black shrink-0" style={{ color }}>{cat.percentage}%</p>
+                      <p className="text-[14px] font-extrabold shrink-0" style={{ color }}>{cat.percentage}%</p>
                     </div>
                     <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
                       <div
@@ -137,14 +137,14 @@ export default function ProgressPage() {
         {/* Badges */}
         {stats && stats.badges && stats.badges.length > 0 && (
           <div className="px-5 mb-7">
-            <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Badges Earned</p>
+            <p className="eyebrow mb-3">Badges Earned</p>
             <div className="grid grid-cols-3 gap-2.5">
               {stats.badges.map((badgeId, index) => {
                 const badgeInfo = getBadgeInfo(badgeId);
                 return (
                   <div
                     key={badgeId || index}
-                    className="bg-white rounded-2xl p-4 text-center shadow-sm border border-gray-100"
+                    className="bg-white rounded-2xl p-4 text-center surface"
                   >
                     <div className="text-2xl mb-1">{badgeInfo?.icon || '🏆'}</div>
                     <div className="text-[11px] font-bold text-gray-900 leading-tight">
@@ -167,7 +167,7 @@ export default function ProgressPage() {
                 </span>
                 <Brain size={13} className="text-gray-500" />
               </div>
-              <h2 className="px-5 text-[17px] font-black text-white leading-snug tracking-tight mb-2">
+              <h2 className="px-5 text-[17px] font-extrabold text-white leading-snug tracking-tight mb-2">
                 Work on {weakest.name}
               </h2>
               <p className="px-5 text-[14px] text-gray-300 leading-relaxed">

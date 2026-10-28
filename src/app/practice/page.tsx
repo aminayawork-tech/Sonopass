@@ -81,17 +81,17 @@ export default function StudyModePage() {
 
         {/* Page Header */}
         <div className="px-5 pt-14 pb-5">
-          <h1 className="text-3xl font-black tracking-tight text-gray-900">Study Mode</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">Study Mode</h1>
           <p className="text-gray-500 text-[14px] mt-0.5">Practice by topic and category</p>
         </div>
 
         {/* Quick Actions */}
         <div className="px-5 mb-7">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Quick Start</p>
+          <p className="eyebrow mb-3">Quick Start</p>
           <div className="flex flex-col gap-2.5">
             <button
               onClick={() => router.push('/exam/quick-10')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
             >
               <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#e8f8f2' }}>
                 <Zap size={17} style={{ color: '#3abc83' }} strokeWidth={1.75} />
@@ -108,10 +108,10 @@ export default function StudyModePage() {
 
         {/* Topic Categories — colorful grid */}
         <div className="px-5 mb-7">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Topic Categories</p>
+          <p className="eyebrow mb-3">Topic Categories</p>
 
           {categories.length === 0 ? (
-            <div className="bg-white rounded-2xl px-4 py-6 text-center shadow-sm border border-gray-100">
+            <div className="bg-white rounded-2xl px-4 py-6 text-center surface">
               <p className="text-[13px] text-gray-400">Loading categories…</p>
             </div>
           ) : (
@@ -127,8 +127,8 @@ export default function StudyModePage() {
                     style={{ background: gradient }}
                   >
                     <IconComponent size={28} className="text-white mb-2 opacity-90" strokeWidth={1.75} />
-                    <p className="text-[13px] font-black text-white leading-snug mb-1">{cat.name}</p>
-                    <p className="text-[22px] font-black text-white leading-none">{cat.total}</p>
+                    <p className="text-[13px] font-extrabold text-white leading-snug mb-1">{cat.name}</p>
+                    <p className="text-[22px] font-extrabold text-white leading-none">{cat.total}</p>
                     <p className="text-[11px] text-white/80 font-semibold">Questions</p>
                   </button>
                 );

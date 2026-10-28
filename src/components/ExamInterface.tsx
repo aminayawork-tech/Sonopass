@@ -174,9 +174,9 @@ export default function ExamInterface({ questions, title, mode, examId, modality
   if (completed && showResults) {
     return (
       <div className="min-h-screen px-5 py-10" style={{ backgroundColor: '#F5F7FA' }}>
-        <div className="bg-white rounded-3xl p-7 shadow-sm border border-gray-100 text-center">
-          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Results</p>
-          <div className="text-6xl font-black mb-1" style={{ color: score >= 70 ? '#3abc83' : '#ef4444' }}>
+        <div className="bg-white rounded-3xl p-7 surface text-center">
+          <p className="eyebrow mb-3">Results</p>
+          <div className="text-6xl font-extrabold mb-1" style={{ color: score >= 70 ? '#3abc83' : '#ef4444' }}>
             {score}%
           </div>
           <p className="text-[15px] font-bold text-gray-700 mb-6">
@@ -192,15 +192,15 @@ export default function ExamInterface({ questions, title, mode, examId, modality
 
           <div className="grid grid-cols-3 gap-3 mb-8">
             <div className="bg-[#e8f8f2] rounded-2xl p-4">
-              <div className="text-2xl font-black" style={{ color: '#3abc83' }}>{correctAnswers}</div>
+              <div className="text-2xl font-extrabold" style={{ color: '#3abc83' }}>{correctAnswers}</div>
               <div className="text-[11px] text-gray-500 font-medium mt-0.5">Correct</div>
             </div>
             <div className="bg-red-50 rounded-2xl p-4">
-              <div className="text-2xl font-black text-red-500">{answeredCount - correctAnswers}</div>
+              <div className="text-2xl font-extrabold text-red-500">{answeredCount - correctAnswers}</div>
               <div className="text-[11px] text-gray-500 font-medium mt-0.5">Incorrect</div>
             </div>
             <div className="bg-blue-50 rounded-2xl p-4">
-              <div className="text-2xl font-black text-blue-500">{questions.length}</div>
+              <div className="text-2xl font-extrabold text-blue-500">{questions.length}</div>
               <div className="text-[11px] text-gray-500 font-medium mt-0.5">Total</div>
             </div>
           </div>
@@ -217,8 +217,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                   setShowAnswer(false);
                 }
               }}
-              className="h-12 rounded-2xl font-black text-[14px] text-white active:opacity-80 shadow-sm"
-              style={{ backgroundColor: '#3abc83' }}
+              className="btn-primary h-12 rounded-2xl font-bold text-[15px] active:scale-[0.98] transition-transform"
             >
               Try Again
             </button>
@@ -245,10 +244,10 @@ export default function ExamInterface({ questions, title, mode, examId, modality
             <div className="flex items-center gap-2 min-w-0">
               {stats && (
                 <>
-                  <span className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-amber-50 text-[12px] font-black text-amber-600 shrink-0">
+                  <span className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-amber-50 text-[12px] font-extrabold text-amber-600 shrink-0">
                     <Zap className="w-3 h-3" />{modalityStats?.xp ?? 0} XP
                   </span>
-                  <span className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-orange-50 text-[12px] font-black text-orange-500 shrink-0">
+                  <span className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-orange-50 text-[12px] font-extrabold text-orange-500 shrink-0">
                     {stats.streak ?? 0}d streak
                   </span>
                   <span className="flex items-center gap-0.5 shrink-0">
@@ -260,7 +259,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
               )}
             </div>
             <Link href="/">
-              <button className="w-9 h-9 rounded-xl flex items-center justify-center shadow-sm border border-gray-100 bg-white active:bg-gray-50 shrink-0">
+              <button className="w-9 h-9 rounded-xl flex items-center justify-center surface bg-white active:bg-gray-50 shrink-0">
                 <Home className="w-4 h-4 text-gray-600" />
               </button>
             </Link>
@@ -304,12 +303,12 @@ export default function ExamInterface({ questions, title, mode, examId, modality
       )}
 
       {/* Main Content */}
-      <main className="px-4 pt-8 pb-10">
+      <main className="px-4 pt-8">
         {/* Question Card */}
-        <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 mb-4">
+        <div className="surface rounded-[24px] p-5 mb-4">
           {/* Question header */}
           <div className="flex justify-between items-start mb-4 gap-2">
-            <span className="text-[13px] font-black" style={{ color: '#3abc83' }}>
+            <span className="eyebrow" style={{ color: '#2ea873' }}>
               Q{currentIndex + 1}
             </span>
             <span className={cn(
@@ -322,7 +321,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
           </div>
 
           {/* Question text */}
-          <p className="text-[15px] font-bold text-gray-900 mb-4 leading-relaxed">
+          <p className="text-[17px] font-bold text-ink mb-5 leading-[1.45] tracking-[-0.01em]">
             {showHint[currentQuestion.id] && currentQuestion.keywords
               ? highlightKeywords(currentQuestion.question, currentQuestion.keywords)
               : currentQuestion.question}
@@ -351,10 +350,10 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                 <button
                   onClick={handleUseHint}
                   disabled={!stats || stats.hearts <= 0}
-                  className="flex items-center gap-1.5 px-3 py-2 rounded-xl border border-amber-300 bg-amber-50 text-amber-700 text-[12px] font-bold disabled:opacity-40"
+                  className="btn-secondary flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[12.5px] font-semibold disabled:opacity-40"
                 >
-                  <Lightbulb className="w-3.5 h-3.5" />
-                  Use Hint
+                  <Lightbulb className="w-3.5 h-3.5 text-amber-500" />
+                  Use hint
                   <span className="flex items-center gap-0.5 ml-0.5">
                     <Heart className="w-3 h-3 text-red-500 fill-red-500" />
                     <span className="text-[11px]">-1</span>
@@ -382,7 +381,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
               const showCorrectness = showAnswer && mode === 'practice';
 
               let bg = 'bg-white';
-              let border = 'border-gray-200';
+              let border = 'border-slate-200';
               let letterBg = 'bg-gray-100 border-gray-300 text-gray-600';
               let textColor = 'text-gray-900';
 
@@ -416,7 +415,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                     handleAnswer(option.letter);
                   }}
                   className={cn(
-                    "w-full px-3.5 py-3 rounded-2xl border-2 text-left transition-all",
+                    "w-full px-3.5 py-3.5 rounded-2xl border-[1.5px] text-left transition-all",
                     bg, border,
                     showCorrectness ? 'cursor-default' : 'active:scale-[0.98]',
                   )}
@@ -424,12 +423,12 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                   <div className="flex items-center justify-between gap-2">
                     <div className="flex items-center gap-3 min-w-0">
                       <span className={cn(
-                        "shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[12px] font-black border-2",
+                        "shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[12px] font-extrabold border-2",
                         letterBg,
                       )}>
                         {option.letter}
                       </span>
-                      <span className={cn("text-[14px] font-medium", textColor)}>
+                      <span className={cn("text-[15px] font-medium leading-snug", textColor)}>
                         {option.text}
                       </span>
                     </div>
@@ -472,11 +471,14 @@ export default function ExamInterface({ questions, title, mode, examId, modality
         </div>
 
         {/* Navigation */}
-        <div className="flex items-center justify-between gap-3">
+        <div
+          className="sticky bottom-0 z-10 -mx-4 px-4 pt-3 flex items-center justify-between gap-3 border-t border-slate-900/5"
+          style={{ backgroundColor: '#F4F5F7', paddingBottom: 'max(12px, env(safe-area-inset-bottom))' }}
+        >
           <button
             onClick={handlePrevious}
             disabled={currentIndex === 0}
-            className="flex-1 h-12 rounded-2xl flex items-center justify-center gap-1.5 bg-white border border-gray-200 shadow-sm disabled:opacity-30 active:bg-gray-50"
+            className="btn-secondary flex-1 h-12 rounded-2xl flex items-center justify-center gap-1.5 disabled:opacity-35 active:scale-[0.98] transition-transform"
           >
             <ChevronLeft size={18} className="text-gray-600" />
             <span className="text-[14px] font-bold text-gray-700">Prev</span>
@@ -489,20 +491,18 @@ export default function ExamInterface({ questions, title, mode, examId, modality
           {currentIndex === questions.length - 1 ? (
             <button
               onClick={finishExam}
-              className="flex-1 h-12 rounded-2xl flex items-center justify-center shadow-sm active:opacity-80"
-              style={{ backgroundColor: '#3abc83' }}
+              className="btn-primary flex-1 h-12 rounded-2xl flex items-center justify-center active:scale-[0.98] transition-transform"
             >
-              <span className="text-[14px] font-black text-white">
+              <span className="text-[14px] font-extrabold text-white">
                 {mode === 'exam' && answeredCount === questions.length ? 'Submit' : 'Finish'}
               </span>
             </button>
           ) : (
             <button
               onClick={handleNext}
-              className="flex-1 h-12 rounded-2xl flex items-center justify-center gap-1.5 shadow-sm active:opacity-80"
-              style={{ backgroundColor: '#3abc83' }}
+              className="btn-primary flex-1 h-12 rounded-2xl flex items-center justify-center gap-1.5 active:scale-[0.98] transition-transform"
             >
-              <span className="text-[14px] font-black text-white">Next</span>
+              <span className="text-[14px] font-extrabold text-white">Next</span>
               <ChevronRight size={18} className="text-white" />
             </button>
           )}

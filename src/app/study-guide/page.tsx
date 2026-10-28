@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import AppLayout from '@/components/layout/AppLayout';
@@ -9,8 +8,7 @@ import AppLayout from '@/components/layout/AppLayout';
 import {
   Brain, Activity, AlertTriangle, ClipboardList, Zap,
   BookOpen, ChevronRight, Check, ArrowLeft,
-  CheckCircle2, ChevronLeft, RotateCw, XCircle, Shuffle,
-  Link2, Lock, ClipboardCheck, Sparkles,
+  CheckCircle2, ChevronLeft, RotateCw, Shuffle,
 } from 'lucide-react';
 
 interface Image {
@@ -83,6 +81,18 @@ const colorMap: Record<string, { bg: string; text: string; accent: string }> = {
   'green': { bg: 'bg-green-50/50', text: 'text-green-600', accent: 'bg-green-500' },
   'purple': { bg: 'bg-purple-50/50', text: 'text-purple-600', accent: 'bg-purple-500' },
 };
+
+function CardSection({ label, accent, children }: { label: string; accent: string; children: React.ReactNode }) {
+  return (
+    <section className="py-4 border-t border-slate-100 first:border-t-0 first:pt-0">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: accent }} />
+        <p className="eyebrow" style={{ color: accent }}>{label}</p>
+      </div>
+      {children}
+    </section>
+  );
+}
 
 export default function StudyGuidePage() {
   const [content, setContent] = useState<StudyGuideContent | null>(null);
@@ -229,274 +239,241 @@ export default function StudyGuidePage() {
         ? (isFlipped ? 'review' : 'next')
         : null;
 
+    const exitFlashcards = () => {
+      setSelectedCategory(null);
+      setViewMode('flashcards');
+      setCurrentCardIndex(0);
+      setIsFlipped(false);
+    };
+
     return (
-      <div className="h-screen overflow-hidden flex flex-col" style={{ backgroundColor: '#F5F7FA' }}>
+      <div className="h-[100dvh] overflow-hidden flex flex-col" style={{ backgroundColor: '#F4F5F7' }}>
         {/* Header */}
-        <header className="shrink-0 px-4 py-3 bg-white border-b border-gray-100" style={{ isolation: 'isolate', WebkitFontSmoothing: 'antialiased' }}>
-          <div className="flex items-center gap-2">
+        <header className="shrink-0 bg-white border-b border-slate-900/5 px-4 pt-3 pb-3">
+          <div className="max-w-lg mx-auto flex items-center gap-3">
             <button
-              onClick={() => {
-                setSelectedCategory(null);
-                setViewMode('flashcards');
-                setCurrentCardIndex(0);
-                setIsFlipped(false);
-              }}
-              className="shrink-0 w-8 h-8 flex items-center justify-center rounded-xl text-gray-500 active:bg-gray-100"
+              onClick={exitFlashcards}
+              aria-label="Back"
+              className="shrink-0 w-9 h-9 flex items-center justify-center rounded-full bg-slate-100 active:bg-slate-200 transition-colors"
             >
-              <ArrowLeft size={18} />
+              <ArrowLeft size={17} className="text-ink" />
             </button>
             <div className="flex-1 min-w-0">
-              <p className="text-[15px] font-bold text-gray-900 truncate leading-tight">{selectedCategory.title}</p>
-              <p className="text-[11px] text-gray-400">{currentCardIndex + 1} of {topics.length}</p>
+              <p className="text-[15px] font-bold text-ink truncate leading-tight tracking-[-0.01em]">{selectedCategory.title}</p>
+              <p className="text-[12px] text-slate-400 font-medium mt-0.5">
+                Card {currentCardIndex + 1} of {topics.length}
+                {knownTopics.size > 0 && <span style={{ color: '#2ea873' }}> · {knownTopics.size} mastered</span>}
+              </p>
             </div>
-            <div className="shrink-0 flex items-center gap-1.5">
-              <button
-                onClick={() => setViewMode('list')}
-                className="w-8 h-8 flex items-center justify-center rounded-xl border border-gray-200 bg-white active:bg-gray-50"
-              >
-                <BookOpen size={15} className="text-gray-500" />
-              </button>
-              <button
-                onClick={handleShuffle}
-                className="w-8 h-8 flex items-center justify-center rounded-xl border border-gray-200 bg-white active:bg-gray-50"
-              >
-                <Shuffle size={15} className="text-gray-500" />
-              </button>
-            </div>
+            <button
+              onClick={() => setViewMode('list')}
+              aria-label="List view"
+              className="shrink-0 w-9 h-9 flex items-center justify-center rounded-full bg-slate-100 active:bg-slate-200 transition-colors"
+            >
+              <BookOpen size={16} className="text-ink" />
+            </button>
+            <button
+              onClick={handleShuffle}
+              aria-label="Restart deck"
+              className="shrink-0 w-9 h-9 flex items-center justify-center rounded-full bg-slate-100 active:bg-slate-200 transition-colors"
+            >
+              <Shuffle size={16} className="text-ink" />
+            </button>
           </div>
 
-          {/* Progress bar */}
-          <div className="mt-2.5 h-1.5 bg-gray-100 rounded-full overflow-hidden">
-            <div
-              className="h-full rounded-full transition-all duration-500"
-              style={{ width: `${progress}%`, backgroundColor: '#3abc83' }}
-            />
+          {/* Segmented progress */}
+          <div className="max-w-lg mx-auto flex gap-1 mt-3">
+            {topics.map((_, i) => {
+              const color = knownTopics.has(i)
+                ? '#3abc83'
+                : unknownTopics.has(i)
+                  ? '#F5A524'
+                  : i === currentCardIndex
+                    ? '#0E1726'
+                    : '#E4E7EC';
+              return <div key={i} className="h-1 flex-1 rounded-full transition-colors duration-300" style={{ backgroundColor: color }} />;
+            })}
           </div>
         </header>
 
-        {/* Scrollable content */}
-        <main className="flex-1 overflow-y-auto px-4 pt-[10vh] pb-8">
-          <div className="max-w-lg mx-auto space-y-4">
-
-            {/* Card — swipeable */}
-            <div
-              onTouchStart={onTouchStart}
-              onTouchMove={onTouchMove}
-              onTouchEnd={onTouchEnd}
-              style={{
-                transform: `translateX(${swipeDelta}px) rotate(${swipeDelta * 0.025}deg)`,
-                transition: swipeDelta === 0 ? 'transform 0.3s ease' : 'none',
-                position: 'relative',
-                willChange: 'transform',
-              }}
-            >
-              {/* Swipe intent overlay */}
-              {swipeIntent === 'know' && (
-                <div className="absolute inset-0 rounded-3xl z-10 flex items-center justify-center pointer-events-none"
-                  style={{ backgroundColor: 'rgba(58,188,131,0.15)', border: '2px solid #3abc83' }}>
-                  <span className="text-[20px] font-black" style={{ color: '#3abc83' }}>Got It</span>
-                </div>
-              )}
-              {swipeIntent === 'review' && (
-                <div className="absolute inset-0 rounded-3xl z-10 flex items-center justify-center pointer-events-none"
-                  style={{ backgroundColor: 'rgba(239,68,68,0.1)', border: '2px solid #ef4444' }}>
-                  <span className="text-[20px] font-black text-red-500">Review</span>
-                </div>
-              )}
-              {swipeIntent === 'prev' && (
-                <div className="absolute inset-0 rounded-3xl z-10 flex items-center justify-start pl-5 pointer-events-none"
-                  style={{ backgroundColor: 'rgba(99,102,241,0.08)', border: '2px solid #6366f1' }}>
-                  <ChevronLeft size={28} className="text-indigo-400" />
-                </div>
-              )}
-              {swipeIntent === 'next' && (
-                <div className="absolute inset-0 rounded-3xl z-10 flex items-center justify-end pr-5 pointer-events-none"
-                  style={{ backgroundColor: 'rgba(99,102,241,0.08)', border: '2px solid #6366f1' }}>
-                  <ChevronRight size={28} className="text-indigo-400" />
-                </div>
-              )}
-
-            {!isFlipped ? (
-              /* Front */
-              <button
-                onClick={() => setIsFlipped(true)}
-                className="w-full text-left bg-white rounded-3xl shadow-sm border border-gray-100 p-6"
+        {/* Card area */}
+        <main className="flex-1 overflow-y-auto overscroll-contain">
+          <div className="min-h-full flex flex-col justify-center px-4 py-6">
+            <div className="w-full max-w-lg mx-auto">
+              <div
+                onTouchStart={onTouchStart}
+                onTouchMove={onTouchMove}
+                onTouchEnd={onTouchEnd}
+                style={{
+                  transform: `translateX(${swipeDelta}px) rotate(${swipeDelta * 0.025}deg)`,
+                  transition: swipeDelta === 0 ? 'transform 0.3s cubic-bezier(.2,.8,.2,1)' : 'none',
+                  position: 'relative',
+                  willChange: 'transform',
+                }}
               >
-                {currentTopic.pieceNumber && (
-                  <p className="text-[11px] font-bold uppercase tracking-widest mb-3" style={{ color: '#3abc83' }}>
-                    {currentTopic.pieceNumber}
-                  </p>
+                {swipeIntent && (
+                  <div
+                    className="absolute inset-0 rounded-[28px] z-10 flex items-start justify-center pt-6 pointer-events-none"
+                    style={{
+                      boxShadow: `inset 0 0 0 2px ${swipeIntent === 'know' ? '#3abc83' : swipeIntent === 'review' ? '#F5A524' : '#0E1726'}`,
+                      backgroundColor: swipeIntent === 'know' ? 'rgba(58,188,131,0.06)' : swipeIntent === 'review' ? 'rgba(245,165,36,0.06)' : 'rgba(14,23,38,0.03)',
+                    }}
+                  >
+                    <span
+                      className="px-3.5 py-1.5 rounded-full text-[13px] font-bold text-white"
+                      style={{ backgroundColor: swipeIntent === 'know' ? '#2ea873' : swipeIntent === 'review' ? '#E08E0B' : '#0E1726' }}
+                    >
+                      {swipeIntent === 'know' ? 'Got it' : swipeIntent === 'review' ? 'Again' : swipeIntent === 'next' ? 'Next card' : 'Previous card'}
+                    </span>
+                  </div>
                 )}
-                <h2 className="text-[22px] font-black text-gray-900 leading-snug mb-4">
-                  {currentTopic.title}
-                </h2>
-                {currentTopic.frontClue && (
-                  <p className="text-[15px] text-gray-500 leading-relaxed mb-5">
-                    {currentTopic.frontClue}
-                  </p>
-                )}
-                <div className="flex items-center gap-2 mt-2">
-                  <div className="h-px flex-1 bg-gray-100" />
-                  <p className="text-[12px] font-semibold text-gray-300">Tap to reveal · swipe to navigate</p>
-                  <div className="h-px flex-1 bg-gray-100" />
-                </div>
-              </button>
-            ) : (
-              /* Back */
-              <button
-                onClick={() => setIsFlipped(false)}
-                className="w-full text-left bg-white rounded-3xl shadow-sm border border-gray-100 p-6"
-              >
-                <h2 className="text-[18px] font-black text-gray-900 leading-snug mb-5">
-                  {currentTopic.title}
-                </h2>
 
-                <div className="space-y-4">
-                  {currentTopic.corePiece && (
-                    <div className="rounded-2xl p-4" style={{ backgroundColor: '#f0fdf4' }}>
-                      <div className="flex items-center gap-2 mb-2">
-                        <CheckCircle2 size={14} style={{ color: '#3abc83' }} />
-                        <p className="text-[11px] font-bold uppercase tracking-widest" style={{ color: '#3abc83' }}>Core Concept</p>
-                      </div>
-                      <p className="text-[15px] text-gray-700 leading-relaxed">{currentTopic.corePiece}</p>
+                {!isFlipped ? (
+                  <button
+                    onClick={() => setIsFlipped(true)}
+                    className="surface w-full text-left rounded-[28px] px-6 pt-7 pb-6"
+                  >
+                    {currentTopic.pieceNumber && (
+                      <p className="eyebrow mb-4" style={{ color: '#2ea873' }}>{currentTopic.pieceNumber}</p>
+                    )}
+                    <h2 className="text-[27px] font-extrabold text-ink leading-[1.15] tracking-[-0.025em]">
+                      {currentTopic.title}
+                    </h2>
+                    {currentTopic.frontClue && (
+                      <p className="text-[16px] text-slate-500 leading-relaxed mt-4">{currentTopic.frontClue}</p>
+                    )}
+                    <div className="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+                      <span className="text-[12px] font-semibold text-slate-400">Tap card to reveal</span>
+                      <RotateCw size={14} className="text-slate-300" />
                     </div>
-                  )}
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => setIsFlipped(false)}
+                    className="surface w-full text-left rounded-[28px] px-6 pt-6 pb-5"
+                  >
+                    <h2 className="text-[20px] font-extrabold text-ink leading-snug tracking-[-0.02em] mb-5">
+                      {currentTopic.title}
+                    </h2>
 
-                  {currentTopic.whyLock && (
-                    <div className="rounded-2xl p-4 bg-blue-50">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Lock size={14} className="text-blue-500" />
-                        <p className="text-[11px] font-bold uppercase tracking-widest text-blue-500">Why It Matters</p>
-                      </div>
-                      <p className="text-[15px] text-gray-700 leading-relaxed">{currentTopic.whyLock}</p>
-                    </div>
-                  )}
-
-                  {currentTopic.connectionEdges && currentTopic.connectionEdges.length > 0 && (
-                    <div className="rounded-2xl p-4 bg-purple-50">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Link2 size={14} className="text-purple-500" />
-                        <p className="text-[11px] font-bold uppercase tracking-widest text-purple-500">Connections</p>
-                      </div>
-                      <ul className="space-y-1.5">
-                        {currentTopic.connectionEdges.map((edge: any, i: number) => (
-                          <li key={i} className="text-[14px] text-gray-700 flex items-start gap-2">
-                            <span className="text-gray-300 mt-0.5 shrink-0">—</span>
-                            <span>{typeof edge === 'string' ? edge : `${edge.title}: ${edge.link}`}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {currentTopic.registryApplication && (
-                    <div className="rounded-2xl p-4 bg-amber-50">
-                      <div className="flex items-center gap-2 mb-2">
-                        <ClipboardCheck size={14} className="text-amber-500" />
-                        <p className="text-[11px] font-bold uppercase tracking-widest text-amber-500">Registry Application</p>
-                      </div>
-                      <p className="text-[15px] text-gray-700 leading-relaxed">{currentTopic.registryApplication}</p>
-                    </div>
-                  )}
-
-                  {currentTopic.checkpoint && (
-                    <div className="rounded-2xl p-4 bg-gray-50">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Sparkles size={14} className="text-gray-500" />
-                        <p className="text-[11px] font-bold uppercase tracking-widest text-gray-400">Checkpoint</p>
-                      </div>
-                      {typeof currentTopic.checkpoint === 'string' ? (
-                        <p className="text-[15px] text-gray-700 leading-relaxed">{currentTopic.checkpoint}</p>
-                      ) : (
-                        <div className="space-y-2">
-                          {currentTopic.checkpoint.pearl && (
-                            <p className="text-[15px] text-gray-700 leading-relaxed">{currentTopic.checkpoint.pearl}</p>
+                    <div>
+                      {currentTopic.corePiece && (
+                        <CardSection label="Core concept" accent="#2ea873">
+                          <p className="text-[15.5px] text-slate-700 leading-[1.65]">{currentTopic.corePiece}</p>
+                        </CardSection>
+                      )}
+                      {currentTopic.whyLock && (
+                        <CardSection label="Why it matters" accent="#3B6FE0">
+                          <p className="text-[15.5px] text-slate-700 leading-[1.65]">{currentTopic.whyLock}</p>
+                        </CardSection>
+                      )}
+                      {currentTopic.connectionEdges && currentTopic.connectionEdges.length > 0 && (
+                        <CardSection label="Connections" accent="#7C5CE0">
+                          <ul className="space-y-2">
+                            {currentTopic.connectionEdges.map((edge: any, i: number) => (
+                              <li key={i} className="text-[15px] text-slate-700 leading-relaxed flex gap-2.5">
+                                <span className="mt-[9px] w-1 h-1 rounded-full bg-slate-300 shrink-0" />
+                                <span>{typeof edge === 'string' ? edge : `${edge.title}: ${edge.link}`}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </CardSection>
+                      )}
+                      {currentTopic.registryApplication && (
+                        <CardSection label="On the registry" accent="#D98A0B">
+                          <p className="text-[15.5px] text-slate-700 leading-[1.65]">{currentTopic.registryApplication}</p>
+                        </CardSection>
+                      )}
+                      {currentTopic.checkpoint && (
+                        <CardSection label="Checkpoint" accent="#0E1726">
+                          {typeof currentTopic.checkpoint === 'string' ? (
+                            <p className="text-[15.5px] text-slate-700 leading-[1.65]">{currentTopic.checkpoint}</p>
+                          ) : (
+                            <>
+                              {currentTopic.checkpoint.pearl && (
+                                <p className="text-[15.5px] text-slate-700 leading-[1.65]">{currentTopic.checkpoint.pearl}</p>
+                              )}
+                              {currentTopic.checkpoint.reflection && (
+                                <p className="mt-3 pl-3 border-l-2 border-slate-200 text-[14.5px] text-slate-500 italic leading-relaxed">
+                                  {currentTopic.checkpoint.reflection}
+                                </p>
+                              )}
+                            </>
                           )}
-                          {currentTopic.checkpoint.reflection && (
-                            <p className="text-[14px] text-gray-500 italic leading-relaxed">{currentTopic.checkpoint.reflection}</p>
-                          )}
-                        </div>
+                        </CardSection>
+                      )}
+                      {currentTopic.keyTerms && currentTopic.keyTerms.length > 0 && (
+                        <CardSection label="Key terms" accent="#8A94A6">
+                          <div className="flex flex-wrap gap-1.5">
+                            {currentTopic.keyTerms.slice(0, 8).map((t: string, i: number) => (
+                              <span key={i} className="px-3 py-1.5 bg-slate-100 rounded-full text-[13px] text-slate-600 font-semibold">{t}</span>
+                            ))}
+                          </div>
+                        </CardSection>
                       )}
                     </div>
-                  )}
-
-                  {currentTopic.keyTerms && currentTopic.keyTerms.length > 0 && (
-                    <div>
-                      <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-2">Key Terms</p>
-                      <div className="flex flex-wrap gap-1.5">
-                        {currentTopic.keyTerms.slice(0, 8).map((t: string, i: number) => (
-                          <span key={i} className="px-3 py-1 bg-gray-100 rounded-full text-[13px] text-gray-600 font-medium">{t}</span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-
-                <div className="flex items-center gap-2 mt-5">
-                  <div className="h-px flex-1 bg-gray-100" />
-                  <p className="text-[12px] font-semibold text-gray-300">Tap to flip · swipe to rate</p>
-                  <div className="h-px flex-1 bg-gray-100" />
-                </div>
-              </button>
-            )}
-            </div>{/* end swipeable wrapper */}
-
-            {/* Know / Review buttons — always visible after flip */}
-            <div className="flex gap-3">
-              <button
-                onClick={handlePrevious}
-                disabled={currentCardIndex === 0}
-                className="w-11 h-11 flex items-center justify-center rounded-2xl border border-gray-200 bg-white disabled:opacity-30 active:bg-gray-50 shrink-0"
-              >
-                <ChevronLeft size={18} className="text-gray-500" />
-              </button>
-
-              {isFlipped ? (
-                <>
-                  <button
-                    onClick={handleDontKnow}
-                    className="flex-1 h-11 rounded-2xl border-2 border-red-200 bg-red-50 text-red-600 text-[14px] font-bold active:bg-red-100 transition-all flex items-center justify-center gap-2"
-                  >
-                    <XCircle size={16} />
-                    Review Again
                   </button>
-                  <button
-                    onClick={handleKnow}
-                    className="flex-1 h-11 rounded-2xl text-white text-[14px] font-bold active:opacity-90 transition-all flex items-center justify-center gap-2"
-                    style={{ backgroundColor: '#3abc83' }}
-                  >
-                    <CheckCircle2 size={16} />
-                    Got It
-                  </button>
-                </>
-              ) : (
-                <button
-                  onClick={() => setIsFlipped(true)}
-                  className="flex-1 h-11 rounded-2xl bg-white border border-gray-200 text-gray-700 text-[14px] font-semibold active:bg-gray-50 transition-all"
-                >
-                  Reveal Answer
-                </button>
-              )}
-
-              <button
-                onClick={handleNext}
-                disabled={currentCardIndex === topics.length - 1}
-                className="w-11 h-11 flex items-center justify-center rounded-2xl border border-gray-200 bg-white disabled:opacity-30 active:bg-gray-50 shrink-0"
-              >
-                <ChevronRight size={18} className="text-gray-500" />
-              </button>
-            </div>
-
-            {/* Stats */}
-            {(knownTopics.size > 0 || unknownTopics.size > 0) && (
-              <div className="flex items-center justify-center gap-4 py-1">
-                <span className="text-[13px] font-semibold" style={{ color: '#3abc83' }}>{knownTopics.size} mastered</span>
-                <span className="text-gray-200">·</span>
-                <span className="text-[13px] font-semibold text-red-400">{unknownTopics.size} to review</span>
+                )}
               </div>
-            )}
+
+              <p className="text-center text-[12px] text-slate-400 font-medium mt-4">
+                {isFlipped ? 'Swipe right if you got it, left to see it again' : 'Swipe to move between cards'}
+              </p>
+            </div>
           </div>
         </main>
+
+        {/* Action bar */}
+        <footer
+          className="shrink-0 bg-white border-t border-slate-900/5 px-4 pt-3"
+          style={{ paddingBottom: 'max(12px, env(safe-area-inset-bottom))' }}
+        >
+          <div className="max-w-lg mx-auto flex items-center gap-2.5">
+            <button
+              onClick={handlePrevious}
+              disabled={currentCardIndex === 0}
+              aria-label="Previous card"
+              className="btn-secondary shrink-0 w-12 h-12 flex items-center justify-center rounded-2xl disabled:opacity-35 active:scale-95 transition-transform"
+            >
+              <ChevronLeft size={20} />
+            </button>
+
+            {isFlipped ? (
+              <>
+                <button
+                  onClick={handleDontKnow}
+                  className="btn-secondary flex-1 h-12 rounded-2xl text-[15px] font-bold whitespace-nowrap active:scale-[0.98] transition-transform"
+                  style={{ color: '#C2410C' }}
+                >
+                  Again
+                </button>
+                <button
+                  onClick={handleKnow}
+                  className="btn-primary flex-1 h-12 rounded-2xl text-[15px] font-bold whitespace-nowrap active:scale-[0.98] transition-transform"
+                >
+                  Got it
+                </button>
+              </>
+            ) : (
+              <button
+                onClick={() => setIsFlipped(true)}
+                className="flex-1 h-12 rounded-2xl text-[15px] font-bold text-white whitespace-nowrap active:scale-[0.98] transition-transform"
+                style={{ backgroundColor: '#0E1726', boxShadow: '0 6px 16px -6px rgba(14,23,38,0.5)' }}
+              >
+                Show answer
+              </button>
+            )}
+
+            <button
+              onClick={handleNext}
+              disabled={currentCardIndex === topics.length - 1}
+              aria-label="Next card"
+              className="btn-secondary shrink-0 w-12 h-12 flex items-center justify-center rounded-2xl disabled:opacity-35 active:scale-95 transition-transform"
+            >
+              <ChevronRight size={20} />
+            </button>
+          </div>
+        </footer>
       </div>
     );
   }
@@ -560,7 +537,7 @@ export default function StudyGuidePage() {
                 return (
                   <div
                     key={topic.id}
-                    className="group bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-all cursor-pointer relative"
+                    className="group bg-white rounded-2xl surface p-6 hover:shadow-md transition-all cursor-pointer relative"
                     onClick={() => toggleTopicComplete(topic.id)}
                   >
                     {isCompleted && (
@@ -605,24 +582,14 @@ export default function StudyGuidePage() {
   // Categories Overview
   return (
     <AppLayout>
-      <header className="px-4 sm:px-6 pt-14 pb-6 sm:pb-8">
+      <header className="px-4 sm:px-6 pt-14 pb-5">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
-            <div>
-              <h1 className="text-3xl font-black tracking-tight text-gray-900 mb-1">
-                Study Guide
-              </h1>
-              <p className="text-sm text-gray-500">
-                Study with Quizlet-style flashcards or browse comprehensive materials
-              </p>
-            </div>
-            <Link href="/practice">
-              <Button variant="outline" size="sm" className="border-gray-200 text-gray-600 hover:text-gray-900">
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Study Mode
-              </Button>
-            </Link>
-          </div>
+          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 mb-1">
+            Study Guide
+          </h1>
+          <p className="text-[14px] text-gray-500">
+            Flashcards for every registry topic
+          </p>
         </div>
       </header>
 
@@ -634,7 +601,7 @@ export default function StudyGuidePage() {
           return (
             <div className="mb-5">
               <div className="flex items-center justify-between mb-1.5">
-                <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest">Overall Progress</p>
+                <p className="eyebrow">Overall Progress</p>
                 <p className="text-[11px] font-bold" style={{ color: '#3abc83' }}>{pct}%</p>
               </div>
               <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
@@ -645,7 +612,7 @@ export default function StudyGuidePage() {
         })()}
 
         {/* Categories as dashboard-style list */}
-        <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-3">Study Categories</p>
+        <p className="eyebrow mb-3">Study Categories</p>
         <div className="flex flex-col gap-2.5">
           {filteredCategories?.map((category, idx) => {
             const Icon = iconMap[category.icon] || BookOpen;
@@ -665,7 +632,7 @@ export default function StudyGuidePage() {
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category)}
-                className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all shadow-sm border border-gray-100"
+                className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
               >
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: c.bg }}>
                   <Icon size={17} style={{ color: c.color }} strokeWidth={1.75} />
