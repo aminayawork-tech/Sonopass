@@ -87,7 +87,7 @@ export default function HeartsSheet({
             ))}
           </div>
           <p className="text-[20px] font-extrabold text-ink tracking-tight mt-3">
-            {stats.hearts} of {MAX_HEARTS} hearts
+            {stats.hearts === 0 ? "You're out of hearts" : `${stats.hearts} of ${MAX_HEARTS} hearts`}
           </p>
           <p className="text-[13px] text-slate-500 mt-1">
             {isFull
