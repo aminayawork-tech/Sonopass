@@ -206,8 +206,10 @@
       "correctAnswer": "B",
       "explanation": "Time Gain Compensation (TGC) selectively amplifies echoes returning from deeper structures to compensate for attenuation. This creates a more uniform image brightness at all depths.",
       "category": "Image Optimization",
-      "hint": "Carefully consider each option and the key concept being tested.",
-      "keywords": []
+      "hint": "Deeper echoes are weaker because of attenuation, so look for the control that amplifies selectively by depth rather than uniformly.",
+      "keywords": [
+        "deeper structures"
+      ]
     },
     {
       "id": "spi-008",
@@ -452,8 +454,10 @@
       "correctAnswer": "B",
       "explanation": "Harmonic imaging uses frequency components generated within tissue (usually at twice the transmitted frequency). This technique reduces artifacts, improves contrast resolution, and produces cleaner images, especially in difficult-to-image patients.",
       "category": "Image Optimization",
-      "hint": "Carefully consider each option and the key concept being tested.",
-      "keywords": []
+      "hint": "Harmonics are generated within tissue rather than at the skin surface, so they avoid much of the near-field clutter and side-lobe artifact.",
+      "keywords": [
+        "harmonic imaging"
+      ]
     }
   ],
   "exam2": [
