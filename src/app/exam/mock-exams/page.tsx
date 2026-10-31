@@ -2,10 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Brain, CheckCircle2, Clock, Zap, Target, ChevronRight, Flame, Star } from 'lucide-react';
+import { CheckCircle2, Clock, Zap, ChevronRight, ArrowRight } from 'lucide-react';
 import { useModality } from '@/contexts/ModalityContext';
 import { getStats, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
 import AppLayout from '@/components/layout/AppLayout';
+import { gradientCss, GRADIENTS, type GradientName } from '@/components/GradientIcon';
+
+const EXAM_GRADIENTS: GradientName[] = ['violet', 'blue', 'cyan', 'rose', 'indigo', 'amber'];
 
 export default function MockExamsPage() {
   const router = useRouter();
@@ -26,11 +29,10 @@ export default function MockExamsPage() {
     if (!modalityStats) return { completed: false, bestScore: 0, attempts: 0 };
     const examScores = modalityStats.examScores.filter(e => e.exam === examId);
     const attempts = examScores.length;
-    const completed = attempts > 0;
-    const bestScore = examScores.length > 0
+    const bestScore = attempts > 0
       ? Math.max(...examScores.map(e => Math.round((e.score / e.total) * 100)))
       : 0;
-    return { completed, bestScore, attempts };
+    return { completed: attempts > 0, bestScore, attempts };
   };
 
   const completedCount = mockExams.filter(e => getExamStats(e.id).completed).length;
@@ -40,121 +42,143 @@ export default function MockExamsPage() {
 
   return (
     <AppLayout>
-      <div className="min-h-screen pb-nav" style={{ backgroundColor: '#F5F7FA' }}>
+      <div className="min-h-screen" style={{ backgroundColor: '#F4F5F7' }}>
 
-        {/* Page Header */}
+        {/* Header */}
         <div className="px-5 pt-14 pb-5">
-          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">Mock Exams</h1>
-          <p className="text-gray-500 text-[14px] mt-0.5">Full-length timed practice tests</p>
+          <h1 className="text-[30px] font-extrabold tracking-[-0.03em] text-ink leading-tight">Mock Exams</h1>
+          <p className="text-slate-500 text-[15px] mt-1">Practice under real registry conditions</p>
         </div>
 
-        {/* Stats Row */}
-        <div className="px-5 mb-7">
-          <p className="eyebrow mb-3">Your Stats</p>
-          <div className="grid grid-cols-3 gap-2.5">
-            <div className="bg-white rounded-2xl p-4 text-center surface">
-              <Brain size={18} className="mx-auto mb-1 text-purple-500" />
-              <div className="text-xl font-extrabold text-gray-900">{completedCount}/{mockExams.length}</div>
-              <div className="text-[10px] text-gray-400 font-medium">Completed</div>
+        {/* Readiness summary */}
+        <div className="px-5 mb-6">
+          <div
+            className="rounded-[24px] p-5"
+            style={{ background: 'linear-gradient(135deg, #0E1726 0%, #1B2A44 100%)', boxShadow: '0 14px 30px -16px rgba(14,23,38,0.65)' }}
+          >
+            <p className="eyebrow mb-4" style={{ color: '#4fd49a' }}>Exam readiness</p>
+            <div className="grid grid-cols-3 divide-x divide-white/10">
+              <div className="pr-3">
+                <div className="text-[26px] font-extrabold text-white leading-none tracking-tight">
+                  {completedCount}<span className="text-slate-500 text-[18px]">/{mockExams.length}</span>
+                </div>
+                <div className="text-[11px] text-slate-400 font-medium mt-1.5">Exams done</div>
+              </div>
+              <div className="px-3">
+                <div className="text-[26px] font-extrabold leading-none tracking-tight" style={{ color: '#4fd49a' }}>{accuracy}%</div>
+                <div className="text-[11px] text-slate-400 font-medium mt-1.5">Accuracy</div>
+              </div>
+              <div className="pl-3">
+                <div className="text-[26px] font-extrabold text-white leading-none tracking-tight">{stats?.streak ?? 0}</div>
+                <div className="text-[11px] text-slate-400 font-medium mt-1.5">Day streak</div>
+              </div>
             </div>
-            <div className="bg-white rounded-2xl p-4 text-center surface">
-              <Target size={18} className="mx-auto mb-1" style={{ color: '#3abc83' }} />
-              <div className="text-xl font-extrabold" style={{ color: '#3abc83' }}>{accuracy}%</div>
-              <div className="text-[10px] text-gray-400 font-medium">Accuracy</div>
-            </div>
-            <div className="bg-white rounded-2xl p-4 text-center surface">
-              <Flame size={18} className="mx-auto mb-1 text-orange-400" />
-              <div className="text-xl font-extrabold text-gray-900">{stats?.streak ?? 0}</div>
-              <div className="text-[10px] text-gray-400 font-medium">Day Streak</div>
-            </div>
+            {mockExams.length > 0 && (
+              <div className="mt-5 h-1.5 rounded-full bg-white/10 overflow-hidden">
+                <div
+                  className="h-full rounded-full transition-all"
+                  style={{ width: `${(completedCount / mockExams.length) * 100}%`, backgroundColor: '#4fd49a' }}
+                />
+              </div>
+            )}
           </div>
         </div>
 
-        {/* Quick Start */}
+        {/* Quick 10 banner */}
         <div className="px-5 mb-7">
-          <p className="eyebrow mb-3">Quick Start</p>
-          <div className="flex flex-col gap-2.5">
-            <button
-              onClick={() => router.push('/exam/quick-10')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
-            >
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#e8f8f2' }}>
-                <Zap size={17} style={{ color: '#3abc83' }} strokeWidth={1.75} />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-[14px] font-bold text-gray-900">Quick 10</p>
-                <p className="text-[11px] text-gray-400 leading-snug">10 random questions • ~5 minutes</p>
-              </div>
-              <ChevronRight size={16} className="text-gray-300 shrink-0" />
-            </button>
-          </div>
+          <button
+            onClick={() => router.push('/exam/quick-10')}
+            className="w-full rounded-[22px] p-5 flex items-center gap-4 text-left active:scale-[0.98] transition-transform relative overflow-hidden"
+            style={{ background: gradientCss('emerald'), boxShadow: `0 12px 26px -14px ${GRADIENTS.emerald[0]}` }}
+          >
+            <div className="absolute -right-6 -top-8 w-32 h-32 rounded-full bg-white/10" />
+            <div className="absolute right-10 -bottom-12 w-24 h-24 rounded-full bg-white/10" />
+            <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center shrink-0 relative">
+              <Zap size={22} className="text-white" strokeWidth={2.2} />
+            </div>
+            <div className="flex-1 min-w-0 relative">
+              <p className="text-[17px] font-extrabold text-white leading-tight">Quick 10</p>
+              <p className="text-[13px] text-white/80 font-medium mt-0.5">10 random questions · ~5 min</p>
+            </div>
+            <div className="w-9 h-9 rounded-full bg-white flex items-center justify-center shrink-0 relative">
+              <ArrowRight size={16} style={{ color: GRADIENTS.emerald[0] }} strokeWidth={2.5} />
+            </div>
+          </button>
         </div>
 
-        {/* Full-Length Exams */}
+        {/* Full-length exams */}
         <div className="px-5 mb-7">
-          <p className="eyebrow mb-3">Full-Length Exams</p>
-          <div className="flex flex-col gap-2.5">
+          <p className="eyebrow mb-3">Full-length exams</p>
+          <div className="flex flex-col gap-3">
             {mockExams.length === 0 && (
-              <div className="bg-white rounded-2xl px-4 py-6 text-center surface">
-                <p className="text-[13px] text-gray-400">No exams available for this modality yet</p>
+              <div className="surface rounded-[22px] px-4 py-6 text-center">
+                <p className="text-[13px] text-slate-400">No exams available for this modality yet</p>
               </div>
             )}
             {mockExams.map((exam, index) => {
               const examStats = getExamStats(exam.id);
-              const colors = [
-                { bg: '#faf5ff', color: '#a855f7' },
-                { bg: '#e8f8f2', color: '#3abc83' },
-                { bg: '#eff6ff', color: '#3b82f6' },
-                { bg: '#fff7ed', color: '#f97316' },
-              ];
-              const c = colors[index % colors.length];
+              const gradient = EXAM_GRADIENTS[index % EXAM_GRADIENTS.length];
+              const questionCount = exam.description?.match(/(\d+)\s*questions/)?.[1];
               return (
                 <button
                   key={exam.id}
                   onClick={() => router.push(exam.route)}
-                  className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
+                  className="surface rounded-[22px] p-4 flex items-center gap-4 text-left active:scale-[0.98] transition-transform"
                 >
-                  <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: c.bg }}>
-                    <Brain size={17} style={{ color: c.color }} strokeWidth={1.75} />
+                  <div
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0"
+                    style={{
+                      background: gradientCss(gradient),
+                      boxShadow: `inset 0 1px 0 rgba(255,255,255,0.28), 0 6px 14px -6px ${GRADIENTS[gradient][0]}99`,
+                    }}
+                  >
+                    <span className="text-[18px] font-extrabold text-white">{index + 1}</span>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-[14px] font-bold text-gray-900">{exam.name}</p>
-                    <p className="text-[11px] text-gray-400 leading-snug">
-                      {examStats.completed
-                        ? `Best: ${examStats.bestScore}% · ${examStats.attempts} attempt${examStats.attempts !== 1 ? 's' : ''}`
-                        : exam.description || 'Full-length timed exam'}
-                    </p>
+                    <p className="text-[15px] font-bold text-ink leading-tight">{exam.name}</p>
+                    <div className="flex items-center gap-1.5 mt-1.5 flex-wrap">
+                      {questionCount && (
+                        <span className="px-2 py-0.5 rounded-full bg-slate-100 text-[11px] font-semibold text-slate-500">
+                          {questionCount} questions
+                        </span>
+                      )}
+                      {examStats.completed ? (
+                        <span className="px-2 py-0.5 rounded-full text-[11px] font-semibold" style={{ backgroundColor: '#e8f8f2', color: '#2ea873' }}>
+                          Best {examStats.bestScore}%
+                        </span>
+                      ) : (
+                        <span className="px-2 py-0.5 rounded-full bg-slate-100 text-[11px] font-semibold text-slate-500">
+                          Not started
+                        </span>
+                      )}
+                    </div>
                   </div>
-                  {examStats.completed && (
-                    <CheckCircle2 size={16} style={{ color: '#3abc83' }} className="shrink-0" />
-                  )}
-                  <ChevronRight size={16} className="text-gray-300 shrink-0" />
+                  {examStats.completed
+                    ? <CheckCircle2 size={18} style={{ color: '#2ea873' }} className="shrink-0" />
+                    : <ChevronRight size={18} className="text-slate-300 shrink-0" />}
                 </button>
               );
             })}
           </div>
         </div>
 
-        {/* Tip Card */}
+        {/* Tip */}
         <div className="px-5 mb-7">
-          <div className="rounded-2xl overflow-hidden shadow-lg" style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)' }}>
-            <div className="flex items-center justify-between px-5 pt-5 mb-3">
-              <span className="text-[11px] font-bold uppercase tracking-widest" style={{ color: '#3abc83' }}>
-                Exam Tip
-              </span>
-              <Clock size={13} className="text-gray-500" />
+          <div className="surface rounded-[22px] p-5 flex gap-4">
+            <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center shrink-0">
+              <Clock size={17} className="text-ink" />
             </div>
-            <h2 className="px-5 text-[17px] font-extrabold text-white leading-snug tracking-tight mb-2">
-              Simulate real exam conditions
-            </h2>
-            <p className="px-5 text-[14px] text-gray-300 leading-relaxed pb-5">
-              Set aside uninterrupted time and work through each mock exam from start to finish before reviewing answers.
-            </p>
+            <div>
+              <p className="text-[15px] font-bold text-ink leading-snug">Simulate the real thing</p>
+              <p className="text-[13.5px] text-slate-500 leading-relaxed mt-1">
+                Set aside uninterrupted time and finish each exam start to end before reviewing answers.
+              </p>
+            </div>
           </div>
         </div>
 
         <div className="px-5 pb-6 text-center">
-          <p className="text-[11px] text-gray-400">SonoPass · Made for sonographers</p>
+          <p className="text-[11px] text-slate-400">SonoPass · Made for sonographers</p>
         </div>
       </div>
     </AppLayout>

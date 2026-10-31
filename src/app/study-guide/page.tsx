@@ -4,11 +4,13 @@ import { useState, useEffect, useRef } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import AppLayout from '@/components/layout/AppLayout';
-
+import GradientIcon, { gradientCss, type GradientName } from '@/components/GradientIcon';
 import {
   Brain, Activity, AlertTriangle, ClipboardList, Zap,
   BookOpen, ChevronRight, Check, ArrowLeft,
   CheckCircle2, ChevronLeft, RotateCw, Shuffle,
+  HeartPulse, GitBranch, Waves, Droplets, ScanLine, AudioWaveform, ListChecks,
+  type LucideIcon,
 } from 'lucide-react';
 
 interface Image {
@@ -64,6 +66,20 @@ interface Category {
 interface StudyGuideContent {
   categories: Category[];
 }
+
+const CATEGORY_STYLE: Record<string, { icon: LucideIcon; gradient: GradientName }> = {
+  'cerebrovascular': { icon: Brain, gradient: 'violet' },
+  'arterial-hemodynamics': { icon: HeartPulse, gradient: 'rose' },
+  'arterial-anatomy': { icon: GitBranch, gradient: 'orange' },
+  'arterial-disease': { icon: AlertTriangle, gradient: 'amber' },
+  'venous-hemodynamics': { icon: Waves, gradient: 'blue' },
+  'venous-anatomy': { icon: Droplets, gradient: 'cyan' },
+  'venous-testing': { icon: ScanLine, gradient: 'indigo' },
+  'venous-disease': { icon: AlertTriangle, gradient: 'blue' },
+  'arterial-testing': { icon: ScanLine, gradient: 'rose' },
+  'physics-instrumentation': { icon: AudioWaveform, gradient: 'emerald' },
+  'quick-reference': { icon: ListChecks, gradient: 'indigo' },
+};
 
 const iconMap: Record<string, any> = {
   'brain': Brain,
@@ -580,80 +596,98 @@ export default function StudyGuidePage() {
   }
 
   // Categories Overview
+  const totalTopicCount = content.categories.reduce((acc, cat) => acc + cat.topics.length, 0);
+  const masteredCount = content.categories.reduce(
+    (acc, cat) => acc + cat.topics.filter((t) => completedTopics.has(t.id)).length,
+    0,
+  );
+  const overallPct = totalTopicCount > 0 ? Math.round((masteredCount / totalTopicCount) * 100) : 0;
+  const ringCircumference = 2 * Math.PI * 26;
+
   return (
     <AppLayout>
-      <header className="px-4 sm:px-6 pt-14 pb-5">
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 mb-1">
-            Study Guide
-          </h1>
-          <p className="text-[14px] text-gray-500">
-            Flashcards for every registry topic
-          </p>
-        </div>
-      </header>
+      <div className="min-h-screen" style={{ backgroundColor: '#F4F5F7' }}>
+        <header className="px-5 pt-14 pb-5">
+          <h1 className="text-[30px] font-extrabold tracking-[-0.03em] text-ink leading-tight">Study Guide</h1>
+          <p className="text-slate-500 text-[15px] mt-1">Flashcards for every registry topic</p>
+        </header>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 pb-24">
-        {/* Progress strip */}
-        {completedTopics.size > 0 && (() => {
-          const total = content.categories.reduce((acc, cat) => acc + cat.topics.length, 0);
-          const pct = Math.round((completedTopics.size / total) * 100);
-          return (
-            <div className="mb-5">
-              <div className="flex items-center justify-between mb-1.5">
-                <p className="eyebrow">Overall Progress</p>
-                <p className="text-[11px] font-bold" style={{ color: '#3abc83' }}>{pct}%</p>
-              </div>
-              <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: '#3abc83' }} />
-              </div>
+        <main className="px-5 pb-24">
+          {/* Deck summary */}
+          <div className="surface rounded-[24px] p-5 mb-7 flex items-center gap-5">
+            <div className="relative w-[64px] h-[64px] shrink-0">
+              <svg viewBox="0 0 64 64" className="w-full h-full -rotate-90">
+                <circle cx="32" cy="32" r="26" fill="none" stroke="#EEF0F3" strokeWidth="7" />
+                <circle
+                  cx="32" cy="32" r="26" fill="none" stroke="url(#guideRing)" strokeWidth="7" strokeLinecap="round"
+                  strokeDasharray={ringCircumference}
+                  strokeDashoffset={ringCircumference * (1 - overallPct / 100)}
+                  style={{ transition: 'stroke-dashoffset 0.6s ease' }}
+                />
+                <defs>
+                  <linearGradient id="guideRing" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#059669" />
+                    <stop offset="100%" stopColor="#34d399" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span className="absolute inset-0 flex items-center justify-center text-[14px] font-extrabold text-ink">{overallPct}%</span>
             </div>
-          );
-        })()}
+            <div className="min-w-0">
+              <p className="text-[16px] font-bold text-ink leading-tight">
+                {masteredCount} of {totalTopicCount} topics mastered
+              </p>
+              <p className="text-[13px] text-slate-500 mt-1 leading-snug">
+                {masteredCount === 0 ? 'Pick a chapter below to start your first deck.' : 'Keep going — one chapter at a time.'}
+              </p>
+            </div>
+          </div>
 
-        {/* Categories as dashboard-style list */}
-        <p className="eyebrow mb-3">Study Categories</p>
-        <div className="flex flex-col gap-2.5">
-          {filteredCategories?.map((category, idx) => {
-            const Icon = iconMap[category.icon] || BookOpen;
-            const totalTopics = category.topics.length;
-            const completedCount = category.topics.filter((t: any) => completedTopics.has(t.id)).length;
-            const iconColors = [
-              { bg: '#e8f8f2', color: '#3abc83' },
-              { bg: '#eff6ff', color: '#3b82f6' },
-              { bg: '#faf5ff', color: '#a855f7' },
-              { bg: '#fff7ed', color: '#f97316' },
-              { bg: '#fef2f2', color: '#ef4444' },
-              { bg: '#f0fdf4', color: '#22c55e' },
-            ];
-            const c = iconColors[idx % iconColors.length];
+          <p className="eyebrow mb-3">Chapters</p>
+          <div className="flex flex-col gap-3">
+            {filteredCategories?.map((category, idx) => {
+              const style = CATEGORY_STYLE[category.id] ?? { icon: iconMap[category.icon] || BookOpen, gradient: 'blue' as GradientName };
+              const totalTopics = category.topics.length;
+              const completedCount = category.topics.filter((t) => completedTopics.has(t.id)).length;
+              const pct = totalTopics > 0 ? (completedCount / totalTopics) * 100 : 0;
+              const done = completedCount === totalTopics && totalTopics > 0;
 
-            return (
-              <button
-                key={category.id}
-                onClick={() => setSelectedCategory(category)}
-                className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
-              >
-                <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: c.bg }}>
-                  <Icon size={17} style={{ color: c.color }} strokeWidth={1.75} />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-[14px] font-bold text-gray-900">{category.title}</p>
-                  <p className="text-[11px] text-gray-400 leading-snug">
-                    {completedCount > 0
-                      ? `${completedCount}/${totalTopics} topics completed`
-                      : `${totalTopics} ${totalTopics === 1 ? 'topic' : 'topics'}`}
-                  </p>
-                </div>
-                {completedCount === totalTopics && totalTopics > 0 && (
-                  <CheckCircle2 size={16} style={{ color: '#3abc83' }} className="shrink-0" />
-                )}
-                <ChevronRight size={16} className="text-gray-300 shrink-0" />
-              </button>
-            );
-          })}
-        </div>
-      </main>
+              return (
+                <button
+                  key={category.id}
+                  onClick={() => setSelectedCategory(category)}
+                  className="surface rounded-[22px] p-4 text-left active:scale-[0.98] transition-transform"
+                >
+                  <div className="flex items-center gap-4">
+                    <GradientIcon icon={style.icon} gradient={style.gradient} size={46} />
+                    <div className="flex-1 min-w-0">
+                      <p className="text-[11px] font-bold tracking-[0.1em] text-slate-400 uppercase">
+                        Chapter {String(idx + 1).padStart(2, '0')}
+                      </p>
+                      <p className="text-[15px] font-bold text-ink leading-tight mt-0.5">{category.title}</p>
+                    </div>
+                    {done
+                      ? <CheckCircle2 size={18} style={{ color: '#2ea873' }} className="shrink-0" />
+                      : <ChevronRight size={18} className="text-slate-300 shrink-0" />}
+                  </div>
+                  <div className="flex items-center gap-3 mt-3.5">
+                    <div className="flex-1 h-1.5 rounded-full bg-slate-100 overflow-hidden">
+                      <div
+                        className="h-full rounded-full transition-all"
+                        style={{ width: `${pct}%`, background: gradientCss(style.gradient) }}
+                      />
+                    </div>
+                    <span className="text-[11.5px] font-semibold text-slate-400 shrink-0">
+                      {completedCount}/{totalTopics} {totalTopics === 1 ? 'topic' : 'topics'}
+                    </span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </main>
+      </div>
     </AppLayout>
   );
 }
+
