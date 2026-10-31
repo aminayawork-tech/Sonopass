@@ -96,7 +96,25 @@ export default function HeartsSheet({
           </p>
         </div>
 
-        <p className="eyebrow mt-6 mb-3">Earn more hearts</p>
+        <div
+          className="mt-6 rounded-2xl p-4 flex items-center gap-3 relative overflow-hidden"
+          style={{ background: 'linear-gradient(135deg, #0E1726 0%, #1B2A44 100%)' }}
+        >
+          <div className="absolute -right-6 -top-8 w-28 h-28 rounded-full bg-white/5" />
+          <GradientIcon icon={Heart} gradient="rose" size={42} />
+          <div className="flex-1 min-w-0 relative">
+            <p className="text-[15px] font-bold text-white">Get 5 hearts</p>
+            <p className="text-[12px] text-slate-400 font-medium mt-0.5">Instant top-up, keep studying</p>
+          </div>
+          <button
+            type="button"
+            className="relative shrink-0 h-10 px-4 rounded-full bg-white text-[14px] font-extrabold text-ink active:scale-95 transition-transform"
+          >
+            $0.99
+          </button>
+        </div>
+
+        <p className="eyebrow mt-6 mb-3">Or earn them free</p>
         <div className="flex flex-col gap-2.5">
           <div className="surface rounded-2xl p-3.5 flex items-center gap-3">
             <GradientIcon icon={Flame} gradient="orange" size={40} />
