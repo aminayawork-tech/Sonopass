@@ -2,34 +2,49 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Card } from '@/components/ui/card';
 import { getStats, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
 import { useModality } from '@/contexts/ModalityContext';
 import {
   Zap,
   BookOpen,
-  Brain,
-  TrendingUp,
+  Timer,
+  BookMarked,
   Target,
-  ClipboardList,
-  ChevronRight,
   Clock,
   Flame,
-  Star,
+  ListChecks,
   Menu,
+  ArrowUpRight,
+  type LucideIcon,
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
 import MenuModal from '@/components/layout/MenuModal';
 import { ModalitySelectorDropdown } from '@/components/ModalitySelector';
+import GradientIcon, { type GradientName } from '@/components/GradientIcon';
+
+const STUDY_MODES: { href: string; title: string; subtitle: string; icon: LucideIcon; gradient: GradientName }[] = [
+  { href: '/exam/quick-10', title: 'Quick 10', subtitle: '~5 minutes', icon: Zap, gradient: 'emerald' },
+  { href: '/practice', title: 'Study Mode', subtitle: 'By category', icon: BookOpen, gradient: 'blue' },
+  { href: '/exam/mock-exams', title: 'Mock Exams', subtitle: 'Full length', icon: Timer, gradient: 'violet' },
+  { href: '/study-guide', title: 'Study Guide', subtitle: 'Flashcards', icon: BookMarked, gradient: 'amber' },
+];
+
+function greetingFor(hour: number) {
+  if (hour < 12) return 'Good morning';
+  if (hour < 18) return 'Good afternoon';
+  return 'Good evening';
+}
 
 export default function DashboardPage() {
   const router = useRouter();
   const [stats, setStats] = useState<UserStats | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [greeting, setGreeting] = useState('Welcome back');
   const { currentModality } = useModality();
 
   useEffect(() => {
     setStats(getStats());
+    setGreeting(greetingFor(new Date().getHours()));
   }, []);
 
   const modalityStats = stats ? getCurrentModalityStats(stats) : null;
@@ -37,144 +52,104 @@ export default function DashboardPage() {
     ? Math.round((modalityStats.totalCorrect / modalityStats.totalAnswered) * 100)
     : 0;
 
+  const statItems: { label: string; value: string; icon: LucideIcon; gradient: GradientName }[] = [
+    { label: 'Day streak', value: String(stats?.streak ?? 0), icon: Flame, gradient: 'orange' },
+    { label: 'Accuracy', value: `${accuracy}%`, icon: Target, gradient: 'emerald' },
+    { label: 'Answered', value: String(modalityStats?.totalAnswered ?? 0), icon: ListChecks, gradient: 'indigo' },
+  ];
+
   return (
     <AppLayout>
       <MenuModal isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
-      <div className="min-h-screen pb-nav" style={{ backgroundColor: '#F5F7FA' }}>
+      <div className="min-h-screen" style={{ backgroundColor: '#F4F5F7' }}>
 
-        {/* Hero Header */}
-        <div className="px-5 pt-14 pb-5">
-          <div className="flex items-center justify-between mb-1">
-            <h1 className="text-3xl font-extrabold tracking-tight">
-              <span className="text-gray-900">Sono</span>
-              <span style={{ color: '#3abc83' }}>Pass</span>
-            </h1>
+        {/* Header */}
+        <div className="px-5 pt-14 pb-6">
+          <div className="flex items-center justify-between mb-5">
+            <p className="text-[17px] font-extrabold tracking-tight">
+              <span className="text-ink">Sono</span>
+              <span style={{ color: '#2ea873' }}>Pass</span>
+            </p>
             <button
               onClick={() => setIsMenuOpen(true)}
-              className="w-10 h-10 flex items-center justify-center rounded-xl active:bg-gray-100 transition-colors"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-white surface active:scale-95 transition-transform"
               aria-label="Open menu"
             >
-              <Menu size={22} className="text-gray-700" strokeWidth={2} />
+              <Menu size={18} className="text-ink" strokeWidth={2} />
             </button>
           </div>
-          <p className="text-gray-500 text-[14px] font-normal">Your registry exam prep companion</p>
-          <div className="mt-3">
+          <h1 className="text-[30px] font-extrabold tracking-[-0.03em] text-ink leading-tight">{greeting}</h1>
+          <p className="text-slate-500 text-[15px] mt-1">
+            {currentModality ? `Let's get you ready for ${currentModality.shortName}.` : 'Your registry exam prep companion'}
+          </p>
+          <div className="mt-4">
             <ModalitySelectorDropdown />
           </div>
         </div>
 
-        {/* Study Modes */}
+        {/* Study modes — 2x2 tiles */}
         <div className="px-5 mb-7">
-          <p className="eyebrow mb-3">Start Studying</p>
-          <div className="flex flex-col gap-2.5">
-            <button
-              onClick={() => router.push('/exam/quick-10')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
-            >
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: '#e8f8f2' }}>
-                <Zap size={17} style={{ color: '#3abc83' }} strokeWidth={1.75} />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-[14px] font-bold text-gray-900">Quick 10</p>
-                <p className="text-[11px] text-gray-400 leading-snug">10 random questions • ~5 minutes</p>
-              </div>
-              <ChevronRight size={16} className="text-gray-300 shrink-0" />
-            </button>
-
-            <button
-              onClick={() => router.push('/practice')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
-            >
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-blue-50">
-                <BookOpen size={17} className="text-blue-500" strokeWidth={1.75} />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-[14px] font-bold text-gray-900">Study Mode</p>
-                <p className="text-[11px] text-gray-400 leading-snug">Practice by category with feedback</p>
-              </div>
-              <ChevronRight size={16} className="text-gray-300 shrink-0" />
-            </button>
-
-            <button
-              onClick={() => router.push('/exam/mock-exams')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
-            >
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-purple-50">
-                <Brain size={17} className="text-purple-500" strokeWidth={1.75} />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-[14px] font-bold text-gray-900">Mock Exams</p>
-                <p className="text-[11px] text-gray-400 leading-snug">Full-length timed practice tests</p>
-              </div>
-              <ChevronRight size={16} className="text-gray-300 shrink-0" />
-            </button>
-
-            <button
-              onClick={() => router.push('/study-guide')}
-              className="bg-white rounded-2xl px-4 py-3.5 flex items-center gap-4 text-left active:scale-[0.98] transition-all surface"
-            >
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 bg-amber-50">
-                <ClipboardList size={17} className="text-amber-500" strokeWidth={1.75} />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-[14px] font-bold text-gray-900">Study Guide</p>
-                <p className="text-[11px] text-gray-400 leading-snug">Theory, anatomy & key concepts</p>
-              </div>
-              <ChevronRight size={16} className="text-gray-300 shrink-0" />
-            </button>
+          <p className="eyebrow mb-3">Start studying</p>
+          <div className="grid grid-cols-2 gap-3">
+            {STUDY_MODES.map(({ href, title, subtitle, icon, gradient }) => (
+              <button
+                key={href}
+                onClick={() => router.push(href)}
+                className="surface rounded-[22px] p-4 text-left active:scale-[0.97] transition-transform"
+              >
+                <div className="flex items-start justify-between mb-5">
+                  <GradientIcon icon={icon} gradient={gradient} size={44} />
+                  <ArrowUpRight size={16} className="text-slate-300" />
+                </div>
+                <p className="text-[15px] font-bold text-ink leading-tight">{title}</p>
+                <p className="text-[12px] text-slate-400 font-medium mt-0.5">{subtitle}</p>
+              </button>
+            ))}
           </div>
         </div>
 
-        {/* Stats Row */}
+        {/* Stats — single card */}
         <div className="px-5 mb-7">
-          <p className="eyebrow mb-3">Your Stats</p>
-          <div className="grid grid-cols-3 gap-2.5">
-            <div className="bg-white rounded-2xl p-4 text-center surface">
-              <Flame size={18} className="mx-auto mb-1 text-orange-400" />
-              <div className="text-xl font-extrabold text-gray-900">{stats?.streak ?? 0}</div>
-              <div className="text-[10px] text-gray-400 font-medium">Day Streak</div>
-            </div>
-            <div className="bg-white rounded-2xl p-4 text-center surface">
-              <Target size={18} className="mx-auto mb-1" style={{ color: '#3abc83' }} />
-              <div className="text-xl font-extrabold" style={{ color: '#3abc83' }}>{accuracy}%</div>
-              <div className="text-[10px] text-gray-400 font-medium">Accuracy</div>
-            </div>
-            <div className="bg-white rounded-2xl p-4 text-center surface">
-              <Star size={18} className="mx-auto mb-1 text-amber-400" />
-              <div className="text-xl font-extrabold text-gray-900">{modalityStats?.totalAnswered ?? 0}</div>
-              <div className="text-[10px] text-gray-400 font-medium">Questions</div>
-            </div>
+          <p className="eyebrow mb-3">Your progress</p>
+          <div className="surface rounded-[22px] grid grid-cols-3 divide-x divide-slate-100 py-4">
+            {statItems.map(({ label, value, icon, gradient }) => (
+              <div key={label} className="flex flex-col items-center gap-2">
+                <GradientIcon icon={icon} gradient={gradient} size={32} />
+                <div className="text-center">
+                  <div className="text-[20px] font-extrabold text-ink leading-none tracking-tight">{value}</div>
+                  <div className="text-[11px] text-slate-400 font-medium mt-1">{label}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Today's Card */}
+        {/* Exam tip */}
         <div className="px-5 mb-7">
-          <div className="rounded-2xl overflow-hidden shadow-lg" style={{ background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)' }}>
+          <div className="rounded-[22px] overflow-hidden" style={{ background: 'linear-gradient(135deg, #0E1726 0%, #1B2A44 100%)', boxShadow: '0 12px 28px -14px rgba(14,23,38,0.6)' }}>
             <div className="flex items-center justify-between px-5 pt-5 mb-3">
-              <span className="text-[11px] font-bold uppercase tracking-widest" style={{ color: '#3abc83' }}>
-                Exam Tip
-              </span>
-              <Clock size={13} className="text-gray-500" />
+              <span className="eyebrow" style={{ color: '#4fd49a' }}>Exam tip</span>
+              <Clock size={13} className="text-slate-500" />
             </div>
             <h2 className="px-5 text-[17px] font-extrabold text-white leading-snug tracking-tight mb-2">
               Focus on your weak areas first
             </h2>
-            <p className="px-5 text-[14px] text-gray-300 leading-relaxed">
-              Studies show that targeted practice on weak topics improves scores faster than re-studying what you already know.
+            <p className="px-5 text-[14px] text-slate-300 leading-relaxed">
+              Targeted practice on weak topics improves scores faster than re-studying what you already know.
             </p>
             <button
               onClick={() => router.push('/progress')}
               className="mx-5 mt-4 mb-5 flex items-center gap-1.5 text-[13px] font-semibold active:opacity-70 transition-opacity"
-              style={{ color: '#3abc83' }}
+              style={{ color: '#4fd49a' }}
             >
               View my progress
-              <span className="text-[16px] leading-none">→</span>
+              <ArrowUpRight size={14} />
             </button>
           </div>
         </div>
 
         <div className="px-5 pb-6 text-center">
-          <p className="text-[11px] text-gray-400">SonoPass · Made for sonographers</p>
+          <p className="text-[11px] text-slate-400">SonoPass · Made for sonographers</p>
         </div>
       </div>
     </AppLayout>
