@@ -4,7 +4,8 @@ import { useState, useEffect, useCallback } from 'react';
 import { Check, X, Home, Info, Heart, Zap, Trophy, ChevronLeft, ChevronRight, Lightbulb } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
-import { getStats, recordAnswer, recordExamComplete, getBadgeInfo, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
+import { getStats, recordAnswer, recordExamComplete, getBadgeInfo, getCurrentModalityStats, spendHintHeart, STREAK_HEART_EVERY, type UserStats } from '@/lib/userStats';
+import HeartsSheet from '@/components/HeartsSheet';
 import { highlightKeywords } from '@/lib/highlightKeywords';
 
 interface Option {
@@ -64,6 +65,8 @@ export default function ExamInterface({ questions, title, mode, examId, modality
   const [xpFlash, setXpFlash] = useState<{ amount: number; correct: boolean } | null>(null);
   const [newBadge, setNewBadge] = useState<string | null>(null);
   const [showHint, setShowHint] = useState<Record<string, boolean>>({});
+  const [heartsOpen, setHeartsOpen] = useState(false);
+  const [heartToast, setHeartToast] = useState(false);
 
   useEffect(() => {
     setStats(getStats());
@@ -102,9 +105,14 @@ export default function ExamInterface({ questions, title, mode, examId, modality
     if (mode === 'practice') {
       setShowAnswer(true);
       const isCorrect = currentQuestion.correctAnswer === letter;
+      const heartsBefore = stats?.hearts ?? 0;
       const result = recordAnswer(isCorrect, currentQuestion.category, modality);
       setStats(result.stats);
-      showXpFlash(result.xpGained, isCorrect);
+      if (isCorrect || heartsBefore > 0) showXpFlash(result.xpGained, isCorrect);
+      if (result.heartEarned) {
+        setHeartToast(true);
+        setTimeout(() => setHeartToast(false), 2200);
+      }
       if (result.newBadges.length > 0) {
         showBadgeNotification(result.newBadges[0]);
       }
@@ -112,21 +120,14 @@ export default function ExamInterface({ questions, title, mode, examId, modality
   };
 
   const handleUseHint = () => {
-    if (!stats || stats.hearts <= 0) return;
-
-    // Deduct a heart
-    const currentStats = getStats();
-    if (currentStats.hearts > 0) {
-      currentStats.hearts -= 1;
-      localStorage.setItem('userStats', JSON.stringify(currentStats));
-      setStats(currentStats);
-
-      // Show hint for current question
-      setShowHint(prev => ({
-        ...prev,
-        [currentQuestion.id]: true
-      }));
+    const updated = spendHintHeart();
+    if (!updated) {
+      setStats(getStats());
+      setHeartsOpen(true);
+      return;
     }
+    setStats(updated);
+    setShowHint(prev => ({ ...prev, [currentQuestion.id]: true }));
   };
 
   const handleNext = () => {
@@ -250,11 +251,15 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                   <span className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-orange-50 text-[12px] font-extrabold text-orange-500 shrink-0">
                     {stats.streak ?? 0}d streak
                   </span>
-                  <span className="flex items-center gap-0.5 shrink-0">
+                  <button
+                    onClick={() => setHeartsOpen(true)}
+                    aria-label="Hearts"
+                    className="flex items-center gap-0.5 shrink-0 py-1 active:scale-95 transition-transform"
+                  >
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Heart key={i} className={cn("w-3.5 h-3.5", i < (stats?.hearts ?? 0) ? "text-red-500 fill-red-500" : "text-gray-200 fill-gray-200")} />
                     ))}
-                  </span>
+                  </button>
                 </>
               )}
             </div>
@@ -286,6 +291,17 @@ export default function ExamInterface({ questions, title, mode, examId, modality
         )}>
           {xpFlash.correct ? `+${xpFlash.amount} XP` : '-1 Heart'}
         </div>
+      )}
+
+      {heartToast && (
+        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-full bg-white surface flex items-center gap-2 slide-down">
+          <Heart className="w-4 h-4 text-red-500 fill-red-500" />
+          <span className="text-[13px] font-bold text-ink">+1 heart · {STREAK_HEART_EVERY} in a row</span>
+        </div>
+      )}
+
+      {heartsOpen && stats && (
+        <HeartsSheet stats={stats} onClose={() => setHeartsOpen(false)} onStatsChange={setStats} />
       )}
 
       {/* Badge notification */}
@@ -349,15 +365,16 @@ export default function ExamInterface({ questions, title, mode, examId, modality
               {!showHint[currentQuestion.id] ? (
                 <button
                   onClick={handleUseHint}
-                  disabled={!stats || stats.hearts <= 0}
                   className="btn-secondary flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[12.5px] font-semibold disabled:opacity-40"
                 >
                   <Lightbulb className="w-3.5 h-3.5 text-amber-500" />
-                  Use hint
-                  <span className="flex items-center gap-0.5 ml-0.5">
-                    <Heart className="w-3 h-3 text-red-500 fill-red-500" />
-                    <span className="text-[11px]">-1</span>
-                  </span>
+                  {stats && stats.hearts > 0 ? 'Use hint' : 'Out of hearts · get more'}
+                  {stats && stats.hearts > 0 && (
+                    <span className="flex items-center gap-0.5 ml-0.5">
+                      <Heart className="w-3 h-3 text-red-500 fill-red-500" />
+                      <span className="text-[11px]">-1</span>
+                    </span>
+                  )}
                 </button>
               ) : (
                 <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl">
