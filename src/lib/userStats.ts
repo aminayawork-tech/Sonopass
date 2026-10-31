@@ -72,6 +72,16 @@ export function getStats(): UserStats {
 /**
  * Get stats for the current modality
  */
+// Weighted: 70% accuracy, 20% coverage of 500 questions, +5 for a 7+ day streak
+export function getRegistryReadiness(stats: UserStats): number {
+  const modalityStats = getCurrentModalityStats(stats);
+  if (modalityStats.totalAnswered === 0) return 0;
+  const accuracy = (modalityStats.totalCorrect / modalityStats.totalAnswered) * 100;
+  const coverage = (modalityStats.totalAnswered / 500) * 100;
+  const consistencyBonus = stats.streak > 7 ? 5 : 0;
+  return Math.min(100, Math.round(accuracy * 0.7 + coverage * 0.2 + consistencyBonus));
+}
+
 export function getCurrentModalityStats(stats: UserStats): ModalityStats {
   const modalityId = stats.currentModality || 'vascular';
   if (!stats.modalities[modalityId]) {
