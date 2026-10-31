@@ -27,6 +27,7 @@ export interface NewUserStats {
   lastStudyDate: string;
   hearts: number;
   lastHeartRefill: string;
+  lastShareReward?: string;
   badges: string[];
 
   // Per-modality stats

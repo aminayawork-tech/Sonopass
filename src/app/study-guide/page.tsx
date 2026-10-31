@@ -110,6 +110,44 @@ function CardSection({ label, accent, children }: { label: string; accent: strin
   );
 }
 
+interface TopicRef {
+  category: Category;
+  index: number;
+}
+
+const normalize = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+
+// "Ankle-Brachial Index (ABI)" matches on the full term, "ankle brachial index" and "abi"
+function termVariants(term: string): string[] {
+  const variants = [normalize(term)];
+  const paren = term.match(/^(.*)\((.*)\)\s*$/);
+  if (paren) variants.push(normalize(paren[1]), normalize(paren[2]));
+  return variants.filter((v) => v.length >= 2);
+}
+
+function containsWord(haystack: string, needle: string) {
+  return ` ${haystack} `.includes(` ${needle} `);
+}
+
+// A card titled after the term is a direct hit; cards that list the term are related.
+function findTermTargets(categories: Category[], term: string, currentId: string) {
+  const variants = termVariants(term);
+  const direct: TopicRef[] = [];
+  const related: TopicRef[] = [];
+  for (const category of categories) {
+    category.topics.forEach((topic, index) => {
+      if (topic.id === currentId) return;
+      const title = normalize(topic.title);
+      if (variants.some((v) => containsWord(title, v))) {
+        direct.push({ category, index });
+      } else if (topic.keyTerms?.some((k) => termVariants(k).some((kv) => variants.includes(kv)))) {
+        related.push({ category, index });
+      }
+    });
+  }
+  return { direct, related };
+}
+
 export default function StudyGuidePage() {
   const [content, setContent] = useState<StudyGuideContent | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
@@ -127,6 +165,40 @@ export default function StudyGuidePage() {
   const touchStartX = useRef(0);
   const touchStartY = useRef(0);
   const [swipeDelta, setSwipeDelta] = useState(0);
+
+  // Key-term navigation
+  const [returnStack, setReturnStack] = useState<TopicRef[]>([]);
+  const [termSheet, setTermSheet] = useState<{ term: string; targets: TopicRef[] } | null>(null);
+  const cardScrollRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    cardScrollRef.current?.scrollTo({ top: 0 });
+  }, [currentCardIndex, selectedCategory]);
+
+  const goToTopic = (target: TopicRef) => {
+    if (target.category.id !== selectedCategory?.id) {
+      setKnownTopics(new Set());
+      setUnknownTopics(new Set());
+    }
+    setSelectedCategory(target.category);
+    setCurrentCardIndex(target.index);
+    setIsFlipped(false);
+    setTermSheet(null);
+  };
+
+  const jumpToTopic = (target: TopicRef) => {
+    if (selectedCategory) {
+      setReturnStack((stack) => [...stack, { category: selectedCategory, index: currentCardIndex }]);
+    }
+    goToTopic(target);
+  };
+
+  const jumpBack = () => {
+    const previous = returnStack[returnStack.length - 1];
+    if (!previous) return;
+    setReturnStack((stack) => stack.slice(0, -1));
+    goToTopic(previous);
+  };
 
   useEffect(() => {
     fetch('/study-guide-puzzle.json')
@@ -260,7 +332,11 @@ export default function StudyGuidePage() {
       setViewMode('flashcards');
       setCurrentCardIndex(0);
       setIsFlipped(false);
+      setReturnStack([]);
+      setTermSheet(null);
     };
+
+    const previousCard = returnStack[returnStack.length - 1];
 
     return (
       <div className="h-[100dvh] overflow-hidden flex flex-col" style={{ backgroundColor: '#F4F5F7' }}>
@@ -313,9 +389,18 @@ export default function StudyGuidePage() {
         </header>
 
         {/* Card area */}
-        <main className="flex-1 overflow-y-auto overscroll-contain">
+        <main ref={cardScrollRef} className="flex-1 overflow-y-auto overscroll-contain">
           <div className="min-h-full flex flex-col justify-center px-4 py-6">
             <div className="w-full max-w-lg mx-auto">
+              {previousCard && (
+                <button
+                  onClick={jumpBack}
+                  className="btn-secondary mb-3 inline-flex items-center gap-1.5 pl-2.5 pr-3.5 py-1.5 rounded-full text-[12.5px] font-semibold max-w-full active:scale-[0.98] transition-transform"
+                >
+                  <ArrowLeft size={14} className="shrink-0" />
+                  <span className="truncate">Back to {previousCard.category.topics[previousCard.index].title}</span>
+                </button>
+              )}
               <div
                 onTouchStart={onTouchStart}
                 onTouchMove={onTouchMove}
@@ -364,9 +449,12 @@ export default function StudyGuidePage() {
                     </div>
                   </button>
                 ) : (
-                  <button
+                  <div
+                    role="button"
+                    tabIndex={0}
                     onClick={() => setIsFlipped(false)}
-                    className="surface w-full text-left rounded-[28px] px-6 pt-6 pb-5"
+                    onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setIsFlipped(false); }}
+                    className="surface w-full text-left rounded-[28px] px-6 pt-6 pb-5 cursor-pointer"
                   >
                     <h2 className="text-[20px] font-extrabold text-ink leading-snug tracking-[-0.02em] mb-5">
                       {currentTopic.title}
@@ -421,14 +509,36 @@ export default function StudyGuidePage() {
                       {currentTopic.keyTerms && currentTopic.keyTerms.length > 0 && (
                         <CardSection label="Key terms" accent="#8A94A6">
                           <div className="flex flex-wrap gap-1.5">
-                            {currentTopic.keyTerms.slice(0, 8).map((t: string, i: number) => (
-                              <span key={i} className="px-3 py-1.5 bg-slate-100 rounded-full text-[13px] text-slate-600 font-semibold">{t}</span>
-                            ))}
+                            {currentTopic.keyTerms.slice(0, 8).map((t: string, i: number) => {
+                              const { direct, related } = findTermTargets(content.categories, t, currentTopic.id);
+                              const targets = direct.length > 0 ? direct : related;
+                              if (targets.length === 0) {
+                                return (
+                                  <span key={i} className="px-3 py-1.5 bg-slate-100 rounded-full text-[13px] text-slate-500 font-semibold">{t}</span>
+                                );
+                              }
+                              return (
+                                <button
+                                  key={i}
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    if (direct.length === 1) jumpToTopic(direct[0]);
+                                    else setTermSheet({ term: t, targets });
+                                  }}
+                                  className="inline-flex items-center gap-1 pl-3 pr-2.5 py-1.5 rounded-full text-[13px] font-semibold active:scale-95 transition-transform"
+                                  style={{ backgroundColor: '#e8f8f2', color: '#1f8a5c' }}
+                                >
+                                  {t}
+                                  <ChevronRight size={13} strokeWidth={2.5} />
+                                </button>
+                              );
+                            })}
                           </div>
+                          <p className="text-[11.5px] text-slate-400 mt-2.5">Tap a green term to study its card</p>
                         </CardSection>
                       )}
                     </div>
-                  </button>
+                  </div>
                 )}
               </div>
 
@@ -490,6 +600,36 @@ export default function StudyGuidePage() {
             </button>
           </div>
         </footer>
+
+        {termSheet && (
+          <div className="fixed inset-0 z-50 flex items-end justify-center" onClick={() => setTermSheet(null)}>
+            <div className="absolute inset-0 bg-slate-900/40" />
+            <div
+              className="relative w-full max-w-lg bg-white rounded-t-[28px] px-5 pt-3 slide-up"
+              style={{ paddingBottom: 'max(20px, env(safe-area-inset-bottom))' }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="w-10 h-1 rounded-full bg-slate-200 mx-auto mb-4" />
+              <p className="eyebrow">Cards covering</p>
+              <p className="text-[19px] font-extrabold text-ink tracking-tight mt-1 mb-4">{termSheet.term}</p>
+              <div className="flex flex-col gap-2 max-h-[50vh] overflow-y-auto">
+                {termSheet.targets.map((target) => (
+                  <button
+                    key={`${target.category.id}-${target.index}`}
+                    onClick={() => jumpToTopic(target)}
+                    className="surface rounded-2xl px-4 py-3 flex items-center gap-3 text-left active:scale-[0.98] transition-transform"
+                  >
+                    <div className="flex-1 min-w-0">
+                      <p className="text-[14.5px] font-bold text-ink leading-snug">{target.category.topics[target.index].title}</p>
+                      <p className="text-[12px] text-slate-400 font-medium mt-0.5 truncate">{target.category.title}</p>
+                    </div>
+                    <ChevronRight size={16} className="text-slate-300 shrink-0" />
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     );
   }

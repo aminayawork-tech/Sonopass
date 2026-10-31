@@ -124,14 +124,61 @@ function updateStreak(stats: UserStats): void {
   modalityStats.lastStudyDate = today;
 }
 
+export const MAX_HEARTS = 5;
+export const HEART_REFILL_MS = 6 * 60 * 60 * 1000;
+export const STREAK_HEART_EVERY = 5;
+export const SHARE_HEART_REWARD = 2;
+
 function refreshHearts(stats: UserStats): void {
-  const now = Date.now();
   const lastRefill = new Date(stats.lastHeartRefill).getTime();
-  const sixHours = 6 * 60 * 60 * 1000;
-  if (now - lastRefill >= sixHours && stats.hearts < 5) {
-    stats.hearts = 5;
+  if (stats.hearts < MAX_HEARTS && Date.now() - lastRefill >= HEART_REFILL_MS) {
+    stats.hearts = MAX_HEARTS;
     stats.lastHeartRefill = new Date().toISOString();
   }
+}
+
+// The refill clock starts when you first drop below full, not at the last refill.
+function loseHeart(stats: UserStats): void {
+  if (stats.hearts <= 0) return;
+  if (stats.hearts >= MAX_HEARTS) stats.lastHeartRefill = new Date().toISOString();
+  stats.hearts -= 1;
+}
+
+function gainHearts(stats: UserStats, amount: number): number {
+  const before = stats.hearts;
+  stats.hearts = Math.min(MAX_HEARTS, stats.hearts + amount);
+  return stats.hearts - before;
+}
+
+export function getHeartRefillAt(stats: UserStats): number | null {
+  if (stats.hearts >= MAX_HEARTS) return null;
+  return new Date(stats.lastHeartRefill).getTime() + HEART_REFILL_MS;
+}
+
+export function spendHintHeart(): UserStats | null {
+  const stats = getStats();
+  refreshHearts(stats);
+  if (stats.hearts <= 0) {
+    saveStats(stats);
+    return null;
+  }
+  loseHeart(stats);
+  saveStats(stats);
+  return stats;
+}
+
+export function canClaimShareReward(stats: UserStats): boolean {
+  return stats.hearts < MAX_HEARTS && stats.lastShareReward !== getToday();
+}
+
+export function claimShareReward(): { stats: UserStats; gained: number } {
+  const stats = getStats();
+  refreshHearts(stats);
+  if (!canClaimShareReward(stats)) return { stats, gained: 0 };
+  const gained = gainHearts(stats, SHARE_HEART_REWARD);
+  stats.lastShareReward = getToday();
+  saveStats(stats);
+  return { stats, gained };
 }
 
 export function addXP(amount: number, modality?: string): { stats: UserStats; leveledUp: boolean } {
@@ -151,7 +198,7 @@ export function recordAnswer(
   correct: boolean,
   category: string,
   modality?: string
-): { stats: UserStats; xpGained: number; newBadges: string[] } {
+): { stats: UserStats; xpGained: number; newBadges: string[]; heartEarned: boolean } {
   const stats = getStats();
   const modalityId = modality || stats.currentModality || 'vascular';
 
@@ -175,6 +222,7 @@ export function recordAnswer(
   modalityStats.categoryStats[category].answered += 1;
 
   let xpGained = 0;
+  let heartEarned = false;
 
   if (correct) {
     modalityStats.totalCorrect += 1;
@@ -184,16 +232,17 @@ export function recordAnswer(
     xpGained = modalityStats.correctStreak >= 3 ? 15 : 10;
     modalityStats.xp += xpGained;
     modalityStats.level = Math.floor(modalityStats.xp / 500) + 1;
+    if (modalityStats.correctStreak % STREAK_HEART_EVERY === 0) {
+      heartEarned = gainHearts(stats, 1) > 0;
+    }
   } else {
     modalityStats.correctStreak = 0;
-    if (stats.hearts > 0) {
-      stats.hearts -= 1;
-    }
+    loseHeart(stats);
   }
 
   const newBadges = checkBadges(stats, modalityId);
   saveStats(stats);
-  return { stats, xpGained, newBadges };
+  return { stats, xpGained, newBadges, heartEarned };
 }
 
 export function recordExamComplete(

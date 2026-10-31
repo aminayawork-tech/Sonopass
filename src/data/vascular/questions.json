@@ -1078,8 +1078,8 @@
         }
       ],
       "category": "Cerebrovascular",
-      "correctAnswer": "C",
-      "explanation": "This question tests understanding of venous hemodynamics, specifically how venous reflux is evaluated and which vessels are involved in venous insufficiency.",
+      "correctAnswer": "A",
+      "explanation": "Thromboembolism to the middle cerebral artery is the most common cause of ischemic stroke. Emboli typically originate from carotid atherosclerotic plaques or cardiac sources and occlude the MCA, the largest cerebral vessel.",
       "hint": "Think about the most common or typical findings.",
       "keywords": []
     },
@@ -1649,8 +1649,8 @@
         }
       ],
       "category": "Arterial Hemodynamics",
-      "correctAnswer": "B",
-      "explanation": "This question relates to the technical aspects of performing segmental pressure measurements and interpreting the results.",
+      "correctAnswer": "C",
+      "explanation": "Raynaud disease causes episodic digital vasospasm, which produces a dampened or absent photoplethysmographic (PPG) waveform during symptomatic episodes due to severely reduced digital arterial perfusion.",
       "hint": "Consider Doppler waveform characteristics and flow patterns.",
       "keywords": [
         "waveform"
@@ -1867,8 +1867,8 @@
         }
       ],
       "category": "Cerebrovascular",
-      "correctAnswer": "B",
-      "explanation": "This answer relates to the ultrasound evaluation of dialysis access grafts and fistulas.",
+      "correctAnswer": "A",
+      "explanation": "After carotid endarterectomy, the carotid bulb typically appears larger because the atheromatous plaque and diseased intima have been removed, and a patch angioplasty may widen the vessel further.",
       "hint": "Carefully consider each option and the key concept being tested.",
       "keywords": [
         "carotid"
@@ -2219,7 +2219,7 @@
       ],
       "category": "General & Other",
       "correctAnswer": "C",
-      "explanation": "This question tests understanding of cerebrovascular anatomy and the hemodynamic effects of stenosis.",
+      "explanation": "Blue toe syndrome results from microemboli (cholesterol crystals or thrombus) from proximal atherosclerotic lesions traveling to the digital arteries. Aortoiliac occlusive disease is a common source of these atheroembolism.",
       "hint": "Carefully consider each option and the key concept being tested.",
       "keywords": []
     },
@@ -2475,7 +2475,7 @@
       ],
       "category": "Arterial Hemodynamics",
       "correctAnswer": "C",
-      "explanation": "This question tests knowledge of the pathophysiology of portal hypertension and its effects on hepatic hemodynamics.",
+      "explanation": "Aliasing, low-resistance waveform, and increased diastolic flow post-liver biopsy are classic signs of an arteriovenous fistula (AVF), which creates a low-resistance shunt between hepatic artery and portal/hepatic vein.",
       "hint": "Consider Doppler waveform characteristics and flow patterns.",
       "keywords": [
         "waveform",
@@ -2506,8 +2506,8 @@
         }
       ],
       "category": "Cerebrovascular",
-      "correctAnswer": "B",
-      "explanation": "This answer relates to the ultrasound evaluation of transplant organs and the identification of vascular complications.",
+      "correctAnswer": "A",
+      "explanation": "The transtemporal approach in TCD uses the sphenoid bone (lesser wing) as a landmark. The thin temporal bone near the sphenoid wing provides the acoustic window to insonate the Circle of Willis.",
       "hint": "Consider Doppler waveform characteristics and flow patterns.",
       "keywords": [
         "Doppler"
@@ -10147,8 +10147,8 @@
         }
       ],
       "category": "Cerebrovascular",
-      "correctAnswer": "C",
-      "explanation": "This question tests understanding of venous hemodynamics, specifically how venous reflux is evaluated and which vessels are involved in venous insufficiency.",
+      "correctAnswer": "A",
+      "explanation": "Thromboembolism to the middle cerebral artery is the most common cause of ischemic stroke. Emboli typically originate from carotid atherosclerotic plaques or cardiac sources and occlude the MCA, the largest cerebral vessel.",
       "hint": "Think about the most common or typical findings.",
       "keywords": []
     },
@@ -10867,8 +10867,8 @@
         }
       ],
       "category": "Cerebrovascular",
-      "correctAnswer": "B",
-      "explanation": "This answer relates to the ultrasound evaluation of dialysis access grafts and fistulas.",
+      "correctAnswer": "A",
+      "explanation": "After carotid endarterectomy, the carotid bulb typically appears larger because the atheromatous plaque and diseased intima have been removed, and a patch angioplasty may widen the vessel further.",
       "hint": "Carefully consider each option and the key concept being tested.",
       "keywords": [
         "carotid"
