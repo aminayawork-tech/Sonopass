@@ -109,6 +109,9 @@ export default function ExamInterface({ questions, title, mode, examId, modality
       const result = recordAnswer(isCorrect, currentQuestion.category, modality);
       setStats(result.stats);
       if (isCorrect || heartsBefore > 0) showXpFlash(result.xpGained, isCorrect);
+      if (heartsBefore > 0 && result.stats.hearts === 0) {
+        setTimeout(() => setHeartsOpen(true), 1200);
+      }
       if (result.heartEarned) {
         setHeartToast(true);
         setTimeout(() => setHeartToast(false), 2200);
@@ -128,6 +131,9 @@ export default function ExamInterface({ questions, title, mode, examId, modality
     }
     setStats(updated);
     setShowHint(prev => ({ ...prev, [currentQuestion.id]: true }));
+    if (updated.hearts === 0) {
+      setTimeout(() => setHeartsOpen(true), 1500);
+    }
   };
 
   const handleNext = () => {

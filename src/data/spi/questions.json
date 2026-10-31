@@ -38,7 +38,7 @@
       "options": [
         {
           "letter": "A",
-          "text": "Conversion of electrical energy to mechanical energy"
+          "text": "Conversion between electrical and mechanical energy"
         },
         {
           "letter": "B",
@@ -54,7 +54,7 @@
         }
       ],
       "correctAnswer": "A",
-      "explanation": "The piezoelectric effect is the ability of certain materials to convert electrical energy into mechanical energy (and vice versa). This principle is fundamental to ultrasound transducers, which convert electrical signals into sound waves and returning echoes back into electrical signals.",
+      "explanation": "Piezoelectric materials convert between mechanical and electrical energy: returning echoes deform the crystal and create a voltage (piezoelectric effect), while an applied voltage makes the crystal vibrate and produce sound (reverse piezoelectric effect). Reflection, attenuation and Doppler shift are wave-tissue interactions, not properties of the crystal.",
       "category": "Transducers",
       "hint": "This is the fundamental principle that allows transducers to both create and detect ultrasound waves.",
       "keywords": [
@@ -479,8 +479,8 @@
           "text": "90 degrees"
         }
       ],
-      "correctAnswer": "C",
-      "explanation": "The optimal Doppler angle is between 45-60 degrees. At 0 degrees, maximum Doppler shift is obtained but it may be difficult to position. At 90 degrees, no Doppler shift occurs. 60 degrees provides a good compromise between Doppler shift magnitude and beam-to-flow angle.",
+      "correctAnswer": "A",
+      "explanation": "The Doppler shift is proportional to the cosine of the beam-to-flow angle, so 0 degrees gives the largest shift and the smallest velocity error from angle misestimation. In clinical vascular work, angles of 60 degrees or less are accepted because errors grow rapidly above 60 degrees, and at 90 degrees no shift is detected.",
       "category": "Doppler",
       "hint": "Best Doppler angle is 45-60°. At 90° there's NO Doppler shift. Keep angle <60° for accurate velocities.",
       "keywords": [
