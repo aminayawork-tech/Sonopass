@@ -35,7 +35,7 @@ export default function MockExam4Page() {
   return (
     <ExamInterface
       questions={questions}
-      title="Mock Exam 4"
+      title={currentModality.examModes.find((m) => m.id === 'mock-4')?.name ?? 'Mock Exam 4'}
       mode="exam"
       examId="mock-4"
       modality={currentModality.id}
