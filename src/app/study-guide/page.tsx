@@ -5,11 +5,13 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import AppLayout from '@/components/layout/AppLayout';
 import GradientIcon, { gradientCss, type GradientName } from '@/components/GradientIcon';
+import { useModality } from '@/contexts/ModalityContext';
 import {
   Brain, Activity, AlertTriangle, ClipboardList, Zap,
   BookOpen, ChevronRight, Check, ArrowLeft,
   CheckCircle2, ChevronLeft, RotateCw, Shuffle,
   HeartPulse, GitBranch, Waves, Droplets, ScanLine, AudioWaveform, ListChecks,
+  SlidersHorizontal, ShieldCheck,
   type LucideIcon,
 } from 'lucide-react';
 
@@ -79,7 +81,19 @@ const CATEGORY_STYLE: Record<string, { icon: LucideIcon; gradient: GradientName 
   'arterial-testing': { icon: ScanLine, gradient: 'rose' },
   'physics-instrumentation': { icon: AudioWaveform, gradient: 'emerald' },
   'quick-reference': { icon: ListChecks, gradient: 'indigo' },
+  'spi-sound': { icon: Waves, gradient: 'blue' },
+  'spi-pulsed': { icon: AudioWaveform, gradient: 'cyan' },
+  'spi-transducers': { icon: ScanLine, gradient: 'violet' },
+  'spi-instrumentation': { icon: SlidersHorizontal, gradient: 'emerald' },
+  'spi-artifacts': { icon: AlertTriangle, gradient: 'amber' },
+  'spi-doppler': { icon: Activity, gradient: 'rose' },
+  'spi-hemodynamics': { icon: Droplets, gradient: 'indigo' },
+  'spi-safety': { icon: ShieldCheck, gradient: 'orange' },
 };
+
+function deckUrl(modalityId: string) {
+  return modalityId === 'vascular' ? '/study-guide-puzzle.json' : `/study-guides/${modalityId}/puzzle.json`;
+}
 
 const iconMap: Record<string, any> = {
   'brain': Brain,
@@ -150,6 +164,7 @@ function findTermTargets(categories: Category[], term: string, currentId: string
 
 export default function StudyGuidePage() {
   const [content, setContent] = useState<StudyGuideContent | null>(null);
+  const { currentModality } = useModality();
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [completedTopics, setCompletedTopics] = useState<Set<string>>(new Set());
@@ -201,11 +216,17 @@ export default function StudyGuidePage() {
   };
 
   useEffect(() => {
-    fetch('/study-guide-puzzle.json')
-      .then(res => res.json())
+    if (!currentModality) return;
+    setContent(null);
+    setSelectedCategory(null);
+    setReturnStack([]);
+    fetch(deckUrl(currentModality.id))
+      .then(res => (res.ok ? res.json() : { categories: [] }))
       .then(data => setContent(data))
-      .catch(err => console.error('Failed to load study guide:', err));
+      .catch(() => setContent({ categories: [] }));
+  }, [currentModality]);
 
+  useEffect(() => {
     const saved = localStorage.getItem('completedTopics');
     if (saved) {
       setCompletedTopics(new Set(JSON.parse(saved)));
@@ -459,6 +480,22 @@ export default function StudyGuidePage() {
                     <h2 className="text-[20px] font-extrabold text-ink leading-snug tracking-[-0.02em] mb-5">
                       {currentTopic.title}
                     </h2>
+
+                    {currentTopic.images?.length > 0 && (
+                      <div className="mb-5 space-y-3">
+                        {currentTopic.images.map((img) => (
+                          <figure key={img.filename}>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                              src={img.filename.startsWith('/') ? img.filename : `/images/study-guide/${img.filename}`}
+                              alt={img.caption}
+                              className="w-full rounded-2xl bg-black object-contain max-h-64"
+                            />
+                            <figcaption className="text-[12px] text-slate-400 text-center mt-1.5 leading-snug">{img.caption}</figcaption>
+                          </figure>
+                        ))}
+                      </div>
+                    )}
 
                     <div>
                       {currentTopic.corePiece && (
@@ -749,7 +786,9 @@ export default function StudyGuidePage() {
       <div className="min-h-screen" style={{ backgroundColor: '#F4F5F7' }}>
         <header className="px-5 pt-14 pb-5">
           <h1 className="text-[30px] font-extrabold tracking-[-0.03em] text-ink leading-tight">Study Guide</h1>
-          <p className="text-slate-500 text-[15px] mt-1">Flashcards for every registry topic</p>
+          <p className="text-slate-500 text-[15px] mt-1">
+            Flashcards for every {currentModality?.shortName ?? 'registry'} topic
+          </p>
         </header>
 
         <main className="px-5 pb-24">
@@ -784,6 +823,12 @@ export default function StudyGuidePage() {
           </div>
 
           <p className="eyebrow mb-3">Chapters</p>
+          {content.categories.length === 0 && (
+            <div className="surface rounded-[22px] p-6 text-center">
+              <p className="text-[15px] font-bold text-ink">Flashcards coming soon</p>
+              <p className="text-[13px] text-slate-500 mt-1">There is no flashcard deck for this section yet.</p>
+            </div>
+          )}
           <div className="flex flex-col gap-3">
             {filteredCategories?.map((category, idx) => {
               const style = CATEGORY_STYLE[category.id] ?? { icon: iconMap[category.icon] || BookOpen, gradient: 'blue' as GradientName };

@@ -1,0 +1,2001 @@
+{
+  "categories": [
+    {
+      "id": "spi-sound",
+      "title": "Sound & Propagation",
+      "pieceRange": "Pieces 1-6",
+      "examType": "SPI",
+      "icon": "activity",
+      "color": "blue",
+      "description": "What sound is, how it travels, and how it interacts with tissue",
+      "topics": [
+        {
+          "id": "spi-sound-wave-basics",
+          "title": "Sound Wave Basics",
+          "frontClue": "Sound needs a medium: it moves energy, not matter, back and forth",
+          "corePiece": "Sound is a mechanical, longitudinal wave. It carries energy through a medium by making particles vibrate back and forth in the same direction the wave travels; the particles themselves stay in place. Because it is mechanical, sound cannot travel through a vacuum. The wave creates alternating regions of compression (high pressure, high density) and rarefaction (low pressure, low density). The three acoustic variables that change as a wave passes are pressure (pascals), density (kg/cm3), and distance (particle motion). Ultrasound is sound above 20,000 Hz (20 kHz), the upper limit of human hearing; infrasound is below 20 Hz. Diagnostic imaging typically uses about 2 to 15 MHz. Seven acoustic parameters describe any wave: period, frequency, amplitude, power, intensity, wavelength, and propagation speed. The first five are set by the sound source. Propagation speed is set only by the medium. Wavelength is the only parameter set by both the source and the medium. When waves meet, in-phase waves add (constructive interference) and out-of-phase waves cancel (destructive interference).",
+          "whyLock": "SPI loves the question of who determines each parameter, so build that table in your head first and the rest of physics hangs on it. If a question asks what the sonographer can change, the answer is almost always a source parameter, because nobody can change the patient's tissue. Trap: transverse waves, where particles move perpendicular to travel, are not how ultrasound propagates in soft tissue. Trap two: frequency is a parameter, not an acoustic variable. Interference is not just trivia; the random mix of constructive and destructive interference from tiny scatterers is what produces speckle in every gray-scale image.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Frequency, Period & Wavelength",
+              "link": "Frequency and period are source-determined parameters, while wavelength depends on both the source and the medium."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Propagation Speed",
+              "link": "Speed is the one parameter the medium alone controls, which is why the machine must assume a single value."
+            }
+          ],
+          "registryApplication": "Expect questions such as which parameter is determined by both source and medium (wavelength), which item is not an acoustic variable, or what lower frequency limit defines ultrasound (20 kHz).",
+          "checkpoint": {
+            "pearl": "Source sets period, frequency, amplitude, power, intensity; medium sets speed; both set wavelength",
+            "reflection": "Why can sound not travel through a vacuum, and which three acoustic variables would you measure to prove a wave is sound?"
+          },
+          "keyTerms": [
+            "Longitudinal Wave",
+            "Compression",
+            "Rarefaction",
+            "Acoustic Variables",
+            "Acoustic Parameters",
+            "Interference",
+            "Propagation Speed"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 1"
+        },
+        {
+          "id": "spi-frequency-period-wavelength",
+          "title": "Frequency, Period & Wavelength",
+          "frontClue": "Reciprocal partners: when one climbs, the other must fall",
+          "corePiece": "Frequency is the number of cycles per second, measured in hertz; period is the time to complete one cycle, measured in microseconds for diagnostic ultrasound. They are reciprocals: period x frequency = 1, so a 5 MHz wave has a period of 0.2 µs. Both are set by the sound source and cannot be changed by the sonographer except by switching transducers or selecting a different frequency on a broadband probe. Wavelength is the length of one cycle in space: wavelength = propagation speed / frequency. In soft tissue, wavelength in mm = 1.54 / frequency in MHz, so a 2 MHz wave is 0.77 mm long and a 5 MHz wave is about 0.31 mm. Wavelength depends on both the source and the medium. Higher frequency means a shorter wavelength, which produces shorter pulses and better axial resolution, but also more attenuation and therefore less penetration. That resolution versus penetration trade-off is the central decision behind every transducer choice.",
+          "whyLock": "Many SPI questions are pure proportional reasoning. If frequency doubles, period halves and, in the same medium, wavelength halves. If the beam crosses into a faster medium, frequency stays the same because the source set it, but wavelength lengthens in proportion to the new speed. The classic trap is assuming frequency changes at a boundary; it does not. Memorize 1.54 divided by frequency for soft tissue and check your units: period comes out in microseconds and wavelength in millimeters when frequency is in MHz.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 3",
+              "title": "Propagation Speed",
+              "link": "Wavelength equals speed divided by frequency, so a change in medium changes wavelength even though frequency is fixed."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Axial Resolution",
+              "link": "Shorter wavelengths from higher frequencies make shorter pulses and better axial resolution."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Attenuation",
+              "link": "Higher frequency improves resolution but attenuates faster, limiting penetration."
+            }
+          ],
+          "registryApplication": "Tested both as calculations (period of a 4 MHz wave is 0.25 µs; wavelength of 3 MHz in soft tissue is about 0.51 mm) and as relationships, such as what happens to wavelength when frequency increases or when sound enters bone.",
+          "checkpoint": {
+            "pearl": "Frequency up = period down = wavelength down = resolution up = penetration down",
+            "reflection": "A 5 MHz beam passes from soft tissue into bone. What happens to its frequency, propagation speed, and wavelength?"
+          },
+          "keyTerms": [
+            "Frequency",
+            "Period",
+            "Wavelength",
+            "Hertz",
+            "Axial Resolution",
+            "Attenuation",
+            "Propagation Speed"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 2"
+        },
+        {
+          "id": "spi-propagation-speed",
+          "title": "Propagation Speed",
+          "frontClue": "Stiffness speeds it up, density slows it down; only the medium decides",
+          "corePiece": "Propagation speed is how fast sound travels through a medium, and it is determined only by the medium's stiffness (bulk modulus, the resistance to compression) and density. Speed is directly related to stiffness and inversely related to density. Stiffness has the larger effect, which is why bone, though dense, is the fastest tissue. Approximate speeds from slowest to fastest: air about 330 m/s, lung about 500 m/s, fat about 1450 m/s, average soft tissue 1540 m/s, liver and blood about 1560 m/s, muscle about 1600 m/s, and bone 2000 to 4000 m/s. Every ultrasound system assumes 1540 m/s, or 1.54 mm/µs, for all tissue. Frequency and amplitude have no effect on speed: all frequencies travel at the same speed in a given medium. The relationship speed = frequency x wavelength holds, but changing frequency simply changes wavelength. The sonographer cannot change propagation speed. The 1540 m/s assumption is what produces the 13 µs per cm rule used to place echoes on the screen.",
+          "whyLock": "Because the machine assumes 1540 m/s, any tissue with a different speed puts reflectors at the wrong depth. Slower than 1540, as in fat or a silicone implant, means echoes return late and the reflector is drawn too deep; faster means it is drawn too shallow. When the speed change happens at an oblique boundary, the beam also bends. Trap: the controlling word is stiff, not dense. If two media have the same density, the stiffer one is faster; if they have the same stiffness, the denser one is slower. Compressibility is the opposite of stiffness, so more compressible means slower.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Range Equation",
+              "link": "The range equation uses the assumed 1.54 mm/µs to convert echo arrival time into depth."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Refraction & Propagation Speed Error",
+              "link": "When real speed differs from 1540 m/s, reflectors are misplaced in depth or bent sideways."
+            },
+            {
+              "piece": "Piece 6",
+              "title": "Reflection, Impedance & Refraction",
+              "link": "Speed is half of acoustic impedance and its change across a boundary is required for refraction."
+            }
+          ],
+          "registryApplication": "Typical items ask what determines propagation speed (the medium only), rank media from slowest to fastest, or ask where a reflector will be displayed when the true speed is lower than 1540 m/s.",
+          "checkpoint": {
+            "pearl": "Stiffer = faster; denser = slower; more compressible = slower; soft tissue = 1540 m/s",
+            "reflection": "Media A and B have the same density but A is stiffer. Which carries sound faster, and how would a reflector deep to a slow fatty region be displayed?"
+          },
+          "keyTerms": [
+            "Propagation Speed",
+            "1540 m/s",
+            "Stiffness",
+            "Density",
+            "Bulk Modulus",
+            "Range Equation",
+            "Propagation Speed Error"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 3"
+        },
+        {
+          "id": "spi-amplitude-power-intensity",
+          "title": "Amplitude, Power & Intensity",
+          "frontClue": "Square the amplitude for power; spread power over area for intensity",
+          "corePiece": "Amplitude is the bigness of a wave: the maximum change of an acoustic variable from its resting value. Peak-to-peak amplitude is twice the amplitude. Power is the rate of energy transfer, measured in watts, and is proportional to amplitude squared. Intensity is the concentration of power in a beam: intensity = power / beam area, measured in W/cm2, so it is also proportional to amplitude squared. If amplitude doubles, power and intensity quadruple. Focusing shrinks beam area, so it raises intensity at the focus without changing total power. All three are set by the source and are adjusted by the sonographer through the output power control (also called transmit power, acoustic power, or energy output). All three decrease as sound travels because of attenuation. Intensity is the parameter most closely tied to bioeffects. Relative changes are expressed in decibels, a logarithmic scale: +3 dB doubles intensity, +10 dB multiplies it by 10, +20 dB by 100; -3 dB halves it and -10 dB reduces it to one tenth.",
+          "whyLock": "The square relationship is the most common trap: halving amplitude cuts power and intensity to one quarter, not one half. A second trap is focusing, which raises intensity at the focus while total power stays the same. Decibels compare two values, so a dB number means nothing without a starting point, and positive versus negative tells you increase versus decrease. Learn the anchors of 3 dB as a doubling and 10 dB as a tenfold change, and you can solve almost any dB question without a calculator.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 5",
+              "title": "Attenuation",
+              "link": "Attenuation is the loss of amplitude, power, and intensity, expressed in decibels as sound travels."
+            },
+            {
+              "piece": "Piece 19",
+              "title": "Output Power vs Receiver Gain",
+              "link": "Output power is the control that changes transmitted amplitude, power, and intensity."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "ALARA & Acoustic Intensities",
+              "link": "Intensity, especially SPTA, is the key quantity for bioeffects and ALARA decisions."
+            }
+          ],
+          "registryApplication": "Expect proportionality questions (amplitude tripled means intensity times 9), the intensity formula, decibel conversions, and which control changes all three (output power).",
+          "checkpoint": {
+            "pearl": "Intensity = power / area; power and intensity scale with amplitude squared; 3 dB doubles, 10 dB tenfold",
+            "reflection": "Output power is lowered until amplitude is half its original value. What happens to intensity, and how many decibels is that change?"
+          },
+          "keyTerms": [
+            "Amplitude",
+            "Power",
+            "Intensity",
+            "Decibel",
+            "Beam Area",
+            "Output Power",
+            "ALARA"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 4"
+        },
+        {
+          "id": "spi-attenuation",
+          "title": "Attenuation",
+          "frontClue": "Half a dB per centimeter per megahertz: deeper and higher means weaker",
+          "corePiece": "Attenuation is the decrease in intensity, power, and amplitude as sound travels through tissue, measured in decibels. It has three components: absorption (sound energy converted to heat, the dominant mechanism in soft tissue), reflection, and scattering. In soft tissue, the attenuation coefficient, the dB lost per cm, is about one half of the frequency in MHz: 0.5 dB/cm/MHz. Total attenuation (dB) = 0.5 x frequency (MHz) x path length (cm), so a 4 MHz beam traveling 6 cm loses about 12 dB. Attenuation increases with higher frequency and with longer distance; propagation speed has no effect on it. The half-value layer thickness is the depth at which intensity falls to one half (a 3 dB loss); it is thin for high frequencies and highly attenuating tissue. Relative attenuation: air and lung are highest, then bone, then soft tissues such as muscle and fat, then blood, and water is lowest. Time gain compensation exists to correct for attenuation so that similar tissues look equally bright at every depth.",
+          "whyLock": "Attenuation is the penetration half of the frequency trade-off: choose the highest frequency that still reaches the target. It also explains posterior shadowing behind highly attenuating structures and posterior enhancement behind fluid, which barely attenuates. Trap: the attenuation coefficient is per cm and does not depend on distance, but total attenuation grows with distance. Trap two: the half-value layer gets shorter, not longer, as frequency rises. Remember that echoes make a round trip, so the path length for a reflector at depth d is 2d.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 27",
+              "title": "Shadowing & Enhancement",
+              "link": "Structures that attenuate more or less than surrounding tissue create shadowing or enhancement behind them."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "Receiver Functions",
+              "link": "Compensation (TGC) is the receiver function built to undo depth-related attenuation."
+            },
+            {
+              "piece": "Piece 2",
+              "title": "Frequency, Period & Wavelength",
+              "link": "Higher frequency improves resolution but raises the attenuation coefficient proportionally."
+            }
+          ],
+          "registryApplication": "Look for calculations using 0.5 dB/cm/MHz, rankings of tissues by attenuation, and identification of absorption as the main source of attenuation in soft tissue.",
+          "checkpoint": {
+            "pearl": "Attenuation (dB) = 0.5 x MHz x cm; half-value layer = 3 dB loss",
+            "reflection": "How much attenuation does a 6 MHz beam experience traveling 2 cm through soft tissue, and why does switching to 3 MHz help deep imaging?"
+          },
+          "keyTerms": [
+            "Attenuation Coefficient",
+            "Absorption",
+            "Scattering",
+            "Half-Value Layer",
+            "TGC",
+            "Shadowing",
+            "Enhancement"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 5"
+        },
+        {
+          "id": "spi-reflection-impedance-refraction",
+          "title": "Reflection, Impedance & Refraction",
+          "frontClue": "Mismatch makes echoes; an oblique angle plus a speed change makes bending",
+          "corePiece": "Acoustic impedance (Z) = density x propagation speed, measured in rayls. Reflection at a boundary with normal (perpendicular) incidence requires an impedance difference, and the larger the mismatch, the stronger the echo. The intensity reflection coefficient = ((Z2 - Z1) / (Z2 + Z1)) squared, and reflected plus transmitted intensity always equals 100 percent. Soft tissue boundaries reflect less than 1 percent; a soft tissue and air boundary reflects about 99.9 percent, which is why gel is needed. Specular reflection occurs at smooth boundaries larger than the wavelength, such as the diaphragm or vessel walls, and is strongly angle dependent. Scattering occurs from structures smaller than the wavelength and creates organ texture; Rayleigh scattering from red blood cells increases with frequency to the fourth power. Refraction is bending of the transmitted beam at an oblique boundary between media of different speeds, described by Snell's law: if medium 2 is faster, the transmission angle is larger than the incidence angle.",
+          "whyLock": "The two sets of conditions are the heart of this card. Reflection needs an impedance difference. Refraction needs both oblique incidence and different propagation speeds; an impedance difference alone does not bend the beam, and normal incidence never produces refraction. Refraction moves structures sideways on the image and can duplicate them. Specular reflectors are brightest when the beam strikes them at 90 degrees, so an angled diaphragm or tendon can look faint. Rayleigh scattering explains why blood is weakly echogenic but becomes brighter quickly at higher frequencies.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 13",
+              "title": "Matching Layer & Backing Material",
+              "link": "The matching layer exists to bridge the large impedance gap between the crystal and the skin."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Refraction & Propagation Speed Error",
+              "link": "Snell's law bending at oblique boundaries produces lateral displacement and duplication artifacts."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "Mirror Image",
+              "link": "A strong specular reflector such as the diaphragm creates mirror image artifact."
+            }
+          ],
+          "registryApplication": "Questions ask for the conditions needed for reflection versus refraction, which way the beam bends under Snell's law, the impedance formula, and percentages of reflected versus transmitted intensity.",
+          "checkpoint": {
+            "pearl": "Reflection needs an impedance mismatch; refraction needs an oblique angle plus a speed change",
+            "reflection": "Two media have identical impedances but different propagation speeds, struck at an oblique angle. Will there be reflection, refraction, or both?"
+          },
+          "keyTerms": [
+            "Acoustic Impedance",
+            "Rayl",
+            "Specular Reflection",
+            "Rayleigh Scattering",
+            "Snell's Law",
+            "Normal Incidence",
+            "Oblique Incidence",
+            "Matching Layer"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 6"
+        }
+      ]
+    },
+    {
+      "id": "spi-pulsed",
+      "title": "Pulsed Ultrasound",
+      "pieceRange": "Pieces 7-11",
+      "examType": "SPI",
+      "icon": "zap",
+      "color": "blue",
+      "description": "Pulse parameters, timing, and axial resolution",
+      "topics": [
+        {
+          "id": "spi-pulse-duration-spatial-pulse-length",
+          "title": "Pulse Duration & Spatial Pulse Length",
+          "frontClue": "Fewer cycles and shorter wavelengths make short pulses and sharp detail",
+          "corePiece": "Pulsed ultrasound sends brief bursts of sound separated by listening time. Pulse duration (PD) is the time the pulse is on: PD = number of cycles in the pulse x period, measured in microseconds, typically 0.5 to 3 µs for imaging. Spatial pulse length (SPL) is the distance the pulse occupies in space: SPL = number of cycles x wavelength, measured in millimeters, typically 0.1 to 1 mm. Both are set by the source; SPL also depends on the medium because wavelength does. The number of cycles is determined by the backing (damping) material: imaging pulses typically contain 2 to 4 cycles, while pulsed Doppler pulses are longer, often 5 to 30 cycles. Higher frequency means shorter period and wavelength, so both PD and SPL shrink. The sonographer cannot change PD or SPL with the depth control; they change only when a different transducer or frequency is selected. Short pulses are desirable for imaging because axial resolution equals one half of the spatial pulse length.",
+          "whyLock": "PD and SPL describe only the talking part of pulsed ultrasound; PRP, PRF, and duty factor also involve listening time. Students often confuse PD with PRP: PD is the pulse alone, PRP is the pulse plus the listening time. Trap: changing depth changes PRP and PRF but not PD or SPL. Damping, higher frequency, and fewer cycles all shorten the pulse and improve axial resolution. Doppler accepts longer pulses because a narrow bandwidth gives a cleaner frequency shift measurement, at the cost of axial detail.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 11",
+              "title": "Axial Resolution",
+              "link": "Axial resolution is half the spatial pulse length, so anything that shortens SPL improves it."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "PRF & PRP",
+              "link": "PRP contains the pulse duration plus listening time, but only the listening time changes with depth."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Bandwidth & Quality Factor",
+              "link": "Short, damped pulses contain a wide range of frequencies and therefore a wide bandwidth."
+            }
+          ],
+          "registryApplication": "Expect formula and unit questions (SPL = cycles x wavelength), what determines each parameter, and whether the sonographer can change them (not with depth).",
+          "checkpoint": {
+            "pearl": "PD = cycles x period; SPL = cycles x wavelength; neither changes with depth",
+            "reflection": "A 3-cycle pulse at 3 MHz travels through soft tissue. What is its spatial pulse length, and what is its axial resolution?"
+          },
+          "keyTerms": [
+            "Pulse Duration",
+            "Spatial Pulse Length",
+            "Number of Cycles",
+            "Backing Material",
+            "Axial Resolution",
+            "Period",
+            "Wavelength"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 7"
+        },
+        {
+          "id": "spi-prf-prp",
+          "title": "PRF & PRP",
+          "frontClue": "Deeper imaging means longer listening: PRP rises, PRF falls",
+          "corePiece": "Pulse repetition period (PRP) is the time from the start of one pulse to the start of the next, and it includes both the pulse duration and the listening time. Pulse repetition frequency (PRF) is the number of pulses sent per second, typically 1 to 10 kHz in imaging. They are reciprocals: PRP x PRF = 1. Listening time, and therefore PRP, is determined by imaging depth, which the sonographer controls. Depth and PRP are directly related; depth and PRF are inversely related. Because each centimeter of depth needs 13 µs of round-trip time, minimum PRP (µs) is about 13 x depth (cm), and maximum PRF (Hz) is about 77,000 / depth (cm). At 10 cm, PRP is about 130 µs and maximum PRF is about 7.7 kHz. PRF is unrelated to the transducer's operating frequency: a 2 MHz probe and a 5 MHz probe imaging to the same depth have the same PRF. A lower PRF limits frame rate and, in pulsed Doppler, lowers the Nyquist limit.",
+          "whyLock": "PRF is the hub that connects depth, frame rate, and aliasing. Shallow imaging allows a high PRF, faster frames, and a higher Nyquist limit. Deep imaging forces a low PRF so that echoes from one pulse return before the next pulse is sent; when the system breaks that rule, range ambiguity results. Trap: PRF, in kHz, is pulses per second, while operating frequency, in MHz, is cycles per second within the pulse. Trap two: PRP changes with depth but pulse duration does not, so duty factor falls as depth increases.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Range Equation",
+              "link": "The 13 µs per cm rule from the range equation sets the minimum PRP for any imaging depth."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Aliasing & the Nyquist Limit",
+              "link": "The Nyquist limit equals PRF divided by two, so deeper sampling makes aliasing more likely."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Temporal Resolution & Frame Rate",
+              "link": "Each scan line takes one PRP, so a longer PRP means fewer frames per second."
+            }
+          ],
+          "registryApplication": "Typical items link increased depth to longer PRP, lower PRF, lower frame rate, or more aliasing, and include reciprocal calculations between PRP and PRF.",
+          "checkpoint": {
+            "pearl": "Depth up = PRP up = PRF down = Nyquist limit down",
+            "reflection": "What are the approximate PRP and maximum PRF when imaging to 15 cm in soft tissue?"
+          },
+          "keyTerms": [
+            "PRF",
+            "PRP",
+            "Imaging Depth",
+            "Listening Time",
+            "Nyquist Limit",
+            "Range Ambiguity",
+            "Frame Rate"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 8"
+        },
+        {
+          "id": "spi-duty-factor",
+          "title": "Duty Factor",
+          "frontClue": "The fraction of time the transducer is talking instead of listening",
+          "corePiece": "Duty factor, also called duty cycle, is the fraction of time the system is actually transmitting sound: duty factor = pulse duration / pulse repetition period, often multiplied by 100 to express a percentage. It is unitless. Its range is 0 to 1, or 0 to 100 percent: 0 means the system is not transmitting, and 1 (100 percent) means continuous wave ultrasound, which transmits all the time. Clinical pulsed imaging has a very low duty factor, typically about 0.1 to 1 percent, because the system spends more than 99 percent of its time listening for echoes. Pulsed Doppler has a higher duty factor than gray-scale imaging because its pulses contain more cycles. Duty factor is determined by the source, and it changes when the sonographer changes depth: deeper imaging lengthens PRP, so duty factor decreases, while shallower imaging increases it. Duty factor converts between intensities: temporal-average intensity = pulse-average intensity x duty factor. An equivalent formula is duty factor = PD x PRF.",
+          "whyLock": "Duty factor bridges pulse timing and bioeffects. A higher duty factor delivers more energy over time, so temporal-average intensity rises. Trap: a duty factor of 1.0 is continuous wave, not a very intense pulsed beam. Trap two: depth up lowers duty factor because PD stays fixed while PRP grows. When a question gives PD and PRF instead of PRP, multiply them and watch units: 2 µs x 5 kHz = 2 x 10^-6 s x 5000 per second = 0.01, or 1 percent.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "PRF & PRP",
+              "link": "PRP is the denominator of duty factor, so depth changes duty factor through PRP."
+            },
+            {
+              "piece": "Piece 7",
+              "title": "Pulse Duration & Spatial Pulse Length",
+              "link": "Pulse duration is the numerator and is fixed by the transducer, not by depth."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "ALARA & Acoustic Intensities",
+              "link": "Duty factor converts pulse-average intensities into the temporal-average intensities used in safety."
+            }
+          ],
+          "registryApplication": "Tested as calculations, as limits (continuous wave has a duty factor of 100 percent), and as relationships such as what happens to duty factor when imaging depth increases.",
+          "checkpoint": {
+            "pearl": "Duty factor = PD / PRP; deeper = lower duty factor; continuous wave = 100 percent",
+            "reflection": "If pulse duration is 2 µs and PRF is 5 kHz, what is the duty factor, and what happens to it if the sonographer doubles the depth?"
+          },
+          "keyTerms": [
+            "Duty Factor",
+            "Pulse Duration",
+            "PRP",
+            "Continuous Wave",
+            "Temporal Average Intensity",
+            "Pulse Average Intensity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 9"
+        },
+        {
+          "id": "spi-range-equation",
+          "title": "Range Equation",
+          "frontClue": "Thirteen microseconds per centimeter: the machine turns time into depth",
+          "corePiece": "The range equation lets the system calculate reflector depth from the go-return time of an echo: distance to reflector (mm) = propagation speed (mm/µs) x go-return time (µs) / 2. Dividing by two accounts for the round trip. Because the system assumes 1.54 mm/µs in soft tissue, every 13 µs of go-return time corresponds to 1 cm of reflector depth, which is 2 cm of total travel. An echo arriving 26 µs after transmission is placed at 2 cm; one arriving at 130 µs is placed at 10 cm. Depth and time of flight are directly proportional. The same rule sets the minimum PRP for any depth, 13 µs x depth in cm, and therefore the maximum PRF. The range equation relies on assumptions: sound travels in a straight line, at 1540 m/s, reflects only once from structures on the beam axis, and every echo belongs to the most recent pulse. When any assumption fails, artifacts appear, including propagation speed error, reverberation, mirror image, and range ambiguity.",
+          "whyLock": "This is among the most tested arithmetic on the SPI exam: memorize 13 µs per cm and you can convert in either direction instantly. Trap: forgetting the round trip. If sound travels 10 cm in total, the reflector is 5 cm deep. If the true speed is slower than 1540 m/s, as in fat, echoes arrive late and are drawn too deep; if faster, too shallow. Many artifact questions are range equation questions in disguise, so ask which assumption was broken.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 3",
+              "title": "Propagation Speed",
+              "link": "The range equation uses the assumed 1540 m/s; a different true speed misplaces reflectors in depth."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Range Ambiguity",
+              "link": "When an echo from an earlier pulse arrives after the next pulse, the range equation places it too shallow."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Reverberation, Comet Tail & Ring-Down",
+              "link": "Multiple reflections take extra time, so the range equation draws the repeats deeper and evenly spaced."
+            }
+          ],
+          "registryApplication": "Expect direct time-to-depth calculations, round-trip traps, and questions predicting where a reflector is displayed when the true speed differs from 1540 m/s.",
+          "checkpoint": {
+            "pearl": "13 µs per cm of depth; 26 µs = 2 cm; slower medium = drawn too deep",
+            "reflection": "An echo returns 52 µs after the pulse leaves the transducer. How deep is the reflector, and how far did the sound travel in total?"
+          },
+          "keyTerms": [
+            "Range Equation",
+            "Go-Return Time",
+            "13 µs Rule",
+            "Propagation Speed",
+            "PRP",
+            "Range Ambiguity",
+            "Reverberation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 10"
+        },
+        {
+          "id": "spi-axial-resolution",
+          "title": "Axial Resolution",
+          "frontClue": "LARRD: longitudinal, axial, range, radial, depth all mean the same thing",
+          "corePiece": "Axial resolution is the ability to display two structures as separate when they lie one in front of the other, parallel to the beam. Its synonyms form the mnemonic LARRD: longitudinal, axial, range, radial, and depth resolution. Axial resolution (mm) = spatial pulse length / 2; in soft tissue this works out to about 0.77 x number of cycles / frequency in MHz. Smaller numbers mean better resolution. Two reflectors closer together than half the SPL return overlapping echoes and appear as one. Axial resolution improves with shorter pulses: higher frequency (shorter wavelength), fewer cycles per pulse (more damping by the backing material), and wider bandwidth. It is determined by the transducer and the medium, and it does not change with depth because the pulse length stays the same as it travels. The sonographer can improve it only by choosing a higher frequency or a different transducer. In diagnostic imaging, axial resolution is usually better than lateral resolution, because pulses are shorter than beams are wide.",
+          "whyLock": "The logic is short: short pulse means good axial resolution. Anything that shortens the spatial pulse length helps, and nothing else does. Trap: focusing improves lateral resolution, not axial. Trap two: axial resolution does not vary with depth, but lateral resolution does. Trap three: gain, depth, and PRF have no effect on it. If an answer choice says to increase the number of cycles, that worsens axial resolution. Imaging transducers are heavily damped, with low Q and two or three cycles per pulse, precisely to protect axial resolution.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 7",
+              "title": "Pulse Duration & Spatial Pulse Length",
+              "link": "Axial resolution is exactly half the spatial pulse length."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Matching Layer & Backing Material",
+              "link": "Backing material shortens the pulse by reducing ringing, directly improving axial resolution."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Lateral & Elevational Resolution",
+              "link": "Axial depends on pulse length, while lateral depends on beam width and changes with depth."
+            }
+          ],
+          "registryApplication": "Questions ask you to calculate it (SPL divided by 2), recognize its synonyms (LARRD), and choose which change improves it, with focusing and depth as typical distractors.",
+          "checkpoint": {
+            "pearl": "Axial resolution = SPL / 2; shorter pulse, higher frequency, fewer cycles = better",
+            "reflection": "A 2-cycle pulse at 5 MHz travels through soft tissue. What is the axial resolution, and would two reflectors 0.2 mm apart be resolved?"
+          },
+          "keyTerms": [
+            "Axial Resolution",
+            "LARRD",
+            "Spatial Pulse Length",
+            "Damping",
+            "Backing Material",
+            "Bandwidth",
+            "Lateral Resolution"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 11"
+        }
+      ]
+    },
+    {
+      "id": "spi-transducers",
+      "title": "Transducers",
+      "pieceRange": "Pieces 12-17",
+      "examType": "SPI",
+      "icon": "clipboard-list",
+      "color": "blue",
+      "description": "Crystals, construction, beam shape, and arrays",
+      "topics": [
+        {
+          "id": "spi-piezoelectric-effect",
+          "title": "Piezoelectric Effect",
+          "frontClue": "Squeeze the crystal and it makes voltage; shock it with voltage and it rings",
+          "corePiece": "Piezoelectric materials convert mechanical energy (pressure) into electrical energy, which is how echoes are received, and convert electrical energy into mechanical vibration, the reverse piezoelectric effect, which is how pulses are transmitted. The most common transducer material is lead zirconate titanate (PZT), a man-made ceramic; natural piezoelectric materials include quartz and tourmaline, and modern composite and single-crystal materials offer wider bandwidth. PZT becomes piezoelectric through polarization: it is heated above its Curie temperature, about 300 to 360 degrees Celsius, in a strong electrical field and then cooled. Heating it above the Curie point again, as in autoclaving, depolarizes the crystal and destroys the transducer. In pulsed ultrasound, the operating (resonant) frequency is determined by the crystal's thickness and its propagation speed: frequency = speed of sound in the crystal / (2 x thickness). Thin crystals and fast crystals produce high frequencies, and the crystal is one half of a wavelength thick. In continuous wave ultrasound, the transmitted frequency equals the frequency of the electrical drive voltage.",
+          "whyLock": "The exam asks what determines frequency in two flavors: pulsed, where crystal thickness and crystal speed decide, and continuous wave, where the electrical frequency decides. Thin means high frequency. Trap: in pulsed mode, the voltage applied to the crystal changes output strength, not frequency. Trap two: never heat sterilize a probe, because exceeding the Curie temperature depolarizes it. Remember that the same crystal both transmits and receives, so damage to it affects sending and listening alike.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 13",
+              "title": "Matching Layer & Backing Material",
+              "link": "Layers in front of and behind the crystal shape how efficiently and how briefly it rings."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Bandwidth & Quality Factor",
+              "link": "How long the crystal rings after excitation determines the pulse's bandwidth and Q factor."
+            },
+            {
+              "piece": "Piece 17",
+              "title": "Transducer Arrays & Steering",
+              "link": "Arrays are many small piezoelectric elements fired in patterns to steer and focus."
+            }
+          ],
+          "registryApplication": "Look for the definition (pressure creates voltage), PZT and its alternatives, Curie temperature and sterilization, and what sets operating frequency in pulsed versus continuous wave transducers.",
+          "checkpoint": {
+            "pearl": "Thin crystal + fast crystal = high frequency; crystal thickness = half a wavelength",
+            "reflection": "Why would heat sterilization ruin a transducer, and which two crystal properties set the frequency of a pulsed transducer?"
+          },
+          "keyTerms": [
+            "Piezoelectric Effect",
+            "PZT",
+            "Curie Temperature",
+            "Polarization",
+            "Resonant Frequency",
+            "Crystal Thickness",
+            "Continuous Wave"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 12"
+        },
+        {
+          "id": "spi-matching-layer-backing-material",
+          "title": "Matching Layer & Backing Material",
+          "frontClue": "The front layer helps sound escape; the back layer stops the ringing",
+          "corePiece": "The matching layer sits on the face of the crystal. PZT has an impedance roughly 20 times higher than skin, so without help most of the sound would reflect at the transducer surface. The matching layer has an impedance between that of PZT and skin, stepping the impedance down and improving transmission in both directions. Its thickness is one quarter of a wavelength. Coupling gel acts as a second matching medium by removing air, since a soft tissue and air boundary reflects nearly all sound. Impedance order: PZT greater than matching layer greater than gel greater than skin. The backing (damping) material sits behind the crystal, typically epoxy resin loaded with tungsten. It absorbs the crystal's ringing and shortens each pulse to about two or three cycles. That reduces pulse duration and spatial pulse length, improves axial resolution, widens bandwidth, lowers the quality factor, and reduces sensitivity. Continuous wave Doppler and therapeutic transducers use little or no backing.",
+          "whyLock": "Know what each layer changes. The matching layer improves transmission and sensitivity through impedance stepping and is a quarter wavelength thick. The backing makes everything about the pulse shorter and the bandwidth wider, at the cost of sensitivity. Trap: the crystal is half a wavelength thick, while the matching layer is one quarter. Trap two: damping broadens the range of frequencies around the main frequency rather than shifting the main frequency itself. Imaging probes trade a little sensitivity for detail.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 6",
+              "title": "Reflection, Impedance & Refraction",
+              "link": "The matching layer works by reducing the impedance mismatch that would otherwise reflect sound at the skin."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Axial Resolution",
+              "link": "Backing material shortens the pulse, which directly improves axial resolution."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Bandwidth & Quality Factor",
+              "link": "Damping widens bandwidth and lowers the quality factor of imaging transducers."
+            }
+          ],
+          "registryApplication": "Questions test impedance ordering, the quarter-wavelength rule, the effects of damping (shorter pulse, wider bandwidth, lower Q, less sensitivity), and which transducers lack backing.",
+          "checkpoint": {
+            "pearl": "Matching layer = quarter wave, better transmission; backing = fewer cycles, better axial, lower Q",
+            "reflection": "If a manufacturer removed the backing material, what would happen to pulse length, bandwidth, Q factor, sensitivity, and axial resolution?"
+          },
+          "keyTerms": [
+            "Matching Layer",
+            "Backing Material",
+            "Damping",
+            "Quarter Wavelength",
+            "Acoustic Impedance",
+            "Axial Resolution",
+            "Quality Factor",
+            "Coupling Gel"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 13"
+        },
+        {
+          "id": "spi-bandwidth-quality-factor",
+          "title": "Bandwidth & Quality Factor",
+          "frontClue": "A muffled bell gives a short thud with many tones: wide bandwidth, low Q",
+          "corePiece": "Bandwidth is the range of frequencies contained in a pulse, the difference between its highest and lowest frequencies. A pulse is never a single pure frequency; the shorter the pulse, the more frequencies it contains. Quality factor (Q factor) = main (resonant) frequency / bandwidth, and it has no units. For example, a 6 MHz transducer emitting 4 to 8 MHz has a 4 MHz bandwidth and a Q of 1.5. Fractional bandwidth is the inverse: bandwidth / main frequency. Imaging transducers are heavily damped, so they produce short pulses, wide bandwidth, and a low Q, which supports good axial resolution. Therapeutic and continuous wave Doppler transducers have little or no damping, long or continuous emission, narrow bandwidth, and a high Q. Wide bandwidth is what makes modern techniques possible: multi-frequency probes that let the sonographer select different frequencies, frequency compounding, and harmonic imaging, which transmits at a fundamental frequency and receives at twice that frequency. Pulsed Doppler uses longer pulses and narrower bandwidth than gray-scale imaging.",
+          "whyLock": "Think of a bell. A well-made bell rings for a long time at one pure tone, which is high Q. Wrap it in cloth and it gives a short thud with many mixed tones, which is low Q. Damping, short pulses, wide bandwidth, low Q, and good axial resolution always travel together. Trap: Q has no units. Trap two: wide bandwidth does not mean a higher center frequency. Doppler favors narrow bandwidth so the frequency shift can be measured precisely.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 13",
+              "title": "Matching Layer & Backing Material",
+              "link": "Backing material is what shortens the pulse and widens the bandwidth."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Harmonic Imaging & Contrast Agents",
+              "link": "Harmonic imaging needs bandwidth wide enough to contain both the fundamental and twice the fundamental."
+            },
+            {
+              "piece": "Piece 7",
+              "title": "Pulse Duration & Spatial Pulse Length",
+              "link": "Pulse duration and bandwidth are inversely related: short pulses contain many frequencies."
+            }
+          ],
+          "registryApplication": "Expect a Q factor calculation from frequency and bandwidth, and matching of imaging transducers to low Q and wide bandwidth versus therapeutic or continuous wave transducers to high Q.",
+          "checkpoint": {
+            "pearl": "Damped = short pulse = wide bandwidth = low Q = imaging",
+            "reflection": "A 5 MHz transducer emits frequencies from 3 to 7 MHz. What are its bandwidth and Q factor, and is it better suited to imaging or therapy?"
+          },
+          "keyTerms": [
+            "Bandwidth",
+            "Quality Factor",
+            "Fractional Bandwidth",
+            "Damping",
+            "Resonant Frequency",
+            "Harmonic Imaging",
+            "Multi-Frequency Transducer"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 14"
+        },
+        {
+          "id": "spi-beam-anatomy-focusing",
+          "title": "Beam Anatomy & Focusing",
+          "frontClue": "Near zone, focus, far zone: the beam pinches to half its width, then spreads",
+          "corePiece": "An unfocused disc-shaped crystal produces a beam with three regions. The near zone (Fresnel zone) starts at the transducer face, where beam width equals the crystal diameter, and narrows with depth. The focus is the narrowest point, where beam width is one half the crystal diameter; the distance from the face to the focus is the near zone length or focal depth. Beyond the focus, the far zone (Fraunhofer zone) diverges, and at two near zone lengths the beam is again as wide as the crystal. Near zone length = diameter squared x frequency / 6 in soft tissue (diameter in mm, frequency in MHz, length in mm), so a larger diameter and a higher frequency give a deeper focus. Far zone divergence is reduced by the same two factors. Focusing, with a lens, a curved crystal, or electronic phasing, narrows the beam in the focal region and moves the focus shallower, improving lateral resolution near the focus at the cost of greater divergence beyond it.",
+          "whyLock": "Diameter and frequency both lengthen the near zone and reduce divergence, but frequency is the clean winner because it does so without widening the beam. Trap: a small-diameter crystal has a shallow focus and diverges quickly. Trap two: focusing concentrates energy, so intensity at the focus rises even though power does not. On array transducers, electronic focusing is adjustable: place the focal zone at or just below the structure of interest. Multiple focal zones improve lateral resolution over depth but reduce frame rate.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 16",
+              "title": "Lateral & Elevational Resolution",
+              "link": "Lateral resolution equals beam width, so it is best at the focus."
+            },
+            {
+              "piece": "Piece 17",
+              "title": "Transducer Arrays & Steering",
+              "link": "Arrays focus electronically by firing outer elements first and center elements last."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Temporal Resolution & Frame Rate",
+              "link": "Each added focal zone requires extra pulses per scan line and lowers frame rate."
+            }
+          ],
+          "registryApplication": "Questions ask for beam width at the focus (half the diameter) and at two near zone lengths, which factors deepen the focus, and how focusing changes beam width, intensity, and frame rate.",
+          "checkpoint": {
+            "pearl": "Bigger crystal or higher frequency = deeper focus and less divergence",
+            "reflection": "Two unfocused 6 mm crystals operate at 3 MHz and 6 MHz. Which has the deeper focus, and which beam spreads less in the far zone?"
+          },
+          "keyTerms": [
+            "Near Zone",
+            "Far Zone",
+            "Focal Depth",
+            "Focal Zone",
+            "Beam Divergence",
+            "Lateral Resolution",
+            "Fresnel Zone",
+            "Fraunhofer Zone"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 15"
+        },
+        {
+          "id": "spi-lateral-elevational-resolution",
+          "title": "Lateral & Elevational Resolution",
+          "frontClue": "LATA: lateral, angular, transverse, azimuthal, all decided by beam width",
+          "corePiece": "Lateral resolution is the ability to display two structures as separate when they lie side by side, perpendicular to the beam. Its synonyms form the mnemonic LATA: lateral, angular, transverse, and azimuthal resolution. Lateral resolution (mm) is approximately equal to the beam width at that depth. Because beam width changes with depth, lateral resolution varies with depth: it is best at the focus, where the beam is narrowest, and worse in the near and far zones. It improves with focusing, with correct focal zone placement, and with higher frequency, which reduces far-zone divergence. Line density also contributes: more scan lines per frame sample the field more finely but lower frame rate. Elevational resolution is resolution in the third dimension, perpendicular to the image plane, and it is determined by the slice thickness of the beam. Conventional one-dimensional arrays have a fixed elevational focus set by a lens; 1.5D and 2D arrays focus electronically in elevation and reduce slice thickness artifact.",
+          "whyLock": "The simplest summary is that lateral resolution comes down to beam width, while axial resolution comes down to pulse length. If a question asks how to improve lateral resolution, look for focusing or moving the focal zone; higher frequency also helps by reducing divergence. Trap: damping and fewer cycles improve axial, not lateral, resolution. Trap two: unlike axial resolution, lateral resolution changes with depth. Poor elevational resolution causes slice thickness artifact, in which echoes from beside the image plane fill in cysts and vessels.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 15",
+              "title": "Beam Anatomy & Focusing",
+              "link": "Beam width at each depth, set by focusing and crystal size, defines lateral resolution."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Axial Resolution",
+              "link": "Axial depends on pulse length and stays constant with depth, while lateral depends on beam width."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Side Lobe, Grating Lobe & Slice Thickness",
+              "link": "Poor elevational resolution produces slice thickness artifact that fills in anechoic structures."
+            }
+          ],
+          "registryApplication": "Expect synonyms (LATA), where lateral resolution is best (at the focus), which control improves it (focal zone), and what determines elevational resolution (slice thickness).",
+          "checkpoint": {
+            "pearl": "Axial = pulse length; lateral = beam width; elevational = slice thickness",
+            "reflection": "Two side-by-side reflectors 2 mm apart sit where the beam is 3 mm wide. How will they appear, and which control could separate them?"
+          },
+          "keyTerms": [
+            "Lateral Resolution",
+            "LATA",
+            "Beam Width",
+            "Elevational Resolution",
+            "Slice Thickness",
+            "Focal Zone",
+            "Line Density",
+            "Axial Resolution"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 16"
+        },
+        {
+          "id": "spi-transducer-arrays-steering",
+          "title": "Transducer Arrays & Steering",
+          "frontClue": "Sequential arrays slide the beam; phased arrays steer it with tiny time delays",
+          "corePiece": "An array is a group of small piezoelectric elements, each with its own wire, fired in patterns. A linear sequential array fires small groups of elements one after another along a flat face, producing a rectangular image. A curvilinear (convex) array uses the same sequencing on a curved face, producing a blunted sector image. A phased array fires all of its elements with tiny time delays to steer and focus the beam electronically, producing a sector image. A vector (linear phased) array combines sequencing with phasing and produces a trapezoidal image. An annular array uses concentric rings that are focused electronically at many depths in both the lateral and elevational planes, but it is steered mechanically. In electronic focusing, outer elements fire first and center elements last, in a curved pattern; in electronic steering, the delays form a sloped pattern. A dead element in a linear sequential array creates a vertical dropout line from top to bottom; in a phased array, it degrades steering and focusing across the whole image.",
+          "whyLock": "The exam distinguishes arrays by image shape and by what happens when an element fails. Rectangle means linear, blunted sector means curvilinear, a sector with a narrow top means phased, and a trapezoid means vector. The annular array is the odd one: electronic focusing, mechanical steering. Curved delay patterns focus, sloped delay patterns steer, and a curved and sloped pattern does both. Trap: a damaged linear sequential element causes a sharp vertical line of dropout, not general blurring. The regular spacing of elements also creates grating lobes, which manufacturers reduce with subdicing and apodization.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 15",
+              "title": "Beam Anatomy & Focusing",
+              "link": "Electronic focusing uses curved firing delays to move the focus to the depth the sonographer selects."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Side Lobe, Grating Lobe & Slice Thickness",
+              "link": "The regular spacing of array elements produces grating lobes and their artifacts."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "Piezoelectric Effect",
+              "link": "Each array element is a small piezoelectric crystal that transmits and receives independently."
+            }
+          ],
+          "registryApplication": "Questions match array type to image shape, ask how each array steers and focuses, and ask what image results from a damaged element.",
+          "checkpoint": {
+            "pearl": "Linear = rectangle; curvilinear = blunted sector; phased = steered sector; annular = mechanically steered",
+            "reflection": "A vertical black line runs from top to bottom of a linear array image. What failed, and how would the same failure appear on a phased array?"
+          },
+          "keyTerms": [
+            "Linear Sequential Array",
+            "Curvilinear Array",
+            "Phased Array",
+            "Annular Array",
+            "Electronic Steering",
+            "Electronic Focusing",
+            "Grating Lobe",
+            "Apodization"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 17"
+        }
+      ]
+    },
+    {
+      "id": "spi-instrumentation",
+      "title": "Image Optimization",
+      "pieceRange": "Pieces 18-24",
+      "examType": "SPI",
+      "icon": "zap",
+      "color": "blue",
+      "description": "Receiver functions, controls, and processing",
+      "topics": [
+        {
+          "id": "spi-receiver-functions",
+          "title": "Receiver Functions",
+          "frontClue": "A Cold Dog Can Run: amplify, compensate, compress, demodulate, reject",
+          "corePiece": "The receiver processes returning echoes in a fixed order, remembered as A Cold Dog Can Run: Amplification, Compensation, Compression, Demodulation, Rejection. Amplification, or receiver gain, boosts all signals equally, typically by 60 to 100 dB, and is adjustable. Compensation, or time gain compensation (TGC), boosts deep echoes more than shallow ones to correct for attenuation, so similar tissues look equally bright at every depth; it is adjusted with slide controls. Compression reduces the range of signal strengths, the dynamic range, to fit what the electronics, display, and eye can handle, while preserving the order of bright to dim; it is adjustable. Demodulation converts the signal into a form suitable for display through rectification, which turns negative voltages positive, and smoothing, which traces the envelope; it is the one function the sonographer cannot adjust. Rejection, also called threshold or suppression, eliminates low-level noise and is adjustable. Before reception, the pulser and beam former create and time the transmitted pulses.",
+          "whyLock": "Order and adjustability are the two features most often tested. Demodulation is the only receiver function the sonographer cannot change. TGC exists only because of attenuation; a TGC curve that is too steep makes the deep field too bright. Trap: gain and TGC change brightness without changing the transmitted energy, so they do not increase patient exposure. Rejection affects only weak signals and leaves bright echoes alone. If the whole image is too dark, adjust overall gain; if it is dark only at depth, adjust TGC.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 19",
+              "title": "Output Power vs Receiver Gain",
+              "link": "Receiver gain is amplification after the echo returns, unlike output power, which acts on transmission."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Attenuation",
+              "link": "Compensation exists solely to correct for attenuation that increases with depth."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Dynamic Range & Compression",
+              "link": "Compression is the receiver step that sets the displayed dynamic range."
+            }
+          ],
+          "registryApplication": "Expect questions on the order of the five functions, the one function that is not adjustable (demodulation), and choosing gain versus TGC to correct brightness in one region of an image.",
+          "checkpoint": {
+            "pearl": "ACCDR: amplify, compensate, compress, demodulate, reject; demodulation is not adjustable",
+            "reflection": "The near field looks fine but the image darkens progressively below 8 cm. Which receiver function do you adjust, and why?"
+          },
+          "keyTerms": [
+            "Receiver Gain",
+            "TGC",
+            "Compression",
+            "Demodulation",
+            "Rejection",
+            "Attenuation",
+            "Dynamic Range"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 18"
+        },
+        {
+          "id": "spi-output-power-vs-receiver-gain",
+          "title": "Output Power vs Receiver Gain",
+          "frontClue": "Gain brightens the picture; output power brightens the picture and the patient's dose",
+          "corePiece": "Both controls make the image brighter, but they work at opposite ends of the system. Output power, also called transmit power, acoustic power, or energy output, changes the voltage the pulser applies to the crystals. That increases the amplitude, power, and intensity of the transmitted pulse, strengthens every returning echo, and improves the signal-to-noise ratio, but it also increases patient exposure, including the thermal index and mechanical index. Receiver gain amplifies the echoes after they return to the transducer. It brightens signal and noise equally, so the signal-to-noise ratio does not improve, but patient exposure is unchanged. Following ALARA, when an image is too dark the sonographer should first increase receiver gain, and raise output power only when gain cannot produce a diagnostic image, for example when weak echoes are buried in noise. When an image is too bright, the first step is to reduce output power, which lowers exposure. Output power is the primary control that directly changes the acoustic exposure to the patient.",
+          "whyLock": "Think about where each control acts: output power before the sound enters the patient, gain after the echoes come back. That one idea explains both the bioeffect and the noise behavior. Trap: increasing gain to improve the signal-to-noise ratio is wrong, because gain amplifies noise too. Trap two: when the image is too bright, the ALARA answer is to decrease output power; when it is too dark, the ALARA answer is to increase gain. Questions often present both options and expect you to pick based on brightness direction.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 18",
+              "title": "Receiver Functions",
+              "link": "Receiver gain is the first receiver function, amplification, applied to returning echoes."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "ALARA & Acoustic Intensities",
+              "link": "ALARA dictates using gain before output power because only output power raises exposure."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Amplitude, Power & Intensity",
+              "link": "Output power changes transmitted amplitude, power, and intensity together."
+            }
+          ],
+          "registryApplication": "Scenario questions ask for the ALARA-correct adjustment to a dark or bright image and which control improves the signal-to-noise ratio (output power, not gain).",
+          "checkpoint": {
+            "pearl": "Too dark: gain first. Too bright: power down first. Only output power improves SNR",
+            "reflection": "A weak echo is lost in background noise. Will turning up receiver gain reveal it, and what change would?"
+          },
+          "keyTerms": [
+            "Output Power",
+            "Receiver Gain",
+            "Signal-to-Noise Ratio",
+            "ALARA",
+            "Thermal Index",
+            "Mechanical Index",
+            "Pulser"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 19"
+        },
+        {
+          "id": "spi-temporal-resolution-frame-rate",
+          "title": "Temporal Resolution & Frame Rate",
+          "frontClue": "Shallow, narrow, one focus, fewer lines: the frames fly",
+          "corePiece": "Temporal resolution is the ability to accurately position moving structures from instant to instant, and it is determined by frame rate, measured in frames per second (Hz). Higher frame rate means better temporal resolution; frame time is the reciprocal of frame rate. Frame rate is limited by the speed of sound in tissue and by how many pulses each frame requires: frame time = PRP x number of scan lines x number of focal zones, when each focal zone needs its own pulse per line. The sonographer improves frame rate by decreasing imaging depth, which shortens PRP, using a single focal zone, narrowing the sector or image width, and lowering line density. Increasing depth, adding focal zones, widening the sector, or raising line density all lower frame rate. Color Doppler lowers frame rate sharply because each color line requires several pulses, the packet or ensemble, so a small color box helps. Transducer frequency does not change frame rate. Improving spatial resolution with more lines or focal zones costs temporal resolution.",
+          "whyLock": "Every frame rate question reduces to one idea: how much time does each frame take? Deeper imaging means longer listening for every line, and more focal zones or more lines mean more pulses per frame. Trap: frequency and gain do not affect frame rate. Trap two: persistence smooths the image by averaging frames, which makes moving structures blur and degrades temporal resolution even though frame rate itself is unchanged. For fast-moving structures such as heart valves, reduce depth, sector width, and focal zones first.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "PRF & PRP",
+              "link": "Each scan line takes at least one PRP, and PRP grows with depth."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Beam Anatomy & Focusing",
+              "link": "Every additional focal zone requires extra pulses, trading frame rate for lateral resolution."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Color Doppler",
+              "link": "Color packets add many pulses per line, so color boxes are a major cause of low frame rate."
+            }
+          ],
+          "registryApplication": "Expect questions on which change increases frame rate (shallower depth, single focus, narrower sector, lower line density) and on the trade-off between temporal and spatial resolution.",
+          "checkpoint": {
+            "pearl": "Depth, focal zones, sector width, or line density up = frame rate down",
+            "reflection": "You add two focal zones and widen the sector on an echocardiogram. What happens to temporal resolution, and what could you change to recover it?"
+          },
+          "keyTerms": [
+            "Temporal Resolution",
+            "Frame Rate",
+            "Line Density",
+            "Focal Zone",
+            "Sector Width",
+            "PRF",
+            "Persistence",
+            "Packet Size"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 20"
+        },
+        {
+          "id": "spi-dynamic-range-compression",
+          "title": "Dynamic Range & Compression",
+          "frontClue": "Compression squeezes a huge range of echo strengths into usable shades of gray",
+          "corePiece": "Dynamic range is the ratio of the largest to the smallest signal a system component can handle, expressed in decibels. Echoes returning from the body span an enormous range, far wider than a display or the human eye can show. Compression, the third receiver function, reduces the dynamic range of the signals while preserving their order from strongest to weakest, so they fit the electronics, the display, and the viewer. The sonographer adjusts this with the dynamic range or compression control. Decreasing dynamic range, which means more compression, produces a higher-contrast image with fewer shades of gray: more black and white, with bold edges. Increasing dynamic range, meaning less compression, produces a smoother, lower-contrast image with more gray shades that shows subtle tissue differences. Contrast resolution, the ability to separate echoes of slightly different strength, depends on the number of bits per pixel: n bits give 2 to the power n shades of gray, so 8 bits give 256. Compression has no effect on the sound transmitted into the patient.",
+          "whyLock": "The vocabulary runs opposite to intuition. More compression means less dynamic range, which means more contrast. Students reverse this often, so say it to yourself in one breath. Use a wide dynamic range for subtle parenchymal texture, such as liver, and a narrower range when you want bold separation, such as fluid against tissue. Trap: compression keeps weak echoes but squeezes them together, while rejection simply discards them. Bits per pixel govern contrast resolution, not spatial resolution.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 18",
+              "title": "Receiver Functions",
+              "link": "Compression is the third of the five receiver functions."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Preprocessing vs Postprocessing",
+              "link": "Gray-scale and contrast adjustments can be applied before or after image storage, which defines how reversible they are."
+            }
+          ],
+          "registryApplication": "Expect questions on which image results from changing dynamic range (high contrast versus smooth gray) and calculations of gray shades from bits per pixel (2 to the n).",
+          "checkpoint": {
+            "pearl": "Less dynamic range = more compression = more contrast = fewer grays",
+            "reflection": "An image looks flat and gray with poorly defined borders. Should you increase or decrease the dynamic range, and what happens to the number of gray shades?"
+          },
+          "keyTerms": [
+            "Dynamic Range",
+            "Compression",
+            "Contrast Resolution",
+            "Bits per Pixel",
+            "Gray Scale",
+            "Receiver Functions",
+            "Rejection"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 21"
+        },
+        {
+          "id": "spi-preprocessing-vs-postprocessing",
+          "title": "Preprocessing vs Postprocessing",
+          "frontClue": "Before storage it is baked in; after storage you can still tweak a frozen image",
+          "corePiece": "Image processing is classified by where it occurs relative to image memory in the scan converter. Preprocessing happens before the image is stored: it shapes data as it is acquired, can be applied only to a live image, and cannot be undone or changed on a frozen image. Examples include TGC, write magnification, persistence (frame averaging), spatial compounding, edge enhancement, and fill-in interpolation, which fills gaps between scan lines. Postprocessing happens after storage and can be applied to a frozen image. Examples include read magnification (zoom on stored data), black-and-white inversion, contrast variation, gray-scale maps, 3D rendering, and measurements. Write magnification rescans only the region of interest, assigning more pixels and often more scan lines to it, so spatial resolution genuinely improves. Read magnification simply enlarges stored pixels, so the image gets bigger but no new detail appears. Digital images are built from pixels, and higher pixel density gives better spatial detail. An analog-to-digital converter changes echo signals into binary numbers for storage.",
+          "whyLock": "The quick test is simple: can it be done to a frozen image? If yes, it is postprocessing. The classic paired question is write versus read magnification. Write magnification acquires new data and improves spatial resolution; read magnification only enlarges existing pixels and can look blocky. Trap: persistence feels like a display effect, but it is preprocessing, and it degrades temporal resolution. Another trap is assuming anything labeled zoom improves detail; only write zoom does.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 21",
+              "title": "Dynamic Range & Compression",
+              "link": "Gray-scale mapping and contrast changes illustrate how display processing can follow storage."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "Receiver Functions",
+              "link": "TGC, a receiver function, is a classic example of preprocessing."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Temporal Resolution & Frame Rate",
+              "link": "Persistence is preprocessing that averages frames and blurs motion."
+            }
+          ],
+          "registryApplication": "Expect questions classifying a function as preprocessing or postprocessing and comparing write versus read magnification for spatial resolution.",
+          "checkpoint": {
+            "pearl": "Changeable on a frozen image = postprocessing; write zoom adds data, read zoom only enlarges",
+            "reflection": "After freezing, a colleague zooms in and the image looks pixelated. Which type of magnification did they use, and how could they get true additional detail?"
+          },
+          "keyTerms": [
+            "Preprocessing",
+            "Postprocessing",
+            "Write Magnification",
+            "Read Magnification",
+            "Persistence",
+            "Spatial Compounding",
+            "Pixel Density",
+            "Scan Converter"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 22"
+        },
+        {
+          "id": "spi-harmonic-imaging-contrast-agents",
+          "title": "Harmonic Imaging & Contrast Agents",
+          "frontClue": "Transmit at f, listen at 2f: harmonics grow inside the body, not at the skin",
+          "corePiece": "Tissue harmonic imaging transmits at a fundamental frequency and receives at twice that frequency, the second harmonic. Harmonics are created as the beam travels, through nonlinear propagation: sound travels slightly faster in compressions than in rarefactions, gradually distorting the wave. Harmonics are nearly absent at the skin, build up with depth, and are produced mainly in the strongest central part of the beam. As a result they bypass the superficial layers that cause reverberation and clutter and largely avoid the weak side lobes and grating lobes. The benefits are fewer artifacts, better lateral resolution, and better contrast,. Harmonics can be separated by filtering, which requires a wide bandwidth transducer, or by pulse inversion, which sends two inverted pulses down each line so the fundamental signals cancel and the harmonics remain, at the cost of frame rate. Contrast agents are gas-filled microbubbles with a stabilizing shell, roughly the size of or smaller than red blood cells, so they cross capillaries. They reflect strongly and resonate, producing contrast harmonics.",
+          "whyLock": "The key idea is that tissue harmonics are made in the body, not by the transducer, and they are strongest where the beam is strongest. That single fact explains every benefit. Trap: harmonic imaging does not transmit at 2f; it transmits at f and receives at 2f, which is why penetration is better than simply transmitting the higher frequency. Trap two: contrast harmonics come from microbubble oscillation, not from tissue propagation. Keep the mechanical index low during contrast studies so bubbles oscillate rather than burst, unless destruction is intended.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 14",
+              "title": "Bandwidth & Quality Factor",
+              "link": "A wide bandwidth transducer is needed to transmit the fundamental and receive the harmonic."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Mechanical Bioeffects & MI",
+              "link": "Mechanical index determines whether contrast microbubbles oscillate or rupture."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Side Lobe, Grating Lobe & Slice Thickness",
+              "link": "Weak lobes create few harmonics, so harmonic imaging reduces lobe artifacts."
+            }
+          ],
+          "registryApplication": "Expect questions on how tissue harmonics form (nonlinear propagation), their benefits (fewer artifacts and better lateral resolution), how pulse inversion works, and the role of mechanical index with microbubbles.",
+          "checkpoint": {
+            "pearl": "Harmonics are created in tissue, strongest in the central beam, absent at the skin; receive at 2f",
+            "reflection": "Why does tissue harmonic imaging reduce reverberation from the abdominal wall, and why does pulse inversion lower frame rate?"
+          },
+          "keyTerms": [
+            "Harmonic Imaging",
+            "Fundamental Frequency",
+            "Nonlinear Propagation",
+            "Pulse Inversion",
+            "Microbubbles",
+            "Mechanical Index",
+            "Bandwidth"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 23"
+        },
+        {
+          "id": "spi-advanced-imaging-modes",
+          "title": "Advanced Imaging Modes",
+          "frontClue": "Average many looks to cut noise, but every extra look costs time",
+          "corePiece": "Spatial compounding steers the beam electronically to several angles and averages the resulting frames into one image. It reduces speckle and noise and sharpens curved or angled boundaries, but it lowers frame rate, can blur motion, and reduces shadowing and enhancement, artifacts that sometimes confirm a diagnosis. Frequency compounding divides a wide bandwidth into sub-bands, forms an image from each, and averages them to reduce speckle. Coded excitation transmits long, encoded pulses and decodes the echoes on reception, improving penetration and signal-to-noise ratio while preserving axial resolution. Extended field of view, or panoramic imaging, stitches frames together as the probe slides along the skin. 3D imaging acquires a volume of data that can be resliced in any plane or rendered; 4D adds real-time motion. Elastography assesses tissue stiffness: strain elastography measures how much tissue deforms under compression, while shear wave elastography measures shear wave speed, which is faster in stiffer tissue. M-mode displays depth versus time along a single scan line and has the best temporal resolution of any mode.",
+          "whyLock": "Most advanced modes trade time for image quality: averaging several acquisitions improves the picture but lowers frame rate. Trap: spatial compounding reduces the shadowing and enhancement that help identify stones and cysts, so turn it off when you need those clues. Shear wave speed increases with stiffness, and the shear wave is a separate, much slower wave than the imaging pulse. M-mode samples one line thousands of times per second, so it wins any question about temporal resolution.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 27",
+              "title": "Shadowing & Enhancement",
+              "link": "Spatial compounding diminishes shadowing and enhancement by insonating from multiple angles."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Temporal Resolution & Frame Rate",
+              "link": "Compounding and 3D acquisition require extra pulses and reduce frame rate."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Harmonic Imaging & Contrast Agents",
+              "link": "Harmonics and compounding are both artifact-reduction techniques that rely on wide bandwidth or extra acquisitions."
+            }
+          ],
+          "registryApplication": "Questions match each mode to its principle and trade-off, such as compounding reducing speckle and shadowing, or shear wave speed indicating stiffness, and identify M-mode as having the best temporal resolution.",
+          "checkpoint": {
+            "pearl": "Compounding = averaged angles = less speckle and shadowing = lower frame rate",
+            "reflection": "You suspect a small gallstone but see no posterior shadow with compounding on. What should you change, and why?"
+          },
+          "keyTerms": [
+            "Spatial Compounding",
+            "Frequency Compounding",
+            "Coded Excitation",
+            "Elastography",
+            "Extended Field of View",
+            "M-Mode",
+            "Speckle",
+            "Shadowing"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 24"
+        }
+      ]
+    },
+    {
+      "id": "spi-artifacts",
+      "title": "Artifacts",
+      "pieceRange": "Pieces 25-31",
+      "examType": "SPI",
+      "icon": "alert-triangle",
+      "color": "blue",
+      "description": "Why images lie, and how to recognize and fix it",
+      "topics": [
+        {
+          "id": "spi-reverberation-comet-tail-ring-down",
+          "title": "Reverberation, Comet Tail & Ring-Down",
+          "frontClue": "Sound trapped between two mirrors builds a ladder of fake echoes going deeper",
+          "corePiece": "Reverberation occurs when sound bounces back and forth between two strong parallel reflectors, or between a strong reflector and the transducer face. Each extra round trip adds travel time, and because the range equation assumes every echo made exactly one trip, the system plots multiple equally spaced, progressively weaker echoes deeper than the true reflector and parallel to it. The spacing equals the distance between the two reflectors. Comet tail is a form of reverberation in which the two reflectors are so close together (surgical clips, cholesterol crystals in adenomyomatosis, the pleural line) that the echoes merge into a short, tapering, solid bright tail. Ring-down looks similar but has a different mechanism: fluid trapped among a cluster of gas bubbles resonates and emits sound continuously, producing a long, unbroken bright streak that runs toward the bottom of the image. Ring-down signals gas; comet tail signals a small, strong reflector. All three line up along the scan line, deep to the real reflector.",
+          "whyLock": "Reason from the range equation: the machine converts time to depth at 13 microseconds per centimeter and assumes a single bounce. Extra bounces mean extra time, so the false echoes always land deeper, never shallower. Equal spacing is the giveaway for classic reverberation; a solid, continuous streak points to comet tail or ring-down. A common trap is treating comet tail and ring-down as the same thing: comet tail is reverberation between closely spaced reflectors, while ring-down is resonance of fluid trapped between gas bubbles. Changing the transducer angle or acoustic window and using harmonic imaging reduce reverberation; turning down overall gain only makes the real echoes dimmer too.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Range Equation",
+              "link": "Reverberation exists because the range equation assumes one round trip, so each extra bounce is plotted deeper by 13 microseconds per centimeter."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "Mirror Image",
+              "link": "Both are multipath artifacts from strong specular reflectors that place false copies deeper than the real structure."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Harmonic Imaging & Contrast Agents",
+              "link": "Harmonic imaging suppresses weak multiple-bounce echoes, cleaning reverberation from the near field."
+            }
+          ],
+          "registryApplication": "Expect an image showing equally spaced parallel lines, a tapering bright tail, or a long continuous streak, and be asked to name the artifact or what causes it (two strong reflectors versus gas bubbles).",
+          "checkpoint": {
+            "pearl": "Equally spaced lines = reverberation; short tapering tail = comet tail; long unbroken streak from gas = ring-down.",
+            "reflection": "Why can reverberation echoes never appear shallower than the true reflector?"
+          },
+          "keyTerms": [
+            "Reverberation",
+            "Comet Tail",
+            "Ring-Down",
+            "Range Equation",
+            "Specular Reflector",
+            "Harmonic Imaging",
+            "Multipath"
+          ],
+          "images": [
+            {
+              "filename": "/images/spi/artifacts/a20.jpg",
+              "caption": "Ring-down artifact: a continuous bright streak extending deep from gas"
+            },
+            {
+              "filename": "/images/spi/artifacts/a19.jpg",
+              "caption": "Comet tail artifact tapering deep to a small, strong reflector in the lung"
+            }
+          ],
+          "pieceNumber": "Piece 25"
+        },
+        {
+          "id": "spi-mirror-image",
+          "title": "Mirror Image",
+          "frontClue": "A strong reflector acts like a mirror, and the copy always hides deeper",
+          "corePiece": "Mirror image artifact appears when a strong, smooth specular reflector, classically the diaphragm-lung interface, the pleura, or a bowel-gas interface, redirects the beam toward a real structure and the echo returns along the same detour. The system assumes straight-line travel and a single reflection, so it places a second copy of the structure on the far side of the reflector. The rules to memorize: the true object is closer to the transducer; the copy is deeper; the reflector lies on a straight line between them; and the copy sits as far behind the reflector as the real object sits in front of it. The duplicate may be slightly weaker. Mirror image occurs in grayscale, color Doppler (a duplicate subclavian artery deep to the pleura), and spectral Doppler. The classic example is liver tissue displayed above the diaphragm, where aerated lung should look dark. The spectral mirror from cross talk is a different artifact with a different cause.",
+          "whyLock": "Mirror image breaks the straight-line path assumption and adds travel time, which is why the copy always lands deeper. Do not confuse it with refraction, which places copies side by side at the same depth, or with reverberation, which produces multiple equally spaced copies. A big trap is the spectral mirror (cross talk): a copy of the waveform across the baseline caused by a beam-to-flow angle near 90 degrees and excessive Doppler gain, not by a specular reflector. True mirror image changes or disappears when you change the scanning window or angle. Clinically, mirrored liver above the diaphragm is reassuring: a pleural effusion removes the reflective lung interface, so the mirror vanishes.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 29",
+              "title": "Refraction & Propagation Speed Error",
+              "link": "Refraction duplicates a structure side by side at the same depth, whereas mirror image duplicates it deeper, behind the reflector."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Reverberation, Comet Tail & Ring-Down",
+              "link": "Both arise from strong specular reflectors and extra travel time, but reverberation yields many equally spaced copies instead of one."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Color & Spectral Doppler Artifacts",
+              "link": "The spectral mirror (cross talk) shares the name but comes from a near 90 degree angle and high gain, not a reflector."
+            }
+          ],
+          "registryApplication": "Typically shown as liver above the diaphragm or a duplicated vessel deep to the pleura; you must name the artifact or state that the true structure is the shallower one.",
+          "checkpoint": {
+            "pearl": "Real object shallow, copy deep, strong reflector in between at equal distances.",
+            "reflection": "A vessel appears twice, one above and one below the pleural line. Which is real, and why?"
+          },
+          "keyTerms": [
+            "Mirror Image",
+            "Specular Reflector",
+            "Diaphragm",
+            "Multipath",
+            "Refraction",
+            "Reverberation",
+            "Cross Talk"
+          ],
+          "images": [
+            {
+              "filename": "/images/spi/artifacts/a09.jpg",
+              "caption": "Mirror image: liver echoes displayed above the diaphragm, where aerated lung should appear dark"
+            }
+          ],
+          "pieceNumber": "Piece 26"
+        },
+        {
+          "id": "spi-shadowing-enhancement",
+          "title": "Shadowing & Enhancement",
+          "frontClue": "Too much attenuation casts a shadow; too little leaves a bright trail",
+          "corePiece": "Shadowing and enhancement are attenuation artifacts. They exist because TGC compensates for the average attenuation of soft tissue (about 0.5 dB/cm/MHz). Acoustic shadowing is a hypoechoic or anechoic band deep to a structure that attenuates more than soft tissue, by strong reflection, absorption, or both: gallstones, renal stones, bone, calcified plaque, and gas. The shadow is clean behind stones and bone and dirty (filled with reverberation) behind gas. Posterior acoustic enhancement is the opposite: a hyperechoic band deep to a structure that attenuates less than surrounding tissue, such as a cyst, the gallbladder, the urinary bladder, or ascites, so TGC over-amplifies the echoes behind it. Edge shadowing is a thin shadow at the curved edges of a round structure, caused by refraction and beam divergence rather than attenuation. Focal enhancement (focal banding) is a horizontal bright band at the focal depth, where intensity is highest. Shadowing and enhancement appear deep to the structure, along the beam path.",
+          "whyLock": "These artifacts help diagnosis: shadowing supports a stone or calcification, and enhancement supports fluid. The trap is thinking enhancement makes the structure itself bright; the structure is anechoic, and it is the tissue behind it that brightens because less energy was lost on the way. Keep the direction straight: high attenuation produces a shadow, low attenuation produces enhancement. Spatial compounding averages beams from several angles and can fill in shadows, so turning it off can reveal a subtle stone shadow. Small stones shadow best when placed in the focal zone and scanned with a higher frequency. Edge shadows form at curved surfaces, not behind stones, so they do not imply calcification.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 5",
+              "title": "Attenuation",
+              "link": "Shadowing and enhancement are visible evidence of a structure attenuating more or less than the soft tissue average."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "Receiver Functions",
+              "link": "TGC compensates for average attenuation, so it over-amplifies echoes behind fluid and cannot recover echoes behind a stone."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Refraction & Propagation Speed Error",
+              "link": "Edge shadows at the margins of round structures are caused by refraction, not by attenuation."
+            }
+          ],
+          "registryApplication": "Expect images of gallstones with shadowing or a cyst with enhancement and questions on the cause (high versus low attenuation) or on edge shadow from refraction.",
+          "checkpoint": {
+            "pearl": "Shadow = more attenuation than tissue; enhancement = less attenuation than tissue.",
+            "reflection": "Why does a fluid-filled cyst make the tissue behind it look brighter if the cyst itself reflects almost nothing?"
+          },
+          "keyTerms": [
+            "Acoustic Shadowing",
+            "Posterior Acoustic Enhancement",
+            "Attenuation",
+            "Edge Shadow",
+            "Focal Enhancement",
+            "TGC",
+            "Spatial Compounding"
+          ],
+          "images": [
+            {
+              "filename": "/images/spi/artifacts/a14.jpg",
+              "caption": "Acoustic shadowing deep to gallstones"
+            },
+            {
+              "filename": "/images/spi/artifacts/a15.jpg",
+              "caption": "Posterior acoustic enhancement deep to a fluid-filled structure"
+            }
+          ],
+          "pieceNumber": "Piece 27"
+        },
+        {
+          "id": "spi-side-lobe-grating-lobe-slice-thickness",
+          "title": "Side Lobe, Grating Lobe & Slice Thickness",
+          "frontClue": "Off-axis energy and a thick beam drop phantom echoes into empty spaces",
+          "corePiece": "These are beam-width artifacts: the system assumes every echo came from a thin main beam along its central axis. Side lobes are weak off-axis beams produced by single-element and array transducers; grating lobes are additional off-axis beams in array transducers, caused by the regular spacing of the elements. When a lobe strikes a strong reflector, the echo is displayed as if it came from the main beam, placing false low-level echoes inside anechoic structures such as the gallbladder, bladder, or a cyst, often mimicking sludge, or placing a copy of a bright structure beside the real one. Grating lobes are reduced by subdicing (cutting elements into smaller pieces) and apodization; side lobes are reduced by apodization and harmonic imaging. Slice thickness (elevational resolution) artifact arises because the beam has finite thickness perpendicular to the image plane, so echoes from tissue just above or below the plane fill in anechoic structures. It is reduced by elevational focusing (a lens or 1.5-D and 2-D arrays) and harmonics, not by TGC.",
+          "whyLock": "Ask where the extra echo came from. A false echo beside a bright reflector points to side or grating lobes; low-level fill-in of a cyst or bladder suggests slice thickness. The classic trap is pseudo-sludge: before calling debris, reposition the patient, because real sludge layers dependently and moves while artifactual echoes do not follow gravity. Another trap is choosing lower gain or TGC as the fix; that only hides echoes and does not narrow the beam. Harmonic imaging helps both side lobes and slice thickness because harmonic energy is generated mainly in the strong central beam. Slice thickness is elevational resolution, and it is best at the elevational focus.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 16",
+              "title": "Lateral & Elevational Resolution",
+              "link": "Slice thickness artifact is a failure of elevational resolution, and lobes degrade lateral image accuracy."
+            },
+            {
+              "piece": "Piece 17",
+              "title": "Transducer Arrays & Steering",
+              "link": "Grating lobes are a product of evenly spaced array elements and are reduced by subdicing and apodization."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Harmonic Imaging & Contrast Agents",
+              "link": "Harmonic signals form mainly in the strong central beam, so harmonics suppress side lobe and slice thickness echoes."
+            }
+          ],
+          "registryApplication": "Usually shown as false echoes in the gallbladder or bladder; questions ask for the artifact name or the correct fix (harmonics, elevational focusing, subdicing, apodization) with gain or TGC as distractors.",
+          "checkpoint": {
+            "pearl": "Lobes misplace strong echoes sideways; slice thickness fills empty spaces; neither is fixed by gain.",
+            "reflection": "Echoes fill the edge of a bladder and do not move when the patient rolls. Which artifact is likely and what reduces it?"
+          },
+          "keyTerms": [
+            "Side Lobe",
+            "Grating Lobe",
+            "Slice Thickness",
+            "Elevational Resolution",
+            "Apodization",
+            "Subdicing",
+            "Harmonic Imaging",
+            "Pseudo-Sludge"
+          ],
+          "images": [
+            {
+              "filename": "/images/spi/artifacts/a13.jpg",
+              "caption": "Side lobe artifact: false echoes inside the anechoic gallbladder"
+            },
+            {
+              "filename": "/images/spi/artifacts/a11.jpg",
+              "caption": "Slice thickness artifact: low-level echoes filling part of the urinary bladder"
+            }
+          ],
+          "pieceNumber": "Piece 28"
+        },
+        {
+          "id": "spi-refraction-propagation-speed-error",
+          "title": "Refraction & Propagation Speed Error",
+          "frontClue": "Bent beam means a sideways error; wrong speed means a depth error",
+          "corePiece": "Both artifacts break an assumption: sound travels in a straight line at 1540 m/s. Refraction is bending of the transmitted beam at an interface, and it requires two conditions: oblique incidence and different propagation speeds on either side. Snell's law describes it: sine of the transmission angle divided by sine of the incident angle equals speed 2 divided by speed 1. Because the system places every echo along the straight scan line, refracted echoes are displaced laterally, so a structure appears in the wrong side-to-side position or duplicated side by side at the same depth. The classic example is deep to the rectus abdominis muscles, where one aorta, SMA, or gestational sac can appear doubled. Propagation speed error is a depth error. The system uses 1540 m/s in the range equation, so if the true medium is slower (fat is about 1450 m/s), echoes return late and are displayed too deep; if faster, too shallow. The result is a step-off in a straight structure such as the diaphragm.",
+          "whyLock": "Sort artifacts by the direction of error. Duplication side by side at the same depth means refraction; extra copies deeper means mirror image or reverberation; a structure in the right lateral position but at the wrong depth means propagation speed error. Keep the direction straight: slower medium, longer return time, displayed too deep. A trap is thinking refraction can occur with normal incidence; no matter how different the speeds, a perpendicular beam is not bent. Another trap: an impedance difference determines reflection, while a speed difference determines refraction. Fix refraction by changing the transducer angle or window, for example scanning slightly off midline to avoid the rectus muscles.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 6",
+              "title": "Reflection, Impedance & Refraction",
+              "link": "Snell's law and the two requirements for refraction, oblique incidence and a speed change, are the physics behind this artifact."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Propagation Speed",
+              "link": "The machine assumes 1540 m/s, so tissues slower or faster than that produce depth errors."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Range Equation",
+              "link": "Propagation speed error is the range equation applied with the wrong speed, misplacing echoes in depth."
+            }
+          ],
+          "registryApplication": "Expect a duplicated aorta or gestational sac deep to the rectus muscles (refraction) or a question asking where a structure is displayed when the medium is slower than 1540 m/s (too deep).",
+          "checkpoint": {
+            "pearl": "Refraction errs sideways; speed error errs in depth; slow medium means too deep.",
+            "reflection": "A reflector lies behind a fatty mass with a speed of 1450 m/s. Is it displayed too shallow or too deep, and why?"
+          },
+          "keyTerms": [
+            "Refraction",
+            "Snell's Law",
+            "Propagation Speed",
+            "Range Equation",
+            "Oblique Incidence",
+            "Lateral Displacement",
+            "Speed Error"
+          ],
+          "images": [
+            {
+              "filename": "/images/spi/artifacts/a21.jpg",
+              "caption": "Refraction artifact: one deep structure displayed twice, side by side at the same depth"
+            }
+          ],
+          "pieceNumber": "Piece 29"
+        },
+        {
+          "id": "spi-range-ambiguity",
+          "title": "Range Ambiguity",
+          "frontClue": "An echo from the last pulse arrives late and gets blamed on the next one",
+          "corePiece": "Range ambiguity occurs when the PRF is too high for the depth being imaged. The system assumes each echo belongs to the most recent pulse and assigns depth with the range equation (13 microseconds of round-trip time per centimeter). If a strong reflector lies deeper than the listening time allows, its echo from pulse 1 can arrive after pulse 2 has been sent. The system then times it from pulse 2 and places it far too shallow, often as a faint echo inside a cyst or other anechoic region. To prevent this, the pulse repetition period must be long enough for echoes from the deepest reflector to return before the next pulse: the minimum PRP is 13 microseconds times the depth in centimeters, and the maximum PRF is about 77,000 divided by the depth in centimeters. Increasing the depth setting lowers the PRF automatically and eliminates the artifact. In Doppler, high PRF mode deliberately accepts range ambiguity, with several sample volumes active along the beam, to measure higher velocities.",
+          "whyLock": "Range ambiguity is distinctive because it places echoes too shallow, while the multipath artifacts (reverberation, mirror image) place them too deep. It ties together PRF, depth, and the Nyquist limit: imaging deeper forces a lower PRF, which reduces frame rate and the Doppler Nyquist limit. High PRF Doppler trades certainty about depth for a higher Nyquist limit. Trap: choosing decrease depth as the fix; that raises the PRF and makes the problem worse. The correct fix is to increase the depth (lower the PRF). A suspicious echo that moves or disappears when the depth or PRF changes is range ambiguity.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "PRF & PRP",
+              "link": "The artifact appears when the PRP is too short for echoes from deep reflectors to return before the next pulse."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Range Equation",
+              "link": "The system times each echo from the latest pulse, so a late echo from an earlier pulse is assigned a falsely shallow depth."
+            },
+            {
+              "piece": "Piece 33",
+              "title": "Continuous Wave vs Pulsed Wave",
+              "link": "CW Doppler and high PRF Doppler both give up precise depth information in exchange for measuring higher velocities."
+            }
+          ],
+          "registryApplication": "Typically asked as which artifact places echoes too shallow, what causes it (PRF too high for depth), or how to fix it (increase depth, lowering PRF).",
+          "checkpoint": {
+            "pearl": "Too many pulses per second means late echoes are placed too shallow; increase depth to fix it.",
+            "reflection": "Why does increasing the depth setting eliminate range ambiguity?"
+          },
+          "keyTerms": [
+            "PRF",
+            "PRP",
+            "Range Equation",
+            "High PRF Doppler",
+            "Imaging Depth",
+            "Nyquist Limit",
+            "13 Microsecond Rule"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 30"
+        },
+        {
+          "id": "spi-color-spectral-doppler-artifacts",
+          "title": "Color & Spectral Doppler Artifacts",
+          "frontClue": "Wall noise, mirror copies, sparkle behind stones, and color bleeding past the walls",
+          "corePiece": "Beyond aliasing, several Doppler artifacts appear on the exam. Clutter is low-velocity, high-amplitude signal from moving vessel walls or tissue; it appears as bright bands hugging the baseline in spectral Doppler (wall thump) and as color ghosting spilling into tissue in color Doppler. The wall filter, a high-pass filter, removes it; set too high, it also erases real slow flow. Spectral mirror (cross talk) is a weaker copy of the spectrum on the opposite side of the baseline, caused by a beam-to-flow angle near 90 degrees and excessive Doppler gain; improve the angle and lower the gain. Blooming is color spilling beyond the vessel walls from excessive color gain. Flash artifact is a burst of color from patient, organ, or transducer motion and is most troublesome in power Doppler. Twinkle artifact is a rapidly changing mix of colors behind a rough, strongly reflective surface such as a renal stone, and it helps confirm a calculus.",
+          "whyLock": "Organize by control. Gain problems (blooming, spectral mirror, color noise in tissue) are fixed by lowering gain. Motion problems (clutter, flash) are fixed with the wall filter, breath-holding, or a steadier probe. Angle problems (spectral mirror, a color gap in a vessel at 90 degrees) are fixed by steering or repositioning. A common misconception is that clutter is only a color Doppler problem; it occurs in both spectral and color Doppler. Another is confusing the spectral mirror with aliasing: aliasing wraps the peaks around the baseline and is fixed with scale or baseline, while mirroring duplicates the entire waveform and is fixed with angle and gain.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 34",
+              "title": "Aliasing & the Nyquist Limit",
+              "link": "Aliasing is the most tested Doppler artifact, and it must be distinguished from the spectral mirror and true flow reversal."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Color Doppler",
+              "link": "Blooming, ghosting, and twinkle are color Doppler artifacts controlled by color gain, wall filter, and scale."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Power Doppler",
+              "link": "Power Doppler's high sensitivity and slow frame rate make it especially prone to flash artifact."
+            }
+          ],
+          "registryApplication": "Expect a tracing or color image with the question asking for the artifact name or the single best fix, such as increase the wall filter for clutter or fix the angle and reduce gain for spectral mirror.",
+          "checkpoint": {
+            "pearl": "Clutter: wall filter. Blooming: lower color gain. Spectral mirror: fix the 90 degree angle and lower gain.",
+            "reflection": "A spectral tracing shows a fainter copy of the waveform below the baseline. What two settings would you change?"
+          },
+          "keyTerms": [
+            "Clutter",
+            "Wall Filter",
+            "Spectral Mirror",
+            "Cross Talk",
+            "Blooming",
+            "Flash Artifact",
+            "Twinkle Artifact",
+            "Aliasing"
+          ],
+          "images": [
+            {
+              "filename": "/images/spi/artifacts/a06.jpg",
+              "caption": "Spectral mirror (cross talk): a weaker copy of the waveform below the baseline"
+            },
+            {
+              "filename": "/images/spi/artifacts/a12.jpg",
+              "caption": "Twinkle artifact: rapidly changing mosaic color deep to a renal stone"
+            }
+          ],
+          "pieceNumber": "Piece 31"
+        }
+      ]
+    },
+    {
+      "id": "spi-doppler",
+      "title": "Doppler",
+      "pieceRange": "Pieces 32-37",
+      "examType": "SPI",
+      "icon": "activity",
+      "color": "blue",
+      "description": "The Doppler equation, modes, and spectral analysis",
+      "topics": [
+        {
+          "id": "spi-doppler-equation-angle",
+          "title": "Doppler Equation & Angle",
+          "frontClue": "The shift doubles with frequency or speed, and the cosine taxes every angle",
+          "corePiece": "The Doppler shift is the difference between the transmitted and received frequency caused by moving reflectors, mainly red blood cells: fD = 2 x f0 x v x cos(theta) / c, where f0 is the transmitted frequency, v the blood velocity, theta the angle between the beam and the direction of flow, and c the propagation speed (1540 m/s). The factor 2 reflects a double shift: the moving cell receives a shifted wave and reflects it while still moving. Shifts usually fall in the audible range. The shift is directly proportional to velocity, transmitted frequency, and cos(theta). Cos 0 degrees = 1 (full shift), cos 60 degrees = 0.5, and cos 90 degrees = 0 (no shift). The system rearranges the equation to report velocity, v = fD x c / (2 x f0 x cos(theta)), using the angle the sonographer sets with angle correction. Flow toward the transducer gives a positive shift. Vascular protocols use an angle of 60 degrees or less.",
+          "whyLock": "The equation answers every what-happens-if question: double the frequency and the shift doubles; double the velocity and the shift doubles; move from 0 to 60 degrees and the shift halves. The machine reports velocity, not shift, so a misplaced angle-correction cursor gives a wrong velocity even though the measured shift is real. Errors grow at steep angles because cosine changes fastest there: a 5 degree error at 60 degrees produces about a 15 percent velocity error, versus less than 1 percent near 0 degrees. Trap: the transducer frequency changes the shift, not the actual blood velocity. At exactly 90 degrees no shift is detected, even with fast flow.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 34",
+              "title": "Aliasing & the Nyquist Limit",
+              "link": "Anything that raises the Doppler shift, such as higher frequency or a smaller angle, pushes the signal toward the Nyquist limit."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Spectral Analysis",
+              "link": "The spectral display plots the shift, converted to velocity with this equation, over time."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Propagation Speed",
+              "link": "The equation assumes c = 1540 m/s, the same soft tissue speed used for imaging."
+            }
+          ],
+          "registryApplication": "Expect proportionality questions (what happens to the shift if frequency doubles or the angle goes from 0 to 60 degrees) and recognition that 90 degrees produces no shift.",
+          "checkpoint": {
+            "pearl": "fD = 2 x f0 x v x cos(theta) / c: shift tracks frequency, velocity, and cosine; zero at 90 degrees.",
+            "reflection": "If the angle changes from 0 to 60 degrees with all else equal, what happens to the measured Doppler shift?"
+          },
+          "keyTerms": [
+            "Doppler Shift",
+            "Doppler Equation",
+            "Insonation Angle",
+            "Cosine",
+            "Angle Correction",
+            "Velocity",
+            "Propagation Speed"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 32"
+        },
+        {
+          "id": "spi-continuous-wave-vs-pulsed-wave",
+          "title": "Continuous Wave vs Pulsed Wave",
+          "frontClue": "CW never stops talking and never aliases, but it cannot tell you where",
+          "corePiece": "Continuous wave (CW) Doppler uses two crystals: one transmits constantly while the other receives constantly. Because there are no pulses, there is no PRF and therefore no Nyquist limit, so CW measures very high velocities without aliasing. The trade-off is range ambiguity: signals from anywhere in the overlap of the transmit and receive beams are detected together, so CW cannot tell which depth the signal comes from. CW transducers have no backing material, which gives a high Q factor, narrow bandwidth, and high sensitivity; they are used for high-velocity jets such as aortic stenosis. Pulsed wave (PW) Doppler uses one crystal that alternates between sending and listening. Range gating opens the receiver only for a brief interval, placing a sample volume at a chosen depth and giving range resolution. The cost is a velocity ceiling: PRF limits the maximum measurable shift (Nyquist limit = PRF / 2), so high velocities alias, especially at depth. Doppler pulses are longer than imaging pulses, typically 5 to 30 cycles.",
+          "whyLock": "The exam frames this as a choice of trade-offs. CW gives unlimited velocity measurement but no range resolution; PW gives range resolution but a velocity ceiling. If a question describes aliasing that persists after raising the scale and dropping the baseline, switching to CW is the answer. If it describes needing the exact location of a stenosis, or separating signals from two overlapping vessels, PW is the answer. High PRF Doppler is a hybrid: extra sample volumes raise the Nyquist limit at the cost of some range ambiguity. Trap: CW is said to have range ambiguity, not range resolution, because its sensitive zone cannot be selected along the beam.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 34",
+              "title": "Aliasing & the Nyquist Limit",
+              "link": "PW Doppler is limited by the Nyquist limit of PRF / 2, while CW has no PRF and never aliases."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Range Ambiguity",
+              "link": "CW and high PRF Doppler give up depth certainty in exchange for higher measurable velocities."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Bandwidth & Quality Factor",
+              "link": "Undamped CW crystals have a narrow bandwidth and high Q, unlike damped pulsed transducers."
+            }
+          ],
+          "registryApplication": "Typically asked as which Doppler mode avoids aliasing (CW), which provides range resolution (PW), or how many crystals each uses.",
+          "checkpoint": {
+            "pearl": "CW: two crystals, no aliasing, no depth. PW: one crystal, depth via range gate, aliases above PRF / 2.",
+            "reflection": "A jet aliases even with the scale at maximum and the baseline at the bottom. What is the next step, and what do you give up?"
+          },
+          "keyTerms": [
+            "Continuous Wave",
+            "Pulsed Wave",
+            "Range Resolution",
+            "Range Gating",
+            "Sample Volume",
+            "Nyquist Limit",
+            "High PRF Doppler",
+            "Range Ambiguity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 33"
+        },
+        {
+          "id": "spi-aliasing-the-nyquist-limit",
+          "title": "Aliasing & the Nyquist Limit",
+          "frontClue": "Wagon wheels spin backward on film when you sample too slowly",
+          "corePiece": "Pulsed Doppler samples the returning signal once per pulse, so it can only measure shifts up to the Nyquist limit: Nyquist limit = PRF / 2. When the Doppler shift exceeds this limit, the system cannot determine the true frequency or direction, and the signal wraps around. In spectral Doppler, the tops of the peaks are cut off and appear below the baseline. In color Doppler, the fastest flow wraps directly from the brightest forward color into the brightest reverse color with no black band between them, whereas true flow reversal passes through black. Aliasing is more likely with high velocities, high transducer frequencies (larger shifts), deep sample volumes (more listening time, so lower PRF), and low scale settings. Fixes: raise the scale (PRF), lower the baseline (a display change), use a lower-frequency transducer, choose a shallower window or depth, increase the Doppler angle (smaller shift, though more angle error), or switch to CW Doppler, which never aliases.",
+          "whyLock": "Think of aliasing as sampling too slowly for how fast the signal changes. Anything that lowers the PRF (a deeper gate) or raises the shift (faster flow, higher frequency, smaller angle) pushes toward aliasing. Example: a PRF of 5 kHz gives a Nyquist limit of 2.5 kHz, so a 3 kHz shift aliases. Trap: moving the baseline does not change the Nyquist limit; it only reassigns the display range so more of it is used in one direction. Another trap is reading color aliasing as flow reversal: true reversal has a black band between the colors. Color aliasing can also help, flagging the high-velocity jet at a stenosis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "PRF & PRP",
+              "link": "The Nyquist limit is half the PRF, and a deeper sample volume forces a lower PRF."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Doppler Equation & Angle",
+              "link": "Higher transmitted frequency, higher velocity, and smaller angles raise the shift toward the aliasing threshold."
+            },
+            {
+              "piece": "Piece 33",
+              "title": "Continuous Wave vs Pulsed Wave",
+              "link": "CW Doppler has no PRF and therefore no Nyquist limit, making it the definitive cure for aliasing."
+            }
+          ],
+          "registryApplication": "Expect a wrapped spectral tracing or a color image with adjacent bright red and blue, followed by a question on the cause or the best fix (increase scale, lower baseline, lower frequency, use CW).",
+          "checkpoint": {
+            "pearl": "Nyquist = PRF / 2; exceed it and the signal wraps. Raise the scale before anything else.",
+            "reflection": "Which three changes reduce aliasing without changing transducers, and which one only changes the display?"
+          },
+          "keyTerms": [
+            "Aliasing",
+            "Nyquist Limit",
+            "PRF",
+            "Scale",
+            "Baseline Shift",
+            "Continuous Wave",
+            "Sampling Rate"
+          ],
+          "images": [
+            {
+              "filename": "/images/spi/artifacts/a05.jpg",
+              "caption": "Spectral aliasing: systolic peaks wrap around and appear below the baseline"
+            },
+            {
+              "filename": "/images/spi/artifacts/a03.jpg",
+              "caption": "Color aliasing: bright forward colors wrap directly into reverse colors with no black between"
+            }
+          ],
+          "pieceNumber": "Piece 34"
+        },
+        {
+          "id": "spi-spectral-analysis",
+          "title": "Spectral Analysis",
+          "frontClue": "FFT sorts the echo into every speed present at every instant",
+          "corePiece": "Spectral analysis breaks the complex returning Doppler signal into its individual frequency components. Fast Fourier Transform (FFT) is the method used for PW and CW Doppler; autocorrelation is used for color Doppler because it is faster but less detailed. On the spectral display, the horizontal axis is time, the vertical axis is Doppler shift or velocity, and brightness represents amplitude, which reflects how many red blood cells are moving at that velocity. Laminar flow in a medium or large vessel produces a narrow band of velocities with a clear spectral window beneath the trace. Spectral broadening is filling in of that window, meaning a wide range of velocities. It accompanies turbulence distal to a stenosis, but also a large sample volume, a gate near the wall, or excessive gain. Peak systolic velocity, end-diastolic velocity, resistive index ((PSV - EDV) / PSV), and pulsatility index ((PSV - EDV) / mean velocity) are measured from this display.",
+          "whyLock": "Read the display axis by axis: horizontal is time, vertical is velocity, brightness is how many cells. A trap: brightness is not velocity; a bright area at low velocity means many slow cells. Spectral broadening is not proof of disease, because an oversized gate or excess gain also produces it, so standardize the sample volume before interpreting. Another trap is mixing up processing methods: FFT for spectral Doppler, autocorrelation for color. Waveform shape reflects downstream resistance: low-resistance beds such as the brain and kidney show continuous diastolic flow, while high-resistance beds such as resting limb muscle show triphasic flow with brief reversal in early diastole.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 32",
+              "title": "Doppler Equation & Angle",
+              "link": "Each vertical point on the spectrum is a Doppler shift converted to velocity with the Doppler equation."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "Laminar vs Turbulent Flow",
+              "link": "Laminar flow leaves a clear spectral window; turbulence fills it with spectral broadening."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Color Doppler",
+              "link": "Color uses autocorrelation to estimate a mean velocity, while spectral Doppler uses FFT to show the full range."
+            }
+          ],
+          "registryApplication": "Typically tested by asking what each axis or brightness represents, which processing method is used (FFT versus autocorrelation), and what causes spectral broadening.",
+          "checkpoint": {
+            "pearl": "X = time, Y = velocity, brightness = number of cells; FFT for spectral, autocorrelation for color.",
+            "reflection": "Name two technical causes of spectral broadening that do not indicate disease."
+          },
+          "keyTerms": [
+            "Fast Fourier Transform",
+            "Spectral Broadening",
+            "Spectral Window",
+            "Autocorrelation",
+            "Resistive Index",
+            "Pulsatility Index",
+            "Turbulent Flow"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 35"
+        },
+        {
+          "id": "spi-color-doppler",
+          "title": "Color Doppler",
+          "frontClue": "A map of mean velocity: direction by the color bar, not red equals artery",
+          "corePiece": "Color Doppler is a two-dimensional map of mean Doppler shift (average velocity) and direction, superimposed on the grayscale image. It uses autocorrelation and sends multiple pulses down each scan line, called the packet or ensemble. Colors follow the color bar: the top half shows flow toward the transducer, the bottom half flow away, and black at the baseline means no detected flow or flow below the wall filter. The mnemonic BART (blue away, red toward) describes the usual map, but colors can be inverted, so red does not mean artery. Color Doppler is pulsed, so it has range resolution and aliases above PRF / 2. Because each scan line needs a packet of pulses, color costs temporal resolution: a wider or deeper color box or a larger packet size lowers the frame rate. A larger packet improves slow-flow sensitivity. Color is angle dependent: a straight vessel on a sector image changes color across the field and shows a black gap where the beam is perpendicular.",
+          "whyLock": "Color reports a mean velocity, not the peak, so it is semi-quantitative; spectral Doppler measures peak velocity. To raise the frame rate, narrow the color box, reduce depth, or reduce packet size, accepting less sensitivity. A black gap where a vessel runs perpendicular to the beam is not thrombus: steer the box or angle the probe. Traps include assuming red always means artery and confusing aliasing (bright red touching bright blue, no black) with true reversal (colors separated by black). Excessive color gain causes blooming, while too little gain, or too high a scale or wall filter, makes slow flow disappear.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 20",
+              "title": "Temporal Resolution & Frame Rate",
+              "link": "Each color line needs a packet of pulses, so larger color boxes and packets lower the frame rate."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Aliasing & the Nyquist Limit",
+              "link": "Color is pulsed, so it aliases above PRF / 2, seen as bright forward color touching bright reverse color."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Power Doppler",
+              "link": "Power Doppler drops direction and velocity information to gain sensitivity and avoid aliasing."
+            }
+          ],
+          "registryApplication": "Expect questions on what color represents (mean velocity and direction), how box size and packet size affect frame rate, and how to tell aliasing from true flow reversal.",
+          "checkpoint": {
+            "pearl": "Color = mean velocity plus direction; bigger box or packet = slower frame rate; black separates true reversal.",
+            "reflection": "A straight vessel scanned with a sector probe shows red on one side, blue on the other, and black in the middle. Is flow reversing?"
+          },
+          "keyTerms": [
+            "Autocorrelation",
+            "Packet Size",
+            "Color Map",
+            "Mean Velocity",
+            "Frame Rate",
+            "Aliasing",
+            "Variance Map",
+            "Blooming"
+          ],
+          "images": [
+            {
+              "filename": "/images/spi/artifacts/a10.jpg",
+              "caption": "Excess color gain: color speckles bleed into stationary tissue around the vessel"
+            }
+          ],
+          "pieceNumber": "Piece 36"
+        },
+        {
+          "id": "spi-power-doppler",
+          "title": "Power Doppler",
+          "frontClue": "It counts how many cells are moving, not which way or how fast",
+          "corePiece": "Power Doppler (also called energy or amplitude Doppler) maps the strength, or amplitude, of the Doppler signal, which reflects the number of moving red blood cells, rather than the frequency of the shift. Because it ignores velocity and direction, it gains three key advantages over color Doppler. It is more sensitive to slow and low-volume flow, often quoted as several times more sensitive. It is far less angle dependent, displaying flow at angles near 90 degrees where color drops out. And it does not alias, because the shift frequency is not being measured. Typical uses include suspected testicular or ovarian torsion, low-flow vessels, organ perfusion, and confirming a near-occlusion versus occlusion. The disadvantages mirror its strengths: no direction information in standard power Doppler, no velocity information, lower temporal resolution because heavy averaging slows the frame rate, and high susceptibility to flash artifact from patient, organ, or transducer motion. Some systems offer a directional power mode, but standard power Doppler is non-directional.",
+          "whyLock": "When a question asks which mode is best for very slow or low-volume flow, the answer is power Doppler. When answer choices list no aliasing or angle independence, consider both power Doppler and CW, and separate them: power Doppler shows no velocity at all, whereas CW measures velocity without depth. Flash is the classic power Doppler artifact; reduce it with breath-holding, a steady probe, or flash suppression. Trap: power Doppler is not truly angle independent at exactly 90 degrees, where there is essentially no shift to detect, but it handles near-perpendicular angles far better than color.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Color Doppler",
+              "link": "Both are color-encoded maps, but color shows mean velocity and direction while power shows amplitude only."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Color & Spectral Doppler Artifacts",
+              "link": "Flash artifact from tissue or probe motion is the signature power Doppler artifact."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Aliasing & the Nyquist Limit",
+              "link": "Because power Doppler does not measure shift frequency, it is not subject to aliasing."
+            }
+          ],
+          "registryApplication": "Typically asked as the best mode for slow flow or torsion, or as a list of advantages (sensitivity, no aliasing, less angle dependence) and disadvantages (no direction or velocity, flash, slow frame rate).",
+          "checkpoint": {
+            "pearl": "Power Doppler = amplitude only: most sensitive, no aliasing, no direction, flash-prone.",
+            "reflection": "Why can power Doppler not alias, and what information do you give up to get that benefit?"
+          },
+          "keyTerms": [
+            "Amplitude",
+            "Energy Mode",
+            "Slow Flow",
+            "Flash Artifact",
+            "Angle Dependence",
+            "Aliasing",
+            "Color Doppler",
+            "Temporal Resolution"
+          ],
+          "images": [
+            {
+              "filename": "/images/spi/artifacts/a24.jpg",
+              "caption": "Flash artifact: a burst of power Doppler signal across the image from tissue motion"
+            }
+          ],
+          "pieceNumber": "Piece 37"
+        }
+      ]
+    },
+    {
+      "id": "spi-hemodynamics",
+      "title": "Hemodynamics",
+      "pieceRange": "Pieces 38-41",
+      "examType": "SPI",
+      "icon": "activity",
+      "color": "blue",
+      "description": "Pressure, flow, resistance, and what stenoses do",
+      "topics": [
+        {
+          "id": "spi-pressure-flow-resistance",
+          "title": "Pressure, Flow & Resistance",
+          "frontClue": "Flow needs a pressure difference, and halving the radius multiplies resistance by 16",
+          "corePiece": "Blood moves only when there is a pressure gradient, flowing from high to low pressure. Volumetric flow (Q) is volume per unit time (mL/min), not velocity (cm/s). The relationship is the hydraulic form of Ohm's law: Q = delta P / R. Poiseuille's law describes laminar flow in a long straight tube: Q = delta P x pi x r^4 / (8 x L x viscosity), so resistance R = 8 x L x viscosity / (pi x r^4). Resistance increases in direct proportion to vessel length and blood viscosity and inversely with the fourth power of radius: halving the radius raises resistance 16 times. Radius dominates, which is why arterioles control peripheral resistance. Resistances in series add (R total = R1 + R2 + ...), so the total exceeds any single resistor; in parallel, reciprocals add, so the total is less than any single branch. Volume flow also equals average velocity times area (Q = v x A).",
+          "whyLock": "Most questions hinge on proportionality. Doubling length doubles resistance; doubling viscosity doubles resistance; halving the radius multiplies resistance by 16, so flow falls to one sixteenth if the pressure gradient stays the same. Do not confuse flow (volume per time) with velocity (speed): in a stenosis, velocity rises while volume flow is maintained until the narrowing becomes severe. Parallel beds lower total resistance, which is why exercise, by opening many muscle beds, lowers distal resistance and turns a triphasic limb waveform into a monophasic one. Remember also that energy drives flow, so pressure, kinetic, and gravitational energy all contribute.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 39",
+              "title": "Laminar vs Turbulent Flow",
+              "link": "Poiseuille's law applies only to laminar flow; turbulence adds energy loss beyond what it predicts."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Bernoulli & Continuity",
+              "link": "Q = v x A is the continuity equation, which explains why velocity rises through a stenosis."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Venous Hemodynamics",
+              "link": "Venous return depends on pressure gradients shaped by gravity, respiration, and the muscle pump."
+            }
+          ],
+          "registryApplication": "Expect proportionality calculations (effect of halving radius or doubling length or viscosity on resistance or flow) and series versus parallel resistance questions.",
+          "checkpoint": {
+            "pearl": "Q = delta P / R; R rises with length and viscosity and falls with radius to the fourth power.",
+            "reflection": "If vessel radius is halved while the pressure gradient is constant, by what factor does flow change?"
+          },
+          "keyTerms": [
+            "Poiseuille's Law",
+            "Pressure Gradient",
+            "Volumetric Flow",
+            "Resistance",
+            "Viscosity",
+            "Series and Parallel",
+            "Radius"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 38"
+        },
+        {
+          "id": "spi-laminar-vs-turbulent-flow",
+          "title": "Laminar vs Turbulent Flow",
+          "frontClue": "Orderly layers below 1500, chaos above 2000: Reynolds keeps score",
+          "corePiece": "Laminar flow moves in smooth, parallel layers. In parabolic laminar flow, velocity is highest at the center of the vessel and lowest at the walls because of friction (viscous drag); the average velocity is half the peak center velocity. Plug flow is laminar flow in which all layers travel at nearly the same velocity, typical at the entrance of large vessels such as the proximal aorta; it gives a narrow spectral band with a clear window. Disturbed flow is still laminar but its layers change direction, as at bifurcations and the carotid bulb. Turbulent flow is chaotic and multidirectional, with eddies and vortices, and wastes energy as heat and sound (a bruit, or a palpable thrill). The Reynolds number predicts it: Re = (density x average velocity x diameter) / viscosity. Re below 1500 indicates laminar flow; above 2000, turbulent flow. Turbulence appears just distal to a stenosis, where a high-velocity jet exits into a wider lumen, and is more likely in anemia, where low viscosity raises the Reynolds number.",
+          "whyLock": "Turbulence is a downstream event: look for it just past a stenosis, in the post-stenotic zone, rather than inside the narrowest segment, where flow is fast but often still organized. On spectral Doppler it produces spectral broadening with simultaneous forward and reverse signals; on color, a mosaic. Raising velocity or diameter, or lowering viscosity, increases the Reynolds number. Trap: plug flow and parabolic flow are both laminar. Another trap: the average velocity of parabolic flow is half the peak, so a volume flow calculation that uses peak velocity overestimates flow. Energy lost to turbulence contributes to the pressure drop across a stenosis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 35",
+              "title": "Spectral Analysis",
+              "link": "Laminar flow keeps a clear spectral window; turbulence causes spectral broadening and bidirectional signals."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Bernoulli & Continuity",
+              "link": "The velocity jet predicted by continuity at a stenosis becomes turbulent as it expands downstream."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Pressure, Flow & Resistance",
+              "link": "Viscosity and diameter appear in both Poiseuille's law and the Reynolds number."
+            }
+          ],
+          "registryApplication": "Typically asked as the Reynolds number threshold for turbulence, which factors increase it (velocity, diameter, low viscosity in anemia), and where turbulence is found relative to a stenosis.",
+          "checkpoint": {
+            "pearl": "Re above 2000 = turbulence; found distal to a stenosis; anemia lowers viscosity and raises Re.",
+            "reflection": "Why does anemia make turbulence more likely, and where along a stenosis would you look for it?"
+          },
+          "keyTerms": [
+            "Laminar Flow",
+            "Turbulent Flow",
+            "Reynolds Number",
+            "Plug Flow",
+            "Parabolic Flow",
+            "Spectral Broadening",
+            "Bruit",
+            "Viscosity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 39"
+        },
+        {
+          "id": "spi-bernoulli-continuity",
+          "title": "Bernoulli & Continuity",
+          "frontClue": "Squeeze the hose: speed goes up, pressure goes down",
+          "corePiece": "The continuity equation states that volume flow is constant through a closed system: Q = A1 x v1 = A2 x v2. When cross-sectional area decreases at a stenosis, velocity increases proportionally, and when area widens distal to the narrowing, velocity falls again. Halving the area doubles the velocity. Bernoulli's principle is conservation of energy: total energy (pressure plus kinetic plus gravitational) stays constant along a streamline, so where velocity and kinetic energy increase, pressure energy decreases. Within a stenosis, velocity is highest and pressure is lowest, counterintuitive but correct. The simplified Bernoulli equation estimates the pressure gradient across a narrowing from the peak velocity: delta P = 4 x v squared, with v in m/s and delta P in mmHg; 3 m/s gives 36 mmHg. Distal to the stenosis pressure partly recovers, but energy lost to friction and turbulence is not regained. A stenosis becomes hemodynamically significant at about 50 percent diameter reduction, which equals about 75 percent area reduction, when distal flow and pressure begin to fall.",
+          "whyLock": "Combine the two laws: continuity predicts that velocity rises through a stenosis, and Bernoulli predicts that pressure falls there. That is why peak systolic velocity is the main Doppler criterion for grading stenosis. A classic trap is assuming pressure is highest inside the narrow segment; it is lowest. Another trap is the critical stenosis: a 50 percent diameter reduction equals roughly a 75 percent area reduction because area depends on radius squared. Expect calculations: if area falls to one third, velocity triples; if peak velocity is 4 m/s, the gradient is 64 mmHg.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 38",
+              "title": "Pressure, Flow & Resistance",
+              "link": "Continuity is Q = v x A applied to a narrowing, keeping volume flow constant while velocity changes."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "Laminar vs Turbulent Flow",
+              "link": "The high-velocity jet created by continuity breaks into turbulence as it exits the stenosis."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Doppler Equation & Angle",
+              "link": "Doppler measures the stenotic jet velocity that Bernoulli converts into a pressure gradient."
+            }
+          ],
+          "registryApplication": "Expect calculations using A1 x v1 = A2 x v2 or delta P = 4 x v squared, and questions asking where pressure is lowest (within the stenosis) or what diameter reduction is hemodynamically significant (50 percent).",
+          "checkpoint": {
+            "pearl": "Narrower means faster and lower pressure; delta P = 4 x v squared; 50 percent diameter = 75 percent area.",
+            "reflection": "A jet measures 2.5 m/s. What is the estimated pressure gradient, and where in the vessel is pressure lowest?"
+          },
+          "keyTerms": [
+            "Continuity Equation",
+            "Bernoulli Equation",
+            "Pressure Gradient",
+            "Kinetic Energy",
+            "Critical Stenosis",
+            "Velocity",
+            "Stenosis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 40"
+        },
+        {
+          "id": "spi-venous-hemodynamics",
+          "title": "Venous Hemodynamics",
+          "frontClue": "Low pressure, huge capacity: breathing and gravity steer the veins",
+          "corePiece": "Veins form a low-pressure, high-capacitance system that holds about two thirds of the blood volume. Thin walls let them collapse at low pressure. Hydrostatic pressure is the weight of a column of blood: about 2 mmHg per inch (roughly 0.8 mmHg per cm) of height below the heart, zero at heart level, and negative above it. Standing raises ankle venous pressure to about 100 mmHg, while lying supine makes hydrostatic pressure in the legs essentially zero. Respiration produces phasicity. During inspiration the diaphragm descends, abdominal pressure rises, and thoracic pressure falls, so lower extremity venous flow decreases while upper extremity flow toward the heart increases. During expiration the pattern reverses and leg flow increases. A Valsalva maneuver stops leg venous outflow. The calf muscle pump compresses deep veins and valves prevent backflow; distal augmentation pushes blood toward the heart. Reflux longer than 0.5 seconds (1 second in the femoral and popliteal veins) suggests valvular incompetence, and continuous non-phasic flow suggests a more proximal obstruction.",
+          "whyLock": "Reason with pressure gradients: venous return increases when pressure near the heart falls or pressure in the limb rises. Inspiration raises abdominal pressure, compressing the IVC and reducing leg return; expiration releases it. The hydrostatic principle explains why leg reflux testing is done standing or in reverse Trendelenburg, which distends the veins. Traps: assuming inspiration increases venous flow everywhere (it decreases leg flow and increases arm flow), and forgetting that hydrostatic pressure is zero at the level of the heart. Loss of respiratory phasicity in a common femoral vein points to obstruction proximal to it, closer to the heart, such as iliac vein thrombosis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 38",
+              "title": "Pressure, Flow & Resistance",
+              "link": "Venous flow, like arterial flow, follows pressure gradients set by gravity, respiration, and the muscle pump."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Bernoulli & Continuity",
+              "link": "Gravitational energy is one of the three energy terms in Bernoulli's principle and dominates venous pressure when standing."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Spectral Analysis",
+              "link": "Phasicity, augmentation, and reflux duration are all read from the venous spectral waveform."
+            }
+          ],
+          "registryApplication": "Typically asked as how respiration affects leg versus arm venous flow, how to calculate hydrostatic pressure, or what loss of phasicity or reflux duration implies.",
+          "checkpoint": {
+            "pearl": "Inspiration: leg venous flow down, arm flow up. Hydrostatic pressure about 2 mmHg per inch below the heart.",
+            "reflection": "Why does lower extremity venous flow decrease during inspiration while upper extremity flow increases?"
+          },
+          "keyTerms": [
+            "Hydrostatic Pressure",
+            "Phasicity",
+            "Capacitance",
+            "Calf Muscle Pump",
+            "Valsalva",
+            "Reflux",
+            "Augmentation",
+            "Respiration"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 41"
+        }
+      ]
+    },
+    {
+      "id": "spi-safety",
+      "title": "Bioeffects, Safety & QA",
+      "pieceRange": "Pieces 42-46",
+      "examType": "SPI",
+      "icon": "alert-triangle",
+      "color": "blue",
+      "description": "Bioeffects, ALARA, quality assurance, and test statistics",
+      "topics": [
+        {
+          "id": "spi-thermal-bioeffects-ti",
+          "title": "Thermal Bioeffects & TI",
+          "frontClue": "Bone soaks up heat; TI estimates how many degrees you might add",
+          "corePiece": "Thermal bioeffects result from absorption, the conversion of sound energy into heat. Heating increases with intensity, exposure time, frequency (higher frequencies are absorbed more), and the absorption properties of the tissue: bone absorbs the most, soft tissue less, and fluid the least. The thermal index (TI) is the ratio of the acoustic power being transmitted to the power needed to raise tissue temperature by 1 degree Celsius, so a TI of 2 suggests a possible rise of about 2 degrees under worst-case assumptions. It is an estimate, not a measurement. TIS applies to soft tissue, TIB to bone at or near the focus (second and third trimester fetal imaging), and TIC to cranial bone at the surface. AIUM statements note no confirmed adverse effects from a temperature rise of 2 degrees C or less above normal, while fetal temperatures of 41 degrees C or higher sustained for several minutes are considered potentially hazardous. PW Doppler, with a stationary, focused beam, has the greatest heating potential; B-mode the least.",
+          "whyLock": "TI is a relative guide on the display, so keep it as low as reasonably achievable and limit dwell time, especially in obstetric, neonatal, and ophthalmic exams. Trap: assuming a higher frequency is always safer; it is absorbed more, increasing heating near the surface even though it reduces mechanical risk. Another trap: assuming Doppler is harmless because it is used briefly; spectral Doppler over ossified fetal bone produces the highest temperature rise. Well-perfused tissue heats less, and a febrile patient has less margin. Answer TIB for fetal bone, TIC for skull at the surface, and TIS for soft tissue.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 5",
+              "title": "Attenuation",
+              "link": "Absorption, one component of attenuation, is the mechanism that converts acoustic energy into heat."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Mechanical Bioeffects & MI",
+              "link": "TI addresses heating while MI addresses cavitation; the two respond to frequency in opposite directions."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "ALARA & Acoustic Intensities",
+              "link": "SPTA intensity is most closely tied to heating and is limited under ALARA."
+            }
+          ],
+          "registryApplication": "Expect questions on which TI applies to a given exam (TIB for fetal bone), what TI represents, and which tissue or mode carries the most heating risk.",
+          "checkpoint": {
+            "pearl": "TI 1 = possible 1 degree C rise; bone absorbs most; PW Doppler heats most; TIS, TIB, TIC.",
+            "reflection": "Which thermal index should you watch during a third trimester fetal Doppler exam, and why?"
+          },
+          "keyTerms": [
+            "Thermal Index",
+            "TIS",
+            "TIB",
+            "TIC",
+            "Absorption",
+            "ALARA",
+            "Attenuation",
+            "Temperature Rise"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 42"
+        },
+        {
+          "id": "spi-mechanical-bioeffects-mi",
+          "title": "Mechanical Bioeffects & MI",
+          "frontClue": "Bubbles swell, shrink, and sometimes burst: MI rates the risk",
+          "corePiece": "Mechanical bioeffects arise from the pressure variations of the wave itself, chiefly through cavitation, the interaction of sound with gas bubbles. In stable cavitation, microbubbles oscillate (expand and contract) without bursting, which can cause microstreaming, shear stress on nearby cells. In transient (inertial, normal) cavitation, bubbles expand rapidly and collapse violently, producing very high local temperatures and pressures, shock waves, and free radicals; it is the more dangerous form. The mechanical index (MI) estimates the likelihood of cavitation: MI = peak rarefactional pressure (MPa) / square root of frequency (MHz). MI rises with a higher peak rarefactional (negative) pressure and with a lower frequency. The FDA limit for diagnostic imaging is an MI of 1.9. Tissues that contain gas, such as lung and bowel, are most vulnerable, and lung hemorrhage in animals is a documented mechanical effect. Contrast agents introduce bubbles and therefore increase cavitation potential; low-MI imaging, often below about 0.3, preserves microbubbles, while high-MI pulses deliberately destroy them.",
+          "whyLock": "Remember the two parts of the formula: pressure on top, frequency under a square root on the bottom. Lower frequency therefore raises MI and cavitation risk, the opposite of the thermal story, where higher frequency increases absorption and heating. That inversion is a favorite exam contrast. MI depends on peak rarefactional pressure, not compressional pressure, because bubbles grow during rarefaction. Trap: mixing up stable and transient cavitation; stable is oscillation without collapse, transient is violent collapse. If a question mentions contrast agents and bubble destruction, think of MI, not TI.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 42",
+              "title": "Thermal Bioeffects & TI",
+              "link": "TI and MI are the two on-screen safety indices; heating rises with frequency while MI falls with frequency."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Harmonic Imaging & Contrast Agents",
+              "link": "Microbubble contrast is imaged at low MI to avoid bubble destruction and raises cavitation potential."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "ALARA & Acoustic Intensities",
+              "link": "Lowering output power reduces peak rarefactional pressure and therefore MI, in keeping with ALARA."
+            }
+          ],
+          "registryApplication": "Typically asked as the MI formula and how it changes with frequency or pressure, the difference between stable and transient cavitation, and which tissues are most susceptible.",
+          "checkpoint": {
+            "pearl": "MI = peak rarefactional pressure / square root of frequency; low frequency and gas raise the risk.",
+            "reflection": "If frequency increases from 2 MHz to 8 MHz at the same peak rarefactional pressure, what happens to the MI?"
+          },
+          "keyTerms": [
+            "Mechanical Index",
+            "Cavitation",
+            "Stable Cavitation",
+            "Transient Cavitation",
+            "Peak Rarefactional Pressure",
+            "Microstreaming",
+            "Contrast Agents",
+            "Frequency"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 43"
+        },
+        {
+          "id": "spi-alara-acoustic-intensities",
+          "title": "ALARA & Acoustic Intensities",
+          "frontClue": "Raise gain before power, and scan only as long as you need to",
+          "corePiece": "ALARA, as low as reasonably achievable, is the guiding principle of ultrasound safety: obtain the diagnostic information with the lowest exposure. In practice, minimize exam time, increase receiver gain before output power, monitor TI and MI, and limit Doppler over the fetus or eye. Intensity (power divided by area, in W/cm2 or mW/cm2) is reported in several forms depending on where and when it is measured: spatial peak (SP) or spatial average (SA), combined with temporal peak (TP), pulse average (PA), or temporal average (TA). SPTP is the highest value and SATA the lowest. SPTA is most closely linked to tissue heating and is the intensity most often tested; the FDA limit for derated SPTA is 720 mW/cm2 for most applications. Older AIUM statements noted no confirmed bioeffects in mammalian tissue for SPTA below 100 mW/cm2 with unfocused beams or 1 W/cm2 with focused beams. Temporal average equals pulse average times duty factor, and the beam uniformity coefficient (SP / SA) links the spatial values.",
+          "whyLock": "For intensities, remember the extremes: SPTP is the largest, SATA the smallest, and SPTA the one tied to thermal bioeffects. Temporal peak and pulse average values exceed the temporal average because a pulsed transducer is silent most of the time (low duty factor). For continuous wave, the duty factor is 1, so pulse average and temporal average are equal. The ALARA trap: when the image is too dark, the safest first move is to increase receiver gain, which amplifies returning echoes without increasing patient exposure; raising output power increases both the signal and the exposure. The operator, not the machine, is responsible for ALARA.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 19",
+              "title": "Output Power vs Receiver Gain",
+              "link": "ALARA favors raising receiver gain first because gain does not change patient exposure."
+            },
+            {
+              "piece": "Piece 9",
+              "title": "Duty Factor",
+              "link": "Temporal average intensity equals pulse average intensity times the duty factor."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Thermal Bioeffects & TI",
+              "link": "SPTA, the intensity limited by the FDA at 720 mW/cm2, is the one most relevant to heating."
+            }
+          ],
+          "registryApplication": "Expect questions on the first step to brighten an image (increase receiver gain), the ranking of intensities (SPTP highest, SATA lowest), and which intensity relates to heating (SPTA).",
+          "checkpoint": {
+            "pearl": "Gain before power; SPTP highest, SATA lowest, SPTA heats.",
+            "reflection": "An image is too dark at depth. Which control should you adjust first under ALARA, and why?"
+          },
+          "keyTerms": [
+            "ALARA",
+            "SPTA",
+            "SPTP",
+            "SATA",
+            "Beam Uniformity Coefficient",
+            "Duty Factor",
+            "Output Power",
+            "Intensity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 44"
+        },
+        {
+          "id": "spi-quality-assurance-phantoms",
+          "title": "Quality Assurance & Phantoms",
+          "frontClue": "Test the machine on fake tissue before it fools you on real tissue",
+          "corePiece": "Quality assurance (QA) is routine, documented testing that confirms an ultrasound system performs accurately and consistently. Phantoms are test objects with known dimensions and properties. The AIUM 100 mm test object contains stainless steel rods in a medium with a propagation speed of 1540 m/s; it tests axial resolution, lateral resolution, dead zone, registration, and range (depth) accuracy, but it has no tissue texture and cannot evaluate gray scale. Tissue-mimicking phantoms have attenuation and speed similar to soft tissue and contain nylon fibers, simulated cysts, and masses; they test the same items plus sensitivity, penetration, uniformity, and contrast or gray-scale resolution. Doppler phantoms, using a moving string or a pump with blood-mimicking fluid, test velocity accuracy, sample volume location, Doppler penetration, and direction. Hydrophones are small piezoelectric needle or membrane probes that measure acoustic output: pressure amplitude, period, and pulse timing, from which intensity is calculated. The dead zone is the region nearest the transducer where imaging is unreliable, and registration is the accurate placement of echoes.",
+          "whyLock": "QA questions usually ask which device tests a given parameter. Match parameter to tool: resolution and range accuracy on the AIUM test object or a tissue phantom; gray scale, contrast, and cyst detection only on a tissue-mimicking phantom; velocity accuracy on a Doppler phantom; acoustic output on a hydrophone. Trap: the AIUM test object cannot evaluate gray scale because it lacks tissue-like scatterers. The dead zone becomes smaller with higher frequency transducers and shorter pulses. QA should be scheduled and logged, and results are compared against a baseline recorded when the system was new or serviced.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 11",
+              "title": "Axial Resolution",
+              "link": "Pin groups at decreasing spacing in a test object measure axial resolution directly."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Lateral & Elevational Resolution",
+              "link": "Lateral resolution is checked with pins lying side by side at the same depth."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "ALARA & Acoustic Intensities",
+              "link": "Hydrophones measure the pressures and intensities that safety limits and ALARA are based on."
+            }
+          ],
+          "registryApplication": "Typically asked as which phantom or device tests a specific parameter, for example gray scale (tissue-mimicking phantom), velocity accuracy (Doppler phantom), or acoustic output (hydrophone).",
+          "checkpoint": {
+            "pearl": "AIUM object: resolution and accuracy, no gray scale. Tissue phantom: adds gray scale. Hydrophone: output.",
+            "reflection": "Which device would you use to measure the acoustic pressure of a transducer, and which to evaluate contrast resolution?"
+          },
+          "keyTerms": [
+            "Phantom",
+            "AIUM Test Object",
+            "Tissue-Mimicking Phantom",
+            "Doppler Phantom",
+            "Hydrophone",
+            "Dead Zone",
+            "Registration",
+            "Axial Resolution"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 45"
+        },
+        {
+          "id": "spi-sensitivity-specificity-predictive-values",
+          "title": "Sensitivity, Specificity & Predictive Values",
+          "frontClue": "SnNout and SpPin: sensitive tests rule out, specific tests rule in",
+          "corePiece": "Test statistics compare ultrasound with a gold standard (angiography, surgery, pathology) in a 2 x 2 table. A true positive (TP) is a positive test with disease present; a false positive (FP) is a positive test with no disease; a true negative (TN) is a negative test with no disease; and a false negative (FN) is a negative test with disease present. Sensitivity = TP / (TP + FN): the ability to detect disease when it is present. Specificity = TN / (TN + FP): the ability to call normals normal. Positive predictive value (PPV) = TP / (TP + FP): when the test is positive, how often it is right. Negative predictive value (NPV) = TN / (TN + FN): when the test is negative, how often it is right. Accuracy = (TP + TN) / all tests. Sensitivity and specificity describe the test and do not change with disease prevalence, while PPV rises and NPV falls as prevalence increases. Lowering a threshold raises sensitivity but lowers specificity.",
+          "whyLock": "The quickest way to avoid errors is to look at the denominator. Sensitivity and specificity divide by what the gold standard says (all diseased or all normal patients); predictive values divide by what the test says (all positives or all negatives). Accuracy is all correct results over all patients. Worked example: 90 TP, 10 FN, 80 TN, and 20 FP give sensitivity 90 percent, specificity 80 percent, PPV 82 percent, NPV 89 percent, and accuracy 85 percent. Trap: swapping false positives and false negatives. A false negative is a missed disease; a false positive is a false alarm.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 45",
+              "title": "Quality Assurance & Phantoms",
+              "link": "Both verify accuracy: QA checks the machine, while test statistics check how well the exam matches the truth."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Bernoulli & Continuity",
+              "link": "Velocity criteria for grading stenosis are validated against angiography, and moving the threshold trades sensitivity for specificity."
+            }
+          ],
+          "registryApplication": "Expect a 2 x 2 table with counts and a request to calculate sensitivity, specificity, PPV, NPV, or accuracy, often with a false positive or false negative distractor.",
+          "checkpoint": {
+            "pearl": "Sensitivity and specificity divide by the truth; predictive values divide by the test result.",
+            "reflection": "With 45 TP, 5 FN, 40 TN, and 10 FP, what are the sensitivity and the positive predictive value?"
+          },
+          "keyTerms": [
+            "Sensitivity",
+            "Specificity",
+            "Positive Predictive Value",
+            "Negative Predictive Value",
+            "Accuracy",
+            "Gold Standard",
+            "False Negative",
+            "Prevalence"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 46"
+        }
+      ]
+    }
+  ]
+}

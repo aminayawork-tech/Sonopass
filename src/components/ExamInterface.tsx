@@ -51,6 +51,12 @@ const getCategoryColors = (category: string) => {
     'Venous Disease': { bg: 'bg-teal-100', text: 'text-teal-700' },
     'Venous Hemodynamics': { bg: 'bg-blue-100', text: 'text-blue-700' },
     'Venous Testing': { bg: 'bg-indigo-100', text: 'text-indigo-700' },
+    'Ultrasound Physics': { bg: 'bg-sky-100', text: 'text-sky-700' },
+    'Transducers': { bg: 'bg-violet-100', text: 'text-violet-700' },
+    'Image Optimization': { bg: 'bg-emerald-100', text: 'text-emerald-700' },
+    'Artifacts': { bg: 'bg-amber-100', text: 'text-amber-700' },
+    'Doppler': { bg: 'bg-rose-100', text: 'text-rose-700' },
+    'Bioeffects': { bg: 'bg-orange-100', text: 'text-orange-700' },
   };
 
   return colorMap[category] || { bg: 'bg-gray-100', text: 'text-gray-700' };
@@ -228,7 +234,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
             >
               Try Again
             </button>
-            <Link href="/">
+            <Link href="/dashboard">
               <button className="w-full h-12 rounded-2xl font-bold text-[14px] text-gray-700 bg-white border border-gray-200 shadow-sm active:bg-gray-50 flex items-center justify-center gap-2">
                 <Home className="w-4 h-4" />
                 Back to Home
@@ -269,7 +275,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                 </>
               )}
             </div>
-            <Link href="/">
+            <Link href="/dashboard">
               <button className="w-9 h-9 rounded-xl flex items-center justify-center surface bg-white active:bg-gray-50 shrink-0">
                 <Home className="w-4 h-4 text-gray-600" />
               </button>

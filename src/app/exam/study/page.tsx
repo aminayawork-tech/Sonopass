@@ -11,6 +11,7 @@ import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
 import { useModality } from '@/contexts/ModalityContext';
 import AppLayout from '@/components/layout/AppLayout';
+import { allQuestions } from '@/lib/questions';
 
 export default function StudyPage() {
   const searchParams = useSearchParams();
@@ -29,15 +30,9 @@ export default function StudyPage() {
 
       try {
         const questionsData = await loadQuestions();
-        const allQuestions = [
-          ...questionsData.exam1,
-          ...questionsData.exam2,
-          ...questionsData.exam3,
-          ...questionsData.exam4
-        ];
         const map = new Map<string, any[]>();
 
-        allQuestions.forEach(q => {
+        allQuestions<any>(questionsData).forEach(q => {
           if (!map.has(q.category)) {
             map.set(q.category, []);
           }
@@ -99,7 +94,7 @@ export default function StudyPage() {
             <h1 className="text-xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
               Study by Section
             </h1>
-            <Link href="/">
+            <Link href="/dashboard">
               <Button variant="outline" size="sm" className="font-bold border-2 text-xs sm:text-sm px-2.5 sm:px-4">
                 <ArrowLeft className="w-4 h-4 sm:mr-2" />
                 <span className="hidden sm:inline">Back</span>

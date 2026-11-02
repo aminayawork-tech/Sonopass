@@ -66,7 +66,7 @@ export default function DashboardPage() {
         {/* Header */}
         <div className="px-5 pt-14 pb-6">
           <div className="flex items-center justify-between mb-5">
-            <p className="text-[17px] font-extrabold tracking-tight">
+            <p className="text-[28px] font-extrabold tracking-[-0.03em] leading-none">
               <span className="text-ink">Sono</span>
               <span style={{ color: '#2ea873' }}>Pass</span>
             </p>

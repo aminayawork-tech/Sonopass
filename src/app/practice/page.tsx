@@ -8,6 +8,7 @@ import {
   Activity, AlertTriangle, Stethoscope, Waves,
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
+import { allQuestions } from '@/lib/questions';
 
 const CARD_GRADIENTS = [
   'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)',
@@ -42,6 +43,12 @@ const CATEGORY_ICONS: { [key: string]: any } = {
   'Physics & Instrumentation': Zap,
   'General & Other': Stethoscope,
   'Vascular': Stethoscope,
+  'Ultrasound Physics': Waves,
+  'Transducers': Zap,
+  'Image Optimization': Target,
+  'Artifacts': AlertTriangle,
+  'Doppler': Activity,
+  'Bioeffects': Heart,
 };
 
 export default function StudyModePage() {
@@ -54,14 +61,8 @@ export default function StudyModePage() {
       if (!currentModality) return;
       try {
         const questionsData = await loadQuestions();
-        const allQuestions = [
-          ...questionsData.exam1,
-          ...questionsData.exam2,
-          ...questionsData.exam3,
-          ...questionsData.exam4,
-        ];
         const map = new Map<string, number>();
-        allQuestions.forEach((q: any) => {
+        allQuestions<any>(questionsData).forEach((q) => {
           map.set(q.category, (map.get(q.category) || 0) + 1);
         });
         const sorted = Array.from(map.entries())
