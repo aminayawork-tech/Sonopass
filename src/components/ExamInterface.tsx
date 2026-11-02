@@ -228,7 +228,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
             >
               Try Again
             </button>
-            <Link href="/">
+            <Link href="/dashboard">
               <button className="w-full h-12 rounded-2xl font-bold text-[14px] text-gray-700 bg-white border border-gray-200 shadow-sm active:bg-gray-50 flex items-center justify-center gap-2">
                 <Home className="w-4 h-4" />
                 Back to Home
@@ -269,7 +269,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                 </>
               )}
             </div>
-            <Link href="/">
+            <Link href="/dashboard">
               <button className="w-9 h-9 rounded-xl flex items-center justify-center surface bg-white active:bg-gray-50 shrink-0">
                 <Home className="w-4 h-4 text-gray-600" />
               </button>

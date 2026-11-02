@@ -99,7 +99,7 @@ export default function StudyPage() {
             <h1 className="text-xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
               Study by Section
             </h1>
-            <Link href="/">
+            <Link href="/dashboard">
               <Button variant="outline" size="sm" className="font-bold border-2 text-xs sm:text-sm px-2.5 sm:px-4">
                 <ArrowLeft className="w-4 h-4 sm:mr-2" />
                 <span className="hidden sm:inline">Back</span>
