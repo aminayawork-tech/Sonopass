@@ -3336,7 +3336,7 @@
   ],
   "exam2": [
     {
-      "id": "spi-azra-001",
+      "id": "spi-review-001",
       "number": 1,
       "question": "Which method is used to evaluate tissue stiffness?",
       "options": [
@@ -3366,7 +3366,7 @@
       ]
     },
     {
-      "id": "spi-azra-002",
+      "id": "spi-review-002",
       "number": 2,
       "question": "What results from increasing the packet length when using Doppler imaging?",
       "options": [
@@ -3396,7 +3396,7 @@
       ]
     },
     {
-      "id": "spi-azra-003",
+      "id": "spi-review-003",
       "number": 3,
       "question": "Which adjustment will reduce the spectral Doppler artifact?",
       "options": [
@@ -3424,11 +3424,11 @@
       "keywords": [
         "spectral Doppler artifact"
       ],
-      "imageUrl": "/images/spi/azra/q003.jpg",
+      "imageUrl": "/images/spi/review/q003.jpg",
       "imageCaption": "Spectral Doppler waveform with color Doppler image"
     },
     {
-      "id": "spi-azra-004",
+      "id": "spi-review-004",
       "number": 4,
       "question": "Dynamic aperture affects which type of resolution?",
       "options": [
@@ -3458,7 +3458,7 @@
       ]
     },
     {
-      "id": "spi-azra-005",
+      "id": "spi-review-005",
       "number": 5,
       "question": "Which artifact occurs in PW Doppler when peak Doppler frequency shift exceeds ½ of the PRF?",
       "options": [
@@ -3489,7 +3489,7 @@
       ]
     },
     {
-      "id": "spi-azra-006",
+      "id": "spi-review-006",
       "number": 6,
       "question": "What is the term for number of pulses used to sample a single color line?",
       "options": [
@@ -3519,7 +3519,7 @@
       ]
     },
     {
-      "id": "spi-azra-007",
+      "id": "spi-review-007",
       "number": 7,
       "question": "What is the depth of a structure if an echo is received at the transducer 26 microsec after transmission?",
       "options": [
@@ -3549,7 +3549,7 @@
       ]
     },
     {
-      "id": "spi-azra-008",
+      "id": "spi-review-008",
       "number": 8,
       "question": "Which interaction is responsible for displaying the internal echoes of a soft tissue?",
       "options": [
@@ -3579,7 +3579,7 @@
       ]
     },
     {
-      "id": "spi-azra-009",
+      "id": "spi-review-009",
       "number": 9,
       "question": "How is US contrast eliminated by the body?",
       "options": [
@@ -3609,7 +3609,7 @@
       ]
     },
     {
-      "id": "spi-azra-010",
+      "id": "spi-review-010",
       "number": 10,
       "question": "How does overall receiver gain affect image?",
       "options": [
@@ -3639,7 +3639,7 @@
       ]
     },
     {
-      "id": "spi-azra-011",
+      "id": "spi-review-011",
       "number": 11,
       "question": "Which describes reflected frequency when reflector is moving towards sound source?",
       "options": [
@@ -3669,7 +3669,7 @@
       ]
     },
     {
-      "id": "spi-azra-012",
+      "id": "spi-review-012",
       "number": 12,
       "question": "Which control is used to display positive Doppler shift below baseline?",
       "options": [
@@ -3699,7 +3699,7 @@
       ]
     },
     {
-      "id": "spi-azra-013",
+      "id": "spi-review-013",
       "number": 13,
       "question": "Which Doppler mode is most sensitive for detecting low velocity blood flow?",
       "options": [
@@ -3729,7 +3729,7 @@
       ]
     },
     {
-      "id": "spi-azra-014",
+      "id": "spi-review-014",
       "number": 14,
       "question": "Which part of transducer increases the energy transfer efficiency from transducer into the patient?",
       "options": [
@@ -3759,7 +3759,7 @@
       ]
     },
     {
-      "id": "spi-azra-015",
+      "id": "spi-review-015",
       "number": 15,
       "question": "Which will help eliminate reverberation artifact within fluid filled structure?",
       "options": [
@@ -3789,7 +3789,7 @@
       ]
     },
     {
-      "id": "spi-azra-016",
+      "id": "spi-review-016",
       "number": 16,
       "question": "Which adjustment decreases or eliminates flash artifact?",
       "options": [
@@ -3819,7 +3819,7 @@
       ]
     },
     {
-      "id": "spi-azra-017",
+      "id": "spi-review-017",
       "number": 17,
       "question": "Increasing which parameter will cause an increase in Doppler shift?",
       "options": [
@@ -3849,7 +3849,7 @@
       ]
     },
     {
-      "id": "spi-azra-018",
+      "id": "spi-review-018",
       "number": 18,
       "question": "What function was used to improve image A, resulting in image B?",
       "options": [
@@ -3875,11 +3875,11 @@
       "category": "Image Optimization",
       "hint": "Think of the control that averages color data over time to fill in gaps.",
       "keywords": [],
-      "imageUrl": "/images/spi/azra/q018.jpg",
+      "imageUrl": "/images/spi/review/q018.jpg",
       "imageCaption": "Two color Doppler images of the same vessel labeled A and B"
     },
     {
-      "id": "spi-azra-019",
+      "id": "spi-review-019",
       "number": 19,
       "question": "Which factor is increased as output power is increased?",
       "options": [
@@ -3909,7 +3909,7 @@
       ]
     },
     {
-      "id": "spi-azra-020",
+      "id": "spi-review-020",
       "number": 20,
       "question": "Which adjustment should be made prior to measuring the peak velocity of the waveform in this image?",
       "options": [
@@ -3937,11 +3937,11 @@
       "keywords": [
         "peak velocity"
       ],
-      "imageUrl": "/images/spi/azra/q020.jpg",
+      "imageUrl": "/images/spi/review/q020.jpg",
       "imageCaption": "Carotid color and spectral Doppler image with velocity measurements"
     },
     {
-      "id": "spi-azra-021",
+      "id": "spi-review-021",
       "number": 21,
       "question": "What adjustment would improve the ability to accurately measure the peak velocity?",
       "options": [
@@ -3969,11 +3969,11 @@
       "keywords": [
         "peak velocity"
       ],
-      "imageUrl": "/images/spi/azra/q021.jpg",
+      "imageUrl": "/images/spi/review/q021.jpg",
       "imageCaption": "Spectral Doppler waveform with a velocity scale of plus and minus 20 cm/s"
     },
     {
-      "id": "spi-azra-022",
+      "id": "spi-review-022",
       "number": 22,
       "question": "What improves how efficiently US enters the body?",
       "options": [
@@ -4003,7 +4003,7 @@
       ]
     },
     {
-      "id": "spi-azra-023",
+      "id": "spi-review-023",
       "number": 23,
       "question": "What affects the max flow velocity that can be displayed without aliasing by PW Doppler US system?",
       "options": [
@@ -4033,7 +4033,7 @@
       ]
     },
     {
-      "id": "spi-azra-024",
+      "id": "spi-review-024",
       "number": 24,
       "question": "Which imaging type uses voxel based reconstruction process?",
       "options": [
@@ -4063,7 +4063,7 @@
       ]
     },
     {
-      "id": "spi-azra-025",
+      "id": "spi-review-025",
       "number": 25,
       "question": "Which influence does an increase in frequency have on penetration?",
       "options": [
@@ -4093,7 +4093,7 @@
       ]
     },
     {
-      "id": "spi-azra-026",
+      "id": "spi-review-026",
       "number": 26,
       "question": "What is the process of acquiring data through multiple beam angles then averaging the data?",
       "options": [
@@ -4123,7 +4123,7 @@
       ]
     },
     {
-      "id": "spi-azra-027",
+      "id": "spi-review-027",
       "number": 27,
       "question": "Which control adjustment produced the change from image A to image B?",
       "options": [
@@ -4149,11 +4149,11 @@
       "category": "Image Optimization",
       "hint": "Compare the contrast between the two images and the number of gray shades shown.",
       "keywords": [],
-      "imageUrl": "/images/spi/azra/q027.jpg",
+      "imageUrl": "/images/spi/review/q027.jpg",
       "imageCaption": "Two B-mode kidney images labeled A and B"
     },
     {
-      "id": "spi-azra-028",
+      "id": "spi-review-028",
       "number": 28,
       "question": "Which is a key component of ALARA principle in US?",
       "options": [
@@ -4183,7 +4183,7 @@
       ]
     },
     {
-      "id": "spi-azra-029",
+      "id": "spi-review-029",
       "number": 29,
       "question": "Which statement defines the specificity of a particular test?",
       "options": [
@@ -4213,7 +4213,7 @@
       ]
     },
     {
-      "id": "spi-azra-030",
+      "id": "spi-review-030",
       "number": 30,
       "question": "Which of the following transducer display images is used for abdomen and aorta scanning?",
       "options": [
@@ -4239,11 +4239,11 @@
       "category": "Transducers",
       "hint": "Abdominal probes need a wide far field and a fairly wide near field with good penetration.",
       "keywords": [],
-      "imageUrl": "/images/spi/azra/q030.jpg",
+      "imageUrl": "/images/spi/review/q030.jpg",
       "imageCaption": "Four transducer image formats numbered 1 to 4"
     },
     {
-      "id": "spi-azra-031",
+      "id": "spi-review-031",
       "number": 31,
       "question": "Which type of resolution will be compromised by adding focal points/zones?",
       "options": [
@@ -4273,7 +4273,7 @@
       ]
     },
     {
-      "id": "spi-azra-032",
+      "id": "spi-review-032",
       "number": 32,
       "question": "What is an advantage of compound imaging?",
       "options": [
@@ -4303,7 +4303,7 @@
       ]
     },
     {
-      "id": "spi-azra-033",
+      "id": "spi-review-033",
       "number": 33,
       "question": "How is variable transmit focus with a linear phased array accomplished?",
       "options": [
@@ -4333,7 +4333,7 @@
       ]
     },
     {
-      "id": "spi-azra-034",
+      "id": "spi-review-034",
       "number": 34,
       "question": "Which of the following is a potential advantage of coded excitation?",
       "options": [
@@ -4363,7 +4363,7 @@
       ]
     },
     {
-      "id": "spi-azra-035",
+      "id": "spi-review-035",
       "number": 35,
       "question": "Which resolution is improved by multiple focal zones?",
       "options": [
@@ -4393,7 +4393,7 @@
       ]
     },
     {
-      "id": "spi-azra-036",
+      "id": "spi-review-036",
       "number": 36,
       "question": "What adjustment needs to be used to remove reverberation artifact in this image?",
       "options": [
@@ -4421,11 +4421,11 @@
       "keywords": [
         "reverberation artifact"
       ],
-      "imageUrl": "/images/spi/azra/q036.jpg",
+      "imageUrl": "/images/spi/review/q036.jpg",
       "imageCaption": "Transabdominal image of the urinary bladder with arrowheads at the anterior wall"
     },
     {
-      "id": "spi-azra-037",
+      "id": "spi-review-037",
       "number": 37,
       "question": "Where does optimal lateral resolution occur in US beam?",
       "options": [
@@ -4455,7 +4455,7 @@
       ]
     },
     {
-      "id": "spi-azra-038",
+      "id": "spi-review-038",
       "number": 38,
       "question": "Which transducer frequency would best penetrate to depth of 15cm?",
       "options": [
@@ -4485,7 +4485,7 @@
       ]
     },
     {
-      "id": "spi-azra-039",
+      "id": "spi-review-039",
       "number": 39,
       "question": "Which factor affects temporal resolution?",
       "options": [
@@ -4515,7 +4515,7 @@
       ]
     },
     {
-      "id": "spi-azra-040",
+      "id": "spi-review-040",
       "number": 40,
       "question": "Which angle of insonation produces greatest Doppler shift?",
       "options": [
@@ -4545,7 +4545,7 @@
       ]
     },
     {
-      "id": "spi-azra-041",
+      "id": "spi-review-041",
       "number": 41,
       "question": "Adjustment of which control results in acquisition of new data and increases the number of scan lines in the region of interest compared to the original image?",
       "options": [
@@ -4575,7 +4575,7 @@
       ]
     },
     {
-      "id": "spi-azra-042",
+      "id": "spi-review-042",
       "number": 42,
       "question": "Which post processing technique creates images from a 3D data set?",
       "options": [
@@ -4605,7 +4605,7 @@
       ]
     },
     {
-      "id": "spi-azra-043",
+      "id": "spi-review-043",
       "number": 43,
       "question": "Which adjustment will improve the color display of this normal vessel?",
       "options": [
@@ -4633,11 +4633,11 @@
       "keywords": [
         "normal vessel"
       ],
-      "imageUrl": "/images/spi/azra/q043.jpg",
+      "imageUrl": "/images/spi/review/q043.jpg",
       "imageCaption": "Longitudinal color Doppler image of the right common carotid artery"
     },
     {
-      "id": "spi-azra-044",
+      "id": "spi-review-044",
       "number": 44,
       "question": "What is the advantage of using a curvilinear array transducer compared to linear?",
       "options": [
@@ -4667,7 +4667,7 @@
       ]
     },
     {
-      "id": "spi-azra-045",
+      "id": "spi-review-045",
       "number": 45,
       "question": "Which change will lead to a reduction in frame rate?",
       "options": [
@@ -4697,7 +4697,7 @@
       ]
     },
     {
-      "id": "spi-azra-046",
+      "id": "spi-review-046",
       "number": 46,
       "question": "What are the two components of flow velocity?",
       "options": [
@@ -4727,7 +4727,7 @@
       ]
     },
     {
-      "id": "spi-azra-047",
+      "id": "spi-review-047",
       "number": 47,
       "question": "Which statement best describes acoustic reverberation?",
       "options": [
@@ -4757,7 +4757,7 @@
       ]
     },
     {
-      "id": "spi-azra-048",
+      "id": "spi-review-048",
       "number": 48,
       "question": "Which maneuver can be employed to compensate for aliasing in spectral Doppler imaging?",
       "options": [
@@ -4787,7 +4787,7 @@
       ]
     },
     {
-      "id": "spi-azra-049",
+      "id": "spi-review-049",
       "number": 49,
       "question": "Which description best characterizes a false positive test result?",
       "options": [
@@ -4817,7 +4817,7 @@
       ]
     },
     {
-      "id": "spi-azra-050",
+      "id": "spi-review-050",
       "number": 50,
       "question": "What angle of the color box should never be used in relation to normal flow?",
       "options": [
@@ -4847,7 +4847,7 @@
       ]
     },
     {
-      "id": "spi-azra-051",
+      "id": "spi-review-051",
       "number": 51,
       "question": "What adjustment needs to be made to improve the visualization close to the baseline?",
       "options": [
@@ -4875,11 +4875,11 @@
       "keywords": [
         "close to the baseline"
       ],
-      "imageUrl": "/images/spi/azra/q051.jpg",
+      "imageUrl": "/images/spi/review/q051.jpg",
       "imageCaption": "Spectral Doppler waveform with arrows pointing to the baseline"
     },
     {
-      "id": "spi-azra-052",
+      "id": "spi-review-052",
       "number": 52,
       "question": "Which control will allow identical reflectors to have same brightness at different depths?",
       "options": [
@@ -4909,7 +4909,7 @@
       ]
     },
     {
-      "id": "spi-azra-053",
+      "id": "spi-review-053",
       "number": 53,
       "question": "How is US image affected if several adjacent crystals of linear transducer are damaged?",
       "options": [
@@ -4939,7 +4939,7 @@
       ]
     },
     {
-      "id": "spi-azra-054",
+      "id": "spi-review-054",
       "number": 54,
       "question": "Which image shape is produced by linear transducer with extended field of view?",
       "options": [
@@ -4969,7 +4969,7 @@
       ]
     },
     {
-      "id": "spi-azra-055",
+      "id": "spi-review-055",
       "number": 55,
       "question": "What is an advantage of the CW Doppler over PW Doppler?",
       "options": [
@@ -4999,7 +4999,7 @@
       ]
     },
     {
-      "id": "spi-azra-056",
+      "id": "spi-review-056",
       "number": 56,
       "question": "What artifact is visualized in this image?",
       "options": [
@@ -5025,11 +5025,11 @@
       "category": "Artifacts",
       "hint": "Look at what happens to the image directly deep to the bright structure.",
       "keywords": [],
-      "imageUrl": "/images/spi/azra/q056.jpg",
+      "imageUrl": "/images/spi/review/q056.jpg",
       "imageCaption": "Color Doppler image of a vessel with an echogenic structure along the wall"
     },
     {
-      "id": "spi-azra-057",
+      "id": "spi-review-057",
       "number": 57,
       "question": "What characteristics does a transducer that produces good elevational resolution have?",
       "options": [
@@ -5059,7 +5059,7 @@
       ]
     },
     {
-      "id": "spi-azra-058",
+      "id": "spi-review-058",
       "number": 58,
       "question": "What needs to be adjusted in this image to accurately display velocity?",
       "options": [
@@ -5087,11 +5087,11 @@
       "keywords": [
         "accurately display velocity"
       ],
-      "imageUrl": "/images/spi/azra/q058.jpg",
+      "imageUrl": "/images/spi/review/q058.jpg",
       "imageCaption": "Color Doppler image of a vessel with spectral Doppler gate and angle correction"
     },
     {
-      "id": "spi-azra-059",
+      "id": "spi-review-059",
       "number": 59,
       "question": "Which statement defines the positive predictive value?",
       "options": [
@@ -5121,7 +5121,7 @@
       ]
     },
     {
-      "id": "spi-azra-060",
+      "id": "spi-review-060",
       "number": 60,
       "question": "Which changes occur if insufficient or defective backing material is used in the manufacturing of a US transducer?",
       "options": [
@@ -5151,7 +5151,7 @@
       ]
     },
     {
-      "id": "spi-azra-061",
+      "id": "spi-review-061",
       "number": 61,
       "question": "Which aspect is increased when using high color persistence?",
       "options": [
@@ -5181,7 +5181,7 @@
       ]
     },
     {
-      "id": "spi-azra-062",
+      "id": "spi-review-062",
       "number": 62,
       "question": "What method is used to resolve aliasing artifact?",
       "options": [
@@ -5211,7 +5211,7 @@
       ]
     },
     {
-      "id": "spi-azra-063",
+      "id": "spi-review-063",
       "number": 63,
       "question": "What does phased array transducer accomplish by phasing the electric wave pulses?",
       "options": [
@@ -5241,7 +5241,7 @@
       ]
     },
     {
-      "id": "spi-azra-064",
+      "id": "spi-review-064",
       "number": 64,
       "question": "In which location is digital echo information stored in image formation?",
       "options": [
@@ -5271,7 +5271,7 @@
       ]
     },
     {
-      "id": "spi-azra-065",
+      "id": "spi-review-065",
       "number": 65,
       "question": "In comparison, image A has _______?",
       "options": [
@@ -5297,11 +5297,11 @@
       "category": "Image Optimization",
       "hint": "Compare the overall brightness of the two images at every depth.",
       "keywords": [],
-      "imageUrl": "/images/spi/azra/q065.jpg",
+      "imageUrl": "/images/spi/review/q065.jpg",
       "imageCaption": "Two liver images labeled A and B"
     },
     {
-      "id": "spi-azra-066",
+      "id": "spi-review-066",
       "number": 66,
       "question": "Which parameter affects Nyquist limit in conventional PW Doppler?",
       "options": [
@@ -5331,7 +5331,7 @@
       ]
     },
     {
-      "id": "spi-azra-067",
+      "id": "spi-review-067",
       "number": 67,
       "question": "Which term describes the area that is closest to transducer and cannot be visualized?",
       "options": [
@@ -5361,7 +5361,7 @@
       ]
     },
     {
-      "id": "spi-azra-068",
+      "id": "spi-review-068",
       "number": 68,
       "question": "Which type of imaging displays change in axial position of reflectors over time?",
       "options": [
@@ -5391,7 +5391,7 @@
       ]
     },
     {
-      "id": "spi-azra-069",
+      "id": "spi-review-069",
       "number": 69,
       "question": "What is the proper sequence for donning/putting on PPE?",
       "options": [
@@ -5421,7 +5421,7 @@
       ]
     },
     {
-      "id": "spi-azra-070",
+      "id": "spi-review-070",
       "number": 70,
       "question": "Which term describes the main disadvantage of CW Doppler?",
       "options": [
@@ -5451,7 +5451,7 @@
       ]
     },
     {
-      "id": "spi-azra-071",
+      "id": "spi-review-071",
       "number": 71,
       "question": "What is the most appropriate method of level 2 transducer disinfection?",
       "options": [
@@ -5481,7 +5481,7 @@
       ]
     },
     {
-      "id": "spi-azra-072",
+      "id": "spi-review-072",
       "number": 72,
       "question": "What determines the display reflector depth in US imaging?",
       "options": [
@@ -5511,7 +5511,7 @@
       ]
     },
     {
-      "id": "spi-azra-073",
+      "id": "spi-review-073",
       "number": 73,
       "question": "Which color control was adjusted in image A to produce image B?",
       "options": [
@@ -5537,11 +5537,11 @@
       "category": "Doppler",
       "hint": "Compare the color bars beside each image.",
       "keywords": [],
-      "imageUrl": "/images/spi/azra/q073.jpg",
+      "imageUrl": "/images/spi/review/q073.jpg",
       "imageCaption": "Two color Doppler cardiac images labeled A (left) and B (right)"
     },
     {
-      "id": "spi-azra-074",
+      "id": "spi-review-074",
       "number": 74,
       "question": "What change can make dynamic imaging appear smoother, as transducer is moved?",
       "options": [
@@ -5571,7 +5571,7 @@
       ]
     },
     {
-      "id": "spi-azra-075",
+      "id": "spi-review-075",
       "number": 75,
       "question": "What function would eliminate the echoes near the baseline?",
       "options": [
@@ -5599,11 +5599,11 @@
       "keywords": [
         "near the baseline"
       ],
-      "imageUrl": "/images/spi/azra/q075.jpg",
+      "imageUrl": "/images/spi/review/q075.jpg",
       "imageCaption": "Spectral Doppler display with an arrow at the baseline"
     },
     {
-      "id": "spi-azra-076",
+      "id": "spi-review-076",
       "number": 76,
       "question": "Which adjustment will allow the structure to be visualized at 12cm?",
       "options": [
@@ -5631,11 +5631,11 @@
       "keywords": [
         "12cm"
       ],
-      "imageUrl": "/images/spi/azra/q076.jpg",
+      "imageUrl": "/images/spi/review/q076.jpg",
       "imageCaption": "Apical four-chamber echocardiographic image with depth markers"
     },
     {
-      "id": "spi-azra-077",
+      "id": "spi-review-077",
       "number": 77,
       "question": "What is the duty factor of CW Doppler?",
       "options": [
@@ -5665,7 +5665,7 @@
       ]
     },
     {
-      "id": "spi-azra-078",
+      "id": "spi-review-078",
       "number": 78,
       "question": "Which imaging method reduces acoustic noise?",
       "options": [
@@ -5695,7 +5695,7 @@
       ]
     },
     {
-      "id": "spi-azra-079",
+      "id": "spi-review-079",
       "number": 79,
       "question": "Which technique will increase the reflection from Rayleigh scatter?",
       "options": [
@@ -5725,7 +5725,7 @@
       ]
     },
     {
-      "id": "spi-azra-080",
+      "id": "spi-review-080",
       "number": 80,
       "question": "What reduces the range of amplitudes while retaining information regarding relative amplitude levels?",
       "options": [
@@ -5755,7 +5755,7 @@
       ]
     },
     {
-      "id": "spi-azra-081",
+      "id": "spi-review-081",
       "number": 81,
       "question": "Which component of contrast agent causes mismatch in impedance in the agent and blood?",
       "options": [
@@ -5785,7 +5785,7 @@
       ]
     },
     {
-      "id": "spi-azra-082",
+      "id": "spi-review-082",
       "number": 82,
       "question": "Harmonic frequencies are the result of what activity?",
       "options": [
@@ -5815,7 +5815,7 @@
       ]
     },
     {
-      "id": "spi-azra-083",
+      "id": "spi-review-083",
       "number": 83,
       "question": "For harmonic imaging, what does the overall bandwidth contain?",
       "options": [
@@ -5845,7 +5845,7 @@
       ]
     },
     {
-      "id": "spi-azra-084",
+      "id": "spi-review-084",
       "number": 84,
       "question": "Which system control adjusts amplification of signal as a function of depth?",
       "options": [
@@ -5875,7 +5875,7 @@
       ]
     },
     {
-      "id": "spi-azra-085",
+      "id": "spi-review-085",
       "number": 85,
       "question": "Which statement best describes the advantage of phased array transducer?",
       "options": [
@@ -5905,7 +5905,7 @@
       ]
     },
     {
-      "id": "spi-azra-086",
+      "id": "spi-review-086",
       "number": 86,
       "question": "In 2D image, which adjustment would sharpen the borders of a structure?",
       "options": [
@@ -5935,7 +5935,7 @@
       ]
     },
     {
-      "id": "spi-azra-087",
+      "id": "spi-review-087",
       "number": 87,
       "question": "What occurs when the sound beam interacts with normal incidence at nonspecular reflector?",
       "options": [
@@ -5965,7 +5965,7 @@
       ]
     },
     {
-      "id": "spi-azra-088",
+      "id": "spi-review-088",
       "number": 88,
       "question": "Which factor determines elevational resolution?",
       "options": [
@@ -5995,7 +5995,7 @@
       ]
     },
     {
-      "id": "spi-azra-089",
+      "id": "spi-review-089",
       "number": 89,
       "question": "What resolution is this image depicting?",
       "options": [
@@ -6021,11 +6021,11 @@
       "category": "Image Optimization",
       "hint": "Notice the orientation of the closely spaced pins relative to the direction of the beam.",
       "keywords": [],
-      "imageUrl": "/images/spi/azra/q089.jpg",
+      "imageUrl": "/images/spi/review/q089.jpg",
       "imageCaption": "Phantom image showing a group of pin targets"
     },
     {
-      "id": "spi-azra-090",
+      "id": "spi-review-090",
       "number": 90,
       "question": "Which factor decreases when output is reduced?",
       "options": [
@@ -6055,7 +6055,7 @@
       ]
     },
     {
-      "id": "spi-azra-091",
+      "id": "spi-review-091",
       "number": 91,
       "question": "What can be increased to eliminate clutter from color flow imaging?",
       "options": [
@@ -6085,7 +6085,7 @@
       ]
     },
     {
-      "id": "spi-azra-092",
+      "id": "spi-review-092",
       "number": 92,
       "question": "Which scanning position results in decreased blood flow to the sonographer shoulder/muscle/tendons?",
       "options": [
@@ -6115,7 +6115,7 @@
       ]
     },
     {
-      "id": "spi-azra-093",
+      "id": "spi-review-093",
       "number": 93,
       "question": "What improves both axial and lateral resolution?",
       "options": [
@@ -6145,7 +6145,7 @@
       ]
     },
     {
-      "id": "spi-azra-094",
+      "id": "spi-review-094",
       "number": 94,
       "question": "What determines shades of gray in B-mode imaging?",
       "options": [
@@ -6175,7 +6175,7 @@
       ]
     },
     {
-      "id": "spi-azra-095",
+      "id": "spi-review-095",
       "number": 95,
       "question": "What is determined from the firing sequence of each element?",
       "options": [
@@ -6205,7 +6205,7 @@
       ]
     },
     {
-      "id": "spi-azra-096",
+      "id": "spi-review-096",
       "number": 96,
       "question": "Where are harmonics created?",
       "options": [
@@ -6235,7 +6235,7 @@
       ]
     },
     {
-      "id": "spi-azra-097",
+      "id": "spi-review-097",
       "number": 97,
       "question": "Which type of resolution can be distorted with use of persistence?",
       "options": [
@@ -6265,7 +6265,7 @@
       ]
     },
     {
-      "id": "spi-azra-098",
+      "id": "spi-review-098",
       "number": 98,
       "question": "Which factor influences acoustic impedance in a medium?",
       "options": [
@@ -6295,7 +6295,7 @@
       ]
     },
     {
-      "id": "spi-azra-099",
+      "id": "spi-review-099",
       "number": 99,
       "question": "Which feature is a characteristic of CW Doppler?",
       "options": [
@@ -6325,7 +6325,7 @@
       ]
     },
     {
-      "id": "spi-azra-100",
+      "id": "spi-review-100",
       "number": 100,
       "question": "Which parameter change does not increase frame rate?",
       "options": [
@@ -6355,7 +6355,7 @@
       ]
     },
     {
-      "id": "spi-azra-101",
+      "id": "spi-review-101",
       "number": 101,
       "question": "How can the spectral Doppler mirroring seen in this image be eliminated?",
       "options": [
@@ -6383,11 +6383,11 @@
       "keywords": [
         "spectral Doppler mirroring"
       ],
-      "imageUrl": "/images/spi/azra/q101.jpg",
+      "imageUrl": "/images/spi/review/q101.jpg",
       "imageCaption": "Spectral Doppler waveform with signal on both sides of the baseline"
     },
     {
-      "id": "spi-azra-102",
+      "id": "spi-review-102",
       "number": 102,
       "question": "Which color control adjustment caused the change in image A to become image B?",
       "options": [
@@ -6413,7 +6413,7 @@
       "category": "Doppler",
       "hint": "Compare the numbers at the top of the color bars in A and B.",
       "keywords": [],
-      "imageUrl": "/images/spi/azra/q102.jpg",
+      "imageUrl": "/images/spi/review/q102.jpg",
       "imageCaption": "Two color Doppler images of a vessel labeled A and B"
     }
   ],
