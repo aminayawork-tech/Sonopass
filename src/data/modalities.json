@@ -60,7 +60,7 @@
       "color": "blue",
       "gradient": "from-blue-500 to-blue-600",
       "enabled": true,
-      "questionCount": 20,
+      "questionCount": 352,
       "examModes": [
         {
           "id": "quick-10",
@@ -77,14 +77,26 @@
         {
           "id": "mock-1",
           "name": "Mock Exam 1",
-          "description": "Practice exam (15 questions)",
+          "description": "Full practice exam (126 questions)",
           "route": "/exam/mock-1"
         },
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Practice exam (5 questions)",
+          "description": "Review exam (102 questions)",
           "route": "/exam/mock-2"
+        },
+        {
+          "id": "mock-3",
+          "name": "Mock Exam 3",
+          "description": "Practice exam (80 questions)",
+          "route": "/exam/mock-3"
+        },
+        {
+          "id": "mock-4",
+          "name": "Artifact Image Quiz",
+          "description": "Identify and fix artifacts (24 questions)",
+          "route": "/exam/mock-4"
         }
       ]
     },

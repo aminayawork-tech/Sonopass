@@ -51,6 +51,12 @@ const getCategoryColors = (category: string) => {
     'Venous Disease': { bg: 'bg-teal-100', text: 'text-teal-700' },
     'Venous Hemodynamics': { bg: 'bg-blue-100', text: 'text-blue-700' },
     'Venous Testing': { bg: 'bg-indigo-100', text: 'text-indigo-700' },
+    'Ultrasound Physics': { bg: 'bg-sky-100', text: 'text-sky-700' },
+    'Transducers': { bg: 'bg-violet-100', text: 'text-violet-700' },
+    'Image Optimization': { bg: 'bg-emerald-100', text: 'text-emerald-700' },
+    'Artifacts': { bg: 'bg-amber-100', text: 'text-amber-700' },
+    'Doppler': { bg: 'bg-rose-100', text: 'text-rose-700' },
+    'Bioeffects': { bg: 'bg-orange-100', text: 'text-orange-700' },
   };
 
   return colorMap[category] || { bg: 'bg-gray-100', text: 'text-gray-700' };

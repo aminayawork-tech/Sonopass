@@ -43,6 +43,12 @@ const CATEGORY_ICONS: { [key: string]: any } = {
   'Physics & Instrumentation': Zap,
   'General & Other': Stethoscope,
   'Vascular': Stethoscope,
+  'Ultrasound Physics': Waves,
+  'Transducers': Zap,
+  'Image Optimization': Target,
+  'Artifacts': AlertTriangle,
+  'Doppler': Activity,
+  'Bioeffects': Heart,
 };
 
 export default function StudyModePage() {
