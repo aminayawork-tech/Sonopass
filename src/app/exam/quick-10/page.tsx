@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
 import { useModality } from '@/contexts/ModalityContext';
+import { allQuestions } from '@/lib/questions';
 
 export default function Quick10Page() {
   const [questions, setQuestions] = useState<any[]>([]);
@@ -16,8 +17,7 @@ export default function Quick10Page() {
 
       try {
         const questionsData = await loadQuestions();
-        const allQuestions = [...questionsData.exam1, ...questionsData.exam2];
-        setQuestions(shuffleQuestions(allQuestions).slice(0, 10));
+        setQuestions(shuffleQuestions(allQuestions(questionsData)).slice(0, 10));
       } catch (error) {
         console.error('Failed to load questions:', error);
       }

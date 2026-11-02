@@ -11,6 +11,7 @@ import ExamInterface from '@/components/ExamInterface';
 import { shuffleQuestions } from '@/lib/shuffle';
 import { useModality } from '@/contexts/ModalityContext';
 import AppLayout from '@/components/layout/AppLayout';
+import { allQuestions } from '@/lib/questions';
 
 export default function StudyPage() {
   const searchParams = useSearchParams();
@@ -29,15 +30,9 @@ export default function StudyPage() {
 
       try {
         const questionsData = await loadQuestions();
-        const allQuestions = [
-          ...questionsData.exam1,
-          ...questionsData.exam2,
-          ...questionsData.exam3,
-          ...questionsData.exam4
-        ];
         const map = new Map<string, any[]>();
 
-        allQuestions.forEach(q => {
+        allQuestions<any>(questionsData).forEach(q => {
           if (!map.has(q.category)) {
             map.set(q.category, []);
           }
