@@ -8,11 +8,11 @@
     "Bioeffects"
   ],
   "categoryTotals": {
-    "Ultrasound Physics": 44,
-    "Transducers": 52,
-    "Image Optimization": 108,
+    "Ultrasound Physics": 43,
+    "Transducers": 50,
+    "Image Optimization": 104,
     "Artifacts": 46,
-    "Doppler": 85,
+    "Doppler": 77,
     "Bioeffects": 17
   },
   "examModes": [
@@ -31,7 +31,7 @@
     {
       "id": "mock-1",
       "name": "Mock Exam 1",
-      "description": "Full practice exam (126 questions)",
+      "description": "Full practice exam (111 questions)",
       "route": "/exam/mock-1"
     },
     {
@@ -53,6 +53,6 @@
       "route": "/exam/mock-4"
     }
   ],
-  "totalQuestions": 352,
+  "totalQuestions": 337,
   "passingScore": 75
 }
