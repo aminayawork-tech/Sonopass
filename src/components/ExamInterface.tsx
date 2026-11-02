@@ -1,12 +1,14 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
-import { Check, X, Home, Info, Heart, Zap, Trophy, ChevronLeft, ChevronRight, Lightbulb } from 'lucide-react';
+import { useState, useEffect, useCallback, useRef } from 'react';
+import { Check, X, Home, Info, Heart, Zap, Trophy, ChevronLeft, ChevronRight, Lightbulb, Flag, LayoutGrid, Clock } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { getStats, recordAnswer, recordExamComplete, getBadgeInfo, getCurrentModalityStats, spendHintHeart, STREAK_HEART_EVERY, type UserStats } from '@/lib/userStats';
 import HeartsSheet from '@/components/HeartsSheet';
 import { highlightKeywords } from '@/lib/highlightKeywords';
+import { timeLimitSeconds, formatClock, formatDuration, loadExamSession, saveExamSession, clearExamSession } from '@/lib/examSession';
+import { ExamStartScreen, QuestionGridSheet, SubmitSheet } from '@/components/ExamTools';
 
 interface Option {
   letter: string;
@@ -62,7 +64,9 @@ const getCategoryColors = (category: string) => {
   return colorMap[category] || { bg: 'bg-gray-100', text: 'text-gray-700' };
 };
 
-export default function ExamInterface({ questions, title, mode, examId, modality, showResults = true, onRestart }: ExamInterfaceProps) {
+export default function ExamInterface({ questions: initialQuestions, title, mode, examId, modality, showResults = true, onRestart }: ExamInterfaceProps) {
+  const isExam = mode === 'exam';
+  const [questions, setQuestions] = useState<Question[]>(initialQuestions);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [showAnswer, setShowAnswer] = useState(false);
@@ -74,9 +78,67 @@ export default function ExamInterface({ questions, title, mode, examId, modality
   const [heartsOpen, setHeartsOpen] = useState(false);
   const [heartToast, setHeartToast] = useState(false);
 
+  // Exam-mode state: timer, flags, review
+  const limitSeconds = timeLimitSeconds(initialQuestions.length, modality);
+  const [phase, setPhase] = useState<'setup' | 'running'>(isExam ? 'setup' : 'running');
+  const [timed, setTimed] = useState(true);
+  const [startedAt, setStartedAt] = useState<number | null>(null);
+  const [endsAt, setEndsAt] = useState<number | null>(null);
+  const [now, setNow] = useState(() => Date.now());
+  const [flagged, setFlagged] = useState<Set<string>>(new Set());
+  const [gridOpen, setGridOpen] = useState(false);
+  const [submitOpen, setSubmitOpen] = useState(false);
+  const [timeToast, setTimeToast] = useState<string | null>(null);
+  const [examResult, setExamResult] = useState<{ timeUsed: number; timedOut: boolean } | null>(null);
+  const [reviewing, setReviewing] = useState(false);
+  const warned = useRef<Set<number>>(new Set());
+
   useEffect(() => {
     setStats(getStats());
   }, []);
+
+  // Resume an exam in progress (survives refreshes; the clock keeps running)
+  useEffect(() => {
+    if (!isExam) return;
+    const saved = loadExamSession(modality, examId);
+    if (!saved) return;
+    const byId = new Map(initialQuestions.map((q) => [q.id, q]));
+    if (saved.order.length !== initialQuestions.length || !saved.order.every((id) => byId.has(id))) {
+      clearExamSession(modality, examId);
+      return;
+    }
+    const ordered = saved.order.map((id) => byId.get(id)!);
+    setQuestions(ordered);
+    setAnswers(saved.answers);
+    setFlagged(new Set(saved.flagged));
+    setTimed(saved.timed);
+    setStartedAt(saved.startedAt);
+    setEndsAt(saved.endsAt);
+    setCurrentIndex(Math.min(saved.currentIndex, ordered.length - 1));
+    setNow(Date.now());
+    setPhase('running');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const examLive = isExam && phase === 'running' && !completed;
+
+  useEffect(() => {
+    if (!examLive) return;
+    const id = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(id);
+  }, [examLive]);
+
+  useEffect(() => {
+    if (!examLive || startedAt === null) return;
+    saveExamSession(
+      { order: questions.map((q) => q.id), answers, flagged: Array.from(flagged), timed, startedAt, endsAt, currentIndex },
+      modality,
+      examId,
+    );
+  }, [examLive, questions, answers, flagged, timed, startedAt, endsAt, currentIndex, modality, examId]);
+
+  const remaining = endsAt !== null ? Math.max(0, Math.ceil((endsAt - now) / 1000)) : null;
+  const elapsed = startedAt !== null ? Math.max(0, Math.round((now - startedAt) / 1000)) : 0;
 
   const currentQuestion = questions[currentIndex];
   const progress = ((currentIndex + 1) / questions.length) * 100;
@@ -158,7 +220,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
     }
   };
 
-  const finishExam = () => {
+  const finishExam = (timedOut = false) => {
     if (mode === 'exam') {
       let latestStats = getStats();
       for (const [id, answer] of Object.entries(answers)) {
@@ -172,29 +234,128 @@ export default function ExamInterface({ questions, title, mode, examId, modality
       setStats(latestStats);
     }
     if (examId) {
-      const result = recordExamComplete(examId, correctAnswers, answeredCount, modality);
+      const result = recordExamComplete(examId, correctAnswers, isExam ? questions.length : answeredCount, modality);
       setStats(result.stats);
       if (result.newBadges.length > 0) {
         showBadgeNotification(result.newBadges[0]);
       }
     }
+    if (isExam) {
+      const used = startedAt !== null ? (Date.now() - startedAt) / 1000 : 0;
+      setExamResult({ timeUsed: timedOut ? limitSeconds : timed ? Math.min(used, limitSeconds) : used, timedOut });
+      clearExamSession(modality, examId);
+      setGridOpen(false);
+      setSubmitOpen(false);
+    }
     setCompleted(true);
+  };
+
+  // Time warnings and auto-submit
+  useEffect(() => {
+    if (!examLive || !timed || remaining === null) return;
+    if (remaining <= 0) {
+      finishExam(true);
+      return;
+    }
+    for (const mark of [600, 60]) {
+      if (remaining <= mark && limitSeconds > mark && !warned.current.has(mark)) {
+        warned.current.add(mark);
+        setTimeToast(mark === 600 ? '10 minutes left' : '1 minute left');
+        setTimeout(() => setTimeToast(null), 3500);
+      }
+    }
+    // finishExam is recreated every render; re-run only when the clock moves
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [examLive, timed, remaining]);
+
+  const startExam = () => {
+    const t = Date.now();
+    warned.current = new Set();
+    setStartedAt(t);
+    setEndsAt(timed ? t + limitSeconds * 1000 : null);
+    setNow(t);
+    setPhase('running');
+  };
+
+  const toggleFlag = (id: string) => {
+    setFlagged((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
+
+  const restartExam = () => {
+    clearExamSession(modality, examId);
+    setQuestions(initialQuestions);
+    setCurrentIndex(0);
+    setAnswers({});
+    setFlagged(new Set());
+    setShowAnswer(false);
+    setReviewing(false);
+    setExamResult(null);
+    setStartedAt(null);
+    setEndsAt(null);
+    setCompleted(false);
+    setPhase(isExam ? 'setup' : 'running');
   };
 
   const badgeInfo = newBadge ? getBadgeInfo(newBadge) : null;
 
+  if (isExam && phase === 'setup') {
+    return (
+      <ExamStartScreen
+        title={title}
+        questionCount={questions.length}
+        limitSeconds={limitSeconds}
+        modality={modality}
+        timed={timed}
+        onChangeTimed={setTimed}
+        onStart={startExam}
+      />
+    );
+  }
+
+  const resultScore = isExam
+    ? Math.round((correctAnswers / Math.max(1, questions.length)) * 100)
+    : score;
+  const unansweredCount = questions.length - answeredCount;
+
   // ── Results screen ──
-  if (completed && showResults) {
+  if (completed && showResults && !reviewing) {
     return (
       <div className="min-h-screen px-5 py-10" style={{ backgroundColor: '#F5F7FA' }}>
         <div className="bg-white rounded-3xl p-7 surface text-center">
           <p className="eyebrow mb-3">Results</p>
-          <div className="text-6xl font-extrabold mb-1" style={{ color: score >= 70 ? '#3abc83' : '#ef4444' }}>
-            {score}%
+          {examResult?.timedOut && (
+            <p className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 text-red-600 text-[12px] font-bold mb-3">
+              <Clock className="w-3.5 h-3.5" /> Time ran out
+            </p>
+          )}
+          <div className="text-6xl font-extrabold mb-1" style={{ color: resultScore >= 70 ? '#3abc83' : '#ef4444' }}>
+            {resultScore}%
           </div>
           <p className="text-[15px] font-bold text-gray-700 mb-6">
-            {correctAnswers} / {answeredCount} Correct
+            {correctAnswers} / {isExam ? questions.length : answeredCount} Correct
           </p>
+
+          {isExam && examResult && (
+            <div className="grid grid-cols-2 gap-3 mb-6 text-left">
+              <div className="rounded-2xl bg-slate-50 p-4">
+                <p className="text-[11px] text-slate-400 font-semibold uppercase tracking-wide">Time used</p>
+                <p className="text-[18px] font-extrabold text-ink mt-1">{formatClock(examResult.timeUsed)}</p>
+                {timed && <p className="text-[11px] text-slate-400 mt-0.5">of {formatDuration(limitSeconds)}</p>}
+              </div>
+              <div className="rounded-2xl bg-slate-50 p-4">
+                <p className="text-[11px] text-slate-400 font-semibold uppercase tracking-wide">Per question</p>
+                <p className="text-[18px] font-extrabold text-ink mt-1">
+                  {answeredCount > 0 ? `${Math.round(examResult.timeUsed / answeredCount)} s` : '—'}
+                </p>
+                <p className="text-[11px] text-slate-400 mt-0.5">average</p>
+              </div>
+            </div>
+          )}
 
           {modalityStats && (
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-50 border border-amber-100 mb-6">
@@ -212,22 +373,34 @@ export default function ExamInterface({ questions, title, mode, examId, modality
               <div className="text-2xl font-extrabold text-red-500">{answeredCount - correctAnswers}</div>
               <div className="text-[11px] text-gray-500 font-medium mt-0.5">Incorrect</div>
             </div>
-            <div className="bg-blue-50 rounded-2xl p-4">
-              <div className="text-2xl font-extrabold text-blue-500">{questions.length}</div>
-              <div className="text-[11px] text-gray-500 font-medium mt-0.5">Total</div>
-            </div>
+            {isExam ? (
+              <div className="bg-slate-100 rounded-2xl p-4">
+                <div className="text-2xl font-extrabold text-slate-500">{unansweredCount}</div>
+                <div className="text-[11px] text-gray-500 font-medium mt-0.5">Unanswered</div>
+              </div>
+            ) : (
+              <div className="bg-blue-50 rounded-2xl p-4">
+                <div className="text-2xl font-extrabold text-blue-500">{questions.length}</div>
+                <div className="text-[11px] text-gray-500 font-medium mt-0.5">Total</div>
+              </div>
+            )}
           </div>
 
           <div className="flex flex-col gap-3">
+            {isExam && (
+              <button
+                onClick={() => { setReviewing(true); setCurrentIndex(0); }}
+                className="btn-secondary h-12 rounded-2xl font-bold text-[15px] active:scale-[0.98] transition-transform"
+              >
+                Review answers
+              </button>
+            )}
             <button
               onClick={() => {
                 if (onRestart) {
                   onRestart();
                 } else {
-                  setCurrentIndex(0);
-                  setAnswers({});
-                  setCompleted(false);
-                  setShowAnswer(false);
+                  restartExam();
                 }
               }}
               className="btn-primary h-12 rounded-2xl font-bold text-[15px] active:scale-[0.98] transition-transform"
@@ -254,6 +427,27 @@ export default function ExamInterface({ questions, title, mode, examId, modality
         <div className="px-4 pt-3 pb-2">
           {/* Top row: stats + home */}
           <div className="flex items-center justify-between gap-2 mb-2">
+            {isExam ? (
+              <div className="flex items-center gap-2 min-w-0">
+                {reviewing ? (
+                  <span className="text-[15px] font-extrabold text-ink">Reviewing answers</span>
+                ) : timed && remaining !== null ? (
+                  <span
+                    className={cn(
+                      'flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[14px] font-extrabold tabular-nums transition-colors',
+                      remaining <= 60 ? 'bg-red-50 text-red-600' : remaining <= 600 ? 'bg-amber-50 text-amber-600' : 'bg-slate-100 text-ink',
+                    )}
+                    aria-label="Time remaining"
+                  >
+                    <Clock className="w-4 h-4" /> {formatClock(remaining)}
+                  </span>
+                ) : (
+                  <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 text-[13px] font-bold text-slate-500 tabular-nums">
+                    <Clock className="w-4 h-4" /> Practice · {formatClock(elapsed)}
+                  </span>
+                )}
+              </div>
+            ) : (
             <div className="flex items-center gap-2 min-w-0">
               {stats && (
                 <>
@@ -275,6 +469,24 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                 </>
               )}
             </div>
+            )}
+            {isExam && !reviewing && (
+              <button
+                onClick={() => setGridOpen(true)}
+                aria-label="Question grid"
+                className="ml-auto w-9 h-9 rounded-xl flex items-center justify-center surface bg-white active:bg-gray-50 shrink-0"
+              >
+                <LayoutGrid className="w-4 h-4 text-gray-600" />
+              </button>
+            )}
+            {isExam && reviewing && (
+              <button
+                onClick={() => setReviewing(false)}
+                className="ml-auto h-9 px-3 rounded-xl surface bg-white text-[13px] font-bold text-ink active:bg-gray-50 shrink-0"
+              >
+                Results
+              </button>
+            )}
             <Link href="/dashboard">
               <button className="w-9 h-9 rounded-xl flex items-center justify-center surface bg-white active:bg-gray-50 shrink-0">
                 <Home className="w-4 h-4 text-gray-600" />
@@ -285,7 +497,11 @@ export default function ExamInterface({ questions, title, mode, examId, modality
           {/* Progress and Score */}
           <div className="flex justify-between items-center text-[11px] text-gray-400 mb-1.5">
             <span className="font-medium">{currentIndex + 1} / {questions.length}</span>
-            <span>{correctAnswers}/{answeredCount} correct ({score}%)</span>
+            {isExam ? (
+              <span>{answeredCount} answered{flagged.size > 0 ? ` · ${flagged.size} flagged` : ''}</span>
+            ) : (
+              <span>{correctAnswers}/{answeredCount} correct ({score}%)</span>
+            )}
           </div>
           <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
             <div className="h-full rounded-full transition-all duration-300" style={{ width: `${progress}%`, backgroundColor: '#3abc83' }} />
@@ -316,6 +532,35 @@ export default function ExamInterface({ questions, title, mode, examId, modality
         <HeartsSheet stats={stats} onClose={() => setHeartsOpen(false)} onStatsChange={setStats} />
       )}
 
+      {timeToast && (
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-full bg-amber-500 text-white shadow-lg flex items-center gap-2 slide-down">
+          <Clock className="w-4 h-4" />
+          <span className="text-[13px] font-bold">{timeToast}</span>
+        </div>
+      )}
+
+      {gridOpen && (
+        <QuestionGridSheet
+          questionIds={questions.map((q) => q.id)}
+          answers={answers}
+          flagged={flagged}
+          currentIndex={currentIndex}
+          onJump={(i) => { setCurrentIndex(i); setGridOpen(false); }}
+          onSubmit={() => { setGridOpen(false); setSubmitOpen(true); }}
+          onClose={() => setGridOpen(false)}
+        />
+      )}
+
+      {submitOpen && (
+        <SubmitSheet
+          unanswered={unansweredCount}
+          flagged={flagged.size}
+          onReview={() => { setSubmitOpen(false); setGridOpen(true); }}
+          onSubmit={() => finishExam(false)}
+          onClose={() => setSubmitOpen(false)}
+        />
+      )}
+
       {/* Badge notification */}
       {badgeInfo && (
         <div className="fixed top-16 sm:top-20 left-1/2 -translate-x-1/2 z-50 px-4 sm:px-6 py-3 sm:py-4 bg-amber-100 border-2 border-amber-400 rounded-xl shadow-xl animate-bounce">
@@ -339,6 +584,18 @@ export default function ExamInterface({ questions, title, mode, examId, modality
             <span className="eyebrow" style={{ color: '#2ea873' }}>
               Q{currentIndex + 1}
             </span>
+            {isExam && !reviewing ? (
+              <button
+                onClick={() => toggleFlag(currentQuestion.id)}
+                className={cn(
+                  'flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-bold shrink-0 transition-colors',
+                  flagged.has(currentQuestion.id) ? 'bg-amber-100 text-amber-700' : 'bg-slate-100 text-slate-500',
+                )}
+              >
+                <Flag className={cn('w-3.5 h-3.5', flagged.has(currentQuestion.id) && 'fill-amber-500 text-amber-500')} />
+                {flagged.has(currentQuestion.id) ? 'Flagged' : 'Flag'}
+              </button>
+            ) : (
             <span className={cn(
               "px-2.5 py-0.5 text-[11px] font-bold rounded-full shrink-0",
               getCategoryColors(currentQuestion.category).bg,
@@ -346,6 +603,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
             )}>
               {currentQuestion.category}
             </span>
+            )}
           </div>
 
           {/* Question text */}
@@ -407,7 +665,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
             {currentQuestion.options.map((option) => {
               const isSelected = answers[currentQuestion.id] === option.letter;
               const isCorrect = currentQuestion.correctAnswer === option.letter;
-              const showCorrectness = showAnswer && mode === 'practice';
+              const showCorrectness = (showAnswer && mode === 'practice') || reviewing;
 
               let bg = 'bg-white';
               let border = 'border-slate-200';
@@ -440,7 +698,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
                 <button
                   key={option.letter}
                   onClick={() => {
-                    if (showAnswer && mode === 'practice') return;
+                    if ((showAnswer && mode === 'practice') || reviewing) return;
                     handleAnswer(option.letter);
                   }}
                   className={cn(
@@ -472,7 +730,7 @@ export default function ExamInterface({ questions, title, mode, examId, modality
           </div>
 
           {/* Explanation */}
-          {showAnswer && mode === 'practice' && (
+          {((showAnswer && mode === 'practice') || reviewing) && (
             <div className="mt-2 flex flex-col gap-2">
               {answers[currentQuestion.id] !== currentQuestion.correctAnswer && currentQuestion.correctAnswer && (
                 <div className="p-3 bg-[#e8f8f2] border border-[#3abc83]/30 rounded-xl flex items-start gap-2">
@@ -519,11 +777,15 @@ export default function ExamInterface({ questions, title, mode, examId, modality
 
           {currentIndex === questions.length - 1 ? (
             <button
-              onClick={finishExam}
+              onClick={() => {
+                if (reviewing) setReviewing(false);
+                else if (isExam) setSubmitOpen(true);
+                else finishExam();
+              }}
               className="btn-primary flex-1 h-12 rounded-2xl flex items-center justify-center active:scale-[0.98] transition-transform"
             >
               <span className="text-[14px] font-extrabold text-white">
-                {mode === 'exam' && answeredCount === questions.length ? 'Submit' : 'Finish'}
+                {reviewing ? 'Back to results' : isExam ? 'Review & submit' : 'Finish'}
               </span>
             </button>
           ) : (
