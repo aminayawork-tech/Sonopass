@@ -261,8 +261,8 @@
       "icon": "smile",
       "color": "amber",
       "gradient": "from-amber-500 to-amber-600",
-      "enabled": false,
-      "questionCount": 0,
+      "enabled": true,
+      "questionCount": 300,
       "examModes": [
         {
           "id": "quick-10",
