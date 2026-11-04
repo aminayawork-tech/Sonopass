@@ -7,6 +7,7 @@ import {
   Brain, BookOpen, TrendingUp, ClipboardList,
   Star, Zap, ShieldCheck,
 } from 'lucide-react';
+import { ARDMS_DISCLAIMER } from '@/components/Disclaimer';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/sonopass';
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.sonopass';
@@ -340,6 +341,7 @@ export default function LandingPage() {
             © {new Date().getFullYear()} SonoPass · For educational use only.
           </p>
         </div>
+        <p className="max-w-3xl mx-auto mt-5 text-center text-gray-400 text-[11px] leading-relaxed">{ARDMS_DISCLAIMER}</p>
       </footer>
 
     </div>

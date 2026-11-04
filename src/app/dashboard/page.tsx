@@ -21,6 +21,7 @@ import AppLayout from '@/components/layout/AppLayout';
 import MenuModal from '@/components/layout/MenuModal';
 import { ModalitySelectorDropdown } from '@/components/ModalitySelector';
 import GradientIcon, { type GradientName } from '@/components/GradientIcon';
+import AppFooter from '@/components/Disclaimer';
 
 const STUDY_MODES: { href: string; title: string; subtitle: string; icon: LucideIcon; gradient: GradientName }[] = [
   { href: '/exam/quick-10', title: 'Quick 10', subtitle: '~5 minutes', icon: Zap, gradient: 'emerald' },
@@ -148,9 +149,7 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        <div className="px-5 pb-6 text-center">
-          <p className="text-[11px] text-slate-400">SonoPass · Made for sonographers</p>
-        </div>
+        <AppFooter />
       </div>
     </AppLayout>
   );

@@ -2,6 +2,7 @@
 
 import AppLayout from '@/components/layout/AppLayout';
 import { Card } from '@/components/ui/card';
+import { ARDMS_DISCLAIMER } from '@/components/Disclaimer';
 
 export default function TermsPage() {
   return (
@@ -32,6 +33,9 @@ export default function TermsPage() {
           <p className="text-gray-600">
             SonoPass is a study tool and does not guarantee exam success. Results may vary based on individual effort and preparation.
           </p>
+
+          <h3 className="text-lg font-bold text-gray-900 mb-2 mt-4">Trademarks &amp; Affiliation</h3>
+          <p className="text-gray-600">{ARDMS_DISCLAIMER}</p>
         </Card>
       </div>
     </AppLayout>

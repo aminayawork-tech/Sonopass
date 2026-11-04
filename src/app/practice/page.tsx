@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
 import { allQuestions } from '@/lib/questions';
+import AppFooter from '@/components/Disclaimer';
 
 const CARD_GRADIENTS = [
   'linear-gradient(135deg, #7c3aed 0%, #a855f7 100%)',
@@ -138,9 +139,7 @@ export default function StudyModePage() {
           )}
         </div>
 
-        <div className="px-5 pb-6 text-center">
-          <p className="text-[11px] text-gray-400">SonoPass · Made for sonographers</p>
-        </div>
+        <AppFooter />
       </div>
     </AppLayout>
   );
