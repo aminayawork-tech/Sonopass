@@ -147,8 +147,8 @@
       "icon": "baby",
       "color": "pink",
       "gradient": "from-pink-500 to-pink-600",
-      "enabled": false,
-      "questionCount": 0,
+      "enabled": true,
+      "questionCount": 300,
       "examModes": [
         {
           "id": "quick-10",
@@ -223,8 +223,8 @@
       "icon": "ribbon",
       "color": "rose",
       "gradient": "from-rose-500 to-rose-600",
-      "enabled": false,
-      "questionCount": 0,
+      "enabled": true,
+      "questionCount": 300,
       "examModes": [
         {
           "id": "quick-10",

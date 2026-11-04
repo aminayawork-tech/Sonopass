@@ -1,0 +1,48 @@
+{
+  "categories": [
+    "Anatomy & Physiology",
+    "Scanning Technique & Instrumentation",
+    "Benign Breast Disease",
+    "Malignant Breast Disease",
+    "BI-RADS & Correlation",
+    "Axilla, Lymph Nodes & Implants",
+    "Interventional Procedures & Patient Care"
+  ],
+  "categoryTotals": {
+    "Anatomy & Physiology": 44,
+    "Scanning Technique & Instrumentation": 43,
+    "Benign Breast Disease": 43,
+    "Malignant Breast Disease": 43,
+    "BI-RADS & Correlation": 43,
+    "Axilla, Lymph Nodes & Implants": 42,
+    "Interventional Procedures & Patient Care": 42
+  },
+  "examModes": [
+    {
+      "id": "quick-10",
+      "name": "Quick 10",
+      "description": "10 random BR questions",
+      "route": "/exam/quick-10"
+    },
+    {
+      "id": "study",
+      "name": "Study Mode",
+      "description": "Practice by category with instant feedback",
+      "route": "/exam/study"
+    },
+    {
+      "id": "mock-1",
+      "name": "Mock Exam 1",
+      "description": "Full practice exam (150 questions)",
+      "route": "/exam/mock-1"
+    },
+    {
+      "id": "mock-2",
+      "name": "Mock Exam 2",
+      "description": "Full practice exam (150 questions)",
+      "route": "/exam/mock-2"
+    }
+  ],
+  "totalQuestions": 300,
+  "passingScore": 555
+}
