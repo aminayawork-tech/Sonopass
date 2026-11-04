@@ -1,0 +1,52 @@
+{
+  "categories": [
+    "Anatomy & Physiology",
+    "Measurements & Hemodynamics",
+    "Valvular Stenosis",
+    "Valvular Regurgitation & Prosthetic Valves",
+    "Cardiomyopathies & Ventricular Function",
+    "Coronary Artery Disease",
+    "Pericardial Disease & Masses",
+    "Adult Congenital & Aortic Disease",
+    "Instrumentation, TEE & Contrast"
+  ],
+  "categoryTotals": {
+    "Anatomy & Physiology": 34,
+    "Measurements & Hemodynamics": 34,
+    "Valvular Stenosis": 34,
+    "Valvular Regurgitation & Prosthetic Valves": 34,
+    "Cardiomyopathies & Ventricular Function": 34,
+    "Coronary Artery Disease": 34,
+    "Pericardial Disease & Masses": 32,
+    "Adult Congenital & Aortic Disease": 32,
+    "Instrumentation, TEE & Contrast": 32
+  },
+  "examModes": [
+    {
+      "id": "quick-10",
+      "name": "Quick 10",
+      "description": "10 random AE questions",
+      "route": "/exam/quick-10"
+    },
+    {
+      "id": "study",
+      "name": "Study Mode",
+      "description": "Practice by category with instant feedback",
+      "route": "/exam/study"
+    },
+    {
+      "id": "mock-1",
+      "name": "Mock Exam 1",
+      "description": "Full practice exam (150 questions)",
+      "route": "/exam/mock-1"
+    },
+    {
+      "id": "mock-2",
+      "name": "Mock Exam 2",
+      "description": "Full practice exam (150 questions)",
+      "route": "/exam/mock-2"
+    }
+  ],
+  "totalQuestions": 300,
+  "passingScore": 555
+}

@@ -185,8 +185,8 @@
       "icon": "heartPulse",
       "color": "red",
       "gradient": "from-red-500 to-red-600",
-      "enabled": false,
-      "questionCount": 0,
+      "enabled": true,
+      "questionCount": 300,
       "examModes": [
         {
           "id": "quick-10",
