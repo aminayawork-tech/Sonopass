@@ -1,0 +1,1866 @@
+{
+  "categories": [
+    {
+      "id": "msk-shoulder",
+      "title": "Shoulder",
+      "pieceRange": "Pieces 1-6",
+      "examType": "ARDMS RMSKS Musculoskeletal Sonography",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Rotator cuff, biceps, bursa, dynamic impingement and calcific disease",
+      "topics": [
+        {
+          "id": "msk-rotator-cuff-anatomy-footprint",
+          "title": "Rotator Cuff Anatomy & Footprint",
+          "frontClue": "Four tendons, three tuberosity facets, one biceps landmark",
+          "corePiece": "The rotator cuff is formed by the subscapularis, supraspinatus, infraspinatus and teres minor tendons. Subscapularis inserts on the lesser tuberosity and is scanned in long axis with the arm externally rotated. The supraspinatus inserts on the superior and middle facets of the greater tuberosity, the infraspinatus on the middle facet, and teres minor on the inferior facet. The supraspinatus is best shown in the modified Crass (or Crass) position, hand on the back pocket or behind the back, which brings the tendon out from under the acromion. Normal cuff tendon is a convex, uniformly echogenic, fibrillar band that tapers onto a smooth, bright cortex, covered by the thin hypoechoic line of the subacromial-subdeltoid bursa and peribursal fat. The anterior free edge of the supraspinatus lies next to the rotator interval, where the long head of the biceps tendon runs, about 1.5 cm anterior to the most common tear site. Hyaline cartilage over the humeral head appears as a thin anechoic layer beneath the cuff.",
+          "whyLock": "Knowing where each tendon lands lets you localize a tear and describe it the way a surgeon reads it. The biceps tendon is the key landmark: most degenerative supraspinatus tears begin at the anterior footprint just posterior to the biceps, so always scan the anterior edge in both planes. Trap: in the Crass position the supraspinatus and infraspinatus run obliquely, so true long axis is roughly along a line toward the umbilicus, not straight sagittal. Trap two: the anechoic articular cartilage under the cuff is normal and must not be mistaken for an articular-side tear or effusion.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Full-Thickness Rotator Cuff Tear",
+              "link": "Most full-thickness tears start at the anterior supraspinatus footprint described here."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Long Head Biceps Tendon",
+              "link": "The biceps tendon in the rotator interval marks the anterior edge of the supraspinatus."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Anisotropy",
+              "link": "The curved cuff insertion is a classic site for anisotropic hypoechoic artifact."
+            }
+          ],
+          "registryApplication": "Expect questions on which tendon inserts on the lesser tuberosity (subscapularis), which patient position best shows the supraspinatus (Crass or modified Crass), and the normal echogenicity of tendon.",
+          "checkpoint": {
+            "pearl": "Subscap to lesser; supra, infra, teres minor to greater, superior to inferior",
+            "reflection": "Why does the modified Crass position improve visualization of the supraspinatus, and which landmark marks its anterior edge?"
+          },
+          "keyTerms": [
+            "Supraspinatus",
+            "Subscapularis",
+            "Greater Tuberosity",
+            "Crass Position",
+            "Rotator Interval",
+            "Long Head Biceps Tendon"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 1"
+        },
+        {
+          "id": "msk-full-thickness-rotator-cuff-tear",
+          "title": "Full-Thickness Rotator Cuff Tear",
+          "frontClue": "Gap from bursa to cartilage: the deltoid sags into the hole",
+          "corePiece": "A full-thickness rotator cuff tear extends from the bursal surface to the articular surface. Direct signs are a hypoechoic or anechoic defect spanning the full tendon thickness, or nonvisualization of the tendon when it is massively torn and retracted, leaving the deltoid and bursa lying directly on the humeral head. Indirect signs include loss of the normal convex superior contour (a flat or concave bursal surface), the cartilage interface sign (a bright line along the cartilage surface where fluid fills the defect), compressibility of the defect with transducer pressure, joint fluid communicating with a distended subacromial-subdeltoid bursa, and cortical irregularity of the greater tuberosity. Tears are measured in two planes: anteroposterior width in short axis and the amount of retraction in long axis from the footprint. Most degenerative tears start at the anterior supraspinatus about 1.5 cm behind the biceps. Large tears extend into the infraspinatus. Chronic massive tears show fatty atrophy of the muscle bellies and a high-riding humeral head.",
+          "whyLock": "Surgeons need size and retraction because they predict whether the tendon can be repaired, so measure in both planes and report which tendons are involved. Use the contour and compressibility signs when the gap is filled with debris or bursal tissue and looks isoechoic. Trap: anisotropy at the curved footprint can mimic a defect, so heel-toe the transducer before calling a tear. Trap two: nonvisualization is easy to miss because there is nothing abnormal to see, only absence; if the deltoid sits on the humeral head, the tendon is gone.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 3",
+              "title": "Partial-Thickness Rotator Cuff Tear",
+              "link": "A partial tear involves only one surface; full-thickness spans both."
+            },
+            {
+              "piece": "Piece 1",
+              "title": "Rotator Cuff Anatomy & Footprint",
+              "link": "Tear location is described relative to the footprint and the biceps landmark."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Separates the hypoechoic but continuous tendon from a true fiber gap."
+            }
+          ],
+          "registryApplication": "Tested as identifying the sign of a full-thickness tear, such as a concave bursal contour, cartilage interface sign or nonvisualization, and knowing tears are measured in two planes.",
+          "checkpoint": {
+            "pearl": "Bursa touching cartilage, sagging contour, nonvisualization: full-thickness",
+            "reflection": "Which two indirect signs help confirm a full-thickness tear when the defect is filled with isoechoic debris?"
+          },
+          "keyTerms": [
+            "Cartilage Interface Sign",
+            "Nonvisualization",
+            "Retraction",
+            "Supraspinatus",
+            "Compressibility",
+            "Fatty Atrophy"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 2"
+        },
+        {
+          "id": "msk-partial-thickness-rotator-cuff-tear",
+          "title": "Partial-Thickness Rotator Cuff Tear",
+          "frontClue": "One surface broken, the other intact: name the side",
+          "corePiece": "A partial-thickness tear involves the articular surface, the bursal surface, or lies within the tendon substance (intrasubstance or interstitial). It appears as a focal hypoechoic or anechoic defect, seen in two perpendicular planes, that reaches one surface but not the other. Articular-side tears are the most common, especially at the anterior supraspinatus footprint (sometimes called a rim-rent tear). Bursal-side tears flatten the bursal contour and may cause focal loss of the peribursal fat. A mixed hyperechoic and hypoechoic focus within the tendon is also suggestive. Cortical irregularity at the greater tuberosity is a common associated finding. The defect should be described by surface, location, length in long axis, width in short axis, and approximate percentage of tendon thickness involved, because tears involving more than about half the thickness are often treated surgically. Intrasubstance tears may be invisible arthroscopically, since neither surface is breached.",
+          "whyLock": "The exam tests whether you can tell partial from full thickness and which surface is involved. Ask: does any intact tendon remain above or below the defect? If yes, it is partial. Trap: tendinosis also makes the tendon hypoechoic and thick, but there is no sharp fluid-like defect and the change is diffuse. Trap two: the hypoechoic cartilage layer is directly beneath an articular-side tear, so use two planes and anisotropy correction before calling an articular defect. Reporting percentage depth matters because it drives management.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Full-Thickness Rotator Cuff Tear",
+              "link": "If the defect reaches both surfaces the tear is reclassified as full-thickness."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Anisotropy",
+              "link": "Off-angle insonation creates false hypoechoic foci that mimic partial tears."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Diffuse hypoechoic thickening without a discrete cleft favors tendinosis."
+            }
+          ],
+          "registryApplication": "Expect a described hypoechoic defect at one surface and a question on classification, or a question on which side is most common (articular).",
+          "checkpoint": {
+            "pearl": "Articular-side partial tears are most common: rim-rent at the footprint",
+            "reflection": "Which features distinguish an articular-side partial tear from normal cartilage or tendinosis?"
+          },
+          "keyTerms": [
+            "Articular-Side Tear",
+            "Bursal-Side Tear",
+            "Intrasubstance Tear",
+            "Rim-Rent Tear",
+            "Cortical Irregularity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 3"
+        },
+        {
+          "id": "msk-long-head-biceps-tendon",
+          "title": "Long Head Biceps Tendon",
+          "frontClue": "An oval in the groove: empty groove means look medially",
+          "corePiece": "The long head of the biceps tendon runs in the bicipital groove between the greater and lesser tuberosities, held by the transverse humeral ligament and, more proximally, by the biceps pulley of the rotator interval (coracohumeral and superior glenohumeral ligaments). In short axis it is a bright oval in the groove; in long axis a fibrillar band. Its synovial sheath communicates with the glenohumeral joint, so fluid around the tendon often reflects a joint effusion rather than isolated tenosynovitis; fluid in the dependent sheath is a sensitive sign of any shoulder effusion. Tenosynovitis shows sheath thickening and hyperemia. Tendinosis appears as a thickened hypoechoic tendon. Rupture leaves an empty groove and a retracted tendon distally with a Popeye deformity. Subluxation or dislocation is usually medial, over or into the lesser tuberosity, and is strongly associated with subscapularis tears. Dynamic external rotation in short axis helps demonstrate instability.",
+          "whyLock": "An empty groove is a two-option problem: either the tendon has ruptured and retracted, or it has dislocated medially. Track the groove distally for a retracted stump and medially for a displaced tendon, then check the subscapularis. Trap: the tendon in the groove is highly anisotropic and can look hypoechoic, mimicking tendinosis or effusion; tilt until it brightens. Trap two: fluid in the sheath without hyperemia or thickening is usually a joint effusion that decompresses there, not primary biceps disease.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 1",
+              "title": "Rotator Cuff Anatomy & Footprint",
+              "link": "The biceps in the rotator interval marks the supraspinatus anterior edge and subscapularis upper border."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Anisotropy",
+              "link": "The biceps tendon is the classic example of anisotropy in the shoulder."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "External rotation under real-time imaging demonstrates subluxation."
+            }
+          ],
+          "registryApplication": "Questions ask where the dislocated biceps goes (medially), what tear accompanies it (subscapularis), and why sheath fluid can be a joint effusion.",
+          "checkpoint": {
+            "pearl": "Biceps dislocates medially with a subscapularis tear",
+            "reflection": "If the bicipital groove is empty, what two diagnoses do you consider and how do you sort them out?"
+          },
+          "keyTerms": [
+            "Bicipital Groove",
+            "Transverse Humeral Ligament",
+            "Biceps Pulley",
+            "Tenosynovitis",
+            "Medial Dislocation",
+            "Subscapularis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 4"
+        },
+        {
+          "id": "msk-subacromial-subdeltoid-bursitis-impingement",
+          "title": "Subacromial-Subdeltoid Bursitis & Impingement",
+          "frontClue": "Bursa bunches under the acromion as the arm comes up",
+          "corePiece": "The subacromial-subdeltoid (SASD) bursa lies between the deltoid and the rotator cuff and normally appears as a thin hypoechoic line, about 2 mm or less thick, bordered by echogenic peribursal fat. Bursitis shows fluid distension, synovial thickening, or both, sometimes with hyperemia on power Doppler. Because the bursa does not normally communicate with the glenohumeral joint, a large amount of fluid in both spaces suggests a full-thickness cuff tear. Subacromial impingement is assessed dynamically: with the transducer in the coronal plane against the lateral acromion, the patient abducts the arm, ideally with the thumb pointed up or down. Abnormal findings are pooling or bunching of the bursa and fluid lateral to the acromion, upward displacement of the cuff, or the greater tuberosity snagging under the acromion, reproducing pain. Fluid pooling distally over the greater tuberosity is a common sign of bursal distension. Coracoid (subcoracoid) impingement may be assessed by watching the subscapularis pass under the coracoid during internal rotation.",
+          "whyLock": "Impingement is a clinical and dynamic diagnosis, which is why ultrasound has an advantage over static MRI. Watch for the bursa failing to glide smoothly under the acromion and ask the patient whether the maneuver reproduces symptoms. Trap: a thin layer of bursal fluid alone does not prove bursitis or impingement. Trap two: bursal fluid together with joint fluid points toward a full-thickness tear; fluid only in the bursa points to bursitis or a bursal-side process. The bursa is also the most common target for shoulder steroid injection.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Full-Thickness Rotator Cuff Tear",
+              "link": "Combined joint and bursal fluid suggests communication through a full-thickness tear."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "Impingement is diagnosed by real-time abduction rather than static imaging."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Ultrasound-Guided Injection & Aspiration",
+              "link": "The SASD bursa is a common in-plane injection target."
+            }
+          ],
+          "registryApplication": "Expect a question on normal bursal thickness, the maneuver for impingement (abduction with transducer at the acromion), or what combined bursal and joint fluid implies.",
+          "checkpoint": {
+            "pearl": "Normal bursa is 2 mm or less; bunching on abduction means impingement",
+            "reflection": "Describe the dynamic maneuver for subacromial impingement and the findings that make it positive."
+          },
+          "keyTerms": [
+            "Subacromial-Subdeltoid Bursa",
+            "Bursitis",
+            "Subacromial Impingement",
+            "Peribursal Fat",
+            "Abduction",
+            "Power Doppler"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 5"
+        },
+        {
+          "id": "msk-calcific-tendinopathy",
+          "title": "Calcific Tendinopathy",
+          "frontClue": "Hydroxyapatite in the cuff: the softer it shadows, the more it hurts",
+          "corePiece": "Calcific tendinopathy is deposition of calcium hydroxyapatite crystals within a tendon, most often the supraspinatus about 1 to 2 cm from its insertion. It is often seen in middle-aged adults and is a different entity from degenerative dystrophic calcification at the enthesis. The disease cycles through formative, resting and resorptive phases. In the formative and resting phases deposits are hard, hyperechoic, arc-shaped or well-defined, and cast a clean posterior acoustic shadow. In the resorptive phase the deposit softens to a toothpaste-like consistency, becoming fragmented, nodular or cloud-like with faint or absent shadowing; this phase is typically the most painful and may show surrounding hyperemia and bursitis as crystals leak into the bursa. Size and location are recorded. Symptomatic deposits can be treated with ultrasound-guided barbotage (lavage), in which a needle repeatedly irrigates and aspirates the deposit with saline, often followed by a bursal steroid injection.",
+          "whyLock": "Shadowing tells you the phase: a dense arc that shadows is the hard, quieter stage, while a soft, nonshadowing deposit with hyperemia is resorptive and acutely painful. This matters for treatment, because soft deposits are easiest to aspirate during barbotage. Trap: do not confuse an intratendinous calcific deposit with an avulsed bone fragment or enthesophyte at the cortex. Trap two: a large hard shadowing deposit can hide the tendon deep to it, so assess the tendon from more than one angle.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 46",
+              "title": "Ultrasound-Guided Injection & Aspiration",
+              "link": "Barbotage is an ultrasound-guided needle lavage procedure."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Power Doppler for Inflammation",
+              "link": "Hyperemia around a deposit supports the painful resorptive phase."
+            },
+            {
+              "piece": "Piece 1",
+              "title": "Rotator Cuff Anatomy & Footprint",
+              "link": "Deposits typically sit in the supraspinatus just proximal to its footprint."
+            }
+          ],
+          "registryApplication": "Questions ask which crystal is involved (hydroxyapatite), which phase is most painful (resorptive), and how shadowing changes across phases.",
+          "checkpoint": {
+            "pearl": "Hard deposit shadows; soft resorptive deposit hurts",
+            "reflection": "How would the sonographic appearance of a deposit change from the resting to the resorptive phase?"
+          },
+          "keyTerms": [
+            "Hydroxyapatite",
+            "Resorptive Phase",
+            "Posterior Acoustic Shadowing",
+            "Barbotage",
+            "Supraspinatus"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 6"
+        }
+      ]
+    },
+    {
+      "id": "msk-elbow-wrist-hand",
+      "title": "Elbow, Wrist & Hand",
+      "pieceRange": "Pieces 7-12",
+      "examType": "ARDMS RMSKS Musculoskeletal Sonography",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Elbow tendinopathy, ulnar and median nerves, wrist tendons, pulleys and ganglia",
+      "topics": [
+        {
+          "id": "msk-lateral-epicondylitis",
+          "title": "Lateral Epicondylitis",
+          "frontClue": "Tennis elbow is a tendinosis of the common extensor origin, mostly ECRB",
+          "corePiece": "Lateral epicondylitis, or tennis elbow, is a degenerative tendinopathy (tendinosis) of the common extensor tendon at the lateral epicondyle, chiefly the extensor carpi radialis brevis component. In long axis, the normal tendon is a fibrillar, beak-shaped structure attaching to a smooth cortex, with the radial (lateral) collateral ligament lying deep to it. Abnormal findings include tendon thickening, focal or diffuse hypoechogenicity, loss of the fibrillar pattern, intrasubstance clefts representing partial tears, intratendinous calcification, cortical irregularity or enthesophytes, and neovascularity on power Doppler. A full-thickness tear shows a fluid-filled gap; a deep tear may extend into the radial collateral ligament and cause instability. The same pattern at the medial epicondyle, involving the common flexor-pronator tendon, is medial epicondylitis (golfer's elbow), which may coexist with ulnar collateral ligament injury or ulnar neuropathy. Comparison with the asymptomatic side helps with subtle cases.",
+          "whyLock": "Despite the name, the disease is mostly degenerative rather than inflammatory, so the classic findings are those of tendinosis: thickening, hypoechogenicity and neovessels. Power Doppler flow in the tendon correlates with symptoms. Trap: the extensor origin curves over the epicondyle and is prone to anisotropy, so a hypoechoic area may disappear when the transducer is angled. Trap two: always look deep to the tendon at the radial collateral ligament, because a missed ligament tear changes surgical planning. Remember medial epicondylitis is the flexor-pronator version.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Epicondylitis is the prototype of tendinosis with possible partial tears."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Power Doppler for Inflammation",
+              "link": "Neovascularity in the extensor origin correlates with pain."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Ulnar Nerve at the Cubital Tunnel",
+              "link": "Medial epicondylitis can coexist with ulnar neuropathy."
+            }
+          ],
+          "registryApplication": "Expect a described hypoechoic thickened common extensor origin and a question on the diagnosis or the most involved tendon (ECRB).",
+          "checkpoint": {
+            "pearl": "Lateral = extensors (ECRB); medial = flexor-pronator",
+            "reflection": "Which ligament must you check deep to the common extensor tendon, and why?"
+          },
+          "keyTerms": [
+            "Common Extensor Tendon",
+            "Extensor Carpi Radialis Brevis",
+            "Tendinosis",
+            "Radial Collateral Ligament",
+            "Medial Epicondylitis",
+            "Neovascularity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 7"
+        },
+        {
+          "id": "msk-ulnar-nerve-at-the-cubital-tunnel",
+          "title": "Ulnar Nerve at the Cubital Tunnel",
+          "frontClue": "Behind the medial epicondyle: swollen, snapping, or squeezed",
+          "corePiece": "The ulnar nerve passes posterior to the medial epicondyle through the cubital tunnel, roofed by the cubital tunnel retinaculum (Osborne ligament proximally and the arcuate ligament between the two heads of flexor carpi ulnaris). Cubital tunnel syndrome is the second most common entrapment neuropathy of the upper limb after carpal tunnel syndrome. Sonographic signs are nerve swelling with loss of the fascicular pattern, increased cross-sectional area (a CSA of about 10 mm2 or more at the medial epicondyle is a commonly used abnormal threshold, though published values range roughly 8 to 10 mm2), hypoechogenicity, and focal narrowing at the compression site with swelling proximal to it. Dynamic imaging with elbow flexion detects ulnar nerve subluxation or dislocation anterior to the medial epicondyle. A snapping medial triceps head can dislocate along with the nerve. Space-occupying causes include ganglion cysts, an accessory anconeus epitrochlearis muscle, and osteophytes.",
+          "whyLock": "Ulnar neuropathy is a mix of static compression and dynamic friction, so a complete exam images the nerve in short axis from proximal to distal and then during elbow flexion. Trap: some asymptomatic people have a mobile nerve that subluxates, so correlate with symptoms and compare sides. Trap two: if the nerve snaps along with the medial triceps, transposing only the nerve may not fix the snapping. Measure CSA at the level of the epicondyle, tracing inside the echogenic epineurium.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 32",
+              "title": "Entrapment Neuropathy Signs",
+              "link": "Cubital tunnel syndrome shows the classic swelling and notch pattern."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Nerve Cross-Sectional Area",
+              "link": "CSA at the medial epicondyle is the main quantitative criterion."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "Elbow flexion reveals subluxation or dislocation of the nerve."
+            }
+          ],
+          "registryApplication": "Questions test the location of the cubital tunnel, the dynamic maneuver for subluxation (elbow flexion), and swelling or increased CSA as the main sign.",
+          "checkpoint": {
+            "pearl": "Flex the elbow to catch a dislocating ulnar nerve",
+            "reflection": "Which dynamic maneuver demonstrates ulnar nerve instability, and what structure may snap with it?"
+          },
+          "keyTerms": [
+            "Cubital Tunnel",
+            "Osborne Ligament",
+            "Anconeus Epitrochlearis",
+            "Nerve Subluxation",
+            "Nerve Cross-Sectional Area",
+            "Medial Epicondyle"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 8"
+        },
+        {
+          "id": "msk-carpal-tunnel-median-nerve-csa",
+          "title": "Carpal Tunnel & Median Nerve CSA",
+          "frontClue": "Swollen at the pisiform inlet: 10 mm2 or more raises the flag",
+          "corePiece": "The carpal tunnel is bounded by the carpal bones and roofed by the flexor retinaculum (transverse carpal ligament). It contains the median nerve and nine flexor tendons: four flexor digitorum superficialis, four flexor digitorum profundus and the flexor pollicis longus. The median nerve lies superficially, just deep to the retinaculum on the radial side. Carpal tunnel syndrome is the most common entrapment neuropathy. The key sonographic criterion is increased cross-sectional area at the tunnel inlet, the level of the pisiform and scaphoid: values of about 10 mm2 or more (thresholds between 9 and 12 mm2 appear in the literature) suggest carpal tunnel syndrome. A wrist-to-forearm CSA ratio of 1.4 or more, or a difference of 2 mm2 or more between the inlet and the pronator quadratus level, adds accuracy. Other findings are nerve flattening at the hamate hook level, palmar bowing of the retinaculum, loss of fascicular pattern, hyperemia, and causes such as tenosynovitis, ganglia, a bifid median nerve or a persistent median artery.",
+          "whyLock": "CSA is the single most tested number in MSK nerve imaging, so know where to measure (pisiform inlet) and how (trace just inside the bright epineurium). Using the forearm comparison reduces error from patient size. Trap: a bifid median nerve must be measured as the sum of both bundles, and a persistent median artery between them matters before carpal tunnel release. Trap two: the flexor tendons look similar to the nerve in short axis; tendons are more anisotropic and move more with finger flexion, while the nerve keeps its honeycomb pattern.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 31",
+              "title": "Nerve Cross-Sectional Area",
+              "link": "The median nerve inlet CSA is the prototype CSA measurement."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Entrapment Neuropathy Signs",
+              "link": "Proximal swelling and distal flattening are the general entrapment pattern."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Normal Nerve Honeycomb Appearance",
+              "link": "The fascicular pattern distinguishes the nerve from adjacent tendons."
+            }
+          ],
+          "registryApplication": "Expect a CSA value to interpret, the level of measurement, or the contents of the carpal tunnel; anatomic variants such as bifid nerve may appear.",
+          "checkpoint": {
+            "pearl": "Measure at the pisiform; 10 mm2 or more is suspicious",
+            "reflection": "Why does a wrist-to-forearm ratio add value beyond a single CSA measurement at the inlet?"
+          },
+          "keyTerms": [
+            "Median Nerve",
+            "Flexor Retinaculum",
+            "Carpal Tunnel Syndrome",
+            "Nerve Cross-Sectional Area",
+            "Bifid Median Nerve",
+            "Persistent Median Artery"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 9"
+        },
+        {
+          "id": "msk-de-quervain-tenosynovitis",
+          "title": "De Quervain Tenosynovitis",
+          "frontClue": "First dorsal compartment: APL and EPB thickened over the radial styloid",
+          "corePiece": "De Quervain tenosynovitis affects the first dorsal extensor compartment at the radial styloid, which contains the abductor pollicis longus (APL) and extensor pollicis brevis (EPB). It is common in new parents and with repetitive thumb use, and Finkelstein's test is the clinical exam. Sonographically the extensor retinaculum and tendon sheath are thickened and hypoechoic, often 1 mm or more versus the opposite side, with tendon swelling, little or no sheath fluid, and peritendinous hyperemia on power Doppler. In short axis the tendons sit on the bony styloid with a thick hypoechoic halo around them. An intracompartmental septum dividing APL from EPB is present in a substantial minority of people; it appears as a hypoechoic band, sometimes with a small bony ridge, and matters because an injection placed only in one subcompartment may fail. The APL often has multiple slips, which should not be mistaken for longitudinal tears. Intersection syndrome, a different condition, occurs more proximally where the first compartment crosses the second.",
+          "whyLock": "The septum is the frequently tested nuance: if present, the needle must reach both subcompartments or the EPB side, which is often the more involved. Sonography guides that injection directly. Trap: multiple APL slips are a normal variant and should not be called split tears. Trap two: pain several centimeters proximal to the styloid at the crossing of the first and second compartments is intersection syndrome, not De Quervain. Use comparison with the other wrist to judge retinacular thickening.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 46",
+              "title": "Ultrasound-Guided Injection & Aspiration",
+              "link": "Injection into the first compartment sheath is a classic guided procedure."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Trigger Finger",
+              "link": "Both are stenosing tenosynovitis with a thickened retinacular structure."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Power Doppler for Inflammation",
+              "link": "Hyperemia around the sheath supports active tenosynovitis."
+            }
+          ],
+          "registryApplication": "Questions ask which tendons are involved (APL and EPB), the significance of the intracompartmental septum, and how it differs from intersection syndrome.",
+          "checkpoint": {
+            "pearl": "APL plus EPB at the styloid; look for the septum",
+            "reflection": "Why does an intracompartmental septum change how you guide a De Quervain injection?"
+          },
+          "keyTerms": [
+            "First Dorsal Compartment",
+            "Abductor Pollicis Longus",
+            "Extensor Pollicis Brevis",
+            "Intracompartmental Septum",
+            "Intersection Syndrome",
+            "Finkelstein Test"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 10"
+        },
+        {
+          "id": "msk-trigger-finger",
+          "title": "Trigger Finger",
+          "frontClue": "A1 pulley over the MCP head: thick ring, catching tendon",
+          "corePiece": "Trigger finger is a stenosing tenosynovitis at the A1 pulley, which lies over the palmar aspect of the metacarpophalangeal (MCP) joint. The flexor digitorum superficialis and profundus tendons glide beneath it; when the pulley thickens, the tendons catch during flexion and extension. The ring and middle fingers and the thumb are most often affected, and diabetes and rheumatoid arthritis are risk factors. Normal A1 pulley thickness is under about 0.5 mm, appearing as a thin hypoechoic band over the tendons. In trigger finger the pulley is thickened and hypoechoic, often to 1 mm or more, with possible hyperemia, flexor tendon thickening and tendon sheath fluid. Dynamic imaging in long axis during active finger flexion may show the tendon bunching proximal to the pulley and then snapping through it. Ultrasound can guide steroid injection into the tendon sheath or percutaneous A1 pulley release, sparing the digital neurovascular bundles that run alongside.",
+          "whyLock": "The structure to remember is the A1 pulley at the MCP, not the A2 pulley over the proximal phalanx, which is the key pulley injured in climbers. Pulleys are highly anisotropic, so the thin hypoechoic band may be under-called or over-called unless the beam is perpendicular. Trap: comparing with an adjacent normal finger is often more useful than the same finger on the other hand. Trap two: guided procedures must avoid the digital nerves and arteries that run on either side of the flexor sheath.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "De Quervain Tenosynovitis",
+              "link": "Both conditions are stenosing tenosynovitis treated with guided injection."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Anisotropy",
+              "link": "Pulleys and flexor tendons are strongly anisotropic in short and long axis."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "Active flexion demonstrates catching at the pulley."
+            }
+          ],
+          "registryApplication": "Expect questions on which pulley is involved (A1) and its location (MCP joint), or the main finding of pulley thickening.",
+          "checkpoint": {
+            "pearl": "Trigger = A1 at the MCP; climber = A2",
+            "reflection": "How would you show triggering dynamically, and which adjacent structures must a needle avoid?"
+          },
+          "keyTerms": [
+            "A1 Pulley",
+            "Stenosing Tenosynovitis",
+            "Flexor Digitorum Superficialis",
+            "Metacarpophalangeal Joint",
+            "Tendon Sheath"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 11"
+        },
+        {
+          "id": "msk-ganglion-cysts",
+          "title": "Ganglion Cysts",
+          "frontClue": "Anechoic, no flow, with a neck pointing to the joint",
+          "corePiece": "A ganglion cyst is a mucin-filled cyst arising from a joint capsule or tendon sheath, the most common soft tissue mass of the hand and wrist. The dorsal wrist ganglion, arising from the dorsal scapholunate ligament region, is the most common type, roughly 60 to 70 percent. Volar wrist ganglia usually arise from the radiocarpal or scaphotrapezial joints and lie near the radial artery, which must be identified before aspiration. Other sites include flexor tendon sheath (retinacular) cysts of the fingers and mucous cysts at the distal interphalangeal joint. Sonographically a ganglion is a well-defined anechoic or hypoechoic, unilocular or multilocular lesion with posterior acoustic enhancement, thin septations, and no internal Doppler flow. A narrow neck or pedicle tracking toward the joint or ligament of origin is characteristic. Chronic ganglia can look hypoechoic and complex. Small occult dorsal ganglia, not palpable, can cause wrist pain and are readily found with ultrasound.",
+          "whyLock": "Finding the neck tells the surgeon where the cyst originates; excising the stalk lowers recurrence. Always apply power Doppler, because a volar mass near the radial artery may be a pseudoaneurysm, and a hypoechoic solid lesion such as a giant cell tumor of tendon sheath will show internal flow. Trap: thick viscous contents make chronic ganglia appear hypoechoic, so use compression and look for enhancement rather than calling it solid. Trap two: aspiration of a volar ganglion requires visualizing the radial artery throughout the needle path.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 40",
+              "title": "Lipoma & Soft Tissue Masses",
+              "link": "Ganglia lead the differential of hand masses; solid flow-containing masses need further workup."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Ultrasound-Guided Injection & Aspiration",
+              "link": "Aspiration is done under real-time guidance away from vessels."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Power Doppler for Inflammation",
+              "link": "Doppler confirms the absence of internal flow and excludes vascular lesions."
+            }
+          ],
+          "registryApplication": "Questions ask the most common location (dorsal scapholunate), the key appearance (anechoic with a neck and no flow), and what vessel to avoid with volar cysts (radial artery).",
+          "checkpoint": {
+            "pearl": "Dorsal scapholunate is most common; volar hugs the radial artery",
+            "reflection": "Which Doppler finding would make you reconsider the diagnosis of a ganglion?"
+          },
+          "keyTerms": [
+            "Dorsal Wrist Ganglion",
+            "Scapholunate Ligament",
+            "Volar Ganglion",
+            "Radial Artery",
+            "Occult Ganglion",
+            "Posterior Acoustic Enhancement"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 12"
+        }
+      ]
+    },
+    {
+      "id": "msk-hip-pelvis",
+      "title": "Hip & Pelvis",
+      "pieceRange": "Pieces 13-17",
+      "examType": "ARDMS RMSKS Musculoskeletal Sonography",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Hip effusion, iliopsoas, lateral hip pain, hamstring origin and groin pain",
+      "topics": [
+        {
+          "id": "msk-hip-joint-effusion",
+          "title": "Hip Joint Effusion",
+          "frontClue": "Anterior recess along the femoral neck: measure capsule to bone",
+          "corePiece": "Hip effusion is evaluated in the anterior synovial recess, scanning in a sagittal oblique plane parallel to the long axis of the femoral neck with the hip in neutral or slight external rotation. Normally the anterior capsule lies close to the concave neck, with the iliofemoral ligament forming a thick echogenic layer. An effusion displaces the capsule anteriorly, creating a convex anechoic or hypoechoic collection between the capsule and the neck. In adults, a capsule-to-neck distance greater than about 7 mm, or a difference of more than 1 to 2 mm compared with the asymptomatic side, is commonly used as abnormal. In children, a side-to-side difference of 2 mm or more is the usual criterion. Echogenicity cannot reliably distinguish infection from a sterile effusion; transient synovitis, septic arthritis, inflammatory arthritis, and hemarthrosis all look similar. Synovial thickening without displaceable fluid suggests synovitis. A curvilinear lower-frequency transducer is often needed in larger patients.",
+          "whyLock": "The anterior synovial recess along the femoral neck is where the capsule is lax and redundant and where the hip is easiest to reach, so fluid is most reliably seen there; it is not the dependent part of the joint in a supine patient. Comparison with the other side is the strongest tool, especially in children with a limp. Trap: anechoic fluid does not exclude infection, so when septic arthritis is clinically suspected, ultrasound-guided aspiration is the answer, not watchful waiting. Trap two: the normal iliofemoral ligament and capsule can be thick and hypoechoic from anisotropy; look for convex bulging and compressibility.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 46",
+              "title": "Ultrasound-Guided Injection & Aspiration",
+              "link": "Suspected septic hip effusions are aspirated under ultrasound guidance."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Iliopsoas Bursa & Snapping Hip",
+              "link": "The iliopsoas bursa lies just anterior to the hip capsule and may communicate with the joint."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Transducer Selection",
+              "link": "Deep hips in large patients often require a curvilinear transducer."
+            }
+          ],
+          "registryApplication": "Expect questions on the scan plane (along the femoral neck), the side-to-side difference that defines effusion, and why aspiration is needed to exclude infection.",
+          "checkpoint": {
+            "pearl": "Sagittal oblique along the neck; compare sides",
+            "reflection": "Why can a purely anechoic hip effusion still be septic, and what is the next step?"
+          },
+          "keyTerms": [
+            "Anterior Synovial Recess",
+            "Femoral Neck",
+            "Iliofemoral Ligament",
+            "Septic Arthritis",
+            "Transient Synovitis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 13"
+        },
+        {
+          "id": "msk-iliopsoas-bursa-snapping-hip",
+          "title": "Iliopsoas Bursa & Snapping Hip",
+          "frontClue": "The psoas tendon flips over the pubic ridge with a clunk",
+          "corePiece": "The iliopsoas bursa is the largest bursa in the body, lying anterior to the hip capsule and deep to the iliopsoas musculotendinous unit, lateral to the femoral vessels. It communicates with the hip joint in about 15 percent of adults, so iliopsoas bursitis frequently accompanies hip effusion, arthritis, or failed arthroplasty. A distended bursa appears as an anechoic or complex fluid collection along the medial side of the iliopsoas tendon and may extend into the pelvis, mimicking a groin mass or causing femoral vein compression. Internal snapping hip (coxa saltans interna) is caused by the iliopsoas tendon abruptly flipping over the iliopectineal eminence or interposed muscle as the hip moves from a flexed, abducted, externally rotated position (frog leg) back to extension. Ultrasound uniquely shows this in real time. External snapping hip is caused by the iliotibial band or gluteus maximus snapping over the greater trochanter, and intra-articular snapping usually reflects labral or loose-body pathology.",
+          "whyLock": "Snapping is a dynamic diagnosis, which is why ultrasound beats MRI for it; the patient often reproduces it while you watch in transverse at the level of the pubic ramus. Distinguish internal snapping (iliopsoas, anterior) from external snapping (iliotibial band, lateral over the trochanter). Trap: a cystic groin mass adjacent to the femoral vessels may be iliopsoas bursitis, not a hernia or lymph node; confirm continuity with the bursa and check for joint communication. Trap two: in arthroplasty patients, a distended iliopsoas bursa may indicate particle disease or impingement from the cup.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 13",
+              "title": "Hip Joint Effusion",
+              "link": "Bursal fluid may come from the joint through a communication."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "Snapping hip is diagnosed by watching the tendon move in real time."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Greater Trochanteric Pain Syndrome",
+              "link": "External snapping happens over the greater trochanter, the GTPS region."
+            }
+          ],
+          "registryApplication": "Expect questions on the cause of internal snapping (iliopsoas over the iliopectineal eminence), the largest bursa in the body, and its communication with the hip joint.",
+          "checkpoint": {
+            "pearl": "Internal snap = iliopsoas; external snap = iliotibial band",
+            "reflection": "Which hip motion reproduces internal snapping, and what structure does the tendon slip over?"
+          },
+          "keyTerms": [
+            "Iliopsoas Bursa",
+            "Coxa Saltans",
+            "Iliopectineal Eminence",
+            "Iliotibial Band",
+            "Femoral Vessels"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 14"
+        },
+        {
+          "id": "msk-greater-trochanteric-pain-syndrome",
+          "title": "Greater Trochanteric Pain Syndrome",
+          "frontClue": "Lateral hip pain is usually gluteal tendinopathy, not just bursitis",
+          "corePiece": "Greater trochanteric pain syndrome (GTPS) is lateral hip pain from gluteus medius and minimus tendinopathy or tears, trochanteric bursitis, or iliotibial band thickening. It is most common in middle-aged and older women. The greater trochanter has four facets: anterior (gluteus minimus insertion), lateral (gluteus medius lateral portion), superoposterior (gluteus medius main portion), and posterior (bare area covered by the trochanteric bursa). Identifying the facets in short axis, using their bony contour, localizes the abnormality. Gluteal tendinopathy appears as tendon thickening, hypoechogenicity, loss of fibrillar pattern, calcification, and cortical irregularity of the facet. Tears show anechoic defects, tendon thinning, or a bare facet with retraction; gluteus medius tears are sometimes called rotator cuff tears of the hip. Trochanteric (subgluteus maximus) bursitis shows fluid or synovial thickening over the posterior facet beneath the gluteus maximus. Isolated bursitis is less common than tendinopathy, and bursal distension is often secondary to tendon disease.",
+          "whyLock": "The bony facets are your map, similar to the greater tuberosity in the shoulder: name the facet and you name the tendon. Expect the exam to stress that tendinopathy, not bursitis, is the dominant cause of lateral hip pain. Trap: the gluteal tendons wrap around a curved trochanter and are strongly anisotropic; heel-toe before calling a tear. Trap two: deep lateral hips in large patients may need a curvilinear transducer to show the facets clearly. Guided injections can target the bursa or the peritendinous region.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 1",
+              "title": "Rotator Cuff Anatomy & Footprint",
+              "link": "Gluteal tendons are the hip analog of the rotator cuff with facet-based insertions."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Gluteal tendinopathy versus tear follows the general tendon rules."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Transducer Selection",
+              "link": "Large patients may need lower-frequency imaging for the trochanter."
+            }
+          ],
+          "registryApplication": "Questions test which tendon inserts on which facet, and that gluteus medius and minimus tendinopathy is more common than isolated bursitis.",
+          "checkpoint": {
+            "pearl": "Minimus to anterior, medius to lateral and superoposterior; bursa over posterior",
+            "reflection": "Which facet does the gluteus minimus insert on, and where does the trochanteric bursa sit?"
+          },
+          "keyTerms": [
+            "Gluteus Medius",
+            "Gluteus Minimus",
+            "Trochanteric Bursa",
+            "Greater Trochanter Facets",
+            "Gluteal Tendinopathy"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 15"
+        },
+        {
+          "id": "msk-proximal-hamstring-origin",
+          "title": "Proximal Hamstring Origin",
+          "frontClue": "Ischial tuberosity: semimembranosus lateral, conjoint tendon medial, sciatic nerve close by",
+          "corePiece": "The hamstrings arise from the ischial tuberosity. The conjoint tendon of the biceps femoris long head and semitendinosus arises from the posteromedial facet, and the semimembranosus from the anterolateral facet, lying deep and lateral. The sciatic nerve runs lateral to the ischial tuberosity, close to the hamstring origin. Patients are scanned prone with a linear or, in larger patients, curvilinear transducer in transverse and longitudinal planes. Tendinopathy appears as a thickened hypoechoic tendon with cortical irregularity. Acute injuries include partial tears, complete avulsion of one or more tendons, and in adolescents apophyseal avulsion of the ischial tuberosity, seen as a displaced bony fragment. A complete avulsion shows a retracted, wavy tendon stump with surrounding hematoma; the distance of retraction should be measured, since retraction of more than about 2 cm with involvement of two or three tendons commonly leads to surgical repair. Muscle strains more often occur at the myotendinous junction of the biceps femoris long head.",
+          "whyLock": "Hamstring injuries are among the most common sports injuries, and the exam focuses on where they occur and what to measure. The biceps femoris long head at the myotendinous junction is the most frequent strain site, while true origin avulsions are less common but surgical. Trap: hematoma around an avulsion can look like a mass; follow it to the tuberosity. Trap two: the sciatic nerve lies very close, so check it for tethering or scar in chronic injuries (hamstring syndrome) and avoid it during injections.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Muscle Strain Grades",
+              "link": "Most hamstring injuries are myotendinous strains graded by fiber disruption."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Hematoma Evolution",
+              "link": "Avulsions are surrounded by hematoma that evolves over days."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Normal Nerve Honeycomb Appearance",
+              "link": "The adjacent sciatic nerve is identified by its fascicular pattern."
+            }
+          ],
+          "registryApplication": "Expect questions on the most commonly strained hamstring (biceps femoris long head), the nerve at risk (sciatic), and why retraction is measured.",
+          "checkpoint": {
+            "pearl": "Biceps femoris long head strains most; measure retraction in avulsion",
+            "reflection": "What measurement in a proximal hamstring avulsion most influences the decision to repair surgically?"
+          },
+          "keyTerms": [
+            "Ischial Tuberosity",
+            "Conjoint Tendon",
+            "Semimembranosus",
+            "Sciatic Nerve",
+            "Avulsion",
+            "Biceps Femoris"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 16"
+        },
+        {
+          "id": "msk-sports-hernia-groin-pain",
+          "title": "Sports Hernia & Groin Pain",
+          "frontClue": "Valsalva while you watch: posterior wall bulge or pubic aponeurosis tear",
+          "corePiece": "Sports hernia, more precisely athletic pubalgia or inguinal-related groin pain, is a group of injuries in athletes involving the posterior inguinal wall and the rectus abdominis-adductor longus aponeurotic plate at the pubis. Unlike a true hernia there may be no hernia sac. Ultrasound evaluation is dynamic: the transducer is placed along the inguinal canal and the patient performs a Valsalva maneuver or coughs, looking for anterior bulging of a weakened posterior wall (transversalis fascia) without a discrete sac. The pubic attachment is scanned for tendinopathy or a tear of the common aponeurosis or adductor longus origin, sometimes with a cleft of fluid (the secondary cleft) extending along the pubis, and for osteitis pubis changes. True hernias are classified by relation to the inferior epigastric vessels: indirect hernias arise lateral to them through the deep ring, direct hernias medial through the Hesselbach triangle. Femoral hernias pass below the inguinal ligament medial to the femoral vein.",
+          "whyLock": "Groin pain in athletes is multifactorial, and the exam expects you to know the dynamic technique and the landmarks. The inferior epigastric vessels on color Doppler sort indirect from direct, and the femoral vein marks a femoral hernia. Trap: a hernia may only appear with straining or standing, so a static supine exam can be falsely negative. Trap two: adductor longus origin injury and rectus abdominis aponeurosis injury often coexist; scan the pubic symphysis region in both planes and compare sides.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "Valsalva and standing views are essential to reveal posterior wall weakness."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Adductor longus and aponeurosis injuries follow general tendon patterns."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Iliopsoas Bursa & Snapping Hip",
+              "link": "Iliopsoas bursitis is another cause of anterior groin pain or mass."
+            }
+          ],
+          "registryApplication": "Questions test the landmark separating direct from indirect hernias (inferior epigastric vessels) and the need for dynamic Valsalva imaging.",
+          "checkpoint": {
+            "pearl": "Indirect is lateral to the inferior epigastrics; direct is medial",
+            "reflection": "Why might a sports hernia be invisible on a resting exam, and what maneuver reveals it?"
+          },
+          "keyTerms": [
+            "Athletic Pubalgia",
+            "Posterior Inguinal Wall",
+            "Inferior Epigastric Vessels",
+            "Adductor Longus",
+            "Valsalva Maneuver"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 17"
+        }
+      ]
+    },
+    {
+      "id": "msk-knee",
+      "title": "Knee",
+      "pieceRange": "Pieces 18-23",
+      "examType": "ARDMS RMSKS Musculoskeletal Sonography",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Extensor mechanism, collateral ligaments, popliteal cysts, meniscal extrusion and effusion",
+      "topics": [
+        {
+          "id": "msk-quadriceps-tendon-tear",
+          "title": "Quadriceps Tendon Tear",
+          "frontClue": "Three layers above the patella: a gap plus a wavy patellar tendon",
+          "corePiece": "The quadriceps tendon inserts on the superior pole of the patella and has a layered, often trilaminar structure: rectus femoris superficially, vastus medialis and lateralis in the middle, and vastus intermedius deep. In long axis it is a thick fibrillar band; the suprapatellar fat pad and recess lie deep to it. Tears usually occur in patients over 40, often with risk factors such as chronic kidney disease, diabetes, steroid use or gout, and typically within about 2 cm of the patella. A partial tear involves one or two layers, most often the superficial rectus femoris fibers, seen as a hypoechoic or anechoic cleft with the deep layer intact. A complete tear shows a full-thickness fluid-filled gap, a retracted proximal stump, hematoma, and secondary laxity with a wavy or buckled patellar tendon and a low-lying patella (patella baja). Measure the gap and retraction. Gentle knee flexion during imaging accentuates the gap and confirms the extent of the tear.",
+          "whyLock": "Clinically the patient cannot perform a straight-leg raise when the tear is complete, which makes the distinction from partial tears important: complete tears go to early surgical repair. The layered anatomy explains why a tear may be partial and still look dramatic. Trap: hematoma filling the gap can look echogenic and mimic intact tendon, so use dynamic flexion and compressibility. Trap two: a wavy patellar tendon is a secondary sign of extensor mechanism disruption above it, not a primary patellar tendon tear.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 19",
+              "title": "Patellar Tendinopathy",
+              "link": "Both are parts of the extensor mechanism scanned in long axis."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Partial versus complete tear follows the general fiber-gap rules."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "Gentle flexion widens the gap and confirms a complete tear."
+            }
+          ],
+          "registryApplication": "Expect a scenario of an older patient unable to extend the knee with a suprapatellar fluid gap, or questions on which layer tears first and the wavy patellar tendon sign.",
+          "checkpoint": {
+            "pearl": "Gap above the patella plus a wavy patellar tendon equals complete tear",
+            "reflection": "Which secondary sign below the patella suggests a complete quadriceps tendon tear?"
+          },
+          "keyTerms": [
+            "Quadriceps Tendon",
+            "Rectus Femoris",
+            "Vastus Intermedius",
+            "Patella Baja",
+            "Extensor Mechanism"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 18"
+        },
+        {
+          "id": "msk-patellar-tendinopathy",
+          "title": "Patellar Tendinopathy",
+          "frontClue": "Jumper's knee lives at the inferior pole, deep posterior fibers",
+          "corePiece": "The patellar tendon runs from the inferior pole of the patella to the tibial tuberosity, with Hoffa's infrapatellar fat pad deep to it and the deep infrapatellar bursa near its distal insertion. Normal tendon is uniformly fibrillar, of roughly even thickness along its length, and is examined with the knee slightly flexed to remove tendon slack and reduce anisotropy. Patellar tendinopathy (jumper's knee) occurs in athletes who jump and typically involves the proximal, deep (posterior) fibers at the inferior pole. Findings include focal hypoechoic thickening, loss of fibrillar pattern, intrasubstance tears, calcification, cortical irregularity, and neovascularity entering from the fat pad on power Doppler. In adolescents, Sinding-Larsen-Johansson disease affects the inferior patellar pole apophysis, and Osgood-Schlatter disease affects the tibial tuberosity, with fragmentation of the ossification center, tendon swelling and deep infrapatellar bursitis. Superficial and deep infrapatellar bursitis and prepatellar bursitis are separate causes of anterior knee pain.",
+          "whyLock": "Location sorts the anterior knee: inferior pole in an adult jumper is tendinopathy, inferior pole in a child is Sinding-Larsen-Johansson, and tibial tuberosity in an adolescent is Osgood-Schlatter. Neovascularity correlates with pain, so apply power Doppler with minimal pressure and the knee relaxed, because tension in the tendon can obliterate flow. Trap: scanning a fully extended, slack tendon creates a wavy hypoechoic appearance from anisotropy. Trap two: prepatellar bursitis (housemaid's knee) lies superficial to the patella, not to the tendon insertion.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 18",
+              "title": "Quadriceps Tendon Tear",
+              "link": "Together they form the extensor mechanism of the knee."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Power Doppler for Inflammation",
+              "link": "Neovascularity in the proximal tendon is a key sign of active tendinopathy."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Anisotropy",
+              "link": "A slack or obliquely insonated tendon looks falsely hypoechoic."
+            }
+          ],
+          "registryApplication": "Questions ask the typical location of jumper's knee (proximal deep fibers), and how to differentiate Osgood-Schlatter from Sinding-Larsen-Johansson by location.",
+          "checkpoint": {
+            "pearl": "Jumper's knee: proximal, deep, inferior pole",
+            "reflection": "Why should the patellar tendon be imaged with slight knee flexion, and how does tension affect Doppler?"
+          },
+          "keyTerms": [
+            "Patellar Tendon",
+            "Jumper's Knee",
+            "Hoffa Fat Pad",
+            "Osgood-Schlatter Disease",
+            "Sinding-Larsen-Johansson Disease",
+            "Neovascularity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 19"
+        },
+        {
+          "id": "msk-knee-collateral-ligaments",
+          "title": "Knee Collateral Ligaments",
+          "frontClue": "MCL has layers and ties to the meniscus; LCL is a cord to the fibula",
+          "corePiece": "The medial collateral ligament (MCL) runs from the medial femoral epicondyle to the proximal tibia. Its superficial layer is a long fibrillar band; its deep layer consists of the meniscofemoral and meniscotibial ligaments attached to the medial meniscus, giving a trilaminar look with a hypoechoic fat or bursal layer between them. MCL sprains from valgus stress are graded: grade 1 shows thickening and periligamentous edema with intact fibers, grade 2 a partial tear, and grade 3 complete discontinuity, sometimes with gapping on dynamic valgus stress. Most injuries occur at the femoral attachment. Chronic injury can calcify at the femoral origin (Pellegrini-Stieda lesion). The lateral collateral ligament (LCL) is a thinner cord-like structure from the lateral femoral epicondyle to the fibular head, where it forms a conjoined insertion with the biceps femoris tendon. The posterolateral corner also includes the popliteus tendon. Varus injury may avulse the fibular head (arcuate sign) and injure the common peroneal nerve.",
+          "whyLock": "Collaterals are superficial, which makes them ideal for ultrasound and dynamic stress testing. The tested points are MCL layering, the most common injury site (femoral end), and grading by fiber continuity. Trap: fluid between the superficial and deep MCL layers may be MCL bursitis, not a tear. Trap two: with a lateral or posterolateral injury, always check the common peroneal nerve as it wraps around the fibular neck, because foot drop changes management. Compare with the other knee when the ligament looks thick.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 22",
+              "title": "Meniscal Extrusion",
+              "link": "The deep MCL attaches to the medial meniscus, and both are scanned in the coronal medial plane."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "Valgus and varus stress show ligament gapping in real time."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Entrapment Neuropathy Signs",
+              "link": "The common peroneal nerve at the fibular neck is vulnerable in lateral injuries."
+            }
+          ],
+          "registryApplication": "Expect questions on MCL grading, the conjoined insertion of the LCL and biceps femoris on the fibular head, or the Pellegrini-Stieda lesion.",
+          "checkpoint": {
+            "pearl": "MCL: layered, valgus, femoral end; LCL: cord to fibular head with biceps",
+            "reflection": "How does the appearance of a grade 2 MCL sprain differ from grade 1 and grade 3?"
+          },
+          "keyTerms": [
+            "Medial Collateral Ligament",
+            "Lateral Collateral Ligament",
+            "Pellegrini-Stieda Lesion",
+            "Valgus Stress",
+            "Fibular Head",
+            "Common Peroneal Nerve"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 20"
+        },
+        {
+          "id": "msk-baker-cyst",
+          "title": "Baker Cyst",
+          "frontClue": "A neck between medial gastrocnemius and semimembranosus",
+          "corePiece": "A Baker (popliteal) cyst is distension of the gastrocnemius-semimembranosus bursa, which communicates with the knee joint through a slit-like opening. It almost always reflects an intra-articular process such as osteoarthritis, a meniscal tear, or inflammatory arthritis that generates joint fluid. The diagnostic feature is the location and neck: in transverse at the posteromedial knee, fluid tracks between the medial head of the gastrocnemius and the semimembranosus tendon, producing a comma or C-shaped neck that leads to the joint. The cyst may be anechoic or contain debris, septations, synovial thickening, or loose bodies. Rupture or leakage shows fluid tracking distally between the gastrocnemius and soleus, often with a pointed or irregular inferior margin and subcutaneous edema; the presentation mimics deep vein thrombosis (pseudothrombophlebitis). Popliteal artery aneurysm, a meniscal cyst, and soft tissue tumors are important differentials, and the popliteal vein should be assessed when DVT is a concern.",
+          "whyLock": "Seeing the neck is what separates a Baker cyst from every other posterior knee mass, so always image transversely at the posteromedial corner. When a patient has calf pain and swelling, check both the cyst for rupture and the veins for thrombosis, because both can coexist. Trap: a popliteal artery aneurysm sits in the midline with pulsatile flow; never call a popliteal mass a cyst without color Doppler. Trap two: fluid that lies elsewhere without the neck is not a Baker cyst, and a solid-looking cyst may contain synovitis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 23",
+              "title": "Knee Joint Effusion",
+              "link": "The cyst fills with joint fluid through a communication with the knee."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Meniscal Extrusion",
+              "link": "Meniscal pathology is a common source of the joint fluid that fills a Baker cyst."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "Ganglion Cysts",
+              "link": "Cystic juxta-articular lesions are separated by location and neck."
+            }
+          ],
+          "registryApplication": "Expect a question on the two structures that bound the cyst neck, the mimic of a ruptured cyst (DVT), or the need for Doppler to exclude aneurysm.",
+          "checkpoint": {
+            "pearl": "Between medial gastrocnemius and semimembranosus; ruptures mimic DVT",
+            "reflection": "What sonographic features suggest a ruptured rather than intact Baker cyst?"
+          },
+          "keyTerms": [
+            "Popliteal Cyst",
+            "Gastrocnemius-Semimembranosus Bursa",
+            "Medial Gastrocnemius",
+            "Semimembranosus",
+            "Pseudothrombophlebitis",
+            "Popliteal Artery Aneurysm"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 21"
+        },
+        {
+          "id": "msk-meniscal-extrusion",
+          "title": "Meniscal Extrusion",
+          "frontClue": "Medial meniscus body bulging past the tibia by more than 3 mm",
+          "corePiece": "Ultrasound cannot evaluate the whole meniscus, but it reliably shows the peripheral body and horns as a triangular, homogeneously echogenic structure between the femoral and tibial cortices. Meniscal extrusion is measured in the coronal plane at the medial joint line, at the level of the MCL, as the distance from the peripheral margin of the meniscus to the outer edge of the tibial plateau, excluding osteophytes. Extrusion greater than about 3 mm is considered abnormal. It is associated with meniscal root tears, large radial tears, degenerative meniscal tears, and osteoarthritis, and it means the meniscus has lost hoop strength. Weight-bearing or standing imaging may increase extrusion compared with supine scanning. Other findings visible on ultrasound include peripheral hypoechoic clefts suggesting tears and parameniscal cysts, which are anechoic or complex cysts adjacent to the meniscus, often at the lateral joint line, usually associated with a horizontal cleavage tear.",
+          "whyLock": "Extrusion is a functional marker: a meniscus that no longer stays between the bones cannot distribute load, which accelerates arthritis. Know the measurement point and the 3 mm threshold. Trap: an osteophyte can make the tibial margin look farther out, so measure from the true cortical edge. Trap two: absence of a visible tear on ultrasound does not exclude one, since the inner meniscus and posterior root are poorly seen; extrusion may be the only clue to a root tear and should prompt MRI.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 20",
+              "title": "Knee Collateral Ligaments",
+              "link": "Extrusion is measured beneath the MCL, whose deep layer attaches to the meniscus."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Baker Cyst",
+              "link": "Meniscal tears often generate the joint fluid that fills a popliteal cyst."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Knee Joint Effusion",
+              "link": "Internal derangement frequently produces an effusion."
+            }
+          ],
+          "registryApplication": "Questions test the abnormal extrusion threshold (about 3 mm), the plane of measurement, and its association with root tears and osteoarthritis.",
+          "checkpoint": {
+            "pearl": "More than 3 mm medial extrusion: think root tear and OA",
+            "reflection": "Why is meniscal extrusion important even when no tear is seen directly on ultrasound?"
+          },
+          "keyTerms": [
+            "Medial Meniscus",
+            "Meniscal Root Tear",
+            "Parameniscal Cyst",
+            "Hoop Strength",
+            "Osteoarthritis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 22"
+        },
+        {
+          "id": "msk-knee-joint-effusion",
+          "title": "Knee Joint Effusion",
+          "frontClue": "Suprapatellar recess in slight flexion: look for a fat-fluid level",
+          "corePiece": "The suprapatellar recess, a superior extension of the knee joint between the quadriceps fat pad (anteriorly) and the prefemoral fat pad (posteriorly), is the most sensitive place to detect knee effusion. Scanning is done in sagittal long axis with the knee in about 20 to 30 degrees of flexion, which pushes fluid into the recess; quadriceps contraction or compression of the medial and lateral recesses can also milk fluid into view. A small physiologic amount of fluid, a few millimeters, can be normal. Simple effusions are anechoic and compressible. Complex effusions contain echoes, debris or septations. Synovitis appears as hypoechoic, noncompressible, nondisplaceable tissue that may show power Doppler flow. Lipohemarthrosis shows a fat-fluid level: an echogenic fat layer floating on top of a hypoechoic blood layer, which indicates an intra-articular fracture releasing marrow fat. Loose bodies, gout crystal deposits on cartilage, and plicae may also be seen.",
+          "whyLock": "The position matters: full extension lets fluid escape into the posterior joint, while slight flexion fills the suprapatellar recess. Echogenicity alone cannot tell infected from sterile fluid, so suspected septic arthritis needs aspiration. Trap: the prefemoral fat pad is echogenic and can be mistaken for synovium; compare compressibility. Trap two: a fat-fluid level is a fracture sign until proven otherwise, even when radiographs look normal. Separate displaceable fluid from fixed synovial thickening because they mean different things.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 41",
+              "title": "Synovitis & Erosions",
+              "link": "Fluid versus synovial thickening follows the OMERACT effusion and synovitis definitions."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Ultrasound-Guided Injection & Aspiration",
+              "link": "The suprapatellar recess is the usual guided aspiration site."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Baker Cyst",
+              "link": "Effusion communicates with and fills a popliteal cyst."
+            }
+          ],
+          "registryApplication": "Expect questions on the best location and knee position to detect effusion and the meaning of a fat-fluid level (intra-articular fracture).",
+          "checkpoint": {
+            "pearl": "Suprapatellar recess at 20 to 30 degrees; fat-fluid level means fracture",
+            "reflection": "Why does a fat-fluid level in the suprapatellar recess suggest an occult fracture?"
+          },
+          "keyTerms": [
+            "Suprapatellar Recess",
+            "Prefemoral Fat Pad",
+            "Lipohemarthrosis",
+            "Fat-Fluid Level",
+            "Synovitis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 23"
+        }
+      ]
+    },
+    {
+      "id": "msk-ankle-foot",
+      "title": "Ankle & Foot",
+      "pieceRange": "Pieces 24-29",
+      "examType": "ARDMS RMSKS Musculoskeletal Sonography",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Achilles, plantar fascia, lateral ligaments, peroneal tendons and Morton neuroma",
+      "topics": [
+        {
+          "id": "msk-achilles-tendinopathy",
+          "title": "Achilles Tendinopathy",
+          "frontClue": "Fusiform swelling 2 to 6 cm above the heel, with neovessels",
+          "corePiece": "The Achilles tendon, formed by the gastrocnemius and soleus, inserts on the posterior calcaneus and has no true synovial sheath but a paratenon. Normal anteroposterior thickness is about 5 to 6 mm, with a flat or concave anterior margin in short axis. Noninsertional (midportion) tendinopathy occurs 2 to 6 cm above the insertion, in a zone of relatively poor blood supply. It shows fusiform thickening (often over 6 mm), a convex anterior border, hypoechoic areas with loss of fibrillar pattern, intrasubstance tears, and neovascularity entering from the ventral side on power Doppler. Paratendinopathy shows a thickened hypoechoic paratenon with or without fluid around a normal tendon. Insertional tendinopathy involves the distal tendon at the calcaneus, with calcification, enthesophytes, and often retrocalcaneal bursitis between the tendon and calcaneus; with a prominent posterosuperior calcaneus this is the Haglund syndrome. Retro-Achilles (superficial calcaneal) bursitis lies behind the tendon. Kager fat pad lies anterior to the tendon.",
+          "whyLock": "Location defines the subtype: midportion, insertional, or paratenon, and each has different treatments. Measure thickness in short axis, perpendicular to the tendon, and compare sides. Neovascularity correlates with pain, but the foot must be relaxed in slight plantarflexion because tendon tension obliterates small vessels. Trap: fluoroquinolone antibiotics and steroids are risk factors for tendinopathy and rupture. Trap two: the retrocalcaneal bursa normally holds a tiny amount of fluid; only distension or synovitis is abnormal.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 25",
+              "title": "Achilles Tendon Rupture",
+              "link": "Tendinopathy weakens the tendon and precedes most ruptures in the same zone."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Power Doppler for Inflammation",
+              "link": "Ventral neovessels are the hallmark of symptomatic tendinosis."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Thickening and hypoechogenicity without a gap define tendinosis."
+            }
+          ],
+          "registryApplication": "Questions test the typical location (2 to 6 cm above insertion), normal thickness (about 6 mm or less), and the retrocalcaneal bursa in insertional disease.",
+          "checkpoint": {
+            "pearl": "Midportion zone 2 to 6 cm up; over 6 mm is thick",
+            "reflection": "How do midportion, insertional and paratenon disease differ in location and appearance?"
+          },
+          "keyTerms": [
+            "Achilles Tendon",
+            "Paratenon",
+            "Retrocalcaneal Bursa",
+            "Haglund Syndrome",
+            "Kager Fat Pad",
+            "Neovascularity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 24"
+        },
+        {
+          "id": "msk-achilles-tendon-rupture",
+          "title": "Achilles Tendon Rupture",
+          "frontClue": "Gap in the watershed: measure it with the foot neutral and plantarflexed",
+          "corePiece": "Complete Achilles rupture usually occurs in the hypovascular zone 2 to 6 cm above the calcaneal insertion, often in middle-aged recreational athletes during push-off. Clinically the Thompson (calf squeeze) test fails to plantarflex the foot. Sonographically there is full-thickness discontinuity with a hypoechoic or mixed hematoma in the gap, retracted frayed tendon ends, refractive edge shadowing at the stumps, and herniation of Kager fat into the defect. Dynamic imaging with gentle passive plantarflexion and dorsiflexion shows whether the ends move together or separately and whether the gap closes. The gap is measured in neutral and in plantarflexion, since gap size and apposition in plantarflexion influence whether the tendon is treated operatively or in a functional brace. Partial tears show a hypoechoic cleft with some intact fibers. The plantaris tendon, a thin tendon running along the medial side of the Achilles, often remains intact and can be mistaken for surviving Achilles fibers. Musculotendinous junction tears occur more proximally.",
+          "whyLock": "The exam focuses on location, dynamic assessment, and the plantaris pitfall. Ask whether the tendon ends move as one unit on passive motion; separate motion confirms a complete tear even when the gap is filled with echogenic hematoma. Trap: an intact plantaris tendon can give a false impression of continuity and even a falsely normal Thompson test in some cases. Trap two: in a rupture that has been neglected for weeks, the gap fills with scar and looks less dramatic, so rely on contour and dynamic motion.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 24",
+              "title": "Achilles Tendinopathy",
+              "link": "Ruptures typically occur through tendinopathic tendon in the same watershed zone."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "Passive plantarflexion shows whether the stumps oppose."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Complete discontinuity with retraction defines a full-thickness tear."
+            }
+          ],
+          "registryApplication": "Expect questions on rupture location, the structure that mimics intact fibers (plantaris), and why the gap is measured in plantarflexion.",
+          "checkpoint": {
+            "pearl": "Watershed gap; plantaris can fool you",
+            "reflection": "What dynamic finding confirms a complete Achilles rupture when hematoma fills the defect?"
+          },
+          "keyTerms": [
+            "Thompson Test",
+            "Plantaris Tendon",
+            "Refractive Shadowing",
+            "Kager Fat Pad",
+            "Plantarflexion"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 25"
+        },
+        {
+          "id": "msk-plantar-fasciitis",
+          "title": "Plantar Fasciitis",
+          "frontClue": "Over 4 mm at the calcaneal origin, hypoechoic and painful",
+          "corePiece": "The plantar fascia (plantar aponeurosis) arises from the medial calcaneal tubercle and divides into medial, central and lateral bands; the central band is the thickest and most often involved. Normal thickness at the origin is about 2 to 4 mm. Plantar fasciitis, more precisely fasciopathy, is a degenerative condition common in runners, people who stand for long periods, and obese patients. It shows thickening of the proximal fascia greater than about 4 mm, measured in long axis at the anterior edge of the calcaneus, often with a side-to-side difference, plus hypoechogenicity, loss of the fibrillar pattern, perifascial fluid, enthesophytes and, sometimes, hyperemia. Partial or complete tears occur, especially after steroid injection, and show focal anechoic defects. Plantar fibromatosis (Ledderhose disease) is different: nodular hypoechoic thickening in the mid or distal fascia, often on the medial band, sparing the origin. Heel spurs often coexist but are not the cause of pain.",
+          "whyLock": "The 4 mm cutoff and the location at the calcaneal origin are the key exam facts. Measure perpendicular to the fascia, in long axis, at its thickest point near the calcaneus. Trap: nodules in the midfoot fascia are plantar fibromatosis, not fasciitis, and should not be injected as such. Trap two: repeated steroid injections can cause fascial rupture and fat pad atrophy, so after injection a sudden new pain may mean a tear. Ultrasound can guide injection or other procedures at the origin.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Fasciopathy follows the same degenerative thickening versus tear logic."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Ultrasound-Guided Injection & Aspiration",
+              "link": "Guided injection at the fascial origin is a common procedure."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Lipoma & Soft Tissue Masses",
+              "link": "Plantar fibromatosis nodules are a fascial mass, not fasciitis."
+            }
+          ],
+          "registryApplication": "Expect a thickness value to interpret (over 4 mm is abnormal) and questions on location and the difference from plantar fibromatosis.",
+          "checkpoint": {
+            "pearl": "Origin thicker than 4 mm equals fasciitis; midfoot nodule equals fibromatosis",
+            "reflection": "Where and how should plantar fascia thickness be measured, and what value is abnormal?"
+          },
+          "keyTerms": [
+            "Plantar Fascia",
+            "Medial Calcaneal Tubercle",
+            "Plantar Fibromatosis",
+            "Fasciopathy",
+            "Heel Spur"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 26"
+        },
+        {
+          "id": "msk-atfl-sprain",
+          "title": "ATFL Sprain",
+          "frontClue": "Inversion injury: the anterior talofibular ligament tears first",
+          "corePiece": "The lateral ankle ligament complex includes the anterior talofibular ligament (ATFL), the calcaneofibular ligament (CFL) and the posterior talofibular ligament. The ATFL is the weakest and the most commonly injured, typically in inversion with plantarflexion. It runs horizontally from the anterior lateral malleolus to the talar neck and is imaged in an oblique axial plane with the transducer bridging the two bones. A normal ATFL is a thin, taut, hyperechoic fibrillar band. Sprain findings range from thickening and hypoechogenicity with intact fibers (low grade), to partial discontinuity, to complete tear with a gap, fluid, a wavy or retracted remnant, or an avulsed bone fragment from the fibula. Dynamic anterior drawer stress during imaging shows abnormal anterior translation of the talus and gap widening. The CFL is injured next in more severe sprains; it runs deep to the peroneal tendons, from the fibular tip to the calcaneus, and is best seen with dorsiflexion. Chronic injury leaves a thin, lax or absent ligament.",
+          "whyLock": "The injury sequence is the main reasoning tool: ATFL first, then CFL, and the posterior talofibular ligament rarely. Dynamic stress distinguishes a stretched but competent ligament from a nonfunctional one. Trap: a chronically torn ATFL may scar into a thick hypoechoic band that looks intact at rest but lengthens under drawer stress. Trap two: high ankle sprains involve the anterior inferior tibiofibular ligament (syndesmosis), which sits more superiorly and should be checked after significant injuries.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "Anterior drawer stress under ultrasound shows ligament insufficiency."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Peroneal Tendon Subluxation",
+              "link": "The CFL lies deep to the peroneal tendons, which can be injured in the same event."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Anisotropy",
+              "link": "Small ligaments become falsely hypoechoic when insonated obliquely."
+            }
+          ],
+          "registryApplication": "Questions ask the most commonly injured ankle ligament (ATFL), its mechanism, the dynamic test, and which ligament lies deep to the peroneal tendons (CFL).",
+          "checkpoint": {
+            "pearl": "Inversion tears ATFL, then CFL",
+            "reflection": "How does an anterior drawer maneuver help classify an ATFL injury on ultrasound?"
+          },
+          "keyTerms": [
+            "Anterior Talofibular Ligament",
+            "Calcaneofibular Ligament",
+            "Inversion Injury",
+            "Anterior Drawer",
+            "Syndesmosis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 27"
+        },
+        {
+          "id": "msk-peroneal-tendon-subluxation",
+          "title": "Peroneal Tendon Subluxation",
+          "frontClue": "Dorsiflex and evert: the tendons jump over the fibula",
+          "corePiece": "The peroneus longus and brevis tendons run in the retromalleolar groove behind the lateral malleolus, held by the superior peroneal retinaculum. In short axis the brevis lies directly against the fibula, with the longus posterior and lateral to it. Injury to the superior peroneal retinaculum, often by forced dorsiflexion and eversion in skiing or other sports, allows the tendons to subluxate or dislocate anteriorly over the lateral malleolus. Sonography shows this best dynamically in short axis while the patient actively dorsiflexes and everts the foot or circles the ankle. Findings include the tendons slipping lateral or anterior to the fibula, a stripped or detached retinaculum, a shallow or convex retromalleolar groove, and sometimes a small cortical avulsion fragment of the fibula. Intrasheath subluxation, in which the two tendons switch positions within the groove, can also occur. A split tear of the peroneus brevis appears as a C-shaped or boomerang-shaped tendon wrapping around the longus, or two separate hemitendons.",
+          "whyLock": "Subluxation may be intermittent and absent at rest, which is why ultrasound, a real-time modality, is the preferred imaging test; static MRI can miss it. Ask the patient to reproduce the snapping during the scan. Trap: a split peroneus brevis can look like an extra tendon, and the peroneus quartus is a normal accessory muscle; follow each structure to its insertion. Trap two: the fibular avulsion fragment (fleck sign) is subtle but supports retinacular injury.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "Active dorsiflexion and eversion demonstrate subluxation in real time."
+            },
+            {
+              "piece": "Piece 27",
+              "title": "ATFL Sprain",
+              "link": "Lateral ankle injuries may involve both ligaments and peroneal tendons."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Longitudinal split tears of the brevis follow general tear rules."
+            }
+          ],
+          "registryApplication": "Expect questions on the restraining structure (superior peroneal retinaculum), the maneuver (dorsiflexion and eversion), and the appearance of a peroneus brevis split tear.",
+          "checkpoint": {
+            "pearl": "Superior peroneal retinaculum fails; tendons slide anterior to the fibula",
+            "reflection": "Why might peroneal subluxation be missed on a static exam, and how do you reveal it?"
+          },
+          "keyTerms": [
+            "Peroneus Brevis",
+            "Peroneus Longus",
+            "Superior Peroneal Retinaculum",
+            "Retromalleolar Groove",
+            "Split Tear",
+            "Peroneus Quartus"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 28"
+        },
+        {
+          "id": "msk-morton-neuroma",
+          "title": "Morton Neuroma",
+          "frontClue": "Third web space, plantar to the transverse ligament, clicks on squeeze",
+          "corePiece": "Morton neuroma is not a true tumor but perineural fibrosis of a common plantar digital nerve as it passes beneath the deep transverse intermetatarsal ligament. It occurs most often in the third intermetatarsal space, followed by the second, and is more common in women who wear narrow high-heeled shoes. Scanning is performed from the plantar or dorsal approach in long axis along the web space and in short axis across the metatarsal heads. The neuroma appears as an ovoid or fusiform hypoechoic mass in the intermetatarsal space at or just distal to the metatarsal heads, oriented parallel to the metatarsals, typically noncompressible, with continuity to the digital nerve. Lesions over about 5 mm are usually considered significant. Compressing the metatarsals from the sides while scanning can push the mass plantarward with a palpable click, the sonographic Mulder sign. An intermetatarsal bursitis, compressible and fluid-containing, often lies dorsal to it and may coexist.",
+          "whyLock": "Location in the web space and orientation along the metatarsals separate a neuroma from bursitis, synovitis of the MTP joint, or a plantar plate tear. The Mulder maneuver is both a clinical and sonographic sign, so use it. Trap: intermetatarsal bursae are compressible and can be mistaken for a neuroma; neuromas are firm and noncompressible. Trap two: the mass is not a nerve sheath tumor; it lacks the eccentric relationship and posterior enhancement typical of a schwannoma. Guided injection and alcohol ablation are treatment options.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 33",
+              "title": "Traumatic Neuroma",
+              "link": "Morton neuroma is perineural fibrosis, unlike a true post-traumatic neuroma."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Nerve Sheath Tumors",
+              "link": "True nerve sheath tumors are separated by their eccentric or fusiform relationship to the nerve."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Dynamic & Comparison Imaging",
+              "link": "The sonographic Mulder sign is a dynamic maneuver."
+            }
+          ],
+          "registryApplication": "Questions test the most common web space (third), the nature of the lesion (perineural fibrosis), and the Mulder maneuver.",
+          "checkpoint": {
+            "pearl": "Third web space, hypoechoic, parallel to metatarsals, Mulder click",
+            "reflection": "How do you differentiate a Morton neuroma from intermetatarsal bursitis on ultrasound?"
+          },
+          "keyTerms": [
+            "Morton Neuroma",
+            "Intermetatarsal Space",
+            "Deep Transverse Intermetatarsal Ligament",
+            "Mulder Sign",
+            "Intermetatarsal Bursitis",
+            "Perineural Fibrosis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 29"
+        }
+      ]
+    },
+    {
+      "id": "msk-peripheral-nerves",
+      "title": "Peripheral Nerves",
+      "pieceRange": "Pieces 30-34",
+      "examType": "ARDMS RMSKS Musculoskeletal Sonography",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Normal nerve anatomy, CSA, entrapment, neuromas and nerve sheath tumors",
+      "topics": [
+        {
+          "id": "msk-normal-nerve-honeycomb-appearance",
+          "title": "Normal Nerve Honeycomb Appearance",
+          "frontClue": "Dark fascicles in a bright web: honeycomb across, train tracks along",
+          "corePiece": "Peripheral nerves are made of hypoechoic nerve fascicles surrounded by hyperechoic connective tissue: perineurium around each fascicle, interfascicular epineurium between them, and an outer epineurium around the whole nerve. In short axis this produces the classic honeycomb or speckled appearance, a round or oval structure with multiple dark dots in a bright background. In long axis, nerves show parallel hypoechoic lines separated by hyperechoic bands, a fascicular pattern that is less tightly packed than the fibrillar pattern of tendon. Nerves are only mildly anisotropic, so they stay visible as the transducer is angled, whereas adjacent tendons change brightness markedly; this is a practical way to tell them apart. Nerves typically travel with arteries and veins in neurovascular bundles, do not move much during muscle contraction, and change shape slightly with compression. They are traced best in short axis, following them up and down the limb (the elevator technique). High-frequency linear transducers are required for small nerves.",
+          "whyLock": "Identifying normal nerve is the foundation for every entrapment and tumor question. Use the anisotropy test: tilt the transducer, and the tendon darkens while the nerve stays similar. Trap: in long axis a nerve can be confused with a tendon, so confirm in short axis and trace it. Trap two: small nerves at depth may look like a hypoechoic blob without visible fascicles; follow them from a known landmark, such as the accompanying artery, rather than diagnosing them in a single frame.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 42",
+              "title": "Anisotropy",
+              "link": "Nerves are less anisotropic than tendons, which helps tell them apart."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Nerve Cross-Sectional Area",
+              "link": "CSA is traced around the honeycomb inside the epineurium."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Entrapment Neuropathy Signs",
+              "link": "Loss of the honeycomb pattern is a key sign of nerve compression."
+            }
+          ],
+          "registryApplication": "Expect questions on the echogenicity of fascicles (hypoechoic) versus epineurium (hyperechoic), and how nerves differ from tendons in anisotropy.",
+          "checkpoint": {
+            "pearl": "Fascicles dark, epineurium bright; nerves barely anisotropic",
+            "reflection": "What simple transducer maneuver helps you distinguish a nerve from an adjacent tendon?"
+          },
+          "keyTerms": [
+            "Nerve Fascicles",
+            "Epineurium",
+            "Perineurium",
+            "Honeycomb Pattern",
+            "Neurovascular Bundle",
+            "Anisotropy"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 30"
+        },
+        {
+          "id": "msk-nerve-cross-sectional-area",
+          "title": "Nerve Cross-Sectional Area",
+          "frontClue": "Trace inside the bright rim, perpendicular to the nerve",
+          "corePiece": "Cross-sectional area (CSA) is the main quantitative measure of nerve swelling. It is obtained in short axis with the beam perpendicular to the nerve, avoiding oblique cuts that falsely enlarge the ellipse, and with minimal transducer pressure, since compression flattens the nerve. The standard method is direct tracing just inside the hyperechoic epineurial rim, so the bright border itself is excluded. An ellipse formula is an alternative but less accurate for irregular shapes. Measurements should be made at the site of maximal swelling, which is usually just proximal to the entrapment point, and repeated for reliability. Commonly used thresholds include a median nerve CSA of about 10 mm2 or more at the carpal tunnel inlet and an ulnar nerve CSA of about 10 mm2 or more at the medial epicondyle, but cutoffs vary between populations and studies. Ratios comparing the entrapment site with a proximal normal segment, such as the median nerve wrist-to-forearm ratio of 1.4 or more, and side-to-side comparison reduce variability.",
+          "whyLock": "The exam tests technique as much as numbers: inner border tracing, perpendicular beam, light pressure, and location of maximal swelling. Ratios help because nerve size varies with body habitus. Trap: tracing the outer edge of the epineurium overestimates CSA and can produce a false positive. Trap two: a bifid or multi-bundle nerve must be measured as the sum of its parts. If a number is between published cutoffs, correlate with morphology such as loss of fascicles, hyperemia and a notch sign.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 9",
+              "title": "Carpal Tunnel & Median Nerve CSA",
+              "link": "The median nerve at the pisiform is the most tested CSA application."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Ulnar Nerve at the Cubital Tunnel",
+              "link": "CSA at the medial epicondyle grades ulnar neuropathy."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Normal Nerve Honeycomb Appearance",
+              "link": "The epineurial rim defines the tracing border."
+            }
+          ],
+          "registryApplication": "Expect questions on where on the nerve border to trace, why the beam must be perpendicular, and common CSA thresholds.",
+          "checkpoint": {
+            "pearl": "Inner border, perpendicular, light pressure, site of maximal swelling",
+            "reflection": "How would tracing the outer epineurial border or scanning obliquely change the CSA value?"
+          },
+          "keyTerms": [
+            "Cross-Sectional Area",
+            "Epineurium",
+            "Direct Tracing",
+            "Wrist-to-Forearm Ratio",
+            "Bifid Median Nerve"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 31"
+        },
+        {
+          "id": "msk-entrapment-neuropathy-signs",
+          "title": "Entrapment Neuropathy Signs",
+          "frontClue": "Swollen above, squeezed at the tunnel: the notch sign",
+          "corePiece": "Entrapment neuropathy occurs where a nerve passes through a narrow fibro-osseous tunnel or under a band. The general sonographic pattern is focal nerve enlargement with increased cross-sectional area just proximal to the compression site, an abrupt caliber change or flattening at the site itself (the notch sign in long axis), hypoechogenicity with loss of the normal fascicular pattern, reduced nerve mobility, and sometimes intraneural hyperemia on power Doppler. Ultrasound can also reveal the cause: ganglia, tenosynovitis, accessory muscles, osteophytes, scar, anomalous vessels, or masses. Classic sites include the median nerve in the carpal tunnel, the ulnar nerve at the cubital tunnel and Guyon canal, the radial nerve (posterior interosseous branch) at the arcade of Frohse in the supinator, the common peroneal (fibular) nerve at the fibular neck, the tibial nerve in the tarsal tunnel, the suprascapular nerve at the spinoglenoid notch, and the lateral femoral cutaneous nerve near the anterior superior iliac spine (meralgia paresthetica). Denervated muscle becomes echogenic and atrophic over time.",
+          "whyLock": "Think of entrapment as a sequence: a pinch point, swelling upstream, and eventually downstream muscle changes. Matching the nerve to its tunnel is the most common exam task. Trap: a spinoglenoid notch paralabral cyst compresses the suprascapular nerve and causes infraspinatus atrophy only, while a lesion at the suprascapular notch affects both supraspinatus and infraspinatus. Trap two: echogenic, small muscle is a late sign of denervation, not of tendon disease, and should prompt nerve evaluation.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 9",
+              "title": "Carpal Tunnel & Median Nerve CSA",
+              "link": "Carpal tunnel syndrome is the most common entrapment."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Ulnar Nerve at the Cubital Tunnel",
+              "link": "The cubital tunnel is the second most common upper-limb entrapment site."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Nerve Cross-Sectional Area",
+              "link": "Increased CSA proximal to the entrapment quantifies swelling."
+            }
+          ],
+          "registryApplication": "Questions pair a nerve with its entrapment site, ask where swelling occurs relative to compression (proximal), or ask what a notch sign means.",
+          "checkpoint": {
+            "pearl": "Swelling proximal, notch at the tunnel, echogenic muscle late",
+            "reflection": "Why does a spinoglenoid notch cyst weaken the infraspinatus but spare the supraspinatus?"
+          },
+          "keyTerms": [
+            "Notch Sign",
+            "Tarsal Tunnel",
+            "Guyon Canal",
+            "Arcade of Frohse",
+            "Spinoglenoid Notch",
+            "Denervation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 32"
+        },
+        {
+          "id": "msk-traumatic-neuroma",
+          "title": "Traumatic Neuroma",
+          "frontClue": "A bulb on a cut nerve, or a spindle on an injured one",
+          "corePiece": "A traumatic neuroma is a disorganized proliferation of axons, Schwann cells and fibrous tissue at a site of nerve injury, such as after amputation, laceration or surgery. There are two main types. A stump (end-bulb or terminal) neuroma forms at the end of a transected nerve: a bulbous, hypoechoic, ovoid mass in continuity with the proximal nerve, which loses its fascicular pattern as it enters the lesion. A neuroma in continuity forms in a nerve that remains partly intact, appearing as a fusiform (spindle-shaped) hypoechoic swelling of part or all of the nerve. Neuromas are often painful, and pressure with the transducer reproducing tingling or pain (a sonographic Tinel sign) supports the diagnosis. Neuromas may adhere to scar tissue. Ultrasound can guide perineural injection or ablation for pain control. Morton neuroma is not a true neuroma but a perineural fibrosis of the plantar digital nerve.",
+          "whyLock": "The key to the diagnosis is continuity with the nerve; trace the nerve from normal tissue into the lesion. The clinical history of prior trauma or surgery is essential, because a similar fusiform swelling without trauma raises the possibility of a nerve sheath tumor. Trap: in an amputation stump, a neuroma and recurrent tumor or scar can look alike; the nerve entering the mass and transducer tenderness point toward neuroma. Trap two: Morton neuroma is named a neuroma but is not one.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 34",
+              "title": "Nerve Sheath Tumors",
+              "link": "Fusiform nerve masses without trauma suggest a sheath tumor instead."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Morton Neuroma",
+              "link": "A perineural fibrosis that is a neuroma in name only."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Normal Nerve Honeycomb Appearance",
+              "link": "Loss of the fascicles entering the lesion marks the neuroma."
+            }
+          ],
+          "registryApplication": "Expect questions on stump versus in-continuity neuroma and the history that supports the diagnosis.",
+          "checkpoint": {
+            "pearl": "History of trauma plus a nerve entering a hypoechoic bulb equals neuroma",
+            "reflection": "How does a stump neuroma differ in shape and location from a neuroma in continuity?"
+          },
+          "keyTerms": [
+            "Stump Neuroma",
+            "Neuroma in Continuity",
+            "Sonographic Tinel Sign",
+            "Amputation",
+            "Schwann Cells"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 33"
+        },
+        {
+          "id": "msk-nerve-sheath-tumors",
+          "title": "Nerve Sheath Tumors",
+          "frontClue": "Schwannoma sits off to the side; neurofibroma swallows the nerve",
+          "corePiece": "Benign peripheral nerve sheath tumors are schwannomas and neurofibromas. Both are well-defined, oval, hypoechoic masses aligned with the long axis of the nerve, often with posterior acoustic enhancement and some internal vascularity, and the nerve entering and exiting the mass (the tail sign) is the key diagnostic clue. A schwannoma usually grows eccentrically, so fascicles are displaced around the mass and can sometimes be preserved at surgery; it may show cystic change. A neurofibroma tends to grow centrally within the nerve, which enters and exits the center of a fusiform mass, so the nerve cannot be separated from it. A target sign, with a hyperechoic center and hypoechoic periphery, favors neurofibroma. Multiple or plexiform neurofibromas suggest neurofibromatosis type 1. Malignant peripheral nerve sheath tumor is suspected with rapid growth, size over about 5 cm, irregular margins, heterogeneity, and pain, particularly in neurofibromatosis.",
+          "whyLock": "The posterior enhancement of these solid tumors can trick you into calling them cysts; Doppler flow and the nerve tails prevent that error. The eccentric versus central relationship to the nerve is the classic distinction tested. Trap: never biopsy or aspirate a suspected nerve sheath tumor without considering the nerve, because needling can cause severe pain and injury. Trap two: a painful, enlarging mass in a patient with NF1 needs evaluation for malignancy, not reassurance.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 33",
+              "title": "Traumatic Neuroma",
+              "link": "Both are nerve-associated hypoechoic masses; history and shape separate them."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Lipoma & Soft Tissue Masses",
+              "link": "Nerve sheath tumors are part of the soft tissue mass differential."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Normal Nerve Honeycomb Appearance",
+              "link": "Identifying the parent nerve depends on recognizing its fascicles."
+            }
+          ],
+          "registryApplication": "Questions ask which tumor is eccentric (schwannoma), the significance of the tail sign, or features suggesting malignancy.",
+          "checkpoint": {
+            "pearl": "Eccentric = schwannoma; central with target = neurofibroma",
+            "reflection": "Why can a schwannoma show posterior enhancement yet be solid, and how do you prove it?"
+          },
+          "keyTerms": [
+            "Schwannoma",
+            "Neurofibroma",
+            "Tail Sign",
+            "Target Sign",
+            "Neurofibromatosis Type 1",
+            "Posterior Acoustic Enhancement"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 34"
+        }
+      ]
+    },
+    {
+      "id": "msk-muscle-tendon-soft-tissue-pathology",
+      "title": "Muscle, Tendon & Soft Tissue Pathology",
+      "pieceRange": "Pieces 35-41",
+      "examType": "ARDMS RMSKS Musculoskeletal Sonography",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Tendon and muscle injury, hematoma, ossification, foreign bodies, masses and arthritis",
+      "topics": [
+        {
+          "id": "msk-tendinosis-vs-tendon-tear",
+          "title": "Tendinosis vs Tendon Tear",
+          "frontClue": "Thick and dark but continuous is tendinosis; a gap is a tear",
+          "corePiece": "Normal tendon is echogenic with a tightly packed, parallel fibrillar pattern in long axis and a stippled bright appearance in short axis. Tendinosis, a degenerative process without true inflammation, causes focal or diffuse tendon thickening, hypoechogenicity, loss of fibrillar pattern, ill-defined margins, intratendinous calcification, cortical irregularity at the enthesis, and neovascularity on power Doppler, while fiber continuity is preserved. Tenosynovitis affects tendons with sheaths and shows sheath fluid, synovial thickening and hyperemia. A partial-thickness tear is a well-defined anechoic or hypoechoic cleft involving some fibers, seen in two planes. A full-thickness tear shows complete fiber discontinuity, a fluid or hematoma-filled gap, retraction of the stumps, and refractive edge shadowing at the torn ends. Dynamic imaging, gently moving the joint or contracting the muscle, shows whether the ends move together. Tears are described by location, length, width, percentage of thickness, and retraction.",
+          "whyLock": "Most tendon questions reduce to this distinction. Ask three things: is the tendon continuous, is there a discrete fluid-like defect, and do the ends move together? Trap: anisotropy creates hypoechoic areas that mimic tendinosis or tears; always angle the transducer perpendicular before calling it. Trap two: a longitudinal split tear may leave the tendon continuous but divided, so scan in short axis. Neovascularity favors symptomatic tendinosis but is not required.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 42",
+              "title": "Anisotropy",
+              "link": "Off-angle artifact is the main mimic of tendinosis and tears."
+            },
+            {
+              "piece": "Piece 2",
+              "title": "Full-Thickness Rotator Cuff Tear",
+              "link": "The rotator cuff is the most common application of these tear criteria."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Power Doppler for Inflammation",
+              "link": "Neovascularity supports active tendinosis."
+            }
+          ],
+          "registryApplication": "Expect a described tendon with thickening and hypoechogenicity but intact fibers versus one with a fluid gap and retraction, asking which diagnosis fits.",
+          "checkpoint": {
+            "pearl": "Continuity preserved = tendinosis; gap and retraction = tear",
+            "reflection": "Which three questions do you ask to separate tendinosis, partial tear and full-thickness tear?"
+          },
+          "keyTerms": [
+            "Tendinosis",
+            "Tenosynovitis",
+            "Fibrillar Pattern",
+            "Refractive Shadowing",
+            "Retraction",
+            "Neovascularity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 35"
+        },
+        {
+          "id": "msk-muscle-strain-grades",
+          "title": "Muscle Strain Grades",
+          "frontClue": "Myotendinous junction strain: edema, partial gap, or full retraction",
+          "corePiece": "Normal muscle in long axis shows hypoechoic muscle fibers separated by echogenic fibroadipose septa (perimysium), a pennate or feathery pattern; in short axis it appears as a starry-night speckled pattern. Strains usually occur at the myotendinous junction in muscles crossing two joints that contract eccentrically, such as the hamstrings, rectus femoris and medial head of the gastrocnemius (tennis leg). Grade 1 strain involves less than about 5 percent of fibers: the scan may be normal or show subtle hyperechoic or hypoechoic edema and blurring of the pennate pattern without fiber disruption. Grade 2 is a partial tear with visible fiber discontinuity, a hypoechoic defect, and often a hematoma, with some fibers intact. Grade 3 is complete rupture with retraction of the muscle end, which may appear as a bell-clapper sign floating in hematoma. Dynamic contraction shows the extent of the defect. Follow-up scans track healing and scar formation, which appears echogenic.",
+          "whyLock": "Grading drives return-to-play decisions, so measure the size of the defect and the cross-sectional percentage involved. Scanning too early can underestimate grade 1 injuries, and the best window is often 24 to 48 hours after injury. Trap: in tennis leg, the medial gastrocnemius tears at its distal myotendinous junction and fluid between gastrocnemius and soleus should not be confused with a ruptured Baker cyst; trace it to the muscle. Trap two: a large hematoma can hide a complete tear, so look for retracted ends.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 37",
+              "title": "Hematoma Evolution",
+              "link": "Grade 2 and 3 strains create hematomas that change over time."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Proximal Hamstring Origin",
+              "link": "Hamstrings are a classic strain site, mostly at the biceps femoris junction."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Myositis Ossificans",
+              "link": "Muscle trauma can lead to heterotopic ossification."
+            }
+          ],
+          "registryApplication": "Questions ask the most common strain site (myotendinous junction), what defines each grade, or the muscle involved in tennis leg (medial gastrocnemius).",
+          "checkpoint": {
+            "pearl": "Grade 1 edema, grade 2 partial gap, grade 3 retraction",
+            "reflection": "How would a grade 2 strain appear differently from a grade 3 strain on dynamic imaging?"
+          },
+          "keyTerms": [
+            "Myotendinous Junction",
+            "Pennate Pattern",
+            "Tennis Leg",
+            "Medial Gastrocnemius",
+            "Bell-Clapper Sign",
+            "Perimysium"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 36"
+        },
+        {
+          "id": "msk-hematoma-evolution",
+          "title": "Hematoma Evolution",
+          "frontClue": "Bright when fresh, dark when liquefied, then shrinking with septa",
+          "corePiece": "Intramuscular and soft tissue hematomas change appearance with time. In the first hours, fresh blood can be echogenic and poorly defined, sometimes nearly isoechoic to muscle, making it easy to miss. Over the following days the clot retracts and liquefies, becoming more hypoechoic or anechoic, often with fluid-fluid levels, debris, and septations. Over weeks the collection shrinks, its walls thicken, and it is replaced by echogenic granulation and scar tissue, or it may persist as a chronic seroma. Hematomas show no internal flow on Doppler; flow within a mass presumed to be a hematoma should raise concern for an underlying tumor, especially when there is no clear trauma. A Morel-Lavallee lesion is a closed degloving injury in which the subcutaneous fat shears off the underlying fascia, producing a fluid collection between those layers, typically over the greater trochanter or lateral thigh, which can become chronic with a capsule. Ultrasound can guide aspiration of liquefied hematomas.",
+          "whyLock": "The timeline explains why a scan the day of injury may look subtle, and why aspiration works best after liquefaction. Doppler is essential: a hematoma has no internal vascularity, while a sarcoma can bleed and look like a hematoma. Trap: a spontaneous hematoma without trauma, or one that fails to resolve over weeks, needs follow-up or further imaging. Trap two: Morel-Lavallee fluid lies between fat and fascia, not within muscle, which is the clue to the diagnosis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Muscle Strain Grades",
+              "link": "Partial and complete strains produce hematoma in the defect."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Lipoma & Soft Tissue Masses",
+              "link": "A non-resolving hematoma must be distinguished from a bleeding tumor."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Ultrasound-Guided Injection & Aspiration",
+              "link": "Liquefied collections can be drained under guidance."
+            }
+          ],
+          "registryApplication": "Expect questions on the echogenicity of hematoma by age, the location of a Morel-Lavallee lesion, and the meaning of internal flow.",
+          "checkpoint": {
+            "pearl": "Acute bright, subacute dark, chronic small and echogenic; never vascular",
+            "reflection": "Why should internal Doppler flow in a presumed hematoma change your management?"
+          },
+          "keyTerms": [
+            "Hematoma",
+            "Liquefaction",
+            "Morel-Lavallee Lesion",
+            "Seroma",
+            "Fluid-Fluid Level"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 37"
+        },
+        {
+          "id": "msk-myositis-ossificans",
+          "title": "Myositis Ossificans",
+          "frontClue": "Bone forms from the outside in: the zonal pattern",
+          "corePiece": "Myositis ossificans circumscripta is a benign heterotopic ossification within muscle, usually after blunt trauma, most commonly in the quadriceps or brachialis of young athletes. Early (first 2 weeks or so) it presents as a painful hypoechoic or heterogeneous intramuscular mass that may show hyperemia and can mimic a soft tissue sarcoma. Its hallmark is the zonal pattern: maturation progresses from the periphery toward the center, so a mature rim of mineralization surrounds a less mature, cellular center. Ultrasound can detect early peripheral mineralization as an echogenic rim, often before it is visible on radiographs, which typically show calcification around 3 to 6 weeks. With maturation the lesion develops a complete echogenic, shadowing shell and, over months, becomes mature lamellar bone that may shrink. A thin hypoechoic cleft often separates it from the adjacent bone cortex, unlike parosteal osteosarcoma, which ossifies from the center outward and attaches to bone.",
+          "whyLock": "The zonal pattern is the key reasoning point: peripheral maturation means benign myositis ossificans, central ossification raises concern for osteosarcoma. Early biopsy can be misleading because the immature center looks aggressive histologically, so correlation with trauma history and follow-up imaging is essential. Trap: the early phase can be calcification-free and vascular, mimicking a tumor or abscess; follow-up in a few weeks shows the rim. Trap two: aggressive massage or stretching after a contusion is thought to contribute to its development.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 37",
+              "title": "Hematoma Evolution",
+              "link": "Myositis ossificans may follow a traumatic intramuscular hematoma."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Lipoma & Soft Tissue Masses",
+              "link": "Early lesions mimic aggressive soft tissue masses."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Muscle Strain Grades",
+              "link": "Muscle trauma is the usual trigger."
+            }
+          ],
+          "registryApplication": "Questions ask about the zonal pattern (peripheral maturation), the typical location (quadriceps), and ultrasound detecting mineralization before radiography.",
+          "checkpoint": {
+            "pearl": "Ossifies outside in; sarcoma inside out",
+            "reflection": "How does the direction of mineralization help distinguish myositis ossificans from osteosarcoma?"
+          },
+          "keyTerms": [
+            "Heterotopic Ossification",
+            "Zonal Pattern",
+            "Quadriceps",
+            "Peripheral Mineralization",
+            "Parosteal Osteosarcoma"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 38"
+        },
+        {
+          "id": "msk-foreign-bodies",
+          "title": "Foreign Bodies",
+          "frontClue": "Everything is bright; the dark halo and the tail tell the story",
+          "corePiece": "Ultrasound is excellent for soft tissue foreign bodies, particularly radiolucent ones such as wood, plastic, thorns and some glass, which radiographs may miss. Almost all foreign bodies are hyperechoic regardless of their composition. The posterior artifact helps identify the material: wood and other organic materials tend to cast a clean posterior acoustic shadow, while metal and glass produce reverberation or comet-tail artifact, sometimes with a dirtier shadow. After about 24 to 48 hours, a hypoechoic halo of edema, granulation tissue or abscess forms around a retained foreign body, which makes it easier to find; small lesions may also show surrounding hyperemia. Report the size, orientation, depth, and relationship to tendons, nerves and vessels. Scanning with a high-frequency linear transducer in two planes, often with a standoff pad or water bath for superficial fingers, improves detection. Air introduced at the time of injury can mimic a foreign body. Ultrasound can guide removal by marking the skin or directing forceps.",
+          "whyLock": "The exam typically asks why ultrasound is preferred for wood: it is radiolucent but echogenic. Remember that the reflector always looks bright; the artifact deep to it suggests the material. Trap: gas bubbles and calcifications are also hyperechoic with artifacts; use clinical history and look for a linear shape. Trap two: a wooden splinter left in place for weeks may become less echogenic as it absorbs fluid, but the hypoechoic halo remains a helpful clue. Always image in the long axis of the object to measure it accurately.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 44",
+              "title": "Transducer Selection",
+              "link": "Superficial foreign bodies need high-frequency transducers and possibly a standoff."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Ultrasound-Guided Injection & Aspiration",
+              "link": "Real-time guidance helps localize and remove foreign bodies."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Power Doppler for Inflammation",
+              "link": "A hyperemic hypoechoic halo marks the inflammatory reaction."
+            }
+          ],
+          "registryApplication": "Expect questions on the echogenicity of foreign bodies (hyperechoic), wood versus metal artifacts, and why ultrasound is better than radiography for wood.",
+          "checkpoint": {
+            "pearl": "Wood shadows, metal and glass reverberate; halo after a day or two",
+            "reflection": "Why does a retained wooden splinter become easier to see a few days after injury?"
+          },
+          "keyTerms": [
+            "Foreign Body",
+            "Radiolucent",
+            "Posterior Acoustic Shadowing",
+            "Reverberation Artifact",
+            "Comet-Tail Artifact",
+            "Hypoechoic Halo"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 39"
+        },
+        {
+          "id": "msk-lipoma-soft-tissue-masses",
+          "title": "Lipoma & Soft Tissue Masses",
+          "frontClue": "Soft, squishy, parallel to skin with thin bright lines: lipoma",
+          "corePiece": "Lipoma is the most common soft tissue tumor. A subcutaneous lipoma is typically an oval, well-circumscribed or slightly ill-defined mass oriented parallel to the skin, compressible and soft, isoechoic or mildly hyperechoic to surrounding fat, with thin echogenic curvilinear striations or lines running parallel to the skin, and absent or minimal internal Doppler flow. Many lipomas are hard to separate from surrounding fat and are recognized by their mass effect and the striated pattern. Intramuscular lipomas may infiltrate between muscle fibers. Features that warrant further imaging with MRI or biopsy are size over about 5 cm, location deep to the fascia, rapid growth, pain, heterogeneous echotexture, irregular margins, and increased or chaotic internal vascularity, because soft tissue sarcomas such as liposarcoma or undifferentiated sarcoma share some appearances. Other common masses include ganglia, epidermal inclusion cysts (oval, hypoechoic, with posterior enhancement, attached to the dermis), nerve sheath tumors, and vascular malformations.",
+          "whyLock": "Ultrasound is often the first imaging test for a lump, and the job is to recognize classic benign lesions confidently and flag everything else. Lipoma is diagnosable when it is small, superficial, compressible, striated and avascular. Trap: posterior acoustic enhancement does not mean a lesion is cystic; solid tumors such as schwannomas can enhance. Trap two: deep or large masses deserve MRI even when they look benign, because size and depth are the strongest predictors of malignancy in the soft tissues.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 12",
+              "title": "Ganglion Cysts",
+              "link": "The most common hand and wrist mass, and a key cystic differential."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Nerve Sheath Tumors",
+              "link": "Solid masses with a nerve tail fall into the sheath tumor category."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Power Doppler for Inflammation",
+              "link": "Doppler settings for low flow help assess internal vascularity of masses."
+            }
+          ],
+          "registryApplication": "Expect questions on the classic lipoma appearance and on which features (size over 5 cm, deep, vascular, growing) should prompt further workup.",
+          "checkpoint": {
+            "pearl": "Lipoma: parallel, compressible, striated, avascular; deep and large means MRI",
+            "reflection": "Which three features of a soft tissue mass would make you recommend MRI or biopsy?"
+          },
+          "keyTerms": [
+            "Lipoma",
+            "Liposarcoma",
+            "Epidermal Inclusion Cyst",
+            "Compressibility",
+            "Soft Tissue Sarcoma",
+            "Internal Vascularity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 40"
+        },
+        {
+          "id": "msk-synovitis-erosions",
+          "title": "Synovitis & Erosions",
+          "frontClue": "Fluid moves; synovium stays put; an erosion shows in two planes",
+          "corePiece": "Ultrasound is widely used in inflammatory arthritis, using OMERACT definitions. Synovial effusion is abnormal hypoechoic or anechoic intra-articular material that is displaceable and compressible and shows no Doppler signal. Synovial hypertrophy is abnormal hypoechoic intra-articular tissue that is nondisplaceable and poorly compressible and may show Doppler signal; flow on power Doppler indicates active synovitis. Synovitis is graded semi-quantitatively from 0 to 3 for both gray-scale and Doppler. A bone erosion is an intra-articular discontinuity of the bone surface visible in two perpendicular planes. Rheumatoid arthritis typically affects the second and third metacarpophalangeal joints, wrists, and fifth metatarsophalangeal joint, with erosions at the bare areas. Tenosynovitis often accompanies synovitis. In gout, monosodium urate deposits on cartilage create the double contour sign, a hyperechoic line on the cartilage surface parallel to the bone; tophi appear as heterogeneous hyperechoic aggregates. In calcium pyrophosphate deposition, crystals lie within the cartilage, not on top.",
+          "whyLock": "Displacement and compression separate fluid from synovium, and Doppler grades activity, which guides treatment escalation. The double contour sign versus intracartilaginous deposits is a classic crystal arthropathy question. Trap: excessive transducer pressure squeezes flow out of inflamed synovium and causes underestimation; use plenty of gel and minimal pressure. Also scan joints in a standard position, because flexion or extension changes recess size and apparent synovial volume. Trap two: a cortical irregularity seen in only one plane can be a normal vascular channel, not an erosion.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 45",
+              "title": "Power Doppler for Inflammation",
+              "link": "Doppler activity defines active synovitis and its grade."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Knee Joint Effusion",
+              "link": "The effusion and synovitis definitions apply to every joint."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Tenosynovitis frequently accompanies inflammatory synovitis."
+            }
+          ],
+          "registryApplication": "Questions test OMERACT definitions of effusion, synovitis and erosion, and the double contour sign of gout.",
+          "checkpoint": {
+            "pearl": "Erosion in two planes; gout coats the cartilage, CPPD lives inside it",
+            "reflection": "How do you distinguish synovial hypertrophy from effusion using the transducer alone?"
+          },
+          "keyTerms": [
+            "Synovial Hypertrophy",
+            "Synovial Effusion",
+            "Bone Erosion",
+            "Double Contour Sign",
+            "Tophus",
+            "Calcium Pyrophosphate Deposition"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 41"
+        }
+      ]
+    },
+    {
+      "id": "msk-technique-artifacts-procedures",
+      "title": "Technique, Artifacts & Procedures",
+      "pieceRange": "Pieces 42-46",
+      "examType": "ARDMS RMSKS Musculoskeletal Sonography",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Anisotropy, dynamic imaging, transducers, Doppler settings and guided procedures",
+      "topics": [
+        {
+          "id": "msk-anisotropy",
+          "title": "Anisotropy",
+          "frontClue": "Tilt the probe: the dark tendon turns bright again",
+          "corePiece": "Anisotropy is the property of a structure whose echogenicity depends on the angle of insonation. Tendons are the most anisotropic structures, followed by ligaments, then muscles and nerves. When the beam is perpendicular to the tightly packed fibers, the reflections return to the transducer and the tendon appears bright and fibrillar. When the beam is angled only a few degrees off perpendicular, often cited as about 2 to 5 degrees, the echoes reflect away and the tendon becomes hypoechoic, mimicking tendinosis, a tear or fluid. Common sites include the rotator cuff footprint, the long head of the biceps, the common extensor origin, the flexor tendons and pulleys of the hand, the patellar and Achilles insertions, and the ankle tendons that curve around the malleoli. To correct it, heel-toe (rock) the transducer in long axis and toggle (angle side to side) in short axis until the fibers are perpendicular. Anisotropy can also be used deliberately to separate an echogenic tendon from surrounding hyperechoic fat.",
+          "whyLock": "This is the single most important artifact in MSK sonography. Every hypoechoic tendon focus should be re-examined with transducer angulation before it is called pathologic. Trap: the artifact affects curved tendons at their insertion most, exactly where real tears happen, so you need both techniques. Trap two: anisotropy can also help; angling to make the tendon dark helps separate it from echogenic surrounding tissue or highlights a nerve, which changes less. Spatial compounding reduces but does not eliminate it.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Anisotropy is the main mimic of tendon pathology."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Normal Nerve Honeycomb Appearance",
+              "link": "Nerves change less with angle, which helps distinguish them from tendons."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Long Head Biceps Tendon",
+              "link": "The biceps in its groove is a classic anisotropy site."
+            }
+          ],
+          "registryApplication": "Expect questions on the cause of a falsely hypoechoic tendon, which structure is most anisotropic (tendon), and the corrective maneuver (heel-toe or toggle).",
+          "checkpoint": {
+            "pearl": "Off-perpendicular tendon looks dark; heel-toe to fix",
+            "reflection": "Why does anisotropy cause the most trouble at tendon insertions, and how do you correct it?"
+          },
+          "keyTerms": [
+            "Anisotropy",
+            "Heel-Toe Maneuver",
+            "Toggling",
+            "Fibrillar Pattern",
+            "Spatial Compounding"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 42"
+        },
+        {
+          "id": "msk-dynamic-comparison-imaging",
+          "title": "Dynamic & Comparison Imaging",
+          "frontClue": "Real-time motion and the other side: two powers MRI lacks",
+          "corePiece": "Two strengths set musculoskeletal ultrasound apart from MRI: dynamic imaging and easy comparison with the contralateral side. Dynamic imaging evaluates structures during joint motion, muscle contraction, stress maneuvers or Valsalva. Classic examples include subacromial impingement during shoulder abduction, biceps tendon subluxation with external rotation, ulnar nerve dislocation with elbow flexion, peroneal tendon subluxation with dorsiflexion and eversion, internal snapping hip from the iliopsoas tendon, ligament gapping on valgus or anterior drawer stress, tendon end apposition in Achilles rupture, triggering at the A1 pulley, Morton neuroma with the Mulder maneuver, and hernias with Valsalva. Comparison imaging scans the asymptomatic side with identical settings, depth, and positioning to establish the patient's normal, which is especially useful for subtle tendon thickening, ligament laxity, nerve size, effusions and pediatric imaging. A sonopalpation technique, pressing with the transducer over the point of maximal tenderness, correlates findings with symptoms.",
+          "whyLock": "Many MSK conditions are intermittent or position-dependent, so a static exam can be falsely normal. When the exam asks which method best diagnoses snapping, subluxation, or impingement, the answer is dynamic ultrasound. Trap: when comparing sides, keep machine settings identical; changing gain or frequency invalidates the comparison. Trap two: some asymptomatic people have mobile nerves or tendons, so dynamic findings must match the symptoms and be compared with the other side before being called abnormal.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 5",
+              "title": "Subacromial-Subdeltoid Bursitis & Impingement",
+              "link": "Impingement is diagnosed during real-time abduction."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Peroneal Tendon Subluxation",
+              "link": "Subluxation is often visible only with active motion."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Iliopsoas Bursa & Snapping Hip",
+              "link": "Internal snapping is a classic dynamic diagnosis."
+            }
+          ],
+          "registryApplication": "Questions ask which modality or maneuver best demonstrates an intermittent abnormality, or why the contralateral side is scanned with identical settings.",
+          "checkpoint": {
+            "pearl": "If it snaps, slips or catches, scan it moving",
+            "reflection": "Name three conditions that may be missed without dynamic imaging, and the maneuver for each."
+          },
+          "keyTerms": [
+            "Dynamic Imaging",
+            "Contralateral Comparison",
+            "Sonopalpation",
+            "Stress Maneuver",
+            "Valsalva Maneuver"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 43"
+        },
+        {
+          "id": "msk-transducer-selection",
+          "title": "Transducer Selection",
+          "frontClue": "As high as the depth allows: linear for most, curved for deep hips",
+          "corePiece": "MSK sonography relies primarily on high-frequency linear array transducers, typically about 10 to 18 MHz or higher, which give the best spatial resolution for tendons, ligaments, nerves and superficial structures. Frequency is always a trade-off: higher frequency improves axial and lateral resolution but reduces penetration. Very high frequency (above about 18 to 20 MHz) small-footprint or hockey-stick linear transducers suit the fingers, toes, wrist and small nerves, and their small footprint fits around bony prominences. Lower-frequency curvilinear transducers, around 2 to 6 or up to 9 MHz, are needed for deep structures such as the hip joint, the gluteal tendons, the proximal hamstrings, and the thigh in large patients, and for wide fields of view. The focal zone should be placed at the level of interest. Extended field-of-view (panoramic) imaging shows long structures such as a full tendon tear with retraction. A standoff pad or thick gel layer helps very superficial lesions sit within the focal zone and improves contact over irregular surfaces.",
+          "whyLock": "Expect to match the transducer to the anatomy: high-frequency linear for nearly everything, hockey stick for small digits, curvilinear for deep hips and large legs. The reasoning is always resolution versus penetration. Trap: a high-frequency linear probe that cannot reach the target gives a falsely normal or blurry image; switching down in frequency is correct. Trap two: very superficial structures can fall in the near field above the focus, so use a standoff or extra gel and move the focus up.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 13",
+              "title": "Hip Joint Effusion",
+              "link": "Deep hip evaluation often needs a curvilinear transducer."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "Foreign Bodies",
+              "link": "Superficial foreign bodies benefit from very high frequency and a standoff."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Anisotropy",
+              "link": "Small footprints and careful angling help avoid anisotropy around curves."
+            }
+          ],
+          "registryApplication": "Questions ask which transducer is best for a given structure, or the trade-off between frequency and penetration.",
+          "checkpoint": {
+            "pearl": "Higher frequency, better resolution, less depth",
+            "reflection": "When would you switch from a linear to a curvilinear transducer in an MSK exam?"
+          },
+          "keyTerms": [
+            "Linear Array Transducer",
+            "Hockey-Stick Transducer",
+            "Curvilinear Transducer",
+            "Extended Field of View",
+            "Standoff Pad"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 44"
+        },
+        {
+          "id": "msk-power-doppler-for-inflammation",
+          "title": "Power Doppler for Inflammation",
+          "frontClue": "Low PRF, low filter, light touch: catch the slow flow of inflammation",
+          "corePiece": "Power Doppler displays the amplitude of the Doppler signal rather than its velocity and direction, making it more sensitive to low-velocity, low-volume flow and less dependent on angle than color Doppler, with no aliasing. These properties make it the usual choice for detecting hyperemia in synovitis, tenosynovitis, enthesitis, tendinosis neovascularity, bursitis, and soft tissue infection, and for assessing the vascularity of masses. Settings are optimized for slow flow: a low pulse repetition frequency (scale), commonly in the range of about 500 to 1000 Hz, a low wall filter, color gain increased until noise appears and then reduced just below that level, and a color box limited to the area of interest to keep frame rate up. Transducer pressure must be minimal, using a thick gel layer, because compression obliterates small vessels. The joint or tendon should be relaxed, since stretching a tendon squeezes vessels. Flow is graded semi-quantitatively, often 0 to 3. Many modern machines also offer microvascular imaging modes for slow flow.",
+          "whyLock": "The exam tests why power Doppler, what settings to use, and how technique creates false negatives. Pressure and tendon tension are the most common causes of falsely absent flow. Trap: motion and blooming can create false-positive color; a still patient and correct gain prevent that. Trap two: power Doppler gives no direction or velocity, so it is not used to measure flow speed. Remember that normal tendons are essentially avascular, so any intratendinous flow is abnormal neovascularity.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 41",
+              "title": "Synovitis & Erosions",
+              "link": "Doppler activity defines active synovitis and its grade."
+            },
+            {
+              "piece": "Piece 24",
+              "title": "Achilles Tendinopathy",
+              "link": "Neovascularity from the ventral side is a classic finding."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Tendinosis vs Tendon Tear",
+              "link": "Intratendinous flow supports symptomatic tendinosis."
+            }
+          ],
+          "registryApplication": "Questions ask which Doppler mode is most sensitive to slow flow (power), which settings to adjust (low PRF, low wall filter), and how pressure affects detection.",
+          "checkpoint": {
+            "pearl": "Power Doppler loves slow flow, hates pressure",
+            "reflection": "List three technical errors that can make inflamed synovium appear avascular."
+          },
+          "keyTerms": [
+            "Power Doppler",
+            "Pulse Repetition Frequency",
+            "Wall Filter",
+            "Hyperemia",
+            "Neovascularity",
+            "Microvascular Imaging"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 45"
+        },
+        {
+          "id": "msk-ultrasound-guided-injection-aspiration",
+          "title": "Ultrasound-Guided Injection & Aspiration",
+          "frontClue": "In-plane shows the whole needle; out-of-plane shows a dot",
+          "corePiece": "Ultrasound guidance improves accuracy and safety of musculoskeletal injections and aspirations by showing the needle, the target, and nearby vessels and nerves in real time. In the in-plane (long-axis) approach, the needle is inserted parallel to the long axis of the transducer, so the entire shaft and tip are visualized; this is preferred for most procedures. In the out-of-plane (short-axis) approach, the needle crosses the beam and appears only as a bright dot, so the tip must be tracked carefully by walking it down. Needle visibility improves when the needle is closer to perpendicular to the beam, using a shallower insertion angle, beam steering or needle enhancement software, and slight jiggling motions. Preprocedure scanning with color Doppler maps vessels, and sterile technique with a sterile cover and gel is required. Common procedures include joint, bursal, tendon sheath, cyst, perineural and barbotage procedures. Injectate should flow freely into the target; resistance or a bulge within a tendon signals intratendinous placement, which should be avoided with steroids.",
+          "whyLock": "Know the two approaches and when each is used: in-plane for most targets because the tip is always seen, out-of-plane for very superficial or small targets where the in-plane path is long. Trap: in out-of-plane imaging, the bright dot may be the shaft rather than the tip, risking deeper puncture. Trap two: steroid injected into a tendon may weaken it and contribute to rupture, especially the Achilles, patellar tendon, and plantar fascia. Always aspirate first when infection is possible and send fluid for analysis before any steroid.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 6",
+              "title": "Calcific Tendinopathy",
+              "link": "Barbotage is a guided procedure for calcific deposits."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Hip Joint Effusion",
+              "link": "Suspected septic hips are aspirated under ultrasound."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "De Quervain Tenosynovitis",
+              "link": "First compartment sheath injections benefit from guidance."
+            }
+          ],
+          "registryApplication": "Expect questions on in-plane versus out-of-plane needle appearance, how to improve needle visibility, and why intratendinous steroid injection is avoided.",
+          "checkpoint": {
+            "pearl": "In-plane: whole shaft; out-of-plane: tip as a dot",
+            "reflection": "How would you improve visibility of a needle that is barely seen during a steep in-plane approach?"
+          },
+          "keyTerms": [
+            "In-Plane Approach",
+            "Out-of-Plane Approach",
+            "Needle Visualization",
+            "Beam Steering",
+            "Barbotage",
+            "Aspiration"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 46"
+        }
+      ]
+    }
+  ]
+}

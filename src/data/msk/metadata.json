@@ -1,0 +1,50 @@
+{
+  "categories": [
+    "Shoulder",
+    "Elbow, Wrist & Hand",
+    "Hip & Pelvis",
+    "Knee",
+    "Ankle & Foot",
+    "Peripheral Nerves",
+    "Muscle, Tendon & Soft Tissue Pathology",
+    "Technique, Artifacts & Procedures"
+  ],
+  "categoryTotals": {
+    "Shoulder": 38,
+    "Elbow, Wrist & Hand": 38,
+    "Hip & Pelvis": 38,
+    "Knee": 38,
+    "Ankle & Foot": 38,
+    "Peripheral Nerves": 38,
+    "Muscle, Tendon & Soft Tissue Pathology": 36,
+    "Technique, Artifacts & Procedures": 36
+  },
+  "examModes": [
+    {
+      "id": "quick-10",
+      "name": "Quick 10",
+      "description": "10 random MSK questions",
+      "route": "/exam/quick-10"
+    },
+    {
+      "id": "study",
+      "name": "Study Mode",
+      "description": "Practice by category with instant feedback",
+      "route": "/exam/study"
+    },
+    {
+      "id": "mock-1",
+      "name": "Mock Exam 1",
+      "description": "Full practice exam (150 questions)",
+      "route": "/exam/mock-1"
+    },
+    {
+      "id": "mock-2",
+      "name": "Mock Exam 2",
+      "description": "Full practice exam (150 questions)",
+      "route": "/exam/mock-2"
+    }
+  ],
+  "totalQuestions": 300,
+  "passingScore": 555
+}

@@ -337,8 +337,8 @@
       "icon": "bone",
       "color": "cyan",
       "gradient": "from-cyan-500 to-cyan-600",
-      "enabled": false,
-      "questionCount": 0,
+      "enabled": true,
+      "questionCount": 300,
       "examModes": [
         {
           "id": "quick-10",
