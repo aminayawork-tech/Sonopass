@@ -13,6 +13,16 @@ export const GRADIENTS = {
 
 export type GradientName = keyof typeof GRADIENTS;
 
+const GRADIENT_ORDER = Object.keys(GRADIENTS) as GradientName[];
+
+// Stable color for any label, so categories without a hand-picked style still differ
+export function gradientFor(key: string | number): GradientName {
+  if (typeof key === 'number') return GRADIENT_ORDER[key % GRADIENT_ORDER.length];
+  let h = 0;
+  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
+  return GRADIENT_ORDER[h % GRADIENT_ORDER.length];
+}
+
 export function gradientCss(name: GradientName) {
   const [from, to] = GRADIENTS[name];
   return `linear-gradient(135deg, ${from} 0%, ${to} 100%)`;

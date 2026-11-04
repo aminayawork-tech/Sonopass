@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import AppLayout from '@/components/layout/AppLayout';
-import GradientIcon, { gradientCss, type GradientName } from '@/components/GradientIcon';
+import GradientIcon, { gradientCss, gradientFor, type GradientName } from '@/components/GradientIcon';
 import { useModality } from '@/contexts/ModalityContext';
 import {
   Brain, Activity, AlertTriangle, ClipboardList, Zap,
@@ -831,7 +831,7 @@ export default function StudyGuidePage() {
           )}
           <div className="flex flex-col gap-3">
             {filteredCategories?.map((category, idx) => {
-              const style = CATEGORY_STYLE[category.id] ?? { icon: iconMap[category.icon] || BookOpen, gradient: 'blue' as GradientName };
+              const style = CATEGORY_STYLE[category.id] ?? { icon: iconMap[category.icon] || BookOpen, gradient: gradientFor(idx) };
               const totalTopics = category.topics.length;
               const completedCount = category.topics.filter((t) => completedTopics.has(t.id)).length;
               const pct = totalTopics > 0 ? (completedCount / totalTopics) * 100 : 0;

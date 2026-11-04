@@ -12,7 +12,7 @@ import {
   Award, ClipboardCheck, FileText, Trophy, Lock, type LucideIcon,
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
-import GradientIcon, { gradientCss, type GradientName } from '@/components/GradientIcon';
+import GradientIcon, { gradientCss, gradientFor, type GradientName } from '@/components/GradientIcon';
 
 const CATEGORY_STYLE: Record<string, { icon: LucideIcon; gradient: GradientName }> = {
   'Cerebrovascular': { icon: Brain, gradient: 'violet' },
@@ -221,7 +221,7 @@ export default function ProgressPage() {
           ) : (
             <div className="surface rounded-[22px] divide-y divide-slate-100">
               {categories.map((cat) => {
-                const style = CATEGORY_STYLE[cat.name] ?? { icon: Stethoscope, gradient: 'indigo' as GradientName };
+                const style = CATEGORY_STYLE[cat.name] ?? { icon: Stethoscope, gradient: gradientFor(cat.name) };
                 const color = accuracyColor(cat.pct);
                 return (
                   <button

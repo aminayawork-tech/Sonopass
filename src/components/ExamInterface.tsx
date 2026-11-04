@@ -61,7 +61,16 @@ const getCategoryColors = (category: string) => {
     'Bioeffects': { bg: 'bg-orange-100', text: 'text-orange-700' },
   };
 
-  return colorMap[category] || { bg: 'bg-gray-100', text: 'text-gray-700' };
+  if (colorMap[category]) return colorMap[category];
+  const fallback = [
+    { bg: 'bg-sky-100', text: 'text-sky-700' }, { bg: 'bg-violet-100', text: 'text-violet-700' },
+    { bg: 'bg-emerald-100', text: 'text-emerald-700' }, { bg: 'bg-amber-100', text: 'text-amber-700' },
+    { bg: 'bg-rose-100', text: 'text-rose-700' }, { bg: 'bg-indigo-100', text: 'text-indigo-700' },
+    { bg: 'bg-cyan-100', text: 'text-cyan-700' }, { bg: 'bg-orange-100', text: 'text-orange-700' },
+  ];
+  let h = 0;
+  for (let i = 0; i < category.length; i++) h = (h * 31 + category.charCodeAt(i)) >>> 0;
+  return fallback[h % fallback.length];
 };
 
 export default function ExamInterface({ questions: initialQuestions, title, mode, examId, modality, showResults = true, onRestart }: ExamInterfaceProps) {

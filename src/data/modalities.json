@@ -102,42 +102,269 @@
     },
     {
       "id": "abdomen",
-      "name": "Abdomen",
-      "shortName": "Abdomen",
-      "description": "Abdominal sonography exam prep",
-      "tagline": "Your abdomen registry exam prep",
+      "name": "Abdomen (AB)",
+      "shortName": "AB",
+      "description": "Abdominal sonography registry prep",
+      "tagline": "Your Abdomen registry exam prep",
       "icon": "scanner",
       "color": "purple",
       "gradient": "from-purple-500 to-purple-600",
       "enabled": false,
       "questionCount": 0,
-      "examModes": []
+      "examModes": [
+        {
+          "id": "quick-10",
+          "name": "Quick 10",
+          "description": "10 random AB questions",
+          "route": "/exam/quick-10"
+        },
+        {
+          "id": "study",
+          "name": "Study Mode",
+          "description": "Practice by category with instant feedback",
+          "route": "/exam/study"
+        },
+        {
+          "id": "mock-1",
+          "name": "Mock Exam 1",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-1"
+        },
+        {
+          "id": "mock-2",
+          "name": "Mock Exam 2",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-2"
+        }
+      ]
     },
     {
       "id": "obgyn",
-      "name": "OB/GYN",
+      "name": "Obstetrics & Gynecology (OB/GYN)",
       "shortName": "OB/GYN",
-      "description": "Obstetrics & Gynecology sonography exam prep",
+      "description": "Obstetric and gynecologic sonography registry prep",
       "tagline": "Your OB/GYN registry exam prep",
       "icon": "baby",
       "color": "pink",
       "gradient": "from-pink-500 to-pink-600",
       "enabled": false,
       "questionCount": 0,
-      "examModes": []
+      "examModes": [
+        {
+          "id": "quick-10",
+          "name": "Quick 10",
+          "description": "10 random OB/GYN questions",
+          "route": "/exam/quick-10"
+        },
+        {
+          "id": "study",
+          "name": "Study Mode",
+          "description": "Practice by category with instant feedback",
+          "route": "/exam/study"
+        },
+        {
+          "id": "mock-1",
+          "name": "Mock Exam 1",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-1"
+        },
+        {
+          "id": "mock-2",
+          "name": "Mock Exam 2",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-2"
+        }
+      ]
     },
     {
       "id": "cardiac",
-      "name": "Cardiac",
-      "shortName": "Cardiac",
-      "description": "Adult echocardiography exam prep",
-      "tagline": "Your cardiac registry exam prep",
-      "icon": "heartbeat",
+      "name": "Adult Echocardiography (AE)",
+      "shortName": "AE",
+      "description": "Adult echocardiography registry prep",
+      "tagline": "Your Adult Echo registry exam prep",
+      "icon": "heartPulse",
       "color": "red",
       "gradient": "from-red-500 to-red-600",
       "enabled": false,
       "questionCount": 0,
-      "examModes": []
+      "examModes": [
+        {
+          "id": "quick-10",
+          "name": "Quick 10",
+          "description": "10 random AE questions",
+          "route": "/exam/quick-10"
+        },
+        {
+          "id": "study",
+          "name": "Study Mode",
+          "description": "Practice by category with instant feedback",
+          "route": "/exam/study"
+        },
+        {
+          "id": "mock-1",
+          "name": "Mock Exam 1",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-1"
+        },
+        {
+          "id": "mock-2",
+          "name": "Mock Exam 2",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-2"
+        }
+      ]
+    },
+    {
+      "id": "breast",
+      "name": "Breast (BR)",
+      "shortName": "BR",
+      "description": "Breast sonography registry prep",
+      "tagline": "Your Breast registry exam prep",
+      "icon": "ribbon",
+      "color": "rose",
+      "gradient": "from-rose-500 to-rose-600",
+      "enabled": false,
+      "questionCount": 0,
+      "examModes": [
+        {
+          "id": "quick-10",
+          "name": "Quick 10",
+          "description": "10 random BR questions",
+          "route": "/exam/quick-10"
+        },
+        {
+          "id": "study",
+          "name": "Study Mode",
+          "description": "Practice by category with instant feedback",
+          "route": "/exam/study"
+        },
+        {
+          "id": "mock-1",
+          "name": "Mock Exam 1",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-1"
+        },
+        {
+          "id": "mock-2",
+          "name": "Mock Exam 2",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-2"
+        }
+      ]
+    },
+    {
+      "id": "pediatric",
+      "name": "Pediatric Sonography (PS)",
+      "shortName": "PS",
+      "description": "Pediatric sonography registry prep",
+      "tagline": "Your Pediatric registry exam prep",
+      "icon": "smile",
+      "color": "amber",
+      "gradient": "from-amber-500 to-amber-600",
+      "enabled": false,
+      "questionCount": 0,
+      "examModes": [
+        {
+          "id": "quick-10",
+          "name": "Quick 10",
+          "description": "10 random PS questions",
+          "route": "/exam/quick-10"
+        },
+        {
+          "id": "study",
+          "name": "Study Mode",
+          "description": "Practice by category with instant feedback",
+          "route": "/exam/study"
+        },
+        {
+          "id": "mock-1",
+          "name": "Mock Exam 1",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-1"
+        },
+        {
+          "id": "mock-2",
+          "name": "Mock Exam 2",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-2"
+        }
+      ]
+    },
+    {
+      "id": "fetal-echo",
+      "name": "Fetal Echocardiography (FE)",
+      "shortName": "FE",
+      "description": "Fetal echocardiography registry prep",
+      "tagline": "Your Fetal Echo registry exam prep",
+      "icon": "heart",
+      "color": "fuchsia",
+      "gradient": "from-fuchsia-500 to-fuchsia-600",
+      "enabled": false,
+      "questionCount": 0,
+      "examModes": [
+        {
+          "id": "quick-10",
+          "name": "Quick 10",
+          "description": "10 random FE questions",
+          "route": "/exam/quick-10"
+        },
+        {
+          "id": "study",
+          "name": "Study Mode",
+          "description": "Practice by category with instant feedback",
+          "route": "/exam/study"
+        },
+        {
+          "id": "mock-1",
+          "name": "Mock Exam 1",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-1"
+        },
+        {
+          "id": "mock-2",
+          "name": "Mock Exam 2",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-2"
+        }
+      ]
+    },
+    {
+      "id": "msk",
+      "name": "Musculoskeletal (MSK)",
+      "shortName": "MSK",
+      "description": "Musculoskeletal sonography registry prep",
+      "tagline": "Your MSK registry exam prep",
+      "icon": "bone",
+      "color": "cyan",
+      "gradient": "from-cyan-500 to-cyan-600",
+      "enabled": false,
+      "questionCount": 0,
+      "examModes": [
+        {
+          "id": "quick-10",
+          "name": "Quick 10",
+          "description": "10 random MSK questions",
+          "route": "/exam/quick-10"
+        },
+        {
+          "id": "study",
+          "name": "Study Mode",
+          "description": "Practice by category with instant feedback",
+          "route": "/exam/study"
+        },
+        {
+          "id": "mock-1",
+          "name": "Mock Exam 1",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-1"
+        },
+        {
+          "id": "mock-2",
+          "name": "Mock Exam 2",
+          "description": "Full practice exam (150 questions)",
+          "route": "/exam/mock-2"
+        }
+      ]
     }
   ]
 }
