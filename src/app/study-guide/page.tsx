@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import AppLayout from '@/components/layout/AppLayout';
 import GradientIcon, { gradientCss, gradientFor, type GradientName } from '@/components/GradientIcon';
 import { useModality } from '@/contexts/ModalityContext';
+import { markLocalProgressChanged } from '@/lib/progressSync';
 import {
   Brain, Activity, AlertTriangle, ClipboardList, Zap,
   BookOpen, ChevronRight, Check, ArrowLeft,
@@ -242,6 +243,7 @@ export default function StudyGuidePage() {
     }
     setCompletedTopics(newCompleted);
     localStorage.setItem('completedTopics', JSON.stringify(Array.from(newCompleted)));
+    markLocalProgressChanged();
   };
 
   const filteredCategories = content?.categories.filter(category => {
