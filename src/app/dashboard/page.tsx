@@ -15,6 +15,7 @@ import {
   ListChecks,
   Menu,
   ArrowUpRight,
+  CalendarDays,
   type LucideIcon,
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
@@ -22,6 +23,9 @@ import MenuModal from '@/components/layout/MenuModal';
 import { ModalitySelectorDropdown } from '@/components/ModalitySelector';
 import GradientIcon, { type GradientName } from '@/components/GradientIcon';
 import AppFooter from '@/components/Disclaimer';
+import { useAuth } from '@/contexts/AuthContext';
+import { getOnboarding, saveOnboarding, daysUntil } from '@/lib/onboarding';
+import { readLocalProgress, hasMeaningfulProgress } from '@/lib/progressSync';
 
 const STUDY_MODES: { href: string; title: string; subtitle: string; icon: LucideIcon; gradient: GradientName }[] = [
   { href: '/exam/quick-10', title: 'Quick 10', subtitle: '~5 minutes', icon: Zap, gradient: 'emerald' },
@@ -41,12 +45,26 @@ export default function DashboardPage() {
   const [stats, setStats] = useState<UserStats | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [greeting, setGreeting] = useState('Welcome back');
+  const [examDays, setExamDays] = useState<number | null>(null);
   const { currentModality } = useModality();
+  const { ready, syncing } = useAuth();
 
   useEffect(() => {
+    if (!ready || syncing) return;
+    const onboarding = getOnboarding();
+    if (!onboarding.completedAt) {
+      // Students who were already studying before onboarding existed skip it
+      if (hasMeaningfulProgress(readLocalProgress())) {
+        saveOnboarding({ ...onboarding, completedAt: new Date().toISOString() });
+      } else {
+        router.replace('/onboarding');
+        return;
+      }
+    }
+    setExamDays(daysUntil(onboarding.examDate));
     setStats(getStats());
     setGreeting(greetingFor(new Date().getHours()));
-  }, []);
+  }, [ready, syncing, router]);
 
   const modalityStats = stats ? getCurrentModalityStats(stats) : null;
   const accuracy = modalityStats && modalityStats.totalAnswered > 0
@@ -83,8 +101,16 @@ export default function DashboardPage() {
           <p className="text-slate-500 text-[15px] mt-1">
             {currentModality ? `Let's get you ready for ${currentModality.shortName}.` : 'Your registry exam prep companion'}
           </p>
-          <div className="mt-4">
+          <div className="mt-4 flex flex-wrap items-center gap-2">
             <ModalitySelectorDropdown />
+            {examDays !== null && examDays >= 0 && (
+              <span className="surface inline-flex items-center gap-2 pl-1.5 pr-3.5 py-1.5 rounded-full">
+                <GradientIcon icon={CalendarDays} gradient="violet" size={30} />
+                <span className="text-[14px] font-bold text-ink">
+                  {examDays === 0 ? 'Exam day!' : `${examDays} ${examDays === 1 ? 'day' : 'days'} to go`}
+                </span>
+              </span>
+            )}
           </div>
         </div>
 

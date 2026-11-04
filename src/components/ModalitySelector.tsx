@@ -24,7 +24,7 @@ const MODALITY_STYLE: Record<string, { icon: LucideIcon; gradient: GradientName 
   'fetal-echo': { icon: Heart, gradient: 'violet' },
 };
 
-function styleFor(modality: { id: string; icon: string }) {
+export function styleFor(modality: { id: string; icon: string }) {
   return MODALITY_STYLE[modality.id] ?? ICONS[modality.icon] ?? { icon: Heart, gradient: 'emerald' as GradientName };
 }
 
