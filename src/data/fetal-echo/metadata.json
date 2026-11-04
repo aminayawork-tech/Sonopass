@@ -1,0 +1,50 @@
+{
+  "categories": [
+    "Normal Fetal Heart & Views",
+    "Fetal Circulation & Physiology",
+    "Septal & Atrioventricular Defects",
+    "Conotruncal Anomalies",
+    "Obstructive & Hypoplastic Lesions",
+    "Arrhythmias & Heart Failure",
+    "Associations & Maternal Factors",
+    "Technique & Instrumentation"
+  ],
+  "categoryTotals": {
+    "Normal Fetal Heart & Views": 38,
+    "Fetal Circulation & Physiology": 36,
+    "Septal & Atrioventricular Defects": 38,
+    "Conotruncal Anomalies": 38,
+    "Obstructive & Hypoplastic Lesions": 38,
+    "Arrhythmias & Heart Failure": 38,
+    "Associations & Maternal Factors": 36,
+    "Technique & Instrumentation": 36
+  },
+  "examModes": [
+    {
+      "id": "quick-10",
+      "name": "Quick 10",
+      "description": "10 random FE questions",
+      "route": "/exam/quick-10"
+    },
+    {
+      "id": "study",
+      "name": "Study Mode",
+      "description": "Practice by category with instant feedback",
+      "route": "/exam/study"
+    },
+    {
+      "id": "mock-1",
+      "name": "Mock Exam 1",
+      "description": "Full practice exam (150 questions)",
+      "route": "/exam/mock-1"
+    },
+    {
+      "id": "mock-2",
+      "name": "Mock Exam 2",
+      "description": "Full practice exam (148 questions)",
+      "route": "/exam/mock-2"
+    }
+  ],
+  "totalQuestions": 298,
+  "passingScore": 555
+}

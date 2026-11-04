@@ -1,0 +1,1782 @@
+{
+  "categories": [
+    {
+      "id": "fe-normal-fetal-heart-views",
+      "title": "Normal Fetal Heart & Views",
+      "pieceRange": "Pieces 1-6",
+      "examType": "ARDMS RDCS Fetal Echocardiography (FE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Situs, axis and the standard screening and fetal echo planes that define a normal heart",
+      "topics": [
+        {
+          "id": "fe-situs-and-cardiac-position",
+          "title": "Situs and Cardiac Position",
+          "frontClue": "Find fetal left first: stomach, heart apex and aorta all belong on the left",
+          "corePiece": "Every fetal echo begins by establishing fetal right and left from fetal lie and presentation, not from the screen orientation. In the upper abdominal transverse view, normal situs solitus places the stomach on the left, the descending aorta to the left and anterior of the spine, and the inferior vena cava to the right and more anterior. In the chest, the heart lies mostly in the left hemithorax with the apex pointing left (levocardia). Situs inversus is a full mirror image. Situs ambiguus (heterotaxy) is any other arrangement, such as a stomach on one side and the apex on the other, or the aorta and IVC on the same side of the spine. Cardiac position describes where the heart sits: dextroposition is a shift to the right by an external cause such as a left congenital diaphragmatic hernia or a left-sided lung mass, while dextrocardia means the base-to-apex axis itself points right. The heart normally occupies about one third of the thoracic area.",
+          "whyLock": "Many complex lesions are missed because the sonographer assumes left and right from the image instead of proving them from fetal position. A practical method: identify the fetal head and spine, then work out which side is up. Stomach and heart on opposite sides should immediately raise heterotaxy and send you looking for interrupted IVC, isomerism and complex intracardiac disease. Trap: a heart pushed right by a hernia is dextroposition with a normal axis; dextrocardia is an intrinsic abnormal axis. Keep these terms distinct because answer choices often swap them.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Cardiac Axis",
+              "link": "Axis is measured only after situs is proven, because it is referenced to fetal left."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Heterotaxy Syndromes",
+              "link": "Discordant stomach and heart position is the classic first clue to isomerism."
+            }
+          ],
+          "registryApplication": "Expect items that describe stomach, aorta and IVC positions and ask for the situs, or that distinguish dextroposition caused by a chest mass from true dextrocardia.",
+          "checkpoint": {
+            "pearl": "Prove fetal left first; stomach, apex and aorta should agree",
+            "reflection": "A fetus is breech with the spine to the maternal right; how would you prove which side of the screen is fetal left?"
+          },
+          "keyTerms": [
+            "Situs Solitus",
+            "Situs Inversus",
+            "Situs Ambiguus",
+            "Levocardia",
+            "Dextrocardia",
+            "Dextroposition",
+            "Heterotaxy Syndromes"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 1"
+        },
+        {
+          "id": "fe-cardiac-axis",
+          "title": "Cardiac Axis",
+          "frontClue": "A line along the septum should sit about 45 degrees left of the midline",
+          "corePiece": "Cardiac axis is the angle between the interventricular septum and the anteroposterior line drawn from the spine to the anterior chest wall in the four-chamber view. The normal axis is about 45 degrees to the left, with a commonly taught normal range of roughly 25 to 65 degrees (45 plus or minus 20). Left axis deviation beyond about 65 degrees is strongly associated with congenital heart disease, especially conotruncal anomalies such as tetralogy of Fallot, truncus arteriosus and double outlet right ventricle, and it can also occur with Ebstein anomaly or with extracardiac causes such as diaphragmatic hernia. An axis that is too small (rightward) or that points right is also abnormal. Cardiac size is checked at the same time: the cardiothoracic area ratio is normally about 0.25 to 0.35, and the cardiothoracic circumference ratio about 0.5. Axis is useful early in pregnancy because it can be measured even when chamber detail is limited.",
+          "whyLock": "The axis is a cheap screening gate: a four-chamber view can look superficially normal in tetralogy of Fallot, but the axis is often shifted left, prompting a closer look at the outflows. Reason from the mechanism: anything that rotates the heart (abnormal outflow development, mass effect, cardiomegaly) changes the angle. Traps include measuring from an oblique plane, which distorts the angle, and confusing axis with position. A normal position with an abnormal axis still needs a full fetal echo, because the angle itself is the warning sign.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 3",
+              "title": "Four-Chamber View",
+              "link": "Axis is measured in the four-chamber plane, so a true transverse four-chamber view is required."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "Tetralogy of Fallot",
+              "link": "Left axis deviation is a frequent clue when the four-chamber view otherwise looks normal."
+            }
+          ],
+          "registryApplication": "Questions give an angle (for example 75 degrees) and ask whether it is normal and what lesion class it suggests, or ask for the normal range.",
+          "checkpoint": {
+            "pearl": "45 plus or minus 20 degrees; more leftward suggests conotruncal disease",
+            "reflection": "Why might tetralogy of Fallot shift the axis to the left even when the four chambers look balanced?"
+          },
+          "keyTerms": [
+            "Cardiac Axis",
+            "Interventricular Septum",
+            "Left Axis Deviation",
+            "Cardiothoracic Ratio",
+            "Conotruncal Anomalies",
+            "Four-Chamber View"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 2"
+        },
+        {
+          "id": "fe-four-chamber-view",
+          "title": "Four-Chamber View",
+          "frontClue": "Two atria, two ventricles, a crux and an offset: the core screening plane",
+          "corePiece": "The four-chamber view is a transverse plane of the fetal chest just above the diaphragm. Normal findings: the heart fills about one third of the chest; the apex points left; atria and ventricles are roughly equal in size, with the right ventricle slightly larger late in gestation; the foramen ovale flap moves into the left atrium; at least two pulmonary veins enter the left atrium; and the descending aorta sits left and anterior to the spine. The right ventricle is the most anterior chamber, has a coarse apex and contains the moderator band. The tricuspid valve inserts slightly closer to the apex than the mitral valve, and this normal offset defines the right-sided atrioventricular valve. The crux shows the atrial septum primum, the inlet septum and both AV valves meeting in a cross. Both AV valves should open and close freely, and the septum should be intact from crux to apex.",
+          "whyLock": "The four-chamber view alone detects only around half of major heart defects, so it is necessary but not sufficient; outflow and three-vessel views must be added. Use it to identify the morphologic right ventricle by the moderator band and the more apical tricuspid valve, not by its position, because chambers can be on the wrong side. Trap: the apical view with the septum parallel to the beam produces false septal dropout near the crux. Trap two: chamber disproportion in the third trimester may be normal, but disproportion before that needs evaluation for coarctation.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 15",
+              "title": "Atrioventricular Septal Defect",
+              "link": "Loss of the normal AV valve offset at the crux is the hallmark of AVSD."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Outflow Tracts",
+              "link": "Outflow views pick up conotruncal lesions that leave the four chambers looking normal."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Coarctation of the Aorta",
+              "link": "Right-dominant ventricular disproportion in the four-chamber view is a key coarctation clue."
+            }
+          ],
+          "registryApplication": "Expect items on how to identify the morphologic right ventricle, what the normal offset means, and which lesions are typically missed if only the four-chamber view is obtained.",
+          "checkpoint": {
+            "pearl": "Moderator band plus apical tricuspid insertion equals morphologic RV",
+            "reflection": "Name three major defects that can have a normal four-chamber view."
+          },
+          "keyTerms": [
+            "Moderator Band",
+            "Atrioventricular Valve Offset",
+            "Crux",
+            "Foramen Ovale",
+            "Pulmonary Veins",
+            "Morphologic Right Ventricle"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 3"
+        },
+        {
+          "id": "fe-outflow-tracts",
+          "title": "Outflow Tracts",
+          "frontClue": "Aorta leaves the LV heading right; the PA leaves the RV and crosses over it",
+          "corePiece": "Normal outflows cross. Sliding cranially from the four-chamber view, the left ventricular outflow tract (five-chamber view) shows the aorta arising from the left ventricle and heading toward the fetal right shoulder, with the anterior aortic wall continuous with the interventricular septum and the posterior wall continuous with the anterior mitral leaflet (mitral-aortic fibrous continuity). Further cranial, the right ventricular outflow tract shows the pulmonary artery arising from the anterior right ventricle, crossing in front of the aorta at nearly a right angle, and then bifurcating into right and left pulmonary branches, with the ductus arteriosus continuing toward the descending aorta. The pulmonary valve is normally slightly larger than the aortic valve. Identify each great artery by its branching, not its position: the pulmonary artery bifurcates soon after its origin, while the aorta curves into an arch that gives off head and neck vessels.",
+          "whyLock": "Parallel great arteries that do not cross are the classic sign of transposition or double outlet right ventricle. A break in septal-aortic continuity with the aorta straddling the septum means override, seen in tetralogy of Fallot, truncus arteriosus and some DORV. Reason by branching: the vessel that splits is the pulmonary artery, whatever ventricle it leaves. Trap: an oblique cut can make a normal aorta appear to override the septum, so confirm in more than one plane. Trap two: in truncus there is only one outflow valve.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 20",
+              "title": "D-Transposition of the Great Arteries",
+              "link": "In d-TGA the outflows run parallel instead of crossing."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Three-Vessel Trachea View",
+              "link": "The three-vessel trachea view checks the same outflows at their distal course."
+            }
+          ],
+          "registryApplication": "Typical questions describe parallel outflows, override or a vessel that bifurcates from the left ventricle and ask for the diagnosis.",
+          "checkpoint": {
+            "pearl": "Normal outflows cross; the vessel that branches early is the pulmonary artery",
+            "reflection": "How would you prove which great artery is which if both looked the same size?"
+          },
+          "keyTerms": [
+            "Left Ventricular Outflow Tract",
+            "Right Ventricular Outflow Tract",
+            "Five-Chamber View",
+            "Mitral-Aortic Continuity",
+            "Override",
+            "Ductus Arteriosus"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 4"
+        },
+        {
+          "id": "fe-three-vessel-trachea-view",
+          "title": "Three-Vessel Trachea View",
+          "frontClue": "PA, aorta, SVC left to right, shrinking in size, with a V left of trachea",
+          "corePiece": "The three-vessel and three-vessel trachea views are transverse planes of the upper mediastinum above the four-chamber view. In the three-vessel view, from fetal left anterior to right posterior, are the main pulmonary artery, the ascending aorta and the superior vena cava, arranged in a nearly straight line and decreasing in size (PA larger than aorta larger than SVC). Slightly more cranially, the three-vessel trachea view shows the ductal arch and the transverse aortic arch joining in a V shape to the left of the trachea, with both flowing in the same direction (same color) toward the descending aorta. Abnormal findings include a vessel count other than three (a persistent left SVC adds a vessel left of the PA), abnormal size relationships, abnormal alignment, a right aortic arch passing to the right of the trachea, a U-shaped vascular ring around the trachea, and reversed flow in one arch. The thymus lies anterior to the vessels.",
+          "whyLock": "This plane is high-yield because it detects lesions the four-chamber view misses: transposition (one large anterior vessel), tetralogy (large aorta, small PA), coarctation (small arch), and arch anomalies. Color flow direction is the key reasoning tool: reversed flow in the transverse arch means systemic circulation depends on the ductus (HLHS, critical AS), while reversed ductal flow means the pulmonary circulation depends on the aorta (pulmonary atresia). Trap: a right arch with left ductus forms a vascular ring that may compress the trachea and esophagus after birth.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 6",
+              "title": "Aortic and Ductal Arches",
+              "link": "The two limbs of the V are the transverse aortic arch and the ductal arch."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "22q11.2 Deletion and Turner Syndrome",
+              "link": "A right aortic arch or a small thymus on this plane raises concern for 22q11 deletion."
+            },
+            {
+              "piece": "Piece 24",
+              "title": "Hypoplastic Left Heart Syndrome",
+              "link": "Reversed transverse arch flow in this view indicates ductal-dependent systemic flow."
+            }
+          ],
+          "registryApplication": "Expect questions on the normal order and size of vessels, what a fourth vessel represents, and what reversed arch or ductal flow implies.",
+          "checkpoint": {
+            "pearl": "PA bigger than Ao bigger than SVC, V to the left of the trachea, same color",
+            "reflection": "What does reversed color flow in the transverse aortic arch tell you about the left heart?"
+          },
+          "keyTerms": [
+            "Three-Vessel View",
+            "Transverse Aortic Arch",
+            "Ductal Arch",
+            "Right Aortic Arch",
+            "Persistent Left Superior Vena Cava",
+            "Vascular Ring",
+            "Thymus"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 5"
+        },
+        {
+          "id": "fe-aortic-and-ductal-arches",
+          "title": "Aortic and Ductal Arches",
+          "frontClue": "Candy cane with three branches versus a flat hockey stick with none",
+          "corePiece": "Sagittal views show the two arches that both reach the descending aorta. The aortic arch has a tight, rounded candy-cane shape arising centrally from the heart and gives off three head and neck vessels (brachiocephalic, left common carotid and left subclavian arteries). The ductal arch is broader and flatter, often described as a hockey stick, arising more anteriorly from the right ventricle via the pulmonary artery and ductus arteriosus, with no head and neck branches. The isthmus, between the left subclavian artery and the ductal insertion, is normally slightly narrower than the transverse arch in the fetus. The bicaval view, a parasagittal plane to the right, shows the superior and inferior vena cavae entering the right atrium, with the Eustachian valve at the IVC orifice. Pulsed Doppler of the ductus arteriosus normally shows forward flow toward the descending aorta throughout the cycle, with systolic velocity rising with gestational age.",
+          "whyLock": "Arch views confirm what the three-vessel trachea view suggests. A long, narrow isthmus or posterior shelf supports coarctation; a missing segment suggests interruption, which is strongly linked to 22q11 deletion. Ductal constriction (high systolic and diastolic velocity, reduced pulsatility) occurs with maternal NSAID use in the third trimester. Trap: the two arches can look alike in a single sagittal plane, so prove the aortic arch by its head and neck branches. Trap two: an absent IVC segment in the bicaval view points to interrupted IVC with azygos continuation.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 25",
+              "title": "Coarctation of the Aorta",
+              "link": "Isthmal narrowing on the arch view supports a coarctation diagnosis."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Maternal Diabetes and Teratogens",
+              "link": "Third-trimester NSAIDs constrict the ductus, which the ductal arch Doppler detects."
+            }
+          ],
+          "registryApplication": "Questions ask which arch has branches, what the normal ductal Doppler looks like, and which drug causes ductal constriction.",
+          "checkpoint": {
+            "pearl": "Aortic arch candy cane gives branches; ductal arch hockey stick gives none",
+            "reflection": "How would a constricted ductus change its pulsed Doppler waveform?"
+          },
+          "keyTerms": [
+            "Aortic Arch",
+            "Ductal Arch",
+            "Isthmus",
+            "Bicaval View",
+            "Ductal Constriction",
+            "Eustachian Valve"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 6"
+        }
+      ]
+    },
+    {
+      "id": "fe-fetal-circulation-physiology",
+      "title": "Fetal Circulation & Physiology",
+      "pieceRange": "Pieces 7-12",
+      "examType": "ARDMS RDCS Fetal Echocardiography (FE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "The three fetal shunts, normal fetal Doppler and how the circulation changes at birth",
+      "topics": [
+        {
+          "id": "fe-fetal-shunts",
+          "title": "Fetal Shunts",
+          "frontClue": "Ductus venosus, foramen ovale, ductus arteriosus: three bypasses around liver and lungs",
+          "corePiece": "The placenta, not the lungs, oxygenates fetal blood. Oxygenated blood returns in the umbilical vein. The ductus venosus, a narrow trumpet-shaped vessel from the umbilical vein to the IVC near the right atrium, shunts part of this blood past the liver (roughly a quarter to a third at midgestation, less near term). Its high-velocity stream is directed by the Eustachian valve and the crista dividens across the foramen ovale into the left atrium, so the best-oxygenated blood reaches the left ventricle, coronary arteries and brain. Deoxygenated blood from the SVC is directed mainly through the tricuspid valve into the right ventricle. Because pulmonary vascular resistance is high, most right ventricular output crosses the ductus arteriosus to the descending aorta and returns to the placenta via the umbilical arteries. The fetal ventricles work in parallel, and the right ventricle carries slightly more than half of combined cardiac output.",
+          "whyLock": "Thinking of the circulation as parallel explains several exam points: a fetus with HLHS or pulmonary atresia can thrive in utero because the other ventricle and the shunts take over, then decompensate when the ducts close after birth. Normal foramen ovale flow is right to left; left-to-right flow signals left heart obstruction. Trap: the ductus venosus carries oxygenated blood, not deoxygenated. Trap two: the umbilical arteries carry deoxygenated blood to the placenta, the reverse of the adult naming logic.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "Ductus Venosus Doppler",
+              "link": "DV Doppler samples the high-velocity shunt that feeds the foramen ovale."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "Transitional Circulation",
+              "link": "All three shunts close after birth, unmasking ductal-dependent lesions."
+            }
+          ],
+          "registryApplication": "Expect items on which shunt bypasses which organ, the direction of normal foramen ovale flow, and which ventricle is dominant in the fetus.",
+          "checkpoint": {
+            "pearl": "DV bypasses liver, FO and DA bypass lungs; RV is the dominant fetal ventricle",
+            "reflection": "Why does the most oxygenated blood preferentially reach the brain and heart?"
+          },
+          "keyTerms": [
+            "Ductus Venosus",
+            "Foramen Ovale",
+            "Ductus Arteriosus",
+            "Umbilical Vein",
+            "Crista Dividens",
+            "Parallel Circulation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 7"
+        },
+        {
+          "id": "fe-ductus-venosus-doppler",
+          "title": "Ductus Venosus Doppler",
+          "frontClue": "Always forward: S, D and an a-wave that should stay above the baseline",
+          "corePiece": "The ductus venosus is found in a midsagittal or oblique transverse plane of the upper abdomen, where color Doppler shows aliasing at its narrow inlet from the umbilical vein. The sample volume is placed at the inlet with a small angle. The normal waveform is triphasic and entirely forward: a peak during ventricular systole (S wave), a second peak during early diastole (D wave), and a nadir during atrial contraction (a-wave) that remains forward. Peak velocities are much higher than in the umbilical vein, commonly 50 to 80 cm/s in the second half of pregnancy. Pulsatility index for veins is calculated as (S minus a) divided by time-averaged maximum velocity. An absent or reversed a-wave is abnormal and reflects raised right atrial pressure or poor ventricular compliance. In the first trimester, reversed a-wave is a marker for aneuploidy and congenital heart disease. Later, it signals cardiac failure or advanced decompensation in growth restriction.",
+          "whyLock": "DV is the venous window into right heart pressure. In growth restriction, the sequence typically runs from abnormal umbilical artery to brain sparing to abnormal DV, and reversed a-wave is a late, ominous finding that often guides delivery timing. Trap: sampling the adjacent hepatic vein or umbilical vein contaminates the signal and can create a false reversed a-wave, so confirm aliasing at the DV inlet and use a small sample volume. Pulsations in the umbilical vein itself are another sign of elevated venous pressure.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 7",
+              "title": "Fetal Shunts",
+              "link": "The DV is one of the three fetal shunts and feeds the foramen ovale stream."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Fetal Hydrops and CVP Score",
+              "link": "Venous Doppler abnormalities in the DV and umbilical vein are scored in the CVP score."
+            }
+          ],
+          "registryApplication": "Questions describe a waveform with an a-wave below baseline and ask what it means, or ask where to place the sample gate.",
+          "checkpoint": {
+            "pearl": "Reversed a-wave in the DV means high right atrial pressure",
+            "reflection": "In a first-trimester scan, what two broad problems does a reversed DV a-wave raise?"
+          },
+          "keyTerms": [
+            "Ductus Venosus",
+            "A-Wave",
+            "S Wave",
+            "D Wave",
+            "Pulsatility Index for Veins",
+            "Umbilical Vein Pulsations"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 8"
+        },
+        {
+          "id": "fe-umbilical-artery-doppler",
+          "title": "Umbilical Artery Doppler",
+          "frontClue": "Low-resistance placenta: diastolic flow should rise as pregnancy advances",
+          "corePiece": "The umbilical artery reflects downstream placental resistance. Normally, as the placental vascular bed expands, end-diastolic flow increases and resistance indices (pulsatility index, resistance index and S/D ratio) fall steadily with gestational age. Sampling a free loop of cord gives the most reproducible values; values are higher near the fetal insertion and lower near the placental insertion. Measurements are taken without fetal breathing or movement, with a small angle of insonation, and compared against gestational age reference ranges. Abnormal findings progress through elevated PI, absent end-diastolic flow (AEDF) and then reversed end-diastolic flow (REDF), reflecting increasing loss of functioning placental villous vessels. A single umbilical artery is a separate finding associated with cardiac and renal anomalies and is often confirmed with color Doppler around the fetal bladder.",
+          "whyLock": "Umbilical artery Doppler tells you about the placenta, not the heart, but fetal echo labs use it to judge whether an abnormal heart is also under placental stress. AEDF and REDF in a growth-restricted fetus mean high risk and closer surveillance or delivery. Trap: a high-resistance waveform early in pregnancy can be normal, because end-diastolic flow is often absent in the first trimester. Trap two: fetal breathing changes the waveform, so a single abnormal trace during breathing should be repeated.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Middle Cerebral Artery Doppler",
+              "link": "The cerebroplacental ratio combines MCA and umbilical artery pulsatility."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Ductus Venosus Doppler",
+              "link": "DV changes follow umbilical artery abnormalities in progressive growth restriction."
+            }
+          ],
+          "registryApplication": "Expect questions on the normal trend of UA indices with gestational age and the significance of AEDF and REDF.",
+          "checkpoint": {
+            "pearl": "UA resistance falls as pregnancy advances; AEDF then REDF means placental failure",
+            "reflection": "Where on the cord would you sample to get the most reproducible UA indices, and why?"
+          },
+          "keyTerms": [
+            "Umbilical Artery",
+            "Pulsatility Index",
+            "Absent End-Diastolic Flow",
+            "Reversed End-Diastolic Flow",
+            "S/D Ratio",
+            "Single Umbilical Artery"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 9"
+        },
+        {
+          "id": "fe-middle-cerebral-artery-doppler",
+          "title": "Middle Cerebral Artery Doppler",
+          "frontClue": "Zero degrees near the circle of Willis: PSV for anemia, PI for brain sparing",
+          "corePiece": "The middle cerebral artery is imaged in an axial view of the fetal head at the level of the circle of Willis, using color Doppler. The sample volume is placed in the proximal third of the MCA, close to its origin, with an angle of insonation as close to zero as possible (angle correction kept minimal). The normal MCA waveform is high resistance with low diastolic flow. Peak systolic velocity (PSV) increases with gestational age and rises in fetal anemia because of lower blood viscosity and higher cardiac output; a value above 1.5 multiples of the median (MoM) suggests moderate to severe anemia, as in red cell alloimmunization or parvovirus infection. In placental insufficiency, cerebral vasodilation lowers the MCA PI (brain sparing). The cerebroplacental ratio (MCA PI divided by UA PI) falls when this redistribution occurs; a value below about 1, or below the 5th percentile, is abnormal.",
+          "whyLock": "MCA PSV replaced invasive amniocentesis for anemia screening, so the technique details are high yield: proximal segment, near-zero angle, fetus at rest, no excessive transducer pressure on the head. Fetal anemia is a high-output cause of hydrops, so it belongs in the fetal echo differential for cardiomegaly. Trap: brain sparing lowers the MCA PI but does not mean the fetus is healthy; it signals adaptation to hypoxemia. Trap two: sampling the distal MCA underestimates PSV.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 9",
+              "title": "Umbilical Artery Doppler",
+              "link": "The cerebroplacental ratio pairs MCA PI with UA PI."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Fetal Hydrops and CVP Score",
+              "link": "Fetal anemia detected by MCA PSV is a high-output cause of hydrops."
+            }
+          ],
+          "registryApplication": "Questions ask for the anemia cutoff (1.5 MoM), correct sampling location and angle, or the meaning of a low cerebroplacental ratio.",
+          "checkpoint": {
+            "pearl": "MCA PSV above 1.5 MoM equals anemia; low MCA PI equals brain sparing",
+            "reflection": "Why does fetal anemia raise MCA peak systolic velocity?"
+          },
+          "keyTerms": [
+            "Middle Cerebral Artery",
+            "Peak Systolic Velocity",
+            "Multiples of the Median",
+            "Brain Sparing",
+            "Cerebroplacental Ratio",
+            "Fetal Anemia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 10"
+        },
+        {
+          "id": "fe-atrioventricular-valve-inflow-doppler",
+          "title": "Atrioventricular Valve Inflow Doppler",
+          "frontClue": "Fetal inflow is A-dominant: E smaller than A, two separate peaks at normal heart rates",
+          "corePiece": "Pulsed Doppler with the sample volume just distal to the mitral or tricuspid valve leaflets, in an apical four-chamber view with the beam parallel to flow, shows a biphasic inflow pattern. The E wave reflects early passive ventricular filling and the A wave reflects atrial contraction. Because fetal myocardium is relatively stiff, the A wave is taller than the E wave, giving an E/A ratio below 1 that gradually rises toward 1 as gestation advances. A monophasic inflow (fused E and A, or a single peak) suggests diastolic dysfunction or a very fast heart rate, and is seen for example in the recipient twin of twin-twin transfusion syndrome. Color and pulsed Doppler also screen for AV valve regurgitation, which should be timed and measured; mild, brief tricuspid regurgitation is common and often trivial, while holosystolic regurgitation with high velocity is significant. Outflow velocities across semilunar valves normally rise with gestational age and generally remain below about 1 m/s in midgestation.",
+          "whyLock": "Inflow Doppler is the simplest bedside test of diastolic function. Reason from physiology: a stiff ventricle relies on the atrial kick, which is why the A wave dominates. Trap: at high heart rates E and A merge even in a normal heart, so check the rate before calling a monophasic pattern abnormal. Trap two: tricuspid regurgitation in the first trimester is an aneuploidy marker, while a little early-systolic TR later may be normal.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Myocardial Performance Index",
+              "link": "The MPI is calculated from the same inflow and outflow Doppler traces."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "M-Mode and Doppler Rhythm Assessment",
+              "link": "The A wave marks atrial contraction when timing rhythm by Doppler."
+            }
+          ],
+          "registryApplication": "Expect items on the normal fetal E/A ratio (less than 1), the meaning of monophasic inflow, and correct sample volume placement.",
+          "checkpoint": {
+            "pearl": "Fetal E/A is below 1; monophasic inflow suggests diastolic dysfunction",
+            "reflection": "Why would a fetus with a heart rate of 230 bpm show a monophasic AV inflow?"
+          },
+          "keyTerms": [
+            "E Wave",
+            "A Wave",
+            "E/A Ratio",
+            "Diastolic Dysfunction",
+            "Tricuspid Regurgitation",
+            "Twin-Twin Transfusion Syndrome"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 11"
+        },
+        {
+          "id": "fe-transitional-circulation",
+          "title": "Transitional Circulation",
+          "frontClue": "First breath drops lung resistance; ducts close and parallel becomes series",
+          "corePiece": "At birth, lung expansion and oxygen sharply lower pulmonary vascular resistance, so pulmonary blood flow and left atrial return increase. Removal of the low-resistance placenta raises systemic vascular resistance. Left atrial pressure now exceeds right atrial pressure, pressing the foramen ovale flap against the septum and closing it functionally. The ductus arteriosus constricts in response to the rise in oxygen and the fall in circulating prostaglandins, usually closing functionally within the first one to three days; it becomes the ligamentum arteriosum. The ductus venosus closes once umbilical venous flow stops and becomes the ligamentum venosum. The circulation changes from two ventricles pumping in parallel to two ventricles in series. Lesions that rely on the ductus are called ductal dependent: systemic flow (HLHS, critical coarctation, critical aortic stenosis), pulmonary flow (pulmonary atresia, critical pulmonary stenosis, tricuspid atresia with pulmonary obstruction) or mixing (transposition with intact septum). Prostaglandin E1 infusion keeps the ductus open.",
+          "whyLock": "This card explains why prenatal diagnosis saves lives: a ductal-dependent baby may look well at delivery and collapse within days as the duct closes. Fetal echo identifies which lesions need delivery at a cardiac center with prostaglandin ready. Reason by asking what the closing duct removes. Trap: transposition depends on mixing at the atrial level as much as at the duct, so a restrictive foramen ovale in d-TGA requires urgent balloon atrial septostomy after birth.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 7",
+              "title": "Fetal Shunts",
+              "link": "Each fetal shunt has a specific closure mechanism after birth."
+            },
+            {
+              "piece": "Piece 24",
+              "title": "Hypoplastic Left Heart Syndrome",
+              "link": "HLHS is the classic ductal-dependent systemic circulation."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "D-Transposition of the Great Arteries",
+              "link": "d-TGA depends on atrial and ductal mixing after birth."
+            }
+          ],
+          "registryApplication": "Questions ask what closes the foramen ovale, what keeps the ductus open, and which lesions are ductal dependent for systemic or pulmonary flow.",
+          "checkpoint": {
+            "pearl": "Duct closes, ductal-dependent baby crashes; prostaglandin E1 keeps it open",
+            "reflection": "Classify pulmonary atresia and HLHS by which circulation depends on the ductus."
+          },
+          "keyTerms": [
+            "Ductal Dependent",
+            "Prostaglandin E1",
+            "Pulmonary Vascular Resistance",
+            "Ligamentum Arteriosum",
+            "Ligamentum Venosum",
+            "Series Circulation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 12"
+        }
+      ]
+    },
+    {
+      "id": "fe-septal-atrioventricular-defects",
+      "title": "Septal & Atrioventricular Defects",
+      "pieceRange": "Pieces 13-17",
+      "examType": "ARDMS RDCS Fetal Echocardiography (FE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Ventricular, atrial and atrioventricular septal defects and their link to trisomy 21",
+      "topics": [
+        {
+          "id": "fe-ventricular-septal-defects",
+          "title": "Ventricular Septal Defects",
+          "frontClue": "Hole in the septum with quiet bidirectional flow, because fetal pressures are equal",
+          "corePiece": "A ventricular septal defect is the most common congenital heart defect after bicuspid aortic valve. Types are named by location: perimembranous (the most common postnatally, just below the aortic valve near the tricuspid septal leaflet), muscular (trabecular, in the apical or mid septum, often small and multiple), inlet (posterior, at the level of the AV valves, typical of AV septal defect) and outlet (subarterial or malalignment, beneath the great arteries, typical of conotruncal lesions). Best seen with the septum perpendicular to the beam, using a subcostal or lateral four-chamber view and the five-chamber view, the defect appears as a gap with blunt, slightly echogenic edges. Because right and left ventricular pressures are nearly equal in the fetus, color Doppler shows low-velocity, often bidirectional flow, so lowering the color scale helps. Small muscular defects frequently close spontaneously before or after birth, while malalignment defects signal possible tetralogy, DORV or truncus.",
+          "whyLock": "The biggest trap is septal dropout: when the beam is parallel to the thin membranous septum, a false gap appears near the crux. Confirm a defect in two planes with the beam perpendicular and with color flow across it. Reason about flow: no pressure gradient in utero means no high-velocity jet, so a loud jet is not expected. An isolated small muscular VSD has a good prognosis, but an outlet or malalignment VSD should trigger a careful search for override and outflow obstruction.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 15",
+              "title": "Atrioventricular Septal Defect",
+              "link": "Inlet VSDs are part of the AVSD complex."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "Tetralogy of Fallot",
+              "link": "A malalignment outlet VSD with override is the core of tetralogy."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Color and Spectral Doppler Settings",
+              "link": "A low color velocity scale is needed to see low-velocity shunt flow."
+            }
+          ],
+          "registryApplication": "Expect questions on VSD types and locations, the cause of false septal dropout, and why fetal VSD flow is low velocity and bidirectional.",
+          "checkpoint": {
+            "pearl": "Perpendicular beam, two planes, low color scale: then call the VSD",
+            "reflection": "Why does a fetal VSD rarely produce a high-velocity color jet?"
+          },
+          "keyTerms": [
+            "Perimembranous VSD",
+            "Muscular VSD",
+            "Inlet VSD",
+            "Outlet VSD",
+            "Malalignment",
+            "Septal Dropout"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 13"
+        },
+        {
+          "id": "fe-atrial-septal-defects",
+          "title": "Atrial Septal Defects",
+          "frontClue": "The foramen ovale should be open; look for a missing primum or abnormal flap instead",
+          "corePiece": "Because the foramen ovale is a normal opening, a secundum atrial septal defect generally cannot be diagnosed reliably before birth. Suspicion arises only when the foramen appears unusually large relative to the septum or the flap is absent. The ostium primum defect, a gap in the lower atrial septum just above the AV valves, is diagnosable and represents the partial form of atrioventricular septal defect, usually with a cleft mitral valve and two separate AV valve orifices on a common annulus. Sinus venosus defects lie near the SVC or IVC entry and are often associated with anomalous right pulmonary venous return; they are rarely seen prenatally. Abnormalities of the flap itself are important: a redundant or aneurysmal flap bulging into the left atrium is associated with premature atrial contractions, and a restrictive or prematurely closed foramen ovale can cause right heart dilation and, in left heart obstruction, severe left atrial hypertension.",
+          "whyLock": "Think of the atrial septum in the fetus as a valve, not a wall: it must let blood pass right to left. A question that asks you to diagnose a secundum ASD prenatally is usually testing whether you know it is not reliably possible. Trap: mistaking the normal foramen ovale for a defect. Trap two: missing a primum defect because the AV valves look separate; check whether the lowest portion of the atrial septum is present and whether the normal offset is preserved.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 15",
+              "title": "Atrioventricular Septal Defect",
+              "link": "The primum ASD is the partial form of AVSD."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Premature Atrial Contractions",
+              "link": "A redundant foramen ovale flap is associated with atrial ectopy."
+            }
+          ],
+          "registryApplication": "Questions ask which ASD type is detectable prenatally, what a primum defect implies, and what a restrictive foramen ovale does to the heart.",
+          "checkpoint": {
+            "pearl": "Secundum ASD is a postnatal diagnosis; primum ASD equals partial AVSD",
+            "reflection": "In HLHS, why does a restrictive foramen ovale worsen the outlook?"
+          },
+          "keyTerms": [
+            "Secundum ASD",
+            "Primum ASD",
+            "Sinus Venosus Defect",
+            "Foramen Ovale Flap",
+            "Restrictive Foramen Ovale",
+            "Cleft Mitral Valve"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 14"
+        },
+        {
+          "id": "fe-atrioventricular-septal-defect",
+          "title": "Atrioventricular Septal Defect",
+          "frontClue": "One common valve at the crux; no offset; think trisomy 21",
+          "corePiece": "Atrioventricular septal defect (AV canal, endocardial cushion defect) results from failed development of the endocardial cushions. In the complete form there is a primum atrial defect, an inlet ventricular defect and a single common AV valve, so the crux of the heart is missing. In the four-chamber view the normal offset is lost: both AV valve components insert at the same level, creating a linear insertion. In systole the common valve appears as a straight line across the heart, and in diastole the valve opens to show a large central defect. Color Doppler often shows a single inflow stream and AV valve regurgitation. In the partial form, a primum ASD and cleft mitral valve exist with two orifices. AVSD is balanced when both ventricles are adequately sized or unbalanced when one is hypoplastic. About 40 to 50 percent of fetuses with AVSD have trisomy 21, and AVSD is also common in heterotaxy, particularly right atrial isomerism.",
+          "whyLock": "AVSD is the classic heart defect of Down syndrome, so a fetal AVSD should prompt genetic counseling and offer of diagnostic testing. Unbalanced AVSD with heterotaxy has a much worse prognosis and different genetics. Trap: the inlet VSD may be small and the defect can be missed if you look only in systole; watch the crux through the cardiac cycle. Significant AV valve regurgitation, hydrops or associated heart block worsens outcome.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 16",
+              "title": "Trisomy 21 and the Fetal Heart",
+              "link": "Roughly half of fetal AVSDs are associated with trisomy 21."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Heterotaxy Syndromes",
+              "link": "Unbalanced AVSD is a common lesion in right atrial isomerism."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Four-Chamber View",
+              "link": "Loss of the normal AV valve offset is seen in the four-chamber view."
+            }
+          ],
+          "registryApplication": "Expect items that describe a linear AV valve insertion with a central defect and ask for the diagnosis or the most likely associated chromosomal abnormality.",
+          "checkpoint": {
+            "pearl": "No offset, no crux, common valve: AVSD, think trisomy 21",
+            "reflection": "Which AVSD type has two separate valve orifices, and which defects does it include?"
+          },
+          "keyTerms": [
+            "Endocardial Cushion Defect",
+            "Common Atrioventricular Valve",
+            "Linear Insertion",
+            "Primum ASD",
+            "Inlet VSD",
+            "Unbalanced AVSD"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 15"
+        },
+        {
+          "id": "fe-trisomy-21-and-the-fetal-heart",
+          "title": "Trisomy 21 and the Fetal Heart",
+          "frontClue": "About half of trisomy 21 fetuses have heart disease, led by AVSD and VSD",
+          "corePiece": "Congenital heart disease occurs in roughly 40 to 50 percent of individuals with trisomy 21. Atrioventricular septal defect is the most characteristic lesion and accounts for a large share, followed by ventricular septal defect, tetralogy of Fallot and patent ductus arteriosus. Transposition and left-sided obstructive lesions are uncommon in Down syndrome. In the first trimester, cardiac-related markers include increased nuchal translucency, tricuspid regurgitation and a reversed a-wave in the ductus venosus. In the second trimester, soft markers include an echogenic intracardiac focus and an aberrant right subclavian artery (ARSA), which arises from the descending aorta as the last arch branch and passes behind the trachea to the right, seen on color Doppler in the three-vessel trachea view. These soft markers carry only a small increase in risk when isolated. A detected cardiac defect, by contrast, significantly raises the risk and changes counseling.",
+          "whyLock": "Know the hierarchy: a structural defect such as AVSD is a major marker, while an isolated EIF or ARSA is a weak soft marker whose significance depends on prior risk and cell-free DNA results. Reason by lesion family: cushion defects point to trisomy 21; conotruncal lesions point toward 22q11 deletion; left-sided obstruction points toward Turner syndrome. Trap: do not assume trisomy 21 for every VSD; isolated small muscular VSDs are common in chromosomally normal fetuses.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 15",
+              "title": "Atrioventricular Septal Defect",
+              "link": "AVSD is the hallmark trisomy 21 heart lesion."
+            },
+            {
+              "piece": "Piece 17",
+              "title": "Echogenic Intracardiac Focus",
+              "link": "EIF is a soft marker for trisomy 21 with modest isolated risk."
+            }
+          ],
+          "registryApplication": "Questions ask which heart defect is most characteristic of trisomy 21 and how to weigh soft markers such as EIF or ARSA.",
+          "checkpoint": {
+            "pearl": "Cushions mean Down syndrome; conotruncal means 22q11; left obstruction means Turner",
+            "reflection": "Which first-trimester Doppler findings increase the risk of trisomy 21?"
+          },
+          "keyTerms": [
+            "Trisomy 21",
+            "Atrioventricular Septal Defect",
+            "Aberrant Right Subclavian Artery",
+            "Nuchal Translucency",
+            "Soft Marker",
+            "Echogenic Intracardiac Focus"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 16"
+        },
+        {
+          "id": "fe-echogenic-intracardiac-focus",
+          "title": "Echogenic Intracardiac Focus",
+          "frontClue": "A bone-bright dot in the left ventricle that moves with the papillary muscle",
+          "corePiece": "An echogenic intracardiac focus (EIF) is a small, bright echo within a ventricle, most often the left, as bright as bone at the same gain, located at the level of the papillary muscle or chordae and moving with the AV valve apparatus. It represents microcalcification or fibrosis of the papillary muscle and is not a structural defect. EIF is seen in a few percent of normal second-trimester fetuses, and it is more common in people of Asian ancestry. It is classified as a soft marker for trisomy 21, but when isolated in a low-risk pregnancy with normal screening it has little clinical significance and does not change heart function. Multiple, right-sided or biventricular foci carry slightly more concern for aneuploidy, particularly trisomy 13. To call an EIF, reduce gain and confirm the focus remains as bright as adjacent rib or spine. Distinguish it from a rhabdomyoma, which is a larger, homogeneous, non-shadowing mass that grows.",
+          "whyLock": "EIF tests whether you can avoid overcalling. The right response is to place it in context of other markers and screening results rather than to alarm the parent or label the heart abnormal. Trap: brightness from high gain or harmonics can mimic EIF; reduce gain to confirm. Trap two: a growing echogenic mass in the septum or ventricle is not an EIF but suggests rhabdomyoma, which carries a very different association with tuberous sclerosis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 16",
+              "title": "Trisomy 21 and the Fetal Heart",
+              "link": "EIF is one of the soft markers for trisomy 21."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Cardiac Rhabdomyoma",
+              "link": "Rhabdomyoma is a growing echogenic mass that should not be mistaken for EIF."
+            }
+          ],
+          "registryApplication": "Expect items asking what an EIF represents, its usual location, and its significance when isolated in a low-risk pregnancy.",
+          "checkpoint": {
+            "pearl": "Isolated EIF in a low-risk pregnancy is a normal variant",
+            "reflection": "How would you distinguish an EIF from an early rhabdomyoma?"
+          },
+          "keyTerms": [
+            "Echogenic Intracardiac Focus",
+            "Papillary Muscle",
+            "Soft Marker",
+            "Trisomy 21",
+            "Trisomy 13",
+            "Cardiac Rhabdomyoma"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 17"
+        }
+      ]
+    },
+    {
+      "id": "fe-conotruncal-anomalies",
+      "title": "Conotruncal Anomalies",
+      "pieceRange": "Pieces 18-23",
+      "examType": "ARDMS RDCS Fetal Echocardiography (FE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Defects of the outflow tracts: tetralogy, transposition, truncus and double outlet right ventricle",
+      "topics": [
+        {
+          "id": "fe-tetralogy-of-fallot",
+          "title": "Tetralogy of Fallot",
+          "frontClue": "Big overriding aorta, small pulmonary artery, malalignment VSD; four chambers may look normal",
+          "corePiece": "Tetralogy of Fallot results from anterior and cephalad deviation of the outlet septum. The four classic components are a malalignment ventricular septal defect, an aorta that overrides the septum, right ventricular outflow tract obstruction (infundibular and valvar pulmonary stenosis) and right ventricular hypertrophy. Right ventricular hypertrophy usually develops after birth and is rarely seen in the fetus. The four-chamber view is often normal, though the axis may be shifted to the left. The five-chamber view shows a large aorta straddling a subaortic VSD, with loss of continuity between the septum and the anterior aortic wall. The pulmonary artery is smaller than the aorta, reversing the normal size relationship in the three-vessel view. Color Doppler shows both ventricles ejecting into the aorta, and the pulmonary flow may be accelerated. Reversed flow in the ductus indicates severe obstruction or pulmonary atresia with ductal-dependent pulmonary flow. A right aortic arch occurs in about a quarter of cases.",
+          "whyLock": "Tetralogy is a key reason the outflow views are part of screening. Assess the pulmonary artery size and ductal flow direction serially, because obstruction often progresses during pregnancy. Associations matter: 22q11 deletion (particularly with right arch, pulmonary atresia or absent thymus), trisomy 21 and maternal diabetes. Trap: override alone also occurs in truncus arteriosus and DORV; tetralogy has a separate, small pulmonary artery arising from the right ventricle and more than half of the aorta over the left ventricle.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 19",
+              "title": "Absent Pulmonary Valve Syndrome",
+              "link": "Absent pulmonary valve is a tetralogy variant with dilated, not small, pulmonary arteries."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Double Outlet Right Ventricle",
+              "link": "DORV with subaortic VSD can mimic tetralogy when the aorta sits mostly over the RV."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "22q11.2 Deletion and Turner Syndrome",
+              "link": "Tetralogy, especially with right arch, warrants testing for 22q11 deletion."
+            }
+          ],
+          "registryApplication": "Expect questions listing override plus a small PA and asking for the diagnosis, which component is rarely seen prenatally, or what reversed ductal flow implies.",
+          "checkpoint": {
+            "pearl": "Override plus small PA equals tetralogy; RVH appears after birth",
+            "reflection": "Which tetralogy component is usually absent in the fetus, and why?"
+          },
+          "keyTerms": [
+            "Malalignment VSD",
+            "Override",
+            "Pulmonary Stenosis",
+            "Right Ventricular Hypertrophy",
+            "Right Aortic Arch",
+            "Tetralogy of Fallot"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 18"
+        },
+        {
+          "id": "fe-absent-pulmonary-valve-syndrome",
+          "title": "Absent Pulmonary Valve Syndrome",
+          "frontClue": "Huge pulsating pulmonary arteries with to-and-fro flow; no valve, no ductus",
+          "corePiece": "Absent pulmonary valve syndrome is usually a variant of tetralogy of Fallot in which the pulmonary valve leaflets are rudimentary or absent. The valve ring is narrow, so flow is both obstructed and freely regurgitant, producing a to-and-fro color and spectral Doppler pattern across the annulus, with high forward velocity and holodiastolic regurgitation. The main and branch pulmonary arteries become massively dilated and pulsatile, seen as large fluid-filled structures in the upper mediastinum. The ductus arteriosus is typically absent. A malalignment VSD with an overriding aorta is present, as in tetralogy. The enlarged pulmonary arteries can compress the trachea and bronchi, causing bronchomalacia and serious respiratory compromise after birth. Volume overload of the right ventricle can lead to cardiomegaly and hydrops. Absent pulmonary valve syndrome has a strong association with 22q11 deletion.",
+          "whyLock": "The reasoning link is the missing ductus: in normal fetal life the ductus decompresses the pulmonary trunk, and without it the regurgitant volume dilates the pulmonary arteries. Trap: a cystic structure in the upper chest that fills with color is vascular, not a bronchogenic cyst. Trap two: the pulmonary artery is large, not small, so do not rule out tetralogy because the PA is dilated. Prognosis is driven largely by airway compression, not the heart repair alone.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 18",
+              "title": "Tetralogy of Fallot",
+              "link": "Absent pulmonary valve shares the malalignment VSD and override of tetralogy."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "22q11.2 Deletion and Turner Syndrome",
+              "link": "Absent pulmonary valve syndrome is strongly linked to 22q11 deletion."
+            }
+          ],
+          "registryApplication": "Questions describe dilated pulmonary arteries with to-and-fro flow and ask for the diagnosis or its major postnatal complication.",
+          "checkpoint": {
+            "pearl": "To-and-fro pulmonary flow plus aneurysmal PAs equals absent pulmonary valve",
+            "reflection": "Why does absence of the ductus contribute to the pulmonary artery dilation?"
+          },
+          "keyTerms": [
+            "Absent Pulmonary Valve",
+            "To-and-Fro Flow",
+            "Pulmonary Artery Dilation",
+            "Bronchomalacia",
+            "Ductus Arteriosus",
+            "Tetralogy of Fallot"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 19"
+        },
+        {
+          "id": "fe-d-transposition-of-the-great-arteries",
+          "title": "D-Transposition of the Great Arteries",
+          "frontClue": "Parallel outflows: aorta from the RV, branching PA from the LV",
+          "corePiece": "In d-transposition of the great arteries (d-TGA), the atria and ventricles connect normally (atrioventricular concordance) but the great arteries are switched (ventriculoarterial discordance). The aorta arises from the right ventricle, usually anterior and to the right, and the pulmonary artery arises from the left ventricle, posterior. Because the outflows do not cross, they run parallel in the long-axis view. The vessel arising from the left ventricle bifurcates early, proving it is the pulmonary artery. The four-chamber view is usually normal, which is why d-TGA is frequently missed on screening. In the three-vessel trachea view, typically only two vessels are seen, a large transverse aortic arch and the SVC, because the pulmonary artery lies lower. d-TGA may be simple, with intact septum, or complex with a VSD or pulmonary stenosis. There is a male predominance and a low rate of chromosomal abnormalities or extracardiac anomalies, although maternal diabetes is a risk factor.",
+          "whyLock": "After birth, the two circulations run in parallel, so survival depends on mixing at the foramen ovale and ductus. A restrictive or hypermobile foramen ovale flap or a small ductus in utero predicts severe neonatal hypoxemia needing urgent balloon atrial septostomy, so delivery should occur at a cardiac surgical center. Definitive repair is the arterial switch. Trap: a normal four-chamber view with normal axis does not exclude TGA. Trap two: unlike conotruncal lesions such as truncus, TGA has a weak link to 22q11 deletion.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 4",
+              "title": "Outflow Tracts",
+              "link": "Failure of the outflows to cross is the key sign of transposition."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "Transitional Circulation",
+              "link": "Postnatal survival in d-TGA depends on atrial and ductal mixing."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Congenitally Corrected Transposition",
+              "link": "ccTGA adds atrioventricular discordance to the ventriculoarterial discordance."
+            }
+          ],
+          "registryApplication": "Expect a scenario of parallel great arteries with a normal four-chamber view, and questions on the vessel identification, postnatal emergency or repair.",
+          "checkpoint": {
+            "pearl": "Normal four chambers, parallel outflows, PA from the LV: d-TGA",
+            "reflection": "What fetal finding predicts the need for urgent balloon atrial septostomy in d-TGA?"
+          },
+          "keyTerms": [
+            "Ventriculoarterial Discordance",
+            "Parallel Great Arteries",
+            "Balloon Atrial Septostomy",
+            "Arterial Switch",
+            "Restrictive Foramen Ovale",
+            "Male Predominance"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 20"
+        },
+        {
+          "id": "fe-congenitally-corrected-transposition",
+          "title": "Congenitally Corrected Transposition",
+          "frontClue": "Double discordance: wrong ventricle, wrong artery, so blood ends up in the right place",
+          "corePiece": "Congenitally corrected transposition (ccTGA, l-TGA) has both atrioventricular and ventriculoarterial discordance. The right atrium connects through a mitral valve to a morphologic left ventricle, which gives rise to the pulmonary artery; the left atrium connects through a tricuspid valve to a morphologic right ventricle, which gives rise to the aorta. Blood is therefore physiologically routed correctly, but the morphologic right ventricle serves as the systemic ventricle. In the four-chamber view the clue is that the moderator band and the more apically inserted AV valve are in the left-sided ventricle, posterior and left, while the smooth-walled ventricle with the higher AV valve insertion is on the right. The great arteries run parallel, with the aorta usually anterior and to the left. Common associations are VSD, pulmonary stenosis, Ebstein-like abnormality of the left-sided tricuspid valve and congenital heart block, which may be present prenatally or develop progressively.",
+          "whyLock": "ccTGA is the classic exercise in morphologic chamber identification: you must name each ventricle by its features rather than its position. If a fetus has heart block without maternal antibodies, structural causes such as ccTGA and left atrial isomerism should be sought. Long term, the systemic right ventricle and tricuspid valve may fail. Trap: calling this a normal heart because blood flows in the right sequence; the inverted ventricles and parallel arteries are the tell.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 20",
+              "title": "D-Transposition of the Great Arteries",
+              "link": "d-TGA has only ventriculoarterial discordance, whereas ccTGA has both."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Complete Heart Block",
+              "link": "ccTGA is a structural cause of fetal complete heart block."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Ebstein Anomaly",
+              "link": "The left-sided tricuspid valve in ccTGA can be Ebstein-like."
+            }
+          ],
+          "registryApplication": "Expect questions on the double discordance, how to identify the morphologic right ventricle on the left, and the association with heart block.",
+          "checkpoint": {
+            "pearl": "Moderator band on the left plus parallel arteries equals ccTGA",
+            "reflection": "In ccTGA, which ventricle supports the systemic circulation and why does that matter later?"
+          },
+          "keyTerms": [
+            "Atrioventricular Discordance",
+            "Ventriculoarterial Discordance",
+            "Morphologic Right Ventricle",
+            "Moderator Band",
+            "Systemic Right Ventricle",
+            "Complete Heart Block"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 21"
+        },
+        {
+          "id": "fe-truncus-arteriosus",
+          "title": "Truncus Arteriosus",
+          "frontClue": "One great artery, one valve, giving off coronaries, pulmonaries and the aorta",
+          "corePiece": "Truncus arteriosus is a single arterial trunk arising from the heart above a large outlet VSD, with a single semilunar (truncal) valve. The trunk gives rise to the coronary arteries, the pulmonary arteries and the systemic circulation. Classification describes how the pulmonary arteries arise: in the most common form a short main pulmonary segment arises from the trunk and then divides; in other forms the right and left pulmonary arteries arise separately from the posterior or lateral trunk. The four-chamber view is often normal, while the outflow view shows a single large vessel overriding the septum. No separate pulmonary valve or right ventricular outflow is found. The truncal valve may have two to five cusps and is often thickened, stenotic or regurgitant, best assessed with color and spectral Doppler. A right aortic arch or interrupted aortic arch may coexist. Truncus has a strong association with 22q11 deletion, in roughly a third of cases.",
+          "whyLock": "The key differential is pulmonary atresia with VSD (tetralogy with pulmonary atresia), which also shows a single large overriding vessel; there the pulmonary arteries are supplied by the ductus or collateral arteries, not from the root of the trunk. Following the pulmonary branches back to their origin is the deciding step. Truncal valve regurgitation and arch interruption worsen prognosis. Trap: the large single trunk can mimic tetralogy override, but tetralogy has a separate pulmonary valve arising from the right ventricle.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 18",
+              "title": "Tetralogy of Fallot",
+              "link": "Both show override of a VSD, but tetralogy has a separate pulmonary artery."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "22q11.2 Deletion and Turner Syndrome",
+              "link": "Truncus is one of the lesions most associated with 22q11 deletion."
+            }
+          ],
+          "registryApplication": "Questions describe a single overriding vessel giving rise to the pulmonary arteries and ask for the diagnosis, the valve abnormality or the genetic association.",
+          "checkpoint": {
+            "pearl": "Single trunk gives pulmonaries from its root: truncus, think 22q11",
+            "reflection": "How would you distinguish truncus from pulmonary atresia with VSD?"
+          },
+          "keyTerms": [
+            "Truncal Valve",
+            "Single Arterial Trunk",
+            "Outlet VSD",
+            "Truncal Regurgitation",
+            "Interrupted Aortic Arch",
+            "22q11.2 Deletion"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 22"
+        },
+        {
+          "id": "fe-double-outlet-right-ventricle",
+          "title": "Double Outlet Right Ventricle",
+          "frontClue": "Both great arteries mostly from the RV; the VSD is the only LV exit",
+          "corePiece": "Double outlet right ventricle (DORV) is a ventriculoarterial connection in which both great arteries arise entirely or predominantly from the right ventricle; the commonly used fifty percent rule assigns an artery to the ventricle that supports more than half of it. The VSD is the only outlet for the left ventricle. The great arteries are often side by side and parallel rather than crossing. DORV is a spectrum defined by the VSD location: a subaortic VSD with pulmonary stenosis behaves like tetralogy of Fallot, a subpulmonary VSD (Taussig-Bing type) behaves like transposition, and a doubly committed or remote VSD complicates repair. Pulmonary stenosis, coarctation and AV valve anomalies frequently coexist. The four-chamber view may be normal. DORV is associated with chromosomal abnormalities such as trisomy 13 and 18, 22q11 deletion, heterotaxy and maternal diabetes, so extracardiac and genetic evaluation is important.",
+          "whyLock": "DORV is best reasoned as tetralogy or transposition physiology depending on where the VSD sits relative to the arteries. On the exam, the clue is two great arteries both arising from the anterior ventricle, often parallel, with the left ventricle emptying only through the VSD. Trap: in tetralogy the aorta sits more over the left ventricle, while in DORV the aorta sits mainly over the right ventricle. In practice the distinction can be difficult prenatally and may be refined after birth.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 18",
+              "title": "Tetralogy of Fallot",
+              "link": "DORV with subaortic VSD and pulmonary stenosis mimics tetralogy physiology."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "D-Transposition of the Great Arteries",
+              "link": "DORV with a subpulmonary VSD behaves like transposition."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Heterotaxy Syndromes",
+              "link": "DORV is common in heterotaxy, especially right atrial isomerism."
+            }
+          ],
+          "registryApplication": "Expect a description of both great arteries arising from the right ventricle and questions on the defining rule, subtypes or associations.",
+          "checkpoint": {
+            "pearl": "Both arteries from the RV, VSD is the LV exit; VSD position decides physiology",
+            "reflection": "What happens to the physiology of DORV when the VSD is subpulmonary?"
+          },
+          "keyTerms": [
+            "Double Outlet Right Ventricle",
+            "Fifty Percent Rule",
+            "Subaortic VSD",
+            "Taussig-Bing",
+            "Parallel Great Arteries",
+            "Trisomy 18"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 23"
+        }
+      ]
+    },
+    {
+      "id": "fe-obstructive-hypoplastic-lesions",
+      "title": "Obstructive & Hypoplastic Lesions",
+      "pieceRange": "Pieces 24-29",
+      "examType": "ARDMS RDCS Fetal Echocardiography (FE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Left and right heart obstruction, single-ventricle lesions and tricuspid valve disease",
+      "topics": [
+        {
+          "id": "fe-hypoplastic-left-heart-syndrome",
+          "title": "Hypoplastic Left Heart Syndrome",
+          "frontClue": "Tiny or absent LV, retrograde arch flow, left-to-right flow across the foramen",
+          "corePiece": "Hypoplastic left heart syndrome (HLHS) is underdevelopment of the left heart with mitral and aortic stenosis or atresia and a hypoplastic ascending aorta and arch. The four-chamber view is markedly abnormal: the left ventricle is small or slit-like and fails to reach the apex, or in some forms is globular with an echogenic endocardium from endocardial fibroelastosis. The right ventricle forms the apex and is dilated. Color Doppler shows little or no mitral inflow and flow across the foramen ovale reversed to left-to-right. The ascending aorta is tiny, and in the three-vessel trachea view the transverse arch is small with retrograde (reversed) flow filled from the ductus. The systemic circulation is ductal dependent. Assessment of the atrial septum is critical: a restrictive or intact septum causes pulmonary venous hypertension, seen as prominent reversed flow in pulmonary vein Doppler, and predicts severe neonatal hypoxemia needing urgent intervention.",
+          "whyLock": "HLHS is usually well tolerated in utero because the right ventricle supports both circulations through the ductus, but it is fatal without treatment after the duct closes. Planned delivery at a cardiac center, prostaglandin E1 and staged palliation (Norwood, then Glenn and Fontan) or transplant are the pathway. Turner syndrome is a recognized association. Trap: a small left ventricle late in pregnancy can also reflect coarctation or a restrictive foramen ovale, so check arch flow direction and AV valve flow before labeling HLHS.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 26",
+              "title": "Critical Aortic Stenosis",
+              "link": "Critical aortic stenosis in midgestation can evolve into HLHS."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "Transitional Circulation",
+              "link": "HLHS is the model ductal-dependent systemic lesion."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Three-Vessel Trachea View",
+              "link": "Retrograde arch flow is seen on the three-vessel trachea view."
+            }
+          ],
+          "registryApplication": "Expect items describing a slit-like LV and reversed arch flow, and questions on the direction of foramen ovale flow or the significance of an intact atrial septum.",
+          "checkpoint": {
+            "pearl": "Small LV, reversed arch flow, left-to-right FO flow equals HLHS",
+            "reflection": "Why does an intact atrial septum make HLHS more dangerous at birth?"
+          },
+          "keyTerms": [
+            "Hypoplastic Left Heart Syndrome",
+            "Mitral Atresia",
+            "Aortic Atresia",
+            "Endocardial Fibroelastosis",
+            "Retrograde Arch Flow",
+            "Restrictive Atrial Septum",
+            "Norwood Procedure"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 24"
+        },
+        {
+          "id": "fe-coarctation-of-the-aorta",
+          "title": "Coarctation of the Aorta",
+          "frontClue": "The most missed lesion: RV and PA larger than LV and aorta, narrow isthmus",
+          "corePiece": "Coarctation of the aorta is narrowing of the aortic arch, usually at the isthmus near the ductal insertion. It is among the most difficult major lesions to diagnose prenatally because the ductus carries much of the descending aortic flow in utero. The main clue is ventricular and great artery disproportion, with the right ventricle and pulmonary artery larger than the left ventricle and aorta, especially when seen before the third trimester. Supporting findings include a hypoplastic transverse arch or isthmus on the three-vessel trachea and sagittal arch views, a posterior shelf, an increased distance between the left carotid and left subclavian arteries, continuous high-velocity flow or color aliasing at the isthmus, and left-to-right flow at the foramen ovale. Measurements of the isthmus and transverse arch compared with gestational age (z-scores) improve accuracy. Associations include bicuspid aortic valve, VSD, persistent left SVC and Turner syndrome. Findings frequently produce false positives, so postnatal echo is required.",
+          "whyLock": "Coarctation tests probability reasoning: prenatal diagnosis is a risk statement, not a certainty, and many suspected cases prove normal after birth. Counseling should emphasize monitored delivery with echo before the ductus closes. Trap: ventricular disproportion alone has many causes, such as a persistent left SVC, a restrictive foramen ovale or normal late-gestation right dominance. Trap two: a dilated coronary sinus behind the left atrium may be a persistent left SVC, which can cause disproportion itself and is associated with coarctation.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 6",
+              "title": "Aortic and Ductal Arches",
+              "link": "Isthmal narrowing and a posterior shelf are seen on the sagittal arch view."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "22q11.2 Deletion and Turner Syndrome",
+              "link": "Coarctation and bicuspid aortic valve are the classic Turner lesions."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Four-Chamber View",
+              "link": "Ventricular disproportion in the four-chamber view is the earliest clue."
+            }
+          ],
+          "registryApplication": "Expect questions on the key sign of coarctation (ventricular disproportion), the classic genetic association (Turner syndrome) and why prenatal diagnosis is uncertain.",
+          "checkpoint": {
+            "pearl": "Right-dominant disproportion plus a narrow isthmus suggests coarctation",
+            "reflection": "Why does the open ductus make coarctation hard to diagnose before birth?"
+          },
+          "keyTerms": [
+            "Coarctation of the Aorta",
+            "Isthmus",
+            "Ventricular Disproportion",
+            "Posterior Shelf",
+            "Bicuspid Aortic Valve",
+            "Persistent Left Superior Vena Cava",
+            "Turner Syndrome"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 25"
+        },
+        {
+          "id": "fe-critical-aortic-stenosis",
+          "title": "Critical Aortic Stenosis",
+          "frontClue": "A dilated, echogenic, poorly squeezing LV with a narrow jet: watch it evolve",
+          "corePiece": "Aortic stenosis in the fetus is usually valvar, with thickened, doming leaflets and a narrow color jet across the aortic valve showing aliasing and turbulence beyond. Mild stenosis may show only increased peak velocity (above about 1 m/s in midgestation is suspicious) and post-stenotic ascending aortic dilation. In critical aortic stenosis the left ventricle is often dilated and globular with poor contraction, an echogenic endocardium from endocardial fibroelastosis, mitral regurgitation and a dilated left atrium. Because LV function is poor, the measured aortic velocity can be falsely low despite severe obstruction. Flow across the foramen ovale reverses to left-to-right, mitral inflow becomes monophasic and short, and flow in the transverse arch may be retrograde. Midgestation critical aortic stenosis can progress to hypoplastic left heart syndrome as the left ventricle stops growing. Selected fetuses may be candidates for fetal aortic balloon valvuloplasty to try to preserve a two-ventricle circulation.",
+          "whyLock": "The trap here is relying on velocity: a failing ventricle cannot generate a high gradient, so a low velocity does not exclude critical stenosis. Look instead at LV size, function, endocardial brightness and flow direction in the arch and foramen ovale. Serial scans matter because the lesion evolves. Reason by physiology: rising LV pressure dilates the left atrium and reverses atrial shunting, and when systemic output falls, the ductus fills the arch backwards.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 24",
+              "title": "Hypoplastic Left Heart Syndrome",
+              "link": "Critical aortic stenosis is a precursor that can evolve into HLHS."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Myocardial Performance Index",
+              "link": "Poor LV function in critical AS raises the MPI."
+            }
+          ],
+          "registryApplication": "Expect questions describing a dilated, echogenic LV with mitral regurgitation and reversed foramen flow, or asking why the aortic velocity may be low.",
+          "checkpoint": {
+            "pearl": "Failing LV makes velocity lie; judge critical AS by size, function and flow direction",
+            "reflection": "Why can severe aortic stenosis show a near-normal aortic velocity?"
+          },
+          "keyTerms": [
+            "Aortic Stenosis",
+            "Critical Aortic Stenosis",
+            "Endocardial Fibroelastosis",
+            "Mitral Regurgitation",
+            "Fetal Aortic Valvuloplasty",
+            "Post-Stenotic Dilation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 26"
+        },
+        {
+          "id": "fe-pulmonary-atresia-with-intact-septum",
+          "title": "Pulmonary Atresia with Intact Septum",
+          "frontClue": "No forward pulmonary flow; the ductus fills the PA backwards; check for sinusoids",
+          "corePiece": "Pulmonary atresia with intact ventricular septum (PA/IVS) is an imperforate pulmonary valve without a VSD. The right ventricle is usually small and hypertrophied, with a small tricuspid valve, although some forms have a dilated right ventricle with severe tricuspid regurgitation. No forward flow crosses the pulmonary valve, and color Doppler in the three-vessel or ductal view shows reversed flow in the ductus arteriosus filling the main pulmonary artery from the aorta, so pulmonary blood flow is ductal dependent. The high right ventricular pressure produces a high-velocity tricuspid regurgitation jet when regurgitation is present. Coronary artery fistulas or sinusoids connecting the hypertensive RV cavity to the coronary arteries may be seen with color Doppler, and RV-dependent coronary circulation affects surgical options. Pulmonary valve stenosis, the milder relative, shows a thickened doming valve, high-velocity jet and post-stenotic dilation of the main pulmonary artery, and can progress to atresia during pregnancy.",
+          "whyLock": "Tricuspid valve size (z-score) and RV size predict whether a two-ventricle repair is possible or a single-ventricle pathway is needed. Reasoning link: if the RV cannot eject, all systemic venous return must cross the foramen ovale right to left, and the lungs depend on reversed ductal flow. Trap: pulmonary atresia with a VSD is a different lesion in the tetralogy family. Trap two: the recipient twin in twin-twin transfusion can acquire right outflow obstruction.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 28",
+              "title": "Tricuspid Atresia",
+              "link": "Both lesions force all systemic venous return across the foramen ovale."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "Transitional Circulation",
+              "link": "Pulmonary flow in PA/IVS depends on the ductus after birth."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Ebstein Anomaly",
+              "link": "Severe tricuspid regurgitation can cause functional pulmonary atresia that mimics PA/IVS."
+            }
+          ],
+          "registryApplication": "Questions describe reversed ductal flow with a small hypertrophied RV and ask for the diagnosis or for the finding that limits surgical options.",
+          "checkpoint": {
+            "pearl": "Reversed ductal flow into the PA means pulmonary flow is ductal dependent",
+            "reflection": "How do coronary sinusoids change the management of PA/IVS?"
+          },
+          "keyTerms": [
+            "Pulmonary Atresia",
+            "Intact Ventricular Septum",
+            "Reversed Ductal Flow",
+            "Coronary Sinusoids",
+            "Pulmonary Stenosis",
+            "Tricuspid Valve Z-Score"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 27"
+        },
+        {
+          "id": "fe-tricuspid-atresia",
+          "title": "Tricuspid Atresia",
+          "frontClue": "No right AV connection: a bright plate where the tricuspid should open",
+          "corePiece": "Tricuspid atresia is absence of the right atrioventricular connection. In the four-chamber view an echogenic, immobile band or plate of tissue sits in place of the tricuspid valve, and color Doppler shows no inflow from the right atrium into the right ventricle. All systemic venous return crosses the foramen ovale right to left into the left atrium, so the foramen must be unrestrictive, and the left ventricle and mitral valve are large. The right ventricle is hypoplastic and filled only through a VSD. Classification depends on great artery relationships: most commonly the arteries are normally related, often with a restrictive VSD or pulmonary stenosis that limits pulmonary flow; less commonly the arteries are transposed, with a risk of systemic outflow obstruction and coarctation. Because the right ventricle is unusable as a pumping chamber, management follows a single-ventricle pathway ending in a Fontan circulation, with early ductal or shunt support if pulmonary flow is inadequate.",
+          "whyLock": "Tricuspid atresia contrasts with HLHS: here the right side is hypoplastic and the left side large. The flow logic is simple: blood that cannot enter the right ventricle must cross the atrial septum, so a restrictive foramen ovale would be catastrophic. Trap: severe tricuspid stenosis or PA/IVS with a tiny RV can look similar; confirm whether any color inflow crosses the right AV junction. Trap two: VSD size and pulmonary stenosis decide whether the neonate needs prostaglandin.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 27",
+              "title": "Pulmonary Atresia with Intact Septum",
+              "link": "Both are right-sided single-ventricle lesions with obligatory right-to-left atrial flow."
+            },
+            {
+              "piece": "Piece 24",
+              "title": "Hypoplastic Left Heart Syndrome",
+              "link": "HLHS is the left-sided mirror, with a small LV and dominant RV."
+            }
+          ],
+          "registryApplication": "Expect items describing an echogenic plate at the tricuspid position with a large LV and asking for the diagnosis or the eventual surgical pathway.",
+          "checkpoint": {
+            "pearl": "No tricuspid inflow, big LV, small RV fed by a VSD: tricuspid atresia",
+            "reflection": "Why must the foramen ovale be unrestrictive in tricuspid atresia?"
+          },
+          "keyTerms": [
+            "Tricuspid Atresia",
+            "Hypoplastic Right Ventricle",
+            "Single Ventricle",
+            "Fontan Circulation",
+            "Right-to-Left Atrial Shunt",
+            "VSD"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 28"
+        },
+        {
+          "id": "fe-ebstein-anomaly",
+          "title": "Ebstein Anomaly",
+          "frontClue": "Septal leaflet slips toward the apex; huge right atrium; heart fills the chest",
+          "corePiece": "Ebstein anomaly is apical displacement of the septal and posterior leaflets of the tricuspid valve from the AV junction, so part of the right ventricle becomes functionally atrial (atrialized right ventricle). The anterior leaflet is large and sail-like. In the four-chamber view the displacement between the mitral and tricuspid hinge points is markedly greater than the normal offset, and the right atrium, including the atrialized portion, is greatly enlarged. Color and spectral Doppler show severe tricuspid regurgitation, often with a jet originating deep in the ventricle. The heart is enlarged, with a raised cardiothoracic ratio, and a massive heart compresses the lungs, risking pulmonary hypoplasia. Severe regurgitation can prevent forward flow across the pulmonary valve (functional pulmonary atresia), and the ductus may fill the PA backwards; a circular shunt can develop. Tricuspid valve dysplasia, the main differential, has severe regurgitation without leaflet displacement. Postnatal Wolff-Parkinson-White syndrome and tachyarrhythmias are common.",
+          "whyLock": "Prognosis depends on heart size, tricuspid regurgitation severity, the presence of forward pulmonary flow and hydrops; severe fetal Ebstein has high mortality. Lithium exposure has a historical association, though the absolute risk is much smaller than once thought. Trap: functional pulmonary atresia can look like true PA/IVS; pulmonary regurgitation or improvement as RV pressure changes favors functional obstruction. Trap two: the abnormal displacement is measured in the four-chamber view, not the outflow view.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 27",
+              "title": "Pulmonary Atresia with Intact Septum",
+              "link": "Functional pulmonary atresia in Ebstein mimics anatomical PA/IVS."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Maternal Diabetes and Teratogens",
+              "link": "Lithium exposure has a historical association with Ebstein anomaly."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Congenitally Corrected Transposition",
+              "link": "The left-sided tricuspid valve in ccTGA may be Ebstein-like."
+            }
+          ],
+          "registryApplication": "Questions describe apical displacement of the tricuspid septal leaflet with a huge right atrium and ask for the diagnosis, teratogen or major complication.",
+          "checkpoint": {
+            "pearl": "Displaced septal leaflet plus giant RA equals Ebstein; dysplasia has no displacement",
+            "reflection": "What distinguishes Ebstein anomaly from tricuspid valve dysplasia on four-chamber imaging?"
+          },
+          "keyTerms": [
+            "Ebstein Anomaly",
+            "Atrialized Right Ventricle",
+            "Tricuspid Regurgitation",
+            "Functional Pulmonary Atresia",
+            "Cardiomegaly",
+            "Lithium",
+            "Wolff-Parkinson-White"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 29"
+        }
+      ]
+    },
+    {
+      "id": "fe-arrhythmias-heart-failure",
+      "title": "Arrhythmias & Heart Failure",
+      "pieceRange": "Pieces 30-36",
+      "examType": "ARDMS RDCS Fetal Echocardiography (FE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Rhythm assessment, tachy- and bradyarrhythmias, hydrops and indices of fetal cardiac function",
+      "topics": [
+        {
+          "id": "fe-m-mode-and-doppler-rhythm-assessment",
+          "title": "M-Mode and Doppler Rhythm Assessment",
+          "frontClue": "No ECG in utero: time the atrium and ventricle against each other",
+          "corePiece": "Fetal rhythm is diagnosed mechanically, by recording atrial and ventricular events together. With M-mode, the cursor is placed through an atrial wall and a ventricular wall (or the AV valve and a semilunar valve) at the same time, showing the sequence of atrial contraction (A) and ventricular contraction (V). With pulsed Doppler, a sample volume placed where mitral inflow and left ventricular outflow are adjacent shows the A wave of inflow followed by systolic outflow; alternative pairs include the SVC with ascending aorta, or a pulmonary vein with its neighboring pulmonary artery. The interval from the onset of the A wave to the onset of ventricular ejection is the mechanical PR (AV) interval, normally around 120 ms, with values above about 150 ms often taken as prolonged first-degree block. The normal fetal heart rate is about 110 to 160 bpm with a 1:1 AV relationship. Tissue Doppler and fetal magnetocardiography add timing detail in specialized centers.",
+          "whyLock": "The core reasoning question for any arrhythmia is: what is the atrial rate, what is the ventricular rate, and how are they related? That one framework sorts PACs, SVT, flutter and heart block. Trap: an irregular rhythm without pause is not always ectopy; check for blocked beats. Trap two: in heart block, the atrial rate stays normal while the ventricular rate falls, so recording the ventricle alone hides the diagnosis. Use a fast sweep speed so intervals can be measured.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 34",
+              "title": "Complete Heart Block",
+              "link": "Mechanical PR monitoring with Doppler is used to screen anti-Ro exposed fetuses."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Supraventricular Tachycardia",
+              "link": "The VA interval on simultaneous recordings separates SVT mechanisms."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Atrioventricular Valve Inflow Doppler",
+              "link": "The inflow A wave is the atrial marker in Doppler rhythm analysis."
+            }
+          ],
+          "registryApplication": "Expect questions on where to place the M-mode cursor or Doppler gate to record AV relationships, and on the normal mechanical PR interval.",
+          "checkpoint": {
+            "pearl": "Atrial rate, ventricular rate, and their relationship sort every arrhythmia",
+            "reflection": "Which two Doppler signals would you record together to measure the mechanical PR interval?"
+          },
+          "keyTerms": [
+            "M-Mode",
+            "Mechanical PR Interval",
+            "Atrioventricular Interval",
+            "Atrial Contraction",
+            "Sweep Speed",
+            "Fetal Heart Rate"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 30"
+        },
+        {
+          "id": "fe-premature-atrial-contractions",
+          "title": "Premature Atrial Contractions",
+          "frontClue": "The most common fetal irregularity: early atrial beats, usually benign",
+          "corePiece": "Premature atrial contractions (PACs, atrial ectopy) are the most common cause of an irregular fetal rhythm. On M-mode or Doppler an early atrial contraction is seen, followed by a ventricular contraction if conducted, then a pause before the next sinus beat. PACs may be conducted or blocked (nonconducted), when the early atrial beat arrives while the AV node is refractory; frequent blocked PACs in a bigeminal pattern produce an apparent bradycardia, often around 70 to 90 bpm, which must be differentiated from heart block by showing early, premature atrial beats rather than regular atrial activity. PACs often occur with a redundant or aneurysmal foramen ovale flap. Most resolve spontaneously before or soon after birth. A small proportion, commonly quoted as about 1 to 2 percent, develop sustained supraventricular tachycardia, so periodic heart rate checks, for example weekly or every one to two weeks, are commonly recommended.",
+          "whyLock": "The skill tested is recognizing that blocked bigeminy is benign and must not be confused with complete heart block, which has a regular atrial rhythm and dissociated ventricular beats. Reasoning: in blocked PACs the atrial events are premature; in heart block they are regular. Trap: premature ventricular contractions are much less common and show an early ventricular beat without a preceding early atrial beat. Trap two: PACs without structural disease rarely need fetal echo follow-up beyond rate monitoring.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 30",
+              "title": "M-Mode and Doppler Rhythm Assessment",
+              "link": "Simultaneous A and V timing identifies premature atrial beats."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Supraventricular Tachycardia",
+              "link": "A small fraction of fetuses with PACs develop SVT."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Atrial Septal Defects",
+              "link": "A redundant foramen ovale flap is associated with PACs."
+            }
+          ],
+          "registryApplication": "Expect a scenario of an irregular rhythm with early atrial beats and questions on the diagnosis, the benign course, and the small risk of SVT.",
+          "checkpoint": {
+            "pearl": "PACs: common, benign, small SVT risk; blocked bigeminy mimics block",
+            "reflection": "How would you distinguish blocked atrial bigeminy from complete heart block?"
+          },
+          "keyTerms": [
+            "Premature Atrial Contractions",
+            "Blocked PACs",
+            "Bigeminy",
+            "Foramen Ovale Flap",
+            "Atrial Ectopy",
+            "Supraventricular Tachycardia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 31"
+        },
+        {
+          "id": "fe-supraventricular-tachycardia",
+          "title": "Supraventricular Tachycardia",
+          "frontClue": "Fixed rate above about 220 with 1:1 conduction; the risk is hydrops",
+          "corePiece": "Supraventricular tachycardia (SVT) is the most common fetal tachyarrhythmia. The heart rate is typically about 220 to 300 bpm, often fixed with little variability, and atrial and ventricular contractions occur at a 1:1 ratio. The most common mechanism is AV reentry through an accessory pathway, which has a short VA interval (ventricle to next atrial contraction short compared with the AV interval). Long VA tachycardias, such as permanent junctional reciprocating tachycardia and atrial ectopic tachycardia, are less common and often more resistant to treatment. SVT may be intermittent or sustained. Sustained tachycardia shortens diastolic filling, raises venous pressure and can lead to cardiac failure and hydrops within days. Sinus tachycardia, by contrast, is usually below about 200 bpm, varies, and points to maternal fever, infection, anemia or medications. Treatment is transplacental antiarrhythmic therapy given to the mother, such as digoxin, flecainide or sotalol, with maternal ECG monitoring; delivery may be considered near term.",
+          "whyLock": "SVT is one of the few fetal conditions treated through the mother, and response is judged by fetal heart rate and resolution of hydrops. Reason from the rate and AV ratio: 1:1 at about 240 is SVT; atrial rate of about 450 with 2:1 conduction is flutter. Trap: hydrops reduces placental transfer of digoxin, so a hydropic fetus may need a different agent. Trap two: a heart rate of 180 with variability is not SVT.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 33",
+              "title": "Atrial Flutter",
+              "link": "Flutter has a much faster atrial rate with 2:1 AV conduction, unlike 1:1 SVT."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Fetal Hydrops and CVP Score",
+              "link": "Sustained SVT is a treatable cause of fetal hydrops."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "M-Mode and Doppler Rhythm Assessment",
+              "link": "Simultaneous timing measures the VA interval that separates SVT mechanisms."
+            }
+          ],
+          "registryApplication": "Expect questions with a fetal heart rate and AV ratio, asking for the diagnosis, mechanism, complication or treatment route.",
+          "checkpoint": {
+            "pearl": "1:1 at about 240 bpm equals SVT; 2:1 with atria near 450 equals flutter",
+            "reflection": "Why might digoxin be less effective once the fetus is hydropic?"
+          },
+          "keyTerms": [
+            "Supraventricular Tachycardia",
+            "AV Reentry",
+            "Short VA Interval",
+            "Transplacental Therapy",
+            "Digoxin",
+            "Flecainide"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 32"
+        },
+        {
+          "id": "fe-atrial-flutter",
+          "title": "Atrial Flutter",
+          "frontClue": "Atria flutter near 400 to 500 while the ventricles follow at half the rate",
+          "corePiece": "Atrial flutter is a macro-reentrant circuit within the atria. The atrial rate is very fast, commonly about 300 to 500 bpm, and the AV node blocks some impulses, so the ventricular rate is lower, most often with 2:1 conduction giving a ventricular rate of about 220 to 250 bpm. Variable block (3:1, 4:1) can produce irregular ventricular rhythm. Diagnosis requires simultaneous assessment of atrial and ventricular activity, for example M-mode through the atrial wall and ventricle, which shows atrial contractions outnumbering ventricular contractions. Fetal atrial flutter usually presents in the third trimester and is rarely associated with structural heart disease, though it can occur with Ebstein anomaly or atrial enlargement. As with SVT, sustained flutter can cause heart failure and hydrops. Treatment is transplacental, with digoxin or sotalol commonly used. After birth, flutter often responds to electrical cardioversion and frequently does not recur.",
+          "whyLock": "The trap is reading only the ventricular rate: a ventricular rate of 230 with flutter can be mistaken for SVT unless the atria are recorded. Count the atrial events in a single cycle on M-mode. Reason by AV ratio: more atrial beats than ventricular beats at a fast atrial rate equals flutter with block, while more atrial beats than ventricular beats at a normal atrial rate equals heart block. Gestational timing is a clue, because flutter clusters late in pregnancy.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 32",
+              "title": "Supraventricular Tachycardia",
+              "link": "SVT has 1:1 conduction while flutter usually has 2:1 conduction."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "M-Mode and Doppler Rhythm Assessment",
+              "link": "M-mode through the atrium reveals the flutter rate."
+            }
+          ],
+          "registryApplication": "Questions provide atrial and ventricular rates and ask for the diagnosis, or ask which gestational period flutter typically appears in.",
+          "checkpoint": {
+            "pearl": "Atrial rate near 450, ventricles near 225: flutter with 2:1 block",
+            "reflection": "If the ventricular rate is 220 bpm, what single finding separates flutter from SVT?"
+          },
+          "keyTerms": [
+            "Atrial Flutter",
+            "2:1 Conduction",
+            "Atrial Rate",
+            "Ventricular Rate",
+            "Sotalol",
+            "Third Trimester"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 33"
+        },
+        {
+          "id": "fe-complete-heart-block",
+          "title": "Complete Heart Block",
+          "frontClue": "Atria at about 140, ventricles at about 60, marching independently",
+          "corePiece": "In complete (third-degree) atrioventricular block, no atrial impulses reach the ventricles. M-mode or Doppler shows a regular atrial rate in the normal range and a slower, regular, independent ventricular escape rate, typically about 40 to 80 bpm, with no fixed relationship. First-degree block is a prolonged mechanical PR interval, and second-degree block shows some atrial beats not followed by ventricular beats. About half of fetal complete heart block occurs with structural heart disease, chiefly left atrial isomerism and congenitally corrected transposition, and these structural cases carry a worse prognosis. Most isolated cases are caused by maternal autoantibodies, anti-Ro/SSA and anti-La/SSB, which cross the placenta and damage the conduction system, usually between about 16 and 26 weeks. The risk is about 1 to 2 percent in a first antibody-positive pregnancy and higher, roughly 15 to 20 percent, after a previously affected child. Antibodies can also cause myocarditis and endocardial fibroelastosis.",
+          "whyLock": "Surveillance for antibody-exposed pregnancies is weekly or biweekly mechanical PR measurement in the window of risk, because first- and second-degree block may be partially reversible while complete block is generally permanent. Poor prognostic signs are ventricular rates below about 55 bpm, hydrops, ventricular dysfunction and endocardial fibroelastosis. Hydroxychloroquine is used to reduce recurrence risk. Trap: blocked atrial bigeminy also causes a slow ventricular rate but has premature, not regular, atrial beats. Trap two: heart block with complex structural disease suggests heterotaxy, not lupus.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 30",
+              "title": "M-Mode and Doppler Rhythm Assessment",
+              "link": "Rhythm assessment shows AV dissociation and measures the mechanical PR interval."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Heterotaxy Syndromes",
+              "link": "Left atrial isomerism is a structural cause of heart block."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Congenitally Corrected Transposition",
+              "link": "ccTGA can cause congenital or progressive heart block."
+            }
+          ],
+          "registryApplication": "Expect a scenario of a mother with lupus or Sjogren antibodies and a fetal ventricular rate near 60, asking for the diagnosis, antibody or poor prognostic sign.",
+          "checkpoint": {
+            "pearl": "Anti-Ro plus fetal bradycardia with AV dissociation equals complete heart block",
+            "reflection": "Why is the 16 to 26 week window important in antibody-positive pregnancies?"
+          },
+          "keyTerms": [
+            "Complete Heart Block",
+            "Anti-Ro/SSA",
+            "Anti-La/SSB",
+            "AV Dissociation",
+            "Ventricular Escape Rate",
+            "Hydroxychloroquine",
+            "Endocardial Fibroelastosis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 34"
+        },
+        {
+          "id": "fe-fetal-hydrops-and-cvp-score",
+          "title": "Fetal Hydrops and CVP Score",
+          "frontClue": "Fluid in two or more compartments; score the heart, veins and arteries out of 10",
+          "corePiece": "Fetal hydrops is abnormal fluid in at least two fetal compartments: ascites, pleural effusion, pericardial effusion or skin edema (commonly defined as skin thickness above 5 mm), often with polyhydramnios and placental thickening. Most hydrops today is nonimmune. Cardiovascular causes are among the most common, including structural defects with severe valve regurgitation, tachyarrhythmias, complete heart block, cardiomyopathy, cardiac tumors and high-output states such as anemia, arteriovenous malformations, sacrococcygeal teratoma and twin-twin transfusion. The cardiovascular profile (CVP) score, a 10-point score, assigns up to 2 points each to five categories: hydrops, venous Doppler (umbilical vein and ductus venosus), heart size (cardiothoracic area ratio), cardiac function (AV valve regurgitation, ventricular shortening, inflow pattern) and arterial Doppler (umbilical artery). A score of 10 is normal, and lower scores correlate with worse outcome. Signs of failure include cardiomegaly, holosystolic AV regurgitation, monophasic inflow, reversed DV a-wave and umbilical venous pulsations.",
+          "whyLock": "Hydrops is the final common pathway of a failing fetal circulation, so the fetal echo goal is to find a treatable cause, especially tachyarrhythmia or anemia. Reasoning: high venous pressure appears first in the veins (DV a-wave, umbilical vein pulsations), then as effusions. Trap: an isolated pericardial effusion under about 2 mm can be normal and is not hydrops. Trap two: cardiomegaly with normal function may indicate high output, so check MCA peak systolic velocity for anemia.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Middle Cerebral Artery Doppler",
+              "link": "MCA PSV screens for anemia, a treatable high-output cause of hydrops."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Supraventricular Tachycardia",
+              "link": "Sustained SVT is a correctable cause of hydrops."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Ductus Venosus Doppler",
+              "link": "Reversed DV a-wave contributes to the venous Doppler category of the CVP score."
+            }
+          ],
+          "registryApplication": "Expect items on the definition of hydrops, components of the CVP score and which cardiac causes are treatable in utero.",
+          "checkpoint": {
+            "pearl": "Hydrops equals two compartments; CVP score of 10 is normal",
+            "reflection": "Which five categories make up the CVP score?"
+          },
+          "keyTerms": [
+            "Fetal Hydrops",
+            "Nonimmune Hydrops",
+            "Cardiovascular Profile Score",
+            "Skin Edema",
+            "Cardiomegaly",
+            "Umbilical Vein Pulsations"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 35"
+        },
+        {
+          "id": "fe-myocardial-performance-index",
+          "title": "Myocardial Performance Index",
+          "frontClue": "Tei index: isovolumic times divided by ejection time; higher means worse",
+          "corePiece": "The myocardial performance index (MPI, Tei index) combines systolic and diastolic function in one Doppler measure. For the left ventricle, a sample volume placed to capture both mitral inflow and aortic outflow gives the isovolumetric contraction time (ICT), ejection time (ET) and isovolumetric relaxation time (IRT). MPI equals ICT plus IRT divided by ET. A modified method uses the valve clicks as landmarks to improve reproducibility. Normal fetal left ventricular MPI values are roughly 0.35 to 0.45, with slight change across gestation, and the index is relatively independent of heart rate and geometry. Rising MPI indicates dysfunction and is seen in the recipient twin of twin-twin transfusion syndrome, maternal diabetes, growth restriction and cardiomyopathy. Fetal cardiomyopathy may be dilated (large, poorly contracting ventricles with AV regurgitation, from infection, anemia, antibodies or genetic causes) or hypertrophic (thick walls, often from maternal diabetes). Shortening fraction from M-mode, normally about 28 percent or more, is another systolic index.",
+          "whyLock": "MPI is valuable because the fetal heart is hard to measure by volume methods: there are no reliable fetal geometric assumptions and image quality varies. Reasoning: a sick ventricle takes longer to build and release pressure and ejects for a shorter time, so the ratio rises. Trap: MPI is a ratio of time intervals, so velocities and angle are less critical, but correct gate placement capturing both valve clicks is essential. Trap two: hypertrophic cardiomyopathy of maternal diabetes usually regresses after birth.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 11",
+              "title": "Atrioventricular Valve Inflow Doppler",
+              "link": "MPI is calculated from inflow and outflow Doppler signals."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Maternal Diabetes and Teratogens",
+              "link": "Maternal diabetes causes hypertrophic cardiomyopathy and elevated MPI."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "Critical Aortic Stenosis",
+              "link": "Poor LV function in critical AS elevates the MPI."
+            }
+          ],
+          "registryApplication": "Questions ask for the MPI formula, whether an increased value is better or worse, and which conditions raise it.",
+          "checkpoint": {
+            "pearl": "MPI equals ICT plus IRT over ET; a rising MPI means worsening function",
+            "reflection": "Why does the MPI rise when ventricular function deteriorates?"
+          },
+          "keyTerms": [
+            "Myocardial Performance Index",
+            "Isovolumetric Contraction Time",
+            "Isovolumetric Relaxation Time",
+            "Ejection Time",
+            "Cardiomyopathy",
+            "Shortening Fraction"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 36"
+        }
+      ]
+    },
+    {
+      "id": "fe-associations-maternal-factors",
+      "title": "Associations & Maternal Factors",
+      "pieceRange": "Pieces 37-41",
+      "examType": "ARDMS RDCS Fetal Echocardiography (FE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Who needs a fetal echo, and the maternal, genetic and syndromic conditions linked to heart disease",
+      "topics": [
+        {
+          "id": "fe-indications-for-fetal-echocardiography",
+          "title": "Indications for Fetal Echocardiography",
+          "frontClue": "Refer when the mother, the family or the fetus raises the risk",
+          "corePiece": "Fetal echocardiography is a detailed cardiac examination performed when the risk of congenital heart disease is higher than the general population baseline of roughly 1 percent of live births. Maternal indications include pregestational diabetes (type 1 or 2), phenylketonuria with poor control, autoimmune antibodies (anti-Ro/SSA, anti-La/SSB), exposure to teratogenic drugs, pregnancy by assisted reproductive technology, rubella in early pregnancy and maternal congenital heart disease. Family indications include congenital heart disease in a first-degree relative of the fetus, such as a parent or sibling, or a known genetic syndrome. Fetal indications are the strongest predictors: a suspected heart abnormality on screening, abnormal heart rate or rhythm, an extracardiac anomaly (such as omphalocele, diaphragmatic hernia, esophageal atresia or renal anomalies), a known or suspected chromosomal abnormality, nuchal translucency of 3.5 mm or more, hydrops or effusions, and monochorionic twins.",
+          "whyLock": "A suspected abnormality on routine screening is the highest-yield indication, because most affected fetuses come from low-risk pregnancies with no identifiable risk factor. That is why the screening four-chamber, outflow and three-vessel views matter so much. Trap: gestational diabetes diagnosed after the first trimester does not carry the same structural risk as pregestational diabetes. Trap two: monochorionic twins are an indication even without other findings, because of higher structural risk and the cardiac effects of twin-twin transfusion.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 38",
+              "title": "Maternal Diabetes and Teratogens",
+              "link": "Pregestational diabetes and teratogen exposure are leading maternal indications."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Optimal Timing of Fetal Echo",
+              "link": "Most referrals are scheduled in the standard 18 to 22 week window."
+            }
+          ],
+          "registryApplication": "Expect questions asking which scenario is a fetal echo indication, or which indication carries the highest yield.",
+          "checkpoint": {
+            "pearl": "Suspected defect on screening is the strongest indication; NT of 3.5 mm or more qualifies",
+            "reflection": "Why do most babies with congenital heart disease come from low-risk pregnancies?"
+          },
+          "keyTerms": [
+            "Fetal Echocardiography",
+            "Pregestational Diabetes",
+            "Nuchal Translucency",
+            "Monochorionic Twins",
+            "Extracardiac Anomaly",
+            "First-Degree Relative"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 37"
+        },
+        {
+          "id": "fe-maternal-diabetes-and-teratogens",
+          "title": "Maternal Diabetes and Teratogens",
+          "frontClue": "Poor sugar control in early pregnancy, plus certain drugs, increases heart defects",
+          "corePiece": "Pregestational diabetes is one of the most important maternal risk factors. Hyperglycemia during cardiac development, roughly the first 8 weeks, raises the risk of congenital heart disease several-fold, with risk rising with elevated HbA1c around conception. Associated lesions include conotruncal anomalies (transposition, DORV, truncus, tetralogy), VSD, heterotaxy and caudal regression. Later in pregnancy, poorly controlled diabetes can cause fetal hypertrophic cardiomyopathy with a thickened septum and ventricular walls, which may obstruct the left ventricular outflow and usually regresses after birth. Teratogens linked to heart disease include retinoids such as isotretinoin (conotruncal and arch anomalies), anticonvulsants such as valproate and phenytoin, lithium (historically Ebstein anomaly, with a small absolute risk), alcohol (septal defects) and uncontrolled maternal phenylketonuria (tetralogy, coarctation, VSD). Third-trimester nonsteroidal anti-inflammatory drugs such as indomethacin can constrict the ductus arteriosus, causing tricuspid regurgitation and right ventricular dysfunction.",
+          "whyLock": "Separate early-pregnancy structural risk from late-pregnancy functional effects: diabetes causes both, at different times. NSAID ductal constriction is a classic functional question, because it is reversible when the drug is stopped. Trap: gestational diabetes beginning after organogenesis is not a strong structural risk factor, although it can still cause hypertrophy. Trap two: rubella classically causes patent ductus and branch pulmonary artery stenosis, not conotruncal lesions. Always ask when the exposure occurred relative to cardiac organogenesis before linking it to a structural defect.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Myocardial Performance Index",
+              "link": "Diabetic hypertrophic cardiomyopathy can raise the fetal MPI."
+            },
+            {
+              "piece": "Piece 6",
+              "title": "Aortic and Ductal Arches",
+              "link": "NSAID-induced ductal constriction is detected by ductal Doppler."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Ebstein Anomaly",
+              "link": "Lithium carries a historical link to Ebstein anomaly."
+            }
+          ],
+          "registryApplication": "Expect questions pairing an exposure with its typical lesion, or asking about septal hypertrophy in a diabetic pregnancy and ductal constriction from NSAIDs.",
+          "checkpoint": {
+            "pearl": "Early sugar makes defects; late sugar thickens the septum; NSAIDs narrow the duct",
+            "reflection": "Why does a third-trimester NSAID affect the right heart rather than the left?"
+          },
+          "keyTerms": [
+            "Pregestational Diabetes",
+            "Hypertrophic Cardiomyopathy",
+            "Isotretinoin",
+            "Lithium",
+            "Ductal Constriction",
+            "Phenylketonuria"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 38"
+        },
+        {
+          "id": "fe-22q11-2-deletion-and-turner-syndrome",
+          "title": "22q11.2 Deletion and Turner Syndrome",
+          "frontClue": "Conotruncal plus small thymus suggests 22q11; coarctation plus hygroma suggests Turner",
+          "corePiece": "22q11.2 deletion syndrome (DiGeorge or velocardiofacial syndrome) is the most common microdeletion associated with congenital heart disease. It predominantly causes conotruncal and arch anomalies: interrupted aortic arch type B (with the highest rate of deletion, around half), truncus arteriosus (roughly a third), tetralogy of Fallot, especially with pulmonary atresia or absent pulmonary valve, and right aortic arch or aberrant subclavian artery. Thymic hypoplasia or absence is an important clue, assessed anterior to the great vessels in the three-vessel view. Diagnosis requires chromosomal microarray or FISH, as standard karyotype misses the deletion. Turner syndrome (45,X) is associated with left-sided obstructive lesions: coarctation of the aorta and bicuspid aortic valve are classic, along with hypoplastic left heart and partial anomalous pulmonary venous return. Turner fetuses often have a large septated cystic hygroma, lymphedema and hydrops. Noonan syndrome is linked to dysplastic pulmonary valve stenosis and hypertrophic cardiomyopathy.",
+          "whyLock": "Genetic association questions are pattern matching by lesion family. Learn three anchors: cushion defects with trisomy 21, conotruncal with 22q11, left obstruction with Turner. Then adjust for clues such as a small thymus or a cystic hygroma. Trap: a normal karyotype does not exclude 22q11 deletion; microarray is needed. Trap two: transposition of the great arteries is a conotruncal lesion with a low rate of 22q11 deletion, so do not overapply the rule.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 22",
+              "title": "Truncus Arteriosus",
+              "link": "Truncus is strongly associated with 22q11 deletion."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Coarctation of the Aorta",
+              "link": "Coarctation is the classic heart lesion of Turner syndrome."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Three-Vessel Trachea View",
+              "link": "The thymus and arch side are assessed on the three-vessel trachea view."
+            }
+          ],
+          "registryApplication": "Expect questions matching a lesion with its syndrome, or asking which test is needed to detect a 22q11 microdeletion.",
+          "checkpoint": {
+            "pearl": "22q11 equals conotruncal and arch; Turner equals coarctation and bicuspid valve",
+            "reflection": "Why can a fetus with tetralogy and a normal karyotype still have 22q11 deletion?"
+          },
+          "keyTerms": [
+            "22q11.2 Deletion",
+            "Interrupted Aortic Arch",
+            "Thymic Hypoplasia",
+            "Chromosomal Microarray",
+            "Turner Syndrome",
+            "Cystic Hygroma",
+            "Noonan Syndrome"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 39"
+        },
+        {
+          "id": "fe-heterotaxy-syndromes",
+          "title": "Heterotaxy Syndromes",
+          "frontClue": "Isomerism: two right sides with asplenia or two left sides with polysplenia",
+          "corePiece": "Heterotaxy (situs ambiguus) is abnormal arrangement of the thoracic and abdominal organs that is neither normal nor mirror image, usually with complex heart disease. Right atrial isomerism (asplenia pattern) gives bilateral morphologic right atria and is associated with severe lesions: unbalanced AVSD, single ventricle, pulmonary stenosis or atresia, transposition or DORV, and total anomalous pulmonary venous return. Abdominal clues include the aorta and IVC lying on the same side of the spine, with the IVC anterior (juxtaposition). Left atrial isomerism (polysplenia pattern) gives bilateral morphologic left atria and is associated with interrupted IVC with azygos continuation, seen as a dilated azygos vein running beside and behind the aorta (the double vessel sign), along with AVSD, left outflow obstruction and congenital complete heart block, sometimes with hydrops. Both forms may show a stomach and heart apex on opposite sides, a midline liver, bilateral SVC and atrial appendages that look alike.",
+          "whyLock": "Heterotaxy is a reasoning chain: an abdominal situs abnormality predicts the heart lesion type. IVC and aorta on the same side points to right isomerism and severe cyanotic disease; an azygos vessel behind the aorta with bradycardia points to left isomerism. Prognosis is generally worse for right isomerism, but left isomerism with heart block and hydrops is also poor. Trap: heart block in heterotaxy is structural and not antibody related. Trap two: asplenia raises later infection risk.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 1",
+              "title": "Situs and Cardiac Position",
+              "link": "Situs assessment of stomach, aorta and IVC is the first clue to heterotaxy."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Complete Heart Block",
+              "link": "Left atrial isomerism is a structural cause of fetal heart block."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Atrioventricular Septal Defect",
+              "link": "AVSD, often unbalanced, is common in heterotaxy."
+            }
+          ],
+          "registryApplication": "Expect items pairing findings such as an interrupted IVC with azygos continuation or a juxtaposed aorta and IVC with the correct isomerism.",
+          "checkpoint": {
+            "pearl": "Right isomerism: IVC and aorta together; left isomerism: azygos plus heart block",
+            "reflection": "Which abdominal finding suggests left atrial isomerism, and what rhythm problem may accompany it?"
+          },
+          "keyTerms": [
+            "Heterotaxy",
+            "Right Atrial Isomerism",
+            "Left Atrial Isomerism",
+            "Asplenia",
+            "Polysplenia",
+            "Azygos Continuation",
+            "Interrupted IVC"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 40"
+        },
+        {
+          "id": "fe-cardiac-rhabdomyoma",
+          "title": "Cardiac Rhabdomyoma",
+          "frontClue": "Bright, round, multiple ventricular masses: think tuberous sclerosis",
+          "corePiece": "Rhabdomyoma is the most common fetal cardiac tumor. It appears as one or, more often, multiple homogeneous, well-circumscribed, echogenic masses within the ventricular myocardium or interventricular septum, sometimes in the atria. Tumors are usually first seen in the second or third trimester, may grow during pregnancy into the third trimester, and typically regress after birth. A strong association exists with tuberous sclerosis complex (TSC1 or TSC2 genes): a large majority of fetuses with multiple rhabdomyomas have tuberous sclerosis, and the risk is high even with a single tumor. Fetal brain MRI looks for cortical tubers and subependymal nodules, and genetic testing and family evaluation are offered. Complications include inflow or outflow obstruction, arrhythmias (including Wolff-Parkinson-White after birth), ventricular dysfunction and hydrops. Other fetal cardiac tumors are rarer: teratoma is usually intrapericardial with a pericardial effusion, and fibroma is typically single, large, within the ventricular wall and may calcify.",
+          "whyLock": "The prognosis for the heart is usually good because rhabdomyomas regress, but the long-term outcome is driven by tuberous sclerosis in the brain, with seizures and developmental problems. That is why the associated neurologic workup matters. Reasoning: multiple tumors make TSC almost certain. Trap: confusing a rhabdomyoma with an echogenic intracardiac focus; the focus is tiny, stable and on the papillary muscle. Trap two: a mass with a large pericardial effusion suggests teratoma rather than rhabdomyoma.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 17",
+              "title": "Echogenic Intracardiac Focus",
+              "link": "An EIF is small and stable, unlike a growing rhabdomyoma."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Fetal Hydrops and CVP Score",
+              "link": "Large tumors can obstruct flow and cause hydrops."
+            }
+          ],
+          "registryApplication": "Expect questions describing multiple echogenic ventricular masses and asking for the tumor type, associated syndrome or recommended additional imaging.",
+          "checkpoint": {
+            "pearl": "Multiple echogenic ventricular masses mean rhabdomyoma and tuberous sclerosis",
+            "reflection": "Why is fetal brain MRI recommended when a rhabdomyoma is found?"
+          },
+          "keyTerms": [
+            "Cardiac Rhabdomyoma",
+            "Tuberous Sclerosis Complex",
+            "Cardiac Teratoma",
+            "Cardiac Fibroma",
+            "Subependymal Nodules",
+            "Pericardial Effusion"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 41"
+        }
+      ]
+    },
+    {
+      "id": "fe-technique-instrumentation",
+      "title": "Technique & Instrumentation",
+      "pieceRange": "Pieces 42-46",
+      "examType": "ARDMS RDCS Fetal Echocardiography (FE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "When to scan, how to optimize gray-scale and Doppler for a small fast heart, 4D/STIC and safe exposure",
+      "topics": [
+        {
+          "id": "fe-optimal-timing-of-fetal-echo",
+          "title": "Optimal Timing of Fetal Echo",
+          "frontClue": "18 to 22 weeks is the sweet spot; earlier is possible, later may be needed",
+          "corePiece": "The standard fetal echocardiogram is usually performed at about 18 to 22 weeks of gestation, when the heart is large enough for detailed views, bone shadowing from ribs and spine is still limited and amniotic fluid is ample. Early fetal echocardiography, at about 12 to 16 weeks, usually transvaginally or with a high-frequency transabdominal probe, can identify major defects in high-risk pregnancies such as those with increased nuchal translucency, but detail is limited and a follow-up mid-trimester study is recommended. Beyond about 28 to 30 weeks, imaging becomes harder because of ossification, reduced relative fluid and a fetus that is more often spine anterior. However, some lesions are progressive or appear late, including coarctation, aortic and pulmonary stenosis evolving toward atresia, ventricular hypoplasia, ductal constriction, cardiac tumors, cardiomyopathy and arrhythmias, so third-trimester follow-up is often needed. Maternal obesity, prior abdominal surgery and fetal position also affect image quality and may require rescheduling.",
+          "whyLock": "A normal midtrimester fetal echo does not guarantee a normal heart at birth, because several lesions evolve. Reasoning: obstructive lesions reduce flow, and reduced flow reduces chamber and vessel growth, so hypoplasia appears with time. Trap: ordering a first fetal echo at 32 weeks for a diabetic mother misses the best window. Trap two: a fetus lying spine up at the top of the image produces acoustic shadowing over the heart; waiting or having the mother change position often helps.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 37",
+              "title": "Indications for Fetal Echocardiography",
+              "link": "Indications set who is scanned; timing sets when the scan is most informative."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Cardiac Rhabdomyoma",
+              "link": "Rhabdomyomas often appear only later in pregnancy, after a normal midtrimester study."
+            }
+          ],
+          "registryApplication": "Expect questions on the ideal gestational age window and which lesions may evolve after a normal midtrimester study.",
+          "checkpoint": {
+            "pearl": "18 to 22 weeks is ideal; obstructive lesions can still evolve later",
+            "reflection": "Name three lesions that may be missed at 20 weeks but appear by the third trimester."
+          },
+          "keyTerms": [
+            "Early Fetal Echocardiography",
+            "Transvaginal",
+            "Spine Anterior",
+            "Acoustic Shadowing",
+            "Evolving Lesions",
+            "Third-Trimester Follow-Up"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 42"
+        },
+        {
+          "id": "fe-image-optimization-for-the-fetal-heart",
+          "title": "Image Optimization for the Fetal Heart",
+          "frontClue": "Small, fast target: zoom in, narrow the sector and keep the frame rate high",
+          "corePiece": "The fetal heart is small and beats about twice as fast as an adult heart, so temporal and spatial resolution both matter. Use the highest transducer frequency that gives adequate penetration. Zoom or magnify so the heart fills about a third to a half of the display, and narrow the sector width and reduce depth to raise the frame rate. Place a single focal zone at or just below the level of the heart, since more focal zones lower the frame rate. Keep persistence (frame averaging) low to avoid blurring fast-moving valves. A higher-contrast setting with a narrower dynamic range helps define the endocardium and septum against blood. Tissue harmonic imaging can improve images in patients with high body mass index, at some cost to resolution. Insonate septal structures perpendicular to the beam to avoid dropout, and use cine loop review frame by frame to evaluate valve motion and septal integrity. Patience with fetal position, and a sweep from abdomen to upper mediastinum, form the backbone of a systematic examination.",
+          "whyLock": "Reasoning: each optimization trades one resolution for another. More focal zones and wider sectors improve coverage but lower frame rate, which matters more in a heart beating 140 times a minute. Trap: high persistence makes a moving valve look thick or blurred. Trap two: a false septal defect from dropout disappears when you change the angle of insonation. Questions frequently ask which control improves temporal resolution, and the answers are narrower sector, less depth, fewer focal zones and lower line density.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 44",
+              "title": "Color and Spectral Doppler Settings",
+              "link": "Doppler settings also trade frame rate against coverage."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Ventricular Septal Defects",
+              "link": "Perpendicular insonation avoids false septal dropout."
+            }
+          ],
+          "registryApplication": "Expect questions asking which control change increases frame rate or reduces artifact in fetal cardiac imaging.",
+          "checkpoint": {
+            "pearl": "Narrow, shallow, one focus, low persistence: high frame rate for a fast heart",
+            "reflection": "Which three adjustments would most increase the frame rate in a fetal four-chamber view?"
+          },
+          "keyTerms": [
+            "Frame Rate",
+            "Temporal Resolution",
+            "Sector Width",
+            "Focal Zone",
+            "Persistence",
+            "Tissue Harmonic Imaging",
+            "Cine Loop"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 43"
+        },
+        {
+          "id": "fe-color-and-spectral-doppler-settings",
+          "title": "Color and Spectral Doppler Settings",
+          "frontClue": "Match the color scale to the vessel; keep the box small and the angle low",
+          "corePiece": "Color Doppler is essential to fetal echo for detecting flow direction, shunts, regurgitation and stenosis. Set the velocity scale (pulse repetition frequency) to the target: a low scale, roughly 10 to 30 cm/s, for pulmonary veins, venous return and shunts across septal defects, and a higher scale, roughly 50 to 80 cm/s or more, for outflow tracts and valves, to avoid excessive aliasing. Keep the color box as small as practical, because a large box lowers the frame rate. Set color gain just below the level where random noise speckles appear, and keep the wall filter low for low-velocity flow. Align flow as close to parallel with the beam as possible. For spectral Doppler, use a small sample volume (about 1 to 3 mm) at the precise site, keep the angle of insonation below about 20 to 30 degrees with minimal angle correction, and use a fast sweep speed for timing. Aliasing is a clue to high velocity, such as a stenotic valve or the ductus venosus inlet.",
+          "whyLock": "Doppler settings decide whether real flow is seen and false flow avoided. Reasoning: a scale set too high hides low-velocity shunts and pulmonary veins, while a scale too low causes aliasing that mimics turbulence. Trap: excessive color gain bleeds over the septum and can hide a VSD or create a false one. Trap two: power Doppler is more sensitive to slow flow but does not display direction. High-definition or directional power modes can help with small vessels.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 43",
+              "title": "Image Optimization for the Fetal Heart",
+              "link": "Color box size and sector width both trade off against frame rate."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Ventricular Septal Defects",
+              "link": "Low color scales are needed to detect low-velocity VSD shunts."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "ALARA in Fetal Imaging",
+              "link": "Spectral Doppler has the highest output and must be used judiciously."
+            }
+          ],
+          "registryApplication": "Expect questions on the appropriate color scale for pulmonary veins versus outflow tracts, and how to reduce aliasing or color bleeding.",
+          "checkpoint": {
+            "pearl": "Low scale for veins and shunts, high scale for outflows, small box",
+            "reflection": "What color Doppler setting change would help you detect slow pulmonary venous return?"
+          },
+          "keyTerms": [
+            "Velocity Scale",
+            "Pulse Repetition Frequency",
+            "Aliasing",
+            "Color Gain",
+            "Wall Filter",
+            "Sample Volume",
+            "Angle of Insonation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 44"
+        },
+        {
+          "id": "fe-stic-and-4d-imaging",
+          "title": "STIC and 4D Imaging",
+          "frontClue": "One slow sweep, many heartbeats, rebuilt into a single beating volume",
+          "corePiece": "Spatiotemporal image correlation (STIC) is an automated volume acquisition in which the transducer sweeps slowly across the fetal chest, usually over about 7.5 to 15 seconds with a sweep angle of roughly 20 to 40 degrees, collecting many cardiac cycles. Software detects the fetal heart rate from tissue motion and reorganizes the frames into a single volume representing one complete cardiac cycle that can be played as a loop. The volume can be displayed in multiplanar mode, as tomographic ultrasound imaging (parallel slices similar to CT), or as rendered views, and can be combined with color, power or high-definition flow. Advantages include offline review of all standard planes from one acquisition, sharing with remote experts and teaching. Best results come with the fetus still, spine posterior, and the four-chamber view as the starting plane. Artifacts arise from fetal movement, maternal breathing, irregular rhythm and acoustic shadowing; a motion artifact looks like discontinuity in the reconstructed planes.",
+          "whyLock": "STIC is an adjunct, not a replacement: a poorly acquired volume cannot produce better information than the original 2D image. Reasoning: the reconstruction assumes a regular rhythm and a still fetus, so arrhythmias and movement break it. Trap: STIC is not a real-time method; the rebuilt cycle is a composite of many beats. Trap two: acquisition settings are chosen before sweeping; slow sweeps give better spatial resolution but are more vulnerable to motion.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 43",
+              "title": "Image Optimization for the Fetal Heart",
+              "link": "Good 2D optimization before the sweep determines STIC quality."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "M-Mode and Doppler Rhythm Assessment",
+              "link": "Arrhythmias degrade STIC because reconstruction assumes a regular cycle."
+            }
+          ],
+          "registryApplication": "Expect questions on what STIC stands for, how the volume is built and which conditions cause artifacts.",
+          "checkpoint": {
+            "pearl": "STIC equals one automated sweep, many beats, one composite cycle",
+            "reflection": "Why does fetal arrhythmia degrade a STIC volume?"
+          },
+          "keyTerms": [
+            "Spatiotemporal Image Correlation",
+            "Volume Acquisition",
+            "Tomographic Ultrasound Imaging",
+            "Multiplanar Display",
+            "Motion Artifact",
+            "Offline Analysis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 45"
+        },
+        {
+          "id": "fe-alara-in-fetal-imaging",
+          "title": "ALARA in Fetal Imaging",
+          "frontClue": "Watch TI and MI; Doppler outputs most; keep dwell time short",
+          "corePiece": "ALARA (as low as reasonably achievable) means obtaining diagnostic information with the least acoustic exposure. The output display shows the thermal index (TI), which estimates potential tissue temperature rise, and the mechanical index (MI), which estimates potential for nonthermal effects such as cavitation. For obstetric scanning, TIS (soft tissue) is generally monitored early in pregnancy, before significant bone ossification, commonly before about 10 weeks, and TIB (bone) afterward, because the fetal skeleton absorbs energy. Keeping TI at or below about 0.7 is a widely used goal, with shorter exposure times as TI increases. Pulsed spectral Doppler delivers the highest temporal average intensity, followed by color Doppler and then gray-scale. Practical steps include reducing output power and raising receiver gain instead, limiting dwell time over one spot, freezing the image while explaining findings, and avoiding unnecessary Doppler in the first trimester. Use of ultrasound only for medical indications and avoidance of nonmedical keepsake imaging follow the same principle.",
+          "whyLock": "Fetal echo uses more Doppler than routine scans, so safety knowledge is tested directly. Reasoning: heating depends on intensity and time, and bone absorbs most energy, so TIB matters once the skeleton ossifies. Trap: increasing receiver gain does not increase patient exposure, whereas increasing output power does. Trap two: MI is linked to cavitation and gas bodies and is less relevant in the fetus, which has no air, but should still be kept low.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 44",
+              "title": "Color and Spectral Doppler Settings",
+              "link": "Spectral Doppler has the highest output and should be used purposefully."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Optimal Timing of Fetal Echo",
+              "link": "Early fetal echo requires extra care with Doppler exposure."
+            }
+          ],
+          "registryApplication": "Expect questions on which index to monitor at each gestational age, which mode has the highest output, and which control reduces exposure.",
+          "checkpoint": {
+            "pearl": "Lower power, raise gain, shorten dwell; TIB after early pregnancy, keep TI near 0.7 or lower",
+            "reflection": "Why is TIB more relevant than TIS in the second trimester?"
+          },
+          "keyTerms": [
+            "ALARA",
+            "Thermal Index",
+            "Mechanical Index",
+            "TIB",
+            "TIS",
+            "Output Power",
+            "Dwell Time"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 46"
+        }
+      ]
+    }
+  ]
+}

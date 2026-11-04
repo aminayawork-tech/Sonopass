@@ -1,0 +1,2025 @@
+{
+  "categories": [
+    {
+      "id": "ae-anatomy-physiology",
+      "title": "Anatomy & Physiology",
+      "pieceRange": "Pieces 1-5",
+      "examType": "ARDMS RDCS Adult Echocardiography (AE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Chambers, valves, coronary arteries, the cardiac cycle, normal pressures and the standard transthoracic views",
+      "topics": [
+        {
+          "id": "ae-cardiac-chambers-valves",
+          "title": "Cardiac Chambers & Valves",
+          "frontClue": "Right heart sits anterior; the tricuspid inserts slightly closer to the apex",
+          "corePiece": "The heart has four chambers. The right atrium receives the superior and inferior vena cava and the coronary sinus; the right ventricle is the most anterior chamber, lies directly behind the sternum, and is recognized by its moderator band, coarse trabeculations and the more apical septal insertion of the tricuspid valve. The left atrium is the most posterior chamber and receives four pulmonary veins. The left ventricle is bullet shaped, has smooth walls with two papillary muscles (anterolateral and posteromedial), and normally measures about 0.6 to 1.0 cm in wall thickness at end-diastole. The atrioventricular valves are the tricuspid (anterior, septal and posterior leaflets) and mitral (anterior and posterior leaflets, with scallops A1-A3 and P1-P3). Both are tethered by chordae tendineae to papillary muscles. The semilunar valves are the aortic (right, left and noncoronary cusps) and pulmonic valves, each with three cusps and no chordae. Normal tricuspid septal leaflet insertion is only a few millimeters more apical than the mitral.",
+          "whyLock": "Echo identification depends on morphology, not position, because congenital and surgical hearts can be rearranged. The morphologic right ventricle always carries the tricuspid valve, the moderator band and the more apical AV valve insertion; the morphologic left ventricle carries the mitral valve. Trap: the most anterior structure in a parasternal long-axis view is the RV outflow tract, not the left ventricle. Remember that the mitral valve has no septal chordal attachments, which is why a septal attachment suggests a tricuspid valve or an AV canal defect. Excessive apical displacement of the tricuspid valve is the hallmark of Ebstein anomaly.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 5",
+              "title": "Standard TTE Views & Windows",
+              "link": "Each standard view is defined by which chambers and valves it lines up in the same plane."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Ebstein Anomaly",
+              "link": "Ebstein anomaly is diagnosed by exaggerating the normal small offset between tricuspid and mitral insertion."
+            },
+            {
+              "piece": "Piece 19",
+              "title": "Mitral Valve Prolapse",
+              "link": "Naming prolapsing scallops uses the A1-A3 and P1-P3 nomenclature of the mitral leaflets."
+            }
+          ],
+          "registryApplication": "Expect questions on which chamber is most anterior or posterior, which features identify the morphologic RV, and how many leaflets or cusps each valve has.",
+          "checkpoint": {
+            "pearl": "RV: most anterior, moderator band, apical tricuspid; LA: most posterior, four pulmonary veins",
+            "reflection": "If a ventricle has a moderator band and an AV valve inserting apically, which ventricle is it, regardless of its position in the chest?"
+          },
+          "keyTerms": [
+            "Moderator Band",
+            "Papillary Muscles",
+            "Chordae Tendineae",
+            "Mitral Scallops",
+            "Semilunar Valves",
+            "Ebstein Anomaly"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 1"
+        },
+        {
+          "id": "ae-coronary-artery-anatomy",
+          "title": "Coronary Artery Anatomy",
+          "frontClue": "Left main splits to LAD and circumflex; whoever gives the PDA is dominant",
+          "corePiece": "The coronary arteries arise from the sinuses of Valsalva just above the aortic valve. The left main coronary artery arises from the left coronary sinus and divides into the left anterior descending (LAD) and the left circumflex (LCx). The LAD runs in the anterior interventricular groove toward the apex, giving diagonal branches to the anterior wall and septal perforators to the anterior two thirds of the septum. The LCx runs in the left AV groove and gives obtuse marginal branches to the lateral wall. The right coronary artery (RCA) arises from the right coronary sinus, runs in the right AV groove, and supplies the RV free wall, the inferior wall, the inferior septum and, in most people, the AV node. Dominance is defined by which artery gives rise to the posterior descending artery (PDA): right dominance occurs in about 80 to 85 percent of people. The posteromedial papillary muscle usually depends on the single PDA supply, while the anterolateral muscle has dual LAD and LCx supply.",
+          "whyLock": "Coronary anatomy is the bridge between a wall motion abnormality and a diagnosis. If you know which artery feeds which wall, you can predict the territory of an infarct and its likely complications. The papillary muscle detail is a favorite: posteromedial papillary rupture is more common because it has a single blood supply, usually from the RCA via the PDA. Trap: the noncoronary cusp is the posterior cusp adjacent to the interatrial septum; no coronary artery arises from it. Because coronaries fill in diastole, tachycardia and a very low aortic diastolic pressure, as in severe aortic regurgitation, both reduce myocardial perfusion.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 28",
+              "title": "Coronary Territories",
+              "link": "Each coronary artery maps onto a predictable set of the 17 myocardial segments."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Mechanical Complications of MI",
+              "link": "The single blood supply of the posteromedial papillary muscle explains why it ruptures more often."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Aortic Dissection",
+              "link": "A type A dissection can extend into a coronary ostium, most often the right, and cause an inferior wall motion abnormality."
+            }
+          ],
+          "registryApplication": "Expect questions on which artery supplies a wall, how dominance is defined, and why one papillary muscle is more vulnerable than the other.",
+          "checkpoint": {
+            "pearl": "PDA decides dominance; right dominant in about 80 to 85 percent",
+            "reflection": "A patient has an infarct involving the inferior wall and the posteromedial papillary muscle. Which artery is most likely occluded in a right-dominant system?"
+          },
+          "keyTerms": [
+            "Left Anterior Descending",
+            "Left Circumflex",
+            "Right Coronary Artery",
+            "Posterior Descending Artery",
+            "Coronary Dominance",
+            "Sinuses of Valsalva"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 2"
+        },
+        {
+          "id": "ae-cardiac-cycle-ecg-timing",
+          "title": "Cardiac Cycle & ECG Timing",
+          "frontClue": "Valves closed twice: isovolumic contraction after QRS, isovolumic relaxation after T",
+          "corePiece": "Each heartbeat has systolic and diastolic phases tied to the ECG. The P wave represents atrial depolarization and is followed by atrial contraction, which produces the mitral A wave. The QRS complex represents ventricular depolarization; shortly after its onset the mitral valve closes, and the ventricle enters isovolumic contraction, when all four valves are closed and pressure rises without volume change. When LV pressure exceeds aortic pressure, the aortic valve opens and ejection begins. The T wave represents ventricular repolarization; near its end the aortic valve closes, marking end-systole. Isovolumic relaxation follows, again with all valves closed, normally lasting about 70 to 90 milliseconds. When LV pressure falls below LA pressure, the mitral valve opens and rapid early filling produces the E wave, followed by diastasis and then atrial contraction. End-diastole is timed at the onset of the QRS or the frame just after mitral closure, and end-systole at the smallest LV cavity or aortic valve closure.",
+          "whyLock": "Correct timing underpins every measurement on the exam. LV internal dimensions, volumes and wall thickness are measured at end-diastole, at the onset of QRS, while LA size is measured at end-systole, when the atrium is largest. Trap: the atria are filling during ventricular systole, so atrial dimensions peak just before mitral opening. Isovolumic periods lengthen with impaired relaxation, which is why a prolonged IVRT signals early diastolic dysfunction. If a Doppler signal falls in the wrong phase relative to the ECG, for example a diastolic jet you believed was systolic, you have probably misidentified the valve or the flow.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Diastolic Function",
+              "link": "E and A waves and the IVRT are the cardiac cycle phases that diastolic grading measures."
+            },
+            {
+              "piece": "Piece 6",
+              "title": "LV Size & Ejection Fraction",
+              "link": "End-diastolic and end-systolic frames chosen by ECG timing define every volume used in EF."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "M-Mode & Tissue Doppler",
+              "link": "M-mode traces show valve opening and closing points against the ECG with very high temporal resolution."
+            }
+          ],
+          "registryApplication": "Expect questions that pair an ECG event with a valve event, define the isovolumic periods, or ask when to measure the LV and LA.",
+          "checkpoint": {
+            "pearl": "P then A wave; QRS then mitral closure; end of T then aortic closure",
+            "reflection": "During which phases of the cardiac cycle are all four valves closed, and what changes in the ventricle during each?"
+          },
+          "keyTerms": [
+            "Isovolumic Contraction",
+            "Isovolumic Relaxation",
+            "P Wave",
+            "QRS Complex",
+            "T Wave",
+            "Diastasis",
+            "End-Diastole"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 3"
+        },
+        {
+          "id": "ae-normal-intracardiac-pressures",
+          "title": "Normal Intracardiac Pressures",
+          "frontClue": "Right heart about 25 over 5; left heart about 120 over 10",
+          "corePiece": "Normal resting pressures are a useful framework for Doppler. Right atrial mean pressure is about 2 to 6 mmHg. The right ventricle is about 15 to 30 mmHg systolic and 2 to 8 mmHg end-diastolic. The pulmonary artery is about 15 to 30 mmHg systolic and 8 to 15 mmHg diastolic, with a mean usually below 20 mmHg. Left atrial pressure, estimated by pulmonary capillary wedge pressure, is about 4 to 12 mmHg. The left ventricle is about 100 to 140 mmHg systolic and 3 to 12 mmHg end-diastolic, and the aorta about 100 to 140 over 60 to 90 mmHg. In the absence of outflow obstruction, RV systolic pressure equals PA systolic pressure, and LV systolic pressure equals aortic systolic pressure. Echo estimates pressures by adding a measured gradient to a known or estimated pressure: RVSP equals the TR gradient plus RA pressure. The RA pressure is estimated from IVC diameter and inspiratory collapse.",
+          "whyLock": "Pressures turn Doppler velocities into physiology. Every gradient is a pressure difference between two chambers, so if you know one chamber and the gradient, you can calculate the other. Trap: RVSP equals PASP only when there is no pulmonic stenosis or RVOT obstruction. Another trap is forgetting to add RA pressure; the TR gradient alone underestimates RVSP. Use the left-sided numbers to sanity check results: an LV to LA gradient from MR of about 100 mmHg corresponds to roughly 5 m/s, which is the expected MR velocity in a normotensive patient. A much lower MR velocity suggests low LV pressure or a very high LA pressure.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "Bernoulli Equation & RVSP",
+              "link": "The Bernoulli equation converts a velocity into the gradient that links two chamber pressures."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "RV Function & Pulmonary Hypertension",
+              "link": "Elevated PA pressure is identified by comparing estimated RVSP with normal right-sided values."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "VSD & PDA",
+              "link": "A restrictive VSD gradient reflects the normal large difference between LV and RV systolic pressures."
+            }
+          ],
+          "registryApplication": "Expect questions asking for normal ranges, which chamber pressure equals another, and how echo derives a pressure by adding a gradient.",
+          "checkpoint": {
+            "pearl": "RVSP = PASP unless something obstructs the RV outflow",
+            "reflection": "Why does a restrictive VSD in a normotensive adult produce a high-velocity jet of roughly 4.5 to 5 m/s?"
+          },
+          "keyTerms": [
+            "Right Atrial Pressure",
+            "Pulmonary Capillary Wedge Pressure",
+            "LV End-Diastolic Pressure",
+            "RVSP",
+            "Pressure Gradient"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 4"
+        },
+        {
+          "id": "ae-standard-tte-views-windows",
+          "title": "Standard TTE Views & Windows",
+          "frontClue": "Parasternal, apical, subcostal, suprasternal: four windows, each with a purpose",
+          "corePiece": "Transthoracic echo uses four main windows. The parasternal window, at the left third or fourth intercostal space with the index mark toward the right shoulder, gives the parasternal long-axis view of the RVOT, septum, LV, LA, mitral and aortic valves and aortic root; rotating 90 degrees clockwise gives short-axis views at the aortic valve, mitral valve, papillary muscle and apical levels. The apical window, at the point of maximal impulse, gives the four-chamber view (inferoseptum and anterolateral wall), five-chamber view (adds the LVOT and aortic valve), two-chamber view (anterior and inferior walls) and three-chamber or apical long-axis view (anteroseptum and inferolateral wall). The subcostal window shows the four chambers, interatrial septum and IVC, and is often best in COPD or ventilated patients. The suprasternal notch shows the aortic arch, head and neck vessels and descending aorta for coarctation and dissection. The right parasternal window is used with a nonimaging CW probe to capture peak aortic stenosis velocity.",
+          "whyLock": "Most exam questions in this area ask which view best shows a structure or which walls appear in a view. Learn the wall pairs: apical four-chamber shows inferoseptal and anterolateral, apical two-chamber shows anterior and inferior, apical long-axis shows anteroseptal and inferolateral. Trap: apical foreshortening makes the apex look thick and falsely shortens the LV, underestimating volume; a true apex is thin and stationary at the tip. The subcostal view is preferred for the interatrial septum because the beam strikes it perpendicularly, reducing false dropout. For AS, interrogate from several windows, because the highest velocity sets the grade.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 27",
+              "title": "17-Segment Model & Wall Motion Scoring",
+              "link": "Each apical view displays a specific pair of walls used to score segments."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Atrial Septal Defects",
+              "link": "The subcostal view gives a perpendicular angle to the interatrial septum and reduces dropout artifact."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Aortic Stenosis Grading",
+              "link": "Peak AS velocity must be sought from apical, right parasternal and suprasternal windows."
+            }
+          ],
+          "registryApplication": "Expect questions on which view best displays a structure, which walls appear in each apical view, and transducer orientation for each window.",
+          "checkpoint": {
+            "pearl": "A4C: inferoseptal and anterolateral; A2C: anterior and inferior; A3C: anteroseptal and inferolateral",
+            "reflection": "You need the most perpendicular angle to the interatrial septum in an adult. Which window and view do you choose, and why?"
+          },
+          "keyTerms": [
+            "Parasternal Long-Axis",
+            "Parasternal Short-Axis",
+            "Apical Four-Chamber",
+            "Apical Two-Chamber",
+            "Subcostal View",
+            "Suprasternal Notch",
+            "Foreshortening"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 5"
+        }
+      ]
+    },
+    {
+      "id": "ae-measurements-hemodynamics",
+      "title": "Measurements & Hemodynamics",
+      "pieceRange": "Pieces 6-10",
+      "examType": "ARDMS RDCS Adult Echocardiography (AE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "LV size and EF methods, stroke volume, Bernoulli, RVSP, continuity, PISA and diastolic function",
+      "topics": [
+        {
+          "id": "ae-lv-size-ejection-fraction",
+          "title": "LV Size & Ejection Fraction",
+          "frontClue": "Biplane Simpson's beats Teichholz whenever walls move unevenly",
+          "corePiece": "LV linear dimensions are measured in the parasternal long-axis view at end-diastole, perpendicular to the long axis at the level of the mitral leaflet tips. ASE normal LV internal diameter in diastole is about 4.2 to 5.8 cm in men and 3.8 to 5.2 cm in women, with septal and posterior wall thickness about 0.6 to 1.0 cm in men and 0.6 to 0.9 cm in women. Fractional shortening, (LVIDd minus LVIDs) divided by LVIDd, is normally about 25 to 43 percent. The Teichholz formula converts a single linear dimension into volume by assuming an ellipsoid shape, so it fails with regional wall motion abnormalities or distorted geometry. The ASE recommended 2D method is the biplane method of disks (modified Simpson's rule), tracing the endocardium in apical four- and two-chamber views at end-diastole and end-systole. EF equals (EDV minus ESV) divided by EDV. Normal LVEF is about 52 to 72 percent in men and 54 to 74 percent in women; under about 52 percent is commonly considered abnormal.",
+          "whyLock": "The core reasoning is geometry: any method that extrapolates from one line assumes a symmetric ventricle, which is exactly what an infarct destroys. When a question describes an apical aneurysm or regional WMA, choose biplane Simpson's or 3D over Teichholz or M-mode. Trap: foreshortened apical views undercount length and underestimate volume; contrast improves endocardial definition when two or more contiguous segments are not seen. Trap two: trace the compacted myocardium inner border, excluding papillary muscles and trabeculations from the wall. Off-axis M-mode cuts the LV obliquely and overestimates dimensions, so 2D-guided measurement is preferred.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 5",
+              "title": "Standard TTE Views & Windows",
+              "link": "Accurate volumes require non-foreshortened apical four- and two-chamber views."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Contrast & Agitated Saline",
+              "link": "Ultrasound enhancing agents improve endocardial border tracing when segments are poorly seen."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Dilated Cardiomyopathy & Heart Failure",
+              "link": "EF thresholds from these methods classify heart failure as reduced, mildly reduced or preserved."
+            }
+          ],
+          "registryApplication": "Expect questions on the ASE recommended EF method, why Teichholz fails, where and when linear dimensions are measured, and normal values.",
+          "checkpoint": {
+            "pearl": "Uneven walls, use disks: biplane Simpson's, not Teichholz",
+            "reflection": "A patient has an akinetic apical aneurysm with a normal-moving base. Why would a Teichholz EF overestimate function?"
+          },
+          "keyTerms": [
+            "Biplane Method of Disks",
+            "Teichholz Formula",
+            "Fractional Shortening",
+            "End-Diastolic Volume",
+            "End-Systolic Volume",
+            "Foreshortening"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 6"
+        },
+        {
+          "id": "ae-stroke-volume-cardiac-output",
+          "title": "Stroke Volume & Cardiac Output",
+          "frontClue": "A cylinder of blood: LVOT area times LVOT VTI equals one beat",
+          "corePiece": "Doppler stroke volume treats flow through the LVOT as a cylinder. LVOT diameter is measured in a zoomed parasternal long-axis view in mid-systole, inner edge to inner edge, about 0.3 to 1.0 cm below the aortic valve. Cross-sectional area equals pi times radius squared, or 0.785 times diameter squared. LVOT velocity time integral (VTI) is obtained with pulsed wave Doppler in the apical five-chamber or three-chamber view, with the sample volume placed just proximal to the valve at the same level as the diameter, and traced around the modal velocity. Stroke volume equals CSA times VTI. A normal LVOT VTI is about 18 to 22 cm; values under about 15 cm suggest low stroke volume. Cardiac output equals stroke volume times heart rate, normally about 4 to 8 L/min, and cardiac index equals CO divided by body surface area, normally about 2.5 to 4.0 L/min/m2. Stroke volume index under 35 mL/m2 defines low flow in aortic stenosis.",
+          "whyLock": "The biggest error source is the diameter, because it is squared: a 1 mm error in a 2.0 cm LVOT changes area by about 10 percent. Measure carefully, at the same level as the PW sample, and average several beats in atrial fibrillation. Trap: placing the PW sample too close to the valve picks up prestenotic acceleration and overestimates VTI. LVOT VTI alone is a powerful trend marker in shock and heart failure because the diameter does not change within a patient. In the absence of significant regurgitation, the same stroke volume passes every valve, which is the foundation of the continuity equation.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 9",
+              "title": "Continuity Equation & PISA",
+              "link": "The continuity equation divides LVOT stroke volume by the aortic valve VTI to find valve area."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Aortic Stenosis Grading",
+              "link": "Stroke volume index below 35 mL/m2 identifies low-flow aortic stenosis."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Doppler Modes in Echo",
+              "link": "Pulsed wave Doppler is required for LVOT VTI because it samples a specific location."
+            }
+          ],
+          "registryApplication": "Expect calculation questions for SV, CO and CI, and questions about where to measure LVOT diameter and place the PW sample.",
+          "checkpoint": {
+            "pearl": "SV = 0.785 x D squared x VTI; CO = SV x HR",
+            "reflection": "An LVOT diameter of 2.0 cm and VTI of 20 cm give what stroke volume, and what is the cardiac output at 70 beats per minute?"
+          },
+          "keyTerms": [
+            "LVOT Diameter",
+            "Velocity Time Integral",
+            "Cross-Sectional Area",
+            "Cardiac Index",
+            "Stroke Volume Index",
+            "Pulsed Wave Doppler"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 7"
+        },
+        {
+          "id": "ae-bernoulli-equation-rvsp",
+          "title": "Bernoulli Equation & RVSP",
+          "frontClue": "Four v squared turns velocity into pressure; add RA pressure for RVSP",
+          "corePiece": "The simplified Bernoulli equation states that the pressure gradient in mmHg equals 4 times the peak velocity squared in m/s. A 4 m/s jet therefore represents a 64 mmHg gradient. It assumes the proximal velocity is negligible; when proximal velocity exceeds about 1.5 m/s, as in combined LVOT and valve obstruction or coarctation, the expanded form 4(V2 squared minus V1 squared) is preferred. RV systolic pressure is estimated as 4 times peak TR velocity squared plus right atrial pressure. RA pressure is estimated from the IVC: diameter 2.1 cm or less with more than 50 percent collapse on sniff suggests about 3 mmHg; diameter over 2.1 cm with less than 50 percent collapse suggests about 15 mmHg; other combinations suggest about 8 mmHg. A peak TR velocity above 2.8 m/s is a commonly used marker of possible pulmonary hypertension. PA end-diastolic pressure can be estimated from the end-diastolic PR velocity, 4V squared plus RA pressure, and mean PA pressure from the early peak PR velocity.",
+          "whyLock": "Velocity is squared, so small errors become large gradient errors, and an angle of more than about 20 degrees significantly underestimates velocity. Doppler always underestimates if misaligned, never overestimates, so the highest clean velocity from multiple windows wins. Trap: a weak or incomplete TR envelope underestimates RVSP, and agitated saline or contrast can enhance it. Trap two: in severe free TR, the RA and RV equalize and the low TR velocity does not reflect true PA pressure. Bernoulli peak instantaneous gradients from echo are higher than the peak-to-peak gradients reported in older catheter labs, which explains apparent discrepancies.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 4",
+              "title": "Normal Intracardiac Pressures",
+              "link": "A Bernoulli gradient added to a known chamber pressure yields the unknown chamber pressure."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "RV Function & Pulmonary Hypertension",
+              "link": "RVSP from the TR jet is the main echo screen for pulmonary hypertension."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Coarctation of the Aorta",
+              "link": "Elevated proximal velocity in coarctation is a classic reason to use the expanded Bernoulli equation."
+            }
+          ],
+          "registryApplication": "Expect calculations of gradient from velocity and RVSP from TR velocity plus an IVC-derived RA pressure.",
+          "checkpoint": {
+            "pearl": "Gradient = 4V squared; RVSP = 4(TR V) squared + RAP",
+            "reflection": "TR velocity is 3.0 m/s and the IVC is 2.5 cm with less than 50 percent collapse. What is the estimated RVSP?"
+          },
+          "keyTerms": [
+            "Simplified Bernoulli Equation",
+            "Expanded Bernoulli Equation",
+            "Tricuspid Regurgitation Velocity",
+            "IVC Collapsibility",
+            "Right Atrial Pressure",
+            "RVSP"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 8"
+        },
+        {
+          "id": "ae-continuity-equation-pisa",
+          "title": "Continuity Equation & PISA",
+          "frontClue": "What flows in must flow out: area times velocity stays constant",
+          "corePiece": "The continuity equation is based on conservation of mass: flow proximal to an orifice equals flow through it. For aortic stenosis, AVA equals LVOT CSA times LVOT VTI divided by aortic valve VTI. The dimensionless index (DVI), LVOT VTI divided by AV VTI, avoids the diameter entirely; a DVI below 0.25 suggests severe native AS. The same principle works for mitral stenosis and prosthetic valves, provided the reference site has no significant regurgitation. PISA (proximal isovelocity surface area) applies continuity to the hemispheric shell of converging flow proximal to a regurgitant orifice. Shift the color baseline toward the jet to lower the aliasing velocity to about 30 to 40 cm/s, then measure the radius from the first aliasing boundary to the orifice. Flow rate equals 2 pi r squared times aliasing velocity. EROA equals flow rate divided by peak regurgitant velocity, and regurgitant volume equals EROA times the regurgitant VTI. For MR, EROA of 0.40 cm2 or more and regurgitant volume of 60 mL or more indicate severe disease.",
+          "whyLock": "Both equations compare a known area and velocity with an unknown one, so set them up as ratios before calculating. In PISA, the radius is squared, so a small radius error becomes a large EROA error; zoom on the orifice and measure in mid-systole. Trap: PISA assumes a hemisphere, which fails with a flat or very eccentric orifice and overestimates when the orifice lies on a constraining wall. Trap two: continuity using a mitral reference is invalid if there is significant MR. If the LVOT diameter seems unreliable, the DVI provides a diameter-free check on AS severity.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 7",
+              "title": "Stroke Volume & Cardiac Output",
+              "link": "The LVOT stroke volume is the numerator of the aortic continuity equation."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Mitral Regurgitation",
+              "link": "PISA-derived EROA and regurgitant volume are quantitative criteria for MR severity."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Prosthetic Valves",
+              "link": "The dimensionless index is a key screen for prosthetic aortic valve obstruction."
+            }
+          ],
+          "registryApplication": "Expect AVA calculations, DVI interpretation and PISA steps including why baseline shift is used and how EROA is derived.",
+          "checkpoint": {
+            "pearl": "A1 x V1 = A2 x V2; PISA flow = 2 pi r squared x Va",
+            "reflection": "An LVOT area of 3.0 cm2, LVOT VTI of 20 cm and AV VTI of 100 cm give what valve area, and how would you grade it?"
+          },
+          "keyTerms": [
+            "Conservation of Mass",
+            "Dimensionless Index",
+            "Aliasing Velocity",
+            "Effective Regurgitant Orifice Area",
+            "Regurgitant Volume",
+            "Baseline Shift"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 9"
+        },
+        {
+          "id": "ae-diastolic-function",
+          "title": "Diastolic Function",
+          "frontClue": "Four clues: e', average E/e', TR velocity, LA volume index",
+          "corePiece": "Diastolic assessment combines mitral inflow, tissue Doppler and chamber size. Mitral inflow PW is sampled at the leaflet tips in the apical four-chamber view, measuring E and A velocities, E/A ratio and E deceleration time. Tissue Doppler e' is measured at the septal and lateral annulus. In patients with normal EF, the 2016 ASE/EACVI guideline uses four variables: septal e' below 7 cm/s or lateral e' below 10 cm/s, average E/e' above 14, LA volume index above 34 mL/m2, and peak TR velocity above 2.8 m/s. If more than half are abnormal, diastolic dysfunction is present; if half are abnormal, the study is indeterminate. Grade I (impaired relaxation) shows E/A 0.8 or less with a small E and normal LA pressure. Grade II (pseudonormal) shows E/A between 0.8 and 2 with elevated filling pressure, unmasked by reduced e', high E/e' or a Valsalva-induced E/A decrease of 50 percent or more. Grade III (restrictive) shows E/A of 2 or more and short deceleration time under about 160 ms.",
+          "whyLock": "The trap is pseudonormalization: a grade II inflow looks just like a normal one, so you must look at e', E/e', LA size and TR velocity before calling it normal. LA volume index works as the hemoglobin A1c of diastolic function, reflecting chronic filling pressure, while E/e' reflects the moment. Also remember that normal young adults can have E/A above 2 with normal e', which is not restrictive. Atrial fibrillation removes the A wave, and mitral annular calcification, prosthetic mitral valves and significant MR distort e' and E/e', making the algorithm unreliable.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 3",
+              "title": "Cardiac Cycle & ECG Timing",
+              "link": "E, A and the isovolumic relaxation time correspond to defined phases of diastole."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "M-Mode & Tissue Doppler",
+              "link": "Tissue Doppler supplies the annular e' velocity that anchors the diastolic algorithm."
+            },
+            {
+              "piece": "Piece 24",
+              "title": "Restrictive Cardiomyopathy & Amyloidosis",
+              "link": "Advanced amyloid typically shows grade III restrictive filling with very low e'."
+            }
+          ],
+          "registryApplication": "Expect questions on the four ASE variables and cutoffs, grading by E/A and deceleration time, and how to unmask pseudonormal filling.",
+          "checkpoint": {
+            "pearl": "Pseudonormal looks normal; e' and E/e' tell the truth",
+            "reflection": "A 68-year-old has E/A of 1.2, average E/e' of 16 and LA volume index of 42 mL/m2. What grade is this, and why is the E/A misleading?"
+          },
+          "keyTerms": [
+            "E/A Ratio",
+            "Deceleration Time",
+            "E/e' Ratio",
+            "LA Volume Index",
+            "Pseudonormal Filling",
+            "Restrictive Filling",
+            "Valsalva Maneuver"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 10"
+        }
+      ]
+    },
+    {
+      "id": "ae-valvular-stenosis",
+      "title": "Valvular Stenosis",
+      "pieceRange": "Pieces 11-15",
+      "examType": "ARDMS RDCS Adult Echocardiography (AE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Grading aortic, mitral, pulmonic and tricuspid stenosis, plus rheumatic and bicuspid valve disease",
+      "topics": [
+        {
+          "id": "ae-aortic-stenosis-grading",
+          "title": "Aortic Stenosis Grading",
+          "frontClue": "Severe AS: 4, 40, 1.0: velocity, mean gradient, valve area",
+          "corePiece": "Calcific degenerative disease of a trileaflet valve is the most common cause of AS in older adults; bicuspid and rheumatic valves are the other major causes. 2D shows thickened, calcified, restricted cusps, often with concentric LV hypertrophy. ASE/AHA grading: mild AS has a peak velocity of 2.0 to 2.9 m/s, mean gradient under 20 mmHg and AVA over 1.5 cm2. Moderate AS has 3.0 to 3.9 m/s, 20 to 39 mmHg and 1.0 to 1.5 cm2. Severe AS has a peak velocity of 4.0 m/s or more, mean gradient of 40 mmHg or more, AVA under 1.0 cm2, indexed AVA under 0.6 cm2/m2 and DVI under 0.25. Peak velocity should be sought with CW Doppler from the apical, right parasternal, suprasternal and subcostal windows, often with a dedicated nonimaging probe. Classical low-flow, low-gradient AS has AVA under 1.0 cm2, mean gradient under 40 mmHg and reduced EF; paradoxical low-flow AS has the same numbers with preserved EF and a stroke volume index under 35 mL/m2.",
+          "whyLock": "When the numbers disagree, think about flow. A small valve area with a low gradient means either the measurement is wrong, often an underestimated LVOT diameter, or flow is low. Low-dose dobutamine stress separates true severe AS, in which the gradient rises and the area stays small, from pseudosevere AS, in which the area opens. Trap: high-flow states such as anemia, fever or coexisting AR raise velocity and can exaggerate severity. The shape of the CW envelope helps: severe AS peaks late and is rounded, while mild AS peaks early and is triangular. Never grade from one window.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 9",
+              "title": "Continuity Equation & PISA",
+              "link": "AVA and DVI come directly from the continuity principle."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Stress Echocardiography",
+              "link": "Low-dose dobutamine distinguishes true severe from pseudosevere low-flow, low-gradient AS."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "Bicuspid Aortic Valve",
+              "link": "A bicuspid valve is the most common cause of AS in younger adults."
+            }
+          ],
+          "registryApplication": "Expect grading questions from given velocities, gradients or areas, and questions about the multiwindow search and low-flow, low-gradient AS.",
+          "checkpoint": {
+            "pearl": "Severe AS: Vmax 4 m/s, mean gradient 40 mmHg, AVA under 1.0 cm2",
+            "reflection": "A patient has an AVA of 0.8 cm2, a mean gradient of 28 mmHg and an EF of 30 percent. What test clarifies severity, and what result confirms true severe AS?"
+          },
+          "keyTerms": [
+            "Peak Velocity",
+            "Mean Gradient",
+            "Aortic Valve Area",
+            "Dimensionless Index",
+            "Low-Flow Low-Gradient AS",
+            "Pedoff Probe"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 11"
+        },
+        {
+          "id": "ae-bicuspid-aortic-valve",
+          "title": "Bicuspid Aortic Valve",
+          "frontClue": "Two cusps open like a fish mouth, and the aorta comes along for the ride",
+          "corePiece": "The bicuspid aortic valve is the most common congenital heart abnormality, present in about 1 to 2 percent of people, with male predominance. The most frequent pattern is fusion of the right and left coronary cusps, often with a raphe that can make the valve look trileaflet in diastole. The valve must therefore be judged in systole in the parasternal short-axis view, where the opening is elliptical, or fish mouth shaped, rather than triangular. In the long-axis view, the cusps dome in systole. On M-mode, the diastolic closure line is often eccentric rather than centered in the aortic root. Bicuspid valves develop stenosis earlier than trileaflet valves, often in the 40s to 60s, and can also regurgitate. Associations include ascending aortic dilation (bicuspid aortopathy), coarctation of the aorta, and Turner syndrome. Complications include endocarditis and, less commonly, aortic dissection. The aortic root and ascending aorta should be measured on every bicuspid study.",
+          "whyLock": "The classic error is calling a valve trileaflet from a diastolic frame when a raphe mimics a third commissure. Count commissures during systolic opening. Systolic doming in the long axis is a strong clue even when the short axis is poor. Trap: an eccentric M-mode closure line suggests but does not prove a bicuspid valve. Because the aortopathy is part of the disease, not just a consequence of stenosis, the ascending aorta can dilate even with a well-functioning valve, and first-degree relatives are often screened. Always look for coarctation from the suprasternal notch in a young patient with a bicuspid valve.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 11",
+              "title": "Aortic Stenosis Grading",
+              "link": "Bicuspid valves are graded with the same velocity, gradient and area criteria."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Coarctation of the Aorta",
+              "link": "Coarctation frequently coexists with a bicuspid aortic valve."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Marfan Syndrome & Aortic Root Dilation",
+              "link": "Bicuspid aortopathy is another cause of ascending aortic dilation that requires serial measurement."
+            }
+          ],
+          "registryApplication": "Expect questions on the most common fusion pattern, how to avoid raphe errors, systolic doming and associated lesions.",
+          "checkpoint": {
+            "pearl": "Judge cusps in systole; raphe fools you in diastole",
+            "reflection": "A 35-year-old has a valve that looks trileaflet in diastole but domes in systole. What view and timing would confirm the diagnosis?"
+          },
+          "keyTerms": [
+            "Raphe",
+            "Systolic Doming",
+            "Fish-Mouth Opening",
+            "Eccentric Closure Line",
+            "Bicuspid Aortopathy",
+            "Coarctation of the Aorta"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 12"
+        },
+        {
+          "id": "ae-mitral-stenosis",
+          "title": "Mitral Stenosis",
+          "frontClue": "Hockey stick leaflet, fish-mouth orifice, area equals 220 divided by PHT",
+          "corePiece": "Mitral stenosis is almost always rheumatic in origin; degenerative calcific MS from severe annular calcification is increasing in elderly patients. Rheumatic MS shows commissural fusion, leaflet tip thickening and diastolic doming of the anterior leaflet, the hockey stick appearance in parasternal long axis, with restricted posterior leaflet motion. In parasternal short axis at the leaflet tips, the orifice is fish mouth shaped and can be planimetered in mid-diastole; planimetry is the reference 2D method. The normal mitral valve area is about 4 to 6 cm2. Pressure half-time is the time for the peak gradient to fall by half, and MVA equals 220 divided by PHT. Severe MS is defined as MVA of 1.5 cm2 or less, usually with PHT of 150 ms or more; very severe is 1.0 cm2 or less. Mean gradient, often above 10 mmHg in severe MS, depends on heart rate and flow. On M-mode, the EF slope is reduced and the posterior leaflet moves anteriorly with the anterior leaflet.",
+          "whyLock": "PHT is easy but has limits: it is unreliable immediately after balloon valvotomy, with significant AR, and with abnormal LV or LA compliance, so planimetry or continuity is used then. Trap: planimetry must be at the true leaflet tips; scanning too far toward the base gives a falsely large area. Mean gradient rises with tachycardia, so always report heart rate. Before percutaneous valvotomy, the Wilkins score grades leaflet mobility, thickening, calcification and subvalvular disease; a score above about 8 predicts a poorer result, and moderate or greater MR or LA appendage thrombus, best seen on TEE, are contraindications.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 14",
+              "title": "Rheumatic Heart Disease",
+              "link": "Commissural fusion and hockey stick doming are the rheumatic signature on the mitral valve."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Thrombus & Metastatic Tumors",
+              "link": "LA appendage thrombus is a key complication of MS and must be excluded before valvotomy."
+            },
+            {
+              "piece": "Piece 49",
+              "title": "TEE Indications & Views",
+              "link": "TEE is used to exclude LA appendage thrombus before balloon valvotomy or cardioversion."
+            }
+          ],
+          "registryApplication": "Expect MVA from PHT calculations, severity cutoffs, causes of PHT error and the classic 2D and M-mode appearance.",
+          "checkpoint": {
+            "pearl": "MVA = 220 / PHT; severe at 1.5 cm2 or less",
+            "reflection": "A PHT of 220 ms gives what MVA, and why might this value be wrong in a patient with moderate aortic regurgitation?"
+          },
+          "keyTerms": [
+            "Pressure Half-Time",
+            "Planimetry",
+            "Commissural Fusion",
+            "Hockey Stick Deformity",
+            "Wilkins Score",
+            "Mean Gradient"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 13"
+        },
+        {
+          "id": "ae-rheumatic-heart-disease",
+          "title": "Rheumatic Heart Disease",
+          "frontClue": "Strep throat years ago: fused commissures and thick, shortened chordae today",
+          "corePiece": "Rheumatic heart disease follows acute rheumatic fever, an immune reaction to group A streptococcal pharyngitis. It is still common in low-resource regions and in immigrants. The mitral valve is affected most often, followed by the aortic valve, and multivalve disease is common; tricuspid involvement occurs, while pulmonic involvement is rare. Hallmarks are commissural fusion, leaflet thickening that is most pronounced at the tips, and thickened, shortened, fused chordae. The mitral valve can be stenotic, regurgitant, or both; acute rheumatic carditis more often causes MR, while chronic disease leads to MS. Rheumatic aortic valve disease shows commissural fusion with a triangular, central systolic orifice and often combined AS and AR, usually alongside mitral disease. Rheumatic tricuspid stenosis is usually associated with mitral disease. The World Heart Federation criteria are used for echo screening in endemic areas. Chronic sequelae include LA enlargement, atrial fibrillation, thromboembolism and pulmonary hypertension.",
+          "whyLock": "The diagnostic reasoning is pattern recognition: the commissures fuse first, which separates rheumatic disease from degenerative disease, where calcium starts at the annulus and leaflet bases and the commissures stay open. If aortic valve disease is rheumatic, the mitral valve is almost always involved too, so an isolated aortic lesion with a normal mitral valve points elsewhere. Trap: mitral annular calcification can restrict inflow but does not fuse commissures. Rheumatic valves are also substrates for infective endocarditis, and the subvalvular apparatus severity strongly influences whether balloon valvotomy is feasible.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 13",
+              "title": "Mitral Stenosis",
+              "link": "Rheumatic disease is the leading cause of mitral stenosis worldwide."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Pulmonic & Tricuspid Stenosis",
+              "link": "Rheumatic tricuspid stenosis usually accompanies rheumatic mitral disease."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Infective Endocarditis",
+              "link": "Damaged rheumatic valves are a classic substrate for vegetations."
+            }
+          ],
+          "registryApplication": "Expect questions on which valve is most often involved, the hallmark of commissural fusion, and how rheumatic and degenerative disease differ.",
+          "checkpoint": {
+            "pearl": "Rheumatic fuses commissures; degenerative calcifies the base",
+            "reflection": "How would you tell rheumatic mitral stenosis from degenerative calcific mitral stenosis on 2D imaging?"
+          },
+          "keyTerms": [
+            "Group A Streptococcus",
+            "Commissural Fusion",
+            "Chordal Thickening",
+            "Mitral Stenosis",
+            "Multivalve Disease",
+            "Mitral Annular Calcification"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 14"
+        },
+        {
+          "id": "ae-pulmonic-tricuspid-stenosis",
+          "title": "Pulmonic & Tricuspid Stenosis",
+          "frontClue": "Pulmonic stenosis is congenital and domes; tricuspid stenosis is rare and rheumatic or carcinoid",
+          "corePiece": "Pulmonic stenosis is nearly always congenital. Valvular PS shows a thickened, systolic doming valve, often with post-stenotic dilation of the main pulmonary artery, and RV hypertrophy in significant cases. A dysplastic, thick, non-doming valve suggests Noonan syndrome. PS is graded by CW Doppler peak velocity in the parasternal short-axis or subcostal view: mild under 3 m/s (peak gradient under 36 mmHg), moderate 3 to 4 m/s (36 to 64 mmHg), and severe over 4 m/s (over 64 mmHg). Subvalvular obstruction from infundibular hypertrophy produces a late-peaking dagger-shaped signal. Tricuspid stenosis is uncommon; causes include rheumatic disease, almost always with mitral involvement, carcinoid heart disease, and less often obstruction by tumors or devices. TS shows thickened, restricted, diastolic doming leaflets with RA and IVC enlargement. Because gradients are low, a mean gradient of 5 mmHg or more, PHT of 190 ms or more, and valve area of 1.0 cm2 or less indicate significant TS. Measure averaged over the respiratory cycle because inspiration increases right-sided flow.",
+          "whyLock": "Right-sided stenosis is tested because the numbers differ from the left side. A mean tricuspid gradient of only 5 mmHg is significant, which is why low-gradient signals must not be dismissed. Trap: in PS, RVSP from TR no longer equals PA systolic pressure; subtract the PS gradient to estimate PA pressure. Carcinoid disease more often causes severe TR from thickened, retracted, fixed leaflets than pure stenosis, and it usually spares the left heart unless there is a right-to-left shunt or lung metastases. Differentiate valvular from infundibular obstruction by the envelope shape and PW mapping.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 14",
+              "title": "Rheumatic Heart Disease",
+              "link": "Rheumatic tricuspid stenosis rarely occurs without mitral involvement."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Bernoulli Equation & RVSP",
+              "link": "With PS, RVSP minus the transpulmonary gradient estimates PA systolic pressure."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Repaired Tetralogy of Fallot",
+              "link": "RVOT obstruction is a core part of tetralogy and can recur after repair."
+            }
+          ],
+          "registryApplication": "Expect PS grading from velocity, the low tricuspid gradient threshold, Noonan and carcinoid associations, and the PS effect on RVSP.",
+          "checkpoint": {
+            "pearl": "PS severe over 4 m/s; TS significant at mean gradient 5 mmHg",
+            "reflection": "A patient with PS has a TR velocity of 5 m/s and a PS peak gradient of 60 mmHg. Is the pulmonary artery pressure elevated?"
+          },
+          "keyTerms": [
+            "Pulmonic Stenosis",
+            "Post-Stenotic Dilation",
+            "Noonan Syndrome",
+            "Tricuspid Stenosis",
+            "Carcinoid Heart Disease",
+            "Infundibular Stenosis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 15"
+        }
+      ]
+    },
+    {
+      "id": "ae-valvular-regurgitation-prosthetic-valves",
+      "title": "Valvular Regurgitation & Prosthetic Valves",
+      "pieceRange": "Pieces 16-21",
+      "examType": "ARDMS RDCS Adult Echocardiography (AE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Grading MR, AR, TR and PR, prolapse, endocarditis, and prosthetic valve assessment",
+      "topics": [
+        {
+          "id": "ae-mitral-regurgitation",
+          "title": "Mitral Regurgitation",
+          "frontClue": "Vena contracta 0.7, EROA 0.40, volume 60: the severe MR triad",
+          "corePiece": "MR is classified as primary, from a structural leaflet or chordal problem such as prolapse, flail or endocarditis, or secondary (functional), from LV or LA dilation causing tethering and annular dilation with structurally normal leaflets. Carpentier types describe leaflet motion: type I normal, type II excessive, and type III restricted. Severity uses an integrated approach. Mild MR has a vena contracta under 0.3 cm, a small central jet, EROA under 0.20 cm2 and regurgitant volume under 30 mL. Severe MR has a vena contracta of 0.7 cm or more, EROA of 0.40 cm2 or more, regurgitant volume of 60 mL or more, regurgitant fraction of 50 percent or more, a large central jet over 50 percent of LA area or a wall-hugging eccentric jet, a dense triangular CW signal, a mitral E velocity above 1.2 m/s, and systolic flow reversal in the pulmonary veins. A dominant A wave inflow argues against severe MR. Chronic severe MR enlarges the LA and LV.",
+          "whyLock": "Color jet area is the most misleading parameter because it depends on gain, Nyquist limit and jet direction. Eccentric jets hug the LA wall and look smaller than they are (Coanda effect), so rely on vena contracta, PISA and pulmonary vein flow. Trap: acute severe MR, such as papillary rupture, may show a normal-sized LA and LV and a brief, low-velocity jet because LA pressure rises abruptly. Trap two: functional MR is dynamic and changes with loading, so note blood pressure. The jet points away from a prolapsing leaflet and toward a restricted one.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 9",
+              "title": "Continuity Equation & PISA",
+              "link": "PISA supplies EROA and regurgitant volume for quantitative MR grading."
+            },
+            {
+              "piece": "Piece 19",
+              "title": "Mitral Valve Prolapse",
+              "link": "Prolapse and flail leaflets are the commonest causes of primary MR."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Mechanical Complications of MI",
+              "link": "Papillary muscle rupture causes acute severe MR with a small LA."
+            }
+          ],
+          "registryApplication": "Expect questions on severe MR cutoffs, primary versus secondary MR, eccentric jet pitfalls and pulmonary vein systolic reversal.",
+          "checkpoint": {
+            "pearl": "Severe MR: VC 0.7 cm, EROA 0.40 cm2, RVol 60 mL, pulmonary vein reversal",
+            "reflection": "Why does an eccentric posteriorly directed jet often look less severe by color area than a central jet of the same volume?"
+          },
+          "keyTerms": [
+            "Vena Contracta",
+            "Effective Regurgitant Orifice Area",
+            "Pulmonary Vein Flow Reversal",
+            "Coanda Effect",
+            "Primary MR",
+            "Secondary MR",
+            "Carpentier Classification"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 16"
+        },
+        {
+          "id": "ae-aortic-regurgitation",
+          "title": "Aortic Regurgitation",
+          "frontClue": "Short PHT, wide jet, holodiastolic reversal: the aorta is leaking back",
+          "corePiece": "AR results from cusp disease, such as bicuspid valve, rheumatic disease or endocarditis, or from aortic root dilation, as in Marfan syndrome, hypertension or dissection. Severity combines several parameters. Severe AR shows a jet width of 65 percent or more of LVOT diameter, a vena contracta over 0.6 cm, a CW pressure half-time under 200 ms, holodiastolic flow reversal in the proximal descending aorta with end-diastolic velocity above about 20 cm/s, holodiastolic reversal in the abdominal aorta, EROA of 0.30 cm2 or more, regurgitant volume of 60 mL or more and regurgitant fraction of 50 percent or more. Mild AR shows a jet width under 25 percent of LVOT, vena contracta under 0.3 cm and PHT over 500 ms. Chronic severe AR causes LV dilation from combined volume and pressure load. On M-mode, the AR jet can cause high-frequency fluttering of the anterior mitral leaflet. In acute severe AR, LV diastolic pressure rises rapidly, causing premature mitral closure.",
+          "whyLock": "PHT reflects how fast the aortic and LV pressures equalize, so it depends on LV compliance and systemic resistance as well as AR severity. A stiff ventricle or vasodilation shortens PHT and can exaggerate severity; use flow reversal and vena contracta to confirm. Trap: brief early diastolic reversal in the descending aorta is normal; only holodiastolic reversal suggests significant AR. Trap two: anterior mitral fluttering on M-mode indicates AR but does not grade it. Acute severe AR, as in endocarditis or dissection, may present with a normal-size LV, a very short PHT and premature mitral valve closure, a surgical emergency.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 43",
+              "title": "Marfan Syndrome & Aortic Root Dilation",
+              "link": "Root dilation stretches the cusps apart and causes central AR."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Aortic Dissection",
+              "link": "Acute AR is a major complication of type A dissection."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Mitral Stenosis",
+              "link": "Significant AR invalidates the pressure half-time method for mitral valve area."
+            }
+          ],
+          "registryApplication": "Expect questions on PHT cutoffs, which flow reversal pattern is significant, jet width ratios and M-mode signs of AR.",
+          "checkpoint": {
+            "pearl": "Severe AR: PHT under 200 ms, holodiastolic reversal, jet over 65 percent of LVOT",
+            "reflection": "Why might a patient with moderate AR and a very stiff LV show a PHT in the severe range?"
+          },
+          "keyTerms": [
+            "Pressure Half-Time",
+            "Jet Width to LVOT Ratio",
+            "Holodiastolic Flow Reversal",
+            "Vena Contracta",
+            "Mitral Fluttering",
+            "Premature Mitral Closure"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 17"
+        },
+        {
+          "id": "ae-tricuspid-pulmonic-regurgitation",
+          "title": "Tricuspid & Pulmonic Regurgitation",
+          "frontClue": "Hepatic vein systolic reversal flags severe TR; a short, dense PR jet flags severe PR",
+          "corePiece": "Trace TR is present in most normal people. Pathologic TR is usually secondary, caused by RV or annular dilation from pulmonary hypertension, left heart disease or atrial fibrillation, and less often primary, from endocarditis, carcinoid, Ebstein anomaly, rheumatic disease or pacemaker leads. Severe TR features include a vena contracta of 0.7 cm or more, a large central jet over about 10 cm2, EROA of 0.40 cm2 or more, regurgitant volume of 45 mL or more, systolic flow reversal in the hepatic veins, a dense triangular early-peaking CW signal, a dilated IVC and RA, and a tricuspid E velocity often above 1 m/s. In severe free TR, the RA and RV pressures equalize and the jet velocity may be low. Mild PR is a normal finding. Pathologic PR occurs with pulmonary hypertension, which produces a high-velocity jet, and after tetralogy repair or pulmonary valvotomy. Severe PR shows a wide jet filling the RVOT, a dense CW signal with steep deceleration ending before end-diastole, and RV dilation.",
+          "whyLock": "TR velocity reflects pressure, not severity: a modest jet can be fast with pulmonary hypertension, and massive TR can be slow. Never grade TR by velocity. Hepatic vein systolic reversal is a specific sign of severe TR, but atrial fibrillation blunts systolic forward flow and can mimic it. Trap: in severe PR, laminar low-velocity flow can be missed with color because there is little turbulence; look for diastolic flow reversal in the branch pulmonary arteries and an early termination of the CW signal. Device leads can impinge on leaflets and cause TR, so assess lead interaction in 3D or multiple views.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "Bernoulli Equation & RVSP",
+              "link": "The TR jet supplies the velocity used for RVSP, but its speed does not grade TR."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Ebstein Anomaly",
+              "link": "Displaced tricuspid leaflets in Ebstein anomaly produce primary TR."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Repaired Tetralogy of Fallot",
+              "link": "Chronic severe PR is the most common long-term problem after tetralogy repair."
+            }
+          ],
+          "registryApplication": "Expect questions on hepatic vein flow reversal, secondary TR mechanisms, the low-velocity jet of free TR and severe PR features.",
+          "checkpoint": {
+            "pearl": "Velocity tells pressure; hepatic veins tell TR severity",
+            "reflection": "A patient has severe TR with a peak velocity of 1.8 m/s. Why is the RVSP estimate unreliable here?"
+          },
+          "keyTerms": [
+            "Hepatic Vein Flow Reversal",
+            "Secondary TR",
+            "Annular Dilation",
+            "Free TR",
+            "Pulmonic Regurgitation",
+            "Carcinoid Heart Disease"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 18"
+        },
+        {
+          "id": "ae-mitral-valve-prolapse",
+          "title": "Mitral Valve Prolapse",
+          "frontClue": "More than 2 mm above the annulus in parasternal long axis, not the four-chamber view",
+          "corePiece": "Mitral valve prolapse is systolic displacement of one or both leaflets more than 2 mm above the mitral annular plane into the LA, measured in the parasternal long-axis or apical three-chamber view. It affects about 2 to 3 percent of the population. The four-chamber view should not be used to diagnose prolapse because the saddle-shaped annulus makes normal leaflets appear to bow above the plane. Classic prolapse includes leaflet thickening of 5 mm or more; nonclassic prolapse has thinner leaflets. Barlow disease is diffuse myxomatous degeneration with bulky, redundant leaflets and multisegment prolapse, while fibroelastic deficiency is thin leaflets with a localized prolapse, often P2, and chordal rupture. A flail leaflet occurs when chordal rupture lets the leaflet tip point into the LA. The MR jet is directed away from the prolapsing leaflet: posterior prolapse produces an anteriorly directed jet. On M-mode, prolapse shows a mid to late systolic posterior hammock motion. Clinically there is a mid-systolic click and late systolic murmur.",
+          "whyLock": "The saddle shape is the key reasoning point; it is why prolapse was overdiagnosed historically, and why the exam asks which view to use. A flail leaflet is a step beyond prolapse: the tip points into the atrium rather than the body billowing. Trap: in prolapse, the jet direction is opposite to the affected leaflet, while in restricted motion the jet goes toward the affected leaflet. Prolapse is associated with Marfan syndrome and other connective tissue disorders, and with arrhythmias. Severe MR from flail leaflet is a strong surgical indication, so describe the segment involved.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 16",
+              "title": "Mitral Regurgitation",
+              "link": "Prolapse and flail are classic causes of primary, eccentric MR."
+            },
+            {
+              "piece": "Piece 1",
+              "title": "Cardiac Chambers & Valves",
+              "link": "Prolapsing segments are named with the A1-A3 and P1-P3 scallop system."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Marfan Syndrome & Aortic Root Dilation",
+              "link": "MVP is a common cardiac finding in Marfan syndrome."
+            }
+          ],
+          "registryApplication": "Expect questions on the 2 mm criterion, which view is avoided, jet direction relative to the affected leaflet and flail versus prolapse.",
+          "checkpoint": {
+            "pearl": "Prolapse jets point away from the bad leaflet",
+            "reflection": "Why can a normal mitral valve appear to prolapse in the apical four-chamber view but not in the parasternal long-axis view?"
+          },
+          "keyTerms": [
+            "Saddle-Shaped Annulus",
+            "Flail Leaflet",
+            "Myxomatous Degeneration",
+            "Barlow Disease",
+            "Chordal Rupture",
+            "Hammock Sign"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 19"
+        },
+        {
+          "id": "ae-infective-endocarditis",
+          "title": "Infective Endocarditis",
+          "frontClue": "Vegetations sit on the upstream, low-pressure side of the valve",
+          "corePiece": "Infective endocarditis is infection of the endocardium, usually the valves, most often caused by Staphylococcus aureus and streptococci. Vegetations are irregular, mobile, echogenic masses attached to the upstream, low-pressure side of a valve: the atrial surface of the mitral and tricuspid valves and the ventricular surface of the aortic and pulmonic valves. They typically show independent, chaotic motion and often prolapse into the downstream chamber. Risk factors include prior endocarditis, prosthetic valves, congenital and rheumatic disease, intravenous drug use, which favors the tricuspid valve, and indwelling devices. Echo evidence of vegetation, abscess, new prosthetic dehiscence or new regurgitation is a major modified Duke criterion. Complications include valve perforation and destruction with severe regurgitation, perivalvular abscess, especially of the aortic root, pseudoaneurysm, fistula, and embolization. Vegetations over 10 mm and highly mobile vegetations carry higher embolic risk. TTE is the first test, but TEE has much higher sensitivity and is indicated for prosthetic valves, suspected abscess, high clinical suspicion with a negative TTE, and device infection.",
+          "whyLock": "Location rules come from flow: vegetations grow where the high-velocity jet strikes the low-pressure side. Use this to separate a vegetation from a mimic. Lambl excrescences are thin filaments on the closure line of aortic cusps, and nodules of Arantius are small central thickenings; neither moves chaotically. Trap: a negative TTE does not exclude endocarditis, especially on a prosthetic valve, where shadowing hides the atrial side of a mitral prosthesis. Perivalvular extension, such as an aortic root abscess, can produce new conduction block and is often a surgical indication. Marantic and Libman-Sacks lesions are sterile and are in the differential.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 21",
+              "title": "Prosthetic Valves",
+              "link": "Prosthetic valve endocarditis can cause dehiscence and paravalvular leak."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Normal Variants & Pseudomasses",
+              "link": "Lambl excrescences and nodules of Arantius are normal findings that can mimic vegetations."
+            },
+            {
+              "piece": "Piece 49",
+              "title": "TEE Indications & Views",
+              "link": "TEE is preferred for suspected abscess, prosthetic valves and nondiagnostic TTE."
+            }
+          ],
+          "registryApplication": "Expect questions on vegetation location, IV drug use and the tricuspid valve, complications such as abscess and when to move to TEE.",
+          "checkpoint": {
+            "pearl": "Upstream side: atrial on AV valves, ventricular on semilunar valves",
+            "reflection": "On which side of the aortic valve would you expect a vegetation, and what complication should you search for in the aortic root?"
+          },
+          "keyTerms": [
+            "Vegetation",
+            "Perivalvular Abscess",
+            "Modified Duke Criteria",
+            "Staphylococcus aureus",
+            "Embolization",
+            "Valve Perforation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 20"
+        },
+        {
+          "id": "ae-prosthetic-valves",
+          "title": "Prosthetic Valves",
+          "frontClue": "Mechanical lasts but clots; bioprosthetic avoids warfarin but wears out",
+          "corePiece": "Prosthetic valves are mechanical or biological. Mechanical types are bileaflet tilting disc, the most common, single tilting disc and caged ball. They require lifelong anticoagulation, cast strong shadows and reverberations, and normally have small closing and leakage washing jets. Biological valves include stented porcine or bovine pericardial valves, stentless valves, homografts and transcatheter valves; they need no long-term anticoagulation but degenerate, typically after about 10 to 15 years. Normal prosthetic aortic valves show a DVI of 0.30 or more and acceleration time under 80 ms; a DVI under 0.25 with acceleration time over 100 ms suggests obstruction. Normal mitral prostheses usually show peak E under 1.9 m/s, mean gradient of 5 mmHg or less and PHT under 130 ms. Patient-prosthesis mismatch is an indexed EOA that is too small for body size, severe below 0.65 cm2/m2 for aortic. Obstruction is caused by thrombus, often softer, larger and acute, or pannus, dense fibrous ingrowth. Dehiscence shows a rocking motion of the sewing ring with paravalvular regurgitation outside the ring.",
+          "whyLock": "Always compare with the baseline postoperative study; prosthetic gradients vary by type and size, so a single number can mislead. High gradients can mean obstruction, mismatch, high flow or regurgitation, and DVI and acceleration time help sort them. Trap: bileaflet valves in small sizes show pressure recovery and localized high velocity through the central orifice, which overestimates gradients. Trap two: a mitral prosthesis shadows the LA on TTE, so MR is often underestimated; TEE is the definitive test. Paravalvular leaks occur outside the sewing ring and are common after transcatheter replacement.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 9",
+              "title": "Continuity Equation & PISA",
+              "link": "DVI and effective orifice area use continuity principles applied to prostheses."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Infective Endocarditis",
+              "link": "Prosthetic endocarditis can cause abscess, dehiscence and new paravalvular leaks."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Harmonics, Artifacts & ALARA",
+              "link": "Mechanical valves create acoustic shadowing and reverberation that hide nearby regurgitant jets."
+            }
+          ],
+          "registryApplication": "Expect questions on valve types, normal washing jets, DVI and acceleration time cutoffs, mismatch, thrombus versus pannus and dehiscence.",
+          "checkpoint": {
+            "pearl": "Prosthetic AV obstruction: DVI under 0.25, acceleration time over 100 ms",
+            "reflection": "A prosthetic aortic valve shows a high gradient with a DVI of 0.40. What causes besides obstruction might explain this?"
+          },
+          "keyTerms": [
+            "Bileaflet Mechanical Valve",
+            "Bioprosthetic Valve",
+            "Patient-Prosthesis Mismatch",
+            "Pannus",
+            "Paravalvular Leak",
+            "Dehiscence",
+            "Acceleration Time"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 21"
+        }
+      ]
+    },
+    {
+      "id": "ae-cardiomyopathies-ventricular-function",
+      "title": "Cardiomyopathies & Ventricular Function",
+      "pieceRange": "Pieces 22-26",
+      "examType": "ARDMS RDCS Adult Echocardiography (AE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Dilated, hypertrophic, restrictive and stress cardiomyopathies, RV function and pulmonary hypertension",
+      "topics": [
+        {
+          "id": "ae-dilated-cardiomyopathy-heart-failure",
+          "title": "Dilated Cardiomyopathy & Heart Failure",
+          "frontClue": "Big, round, weak ventricle with a wide mitral E-point septal separation",
+          "corePiece": "Dilated cardiomyopathy is LV dilation with globally reduced systolic function not explained by coronary disease or abnormal loading. Causes include genetic disease, myocarditis, alcohol, chemotherapy such as anthracyclines, peripartum cardiomyopathy and tachycardia; ischemic cardiomyopathy produces a similar picture with regional scars. Echo shows an enlarged, spherical LV with thin or normal walls, global hypokinesis and a reduced EF. Secondary findings are functional MR from tethering and annular dilation, LA enlargement, elevated filling pressures, reduced LVOT VTI and possible LV apical thrombus. On M-mode, the E-point septal separation (EPSS) is increased, with values above about 7 mm suggesting reduced EF, and a B-bump on the mitral closure line indicates elevated LV end-diastolic pressure. Heart failure is classified by EF: reduced EF (HFrEF) is 40 percent or less, mildly reduced is 41 to 49 percent, and preserved EF (HFpEF) is 50 percent or more. Global longitudinal strain is a sensitive marker for subclinical dysfunction, especially in cardio-oncology, where a relative fall of more than about 15 percent is significant.",
+          "whyLock": "The reasoning is that a dilated, weak LV pulls the papillary muscles apart, so MR in DCM is usually secondary and improves with therapy. EPSS increases because the poorly ejecting ventricle has a low stroke volume and the dilated cavity moves the septum away from the mitral leaflet; aortic regurgitation and mitral stenosis also widen EPSS, which is a trap. Global hypokinesis does not exclude coronary disease, so regional patterns matter. Always look at the apex with contrast if needed, because a low-flow apex is the classic site for thrombus. Serial EF and strain guide therapy, including defibrillator decisions.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 6",
+              "title": "LV Size & Ejection Fraction",
+              "link": "EF from biplane Simpson's sets the heart failure category and therapy thresholds."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Mitral Regurgitation",
+              "link": "Secondary MR in DCM results from leaflet tethering and annular dilation."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Thrombus & Metastatic Tumors",
+              "link": "A dilated, akinetic LV apex is a classic site for thrombus."
+            }
+          ],
+          "registryApplication": "Expect questions on DCM appearance, M-mode EPSS and B-bump, heart failure EF categories and secondary MR mechanism.",
+          "checkpoint": {
+            "pearl": "HFrEF 40 percent or less; HFpEF 50 percent or more",
+            "reflection": "Why does an increased EPSS suggest reduced EF, and which valve lesions can widen EPSS without systolic dysfunction?"
+          },
+          "keyTerms": [
+            "E-Point Septal Separation",
+            "B-Bump",
+            "Global Longitudinal Strain",
+            "Secondary MR",
+            "HFrEF",
+            "HFpEF"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 22"
+        },
+        {
+          "id": "ae-hypertrophic-cardiomyopathy",
+          "title": "Hypertrophic Cardiomyopathy",
+          "frontClue": "Thick septum, SAM and a late-peaking dagger jet that grows with Valsalva",
+          "corePiece": "Hypertrophic cardiomyopathy is genetic LV hypertrophy, usually from sarcomere gene variants, not explained by loading conditions. The diagnosis requires wall thickness of 15 mm or more in any segment, or 13 mm or more with a family history or positive genetic test. The classic pattern is asymmetric septal hypertrophy with a septal to posterior wall ratio of about 1.3 or more; other forms include concentric, midventricular and apical (Yamaguchi) hypertrophy, which gives a spade-shaped cavity and may need contrast to see. Obstructive HCM shows systolic anterior motion (SAM) of the mitral leaflet or chordae against the septum, creating dynamic LVOT obstruction, a posteriorly directed MR jet, and mid-systolic partial closure or notching of the aortic valve on M-mode. CW Doppler through the LVOT shows a late-peaking, dagger-shaped envelope. An LVOT gradient of 30 mmHg or more at rest or with provocation indicates obstruction, and 50 mmHg or more is the usual threshold for septal reduction therapy. Diastolic dysfunction, LA enlargement and reduced e' are typical.",
+          "whyLock": "Obstruction is dynamic, so anything that decreases preload or afterload or increases contractility increases the gradient: Valsalva strain, standing, amyl nitrite, dehydration and dobutamine. Squatting, handgrip and leg raising decrease it. If the resting gradient is under 50 mmHg, provoke with Valsalva or exercise. Trap: the dagger-shaped late-peaking LVOT signal must not be confused with the MR jet, which starts earlier with isovolumic contraction and has a higher velocity, often over 5 to 6 m/s. Separate them by color guidance and timing. Athlete's heart shows milder, symmetric hypertrophy with normal or enhanced diastolic function and a normal or dilated cavity.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 25",
+              "title": "Takotsubo Cardiomyopathy",
+              "link": "Basal hyperkinesis in Takotsubo can cause SAM and LVOT obstruction resembling obstructive HCM."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Diastolic Function",
+              "link": "Reduced e' and elevated filling pressures are characteristic of HCM."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Contrast & Agitated Saline",
+              "link": "Contrast helps confirm apical HCM and apical aneurysm when the apex is poorly seen."
+            }
+          ],
+          "registryApplication": "Expect questions on wall thickness criteria, SAM and its M-mode signs, maneuvers that change the gradient and LVOT versus MR jet differentiation.",
+          "checkpoint": {
+            "pearl": "Valsalva makes the HCM gradient grow; squat makes it shrink",
+            "reflection": "During Valsalva strain, the LVOT gradient in a patient with HCM rises from 20 to 70 mmHg. Why, and what does this mean for treatment?"
+          },
+          "keyTerms": [
+            "Asymmetric Septal Hypertrophy",
+            "Systolic Anterior Motion",
+            "Dynamic LVOT Obstruction",
+            "Dagger-Shaped Envelope",
+            "Apical HCM",
+            "Valsalva Maneuver"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 23"
+        },
+        {
+          "id": "ae-restrictive-cardiomyopathy-amyloidosis",
+          "title": "Restrictive Cardiomyopathy & Amyloidosis",
+          "frontClue": "Thick, sparkling walls, big atria and a cherry-on-top strain pattern",
+          "corePiece": "Restrictive cardiomyopathy is a stiff, noncompliant myocardium with high filling pressures, usually with normal or near-normal LV size and EF. Causes include cardiac amyloidosis, sarcoidosis, hemochromatosis, Fabry disease, endomyocardial fibrosis and radiation. Amyloidosis, either transthyretin (ATTR) or light chain (AL), is the classic exam example. Echo features include increased LV and RV wall thickness, a granular sparkling myocardial texture, biatrial enlargement, thickened valves and interatrial septum, a small pericardial effusion, and restrictive filling with E/A above 2, deceleration time under about 160 ms and markedly reduced e'. Longitudinal strain shows apical sparing, with relatively preserved apical strain and reduced basal and mid strain, the cherry-on-top bull's-eye pattern. The ECG paradoxically shows low voltage despite thick walls. Restrictive physiology is distinguished from constrictive pericarditis by reduced tissue Doppler e', no significant respiratory variation in mitral inflow and the absence of septal bounce. Cardiac MRI, nuclear scintigraphy and biopsy confirm the subtype.",
+          "whyLock": "The key reasoning is that the myocardium is the problem in restriction, while the pericardium is the problem in constriction, so tissue velocity separates them: e' is low in restriction and preserved or high in constriction. Trap: sparkling texture is enhanced by harmonic imaging and is not specific, so rely on the full constellation. Thick walls with low ECG voltage strongly suggest infiltration, while hypertensive or hypertrophic hearts show high voltage. Amyloid also deposits in the atria, so atrial standstill and LA appendage thrombus can occur even in sinus rhythm.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 34",
+              "title": "Constrictive Pericarditis",
+              "link": "Constriction and restriction both raise filling pressure but differ in e', septal motion and respiratory variation."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Diastolic Function",
+              "link": "Restrictive filling is grade III diastolic dysfunction."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Hypertrophic Cardiomyopathy",
+              "link": "Both thicken the walls, but amyloid adds biatrial enlargement, low voltage and apical sparing."
+            }
+          ],
+          "registryApplication": "Expect questions on amyloid echo features, apical sparing strain, restrictive filling numbers and restrictive versus constrictive differentiation.",
+          "checkpoint": {
+            "pearl": "Restriction: low e'; constriction: preserved e'",
+            "reflection": "A patient has thick LV walls, biatrial enlargement and low-voltage ECG. Which strain pattern would support amyloidosis?"
+          },
+          "keyTerms": [
+            "Cardiac Amyloidosis",
+            "Granular Sparkling",
+            "Biatrial Enlargement",
+            "Apical Sparing",
+            "Restrictive Filling",
+            "Low Voltage"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 24"
+        },
+        {
+          "id": "ae-takotsubo-cardiomyopathy",
+          "title": "Takotsubo Cardiomyopathy",
+          "frontClue": "Ballooning apex, hyperkinetic base, stress trigger and open coronaries",
+          "corePiece": "Takotsubo cardiomyopathy, also called stress-induced or apical ballooning cardiomyopathy, is acute, usually reversible LV dysfunction triggered by emotional or physical stress, most often in postmenopausal women. It presents like an acute coronary syndrome with chest pain, ECG changes and modest troponin rise, but coronary angiography shows no culprit obstructive lesion. The classic echo pattern is akinesis or ballooning of the mid and apical segments with hyperkinesis of the basal segments, producing a shape like the Japanese octopus trap. Variants include reverse or basal Takotsubo, midventricular and focal forms. A key feature is that the wall motion abnormality extends beyond a single coronary territory, typically circumferentially. Complications include LVOT obstruction from basal hyperkinesis with SAM, mitral regurgitation, LV apical thrombus, cardiogenic shock, arrhythmias and, rarely, free wall rupture. RV involvement predicts a more complicated course. Function usually recovers within days to weeks, which confirms the diagnosis on follow-up echo.",
+          "whyLock": "Think in territories. An LAD infarct can involve the apex, but Takotsubo involves the apex circumferentially, including inferior and lateral apical segments, beyond what one artery explains. Trap: a wraparound LAD can mimic this pattern, so angiography is still required. Recognizing LVOT obstruction is critical because inotropes such as dobutamine worsen it, while fluids and beta blockers can help. Always examine the akinetic apex for thrombus. Follow-up echo showing full recovery separates Takotsubo from infarction, in which a scarred segment remains abnormal.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 28",
+              "title": "Coronary Territories",
+              "link": "Takotsubo wall motion exceeds the expected territory of any single coronary artery."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Hypertrophic Cardiomyopathy",
+              "link": "SAM and dynamic LVOT obstruction occur in both conditions."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Thrombus & Metastatic Tumors",
+              "link": "The akinetic, ballooned apex can develop LV thrombus."
+            }
+          ],
+          "registryApplication": "Expect questions on the classic ballooning pattern, demographics, nonobstructive coronaries, LVOT obstruction and reversibility.",
+          "checkpoint": {
+            "pearl": "Apex balloons, base squeezes, coronaries clean, function returns",
+            "reflection": "Why is dobutamine potentially harmful in a Takotsubo patient with a high LVOT gradient?"
+          },
+          "keyTerms": [
+            "Apical Ballooning",
+            "Basal Hyperkinesis",
+            "Stress Cardiomyopathy",
+            "LVOT Obstruction",
+            "Reversible Dysfunction",
+            "Coronary Territories"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 25"
+        },
+        {
+          "id": "ae-rv-function-pulmonary-hypertension",
+          "title": "RV Function & Pulmonary Hypertension",
+          "frontClue": "TAPSE under 17 mm, S' under 9.5 cm/s, FAC under 35 percent: the RV is failing",
+          "corePiece": "The RV is crescent shaped and wraps around the LV, so no single view captures its volume. ASE recommends a focused RV apical four-chamber view and several measures. RV dilation is suggested by a basal diameter above 41 mm. Systolic dysfunction is indicated by TAPSE (tricuspid annular plane systolic excursion, M-mode at the lateral annulus) under 17 mm, tissue Doppler S' under 9.5 cm/s, fractional area change under 35 percent. Pulmonary hypertension is now defined hemodynamically as a mean PA pressure above 20 mmHg. Echo estimates probability using peak TR velocity above 2.8 m/s and supporting signs: RV dilation, septal flattening, a PA diameter larger than the aortic root, PA acceleration time under about 100 ms or mid-systolic notching of the RVOT Doppler signal and a dilated, noncollapsing IVC. A D-shaped LV with septal flattening only in diastole suggests RV volume overload; flattening in systole and diastole suggests pressure overload. In acute pulmonary embolism, McConnell sign is RV free wall akinesis with preserved apical motion.",
+          "whyLock": "TAPSE is easy and reproducible but measures only longitudinal function at one site and is angle dependent; after cardiac surgery TAPSE is often reduced because longitudinal motion falls after pericardiotomy, even when overall RV function is preserved. Use multiple parameters. Trap: septal flattening timing distinguishes volume from pressure load, a classic exam question. Trap two: an underestimated TR jet can hide pulmonary hypertension, so use supporting signs. McConnell sign suggests acute PE but is not specific; chronic thromboembolic disease shows a hypertrophied, dilated RV with higher TR velocity than acute PE can generate.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "Bernoulli Equation & RVSP",
+              "link": "TR velocity and estimated RA pressure provide the RVSP used to screen for pulmonary hypertension."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Atrial Septal Defects",
+              "link": "An ASD causes RV volume overload with diastolic septal flattening."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Repaired Tetralogy of Fallot",
+              "link": "Chronic PR after repair dilates the RV, requiring serial RV assessment."
+            }
+          ],
+          "registryApplication": "Expect questions on TAPSE, S' and FAC cutoffs, septal flattening timing, McConnell sign and PH supporting findings.",
+          "checkpoint": {
+            "pearl": "Diastolic flattening: volume; systolic flattening: pressure",
+            "reflection": "A patient has septal flattening throughout systole and diastole with a TR velocity of 3.8 m/s. Is this volume or pressure overload?"
+          },
+          "keyTerms": [
+            "TAPSE",
+            "Fractional Area Change",
+            "Tissue Doppler S'",
+            "D-Shaped Septum",
+            "McConnell Sign",
+            "PA Acceleration Time"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 26"
+        }
+      ]
+    },
+    {
+      "id": "ae-coronary-artery-disease",
+      "title": "Coronary Artery Disease",
+      "pieceRange": "Pieces 27-31",
+      "examType": "ARDMS RDCS Adult Echocardiography (AE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Wall motion scoring, coronary territories, complications of infarction and stress echocardiography",
+      "topics": [
+        {
+          "id": "ae-17-segment-model-wall-motion-scoring",
+          "title": "17-Segment Model & Wall Motion Scoring",
+          "frontClue": "Six basal, six mid, four apical and one cap: score 1 to 4",
+          "corePiece": "The ASE and AHA 17-segment model divides the LV into six basal segments, six mid segments, four apical segments and the apical cap. Basal and mid levels each have anterior, anteroseptal, inferoseptal, inferior, inferolateral and anterolateral segments; the apical level has anterior, septal, inferior and lateral segments. The 17th segment, the apical cap, is the tip beyond the cavity and is mainly used for perfusion imaging and contrast studies; a 16-segment model is often used for wall motion. Each segment is scored by endocardial excursion and systolic wall thickening: 1 is normal or hyperkinetic, 2 is hypokinetic (reduced thickening), 3 is akinetic (thickening under about 10 percent), and 4 is dyskinetic (systolic outward motion). The wall motion score index is the sum of scores divided by the number of segments scored; a normal ventricle scores 1.0, and higher values reflect larger areas of dysfunction. Thin, bright, akinetic segments under about 6 mm thick suggest scar from prior infarction.",
+          "whyLock": "Wall thickening is more reliable than endocardial motion because a passive segment can be pulled inward by its neighbors, called tethering, and the whole heart translates. Watch the thickening of each segment from the inside border. Trap: an abnormal septal motion after cardiac surgery, with left bundle branch block or with RV pacing, is not ischemia if thickening is preserved. Trap two: apical foreshortening hides apical abnormalities. Practice naming the segments seen in each view, because exam questions often describe a view and an abnormality and ask which segment or artery is involved.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 28",
+              "title": "Coronary Territories",
+              "link": "Each scored segment is assigned to its typical supplying coronary artery."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Standard TTE Views & Windows",
+              "link": "Each apical view shows a specific pair of walls for segment scoring."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Stress Echocardiography",
+              "link": "Stress results are reported as segment scores at rest and peak."
+            }
+          ],
+          "registryApplication": "Expect questions on the number of segments per level, scoring definitions, the score index and thickening versus motion.",
+          "checkpoint": {
+            "pearl": "1 normal, 2 hypokinetic, 3 akinetic, 4 dyskinetic",
+            "reflection": "A segment moves inward in systole but does not thicken. How would you score it, and why?"
+          },
+          "keyTerms": [
+            "Wall Motion Score Index",
+            "Hypokinesis",
+            "Akinesis",
+            "Dyskinesis",
+            "Systolic Wall Thickening",
+            "Apical Cap",
+            "Tethering"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 27"
+        },
+        {
+          "id": "ae-coronary-territories",
+          "title": "Coronary Territories",
+          "frontClue": "LAD front and septum; RCA the floor; circumflex the side",
+          "corePiece": "Coronary territories map coronary anatomy onto the 17 segments, recognizing normal variation. The LAD typically supplies the basal and mid anterior and anteroseptal segments and all apical segments except sometimes the apical inferior and lateral, plus the apical cap. In the apical four-chamber view, the LAD supplies the apical septum; in the two-chamber view, the anterior wall; and in the three-chamber view, the anteroseptum. The RCA, in a right-dominant system, supplies the basal and mid inferior and inferoseptal segments and often the apical inferior segment, plus the RV free wall. The LCx supplies the basal and mid anterolateral and inferolateral segments and often the apical lateral segment. Areas of overlap include the apical lateral and apical inferior segments, which can be supplied by the LAD, the RCA or the LCx. Inferolateral segments are most often supplied by the LCx but may come from the RCA. RV involvement with an inferior infarct indicates proximal RCA occlusion.",
+          "whyLock": "Use territories to test whether a wall motion abnormality makes coronary sense. A defect confined to one territory suggests coronary disease; one that crosses territories suggests a nonischemic cause, a wraparound LAD or multivessel disease. Trap: the inferolateral wall was formerly called the posterior wall, and older questions may use posterior. Trap two: an inferior infarct with RV dysfunction warns of RV infarction, in which nitrates and diuretics can drop preload dangerously. Learn the overlap segments so you do not overcommit to a single artery.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Coronary Artery Anatomy",
+              "link": "Coronary branching patterns determine which segments each artery supplies."
+            },
+            {
+              "piece": "Piece 27",
+              "title": "17-Segment Model & Wall Motion Scoring",
+              "link": "Territories are defined using the named segments of this model."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Takotsubo Cardiomyopathy",
+              "link": "Takotsubo crosses coronary territories, which helps separate it from infarction."
+            }
+          ],
+          "registryApplication": "Expect questions asking which artery is likely occluded given a wall motion description in a particular view.",
+          "checkpoint": {
+            "pearl": "Anterior plus anteroseptum plus apex is LAD; inferior is RCA; lateral is circumflex",
+            "reflection": "Hypokinesis of the basal and mid inferolateral wall in the apical three-chamber view most likely involves which artery?"
+          },
+          "keyTerms": [
+            "LAD Territory",
+            "RCA Territory",
+            "Circumflex Territory",
+            "Wraparound LAD",
+            "RV Infarction",
+            "Inferolateral Wall"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 28"
+        },
+        {
+          "id": "ae-mechanical-complications-of-mi",
+          "title": "Mechanical Complications of MI",
+          "frontClue": "Days three to five: septal rupture, papillary rupture, free wall rupture",
+          "corePiece": "Mechanical complications of myocardial infarction are less common in the reperfusion era but remain life threatening and usually appear within the first week, often around days 3 to 5. Ventricular septal rupture occurs in anterior infarcts, typically apical, and in inferior infarcts, typically basal inferoseptal and often more complex and serpiginous. Color shows a left to right systolic jet across the septum with RV volume and pressure overload, and a new holosystolic murmur. Papillary muscle rupture causes acute severe MR; the posteromedial muscle is involved far more often because of its single blood supply from the PDA. The flail head may be seen prolapsing into the LA, and the LA may be small because the MR is acute. Free wall rupture usually causes sudden hemopericardium, tamponade and death; contained rupture forms a pseudoaneurysm. Other complications include LV thrombus at an akinetic apex, true aneurysm, pericardial effusion and pericarditis, including Dressler syndrome, RV infarction and dynamic LVOT obstruction from compensatory basal hyperkinesis.",
+          "whyLock": "The clinical clue is sudden deterioration with a new murmur after an infarct. On echo, distinguish septal rupture from papillary rupture by the location of the high-velocity jet: across the septum into the RV versus into the LA. Trap: acute severe MR may look less dramatic by color because LA pressure rises quickly and the jet is brief and low velocity. Trap two: a new pericardial effusion after infarction, especially with echogenic clot, raises concern for free wall rupture. Posteromedial papillary rupture with an inferior infarct is the most common exam pairing.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Coronary Artery Anatomy",
+              "link": "The PDA supplies the posteromedial papillary muscle, explaining its vulnerability."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "LV Aneurysm vs Pseudoaneurysm",
+              "link": "Contained free wall rupture forms a pseudoaneurysm rather than a true aneurysm."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Mitral Regurgitation",
+              "link": "Papillary rupture produces acute severe MR with a normal-size LA."
+            }
+          ],
+          "registryApplication": "Expect questions on the timing of complications, which papillary muscle ruptures, septal rupture location and signs of free wall rupture.",
+          "checkpoint": {
+            "pearl": "Posteromedial papillary rupture: inferior MI, single PDA supply",
+            "reflection": "Four days after an inferior MI, a patient develops hypotension and a new murmur. What two complications do you look for, and how do you tell them apart?"
+          },
+          "keyTerms": [
+            "Ventricular Septal Rupture",
+            "Papillary Muscle Rupture",
+            "Free Wall Rupture",
+            "Hemopericardium",
+            "LV Thrombus",
+            "Dressler Syndrome"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 29"
+        },
+        {
+          "id": "ae-lv-aneurysm-vs-pseudoaneurysm",
+          "title": "LV Aneurysm vs Pseudoaneurysm",
+          "frontClue": "Wide neck and all three layers: true; narrow neck and only pericardium: false",
+          "corePiece": "A true LV aneurysm is a thinned, scarred segment of full-thickness myocardium that bulges outward in both systole and diastole with dyskinetic or akinetic motion. It most often follows an LAD infarct and involves the apex or anterior wall. Its neck is wide, about as wide as the aneurysm itself, and the wall contains myocardium. Complications include thrombus within the aneurysm, ventricular arrhythmias and heart failure, but rupture is rare. A pseudoaneurysm is a contained rupture of the LV free wall, walled off by adherent pericardium and thrombus without myocardium. It occurs more often after inferior or inferolateral infarcts, or after surgery or trauma. It has a narrow neck, with a neck to maximal diameter ratio usually under about 0.5, an abrupt transition from normal myocardium, and to-and-fro color flow through the neck, systolic into the sac and diastolic back. Pseudoaneurysms have a high risk of rupture and require urgent surgery. Contrast echo, CT or cardiac MRI can help when the distinction is unclear.",
+          "whyLock": "The distinction changes management from elective to emergency, so the exam focuses on morphology. Neck width relative to the sac is the single most useful clue. Trap: a pseudoaneurysm can contain a lot of thrombus and look solid, so search for the narrow communication with color Doppler and pulsed Doppler. Trap two: a true aneurysm shows the wall tapering gradually from normal myocardium, while a pseudoaneurysm shows an abrupt break. Location helps but is not definitive: apical suggests true aneurysm, while inferior or inferolateral raises concern for a pseudoaneurysm.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 29",
+              "title": "Mechanical Complications of MI",
+              "link": "A pseudoaneurysm is a contained form of free wall rupture."
+            },
+            {
+              "piece": "Piece 27",
+              "title": "17-Segment Model & Wall Motion Scoring",
+              "link": "A true aneurysm segment is scored as dyskinetic."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Thrombus & Metastatic Tumors",
+              "link": "Both true and false aneurysms are sites of thrombus formation."
+            }
+          ],
+          "registryApplication": "Expect questions on neck width, wall composition, typical location, color flow pattern and rupture risk.",
+          "checkpoint": {
+            "pearl": "Narrow neck under half the sac width means pseudoaneurysm",
+            "reflection": "A sac off the inferolateral wall has a narrow neck with to-and-fro flow. Why is this more dangerous than an apical bulge with a wide neck?"
+          },
+          "keyTerms": [
+            "True Aneurysm",
+            "Pseudoaneurysm",
+            "Neck-to-Diameter Ratio",
+            "Contained Rupture",
+            "Dyskinesis",
+            "To-and-Fro Flow"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 30"
+        },
+        {
+          "id": "ae-stress-echocardiography",
+          "title": "Stress Echocardiography",
+          "frontClue": "New or worse wall motion at peak stress means ischemia; biphasic response means viable",
+          "corePiece": "Stress echo compares wall motion at rest and during stress, using exercise or dobutamine. The target heart rate is at least 85 percent of age-predicted maximum, calculated as 220 minus age. Treadmill images must be acquired immediately after exercise, ideally within about 60 to 90 seconds, because wall motion recovers quickly; supine bicycle allows imaging during exercise. Dobutamine is infused in stages, typically from 5 or 10 to 40 mcg/kg/min, with atropine added if needed to reach target heart rate. Normal response is increased thickening and a smaller, hyperdynamic cavity. Ischemia is a new or worsening wall motion abnormality, LV cavity dilation or reduced global function at peak. A fixed resting abnormality that does not change suggests scar. A biphasic response, improvement at low dose and deterioration at high dose, indicates viable but ischemic myocardium, the strongest predictor of recovery after revascularization. Low-dose dobutamine is also used for low-flow, low-gradient AS. Stopping criteria include target heart rate, significant arrhythmia, hypotension, severe hypertension and new extensive wall motion abnormality.",
+          "whyLock": "The core logic is supply and demand: stress increases demand, and a narrowed artery cannot increase supply, so the segment it feeds fails. Trap: delayed post-exercise imaging misses ischemia because the segment recovers. Trap two: a submaximal heart rate gives a nondiagnostic, not a normal, result. Beta blockers blunt the heart rate response. Left bundle branch block causes abnormal septal motion at rest that should not be called ischemia without thickening loss. For valve questions, contractile reserve on dobutamine is a stroke volume increase of 20 percent or more.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 27",
+              "title": "17-Segment Model & Wall Motion Scoring",
+              "link": "Stress results are scored segment by segment at rest and peak."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Aortic Stenosis Grading",
+              "link": "Low-dose dobutamine clarifies low-flow, low-gradient AS."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Contrast & Agitated Saline",
+              "link": "Contrast improves border definition during stress when image quality is limited."
+            }
+          ],
+          "registryApplication": "Expect questions on target heart rate, the timing of post-exercise imaging, dobutamine dosing and how ischemia, scar and viability appear.",
+          "checkpoint": {
+            "pearl": "Target 85 percent of 220 minus age; image within about a minute",
+            "reflection": "A segment improves at low-dose dobutamine and worsens at peak dose. What does this mean, and how does it differ from a fixed abnormality?"
+          },
+          "keyTerms": [
+            "Target Heart Rate",
+            "Dobutamine Stress",
+            "Biphasic Response",
+            "Myocardial Viability",
+            "Contractile Reserve",
+            "Ischemia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 31"
+        }
+      ]
+    },
+    {
+      "id": "ae-pericardial-disease-masses",
+      "title": "Pericardial Disease & Masses",
+      "pieceRange": "Pieces 32-37",
+      "examType": "ARDMS RDCS Adult Echocardiography (AE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Effusion, tamponade, constriction, cardiac tumors, thrombus and normal variants that mimic masses",
+      "topics": [
+        {
+          "id": "ae-pericardial-vs-pleural-effusion",
+          "title": "Pericardial vs Pleural Effusion",
+          "frontClue": "Descending aorta is the landmark: pericardial in front, pleural behind",
+          "corePiece": "The pericardium normally contains about 15 to 50 mL of fluid. A pericardial effusion appears as an echo-free space between the visceral and parietal pericardium, first seen posteriorly in dependent position and then circumferentially as it enlarges. Size is graded by end-diastolic separation: trivial when seen only in systole, small under 10 mm, moderate 10 to 20 mm and large over 20 mm. In parasternal long axis, pericardial fluid lies anterior to the descending thoracic aorta and tapers at the posterior AV groove, while left pleural fluid extends posterior to the descending aorta and does not stop at the AV groove. Pericardial fluid rarely collects behind the LA because the pericardial reflections around the pulmonary veins, forming the oblique sinus, limit it. An anterior echo-free space alone is often epicardial fat, which is slightly echogenic, moves with the heart and is most common in older, obese or diabetic patients. Fibrin strands, clot or loculation suggest an exudative, infectious, malignant or postoperative cause. Subcostal views help guide pericardiocentesis.",
+          "whyLock": "The descending aorta landmark answers most exam questions, so find it on every parasternal long-axis view. Trap: an isolated anterior space is usually fat, not fluid; true effusion almost always appears posteriorly first. Trap two: pleural and pericardial effusions can coexist, giving a double layer around the aorta. Size does not equal hemodynamic effect; rapid accumulation of a small volume, such as after surgery or trauma, can cause tamponade, while a slowly growing large effusion may be tolerated. Loculated postoperative effusions can compress a single chamber and are easily missed, so scan from multiple windows.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 33",
+              "title": "Cardiac Tamponade",
+              "link": "Hemodynamic impact, not size alone, determines whether an effusion causes tamponade."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Standard TTE Views & Windows",
+              "link": "The parasternal long-axis view shows the descending aorta landmark that separates the two effusions."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Constrictive Pericarditis",
+              "link": "Pericardial thickening and effusive-constrictive disease can follow pericardial inflammation."
+            }
+          ],
+          "registryApplication": "Expect questions on the descending aorta landmark, size categories, epicardial fat versus fluid and why fluid rarely collects behind the LA.",
+          "checkpoint": {
+            "pearl": "Pericardial anterior to descending aorta; pleural posterior to it",
+            "reflection": "An echo-free space is seen only anterior to the RV in an obese 70-year-old. What is the most likely explanation?"
+          },
+          "keyTerms": [
+            "Descending Thoracic Aorta",
+            "Epicardial Fat",
+            "Oblique Sinus",
+            "Loculated Effusion",
+            "Pleural Effusion",
+            "Pericardiocentesis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 32"
+        },
+        {
+          "id": "ae-cardiac-tamponade",
+          "title": "Cardiac Tamponade",
+          "frontClue": "RA collapse in systole, RV collapse in diastole, plethoric IVC, big respiratory swings",
+          "corePiece": "Cardiac tamponade occurs when pericardial pressure exceeds intracardiac pressure and impairs filling. It is a clinical diagnosis supported by echo. Findings include a pericardial effusion, often with a swinging heart in large effusions; right atrial collapse or inversion in late diastole and early systole, which is sensitive and becomes more specific when it lasts more than one third of the cardiac cycle; right ventricular free wall collapse in early diastole, which is more specific; a plethoric IVC with less than 50 percent inspiratory collapse, which is very sensitive; and exaggerated respiratory variation in inflow, with mitral E falling by more than about 25 to 30 percent with inspiration and tricuspid E varying by more than about 40 to 60 percent. The septum shifts toward the LV with inspiration, reflecting ventricular interdependence. Clinically, Beck triad, pulsus paradoxus over 10 mmHg and electrical alternans on ECG, which corresponds to the swinging heart, are classic. LA collapse can occur with loculated posterior or postoperative effusions.",
+          "whyLock": "Reason in pressures: the lowest-pressure chambers collapse first, so the RA collapses before the RV, and the LA collapses only in unusual cases. Trap: RV hypertrophy or pulmonary hypertension raises right heart pressure and can prevent collapse, so tamponade may exist without RV collapse. Trap two: a normal, collapsing IVC makes tamponade very unlikely unless the patient is volume depleted, as in low-pressure tamponade. Mechanical ventilation reverses the normal respiratory pattern. Use M-mode with the cursor through the RV free wall to time collapse precisely to diastole.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 32",
+              "title": "Pericardial vs Pleural Effusion",
+              "link": "Tamponade starts with confirming the space is pericardial, not pleural."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Constrictive Pericarditis",
+              "link": "Both show ventricular interdependence and respiratory variation in inflow."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "M-Mode & Tissue Doppler",
+              "link": "M-mode times chamber collapse to the cardiac cycle with high temporal resolution."
+            }
+          ],
+          "registryApplication": "Expect questions on which chamber collapses first, which sign is most specific or sensitive, respiratory variation thresholds and clinical correlates.",
+          "checkpoint": {
+            "pearl": "RA collapse is early; RV diastolic collapse is specific; plethoric IVC is sensitive",
+            "reflection": "Why might a patient with severe pulmonary hypertension and a large effusion lack RV diastolic collapse despite tamponade physiology?"
+          },
+          "keyTerms": [
+            "Right Atrial Collapse",
+            "RV Diastolic Collapse",
+            "Plethoric IVC",
+            "Pulsus Paradoxus",
+            "Electrical Alternans",
+            "Ventricular Interdependence",
+            "Swinging Heart"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 33"
+        },
+        {
+          "id": "ae-constrictive-pericarditis",
+          "title": "Constrictive Pericarditis",
+          "frontClue": "Septal bounce, preserved e' and annulus reversus inside a rigid shell",
+          "corePiece": "Constrictive pericarditis is a rigid, often thickened or calcified pericardium that limits total cardiac volume. Causes include prior cardiac surgery, radiation, viral or idiopathic pericarditis, tuberculosis in endemic regions, and connective tissue disease. Echo features include a thickened, bright pericardium, a respirophasic septal shift or septal bounce, a dilated IVC with little collapse, and exaggerated respiratory variation in mitral inflow, with E decreasing by about 25 percent or more on inspiration. Filling is restrictive with a tall E and short deceleration time. Tissue Doppler e' is preserved or even increased, often with medial e' above about 8 cm/s, and annulus reversus, in which septal e' exceeds lateral e' because the lateral wall is tethered by the pericardium. Hepatic vein flow shows prominent diastolic flow reversal in expiration. The Mayo criteria combine septal shift, medial e' of 9 cm/s or more and expiratory hepatic vein diastolic reversal. Pericardial thickness is better measured with CT or MRI.",
+          "whyLock": "Constriction versus restriction is a perennial exam topic. In constriction the myocardium is normal, so longitudinal tissue velocities are preserved, and the pericardium forces the ventricles to compete, so respiratory variation and septal shift are exaggerated. In restriction, the muscle is stiff, e' is low and respiratory variation is minimal. Trap: hepatic vein reversal timing differs, expiratory in constriction and inspiratory in restriction. Trap two: a normal-thickness pericardium does not exclude constriction. Effusive-constrictive pericarditis persists after drainage of an effusion and should be suspected when filling pressures stay high after pericardiocentesis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 24",
+              "title": "Restrictive Cardiomyopathy & Amyloidosis",
+              "link": "Restriction shows low e' and minimal respiratory variation, the reverse of constriction."
+            },
+            {
+              "piece": "Piece 33",
+              "title": "Cardiac Tamponade",
+              "link": "Ventricular interdependence underlies respiratory changes in both conditions."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Diastolic Function",
+              "link": "Constriction shows restrictive mitral inflow despite preserved tissue velocities."
+            }
+          ],
+          "registryApplication": "Expect questions comparing constriction with restriction, annulus reversus, hepatic vein reversal timing and respiratory variation thresholds.",
+          "checkpoint": {
+            "pearl": "Constriction: normal muscle, normal e', wild respiratory swings",
+            "reflection": "Septal e' is 12 cm/s and lateral e' is 9 cm/s in a patient with prior radiation. What does this reversal suggest?"
+          },
+          "keyTerms": [
+            "Septal Bounce",
+            "Annulus Reversus",
+            "Respiratory Variation",
+            "Hepatic Vein Reversal",
+            "Effusive-Constrictive Pericarditis",
+            "Mayo Criteria"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 34"
+        },
+        {
+          "id": "ae-cardiac-myxoma",
+          "title": "Cardiac Myxoma",
+          "frontClue": "Left atrial mass on a stalk at the fossa ovalis that plops through the mitral valve",
+          "corePiece": "Myxoma is the most common primary benign cardiac tumor in adults, typically presenting in middle-aged women. About 75 percent arise in the left atrium and most of the rest in the right atrium; ventricular myxomas are rare. The tumor is usually attached by a narrow stalk to the interatrial septum near the fossa ovalis. It is a mobile, gelatinous, heterogeneous mass that may contain lucent areas or calcification, and it often prolapses through the mitral valve in diastole. This can obstruct inflow and mimic mitral stenosis, with an increased diastolic gradient, and on M-mode a mass of echoes fills the space behind the anterior mitral leaflet in diastole. Patients may have dyspnea, syncope, embolism and constitutional symptoms, and auscultation may reveal a tumor plop. Most cases are sporadic; familial myxomas occur in Carney complex, often multiple and in unusual locations, in younger patients. Papillary fibroelastoma, the most common valvular tumor, is a small frond-like mass on the valve, usually the aortic.",
+          "whyLock": "Location and attachment are the keys: a mobile LA mass attached to the septum is myxoma until proven otherwise, while a mass in the LA appendage of a patient with atrial fibrillation or mitral stenosis is more likely thrombus. Trap: the diastolic gradient from a prolapsing myxoma mimics MS, but the leaflets are thin and the commissures are not fused. Trap two: although myxoma is the most common primary benign tumor, metastases are far more common than any primary cardiac tumor. Embolic risk is substantial with friable villous myxomas, so surgery is not delayed.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Thrombus & Metastatic Tumors",
+              "link": "LA appendage thrombus and metastasis are the main differentials for a left atrial mass."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Mitral Stenosis",
+              "link": "A prolapsing myxoma can create an inflow gradient mimicking mitral stenosis."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Normal Variants & Pseudomasses",
+              "link": "Lipomatous septal hypertrophy is a septal pseudomass that spares the fossa ovalis."
+            }
+          ],
+          "registryApplication": "Expect questions on myxoma location, attachment, M-mode appearance, clinical presentation and how it differs from thrombus.",
+          "checkpoint": {
+            "pearl": "Myxoma: LA, septal stalk, fossa ovalis, diastolic prolapse",
+            "reflection": "How would you distinguish a left atrial myxoma from a left atrial thrombus by location, attachment and clinical context?"
+          },
+          "keyTerms": [
+            "Myxoma",
+            "Fossa Ovalis",
+            "Stalk",
+            "Tumor Plop",
+            "Carney Complex",
+            "Papillary Fibroelastoma"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 35"
+        },
+        {
+          "id": "ae-thrombus-metastatic-tumors",
+          "title": "Thrombus & Metastatic Tumors",
+          "frontClue": "Thrombus lives where blood is slow; metastases outnumber primary tumors",
+          "corePiece": "Intracardiac thrombus forms where flow is stagnant. LA appendage thrombus is associated with atrial fibrillation, mitral stenosis and enlarged atria; it is best excluded with TEE, which also shows spontaneous echo contrast (smoke) and low appendage emptying velocities, often under about 20 cm/s. LV thrombus forms at akinetic or aneurysmal segments, most often the apex after an anterior infarct or in dilated cardiomyopathy; it appears as an echodense mass with a distinct margin from the endocardium, and contrast echo improves detection. Right heart thrombi include thrombi in transit from the venous system, which are serpiginous and highly mobile, and catheter-related thrombi. Metastatic tumors are about 20 to 40 times more common than primary cardiac tumors. Common sources are lung and breast cancer, lymphoma and leukemia; melanoma has a particularly high rate of cardiac involvement. Spread is by direct extension, lymphatics, blood or the venous route, such as renal cell carcinoma or hepatocellular carcinoma growing up the IVC into the right atrium. Pericardial metastasis often presents as a malignant effusion.",
+          "whyLock": "Context drives the diagnosis. A mass in an akinetic apex is thrombus, a mobile septal mass is myxoma, and a mass growing from the IVC in a patient with a renal tumor is tumor extension. Trap: near-field clutter and apical trabeculations can mimic an apical thrombus; use a higher frequency, change the focus and depth or give contrast. A thrombus shows no perfusion with contrast, while vascular tumors enhance. Thrombi in transit across a PFO can cause paradoxical embolism and are an emergency. Smoke in the appendage indicates high thrombotic risk even without a discrete clot.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 35",
+              "title": "Cardiac Myxoma",
+              "link": "Myxoma and thrombus are the main differentials for a left atrial mass."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Contrast & Agitated Saline",
+              "link": "Ultrasound enhancing agents improve LV thrombus detection and show perfusion in tumors."
+            },
+            {
+              "piece": "Piece 49",
+              "title": "TEE Indications & Views",
+              "link": "TEE is the standard to exclude LA appendage thrombus before cardioversion."
+            }
+          ],
+          "registryApplication": "Expect questions on where thrombi form, how contrast helps, which test excludes appendage thrombus and the most common cardiac tumor overall.",
+          "checkpoint": {
+            "pearl": "Most common cardiac tumor overall: metastasis",
+            "reflection": "A renal cell carcinoma patient has a mobile right atrial mass continuous with the IVC. What is the likely mechanism of spread?"
+          },
+          "keyTerms": [
+            "LA Appendage Thrombus",
+            "LV Apical Thrombus",
+            "Spontaneous Echo Contrast",
+            "Thrombus in Transit",
+            "Cardiac Metastasis",
+            "Near-Field Clutter"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 36"
+        },
+        {
+          "id": "ae-normal-variants-pseudomasses",
+          "title": "Normal Variants & Pseudomasses",
+          "frontClue": "Chiari network waves, Eustachian valve guards the IVC, the coumadin ridge is not a clot",
+          "corePiece": "Several normal structures mimic pathology. In the right atrium, the Eustachian valve is a ridge at the IVC-RA junction, a remnant of the fetal valve that directed IVC blood toward the foramen ovale. The Chiari network is a fenestrated, mobile, net-like remnant of the sinus venosus valves, attached near the IVC and coronary sinus, found in about 2 percent of people and associated with PFO and atrial septal aneurysm. The crista terminalis is a muscular ridge on the posterolateral RA wall. In the RV, the moderator band runs from the septum to the anterior free wall and carries part of the right bundle branch. In the LA, the coumadin (warfarin) ridge separates the LA appendage from the left upper pulmonary vein, and the appendage contains pectinate muscles that mimic small thrombi. Lipomatous hypertrophy of the interatrial septum is fatty thickening that spares the fossa ovalis, giving a dumbbell shape. Other variants include LV false tendons, Lambl excrescences and nodules of Arantius on the aortic cusps.",
+          "whyLock": "These variants are tested because mistaking them for thrombus, tumor or vegetation leads to unnecessary procedures. Reason by location and texture: each variant appears in a typical place with a characteristic shape. Trap: a Chiari network is highly mobile and can look like a vegetation or thrombus, but it is thin, filamentous and attached near the IVC orifice. Trap two: lipomatous septal hypertrophy spares the fossa ovalis, while a myxoma typically attaches there. Pectinate muscles are multiple, parallel and fixed to the appendage wall, while thrombus is a discrete mass, often with surrounding smoke.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 35",
+              "title": "Cardiac Myxoma",
+              "link": "Lipomatous septal hypertrophy and myxoma are separated by fossa ovalis involvement."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Infective Endocarditis",
+              "link": "Lambl excrescences and nodules of Arantius mimic small vegetations."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Atrial Septal Defects",
+              "link": "A Chiari network is associated with PFO and atrial septal aneurysm."
+            }
+          ],
+          "registryApplication": "Expect questions on identifying a described normal structure by location and on distinguishing variants from thrombus, tumor or vegetation.",
+          "checkpoint": {
+            "pearl": "Eustachian at the IVC, Chiari a mobile net, coumadin ridge by the left upper pulmonary vein",
+            "reflection": "A thin, mobile, net-like structure is seen near the IVC entrance in the right atrium. What is it, and what associated finding should you look for?"
+          },
+          "keyTerms": [
+            "Chiari Network",
+            "Eustachian Valve",
+            "Crista Terminalis",
+            "Coumadin Ridge",
+            "Lipomatous Hypertrophy",
+            "Pectinate Muscles",
+            "Moderator Band"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 37"
+        }
+      ]
+    },
+    {
+      "id": "ae-adult-congenital-aortic-disease",
+      "title": "Adult Congenital & Aortic Disease",
+      "pieceRange": "Pieces 38-44",
+      "examType": "ARDMS RDCS Adult Echocardiography (AE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Septal defects, PDA, coarctation, Ebstein anomaly, repaired tetralogy, Marfan syndrome and aortic dissection",
+      "topics": [
+        {
+          "id": "ae-atrial-septal-defects",
+          "title": "Atrial Septal Defects",
+          "frontClue": "Secundum in the middle, primum low, sinus venosus high near the SVC",
+          "corePiece": "Atrial septal defects are among the most common congenital lesions first found in adults. Secundum ASD, about 70 to 75 percent, is a defect at the fossa ovalis in the mid septum. Primum ASD, about 15 to 20 percent, sits in the lower septum next to the AV valves, is associated with a cleft anterior mitral leaflet and Down syndrome, and shows AV valves at the same level. Sinus venosus ASD, about 5 to 10 percent, usually lies superiorly near the SVC entry and is associated with partial anomalous pulmonary venous return of the right upper pulmonary vein. Coronary sinus (unroofed) ASD is rare and often associated with a persistent left SVC. A left to right shunt causes RV and RA volume overload, paradoxical septal motion and diastolic septal flattening. Shunt size is estimated by Qp:Qs, the ratio of RVOT to LVOT stroke volume; a ratio of 1.5 or more is generally considered significant. A PFO, a flap-like opening, is best shown with agitated saline.",
+          "whyLock": "Location determines associations and treatment: only secundum defects with adequate rims are suitable for percutaneous device closure, while primum and sinus venosus defects need surgery. Trap: dropout in the thin fossa ovalis in apical views creates false defects; confirm in subcostal views with color and PW Doppler. Trap two: sinus venosus defects are easily missed on TTE, so unexplained RV dilation should prompt TEE or cardiac MRI. Low-velocity left to right flow is easily confused with SVC or IVC inflow along the septum. With Eisenmenger physiology, the shunt reverses and RV dilation is joined by severe pulmonary hypertension.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 26",
+              "title": "RV Function & Pulmonary Hypertension",
+              "link": "ASD volume overload dilates the RV and flattens the septum in diastole."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Contrast & Agitated Saline",
+              "link": "Agitated saline crossing the septum within a few beats confirms a PFO or ASD."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Normal Variants & Pseudomasses",
+              "link": "A Chiari network is associated with PFO and atrial septal aneurysm."
+            }
+          ],
+          "registryApplication": "Expect questions on ASD types and their associations, signs of RV volume overload, Qp:Qs and which defects are closed percutaneously.",
+          "checkpoint": {
+            "pearl": "Secundum is most common; primum pairs with cleft mitral; sinus venosus pairs with anomalous veins",
+            "reflection": "A patient has RV dilation and a sinus venosus defect near the SVC. What associated venous anomaly should you search for?"
+          },
+          "keyTerms": [
+            "Secundum ASD",
+            "Primum ASD",
+            "Sinus Venosus ASD",
+            "Patent Foramen Ovale",
+            "Qp:Qs",
+            "Partial Anomalous Pulmonary Venous Return",
+            "Cleft Mitral Valve"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 38"
+        },
+        {
+          "id": "ae-vsd-pda",
+          "title": "VSD & PDA",
+          "frontClue": "Both shunts load the left heart; the VSD jet is systolic, the PDA flow is continuous",
+          "corePiece": "Ventricular septal defects are classified as perimembranous, the most common type in adults at about 70 to 80 percent, located just below the aortic valve near the septal tricuspid leaflet; muscular, often small and multiple; inlet, part of the AV canal spectrum; and outlet or supracristal, just below the pulmonic valve, which can cause aortic cusp prolapse and AR. A restrictive VSD has a high-velocity systolic jet, typically 4 to 5 m/s, and RVSP can be estimated as systolic blood pressure minus 4 times the VSD velocity squared. A patent ductus arteriosus connects the proximal descending aorta, just distal to the left subclavian artery, to the main or proximal left pulmonary artery. In the parasternal short-axis or high parasternal view, it produces continuous flow into the pulmonary artery that peaks in late systole. Both VSD and PDA volume load the LA and LV, while the RV is loaded mainly by pressure if pulmonary hypertension develops. Large unrepaired shunts can lead to Eisenmenger syndrome with shunt reversal.",
+          "whyLock": "The chamber that dilates tells you where the extra volume goes. An ASD dilates the right heart, while a VSD or PDA dilates the left heart, because the extra blood returns through the lungs to the LA and LV. Trap: a high VSD velocity is good news, meaning the RV pressure is low and the defect restrictive; a low-velocity VSD jet suggests elevated RV pressure. Trap two: a PDA jet can be confused with PR or coronary flow in the pulmonary artery, but PDA flow is continuous and directed toward the pulmonic valve. Supracristal VSDs need monitoring for progressive AR.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 4",
+              "title": "Normal Intracardiac Pressures",
+              "link": "The VSD gradient reflects the normal difference between LV and RV systolic pressure."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Atrial Septal Defects",
+              "link": "ASDs volume load the right heart, while VSDs and PDAs load the left."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Coarctation of the Aorta",
+              "link": "PDA and coarctation share the juxtaductal region of the descending aorta."
+            }
+          ],
+          "registryApplication": "Expect questions on VSD types, RVSP from the VSD gradient, which chambers dilate and the continuous PDA flow pattern.",
+          "checkpoint": {
+            "pearl": "RVSP = systolic BP minus 4 x VSD velocity squared",
+            "reflection": "A VSD jet is 5 m/s and the systolic blood pressure is 120 mmHg. What is the estimated RVSP, and is the defect restrictive?"
+          },
+          "keyTerms": [
+            "Perimembranous VSD",
+            "Muscular VSD",
+            "Supracristal VSD",
+            "Restrictive VSD",
+            "Patent Ductus Arteriosus",
+            "Eisenmenger Syndrome",
+            "Continuous Flow"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 39"
+        },
+        {
+          "id": "ae-coarctation-of-the-aorta",
+          "title": "Coarctation of the Aorta",
+          "frontClue": "Sawtooth descending aorta signal with a diastolic tail, and weak flow below",
+          "corePiece": "Coarctation is a narrowing of the descending thoracic aorta, usually juxtaductal, just distal to the left subclavian artery. It is associated with a bicuspid aortic valve in about half of cases, with Turner syndrome, and with intracranial aneurysms. Adults may present with upper extremity hypertension, a blood pressure gradient between arms and legs, weak femoral pulses and rib notching on chest radiograph from collateral vessels. Echo uses the suprasternal notch view, where 2D may show a shelf-like narrowing and color shows flow acceleration. CW Doppler through the descending aorta shows a high systolic velocity, and in significant coarctation a persistent forward diastolic tail, the sawtooth pattern, reflecting a continuing pressure gradient in diastole. Because the proximal velocity is often elevated, the expanded Bernoulli equation may be needed. Subcostal PW in the abdominal aorta shows low-velocity, blunted systolic flow with a delayed upstroke and continuous diastolic forward flow. LV hypertrophy is common. After repair, patients are monitored for recoarctation, aneurysm at the repair site and persistent hypertension.",
+          "whyLock": "The diastolic tail matters more than peak velocity, because a peak gradient can be high in mild narrowing, while continuous diastolic flow means the obstruction is hemodynamically significant. Trap: well-developed collaterals can reduce the measured gradient despite severe narrowing, so a low gradient does not exclude severe coarctation. Trap two: blunted abdominal aortic flow with diastolic forward flow is an indirect clue when the suprasternal window is poor. Always look for coarctation in a young hypertensive patient or one with a bicuspid valve. CT or MRI is used for anatomy.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 12",
+              "title": "Bicuspid Aortic Valve",
+              "link": "About half of coarctation patients also have a bicuspid aortic valve."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Bernoulli Equation & RVSP",
+              "link": "Elevated proximal velocity in coarctation calls for the expanded Bernoulli equation."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Standard TTE Views & Windows",
+              "link": "The suprasternal notch view is essential for imaging the aortic arch and isthmus."
+            }
+          ],
+          "registryApplication": "Expect questions on location, associated lesions, the diastolic tail on CW Doppler and abdominal aortic flow patterns.",
+          "checkpoint": {
+            "pearl": "Diastolic tail on CW means significant coarctation",
+            "reflection": "Why does a persistent diastolic forward flow signal in the descending aorta suggest a significant coarctation?"
+          },
+          "keyTerms": [
+            "Juxtaductal",
+            "Suprasternal Notch",
+            "Diastolic Tail",
+            "Sawtooth Pattern",
+            "Collateral Vessels",
+            "Turner Syndrome"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 40"
+        },
+        {
+          "id": "ae-ebstein-anomaly",
+          "title": "Ebstein Anomaly",
+          "frontClue": "Septal leaflet slides toward the apex, atrializing the RV",
+          "corePiece": "Ebstein anomaly is a congenital malformation of the tricuspid valve in which the septal and posterior (inferior) leaflets are displaced apically from the annulus, and the anterior leaflet is large, redundant and sail-like. The portion of the RV above the displaced leaflets becomes functionally part of the RA, the atrialized RV, leaving a smaller functional RV. In the apical four-chamber view, the key measurement is the distance between the mitral and tricuspid septal leaflet insertions; in adults an apical displacement of 8 mm/m2 of body surface area or more is diagnostic. Tricuspid regurgitation is common and can be severe, and the RA and atrialized RV are often massively dilated. Associated findings include an ASD or PFO in most patients, which can allow right to left shunting and cyanosis, accessory pathways such as Wolff-Parkinson-White syndrome, and occasionally LV noncompaction. Maternal lithium exposure is a classically cited association. Surgical repair, such as the cone procedure, reconstructs the valve.",
+          "whyLock": "The key is that the normal tricuspid septal insertion is only slightly more apical than the mitral, so the measurement must be indexed and taken carefully in a true four-chamber view. Trap: severe TR from other causes dilates the RA and RV but does not displace leaflets. Trap two: the TR jet in Ebstein originates deep in the RV body, not at the anatomic annulus, so align color and CW from the true coaptation point. Look for an atrial shunt with agitated saline, because paradoxical embolism and cyanosis can result. Arrhythmias are a common adult presentation.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 1",
+              "title": "Cardiac Chambers & Valves",
+              "link": "The normal small offset between tricuspid and mitral insertion is the baseline for diagnosis."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "Tricuspid & Pulmonic Regurgitation",
+              "link": "Displaced leaflets in Ebstein anomaly cause primary TR."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Atrial Septal Defects",
+              "link": "Most Ebstein patients have an associated ASD or PFO."
+            }
+          ],
+          "registryApplication": "Expect questions on which leaflets are displaced, the indexed displacement criterion, atrialized RV and associated lesions.",
+          "checkpoint": {
+            "pearl": "Displacement of 8 mm/m2 or more confirms Ebstein",
+            "reflection": "Why is indexed septal leaflet displacement, rather than simple RA size, used to diagnose Ebstein anomaly?"
+          },
+          "keyTerms": [
+            "Apical Displacement",
+            "Atrialized RV",
+            "Sail-Like Anterior Leaflet",
+            "Wolff-Parkinson-White",
+            "Cone Procedure",
+            "Septal Leaflet"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 41"
+        },
+        {
+          "id": "ae-repaired-tetralogy-of-fallot",
+          "title": "Repaired Tetralogy of Fallot",
+          "frontClue": "Four defects fixed in childhood, chronic pulmonic regurgitation in adulthood",
+          "corePiece": "Tetralogy of Fallot comprises a VSD, an overriding aorta, RVOT obstruction (infundibular and often valvular pulmonic stenosis) and RV hypertrophy, all resulting from anterior deviation of the outlet septum. It is the most common cyanotic congenital heart disease. Most adults have had surgical repair with VSD patch closure and relief of RVOT obstruction, often with a transannular patch that leaves the pulmonic valve incompetent. The dominant long-term problem is chronic pulmonic regurgitation, which progressively dilates the RV and can cause RV dysfunction, arrhythmias and sudden death. Echo assesses RV size and function, PR severity, residual RVOT or branch pulmonary artery stenosis, residual VSD patch leaks, TR, RVSP, aortic root dilation, AR and LV function. Severe PR shows a broad jet, a short dense CW signal ending early in diastole and diastolic flow reversal in the branch pulmonary arteries. Cardiac MRI is the reference for RV volumes and guides the timing of pulmonary valve replacement, increasingly done percutaneously.",
+          "whyLock": "Free PR is easy to underestimate on echo because the flow is laminar and low velocity, with little color turbulence, so focus on the CW signal shape and RV size. A short PR signal ending well before the next systole means the RV and PA pressures equalize early. Trap: a high RVSP after repair suggests residual RVOT or branch PA stenosis rather than pulmonary vascular disease. Trap two: the overriding aorta can dilate, leading to AR. Restrictive RV physiology, with antegrade diastolic PA flow during atrial contraction, is an important finding in some patients.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 18",
+              "title": "Tricuspid & Pulmonic Regurgitation",
+              "link": "Severe PR features are the main echo target after tetralogy repair."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "RV Function & Pulmonary Hypertension",
+              "link": "Serial RV size and function decide pulmonary valve replacement timing."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Pulmonic & Tricuspid Stenosis",
+              "link": "Residual RVOT obstruction raises RVSP after repair."
+            }
+          ],
+          "registryApplication": "Expect questions on the four components, the transannular patch and PR, and echo targets on follow-up.",
+          "checkpoint": {
+            "pearl": "Tetralogy: VSD, overriding aorta, RVOT obstruction, RVH",
+            "reflection": "After transannular patch repair, a PR signal ends abruptly in mid-diastole. What does this indicate about PR severity?"
+          },
+          "keyTerms": [
+            "Overriding Aorta",
+            "RVOT Obstruction",
+            "Transannular Patch",
+            "Pulmonic Regurgitation",
+            "Pulmonary Valve Replacement",
+            "RV Hypertrophy"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 42"
+        },
+        {
+          "id": "ae-marfan-syndrome-aortic-root-dilation",
+          "title": "Marfan Syndrome & Aortic Root Dilation",
+          "frontClue": "Sinuses balloon and the sinotubular junction disappears: a flask-shaped root",
+          "corePiece": "Marfan syndrome is an autosomal dominant connective tissue disorder caused by FBN1 (fibrillin-1) mutations. The cardinal cardiovascular finding is dilation of the aortic root, maximal at the sinuses of Valsalva, with effacement of the sinotubular junction, giving a pear or flask shape. Other findings include mitral valve prolapse with myxomatous leaflets, MR and AR from annular dilation. The aorta is measured in the parasternal long-axis view at the annulus, sinuses of Valsalva, sinotubular junction and proximal ascending aorta, perpendicular to the long axis. ASE recommends measuring the annulus inner edge to inner edge in mid-systole, and the other levels at end-diastole using the leading edge to leading edge convention; other conventions exist, so consistency across serial studies matters. Measurements are compared with body size, age and sex using z-scores. In Marfan syndrome, elective surgery is generally considered at a root diameter of about 5.0 cm, or lower with rapid growth or a family history of dissection. Other causes of root dilation include bicuspid aortopathy, Loeys-Dietz syndrome, hypertension and aging.",
+          "whyLock": "The risk is dissection, which correlates with size and growth rate, so serial measurements must be done the same way at the same levels. Trap: an oblique cut underestimates the true diameter; obtain the largest perpendicular diameter. Trap two: in Marfan syndrome, dilation starts at the sinuses, while in hypertension and aging the ascending aorta above the junction is more often enlarged. Annular dilation causes central AR, which worsens as the root grows. Loeys-Dietz syndrome causes dissection at smaller diameters, so surgical thresholds are lower.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 44",
+              "title": "Aortic Dissection",
+              "link": "Root dilation in Marfan syndrome is the main precursor of type A dissection."
+            },
+            {
+              "piece": "Piece 17",
+              "title": "Aortic Regurgitation",
+              "link": "Annular and root dilation pull the cusps apart and cause central AR."
+            },
+            {
+              "piece": "Piece 19",
+              "title": "Mitral Valve Prolapse",
+              "link": "Myxomatous MVP is a common cardiac finding in Marfan syndrome."
+            }
+          ],
+          "registryApplication": "Expect questions on where dilation begins, measurement levels and conventions, associated valve disease and surgical thresholds.",
+          "checkpoint": {
+            "pearl": "Marfan dilates the sinuses first and erases the sinotubular junction",
+            "reflection": "Why must serial aortic root measurements in a Marfan patient use the same levels, view and convention?"
+          },
+          "keyTerms": [
+            "FBN1",
+            "Sinuses of Valsalva",
+            "Sinotubular Junction",
+            "Leading Edge to Leading Edge",
+            "Z-Score",
+            "Loeys-Dietz Syndrome"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 43"
+        },
+        {
+          "id": "ae-aortic-dissection",
+          "title": "Aortic Dissection",
+          "frontClue": "A mobile intimal flap splits true from false lumen; type A goes to surgery",
+          "corePiece": "Aortic dissection is a tear in the intima that allows blood to enter the media, creating a true lumen and a false lumen separated by a mobile intimal flap. Hypertension is the most common risk factor; others include Marfan and other connective tissue syndromes, bicuspid aortic valve, cocaine and pregnancy. The Stanford classification is type A, involving the ascending aorta regardless of origin, a surgical emergency, and type B, confined to the aorta distal to the left subclavian artery, often managed medically. DeBakey type I involves the ascending aorta and extends beyond it, type II is confined to the ascending aorta, and type III is limited to the descending aorta. On echo, the true lumen is usually smaller, expands in systole and has faster flow, while the false lumen is larger with slower flow, spontaneous echo contrast or thrombus. Complications seen on echo include acute AR, pericardial effusion and tamponade, coronary involvement with a wall motion abnormality, often inferior from the RCA, and branch vessel malperfusion.",
+          "whyLock": "TTE can confirm a type A dissection when a flap is seen in the root, but a normal TTE does not exclude it, so CT or TEE follows. Trap: reverberation and side lobe artifacts in the ascending aorta mimic flaps; a true flap moves independently, appears in multiple views and has distinct flow on each side with color. Trap two: a new pericardial effusion in suspected type A dissection signals impending rupture and tamponade. Intramural hematoma and penetrating ulcer are related acute aortic syndromes. TEE has a blind spot in the distal ascending aorta behind the trachea.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 43",
+              "title": "Marfan Syndrome & Aortic Root Dilation",
+              "link": "Root dilation in connective tissue disease predisposes to type A dissection."
+            },
+            {
+              "piece": "Piece 17",
+              "title": "Aortic Regurgitation",
+              "link": "Acute severe AR is a common complication of type A dissection."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Harmonics, Artifacts & ALARA",
+              "link": "Reverberation and side lobe artifacts can mimic an intimal flap."
+            }
+          ],
+          "registryApplication": "Expect questions on the Stanford and DeBakey classifications, true versus false lumen features, complications and artifact mimics.",
+          "checkpoint": {
+            "pearl": "Stanford A: ascending, surgical; Stanford B: descending only, often medical",
+            "reflection": "A linear echo in the ascending aorta appears in one view only and moves with the aortic wall. Is it more likely a flap or an artifact, and why?"
+          },
+          "keyTerms": [
+            "Intimal Flap",
+            "True Lumen",
+            "False Lumen",
+            "Stanford Classification",
+            "DeBakey Classification",
+            "Intramural Hematoma"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 44"
+        }
+      ]
+    },
+    {
+      "id": "ae-instrumentation-tee-contrast",
+      "title": "Instrumentation, TEE & Contrast",
+      "pieceRange": "Pieces 45-49",
+      "examType": "ARDMS RDCS Adult Echocardiography (AE)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Doppler and M-mode in echo, tissue Doppler, harmonics, artifacts, safety, contrast and TEE",
+      "topics": [
+        {
+          "id": "ae-doppler-modes-in-echo",
+          "title": "Doppler Modes in Echo",
+          "frontClue": "PW knows where but aliases; CW handles speed but cannot tell where",
+          "corePiece": "Doppler measures blood velocity from the frequency shift: shift equals 2 times transmitted frequency times velocity times the cosine of the angle, divided by propagation speed. In echo, the beam is aligned as parallel to flow as possible and no angle correction is used, because errors over about 20 degrees significantly underestimate velocity. Pulsed wave Doppler uses one crystal to transmit and receive from a chosen depth, giving range resolution, but it aliases when the shift exceeds the Nyquist limit, half the PRF. Continuous wave Doppler uses separate transmitting and receiving elements and measures very high velocities without aliasing, but it has range ambiguity, recording the highest velocity anywhere along the beam; it is used for AS, MR, TR, AR and VSD jets. High PRF Doppler uses multiple sample volumes to raise the measurable velocity at the cost of range ambiguity. Color Doppler uses autocorrelation to show mean velocity and direction, conventionally red toward and blue away from the transducer, with variance showing turbulence.",
+          "whyLock": "Aliasing is the classic question. To reduce it, raise the scale or PRF, shift the baseline, use a lower transmit frequency, reduce depth or switch to CW Doppler. Trap: increasing the transducer frequency makes aliasing worse because the shift increases. Trap two: CW cannot localize a jet, so a high velocity could be AS, MR or something else along the line; use timing, shape and the 2D image to identify it. Color jets depend on gain, Nyquist limit and frame rate; a lower Nyquist limit makes jets look larger, so standard settings around 50 to 70 cm/s are used for regurgitation.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 7",
+              "title": "Stroke Volume & Cardiac Output",
+              "link": "PW Doppler supplies the LVOT VTI because it samples a precise location."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Aortic Stenosis Grading",
+              "link": "CW Doppler measures the high-velocity AS jet without aliasing."
+            },
+            {
+              "piece": "Piece 9",
+              "title": "Continuity Equation & PISA",
+              "link": "PISA relies on deliberately lowering the color aliasing velocity with baseline shift."
+            }
+          ],
+          "registryApplication": "Expect questions on which Doppler mode suits a measurement, the Nyquist limit, ways to eliminate aliasing and angle effects.",
+          "checkpoint": {
+            "pearl": "Nyquist limit = PRF / 2",
+            "reflection": "A mitral inflow PW signal aliases. List three controls you could change and explain why each helps."
+          },
+          "keyTerms": [
+            "Doppler Equation",
+            "Nyquist Limit",
+            "Aliasing",
+            "Range Resolution",
+            "Range Ambiguity",
+            "High PRF Doppler",
+            "Color Doppler"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 45"
+        },
+        {
+          "id": "ae-m-mode-tissue-doppler",
+          "title": "M-Mode & Tissue Doppler",
+          "frontClue": "M-mode is motion over time at one line; tissue Doppler hears the slow, loud myocardium",
+          "corePiece": "M-mode displays the motion of structures along a single scan line over time, with very high temporal resolution because thousands of pulses per second are sent down one line. It is ideal for timing events and fast motion: valve opening and closing, SAM, aortic valve notching in HCM, mitral fluttering in AR, RV collapse in tamponade, and TAPSE. Color M-mode of mitral inflow measures flow propagation velocity, with values above about 50 cm/s considered normal. Tissue Doppler imaging measures myocardial velocities, which are low velocity and high amplitude, the opposite of blood; the wall filter and gain are reduced to display them. PW tissue Doppler at the mitral annulus records s', e' and a'. Normal e' is at least about 7 cm/s at the septal and 10 cm/s at the lateral annulus. Strain and strain rate describe deformation; global longitudinal strain more negative than about -18 percent is generally normal.",
+          "whyLock": "M-mode is a timing tool; when a question asks about rapid events or precise timing, it is often the answer. Trap: an oblique M-mode cursor overestimates LV dimensions, so 2D linear measurements are now preferred. Tissue Doppler, like all Doppler, is angle dependent, so annular velocities are taken from apical views where motion is parallel to the beam. Strain from speckle tracking is relatively angle independent but vendor dependent, so serial studies should use the same platform. Remember that tissue Doppler filters are the reverse of blood flow Doppler: reject low amplitude, keep low velocity.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Diastolic Function",
+              "link": "Tissue Doppler e' is a central variable in the diastolic algorithm."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "RV Function & Pulmonary Hypertension",
+              "link": "TAPSE is measured with M-mode and S' with tissue Doppler."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Hypertrophic Cardiomyopathy",
+              "link": "M-mode shows SAM and mid-systolic aortic valve notching in obstructive HCM."
+            }
+          ],
+          "registryApplication": "Expect questions on M-mode temporal resolution and uses, tissue Doppler signal characteristics and filter settings, and normal e' values.",
+          "checkpoint": {
+            "pearl": "Tissue Doppler: low velocity, high amplitude",
+            "reflection": "Why must the wall filter be lowered for tissue Doppler, and what would happen if blood flow settings were used?"
+          },
+          "keyTerms": [
+            "Temporal Resolution",
+            "Color M-Mode",
+            "Flow Propagation Velocity",
+            "Tissue Doppler Imaging",
+            "Global Longitudinal Strain",
+            "Speckle Tracking"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 46"
+        },
+        {
+          "id": "ae-harmonics-artifacts-alara",
+          "title": "Harmonics, Artifacts & ALARA",
+          "frontClue": "Harmonics clean the picture, artifacts fake structures, ALARA keeps exposure low",
+          "corePiece": "Tissue harmonic imaging receives echoes at twice the transmitted frequency, which are generated as sound propagates nonlinearly through tissue. Harmonics form mostly in the central beam and deeper tissue, so they reduce near-field clutter, side lobe and reverberation artifacts, improving endocardial border definition, particularly in difficult patients. Pulse inversion is a common method. A drawback is that valves and walls look thicker. Common echo artifacts include reverberation, parallel lines behind strong reflectors such as prosthetic valves or calcium; acoustic shadowing behind mechanical valves and calcification; side lobe and grating lobe artifacts, which place false echoes in the aortic root or LA; mirror image artifacts, duplicating structures across a strong reflector such as the pericardium; refraction, causing side-by-side duplication; near-field clutter mimicking apical thrombus; and range ambiguity. Safety follows ALARA: as low as reasonably achievable output and exposure time. The mechanical index reflects cavitation risk, with an FDA limit of 1.9 for most diagnostic applications, and the thermal index reflects heating. TEE probes monitor tip temperature.",
+          "whyLock": "Artifacts are tested by asking how to tell a real structure from a false one. Real structures appear in more than one view, have anatomic attachments and move independently; artifacts often sit at fixed multiples of a reflector's depth or move with it. Trap: harmonics improve borders but thicken valves, so do not diagnose valve thickening from harmonic images alone. Trap two: increasing gain does not fix shadowing; change the window. For ALARA, reduce output power before increasing receiver gain, and freeze the image when not scanning. Low MI settings are used for contrast to avoid bubble destruction.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 44",
+              "title": "Aortic Dissection",
+              "link": "Reverberation and side lobes in the ascending aorta mimic dissection flaps."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Prosthetic Valves",
+              "link": "Mechanical valves create shadowing and reverberation that hide regurgitant jets."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Contrast & Agitated Saline",
+              "link": "Contrast imaging uses low mechanical index to preserve microbubbles."
+            }
+          ],
+          "registryApplication": "Expect questions on how harmonics are generated, which artifacts they reduce, recognizing echo artifacts and the meaning of MI and TI.",
+          "checkpoint": {
+            "pearl": "Real structures appear in two views; artifacts usually do not",
+            "reflection": "A linear echo in the LA moves with the aortic root and lies at twice its depth. Which artifact explains it?"
+          },
+          "keyTerms": [
+            "Tissue Harmonic Imaging",
+            "Reverberation",
+            "Acoustic Shadowing",
+            "Side Lobe Artifact",
+            "Mirror Image Artifact",
+            "Mechanical Index",
+            "ALARA"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 47"
+        },
+        {
+          "id": "ae-contrast-agitated-saline",
+          "title": "Contrast & Agitated Saline",
+          "frontClue": "Commercial microbubbles cross the lungs; agitated saline bubbles do not",
+          "corePiece": "Ultrasound enhancing agents are gas-filled microspheres, such as perflutren lipid or protein microspheres and sulfur hexafluoride microbubbles, small enough to pass through the pulmonary capillaries and opacify the left heart. ASE recommends contrast when two or more contiguous LV segments are not visualized, to improve EF and wall motion assessment, detect LV thrombus, confirm apical HCM, LV noncompaction or aneurysm and assess masses. Imaging uses a low mechanical index, about 0.2 or less, to avoid destroying bubbles. Agitated saline, mixed with a small amount of air and sometimes blood, produces larger bubbles that are filtered by the lungs, so it normally opacifies only the right heart. It is used to detect intracardiac shunts such as PFO and ASD, often with Valsalva release or cough, and to enhance TR Doppler signals. Bubbles in the left heart within about three cardiac cycles suggest an intracardiac shunt, while later appearance suggests an intrapulmonary shunt. Left arm injection with early coronary sinus opacification indicates a persistent left SVC.",
+          "whyLock": "Know which agent does what: commercial contrast is for the left heart and endocardial borders, agitated saline for shunts and the right heart. Trap: an inadequate Valsalva or high LA pressure can mask a PFO, so release the strain once the RA is opacified to transiently raise RA pressure above LA pressure. Trap two: the timing of bubbles in the left heart distinguishes intracardiac from intrapulmonary shunting. High MI destroys bubbles and causes apical swirling, so lower the MI; swirling can also mean too little agent, while too much agent causes far-field (basal) attenuation shadowing, so adjust the infusion rate. Monitor patients during and after commercial agent administration.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 38",
+              "title": "Atrial Septal Defects",
+              "link": "Agitated saline crossing the septum confirms an interatrial shunt."
+            },
+            {
+              "piece": "Piece 6",
+              "title": "LV Size & Ejection Fraction",
+              "link": "Contrast improves endocardial tracing for EF when segments are poorly seen."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Thrombus & Metastatic Tumors",
+              "link": "Contrast improves LV thrombus detection and shows tumor perfusion."
+            }
+          ],
+          "registryApplication": "Expect questions on contrast indications, low MI imaging, agitated saline timing for shunts, Valsalva technique and persistent left SVC.",
+          "checkpoint": {
+            "pearl": "Bubbles left within three beats: intracardiac shunt",
+            "reflection": "After agitated saline, bubbles appear in the LA after six beats. What type of shunt does this suggest?"
+          },
+          "keyTerms": [
+            "Ultrasound Enhancing Agent",
+            "Agitated Saline",
+            "Patent Foramen Ovale",
+            "Intrapulmonary Shunt",
+            "Persistent Left SVC",
+            "Mechanical Index"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 48"
+        },
+        {
+          "id": "ae-tee-indications-views",
+          "title": "TEE Indications & Views",
+          "frontClue": "From the esophagus, the LA is closest; look for appendage clot, vegetations and dissection",
+          "corePiece": "Transesophageal echo places a high-frequency transducer in the esophagus and stomach directly behind the heart, avoiding lung and chest wall, so posterior structures such as the LA, LA appendage, mitral valve, interatrial septum and descending aorta are seen in high resolution. Common indications are excluding LA appendage thrombus before cardioversion or ablation, suspected endocarditis and abscess, prosthetic valve dysfunction, aortic dissection, cardioembolic stroke and PFO evaluation, mitral valve repair planning, intraoperative monitoring and guidance of structural interventions. Contraindications include esophageal stricture, tumor, perforation, recent esophageal surgery and active upper GI bleeding. Standard views include the midesophageal four-chamber view at about 0 degrees, the mitral commissural view at about 60 degrees, the two-chamber view at about 90 degrees, often used for the LA appendage, and the long-axis view at about 120 to 140 degrees. The midesophageal aortic valve short axis is about 30 to 45 degrees, the bicaval view about 90 to 110 degrees, and transgastric views show the LV short axis and allow Doppler alignment for aortic valve gradients.",
+          "whyLock": "TEE trades patient comfort and small risk for image quality, so the exam asks when it is worth it. Think posterior and small: appendage thrombus, small vegetations, prosthetic mitral regurgitation and abscesses. Trap: the distal ascending aorta and proximal arch form a blind spot because the air-filled trachea lies between the esophagus and aorta. Trap two: aortic valve gradients are often underestimated from midesophageal views; use deep transgastric views for alignment. Complications include sore throat, aspiration, esophageal injury, arrhythmias and methemoglobinemia from benzocaine spray. Patients fast and are monitored during sedation.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Thrombus & Metastatic Tumors",
+              "link": "TEE is the standard to exclude LA appendage thrombus."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Infective Endocarditis",
+              "link": "TEE is more sensitive than TTE for vegetations and abscesses."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Aortic Dissection",
+              "link": "TEE is highly accurate for dissection except in its tracheal blind spot."
+            }
+          ],
+          "registryApplication": "Expect questions on TEE indications and contraindications, typical view angles, the tracheal blind spot and complications.",
+          "checkpoint": {
+            "pearl": "TEE blind spot: distal ascending aorta behind the trachea",
+            "reflection": "Why does TEE outperform TTE for a mitral prosthesis, and which view angle would you use first for the LA appendage?"
+          },
+          "keyTerms": [
+            "Midesophageal Four-Chamber",
+            "Midesophageal Bicaval",
+            "Transgastric View",
+            "LA Appendage",
+            "Methemoglobinemia",
+            "Tracheal Blind Spot"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 49"
+        }
+      ]
+    }
+  ]
+}

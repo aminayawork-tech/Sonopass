@@ -1,0 +1,1897 @@
+{
+  "categories": [
+    {
+      "id": "br-anatomy-physiology",
+      "title": "Anatomy & Physiology",
+      "pieceRange": "Pieces 1-6",
+      "examType": "ARDMS RDMS Breast (BR)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Breast zones, ducts and lobules, lymphatics, and how the breast changes from puberty through menopause",
+      "topics": [
+        {
+          "id": "br-breast-zones-and-layers",
+          "title": "Breast Zones and Layers",
+          "frontClue": "Skin, fat, gland, fat, muscle: three zones stacked between skin and chest wall",
+          "corePiece": "Sonographically the breast is described from superficial to deep as skin, the premammary (subcutaneous) zone, the mammary zone, and the retromammary zone, with the pectoralis major muscle, ribs, and pleura behind. Normal skin is a bright double line with a thin hypoechoic dermis, generally under 2 mm thick (slightly thicker, up to about 3 mm, near the areola and inframammary fold). The premammary zone holds subcutaneous fat lobules (hypoechoic, mid-gray), Cooper ligaments, veins, and lymphatics. The mammary zone lies between the superficial and deep layers of the superficial fascia and contains the echogenic fibroglandular parenchyma, ducts, and interspersed fat; most breast cancers and fibroadenomas arise here. The retromammary zone is a thin fat layer separating the deep fascia from the pectoralis major, which appears as a striated hypoechoic band. Ribs are oval hypoechoic structures with posterior shadowing deep to the muscle, and costal cartilage can mimic a mass. Tissue composition is reported as homogeneous fat, homogeneous fibroglandular, or heterogeneous.",
+          "whyLock": "Knowing which zone a lesion lives in narrows the differential fast. A lesion entirely in the skin or subcutaneous fat, such as a sebaceous or epidermal inclusion cyst or a lipoma, is rarely a primary breast cancer, while an irregular mass in the mammary zone deserves full scrutiny. Fat is the gain reference: set the gain so fat is medium gray, not black. Common traps include calling a rib or costal cartilage a mass (trace it into the chest wall and confirm it is deep to the pectoralis) and calling a fat lobule a hypoechoic mass (rotate the probe and watch it elongate and blend with surrounding fat).",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Cooper Ligaments",
+              "link": "The ligaments run through the premammary and mammary zones and anchor the gland to skin."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Transducer and Focal Zone Optimization",
+              "link": "Depth and gain should be set to show every zone down to the pectoralis."
+            }
+          ],
+          "registryApplication": "Expect questions asking which zone contains the glandular tissue or which layer lies directly anterior to the pectoralis major, and items about mistaking ribs or fat lobules for masses.",
+          "checkpoint": {
+            "pearl": "Pre, mammary, retro: fat, gland, fat, then muscle",
+            "reflection": "A hypoechoic oval structure lies deep to the pectoralis with dense posterior shadowing. What is it most likely, and how would you prove it?"
+          },
+          "keyTerms": [
+            "Premammary Zone",
+            "Mammary Zone",
+            "Retromammary Zone",
+            "Superficial Fascia",
+            "Pectoralis Major",
+            "Cooper Ligaments",
+            "Costal Cartilage"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 1"
+        },
+        {
+          "id": "br-cooper-ligaments",
+          "title": "Cooper Ligaments",
+          "frontClue": "Echogenic suspension cables: straight and thin is normal, pulled or thickened is not",
+          "corePiece": "Cooper ligaments are the suspensory ligaments of the breast: thin connective tissue bands that extend from the deep fascia through the parenchyma and the premammary fat to attach to the dermis. On ultrasound they are thin, curvilinear echogenic lines that outline the fat lobules and arch toward the skin, best seen in the premammary zone. Because they meet the beam at an angle, they can refract sound and produce narrow posterior shadows (critical angle shadowing) that mimic a suspicious lesion; these artifactual shadows disappear with increased compression or a change in transducer angle. Malignancy can thicken, straighten, or retract the ligaments, pulling them toward a mass and causing skin dimpling or retraction. Edema, inflammation, and lymphatic obstruction can also thicken them. With aging and loss of elasticity the ligaments stretch, contributing to breast ptosis. Disruption or interruption of the ligaments by a mass is an associated feature that supports invasion.",
+          "whyLock": "The reasoning is simple: a real shadowing lesion persists in every plane and with compression, while ligament shadowing comes and goes as you rock the transducer. Exam items often describe a narrow shadow that resolves with pressure and ask for the cause. On the flip side, a desmoplastic carcinoma tethers the ligaments, so a clinical sign of skin dimpling or retraction should send you looking for a mass beneath it. Do not confuse thickened ligaments from edema with tethering: edema thickens many ligaments diffusely and usually comes with skin thickening, whereas retraction is focal and points toward a mass.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 1",
+              "title": "Breast Zones and Layers",
+              "link": "Cooper ligaments traverse the premammary and mammary zones to reach the skin."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Suspicious Sonographic Features",
+              "link": "Ligament retraction and disruption are associated findings that raise suspicion for carcinoma."
+            }
+          ],
+          "registryApplication": "Tested as the cause of a refractive shadow that disappears with compression, or as the structure responsible for skin retraction over a cancer.",
+          "checkpoint": {
+            "pearl": "Shadow that vanishes with pressure is a ligament, not a lesion",
+            "reflection": "How would you prove that a thin posterior shadow in the premammary fat is artifact rather than a small carcinoma?"
+          },
+          "keyTerms": [
+            "Suspensory Ligaments",
+            "Critical Angle Shadowing",
+            "Refraction",
+            "Skin Retraction",
+            "Breast Zones and Layers"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 2"
+        },
+        {
+          "id": "br-terminal-ductal-lobular-unit",
+          "title": "Terminal Ductal Lobular Unit",
+          "frontClue": "The TDLU is the breast's factory and where most breast pathology begins",
+          "corePiece": "Each breast has about 15 to 20 lobes arranged radially around the nipple. Each lobe drains through a lactiferous duct that widens into a lactiferous sinus just beneath the nipple before opening on its surface. Ducts branch peripherally into segmental and subsegmental ducts and end in the terminal ductal lobular unit (TDLU), made of an extralobular terminal duct, an intralobular terminal duct, and the lobule with its acini (ductules). The TDLU is the functional milk-producing unit and the site of origin of most breast pathology: ductal and lobular carcinomas, cysts, fibroadenomas, and fibrocystic change. Ducts are lined by an inner epithelial layer and an outer myoepithelial layer on a basement membrane; in situ cancers stay inside this membrane, invasive cancers breach it. On ultrasound normal ducts are thin anechoic tubes converging on the nipple, most visible in the subareolar region; a duct over about 3 mm in a nonlactating woman is commonly called ectatic. Individual TDLUs are sometimes seen as tiny oval hypoechoic structures.",
+          "whyLock": "This card ties anatomy to pathology. If the TDLU is where disease starts, then radial scanning along a duct toward the nipple is how you show disease spreading, such as duct extension of carcinoma or an intraductal papilloma within a dilated duct. The basement membrane is the line between in situ and invasive disease, which is why DCIS is stage 0. A common trap is believing that ductal carcinoma arises in large ducts and lobular carcinoma in lobules; both actually arise in the TDLU, and the names describe histologic pattern, not site.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 25",
+              "title": "Ductal Carcinoma In Situ",
+              "link": "DCIS is malignant epithelium confined within the basement membrane of the TDLU and ducts."
+            },
+            {
+              "piece": "Piece 9",
+              "title": "Radial and Antiradial Scanning",
+              "link": "Radial planes follow the ducts from the TDLU toward the nipple."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "Intraductal Papilloma",
+              "link": "Papillomas grow inside ducts, central ones in the large subareolar ducts."
+            }
+          ],
+          "registryApplication": "Expect recall items naming the TDLU as the origin of most cancers and fibroadenomas, and items on the number of lobes and the lactiferous sinus.",
+          "checkpoint": {
+            "pearl": "TDLU: where milk is made and where most cancer starts",
+            "reflection": "Why do both ductal and lobular carcinomas arise from the same structure, and what does the basement membrane decide?"
+          },
+          "keyTerms": [
+            "Lobule",
+            "Acini",
+            "Lactiferous Duct",
+            "Lactiferous Sinus",
+            "Basement Membrane",
+            "Duct Ectasia",
+            "Ductal Carcinoma In Situ"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 3"
+        },
+        {
+          "id": "br-lymphatic-drainage",
+          "title": "Lymphatic Drainage",
+          "frontClue": "Most lymph heads to the axilla; medial tumors may also drain to internal mammary nodes",
+          "corePiece": "Breast lymph drains mainly to the axillary nodes, which receive roughly 75 percent or more of lymphatic flow, including flow from all quadrants. The remainder travels to the internal mammary (parasternal) chain, particularly from medial and deep tissue, with lesser routes to the interpectoral (Rotter) nodes between the pectoralis major and minor, the supraclavicular and infraclavicular nodes, and occasionally the contralateral breast or the abdomen. The subareolar lymphatic plexus (Sappey plexus) collects lymph from the nipple and areola and connects with deeper channels. Intramammary lymph nodes occur within the breast itself, most often in the upper outer quadrant and axillary tail. The sentinel lymph node is the first node to receive drainage from a tumor and is identified surgically with radiotracer or dye; when it is negative, the rest of the axilla is unlikely to be involved. Blockage of dermal lymphatics by tumor causes skin edema and peau d'orange, the hallmark of inflammatory carcinoma. Normal lymphatic vessels are not usually seen on ultrasound.",
+          "whyLock": "When you find a cancer, the next question is where it could have spread, so the drainage map tells you where to look. Scan the ipsilateral axilla for every suspicious mass, and remember that medial cancers can skip to the internal mammary chain, which runs along the sternal border and is harder to evaluate. A classic trap is assuming medial lesions drain only medially; the axilla is still the dominant route from every quadrant. Another is forgetting the intramammary node: an oval mass with a fatty hilum in the upper outer quadrant is usually a benign node, not a new tumor.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 37",
+              "title": "Axillary Levels",
+              "link": "Axillary nodes are staged by level relative to the pectoralis minor muscle."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "Inflammatory Breast Cancer",
+              "link": "Tumor emboli in dermal lymphatics produce the skin edema of inflammatory carcinoma."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Normal Lymph Node",
+              "link": "Intramammary and axillary nodes share the same normal sonographic appearance."
+            }
+          ],
+          "registryApplication": "Tested as the primary drainage route (axillary), the destination of medial drainage (internal mammary), and the definition of a sentinel node.",
+          "checkpoint": {
+            "pearl": "Axilla gets most; internal mammary gets the medial share",
+            "reflection": "A medial breast cancer has a negative axillary ultrasound. Which other nodal chain could still be involved?"
+          },
+          "keyTerms": [
+            "Axillary Lymph Nodes",
+            "Internal Mammary Nodes",
+            "Rotter Nodes",
+            "Sentinel Lymph Node",
+            "Sappey Plexus",
+            "Intramammary Lymph Node"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 4"
+        },
+        {
+          "id": "br-physiologic-changes-across-life",
+          "title": "Physiologic Changes Across Life",
+          "frontClue": "Hormones remodel the breast: bud, cycle, pregnancy, milk, then fat",
+          "corePiece": "At birth, maternal hormones can cause transient neonatal breast enlargement. At puberty (thelarche), estrogen drives ductal elongation and progesterone drives lobular development; the early breast bud appears as a hypoechoic, triangular or disc-shaped retroareolar nodule that must not be biopsied, because removal can prevent breast development. During the menstrual cycle the luteal (premenstrual) phase brings fluid retention, glandular swelling, and tenderness; breast MRI is best scheduled in the second week of the cycle. In pregnancy the glandular tissue proliferates markedly, the fibroglandular zone becomes thick and relatively hypoechoic, and vascularity increases. During lactation prolactin stimulates milk production and oxytocin drives ejection; ultrasound shows prominent, fluid-filled ducts and increased flow. After menopause, falling estrogen causes involution: the glandular tissue atrophies and is replaced by fat, so the breast becomes predominantly fatty with thin echogenic fibrous strands. Hormone replacement therapy can maintain or increase density and may produce new cysts.",
+          "whyLock": "Many exam scenarios hinge on knowing what is normal for the patient's age and hormonal state. A dense, hypoechoic, vascular breast is expected in a pregnant patient, while a new solid mass in a postmenopausal woman not on hormones is suspicious because new benign hormone-driven lesions such as cysts and fibroadenomas are uncommon then. In a prepubertal girl with a unilateral retroareolar lump, the answer is almost always a normal breast bud. Ultrasound is the preferred first imaging test in pregnant and lactating patients, and lactating breasts should be emptied before scanning when possible.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 19",
+              "title": "Mastitis, Abscess and Galactocele",
+              "link": "Lactation-related lesions arise on the background of hormonal changes in pregnancy and nursing."
+            },
+            {
+              "piece": "Piece 17",
+              "title": "Fibrocystic Change",
+              "link": "Cyclic hormonal stimulation drives fibrocystic symptoms and cysts in premenopausal women."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Gynecomastia",
+              "link": "Physiologic gynecomastia occurs in neonates and at male puberty from hormonal imbalance."
+            }
+          ],
+          "registryApplication": "Tested with age-based scenarios: the prepubertal breast bud, the pregnant or lactating breast, and fatty involution after menopause.",
+          "checkpoint": {
+            "pearl": "Puberty builds, pregnancy multiplies, menopause replaces with fat",
+            "reflection": "A 9-year-old girl has a tender, hypoechoic, disc-shaped nodule directly behind one nipple. What is it, and what should not be done?"
+          },
+          "keyTerms": [
+            "Thelarche",
+            "Breast Bud",
+            "Luteal Phase",
+            "Lactation",
+            "Involution",
+            "Prolactin",
+            "Oxytocin"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 5"
+        },
+        {
+          "id": "br-normal-variants-and-mimics",
+          "title": "Normal Variants and Mimics",
+          "frontClue": "Breast tissue can appear anywhere along the milk line from axilla to groin",
+          "corePiece": "The embryologic mammary ridge (milk line) runs from the axilla to the groin, and incomplete regression produces ectopic tissue along it. Polythelia, an accessory nipple, is the most common congenital anomaly, usually found below the normal breast. Polymastia means accessory breast tissue, most often in the axilla, and it can swell during pregnancy and lactation and develop any disease the normal breast can, including cancer; on ultrasound it resembles normal fibroglandular tissue. Amastia (absent breast) and amazia (absent glandular tissue with a nipple present) are rare. Poland syndrome combines unilateral absence or hypoplasia of the pectoralis major with ipsilateral breast hypoplasia. Developmental asymmetry is common and benign when stable. Other normal structures that mimic masses include fat lobules, ribs and costal cartilage, an intramammary lymph node, the nipple itself (which can shadow posteriorly), and dilated subareolar ducts. Tubular breasts and inverted nipples are additional developmental variants.",
+          "whyLock": "On the exam and in the clinic, the safe question is whether a finding behaves like normal tissue. Accessory axillary tissue looks like glandular tissue and changes with hormones; it is not a mass. Nipple shadowing is eliminated by angling the probe from the side, using more gel, or a standoff pad. A trap: assuming ectopic tissue is immune to disease; it can develop fibroadenomas or carcinoma, so a discrete mass in axillary breast tissue deserves the same workup as one in the breast. Know Poland syndrome by its muscle absence, which helps answer anatomy questions about the chest wall.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 1",
+              "title": "Breast Zones and Layers",
+              "link": "Mimics such as ribs and fat lobules are sorted out by knowing each zone's normal appearance."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Normal Lymph Node",
+              "link": "An intramammary node is a normal structure that can be mistaken for a mass."
+            },
+            {
+              "piece": "Piece 7",
+              "title": "Patient Positioning",
+              "link": "Raising the arm and rolling the patient helps evaluate axillary tissue and the tail of Spence."
+            }
+          ],
+          "registryApplication": "Expect items on the milk line, the most common congenital anomaly (polythelia), the most common site of accessory tissue (axilla), and Poland syndrome.",
+          "checkpoint": {
+            "pearl": "Milk line: axilla to groin; accessory tissue can still get cancer",
+            "reflection": "Why does accessory axillary breast tissue often become more noticeable during pregnancy?"
+          },
+          "keyTerms": [
+            "Milk Line",
+            "Polythelia",
+            "Polymastia",
+            "Poland Syndrome",
+            "Amastia",
+            "Accessory Breast Tissue",
+            "Tail of Spence"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 6"
+        }
+      ]
+    },
+    {
+      "id": "br-scanning-technique-instrumentation",
+      "title": "Scanning Technique & Instrumentation",
+      "pieceRange": "Pieces 7-13",
+      "examType": "ARDMS RDMS Breast (BR)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Positioning, labeling, scan planes, and the knobs that make breast images diagnostic",
+      "topics": [
+        {
+          "id": "br-patient-positioning",
+          "title": "Patient Positioning",
+          "frontClue": "Thin the breast: roll the patient and raise the arm",
+          "corePiece": "The goal of positioning is to make the breast as thin and evenly spread over the chest wall as possible, because thinner tissue allows higher frequencies and better resolution. The patient lies supine with the ipsilateral arm raised and the hand behind the head, which stretches the pectoralis and flattens the breast. For the lateral (outer) breast and axillary tail, the patient is rolled into a contralateral posterior oblique position with a wedge or pillow under the ipsilateral shoulder, so the lateral tissue falls medially over the chest wall. For the medial breast, a flat supine position usually suffices. Large or ptotic breasts may need additional rolling and support. Palpable lumps can be scanned in the position in which the patient feels them, while the sonographer palpates the lump and places the transducer directly over it to confirm correlation. Gentle, firm compression reduces thickness, displaces fat, and helps distinguish real masses from tissue folds.",
+          "whyLock": "Positioning is the cheapest image optimization you have. A breast that is not thinned forces you to lower frequency and widen the focal region, and deep lesions near the chest wall may be missed. Exam questions often ask which position best evaluates the upper outer quadrant or axilla; the answer is the contralateral posterior oblique with the arm raised. A trap is scanning a palpable lump without correlating it under the fingers; always confirm that the sonographic finding is the thing the patient or clinician feels, and document that correlation.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "Clock-Face Labeling",
+              "link": "Lesion location must be documented in the same consistent way regardless of patient position."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Transducer and Focal Zone Optimization",
+              "link": "A thinner breast lets you use a higher frequency and place the focus precisely."
+            }
+          ],
+          "registryApplication": "Tested as the best position for the lateral breast and axilla, and the reason the arm is raised (to flatten tissue over the chest wall).",
+          "checkpoint": {
+            "pearl": "Lateral breast: roll away and raise the arm",
+            "reflection": "Why does rolling the patient into a contralateral posterior oblique position improve imaging of the upper outer quadrant?"
+          },
+          "keyTerms": [
+            "Supine Oblique",
+            "Contralateral Posterior Oblique",
+            "Ipsilateral Arm Raised",
+            "Compression",
+            "Palpable Correlation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 7"
+        },
+        {
+          "id": "br-clock-face-labeling",
+          "title": "Clock-Face Labeling",
+          "frontClue": "Side, clock time, centimeters from nipple, and scan plane: every image, every time",
+          "corePiece": "Breast lesions are labeled by side (right or left), clock-face position as if the examiner were facing the patient, distance from the nipple in centimeters, and the scan plane (radial or antiradial, or transverse or sagittal). Many protocols also note transducer orientation and depth. On the clock face, 12 o'clock is superior and 6 o'clock inferior for both breasts. Because the clock is read facing the patient, 9 o'clock is lateral on the right breast and 3 o'clock is lateral on the left. The upper outer quadrant therefore spans 9 to 12 o'clock on the right and 12 to 3 o'clock on the left. The subareolar region is labeled retroareolar, and the axilla is labeled separately. Quadrant names (upper outer, upper inner, lower outer, lower inner) are acceptable supplements but less precise. A complete label lets a radiologist, a surgeon, or the next sonographer find the same lesion, correlate it with mammography or MRI, and target it for biopsy.",
+          "whyLock": "Labeling errors cause wrong-site biopsies and missed follow-up, so this is one of the most heavily tested practical skills. The trap is mirroring: students often assume 3 o'clock is lateral on both sides. Work it out each time by imagining yourself facing the patient. Another trap is measuring distance from the edge of the areola instead of the nipple. Exam items may give a lesion in the left upper outer quadrant and ask for the correct clock range, or give a clock time and ask whether it is medial or lateral.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 9",
+              "title": "Radial and Antiradial Scanning",
+              "link": "The scan plane is part of every complete label."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Mammographic Correlation",
+              "link": "Accurate clock and distance labels allow the sonographic finding to be matched to a mammographic one."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Reporting and Follow-Up",
+              "link": "Reports use the same location convention so findings can be tracked over time."
+            }
+          ],
+          "registryApplication": "Expect items converting quadrants to clock positions for each breast and asking which elements a complete annotation must include.",
+          "checkpoint": {
+            "pearl": "Right 9 and left 3 are both lateral",
+            "reflection": "A mass at the left breast 2 o'clock, 4 cm from the nipple: which quadrant is it in, and is it medial or lateral?"
+          },
+          "keyTerms": [
+            "Clock-Face Position",
+            "Distance From Nipple",
+            "Upper Outer Quadrant",
+            "Retroareolar",
+            "Annotation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 8"
+        },
+        {
+          "id": "br-radial-and-antiradial-scanning",
+          "title": "Radial and Antiradial Scanning",
+          "frontClue": "Radial follows the duct like a spoke; antiradial crosses it at 90 degrees",
+          "corePiece": "Because the lobes and ducts radiate from the nipple like spokes of a wheel, ducts are best displayed with the transducer oriented along the radius toward the nipple (radial plane). The antiradial plane is perpendicular to the radial plane. Every lesion should be documented in two orthogonal planes, with and without calipers, using either radial and antiradial or transverse and sagittal views. The radial plane is best for showing ductal extension of carcinoma, intraductal masses, and duct ectasia, and for demonstrating the branch pattern of a malignancy. Survey scanning of the whole breast can be performed in overlapping rows (lawnmower pattern in transverse and sagittal) or in a radial pattern around the nipple. Measurements are taken in three dimensions: the longest dimension and its perpendicular in one plane, and the third dimension in the orthogonal plane. Overlap of each sweep is required so no tissue is skipped.",
+          "whyLock": "Think of radial scanning as scanning the anatomy the way the breast is built. A mass that seems oval in an antiradial plane may reveal a tail extending toward the nipple in the radial plane, which is duct extension and raises suspicion. Orthogonal planes also distinguish a true mass (seen in both planes) from a fat lobule or tissue fold (which elongates or disappears in the second plane). A trap is documenting only one plane, which can hide orientation: a mass is not parallel whenever its long axis does not lie along the skin line (taller than wide, oblique, or round), and that judgment should hold up in both planes.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 3",
+              "title": "Terminal Ductal Lobular Unit",
+              "link": "Radial planes follow the duct system from the TDLU to the nipple."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Suspicious Sonographic Features",
+              "link": "Duct extension and branch pattern are best shown in the radial plane."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Clock-Face Labeling",
+              "link": "The plane is recorded with the clock position and distance."
+            }
+          ],
+          "registryApplication": "Tested as which plane best shows ductal extension (radial) and the requirement to document lesions in two orthogonal planes.",
+          "checkpoint": {
+            "pearl": "Radial runs with the ducts; antiradial runs across them",
+            "reflection": "Why might a mass look benign in the antiradial plane but suspicious in the radial plane?"
+          },
+          "keyTerms": [
+            "Radial Plane",
+            "Antiradial Plane",
+            "Orthogonal Planes",
+            "Duct Extension",
+            "Lawnmower Technique"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 9"
+        },
+        {
+          "id": "br-transducer-and-focal-zone-optimization",
+          "title": "Transducer and Focal Zone Optimization",
+          "frontClue": "High-frequency linear probe, focus at the lesion, fat set to mid-gray",
+          "corePiece": "Breast imaging uses a high-frequency, broad-bandwidth linear array transducer; ACR and AIUM guidance calls for a center frequency of at least 10 MHz, and many systems operate at 12 to 18 MHz for superficial tissue. Higher frequency improves axial and lateral resolution at the cost of penetration, so a large breast or deep lesion may require a lower setting. Depth should include the pectoralis major so the full thickness of the breast is seen. The focal zone is placed at or just deep to the level of the lesion to narrow the beam and sharpen lateral resolution; multiple focal zones improve uniformity but lower frame rate. Overall gain and time gain compensation are adjusted so that subcutaneous fat appears medium gray and a simple cyst is truly anechoic; too much gain fills cysts with false echoes, too little makes solid masses look cystic. For very superficial lesions in the skin or just below it, a standoff pad or a thick layer of gel moves the lesion into the focal zone.",
+          "whyLock": "Most cyst-versus-solid mistakes are knobology mistakes. If a cyst shows internal echoes, check that gain is not too high and the focus is at the cyst. If a hypoechoic solid mass looks anechoic, gain may be too low; Doppler and harmonics help. Exam items often describe an artifact and ask which control corrects it. A trap is setting the focus at the top of the image out of habit: focus belongs at the depth of interest. Another trap is choosing a curvilinear probe; lower frequency and wide sector geometry degrade near-field breast detail.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 11",
+              "title": "Spatial Compounding and Harmonics",
+              "link": "These processing tools complement correct frequency, gain and focus."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Simple Cyst",
+              "link": "Proper gain and focus are what allow a cyst to appear truly anechoic."
+            },
+            {
+              "piece": "Piece 1",
+              "title": "Breast Zones and Layers",
+              "link": "Depth should be set to show every zone down to the chest wall."
+            }
+          ],
+          "registryApplication": "Expect questions on transducer choice, where to place the focal zone, how to set gain using fat as a reference, and when to use a standoff pad.",
+          "checkpoint": {
+            "pearl": "Linear, high frequency, focus at the lesion, fat looks gray",
+            "reflection": "A known simple cyst shows diffuse low-level echoes today. Which two settings would you check first, and why?"
+          },
+          "keyTerms": [
+            "Linear Array",
+            "Focal Zone",
+            "Time Gain Compensation",
+            "Standoff Pad",
+            "Lateral Resolution",
+            "Axial Resolution"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 10"
+        },
+        {
+          "id": "br-spatial-compounding-and-harmonics",
+          "title": "Spatial Compounding and Harmonics",
+          "frontClue": "Compounding smooths speckle and margins but softens shadows and enhancement",
+          "corePiece": "Spatial compound imaging electronically steers the beam to acquire several frames from different angles and averages them into one image. Averaging reduces speckle, noise, and angle-dependent artifacts, improves the continuity of margins and specular reflectors such as Cooper ligaments and capsules, and makes tissue planes and needles easier to see. Because each part of the image is insonated from multiple directions, compounding also reduces posterior acoustic shadowing and posterior acoustic enhancement, which are useful diagnostic signs; turning compounding off can restore them when characterization depends on posterior features. Compounding may slightly reduce frame rate and can blur fast motion. Tissue harmonic imaging forms the image from harmonic frequencies generated in tissue at twice the transmitted frequency; it reduces clutter and reverberation, improves contrast resolution and lateral resolution, and helps clear artifactual echoes from cysts and improve conspicuity of hypoechoic masses and margins. Its trade-off is reduced penetration. Speckle reduction filters are post-processing tools with similar smoothing effects.",
+          "whyLock": "The key reasoning is that every tool trades something away. Compounding gives prettier margins but can hide the shadow that makes a cancer suspicious or the enhancement that confirms a cyst. If an exam item asks why a mass appeared to lose its posterior shadowing on a newer system, compounding is the likely answer. Harmonics is the go-to answer for clearing reverberation and clutter inside a cyst. A trap is thinking compounding increases shadowing; it reduces it.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Transducer and Focal Zone Optimization",
+              "link": "Processing tools refine an image that must first be set up with correct frequency and focus."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Suspicious Sonographic Features",
+              "link": "Posterior shadowing is a suspicious feature that compounding can diminish."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Simple Cyst",
+              "link": "Harmonics help clear artifactual echoes so a cyst looks anechoic."
+            }
+          ],
+          "registryApplication": "Tested as the effect of compounding on posterior features and speckle, and the benefit of harmonics for cyst clutter and contrast.",
+          "checkpoint": {
+            "pearl": "Compounding cuts speckle and shadows; harmonics cut clutter",
+            "reflection": "A mass has subtle shadowing that disappears when compounding is turned on. What does that tell you about the setting, and what should you do?"
+          },
+          "keyTerms": [
+            "Spatial Compound Imaging",
+            "Tissue Harmonic Imaging",
+            "Speckle",
+            "Posterior Acoustic Shadowing",
+            "Posterior Acoustic Enhancement"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 11"
+        },
+        {
+          "id": "br-breast-elastography",
+          "title": "Breast Elastography",
+          "frontClue": "Cancers tend to be stiff, and look bigger on the elastogram than in gray scale",
+          "corePiece": "Elastography assesses tissue stiffness, which adds information to gray-scale features. Strain elastography uses gentle manual compression or physiologic motion and displays relative deformation: soft tissue deforms more, stiff tissue less. It is qualitative or semiquantitative, using a color map, a 5-point elasticity score (Tsukuba), or a strain ratio comparing the lesion with nearby fat. Shear wave elastography uses an acoustic radiation force push to generate shear waves and measures their speed, displayed in meters per second or converted to kilopascals; stiffer tissue has faster shear waves. It is quantitative and less operator dependent, but excessive preload pressure falsely raises stiffness, so minimal compression is required. Malignant masses are generally stiffer than benign ones, and a lesion that measures larger on the strain elastogram than on gray scale suggests malignancy. Some strain systems show a bull's-eye artifact in simple cysts. BI-RADS includes elasticity as an associated feature: soft, intermediate, or hard.",
+          "whyLock": "Elastography is a supplement, not a replacement: it may help downgrade a low-suspicion oval mass or support biopsy of an equivocal one, but it does not override suspicious B-mode features. Pitfalls are worth memorizing. Some cancers are soft (mucinous, necrotic, or high-grade circumscribed tumors), and some benign lesions are stiff (fat necrosis, calcified fibroadenoma, sclerotic scars). Deep lesions and very small lesions yield unreliable results. Too much probe pressure is the most common user error in shear wave imaging. Exam items often ask which technique is quantitative (shear wave) or which finding favors malignancy.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 29",
+              "title": "BI-RADS Mass Descriptors",
+              "link": "Elasticity is reported alongside mass descriptors as an associated feature."
+            },
+            {
+              "piece": "Piece 27",
+              "title": "Circumscribed Carcinomas",
+              "link": "Some circumscribed cancers, such as mucinous carcinoma, can be soft on elastography."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Fat Necrosis and Lipoma",
+              "link": "Fat necrosis is a benign lesion that can appear stiff."
+            }
+          ],
+          "registryApplication": "Expect questions comparing strain and shear wave methods, units of measurement, the effect of preload, and which elastographic findings suggest malignancy.",
+          "checkpoint": {
+            "pearl": "Strain is relative; shear wave is measured; stiff and bigger is worrisome",
+            "reflection": "Why does pressing harder with the transducer during shear wave elastography make a benign mass look more suspicious?"
+          },
+          "keyTerms": [
+            "Strain Elastography",
+            "Shear Wave Elastography",
+            "Strain Ratio",
+            "Kilopascals",
+            "Acoustic Radiation Force",
+            "Preload"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 12"
+        },
+        {
+          "id": "br-breast-doppler-settings",
+          "title": "Breast Doppler Settings",
+          "frontClue": "Low PRF, low filter, light touch: breast vessels are small and slow",
+          "corePiece": "Breast vessels are small and carry slow flow, so Doppler must be set for sensitivity. Use power Doppler or a color mode with low pulse repetition frequency (low velocity scale), a low wall filter, and color gain increased until noise just appears and then slightly reduced. Keep the color box small and just larger than the lesion to maintain frame rate. Apply minimal transducer pressure, because compression easily obliterates flow in small vessels. BI-RADS describes vascularity as absent, internal, or vessels in the rim. Internal vascularity proves a mass is solid and excludes a simple or complicated cyst, which is especially helpful for hypoechoic masses that mimic cysts. Penetrating, disorganized, or branching internal vessels are associated with malignancy, while peripheral rim flow is common around inflamed cysts, abscesses, and benign masses. Twinkling artifact behind calcifications or biopsy clips can help locate them. Absence of flow does not exclude malignancy, since many small cancers show little detectable flow.",
+          "whyLock": "The practical lesson is that the default settings are often wrong for the breast. If an obviously solid mass shows no flow, lower the scale and the filter and lighten your pressure before concluding it is avascular. Exam items commonly ask which change increases sensitivity to slow flow, or what Doppler finding distinguishes a solid hypoechoic mass from a complicated cyst. A trap is equating avascular with benign; another is mistaking motion or flash artifact for flow. Vascularity is supportive, not diagnostic, and must be interpreted with gray-scale features.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 15",
+              "title": "Complicated and Complex Cystic Masses",
+              "link": "Doppler separates a solid component with flow from avascular debris."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Associated Features and Special Cases",
+              "link": "Vascularity is one of the BI-RADS associated features."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "Intraductal Papilloma",
+              "link": "A vascular stalk on Doppler helps confirm an intraductal mass."
+            }
+          ],
+          "registryApplication": "Tested as the settings that improve detection of slow flow and the role of internal vascularity in confirming a solid mass.",
+          "checkpoint": {
+            "pearl": "Slow flow needs low scale, low filter, and almost no pressure",
+            "reflection": "A hypoechoic oval mass has no internal flow on default settings. List three adjustments to make before calling it avascular."
+          },
+          "keyTerms": [
+            "Power Doppler",
+            "Pulse Repetition Frequency",
+            "Wall Filter",
+            "Internal Vascularity",
+            "Twinkling Artifact",
+            "Rim Vascularity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 13"
+        }
+      ]
+    },
+    {
+      "id": "br-benign-breast-disease",
+      "title": "Benign Breast Disease",
+      "pieceRange": "Pieces 14-21",
+      "examType": "ARDMS RDMS Breast (BR)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Cysts, fibroadenomas, ductal and inflammatory lesions, fatty lesions, and the male breast",
+      "topics": [
+        {
+          "id": "br-simple-cyst",
+          "title": "Simple Cyst",
+          "frontClue": "Anechoic, round or oval, thin wall, bright behind: benign and done",
+          "corePiece": "A simple cyst is the most common breast mass, typically in women aged 35 to 50, and arises from fluid accumulation in the TDLU. Strict sonographic criteria are: anechoic contents, circumscribed margin, oval or round shape, an imperceptible or thin echogenic wall, and posterior acoustic enhancement. Thin edge (refractive) shadowing at the lateral margins is common and acceptable. When all criteria are met the cyst is BI-RADS 2 (benign), and no follow-up or aspiration is needed unless it is painful or the patient requests relief. Cysts are often multiple and bilateral, and they fluctuate with the menstrual cycle and hormone therapy. They may be palpable, tender, and rapidly appearing. Very small cysts can show artifactual internal echoes from slice thickness or reverberation; harmonics, compounding, focal zone adjustment, and correct gain help clear them. A cyst should show no internal vascularity on Doppler.",
+          "whyLock": "The simple cyst is the anchor for every cystic-lesion question: learn the five criteria and you can recognize when a lesion deviates from them. If one criterion fails, the lesion is no longer simple; it becomes complicated or complex, and management changes. A trap is calling a markedly hypoechoic solid mass a cyst because the gain is low; check for enhancement, increase gain, and use Doppler. Another trap is recommending follow-up for a simple cyst; it is benign and needs none. Ultrasound is the definitive test for confirming a cyst seen as a circumscribed mass on mammography.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 15",
+              "title": "Complicated and Complex Cystic Masses",
+              "link": "When any simple cyst criterion is not met, the lesion is reclassified."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "BI-RADS Assessment Categories",
+              "link": "A simple cyst is the classic BI-RADS 2 finding."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Transducer and Focal Zone Optimization",
+              "link": "Correct gain and focus are what make a cyst appear anechoic."
+            }
+          ],
+          "registryApplication": "Expect recall of the sonographic criteria, the BI-RADS category (2), and items asking what management a simple cyst requires.",
+          "checkpoint": {
+            "pearl": "Anechoic, circumscribed, thin wall, enhancement equals BI-RADS 2",
+            "reflection": "Which single criterion, if missing, most often changes a cyst from simple to complicated?"
+          },
+          "keyTerms": [
+            "Anechoic",
+            "Posterior Acoustic Enhancement",
+            "Circumscribed Margin",
+            "Edge Shadowing",
+            "BI-RADS Assessment Categories"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 14"
+        },
+        {
+          "id": "br-complicated-and-complex-cystic-masses",
+          "title": "Complicated and Complex Cystic Masses",
+          "frontClue": "Debris alone is complicated; any solid part makes it complex and biopsy-worthy",
+          "corePiece": "A complicated cyst meets most simple cyst criteria but contains homogeneous low-level internal echoes, a fluid-debris level, or echoes that shift with position, without any solid component, thick wall, or internal vascularity. Contents may be proteinaceous fluid, blood, pus, or milk. Multiple bilateral complicated cysts are usually BI-RADS 2; a solitary complicated cyst is usually BI-RADS 3 with short-interval follow-up, or it may be aspirated. Clustered microcysts, a cluster of tiny anechoic foci each under 2 to 3 mm separated by thin (under 0.5 mm) septations, are typically BI-RADS 2 or 3. A complex cystic and solid mass contains both anechoic and echogenic solid elements: a thick wall, thick septations, an intracystic mass or mural nodule, or predominantly solid tissue with cystic spaces. Internal vascularity in the solid part confirms tissue. Complex cystic and solid masses are BI-RADS 4 and require biopsy, targeting the solid component. The differential includes intracystic papilloma, papillary carcinoma, necrotic invasive carcinoma, abscess, hematoma, and fat necrosis.",
+          "whyLock": "Sort cystic lesions by asking one question: is there anything solid? If not, the lesion is either simple or complicated, both benign or probably benign. If yes, it is complex, and biopsy is indicated. Doppler and patient repositioning are your tools: moving debris and absent flow favor a complicated cyst, while a fixed nodule with flow means tissue. Common traps include labeling a cyst with fine septations or debris as complex, and forgetting that thick septations count as a solid component. Note that the BI-RADS 5th edition replaced the older term complex cyst with complex cystic and solid mass.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 14",
+              "title": "Simple Cyst",
+              "link": "Complicated and complex lesions are defined by how they depart from simple cyst criteria."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Breast Doppler Settings",
+              "link": "Flow in a mural nodule proves a solid component."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Cyst Aspiration",
+              "link": "Aspiration can resolve an indeterminate complicated cyst."
+            }
+          ],
+          "registryApplication": "Tested heavily: classify a described cystic lesion, give its BI-RADS category, and choose the next step (follow-up, aspiration, or biopsy).",
+          "checkpoint": {
+            "pearl": "Debris only: complicated; solid part: complex, biopsy it",
+            "reflection": "A cyst contains a 4 mm mural nodule with a feeding vessel. What is the category, and what part should be biopsied?"
+          },
+          "keyTerms": [
+            "Complicated Cyst",
+            "Complex Cystic and Solid Mass",
+            "Fluid-Debris Level",
+            "Clustered Microcysts",
+            "Mural Nodule",
+            "Thick Septation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 15"
+        },
+        {
+          "id": "br-fibroadenoma",
+          "title": "Fibroadenoma",
+          "frontClue": "Young woman, oval, parallel, circumscribed, gently lobulated, thin capsule",
+          "corePiece": "Fibroadenoma is the most common solid breast mass in women under 30 and the most common benign solid tumor overall. It is a fibroepithelial lesion of the TDLU containing stromal and epithelial elements, is estrogen sensitive, may enlarge in pregnancy or with hormone therapy, and involutes after menopause, often developing coarse popcorn calcifications. Clinically it is firm, rubbery, mobile, and painless. Classic sonographic features are an oval shape, parallel (wider than tall) orientation, circumscribed margins, a thin echogenic pseudocapsule, homogeneous hypoechoic or isoechoic echotexture, and two or three gentle macrolobulations; posterior features are often neutral or mildly enhancing, and calcified ones shadow. Internal flow may be present. A mass with these classic features is often assessed BI-RADS 3 with short-interval follow-up, while new or growing masses may be biopsied. Variants include the complex fibroadenoma (with cysts or calcifications) and the juvenile fibroadenoma in adolescents, which can grow rapidly beyond 5 cm. Phyllodes tumor is the key differential for a large, rapidly growing mass in women aged 40 to 50.",
+          "whyLock": "Fibroadenoma is the benign template for the solid mass: it has none of the suspicious features. Reason by elimination: if any spiculation, angular margin, nonparallel orientation, microlobulation, or shadowing appears, the lesion no longer fits and should be biopsied. A trap is assuming a circumscribed mass in an older woman is a fibroadenoma, because circumscribed carcinomas such as mucinous and triple-negative cancers mimic it. Another is missing a phyllodes tumor, which looks like a fibroadenoma but is larger, grows faster, and may contain cystic clefts.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 22",
+              "title": "Suspicious Sonographic Features",
+              "link": "A fibroadenoma is recognized by the absence of every suspicious feature."
+            },
+            {
+              "piece": "Piece 27",
+              "title": "Circumscribed Carcinomas",
+              "link": "Some cancers mimic the circumscribed appearance of a fibroadenoma."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "BI-RADS Assessment Categories",
+              "link": "Classic fibroadenoma features usually earn a probably benign assessment."
+            }
+          ],
+          "registryApplication": "Expect items naming the most common solid mass in young women, its classic features, popcorn calcifications in older patients, and phyllodes tumor as the differential.",
+          "checkpoint": {
+            "pearl": "Under 30, oval, parallel, circumscribed: think fibroadenoma",
+            "reflection": "What features would make you suspect a phyllodes tumor rather than a fibroadenoma?"
+          },
+          "keyTerms": [
+            "Fibroepithelial Lesion",
+            "Pseudocapsule",
+            "Macrolobulation",
+            "Popcorn Calcification",
+            "Phyllodes Tumor",
+            "Juvenile Fibroadenoma"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 16"
+        },
+        {
+          "id": "br-fibrocystic-change",
+          "title": "Fibrocystic Change",
+          "frontClue": "Cyclic, bilateral, tender lumps that wax and wane with the menstrual cycle",
+          "corePiece": "Fibrocystic change is the most common benign breast condition, affecting women aged about 30 to 50; it is called a change rather than a disease because it is a response to cyclic hormonal stimulation. Symptoms are bilateral breast pain, tenderness, and lumpiness that worsen in the luteal phase before menses, often most prominent in the upper outer quadrants. Histologic components include cysts (micro and macro), stromal fibrosis, apocrine metaplasia, ductal ectasia, and adenosis. On ultrasound the breast shows dense, echogenic fibroglandular tissue with scattered simple, complicated, or clustered microcysts, sometimes with mildly dilated ducts. Fibrosis can produce focal areas of shadowing that may mimic carcinoma. Sclerosing adenosis, a proliferative variant, can appear as an irregular mass or distortion with calcifications and often requires biopsy. Most fibrocystic change carries no increased cancer risk; proliferative lesions with atypia, such as atypical ductal hyperplasia, do raise risk. Symptoms usually subside after menopause unless hormone therapy is used.",
+          "whyLock": "Fibrocystic change is a diagnosis of pattern, not of a single mass. When a patient describes bilateral cyclic pain, expect cysts and dense tissue; do not let a dominant suspicious mass hide among them. A focal shadowing area without cysts should be treated as a possible lesion, not dismissed as fibrosis. A trap is assuming fibrocystic change means high cancer risk; nonproliferative change does not. Exam items often describe the symptom pattern and timing and ask for the most likely diagnosis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 14",
+              "title": "Simple Cyst",
+              "link": "Cysts are the most recognizable component of fibrocystic change."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Physiologic Changes Across Life",
+              "link": "Hormonal cycling drives the symptoms and the waxing and waning of cysts."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Complicated and Complex Cystic Masses",
+              "link": "Clustered microcysts and complicated cysts are common in fibrocystic breasts."
+            }
+          ],
+          "registryApplication": "Tested with a scenario of cyclic bilateral pain in a premenopausal woman and questions about which components are present and which raise risk.",
+          "checkpoint": {
+            "pearl": "Fibrocystic: cyclic, bilateral, cysts plus fibrosis",
+            "reflection": "Why should a focal shadowing area in a fibrocystic breast still be evaluated as a possible mass?"
+          },
+          "keyTerms": [
+            "Fibrosis",
+            "Adenosis",
+            "Sclerosing Adenosis",
+            "Apocrine Metaplasia",
+            "Cyclic Mastalgia",
+            "Atypical Ductal Hyperplasia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 17"
+        },
+        {
+          "id": "br-intraductal-papilloma",
+          "title": "Intraductal Papilloma",
+          "frontClue": "Spontaneous bloody single-duct discharge: look for a mass inside a dilated duct",
+          "corePiece": "Intraductal papilloma is a benign proliferation of ductal epithelium on a fibrovascular core, and it is the most common cause of spontaneous, unilateral, single-duct bloody or serous nipple discharge. Central (solitary) papillomas arise in the large subareolar ducts, usually in women aged 30 to 50, and present with discharge. Peripheral (multiple) papillomas arise in the TDLUs, are often clinically silent, and are associated with a higher risk of atypia and carcinoma. On ultrasound a papilloma appears as an oval, circumscribed, hypoechoic or isoechoic solid mass within a dilated duct, as an intracystic mass, or as a solid mass that fills the duct. Power Doppler often shows a vascular stalk entering the mass, which separates it from debris. Scanning in the radial plane with minimal compression, and with the probe at the areolar edge, best shows the duct and its contents. Galactography (ductography) shows a filling defect or duct cutoff. Because papillary carcinoma can look identical, most papillomas are biopsied (BI-RADS 4), often with vacuum assistance.",
+          "whyLock": "Pathologic nipple discharge is spontaneous, unilateral, from a single duct, and bloody or clear; physiologic discharge is bilateral, multiductal, and expressed. When the history is pathologic, scan radially in the subareolar region with light pressure, since heavy compression empties the duct and hides the lesion. A trap is assuming bloody discharge means cancer; papilloma is far more common, though cancer must be excluded. Another trap is mistaking inspissated debris for a papilloma; debris moves and has no flow.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 3",
+              "title": "Terminal Ductal Lobular Unit",
+              "link": "Central papillomas grow in large ducts, peripheral ones in the TDLU."
+            },
+            {
+              "piece": "Piece 9",
+              "title": "Radial and Antiradial Scanning",
+              "link": "Radial scanning along the duct best displays an intraductal mass."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Breast Doppler Settings",
+              "link": "A vascular stalk on sensitive Doppler confirms a solid intraductal lesion."
+            }
+          ],
+          "registryApplication": "Expect a scenario of spontaneous bloody nipple discharge asking for the most likely cause and the best scanning technique to find it.",
+          "checkpoint": {
+            "pearl": "Bloody single-duct discharge: papilloma until proven otherwise",
+            "reflection": "Why does heavy transducer compression make an intraductal papilloma harder to find?"
+          },
+          "keyTerms": [
+            "Nipple Discharge",
+            "Fibrovascular Core",
+            "Galactography",
+            "Vascular Stalk",
+            "Papillary Carcinoma",
+            "Duct Ectasia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 18"
+        },
+        {
+          "id": "br-mastitis-abscess-and-galactocele",
+          "title": "Mastitis, Abscess and Galactocele",
+          "frontClue": "Nursing mother: red painful breast is mastitis; a pocket of pus or milk changes management",
+          "corePiece": "Mastitis is inflammation of the breast, most often lactational and caused by Staphylococcus aureus entering through cracked nipples in the first weeks postpartum. Nonlactational (periductal) mastitis occurs in the subareolar region, especially in smokers. Ultrasound shows skin thickening, increased echogenicity of edematous fat, blurred tissue planes, and hyperemia, and its role is to look for abscess. An abscess appears as a hypoechoic or complex fluid collection with irregular or thick echogenic walls, internal debris or septations, posterior enhancement, peripheral hyperemia, and no internal flow; it is treated with antibiotics plus ultrasound-guided aspiration or drainage. A galactocele is a milk-filled retention cyst that develops during lactation or after weaning and is the most common benign mass in lactating women. Its appearance varies with milk composition: anechoic, complex with low-level echoes, or showing a fat-fluid level with echogenic fat layering on top. Older galactoceles become more echogenic and can mimic solid masses.",
+          "whyLock": "Ultrasound earns its place here by answering one practical question: is there a drainable collection? If mastitis fails to improve within about 48 to 72 hours of appropriate antibiotics, scan for abscess; if findings persist after 1 to 2 weeks of treatment without a collection, especially when the patient is not lactating or has no fever, consider inflammatory carcinoma, the dangerous mimic. The fat-fluid level is the clue that a lactation-related mass is a galactocele. A trap is assuming internal echoes always mean infection; milk can be echogenic. Another is forgetting that core biopsy in a lactating breast carries a small risk of milk fistula.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 26",
+              "title": "Inflammatory Breast Cancer",
+              "link": "Inflammatory carcinoma mimics mastitis and must be excluded when antibiotics fail."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Physiologic Changes Across Life",
+              "link": "These lesions arise in the pregnant and lactating breast."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Cyst Aspiration",
+              "link": "Abscesses and galactoceles can be aspirated under ultrasound guidance."
+            }
+          ],
+          "registryApplication": "Tested with postpartum scenarios: identify mastitis versus abscess, recognize a fat-fluid level as a galactocele, and know when to suspect inflammatory cancer.",
+          "checkpoint": {
+            "pearl": "Lactation plus fat-fluid level is a galactocele",
+            "reflection": "A woman treated for mastitis for two weeks is not improving and is not breastfeeding. What diagnosis must now be considered?"
+          },
+          "keyTerms": [
+            "Lactational Mastitis",
+            "Breast Abscess",
+            "Galactocele",
+            "Fat-Fluid Level",
+            "Staphylococcus Aureus",
+            "Periductal Mastitis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 19"
+        },
+        {
+          "id": "br-fat-necrosis-and-lipoma",
+          "title": "Fat Necrosis and Lipoma",
+          "frontClue": "History of trauma or surgery: fat that has died can look like anything",
+          "corePiece": "Fat necrosis is a benign inflammatory reaction to injury of fat, caused by blunt trauma, surgery (lumpectomy, reduction, reconstruction), radiation, or biopsy; many patients do not recall the injury. It usually lies in the subcutaneous fat near the scar or trauma site. The sonographic appearance evolves over time: early, increased echogenicity of the fat with edema; then an oil cyst, an anechoic or complex cyst that may show a fat-fluid level and later an echogenic calcified rim (eggshell calcification); and late, an irregular hypoechoic mass with shadowing that can mimic carcinoma. Mammography showing a lucent, fat-containing oil cyst is diagnostic and avoids biopsy. A lipoma is a benign encapsulated tumor of mature fat, usually in the subcutaneous zone. On ultrasound it is oval, parallel, circumscribed, isoechoic to fat or slightly hyperechoic, with thin echogenic septations, is soft and compressible, and has little or no flow. A classic lipoma is BI-RADS 2.",
+          "whyLock": "Both lesions are about fat, so compare them with the surrounding fat. A lipoma looks like a well-defined island of fat that compresses easily. Fat necrosis looks variable, and history is the best clue: always ask about trauma or surgery at that site. The trap is that late fat necrosis can be irregular, shadowing, stiff on elastography, and even spiculated on mammography, so it can mimic carcinoma; when imaging is not diagnostic, biopsy is still appropriate. Another trap is calling a lipoma a hypoechoic mass when it is simply isoechoic to fat.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 1",
+              "title": "Breast Zones and Layers",
+              "link": "Both lesions usually arise in the subcutaneous fat of the premammary zone."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Mammographic Correlation",
+              "link": "A fat-containing oil cyst on mammography confirms fat necrosis."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "Breast Elastography",
+              "link": "Fat necrosis can appear stiff and mimic malignancy on elastography."
+            }
+          ],
+          "registryApplication": "Expect scenarios with prior surgery or trauma asking for the likely diagnosis, and items describing a soft, compressible, fat-isoechoic mass.",
+          "checkpoint": {
+            "pearl": "Fat necrosis is the great mimic; lipoma is just organized fat",
+            "reflection": "Why does mammography often solve a case of fat necrosis that ultrasound cannot?"
+          },
+          "keyTerms": [
+            "Oil Cyst",
+            "Eggshell Calcification",
+            "Blunt Trauma",
+            "Encapsulated Fat",
+            "Compressibility",
+            "Mammographic Correlation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 20"
+        },
+        {
+          "id": "br-gynecomastia",
+          "title": "Gynecomastia",
+          "frontClue": "Male lump directly behind the nipple: think gynecomastia; eccentric and irregular: think cancer",
+          "corePiece": "Gynecomastia is benign proliferation of glandular and stromal tissue in the male breast caused by an increased estrogen to androgen ratio. It has a trimodal age distribution: neonates (maternal hormones), puberty, and older men. Causes include medications (spironolactone, anabolic steroids, antiandrogens, digoxin, some antidepressants), cirrhosis, hyperthyroidism, renal failure, testicular tumors, Klinefelter syndrome, and marijuana use. It can be unilateral or bilateral and is often tender. Ultrasound shows retroareolar tissue centered on the nipple in three patterns: nodular (early or florid), a fan-shaped or disc-shaped hypoechoic region; dendritic (chronic or fibrotic), a hypoechoic center with branching, finger-like projections into surrounding fat; and diffuse glandular, resembling a heterogeneously dense female breast, typically with estrogen therapy. Pseudogynecomastia is fat deposition without glandular tissue. Male breast cancer accounts for about 1 percent of breast cancers and appears as an irregular, hypoechoic mass usually eccentric to the nipple, sometimes with nipple retraction or bloody discharge.",
+          "whyLock": "In a male patient, location relative to the nipple is your first discriminator. Gynecomastia is centered behind the nipple; cancer is usually eccentric and behaves like a female breast cancer with irregular margins and shadowing. Always obtain the medication and medical history, since drug-induced gynecomastia is common and reversible. The dendritic pattern's spiky projections can look alarming but are symmetric around the nipple. A trap is biopsying physiologic pubertal gynecomastia, which usually resolves on its own; another is forgetting that testicular tumors can cause it, so a scrotal ultrasound may be indicated.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 5",
+              "title": "Physiologic Changes Across Life",
+              "link": "Neonatal and pubertal gynecomastia are hormonally driven, like female breast development."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Invasive Ductal Carcinoma",
+              "link": "Male breast cancer is usually ductal and appears as an eccentric irregular mass."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Suspicious Sonographic Features",
+              "link": "Suspicious features in a male breast mass point toward cancer rather than gynecomastia."
+            }
+          ],
+          "registryApplication": "Tested as the most common male breast condition, its three sonographic patterns, common drug causes, and features that distinguish male breast cancer.",
+          "checkpoint": {
+            "pearl": "Centered on the nipple: gynecomastia; off center: worry",
+            "reflection": "A 70-year-old man has a hard mass at the 2 o'clock position, 3 cm from the nipple. Why is this not typical gynecomastia?"
+          },
+          "keyTerms": [
+            "Nodular Gynecomastia",
+            "Dendritic Gynecomastia",
+            "Pseudogynecomastia",
+            "Male Breast Cancer",
+            "Spironolactone",
+            "Klinefelter Syndrome"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 21"
+        }
+      ]
+    },
+    {
+      "id": "br-malignant-breast-disease",
+      "title": "Malignant Breast Disease",
+      "pieceRange": "Pieces 22-28",
+      "examType": "ARDMS RDMS Breast (BR)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Suspicious features, the major cancer types, and the basics of staging",
+      "topics": [
+        {
+          "id": "br-suspicious-sonographic-features",
+          "title": "Suspicious Sonographic Features",
+          "frontClue": "Taller than wide, spiculated, angular, shadowing: one bad feature outweighs many good ones",
+          "corePiece": "Malignant masses tend to grow across tissue planes and provoke a desmoplastic reaction, which creates a recognizable set of features. Shape: irregular. Orientation: not parallel, meaning taller than wide, with the long axis crossing tissue planes. Margins: not circumscribed, described as indistinct, angular, microlobulated, or spiculated; spiculation is the most predictive. An echogenic halo (a thick, ill-defined bright rim) often accompanies infiltrative margins. Posterior features: shadowing, from desmoplasia, although high-grade tumors may show enhancement. Echo pattern: usually hypoechoic or heterogeneous. Associated features include microcalcifications within the mass, duct extension and branch pattern toward or away from the nipple, architectural distortion, disruption of Cooper ligaments, skin thickening or retraction, and internal penetrating vascularity, with hard stiffness on elastography. The classic teaching, drawn from early sonographic research, is that the presence of any single suspicious feature excludes a probably benign assessment, whereas a benign call requires absence of all suspicious features.",
+          "whyLock": "The safest reasoning on the exam is asymmetric: suspicious features dominate. A mass that is oval and parallel but has a short angular margin is suspicious, not benign. When a question lists several features and asks which is most predictive of malignancy, spiculation and nonparallel orientation are strong choices. A trap is relying on posterior shadowing alone; fibrosis, fat necrosis, scars, and calcified fibroadenomas also shadow, and some cancers enhance. Another trap is treating marked hypoechogenicity alone as diagnostic. Report each feature with BI-RADS terms.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 29",
+              "title": "BI-RADS Mass Descriptors",
+              "link": "Suspicious features are expressed with standardized lexicon terms."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Invasive Ductal Carcinoma",
+              "link": "IDC is the cancer that most often shows the full suspicious feature set."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Fibroadenoma",
+              "link": "The fibroadenoma is the benign counterpart with none of these features."
+            }
+          ],
+          "registryApplication": "Expect items asking which feature is most suspicious, which features exclude BI-RADS 3, and which described mass most warrants biopsy.",
+          "checkpoint": {
+            "pearl": "Any one suspicious feature beats all the benign ones",
+            "reflection": "An oval, parallel, hypoechoic mass has one microlobulated margin segment. What is the appropriate assessment, and why?"
+          },
+          "keyTerms": [
+            "Not Parallel",
+            "Spiculated Margin",
+            "Angular Margin",
+            "Microlobulated Margin",
+            "Echogenic Halo",
+            "Posterior Acoustic Shadowing",
+            "Duct Extension"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 22"
+        },
+        {
+          "id": "br-invasive-ductal-carcinoma",
+          "title": "Invasive Ductal Carcinoma",
+          "frontClue": "The most common breast cancer: irregular, hypoechoic, spiculated, shadowing",
+          "corePiece": "Invasive ductal carcinoma, now termed invasive carcinoma of no special type (NST), accounts for about 70 to 80 percent of invasive breast cancers. It arises in the TDLU and breaches the basement membrane to invade surrounding stroma, provoking a desmoplastic fibrous reaction. Clinically it presents as a hard, fixed, painless lump, sometimes with skin dimpling, nipple retraction, or axillary adenopathy, or is found on screening. The classic sonographic appearance is an irregular, hypoechoic, nonparallel (taller than wide) mass with spiculated or angular margins, an echogenic halo, and posterior acoustic shadowing. Microcalcifications, duct extension, architectural distortion, Cooper ligament disruption, and internal penetrating vessels are frequent associated findings. High-grade tumors grow quickly and may instead appear more circumscribed and round with posterior enhancement, mimicking benign masses. Prognosis depends on size, nodal status, grade, and receptor status (estrogen receptor, progesterone receptor, and HER2). Most are BI-RADS 4C or 5 and are confirmed by ultrasound-guided core biopsy.",
+          "whyLock": "IDC is the default answer when an exam item describes a classic suspicious mass in a woman over 40 and asks for the most likely diagnosis. Once you identify it, think about extent: scan for satellite lesions, multifocal or multicentric disease, duct extension, and the axilla. A trap is the high-grade or triple-negative tumor that looks circumscribed; age, rapid growth, and subtle margin irregularity give it away. Another trap is underestimating size: the echogenic halo is part of the tumor and should be included when measuring.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 22",
+              "title": "Suspicious Sonographic Features",
+              "link": "IDC is the prototype for the suspicious feature set."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Abnormal Lymph Node Features",
+              "link": "Nodal metastasis from IDC is assessed by scanning the ipsilateral axilla."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Staging Basics",
+              "link": "Tumor size and nodal status from imaging feed TNM staging."
+            }
+          ],
+          "registryApplication": "Tested as the most common breast cancer and its classic appearance, and as the mass to measure, including the echogenic halo.",
+          "checkpoint": {
+            "pearl": "IDC: most common, irregular, shadowing; include the halo",
+            "reflection": "Why should the echogenic halo be included when measuring an invasive carcinoma?"
+          },
+          "keyTerms": [
+            "Invasive Carcinoma of No Special Type",
+            "Desmoplastic Reaction",
+            "Echogenic Halo",
+            "Receptor Status",
+            "HER2",
+            "Multifocal"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 23"
+        },
+        {
+          "id": "br-invasive-lobular-carcinoma",
+          "title": "Invasive Lobular Carcinoma",
+          "frontClue": "Single-file cells, no discrete mass: subtle shadowing that is easy to miss",
+          "corePiece": "Invasive lobular carcinoma is the second most common invasive breast cancer, about 10 to 15 percent of cases. Its cells have lost the adhesion molecule E-cadherin, so they infiltrate stroma in single-file lines without forming a cohesive mass or provoking much desmoplasia. As a result, ILC is often clinically subtle (thickening rather than a lump) and difficult to detect on mammography and ultrasound. Sonographic appearances include an ill-defined hypoechoic area, an irregular mass with angular or indistinct margins, architectural distortion, or a region of posterior acoustic shadowing without a discrete mass. ILC is more often multifocal, multicentric, and bilateral than IDC, and imaging tends to underestimate its size. Breast MRI is the preferred modality for evaluating extent in many practices. It metastasizes to unusual sites such as the peritoneum, gastrointestinal tract, ovaries, and meninges. Lobular carcinoma in situ (LCIS), now viewed mainly as a risk marker, is usually an incidental biopsy finding without a sonographic signature.",
+          "whyLock": "The lesson from ILC is to trust a subtle finding. If an area of shadowing persists in both planes and with compression and does not behave like a ligament artifact, it may be lobular carcinoma rather than fibrosis. A trap is assuming that a negative mammogram excludes cancer in a palpable thickening; ILC is a classic false negative. Another trap is measuring only the visible portion; ILC is frequently larger than it appears. Exam items often ask which cancer is most associated with bilateral or multicentric disease or which tumor lacks E-cadherin.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 23",
+              "title": "Invasive Ductal Carcinoma",
+              "link": "ILC differs from IDC by forming less discrete masses and less desmoplasia."
+            },
+            {
+              "piece": "Piece 33",
+              "title": "MRI Correlation and Second-Look Ultrasound",
+              "link": "MRI is often used to define the extent of lobular cancer."
+            },
+            {
+              "piece": "Piece 2",
+              "title": "Cooper Ligaments",
+              "link": "Ligament shadowing is the artifact that must be distinguished from subtle lobular cancer."
+            }
+          ],
+          "registryApplication": "Expect items on E-cadherin loss, single-file growth, subtle shadowing without a mass, and the tendency toward multicentric and bilateral disease.",
+          "checkpoint": {
+            "pearl": "Lobular: single file, subtle shadow, often more than one site",
+            "reflection": "Why does invasive lobular carcinoma often fail to form a discrete mass on ultrasound?"
+          },
+          "keyTerms": [
+            "E-cadherin",
+            "Single-File Infiltration",
+            "Architectural Distortion",
+            "Multicentric",
+            "Lobular Carcinoma In Situ",
+            "Bilateral Disease"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 24"
+        },
+        {
+          "id": "br-ductal-carcinoma-in-situ",
+          "title": "Ductal Carcinoma In Situ",
+          "frontClue": "Cancer still inside the duct: found by calcifications on mammography more than by ultrasound",
+          "corePiece": "Ductal carcinoma in situ is a malignant proliferation of ductal epithelium confined within the basement membrane; it has not invaded stroma and is therefore stage 0 (Tis). It is graded low, intermediate, or high, and high-grade (comedo) DCIS contains central necrosis that calcifies. Most DCIS is detected on screening mammography as microcalcifications, especially fine linear or fine linear branching calcifications in a linear or segmental distribution, or as fine pleomorphic clusters. Ultrasound is less sensitive but can show echogenic microcalcifications within a hypoechoic mass or area, dilated ducts filled with echogenic material, an intraductal mass, or a nonmass hypoechoic region; high-frequency transducers and compounding improve detection of calcifications. When calcifications are the only finding, stereotactic (mammography-guided) vacuum-assisted biopsy is usual. Untreated DCIS can progress to invasive carcinoma, and invasion may already be present at surgery, so a biopsy diagnosis of DCIS can be upgraded. Paget disease of the nipple is frequently associated with underlying DCIS or invasive cancer.",
+          "whyLock": "The key concept is the basement membrane: inside it is in situ, through it is invasive. That one line explains why DCIS is stage 0 and why it rarely spreads to nodes. On the exam, the modality question is common: mammography finds DCIS by its calcifications, and ultrasound plays a supporting role, mainly to find an associated mass that might represent invasion and to guide biopsy of it. A trap is believing a normal breast ultrasound excludes DCIS; it does not. Another is confusing DCIS with LCIS, which is primarily a risk marker.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 3",
+              "title": "Terminal Ductal Lobular Unit",
+              "link": "DCIS arises in the TDLU and stays within its basement membrane."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Mammographic Correlation",
+              "link": "Mammography detects the calcifications that reveal most DCIS."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Staging Basics",
+              "link": "DCIS corresponds to Tis, stage 0."
+            }
+          ],
+          "registryApplication": "Tested as stage 0 disease, its classic mammographic calcification pattern, and the limited but useful role of ultrasound.",
+          "checkpoint": {
+            "pearl": "DCIS: inside the membrane, stage 0, seen as calcifications",
+            "reflection": "Why does a biopsy result of DCIS sometimes get upgraded after surgical excision?"
+          },
+          "keyTerms": [
+            "Basement Membrane",
+            "Comedo Necrosis",
+            "Microcalcifications",
+            "Stereotactic Biopsy",
+            "Paget Disease of the Nipple",
+            "Tis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 25"
+        },
+        {
+          "id": "br-inflammatory-breast-cancer",
+          "title": "Inflammatory Breast Cancer",
+          "frontClue": "Red, swollen, orange-peel breast without fever or response to antibiotics",
+          "corePiece": "Inflammatory breast cancer is an aggressive form accounting for about 1 to 5 percent of breast cancers. It is a clinical diagnosis: rapid onset, within about 6 months, of erythema and edema involving at least one third of the breast, often with warmth, enlargement, and peau d'orange (orange-peel skin). The skin changes are caused by tumor emboli blocking dermal lymphatics, not by infection. It is staged T4d, at least stage IIIB. Ultrasound findings include marked skin thickening (well over the normal 2 to 3 mm), increased echogenicity and edema of subcutaneous fat, dilated dermal and subcutaneous lymphatics seen as anechoic branching channels, and sometimes an underlying irregular mass or diffuse infiltrative change. Abnormal axillary nodes are common. Diagnosis is confirmed by core biopsy of any mass and skin punch biopsy. Unlike mastitis, it usually occurs in nonlactating women without fever or leukocytosis and does not respond to antibiotics.",
+          "whyLock": "The essential skill is separating this disease from mastitis, because the treatments are opposite and delay is dangerous. In a scenario of a red, swollen breast, look for clues: not breastfeeding, no fever, failure to improve with antibiotics, and peau d'orange favor carcinoma. Ultrasound shows edema in both conditions, so the presence of a drainable abscess favors infection, while an underlying mass or abnormal nodes favor cancer. A trap is answering abscess drainage when the scenario has already described failed antibiotic therapy without a collection.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 19",
+              "title": "Mastitis, Abscess and Galactocele",
+              "link": "Mastitis is the main clinical mimic of inflammatory carcinoma."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Lymphatic Drainage",
+              "link": "Blocked dermal lymphatics cause the characteristic skin edema."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Staging Basics",
+              "link": "Inflammatory carcinoma is classified as T4d."
+            }
+          ],
+          "registryApplication": "Expect a red, swollen breast scenario asking whether it is mastitis or inflammatory carcinoma, and recall of peau d'orange, dermal lymphatic emboli, and T4d.",
+          "checkpoint": {
+            "pearl": "Red breast, no fever, no response to antibiotics: think inflammatory cancer",
+            "reflection": "Which clinical and sonographic findings would push you away from mastitis toward inflammatory carcinoma?"
+          },
+          "keyTerms": [
+            "Peau d'Orange",
+            "Dermal Lymphatics",
+            "Skin Thickening",
+            "T4d",
+            "Skin Punch Biopsy",
+            "Erythema"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 26"
+        },
+        {
+          "id": "br-circumscribed-carcinomas",
+          "title": "Circumscribed Carcinomas",
+          "frontClue": "Not every cancer is spiculated: some round, enhancing masses are malignant",
+          "corePiece": "Several cancers can appear oval or round with circumscribed or microlobulated margins and posterior enhancement, mimicking a fibroadenoma or complicated cyst. Mucinous (colloid) carcinoma occurs mainly in older, often postmenopausal women; pure tumors are composed largely of extracellular mucin, appear isoechoic to fat or mildly hypoechoic, are often soft, show posterior enhancement, and carry a favorable prognosis. Medullary-type carcinoma, now grouped by the World Health Organization with invasive carcinoma of no special type showing medullary features, occurs in younger women, is linked to BRCA1 mutation, is often triple negative, and appears as a round, very hypoechoic, circumscribed or microlobulated mass with posterior enhancement. High-grade triple-negative carcinomas generally grow rapidly and can look deceptively benign. Papillary carcinoma may be a complex cystic and solid mass. Metastases to the breast (melanoma, lymphoma, lung) and lymphoma are usually round and circumscribed. Close inspection often reveals a short microlobulated or indistinct segment of margin, or a nonparallel axis.",
+          "whyLock": "Use this card to break the habit of equating circumscribed with benign. In an older woman, a new oval mass is not a fibroadenoma until proven otherwise, because new fibroadenomas after menopause are uncommon. In a young BRCA carrier, a round very hypoechoic mass with enhancement deserves biopsy. Look hard at the margin: a single microlobulated segment makes it suspicious. Soft elastography readings do not reassure you with mucinous carcinoma. A trap is calling a mucinous carcinoma a complicated cyst; Doppler flow and a lack of cyst criteria point to solid tissue.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 16",
+              "title": "Fibroadenoma",
+              "link": "These cancers mimic the circumscribed appearance of fibroadenoma."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "Breast Elastography",
+              "link": "Mucinous carcinoma can appear soft and lead to false reassurance."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Complicated and Complex Cystic Masses",
+              "link": "Papillary and necrotic carcinomas can present as complex cystic and solid masses."
+            }
+          ],
+          "registryApplication": "Tested with scenarios of a circumscribed, enhancing mass in an older woman or a young BRCA carrier, asking for the likely diagnosis or next step.",
+          "checkpoint": {
+            "pearl": "Circumscribed and enhancing can still be cancer: check age and every margin",
+            "reflection": "A 72-year-old woman has a new soft, oval, isoechoic mass with posterior enhancement. Which cancer should you consider, and why is age important?"
+          },
+          "keyTerms": [
+            "Mucinous Carcinoma",
+            "Medullary Features",
+            "Triple-Negative",
+            "BRCA1",
+            "Posterior Acoustic Enhancement",
+            "Breast Metastasis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 27"
+        },
+        {
+          "id": "br-staging-basics",
+          "title": "Staging Basics",
+          "frontClue": "TNM: tumor size in 2 cm steps, nodes, and distant metastasis",
+          "corePiece": "Breast cancer is staged with the AJCC TNM system; the 8th edition adds grade and receptor status to anatomic staging for prognostic stage groups. T describes the primary tumor by its greatest invasive dimension: Tis is in situ disease (DCIS); T1 is 2 cm or less (T1mi up to 1 mm, T1a over 1 to 5 mm, T1b over 5 to 10 mm, T1c over 10 to 20 mm); T2 is over 2 cm up to 5 cm; T3 is over 5 cm; T4 is any size with direct extension to the chest wall (not pectoralis alone) or skin (ulceration, satellite skin nodules, or peau d'orange), and T4d is inflammatory carcinoma. N describes regional nodes (axillary, internal mammary, supraclavicular), and M describes distant metastasis to sites such as bone, lung, liver, and brain. Ultrasound contributes by measuring the tumor in three dimensions, finding additional foci, and assessing nodes. Multifocal disease means more than one tumor in the same quadrant; multicentric means tumors in different quadrants, which may change surgical planning.",
+          "whyLock": "The exam does not expect oncologist-level staging, but it does expect the 2 cm and 5 cm thresholds, what Tis and T4d mean, and the distinction between multifocal and multicentric. Accurate measurement is the sonographer's contribution: measure the longest dimension, including the echogenic halo, and report all three dimensions. A trap is assuming pectoralis invasion makes a tumor T4; chest wall means ribs, intercostal muscles, or serratus anterior. Another trap is overlooking a second lesion, which can shift the plan from lumpectomy to mastectomy.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 23",
+              "title": "Invasive Ductal Carcinoma",
+              "link": "Tumor size from imaging sets the T category."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Axillary Levels",
+              "link": "Regional nodal staging depends on which nodes and levels are involved."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Ductal Carcinoma In Situ",
+              "link": "DCIS is classified as Tis, stage 0."
+            }
+          ],
+          "registryApplication": "Expect questions converting a measured size to a T category and defining multifocal versus multicentric disease.",
+          "checkpoint": {
+            "pearl": "T1 up to 2, T2 up to 5, T3 over 5, T4 skin or chest wall",
+            "reflection": "A 3.2 cm invasive carcinoma has a second 8 mm focus in a different quadrant. What is the T category and how would you describe the distribution?"
+          },
+          "keyTerms": [
+            "TNM",
+            "Tis",
+            "T4d",
+            "Multifocal",
+            "Multicentric",
+            "Chest Wall Invasion"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 28"
+        }
+      ]
+    },
+    {
+      "id": "br-bi-rads-correlation",
+      "title": "BI-RADS & Correlation",
+      "pieceRange": "Pieces 29-34",
+      "examType": "ARDMS RDMS Breast (BR)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "The ultrasound lexicon, assessment categories, and correlating findings with mammography and MRI",
+      "topics": [
+        {
+          "id": "br-bi-rads-mass-descriptors",
+          "title": "BI-RADS Mass Descriptors",
+          "frontClue": "Shape, orientation, margin, echo pattern, posterior features: five words describe any mass",
+          "corePiece": "The ACR BI-RADS ultrasound lexicon (5th edition, 2013) standardizes how masses are described. A mass is a space-occupying lesion seen in two planes. Shape: oval (including two or three gentle undulations), round, or irregular; the older term lobular was removed. Orientation: parallel (long axis parallel to the skin) or not parallel (taller than wide, including round). Margin: circumscribed, or not circumscribed, subdivided into indistinct, angular, microlobulated, and spiculated. Echo pattern relative to subcutaneous fat: anechoic, hyperechoic, complex cystic and solid, hypoechoic, isoechoic, or heterogeneous. Posterior features: no posterior features, enhancement, shadowing, or combined pattern. Background echotexture (tissue composition) is reported as homogeneous fat, homogeneous fibroglandular, or heterogeneous. Calcifications are described as in a mass, outside a mass, or intraductal. The echogenic rim previously called a halo is not a separate lexicon term but is described within margin assessment.",
+          "whyLock": "The lexicon is the language of the exam. Learn each category with its exact allowable terms, because distractors often use near-miss words such as lobulated, ill-defined, or smooth that are not lexicon descriptors. Echogenicity is always relative to subcutaneous fat, not to glandular tissue: a mass equal to fat is isoechoic, and hyperechoic means brighter than fat or equal to fibroglandular tissue. A trap is calling a round mass parallel; round masses are classified as not parallel. Another is forgetting that one non-circumscribed descriptor makes the margin not circumscribed.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 22",
+              "title": "Suspicious Sonographic Features",
+              "link": "Suspicious features are recorded using these lexicon descriptors."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Associated Features and Special Cases",
+              "link": "Associated features and special cases complete the lexicon."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "BI-RADS Assessment Categories",
+              "link": "Descriptors lead to the final assessment category."
+            }
+          ],
+          "registryApplication": "Expect items asking which term is or is not in the lexicon, what echogenicity is referenced to, and how to classify a described mass.",
+          "checkpoint": {
+            "pearl": "Echogenicity is compared with fat; lobular is no longer a shape",
+            "reflection": "A mass has the same echogenicity as subcutaneous fat. What is the correct BI-RADS echo pattern term?"
+          },
+          "keyTerms": [
+            "Oval",
+            "Irregular",
+            "Parallel",
+            "Not Circumscribed",
+            "Isoechoic",
+            "Combined Posterior Pattern",
+            "Tissue Composition"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 29"
+        },
+        {
+          "id": "br-associated-features-and-special-cases",
+          "title": "Associated Features and Special Cases",
+          "frontClue": "Beyond the mass: distortion, ducts, skin, edema, flow, stiffness, and named special cases",
+          "corePiece": "BI-RADS associated features describe the tissue around or related to a finding: architectural distortion; duct changes (abnormal caliber or arborization, duct extension); skin changes (skin thickening, focal or diffuse over 2 mm, and skin retraction); edema; vascularity (absent, internal, or vessels in rim); and elasticity assessment (soft, intermediate, or hard). Special cases are findings with a unique diagnosis or appearance: simple cyst; clustered microcysts; complicated cyst; mass in or on skin (sebaceous or epidermal inclusion cyst, keloid, mole, neurofibroma, accessory nipple); foreign body including implants, clips, wires, catheter sleeves, and injected silicone or paraffin; intramammary and axillary lymph nodes; vascular abnormalities, including arteriovenous malformations and Mondor disease (superficial thrombophlebitis seen as a tubular, noncompressible, avascular vein); postsurgical fluid collection; and fat necrosis. Mondor disease presents as a painful cord, often after surgery or trauma, and is benign and self-limited.",
+          "whyLock": "Associated features often decide the category when the mass itself is borderline. Skin thickening plus edema shifts thinking toward inflammatory processes or cancer; vessels in the rim favor a benign or inflammatory process, while internal penetrating flow favors solid tissue. Special cases are useful shortcuts: once a finding fits one, the management is usually clear, such as a mass in the skin, which is almost always benign. A trap is assuming a tender palpable cord is a cancer; Mondor disease is a noncompressible thrombosed vein. Another is forgetting that implants and clips are classified as foreign bodies.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 29",
+              "title": "BI-RADS Mass Descriptors",
+              "link": "Associated features supplement the mass descriptors."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Breast Doppler Settings",
+              "link": "Correct settings are needed to classify vascularity accurately."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Normal Lymph Node",
+              "link": "Intramammary and axillary nodes are listed as a special case."
+            }
+          ],
+          "registryApplication": "Tested as which findings are associated features versus special cases, and as recognition of Mondor disease and skin lesions.",
+          "checkpoint": {
+            "pearl": "Special cases come with their own answer; associated features shift the odds",
+            "reflection": "A woman has a painful cord-like structure in the lateral breast after surgery. What is the likely special case, and what would ultrasound show?"
+          },
+          "keyTerms": [
+            "Architectural Distortion",
+            "Skin Thickening",
+            "Edema",
+            "Mondor Disease",
+            "Foreign Body",
+            "Mass in or on Skin"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 30"
+        },
+        {
+          "id": "br-bi-rads-assessment-categories",
+          "title": "BI-RADS Assessment Categories",
+          "frontClue": "Zero to six: each category comes with its own management",
+          "corePiece": "BI-RADS final assessment categories link imaging to action. Category 0, incomplete: additional imaging or prior studies needed; used sparingly at ultrasound. Category 1, negative: nothing to describe. Category 2, benign: for example simple cysts, intramammary nodes, implants, stable surgical changes, lipomas; routine screening. Category 3, probably benign: likelihood of malignancy 2 percent or less; short-interval follow-up, typically ultrasound at 6 months, then at 12 and 24 months (some use 6, 12, 24, and 36 months); typical findings are a circumscribed oval parallel solid mass, a solitary complicated cyst, and clustered microcysts. Category 4, suspicious: tissue diagnosis recommended, subdivided into 4A (more than 2 to 10 percent), 4B (more than 10 to 50 percent), and 4C (more than 50 to less than 95 percent). Category 5, highly suggestive of malignancy: 95 percent or greater; biopsy. Category 6, known biopsy-proven malignancy before definitive therapy. Assessment and management recommendations should be concordant.",
+          "whyLock": "Think of the categories as a ladder of probability with fixed management at each step. Exam items often give a lesion description and ask for the category, or give a category and ask the recommendation. Remember that category 3 is reserved for specific findings with established low risk and should not be used as a hedge for a suspicious mass. A trap is putting a known cancer awaiting surgery in category 5 rather than 6. Another is recommending biopsy for category 3; follow-up is the standard, although biopsy may be done in specific clinical circumstances.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 14",
+              "title": "Simple Cyst",
+              "link": "The simple cyst is the archetypal benign, category 2 finding."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Reporting and Follow-Up",
+              "link": "Each category maps to a management recommendation in the report."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Fibroadenoma",
+              "link": "A classic fibroadenoma appearance is commonly assessed as probably benign."
+            }
+          ],
+          "registryApplication": "Heavily tested: matching findings to categories, malignancy probabilities for 3, 4A to 4C, and 5, and the correct follow-up interval for category 3.",
+          "checkpoint": {
+            "pearl": "3 is 2 percent or less with 6-month follow-up; 5 is 95 percent or more",
+            "reflection": "What is the difference between a category 5 and a category 6 assessment, and when does each apply?"
+          },
+          "keyTerms": [
+            "Probably Benign",
+            "Short-Interval Follow-Up",
+            "Suspicious",
+            "Highly Suggestive of Malignancy",
+            "Known Malignancy",
+            "Incomplete Assessment"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 31"
+        },
+        {
+          "id": "br-mammographic-correlation",
+          "title": "Mammographic Correlation",
+          "frontClue": "Same lesion? Match location, size, shape, depth, and surrounding tissue",
+          "corePiece": "Targeted ultrasound often follows a mammographic finding, and the sonographer must confirm that the ultrasound finding is the same lesion. Use the craniocaudal (CC) view to determine medial versus lateral position and the mediolateral oblique (MLO) or true lateral (90 degree mediolateral or lateromedial) view to determine superior versus inferior position, then convert that to a clock position and distance from the nipple. Compared with a true lateral view, lateral lesions project higher and medial lesions lower on the MLO, so the true lateral view is more accurate for height. Compare size, shape, margins, and depth, and note surrounding tissue (fat versus glandular). Mammographic breast density categories are a (almost entirely fatty), b (scattered fibroglandular densities), c (heterogeneously dense), and d (extremely dense); dense breasts lower mammographic sensitivity and may warrant supplemental screening ultrasound. Mammography best shows calcifications and architectural distortion, while ultrasound best distinguishes cyst from solid mass. For a palpable lump, women under 30 usually start with ultrasound; at 40 and older, diagnostic mammography plus ultrasound.",
+          "whyLock": "Correlation errors lead to biopsy of the wrong lesion, so the exam emphasizes how to confirm a match. If a mammographic mass is 1 cm and in fat, a 3 cm ultrasound mass in glandular tissue is probably not the same lesion. Clip placement and a post-biopsy mammogram close the loop. A trap is assuming the MLO view gives true height; it is oblique. Another is expecting ultrasound to see every mammographic calcification; most calcifications without a mass are biopsied stereotactically.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "Clock-Face Labeling",
+              "link": "Mammographic location is translated into a clock position and nipple distance."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Clip and Marker Placement",
+              "link": "A clip and post-procedure mammogram confirm that ultrasound sampled the mammographic lesion."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Ductal Carcinoma In Situ",
+              "link": "DCIS is usually a mammographic calcification finding."
+            }
+          ],
+          "registryApplication": "Expect questions on which mammographic view gives which location, density categories, the initial imaging choice for palpable lumps by age, and confirming correlation.",
+          "checkpoint": {
+            "pearl": "CC tells medial or lateral; true lateral tells up or down",
+            "reflection": "A mammographic mass is in the upper breast on MLO and lateral on CC. How would you estimate its clock position in the right breast?"
+          },
+          "keyTerms": [
+            "Craniocaudal View",
+            "Mediolateral Oblique View",
+            "Breast Density",
+            "Supplemental Screening",
+            "Palpable Lump",
+            "Triangulation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 32"
+        },
+        {
+          "id": "br-mri-correlation-and-second-look-ultrasound",
+          "title": "MRI Correlation and Second-Look Ultrasound",
+          "frontClue": "MRI finds it, ultrasound looks again, and the clip proves the match",
+          "corePiece": "Contrast-enhanced breast MRI is the most sensitive imaging test for invasive breast cancer. Indications include screening women at high risk (lifetime risk of about 20 percent or more, BRCA carriers, prior chest radiation), evaluating extent of a known cancer, assessing response to neoadjuvant chemotherapy, problem solving, and evaluating silicone implant integrity without contrast. When MRI shows an enhancing finding not seen on prior imaging, a targeted (second-look) ultrasound is performed to find a correlate. Because MRI is done prone with the breast hanging and ultrasound supine, lesion location shifts, so use the clock position, depth, distance from nipple, and nearby landmarks such as cysts, nodes, or vessels. Masses are more likely than nonmass enhancement to have a sonographic correlate, and a larger mass is easier to find. If found, ultrasound-guided biopsy with clip placement follows, and post-biopsy MRI or mammography may confirm that the correct lesion was sampled. If no correlate is found, MRI-guided biopsy is performed rather than follow-up.",
+          "whyLock": "Second-look ultrasound is a hunt with a moving target. Expect the lesion to be slightly displaced compared with its MRI position because of the change from prone to supine, and use landmarks to stay oriented. Exam items may ask what to do when no correlate is found: the answer is MRI-guided biopsy, not dismissal. A trap is assuming that any ultrasound finding near the location is the correlate; it must match size, shape, and depth. Another is forgetting that MRI evaluates silicone implant rupture without contrast.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 32",
+              "title": "Mammographic Correlation",
+              "link": "Correlation principles are the same: match location, size, and morphology."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Clip and Marker Placement",
+              "link": "A clip lets post-biopsy MRI confirm the correct lesion was sampled."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "Intracapsular Rupture",
+              "link": "MRI is the most sensitive test for silicone implant rupture."
+            }
+          ],
+          "registryApplication": "Tested as the next step after an MRI-detected lesion, positioning differences, and the action when ultrasound finds no correlate.",
+          "checkpoint": {
+            "pearl": "No ultrasound correlate means MRI-guided biopsy",
+            "reflection": "Why might an MRI-detected lesion appear in a slightly different clock position on supine ultrasound?"
+          },
+          "keyTerms": [
+            "Second-Look Ultrasound",
+            "Nonmass Enhancement",
+            "High-Risk Screening",
+            "Prone Positioning",
+            "MRI-Guided Biopsy",
+            "Neoadjuvant Chemotherapy"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 33"
+        },
+        {
+          "id": "br-reporting-and-follow-up",
+          "title": "Reporting and Follow-Up",
+          "frontClue": "A complete report: what, where, how big, compared with what, what it means, what next",
+          "corePiece": "A breast ultrasound report includes the indication (screening, palpable lump, mammographic or MRI finding, pain, discharge), the area scanned, tissue composition for screening examinations, and a description of each finding with lexicon terms. Location is given by side, clock position, distance from the nipple, and optionally depth. Size is recorded in three dimensions. Comparison with prior studies notes stability or change, and correlation with physical, mammographic, or MRI findings is stated. Each report ends with a final BI-RADS assessment and a concordant management recommendation: routine screening, short-interval follow-up, or tissue sampling. For category 3 lesions, stability over about 2 years supports downgrading to category 2; an increase of about 20 percent or more in the longest dimension within 6 months, or new suspicious features, prompts biopsy. Findings that need urgent action should be communicated directly to the referring provider and documented. The sonographer records a technical impression for the interpreting physician but does not give the patient a diagnosis.",
+          "whyLock": "Good reports are reproducible: another sonographer should find the same lesion from your labels and measurements. Exam questions often ask which element is missing from a description, what follow-up timeline applies, or who communicates results. A trap is reporting a probably benign lesion without a follow-up plan, which makes the report nonconcordant. Another is the sonographer discussing likely diagnoses with the patient; that is outside the sonographer's scope. Stability is defined against prior images, so obtaining comparisons is part of the job.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 31",
+              "title": "BI-RADS Assessment Categories",
+              "link": "Every report ends with a category and its matching management."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Clock-Face Labeling",
+              "link": "Consistent location labels make follow-up comparisons possible."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Informed Consent and Communication",
+              "link": "Communication of findings follows scope-of-practice rules."
+            }
+          ],
+          "registryApplication": "Expect items on required report elements, category 3 follow-up timing and the criteria for upgrading, and the communication of critical results.",
+          "checkpoint": {
+            "pearl": "Describe, locate, measure, compare, categorize, recommend",
+            "reflection": "A probably benign mass has been stable for 2 years. What assessment change is now reasonable, and what would instead prompt biopsy?"
+          },
+          "keyTerms": [
+            "Final Assessment",
+            "Concordant Management",
+            "Stability",
+            "Comparison Studies",
+            "Critical Results",
+            "Scope of Practice"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 34"
+        }
+      ]
+    },
+    {
+      "id": "br-axilla-lymph-nodes-implants",
+      "title": "Axilla, Lymph Nodes & Implants",
+      "pieceRange": "Pieces 35-40",
+      "examType": "ARDMS RDMS Breast (BR)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Normal and abnormal nodes, axillary levels, implant types, and the signs of rupture",
+      "topics": [
+        {
+          "id": "br-normal-lymph-node",
+          "title": "Normal Lymph Node",
+          "frontClue": "Kidney-shaped node: thin dark cortex wrapped around a bright fatty hilum",
+          "corePiece": "A normal lymph node is oval or reniform (kidney shaped) with a thin, uniform, hypoechoic cortex surrounding an echogenic fatty hilum, through which the artery and vein enter. The long axis is usually parallel to the skin, and the length to width ratio is typically greater than 2. A cortical thickness of 3 mm or less is the most widely taught normal threshold, though sources range from about 2 to 3 mm. On color or power Doppler, flow, when seen, enters centrally through the hilum and branches symmetrically. Normal axillary nodes vary widely in length and may be over 1 cm long because of fatty hilar replacement, so size alone is a weak criterion; cortical morphology matters more. Intramammary lymph nodes are common, typically under 1 cm, located in the upper outer quadrant or axillary tail within the breast, and are classified as BI-RADS 2 when they have a classic appearance. Fatty replacement of the hilum increases with age.",
+          "whyLock": "The normal node is the template: once you know it, abnormal nodes are defined by departures from it. The most useful questions to ask are whether the cortex is thin and even and whether the hilum is preserved. A trap is calling a large but fatty node abnormal; a long node with a thin cortex and a big fatty hilum is benign. Another trap is mistaking an intramammary node for a breast mass; look for the echogenic hilum and the hilar vessel. Scanning the node in its long axis best shows the hilum.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Abnormal Lymph Node Features",
+              "link": "Abnormal features are defined by departures from the normal node's shape, cortex, and hilum."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Lymphatic Drainage",
+              "link": "Nodes receive lymph along the drainage pathways of the breast."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Associated Features and Special Cases",
+              "link": "Intramammary and axillary nodes are listed as a BI-RADS special case."
+            }
+          ],
+          "registryApplication": "Expect recall of the normal node's appearance, the commonly cited cortical thickness threshold, hilar flow, and the intramammary node as a benign finding.",
+          "checkpoint": {
+            "pearl": "Thin even cortex, bright hilum, hilar flow: normal",
+            "reflection": "Why is cortical morphology a better indicator of abnormality than overall node length?"
+          },
+          "keyTerms": [
+            "Fatty Hilum",
+            "Cortical Thickness",
+            "Reniform",
+            "Hilar Vascularity",
+            "Intramammary Lymph Node"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 35"
+        },
+        {
+          "id": "br-abnormal-lymph-node-features",
+          "title": "Abnormal Lymph Node Features",
+          "frontClue": "Thick or bulging cortex, lost hilum, round shape, peripheral flow",
+          "corePiece": "Lymph node metastases first lodge in the cortex, so the earliest sign is cortical change. Suspicious features include diffuse cortical thickening over about 3 mm; focal or eccentric cortical bulging (more worrisome than uniform thickening); compression, displacement, or complete loss of the fatty hilum; a round shape with a length to width ratio under 2; markedly hypoechoic cortex; irregular or indistinct margins suggesting extracapsular extension; peripheral or nonhilar (transcapsular) blood flow; matted or clustered nodes; and microcalcifications. Reactive nodes from infection, inflammation, or recent ipsilateral vaccination often show smooth, uniform cortical thickening with preserved hilum and hilar flow. Other causes of abnormal nodes include lymphoma (often markedly hypoechoic and sometimes pseudocystic), leukemia, rheumatoid arthritis, sarcoidosis, silicone uptake from ruptured implants, and metastases from other primaries such as melanoma, lung, and ovary. Suspicious nodes are sampled with ultrasound-guided core biopsy or FNA, and a clip may be placed before neoadjuvant therapy.",
+          "whyLock": "Rank the features by how much they point toward tumor: focal eccentric bulging and loss of the hilum are the strongest, and a uniformly thick cortex with preserved hilum is less specific. Always correlate with history, such as a recent vaccine in the same arm, mastitis, or a known primary. A trap is ignoring a small node with an eccentric bulge because it is not enlarged. Another is assuming a node full of echogenic snowstorm material is cancer; in a patient with silicone implants, it may be silicone.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 35",
+              "title": "Normal Lymph Node",
+              "link": "Abnormal features are departures from the normal node template."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Axillary Levels",
+              "link": "The location of an abnormal node is reported by axillary level."
+            },
+            {
+              "piece": "Piece 42",
+              "title": "Fine-Needle Aspiration",
+              "link": "FNA is one method for sampling suspicious axillary nodes."
+            }
+          ],
+          "registryApplication": "Tested as which features are most suspicious for metastasis, which suggest a reactive process, and how abnormal nodes are sampled.",
+          "checkpoint": {
+            "pearl": "Eccentric bulge or lost hilum means sample the node",
+            "reflection": "A 1 cm node has a 4 mm eccentric cortical bulge but a preserved hilum. Is it suspicious, and why?"
+          },
+          "keyTerms": [
+            "Eccentric Cortical Thickening",
+            "Loss of Fatty Hilum",
+            "Nonhilar Flow",
+            "Extracapsular Extension",
+            "Reactive Lymph Node",
+            "Matted Nodes"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 36"
+        },
+        {
+          "id": "br-axillary-levels",
+          "title": "Axillary Levels",
+          "frontClue": "The pectoralis minor divides the axilla into levels I, II, and III",
+          "corePiece": "Axillary nodes are divided into three surgical levels by their relationship to the pectoralis minor muscle. Level I nodes lie lateral and inferior to the lateral border of the pectoralis minor; they include the low axillary nodes and are the most commonly involved and most often contain the sentinel node. Level II nodes lie deep (posterior) to the pectoralis minor and include the interpectoral (Rotter) nodes between the pectoralis major and minor. Level III nodes lie medial and superior to the medial border of the pectoralis minor, in the infraclavicular region. Metastatic spread usually progresses in order from level I to II to III; skip metastases to higher levels without lower-level involvement are uncommon. Supraclavicular and internal mammary nodes are regional nodes outside the axillary levels and indicate more advanced nodal stage when involved. Sonographically, the pectoralis minor is identified as a hypoechoic muscle deep to the pectoralis major, and the axillary vessels serve as landmarks for levels II and III.",
+          "whyLock": "The single anatomic rule to memorize is that the pectoralis minor is the reference. Lateral and below is I, behind is II, medial and above is III. On the exam, expect an item describing the position of a node relative to the muscle and asking for the level, or asking which level holds Rotter nodes. A trap is assuming Rotter nodes are level I because they are low; they are interpectoral and therefore level II. Scanning the axilla should follow the axillary vessels upward to evaluate higher levels when a suspicious level I node is found.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 4",
+              "title": "Lymphatic Drainage",
+              "link": "Most breast lymph flows to the axillary levels."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Abnormal Lymph Node Features",
+              "link": "Abnormal nodes are reported with their axillary level."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Staging Basics",
+              "link": "Higher-level and supraclavicular involvement raises the N category."
+            }
+          ],
+          "registryApplication": "Expect questions identifying the muscle that defines the levels, the location of each level, and the level of Rotter nodes.",
+          "checkpoint": {
+            "pearl": "Pectoralis minor: lateral is I, behind is II, medial is III",
+            "reflection": "A suspicious node lies directly deep to the pectoralis minor muscle. Which level is it, and what landmark helps confirm it?"
+          },
+          "keyTerms": [
+            "Pectoralis Minor",
+            "Level I",
+            "Level II",
+            "Level III",
+            "Rotter Nodes",
+            "Skip Metastasis"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 37"
+        },
+        {
+          "id": "br-breast-implant-types",
+          "title": "Breast Implant Types",
+          "frontClue": "Saline or silicone, single or double lumen, in front of or behind the muscle",
+          "corePiece": "Breast implants have an elastomer silicone shell filled with saline or silicone gel; double-lumen implants usually have an inner silicone lumen and an outer saline lumen. Shells may be smooth or textured. They are placed either subglandular (prepectoral, between the gland and pectoralis major) or subpectoral (retropectoral, behind the muscle). The body forms a fibrous capsule around every implant; tightening of this capsule causes capsular contracture with firmness, pain, and distortion. On ultrasound a normal implant is anechoic with a smooth echogenic shell; the shell and capsule may appear as a thin trilaminar echogenic line. Reverberation artifact is common in the anterior implant and should not be mistaken for contents. Radial folds, infoldings of the shell extending from the periphery inward and connected to it, are normal. A small amount of peri-implant fluid can be normal, but a large late seroma, especially more than a year after placement of a textured implant, raises concern for breast implant-associated anaplastic large cell lymphoma (BIA-ALCL), which is evaluated by aspiration for CD30 testing.",
+          "whyLock": "Implant questions begin with type and location, because the signs of rupture depend on them. Saline rupture is usually obvious clinically: the implant deflates as saline is absorbed. Silicone rupture is often silent and requires imaging. Radial folds are the normal finding most confused with rupture: a radial fold connects to the periphery, whereas a collapsed shell floats free inside the gel. A trap is reading anterior reverberation as internal echoes. Another is forgetting BIA-ALCL in a patient with a delayed seroma around a textured implant.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 39",
+              "title": "Intracapsular Rupture",
+              "link": "Rupture contained within the fibrous capsule produces signs inside the implant."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Extracapsular Rupture",
+              "link": "Silicone outside the capsule produces the snowstorm sign."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Associated Features and Special Cases",
+              "link": "Implants are classified as a foreign body in BI-RADS."
+            }
+          ],
+          "registryApplication": "Tested as the anatomy of implant placement, the meaning of the fibrous capsule, radial folds as a normal finding, and recognition of BIA-ALCL.",
+          "checkpoint": {
+            "pearl": "Radial folds touch the edge; a collapsed shell floats inside",
+            "reflection": "How would you distinguish a normal radial fold from a sign of intracapsular rupture?"
+          },
+          "keyTerms": [
+            "Saline Implant",
+            "Silicone Implant",
+            "Subglandular",
+            "Subpectoral",
+            "Fibrous Capsule",
+            "Radial Folds",
+            "BIA-ALCL"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 38"
+        },
+        {
+          "id": "br-intracapsular-rupture",
+          "title": "Intracapsular Rupture",
+          "frontClue": "Stepladder sign: collapsed shell lines stacked inside the gel",
+          "corePiece": "Intracapsular rupture is a tear of the silicone implant shell with the gel still contained by the surrounding fibrous capsule. It is the most common form of silicone implant rupture, often asymptomatic, and frequently found on imaging. Because the gel remains within the capsule, mammography is usually insensitive. On ultrasound, the collapsed shell floats within the gel and appears as multiple discontinuous, parallel or nearly parallel echogenic lines stacked inside the implant, the stepladder sign. Low-level echoes within the normally anechoic gel may also be present. On MRI, which is the most sensitive and specific test for silicone implant integrity, the collapsed shell produces the linguine sign: multiple curvilinear low-signal lines floating in the gel. Small amounts of silicone escaping through the shell but staying within the capsule may cause the keyhole, teardrop, or noose sign, which indicates a more subtle or early intracapsular rupture. Saline implants do not show these signs because the saline is resorbed when the shell fails.",
+          "whyLock": "The reasoning is all about where the silicone is. If the gel is still inside the fibrous capsule, the signs are inside the implant; if it escapes the capsule, the signs appear in the breast tissue. Exam items commonly describe stacked lines in the implant and ask for the name of the sign or the type of rupture. A trap is confusing the stepladder sign with radial folds, which are connected to the periphery and are normal. Another is calling reverberation artifact in the anterior implant a stepladder sign.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 38",
+              "title": "Breast Implant Types",
+              "link": "Silicone implants with a fibrous capsule are the setting for intracapsular rupture."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Extracapsular Rupture",
+              "link": "When silicone escapes the capsule, the findings move outside the implant."
+            },
+            {
+              "piece": "Piece 33",
+              "title": "MRI Correlation and Second-Look Ultrasound",
+              "link": "MRI is the most sensitive test for implant rupture."
+            }
+          ],
+          "registryApplication": "Tested as the stepladder sign on ultrasound, the linguine sign on MRI, and the most common form of silicone rupture.",
+          "checkpoint": {
+            "pearl": "Stepladder on ultrasound, linguine on MRI: intracapsular",
+            "reflection": "Why is mammography often normal in intracapsular rupture while ultrasound shows the stepladder sign?"
+          },
+          "keyTerms": [
+            "Stepladder Sign",
+            "Linguine Sign",
+            "Keyhole Sign",
+            "Collapsed Shell",
+            "Fibrous Capsule",
+            "Silicone Gel"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 39"
+        },
+        {
+          "id": "br-extracapsular-rupture",
+          "title": "Extracapsular Rupture",
+          "frontClue": "Snowstorm: bright, noisy echoes with dirty shadowing outside the implant",
+          "corePiece": "Extracapsular rupture occurs when silicone gel escapes through both the implant shell and the surrounding fibrous capsule into the breast tissue. It is less common than intracapsular rupture and nearly always accompanies it. The free silicone causes a granulomatous reaction, forming silicone granulomas (siliconomas). On ultrasound, free silicone produces the snowstorm sign: a highly echogenic area with diffuse, echogenic noise and dirty posterior acoustic shadowing that obscures deeper structures, caused by the very slow speed of sound in silicone and its mixture with tissue. Larger collections of free silicone may appear as anechoic or hypoechoic masses surrounded by echogenic tissue. Silicone can migrate to axillary lymph nodes, which then show the snowstorm appearance. Mammography shows dense silicone outside the implant contour. MRI confirms silicone outside the capsule. Free silicone injection, used in the past for augmentation, produces the same snowstorm pattern diffusely. Prior ruptured implants can leave residual silicone even after replacement.",
+          "whyLock": "Snowstorm equals silicone in tissue. If the finding is outside the implant and blocks deeper visualization, the gel has escaped the capsule. A trap is calling the snowstorm a calcified or shadowing carcinoma; the history of silicone implants or injections and the diffuse echogenic noise give it away. Another trap is assuming an axillary node with snowstorm echoes is metastatic; in an implant patient, silicone uptake is more likely. Exam items commonly ask for the sign of extracapsular rupture or how silicone reaches the axilla.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 39",
+              "title": "Intracapsular Rupture",
+              "link": "Extracapsular rupture usually occurs with intracapsular rupture."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Abnormal Lymph Node Features",
+              "link": "Silicone uptake can make axillary nodes echogenic and mimic disease."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Breast Implant Types",
+              "link": "Only silicone-filled implants produce free silicone after rupture."
+            }
+          ],
+          "registryApplication": "Tested as the snowstorm sign, silicone granulomas, and silicone in axillary nodes.",
+          "checkpoint": {
+            "pearl": "Snowstorm outside the implant: silicone has escaped the capsule",
+            "reflection": "Why does free silicone produce such marked echogenic noise and shadowing on ultrasound?"
+          },
+          "keyTerms": [
+            "Snowstorm Sign",
+            "Silicone Granuloma",
+            "Free Silicone",
+            "Dirty Shadowing",
+            "Silicone Injection",
+            "Siliconoma"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 40"
+        }
+      ]
+    },
+    {
+      "id": "br-interventional-procedures-patient-care",
+      "title": "Interventional Procedures & Patient Care",
+      "pieceRange": "Pieces 41-47",
+      "examType": "ARDMS RDMS Breast (BR)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Biopsy methods, aspiration, markers, localization, complications, consent, and communication",
+      "topics": [
+        {
+          "id": "br-core-and-vacuum-assisted-biopsy",
+          "title": "Core and Vacuum-Assisted Biopsy",
+          "frontClue": "Needle parallel to the chest wall, document pre-fire and post-fire, check concordance",
+          "corePiece": "Ultrasound-guided core needle biopsy is the standard method for sampling suspicious breast masses and nodes. A spring-loaded (automated) device, commonly 14 gauge, obtains several cores, usually at least four or five for masses, with multiple passes through the lesion. Vacuum-assisted biopsy (VAB) uses larger needles, about 7 to 11 gauge, with suction that draws tissue into the aperture, allowing larger contiguous samples through one insertion; it is preferred for small lesions, intraductal and papillary lesions, and calcifications, and can remove small lesions entirely. The needle is inserted with a freehand technique, aligned with the long axis of the transducer and as parallel to the chest wall as possible, to keep the entire needle visible and avoid pneumothorax. Images document the needle before firing and after firing through the lesion. After biopsy, radiologic-pathologic concordance is assessed: concordant benign results return to follow-up, discordant results need repeat biopsy or excision, and high-risk lesions such as atypical ductal hyperplasia may require surgical excision.",
+          "whyLock": "The needle path is the most tested practical point: shallow, parallel, and fully visible. Steep angles make the needle hard to see and risk the chest wall. Planning the approach also means accounting for the throw of the spring-loaded device so the tip does not pass into the pectoralis or an implant. A trap is accepting a benign pathology result for a BI-RADS 5 mass; that is discordant and needs repeat sampling. Another is thinking VAB is required for every mass; standard core biopsy suffices for most.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 44",
+              "title": "Clip and Marker Placement",
+              "link": "A clip usually marks the biopsy site."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Procedure Complications",
+              "link": "Parallel technique and hemostasis minimize complications."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "BI-RADS Assessment Categories",
+              "link": "Category 4 and 5 lesions are the main indications for biopsy."
+            }
+          ],
+          "registryApplication": "Expect questions on needle approach, gauge differences between core and vacuum devices, documentation images, and radiologic-pathologic concordance.",
+          "checkpoint": {
+            "pearl": "Parallel needle, pre-fire and post-fire images, concordance last",
+            "reflection": "A BI-RADS 5 mass returns benign fibrocystic tissue on core biopsy. What is the appropriate next step?"
+          },
+          "keyTerms": [
+            "Core Needle Biopsy",
+            "Vacuum-Assisted Biopsy",
+            "Freehand Technique",
+            "Needle Throw",
+            "Radiologic-Pathologic Concordance",
+            "Atypical Ductal Hyperplasia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 41"
+        },
+        {
+          "id": "br-fine-needle-aspiration",
+          "title": "Fine-Needle Aspiration",
+          "frontClue": "Thin needle, cells only: quick and gentle but tells you less than a core",
+          "corePiece": "Fine-needle aspiration (FNA) uses a thin needle, typically 20 to 25 gauge, moved back and forth through a lesion with or without suction to collect cells for cytologic analysis. It is fast, inexpensive, causes minimal trauma, and is useful for sampling suspicious axillary lymph nodes, drainage of cysts, and confirming recurrence. Smears may be prepared at the bedside or fluid placed in preservative, and on-site cytology assessment improves adequacy. Its main limitation is that cytology examines individual cells without tissue architecture, so FNA cannot reliably distinguish in situ from invasive carcinoma, and it is less suitable for receptor testing and for many benign diagnoses. Nondiagnostic or insufficient samples are more common than with core biopsy and depend on operator and cytopathologist experience. For these reasons core needle biopsy is preferred for most breast masses. The needle tip must be visualized throughout, and the same aseptic technique, labeling, and documentation standards apply as for any procedure.",
+          "whyLock": "The trade-off is simple: FNA gives cells, core biopsy gives tissue. When a question asks which method cannot tell in situ from invasive disease, the answer is FNA. When a question asks for the least invasive way to sample an abnormal axillary node, FNA is reasonable, although many centers use core biopsy. A trap is assuming FNA is preferred for all breast masses because it is less invasive; core biopsy offers more reliable diagnosis and receptor status.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 41",
+              "title": "Core and Vacuum-Assisted Biopsy",
+              "link": "Core biopsy provides tissue architecture that FNA lacks."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Abnormal Lymph Node Features",
+              "link": "Suspicious axillary nodes are often sampled by FNA."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Cyst Aspiration",
+              "link": "Cyst aspiration uses similar small-gauge technique for fluid."
+            }
+          ],
+          "registryApplication": "Tested as the needle size, what FNA can and cannot show compared with core biopsy, and typical uses such as axillary nodes.",
+          "checkpoint": {
+            "pearl": "FNA gives cells, core gives architecture",
+            "reflection": "Why can FNA not reliably distinguish DCIS from invasive ductal carcinoma?"
+          },
+          "keyTerms": [
+            "Cytology",
+            "Fine Gauge Needle",
+            "Tissue Architecture",
+            "Nondiagnostic Sample",
+            "Axillary Node Sampling"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 42"
+        },
+        {
+          "id": "br-cyst-aspiration",
+          "title": "Cyst Aspiration",
+          "frontClue": "Drain it, look at it, and make sure nothing is left behind",
+          "corePiece": "Ultrasound-guided cyst aspiration is performed to relieve a painful or tense simple cyst, to confirm that an indeterminate lesion (such as a solitary complicated cyst) is fluid, and to drain abscesses or galactoceles. A needle, commonly 18 to 22 gauge, is advanced under real-time guidance into the cyst, and fluid is withdrawn until the cyst collapses completely. Fluid is commonly yellow, green, or cloudy; nonbloody fluid from a benign-appearing cyst that resolves completely is usually discarded. Bloody fluid, a residual mass after aspiration, or a solid component seen during aspiration prompts cytology and core biopsy, often with clip placement. Purulent fluid is sent for culture and sensitivity. Documentation includes the cyst before aspiration, the needle within it, and the collapsed site afterward. Recurrence is common, and repeated recurrence of the same cyst may warrant further evaluation. Complications are uncommon and include hematoma, infection, and vasovagal reaction.",
+          "whyLock": "The key reasoning point is what happens after the fluid is out. Complete resolution plus nonbloody fluid means benign and done; anything left behind means tissue, and tissue needs sampling. A trap is sending all cyst fluid for cytology; routine cytology of clear or yellow-green fluid is generally not useful. Another is ignoring a residual mass because the patient's pain resolved. Questions frequently ask which fluid characteristic or post-aspiration finding requires further workup.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 14",
+              "title": "Simple Cyst",
+              "link": "Symptomatic simple cysts are a common indication for aspiration."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Complicated and Complex Cystic Masses",
+              "link": "Aspiration can confirm that an indeterminate cyst is fluid."
+            },
+            {
+              "piece": "Piece 19",
+              "title": "Mastitis, Abscess and Galactocele",
+              "link": "Abscesses and galactoceles may be drained by aspiration."
+            }
+          ],
+          "registryApplication": "Expect questions about indications, which fluid should be sent for cytology or culture, and what to do with a residual mass.",
+          "checkpoint": {
+            "pearl": "Bloody fluid or residual mass means biopsy",
+            "reflection": "A cyst is aspirated and yields bloody fluid with a small persistent nodule. What should be done next?"
+          },
+          "keyTerms": [
+            "Cyst Aspiration",
+            "Bloody Fluid",
+            "Residual Mass",
+            "Culture and Sensitivity",
+            "Complete Collapse"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 43"
+        },
+        {
+          "id": "br-clip-and-marker-placement",
+          "title": "Clip and Marker Placement",
+          "frontClue": "Mark the spot: the clip lets everyone find what was sampled",
+          "corePiece": "A biopsy marker (clip) is a small, usually titanium or stainless steel, radiopaque device deployed through the biopsy needle or a dedicated introducer at the biopsy site. Indications include marking a lesion that may become hard to see after biopsy (small lesions, lesions removed by vacuum biopsy), marking a cancer before neoadjuvant chemotherapy so its location remains known if the tumor shrinks, marking biopsied axillary nodes for targeted axillary surgery, and confirming correlation between ultrasound, mammography, and MRI findings. Some markers are embedded in a hydrogel or collagen plug that improves sonographic visibility for weeks. On ultrasound a clip appears as a small, bright linear echo, sometimes with posterior shadowing or twinkling artifact. A post-procedure two-view mammogram (craniocaudal and true lateral) confirms the clip's position relative to the biopsy site. Clip migration of 1 cm or more is commonly considered significant; the accordion effect, re-expansion of tissue after release of compression, is a common cause. Shapes vary so multiple clips can be distinguished.",
+          "whyLock": "Clips close the correlation loop: if a clip placed under ultrasound sits in the mammographic lesion on the post-procedure mammogram, the right lesion was sampled. Exam items may ask why a clip is placed before chemotherapy or what view confirms its position. A trap is placing no clip in a small mass that the vacuum device removed completely; without a marker the surgeon cannot find the site. Another is ignoring migration; the report must describe the clip's distance from the target so localization can be adjusted.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 41",
+              "title": "Core and Vacuum-Assisted Biopsy",
+              "link": "A clip is usually deployed at the end of the biopsy."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Preoperative Localization",
+              "link": "Localization targets the clip when the lesion is no longer visible."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Mammographic Correlation",
+              "link": "A post-procedure mammogram confirms the clip is at the mammographic finding."
+            }
+          ],
+          "registryApplication": "Tested as indications for marker placement, the post-procedure mammogram, migration and the accordion effect, and marking before neoadjuvant chemotherapy.",
+          "checkpoint": {
+            "pearl": "Clip before chemo, mammogram after placement",
+            "reflection": "Why is marking a cancer before neoadjuvant chemotherapy essential for later surgery?"
+          },
+          "keyTerms": [
+            "Biopsy Marker",
+            "Clip Migration",
+            "Accordion Effect",
+            "Neoadjuvant Chemotherapy",
+            "Post-Procedure Mammogram",
+            "Targeted Axillary Dissection"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 44"
+        },
+        {
+          "id": "br-preoperative-localization",
+          "title": "Preoperative Localization",
+          "frontClue": "Guide the surgeon to a lesion they cannot feel: wire or wireless seed",
+          "corePiece": "Nonpalpable lesions or biopsy clips must be localized before surgical excision. With wire localization, a needle containing a hooked wire is placed under ultrasound or mammographic guidance, usually the day of surgery, so that the wire tip lies within or just beyond the lesion, ideally within about 1 cm, and the hook anchors it in place; the external end is taped and covered. Ultrasound guidance allows a shorter, more direct path that often parallels the chest wall. Wireless localization devices, such as radioactive iodine-125 seeds, magnetic seeds, radar reflectors, and radiofrequency identification tags, are implanted in the lesion and detected intraoperatively with a handheld probe; they can be placed days or more before surgery, improving scheduling and patient comfort. Bracketing with two devices marks the margins of larger lesions or calcifications. A post-localization mammogram documents the device position, and specimen radiography or ultrasound after excision confirms that the lesion, clip, and device were removed.",
+          "whyLock": "Localization is a team process, so communication and documentation dominate test items. The sonographer should report the distance from the device tip to the lesion and the skin entry site, because the surgeon plans the incision from them. Wire problems include migration, transection, and dislodgement before surgery, which is why wires are placed the same day and patients are told not to pull or bump them. A trap is assuming wireless seeds avoid radiation regulation; radioactive seeds require tracking and handling under radiation safety rules. Specimen imaging is the confirmation step.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 44",
+              "title": "Clip and Marker Placement",
+              "link": "Localization often targets a previously placed clip."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Mammographic Correlation",
+              "link": "A post-localization mammogram documents device position."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Informed Consent and Communication",
+              "link": "Patients need clear instructions about protecting the wire before surgery."
+            }
+          ],
+          "registryApplication": "Expect questions on wire versus wireless options, documenting device position, specimen radiography, and wire complications.",
+          "checkpoint": {
+            "pearl": "Wire the same day; seeds can wait; specimen image confirms removal",
+            "reflection": "After a wire localization, the tip lies 2.5 cm from the target. What should be documented and communicated?"
+          },
+          "keyTerms": [
+            "Wire Localization",
+            "Radioactive Seed",
+            "Magnetic Seed",
+            "Bracketing",
+            "Specimen Radiography",
+            "Hookwire"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 45"
+        },
+        {
+          "id": "br-procedure-complications",
+          "title": "Procedure Complications",
+          "frontClue": "Hematoma is common; pneumothorax is rare and preventable with a parallel approach",
+          "corePiece": "Image-guided breast procedures are safe, but complications must be anticipated and managed. Hematoma and bleeding are the most common complications, more likely with vacuum-assisted devices and in patients on anticoagulant or antiplatelet therapy; manual compression for several minutes after the procedure, typically about 5 to 10 minutes or longer, and ice packs reduce them. Infection is uncommon and minimized by aseptic technique. Vasovagal reaction, with pallor, sweating, nausea, bradycardia, and fainting, is managed by stopping the procedure, laying the patient flat, and raising the legs. Pneumothorax is rare and is prevented by keeping the needle parallel to the chest wall, especially in thin patients and with deep or axillary lesions. Other complications include implant rupture during biopsy near an implant, milk fistula when biopsying a lactating breast, pain, bruising, and very rarely needle tract seeding. Lidocaine allergy is rare, and patients should be asked about allergies before the procedure. Post-procedure instructions cover signs of bleeding and infection.",
+          "whyLock": "When a scenario describes a complication, match it to its cause and its fix. Expanding swelling after biopsy is hematoma: apply pressure. A patient who becomes pale and lightheaded is having a vasovagal reaction: lay flat and elevate legs. Shortness of breath or chest pain after a deep axillary biopsy suggests pneumothorax and needs urgent evaluation. A trap is attributing post-procedure fainting to lidocaine toxicity; vasovagal reaction is far more common. Displacing an implant away from the needle path, a technique similar to implant displacement mammography, reduces rupture risk.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 41",
+              "title": "Core and Vacuum-Assisted Biopsy",
+              "link": "Needle approach and device choice shape the complication risk."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Informed Consent and Communication",
+              "link": "Common and serious risks are explained during consent."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Breast Implant Types",
+              "link": "Biopsy near an implant risks puncturing the shell."
+            }
+          ],
+          "registryApplication": "Tested as the most common complication, prevention of pneumothorax, management of vasovagal reaction, and lactation-specific risks.",
+          "checkpoint": {
+            "pearl": "Bleeding is common, pneumothorax is rare, fainting is vasovagal",
+            "reflection": "Which technical choice most reduces the risk of pneumothorax during biopsy of a deep lesion?"
+          },
+          "keyTerms": [
+            "Hematoma",
+            "Vasovagal Reaction",
+            "Pneumothorax",
+            "Manual Compression",
+            "Milk Fistula",
+            "Anticoagulation"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 46"
+        },
+        {
+          "id": "br-informed-consent-and-communication",
+          "title": "Informed Consent and Communication",
+          "frontClue": "Explain risks, benefits, alternatives; confirm patient and side; never give the diagnosis",
+          "corePiece": "Informed consent for an invasive procedure is obtained by the physician performing it and requires that the patient be competent, informed of the procedure's nature, its risks, benefits, and alternatives (including no procedure), and agree voluntarily. Consent is documented in writing, and a sonographer may serve as a witness. Before starting, a time-out following the Universal Protocol confirms the correct patient (two identifiers), procedure, side, and site, with the site marked when appropriate. Standard precautions, hand hygiene, sterile gloves, sterile gel, and sterile transducer covers are used for procedures, and transducers are cleaned and disinfected afterward according to manufacturer and facility protocol. Patient communication covers what to expect, how long it will take, comfort measures, and aftercare. Patient privacy is protected under HIPAA, and a chaperone may be offered. Sonographers describe the examination and its process but do not disclose diagnoses or interpretations; the interpreting physician communicates results. Anxious patients benefit from clear, calm explanations and the opportunity to ask questions.",
+          "whyLock": "Many patient-care items test scope of practice. If a patient asks whether the mass is cancer, the correct response explains that the radiologist will review the images and the results will come from the physician, without false reassurance or speculation. Consent cannot be obtained from a sedated or confused patient, and it may be withdrawn at any time. A trap is thinking the sonographer obtains consent; the sonographer may witness it. Another trap is skipping the time-out for a simple procedure; every invasive procedure needs one.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 34",
+              "title": "Reporting and Follow-Up",
+              "link": "Results are communicated by the interpreting physician through the report and direct contact."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Procedure Complications",
+              "link": "Consent discussions include common and serious complications."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Preoperative Localization",
+              "link": "Patients need instructions before and after localization."
+            }
+          ],
+          "registryApplication": "Expect scenarios about who obtains consent, the elements of informed consent, the purpose of a time-out, and how to respond when a patient asks for a diagnosis.",
+          "checkpoint": {
+            "pearl": "Physician consents, team times out, sonographer never diagnoses",
+            "reflection": "A patient asks during her biopsy whether the lump is cancer. How should the sonographer respond?"
+          },
+          "keyTerms": [
+            "Informed Consent",
+            "Time-Out",
+            "Universal Protocol",
+            "Scope of Practice",
+            "Standard Precautions",
+            "HIPAA"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 47"
+        }
+      ]
+    }
+  ]
+}

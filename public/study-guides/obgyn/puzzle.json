@@ -1,0 +1,2009 @@
+{
+  "categories": [
+    {
+      "id": "obgyn-first-trimester",
+      "title": "First Trimester",
+      "pieceRange": "Pieces 1-6",
+      "examType": "ARDMS RDMS Obstetrics & Gynecology (OB/GYN)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Early pregnancy landmarks, dating, failed and ectopic pregnancy, molar pregnancy and the NT scan",
+      "topics": [
+        {
+          "id": "obgyn-gestational-sac-yolk-sac",
+          "title": "Gestational Sac & Yolk Sac",
+          "frontClue": "First the sac, then the yolk sac: the order of early landmarks",
+          "corePiece": "The gestational sac is the first sonographic sign of an intrauterine pregnancy, seen transvaginally at about 4.5 to 5 weeks. It is a round fluid collection with an echogenic rim, embedded eccentrically in the decidua (intradecidual sign) rather than sitting in the cavity. The double decidual sac sign, two echogenic rings formed by the decidua capsularis and decidua parietalis, supports a true sac but is absent in many normal early pregnancies. Mean sac diameter (MSD) is the average of three orthogonal inner-to-inner measurements; a rough rule is gestational age in days = MSD (mm) + 30. The yolk sac is the first structure seen inside the gestational sac, at about 5 to 5.5 weeks; its appearance confirms an intrauterine pregnancy. A normal yolk sac is round, thin-walled and usually 6 mm or less; an enlarged (over about 7 mm), calcified or irregular yolk sac is a suspicious finding. A pseudosac of ectopic pregnancy is central, has no yolk sac or embryo and lacks the double ring.",
+          "whyLock": "Before an embryo is visible, the yolk sac is your proof that a fluid collection is a real pregnancy, so most exam logic about confirming an intrauterine pregnancy rests on it. A trap is calling any intrauterine fluid a sac in a patient with a positive hCG: a pseudosac from ectopic decidual reaction can look similar, but it sits centrally in the cavity, may contain debris and never contains a yolk sac. Another trap is assuming a missing double decidual sac sign means failure; it is only a supporting sign. Measure MSD inside the fluid space, not across the echogenic rim.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 4",
+              "title": "Ectopic Pregnancy",
+              "link": "A central pseudosac without a yolk sac is a classic ectopic pitfall."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Failed Pregnancy Criteria",
+              "link": "MSD thresholds and yolk sac timing feed directly into the SRU failure rules."
+            }
+          ],
+          "registryApplication": "Expect questions on the first structure seen in the sac, the intradecidual and double decidual sac signs, MSD technique, and how to tell a true sac from a pseudosac.",
+          "checkpoint": {
+            "pearl": "Sac at 5 weeks, yolk sac by 5.5 weeks, embryo by 6 weeks",
+            "reflection": "Which finding inside an intrauterine fluid collection definitively confirms an intrauterine pregnancy before an embryo is seen?"
+          },
+          "keyTerms": [
+            "Mean Sac Diameter",
+            "Intradecidual Sign",
+            "Double Decidual Sac Sign",
+            "Pseudosac",
+            "Yolk Sac",
+            "Ectopic Pregnancy"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 1"
+        },
+        {
+          "id": "obgyn-embryo-crl-cardiac-activity",
+          "title": "Embryo, CRL & Cardiac Activity",
+          "frontClue": "CRL is the gold standard ruler; the heart flickers by about 6 weeks",
+          "corePiece": "The embryo first appears as a thickening along the yolk sac at about 6 weeks. Crown-rump length (CRL) is the most accurate sonographic method of dating, accurate to within about 5 to 7 days in the first trimester. Measure the longest straight line from the top of the head to the bottom of the rump in a true midsagittal view, with the embryo in a neutral position, excluding the yolk sac and limbs; average three good measurements. Per ACOG, redating is advised when CRL differs from LMP dating by more than 5 days before 9 weeks or more than 7 days from 9 to 13 weeks 6 days. Embryonic heart rate starts around 100 to 120 bpm at 6 weeks, peaks near 160 to 180 bpm at about 9 weeks, then settles to about 120 to 160 bpm. Document heart rate with M-mode rather than spectral Doppler in the first trimester. Embryonic bradycardia, roughly under 100 bpm early, carries a poor prognosis.",
+          "whyLock": "CRL dating is the anchor for everything that follows: once an accurate first-trimester CRL sets the due date, later scans assess growth and should not redate the pregnancy. A common trap is including the yolk sac or a flexed position, which makes the embryo look larger or smaller than it is. Another is using pulsed Doppler on an embryo; M-mode gives the rate at much lower exposure, which follows ALARA. Remember that a slow early heart rate is a warning sign, and a rapidly rising rate through week 9 is normal physiology.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 9",
+              "title": "Dating vs Growth Assessment",
+              "link": "An accurate first-trimester CRL fixes the due date that later biometry is compared against."
+            },
+            {
+              "piece": "Piece 49",
+              "title": "Safety, ALARA & Transvaginal Technique",
+              "link": "M-mode is preferred over spectral Doppler to document early cardiac activity."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Failed Pregnancy Criteria",
+              "link": "A CRL of 7 mm or more without a heartbeat is diagnostic of failure."
+            }
+          ],
+          "registryApplication": "Questions test CRL technique, its accuracy window, ACOG redating thresholds, normal heart rate trends, and why M-mode is used in the first trimester.",
+          "checkpoint": {
+            "pearl": "CRL: longest midsagittal length, no yolk sac, neutral posture",
+            "reflection": "If first-trimester CRL dating differs from LMP by 6 days at 8 weeks, which date do you use and why?"
+          },
+          "keyTerms": [
+            "Crown-Rump Length",
+            "Embryonic Heart Rate",
+            "M-Mode",
+            "Redating",
+            "Embryonic Bradycardia",
+            "ALARA"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 2"
+        },
+        {
+          "id": "obgyn-failed-pregnancy-criteria",
+          "title": "Failed Pregnancy Criteria",
+          "frontClue": "SRU rule of 7 and 25: no heartbeat at 7 mm, no embryo at 25 mm",
+          "corePiece": "The 2013 SRU multispecialty consensus set conservative criteria so that no potentially viable pregnancy is ended by mistake. Findings diagnostic of pregnancy failure: CRL 7 mm or more with no heartbeat; MSD 25 mm or more with no embryo; absence of an embryo with a heartbeat 2 weeks or more after a scan showing a gestational sac without a yolk sac; or absence of an embryo with a heartbeat 11 days or more after a scan showing a sac with a yolk sac. Findings suspicious for, but not diagnostic of, failure include CRL under 7 mm with no heartbeat, MSD 16 to 24 mm with no embryo, no embryo 6 weeks or more after the LMP, an empty amnion (amnion seen without an embryo), an enlarged yolk sac over 7 mm, and a small sac relative to the embryo (MSD minus CRL under 5 mm). Suspicious findings call for a follow-up scan in 7 to 10 days, not intervention. These criteria apply to transvaginal imaging.",
+          "whyLock": "The whole point of these criteria is specificity: the cost of a false-positive failure diagnosis is ending a wanted pregnancy, so the cutoffs are deliberately higher than older ones such as 5 mm CRL or 16 mm MSD. A trap is applying the numbers to a transabdominal scan, where small embryos are easily missed. Another is treating a suspicious finding as diagnostic; the correct next step is follow-up. Keep the two numbers 7 and 25 separate from the softer suspicious range of 16 to 24 mm.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Embryo, CRL & Cardiac Activity",
+              "link": "The 7 mm CRL threshold depends on accurate CRL technique."
+            },
+            {
+              "piece": "Piece 1",
+              "title": "Gestational Sac & Yolk Sac",
+              "link": "MSD and yolk sac appearance define several diagnostic and suspicious criteria."
+            }
+          ],
+          "registryApplication": "Expect scenarios giving a CRL or MSD with or without cardiac activity and asking whether failure is diagnosed, suspected, or requires follow-up.",
+          "checkpoint": {
+            "pearl": "Diagnostic: CRL 7 mm no heartbeat or MSD 25 mm no embryo",
+            "reflection": "An MSD of 19 mm without an embryo is found on transvaginal scan. Is this diagnostic of failure, and what is the next step?"
+          },
+          "keyTerms": [
+            "SRU Consensus",
+            "Mean Sac Diameter",
+            "Crown-Rump Length",
+            "Empty Amnion",
+            "Enlarged Yolk Sac",
+            "Follow-Up Scan"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 3"
+        },
+        {
+          "id": "obgyn-ectopic-pregnancy",
+          "title": "Ectopic Pregnancy",
+          "frontClue": "Positive hCG, empty uterus, adnexal mass separate from the ovary",
+          "corePiece": "An ectopic pregnancy implants outside the endometrial cavity; over 95 percent are tubal, most in the ampulla. The most common sonographic finding is an extraovarian adnexal mass, either a tubal ring (an echogenic ring around a small sac, the bagel sign) or a nonspecific complex mass that moves separately from the ovary when pushed with the probe. A live embryo outside the uterus is diagnostic but uncommon. Echogenic free fluid or clot in the cul-de-sac or Morison pouch suggests hemoperitoneum and rupture. The uterus may be empty or show a pseudosac. Peripheral ring-of-fire flow is nonspecific because the corpus luteum shows it too. Uncommon sites include interstitial (eccentric sac with a thin myometrial mantle under about 5 mm and the interstitial line sign), cervical, cesarean scar and ovarian. Heterotopic pregnancy is rare naturally but up to about 1 in 100 with assisted reproduction. An empty uterus above the discriminatory hCG level, often cited as 1,500 to 3,500 mIU/mL, raises concern.",
+          "whyLock": "The key reasoning skill is separating the corpus luteum from a tubal ectopic: the corpus luteum is inside the ovary and moves with it, while a tubal ring is outside it, usually on the same side. Both can show ring-of-fire flow, so color alone does not decide. A trap is assuming a live intrauterine pregnancy excludes ectopic; in IVF patients, always scan the adnexa for heterotopic pregnancy. Free fluid that contains echoes in a patient with pain is a red flag even when no mass is seen. The discriminatory hCG level is a guide, not a rule.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 1",
+              "title": "Gestational Sac & Yolk Sac",
+              "link": "A yolk sac in an eccentric intradecidual sac is the best evidence against ectopic pregnancy."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Follicles & Functional Cysts",
+              "link": "The corpus luteum is the main mimic of a tubal ring."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Ovulation Induction & OHSS",
+              "link": "Assisted reproduction raises the risk of heterotopic pregnancy."
+            }
+          ],
+          "registryApplication": "Typical items give a positive hCG with an empty uterus and an adnexal finding, then ask for the most likely diagnosis, the most specific sign, or how to separate it from a corpus luteum.",
+          "checkpoint": {
+            "pearl": "Ectopic is outside the ovary; corpus luteum is inside it",
+            "reflection": "How does the sliding organs maneuver help distinguish a tubal ring from a corpus luteum?"
+          },
+          "keyTerms": [
+            "Tubal Ring",
+            "Pseudosac",
+            "Hemoperitoneum",
+            "Interstitial Ectopic",
+            "Heterotopic Pregnancy",
+            "Discriminatory hCG",
+            "Corpus Luteum"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 4"
+        },
+        {
+          "id": "obgyn-gestational-trophoblastic-disease",
+          "title": "Gestational Trophoblastic Disease",
+          "frontClue": "Very high hCG, cystic echogenic placenta, bilateral theca lutein cysts",
+          "corePiece": "Gestational trophoblastic disease is abnormal proliferation of trophoblast. A complete hydatidiform mole is usually diploid with all chromosomes paternal (typically 46,XX) and has no embryo. In the second trimester it fills the uterus with an echogenic mass of many small cystic spaces, the snowstorm or cluster-of-grapes appearance; in the first trimester it may look only like a thickened, heterogeneous, cystic placenta or a failed pregnancy. A partial mole is triploid (69 chromosomes) and shows a growth-restricted or anomalous fetus with an enlarged placenta containing focal cystic spaces. Clinical clues include markedly elevated hCG for dates, a uterus large for dates, vaginal bleeding, hyperemesis and early-onset preeclampsia before 20 weeks. High hCG stimulates bilateral, large, multiloculated theca lutein cysts in the ovaries. Invasive mole extends into the myometrium as vascular, heterogeneous foci, and choriocarcinoma can metastasize, commonly to the lungs. Serial hCG is followed after evacuation.",
+          "whyLock": "Think of molar pregnancy whenever hCG is far out of proportion to dates and the placental tissue looks cystic. The exam likes the contrast between complete (no fetus, paternal diploid) and partial (fetus present, triploid). A trap is mistaking hydropic degeneration of a failed pregnancy for a mole, which is why histology confirms it. Another is overlooking the ovaries; bilateral theca lutein cysts support the diagnosis and can torse. Preeclampsia before 20 weeks should always make you consider a mole.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 43",
+              "title": "Ovarian Torsion",
+              "link": "Large theca lutein cysts enlarge the ovaries and predispose to torsion."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Maternal Diabetes & Hypertension",
+              "link": "Preeclampsia before 20 weeks is a classic clue to molar pregnancy."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Failed Pregnancy Criteria",
+              "link": "An early complete mole can mimic a failed pregnancy with a cystic placenta."
+            }
+          ],
+          "registryApplication": "Questions present very high hCG with a cystic intrauterine mass and ask for the diagnosis, the associated ovarian finding, or the karyotype of complete versus partial mole.",
+          "checkpoint": {
+            "pearl": "Complete: no fetus, 46,XX paternal; partial: fetus, triploid",
+            "reflection": "Why do theca lutein cysts form in molar pregnancy, and what happens to them after evacuation?"
+          },
+          "keyTerms": [
+            "Complete Mole",
+            "Partial Mole",
+            "Snowstorm Appearance",
+            "Theca Lutein Cysts",
+            "Triploidy",
+            "Choriocarcinoma"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 5"
+        },
+        {
+          "id": "obgyn-nuchal-translucency",
+          "title": "Nuchal Translucency",
+          "frontClue": "11 to 13+6 weeks, midsagittal, magnified, inner-to-inner at the widest point",
+          "corePiece": "Nuchal translucency (NT) is the fluid-filled space under the skin behind the fetal neck, measured between 11 weeks 0 days and 13 weeks 6 days, when CRL is about 45 to 84 mm. Technique: a true midsagittal plane; a neutral head position, neither flexed nor hyperextended; magnification so the head and upper thorax fill most of the screen; and the widest part of the translucency measured with calipers placed on the inner borders of the lines (on-to-on), perpendicular to the long axis of the fetus. Separate the fetal skin from the amnion, which can look like a second line. Take several measurements and record the largest that meets criteria. NT of 3.0 mm or more (or above the 99th percentile, about 3.5 mm) is increased and is associated with trisomies 21, 18 and 13, Turner syndrome, congenital heart defects and genetic syndromes. A septated cystic hygroma is a more severe finding. Increased NT warrants genetic counseling and a detailed anatomy scan with fetal echocardiography.",
+          "whyLock": "NT is a screening measurement, so tiny technique errors change risk: a fraction of a millimeter matters. Hyperextension increases NT, flexion decreases it, and mistaking the amnion for skin falsely thickens it. The exam often asks what follow-up is needed for increased NT with a normal karyotype; the answer is a detailed anatomic survey and fetal echocardiography because of the heart defect link. Do not confuse NT, a first-trimester measurement, with nuchal fold thickness, a second-trimester soft marker.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 20",
+              "title": "Soft Markers & Aneuploidy",
+              "link": "Nuchal fold is the second-trimester counterpart and a separate marker."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Fetal Heart Screening Views",
+              "link": "Increased NT with normal chromosomes still raises the risk of heart defects."
+            },
+            {
+              "piece": "Piece 2",
+              "title": "Embryo, CRL & Cardiac Activity",
+              "link": "The NT window is defined by CRL of about 45 to 84 mm."
+            }
+          ],
+          "registryApplication": "Expect questions on the gestational window, caliper placement, head position effects, the abnormal cutoff, and the next step after increased NT.",
+          "checkpoint": {
+            "pearl": "NT window is CRL 45 to 84 mm; 3 mm or more is increased",
+            "reflection": "How would hyperextension of the fetal neck change the NT measurement, and why?"
+          },
+          "keyTerms": [
+            "Nuchal Translucency",
+            "Cystic Hygroma",
+            "Midsagittal Plane",
+            "Trisomy 21",
+            "Turner Syndrome",
+            "Fetal Echocardiography"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 6"
+        }
+      ]
+    },
+    {
+      "id": "obgyn-fetal-biometry-growth",
+      "title": "Fetal Biometry & Growth",
+      "pieceRange": "Pieces 7-12",
+      "examType": "ARDMS RDMS Obstetrics & Gynecology (OB/GYN)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Standard biometric planes, dating versus growth, FGR, macrosomia and fetal Doppler",
+      "topics": [
+        {
+          "id": "obgyn-head-biometry-bpd-hc",
+          "title": "Head Biometry: BPD & HC",
+          "frontClue": "Thalami and cavum in view, cerebellum out of view",
+          "corePiece": "Biparietal diameter (BPD) and head circumference (HC) are measured in the same axial transthalamic plane: a symmetric oval skull, midline falx interrupted anteriorly by the cavum septi pellucidi, and the thalami with the third ventricle between them. The cerebellum and orbits should not be seen; seeing the cerebellum means the plane is angled toward the posterior fossa. BPD is measured perpendicular to the falx from the outer edge of the near skull to the inner edge of the far skull (leading edge to leading edge). HC is an ellipse traced around the outer edge of the skull, excluding scalp. The cephalic index (BPD divided by occipitofrontal diameter, times 100) is normally about 70 to 86. A low index is dolichocephaly, common in breech presentation and oligohydramnios; a high index is brachycephaly. Because head shape changes BPD but not circumference, HC is more reliable than BPD when the shape is abnormal. Lemon-shaped or strawberry-shaped skulls are clues to anomalies.",
+          "whyLock": "The plane is what the exam tests most: thalami and cavum septi pellucidi in, cerebellum out. If an answer choice mentions the cerebellum, it belongs to the transcerebellar plane used for the posterior fossa, not BPD. A frequent trap is a breech fetus with a flattened, elongated head, where BPD underestimates age; the fix is to rely on HC. Remember that BPD uses outer-to-inner calipers while HC traces the outer border, so calipers on the scalp overestimate.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "Abdominal Circumference & Femur Length",
+              "link": "HC, AC and FL combine with BPD in composite dating and EFW."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Neural Tube Defects & Chiari II",
+              "link": "The lemon sign is seen in the same axial head plane."
+            },
+            {
+              "piece": "Piece 9",
+              "title": "Dating vs Growth Assessment",
+              "link": "Head measurements contribute to second-trimester composite dating."
+            }
+          ],
+          "registryApplication": "Questions ask which structures define the BPD plane, correct caliper placement, the cephalic index, and which measurement to trust when the head is dolichocephalic.",
+          "checkpoint": {
+            "pearl": "BPD outer-to-inner; HC around the outer skull; same plane",
+            "reflection": "In a breech fetus with a cephalic index of 68, which head measurement is more reliable and why?"
+          },
+          "keyTerms": [
+            "Biparietal Diameter",
+            "Head Circumference",
+            "Cavum Septi Pellucidi",
+            "Thalami",
+            "Cephalic Index",
+            "Dolichocephaly"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 7"
+        },
+        {
+          "id": "obgyn-abdominal-circumference-femur-length",
+          "title": "Abdominal Circumference & Femur Length",
+          "frontClue": "AC: stomach plus umbilical vein at the portal sinus; FL: the bony shaft only",
+          "corePiece": "Abdominal circumference (AC) is taken in a true axial plane through the upper abdomen showing the stomach and the umbilical vein turning into the portal sinus (the hockey stick or J shape), with a short segment of spine and a round, not oval, contour. The kidneys and heart should not be visible. Trace the ellipse along the skin edge. AC is the measurement most sensitive to altered growth because it reflects liver size and glycogen stores, so it falls first in growth restriction and rises in macrosomia. Femur length (FL) measures the ossified diaphysis along its long axis, ideally with the beam perpendicular to the shaft and using the femur nearest the transducer. Exclude the distal femoral epiphysis and the specular reflection at the end of the shaft. The distal femoral epiphysis appears at about 32 to 33 weeks and the proximal tibial epiphysis near 35 weeks, supporting maturity. A short femur may be a soft marker, a sign of skeletal dysplasia, or an early sign of growth restriction.",
+          "whyLock": "AC is the measurement with the most variability and the most clinical weight, so technique errors matter. An oblique cut makes the abdomen oval and the circumference too large; compression by the transducer flattens it. Umbilical vein too far along toward the cord insertion is too low a level. For femur length, a beam parallel to the shaft or including the epiphysis gives false values. Remember: AC is the first to lag in placental insufficiency because the liver loses glycogen while the brain is spared.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Fetal Growth Restriction",
+              "link": "A small AC is the earliest and most sensitive sign of placental insufficiency."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Macrosomia",
+              "link": "Disproportionate AC growth is typical of a fetus of a diabetic mother."
+            },
+            {
+              "piece": "Piece 19",
+              "title": "Skeletal Dysplasias",
+              "link": "A markedly short femur raises concern for a skeletal dysplasia."
+            }
+          ],
+          "registryApplication": "Expect plane-identification questions for AC, what to exclude in FL, which biometric parameter changes first with abnormal growth, and epiphyseal ossification timing.",
+          "checkpoint": {
+            "pearl": "AC tells you about growth; FL tells you about bones",
+            "reflection": "Which landmarks confirm the correct AC level, and what does seeing both kidneys tell you about your plane?"
+          },
+          "keyTerms": [
+            "Abdominal Circumference",
+            "Umbilical Vein",
+            "Portal Sinus",
+            "Femur Length",
+            "Distal Femoral Epiphysis",
+            "Fetal Growth Restriction"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 8"
+        },
+        {
+          "id": "obgyn-dating-vs-growth-assessment",
+          "title": "Dating vs Growth Assessment",
+          "frontClue": "Date once, early; after that every scan measures growth",
+          "corePiece": "Sonographic dating is most accurate early because biological variation widens with gestational age. First-trimester CRL is accurate to about 5 to 7 days. In the second trimester, composite biometry (BPD, HC, AC, FL) is accurate to about 7 to 10 days through about 21 weeks, about 2 weeks from 22 to 27 weeks, and about 3 weeks after 28 weeks. Once the estimated due date is set by the earliest reliable scan, it should not be changed by later scans. Later scans instead compare each measurement and the estimated fetal weight (EFW) with expected values for that established age, expressed as percentiles. EFW formulas such as Hadlock combine head, abdomen and femur measurements and carry an error of roughly 10 to 15 percent, larger at the extremes of weight. Serial growth scans should be at least 2 to 3 weeks apart, because shorter intervals fall within measurement error. Measurements that disagree with each other are clinically important and should not simply be averaged away.",
+          "whyLock": "This is a reasoning card rather than a numbers card. A third-trimester fetus measuring 2 weeks behind dates is not redated; it is a fetus that may be growth restricted. The trap is redating a late scan, which hides the abnormality. Another trap is scanning again in one week and calling a small change real growth failure. Disproportion between parts is diagnostic information: a lagging AC with a normal head suggests placental insufficiency, while a uniformly small fetus raises questions about dating, constitution, aneuploidy or infection.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Embryo, CRL & Cardiac Activity",
+              "link": "First-trimester CRL sets the due date that later scans are compared against."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Fetal Growth Restriction",
+              "link": "Growth is judged against established dates, never by redating."
+            },
+            {
+              "piece": "Piece 7",
+              "title": "Head Biometry: BPD & HC",
+              "link": "Head and body proportions reveal asymmetric growth patterns."
+            }
+          ],
+          "registryApplication": "Questions ask when redating is appropriate, the accuracy of dating by trimester, the minimum interval between growth scans, and how to interpret discordant measurements.",
+          "checkpoint": {
+            "pearl": "Early scan sets the date; later scans assess growth",
+            "reflection": "A patient dated by an 8-week CRL measures 3 weeks small at 34 weeks. Why is redating wrong here?"
+          },
+          "keyTerms": [
+            "Estimated Due Date",
+            "Composite Biometry",
+            "Estimated Fetal Weight",
+            "Hadlock Formula",
+            "Growth Percentile",
+            "Serial Growth Scans"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 9"
+        },
+        {
+          "id": "obgyn-fetal-growth-restriction",
+          "title": "Fetal Growth Restriction",
+          "frontClue": "EFW or AC under the 10th percentile: look at fluid and Doppler next",
+          "corePiece": "Fetal growth restriction (FGR) is defined by SMFM as an EFW or an AC below the 10th percentile for gestational age. Small for gestational age describes size, while FGR implies a fetus that has not reached its growth potential. Early-onset FGR, often before 32 weeks, may be symmetric, with all parameters small, and suggests an intrinsic cause such as aneuploidy (notably trisomy 18 or triploidy), congenital infection such as CMV, or a syndrome. Asymmetric, usually later FGR reflects placental insufficiency: the AC lags while the head is relatively spared, so the HC to AC ratio is elevated. Associated findings include oligohydramnios, an abnormal umbilical artery Doppler (raised resistance, then absent or reversed end-diastolic flow), a low MCA pulsatility index from brain sparing, and in severe cases an abnormal ductus venosus waveform with an absent or reversed a-wave. Maternal causes include hypertension, preeclampsia, smoking, autoimmune disease and substance use. Monitoring combines serial growth scans, Doppler studies, amniotic fluid and biophysical profile.",
+          "whyLock": "The exam usually wants you to classify the pattern and pick the logical cause. Symmetric and early points inside the fetus, so think chromosomes or infection; asymmetric and late points to the placenta, so think hypertension or preeclampsia. A trap is relying on the HC to AC ratio alone; current definitions use EFW or AC percentiles. Another is ignoring fluid: oligohydramnios in a small fetus strengthens the case for placental insufficiency because the kidneys are underperfused. Doppler worsening follows a predictable order from the umbilical artery to the MCA and then the ductus venosus.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 12",
+              "title": "Umbilical Artery & MCA Doppler",
+              "link": "Doppler grades the severity of placental insufficiency in FGR."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Amniotic Fluid Assessment",
+              "link": "Oligohydramnios commonly accompanies placental insufficiency."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Maternal Diabetes & Hypertension",
+              "link": "Hypertensive disorders are a leading maternal cause of asymmetric FGR."
+            }
+          ],
+          "registryApplication": "Scenarios give biometry percentiles, fluid volume and Doppler findings and ask for the type of FGR, the likely cause, or the most ominous finding.",
+          "checkpoint": {
+            "pearl": "Symmetric is intrinsic; asymmetric is placental",
+            "reflection": "A 35-week fetus has a normal HC, an AC at the 3rd percentile and oligohydramnios. Which mechanism best explains this pattern?"
+          },
+          "keyTerms": [
+            "Fetal Growth Restriction",
+            "Small for Gestational Age",
+            "Asymmetric FGR",
+            "Brain Sparing",
+            "Placental Insufficiency",
+            "Oligohydramnios"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 10"
+        },
+        {
+          "id": "obgyn-macrosomia",
+          "title": "Macrosomia",
+          "frontClue": "Big belly, normal head: think maternal diabetes and shoulder dystocia",
+          "corePiece": "Macrosomia is usually defined as a birth weight or EFW above 4,000 g, with 4,500 g as a higher-risk threshold; large for gestational age (LGA) means an EFW above the 90th percentile. Maternal diabetes, both pregestational and gestational, is the classic cause: maternal hyperglycemia leads to fetal hyperinsulinemia and increased fat and glycogen, so the AC and shoulders grow out of proportion to the head. Sonographic findings include an AC above the 90th percentile, a thick subcutaneous fat layer over the abdomen or cheeks, increased soft tissue thickness of the humerus, and polyhydramnios. Other risk factors include maternal obesity, excessive weight gain, post-term pregnancy, prior macrosomic infant and multiparity. Overgrowth syndromes such as Beckwith-Wiedemann present with macrosomia plus macroglossia, organomegaly and omphalocele. The main obstetric risks are shoulder dystocia, brachial plexus injury, cesarean delivery and postpartum hemorrhage, while the neonate is at risk for hypoglycemia. EFW is least accurate at the extremes of weight, with an error of about 15 percent near term.",
+          "whyLock": "The pattern to recognize is disproportion: the head is normal while the abdomen is large, because fetal insulin drives growth of insulin-sensitive tissues like liver and fat. That is why shoulder dystocia, not head entrapment, is the feared complication. A trap is trusting a single late EFW too much; the error is large enough to affect delivery planning. Polyhydramnios in a large fetus should prompt you to consider maternal diabetes. Do not forget that pregestational diabetes is also linked to anomalies, whereas gestational diabetes mainly affects growth.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 28",
+              "title": "Maternal Diabetes & Hypertension",
+              "link": "Maternal hyperglycemia is the main driver of fetal overgrowth."
+            },
+            {
+              "piece": "Piece 8",
+              "title": "Abdominal Circumference & Femur Length",
+              "link": "AC is the measurement that rises first in macrosomia."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Amniotic Fluid Assessment",
+              "link": "Polyhydramnios frequently accompanies diabetic macrosomia."
+            }
+          ],
+          "registryApplication": "Questions ask for the definition, the measurement most affected, the associated maternal condition, and the main delivery complication.",
+          "checkpoint": {
+            "pearl": "Diabetic macrosomia: big AC, big shoulders, normal head",
+            "reflection": "Why does maternal hyperglycemia enlarge the fetal abdomen more than the fetal head?"
+          },
+          "keyTerms": [
+            "Macrosomia",
+            "Large for Gestational Age",
+            "Shoulder Dystocia",
+            "Polyhydramnios",
+            "Beckwith-Wiedemann Syndrome",
+            "Estimated Fetal Weight"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 11"
+        },
+        {
+          "id": "obgyn-umbilical-artery-mca-doppler",
+          "title": "Umbilical Artery & MCA Doppler",
+          "frontClue": "Placenta resistance rises in the cord; the brain vessels open up",
+          "corePiece": "Umbilical artery (UA) Doppler reflects placental resistance. Normally end-diastolic flow is present from the second trimester, and resistance (S/D ratio, RI, PI) decreases toward term as the placenta matures. Sample a free-floating loop of cord, away from the placental and fetal insertions, during fetal quiescence with no breathing. Rising resistance, then absent and finally reversed end-diastolic flow indicate progressively worse placental insufficiency; reversed flow is ominous. The middle cerebral artery (MCA) is imaged in an axial view at the circle of Willis, sampling the proximal MCA near its origin with the insonation angle as close to 0 degrees as possible and little or no angle correction. In hypoxia the MCA resistance falls (brain sparing). The cerebroplacental ratio (MCA PI divided by UA PI) below about 1 suggests redistribution. MCA peak systolic velocity is the noninvasive test for fetal anemia: a value above 1.5 multiples of the median suggests moderate to severe anemia, as in red cell alloimmunization or parvovirus infection.",
+          "whyLock": "Remember two different jobs. Resistance indices (UA and MCA PI) describe placental insufficiency and brain sparing in FGR; MCA peak systolic velocity describes anemia, because thin, fast-flowing anemic blood speeds up. A trap is measuring MCA velocity with a large angle; angle error underestimates velocity and can miss anemia. Another is sampling near the placental cord insertion, where resistance is lowest, which can hide an abnormal result. Fetal breathing distorts waveforms, so wait for quiet periods.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Fetal Growth Restriction",
+              "link": "UA and MCA indices grade the severity of placental insufficiency."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Fetal Hydrops",
+              "link": "MCA peak systolic velocity screens for fetal anemia as a cause of hydrops."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Twin-Twin Transfusion Syndrome",
+              "link": "Absent or reversed UA end-diastolic flow is part of Quintero stage III."
+            }
+          ],
+          "registryApplication": "Expect waveform-interpretation questions (absent or reversed end-diastolic flow), MCA sampling technique, brain sparing, and the 1.5 MoM anemia threshold.",
+          "checkpoint": {
+            "pearl": "UA AREDF is ominous; MCA PSV over 1.5 MoM means anemia",
+            "reflection": "Why must the MCA be sampled at an angle near 0 degrees when screening for fetal anemia?"
+          },
+          "keyTerms": [
+            "Umbilical Artery Doppler",
+            "End-Diastolic Flow",
+            "Middle Cerebral Artery",
+            "Cerebroplacental Ratio",
+            "Peak Systolic Velocity",
+            "Fetal Anemia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 12"
+        }
+      ]
+    },
+    {
+      "id": "obgyn-fetal-anatomy-anomalies",
+      "title": "Fetal Anatomy & Anomalies",
+      "pieceRange": "Pieces 13-20",
+      "examType": "ARDMS RDMS Obstetrics & Gynecology (OB/GYN)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Detection and associations of the major fetal anomalies tested on the OB/GYN registry",
+      "topics": [
+        {
+          "id": "obgyn-ventriculomegaly-holoprosencephaly",
+          "title": "Ventriculomegaly & Holoprosencephaly",
+          "frontClue": "Atrium 10 mm or more; one ventricle and fused thalami means holoprosencephaly",
+          "corePiece": "The lateral ventricle atrium is measured in the axial transventricular plane at the level of the glomus of the choroid plexus, with calipers on the inner edges of the ventricular walls, perpendicular to the long axis of the ventricle. A normal atrium is under 10 mm throughout pregnancy. Ventriculomegaly is mild at 10 to 12 mm, moderate at about 13 to 15 mm and severe above 15 mm. A dangling choroid plexus that falls to the dependent wall is a supportive sign. Causes include aqueductal stenosis, Chiari II malformation, agenesis of the corpus callosum, infection, hemorrhage and aneuploidy, so a detailed survey is needed. Holoprosencephaly is failed division of the forebrain. Alobar is most severe: a single monoventricle, fused thalami, and absent falx and cavum septi pellucidi. Semilobar and lobar forms show partial separation. Facial anomalies are common, including hypotelorism, cyclopia, proboscis and median cleft lip. Holoprosencephaly is strongly associated with trisomy 13. Unilateral cleft lip with or without cleft palate is the most common facial cleft.",
+          "whyLock": "Ventriculomegaly is a finding, not a diagnosis, so the exam expects you to search for the cause: look at the spine, posterior fossa, corpus callosum and the rest of the anatomy. A trap is measuring at the wrong level or from outer wall to outer wall, which overestimates. For holoprosencephaly, the face predicts the brain: midline facial defects and close-set eyes point toward the alobar end. Distinguish alobar holoprosencephaly from hydranencephaly, where the falx is present and the cortex is replaced by fluid.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 14",
+              "title": "Neural Tube Defects & Chiari II",
+              "link": "Chiari II is a leading cause of fetal ventriculomegaly."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Soft Markers & Aneuploidy",
+              "link": "Holoprosencephaly with polydactyly suggests trisomy 13."
+            },
+            {
+              "piece": "Piece 7",
+              "title": "Head Biometry: BPD & HC",
+              "link": "The cavum septi pellucidi in the BPD plane is absent in alobar holoprosencephaly."
+            }
+          ],
+          "registryApplication": "Questions ask for measurement technique, ventricle thresholds, signs of alobar holoprosencephaly and the associated trisomy.",
+          "checkpoint": {
+            "pearl": "Atrium under 10 mm is normal; no cavum plus fused thalami is holoprosencephaly",
+            "reflection": "How would you differentiate alobar holoprosencephaly from hydranencephaly on an axial head image?"
+          },
+          "keyTerms": [
+            "Lateral Ventricle Atrium",
+            "Dangling Choroid",
+            "Alobar Holoprosencephaly",
+            "Hypotelorism",
+            "Cleft Lip",
+            "Trisomy 13"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 13"
+        },
+        {
+          "id": "obgyn-neural-tube-defects-chiari-ii",
+          "title": "Neural Tube Defects & Chiari II",
+          "frontClue": "Lemon head, banana cerebellum, open spine, high MSAFP",
+          "corePiece": "Neural tube defects result from failed closure of the neural tube, which normally closes by about 28 days after conception (about 6 weeks menstrual age). Anencephaly is absence of the cranial vault and cerebral hemispheres above the orbits, giving a frog-eye appearance on coronal view; it is lethal, detectable from late in the first trimester, and often causes polyhydramnios from impaired swallowing. Acrania with exencephaly is the earlier stage. Open spina bifida, most often a lumbosacral myelomeningocele, shows splayed posterior ossification centers (a U or V shape on axial view) with a sac or open defect. It causes the Chiari II malformation: downward displacement of the cerebellum and brainstem with an obliterated cisterna magna. Cranial signs are the lemon sign (concave frontal bones, mostly before 24 weeks), the banana sign (cerebellum curved around the brainstem), ventriculomegaly and a small BPD. Clubfeet are common. Maternal serum AFP is elevated in open defects. Encephalocele is herniation through a skull defect, usually occipital, and is seen in Meckel-Gruber syndrome with polycystic kidneys and polydactyly. Folic acid lowers risk.",
+          "whyLock": "The cranial signs are often easier to see than the spine lesion, so they act as a screening shortcut: if the cerebellum looks like a banana or the cisterna magna is gone, scrutinize the spine in all three planes. A trap is relying on the lemon sign late in pregnancy, as it often disappears after 24 weeks. Another is missing a skin-covered defect; closed lesions do not elevate AFP and lack Chiari II signs. Anencephaly should never be missed: look for the skull above the orbits.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 13",
+              "title": "Ventriculomegaly & Holoprosencephaly",
+              "link": "Ventriculomegaly is a common cranial consequence of Chiari II."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Amniotic Fluid Assessment",
+              "link": "Anencephaly impairs swallowing and causes polyhydramnios."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Amniocentesis & CVS",
+              "link": "Amniotic fluid AFP and acetylcholinesterase confirm open defects."
+            }
+          ],
+          "registryApplication": "Expect sign-to-diagnosis items (lemon, banana, frog eye), AFP associations, and questions on which syndrome links encephalocele with cystic kidneys.",
+          "checkpoint": {
+            "pearl": "Lemon plus banana means look for the open spine",
+            "reflection": "Why does open spina bifida cause the banana sign, and why is the lemon sign less useful in the third trimester?"
+          },
+          "keyTerms": [
+            "Anencephaly",
+            "Myelomeningocele",
+            "Chiari II Malformation",
+            "Lemon Sign",
+            "Banana Sign",
+            "Maternal Serum AFP",
+            "Encephalocele"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 14"
+        },
+        {
+          "id": "obgyn-fetal-heart-screening-views",
+          "title": "Fetal Heart Screening Views",
+          "frontClue": "Four chambers, both outflow tracts, three vessels: normal four-chamber can hide conotruncal defects",
+          "corePiece": "The basic cardiac screen starts with situs: the stomach and the heart apex should both be on the fetal left. In the four-chamber view the heart occupies about one third of the thorax, the axis points about 45 degrees to the left of midline, and the two atria and two ventricles are similar in size. The right ventricle lies closest to the anterior chest wall and contains the moderator band; the left atrium is closest to the spine and receives the pulmonary veins. The tricuspid valve inserts slightly closer to the apex than the mitral valve. Guidelines also require the left and right ventricular outflow tracts, which should cross each other, and the three-vessel and three-vessel trachea views, showing the pulmonary artery, aorta and superior vena cava in decreasing size from left to right. Atrioventricular septal defect, linked with trisomy 21, loses the normal valve offset. Tetralogy of Fallot and transposition of the great arteries can have a normal four-chamber view.",
+          "whyLock": "The exam likes to test what each view can and cannot detect. The four-chamber view finds chamber size problems, AV septal defects and hypoplastic heart, but conotruncal anomalies, such as transposition and tetralogy, need the outflow tracts. An abnormal axis is itself a red flag for heart disease or a chest mass. A trap is identifying the right ventricle by position alone when the heart is rotated; the moderator band and the more apical tricuspid insertion are better clues. Parallel great arteries suggest transposition.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 20",
+              "title": "Soft Markers & Aneuploidy",
+              "link": "An AV septal defect is the classic cardiac association of trisomy 21."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "CDH & CPAM",
+              "link": "Chest masses shift the heart and abnormally change the cardiac axis."
+            },
+            {
+              "piece": "Piece 6",
+              "title": "Nuchal Translucency",
+              "link": "Increased NT prompts fetal echocardiography."
+            }
+          ],
+          "registryApplication": "Questions ask which chamber has the moderator band, the normal cardiac axis, which defects a normal four-chamber view can miss, and aneuploidy associations.",
+          "checkpoint": {
+            "pearl": "Right ventricle: front, moderator band, apical tricuspid",
+            "reflection": "Why can transposition of the great arteries be missed if only a four-chamber view is obtained?"
+          },
+          "keyTerms": [
+            "Four-Chamber View",
+            "Cardiac Axis",
+            "Moderator Band",
+            "Outflow Tracts",
+            "Three-Vessel Trachea View",
+            "Atrioventricular Septal Defect",
+            "Tetralogy of Fallot"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 15"
+        },
+        {
+          "id": "obgyn-cdh-cpam",
+          "title": "CDH & CPAM",
+          "frontClue": "Stomach beside the heart, heart pushed right: left diaphragmatic hernia",
+          "corePiece": "Congenital diaphragmatic hernia (CDH) is herniation of abdominal contents into the chest, most often through a posterolateral Bochdalek defect on the left (about 80 to 90 percent). In the four-chamber view the stomach or bowel lies beside the heart, the heart is shifted to the right, and the abdominal circumference may be small. Right-sided CDH contains liver, which is harder to see because liver and lung look similar; color Doppler of the hepatic vessels helps. Polyhydramnios is common. Prognosis depends on lung size and liver position: the observed-to-expected lung-to-head ratio and liver herniation (liver up) predict pulmonary hypoplasia. CDH is associated with aneuploidy, especially trisomy 18, and cardiac defects. Congenital pulmonary airway malformation (CPAM) is a lung mass with arterial supply from the pulmonary artery: macrocystic types show one or more large cysts, microcystic types look solidly echogenic. Bronchopulmonary sequestration is a homogeneous echogenic mass, often at the left base, supplied by a systemic artery from the aorta. A large mass, measured by the CPAM volume ratio, can cause hydrops.",
+          "whyLock": "For a left chest finding, ask first whether the stomach is in its normal place below the diaphragm; if it is in the chest, think CDH, not a cystic lung lesion. A peristalsing structure or one that changes with time points to bowel. The best way to separate sequestration from microcystic CPAM is color Doppler showing a feeding vessel from the aorta. Mass effect matters more than histology: mediastinal shift, polyhydramnios and hydrops worsen prognosis. Many CPAMs shrink during the third trimester.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 15",
+              "title": "Fetal Heart Screening Views",
+              "link": "The four-chamber view is where a displaced heart and intrathoracic stomach are first noticed."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Fetal Hydrops",
+              "link": "Large chest masses can compress the heart and great veins and cause hydrops."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Amniotic Fluid Assessment",
+              "link": "Esophageal compression by a chest mass impairs swallowing and causes polyhydramnios."
+            }
+          ],
+          "registryApplication": "Expect questions on the typical side and location of CDH, the significance of liver herniation, and the Doppler feature that identifies a sequestration.",
+          "checkpoint": {
+            "pearl": "Sequestration feeds from the aorta; CPAM feeds from the pulmonary artery",
+            "reflection": "A homogeneous echogenic left lower chest mass is seen. Which Doppler finding would favor sequestration over CPAM?"
+          },
+          "keyTerms": [
+            "Congenital Diaphragmatic Hernia",
+            "Bochdalek Hernia",
+            "Lung-to-Head Ratio",
+            "CPAM",
+            "Bronchopulmonary Sequestration",
+            "Mediastinal Shift"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 16"
+        },
+        {
+          "id": "obgyn-abdominal-wall-defects",
+          "title": "Abdominal Wall Defects",
+          "frontClue": "Gastroschisis: right of the cord, no membrane; omphalocele: midline, covered",
+          "corePiece": "Gastroschisis is a full-thickness paraumbilical defect, almost always to the right of a normal cord insertion, through which bowel herniates and floats freely in the amniotic fluid without a covering membrane. Bowel may become thick-walled and dilated from exposure. It occurs mostly in young mothers, is rarely associated with aneuploidy, and greatly elevates maternal serum AFP. Omphalocele is a midline defect at the base of the cord, covered by a membrane of peritoneum and amnion; the cord inserts onto the sac, which can contain bowel and liver. Omphalocele has a high association with aneuploidy (especially trisomies 18 and 13), cardiac defects and Beckwith-Wiedemann syndrome; smaller, bowel-only omphaloceles carry higher aneuploidy risk. Physiologic midgut herniation is normal until about 12 weeks, when CRL reaches about 45 mm, so a small bowel-containing herniation should not be called an omphalocele before then. Pentalogy of Cantrell adds ectopia cordis and sternal, diaphragmatic and pericardial defects. Limb-body wall complex shows a large defect, scoliosis and a short cord.",
+          "whyLock": "Two questions settle most of these cases: where is the cord insertion relative to the defect, and is there a membrane? A membrane and a cord inserting on the sac mean omphalocele, which demands karyotyping and an echocardiogram. Free-floating bowel to the right of a normal insertion means gastroschisis, where the concern is bowel damage, not chromosomes. A trap is calling normal first-trimester midgut herniation an omphalocele. Liver outside the abdomen essentially excludes physiologic herniation and gastroschisis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 20",
+              "title": "Soft Markers & Aneuploidy",
+              "link": "Omphalocele is a strong marker for trisomy 18."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Neural Tube Defects & Chiari II",
+              "link": "Both open neural tube defects and abdominal wall defects elevate maternal serum AFP."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "Macrosomia",
+              "link": "Omphalocele with macrosomia and macroglossia suggests Beckwith-Wiedemann syndrome."
+            }
+          ],
+          "registryApplication": "Questions describe a defect location, covering membrane and contents, then ask for the diagnosis, aneuploidy risk or the gestational age before which herniation is normal.",
+          "checkpoint": {
+            "pearl": "Covered and central is omphalocele; uncovered and right is gastroschisis",
+            "reflection": "Why is aneuploidy testing strongly advised for omphalocele but not routinely for gastroschisis?"
+          },
+          "keyTerms": [
+            "Gastroschisis",
+            "Omphalocele",
+            "Physiologic Midgut Herniation",
+            "Pentalogy of Cantrell",
+            "Limb-Body Wall Complex",
+            "Beckwith-Wiedemann Syndrome"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 17"
+        },
+        {
+          "id": "obgyn-gi-gu-anomalies",
+          "title": "GI & GU Anomalies",
+          "frontClue": "Double bubble plus polyhydramnios; empty renal fossae plus no fluid",
+          "corePiece": "Duodenal atresia shows a double bubble of dilated stomach and proximal duodenum, often with polyhydramnios after about 24 weeks; about 30 percent of affected fetuses have trisomy 21. Esophageal atresia is suspected when the stomach is small or absent with polyhydramnios; most cases have a tracheoesophageal fistula that lets some fluid reach the stomach. Echogenic bowel as bright as bone is a soft marker linked with aneuploidy, cystic fibrosis, CMV infection and swallowed blood. Bilateral renal agenesis causes anhydramnios after about 16 weeks, absent renal arteries on color Doppler and flattened adrenal glands in the renal fossae (lying-down adrenal sign), leading to Potter sequence and lethal pulmonary hypoplasia. Multicystic dysplastic kidney shows multiple noncommunicating cysts of different sizes with no normal parenchyma. Ureteropelvic junction obstruction dilates the renal pelvis without a dilated ureter. Posterior urethral valves in a male produce a thick-walled distended bladder with a keyhole-shaped dilated posterior urethra and oligohydramnios. Autosomal recessive polycystic kidney disease shows bilaterally enlarged echogenic kidneys.",
+          "whyLock": "Amniotic fluid is the shortcut. GI obstruction above the jejunum causes too much fluid because swallowed fluid is not absorbed; bilateral urinary tract failure after about 16 weeks causes too little because fetal urine is the main fluid source. Unilateral renal problems usually leave fluid normal. A trap is confusing multicystic dysplastic kidney with hydronephrosis: in hydronephrosis the dilated calyces connect to a central pelvis. Always check the contralateral kidney, since abnormalities there decide prognosis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 25",
+              "title": "Amniotic Fluid Assessment",
+              "link": "GI obstruction raises fluid, while bilateral renal failure removes it."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Soft Markers & Aneuploidy",
+              "link": "Duodenal atresia and echogenic bowel are associated with trisomy 21."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Fetal Demise & Postpartum Uterus",
+              "link": "Lethal renal anomalies cause pulmonary hypoplasia and perinatal death."
+            }
+          ],
+          "registryApplication": "Expect sign-based items (double bubble, keyhole bladder, lying-down adrenal), amniotic fluid associations, and the aneuploidy linked with duodenal atresia.",
+          "checkpoint": {
+            "pearl": "Proximal GI block: too much fluid; bilateral GU failure: too little",
+            "reflection": "How do you sonographically distinguish multicystic dysplastic kidney from severe ureteropelvic junction obstruction?"
+          },
+          "keyTerms": [
+            "Duodenal Atresia",
+            "Double Bubble Sign",
+            "Bilateral Renal Agenesis",
+            "Multicystic Dysplastic Kidney",
+            "Posterior Urethral Valves",
+            "Potter Sequence"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 18"
+        },
+        {
+          "id": "obgyn-skeletal-dysplasias",
+          "title": "Skeletal Dysplasias",
+          "frontClue": "Narrow chest decides lethality; skull shape, fractures and ossification decide the type",
+          "corePiece": "Skeletal dysplasias are suspected when long bones, especially the femur, measure well below the expected range, typically more than 2 standard deviations or below the 5th percentile. Evaluate all long bones, the pattern of shortening (rhizomelic proximal, mesomelic middle, micromelic all segments), bone shape and bowing, fractures, degree of ossification, skull shape, thorax and hands and feet. Thanatophoric dysplasia is the most common lethal dysplasia: severe micromelia, a very narrow thorax, a large head, and curved telephone-receiver femurs (type I) or a cloverleaf skull (type II). Osteogenesis imperfecta type II shows multiple fractures, crumpled or bowed bones and a poorly ossified, compressible skull. Achondrogenesis shows absent or poor vertebral body ossification. Heterozygous achondroplasia, the most common nonlethal dysplasia, usually shows rhizomelic shortening only after about 22 to 24 weeks, with frontal bossing and a trident hand. Pulmonary hypoplasia from a small thorax causes lethality; a thoracic circumference to abdominal circumference ratio under about 0.8 and a femur length to AC ratio under 0.16 suggest a lethal dysplasia.",
+          "whyLock": "Start by deciding whether the dysplasia is likely lethal, because that drives counseling, and the chest is the answer: a bell-shaped, narrow thorax means pulmonary hypoplasia. Then use the distinctive clues: cloverleaf skull, fractures, or missing ossification. A trap is diagnosing achondroplasia on a normal mid-trimester scan; the shortening often appears later. Another is misreading constitutionally short bones in a small fetus as dysplasia; look for proportion and other abnormal findings.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "Abdominal Circumference & Femur Length",
+              "link": "Femur length is usually the first measurement to flag a dysplasia."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Fetal Growth Restriction",
+              "link": "Short bones may also reflect early growth restriction."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Soft Markers & Aneuploidy",
+              "link": "Mildly short long bones can be a soft marker rather than a dysplasia."
+            }
+          ],
+          "registryApplication": "Questions match signs (cloverleaf skull, telephone-receiver femur, fractures, poor ossification) to a dysplasia and ask which finding best predicts lethality.",
+          "checkpoint": {
+            "pearl": "Narrow chest kills; the skull and bones name the type",
+            "reflection": "Which single sonographic finding best predicts that a skeletal dysplasia is lethal, and why?"
+          },
+          "keyTerms": [
+            "Thanatophoric Dysplasia",
+            "Osteogenesis Imperfecta",
+            "Achondroplasia",
+            "Achondrogenesis",
+            "Rhizomelia",
+            "Pulmonary Hypoplasia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 19"
+        },
+        {
+          "id": "obgyn-soft-markers-aneuploidy",
+          "title": "Soft Markers & Aneuploidy",
+          "frontClue": "Thick nuchal fold, absent nasal bone, short limbs: adjust risk, do not diagnose",
+          "corePiece": "Soft markers are minor second-trimester findings that are usually normal variants but change the estimated risk of aneuploidy. They include a nuchal fold of 6 mm or more at 15 to 20 weeks (measured in the transcerebellar plane from the outer skull to the outer skin), an absent or hypoplastic nasal bone, an echogenic intracardiac focus, echogenic bowel, renal pelvis dilation, a short humerus or femur, choroid plexus cysts and a single umbilical artery. Nuchal fold and nasal bone findings carry the most weight. SMFM advises that an isolated echogenic focus or choroid plexus cyst in a patient with low-risk cell-free DNA needs no further testing. Typical patterns: trisomy 21 shows AV septal defect, duodenal atresia, nuchal fold thickening, absent nasal bone, sandal gap and clinodactyly. Trisomy 18 shows FGR, clenched hands with overlapping fingers, rocker-bottom feet, a strawberry skull, choroid plexus cysts, omphalocele and polyhydramnios. Trisomy 13 shows holoprosencephaly, midline cleft, postaxial polydactyly and echogenic kidneys. Turner syndrome shows a septated cystic hygroma, hydrops, coarctation and horseshoe kidney.",
+          "whyLock": "The exam distinguishes markers from major anomalies: one marker slightly adjusts risk, while a structural defect such as an AV septal defect or omphalocele has a much stronger association. Choose the trisomy by grouping findings, not by one feature. A trap is overreacting to an isolated echogenic focus after normal screening. Another is mixing up nuchal translucency in the first trimester with nuchal fold in the second. A single umbilical artery should trigger a detailed look at the kidneys and heart.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 6",
+              "title": "Nuchal Translucency",
+              "link": "Nuchal translucency is the first-trimester counterpart to the nuchal fold."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Ventriculomegaly & Holoprosencephaly",
+              "link": "Holoprosencephaly anchors the trisomy 13 pattern."
+            },
+            {
+              "piece": "Piece 24",
+              "title": "Vasa Previa & Cord Insertion",
+              "link": "Cord evaluation identifies a single umbilical artery, another soft marker."
+            }
+          ],
+          "registryApplication": "Expect pattern questions matching groups of findings to trisomy 21, 18, 13, Turner syndrome or triploidy, and questions on the significance of isolated markers.",
+          "checkpoint": {
+            "pearl": "21: AVSD and double bubble; 18: clenched hands and CPC; 13: holoprosencephaly and polydactyly",
+            "reflection": "A fetus has clenched hands, rocker-bottom feet and FGR with polyhydramnios. Which trisomy fits, and which other findings would you look for?"
+          },
+          "keyTerms": [
+            "Nuchal Fold",
+            "Nasal Bone",
+            "Echogenic Intracardiac Focus",
+            "Choroid Plexus Cyst",
+            "Single Umbilical Artery",
+            "Trisomy 18",
+            "Trisomy 21"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 20"
+        }
+      ]
+    },
+    {
+      "id": "obgyn-placenta-cord-amniotic-fluid",
+      "title": "Placenta, Cord & Amniotic Fluid",
+      "pieceRange": "Pieces 21-25",
+      "examType": "ARDMS RDMS Obstetrics & Gynecology (OB/GYN)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Placental position and invasion, abruption, cord insertion and amniotic fluid volume",
+      "topics": [
+        {
+          "id": "obgyn-placenta-previa-low-lying-placenta",
+          "title": "Placenta Previa & Low-Lying Placenta",
+          "frontClue": "Painless bright red bleeding: confirm the edge-to-os distance transvaginally",
+          "corePiece": "Placenta previa is placental tissue covering the internal cervical os. Current terminology from the 2014 multispecialty workshop uses only two categories: placenta previa, when the placenta covers the os, and low-lying placenta, when the placental edge lies within 2 cm of the internal os without covering it; older terms such as marginal and partial previa are no longer recommended. The classic presentation is painless, bright red bleeding in the second half of pregnancy. Transvaginal imaging is safe in previa and is more accurate than transabdominal imaging; the probe stays a few centimeters away from the cervix, and translabial imaging is an alternative. Measure the distance from the placental edge to the internal os. Most previa found in the second trimester resolves as the lower uterine segment develops (often called placental migration), so a follow-up scan is done at about 32 weeks. False-positive previa can result from an overdistended maternal bladder or a lower segment contraction, which compress the lower segment and make the placenta look closer to the os.",
+          "whyLock": "Previa questions hinge on technique and pitfalls. An overfull bladder pushes the anterior and posterior walls together and can mimic previa, so rescan after voiding. A myometrial contraction can mimic both previa and a fibroid; it changes over 20 to 30 minutes. A trap is believing transvaginal scanning is contraindicated in bleeding from previa; it is safe and preferred. The most important association to remember is previa plus prior cesarean, which strongly raises the risk of placenta accreta spectrum.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 22",
+              "title": "Placenta Accreta Spectrum",
+              "link": "Previa over a cesarean scar is the strongest risk factor for accreta."
+            },
+            {
+              "piece": "Piece 24",
+              "title": "Vasa Previa & Cord Insertion",
+              "link": "Low-lying and bilobed placentas raise the risk of vasa previa."
+            },
+            {
+              "piece": "Piece 49",
+              "title": "Safety, ALARA & Transvaginal Technique",
+              "link": "Transvaginal technique is safe and preferred for measuring the edge-to-os distance."
+            }
+          ],
+          "registryApplication": "Expect questions on current definitions, the safety of transvaginal imaging, causes of false-positive previa, and the timing of follow-up.",
+          "checkpoint": {
+            "pearl": "Covers the os is previa; within 2 cm is low-lying",
+            "reflection": "Why does an overdistended bladder cause a false-positive diagnosis of previa?"
+          },
+          "keyTerms": [
+            "Placenta Previa",
+            "Low-Lying Placenta",
+            "Internal Os",
+            "Placental Migration",
+            "Lower Uterine Segment",
+            "Translabial Imaging"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 21"
+        },
+        {
+          "id": "obgyn-placenta-accreta-spectrum",
+          "title": "Placenta Accreta Spectrum",
+          "frontClue": "Prior cesarean plus anterior previa: look for lacunae and lost clear zone",
+          "corePiece": "Placenta accreta spectrum is abnormal adherence of the placenta caused by a defect in the decidua basalis. Accreta villi attach to the myometrium, increta villi invade into it, and percreta villi penetrate the serosa, sometimes into the bladder. The strongest risk factors are placenta previa and prior cesarean delivery, with risk rising with each cesarean; other risks include uterine surgery, curettage, and IVF. Gray-scale signs include multiple large, irregular placental lacunae with turbulent flow (a moth-eaten or Swiss cheese appearance), loss of the hypoechoic retroplacental clear zone, myometrial thinning to under 1 mm, interruption of the echogenic bladder wall line, and placental bulge or focal exophytic mass. Color Doppler shows uterovesical hypervascularity and bridging vessels crossing from placenta through the myometrium to the bladder wall. MRI may help with posterior placentas or to assess depth. Accreta in the first trimester may present as a low implantation sac in a cesarean scar. Untreated, accreta causes massive hemorrhage at delivery; planned cesarean hysterectomy is common.",
+          "whyLock": "Accreta is a diagnosis you must look for in the right patient, because the signs can be subtle. Every anterior low placenta in a woman with a prior cesarean deserves a targeted look at the lower segment and bladder interface. A trap is relying on loss of the clear zone alone, which is common in normal pregnancies, especially with a full bladder or excess probe pressure. Lacunae plus abnormal bridging vascularity are more reliable. A cesarean scar pregnancy is a precursor of accreta.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 21",
+              "title": "Placenta Previa & Low-Lying Placenta",
+              "link": "Previa is the main setting in which accreta develops."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Ectopic Pregnancy",
+              "link": "Cesarean scar ectopic implantation can evolve into accreta spectrum."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Placental Abruption & Subchorionic Hemorrhage",
+              "link": "Both are causes of serious obstetric hemorrhage with different mechanisms."
+            }
+          ],
+          "registryApplication": "Questions ask for the strongest risk factor, the spectrum terms by depth, and which sonographic signs suggest invasion.",
+          "checkpoint": {
+            "pearl": "Accreta attaches, increta invades, percreta penetrates",
+            "reflection": "Which sonographic signs best indicate placental invasion, and why is loss of the clear zone alone unreliable?"
+          },
+          "keyTerms": [
+            "Placenta Accreta",
+            "Placenta Increta",
+            "Placenta Percreta",
+            "Placental Lacunae",
+            "Retroplacental Clear Zone",
+            "Bridging Vessels"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 22"
+        },
+        {
+          "id": "obgyn-placental-abruption-subchorionic-hemorrhage",
+          "title": "Placental Abruption & Subchorionic Hemorrhage",
+          "frontClue": "Painful bleeding and a tender uterus; a normal scan does not exclude abruption",
+          "corePiece": "Placental abruption is premature separation of a normally implanted placenta before delivery. It presents with painful bleeding, uterine tenderness and contractions; bleeding may be concealed. Risk factors include hypertension and preeclampsia, trauma, cocaine use, smoking, prior abruption, preterm rupture of membranes and thrombophilia. Ultrasound is insensitive and misses many abruptions, so diagnosis is clinical. When seen, a retroplacental hematoma lies between the placenta and myometrium; a marginal hematoma lifts the placental edge, and a preplacental hematoma lies under the chorionic plate. Acute blood is hyperechoic or isoechoic to placenta and can look like a thick placenta; it becomes hypoechoic within about 1 to 2 weeks. Absence of internal color flow helps separate hematoma from placenta or a fibroid. Subchorionic hemorrhage, common in the first trimester, is a crescent-shaped hypoechoic or anechoic collection between the chorion and the uterine wall, beside the gestational sac. Small ones usually resolve; large hematomas, especially relative to sac size, increase the risk of pregnancy loss.",
+          "whyLock": "The main lesson is the limitation of the method: a normal ultrasound does not exclude abruption, so the answer to what rules it out is never ultrasound alone. Know that echogenicity changes with time, so a fresh hematoma can masquerade as thick placenta. A trap is calling a retroplacental myometrial contraction or the normal retroplacental venous complex an abruption; color Doppler and rescanning help. Subchorionic hemorrhage is the first-trimester version of the same idea, and its prognosis depends on size and maternal age.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 28",
+              "title": "Maternal Diabetes & Hypertension",
+              "link": "Maternal hypertension and preeclampsia are major abruption risk factors."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Placenta Previa & Low-Lying Placenta",
+              "link": "Previa causes painless bleeding, while abruption is typically painful."
+            },
+            {
+              "piece": "Piece 1",
+              "title": "Gestational Sac & Yolk Sac",
+              "link": "Subchorionic hemorrhage lies beside the gestational sac in early pregnancy."
+            }
+          ],
+          "registryApplication": "Expect scenarios with painful bleeding after trauma or hypertension, the time course of hematoma echogenicity, and the sensitivity limits of ultrasound.",
+          "checkpoint": {
+            "pearl": "Previa is painless; abruption hurts; ultrasound often misses abruption",
+            "reflection": "How does the echogenicity of a placental hematoma change over 2 weeks, and why does it matter?"
+          },
+          "keyTerms": [
+            "Placental Abruption",
+            "Retroplacental Hematoma",
+            "Marginal Hematoma",
+            "Subchorionic Hemorrhage",
+            "Chorionic Plate",
+            "Preeclampsia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 23"
+        },
+        {
+          "id": "obgyn-vasa-previa-cord-insertion",
+          "title": "Vasa Previa & Cord Insertion",
+          "frontClue": "Fetal vessels across the os, unprotected by placenta or cord",
+          "corePiece": "Vasa previa is the presence of unprotected fetal vessels running through the membranes over or within 2 cm of the internal os. If they rupture with the membranes, the fetus can bleed to death within minutes. Risk factors are a velamentous cord insertion, a succenturiate or bilobed placenta with vessels crossing between lobes, a low-lying placenta or previa that resolved, and IVF conception. Diagnosis is by transvaginal color Doppler showing vessels over the cervix, with pulsed Doppler confirming a fetal arterial waveform at the fetal heart rate. Management is planned cesarean delivery, typically at about 34 to 37 weeks. Normal cord insertion is central or eccentric on the placenta. A marginal or battledore insertion lies within 2 cm of the placental edge. A velamentous insertion enters the membranes, with vessels running unprotected to the placenta, and is associated with FGR and multiple gestations, especially monochorionic twins. A two-vessel cord (single umbilical artery) is confirmed by color around the fetal bladder and is associated with renal and cardiac anomalies.",
+          "whyLock": "Vasa previa is one of the few placental findings where detection before labor makes a dramatic difference to survival, so the exam expects you to know when to look: a velamentous insertion, a bilobed or succenturiate placenta, or a resolved low-lying placenta. A trap is calling a free cord loop vasa previa; repositioning the patient moves a cord loop but not fixed membranous vessels. Another is confusing maternal vessels with fetal ones; the pulsed Doppler rate settles it. Document the cord insertion site routinely.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 21",
+              "title": "Placenta Previa & Low-Lying Placenta",
+              "link": "A resolved low-lying placenta still leaves risk for vasa previa."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Soft Markers & Aneuploidy",
+              "link": "A single umbilical artery is a soft marker that prompts a detailed anatomy review."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Chorionicity & Amnionicity",
+              "link": "Velamentous insertion is more common in monochorionic twins."
+            }
+          ],
+          "registryApplication": "Questions ask for the risk factors, the confirmatory Doppler finding, how to separate vasa previa from a cord loop, and the significance of a two-vessel cord.",
+          "checkpoint": {
+            "pearl": "Velamentous or bilobed placenta: color Doppler the cervix",
+            "reflection": "What pulsed Doppler finding confirms that a vessel over the cervix is fetal rather than maternal?"
+          },
+          "keyTerms": [
+            "Vasa Previa",
+            "Velamentous Cord Insertion",
+            "Succenturiate Lobe",
+            "Marginal Cord Insertion",
+            "Two-Vessel Cord",
+            "Color Doppler"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 24"
+        },
+        {
+          "id": "obgyn-amniotic-fluid-assessment",
+          "title": "Amniotic Fluid Assessment",
+          "frontClue": "AFI 5 to 24 cm normal; deepest pocket 2 to 8 cm normal",
+          "corePiece": "Amniotic fluid is mostly fetal urine after about 16 weeks and is removed mainly by fetal swallowing. The single deepest vertical pocket (DVP or SDP) is the largest pocket free of cord and fetal parts, measured vertically with the transducer perpendicular to the floor. The amniotic fluid index (AFI) sums the deepest pockets of four quadrants divided by the linea nigra and umbilicus. Oligohydramnios is an AFI of 5 cm or less or a DVP under 2 cm; polyhydramnios is an AFI of 24 cm or more (some sources use 25 cm) or a DVP of 8 cm or more. The DVP is preferred for diagnosing oligohydramnios because AFI leads to more interventions without better outcomes. Causes of oligohydramnios include ruptured membranes (most common), placental insufficiency with FGR, post-term pregnancy, bilateral renal agenesis or dysplasia, bladder outlet obstruction. Polyhydramnios is most often idiopathic; other causes include maternal diabetes, GI obstruction, impaired swallowing in CNS anomalies, hydrops, chest masses, the recipient twin in TTTS and placental chorioangioma.",
+          "whyLock": "Reason from the fluid cycle: too little fluid means not enough urine in or fluid leaking out, and too much means not enough swallowing or absorption. A trap is measuring a pocket that contains cord; use color Doppler to exclude cord, which makes a pocket look deeper. Another trap is tilting the transducer, which lengthens the pocket. Idiopathic is the commonest cause of mild polyhydramnios, but a scan should still look for diabetes-related growth, GI obstruction and neurologic causes.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 18",
+              "title": "GI & GU Anomalies",
+              "link": "Renal anomalies cause oligohydramnios while proximal GI obstruction causes polyhydramnios."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "Biophysical Profile",
+              "link": "A 2 cm pocket is the fluid component of the biophysical profile."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Twin-Twin Transfusion Syndrome",
+              "link": "TTTS is defined by oligohydramnios in one sac and polyhydramnios in the other."
+            }
+          ],
+          "registryApplication": "Expect cutoff questions, technique details such as excluding cord, the preference for DVP in oligohydramnios, and cause-matching items.",
+          "checkpoint": {
+            "pearl": "Oligo: AFI 5 or less or DVP under 2; poly: AFI 24 or more or DVP 8 or more",
+            "reflection": "Why does bilateral renal agenesis cause anhydramnios only after about 16 weeks?"
+          },
+          "keyTerms": [
+            "Amniotic Fluid Index",
+            "Deepest Vertical Pocket",
+            "Oligohydramnios",
+            "Polyhydramnios",
+            "Rupture of Membranes",
+            "Fetal Swallowing"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 25"
+        }
+      ]
+    },
+    {
+      "id": "obgyn-maternal-conditions-fetal-well-being",
+      "title": "Maternal Conditions & Fetal Well-Being",
+      "pieceRange": "Pieces 26-30",
+      "examType": "ARDMS RDMS Obstetrics & Gynecology (OB/GYN)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Fetal surveillance, cervical assessment, maternal disease, hydrops, demise and postpartum findings",
+      "topics": [
+        {
+          "id": "obgyn-biophysical-profile",
+          "title": "Biophysical Profile",
+          "frontClue": "Breathing, movement, tone, fluid: 2 points each within 30 minutes",
+          "corePiece": "The biophysical profile (BPP) assesses fetal well-being with four ultrasound components scored 2 (normal) or 0 (abnormal) over up to 30 minutes, plus an optional nonstress test (NST). Fetal breathing: at least one episode of rhythmic breathing lasting 30 seconds or more. Fetal movement: at least three discrete body or limb movements. Fetal tone: at least one episode of extension with return to flexion of a limb or trunk, or opening and closing of a hand. Amniotic fluid: at least one pocket measuring 2 cm or more in vertical depth. A score of 8 or 10 out of 10, or 8 out of 8 without the NST, is normal; 6 is equivocal; 4 or less is abnormal and suggests fetal hypoxemia. The modified BPP combines the NST with amniotic fluid assessment. Breathing, movement, tone and NST are acute markers of central nervous system oxygenation, while fluid is a chronic marker of placental function. Tone is the first activity to develop and the last to disappear with progressive hypoxia.",
+          "whyLock": "Know the criteria precisely because the exam gives counted observations and asks for the score. Hypoxia removes activities in roughly the reverse order they developed, so loss of tone is an ominous late sign, while absent breathing alone may simply be fetal sleep, which is why scanning continues for the full 30 minutes. A trap is counting a hiccup or a single brief breath as a breathing episode. Another is ignoring low fluid when the rest of the BPP is normal; oligohydramnios reflects chronic placental compromise.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 25",
+              "title": "Amniotic Fluid Assessment",
+              "link": "The fluid component uses a single deepest pocket of at least 2 cm."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Fetal Growth Restriction",
+              "link": "BPP is part of surveillance for growth-restricted fetuses."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Maternal Diabetes & Hypertension",
+              "link": "Diabetic and hypertensive pregnancies often require serial BPP testing."
+            }
+          ],
+          "registryApplication": "Expect scoring scenarios, definitions of each component, which marker is chronic, and which activity disappears last with hypoxia.",
+          "checkpoint": {
+            "pearl": "Tone is first to appear and last to go",
+            "reflection": "During a 30-minute BPP the fetus has a 20-second breathing run, four limb movements, one hand opening and a 3 cm pocket. What is the score?"
+          },
+          "keyTerms": [
+            "Biophysical Profile",
+            "Nonstress Test",
+            "Fetal Breathing",
+            "Fetal Tone",
+            "Modified BPP",
+            "Fetal Hypoxemia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 26"
+        },
+        {
+          "id": "obgyn-cervical-length-insufficiency",
+          "title": "Cervical Length & Insufficiency",
+          "frontClue": "Transvaginal, empty bladder, no pressure: under 25 mm before 24 weeks is short",
+          "corePiece": "Transvaginal cervical length is the best sonographic predictor of spontaneous preterm birth. Technique: the patient empties her bladder; the probe is placed in the anterior fornix to get a sagittal view of the whole endocervical canal; the cervix fills about 75 percent of the image; pressure is reduced until the anterior and posterior lips are equally thick; the distance from internal to external os is measured along the canal, using two segments if it is curved. Take at least three measurements over a few minutes and record the shortest technically good one. A cervical length of 25 mm or less before 24 weeks is short and increases the risk of preterm birth; normal mid-pregnancy length is usually above 30 mm. Funneling is dilation of the internal os with membranes protruding into the canal, progressing from a T to Y, V and U shape. Cervical insufficiency is painless second-trimester dilation without contractions. Treatment options include vaginal progesterone for a short cervix and cerclage, especially with a prior preterm birth.",
+          "whyLock": "Most cervical length errors make the cervix look longer and safer than it is. A full bladder compresses the lower segment and lengthens or closes the canal; too much probe pressure also lengthens it. Transabdominal measurement is unreliable for that reason. A trap is measuring a lower segment contraction as part of the cervix; it is thicker than the cervix and changes with time. Also report the shortest good measurement, not the average. A U-shaped funnel is more concerning than a T shape.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 49",
+              "title": "Safety, ALARA & Transvaginal Technique",
+              "link": "Transvaginal preparation and probe pressure directly affect the cervical length measurement."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Placenta Previa & Low-Lying Placenta",
+              "link": "The same transvaginal view of the internal os is used to assess placental position."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "Biophysical Profile",
+              "link": "Both are tools for planning pregnancies at risk for early delivery."
+            }
+          ],
+          "registryApplication": "Questions ask for the correct technique, the short cervix threshold, the meaning of funneling, and how bladder filling or pressure distort the result.",
+          "checkpoint": {
+            "pearl": "Empty bladder, light touch, shortest of three",
+            "reflection": "Why does an overfilled bladder or heavy probe pressure falsely lengthen the cervix?"
+          },
+          "keyTerms": [
+            "Cervical Length",
+            "Internal Os",
+            "Funneling",
+            "Cervical Insufficiency",
+            "Cerclage",
+            "Preterm Birth"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 27"
+        },
+        {
+          "id": "obgyn-maternal-diabetes-hypertension",
+          "title": "Maternal Diabetes & Hypertension",
+          "frontClue": "Diabetes makes them big or malformed; hypertension makes them small",
+          "corePiece": "Pregestational diabetes, especially with poor early glucose control (high HbA1c), raises the risk of congenital anomalies, including cardiac defects such as transposition and VSD, neural tube defects, caudal regression syndrome (sacral agenesis), renal anomalies and small left colon. Both pregestational and gestational diabetes lead to macrosomia with a disproportionately large AC, polyhydramnios, thickened fetal septum, neonatal hypoglycemia and an increased stillbirth rate; poorly controlled diabetes with vascular disease can instead cause FGR. Chronic hypertension and preeclampsia reduce placental perfusion, causing FGR, oligohydramnios, abnormal umbilical artery Doppler and an increased risk of abruption. Preeclampsia is new hypertension of 140/90 mm Hg or more after 20 weeks with proteinuria or signs of end-organ damage; HELLP syndrome adds hemolysis, elevated liver enzymes and low platelets, and may cause a subcapsular hepatic hematoma. Abnormal uterine artery Doppler, with high resistance and a persistent early diastolic notch after the first half of pregnancy, reflects poor trophoblastic remodeling and predicts preeclampsia and FGR. Lupus antibodies can cause fetal heart block.",
+          "whyLock": "Remember timing: diabetes in the first weeks when organs form causes malformations, while diabetes later causes overgrowth. That is why caudal regression and heart defects belong to pregestational diabetes, not gestational diabetes. Hypertension acts through the placenta, so it is a cause of the small, oligohydramnios, high-resistance Doppler picture. A trap is assuming every diabetic fetus is large; severe diabetic vasculopathy behaves like hypertension and restricts growth. A uterine artery notch is normal early in pregnancy and significant only if it persists.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 11",
+              "title": "Macrosomia",
+              "link": "Fetal hyperinsulinemia from maternal diabetes drives overgrowth."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Fetal Growth Restriction",
+              "link": "Hypertensive placental disease is a main cause of asymmetric FGR."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Placental Abruption & Subchorionic Hemorrhage",
+              "link": "Preeclampsia and hypertension increase the risk of abruption."
+            }
+          ],
+          "registryApplication": "Expect association questions (caudal regression with diabetes, FGR with preeclampsia), preeclampsia definitions and uterine artery Doppler interpretation.",
+          "checkpoint": {
+            "pearl": "Caudal regression is the signature of pregestational diabetes",
+            "reflection": "Why does pregestational diabetes cause anomalies when gestational diabetes mainly causes overgrowth?"
+          },
+          "keyTerms": [
+            "Pregestational Diabetes",
+            "Caudal Regression Syndrome",
+            "Preeclampsia",
+            "HELLP Syndrome",
+            "Uterine Artery Doppler",
+            "Macrosomia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 28"
+        },
+        {
+          "id": "obgyn-fetal-hydrops",
+          "title": "Fetal Hydrops",
+          "frontClue": "Fluid in two fetal compartments: decide immune or nonimmune, then check the MCA",
+          "corePiece": "Hydrops fetalis is abnormal fluid in two or more fetal compartments: ascites, pleural effusion, pericardial effusion or skin edema (skin thickness over 5 mm). Placentomegaly and polyhydramnios are common accompaniments. Immune hydrops results from maternal antibodies, classically anti-D (Rh) and also anti-Kell and others, that cross the placenta and destroy fetal red cells, causing anemia and high-output heart failure. Rh immune globulin has made it uncommon. Nonimmune hydrops now accounts for most cases, about 90 percent. Causes include cardiac disorders (structural defects, arrhythmias such as supraventricular tachycardia and heart block), aneuploidy (Turner syndrome and trisomy 21), infection (parvovirus B19, CMV, syphilis, toxoplasmosis), anemia (alpha thalassemia, fetomaternal hemorrhage), twin-twin transfusion, chest masses, lymphatic abnormalities and metabolic disorders. MCA peak systolic velocity above 1.5 MoM points to anemia, which can be treated with intrauterine transfusion. Mirror (Ballantyne) syndrome is maternal edema and preeclampsia-like illness mirroring fetal hydrops. Prognosis for nonimmune hydrops is generally poor.",
+          "whyLock": "Hydrops is a final common pathway, so the sonographer's job is to find the cause. Check the heart rate and rhythm, survey the heart and chest, and measure the MCA velocity, because anemia is one of the few treatable causes. A trap is calling a single effusion hydrops; two compartments are needed. Another is forgetting the mother, whose antibody screen separates immune from nonimmune hydrops. Mild isolated ascites can follow bowel perforation or urinary tract rupture rather than generalized hydrops.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 12",
+              "title": "Umbilical Artery & MCA Doppler",
+              "link": "MCA peak systolic velocity identifies anemia, a treatable cause of hydrops."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Twin-Twin Transfusion Syndrome",
+              "link": "Hydrops in the recipient twin marks Quintero stage IV."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Soft Markers & Aneuploidy",
+              "link": "Turner syndrome commonly presents with cystic hygroma and hydrops."
+            }
+          ],
+          "registryApplication": "Questions ask for the definition, the most common category today, causes by group, and the role of MCA Doppler.",
+          "checkpoint": {
+            "pearl": "Two fetal compartments make hydrops; most is nonimmune",
+            "reflection": "A hydropic fetus has an MCA peak systolic velocity of 1.8 MoM. Which categories of cause are most likely, and what therapy might follow?"
+          },
+          "keyTerms": [
+            "Hydrops Fetalis",
+            "Immune Hydrops",
+            "Nonimmune Hydrops",
+            "Parvovirus B19",
+            "Intrauterine Transfusion",
+            "Mirror Syndrome"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 29"
+        },
+        {
+          "id": "obgyn-fetal-demise-postpartum-uterus",
+          "title": "Fetal Demise & Postpartum Uterus",
+          "frontClue": "No heartbeat confirmed by M-mode; then look for overlapping skull bones",
+          "corePiece": "Fetal demise is confirmed by absent cardiac activity on careful real-time and M-mode or color Doppler examination, not by absent movement alone. Secondary signs appear over time: the Spalding sign (overlapping cranial bones as the brain liquefies, usually after several days), the Robert sign (gas in the fetal heart or great vessels), scalp edema or a halo around the skull (Deuel sign), loss of normal fetal anatomy, abnormal flexion and collapse of the thorax. In a twin pregnancy, early demise of one twin may leave a fetus papyraceus. After delivery, the uterus involutes over about 6 weeks. In the first days postpartum the cavity may normally contain fluid, small blood clots and gas. Retained products of conception appear as an echogenic endometrial mass, and internal vascularity on color Doppler is the most helpful sign; a thin endometrium without a mass makes them unlikely. Endometritis presents with fever, fluid and gas. Post-cesarean complications include bladder flap and subfascial hematomas, and ovarian vein thrombosis, more common on the right.",
+          "whyLock": "For demise, the exam wants the proof, not the clues: absent cardiac activity confirmed with M-mode. The secondary signs help date the event and are useful when asked which finding appears late. A trap in the postpartum uterus is calling all echogenic material retained products; avascular clot is common, while vascular tissue is more specific. Gas alone can be normal after vaginal delivery, so clinical signs separate endometritis. After cesarean, look between the bladder and lower segment for a bladder flap hematoma.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Embryo, CRL & Cardiac Activity",
+              "link": "M-mode documentation of cardiac activity applies across gestation."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Conjoined Twins & Discordant Growth",
+              "link": "Single twin demise in monochorionic twins threatens the surviving co-twin."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Endometrium Through the Cycle",
+              "link": "Postpartum endometrial assessment builds on normal endometrial appearance."
+            }
+          ],
+          "registryApplication": "Questions ask how demise is confirmed, what the Spalding and Robert signs mean, and the best sign of retained products of conception.",
+          "checkpoint": {
+            "pearl": "Spalding is skull overlap; Robert is gas in vessels",
+            "reflection": "Which color Doppler finding best separates retained products of conception from postpartum clot?"
+          },
+          "keyTerms": [
+            "Fetal Demise",
+            "Spalding Sign",
+            "Robert Sign",
+            "Fetus Papyraceus",
+            "Retained Products of Conception",
+            "Bladder Flap Hematoma"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 30"
+        }
+      ]
+    },
+    {
+      "id": "obgyn-multiple-gestations",
+      "title": "Multiple Gestations",
+      "pieceRange": "Pieces 31-34",
+      "examType": "ARDMS RDMS Obstetrics & Gynecology (OB/GYN)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Chorionicity and amnionicity and the complications of monochorionic twins",
+      "topics": [
+        {
+          "id": "obgyn-chorionicity-amnionicity",
+          "title": "Chorionicity & Amnionicity",
+          "frontClue": "Lambda means two placentas; T means one shared placenta",
+          "corePiece": "Chorionicity, the number of chorions (and so of separate placental circulations), is the most important determinant of twin risk and is best assigned in the first trimester, ideally before 14 weeks. Before about 10 weeks, count the gestational sacs (one per chorion) and the amnions or yolk sacs within them. Later, the lambda or twin peak sign, a triangular wedge of placental tissue extending into the base of the dividing membrane, indicates a dichorionic pregnancy. The T sign, a thin membrane meeting the placenta at a right angle without a wedge, indicates monochorionic diamniotic twins. Dichorionic membranes are thicker (about 2 mm or more); monochorionic membranes are thin. Two separate placentas or different fetal sexes indicate dichorionic twins. No dividing membrane suggests monochorionic monoamniotic twins, which risk cord entanglement. Dizygotic twins are always dichorionic diamniotic. In monozygotic twins the timing of division sets the type: before about day 4 dichorionic diamniotic, days 4 to 8 monochorionic diamniotic (the most common type of monozygotic twin), days 8 to 13 monochorionic monoamniotic, and after day 13 conjoined.",
+          "whyLock": "Assign and document chorionicity early, because the lambda sign can disappear later in pregnancy, making a dichorionic pregnancy look monochorionic. Monochorionic twins share placental circulation through vascular anastomoses, which is why TTTS, TRAP and the danger of co-twin demise occur only in them. A trap is assuming same-sex twins with one placental mass are monochorionic; fused dichorionic placentas look like one, so look for the lambda sign. Remember the order of division timing: later division means more shared structures.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 32",
+              "title": "Twin-Twin Transfusion Syndrome",
+              "link": "TTTS occurs only in monochorionic twins with shared placental anastomoses."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Conjoined Twins & Discordant Growth",
+              "link": "Division after day 13 results in conjoined twins."
+            },
+            {
+              "piece": "Piece 33",
+              "title": "TRAP Sequence",
+              "link": "TRAP requires a monochorionic placenta with arterial anastomoses."
+            }
+          ],
+          "registryApplication": "Expect questions identifying the lambda and T signs, the best time to assign chorionicity, and the zygosity timeline.",
+          "checkpoint": {
+            "pearl": "Later split, more shared: DCDA, MCDA, MCMA, conjoined",
+            "reflection": "Why is chorionicity more important than zygosity for predicting twin complications?"
+          },
+          "keyTerms": [
+            "Chorionicity",
+            "Amnionicity",
+            "Lambda Sign",
+            "T Sign",
+            "Monochorionic Diamniotic",
+            "Monoamniotic Twins"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 31"
+        },
+        {
+          "id": "obgyn-twin-twin-transfusion-syndrome",
+          "title": "Twin-Twin Transfusion Syndrome",
+          "frontClue": "Monochorionic only: stuck donor with no bladder, polyhydramnios recipient",
+          "corePiece": "Twin-twin transfusion syndrome (TTTS) complicates about 10 to 15 percent of monochorionic diamniotic pregnancies. Unbalanced arteriovenous anastomoses in the shared placenta move blood from the donor to the recipient twin. Diagnosis requires a monochorionic pregnancy with oligohydramnios in the donor sac (deepest pocket under 2 cm) and polyhydramnios in the recipient sac (deepest pocket of 8 cm or more). The donor may appear stuck against the uterine wall, with a small or absent bladder. The recipient has a large bladder and develops volume overload and eventually hydrops. Quintero staging: stage I, discordant fluid with the donor bladder still visible; stage II, donor bladder not visible; stage III, critically abnormal Doppler such as absent or reversed end-diastolic flow in the umbilical artery, reversed a-wave in the ductus venosus or pulsatile umbilical venous flow; stage IV, hydrops in either twin; stage V, demise of one or both. Monochorionic twins are screened about every 2 weeks from 16 weeks. Fetoscopic laser ablation of anastomoses is the preferred treatment for advanced disease in mid-gestation.",
+          "whyLock": "The diagnosis is based on fluid, not weight. Growth discordance alone, without the oligohydramnios-polyhydramnios sequence, is selective growth restriction, a different condition. A trap is diagnosing TTTS in dichorionic twins, which lack the shared circulation. Another is confusing the twins: the donor is small, dry and has no bladder; the recipient is overloaded and wet. Twin anemia polycythemia sequence is a related condition with discordant MCA velocities but no fluid imbalance.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 31",
+              "title": "Chorionicity & Amnionicity",
+              "link": "Only monochorionic twins share the anastomoses that drive TTTS."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Amniotic Fluid Assessment",
+              "link": "TTTS is defined by deepest pocket cutoffs in each sac."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Fetal Hydrops",
+              "link": "Hydrops in either twin moves the syndrome to Quintero stage IV."
+            }
+          ],
+          "registryApplication": "Questions give twin fluid and bladder findings and ask for the diagnosis, the Quintero stage, or the chorionicity required.",
+          "checkpoint": {
+            "pearl": "Stage II: the donor bladder disappears",
+            "reflection": "Monochorionic twins show pockets of 1.5 cm and 9 cm, and the donor bladder is not seen. What is the Quintero stage?"
+          },
+          "keyTerms": [
+            "Twin-Twin Transfusion Syndrome",
+            "Quintero Staging",
+            "Stuck Twin",
+            "Arteriovenous Anastomoses",
+            "Laser Ablation",
+            "Twin Anemia Polycythemia Sequence"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 32"
+        },
+        {
+          "id": "obgyn-trap-sequence",
+          "title": "TRAP Sequence",
+          "frontClue": "An acardiac twin with reversed flow toward it, perfused by the pump twin",
+          "corePiece": "Twin reversed arterial perfusion (TRAP) sequence is a rare complication of monochorionic twins. Through an artery-to-artery anastomosis on the shared placenta, the normal pump twin perfuses an acardiac twin with deoxygenated blood. Because flow runs backwards, the umbilical artery of the acardiac twin carries blood toward it rather than away from it, which color and pulsed Doppler demonstrate. The acardiac twin has an absent or rudimentary heart and typically lacks the head and upper body (acardius acephalus); the lower body and legs are better developed because they receive the first, relatively better oxygenated blood. Marked subcutaneous edema and cystic hygroma are common, and the mass may keep growing. The pump twin is structurally normal but has a heavy cardiac workload and risks high-output heart failure, polyhydramnios, hydrops and preterm delivery. A large acardiac mass relative to the pump twin predicts a worse outcome. Treatment, such as radiofrequency ablation of the acardiac cord, stops the flow.",
+          "whyLock": "The key concept is reversed perfusion: the normal twin is the one at risk, because it pumps for two. The exam likes the Doppler clue of arterial flow traveling into the abnormal twin through its cord. A trap is calling the acardiac twin a dead twin; a dead twin does not grow or show flow. Another is assuming TRAP can occur in dichorionic twins; it requires the shared monochorionic circulation. Watch the pump twin for heart failure and polyhydramnios.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 31",
+              "title": "Chorionicity & Amnionicity",
+              "link": "TRAP requires a shared monochorionic placenta."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Fetal Hydrops",
+              "link": "High-output failure in the pump twin can progress to hydrops."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Twin-Twin Transfusion Syndrome",
+              "link": "Both are complications of monochorionic placental anastomoses with different mechanisms."
+            }
+          ],
+          "registryApplication": "Expect scenarios with a malformed twin lacking cardiac motion and ask for the diagnosis, which twin is at risk, and the expected Doppler direction of flow.",
+          "checkpoint": {
+            "pearl": "The pump twin is the patient",
+            "reflection": "Why does the acardiac twin usually have better-developed legs than upper body?"
+          },
+          "keyTerms": [
+            "TRAP Sequence",
+            "Acardiac Twin",
+            "Pump Twin",
+            "Artery-to-Artery Anastomosis",
+            "Reversed Flow",
+            "High-Output Heart Failure"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 33"
+        },
+        {
+          "id": "obgyn-conjoined-twins-discordant-growth",
+          "title": "Conjoined Twins & Discordant Growth",
+          "frontClue": "No membrane, fixed position: conjoined; 20 to 25 percent weight gap: discordance",
+          "corePiece": "Conjoined twins result from incomplete division of a monozygotic embryo after about day 13 and are always monochorionic monoamniotic. They are rare, and are named by the site of union with the suffix pagus: thoracopagus (chest, often sharing the heart) and thoracoomphalopagus are the most common. Sonographic findings include no dividing membrane, fetuses in a fixed position relative to each other that does not change with time, skin contours that cannot be separated, shared organs such as liver or heart, and often polyhydramnios. Growth discordance is calculated as the larger twin's EFW minus the smaller twin's, divided by the larger twin's EFW; a difference of about 20 to 25 percent or more is significant. In monochorionic twins, selective FGR (one twin under the 10th percentile) is classified by umbilical artery Doppler of the smaller twin. If one monochorionic twin dies, the survivor is at significant risk of neurologic injury or death from acute blood loss into the dead twin.",
+          "whyLock": "With conjoined twins, the key exam point is that a monoamniotic pregnancy with fetuses that stay together and never change their relationship over time is suspicious; separate monoamniotic twins move independently. For discordant growth, calculate using the larger twin as the denominator. A trap is equating discordance with TTTS; TTTS needs the fluid sequence. Dichorionic twins have no shared circulation, so the demise of one twin threatens the survivor much less than in monochorionic twins.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 31",
+              "title": "Chorionicity & Amnionicity",
+              "link": "Division timing explains why conjoined twins are always monoamniotic."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Twin-Twin Transfusion Syndrome",
+              "link": "Growth discordance must be separated from the fluid-defined TTTS."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Fetal Growth Restriction",
+              "link": "Selective FGR applies the singleton growth definition to one twin."
+            }
+          ],
+          "registryApplication": "Questions ask for the most common type of conjoined twin, the signs of fusion, how to calculate discordance and why monochorionic co-twin demise is dangerous.",
+          "checkpoint": {
+            "pearl": "Discordance = (larger minus smaller) divided by larger",
+            "reflection": "Twins have EFWs of 2,000 g and 1,500 g. What is the percent discordance, and is it significant?"
+          },
+          "keyTerms": [
+            "Conjoined Twins",
+            "Thoracopagus",
+            "Growth Discordance",
+            "Selective FGR",
+            "Co-Twin Demise",
+            "Monoamniotic Twins"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 34"
+        }
+      ]
+    },
+    {
+      "id": "obgyn-uterus-cervix",
+      "title": "Uterus & Cervix",
+      "pieceRange": "Pieces 35-39",
+      "examType": "ARDMS RDMS Obstetrics & Gynecology (OB/GYN)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Uterine anatomy and position, the endometrium, benign and malignant uterine disease, congenital anomalies and IUDs",
+      "topics": [
+        {
+          "id": "obgyn-uterine-anatomy-position-iud",
+          "title": "Uterine Anatomy, Position & IUD",
+          "frontClue": "Version is the cervix to the vagina; flexion is the body to the cervix",
+          "corePiece": "The uterus has a fundus, body (corpus), isthmus and cervix, and three layers: the endometrium, the myometrium and the serosa. An adult nulliparous uterus measures about 6 to 8 cm long and grows larger with parity, while a postmenopausal uterus shrinks. The corpus to cervix ratio is about 1 to 1 before puberty, about 2 to 1 in reproductive years, and returns toward 1 to 1 after menopause. Version is the angle between the cervix and the vagina; flexion is the angle between the body and the cervix. Most uteri are anteverted and anteflexed. A retroverted or retroflexed uterus points the fundus posteriorly, is harder to see transabdominally, and can look hypoechoic, mimicking a fibroid. An intrauterine device should lie centered in the endometrial cavity with its top near the fundus. Copper IUDs are uniformly echogenic, while levonorgestrel IUDs show a shadowing shaft with echogenic ends. 3D coronal views show the arms best. Malpositions include a low or cervical IUD, embedment in the myometrium, perforation and expulsion.",
+          "whyLock": "Position terms are a classic exam trap: version and flexion describe two different angles, and a uterus can be anteverted and retroflexed at once. Retroflexion causes poor penetration of the fundus, which a beginner can mistake for pathology, so adjust the approach rather than reporting a mass. For IUDs, the main teaching point is that an IUD not seen in the uterus cannot be assumed expelled; it may have perforated, so an abdominal radiograph is the next step. A 3D coronal reconstruction is the best way to show arm embedment.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Endometrium Through the Cycle",
+              "link": "Endometrial thickness is measured in the midsagittal plane of this anatomy."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "Mullerian Anomalies",
+              "link": "The 3D coronal view used for IUD arms also defines the fundal contour."
+            },
+            {
+              "piece": "Piece 49",
+              "title": "Safety, ALARA & Transvaginal Technique",
+              "link": "Transvaginal scanning best displays a retroflexed fundus."
+            }
+          ],
+          "registryApplication": "Questions ask to define version and flexion, normal size ratios by age, the sonographic look of each IUD type and the next step for a missing IUD.",
+          "checkpoint": {
+            "pearl": "Missing IUD on ultrasound: get an abdominal radiograph",
+            "reflection": "How would you explain the difference between a retroverted and a retroflexed uterus to a student?"
+          },
+          "keyTerms": [
+            "Anteverted",
+            "Anteflexed",
+            "Retroflexed",
+            "Retroverted",
+            "Intrauterine Device",
+            "3D Coronal View"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 35"
+        },
+        {
+          "id": "obgyn-endometrium-through-the-cycle",
+          "title": "Endometrium Through the Cycle",
+          "frontClue": "Thin line, then triple line, then thick bright secretory endometrium",
+          "corePiece": "Endometrial thickness is measured on a midsagittal view of the uterus as the maximum anterior-to-posterior double-layer thickness, from the echogenic interface on one side to the other, excluding the hypoechoic subendometrial halo; if fluid is present, measure each layer and add them. During menstruation (days 1 to 5) the endometrium is a thin echogenic line, often 1 to 4 mm, sometimes with blood or debris in the cavity. In the proliferative phase (about days 6 to 14), estrogen produces a multilayered, triple-line or trilaminar appearance, an echogenic outer layer and central line with a hypoechoic functional layer, thickening to about 5 to 10 mm. Around ovulation it reaches about 10 to 11 mm. In the secretory phase (about days 15 to 28), progesterone makes the endometrium uniformly echogenic and thick, often 7 to 16 mm, sometimes with posterior acoustic enhancement. The triple-line pattern is associated with a receptive endometrium in fertility treatment. Endometrial echoes during early pregnancy are thick and echogenic as the decidual reaction forms.",
+          "whyLock": "Phase identification is a common question: if you see a triple line, you are in the proliferative phase; if the lining is thick and bright, the patient is secretory or early pregnant. A trap is measuring the hypoechoic halo, which is inner myometrium, as part of the endometrium. Another is calling a normal thick secretory lining abnormal in a premenopausal patient. Timing studies such as sonohysterography to the early proliferative phase gives the thinnest lining and the clearest look at focal lesions.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 37",
+              "title": "Postmenopausal Endometrium & Polyps",
+              "link": "Thickness thresholds after menopause build on this measurement technique."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Sonohysterography",
+              "link": "Saline studies are timed to the thin early proliferative endometrium."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Ovulation Induction & OHSS",
+              "link": "A trilaminar lining of 7 mm or more is favorable in fertility cycles."
+            }
+          ],
+          "registryApplication": "Expect phase-recognition questions, correct measurement technique and the effects of estrogen and progesterone on appearance.",
+          "checkpoint": {
+            "pearl": "Estrogen layers it; progesterone brightens it",
+            "reflection": "Where exactly do you place calipers to measure endometrial thickness when there is fluid in the cavity?"
+          },
+          "keyTerms": [
+            "Endometrial Thickness",
+            "Proliferative Phase",
+            "Secretory Phase",
+            "Trilaminar Endometrium",
+            "Subendometrial Halo",
+            "Sonohysterography"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 36"
+        },
+        {
+          "id": "obgyn-postmenopausal-endometrium-polyps",
+          "title": "Postmenopausal Endometrium & Polyps",
+          "frontClue": "Bleeding after menopause: 4 mm or less is reassuring",
+          "corePiece": "In a postmenopausal woman with bleeding, an endometrial thickness of 4 mm or less (some sources use 5 mm) has a very high negative predictive value for endometrial cancer, and sampling can usually be avoided. A thicker or poorly seen endometrium needs further evaluation, such as biopsy, sonohysterography or hysteroscopy. In asymptomatic postmenopausal women no single threshold applies, and thickness alone does not require biopsy. Hormone therapy may thicken the endometrium. Tamoxifen often produces a thick, heterogeneous lining with small subendometrial cysts, and increases the risk of polyps, hyperplasia and cancer. Endometrial hyperplasia, from unopposed estrogen in obesity, PCOS, estrogen therapy or estrogen-producing granulosa cell tumors, usually shows diffuse smooth thickening. Endometrial carcinoma may show irregular, heterogeneous thickening, an irregular or disrupted endometrial-myometrial interface suggesting invasion, and internal vascularity. An endometrial polyp is a focal echogenic mass that preserves the interface, often with a single feeding vessel (pedicle artery sign), and sometimes with small cystic spaces. On sonohysterography, a polyp is an echogenic mass outlined by saline.",
+          "whyLock": "Remember that the 4 mm rule applies to women with bleeding; applying it to asymptomatic patients creates unnecessary biopsies. The interface tells benign from invasive: a smooth intact endometrial-myometrial border suggests polyp or hyperplasia, while disruption suggests cancer. A trap is confusing a polyp with a submucosal fibroid: polyps are echogenic, arise from the endometrium and have one feeding vessel, while fibroids are hypoechoic, shadow and arise beneath the endometrium with peripheral vessels. Tamoxifen cystic changes are often subendometrial, not true endometrial thickening.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Endometrium Through the Cycle",
+              "link": "Technique for measuring thickness is the same before and after menopause."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Fibroids & Adenomyosis",
+              "link": "Submucosal fibroids are the main differential of an endometrial polyp."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Sonohysterography",
+              "link": "Saline infusion separates focal polyps from diffuse thickening."
+            }
+          ],
+          "registryApplication": "Expect cutoff questions for bleeding patients, tamoxifen effects, signs of myometrial invasion and the features separating polyps from fibroids.",
+          "checkpoint": {
+            "pearl": "Polyp: echogenic with one feeding vessel; fibroid: hypoechoic with peripheral flow",
+            "reflection": "A postmenopausal woman with bleeding has a 9 mm endometrium with a single feeding vessel. What is the likely diagnosis and the best next imaging test?"
+          },
+          "keyTerms": [
+            "Postmenopausal Bleeding",
+            "Endometrial Hyperplasia",
+            "Endometrial Carcinoma",
+            "Endometrial Polyp",
+            "Pedicle Artery Sign",
+            "Tamoxifen"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 37"
+        },
+        {
+          "id": "obgyn-fibroids-adenomyosis",
+          "title": "Fibroids & Adenomyosis",
+          "frontClue": "Fibroids are well-defined and push vessels aside; adenomyosis is ill-defined with vessels running through",
+          "corePiece": "Leiomyomas (fibroids) are the most common uterine tumor. They are well-circumscribed, round, usually hypoechoic or heterogeneous masses with edge shadowing and often a fan of fine linear shadows, and color Doppler shows peripheral, circumferential flow around the mass. They are classified by location: submucosal (projecting into the cavity, most likely to cause bleeding and infertility), intramural, subserosal, pedunculated and cervical, as in the FIGO system. A pedunculated fibroid may mimic an adnexal mass; the bridging vessel sign, vessels running from the uterus to the mass, confirms a uterine origin. Fibroids depend on estrogen, may grow in pregnancy and shrink after menopause. Degeneration may be hyaline (most common), cystic, calcific (common after menopause) or red (carneous) degeneration, which causes pain in pregnancy. Rapid growth after menopause raises concern for leiomyosarcoma. Adenomyosis is endometrial tissue within the myometrium. It produces a globular, enlarged uterus with asymmetric myometrial thickening, often posterior, heterogeneous myometrium, small myometrial cysts, echogenic subendometrial lines or buds, an ill-defined junctional zone, fan-shaped shadowing and translesional vascularity.",
+          "whyLock": "Both conditions cause heavy bleeding and an enlarged uterus, so the exam focuses on telling them apart. Fibroids are discrete, with margins and a vascular rim; adenomyosis is diffuse or poorly defined, without a capsule, with vessels crossing through. A trap is calling a transient myometrial contraction a fibroid in pregnancy; rescan in 20 to 30 minutes. Another is calling a pedunculated fibroid an ovarian mass; finding both ovaries separately and a bridging vessel solves it. Pain in a pregnant patient with a fibroid suggests red degeneration.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 37",
+              "title": "Postmenopausal Endometrium & Polyps",
+              "link": "Submucosal fibroids must be distinguished from polyps."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Sonohysterography",
+              "link": "Saline shows how much of a submucosal fibroid projects into the cavity."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "O-RADS & Ovarian Neoplasms",
+              "link": "A pedunculated fibroid can mimic a solid adnexal mass."
+            }
+          ],
+          "registryApplication": "Questions ask for fibroid locations and degeneration types, the bridging vessel sign, and features that separate adenomyosis from fibroids.",
+          "checkpoint": {
+            "pearl": "Fibroid flow goes around; adenomyosis flow goes through",
+            "reflection": "Which color Doppler pattern helps differentiate a focal adenomyoma from an intramural fibroid?"
+          },
+          "keyTerms": [
+            "Leiomyoma",
+            "Submucosal Fibroid",
+            "Bridging Vessel Sign",
+            "Red Degeneration",
+            "Adenomyosis",
+            "Translesional Vascularity"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 38"
+        },
+        {
+          "id": "obgyn-mullerian-anomalies",
+          "title": "Mullerian Anomalies",
+          "frontClue": "Look at the outer fundal contour in 3D coronal: notched means two horns",
+          "corePiece": "Mullerian (paramesonephric) duct anomalies result from failed formation, fusion or resorption of the paired ducts that form the uterus, cervix and upper vagina. The 3D coronal view is the most useful sonographic tool because it shows the external fundal contour and the cavity together. A septate uterus, the most common anomaly and the one with the highest pregnancy loss rate, has a normal or minimally indented outer fundal contour (under about 1 cm) with an internal septum. A bicornuate uterus has an external fundal cleft of about 1 cm or more with two horns and one cervix. Uterus didelphys has two separate uteri and two cervices, often with a longitudinal vaginal septum. A unicornuate uterus is banana-shaped and may have a rudimentary horn, which can be the site of a dangerous pregnancy. An arcuate uterus has a mild concave indentation of the fundal cavity and is often considered a normal variant. Mullerian anomalies are frequently associated with renal anomalies, especially renal agenesis on the side of the absent or rudimentary horn in a unicornuate uterus.",
+          "whyLock": "The deciding question is the shape of the outer fundal contour: smooth or flat with two cavities is septate, while a deep outer notch is bicornuate or didelphys. This matters because a septum can be removed through a hysteroscope, while a bicornuate uterus needs no such surgery. A trap is trying to diagnose this on standard 2D images, where both look like two endometrial echoes. Another is forgetting the kidneys; always scan them when a Mullerian anomaly is found. Exams also link these anomalies with recurrent pregnancy loss.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 35",
+              "title": "Uterine Anatomy, Position & IUD",
+              "link": "The 3D coronal technique used for IUD arms also shows the fundal contour."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Sonohysterography",
+              "link": "Saline infusion outlines the cavity of a septate or arcuate uterus."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "GI & GU Anomalies",
+              "link": "Renal agenesis frequently accompanies Mullerian anomalies."
+            }
+          ],
+          "registryApplication": "Expect questions separating septate from bicornuate uteri, identifying which anomaly has the highest miscarriage rate, and the associated renal finding.",
+          "checkpoint": {
+            "pearl": "Septate: smooth outside, divided inside",
+            "reflection": "Why should both kidneys be scanned whenever a unicornuate uterus is found?"
+          },
+          "keyTerms": [
+            "Mullerian Ducts",
+            "Septate Uterus",
+            "Bicornuate Uterus",
+            "Uterus Didelphys",
+            "Unicornuate Uterus",
+            "Arcuate Uterus"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 39"
+        }
+      ]
+    },
+    {
+      "id": "obgyn-ovaries-adnexa",
+      "title": "Ovaries & Adnexa",
+      "pieceRange": "Pieces 40-45",
+      "examType": "ARDMS RDMS Obstetrics & Gynecology (OB/GYN)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Ovarian physiology, cysts and masses, torsion, O-RADS risk features and tubal disease",
+      "topics": [
+        {
+          "id": "obgyn-follicles-functional-cysts",
+          "title": "Follicles & Functional Cysts",
+          "frontClue": "Dominant follicle grows to about 2 cm, then becomes a crenulated corpus luteum",
+          "corePiece": "Each cycle several antral follicles develop in the ovary. By about days 8 to 12 one dominant follicle is selected and grows about 2 to 3 mm per day, reaching about 20 to 24 mm before ovulation; a cumulus oophorus may be seen as a small echogenic mural bump. After ovulation the follicle collapses, a small amount of free fluid may appear in the cul-de-sac, and the corpus luteum forms: a thick-walled, often crenulated cyst with low-level echoes and a peripheral ring of color flow. A follicle that fails to ovulate and keeps growing becomes a follicular cyst, usually defined as a simple cyst over about 3 cm. A hemorrhagic cyst shows a fine reticular, lacy or fishnet pattern, or a retracting clot with concave margins that has no internal color flow; it usually resolves within about 6 to 12 weeks. Per O-RADS US, simple cysts up to 3 cm in premenopausal women are normal physiologic findings, and typical hemorrhagic cysts under 5 cm need no follow-up.",
+          "whyLock": "Most adnexal cysts in menstruating women are physiologic, so the exam rewards recognizing benign patterns rather than reflexively calling them masses. The key differentiators of a hemorrhagic cyst are a reticular pattern and an avascular clot; any internal flow points away from clot toward a solid component. A trap is mistaking a corpus luteum for an ectopic pregnancy; it is inside the ovary. Another is reporting a normal dominant follicle as a cyst. Hemorrhagic cysts change over time, so follow-up after menses distinguishes them from endometriomas.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 4",
+              "title": "Ectopic Pregnancy",
+              "link": "The corpus luteum, with its ring of flow, is the main mimic of a tubal ectopic."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Endometrioma & Dermoid",
+              "link": "Endometriomas persist while hemorrhagic cysts resolve."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Ovulation Induction & OHSS",
+              "link": "Follicle size monitoring guides the timing of ovulation trigger."
+            }
+          ],
+          "registryApplication": "Questions ask for the size of a mature follicle, signs of ovulation, the appearance of hemorrhagic cysts and O-RADS management of physiologic cysts.",
+          "checkpoint": {
+            "pearl": "Hemorrhagic cyst: lacy pattern, retracting clot, no internal flow",
+            "reflection": "Which two features would help you tell a hemorrhagic cyst from a cyst with a true solid component?"
+          },
+          "keyTerms": [
+            "Dominant Follicle",
+            "Cumulus Oophorus",
+            "Corpus Luteum",
+            "Follicular Cyst",
+            "Hemorrhagic Cyst",
+            "O-RADS US"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 40"
+        },
+        {
+          "id": "obgyn-endometrioma-dermoid",
+          "title": "Endometrioma & Dermoid",
+          "frontClue": "Ground glass and persistent: endometrioma; bright plug with shadowing: dermoid",
+          "corePiece": "An endometrioma is a cyst lined by endometrial tissue that fills with old blood. The classic appearance is a unilocular or few-loculated cyst with homogeneous low-level internal echoes (ground-glass), no internal vascularity, and sometimes small echogenic wall foci. They may be multiple or bilateral, are associated with pain, dysmenorrhea and infertility, and do not resolve over time like hemorrhagic cysts. Adhesions may pull both ovaries together behind the uterus (kissing ovaries). In pregnancy, decidualized endometriomas may show vascular solid-looking wall projections that can mimic malignancy. A mature cystic teratoma (dermoid) is the most common ovarian germ cell tumor. Signs include an echogenic mural nodule (Rokitansky nodule or dermoid plug), often with shadowing; the tip-of-the-iceberg sign, where an echogenic front surface shadows the rest; hyperechoic lines and dots from hair (dot-dash pattern); a fat-fluid level; and calcifications. Dermoids are bilateral in about 10 to 15 percent and increase the risk of torsion. Classic appearances of both lesions are scored O-RADS 2 when under 10 cm.",
+          "whyLock": "These two lesions are classic benign patterns, and recognizing them avoids unnecessary concern. For endometrioma, the uniform low-level echoes and lack of flow are key, while a hemorrhagic cyst typically shows a lacy pattern and resolves. For dermoid, the trap is the tip-of-the-iceberg sign: shadowing hides the true size and can make the mass look like bowel gas, so a dermoid can be missed entirely. A dermoid is also a common reason for ovarian torsion. Any vascular solid component should prompt reconsideration.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 40",
+              "title": "Follicles & Functional Cysts",
+              "link": "Hemorrhagic cysts are the main differential of an endometrioma."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Ovarian Torsion",
+              "link": "Dermoids are the mass most often associated with torsion."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "O-RADS & Ovarian Neoplasms",
+              "link": "Classic benign lesions receive a low O-RADS category."
+            }
+          ],
+          "registryApplication": "Expect sign-based items (ground glass, Rokitansky nodule, tip of the iceberg, dot-dash) and questions on clinical associations and follow-up behavior.",
+          "checkpoint": {
+            "pearl": "Endometrioma persists; hemorrhagic cyst resolves",
+            "reflection": "Why might a large dermoid be missed on a transabdominal scan, and how would you avoid that error?"
+          },
+          "keyTerms": [
+            "Endometrioma",
+            "Ground-Glass Echoes",
+            "Mature Cystic Teratoma",
+            "Rokitansky Nodule",
+            "Tip of the Iceberg Sign",
+            "Ovarian Torsion"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 41"
+        },
+        {
+          "id": "obgyn-polycystic-ovary-syndrome",
+          "title": "Polycystic Ovary Syndrome",
+          "frontClue": "Two of three: irregular cycles, androgen excess, polycystic ovarian morphology",
+          "corePiece": "Polycystic ovary syndrome (PCOS) is a common endocrine disorder of women of reproductive age. Using the Rotterdam criteria, diagnosis requires two of three: oligo-ovulation or anovulation, clinical or biochemical hyperandrogenism, and polycystic ovarian morphology on ultrasound, after other causes are excluded. Current international guidelines define polycystic morphology on a transvaginal scan with a high-frequency probe (about 8 MHz) as 20 or more follicles of 2 to 9 mm per ovary, and/or an ovarian volume of 10 mL or more, without a dominant follicle, corpus luteum or cyst. Ovarian volume is calculated as length times width times height times 0.523. The classic appearance is enlarged ovaries with many small peripheral follicles (string of pearls) and increased central echogenic stroma. Ultrasound is not recommended for diagnosing PCOS within about 8 years of menarche, because multifollicular ovaries are normal in adolescents. Clinical associations include obesity, insulin resistance and infertility. Chronic unopposed estrogen increases the risk of endometrial hyperplasia and carcinoma, and PCOS patients are at higher risk of OHSS during ovulation induction.",
+          "whyLock": "The exam wants you to know that ultrasound cannot diagnose PCOS alone; morphology is only one of three criteria, and many normal women have polycystic-appearing ovaries. A trap is applying adult follicle-count criteria to an adolescent. Another is counting with a low-frequency transabdominal probe, which undercounts follicles. The endometrium deserves attention too: anovulation means unopposed estrogen and potential hyperplasia. In fertility treatment, many small follicles mean an exaggerated response and a high risk of hyperstimulation.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 46",
+              "title": "Ovulation Induction & OHSS",
+              "link": "PCOS is a leading risk factor for ovarian hyperstimulation syndrome."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Postmenopausal Endometrium & Polyps",
+              "link": "Unopposed estrogen in PCOS predisposes to endometrial hyperplasia."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Follicles & Functional Cysts",
+              "link": "PCOS ovaries lack the normal dominant follicle selection."
+            }
+          ],
+          "registryApplication": "Questions ask for the Rotterdam criteria, the follicle number and volume thresholds, the ovarian volume formula and the endometrial risk.",
+          "checkpoint": {
+            "pearl": "20 or more follicles, or 10 mL or more, per ovary",
+            "reflection": "Why is ultrasound not used to diagnose PCOS in a 15-year-old with irregular periods?"
+          },
+          "keyTerms": [
+            "Polycystic Ovary Syndrome",
+            "Rotterdam Criteria",
+            "Follicle Number Per Ovary",
+            "Ovarian Volume",
+            "String of Pearls",
+            "Endometrial Hyperplasia"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 42"
+        },
+        {
+          "id": "obgyn-ovarian-torsion",
+          "title": "Ovarian Torsion",
+          "frontClue": "Big edematous ovary with peripheral follicles; normal flow does not exclude torsion",
+          "corePiece": "Ovarian torsion is twisting of the ovary, often with the fallopian tube, on its vascular pedicle, first obstructing venous and lymphatic outflow and then arterial inflow. It presents with sudden severe unilateral pelvic pain. It is most common in reproductive-age women and children, is more frequent on the right, and is often caused by an ovarian mass or cyst, classically a dermoid, larger than about 5 cm; pregnancy and ovulation induction with enlarged ovaries increase the risk. The most consistent finding is a unilaterally enlarged ovary compared with the other side. Other signs include stromal edema with peripherally displaced follicles (string of pearls), an abnormal midline or high position, free fluid and a twisted vascular pedicle (whirlpool sign). Doppler may show decreased or absent venous and arterial flow, but normal arterial flow does not exclude torsion, because the ovary has a dual supply from the ovarian artery and the adnexal branch of the uterine artery and torsion may be partial or intermittent. Torsion is a surgical emergency.",
+          "whyLock": "This is a classic exam trap: the presence of Doppler flow does not rule out torsion. The size asymmetry and clinical picture matter more than color flow, because venous obstruction comes first and arterial flow may persist. A twisted pedicle is the most specific sign when seen. Another trap is assuming torsion needs a mass; normal ovaries can twist, especially in children. Compare both ovaries and look for a lead mass such as a dermoid or a large cyst.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 41",
+              "title": "Endometrioma & Dermoid",
+              "link": "A dermoid is the classic lead mass for torsion."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Ovulation Induction & OHSS",
+              "link": "Enlarged stimulated ovaries are at high risk of torsion."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Gestational Trophoblastic Disease",
+              "link": "Large theca lutein cysts can also cause torsion."
+            }
+          ],
+          "registryApplication": "Expect pain scenarios asking for the most consistent sign, the significance of preserved Doppler flow, and the typical predisposing mass.",
+          "checkpoint": {
+            "pearl": "Flow present does not mean torsion absent",
+            "reflection": "Why can arterial Doppler flow persist in a torsed ovary?"
+          },
+          "keyTerms": [
+            "Ovarian Torsion",
+            "Whirlpool Sign",
+            "Dual Blood Supply",
+            "Stromal Edema",
+            "Peripheral Follicles",
+            "Dermoid"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 43"
+        },
+        {
+          "id": "obgyn-o-rads-ovarian-neoplasms",
+          "title": "O-RADS & Ovarian Neoplasms",
+          "frontClue": "Solid tissue with strong flow, papillary projections, ascites: high risk",
+          "corePiece": "O-RADS US sorts adnexal lesions into risk categories: 0 incomplete, 1 normal premenopausal ovary, 2 almost certainly benign (under 1 percent risk), 3 low risk (1 to under 10 percent), 4 intermediate (10 to under 50 percent) and 5 high risk (50 percent or more). Features that raise concern are solid components, especially irregular ones, papillary projections (solid tissue at least 3 mm tall protruding into a cyst), thick irregular septations, color score 3 or 4 flow in solid tissue, and ascites or peritoneal nodules, which place a lesion in O-RADS 5. Epithelial tumors are most common: serous cystadenomas are usually unilocular, while serous cystadenocarcinoma is the most common ovarian malignancy, often bilateral with papillary projections. Mucinous tumors tend to be large and multiloculated with locules of different echogenicity. Fibroma and fibrothecoma are solid, hypoechoic, shadowing masses and may cause Meigs syndrome (ascites and pleural effusion). Granulosa cell tumors produce estrogen and can thicken the endometrium. Krukenberg tumors are bilateral metastases.",
+          "whyLock": "Think of O-RADS as feature recognition rather than memorizing histology: the more solid, irregular and vascular a lesion is, the higher the category. A trap is overcalling avascular contents, such as clot in a hemorrhagic cyst or a dermoid plug, as solid tissue; lack of flow and classic patterns help. Another is ignoring the rest of the abdomen, since ascites and peritoneal implants upgrade risk. Solid hypoechoic shadowing masses are often benign fibromas, while estrogen effects on the endometrium suggest a granulosa cell tumor.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 40",
+              "title": "Follicles & Functional Cysts",
+              "link": "Physiologic cysts are O-RADS 1 and must not be overcalled."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Endometrioma & Dermoid",
+              "link": "Classic endometriomas and dermoids are O-RADS 2 lesions."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Fibroids & Adenomyosis",
+              "link": "A pedunculated fibroid can mimic a solid adnexal mass."
+            }
+          ],
+          "registryApplication": "Questions describe a lesion in words and ask for the O-RADS category or the most concerning feature, and match tumor types with their syndromes.",
+          "checkpoint": {
+            "pearl": "More solid, more vascular, more fluid in the belly: more risk",
+            "reflection": "A multilocular cyst has an irregular vascular solid component and ascites. Which O-RADS category fits, and why?"
+          },
+          "keyTerms": [
+            "O-RADS US",
+            "Papillary Projection",
+            "Color Score",
+            "Serous Cystadenocarcinoma",
+            "Mucinous Cystadenoma",
+            "Meigs Syndrome",
+            "Granulosa Cell Tumor"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 44"
+        },
+        {
+          "id": "obgyn-hydrosalpinx-pid-toa",
+          "title": "Hydrosalpinx, PID & TOA",
+          "frontClue": "Tubular fluid with incomplete septa; a tender complex mass with fever is TOA",
+          "corePiece": "Pelvic inflammatory disease (PID) is an ascending infection, most often from chlamydia or gonorrhea, that progresses from the cervix to the endometrium, tubes, ovaries and peritoneum. Early PID may show a normal scan. Findings include endometrial thickening or fluid (endometritis), free fluid with debris, thick-walled, fluid-filled tubes. A pyosalpinx is a distended tube filled with echogenic fluid with a thick, hyperemic wall. The cogwheel sign, thickened endosalpingeal folds seen in cross section, indicates acute inflammation. A tubo-ovarian complex is inflamed tube and ovary that can still be told apart; a tubo-ovarian abscess (TOA) is a complex, multilocular, thick-walled mass in which the ovary can no longer be identified, often with hyperemia and fluid-debris levels. Fitz-Hugh-Curtis syndrome is perihepatic inflammation causing right upper quadrant pain. A hydrosalpinx is a chronic, fluid-filled, tubular C or S-shaped structure separate from the ovary, with incomplete septations (folds) and a waist sign; the beads-on-a-string sign of small mural nodules indicates chronic disease. Hydrosalpinx lowers IVF success, so salpingectomy may be advised.",
+          "whyLock": "The tube is identified by shape: incomplete septations and a waist distinguish a dilated tube from a multilocular ovarian cyst, which has complete septations. A trap is calling a hydrosalpinx an ovarian cyst and following it unnecessarily; scan along the structure to show it is tubular. Acute versus chronic depends on wall thickness and folds: cogwheel is acute, beads on a string is chronic. TOA versus tubo-ovarian complex depends on whether the ovary can still be seen. Clinical findings, fever and tenderness, frame the diagnosis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 44",
+              "title": "O-RADS & Ovarian Neoplasms",
+              "link": "Incomplete septations of a tube must be separated from a multilocular ovarian neoplasm."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Ovulation Induction & OHSS",
+              "link": "Hydrosalpinx lowers implantation rates in assisted reproduction."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Ectopic Pregnancy",
+              "link": "Prior PID damages the tube and raises the risk of ectopic pregnancy."
+            }
+          ],
+          "registryApplication": "Expect scenarios with fever and pelvic pain, signs of acute versus chronic tubal disease, and the difference between tubo-ovarian complex and abscess.",
+          "checkpoint": {
+            "pearl": "Cogwheel is acute; beads on a string is chronic",
+            "reflection": "What sonographic features separate a hydrosalpinx from a multilocular ovarian cyst?"
+          },
+          "keyTerms": [
+            "Pelvic Inflammatory Disease",
+            "Pyosalpinx",
+            "Cogwheel Sign",
+            "Tubo-Ovarian Abscess",
+            "Hydrosalpinx",
+            "Fitz-Hugh-Curtis Syndrome"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 45"
+        }
+      ]
+    },
+    {
+      "id": "obgyn-infertility-procedures-patient-care",
+      "title": "Infertility, Procedures & Patient Care",
+      "pieceRange": "Pieces 46-49",
+      "examType": "ARDMS RDMS Obstetrics & Gynecology (OB/GYN)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Fertility monitoring, OHSS, saline and invasive procedures, bioeffects and transvaginal practice",
+      "topics": [
+        {
+          "id": "obgyn-ovulation-induction-ohss",
+          "title": "Ovulation Induction & OHSS",
+          "frontClue": "Measure follicles, trigger near 18 to 20 mm, watch for huge ovaries and ascites",
+          "corePiece": "Ovulation induction uses drugs such as letrozole, clomiphene or injectable gonadotropins. A baseline transvaginal scan early in the cycle (about day 2 or 3) checks for residual cysts and records the antral follicle count (follicles about 2 to 10 mm). Serial scans measure each growing follicle and record endometrial thickness and pattern. An hCG or GnRH-agonist trigger is usually given when lead follicles reach about 18 to 20 mm for timed intercourse or insemination, or when several follicles reach about 17 to 18 mm in IVF. A trilaminar endometrium of about 7 mm or more is favorable. Too many mature follicles may lead to cycle cancellation to prevent multiple pregnancy and ovarian hyperstimulation syndrome (OHSS). OHSS usually follows the trigger or early pregnancy, which raises hCG. It produces enlarged ovaries, often 5 to 10 cm or more, filled with many large cysts (spoke-wheel appearance), plus ascites, pleural effusion, hemoconcentration, oliguria and thrombosis risk. Risk factors include PCOS, young age, high antral follicle count and high estradiol. Enlarged ovaries can torse.",
+          "whyLock": "Monitoring is about balance: enough follicles to achieve pregnancy, not so many that the patient risks multiples or OHSS. Exams ask what to measure (follicle size and count, endometrium), when to trigger, and what OHSS looks like. A trap is misreading the large stimulated cysts as malignant multilocular masses; the history is decisive. Remember the fluid shifts: scan the abdomen and chest for ascites and effusions. Pregnancy prolongs OHSS because hCG keeps stimulating the ovaries, and heterotopic pregnancy risk is higher in these patients.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 42",
+              "title": "Polycystic Ovary Syndrome",
+              "link": "PCOS patients respond strongly to stimulation and are at high OHSS risk."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Ovarian Torsion",
+              "link": "Enlarged stimulated ovaries are prone to torsion."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Endometrium Through the Cycle",
+              "link": "Endometrial thickness and pattern are monitored alongside follicles."
+            }
+          ],
+          "registryApplication": "Questions ask for the trigger follicle size, the antral follicle count definition, OHSS findings and risk factors, and which complications to scan for.",
+          "checkpoint": {
+            "pearl": "Spoke-wheel ovaries plus ascites after a trigger means OHSS",
+            "reflection": "Why does OHSS often worsen if the patient becomes pregnant during the treatment cycle?"
+          },
+          "keyTerms": [
+            "Antral Follicle Count",
+            "Ovulation Induction",
+            "hCG Trigger",
+            "Ovarian Hyperstimulation Syndrome",
+            "Ascites",
+            "Heterotopic Pregnancy"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 46"
+        },
+        {
+          "id": "obgyn-sonohysterography",
+          "title": "Sonohysterography",
+          "frontClue": "Early proliferative phase, saline through a catheter, no pregnancy and no infection",
+          "corePiece": "Saline infusion sonohysterography (SIS) distends the endometrial cavity with sterile saline introduced through a thin catheter during transvaginal imaging, outlining the endometrium. Indications include abnormal uterine bleeding, a thickened or poorly seen endometrium, suspected polyps or submucosal fibroids, infertility, suspected adhesions, and evaluation of congenital anomalies. It is ideally performed in the early proliferative phase, after menstrual bleeding stops and before ovulation, about days 5 to 10, when the endometrium is thinnest and an early pregnancy is not at risk. Contraindications include pregnancy and active pelvic infection or PID; unexplained pelvic tenderness should also delay the study. Flush the catheter with saline beforehand, because air bubbles can mimic polyps. A polyp appears as an echogenic intracavitary mass covered by endometrium, a submucosal fibroid as a hypoechoic broad-based mass beneath the endometrium, hyperplasia as diffuse thickening, and adhesions (Asherman syndrome) as echogenic bands bridging the cavity. A balloon catheter in the lower segment can hide lesions there, so deflate it at the end. Agitated saline can assess tubal patency (sonosalpingography).",
+          "whyLock": "Timing and contraindications are the most tested points. Scheduling in the early proliferative phase avoids disrupting a possible early pregnancy and gives the thinnest lining, so small polyps stand out. A trap is calling air bubbles polyps; bubbles are very bright, may shadow and move. Another is mistaking blood clot for a lesion; clot moves and lacks flow. Always look at the lower segment and cervix after deflating the balloon, because the balloon itself can hide lesions there.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 37",
+              "title": "Postmenopausal Endometrium & Polyps",
+              "link": "SIS distinguishes a focal polyp from diffuse endometrial thickening."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Fibroids & Adenomyosis",
+              "link": "SIS defines the intracavitary portion of a submucosal fibroid."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Endometrium Through the Cycle",
+              "link": "The study is timed to the thin early proliferative endometrium."
+            }
+          ],
+          "registryApplication": "Expect questions on timing in the cycle, contraindications, artifacts from air, and the appearance of polyps, fibroids and adhesions.",
+          "checkpoint": {
+            "pearl": "Days 5 to 10, flush the air, check below the balloon",
+            "reflection": "Why is sonohysterography scheduled after menses but before ovulation?"
+          },
+          "keyTerms": [
+            "Saline Infusion Sonohysterography",
+            "Early Proliferative Phase",
+            "Asherman Syndrome",
+            "Submucosal Fibroid",
+            "Endometrial Polyp",
+            "Tubal Patency"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 47"
+        },
+        {
+          "id": "obgyn-amniocentesis-cvs",
+          "title": "Amniocentesis & CVS",
+          "frontClue": "Amnio from 15 weeks in a cord-free pocket; CVS at 10 to 13 weeks",
+          "corePiece": "Amniocentesis samples amniotic fluid under continuous ultrasound guidance, usually from 15 weeks onward. Before the procedure, confirm fetal cardiac activity, gestational age, number of fetuses, placental location and a suitable pocket. Choose a pocket free of cord and fetal parts, ideally avoiding the placenta, and keep the needle tip in view. Early amniocentesis before 15 weeks increases pregnancy loss and clubfoot and is avoided. The procedure-related loss rate is low, often quoted at about 0.1 to 0.3 percent. Amniotic fluid can be tested for karyotype and microarray, infection and AFP with acetylcholinesterase for open neural tube defects. Chorionic villus sampling (CVS) obtains placental villi at about 10 to 13 weeks by a transcervical or transabdominal route, targeting the chorion frondosum. CVS before about 10 weeks is linked with limb reduction defects; confined placental mosaicism, in about 1 to 2 percent, may require amniocentesis to clarify; and CVS cannot assess AFP. After either procedure, document fetal heart activity, and give Rh-negative unsensitized patients Rh immune globulin.",
+          "whyLock": "Remember what each test samples: amniocentesis samples fetal cells and fluid, while CVS samples placenta, which explains mosaicism and the absence of AFP testing with CVS. The sonographer's role is planning and guidance: choose the pocket, track the needle tip, and confirm heart activity before and after. A trap is choosing the largest pocket even when the cord lies within it; color Doppler should confirm no cord in the path. Remember the Rh immune globulin step for Rh-negative patients.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 6",
+              "title": "Nuchal Translucency",
+              "link": "An abnormal first-trimester screen often leads to CVS or amniocentesis."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Neural Tube Defects & Chiari II",
+              "link": "Amniotic fluid AFP and acetylcholinesterase help confirm open defects."
+            },
+            {
+              "piece": "Piece 49",
+              "title": "Safety, ALARA & Transvaginal Technique",
+              "link": "Procedural guidance follows the same safety and infection-control principles."
+            }
+          ],
+          "registryApplication": "Questions ask for the timing of each procedure, why early amniocentesis is avoided, what CVS cannot test, and the sonographer's steps before and after.",
+          "checkpoint": {
+            "pearl": "CVS samples placenta, amnio samples fluid",
+            "reflection": "Why can CVS not replace amniocentesis for assessing open neural tube defects?"
+          },
+          "keyTerms": [
+            "Amniocentesis",
+            "Chorionic Villus Sampling",
+            "Chorion Frondosum",
+            "Confined Placental Mosaicism",
+            "Rh Immune Globulin",
+            "Acetylcholinesterase"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 48"
+        },
+        {
+          "id": "obgyn-safety-alara-transvaginal-technique",
+          "title": "Safety, ALARA & Transvaginal Technique",
+          "frontClue": "Lowest output, shortest time, TIS early and TIB later, a clean covered probe",
+          "corePiece": "No confirmed harmful bioeffects of diagnostic ultrasound have been shown in the human fetus, but ultrasound deposits energy, so the ALARA principle (as low as reasonably achievable) applies: scan only when medically indicated, use the lowest output and shortest time that answers the question, and prefer receiver gain over transmit power. Monitor the on-screen thermal index (TI), the estimate of tissue heating, and mechanical index (MI), the estimate of cavitation risk. In the first trimester, before significant bone ossification, the soft tissue thermal index (TIS) is used; from about 10 weeks, when fetal bone is present, the bone thermal index (TIB) is more relevant. Spectral and color Doppler produce higher exposure than gray-scale imaging, so in early pregnancy cardiac activity is documented with M-mode. Transvaginal scanning requires an empty bladder, an explanation of the exam and consent, a chaperone according to policy, a probe cover (non-latex for latex allergy) and high-level disinfection between patients. A full bladder helps transabdominal pelvic imaging by displacing bowel.",
+          "whyLock": "The exam tests which index applies when and the practical steps of ALARA. Raising receiver gain improves brightness without increasing exposure, so it is the first choice; increasing output power is not. Doppler on an embryo is the classic wrong answer for documenting heart rate. For transvaginal scanning, the most tested points are bladder status, probe cover and high-level disinfection, since a probe cover can tear. A trap is filling the bladder before a transvaginal scan; it pushes the pelvic organs out of the near field.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 2",
+              "title": "Embryo, CRL & Cardiac Activity",
+              "link": "M-mode is the ALARA choice for early cardiac documentation."
+            },
+            {
+              "piece": "Piece 27",
+              "title": "Cervical Length & Insufficiency",
+              "link": "Empty bladder and light pressure are essential for accurate cervical length."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Amniocentesis & CVS",
+              "link": "Invasive procedures share the same safety and infection-control mindset."
+            }
+          ],
+          "registryApplication": "Expect questions on the meaning of TI and MI, which TI to use by gestational age, how to apply ALARA, and the preparation and disinfection of transvaginal probes.",
+          "checkpoint": {
+            "pearl": "Gain before power; M-mode before Doppler",
+            "reflection": "Which thermal index would you monitor at 8 weeks versus 24 weeks, and why does it change?"
+          },
+          "keyTerms": [
+            "ALARA",
+            "Thermal Index",
+            "Mechanical Index",
+            "M-Mode",
+            "High-Level Disinfection",
+            "Probe Cover"
+          ],
+          "images": [],
+          "pieceNumber": "Piece 49"
+        }
+      ]
+    }
+  ]
+}

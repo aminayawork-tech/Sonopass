@@ -1,0 +1,52 @@
+{
+  "categories": [
+    "Liver",
+    "Biliary System",
+    "Pancreas",
+    "Spleen",
+    "Urinary Tract & Adrenals",
+    "Abdominal Vasculature & Retroperitoneum",
+    "GI Tract, Peritoneum & Abdominal Wall",
+    "Superficial Structures",
+    "Patient Care, Procedures & Contrast"
+  ],
+  "categoryTotals": {
+    "Liver": 34,
+    "Biliary System": 34,
+    "Pancreas": 33,
+    "Spleen": 33,
+    "Urinary Tract & Adrenals": 34,
+    "Abdominal Vasculature & Retroperitoneum": 34,
+    "GI Tract, Peritoneum & Abdominal Wall": 32,
+    "Superficial Structures": 33,
+    "Patient Care, Procedures & Contrast": 33
+  },
+  "examModes": [
+    {
+      "id": "quick-10",
+      "name": "Quick 10",
+      "description": "10 random AB questions",
+      "route": "/exam/quick-10"
+    },
+    {
+      "id": "study",
+      "name": "Study Mode",
+      "description": "Practice by category with instant feedback",
+      "route": "/exam/study"
+    },
+    {
+      "id": "mock-1",
+      "name": "Mock Exam 1",
+      "description": "Full practice exam (150 questions)",
+      "route": "/exam/mock-1"
+    },
+    {
+      "id": "mock-2",
+      "name": "Mock Exam 2",
+      "description": "Full practice exam (150 questions)",
+      "route": "/exam/mock-2"
+    }
+  ],
+  "totalQuestions": 300,
+  "passingScore": 555
+}

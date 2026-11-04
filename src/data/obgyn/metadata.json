@@ -1,0 +1,52 @@
+{
+  "categories": [
+    "First Trimester",
+    "Fetal Biometry & Growth",
+    "Fetal Anatomy & Anomalies",
+    "Placenta, Cord & Amniotic Fluid",
+    "Maternal Conditions & Fetal Well-Being",
+    "Multiple Gestations",
+    "Uterus & Cervix",
+    "Ovaries & Adnexa",
+    "Infertility, Procedures & Patient Care"
+  ],
+  "categoryTotals": {
+    "First Trimester": 34,
+    "Fetal Biometry & Growth": 34,
+    "Fetal Anatomy & Anomalies": 34,
+    "Placenta, Cord & Amniotic Fluid": 34,
+    "Maternal Conditions & Fetal Well-Being": 32,
+    "Multiple Gestations": 32,
+    "Uterus & Cervix": 34,
+    "Ovaries & Adnexa": 34,
+    "Infertility, Procedures & Patient Care": 32
+  },
+  "examModes": [
+    {
+      "id": "quick-10",
+      "name": "Quick 10",
+      "description": "10 random OB/GYN questions",
+      "route": "/exam/quick-10"
+    },
+    {
+      "id": "study",
+      "name": "Study Mode",
+      "description": "Practice by category with instant feedback",
+      "route": "/exam/study"
+    },
+    {
+      "id": "mock-1",
+      "name": "Mock Exam 1",
+      "description": "Full practice exam (150 questions)",
+      "route": "/exam/mock-1"
+    },
+    {
+      "id": "mock-2",
+      "name": "Mock Exam 2",
+      "description": "Full practice exam (150 questions)",
+      "route": "/exam/mock-2"
+    }
+  ],
+  "totalQuestions": 300,
+  "passingScore": 555
+}
