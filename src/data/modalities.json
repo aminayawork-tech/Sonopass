@@ -299,8 +299,8 @@
       "icon": "heart",
       "color": "fuchsia",
       "gradient": "from-fuchsia-500 to-fuchsia-600",
-      "enabled": false,
-      "questionCount": 0,
+      "enabled": true,
+      "questionCount": 298,
       "examModes": [
         {
           "id": "quick-10",
@@ -323,7 +323,7 @@
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full practice exam (148 questions)",
           "route": "/exam/mock-2"
         }
       ]
