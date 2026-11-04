@@ -131,6 +131,7 @@ export function QuestionGridSheet({
   answers,
   flagged,
   currentIndex,
+  correctById,
   onJump,
   onSubmit,
   onClose,
@@ -139,52 +140,85 @@ export function QuestionGridSheet({
   answers: Record<string, string>;
   flagged: Set<string>;
   currentIndex: number;
+  // Set after submitting: colors cells correct / incorrect instead of answered
+  correctById?: Record<string, boolean>;
   onJump: (index: number) => void;
-  onSubmit: () => void;
+  onSubmit?: () => void;
   onClose: () => void;
 }) {
   const answered = questionIds.filter((id) => answers[id]).length;
+  const reviewing = !!correctById;
+  const correct = reviewing ? questionIds.filter((id) => correctById[id]).length : 0;
+  const unanswered = questionIds.length - answered;
+  const firstUnanswered = questionIds.findIndex((id) => !answers[id]);
+
+  const cellColor = (id: string) => {
+    if (!answers[id]) return 'bg-slate-100 text-slate-600 border border-slate-200';
+    if (!reviewing) return 'bg-[#2ea873] text-white';
+    return correctById[id] ? 'bg-[#2ea873] text-white' : 'bg-red-500 text-white';
+  };
+
   return (
     <Sheet onClose={onClose}>
       <div className="flex items-end justify-between mb-3">
         <div>
           <p className="eyebrow">Questions</p>
-          <p className="text-[17px] font-extrabold text-ink mt-1">{answered} of {questionIds.length} answered</p>
+          <p className="text-[17px] font-extrabold text-ink mt-1">
+            {reviewing ? `${correct} of ${questionIds.length} correct` : `${answered} of ${questionIds.length} answered`}
+          </p>
         </div>
-        <p className="text-[12px] font-semibold text-amber-600 flex items-center gap-1">
-          <Flag size={12} className="fill-amber-500 text-amber-500" /> {flagged.size} flagged
-        </p>
+        {flagged.size > 0 && (
+          <p className="text-[12px] font-semibold text-amber-600 flex items-center gap-1">
+            <Flag size={12} className="fill-amber-500 text-amber-500" /> {flagged.size} flagged
+          </p>
+        )}
       </div>
-      <div className="flex items-center gap-3 text-[11px] text-slate-500 font-medium mb-3">
-        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-[#2ea873]" /> Answered</span>
+      <div className="flex items-center gap-3 text-[11px] text-slate-500 font-medium mb-3 flex-wrap">
+        {reviewing ? (
+          <>
+            <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-[#2ea873]" /> Correct</span>
+            <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-red-500" /> Incorrect</span>
+          </>
+        ) : (
+          <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-[#2ea873]" /> Answered</span>
+        )}
         <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-slate-100 border border-slate-200" /> Not answered</span>
         <span className="flex items-center gap-1"><span className="w-3 h-3 rounded ring-2 ring-amber-400" /> Flagged</span>
       </div>
       <div className="grid grid-cols-6 gap-2 max-h-[45vh] overflow-y-auto p-1">
-        {questionIds.map((id, i) => {
-          const isAnswered = !!answers[id];
-          return (
-            <button
-              key={id}
-              onClick={() => onJump(i)}
-              className={cn(
-                'h-10 rounded-xl text-[13px] font-bold transition-transform active:scale-95',
-                isAnswered ? 'bg-[#2ea873] text-white' : 'bg-slate-100 text-slate-600 border border-slate-200',
-                flagged.has(id) && 'ring-2 ring-amber-400 ring-offset-1',
-                i === currentIndex && 'outline outline-2 outline-[#0E1726] outline-offset-2',
-              )}
-            >
-              {i + 1}
-            </button>
-          );
-        })}
+        {questionIds.map((id, i) => (
+          <button
+            key={id}
+            onClick={() => onJump(i)}
+            className={cn(
+              'h-10 rounded-xl text-[13px] font-bold transition-transform active:scale-95',
+              cellColor(id),
+              flagged.has(id) && 'ring-2 ring-amber-400 ring-offset-1',
+              i === currentIndex && 'outline outline-2 outline-[#0E1726] outline-offset-2',
+            )}
+          >
+            {i + 1}
+          </button>
+        ))}
       </div>
-      <button
-        onClick={onSubmit}
-        className="btn-primary w-full h-12 rounded-2xl text-[15px] font-bold mt-4 active:scale-[0.98] transition-transform"
-      >
-        Submit exam
-      </button>
+      <div className="flex gap-3 mt-4">
+        {!reviewing && unanswered > 0 && firstUnanswered >= 0 && (
+          <button
+            onClick={() => onJump(firstUnanswered)}
+            className="btn-secondary flex-1 h-12 rounded-2xl text-[14px] font-bold active:scale-[0.98] transition-transform"
+          >
+            First unanswered
+          </button>
+        )}
+        {onSubmit && (
+          <button
+            onClick={onSubmit}
+            className="btn-primary flex-1 h-12 rounded-2xl text-[15px] font-bold active:scale-[0.98] transition-transform"
+          >
+            {reviewing ? 'Back to results' : 'Submit exam'}
+          </button>
+        )}
+      </div>
     </Sheet>
   );
 }

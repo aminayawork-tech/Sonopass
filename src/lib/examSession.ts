@@ -40,6 +40,7 @@ export interface ExamSession {
   startedAt: number;
   endsAt: number | null;
   currentIndex: number;
+  furthestIndex?: number;
 }
 
 const key = (modality?: string, examId?: string) => `sonopass_exam_session_${modality ?? 'default'}_${examId ?? 'exam'}`;

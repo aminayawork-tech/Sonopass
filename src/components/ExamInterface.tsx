@@ -92,6 +92,7 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
   const [examResult, setExamResult] = useState<{ timeUsed: number; timedOut: boolean } | null>(null);
   const [reviewing, setReviewing] = useState(false);
   const warned = useRef<Set<number>>(new Set());
+  const [furthestIndex, setFurthestIndex] = useState(0);
 
   useEffect(() => {
     setStats(getStats());
@@ -115,6 +116,7 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
     setStartedAt(saved.startedAt);
     setEndsAt(saved.endsAt);
     setCurrentIndex(Math.min(saved.currentIndex, ordered.length - 1));
+    setFurthestIndex(Math.min(saved.furthestIndex ?? saved.currentIndex, ordered.length - 1));
     setNow(Date.now());
     setPhase('running');
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -131,11 +133,15 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
   useEffect(() => {
     if (!examLive || startedAt === null) return;
     saveExamSession(
-      { order: questions.map((q) => q.id), answers, flagged: Array.from(flagged), timed, startedAt, endsAt, currentIndex },
+      { order: questions.map((q) => q.id), answers, flagged: Array.from(flagged), timed, startedAt, endsAt, currentIndex, furthestIndex },
       modality,
       examId,
     );
-  }, [examLive, questions, answers, flagged, timed, startedAt, endsAt, currentIndex, modality, examId]);
+  }, [examLive, questions, answers, flagged, timed, startedAt, endsAt, currentIndex, furthestIndex, modality, examId]);
+
+  useEffect(() => {
+    if (examLive) setFurthestIndex((f) => Math.max(f, currentIndex));
+  }, [examLive, currentIndex]);
 
   const remaining = endsAt !== null ? Math.max(0, Math.ceil((endsAt - now) / 1000)) : null;
   const elapsed = startedAt !== null ? Math.max(0, Math.round((now - startedAt) / 1000)) : 0;
@@ -143,6 +149,19 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
   const currentQuestion = questions[currentIndex];
   const progress = ((currentIndex + 1) / questions.length) * 100;
   const answeredCount = Object.keys(answers).length;
+
+  const correctById: Record<string, boolean> = Object.fromEntries(
+    questions.map((q) => [q.id, !!answers[q.id] && answers[q.id] === q.correctAnswer]),
+  );
+  const flaggedIndexes = questions.map((q, i) => (flagged.has(q.id) ? i : -1)).filter((i) => i >= 0);
+  const wrongIndexes = questions.map((q, i) => (correctById[q.id] ? -1 : i)).filter((i) => i >= 0);
+  const cycleFrom = (indexes: number[]) => {
+    const others = indexes.filter((i) => i !== currentIndex);
+    if (others.length === 0) return null;
+    return others.find((i) => i > currentIndex) ?? others[0];
+  };
+  const nextTarget = reviewing ? cycleFrom(wrongIndexes) : cycleFrom(flaggedIndexes);
+  const canReturn = isExam && !reviewing && currentIndex < furthestIndex;
 
   const correctAnswers = Object.entries(answers).filter(([id, answer]) => {
     const q = questions.find(q => q.id === id);
@@ -292,6 +311,7 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
     setCurrentIndex(0);
     setAnswers({});
     setFlagged(new Set());
+    setFurthestIndex(0);
     setShowAnswer(false);
     setReviewing(false);
     setExamResult(null);
@@ -470,7 +490,7 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
               )}
             </div>
             )}
-            {isExam && !reviewing && (
+            {isExam && (
               <button
                 onClick={() => setGridOpen(true)}
                 aria-label="Question grid"
@@ -545,8 +565,9 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
           answers={answers}
           flagged={flagged}
           currentIndex={currentIndex}
+          correctById={reviewing ? correctById : undefined}
           onJump={(i) => { setCurrentIndex(i); setGridOpen(false); }}
-          onSubmit={() => { setGridOpen(false); setSubmitOpen(true); }}
+          onSubmit={() => { setGridOpen(false); if (reviewing) setReviewing(false); else setSubmitOpen(true); }}
           onClose={() => setGridOpen(false)}
         />
       )}
@@ -577,6 +598,32 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
 
       {/* Main Content */}
       <main className="px-4 pt-8">
+        {/* Shortcuts so long exams never need dozens of Next taps */}
+        {isExam && (canReturn || nextTarget !== null) && (
+          <div className="flex gap-2 mb-3 -mt-4 flex-wrap">
+            {canReturn && (
+              <button
+                onClick={() => setCurrentIndex(furthestIndex)}
+                className="btn-secondary flex items-center gap-1.5 pl-2.5 pr-3.5 py-1.5 rounded-full text-[12.5px] font-semibold active:scale-[0.98] transition-transform"
+              >
+                <ChevronLeft size={14} className="rotate-180" /> Back to Q{furthestIndex + 1}
+              </button>
+            )}
+            {nextTarget !== null && (
+              <button
+                onClick={() => setCurrentIndex(nextTarget)}
+                className={cn(
+                  'flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[12.5px] font-semibold active:scale-[0.98] transition-transform',
+                  reviewing ? 'bg-red-50 text-red-600' : 'bg-amber-50 text-amber-700',
+                )}
+              >
+                {reviewing ? <X size={14} /> : <Flag size={13} className="fill-amber-500 text-amber-500" />}
+                {reviewing ? `Next incorrect (${wrongIndexes.length})` : `Next flagged (${flaggedIndexes.length})`}
+              </button>
+            )}
+          </div>
+        )}
+
         {/* Question Card */}
         <div className="surface rounded-[24px] p-5 mb-4">
           {/* Question header */}
@@ -771,9 +818,20 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
             <span className="text-[14px] font-bold text-gray-700">Prev</span>
           </button>
 
-          <span className="text-[12px] text-gray-400 font-medium shrink-0">
-            {currentIndex + 1} of {questions.length}
-          </span>
+          {isExam ? (
+            <button
+              onClick={() => setGridOpen(true)}
+              aria-label="Open question grid"
+              className="flex items-center gap-1 px-2.5 py-2 rounded-xl text-[12px] text-gray-500 font-semibold shrink-0 active:bg-slate-200 transition-colors"
+            >
+              <LayoutGrid className="w-3.5 h-3.5" />
+              {currentIndex + 1} of {questions.length}
+            </button>
+          ) : (
+            <span className="text-[12px] text-gray-400 font-medium shrink-0">
+              {currentIndex + 1} of {questions.length}
+            </span>
+          )}
 
           {currentIndex === questions.length - 1 ? (
             <button
