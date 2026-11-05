@@ -16,6 +16,7 @@ import {
   Menu,
   ArrowUpRight,
   CalendarDays,
+  User,
   type LucideIcon,
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
@@ -47,7 +48,7 @@ export default function DashboardPage() {
   const [greeting, setGreeting] = useState('Welcome back');
   const [examDays, setExamDays] = useState<number | null>(null);
   const { currentModality } = useModality();
-  const { ready, syncing } = useAuth();
+  const { ready, syncing, user } = useAuth();
 
   useEffect(() => {
     if (!ready || syncing) return;
@@ -89,6 +90,23 @@ export default function DashboardPage() {
               <span className="text-ink">Sono</span>
               <span style={{ color: '#2ea873' }}>Pass</span>
             </p>
+            <div className="flex items-center gap-2">
+            {user ? (
+              <button
+                onClick={() => router.push('/account')}
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white surface active:scale-95 transition-transform"
+                aria-label="Account"
+              >
+                <User size={18} className="text-ink" strokeWidth={2} />
+              </button>
+            ) : (
+              <button
+                onClick={() => router.push('/login?next=/dashboard')}
+                className="h-10 px-4 flex items-center rounded-full bg-white surface text-[14px] font-bold text-ink active:scale-95 transition-transform"
+              >
+                Sign in
+              </button>
+            )}
             <button
               onClick={() => setIsMenuOpen(true)}
               className="w-10 h-10 flex items-center justify-center rounded-full bg-white surface active:scale-95 transition-transform"
@@ -96,6 +114,7 @@ export default function DashboardPage() {
             >
               <Menu size={18} className="text-ink" strokeWidth={2} />
             </button>
+            </div>
           </div>
           <h1 className="text-[30px] font-extrabold tracking-[-0.03em] text-ink leading-tight">{greeting}</h1>
           <p className="text-slate-500 text-[15px] mt-1">
