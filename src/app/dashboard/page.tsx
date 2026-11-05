@@ -15,12 +15,18 @@ import {
   ListChecks,
   Menu,
   ArrowUpRight,
+  CalendarDays,
+  User,
   type LucideIcon,
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
 import MenuModal from '@/components/layout/MenuModal';
 import { ModalitySelectorDropdown } from '@/components/ModalitySelector';
 import GradientIcon, { type GradientName } from '@/components/GradientIcon';
+import AppFooter from '@/components/Disclaimer';
+import { useAuth } from '@/contexts/AuthContext';
+import { getOnboarding, saveOnboarding, daysUntil } from '@/lib/onboarding';
+import { readLocalProgress, hasMeaningfulProgress } from '@/lib/progressSync';
 
 const STUDY_MODES: { href: string; title: string; subtitle: string; icon: LucideIcon; gradient: GradientName }[] = [
   { href: '/exam/quick-10', title: 'Quick 10', subtitle: '~5 minutes', icon: Zap, gradient: 'emerald' },
@@ -40,12 +46,26 @@ export default function DashboardPage() {
   const [stats, setStats] = useState<UserStats | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [greeting, setGreeting] = useState('Welcome back');
+  const [examDays, setExamDays] = useState<number | null>(null);
   const { currentModality } = useModality();
+  const { ready, syncing, user } = useAuth();
 
   useEffect(() => {
+    if (!ready || syncing) return;
+    const onboarding = getOnboarding();
+    if (!onboarding.completedAt) {
+      // Students who were already studying before onboarding existed skip it
+      if (hasMeaningfulProgress(readLocalProgress())) {
+        saveOnboarding({ ...onboarding, completedAt: new Date().toISOString() });
+      } else {
+        router.replace('/onboarding');
+        return;
+      }
+    }
+    setExamDays(daysUntil(onboarding.examDate));
     setStats(getStats());
     setGreeting(greetingFor(new Date().getHours()));
-  }, []);
+  }, [ready, syncing, router]);
 
   const modalityStats = stats ? getCurrentModalityStats(stats) : null;
   const accuracy = modalityStats && modalityStats.totalAnswered > 0
@@ -70,6 +90,23 @@ export default function DashboardPage() {
               <span className="text-ink">Sono</span>
               <span style={{ color: '#2ea873' }}>Pass</span>
             </p>
+            <div className="flex items-center gap-2">
+            {user ? (
+              <button
+                onClick={() => router.push('/account')}
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white surface active:scale-95 transition-transform"
+                aria-label="Account"
+              >
+                <User size={18} className="text-ink" strokeWidth={2} />
+              </button>
+            ) : (
+              <button
+                onClick={() => router.push('/login?next=/dashboard')}
+                className="h-10 px-4 flex items-center rounded-full bg-white surface text-[14px] font-bold text-ink active:scale-95 transition-transform"
+              >
+                Sign in
+              </button>
+            )}
             <button
               onClick={() => setIsMenuOpen(true)}
               className="w-10 h-10 flex items-center justify-center rounded-full bg-white surface active:scale-95 transition-transform"
@@ -77,13 +114,22 @@ export default function DashboardPage() {
             >
               <Menu size={18} className="text-ink" strokeWidth={2} />
             </button>
+            </div>
           </div>
           <h1 className="text-[30px] font-extrabold tracking-[-0.03em] text-ink leading-tight">{greeting}</h1>
           <p className="text-slate-500 text-[15px] mt-1">
             {currentModality ? `Let's get you ready for ${currentModality.shortName}.` : 'Your registry exam prep companion'}
           </p>
-          <div className="mt-4">
+          <div className="mt-4 flex flex-wrap items-center gap-2">
             <ModalitySelectorDropdown />
+            {examDays !== null && examDays >= 0 && (
+              <span className="surface inline-flex items-center gap-2 pl-1.5 pr-3.5 py-1.5 rounded-full">
+                <GradientIcon icon={CalendarDays} gradient="violet" size={30} />
+                <span className="text-[14px] font-bold text-ink">
+                  {examDays === 0 ? 'Exam day!' : `${examDays} ${examDays === 1 ? 'day' : 'days'} to go`}
+                </span>
+              </span>
+            )}
           </div>
         </div>
 
@@ -148,9 +194,7 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        <div className="px-5 pb-6 text-center">
-          <p className="text-[11px] text-slate-400">SonoPass · Made for sonographers</p>
-        </div>
+        <AppFooter />
       </div>
     </AppLayout>
   );

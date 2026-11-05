@@ -1,21 +1,28 @@
 'use client';
 
 import { useState, useEffect, ReactNode } from 'react';
+import { useAuth } from '@/contexts/AuthContext';
 
 interface AppInitializerProps {
   children: ReactNode;
 }
 
 export default function AppInitializer({ children }: AppInitializerProps) {
-  const [isReady, setIsReady] = useState(false);
+  const { ready: authReady } = useAuth();
+  const [minTimeDone, setMinTimeDone] = useState(false);
+  const [timedOut, setTimedOut] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsReady(true);
-    }, 800);
-
-    return () => clearTimeout(timer);
+    const minTimer = setTimeout(() => setMinTimeDone(true), 800);
+    // Never hold the app on the splash screen for long if the network is slow
+    const maxTimer = setTimeout(() => setTimedOut(true), 3500);
+    return () => {
+      clearTimeout(minTimer);
+      clearTimeout(maxTimer);
+    };
   }, []);
+
+  const isReady = minTimeDone && (authReady || timedOut);
 
   if (!isReady) {
     return (

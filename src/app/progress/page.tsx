@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
 import GradientIcon, { gradientCss, gradientFor, type GradientName } from '@/components/GradientIcon';
+import AppFooter from '@/components/Disclaimer';
 
 const CATEGORY_STYLE: Record<string, { icon: LucideIcon; gradient: GradientName }> = {
   'Cerebrovascular': { icon: Brain, gradient: 'violet' },
@@ -279,9 +280,7 @@ export default function ProgressPage() {
           </div>
         </div>
 
-        <div className="px-5 pb-6 text-center">
-          <p className="text-[11px] text-slate-400">SonoPass · Made for sonographers</p>
-        </div>
+        <AppFooter />
       </div>
     </AppLayout>
   );

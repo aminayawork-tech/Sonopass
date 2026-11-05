@@ -1,3 +1,4 @@
+import { markLocalProgressChanged } from './progressSync';
 import { performMigrationIfNeeded, getDefaultStats as getDefaultStatsFromMigration, getDefaultModalityStats, type NewUserStats } from './migration';
 
 const STORAGE_KEY = 'sonopass_stats';
@@ -94,6 +95,7 @@ export function getCurrentModalityStats(stats: UserStats): ModalityStats {
 export function saveStats(stats: UserStats): void {
   if (typeof window === 'undefined') return;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
+  markLocalProgressChanged();
 }
 
 function getToday(): string {

@@ -1,6 +1,6 @@
 'use client';
 
-import { X, Info, Shield, FileText, HelpCircle, CreditCard, BookOpen, Brain, Users } from 'lucide-react';
+import { X, Info, Shield, FileText, HelpCircle, CreditCard, BookOpen, Brain, Users, User } from 'lucide-react';
 import { useEffect } from 'react';
 
 interface MenuModalProps {
@@ -9,6 +9,7 @@ interface MenuModalProps {
 }
 
 const quickAccessItems = [
+  { id: 'account', label: 'Account', icon: User, href: '/account' },
   { id: 'study-guide', label: 'Study Guide', icon: BookOpen, href: '/study-guide' },
   { id: 'mock-exams', label: 'Mock Exams', icon: Brain, href: '/exam/mock-exams' },
 ];

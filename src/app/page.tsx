@@ -7,6 +7,8 @@ import {
   Brain, BookOpen, TrendingUp, ClipboardList,
   Star, Zap, ShieldCheck,
 } from 'lucide-react';
+import { ARDMS_DISCLAIMER } from '@/components/Disclaimer';
+import { useAuth } from '@/contexts/AuthContext';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/sonopass';
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.sonopass';
@@ -101,6 +103,7 @@ function PlayStoreBadge() {
 
 export default function LandingPage() {
   const router = useRouter();
+  const { user } = useAuth();
   const [isStandalone, setIsStandalone] = useState<boolean | null>(null);
 
   useEffect(() => {
@@ -126,17 +129,35 @@ export default function LandingPage() {
             <span className="text-gray-900">Sono</span>
             <span style={{ color: '#3abc83' }}>Pass</span>
           </span>
-          <div className="flex items-center gap-3">
-            <Link
-              href="/app"
-              className="text-sm text-gray-500 hover:text-gray-900 transition-colors hidden sm:block"
-            >
-              Open App
-            </Link>
+          <div className="flex items-center gap-2 sm:gap-3">
+            {user ? (
+              <Link
+                href="/dashboard"
+                className="inline-flex items-center text-white px-4 py-2 rounded-xl transition-opacity hover:opacity-90 text-sm font-semibold"
+                style={{ backgroundColor: '#3abc83' }}
+              >
+                Open App
+              </Link>
+            ) : (
+              <>
+                <Link
+                  href="/login?next=/dashboard"
+                  className="text-sm font-semibold text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors"
+                >
+                  Log in
+                </Link>
+                <Link
+                  href="/signup?next=/dashboard"
+                  className="inline-flex items-center text-white px-4 py-2 rounded-xl transition-opacity hover:opacity-90 text-sm font-semibold"
+                  style={{ backgroundColor: '#3abc83' }}
+                >
+                  Sign up free
+                </Link>
+              </>
+            )}
             <a
               href={APP_STORE_URL}
-              className="inline-flex items-center gap-2 text-white px-4 py-2 rounded-xl transition-opacity hover:opacity-90 text-sm font-semibold"
-              style={{ backgroundColor: '#3abc83' }}
+              className="hidden md:inline-flex items-center px-4 py-2 rounded-xl text-sm font-semibold text-gray-900 border border-gray-200 hover:border-gray-300 transition-colors"
             >
               Download App
             </a>
@@ -164,6 +185,12 @@ export default function LandingPage() {
                 <AppStoreBadge />
                 <PlayStoreBadge />
               </div>
+              <p className="mt-4 text-sm text-gray-500">
+                Or{' '}
+                <Link href={user ? '/dashboard' : '/signup?next=/dashboard'} className="font-semibold hover:underline" style={{ color: '#2a9d6f' }}>
+                  {user ? 'open SonoPass on the web →' : 'start free on the web →'}
+                </Link>
+              </p>
               <div className="flex items-center justify-center lg:justify-start gap-5 mt-6">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
@@ -333,6 +360,7 @@ export default function LandingPage() {
           </span>
           <div className="flex items-center gap-5">
             <Link href="/app" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Web App</Link>
+            <Link href="/login?next=/dashboard" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Log in</Link>
             <Link href="/privacy" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Privacy</Link>
             <Link href="/support" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Support</Link>
           </div>
@@ -340,6 +368,7 @@ export default function LandingPage() {
             © {new Date().getFullYear()} SonoPass · For educational use only.
           </p>
         </div>
+        <p className="max-w-3xl mx-auto mt-5 text-center text-gray-400 text-[11px] leading-relaxed">{ARDMS_DISCLAIMER}</p>
       </footer>
 
     </div>

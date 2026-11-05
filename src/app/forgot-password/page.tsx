@@ -2,134 +2,50 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { AlertCircle, CheckCircle, ArrowLeft } from 'lucide-react';
+import { getSupabase } from '@/lib/supabase/client';
+import { AuthShell, Field, FormError } from '@/components/auth/AuthShell';
 
 export default function ForgotPasswordPage() {
+  const supabase = getSupabase();
   const [email, setEmail] = useState('');
-  const [error, setError] = useState('');
-  const [success, setSuccess] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError('');
-    setSuccess(false);
-
-    if (!email) {
-      setError('Please enter your email address');
-      return;
-    }
-
+    if (!supabase) return;
     setLoading(true);
-
-    try {
-      const response = await fetch('/api/auth/forgot-password', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setSuccess(true);
-        setEmail(''); // Clear form
-      } else {
-        setError(data.error || 'Failed to send reset email');
-      }
-    } catch (err) {
-      setError('Something went wrong. Please try again.');
-    } finally {
-      setLoading(false);
-    }
+    setError(null);
+    const { error: err } = await supabase.auth.resetPasswordForEmail(email.trim(), {
+      redirectTo: `${window.location.origin}/reset-password`,
+    });
+    setLoading(false);
+    if (err) setError(err.message);
+    else setSent(true);
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sono-green-ultrasound/10 to-sono-blue-soft/10 flex items-center justify-center p-4">
-      <Card className="w-full max-w-md p-8 bg-white shadow-2xl rounded-2xl">
-        {/* Logo */}
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-black mb-2">
-            <span className="text-gray-900">Sono</span>
-            <span className="text-sono-green-ultrasound">Pass</span>
-          </h1>
-          <p className="text-gray-600">Reset your password</p>
+    <AuthShell title="Reset your password" subtitle="We’ll email you a link to choose a new one." back="/login">
+      {sent ? (
+        <div className="surface rounded-2xl p-5">
+          <p className="text-[15px] font-bold text-ink">Check your inbox</p>
+          <p className="text-[14px] text-slate-500 mt-1 leading-relaxed">
+            If an account exists for <span className="font-semibold text-ink">{email}</span>, a reset link is on its way.
+          </p>
         </div>
-
-        {/* Success Message */}
-        {success && (
-          <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-start gap-3">
-            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-            <div>
-              <p className="text-sm font-semibold text-green-800 mb-1">Check your email!</p>
-              <p className="text-xs text-green-700">
-                If an account exists with that email, you&apos;ll receive password reset instructions.
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* Error Message */}
-        {error && !success && (
-          <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start gap-3">
-            <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-            <p className="text-sm text-red-800">{error}</p>
-          </div>
-        )}
-
-        {!success && (
-          <>
-            <p className="text-sm text-gray-600 mb-6">
-              Enter your email address and we&apos;ll send you a link to reset your password.
-            </p>
-
-            {/* Forgot Password Form */}
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="student@example.com"
-                  required
-                  className="w-full"
-                  disabled={loading}
-                />
-              </div>
-
-              <Button
-                type="submit"
-                className="w-full bg-sono-green-ultrasound hover:bg-sono-green-soft text-white font-semibold h-12"
-                disabled={loading}
-              >
-                {loading ? 'Sending...' : 'Send Reset Link'}
-              </Button>
-            </form>
-          </>
-        )}
-
-        {/* Back to Login */}
-        <div className="mt-6 text-center">
-          <Link href="/login" className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900">
-            <ArrowLeft className="w-4 h-4" />
-            Back to login
-          </Link>
-        </div>
-
-        {/* Back to Home */}
-        <div className="mt-4 text-center">
-          <Link href="/" className="text-sm text-gray-500 hover:text-gray-700">
-            ← Back to home
-          </Link>
-        </div>
-      </Card>
-    </div>
+      ) : (
+        <form onSubmit={submit} className="flex flex-col gap-4">
+          <Field label="Email" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" />
+          <FormError message={error} />
+          <button type="submit" disabled={!supabase || loading} className="btn-primary h-12 rounded-2xl text-[15px] font-bold disabled:opacity-50 active:scale-[0.98] transition-transform">
+            {loading ? 'Sending…' : 'Send reset link'}
+          </button>
+        </form>
+      )}
+      <p className="text-center mt-6">
+        <Link href="/login" className="text-[14px] font-bold" style={{ color: '#2ea873' }}>Back to sign in</Link>
+      </p>
+    </AuthShell>
   );
 }

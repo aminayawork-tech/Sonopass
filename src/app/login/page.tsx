@@ -1,149 +1,71 @@
 'use client';
 
-import { useState } from 'react';
-import { signIn } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
+import { Suspense, useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { AlertCircle } from 'lucide-react';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { getSupabase } from '@/lib/supabase/client';
+import { markFreshSignIn, useAuth } from '@/contexts/AuthContext';
+import { AuthShell, Divider, Field, FormError, OAuthButtons, safeNext } from '@/components/auth/AuthShell';
 
-export default function LoginPage() {
+function LoginForm() {
   const router = useRouter();
+  const params = useSearchParams();
+  const next = safeNext(params.get('next'));
+  const { user, syncing } = useAuth();
+  const supabase = getSupabase();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  // Leave once signed in and progress has synced
+  useEffect(() => {
+    if (user && !syncing) router.replace(next);
+  }, [user, syncing, next, router]);
+
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError('');
+    if (!supabase) return;
+    setError(null);
     setLoading(true);
-
-    try {
-      const result = await signIn('credentials', {
-        email,
-        password,
-        redirect: false,
-      });
-
-      if (result?.error) {
-        setError(result.error);
-      } else {
-        router.push('/dashboard');
-        router.refresh();
-      }
-    } catch (err) {
-      setError('Something went wrong. Please try again.');
-    } finally {
+    markFreshSignIn();
+    const { error: err } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
+    if (err) {
+      setError(err.message === 'Invalid login credentials' ? 'That email and password don’t match an account.' : err.message);
       setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sono-green-ultrasound/10 to-sono-blue-soft/10 flex items-center justify-center p-4">
-      <Card className="w-full max-w-md p-8 bg-white shadow-2xl rounded-2xl">
-        {/* Logo */}
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-black mb-2">
-            <span className="text-gray-900">Sono</span>
-            <span className="text-sono-green-ultrasound">Pass</span>
-          </h1>
-          <p className="text-gray-600">Sign in to your account</p>
+    <AuthShell title="Welcome back" subtitle="Sign in to pick up where you left off on any device.">
+      <OAuthButtons next={next} />
+      <Divider label="or with email" />
+      <form onSubmit={submit} className="flex flex-col gap-4">
+        <Field label="Email" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" />
+        <Field label="Password" type="password" autoComplete="current-password" required value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Your password" />
+        <div className="flex justify-end -mt-1">
+          <Link href="/forgot-password" className="text-[13px] font-semibold" style={{ color: '#2ea873' }}>Forgot password?</Link>
         </div>
+        <FormError message={error} />
+        <button type="submit" disabled={!supabase || loading} className="btn-primary h-12 rounded-2xl text-[15px] font-bold disabled:opacity-50 active:scale-[0.98] transition-transform">
+          {loading || (user && syncing) ? 'Signing in…' : 'Sign in'}
+        </button>
+      </form>
+      <p className="text-center text-[14px] text-slate-500 mt-6">
+        New to SonoPass?{' '}
+        <Link href={`/signup?next=${encodeURIComponent(next)}`} className="font-bold" style={{ color: '#2ea873' }}>Create an account</Link>
+      </p>
+      <p className="text-center mt-3">
+        <Link href="/dashboard" className="text-[13px] font-semibold text-slate-400">Keep studying as a guest</Link>
+      </p>
+    </AuthShell>
+  );
+}
 
-        {/* Error Message */}
-        {error && (
-          <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start gap-3">
-            <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-            <div>
-              <p className="text-sm text-red-800">{error}</p>
-              {error === 'No account found with this email' && (
-                <Link href="/signup" className="text-sm text-red-700 underline mt-1 inline-block font-medium">
-                  Create an account →
-                </Link>
-              )}
-            </div>
-          </div>
-        )}
-
-        {/* Demo Notice */}
-        <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-          <p className="text-sm text-blue-800 mb-2">
-            <strong>Demo Login:</strong>
-          </p>
-          <p className="text-xs text-blue-700">
-            Email: demo@sonopass.com<br />
-            Password: demo123
-          </p>
-        </div>
-
-        {/* Login Form */}
-        <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-              Email
-            </label>
-            <Input
-              id="email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="student@example.com"
-              required
-              className="w-full"
-              disabled={loading}
-            />
-          </div>
-
-          <div>
-            <div className="flex items-center justify-between mb-2">
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                Password
-              </label>
-              <Link href="/forgot-password" className="text-xs text-sono-green-ultrasound hover:underline">
-                Forgot password?
-              </Link>
-            </div>
-            <Input
-              id="password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="••••••••"
-              required
-              className="w-full"
-              disabled={loading}
-            />
-          </div>
-
-          <Button
-            type="submit"
-            className="w-full bg-sono-green-ultrasound hover:bg-sono-green-soft text-white font-semibold h-12"
-            disabled={loading}
-          >
-            {loading ? 'Signing in...' : 'Sign In'}
-          </Button>
-        </form>
-
-        {/* Sign Up Link */}
-        <div className="mt-6 text-center">
-          <p className="text-sm text-gray-600">
-            Don&apos;t have an account?{' '}
-            <Link href="/signup" className="text-sono-green-ultrasound hover:underline font-medium">
-              Sign up
-            </Link>
-          </p>
-        </div>
-
-        {/* Back to Home */}
-        <div className="mt-4 text-center">
-          <Link href="/" className="text-sm text-gray-500 hover:text-gray-700">
-            ← Back to home
-          </Link>
-        </div>
-      </Card>
-    </div>
+export default function LoginPage() {
+  return (
+    <Suspense>
+      <LoginForm />
+    </Suspense>
   );
 }

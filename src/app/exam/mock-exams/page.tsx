@@ -7,6 +7,7 @@ import { useModality } from '@/contexts/ModalityContext';
 import { getStats, getCurrentModalityStats, type UserStats } from '@/lib/userStats';
 import AppLayout from '@/components/layout/AppLayout';
 import { gradientCss, GRADIENTS, type GradientName } from '@/components/GradientIcon';
+import AppFooter from '@/components/Disclaimer';
 
 const EXAM_GRADIENTS: GradientName[] = ['violet', 'blue', 'cyan', 'rose', 'indigo', 'amber'];
 
@@ -177,9 +178,7 @@ export default function MockExamsPage() {
           </div>
         </div>
 
-        <div className="px-5 pb-6 text-center">
-          <p className="text-[11px] text-slate-400">SonoPass · Made for sonographers</p>
-        </div>
+        <AppFooter />
       </div>
     </AppLayout>
   );

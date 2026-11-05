@@ -10,7 +10,7 @@ const sans = Plus_Jakarta_Sans({
 });
 import { ModalityProvider } from "@/contexts/ModalityContext";
 import AppInitializer from "@/components/AppInitializer";
-import SessionProvider from "@/components/providers/SessionProvider";
+import { AuthProvider } from "@/contexts/AuthContext";
 
 export const metadata: Metadata = {
   title: "SonoPass - Ultrasound Registry Exam Prep",
@@ -53,13 +53,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={sans.variable}>
       <body className="font-sans antialiased">
-        <SessionProvider>
-          <AppInitializer>
-            <ModalityProvider>
+        <ModalityProvider>
+          <AuthProvider>
+            <AppInitializer>
               {children}
-            </ModalityProvider>
-          </AppInitializer>
-        </SessionProvider>
+            </AppInitializer>
+          </AuthProvider>
+        </ModalityProvider>
       </body>
     </html>
   );

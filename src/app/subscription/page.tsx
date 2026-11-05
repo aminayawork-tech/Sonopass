@@ -1,86 +1,59 @@
 'use client';
 
+import { useState } from 'react';
+import { Crown, Sparkles } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
-import { Card } from '@/components/ui/card';
-import { CreditCard, Calendar, Award } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import GradientIcon from '@/components/GradientIcon';
+import PlanCards, { type PaidPlan } from '@/components/PlanCards';
+import { useAuth } from '@/contexts/AuthContext';
+
+const PLAN_NAME = { free: 'Free', monthly: 'Pro Monthly', lifetime: 'Pro Lifetime' } as const;
+const PLAN_SUB = {
+  free: 'Upgrade to unlock every registry and mock exam.',
+  monthly: '$9.99 per month · cancel anytime from your app store.',
+  lifetime: 'Paid once. Pro is yours for every registry you take.',
+} as const;
 
 export default function SubscriptionPage() {
+  const { plan, notify } = useAuth();
+  const [selected, setSelected] = useState<PaidPlan | null>('lifetime');
+
+  // Purchases go through the App Store / Google Play later; for now the button is a placeholder.
+  const purchase = () => notify('Purchases aren’t live yet. You haven’t been charged.');
+
   return (
     <AppLayout>
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
-        <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Manage Subscription</h1>
-          <p className="text-gray-600">View and manage your SonoPass subscription</p>
-        </div>
+      <div className="min-h-screen px-5 pt-14 pb-10" style={{ backgroundColor: '#F4F5F7' }}>
+        <h1 className="text-[30px] font-extrabold tracking-[-0.03em] text-ink leading-tight">Subscription</h1>
 
-        <Card className="p-6 rounded-2xl shadow-md">
-          <div className="flex items-start gap-4 mb-6">
-            <div className="p-3 bg-emerald-100 rounded-xl">
-              <Award className="w-6 h-6 text-emerald-600" />
-            </div>
-            <div className="flex-1">
-              <h2 className="text-xl font-bold text-gray-900 mb-1">Current Plan</h2>
-              <p className="text-2xl font-bold text-emerald-600">Free Trial</p>
-              <p className="text-sm text-gray-600">Full access to all features</p>
-            </div>
+        <div className="surface rounded-[24px] p-5 mt-6 flex items-center gap-4">
+          <GradientIcon icon={plan === 'free' ? Crown : Sparkles} gradient={plan === 'free' ? 'blue' : 'emerald'} size={44} />
+          <div className="min-w-0">
+            <p className="eyebrow">Current plan</p>
+            <p className="text-[18px] font-extrabold text-ink mt-0.5">{PLAN_NAME[plan]}</p>
+            <p className="text-[13px] text-slate-500 mt-0.5 leading-snug">{PLAN_SUB[plan]}</p>
           </div>
-        </Card>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Card className="p-6 rounded-2xl shadow-md">
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-blue-100 rounded-xl">
-                <Calendar className="w-6 h-6 text-blue-600" />
-              </div>
-              <div className="flex-1">
-                <h2 className="text-lg font-bold text-gray-900 mb-2">Billing Cycle</h2>
-                <p className="text-gray-600 mb-1">Next billing date</p>
-                <p className="text-lg font-semibold text-gray-900">No active subscription</p>
-              </div>
-            </div>
-          </Card>
-
-          <Card className="p-6 rounded-2xl shadow-md">
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-purple-100 rounded-xl">
-                <CreditCard className="w-6 h-6 text-purple-600" />
-              </div>
-              <div className="flex-1">
-                <h2 className="text-lg font-bold text-gray-900 mb-2">Payment Method</h2>
-                <p className="text-gray-600 mb-3">No payment method on file</p>
-                <Button variant="outline" size="sm">
-                  Add Payment Method
-                </Button>
-              </div>
-            </div>
-          </Card>
         </div>
 
-        <Card className="p-6 rounded-2xl shadow-md bg-gradient-to-r from-emerald-50 to-teal-50 border-emerald-200">
-          <h2 className="text-xl font-bold text-gray-900 mb-3">Upgrade to Premium</h2>
-          <ul className="space-y-2 mb-4">
-            <li className="flex items-start gap-2">
-              <span className="text-emerald-600 mt-1">✓</span>
-              <span className="text-gray-700">Unlimited practice questions</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-emerald-600 mt-1">✓</span>
-              <span className="text-gray-700">Access to all mock exams</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-emerald-600 mt-1">✓</span>
-              <span className="text-gray-700">Detailed performance analytics</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-emerald-600 mt-1">✓</span>
-              <span className="text-gray-700">Study together features</span>
-            </li>
-          </ul>
-          <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">
-            Upgrade Now - $9.99/month
-          </Button>
-        </Card>
+        {plan !== 'lifetime' && (
+          <div className="mt-7">
+            <p className="eyebrow mb-1">{plan === 'monthly' ? 'Switch to lifetime' : 'Go Pro'}</p>
+            <p className="text-[19px] font-extrabold text-ink tracking-tight mb-4">
+              Lifetime launch deal: pay once, $49.99
+            </p>
+            <PlanCards selected={selected} onSelect={setSelected} />
+            <button
+              onClick={purchase}
+              disabled={!selected || selected === plan}
+              className="btn-primary w-full py-4 rounded-2xl text-[16px] font-bold mt-5 disabled:opacity-40 active:scale-[0.98] transition-transform"
+            >
+              {selected === 'monthly' ? 'Start Pro for $9.99/mo' : 'Get lifetime for $49.99'}
+            </button>
+            <button onClick={purchase} className="block w-full text-center text-[14px] font-semibold text-slate-500 mt-3">
+              Restore purchases
+            </button>
+          </div>
+        )}
       </div>
     </AppLayout>
   );
