@@ -5,11 +5,10 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { getSupabase, isSupabaseConfigured } from '@/lib/supabase/client';
 import { markFreshSignIn } from '@/contexts/AuthContext';
+import { isNativeApp, APP_AUTH_CALLBACK } from '@/lib/platform';
 
 // Only allow redirects within this app (blocks open redirects like //evil.com)
-export function safeNext(next: string | null | undefined, fallback = '/dashboard'): string {
-  return next && next.startsWith('/') && !next.startsWith('//') ? next : fallback;
-}
+export { safeNext } from '@/lib/safeNext';
 
 export function AuthShell({ title, subtitle, children, back = '/dashboard' }: { title: string; subtitle?: string; children: ReactNode; back?: string }) {
   return (
@@ -89,6 +88,26 @@ export function OAuthButtons({ next }: { next: string }) {
     setBusy(provider);
     setError(null);
     markFreshSignIn();
+    if (isNativeApp()) {
+      // Google and Apple don't allow sign-in inside an app's web view: open the system browser,
+      // which hands the result back through the app's URL scheme (handled in AuthContext).
+      const { data, error: err } = await supabase.auth.signInWithOAuth({
+        provider,
+        options: { redirectTo: `${APP_AUTH_CALLBACK}?next=${encodeURIComponent(next)}`, skipBrowserRedirect: true },
+      });
+      if (err || !data.url) {
+        setError(err?.message ?? 'Could not start sign-in. Please try again.');
+        setBusy(null);
+        return;
+      }
+      const { Browser } = await import('@capacitor/browser');
+      const done = await Browser.addListener('browserFinished', () => {
+        setBusy(null);
+        done.remove();
+      });
+      await Browser.open({ url: data.url, presentationStyle: 'popover' });
+      return;
+    }
     const { error: err } = await supabase.auth.signInWithOAuth({
       provider,
       options: { redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}` },

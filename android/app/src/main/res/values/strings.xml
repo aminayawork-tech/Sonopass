@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SonoPass</string>
+    <string name="title_activity_main">SonoPass</string>
+    <string name="package_name">com.sonopass.app</string>
+    <string name="custom_url_scheme">com.sonopass.app</string>
+</resources>

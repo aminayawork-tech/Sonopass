@@ -52,6 +52,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={sans.variable}>
+      <head>
+        {/* Store app: mark <html> for the status-bar spacing in globals.css, and since a reload of e.g. /account
+            is answered with the home page file, load account.html instead */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){if(!/SonoPassApp/.test(navigator.userAgent))return;document.documentElement.classList.add('native-app');var l=location,p=l.pathname;if(p!=='/'&&p.split('/').pop().indexOf('.')<0){l.replace(p.replace(/\\/$/,'')+'.html'+l.search+l.hash)}})()`,
+          }}
+        />
+      </head>
       <body className="font-sans antialiased">
         <ModalityProvider>
           <AuthProvider>

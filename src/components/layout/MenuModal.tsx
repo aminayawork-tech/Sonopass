@@ -2,6 +2,7 @@
 
 import { X, Info, Shield, FileText, HelpCircle, CreditCard, BookOpen, Brain, Users, User } from 'lucide-react';
 import { useEffect } from 'react';
+import { purchasesEnabled } from '@/lib/platform';
 
 interface MenuModalProps {
   isOpen: boolean;
@@ -91,7 +92,7 @@ export default function MenuModal({ isOpen, onClose }: MenuModalProps) {
               {/* Settings Section */}
               <div>
                 <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-4">Settings</h3>
-                {menuItems.map((item) => {
+                {menuItems.filter((item) => item.id !== 'subscription' || purchasesEnabled()).map((item) => {
                   const Icon = item.icon;
                   return (
                     <a

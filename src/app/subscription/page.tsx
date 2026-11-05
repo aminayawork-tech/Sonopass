@@ -6,6 +6,7 @@ import AppLayout from '@/components/layout/AppLayout';
 import GradientIcon from '@/components/GradientIcon';
 import PlanCards, { type PaidPlan } from '@/components/PlanCards';
 import { useAuth } from '@/contexts/AuthContext';
+import { purchasesEnabled } from '@/lib/platform';
 
 const PLAN_NAME = { free: 'Free', monthly: 'Pro Monthly', lifetime: 'Pro Lifetime' } as const;
 const PLAN_SUB = {
@@ -31,11 +32,11 @@ export default function SubscriptionPage() {
           <div className="min-w-0">
             <p className="eyebrow">Current plan</p>
             <p className="text-[18px] font-extrabold text-ink mt-0.5">{PLAN_NAME[plan]}</p>
-            <p className="text-[13px] text-slate-500 mt-0.5 leading-snug">{PLAN_SUB[plan]}</p>
+            <p className="text-[13px] text-slate-500 mt-0.5 leading-snug">{plan === 'free' && !purchasesEnabled() ? 'Every study feature is included in the app.' : PLAN_SUB[plan]}</p>
           </div>
         </div>
 
-        {plan !== 'lifetime' && (
+        {plan !== 'lifetime' && purchasesEnabled() && (
           <div className="mt-7">
             <p className="eyebrow mb-1">{plan === 'monthly' ? 'Switch to lifetime' : 'Go Pro'}</p>
             <p className="text-[19px] font-extrabold text-ink tracking-tight mb-4">

@@ -7,6 +7,7 @@ import { MailCheck } from 'lucide-react';
 import { getSupabase } from '@/lib/supabase/client';
 import { AuthShell } from '@/components/auth/AuthShell';
 import GradientIcon from '@/components/GradientIcon';
+import { webOrigin } from '@/lib/platform';
 
 function VerifyEmail() {
   const email = useSearchParams().get('email') ?? '';
@@ -15,7 +16,7 @@ function VerifyEmail() {
 
   const resend = async () => {
     if (!supabase || !email) return;
-    await supabase.auth.resend({ type: 'signup', email, options: { emailRedirectTo: `${window.location.origin}/auth/callback` } });
+    await supabase.auth.resend({ type: 'signup', email, options: { emailRedirectTo: `${webOrigin()}/auth/callback` } });
     setResent(true);
   };
 

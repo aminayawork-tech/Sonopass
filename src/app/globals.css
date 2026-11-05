@@ -411,3 +411,35 @@ body.focus-mode-active::before {
     opacity: 0.5;
   }
 }
+
+/* Store app (iOS / Android): the web view runs edge to edge, so keep content out from under the
+   status bar. Bottom areas already use env(safe-area-inset-bottom). */
+html.native-app,
+html.native-app body {
+  background-color: #F4F5F7;
+}
+html.native-app body {
+  padding-top: env(safe-area-inset-top);
+}
+html.native-app .h-\[100dvh\] {
+  height: calc(100dvh - env(safe-area-inset-top));
+}
+html.native-app .min-h-\[100dvh\] {
+  min-height: calc(100dvh - env(safe-area-inset-top));
+}
+html.native-app .fixed.inset-0,
+html.native-app .fixed.top-0 {
+  top: env(safe-area-inset-top);
+}
+html.native-app .fixed.top-3 {
+  top: calc(0.75rem + env(safe-area-inset-top));
+}
+html.native-app .fixed.top-16 {
+  top: calc(4rem + env(safe-area-inset-top));
+}
+html.native-app .fixed.top-20 {
+  top: calc(5rem + env(safe-area-inset-top));
+}
+html.native-app main .pt-14 {
+  padding-top: 1.75rem;
+}

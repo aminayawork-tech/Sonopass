@@ -11,7 +11,7 @@ import { ARDMS_DISCLAIMER } from '@/components/Disclaimer';
 import { useAuth } from '@/contexts/AuthContext';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/sonopass';
-const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.sonopass';
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.sonopass.app';
 
 const FEATURES = [
   {

@@ -13,6 +13,7 @@ import GradientIcon from '@/components/GradientIcon';
 import PlanCards, { type PaidPlan } from '@/components/PlanCards';
 import { OAuthButtons, Divider } from '@/components/auth/AuthShell';
 import { cn } from '@/lib/utils';
+import { purchasesEnabled } from '@/lib/platform';
 
 type Step = 'welcome' | 'exam' | 'date' | 'plan' | 'account';
 
@@ -26,10 +27,12 @@ export default function OnboardingPage() {
   const [examDate, setExamDate] = useState('');
   const [plan, setPlan] = useState<PaidPlan | null>('lifetime');
 
-  const steps: Step[] = useMemo(
-    () => (configured && !user ? ['welcome', 'exam', 'date', 'plan', 'account'] : ['welcome', 'exam', 'date', 'plan']),
-    [configured, user],
-  );
+  const steps: Step[] = useMemo(() => {
+    const list: Step[] = ['welcome', 'exam', 'date'];
+    if (purchasesEnabled()) list.push('plan');
+    if (configured && !user) list.push('account');
+    return list;
+  }, [configured, user]);
   const index = steps.indexOf(step);
   const today = new Date().toISOString().slice(0, 10);
 
