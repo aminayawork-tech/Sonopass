@@ -4,7 +4,7 @@ name: Mobile build check
 # The Android job also produces a test APK you can install on a phone (Actions → this run → Artifacts).
 on:
   push:
-    branches: [main, claude/restore-card-definitions-zGjP2]
+    branches: [main]
   workflow_dispatch:
 
 env:
