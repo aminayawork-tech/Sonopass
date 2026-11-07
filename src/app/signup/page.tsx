@@ -6,6 +6,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { getSupabase } from '@/lib/supabase/client';
 import { markFreshSignIn, useAuth } from '@/contexts/AuthContext';
 import { AuthShell, Divider, Field, FormError, OAuthButtons, safeNext } from '@/components/auth/AuthShell';
+import { webOrigin } from '@/lib/platform';
 
 function SignupForm() {
   const router = useRouter();
@@ -38,7 +39,7 @@ function SignupForm() {
       password,
       options: {
         data: { full_name: name.trim() || undefined },
-        emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}`,
+        emailRedirectTo: `${webOrigin()}/auth/callback?next=${encodeURIComponent(next)}`,
       },
     });
     if (err) {

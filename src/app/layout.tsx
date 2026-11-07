@@ -1,16 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const sans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+// Plus Jakarta Sans (SIL Open Font License), bundled so builds don't depend on Google Fonts
+const sans = localFont({
+  src: "./fonts/PlusJakartaSans-latin.woff2",
+  weight: "200 800",
   variable: "--font-sans",
   display: "swap",
 });
 import { ModalityProvider } from "@/contexts/ModalityContext";
 import AppInitializer from "@/components/AppInitializer";
 import { AuthProvider } from "@/contexts/AuthContext";
+import AccessGuard from "@/components/AccessGuard";
 
 export const metadata: Metadata = {
   title: "SonoPass - Ultrasound Registry Exam Prep",
@@ -52,11 +54,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={sans.variable}>
+      <head>
+        {/* Store app: mark <html> for the status-bar spacing in globals.css, and since a reload of e.g. /account
+            is answered with the home page file, load account.html instead */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){if(!/SonoPassApp/.test(navigator.userAgent))return;document.documentElement.classList.add('native-app');var l=location,p=l.pathname;if(p!=='/'&&p.split('/').pop().indexOf('.')<0){l.replace(p.replace(/\\/$/,'')+'.html'+l.search+l.hash)}})()`,
+          }}
+        />
+      </head>
       <body className="font-sans antialiased">
         <ModalityProvider>
           <AuthProvider>
             <AppInitializer>
-              {children}
+              <AccessGuard>{children}</AccessGuard>
             </AppInitializer>
           </AuthProvider>
         </ModalityProvider>

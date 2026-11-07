@@ -37,6 +37,7 @@ interface ExamInterfaceProps {
   modality?: string;
   showResults?: boolean;
   onRestart?: () => void;
+  onComplete?: () => void;
 }
 
 // Category color mapping for distinguishable badges
@@ -73,7 +74,7 @@ const getCategoryColors = (category: string) => {
   return fallback[h % fallback.length];
 };
 
-export default function ExamInterface({ questions: initialQuestions, title, mode, examId, modality, showResults = true, onRestart }: ExamInterfaceProps) {
+export default function ExamInterface({ questions: initialQuestions, title, mode, examId, modality, showResults = true, onRestart, onComplete }: ExamInterfaceProps) {
   const isExam = mode === 'exam';
   const [questions, setQuestions] = useState<Question[]>(initialQuestions);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -276,6 +277,7 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
       setSubmitOpen(false);
     }
     setCompleted(true);
+    onComplete?.();
   };
 
   // Time warnings and auto-submit

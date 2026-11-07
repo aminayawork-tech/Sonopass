@@ -7,6 +7,7 @@ import {
   getCurrentModalityStats, getHeartRefillAt, type UserStats,
 } from '@/lib/userStats';
 import GradientIcon from '@/components/GradientIcon';
+import { webOrigin } from '@/lib/platform';
 
 function formatDuration(ms: number) {
   const totalMinutes = Math.max(1, Math.ceil(ms / 60000));
@@ -44,7 +45,7 @@ export default function HeartsSheet({
   };
 
   const handleShare = async () => {
-    const url = window.location.origin;
+    const url = webOrigin();
     const shareData = {
       title: 'SonoPass',
       text: "I'm prepping for my ultrasound registry exam with SonoPass. Check it out:",

@@ -17,6 +17,7 @@ import {
   ArrowUpRight,
   CalendarDays,
   User,
+  Lock,
   type LucideIcon,
 } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
@@ -26,6 +27,7 @@ import GradientIcon, { type GradientName } from '@/components/GradientIcon';
 import AppFooter from '@/components/Disclaimer';
 import { useAuth } from '@/contexts/AuthContext';
 import { getOnboarding, saveOnboarding, daysUntil } from '@/lib/onboarding';
+import { quickTenAccess } from '@/lib/freeQuota';
 import { readLocalProgress, hasMeaningfulProgress } from '@/lib/progressSync';
 
 const STUDY_MODES: { href: string; title: string; subtitle: string; icon: LucideIcon; gradient: GradientName }[] = [
@@ -48,7 +50,8 @@ export default function DashboardPage() {
   const [greeting, setGreeting] = useState('Welcome back');
   const [examDays, setExamDays] = useState<number | null>(null);
   const { currentModality } = useModality();
-  const { ready, syncing, user } = useAuth();
+  const { ready, syncing, user, isPro } = useAuth();
+  const [quickTenFree, setQuickTenFree] = useState<boolean | null>(null);
 
   useEffect(() => {
     if (!ready || syncing) return;
@@ -63,9 +66,11 @@ export default function DashboardPage() {
       }
     }
     setExamDays(daysUntil(onboarding.examDate));
+    setQuickTenFree(currentModality ? quickTenAccess(currentModality.id).allowed : true);
     setStats(getStats());
     setGreeting(greetingFor(new Date().getHours()));
-  }, [ready, syncing, router]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready, syncing, router, currentModality?.id]);
 
   const modalityStats = stats ? getCurrentModalityStats(stats) : null;
   const accuracy = modalityStats && modalityStats.totalAnswered > 0
@@ -137,20 +142,33 @@ export default function DashboardPage() {
         <div className="px-5 mb-7">
           <p className="eyebrow mb-3">Start studying</p>
           <div className="grid grid-cols-2 gap-3">
-            {STUDY_MODES.map(({ href, title, subtitle, icon, gradient }) => (
-              <button
-                key={href}
-                onClick={() => router.push(href)}
-                className="surface rounded-[22px] p-4 text-left active:scale-[0.97] transition-transform"
-              >
-                <div className="flex items-start justify-between mb-5">
-                  <GradientIcon icon={icon} gradient={gradient} size={44} />
-                  <ArrowUpRight size={16} className="text-slate-300" />
-                </div>
-                <p className="text-[15px] font-bold text-ink leading-tight">{title}</p>
-                <p className="text-[12px] text-slate-400 font-medium mt-0.5">{subtitle}</p>
-              </button>
-            ))}
+            {STUDY_MODES.map(({ href, title, subtitle, icon, gradient }) => {
+              const isQuick = href === '/exam/quick-10';
+              const locked = !isPro && !isQuick;
+              const sub = !isPro && isQuick
+                ? quickTenFree === false ? 'Free set done today' : 'Free · 1 set a day'
+                : subtitle;
+              return (
+                <button
+                  key={href}
+                  onClick={() => router.push(href)}
+                  className="surface rounded-[22px] p-4 text-left active:scale-[0.97] transition-transform"
+                >
+                  <div className="flex items-start justify-between mb-5">
+                    <GradientIcon icon={icon} gradient={gradient} size={44} />
+                    {locked ? (
+                      <span className="flex items-center gap-1 px-2 py-1 rounded-full bg-slate-900 text-white text-[10.5px] font-extrabold tracking-wide">
+                        <Lock size={10} strokeWidth={3} /> PRO
+                      </span>
+                    ) : (
+                      <ArrowUpRight size={16} className="text-slate-300" />
+                    )}
+                  </div>
+                  <p className="text-[15px] font-bold text-ink leading-tight">{title}</p>
+                  <p className="text-[12px] text-slate-400 font-medium mt-0.5">{sub}</p>
+                </button>
+              );
+            })}
           </div>
         </div>
 

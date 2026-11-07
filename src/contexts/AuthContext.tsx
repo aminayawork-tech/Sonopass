@@ -11,6 +11,10 @@ import {
 } from '@/lib/progressSync';
 import { getOnboarding, saveOnboarding } from '@/lib/onboarding';
 import { useModality } from '@/contexts/ModalityContext';
+import { useRouter } from 'next/navigation';
+import { isNativeApp, APP_AUTH_CALLBACK } from '@/lib/platform';
+import { safeNext } from '@/lib/safeNext';
+import { cachedStorePro, getStorePlan, storeAvailable, type PaidPlan } from '@/lib/store';
 
 export type Plan = 'free' | 'monthly' | 'lifetime';
 
@@ -20,7 +24,11 @@ interface AuthValue {
   syncing: boolean;
   user: User | null;
   plan: Plan;
+  isPro: boolean;          // Pro from the account (Supabase) or from an App Store / Google Play purchase
+  proReady: boolean;       // the store purchase check has finished (always true on the web)
+  refreshPro: () => Promise<boolean>;
   signOut: () => Promise<void>;
+  deleteAccount: () => Promise<string | null>;
   notify: (message: string) => void;
 }
 
@@ -53,11 +61,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   noteAuthRedirect();
   const supabase = getSupabase();
   const { switchModality } = useModality();
+  const router = useRouter();
   const [user, setUser] = useState<User | null>(null);
   const [ready, setReady] = useState(!supabase);
   const [syncing, setSyncing] = useState(false);
   const [plan, setPlan] = useState<Plan>('free');
   const [notice, setNotice] = useState<string | null>(null);
+  const [storePlan, setStorePlan] = useState<PaidPlan | null>(() =>
+    typeof window !== 'undefined' && cachedStorePro() ? 'lifetime' : null,
+  );
+  const [proReady, setProReady] = useState(() => typeof window === 'undefined' || !storeAvailable());
   const syncedFor = useRef<string | null>(null);
   const pushTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const userRef = useRef<User | null>(null);
@@ -196,8 +209,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (pushTimer.current) clearTimeout(pushTimer.current);
       pushTimer.current = setTimeout(flush, 2000);
     };
-    const onVisibility = async () => {
-      if (document.visibilityState === 'hidden') {
+    const onVisibility = async (hidden = document.visibilityState === 'hidden') => {
+      if (hidden) {
         if (pushTimer.current) flush();
         return;
       }
@@ -206,13 +219,61 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const { data: known, error } = await supabase.rpc('check_device', { p_device_id: getDeviceId() });
       if (!error && known === false) await handleRevoked();
     };
+    const onVisibilityEvent = () => onVisibility();
     window.addEventListener(PROGRESS_CHANGED_EVENT, onChange);
-    document.addEventListener('visibilitychange', onVisibility);
+    document.addEventListener('visibilitychange', onVisibilityEvent);
+    // Store app: also react to the app going to the background / coming back
+    let appState: { remove: () => Promise<void> } | null = null;
+    let disposed = false;
+    if (isNativeApp()) {
+      import('@capacitor/app').then(async ({ App }) => {
+        const h = await App.addListener('appStateChange', ({ isActive }) => onVisibility(!isActive));
+        if (disposed) h.remove();
+        else appState = h;
+      });
+    }
     return () => {
+      disposed = true;
+      appState?.remove();
       window.removeEventListener(PROGRESS_CHANGED_EVENT, onChange);
-      document.removeEventListener('visibilitychange', onVisibility);
+      document.removeEventListener('visibilitychange', onVisibilityEvent);
     };
   }, [supabase, pushNow, handleRevoked]);
+
+  // Store app: Google / Apple sign-in finishes in the system browser and comes back through the app's URL scheme
+  useEffect(() => {
+    if (!supabase || !isNativeApp()) return;
+    let removed = false;
+    const handles: { remove: () => Promise<void> }[] = [];
+    (async () => {
+      const { App } = await import('@capacitor/app');
+      const { Browser } = await import('@capacitor/browser');
+      const onUrl = await App.addListener('appUrlOpen', async ({ url }) => {
+        if (!url.startsWith(APP_AUTH_CALLBACK)) return;
+        Browser.close().catch(() => {});
+        const params = new URL(url).searchParams;
+        const code = params.get('code');
+        const failure = params.get('error_description') ?? params.get('error');
+        if (failure || !code) {
+          setNotice(failure ? `Sign-in didn't finish: ${failure}` : 'Sign-in didn’t finish. Please try again.');
+          return;
+        }
+        markFreshSignIn();
+        const { error } = await supabase.auth.exchangeCodeForSession(code);
+        if (error) {
+          setNotice(`Sign-in didn't finish: ${error.message}`);
+          return;
+        }
+        router.replace(safeNext(params.get('next')));
+      });
+      handles.push(onUrl);
+      if (removed) handles.forEach((h) => h.remove());
+    })();
+    return () => {
+      removed = true;
+      handles.forEach((h) => h.remove());
+    };
+  }, [supabase, router]);
 
   const signOut = useCallback(async () => {
     if (!supabase) return;
@@ -227,8 +288,46 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setPlan('free');
   }, [supabase, pushNow]);
 
+  // Store app: check what this Apple ID / Google account has bought, at start and whenever the app comes back
+  const refreshPro = useCallback(async () => {
+    if (!storeAvailable()) return false;
+    const owned = await getStorePlan();
+    setStorePlan(owned);
+    setProReady(true);
+    return owned !== null;
+  }, []);
+
+  useEffect(() => {
+    if (!storeAvailable()) return;
+    refreshPro();
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') refreshPro();
+    };
+    document.addEventListener('visibilitychange', onVisible);
+    return () => document.removeEventListener('visibilitychange', onVisible);
+  }, [refreshPro]);
+
+  const effectivePlan: Plan = plan !== 'free' ? plan : storePlan ?? 'free';
+
+  // Permanently deletes the account and everything stored with it (required by the App Store)
+  const deleteAccount = useCallback(async (): Promise<string | null> => {
+    if (!supabase) return 'Accounts aren’t switched on.';
+    if (pushTimer.current) clearTimeout(pushTimer.current);
+    const { error } = await supabase.rpc('delete_my_account');
+    if (error) return error.message;
+    syncedFor.current = null;
+    await supabase.auth.signOut({ scope: 'local' }).catch(() => {});
+    clearLocalProgress();
+    setUser(null);
+    setPlan('free');
+    return null;
+  }, [supabase]);
+
   return (
-    <AuthContext.Provider value={{ configured: isSupabaseConfigured(), ready, syncing, user, plan, signOut, notify: setNotice }}>
+    <AuthContext.Provider value={{
+      configured: isSupabaseConfigured(), ready, syncing, user, plan: effectivePlan, isPro: effectivePlan !== 'free',
+      proReady, refreshPro, signOut, deleteAccount, notify: setNotice,
+    }}>
       {children}
       {notice && (
         <div className="fixed top-3 inset-x-3 z-[60] flex justify-center pointer-events-none" role="status">

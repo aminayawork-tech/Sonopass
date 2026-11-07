@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { getSupabase } from '@/lib/supabase/client';
 import { AuthShell, Field, FormError } from '@/components/auth/AuthShell';
+import { webOrigin } from '@/lib/platform';
 
 export default function ForgotPasswordPage() {
   const supabase = getSupabase();
@@ -18,7 +19,7 @@ export default function ForgotPasswordPage() {
     setLoading(true);
     setError(null);
     const { error: err } = await supabase.auth.resetPasswordForEmail(email.trim(), {
-      redirectTo: `${window.location.origin}/reset-password`,
+      redirectTo: `${webOrigin()}/reset-password`,
     });
     setLoading(false);
     if (err) setError(err.message);
