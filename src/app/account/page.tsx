@@ -29,7 +29,7 @@ function lastSeen(iso: string) {
 
 export default function AccountPage() {
   const router = useRouter();
-  const { configured, user, plan, signOut, deleteAccount, notify } = useAuth();
+  const { configured, user, plan, isAdmin, signOut, deleteAccount, notify } = useAuth();
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [deleteError, setDeleteError] = useState<string | null>(null);
   const supabase = getSupabase();
@@ -107,6 +107,9 @@ export default function AccountPage() {
                 <span className="flex items-center gap-2 text-[14px] font-semibold text-ink">
                   <Crown size={16} className={plan === 'free' ? 'text-slate-300' : 'text-amber-500'} />
                   {PLAN_LABEL[plan]}
+                  {isAdmin && (
+                    <span className="px-2 py-0.5 rounded-full bg-slate-900 text-white text-[10.5px] font-extrabold tracking-wide">ADMIN</span>
+                  )}
                 </span>
                 <Link href="/subscription" className="text-[13px] font-bold" style={{ color: '#2ea873' }}>
                   {plan === 'free' ? 'See plans' : 'Manage'}
@@ -114,9 +117,16 @@ export default function AccountPage() {
               </div>
             </div>
 
+            {isAdmin && (
+              <Link href="/admin/answer-key" className="surface rounded-[22px] px-4 py-3.5 mt-4 flex items-center justify-between">
+                <span className="text-[14.5px] font-bold text-ink">Admin: answer key</span>
+                <span className="text-[13px] font-bold" style={{ color: '#2ea873' }}>Open</span>
+              </Link>
+            )}
+
             <div className="flex items-end justify-between mt-7 mb-3">
               <p className="eyebrow">Signed-in devices</p>
-              <p className="text-[12px] font-semibold text-slate-400">{devices.length} of 2</p>
+              <p className="text-[12px] font-semibold text-slate-400">{isAdmin ? `${devices.length} · no limit` : `${devices.length} of 2`}</p>
             </div>
             <div className="surface rounded-[22px] divide-y divide-slate-100">
               {devices.map((d) => {

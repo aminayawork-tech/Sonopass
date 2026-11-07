@@ -24,7 +24,8 @@ interface AuthValue {
   syncing: boolean;
   user: User | null;
   plan: Plan;
-  isPro: boolean;          // Pro from the account (Supabase) or from an App Store / Google Play purchase
+  isPro: boolean;
+  isAdmin: boolean;        // owner/test account: everything unlocked, no device limit          // Pro from the account (Supabase) or from an App Store / Google Play purchase
   proReady: boolean;       // the store purchase check has finished (always true on the web)
   refreshPro: () => Promise<boolean>;
   signOut: () => Promise<void>;
@@ -66,6 +67,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [ready, setReady] = useState(!supabase);
   const [syncing, setSyncing] = useState(false);
   const [plan, setPlan] = useState<Plan>('free');
+  const [isAdmin, setIsAdmin] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
   const [storePlan, setStorePlan] = useState<PaidPlan | null>(() =>
     typeof window !== 'undefined' && cachedStorePro() ? 'lifetime' : null,
@@ -83,6 +85,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await supabase.auth.signOut({ scope: 'local' });
     setUser(null);
     setPlan('free');
+    setIsAdmin(false);
     setNotice(REVOKED_MESSAGE);
   }, [supabase]);
 
@@ -158,6 +161,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const { data: ent } = await supabase.from('entitlements').select('plan, status, expires_at').eq('user_id', u.id).maybeSingle();
       const active = ent && ent.status === 'active' && (!ent.expires_at || new Date(ent.expires_at) > new Date());
       setPlan(active ? (ent.plan as Plan) : 'free');
+      const { data: admin } = await supabase.from('admins').select('user_id').eq('user_id', u.id).maybeSingle();
+      setIsAdmin(Boolean(admin));
     } finally {
       setSyncing(false);
     }
@@ -185,6 +190,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         syncedFor.current = null;
         setUser(null);
         setPlan('free');
+    setIsAdmin(false);
       } else if (u) {
         setUser(u);
       }
@@ -286,6 +292,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     clearLocalProgress();
     setUser(null);
     setPlan('free');
+    setIsAdmin(false);
   }, [supabase, pushNow]);
 
   // Store app: check what this Apple ID / Google account has bought, at start and whenever the app comes back
@@ -320,12 +327,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     clearLocalProgress();
     setUser(null);
     setPlan('free');
+    setIsAdmin(false);
     return null;
   }, [supabase]);
 
   return (
     <AuthContext.Provider value={{
-      configured: isSupabaseConfigured(), ready, syncing, user, plan: effectivePlan, isPro: effectivePlan !== 'free',
+      configured: isSupabaseConfigured(), ready, syncing, user, plan: effectivePlan, isPro: isAdmin || effectivePlan !== 'free', isAdmin,
       proReady, refreshPro, signOut, deleteAccount, notify: setNotice,
     }}>
       {children}
