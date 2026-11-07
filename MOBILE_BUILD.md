@@ -89,11 +89,48 @@ before they can publish to production.
 
 ---
 
+## In-app purchases (Apple and Google, no third-party service)
+
+Free members get one Quick 10 a day on one registry; everything else needs Pro. Pro is sold through
+Apple's and Google's own billing, and the app shows the price you set in each store, in the user's
+own currency (`src/lib/store.ts`).
+
+### App Store Connect
+1. **Agreements, Tax, and Banking** → accept the *Paid Apps* agreement and add bank and tax info
+   (purchases don't work until this is *Active*).
+2. Your app → **Monetization → Subscriptions** → create a subscription group **SonoPass Pro** →
+   **+** subscription:
+   - Reference name `Pro Monthly`, Product ID **`sonopass_pro_monthly`**, duration **1 month**,
+     price **$9.99**, add a display name and description, and a review screenshot of the offer screen.
+3. Your app → **Monetization → In-App Purchases** → **+** → type **Non-Consumable**:
+   - Reference name `Pro Lifetime`, Product ID **`sonopass_pro_lifetime`**, price **$49.99**, display
+     name, description and review screenshot.
+4. In Xcode: App target → **Signing & Capabilities → + Capability → In-App Purchase**.
+5. When you submit the app version, add both products under **In-App Purchases and Subscriptions**
+   on the version page so they're reviewed together.
+
+To test before release: TestFlight builds use the sandbox automatically, so purchases are free
+(Settings → App Store → Sandbox Account on the phone, if asked).
+
+### Google Play Console
+1. **Monetize → Subscriptions → Create subscription**: Product ID **`sonopass_pro_monthly`**, add a base
+   plan with ID **`monthly`**, auto-renewing, 1 month, $9.99. Activate it.
+2. **Monetize → In-app products → Create product**: Product ID **`sonopass_pro_lifetime`**, $49.99.
+   Activate it.
+3. Products only appear after the app has been uploaded to a testing track at least once. Add your
+   Google account under **Settings → License testing** to buy without being charged.
+
+### How Pro is decided
+- In the store apps: whatever the Apple ID / Google account has bought (checked at launch, when the
+  app comes back to the foreground, and with **Restore purchases**).
+- On the website: the `entitlements` table in Supabase (set a row's `plan` to `monthly` or `lifetime`
+  by hand for anyone you want to give Pro on the web). App Store purchases are not copied to the
+  website automatically yet.
+
 ## What the store apps do differently from the website
 
-- Prices and purchase buttons are hidden (the plan step in onboarding, the subscription page and the
-  menu item). Both stores require their own in-app purchase system for digital upgrades; turn the
-  buttons back on once purchases are connected (`purchasesEnabled()` in `src/lib/platform.ts`).
+- Purchases happen only in the apps. On the website the buy button explains that Pro is available
+  in the iPhone and Android app.
 - Google / Apple sign-in opens the system browser and returns to the app via `com.sonopass.app://`.
 - Email links (confirm email, reset password) open sonopass.com.
 

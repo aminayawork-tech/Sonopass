@@ -9,7 +9,6 @@ import GradientIcon from '@/components/GradientIcon';
 import { useAuth } from '@/contexts/AuthContext';
 import { getSupabase } from '@/lib/supabase/client';
 import { getDeviceId } from '@/lib/device';
-import { purchasesEnabled } from '@/lib/platform';
 
 interface DeviceRow {
   device_id: string;
@@ -33,7 +32,6 @@ export default function AccountPage() {
   const { configured, user, plan, signOut, deleteAccount, notify } = useAuth();
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [deleteError, setDeleteError] = useState<string | null>(null);
-  const showPlans = purchasesEnabled();
   const supabase = getSupabase();
   const [devices, setDevices] = useState<DeviceRow[]>([]);
   const [busy, setBusy] = useState(false);
@@ -110,11 +108,9 @@ export default function AccountPage() {
                   <Crown size={16} className={plan === 'free' ? 'text-slate-300' : 'text-amber-500'} />
                   {PLAN_LABEL[plan]}
                 </span>
-                {showPlans && (
-                  <Link href="/subscription" className="text-[13px] font-bold" style={{ color: '#2ea873' }}>
-                    {plan === 'free' ? 'See plans' : 'Manage'}
-                  </Link>
-                )}
+                <Link href="/subscription" className="text-[13px] font-bold" style={{ color: '#2ea873' }}>
+                  {plan === 'free' ? 'See plans' : 'Manage'}
+                </Link>
               </div>
             </div>
 

@@ -14,6 +14,7 @@ import { useModality } from '@/contexts/ModalityContext';
 import { useRouter } from 'next/navigation';
 import { isNativeApp, APP_AUTH_CALLBACK } from '@/lib/platform';
 import { safeNext } from '@/lib/safeNext';
+import { cachedStorePro, getStorePlan, storeAvailable, type PaidPlan } from '@/lib/store';
 
 export type Plan = 'free' | 'monthly' | 'lifetime';
 
@@ -23,6 +24,9 @@ interface AuthValue {
   syncing: boolean;
   user: User | null;
   plan: Plan;
+  isPro: boolean;          // Pro from the account (Supabase) or from an App Store / Google Play purchase
+  proReady: boolean;       // the store purchase check has finished (always true on the web)
+  refreshPro: () => Promise<boolean>;
   signOut: () => Promise<void>;
   deleteAccount: () => Promise<string | null>;
   notify: (message: string) => void;
@@ -63,6 +67,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [syncing, setSyncing] = useState(false);
   const [plan, setPlan] = useState<Plan>('free');
   const [notice, setNotice] = useState<string | null>(null);
+  const [storePlan, setStorePlan] = useState<PaidPlan | null>(() =>
+    typeof window !== 'undefined' && cachedStorePro() ? 'lifetime' : null,
+  );
+  const [proReady, setProReady] = useState(() => typeof window === 'undefined' || !storeAvailable());
   const syncedFor = useRef<string | null>(null);
   const pushTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const userRef = useRef<User | null>(null);
@@ -280,6 +288,27 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setPlan('free');
   }, [supabase, pushNow]);
 
+  // Store app: check what this Apple ID / Google account has bought, at start and whenever the app comes back
+  const refreshPro = useCallback(async () => {
+    if (!storeAvailable()) return false;
+    const owned = await getStorePlan();
+    setStorePlan(owned);
+    setProReady(true);
+    return owned !== null;
+  }, []);
+
+  useEffect(() => {
+    if (!storeAvailable()) return;
+    refreshPro();
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') refreshPro();
+    };
+    document.addEventListener('visibilitychange', onVisible);
+    return () => document.removeEventListener('visibilitychange', onVisible);
+  }, [refreshPro]);
+
+  const effectivePlan: Plan = plan !== 'free' ? plan : storePlan ?? 'free';
+
   // Permanently deletes the account and everything stored with it (required by the App Store)
   const deleteAccount = useCallback(async (): Promise<string | null> => {
     if (!supabase) return 'Accounts aren’t switched on.';
@@ -295,7 +324,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [supabase]);
 
   return (
-    <AuthContext.Provider value={{ configured: isSupabaseConfigured(), ready, syncing, user, plan, signOut, deleteAccount, notify: setNotice }}>
+    <AuthContext.Provider value={{
+      configured: isSupabaseConfigured(), ready, syncing, user, plan: effectivePlan, isPro: effectivePlan !== 'free',
+      proReady, refreshPro, signOut, deleteAccount, notify: setNotice,
+    }}>
       {children}
       {notice && (
         <div className="fixed top-3 inset-x-3 z-[60] flex justify-center pointer-events-none" role="status">

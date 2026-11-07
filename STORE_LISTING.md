@@ -33,7 +33,7 @@ They appear only in the description, used descriptively alongside the "not affil
 ### Promotional text (170) — can be changed any time without a new version
 
 ```
-2,700+ practice questions across 9 registry exams, timed mock exams paced like the real thing, and flashcards for every topic. Study free, on your phone and the web.
+Launch deal: SonoPass Pro Lifetime at the launch price. 2,700+ practice questions, 20 timed mock exams and flashcards for all 9 registry exams.
 ```
 
 ### Description (4,000)
@@ -75,6 +75,14 @@ SEE YOUR PROGRESS
 YOUR PROGRESS ON EVERY DEVICE
 Create a free account and your stats, streak and flashcards stay in sync on your phone and at sonopass.com. Or start studying right away as a guest.
 
+FREE & PRO
+Try SonoPass free with one Quick 10 a day. SonoPass Pro unlocks every question, every mock exam, study mode and all the flashcards for all 9 registries:
+• Pro Lifetime: one payment, yours for every registry you take (launch price)
+• Pro Monthly: billed monthly, cancel anytime
+Pro Monthly renews automatically unless canceled at least 24 hours before the end of the current period. Payment is charged to your Apple ID account; manage or cancel in your App Store account settings.
+Terms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://sonopass.com/privacy
+
 Made for students in DMS programs, new graduates and experienced sonographers adding a new credential.
 
 Questions or feedback? Reach us anytime at sonopass.com/support.
@@ -94,7 +102,7 @@ Welcome to SonoPass! Practice questions, timed mock exams and flashcards for 9 u
 SonoPass works without an account (guest mode). To review signed-in features, use the demo account below, or create one from Account > Create account.
 Account deletion: Account > Delete account.
 Sign-in methods: email, Sign in with Apple, Google.
-There are no in-app purchases in this version.
+In-app purchases: Pro Monthly (auto-renewable subscription, sonopass_pro_monthly) and Pro Lifetime (non-consumable, sonopass_pro_lifetime). Free users get one Quick 10 per day; all other study modes open the Pro offer. Restore Purchases is on the offer screen and in Menu > Manage Subscription.
 ```
 Create a demo account on sonopass.com first (for example review@sonopass.com) and enter its email
 and password in the *Sign-in required* fields.
@@ -155,13 +163,3 @@ Account → Delete account). Shared with third parties: no.
 least 2 phone screenshots (the same 6 as iOS work).
 
 ---
-
-## Later: when in-app purchases are live
-
-Add to the description, above the disclaimer:
-```
-SONOPASS PRO
-Unlock everything with Pro Monthly or the Lifetime launch deal: pay once, keep Pro for every registry you take.
-```
-Apple requires the description to match what's purchasable, so add this only in the same update
-that turns purchases on.

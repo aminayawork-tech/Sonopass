@@ -15,9 +15,3 @@ export function isNativeApp(): boolean {
 export function webOrigin(): string {
   return isNativeApp() ? WEB_ORIGIN : window.location.origin;
 }
-
-// Store apps hide prices and purchase buttons until in-app purchases are connected
-// (Apple and Google require their own billing for digital upgrades).
-export function purchasesEnabled(): boolean {
-  return !isNativeApp();
-}

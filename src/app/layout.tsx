@@ -12,6 +12,7 @@ const sans = localFont({
 import { ModalityProvider } from "@/contexts/ModalityContext";
 import AppInitializer from "@/components/AppInitializer";
 import { AuthProvider } from "@/contexts/AuthContext";
+import AccessGuard from "@/components/AccessGuard";
 
 export const metadata: Metadata = {
   title: "SonoPass - Ultrasound Registry Exam Prep",
@@ -66,7 +67,7 @@ export default function RootLayout({
         <ModalityProvider>
           <AuthProvider>
             <AppInitializer>
-              {children}
+              <AccessGuard>{children}</AccessGuard>
             </AppInitializer>
           </AuthProvider>
         </ModalityProvider>

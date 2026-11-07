@@ -443,3 +443,14 @@ html.native-app .fixed.top-20 {
 html.native-app main .pt-14 {
   padding-top: 1.75rem;
 }
+
+/* iOS date inputs ignore width:100% unless the native appearance is removed */
+input.date-input {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+}
+input.date-input::-webkit-date-and-time-value {
+  text-align: left;
+  margin: 0;
+}
