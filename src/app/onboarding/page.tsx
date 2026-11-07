@@ -24,7 +24,7 @@ const FOUNDER_NOTE = [
   'So I built SonoPass, the prep app I wish I’d had. Every registry is included, every question explains the why, and it costs less than one review book.',
   'I hope it gets you to that pass.',
 ];
-const FOUNDER_SIGNATURE = '— Anthony, founder of SonoPass';
+const FOUNDER_SIGNATURE = '— Founder of SonoPass';
 
 type Step = 'fact' | 'welcome' | 'exam' | 'date' | 'founder' | 'offer' | 'account';
 
