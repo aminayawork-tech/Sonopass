@@ -1,7 +1,8 @@
 'use client';
 
 import { X, Info, Shield, FileText, HelpCircle, CreditCard, BookOpen, Brain, Users, User } from 'lucide-react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { isNativeApp } from '@/lib/platform';
 
 interface MenuModalProps {
   isOpen: boolean;
@@ -23,6 +24,17 @@ const menuItems = [
 ];
 
 export default function MenuModal({ isOpen, onClose }: MenuModalProps) {
+  const [version, setVersion] = useState('v1.0');
+
+  // Store app: show the real version and build number (helps confirm which TestFlight build is installed)
+  useEffect(() => {
+    if (!isOpen || !isNativeApp()) return;
+    import('@capacitor/app')
+      .then(({ App }) => App.getInfo())
+      .then((info) => setVersion(`v${info.version} (${info.build})`))
+      .catch(() => {});
+  }, [isOpen]);
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -116,7 +128,7 @@ export default function MenuModal({ isOpen, onClose }: MenuModalProps) {
           {/* Footer */}
           <div className="p-4 border-t">
             <div className="text-sm text-gray-500 text-center">
-              SonoPass v1.0
+              SonoPass {version}
             </div>
           </div>
         </div>

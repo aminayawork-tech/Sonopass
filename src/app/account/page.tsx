@@ -118,6 +118,18 @@ export default function AccountPage() {
             </div>
 
             {isAdmin && (
+              <button
+                onClick={() => {
+                  try { localStorage.removeItem('sonopass_onboarding'); } catch { /* ignore */ }
+                  router.push('/onboarding');
+                }}
+                className="surface rounded-[22px] px-4 py-3.5 mt-4 w-full flex items-center justify-between"
+              >
+                <span className="text-[14.5px] font-bold text-ink">Admin: replay onboarding</span>
+                <span className="text-[13px] font-bold" style={{ color: '#2ea873' }}>Start</span>
+              </button>
+            )}
+            {isAdmin && (
               <Link href="/admin/answer-key" className="surface rounded-[22px] px-4 py-3.5 mt-4 flex items-center justify-between">
                 <span className="text-[14.5px] font-bold text-ink">Admin: answer key</span>
                 <span className="text-[13px] font-bold" style={{ color: '#2ea873' }}>Open</span>

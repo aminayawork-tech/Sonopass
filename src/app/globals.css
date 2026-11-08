@@ -454,3 +454,19 @@ input.date-input::-webkit-date-and-time-value {
   text-align: left;
   margin: 0;
 }
+/* Store app: headers pinned while scrolling stop below the status bar, and the status-bar strip
+   gets a solid background so scrolled content never shows behind the clock */
+html.native-app .sticky.top-0 {
+  top: env(safe-area-inset-top);
+}
+html.native-app body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-top);
+  background: #F4F5F7;
+  z-index: 9999;
+  pointer-events: none;
+}
