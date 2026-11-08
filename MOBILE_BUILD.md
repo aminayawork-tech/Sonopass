@@ -17,9 +17,9 @@ code as sonopass.com, so every change to the website ships to the apps with the 
 3. Install **Node.js 22** from https://nodejs.org (the LTS installer).
 4. Get the code:
    ```bash
-   git clone https://github.com/aminayawork-tech/Sonopass.git
+   git clone --branch main --single-branch https://github.com/aminayawork-tech/Sonopass.git
    cd Sonopass
-   npm install
+   npm ci
    ```
 5. In the `Sonopass` folder, create a file named `.env.local` with the same two values you added in Vercel:
    ```
@@ -43,12 +43,20 @@ code as sonopass.com, so every change to the website ships to the apps with the 
 ## Every time you build
 
 ```bash
-git pull
-npm install
+cd ~/Sonopass
+git fetch origin main
+git reset --hard origin/main   # match GitHub exactly (your .env.local is kept)
+npm ci                         # install exactly what package-lock.json lists, without changing it
 npm run build:mobile
 ```
 
-`build:mobile` builds the app and copies it into the `ios` and `android` projects.
+`build:mobile` builds the app and copies it into the `ios` and `android` projects. Check the end of
+its output: it should list 4 Capacitor plugins (including `@capgo/native-purchases`) and finish with
+`Sync finished`. If it stops with an error, Xcode would package the previous version.
+
+`git reset --hard` also discards settings Xcode saved in the project (such as your Signing Team), so
+pick your Team again in Xcode after each update. Use `npm ci`, not `npm install`: `npm install` can
+rewrite `package-lock.json`, which then blocks the next update.
 
 Before each store upload, raise the version:
 - **iOS**: Xcode → App target → General → *Version* (e.g. 1.0.1) and *Build* (1, 2, 3…).
