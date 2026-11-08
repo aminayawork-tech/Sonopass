@@ -7,12 +7,13 @@ import { shuffleQuestions } from '@/lib/shuffle';
 import { useModality } from '@/contexts/ModalityContext';
 import { useAuth } from '@/contexts/AuthContext';
 import { allQuestions } from '@/lib/questions';
-import { completeTodaysQuickTen, quickTenAccess, startTodaysQuickTen, type QuickTenAccess } from '@/lib/freeQuota';
+import { completeTodaysQuickTen, quickTenAccess, recordQuickTenAnswer, startTodaysQuickTen, type QuickTenAccess } from '@/lib/freeQuota';
 
 export default function Quick10Page() {
   const [questions, setQuestions] = useState<any[]>([]);
   const [key, setKey] = useState(0);
   const [blocked, setBlocked] = useState<Exclude<QuickTenAccess, { allowed: true }> | null>(null);
+  const [savedAnswers, setSavedAnswers] = useState<Record<string, string> | undefined>(undefined);
   const { currentModality, allModalities, loadQuestions } = useModality();
   const { isPro, ready, proReady } = useAuth();
   const accessKnown = ready && proReady;
@@ -25,6 +26,7 @@ export default function Quick10Page() {
         const all = allQuestions<any>(await loadQuestions());
         if (isPro) {
           setBlocked(null);
+          setSavedAnswers(undefined);
           setQuestions(shuffleQuestions(all).slice(0, 10));
           return;
         }
@@ -39,12 +41,14 @@ export default function Quick10Page() {
           const byId = new Map(all.map((q) => [q.id, q]));
           const resumed = access.resumeIds.map((id) => byId.get(id)).filter(Boolean);
           if (resumed.length === access.resumeIds.length) {
+            setSavedAnswers(access.answers);
             setQuestions(resumed);
             return;
           }
         }
         const picked = shuffleQuestions(all).slice(0, 10);
         startTodaysQuickTen(currentModality.id, picked.map((q) => q.id));
+        setSavedAnswers({});
         setQuestions(picked);
       } catch (error) {
         console.error('Failed to load questions:', error);
@@ -85,6 +89,8 @@ export default function Quick10Page() {
       examId="quick-10"
       modality={currentModality.id}
       onComplete={isPro ? undefined : completeTodaysQuickTen}
+      initialAnswers={isPro ? undefined : savedAnswers}
+      onAnswer={isPro ? undefined : recordQuickTenAnswer}
       onRestart={() => setKey(k => k + 1)}
     />
   );
