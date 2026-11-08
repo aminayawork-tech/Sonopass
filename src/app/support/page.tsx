@@ -1,76 +1,59 @@
 'use client';
 
+import { Mail, ChevronDown } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
-import { Card } from '@/components/ui/card';
-import { Mail, MessageCircle, HelpCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import GradientIcon from '@/components/GradientIcon';
+
+const SUPPORT_EMAIL = 'support@sonopass.com';
+
+const FAQ = [
+  { q: 'What do I get for free?', a: 'One Quick 10 a day on one registry. Pro unlocks every question, all mock exams, study mode and the flashcards for all 9 registries.' },
+  { q: 'How do I restore my purchase?', a: 'Open Menu → Manage Subscription (or any Pro screen) and tap Restore purchases while signed in to the same Apple ID or Google account.' },
+  { q: 'How do I cancel Pro Monthly?', a: 'Subscriptions are managed by Apple or Google: Settings → your name → Subscriptions on iPhone, or Play Store → Payments & subscriptions on Android.' },
+  { q: 'How do I reset my password?', a: 'On the sign-in screen tap “Forgot password?” and follow the link we email you.' },
+  { q: 'Why was I signed out on another device?', a: 'Each account can be used on 2 devices. Signing in on a third signs out the one used least recently.' },
+  { q: 'How do I delete my account?', a: 'Menu → Account → Delete account. This permanently removes your account and synced progress.' },
+];
 
 export default function SupportPage() {
   return (
     <AppLayout>
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
-        <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Contact Support</h1>
-          <p className="text-gray-600">We&apos;re here to help you succeed</p>
-        </div>
+      <div className="min-h-screen px-5 pt-14 pb-10" style={{ backgroundColor: '#F4F5F7' }}>
+        <h1 className="text-[30px] font-extrabold tracking-[-0.03em] text-ink leading-tight">Contact Support</h1>
+        <p className="text-slate-500 text-[15px] mt-1">We’re here to help you pass.</p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Card className="p-6 rounded-2xl shadow-md">
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-emerald-100 rounded-xl">
-                <Mail className="w-6 h-6 text-emerald-600" />
-              </div>
-              <div className="flex-1">
-                <h2 className="text-xl font-bold text-gray-900 mb-2">Email Support</h2>
-                <p className="text-gray-600 mb-4">Get help via email within 24 hours</p>
-                <Button className="bg-emerald-500 hover:bg-emerald-600">
-                  Send Email
-                </Button>
-              </div>
-            </div>
-          </Card>
-
-          <Card className="p-6 rounded-2xl shadow-md">
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-blue-100 rounded-xl">
-                <MessageCircle className="w-6 h-6 text-blue-600" />
-              </div>
-              <div className="flex-1">
-                <h2 className="text-xl font-bold text-gray-900 mb-2">Live Chat</h2>
-                <p className="text-gray-600 mb-4">Chat with our support team</p>
-                <Button className="bg-blue-500 hover:bg-blue-600">
-                  Start Chat
-                </Button>
-              </div>
-            </div>
-          </Card>
-        </div>
-
-        <Card className="p-6 rounded-2xl shadow-md">
-          <div className="flex items-start gap-4">
-            <div className="p-3 bg-purple-100 rounded-xl">
-              <HelpCircle className="w-6 h-6 text-purple-600" />
-            </div>
-            <div className="flex-1">
-              <h2 className="text-xl font-bold text-gray-900 mb-2">FAQ</h2>
-              <p className="text-gray-600 mb-4">Find answers to common questions</p>
-              <div className="space-y-3">
-                <div className="border-l-4 border-emerald-500 pl-4">
-                  <h3 className="font-semibold text-gray-900">How do I reset my password?</h3>
-                  <p className="text-sm text-gray-600">Visit the login page and click &quot;Forgot Password&quot;</p>
-                </div>
-                <div className="border-l-4 border-blue-500 pl-4">
-                  <h3 className="font-semibold text-gray-900">Can I access SonoPass offline?</h3>
-                  <p className="text-sm text-gray-600">Some features are available offline in our mobile app</p>
-                </div>
-                <div className="border-l-4 border-purple-500 pl-4">
-                  <h3 className="font-semibold text-gray-900">How do I track my progress?</h3>
-                  <p className="text-sm text-gray-600">Visit the Progress page to see detailed analytics</p>
-                </div>
-              </div>
+        <div className="surface rounded-[24px] p-5 mt-6">
+          <div className="flex gap-4">
+            <GradientIcon icon={Mail} gradient="emerald" size={44} />
+            <div className="min-w-0">
+              <p className="text-[16px] font-bold text-ink">Email support</p>
+              <p className="text-[14px] text-slate-500 mt-1 leading-relaxed">
+                {SUPPORT_EMAIL ? `Write to us at ${SUPPORT_EMAIL} and we’ll reply within 24 hours.` : 'Our support email is coming soon.'}
+              </p>
             </div>
           </div>
-        </Card>
+          {SUPPORT_EMAIL && (
+            <a
+              href={`mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent('SonoPass support')}`}
+              className="btn-primary h-12 rounded-2xl mt-4 flex items-center justify-center text-[15px] font-bold"
+            >
+              Send email
+            </a>
+          )}
+        </div>
+
+        <p className="eyebrow mt-8 mb-3">Common questions</p>
+        <div className="surface rounded-[22px] divide-y divide-slate-100">
+          {FAQ.map((f) => (
+            <details key={f.q} className="group px-4 py-3.5">
+              <summary className="flex items-center justify-between gap-3 cursor-pointer list-none text-[14.5px] font-bold text-ink">
+                {f.q}
+                <ChevronDown size={16} className="text-slate-400 shrink-0 transition-transform group-open:rotate-180" />
+              </summary>
+              <p className="text-[13.5px] text-slate-500 mt-2 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
       </div>
     </AppLayout>
   );

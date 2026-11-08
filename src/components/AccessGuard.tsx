@@ -53,7 +53,23 @@ export function ProPaywall({ title = 'Unlock SonoPass Pro', message }: { title?:
 
 export default function AccessGuard({ children }: { children: ReactNode }) {
   const pathname = usePathname();
-  const { isPro, ready, proReady } = useAuth();
+  const { isPro, isAdmin, ready, proReady } = useAuth();
+
+  // Admin pages (answer key etc.) are for admin accounts only
+  if (normalizePath(pathname).startsWith('/admin')) {
+    if (!ready) return <div className="min-h-screen" style={{ backgroundColor: '#F4F5F7' }} />;
+    if (!isAdmin) {
+      return (
+        <AppLayout>
+          <div className="min-h-screen px-5 pt-14" style={{ backgroundColor: '#F4F5F7' }}>
+            <h1 className="text-[28px] font-extrabold tracking-[-0.03em] text-ink">Admins only</h1>
+            <p className="text-slate-500 text-[15px] mt-2">Sign in with an admin account to open this page.</p>
+          </div>
+        </AppLayout>
+      );
+    }
+    return <>{children}</>;
+  }
 
   if (!isProPath(pathname) || isPro) return <>{children}</>;
   if (!ready || !proReady) return <div className="min-h-screen" style={{ backgroundColor: '#F4F5F7' }} />;

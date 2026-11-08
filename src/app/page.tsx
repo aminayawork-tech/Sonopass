@@ -209,42 +209,18 @@ export default function LandingPage() {
             <div className="flex-1 flex justify-center lg:justify-end">
               <div className="relative w-[260px] sm:w-[300px]">
                 <div className="absolute inset-0 rounded-full blur-3xl scale-110 opacity-30" style={{ backgroundColor: '#3abc83' }} />
-                <div className="relative rounded-[38px] bg-black shadow-2xl overflow-hidden border-[3px] border-gray-800">
-                  <div className="bg-gray-900 px-5 pt-10 pb-6">
-                    <div className="text-2xl font-black mb-1">
-                      <span className="text-white">Sono</span>
-                      <span style={{ color: '#3abc83' }}>Pass</span>
-                    </div>
-                    <p className="text-gray-400 text-xs mb-5">Your registry exam prep companion</p>
-                    <div className="space-y-2.5">
-                      {['Quick 10 · 5 min', 'Study Mode', 'Mock Exams', 'Study Guide'].map((item, i) => (
-                        <div key={item} className="bg-white/10 rounded-xl px-4 py-3 flex items-center gap-3">
-                          <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#3abc8330' }}>
-                            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#3abc83' }} />
-                          </div>
-                          <span className="text-white text-xs font-semibold">{item}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="mt-5 grid grid-cols-3 gap-2">
-                      {[['0', 'Streak'], ['0%', 'Accuracy'], ['0', 'Done']].map(([val, label]) => (
-                        <div key={label} className="bg-white/10 rounded-xl p-2.5 text-center">
-                          <div className="text-sm font-black text-white">{val}</div>
-                          <div className="text-[9px] text-gray-400 mt-0.5">{label}</div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="bg-black flex items-center justify-around px-2 pt-2 pb-1.5">
-                    {['Home', 'Study', 'Exams', 'Guide', 'Progress'].map((label, i) => (
-                      <div key={label} className="flex flex-col items-center gap-0.5">
-                        <div className="w-3.5 h-3.5 rounded-sm" style={{ backgroundColor: i === 0 ? '#3abc83' : '#ffffff40' }} />
-                        <span className="text-[7px]" style={{ color: i === 0 ? '#3abc83' : '#ffffff70' }}>{label}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="bg-black flex items-center justify-center pb-2 pt-1">
-                    <div className="w-16 h-[3px] bg-white/20 rounded-full" />
+                <div className="relative rounded-[46px] bg-black p-[10px] shadow-2xl ring-1 ring-gray-800">
+                  <div className="relative rounded-[36px] overflow-hidden bg-[#F4F5F7]">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/screenshots/app-home.webp"
+                      alt="SonoPass Home screen with Quick 10, Study Mode, Mock Exams, Study Guide and progress stats"
+                      width={390}
+                      height={844}
+                      className="block w-full h-auto"
+                    />
+                    {/* Dynamic Island */}
+                    <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-[28%] h-[24px] rounded-full bg-black" />
                   </div>
                 </div>
               </div>
