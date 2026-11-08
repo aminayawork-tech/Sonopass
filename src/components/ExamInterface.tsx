@@ -38,6 +38,8 @@ interface ExamInterfaceProps {
   showResults?: boolean;
   onRestart?: () => void;
   onComplete?: () => void;
+  initialAnswers?: Record<string, string>;            // practice: answers already given (e.g. resuming today's free Quick 10)
+  onAnswer?: (questionId: string, letter: string) => void;
 }
 
 // Category color mapping for distinguishable badges
@@ -74,12 +76,16 @@ const getCategoryColors = (category: string) => {
   return fallback[h % fallback.length];
 };
 
-export default function ExamInterface({ questions: initialQuestions, title, mode, examId, modality, showResults = true, onRestart, onComplete }: ExamInterfaceProps) {
+export default function ExamInterface({ questions: initialQuestions, title, mode, examId, modality, showResults = true, onRestart, onComplete, initialAnswers, onAnswer }: ExamInterfaceProps) {
   const isExam = mode === 'exam';
   const [questions, setQuestions] = useState<Question[]>(initialQuestions);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, string>>({});
-  const [showAnswer, setShowAnswer] = useState(false);
+  // Resume at the first unanswered question
+  const [currentIndex, setCurrentIndex] = useState(() => {
+    if (!initialAnswers) return 0;
+    const i = initialQuestions.findIndex((q) => initialAnswers[q.id] === undefined);
+    return i === -1 ? Math.max(0, initialQuestions.length - 1) : i;
+  });
+  const [answers, setAnswers] = useState<Record<string, string>>(() => initialAnswers ?? {});
   const [completed, setCompleted] = useState(false);
   const [stats, setStats] = useState<UserStats | null>(null);
   const [xpFlash, setXpFlash] = useState<{ amount: number; correct: boolean } | null>(null);
@@ -157,6 +163,9 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
   const elapsed = startedAt !== null ? Math.max(0, Math.round((now - startedAt) / 1000)) : 0;
 
   const currentQuestion = questions[currentIndex];
+  // Practice mode: once a question is answered it stays answered. Going back shows the chosen answer,
+  // the correct one and the explanation, but the answer can't be changed (no second chance at XP/hearts).
+  const showAnswer = !isExam && !!currentQuestion && answers[currentQuestion.id] !== undefined;
   const progress = ((currentIndex + 1) / questions.length) * 100;
   const answeredCount = Object.keys(answers).length;
 
@@ -200,7 +209,7 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
     }));
 
     if (mode === 'practice') {
-      setShowAnswer(true);
+      onAnswer?.(currentQuestion.id, letter);
       const isCorrect = currentQuestion.correctAnswer === letter;
       const heartsBefore = stats?.hearts ?? 0;
       const result = recordAnswer(isCorrect, currentQuestion.category, modality);
@@ -236,7 +245,6 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1);
-      setShowAnswer(false);
     } else {
       finishExam();
     }
@@ -245,7 +253,6 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
   const handlePrevious = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
-      setShowAnswer(false);
     }
   };
 
@@ -323,7 +330,6 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
     setAnswers({});
     setFlagged(new Set());
     setFurthestIndex(0);
-    setShowAnswer(false);
     setReviewing(false);
     setExamResult(null);
     setStartedAt(null);

@@ -7,6 +7,7 @@ export interface FreeQuickTen {
   modality: string;      // registry id the free set was used on
   questionIds: string[];
   completed: boolean;
+  answers?: Record<string, string>; // question id -> chosen letter, so answers survive leaving and coming back
 }
 
 export function todayKey(d = new Date()): string {
@@ -33,6 +34,16 @@ export function startTodaysQuickTen(modality: string, questionIds: string[]): Fr
   return v;
 }
 
+export function recordQuickTenAnswer(questionId: string, letter: string) {
+  const v = getTodaysQuickTen();
+  if (!v) return;
+  try {
+    localStorage.setItem(KEY, JSON.stringify({ ...v, answers: { ...(v.answers ?? {}), [questionId]: letter } }));
+  } catch {
+    // ignore
+  }
+}
+
 export function completeTodaysQuickTen() {
   const v = getTodaysQuickTen();
   if (!v) return;
@@ -44,13 +55,13 @@ export function completeTodaysQuickTen() {
 }
 
 export type QuickTenAccess =
-  | { allowed: true; resumeIds: string[] | null }
+  | { allowed: true; resumeIds: string[] | null; answers: Record<string, string> }
   | { allowed: false; reason: 'used' | 'other-registry'; modality: string };
 
 export function quickTenAccess(modality: string): QuickTenAccess {
   const today = getTodaysQuickTen();
-  if (!today) return { allowed: true, resumeIds: null };
+  if (!today) return { allowed: true, resumeIds: null, answers: {} };
   if (today.modality !== modality) return { allowed: false, reason: 'other-registry', modality: today.modality };
   if (today.completed) return { allowed: false, reason: 'used', modality: today.modality };
-  return { allowed: true, resumeIds: today.questionIds };
+  return { allowed: true, resumeIds: today.questionIds, answers: today.answers ?? {} };
 }
