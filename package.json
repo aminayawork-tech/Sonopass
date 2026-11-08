@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "build:mobile": "node scripts/check-mobile-env.js && BUILD_TARGET=mobile next build && node scripts/prune-mobile-out.js && cap sync",
-    "mobile:assets": "capacitor-assets generate --iconBackgroundColor \"#CFD3D6\" --splashBackgroundColor \"#F4F5F7\" --splashBackgroundColorDark \"#F4F5F7\"",
+    "mobile:assets": "capacitor-assets generate --iconBackgroundColor \"#FFFFFF\" --splashBackgroundColor \"#F4F5F7\" --splashBackgroundColorDark \"#F4F5F7\"",
     "ios": "cap open ios",
     "android": "cap open android"
   },
