@@ -1296,7 +1296,7 @@
     {
       "id": "spi-mock23-047",
       "number": 47,
-      "question": "Which artifact can occur when the PRF is less than twice the transmitter Doppler frequency?",
+      "question": "Which artifact can occur when the PRF is less than twice the Doppler shift frequency?",
       "options": [
         {
           "letter": "A",
@@ -2504,7 +2504,7 @@
         },
         {
           "letter": "B",
-          "text": "Potential cavitation bioeffect control"
+          "text": "Potential for cavitation bioeffects"
         },
         {
           "letter": "C",
@@ -3044,7 +3044,7 @@
         },
         {
           "letter": "B",
-          "text": "DB"
+          "text": "dB"
         },
         {
           "letter": "C",
@@ -3052,7 +3052,7 @@
         },
         {
           "letter": "D",
-          "text": "Cm"
+          "text": "cm"
         }
       ],
       "correctAnswer": "B",
@@ -4395,7 +4395,7 @@
     {
       "id": "spi-review-036",
       "number": 36,
-      "question": "What adjustment needs to be used to remove reverberation artifact in this image?",
+      "question": "Reverberation artifact is seen as evenly spaced bright lines along the anterior wall of a full bladder. Which adjustment helps reduce it?",
       "options": [
         {
           "letter": "A",
@@ -4420,9 +4420,7 @@
       "hint": "Reverberations arise near the surface, where little second harmonic energy has been generated.",
       "keywords": [
         "reverberation artifact"
-      ],
-      "imageUrl": "/images/spi/review/q036.jpg",
-      "imageCaption": "Transabdominal image of the urinary bladder with arrowheads at the anterior wall"
+      ]
     },
     {
       "id": "spi-review-037",
@@ -4941,7 +4939,7 @@
     {
       "id": "spi-review-054",
       "number": 54,
-      "question": "Which image shape is produced by linear transducer with extended field of view?",
+      "question": "Which image shape is produced by a linear array transducer when its outer scan lines are steered outward to widen the field of view?",
       "options": [
         {
           "letter": "A",
@@ -5453,7 +5451,7 @@
     {
       "id": "spi-review-071",
       "number": 71,
-      "question": "What is the most appropriate method of level 2 transducer disinfection?",
+      "question": "What is the most appropriate method of high-level disinfection for an endocavitary transducer?",
       "options": [
         {
           "letter": "A",
@@ -5915,7 +5913,7 @@
         },
         {
           "letter": "B",
-          "text": "Increase output gain"
+          "text": "Increase output power"
         },
         {
           "letter": "C",
@@ -6343,11 +6341,11 @@
         },
         {
           "letter": "D",
-          "text": "Increase frequency"
+          "text": "Decrease number of focal zones"
         }
       ],
       "correctAnswer": "A",
-      "explanation": "A wider sector requires more scan lines per frame, which lowers frame rate. Decreasing depth and decreasing line density both raise frame rate.",
+      "explanation": "A wider sector requires more scan lines per frame, which lowers frame rate. Decreasing depth, decreasing line density and using fewer focal zones all raise frame rate.",
       "category": "Image Optimization",
       "hint": "Frame rate falls when each frame needs more scan lines or deeper listening time.",
       "keywords": [
@@ -6467,7 +6465,7 @@
         },
         {
           "letter": "D",
-          "text": "All above"
+          "text": "All of the above"
         }
       ],
       "correctAnswer": "D",
@@ -6490,6 +6488,14 @@
         {
           "letter": "B",
           "text": "Increase a number of cycles in a pulse"
+        },
+        {
+          "letter": "C",
+          "text": "Increasing the transducer frequency"
+        },
+        {
+          "letter": "D",
+          "text": "Improving sound transmission into the patient"
         }
       ],
       "correctAnswer": "A",
@@ -6533,7 +6539,7 @@
     {
       "id": "spi-2024-005",
       "number": 5,
-      "question": "Which action may reduce the number of lines in a frame without a loss of temporal resolution?",
+      "question": "Which action may reduce the number of scan lines in a frame without a loss of spatial resolution (line density)?",
       "options": [
         {
           "letter": "A",
@@ -6757,6 +6763,10 @@
         {
           "letter": "C",
           "text": "Decreasing width of the color field of view"
+        },
+        {
+          "letter": "D",
+          "text": "Increasing line density"
         }
       ],
       "correctAnswer": "C",
@@ -7081,15 +7091,15 @@
         },
         {
           "letter": "B",
-          "text": "45"
+          "text": "45 degrees"
         },
         {
           "letter": "C",
-          "text": "88"
+          "text": "88 degrees"
         },
         {
           "letter": "D",
-          "text": "175"
+          "text": "175 degrees"
         }
       ],
       "correctAnswer": "C",
@@ -7767,19 +7777,19 @@
       "options": [
         {
           "letter": "A",
-          "text": "90 degree"
+          "text": "90 degrees"
         },
         {
           "letter": "B",
-          "text": "60"
+          "text": "60 degrees"
         },
         {
           "letter": "C",
-          "text": "30"
+          "text": "30 degrees"
         },
         {
           "letter": "D",
-          "text": "0"
+          "text": "0 degrees"
         }
       ],
       "correctAnswer": "D",
@@ -9006,7 +9016,7 @@
     {
       "id": "spi-art-007",
       "number": 7,
-      "question": "Which artifact is demonstrated in this grayscale image?",
+      "question": "Scanning the right upper quadrant, a copy of a liver lesion appears above the diaphragm, at the same distance beyond the diaphragm as the real lesion is in front of it. Which artifact is this?",
       "options": [
         {
           "letter": "A",
@@ -9031,9 +9041,7 @@
       "hint": "A duplicate lies an equal distance on the far side of a bright, curved interface.",
       "keywords": [
         "grayscale image"
-      ],
-      "imageUrl": "/images/spi/artifacts/a07.jpg",
-      "imageCaption": "Grayscale abdominal image"
+      ]
     },
     {
       "id": "spi-art-008",
@@ -9222,7 +9230,7 @@
       "hint": "The false echo comes from weak off-axis energy, which generates very little second-harmonic signal.",
       "keywords": [],
       "imageUrl": "/images/spi/artifacts/a13.jpg",
-      "imageCaption": "Grayscale image of an anechoic cyst"
+      "imageCaption": "Grayscale image of the gallbladder with a linear echo at the arrow"
     },
     {
       "id": "spi-art-014",
@@ -9658,7 +9666,7 @@
       "correctAnswer": "B",
       "explanation": "Higher frequencies provide better spatial resolution because they produce shorter wavelengths. However, this comes at the cost of reduced penetration depth due to increased attenuation.",
       "category": "Image Optimization",
-      "hint": "Remember: higher frequency = better resolution but less penetration.",
+      "hint": "Consider how wavelength, and therefore pulse length and beam width, change with frequency.",
       "keywords": [
         "frequency",
         "resolution"
@@ -9720,7 +9728,7 @@
       "correctAnswer": "B",
       "explanation": "Frequency and wavelength are inversely proportional. As frequency increases, wavelength decreases. This relationship is described by the equation: wavelength = propagation speed / frequency.",
       "category": "Ultrasound Physics",
-      "hint": "Remember: higher frequency = better resolution but less penetration.",
+      "hint": "Use the wave equation relating propagation speed, frequency and wavelength.",
       "keywords": [
         "frequency"
       ]
@@ -9750,7 +9758,7 @@
       "correctAnswer": "B",
       "explanation": "The average propagation speed of ultrasound in soft tissue is 1,540 m/s (or 1.54 mm/µs). This value is used by ultrasound machines to calculate distance and is the basis for accurate imaging.",
       "category": "Ultrasound Physics",
-      "hint": "Apply fundamental ultrasound physics principles.",
+      "hint": "This is the speed the system assumes in the range equation, giving 13 microseconds of round-trip time per cm.",
       "keywords": []
     },
     {
@@ -9808,7 +9816,7 @@
       "correctAnswer": "B",
       "explanation": "Lateral resolution (also called azimuthal resolution) is the ability to distinguish two structures that are side-by-side, perpendicular to the ultrasound beam. It is determined by beam width.",
       "category": "Image Optimization",
-      "hint": "Lateral = side-to-side, perpendicular to the beam. Axial = along the beam.",
+      "hint": "Think about which resolution is determined by beam width.",
       "keywords": [
         "perpendicular to the beam",
         "Lateral resolution"
@@ -9839,7 +9847,7 @@
       "correctAnswer": "B",
       "explanation": "The Doppler effect measures the frequency shift that occurs when ultrasound reflects off moving structures (typically blood cells). This shift is proportional to the velocity of the moving target and is used to assess blood flow.",
       "category": "Doppler",
-      "hint": "Doppler measures the frequency change when ultrasound bounces off moving blood - higher/lower pitch indicates direction and speed.",
+      "hint": "Think about what changes when sound reflects from moving red blood cells.",
       "keywords": [
         "Doppler effect",
         "Frequency shift due to motion"
@@ -9901,7 +9909,7 @@
       "correctAnswer": "B",
       "explanation": "Acoustic shadowing appears as a dark (anechoic) area behind structures that strongly attenuate or reflect ultrasound, such as bone, calcifications, or gallstones. This occurs because little to no sound energy passes through to deeper structures.",
       "category": "Artifacts",
-      "hint": "Shadowing = dark area behind highly attenuating structures like bone, stones, or calcifications.",
+      "hint": "Think about what appears deep to a gallstone or bone.",
       "keywords": [
         "anechoic shadow",
         "Shadowing",
@@ -9933,7 +9941,7 @@
       "correctAnswer": "C",
       "explanation": "Linear array transducers produce a rectangular image format with uniform width throughout the image. They are commonly used for vascular imaging, musculoskeletal imaging, and small parts.",
       "category": "Transducers",
-      "hint": "Linear = rectangular image. Sector/phased = fan-shaped. Curved = curved/trapezoidal.",
+      "hint": "Picture the image formed when all scan lines run parallel to one another.",
       "keywords": [
         "rectangular image",
         "Linear array"
@@ -9964,7 +9972,7 @@
       "correctAnswer": "B",
       "explanation": "As frequency increases, penetration decreases. Higher frequency sound waves are attenuated more rapidly in tissue, limiting their ability to penetrate deeply. This is why lower frequencies are used for imaging deeper structures.",
       "category": "Ultrasound Physics",
-      "hint": "Higher frequency = better resolution BUT less penetration. Lower frequency = worse resolution BUT more penetration.",
+      "hint": "Recall how attenuation in soft tissue changes with frequency.",
       "keywords": [
         "frequency increases",
         "Penetration decreases"
@@ -9995,7 +10003,7 @@
       "correctAnswer": "A",
       "explanation": "Overall gain adjusts the amplification of all returning echoes uniformly, affecting the brightness of the entire image equally at all depths. This is different from TGC, which selectively adjusts gain at different depths.",
       "category": "Image Optimization",
-      "hint": "Overall gain = uniform brightness adjustment everywhere. TGC = depth-specific brightness adjustment.",
+      "hint": "Distinguish a control that acts on all depths from one that acts on selected depths.",
       "keywords": [
         "overall gain",
         "entire image uniformly"
@@ -10056,7 +10064,7 @@
       "correctAnswer": "A",
       "explanation": "The Doppler shift is proportional to the cosine of the beam-to-flow angle, so 0 degrees gives the largest shift and the smallest velocity error from angle misestimation. In clinical vascular work, angles of 60 degrees or less are accepted because errors grow rapidly above 60 degrees, and at 90 degrees no shift is detected.",
       "category": "Doppler",
-      "hint": "Best Doppler angle is 45-60°. At 90° there's NO Doppler shift. Keep angle <60° for accurate velocities.",
+      "hint": "Consider where the cosine is largest and least affected by small errors in the angle estimate.",
       "keywords": [
         "Doppler angle",
         "60 degrees"
@@ -10087,7 +10095,7 @@
       "correctAnswer": "B",
       "explanation": "Aliasing occurs when the velocity of blood flow exceeds the Nyquist limit (half the pulse repetition frequency). This causes the Doppler waveform to wrap around and appear on the opposite side of the baseline, creating ambiguous velocity information.",
       "category": "Doppler",
-      "hint": "Aliasing = velocity too fast for the PRF setting. Waveform wraps around and appears on wrong side of baseline.",
+      "hint": "Relate the Doppler shift to half the pulse repetition frequency.",
       "keywords": [
         "aliasing",
         "Nyquist limit",
@@ -10119,7 +10127,7 @@
       "correctAnswer": "B",
       "explanation": "Acoustic enhancement (also called through-transmission) appears as increased echogenicity (brightness) behind fluid-filled structures. This occurs because fluid attenuates sound less than surrounding tissue, allowing more energy to reach deeper structures.",
       "category": "Artifacts",
-      "hint": "Enhancement = bright area behind fluid (cysts, bladder). Fluid transmits sound better than solid tissue.",
+      "hint": "Consider how much energy remains for deeper tissue after sound passes through fluid.",
       "keywords": [
         "bright echoes",
         "fluid-filled",
@@ -10151,7 +10159,7 @@
       "correctAnswer": "B",
       "explanation": "The Mechanical Index (MI) is used to assess the potential for non-thermal bioeffects, specifically cavitation. Cavitation is the formation and collapse of gas bubbles in tissue due to the mechanical pressure of ultrasound waves.",
       "category": "Bioeffects",
-      "hint": "MI = Mechanical Index = cavitation risk (bubble formation). TI = Thermal Index = heating risk.",
+      "hint": "Think about which bioeffect is driven by peak rarefactional pressure rather than heating.",
       "keywords": [
         "mechanical index",
         "Cavitation bioeffects"
@@ -10182,7 +10190,7 @@
       "correctAnswer": "B",
       "explanation": "Axial resolution (also called longitudinal or range resolution) is the ability to distinguish two structures along the beam axis. It is determined by spatial pulse length - shorter pulses (fewer cycles, higher frequency) provide better axial resolution.",
       "category": "Image Optimization",
-      "hint": "Axial resolution depends on pulse length. Shorter pulse = better axial resolution. Higher frequency helps!",
+      "hint": "Axial resolution concerns structures lying one behind the other along the beam path.",
       "keywords": [
         "Axial resolution",
         "Spatial pulse length"
