@@ -4,8 +4,7 @@ import { Mail, ChevronDown } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
 import GradientIcon from '@/components/GradientIcon';
 
-// ✏️ Add your support email here once it's set up, e.g. 'support@sonopass.com'
-const SUPPORT_EMAIL = '';
+const SUPPORT_EMAIL = 'support@sonopass.com';
 
 const FAQ = [
   { q: 'What do I get for free?', a: 'One Quick 10 a day on one registry. Pro unlocks every question, all mock exams, study mode and the flashcards for all 9 registries.' },

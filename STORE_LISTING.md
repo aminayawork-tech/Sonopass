@@ -85,7 +85,7 @@ Privacy Policy: https://sonopass.com/privacy
 
 Made for students in DMS programs, new graduates and experienced sonographers adding a new credential.
 
-Questions or feedback? Reach us anytime at sonopass.com/support.
+Questions or feedback? Email us anytime at support@sonopass.com.
 
 SonoPass is an independent study tool and is not affiliated with, endorsed by, or sponsored by the American Registry for Diagnostic Medical Sonography (ARDMS). ARDMS, RDMS, RDCS, RVT and RMSKS are trademarks of their respective owners. Practice questions are original and are not actual exam questions.
 ```
@@ -147,7 +147,7 @@ Required: **6.9" iPhone** (1320 × 2868 or 1290 × 2796). Take them in the Simul
 | **Short description** | `Practice questions, timed mock exams & flashcards for your ultrasound registry.` | 79 / 80 |
 | **Category** | Education | |
 | **Tags** | Education, Medical, Test prep (choose what's offered) | |
-| **Contact email** | your support email | |
+| **Contact email** | support@sonopass.com | |
 | **Website** | https://sonopass.com | |
 | **Privacy policy** | https://sonopass.com/privacy | |
 
