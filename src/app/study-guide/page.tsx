@@ -71,17 +71,16 @@ interface StudyGuideContent {
 }
 
 const CATEGORY_STYLE: Record<string, { icon: LucideIcon; gradient: GradientName }> = {
-  'cerebrovascular': { icon: Brain, gradient: 'violet' },
-  'arterial-hemodynamics': { icon: HeartPulse, gradient: 'rose' },
-  'arterial-anatomy': { icon: GitBranch, gradient: 'orange' },
-  'arterial-disease': { icon: AlertTriangle, gradient: 'amber' },
-  'venous-hemodynamics': { icon: Waves, gradient: 'blue' },
-  'venous-anatomy': { icon: Droplets, gradient: 'cyan' },
-  'venous-testing': { icon: ScanLine, gradient: 'indigo' },
-  'venous-disease': { icon: AlertTriangle, gradient: 'blue' },
-  'arterial-testing': { icon: ScanLine, gradient: 'rose' },
-  'physics-instrumentation': { icon: AudioWaveform, gradient: 'emerald' },
-  'quick-reference': { icon: ListChecks, gradient: 'indigo' },
+  'vasc-cerebro': { icon: Brain, gradient: 'violet' },
+  'vasc-hemo': { icon: HeartPulse, gradient: 'rose' },
+  'vasc-art-anatomy': { icon: GitBranch, gradient: 'orange' },
+  'vasc-art-disease': { icon: AlertTriangle, gradient: 'amber' },
+  'vasc-ven-anatomy': { icon: Droplets, gradient: 'cyan' },
+  'vasc-ven-hemo': { icon: Waves, gradient: 'blue' },
+  'vasc-ven-disease': { icon: ScanLine, gradient: 'indigo' },
+  'vasc-abdominal': { icon: Activity, gradient: 'emerald' },
+  'vasc-physics': { icon: AudioWaveform, gradient: 'emerald' },
+  'vasc-quick-ref': { icon: ListChecks, gradient: 'indigo' },
   'spi-sound': { icon: Waves, gradient: 'blue' },
   'spi-pulsed': { icon: AudioWaveform, gradient: 'cyan' },
   'spi-transducers': { icon: ScanLine, gradient: 'violet' },
@@ -93,7 +92,7 @@ const CATEGORY_STYLE: Record<string, { icon: LucideIcon; gradient: GradientName 
 };
 
 function deckUrl(modalityId: string) {
-  return modalityId === 'vascular' ? '/study-guide-puzzle.json' : `/study-guides/${modalityId}/puzzle.json`;
+  return `/study-guides/${modalityId}/puzzle.json`;
 }
 
 const iconMap: Record<string, any> = {
