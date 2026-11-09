@@ -1,6 +1,6 @@
 'use client';
 
-import type { ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { Lock, Zap } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
@@ -8,6 +8,7 @@ import OfferPanel from '@/components/OfferPanel';
 import { useAuth } from '@/contexts/AuthContext';
 import { useModality } from '@/contexts/ModalityContext';
 import { quickTenAccess } from '@/lib/freeQuota';
+import { isNativeApp } from '@/lib/platform';
 
 // Everything except Quick 10 (and the free pages: home, progress, account, info pages) needs Pro
 const PRO_PATHS = ['/practice', '/exam/study', '/exam/mock-exams', '/exam/mock-1', '/exam/mock-2', '/exam/mock-3', '/exam/mock-4', '/study-guide', '/learn', '/glossary', '/test'];
@@ -51,9 +52,25 @@ export function ProPaywall({ title = 'Unlock SonoPass Pro', message }: { title?:
   );
 }
 
+// Website pages anyone can open without an account. Everything else on the website needs sign-in
+// (Apple or Google); the store apps keep guest mode.
+const PUBLIC_WEB_PATHS = ['/', '/login', '/signup', '/auth/callback', '/forgot-password', '/reset-password', '/verify-email', '/privacy', '/terms', '/support', '/how-it-works'];
+
 export default function AccessGuard({ children }: { children: ReactNode }) {
   const pathname = usePathname();
-  const { isPro, isAdmin, ready, proReady } = useAuth();
+  const router = useRouter();
+  const { isPro, isAdmin, ready, proReady, user, configured } = useAuth();
+  const path = normalizePath(pathname);
+  const needsWebSignIn = configured && !isNativeApp() && !PUBLIC_WEB_PATHS.includes(path);
+
+  useEffect(() => {
+    if (needsWebSignIn && ready && !user) {
+      const next = `${path}${typeof window !== 'undefined' ? window.location.search : ''}`;
+      router.replace(`/login?next=${encodeURIComponent(next)}`);
+    }
+  }, [needsWebSignIn, ready, user, path, router]);
+
+  if (needsWebSignIn && (!ready || !user)) return <div className="min-h-screen" style={{ backgroundColor: '#F4F5F7' }} />;
 
   // Admin pages (answer key etc.) are for admin accounts only
   if (normalizePath(pathname).startsWith('/admin')) {
