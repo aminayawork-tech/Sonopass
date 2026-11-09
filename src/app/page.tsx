@@ -104,7 +104,8 @@ function PlayStoreBadge() {
 export default function LandingPage() {
   const router = useRouter();
   const { user } = useAuth();
-  const [isStandalone, setIsStandalone] = useState<boolean | null>(null);
+  // Render the page right away (search engines and first paint); only installed web-app users get redirected
+  const [isStandalone, setIsStandalone] = useState(false);
 
   useEffect(() => {
     const standalone =
@@ -115,7 +116,7 @@ export default function LandingPage() {
     if (standalone) router.replace('/dashboard');
   }, [router]);
 
-  if (isStandalone === null || isStandalone) {
+  if (isStandalone) {
     return <div className="min-h-screen bg-white" />;
   }
 
@@ -140,6 +141,12 @@ export default function LandingPage() {
               </Link>
             ) : (
               <>
+                <Link
+                  href="/blog"
+                  className="hidden sm:block text-sm font-semibold text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors"
+                >
+                  Blog
+                </Link>
                 <Link
                   href="/login?next=/dashboard"
                   className="text-sm font-semibold text-gray-600 hover:text-gray-900 px-3 py-2 transition-colors"
@@ -334,6 +341,7 @@ export default function LandingPage() {
           </span>
           <div className="flex items-center gap-5">
             <Link href="/login?next=/dashboard" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Log in</Link>
+            <Link href="/blog" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Blog</Link>
             <Link href="/privacy" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Privacy</Link>
             <Link href="/support" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Support</Link>
           </div>

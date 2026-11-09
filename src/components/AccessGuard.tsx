@@ -61,7 +61,7 @@ export default function AccessGuard({ children }: { children: ReactNode }) {
   const router = useRouter();
   const { isPro, isAdmin, ready, proReady, user, configured } = useAuth();
   const path = normalizePath(pathname);
-  const needsWebSignIn = configured && !isNativeApp() && !PUBLIC_WEB_PATHS.includes(path);
+  const needsWebSignIn = configured && !isNativeApp() && !PUBLIC_WEB_PATHS.includes(path) && path !== '/blog' && !path.startsWith('/blog/');
 
   useEffect(() => {
     if (needsWebSignIn && ready && !user) {
