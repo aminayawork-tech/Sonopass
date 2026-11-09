@@ -55,11 +55,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={sans.variable}>
       <head>
-        {/* Store app: mark <html> for the status-bar spacing in globals.css, and since a reload of e.g. /account
-            is answered with the home page file, load account.html instead */}
+        {/* Store app: mark <html> for the status-bar spacing in globals.css; skip the website home page; and since a
+            reload of e.g. /account is answered with the home page file, load account.html instead */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){if(!/SonoPassApp/.test(navigator.userAgent))return;document.documentElement.classList.add('native-app');var l=location,p=l.pathname;if(p!=='/'&&p.split('/').pop().indexOf('.')<0){l.replace(p.replace(/\\/$/,'')+'.html'+l.search+l.hash)}})()`,
+            __html: `(function(){if(!/SonoPassApp/.test(navigator.userAgent))return;document.documentElement.classList.add('native-app');var l=location,p=l.pathname;if(p==='/'||p==='/index.html'){l.replace('/dashboard.html');return}if(p.split('/').pop().indexOf('.')<0){l.replace(p.replace(/\\/$/,'')+'.html'+l.search+l.hash)}})()`,
           }}
         />
       </head>

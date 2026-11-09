@@ -1,7 +1,15 @@
 'use client';
 
 import { useState, useEffect, ReactNode } from 'react';
+import { usePathname } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
+
+// Public marketing pages render immediately (and fully in the HTML, for search engines)
+const NO_SPLASH = ['/', '/privacy', '/terms', '/support', '/how-it-works'];
+function isPublicPage(pathname: string | null) {
+  const p = (pathname ?? '/').replace(/\.html$/, '').replace(/\/$/, '') || '/';
+  return NO_SPLASH.includes(p) || p === '/blog' || p.startsWith('/blog/');
+}
 
 interface AppInitializerProps {
   children: ReactNode;
@@ -22,7 +30,8 @@ export default function AppInitializer({ children }: AppInitializerProps) {
     };
   }, []);
 
-  const isReady = minTimeDone && (authReady || timedOut);
+  const pathname = usePathname();
+  const isReady = isPublicPage(pathname) || (minTimeDone && (authReady || timedOut));
 
   if (!isReady) {
     return (
