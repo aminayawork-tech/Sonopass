@@ -33,7 +33,7 @@ They appear only in the description, used descriptively alongside the "not affil
 ### Promotional text (170) — can be changed any time without a new version
 
 ```
-Launch deal: SonoPass Pro Lifetime at the launch price. 2,700+ practice questions, 20 timed mock exams and flashcards for all 9 registry exams.
+Launch deal: SonoPass Pro Lifetime at the launch price. 2,700+ practice questions, 21 timed mock exams and flashcards for all 9 registry exams.
 ```
 
 ### Description (4,000)
@@ -58,7 +58,7 @@ Switch between exams anytime.
 PRACTICE THAT FEELS LIKE THE REAL EXAM
 • 2,700+ practice questions, each with a clear explanation
 • Hints when you're stuck, so you learn the reasoning, not just the answer
-• Two full-length timed mock exams for every registry, with a question grid, flags and a review screen
+• 21 timed mock exams, at least two for every registry, with a question grid, flags and a review screen
 • Quick 10: a five-minute session for busy days
 • Study mode by category to drill your weak areas
 

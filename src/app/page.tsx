@@ -18,7 +18,7 @@ const FEATURES = [
     Icon: Brain,
     color: 'bg-emerald-50 text-emerald-600',
     title: 'Practice Questions',
-    desc: '1000+ exam-style questions with detailed explanations — practice by topic or take full mock exams.',
+    desc: '2,700+ exam-style questions with detailed explanations — practice by topic or take full mock exams.',
   },
   {
     Icon: ClipboardList,
