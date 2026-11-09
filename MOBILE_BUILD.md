@@ -59,7 +59,7 @@ pick your Team again in Xcode after each update. Use `npm ci`, not `npm install`
 rewrite `package-lock.json`, which then blocks the next update.
 
 Before each store upload, raise the version:
-- **iOS**: Xcode → App target → General → *Version* (e.g. 1.0.1) and *Build* (1, 2, 3…).
+- **iOS**: Xcode → App target → General → *Version* (e.g. 1.9, 1.10) and *Build*. Start Build at 1 for each new Version and go 2, 3… if you upload that Version again.
 - **Android**: `android/app/build.gradle` → `versionCode` (must go up by 1 each upload) and `versionName`.
 
 ---
