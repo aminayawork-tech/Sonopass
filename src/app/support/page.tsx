@@ -10,7 +10,7 @@ const FAQ = [
   { q: 'What do I get for free?', a: 'One Quick 10 a day on one registry. Pro unlocks every question, all mock exams, study mode and the flashcards for all 9 registries.' },
   { q: 'How do I restore my purchase?', a: 'Open Menu → Manage Subscription (or any Pro screen) and tap Restore purchases while signed in to the same Apple ID or Google account.' },
   { q: 'How do I cancel Pro Monthly?', a: 'Subscriptions are managed by Apple or Google: Settings → your name → Subscriptions on iPhone, or Play Store → Payments & subscriptions on Android.' },
-  { q: 'How do I reset my password?', a: 'On the sign-in screen tap “Forgot password?” and follow the link we email you.' },
+  { q: 'How do I sign in?', a: 'Tap Sign in and choose Continue with Apple or Continue with Google. Your free account is created the first time, and you use the same option on every device.' },
   { q: 'Why was I signed out on another device?', a: 'Each account can be used on 2 devices. Signing in on a third signs out the one used least recently.' },
   { q: 'How do I delete my account?', a: 'Menu → Account → Delete account. This permanently removes your account and synced progress.' },
 ];

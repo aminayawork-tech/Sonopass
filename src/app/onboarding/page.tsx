@@ -12,7 +12,7 @@ import { saveOnboarding } from '@/lib/onboarding';
 import { styleFor } from '@/components/ModalitySelector';
 import GradientIcon from '@/components/GradientIcon';
 import OfferPanel from '@/components/OfferPanel';
-import { OAuthButtons, Divider } from '@/components/auth/AuthShell';
+import { OAuthButtons } from '@/components/auth/AuthShell';
 import { cn } from '@/lib/utils';
 
 const handwriting = localFont({ src: '../fonts/Kalam-latin.woff2', weight: '400', display: 'swap' });
@@ -253,10 +253,6 @@ export default function OnboardingPage() {
             </p>
             <div className="mt-6">
               <OAuthButtons next="/dashboard" />
-              <Divider />
-              <Link href="/signup?next=/dashboard" className="btn-secondary h-12 rounded-2xl flex items-center justify-center text-[15px] font-semibold">
-                Sign up with email
-              </Link>
             </div>
           </div>
         )}

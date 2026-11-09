@@ -5,8 +5,7 @@ import Link from 'next/link';
 import { Layers, Timer, BookMarked, Target, Lightbulb, CloudUpload, Check, type LucideIcon } from 'lucide-react';
 import GradientIcon, { type GradientName } from '@/components/GradientIcon';
 import { useAuth } from '@/contexts/AuthContext';
-import { useRouter } from 'next/navigation';
-import { buy, restore, getStorePrices, storeAvailable, webCheckoutAvailable, webCheckoutUrl, FALLBACK_PRICES, type PaidPlan } from '@/lib/store';
+import { buy, restore, getStorePrices, storeAvailable, FALLBACK_PRICES, type PaidPlan } from '@/lib/store';
 import { cn } from '@/lib/utils';
 
 // Value stack: what each part of Pro would be worth on its own
@@ -36,8 +35,7 @@ export default function OfferPanel({
   onContinueFree?: () => void;
   continueFreeLabel?: string;
 }) {
-  const { notify, refreshPro, user, configured } = useAuth();
-  const router = useRouter();
+  const { notify, refreshPro } = useAuth();
   const [selected, setSelected] = useState<PaidPlan>('lifetime');
   const [prices, setPrices] = useState<Record<PaidPlan, string>>(FALLBACK_PRICES);
   const [busy, setBusy] = useState<'buy' | 'restore' | null>(null);
@@ -47,17 +45,6 @@ export default function OfferPanel({
   }, []);
 
   const handleBuy = async () => {
-    // Website: Lifetime goes through Stripe checkout, tied to the signed-in account
-    if (webCheckoutAvailable(selected)) {
-      if (!user) {
-        notify('Create a free account (or sign in) first so Pro is saved to your account on every device.');
-        router.push(configured ? '/signup?next=/subscription' : '/login?next=/subscription');
-        return;
-      }
-      setBusy('buy');
-      window.location.href = webCheckoutUrl(user);
-      return;
-    }
     setBusy('buy');
     const result = await buy(selected);
     setBusy(null);
@@ -172,9 +159,7 @@ export default function OfferPanel({
       <p className="text-[11.5px] text-slate-400 text-center mt-4 leading-relaxed">
         {selected === 'monthly'
           ? `Pro Monthly is ${prices.monthly} per month and renews automatically until you cancel. Payment is charged to your Apple ID or Google Play account. Cancel anytime in your account settings at least 24 hours before the renewal date.`
-          : storeAvailable()
-            ? `Lifetime is a single ${prices.lifetime} payment charged to your Apple ID or Google Play account. No subscription.`
-            : `Lifetime is a single ${prices.lifetime} payment with secure checkout by Stripe. No subscription. Pro unlocks on the web and in the app when you sign in.`}
+          : `Lifetime is a single ${prices.lifetime} payment charged to your Apple ID or Google Play account. No subscription.`}
       </p>
       <div className="flex items-center justify-center gap-4 mt-2 text-[12px] font-semibold text-slate-400">
         <button onClick={handleRestore} disabled={busy !== null}>{busy === 'restore' ? 'Restoring…' : 'Restore purchases'}</button>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Crown, Sparkles } from 'lucide-react';
 import AppLayout from '@/components/layout/AppLayout';
 import GradientIcon from '@/components/GradientIcon';
@@ -16,36 +16,8 @@ const PLAN_SUB = {
 } as const;
 
 export default function SubscriptionPage() {
-  const { plan, notify, refreshPro, ready, user } = useAuth();
+  const { plan, notify, refreshPro } = useAuth();
   const [busy, setBusy] = useState(false);
-  const [confirming, setConfirming] = useState<'waiting' | 'slow' | null>(null);
-
-  // Back from Stripe checkout (?purchase=success): wait for the payment to unlock the account
-  useEffect(() => {
-    if (!ready || typeof window === 'undefined') return;
-    const params = new URLSearchParams(window.location.search);
-    if (params.get('purchase') !== 'success') return;
-    window.history.replaceState(null, '', window.location.pathname);
-    if (!user) {
-      notify('Payment received. Sign in with the email you paid with to unlock Pro.');
-      return;
-    }
-    let cancelled = false;
-    setConfirming('waiting');
-    (async () => {
-      for (let i = 0; i < 15 && !cancelled; i++) {
-        if (await refreshPro()) {
-          setConfirming(null);
-          notify('Payment received. Welcome to SonoPass Pro! Everything is unlocked.');
-          return;
-        }
-        await new Promise((r) => setTimeout(r, 2000));
-      }
-      if (!cancelled) setConfirming('slow');
-    })();
-    return () => { cancelled = true; };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready]);
 
   const handleRestore = async () => {
     setBusy(true);
@@ -69,15 +41,7 @@ export default function SubscriptionPage() {
           </div>
         </div>
 
-        {confirming && plan === 'free' && (
-          <div className="surface rounded-[22px] p-4 mt-4 text-[14px] text-slate-600 leading-relaxed">
-            {confirming === 'waiting'
-              ? 'Payment received. Unlocking Pro on your account…'
-              : `Your payment is still being confirmed. This usually takes under a minute; refresh this page shortly. If Pro isn't unlocked within an hour, email support@sonopass.com.`}
-          </div>
-        )}
-
-        {plan === 'free' && !confirming && (
+        {plan === 'free' && (
           <div className="mt-7">
             <p className="eyebrow mb-1">Launch offer</p>
             <p className="text-[22px] font-extrabold text-ink tracking-tight mb-4">Everything you need to pass.</p>

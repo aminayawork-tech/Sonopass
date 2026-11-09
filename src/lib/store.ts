@@ -87,30 +87,9 @@ export async function getStorePlan(): Promise<PaidPlan | null> {
 
 export type BuyResult = { ok: true } | { ok: false; cancelled: boolean; message: string };
 
-// Website: Lifetime is sold through a Stripe Payment Link (set NEXT_PUBLIC_STRIPE_LIFETIME_LINK).
-// The account id travels as client_reference_id, and the stripe-webhook Supabase function unlocks Pro.
-const STRIPE_LIFETIME_LINK = (process.env.NEXT_PUBLIC_STRIPE_LIFETIME_LINK ?? '').trim();
-
-export function webCheckoutAvailable(plan: PaidPlan): boolean {
-  return !storeAvailable() && plan === 'lifetime' && STRIPE_LIFETIME_LINK.startsWith('https://');
-}
-
-export function webCheckoutUrl(user: { id: string; email?: string | null }): string {
-  const url = new URL(STRIPE_LIFETIME_LINK);
-  url.searchParams.set('client_reference_id', user.id);
-  if (user.email) url.searchParams.set('prefilled_email', user.email);
-  return url.toString();
-}
-
 export async function buy(plan: PaidPlan): Promise<BuyResult> {
   if (!storeAvailable()) {
-    return {
-      ok: false,
-      cancelled: false,
-      message: plan === 'monthly'
-        ? 'Pro Monthly is available in the SonoPass app for iPhone and Android. On the web, choose Lifetime.'
-        : 'Online checkout isn’t available yet. Get Pro in the SonoPass app for iPhone and Android.',
-    };
+    return { ok: false, cancelled: false, message: 'Pro is available in the SonoPass app for iPhone and Android.' };
   }
   try {
     const { NativePurchases, PURCHASE_TYPE } = await plugin();
