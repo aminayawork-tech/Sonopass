@@ -17,6 +17,8 @@ function LoginForm() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  // Email + password is only for the admin / App Review demo account
+  const [showAdmin, setShowAdmin] = useState(params.get('admin') === '1');
 
   // Leave once signed in and progress has synced
   useEffect(() => {
@@ -37,27 +39,37 @@ function LoginForm() {
   };
 
   return (
-    <AuthShell title="Welcome back" subtitle="Sign in to pick up where you left off on any device.">
+    <AuthShell title="Welcome to SonoPass" subtitle="Sign in to keep your progress, streak and flashcards on every device.">
       <OAuthButtons next={next} />
-      <Divider label="or with email" />
-      <form onSubmit={submit} className="flex flex-col gap-4">
-        <Field label="Email" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" />
-        <Field label="Password" type="password" autoComplete="current-password" required value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Your password" />
-        <div className="flex justify-end -mt-1">
-          <Link href="/forgot-password" className="text-[13px] font-semibold" style={{ color: '#2ea873' }}>Forgot password?</Link>
-        </div>
-        <FormError message={error} />
-        <button type="submit" disabled={!supabase || loading} className="btn-primary h-12 rounded-2xl text-[15px] font-bold disabled:opacity-50 active:scale-[0.98] transition-transform">
-          {loading || (user && syncing) ? 'Signing in…' : 'Sign in'}
-        </button>
-      </form>
-      <p className="text-center text-[14px] text-slate-500 mt-6">
-        New to SonoPass?{' '}
-        <Link href={`/signup?next=${encodeURIComponent(next)}`} className="font-bold" style={{ color: '#2ea873' }}>Create an account</Link>
+      <p className="text-[12px] text-slate-400 text-center mt-4 leading-relaxed">
+        New here? Continuing with Apple or Google creates your free account. By continuing you agree to the{' '}
+        <Link href="/terms" className="underline">Terms</Link> and <Link href="/privacy" className="underline">Privacy Policy</Link>.
+        Each account can be signed in on 2 devices.
       </p>
-      <p className="text-center mt-3">
+      <p className="text-center mt-6">
         <Link href="/dashboard" className="text-[13px] font-semibold text-slate-400">Keep studying as a guest</Link>
       </p>
+
+      {showAdmin ? (
+        <div className="mt-8">
+          <Divider label="Admin sign-in" />
+          <form onSubmit={submit} className="flex flex-col gap-4">
+            <Field label="Email" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" />
+            <Field label="Password" type="password" autoComplete="current-password" required value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Your password" />
+            <div className="flex justify-end -mt-1">
+              <Link href="/forgot-password" className="text-[13px] font-semibold" style={{ color: '#2ea873' }}>Forgot password?</Link>
+            </div>
+            <FormError message={error} />
+            <button type="submit" disabled={!supabase || loading} className="btn-secondary h-12 rounded-2xl text-[15px] font-bold disabled:opacity-50 active:scale-[0.98] transition-transform">
+              {loading || (user && syncing) ? 'Signing in…' : 'Sign in with email'}
+            </button>
+          </form>
+        </div>
+      ) : (
+        <p className="text-center mt-10">
+          <button onClick={() => setShowAdmin(true)} className="text-[12px] font-semibold text-slate-300">Admin sign-in</button>
+        </p>
+      )}
     </AuthShell>
   );
 }

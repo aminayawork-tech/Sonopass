@@ -11,6 +11,39 @@ export const PRODUCT_IDS: Record<PaidPlan, string> = {
 };
 const ANDROID_MONTHLY_BASE_PLAN = 'monthly';
 
+// Consumable: refills hearts to full, can be bought any number of times
+export const HEARTS_PRODUCT_ID = 'sonopass_hearts_refill';
+export const FALLBACK_HEARTS_PRICE = '$0.99';
+
+export async function getHeartsPrice(): Promise<string | null> {
+  if (!storeAvailable()) return null;
+  try {
+    const { NativePurchases, PURCHASE_TYPE } = await plugin();
+    const { products } = await NativePurchases.getProducts({ productIdentifiers: [HEARTS_PRODUCT_ID], productType: PURCHASE_TYPE.INAPP });
+    return products.find((p) => p.identifier === HEARTS_PRODUCT_ID)?.priceString ?? null;
+  } catch {
+    return null;
+  }
+}
+
+export async function buyHearts(): Promise<BuyResult> {
+  if (!storeAvailable()) return { ok: false, cancelled: false, message: 'Hearts can be bought in the SonoPass app for iPhone and Android.' };
+  try {
+    const { NativePurchases, PURCHASE_TYPE } = await plugin();
+    await NativePurchases.purchaseProduct({
+      productIdentifier: HEARTS_PRODUCT_ID,
+      productType: PURCHASE_TYPE.INAPP,
+      isConsumable: true,   // consumed right away so it can be bought again
+      quantity: 1,
+    });
+    return { ok: true };
+  } catch (err) {
+    const message = (err as Error)?.message ?? 'Purchase failed';
+    const cancelled = /cancel/i.test(message);
+    return { ok: false, cancelled, message: cancelled ? 'Purchase cancelled.' : message };
+  }
+}
+
 // Shown on the web and until the store answers
 export const FALLBACK_PRICES: Record<PaidPlan, string> = { monthly: '$9.99', lifetime: '$49.99' };
 

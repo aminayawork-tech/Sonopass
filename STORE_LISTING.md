@@ -99,13 +99,15 @@ Welcome to SonoPass! Practice questions, timed mock exams and flashcards for 9 u
 ### App Review notes (App Review Information → Notes)
 
 ```
-SonoPass works without an account (guest mode). To review signed-in features, use the demo account below, or create one from Account > Create account.
+SonoPass works without an account (guest mode). Students sign in with Sign in with Apple or Google. To review signed-in and Pro features with the demo account below: tap Sign in, then the small "Admin sign-in" link at the bottom, and enter the email and password.
 Account deletion: Account > Delete account.
-Sign-in methods: email, Sign in with Apple, Google.
-In-app purchases: Pro Monthly (auto-renewable subscription, sonopass_pro_monthly) and Pro Lifetime (non-consumable, sonopass_pro_lifetime). Free users get one Quick 10 per day; all other study modes open the Pro offer. Restore Purchases is on the offer screen and in Menu > Manage Subscription.
+Sign-in methods: Sign in with Apple and Google (email/password only for the demo account).
+In-app purchases: Pro Monthly (auto-renewable subscription, sonopass_pro_monthly), Pro Lifetime (non-consumable, sonopass_pro_lifetime) and Hearts Refill (consumable, sonopass_hearts_refill: refills hearts to 5; open any practice question, tap the hearts in the header). Free users get one Quick 10 per day; all other study modes open the Pro offer. Restore Purchases is on the offer screen and in Menu > Manage Subscription.
 ```
-Create a demo account on sonopass.com first (for example review@sonopass.com) and enter its email
-and password in the *Sign-in required* fields.
+Create the demo account in Supabase → Authentication → Users → Add user (for example
+review@sonopass.com with a password, "Auto confirm" on), optionally make it an admin with
+supabase/admin/make-admin.sql so the reviewer sees Pro, and enter its email and password in the
+*Sign-in required* fields.
 
 ### Age rating questionnaire
 
