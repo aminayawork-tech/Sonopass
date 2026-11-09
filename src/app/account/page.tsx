@@ -129,12 +129,6 @@ export default function AccountPage() {
                 <span className="text-[13px] font-bold" style={{ color: '#2ea873' }}>Start</span>
               </button>
             )}
-            {isAdmin && (
-              <Link href="/admin/answer-key" className="surface rounded-[22px] px-4 py-3.5 mt-4 flex items-center justify-between">
-                <span className="text-[14.5px] font-bold text-ink">Admin: answer key</span>
-                <span className="text-[13px] font-bold" style={{ color: '#2ea873' }}>Open</span>
-              </Link>
-            )}
 
             <div className="flex items-end justify-between mt-7 mb-3">
               <p className="eyebrow">Signed-in devices</p>
