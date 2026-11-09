@@ -83,13 +83,21 @@ export function getRegistryReadiness(stats: UserStats): number {
   return Math.min(100, Math.round(accuracy * 0.7 + coverage * 0.2 + consistencyBonus));
 }
 
-export function getCurrentModalityStats(stats: UserStats): ModalityStats {
-  const modalityId = stats.currentModality || 'vascular';
-  if (!stats.modalities[modalityId]) {
-    stats.modalities[modalityId] = getDefaultModalityStats();
-    saveStats(stats);
+// The registry picked in the app (ModalityContext stores it here); stats are kept per registry
+function selectedModalityId(stats: UserStats): string {
+  try {
+    const id = typeof window !== 'undefined' ? localStorage.getItem('sonopass_selected_modality') : null;
+    if (id) return id;
+  } catch {
+    // storage unavailable
   }
-  return stats.modalities[modalityId];
+  return stats.currentModality || 'vascular';
+}
+
+export function getCurrentModalityStats(stats: UserStats, modalityId?: string): ModalityStats {
+  const id = modalityId || selectedModalityId(stats);
+  // A registry you haven't studied yet starts empty (not saved until you answer something)
+  return stats.modalities[id] ?? (stats.modalities[id] = getDefaultModalityStats());
 }
 
 export function saveStats(stats: UserStats): void {

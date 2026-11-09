@@ -674,99 +674,74 @@ export default function StudyGuidePage() {
 
   // Category Detail View (List mode)
   if (selectedCategory) {
-    const Icon = iconMap[selectedCategory.icon] || BookOpen;
+    const catIndex = Math.max(0, content.categories.findIndex((c) => c.id === selectedCategory.id));
+    const catStyle = CATEGORY_STYLE[selectedCategory.id] ?? { icon: iconMap[selectedCategory.icon] || BookOpen, gradient: gradientFor(catIndex) };
     const totalTopics = selectedCategory.topics.length;
-    const completedCount = selectedCategory.topics.filter(t => completedTopics.has(t.id)).length;
-    const progress = (completedCount / totalTopics) * 100;
+    const completedCount = selectedCategory.topics.filter((t) => completedTopics.has(t.id)).length;
+    const progress = totalTopics > 0 ? (completedCount / totalTopics) * 100 : 0;
+    const openCard = (index: number) => {
+      setCurrentCardIndex(index);
+      setIsFlipped(false);
+      setViewMode('flashcards');
+    };
 
     return (
       <AppLayout>
-        <div className="min-h-screen bg-[#F5F7FA] pb-20">
-          <header className="px-4 sm:px-6 pt-10 pb-4 sm:pb-6 bg-white border-b border-gray-100">
-            <div className="max-w-6xl mx-auto">
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setSelectedCategory(null)}
-                className="mb-4 flex items-center gap-2 text-gray-600 hover:text-gray-900"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                Back to Categories
-              </Button>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
-                  <Icon className="w-6 h-6 text-blue-600" />
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between">
-                    <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">{selectedCategory.title}</h1>
-                    <Button
-                      onClick={() => setViewMode('flashcards')}
-                      className="bg-emerald-600 hover:bg-emerald-700"
-                    >
-                      <RotateCw className="w-4 h-4 mr-2" />
-                      <span className="hidden sm:inline">Study with Flashcards</span>
-                      <span className="sm:hidden">Flashcards</span>
-                    </Button>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-1">
-                    {completedCount} of {totalTopics} topics completed
-                  </p>
-                </div>
-              </div>
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-100 rounded-full h-2">
-                <div
-                  className="bg-emerald-500 rounded-full h-2 transition-all duration-500"
-                  style={{ width: `${progress}%` }}
-                />
+        <div className="min-h-screen overflow-x-hidden pb-24" style={{ backgroundColor: '#F4F5F7' }}>
+          <header className="px-5 pt-14 pb-5 max-w-3xl mx-auto">
+            <button
+              onClick={() => setSelectedCategory(null)}
+              aria-label="Back to categories"
+              className="w-10 h-10 rounded-full bg-white surface flex items-center justify-center active:scale-95 transition-transform"
+            >
+              <ArrowLeft className="w-[18px] h-[18px] text-ink" />
+            </button>
+            <div className="flex items-center gap-3.5 mt-5">
+              <GradientIcon icon={catStyle.icon} gradient={catStyle.gradient} size={48} />
+              <div className="min-w-0">
+                <p className="eyebrow">Study guide</p>
+                <h1 className="text-[26px] font-extrabold tracking-[-0.03em] text-ink leading-tight">{selectedCategory.title}</h1>
               </div>
             </div>
+            <div className="flex items-center gap-3 mt-5">
+              <div className="flex-1 h-2 rounded-full bg-white overflow-hidden">
+                <div className="h-full rounded-full transition-all duration-500" style={{ width: `${progress}%`, backgroundColor: '#2ea873' }} />
+              </div>
+              <span className="text-[13px] font-semibold text-slate-500 shrink-0">{completedCount} of {totalTopics} done</span>
+            </div>
+            <button
+              onClick={() => openCard(0)}
+              className="btn-primary w-full h-12 rounded-2xl mt-5 flex items-center justify-center gap-2 text-[15px] font-bold active:scale-[0.98] transition-transform"
+            >
+              <RotateCw className="w-[17px] h-[17px]" /> Study with flashcards
+            </button>
           </header>
 
-          <main className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {selectedCategory.topics.map((topic) => {
-                const isCompleted = completedTopics.has(topic.id);
-                return (
-                  <div
-                    key={topic.id}
-                    className="group bg-white rounded-2xl surface p-6 hover:shadow-md transition-all cursor-pointer relative"
-                    onClick={() => toggleTopicComplete(topic.id)}
-                  >
-                    {isCompleted && (
-                      <div className="absolute top-4 right-4">
-                        <div className="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center">
-                          <Check className="w-3.5 h-3.5 text-white" />
-                        </div>
-                      </div>
+          <main className="px-5 max-w-3xl mx-auto flex flex-col gap-3">
+            {selectedCategory.topics.map((topic, index) => {
+              const isCompleted = completedTopics.has(topic.id);
+              const preview = topic.frontClue || topic.quickSummary || (topic.content ? topic.content.split('\n\n')[0] : '');
+              return (
+                <div key={topic.id} className="surface rounded-[22px] p-4 flex items-start gap-3">
+                  <button onClick={() => openCard(index)} className="flex-1 min-w-0 text-left active:opacity-70 transition-opacity">
+                    {topic.pieceNumber && <p className="eyebrow" style={{ color: '#2ea873' }}>{topic.pieceNumber}</p>}
+                    <p className="text-[16px] font-bold text-ink leading-snug mt-0.5">{topic.title}</p>
+                    {preview && <p className="text-[13.5px] text-slate-500 leading-relaxed mt-1 line-clamp-2">{preview}</p>}
+                    {topic.keyTerms.length > 0 && (
+                      <p className="text-[12px] text-slate-400 font-medium mt-2">{topic.keyTerms.length} key terms</p>
                     )}
-                    <div className="pr-8">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                        {topic.title}
-                      </h3>
-                      <p className="text-sm text-gray-600 mb-4 line-clamp-2">
-                        {topic.quickSummary || (topic.content ? topic.content.split('\n\n')[0] : 'Click to mark as complete')}
-                      </p>
-                      <div className="flex items-center gap-4 text-xs text-gray-500 mb-3">
-                        {topic.keyTerms.length > 0 && (
-                          <span className="flex items-center gap-1">
-                            <div className="w-1 h-1 rounded-full bg-gray-400" />
-                            {topic.keyTerms.length} key terms
-                          </span>
-                        )}
-                        {topic.clinicalPearls && topic.clinicalPearls.length > 0 && (
-                          <span className="flex items-center gap-1">
-                            <div className="w-1 h-1 rounded-full bg-gray-400" />
-                            {topic.clinicalPearls.length} clinical pearls
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+                  </button>
+                  <button
+                    onClick={() => toggleTopicComplete(topic.id)}
+                    aria-label={isCompleted ? 'Mark as not done' : 'Mark as done'}
+                    className={`shrink-0 w-9 h-9 rounded-full flex items-center justify-center transition-colors ${isCompleted ? '' : 'border-2 border-slate-200 bg-white'}`}
+                    style={isCompleted ? { backgroundColor: '#2ea873' } : undefined}
+                  >
+                    <Check className={`w-4 h-4 ${isCompleted ? 'text-white' : 'text-slate-300'}`} strokeWidth={3} />
+                  </button>
+                </div>
+              );
+            })}
           </main>
         </div>
       </AppLayout>
