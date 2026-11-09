@@ -146,21 +146,17 @@ export default function LandingPage() {
                 >
                   Log in
                 </Link>
-                <Link
-                  href="/signup?next=/dashboard"
-                  className="inline-flex items-center text-white px-4 py-2 rounded-xl transition-opacity hover:opacity-90 text-sm font-semibold"
-                  style={{ backgroundColor: '#3abc83' }}
-                >
-                  Sign up free
-                </Link>
               </>
             )}
-            <a
-              href={APP_STORE_URL}
-              className="hidden md:inline-flex items-center px-4 py-2 rounded-xl text-sm font-semibold text-gray-900 border border-gray-200 hover:border-gray-300 transition-colors"
-            >
-              Download App
-            </a>
+            {!user && (
+              <a
+                href={APP_STORE_URL}
+                className="inline-flex items-center text-white px-4 py-2 rounded-xl transition-opacity hover:opacity-90 text-sm font-semibold"
+                style={{ backgroundColor: '#3abc83' }}
+              >
+                Download App
+              </a>
+            )}
           </div>
         </div>
       </header>
@@ -185,12 +181,14 @@ export default function LandingPage() {
                 <AppStoreBadge />
                 <PlayStoreBadge />
               </div>
-              <p className="mt-4 text-sm text-gray-500">
-                Or{' '}
-                <Link href={user ? '/dashboard' : '/signup?next=/dashboard'} className="font-semibold hover:underline" style={{ color: '#2a9d6f' }}>
-                  {user ? 'open SonoPass on the web →' : 'start free on the web →'}
-                </Link>
-              </p>
+              {user && (
+                <p className="mt-4 text-sm text-gray-500">
+                  Or{' '}
+                  <Link href="/dashboard" className="font-semibold hover:underline" style={{ color: '#2a9d6f' }}>
+                    open SonoPass on the web →
+                  </Link>
+                </p>
+              )}
               <div className="flex items-center justify-center lg:justify-start gap-5 mt-6">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
@@ -317,7 +315,7 @@ export default function LandingPage() {
             Your registry exam starts here.
           </h2>
           <p className="text-emerald-100 mb-8 leading-relaxed">
-            Download SonoPass on iOS and Android, or open the web app and start studying today.
+            Download SonoPass on iPhone and Android and start studying today.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
             <AppStoreBadge />
@@ -335,7 +333,6 @@ export default function LandingPage() {
             <span style={{ color: '#3abc83' }}>Pass</span>
           </span>
           <div className="flex items-center gap-5">
-            <Link href="/app" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Web App</Link>
             <Link href="/login?next=/dashboard" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Log in</Link>
             <Link href="/privacy" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Privacy</Link>
             <Link href="/support" className="text-gray-400 hover:text-gray-900 text-sm transition-colors">Support</Link>
