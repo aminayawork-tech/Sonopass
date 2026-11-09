@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { getSupabase } from '@/lib/supabase/client';
 import { markFreshSignIn, useAuth } from '@/contexts/AuthContext';
+import { isNativeApp } from '@/lib/platform';
 import { AuthShell, Divider, Field, FormError, OAuthButtons, safeNext } from '@/components/auth/AuthShell';
 
 function LoginForm() {
@@ -12,6 +13,9 @@ function LoginForm() {
   const params = useSearchParams();
   const next = safeNext(params.get('next'));
   const { user, syncing } = useAuth();
+  // Guest mode exists only in the phone apps; the website needs an Apple or Google account
+  const [inApp, setInApp] = useState(false);
+  useEffect(() => setInApp(isNativeApp()), []);
   const supabase = getSupabase();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -39,16 +43,18 @@ function LoginForm() {
   };
 
   return (
-    <AuthShell title="Welcome to SonoPass" subtitle="Sign in to keep your progress, streak and flashcards on every device.">
+    <AuthShell back={inApp ? '/dashboard' : '/'} title="Welcome to SonoPass" subtitle="Sign in to keep your progress, streak and flashcards on every device.">
       <OAuthButtons next={next} />
       <p className="text-[12px] text-slate-400 text-center mt-4 leading-relaxed">
         New here? Continuing with Apple or Google creates your free account. By continuing you agree to the{' '}
         <Link href="/terms" className="underline">Terms</Link> and <Link href="/privacy" className="underline">Privacy Policy</Link>.
         Each account can be signed in on 2 devices.
       </p>
-      <p className="text-center mt-6">
-        <Link href="/dashboard" className="text-[13px] font-semibold text-slate-400">Keep studying as a guest</Link>
-      </p>
+      {inApp && (
+        <p className="text-center mt-6">
+          <Link href="/dashboard" className="text-[13px] font-semibold text-slate-400">Keep studying as a guest</Link>
+        </p>
+      )}
 
       {showAdmin ? (
         <div className="mt-8">
