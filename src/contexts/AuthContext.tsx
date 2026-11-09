@@ -231,7 +231,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const u = userRef.current;
       if (!u || syncedFor.current !== u.id) return;
       const { data: known, error } = await supabase.rpc('check_device', { p_device_id: getDeviceId() });
-      if (!error && known === false) await handleRevoked();
+      if (!error && known === false) {
+        await handleRevoked();
+        return;
+      }
+      // Pick up progress saved on another device meanwhile (e.g. hearts bought in the phone app),
+      // unless this device has its own changes waiting to upload
+      if (pushTimer.current) return;
+      const { data: row } = await supabase.from('user_progress').select('data, updated_at').eq('user_id', u.id).maybeSingle();
+      if (row && (getLocalUpdatedAt() ?? '') < (row.updated_at as string)) {
+        writeLocalProgress(row.data as ProgressData);
+        setLocalUpdatedAt(row.updated_at as string);
+      }
     };
     const onVisibilityEvent = () => onVisibility();
     window.addEventListener(PROGRESS_CHANGED_EVENT, onChange);
@@ -263,6 +274,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const { App } = await import('@capacitor/app');
       const { Browser } = await import('@capacitor/browser');
       const onUrl = await App.addListener('appUrlOpen', async ({ url }) => {
+        // Links from the website, e.g. com.sonopass.app://open?path=/hearts
+        if (url.startsWith('com.sonopass.app://open')) {
+          router.push(safeNext(new URL(url).searchParams.get('path')));
+          return;
+        }
         if (!url.startsWith(APP_AUTH_CALLBACK)) return;
         Browser.close().catch(() => {});
         const params = new URL(url).searchParams;

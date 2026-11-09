@@ -113,8 +113,12 @@ own currency (`src/lib/store.ts`).
 3. Your app → **Monetization → In-App Purchases** → **+** → type **Non-Consumable**:
    - Reference name `Pro Lifetime`, Product ID **`sonopass_pro_lifetime`**, price **$49.99**, display
      name, description and review screenshot.
-4. In Xcode: App target → **Signing & Capabilities → + Capability → In-App Purchase**.
-5. When you submit the app version, add both products under **In-App Purchases and Subscriptions**
+4. Your app → **Monetization → In-App Purchases** → **+** → type **Consumable**:
+   - Reference name `Hearts Refill`, Product ID **`sonopass_hearts_refill`**, price **$0.99**
+     (Apple's tier; $1.00 isn't available in the US), display name `Hearts Refill`, description
+     `Refill your hearts to 5 and keep studying.`, and a review screenshot of the hearts screen.
+5. In Xcode: App target → **Signing & Capabilities → + Capability → In-App Purchase**.
+6. When you submit the app version, add all three products under **In-App Purchases and Subscriptions**
    on the version page so they're reviewed together.
 
 To test before release: TestFlight builds use the sandbox automatically, so purchases are free
@@ -125,7 +129,9 @@ To test before release: TestFlight builds use the sandbox automatically, so purc
    plan with ID **`monthly`**, auto-renewing, 1 month, $9.99. Activate it.
 2. **Monetize → In-app products → Create product**: Product ID **`sonopass_pro_lifetime`**, $49.99.
    Activate it.
-3. Products only appear after the app has been uploaded to a testing track at least once. Add your
+3. **Monetize → In-app products → Create product**: Product ID **`sonopass_hearts_refill`**, $0.99.
+   Activate it (the app consumes it after each purchase, so it can be bought again).
+4. Products only appear after the app has been uploaded to a testing track at least once. Add your
    Google account under **Settings → License testing** to buy without being charged.
 
 ### How Pro is decided

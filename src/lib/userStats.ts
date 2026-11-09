@@ -169,6 +169,16 @@ export function spendHintHeart(): UserStats | null {
   return stats;
 }
 
+// In-app purchase: fill hearts back up to MAX_HEARTS
+export function refillHeartsFromPurchase(): UserStats {
+  const stats = getStats();
+  refreshHearts(stats);
+  stats.hearts = MAX_HEARTS;
+  stats.lastHeartRefill = new Date().toISOString();
+  saveStats(stats);
+  return stats;
+}
+
 export function canClaimShareReward(stats: UserStats): boolean {
   return stats.hearts < MAX_HEARTS && stats.lastShareReward !== getToday();
 }

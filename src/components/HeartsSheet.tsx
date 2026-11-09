@@ -8,6 +8,13 @@ import {
 } from '@/lib/userStats';
 import GradientIcon from '@/components/GradientIcon';
 import { webOrigin } from '@/lib/platform';
+import { refillHeartsFromPurchase } from '@/lib/userStats';
+import { buyHearts, getHeartsPrice, storeAvailable, FALLBACK_HEARTS_PRICE } from '@/lib/store';
+
+// Opens the installed app straight to the hearts screen (registered URL scheme)
+const OPEN_APP_HEARTS = 'com.sonopass.app://open?path=/hearts';
+const APP_STORE_URL = 'https://apps.apple.com/app/sonopass';
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.sonopass.app';
 
 function formatDuration(ms: number) {
   const totalMinutes = Math.max(1, Math.ceil(ms / 60000));
@@ -27,6 +34,30 @@ export default function HeartsSheet({
 }) {
   const [notice, setNotice] = useState<string | null>(null);
   const [now, setNow] = useState(() => Date.now());
+  const [price, setPrice] = useState(FALLBACK_HEARTS_PRICE);
+  const [buying, setBuying] = useState(false);
+  const [getApp, setGetApp] = useState(false);
+
+  useEffect(() => {
+    getHeartsPrice().then((p) => p && setPrice(p));
+  }, []);
+
+  const handleBuy = async () => {
+    // Website: purchases happen in the app
+    if (!storeAvailable()) {
+      setGetApp(true);
+      return;
+    }
+    setBuying(true);
+    const result = await buyHearts();
+    setBuying(false);
+    if (result.ok) {
+      onStatsChange(refillHeartsFromPurchase());
+      setNotice('Hearts refilled. Keep going!');
+    } else if (!result.cancelled) {
+      setNotice(result.message);
+    }
+  };
 
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 30000);
@@ -104,16 +135,34 @@ export default function HeartsSheet({
           <div className="absolute -right-6 -top-8 w-28 h-28 rounded-full bg-white/5" />
           <GradientIcon icon={Heart} gradient="rose" size={42} />
           <div className="flex-1 min-w-0 relative">
-            <p className="text-[15px] font-bold text-white">Get 5 hearts</p>
-            <p className="text-[12px] text-slate-400 font-medium mt-0.5">Instant top-up, keep studying</p>
+            <p className="text-[15px] font-bold text-white">Refill to {MAX_HEARTS} hearts</p>
+            <p className="text-[12px] text-slate-400 font-medium mt-0.5">Instant top-up with Apple Pay or Google Pay</p>
           </div>
           <button
             type="button"
-            className="relative shrink-0 h-10 px-4 rounded-full bg-white text-[14px] font-extrabold text-ink active:scale-95 transition-transform"
+            onClick={handleBuy}
+            disabled={buying || isFull}
+            className="relative shrink-0 h-10 px-4 rounded-full bg-white text-[14px] font-extrabold text-ink disabled:opacity-50 active:scale-95 transition-transform"
           >
-            $0.99
+            {buying ? '…' : isFull ? 'Full' : price}
           </button>
         </div>
+
+        {getApp && (
+          <div className="mt-3 surface rounded-2xl p-4">
+            <p className="text-[14px] font-bold text-ink">Get hearts in the SonoPass app</p>
+            <p className="text-[12.5px] text-slate-500 mt-1 leading-relaxed">
+              Hearts are bought with Apple Pay or Google Pay in the app. Sign in with the same account and your hearts sync here.
+            </p>
+            <div className="flex flex-col gap-2 mt-3">
+              <a href={OPEN_APP_HEARTS} className="btn-primary h-11 rounded-xl flex items-center justify-center text-[14px] font-bold">Open SonoPass app</a>
+              <div className="grid grid-cols-2 gap-2">
+                <a href={APP_STORE_URL} className="btn-secondary h-10 rounded-xl flex items-center justify-center text-[13px] font-semibold">App Store</a>
+                <a href={PLAY_STORE_URL} className="btn-secondary h-10 rounded-xl flex items-center justify-center text-[13px] font-semibold">Google Play</a>
+              </div>
+            </div>
+          </div>
+        )}
 
         <p className="eyebrow mt-6 mb-3">Or earn them free</p>
         <div className="flex flex-col gap-2.5">

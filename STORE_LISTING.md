@@ -102,7 +102,7 @@ Welcome to SonoPass! Practice questions, timed mock exams and flashcards for 9 u
 SonoPass works without an account (guest mode). Students sign in with Sign in with Apple or Google. To review signed-in and Pro features with the demo account below: tap Sign in, then the small "Admin sign-in" link at the bottom, and enter the email and password.
 Account deletion: Account > Delete account.
 Sign-in methods: Sign in with Apple and Google (email/password only for the demo account).
-In-app purchases: Pro Monthly (auto-renewable subscription, sonopass_pro_monthly) and Pro Lifetime (non-consumable, sonopass_pro_lifetime). Free users get one Quick 10 per day; all other study modes open the Pro offer. Restore Purchases is on the offer screen and in Menu > Manage Subscription.
+In-app purchases: Pro Monthly (auto-renewable subscription, sonopass_pro_monthly), Pro Lifetime (non-consumable, sonopass_pro_lifetime) and Hearts Refill (consumable, sonopass_hearts_refill: refills hearts to 5; open any practice question, tap the hearts in the header). Free users get one Quick 10 per day; all other study modes open the Pro offer. Restore Purchases is on the offer screen and in Menu > Manage Subscription.
 ```
 Create the demo account in Supabase → Authentication → Users → Add user (for example
 review@sonopass.com with a password, "Auto confirm" on), optionally make it an admin with
