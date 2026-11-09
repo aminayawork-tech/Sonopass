@@ -2,33 +2,29 @@
   "modality": "vascular",
   "categories": [
     "Cerebrovascular",
-    "Venous Hemodynamics",
-    "Arterial Disease",
-    "Arterial Hemodynamics",
+    "Physics & Instrumentation",
     "Arterial Anatomy",
     "General & Other",
-    "Physics & Instrumentation",
-    "Venous Anatomy",
-    "Venous Testing",
-    "Venous Disease",
-    "Arterial Testing",
     "Treatment & Procedures",
-    "Clinical Applications"
+    "Clinical Applications",
+    "Venous Anatomy",
+    "Venous Hemodynamics",
+    "Venous Disease",
+    "Arterial Hemodynamics",
+    "Arterial Disease"
   ],
   "categoryTotals": {
-    "Cerebrovascular": 52,
-    "Venous Hemodynamics": 11,
-    "Arterial Disease": 22,
-    "Arterial Hemodynamics": 38,
-    "Arterial Anatomy": 32,
-    "General & Other": 56,
-    "Physics & Instrumentation": 16,
-    "Venous Anatomy": 12,
-    "Venous Testing": 4,
-    "Venous Disease": 14,
-    "Arterial Testing": 7,
-    "Treatment & Procedures": 3,
-    "Clinical Applications": 15
+    "Cerebrovascular": 44,
+    "Physics & Instrumentation": 22,
+    "Arterial Anatomy": 14,
+    "General & Other": 17,
+    "Treatment & Procedures": 15,
+    "Clinical Applications": 37,
+    "Venous Anatomy": 19,
+    "Venous Hemodynamics": 15,
+    "Venous Disease": 38,
+    "Arterial Hemodynamics": 32,
+    "Arterial Disease": 29
   },
   "examModes": [
     {
@@ -50,8 +46,8 @@
     {
       "id": "mock-1",
       "name": "Mock Exam 1",
-      "description": "Full practice exam (122 questions)",
-      "questionCount": 122,
+      "description": "Full practice exam (100 questions)",
+      "questionCount": 100,
       "shuffle": true,
       "showAnswers": false,
       "timed": false
@@ -59,8 +55,8 @@
     {
       "id": "mock-2",
       "name": "Mock Exam 2",
-      "description": "Full practice exam (72 questions)",
-      "questionCount": 72,
+      "description": "Full practice exam (84 questions)",
+      "questionCount": 84,
       "shuffle": true,
       "showAnswers": false,
       "timed": false
