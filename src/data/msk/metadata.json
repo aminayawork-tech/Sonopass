@@ -10,14 +10,14 @@
     "Technique, Artifacts & Procedures"
   ],
   "categoryTotals": {
-    "Shoulder": 38,
-    "Elbow, Wrist & Hand": 38,
-    "Hip & Pelvis": 38,
-    "Knee": 38,
-    "Ankle & Foot": 38,
-    "Peripheral Nerves": 38,
-    "Muscle, Tendon & Soft Tissue Pathology": 36,
-    "Technique, Artifacts & Procedures": 36
+    "Shoulder": 43,
+    "Elbow, Wrist & Hand": 43,
+    "Hip & Pelvis": 43,
+    "Knee": 43,
+    "Ankle & Foot": 43,
+    "Peripheral Nerves": 43,
+    "Muscle, Tendon & Soft Tissue Pathology": 41,
+    "Technique, Artifacts & Procedures": 41
   },
   "examModes": [
     {
@@ -35,16 +35,16 @@
     {
       "id": "mock-1",
       "name": "Mock Exam 1",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-1"
     },
     {
       "id": "mock-2",
       "name": "Mock Exam 2",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-2"
     }
   ],
-  "totalQuestions": 300,
+  "totalQuestions": 340,
   "passingScore": 555
 }

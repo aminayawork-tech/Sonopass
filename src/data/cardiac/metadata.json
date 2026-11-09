@@ -11,15 +11,15 @@
     "Instrumentation, TEE & Contrast"
   ],
   "categoryTotals": {
-    "Anatomy & Physiology": 34,
-    "Measurements & Hemodynamics": 34,
-    "Valvular Stenosis": 34,
-    "Valvular Regurgitation & Prosthetic Valves": 34,
-    "Cardiomyopathies & Ventricular Function": 34,
-    "Coronary Artery Disease": 34,
-    "Pericardial Disease & Masses": 32,
-    "Adult Congenital & Aortic Disease": 32,
-    "Instrumentation, TEE & Contrast": 32
+    "Anatomy & Physiology": 38,
+    "Measurements & Hemodynamics": 39,
+    "Valvular Stenosis": 39,
+    "Valvular Regurgitation & Prosthetic Valves": 39,
+    "Cardiomyopathies & Ventricular Function": 39,
+    "Coronary Artery Disease": 38,
+    "Pericardial Disease & Masses": 36,
+    "Adult Congenital & Aortic Disease": 36,
+    "Instrumentation, TEE & Contrast": 36
   },
   "examModes": [
     {
@@ -37,16 +37,16 @@
     {
       "id": "mock-1",
       "name": "Mock Exam 1",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-1"
     },
     {
       "id": "mock-2",
       "name": "Mock Exam 2",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-2"
     }
   ],
-  "totalQuestions": 300,
+  "totalQuestions": 340,
   "passingScore": 555
 }

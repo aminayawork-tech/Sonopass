@@ -4499,6 +4499,646 @@
       "keywords": [
         "placenta accreta spectrum"
       ]
+    },
+    {
+      "id": "obgyn-x-001",
+      "number": 151,
+      "question": "At 8 weeks, a transvaginal scan shows a live embryo with a small, round anechoic space in the posterior aspect of the embryonic head. The rest of the examination is normal. What is the most likely explanation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An early Dandy-Walker malformation of the posterior fossa"
+        },
+        {
+          "letter": "B",
+          "text": "A large choroid plexus cyst within the lateral ventricle"
+        },
+        {
+          "letter": "C",
+          "text": "The normal developing rhombencephalon (hindbrain vesicle)"
+        },
+        {
+          "letter": "D",
+          "text": "Early obstructive hydrocephalus requiring follow-up"
+        }
+      ],
+      "category": "First Trimester",
+      "correctAnswer": "C",
+      "explanation": "The rhombencephalon normally appears as a prominent anechoic cystic space in the posterior embryonic head at about 7 to 9 weeks and later forms the fourth ventricle. Mistaking it for a Dandy-Walker malformation is a classic pitfall, because posterior fossa anatomy cannot be judged this early.",
+      "hint": "Think about which brain vesicles are normally fluid-filled during embryonic development.",
+      "keywords": [
+        "rhombencephalon",
+        "embryonic brain",
+        "normal variant"
+      ]
+    },
+    {
+      "id": "obgyn-x-006",
+      "number": 152,
+      "question": "Between about 14 and 22 weeks, which measurement in millimeters approximately equals the gestational age in weeks and is relatively resistant to the effects of growth restriction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Abdominal circumference"
+        },
+        {
+          "letter": "B",
+          "text": "Transcerebellar diameter"
+        },
+        {
+          "letter": "C",
+          "text": "Femur length"
+        },
+        {
+          "letter": "D",
+          "text": "Nuchal fold thickness"
+        }
+      ],
+      "category": "Fetal Biometry & Growth",
+      "correctAnswer": "B",
+      "explanation": "In the mid-second trimester the transcerebellar diameter in millimeters roughly matches the gestational age in weeks, and the cerebellum is relatively spared in growth restriction, making it useful when dates are uncertain. The abdominal circumference is the measurement most affected by uteroplacental insufficiency.",
+      "hint": "Recall the mid-pregnancy rule of thumb that links one structure's size in millimeters to the weeks of gestation.",
+      "keywords": [
+        "transcerebellar diameter",
+        "gestational age",
+        "growth restriction"
+      ]
+    },
+    {
+      "id": "obgyn-x-011",
+      "number": 153,
+      "question": "Which view is most useful for demonstrating a fetal cleft lip?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A midsagittal view of the fetal profile"
+        },
+        {
+          "letter": "B",
+          "text": "A coronal view of the soft tissues of the nose and upper lip"
+        },
+        {
+          "letter": "C",
+          "text": "A transverse view at the level of the orbits"
+        },
+        {
+          "letter": "D",
+          "text": "An axial view through the posterior fossa"
+        }
+      ],
+      "category": "Fetal Anatomy & Anomalies",
+      "correctAnswer": "B",
+      "explanation": "The coronal nose-lip view shows the nostrils and the continuity of the upper lip, so a cleft appears as a gap extending from the lip toward the nostril. The midsagittal profile shows the chin and nasal bone but usually misses a lateral cleft lip.",
+      "hint": "Clefts of the lip are usually off the midline.",
+      "keywords": [
+        "cleft lip",
+        "fetal face",
+        "coronal view"
+      ]
+    },
+    {
+      "id": "obgyn-x-016",
+      "number": 154,
+      "question": "Using the single deepest vertical pocket method, polyhydramnios is defined as a pocket of at least:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8 cm"
+        },
+        {
+          "letter": "B",
+          "text": "5 cm"
+        },
+        {
+          "letter": "C",
+          "text": "10 cm"
+        },
+        {
+          "letter": "D",
+          "text": "15 cm"
+        }
+      ],
+      "category": "Placenta, Cord & Amniotic Fluid",
+      "correctAnswer": "A",
+      "explanation": "Polyhydramnios is diagnosed when the deepest vertical pocket is 8 cm or more, or the amniotic fluid index is 24 cm or more. A pocket of 2 to 8 cm is considered normal, and 5 cm is well within that range.",
+      "hint": "Recall the upper limit of the normal deepest pocket range.",
+      "keywords": [
+        "polyhydramnios",
+        "deepest vertical pocket",
+        "amniotic fluid"
+      ]
+    },
+    {
+      "id": "obgyn-x-020",
+      "number": 155,
+      "question": "A 25-year-old daycare worker had a flu-like illness early in pregnancy. At 22 weeks, the fetus has periventricular echogenic foci, mild ventriculomegaly, echogenic bowel, and a small head circumference. Which infection is most likely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cytomegalovirus"
+        },
+        {
+          "letter": "B",
+          "text": "Parvovirus B19"
+        },
+        {
+          "letter": "C",
+          "text": "Rubella"
+        },
+        {
+          "letter": "D",
+          "text": "Varicella"
+        }
+      ],
+      "category": "Maternal Conditions & Fetal Well-Being",
+      "correctAnswer": "A",
+      "explanation": "Cytomegalovirus is the most common congenital infection, and young children in daycare are a frequent source; typical findings are periventricular calcifications, ventriculomegaly, microcephaly, echogenic bowel, and growth restriction. Parvovirus B19 mainly causes fetal anemia and hydrops rather than brain calcifications.",
+      "hint": "The location of the brain calcifications and the occupational exposure are the key clues.",
+      "keywords": [
+        "cytomegalovirus",
+        "congenital infection",
+        "intracranial calcifications"
+      ]
+    },
+    {
+      "id": "obgyn-x-024",
+      "number": 156,
+      "question": "In a twin pregnancy, which fetus is conventionally designated twin A?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The larger of the two fetuses by estimated weight"
+        },
+        {
+          "letter": "B",
+          "text": "The fetus located on the maternal right side"
+        },
+        {
+          "letter": "C",
+          "text": "The fetus that was imaged first during the examination"
+        },
+        {
+          "letter": "D",
+          "text": "The fetus whose sac is closest to the internal cervical os"
+        }
+      ],
+      "category": "Multiple Gestations",
+      "correctAnswer": "D",
+      "explanation": "Twin A is the presenting twin, whose sac lies closest to the cervix, and each twin should also be described by a consistent location, such as maternal left or right, so it can be followed on later scans. Size is not used for labeling because growth can change between examinations.",
+      "hint": "Think about which twin would be delivered first vaginally.",
+      "keywords": [
+        "twin labeling",
+        "presenting twin",
+        "documentation"
+      ]
+    },
+    {
+      "id": "obgyn-x-028",
+      "number": 157,
+      "question": "On a 3D coronal view, a uterus has two endometrial cavities that join at a single cervix, and the external fundal contour shows a cleft deeper than 1 cm. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bicornuate uterus"
+        },
+        {
+          "letter": "B",
+          "text": "Septate uterus"
+        },
+        {
+          "letter": "C",
+          "text": "Arcuate uterus"
+        },
+        {
+          "letter": "D",
+          "text": "Uterus didelphys"
+        }
+      ],
+      "category": "Uterus & Cervix",
+      "correctAnswer": "A",
+      "explanation": "A bicornuate uterus has an external fundal indentation of more than 1 cm, with two horns joined at a single cervix. A septate uterus has two cavities but a normal convex or flat external fundal contour, which is why the coronal 3D view of the outer fundus is key.",
+      "hint": "Focus on the outer contour of the fundus rather than the cavities.",
+      "keywords": [
+        "bicornuate uterus",
+        "Mullerian anomaly",
+        "3D coronal view"
+      ]
+    },
+    {
+      "id": "obgyn-x-033",
+      "number": 158,
+      "question": "Ovarian volume is most commonly calculated using which formula?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Length x width x height x 0.75"
+        },
+        {
+          "letter": "B",
+          "text": "Length x width x height x 0.523"
+        },
+        {
+          "letter": "C",
+          "text": "Length x width x 3.14"
+        },
+        {
+          "letter": "D",
+          "text": "The sum of length, width, and height divided by 3"
+        }
+      ],
+      "category": "Ovaries & Adnexa",
+      "correctAnswer": "B",
+      "explanation": "Ovarian volume uses the prolate ellipsoid formula, multiplying the three orthogonal diameters by 0.523, which is also used for many other organs. Dividing the sum of the three diameters by 3 gives a mean diameter, such as the mean sac diameter, not a volume.",
+      "hint": "The ovary is approximated as an ellipsoid.",
+      "keywords": [
+        "ovarian volume",
+        "ellipsoid formula",
+        "measurement"
+      ]
+    },
+    {
+      "id": "obgyn-x-037",
+      "number": 159,
+      "question": "When ovarian reserve is assessed with an antral follicle count, which protocol is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Count follicles larger than 14 mm in both ovaries at mid-cycle"
+        },
+        {
+          "letter": "B",
+          "text": "Count follicles 2 to 10 mm in both ovaries in the early follicular phase, about cycle days 2 to 5"
+        },
+        {
+          "letter": "C",
+          "text": "Count follicles in the luteal phase, after the corpus luteum forms"
+        },
+        {
+          "letter": "D",
+          "text": "Count follicles in one ovary only and double the result"
+        }
+      ],
+      "category": "Infertility, Procedures & Patient Care",
+      "correctAnswer": "B",
+      "explanation": "The antral follicle count is the total number of 2 to 10 mm follicles in both ovaries, measured transvaginally early in the follicular phase before a dominant follicle emerges. Counting larger follicles at mid-cycle reflects the response of the current cycle rather than the resting follicle pool.",
+      "hint": "The count should be taken before one follicle becomes dominant.",
+      "keywords": [
+        "antral follicle count",
+        "ovarian reserve",
+        "infertility"
+      ]
+    },
+    {
+      "id": "obgyn-x-002",
+      "number": 160,
+      "question": "During an 11 to 13 week scan, the nasal bone is evaluated in a midsagittal view of the fetal face. Absence of the nasal bone at this stage is most strongly associated with which condition?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Turner syndrome (45,X)"
+        },
+        {
+          "letter": "B",
+          "text": "Triploidy"
+        },
+        {
+          "letter": "C",
+          "text": "Trisomy 21"
+        },
+        {
+          "letter": "D",
+          "text": "Klinefelter syndrome (47,XXY)"
+        }
+      ],
+      "category": "First Trimester",
+      "correctAnswer": "C",
+      "explanation": "An absent or hypoplastic nasal bone at 11 to 13 weeks is a well-established marker for trisomy 21 and is used to refine first-trimester risk. Turner syndrome is more typically associated with a markedly increased nuchal translucency or septated cystic hygroma rather than an absent nasal bone.",
+      "hint": "Recall which first-trimester soft markers are combined with nuchal translucency in Down syndrome screening.",
+      "keywords": [
+        "nasal bone",
+        "aneuploidy markers",
+        "11-13 week scan"
+      ]
+    },
+    {
+      "id": "obgyn-x-007",
+      "number": 161,
+      "question": "Which technique is correct for measuring the fetal head circumference?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Trace the inner edge of the skull in the plane of the cerebellum and cisterna magna"
+        },
+        {
+          "letter": "B",
+          "text": "Place an ellipse around the outer edge of the calvarium in the same axial plane used for the biparietal diameter"
+        },
+        {
+          "letter": "C",
+          "text": "Place an ellipse around the scalp at the level of the orbits"
+        },
+        {
+          "letter": "D",
+          "text": "Measure in the plane where the lateral ventricular atria appear widest"
+        }
+      ],
+      "category": "Fetal Biometry & Growth",
+      "correctAnswer": "B",
+      "explanation": "The head circumference is measured in the transthalamic plane, with the thalami, cavum septi pellucidi, and a symmetric oval skull, by placing the ellipse on the outer edge of the bone without including the scalp. The transcerebellar plane is used for the cerebellum and cisterna magna, not for the standard head circumference.",
+      "hint": "The head circumference shares its plane with another standard head measurement.",
+      "keywords": [
+        "head circumference",
+        "biometry technique",
+        "transthalamic plane"
+      ]
+    },
+    {
+      "id": "obgyn-x-012",
+      "number": 162,
+      "question": "At 20 weeks, the left fetal kidney is replaced by multiple noncommunicating cysts of varying sizes, with no identifiable renal pelvis or normal parenchyma. The right kidney and amniotic fluid are normal. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ureteropelvic junction obstruction"
+        },
+        {
+          "letter": "B",
+          "text": "Autosomal recessive polycystic kidney disease"
+        },
+        {
+          "letter": "C",
+          "text": "Unilateral renal agenesis"
+        },
+        {
+          "letter": "D",
+          "text": "Multicystic dysplastic kidney"
+        }
+      ],
+      "category": "Fetal Anatomy & Anomalies",
+      "correctAnswer": "D",
+      "explanation": "A multicystic dysplastic kidney is a nonfunctioning kidney replaced by randomly arranged cysts that do not connect with each other. In ureteropelvic junction obstruction, the dilated calyces all communicate with a central enlarged renal pelvis.",
+      "hint": "Ask whether the fluid spaces connect to a central renal pelvis.",
+      "keywords": [
+        "multicystic dysplastic kidney",
+        "fetal kidneys",
+        "renal cysts"
+      ]
+    },
+    {
+      "id": "obgyn-x-017",
+      "number": 163,
+      "question": "At 24 weeks, the placenta measures 6 cm thick and appears homogeneous. Which condition is most commonly associated with a thickened placenta?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Preeclampsia"
+        },
+        {
+          "letter": "B",
+          "text": "Long-standing chronic hypertension"
+        },
+        {
+          "letter": "C",
+          "text": "Maternal smoking with growth restriction"
+        },
+        {
+          "letter": "D",
+          "text": "Maternal diabetes mellitus"
+        }
+      ],
+      "category": "Placenta, Cord & Amniotic Fluid",
+      "correctAnswer": "D",
+      "explanation": "A placenta thicker than about 4 cm in the second trimester (placentomegaly) is associated with maternal diabetes, fetal hydrops, anemia, infection, and triploidy. Preeclampsia, chronic hypertension, and growth restriction are more often associated with a small, thin placenta.",
+      "hint": "Think of a condition that causes the fetus and placenta to grow larger than expected.",
+      "keywords": [
+        "placentomegaly",
+        "placental thickness",
+        "diabetes"
+      ]
+    },
+    {
+      "id": "obgyn-x-021",
+      "number": 164,
+      "question": "At 30 weeks, the fetal heart rate is a regular 240 beats per minute with 1:1 atrioventricular conduction on M-mode, and a small pericardial effusion is present. What is the most likely rhythm and its main concern?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A normal fetal heart rate for this gestational age"
+        },
+        {
+          "letter": "B",
+          "text": "Complete heart block related to maternal antibodies"
+        },
+        {
+          "letter": "C",
+          "text": "Blocked premature atrial contractions, which are usually benign"
+        },
+        {
+          "letter": "D",
+          "text": "Supraventricular tachycardia, which can lead to fetal hydrops"
+        }
+      ],
+      "category": "Maternal Conditions & Fetal Well-Being",
+      "correctAnswer": "D",
+      "explanation": "A sustained fetal heart rate of about 220 to 300 beats per minute with 1:1 conduction is typical of supraventricular tachycardia, which can cause heart failure and hydrops and is often treated with maternal antiarrhythmic medication. Complete heart block produces bradycardia, not tachycardia.",
+      "hint": "Compare this rate with the normal fetal range of about 110 to 160 beats per minute.",
+      "keywords": [
+        "supraventricular tachycardia",
+        "fetal arrhythmia",
+        "M-mode"
+      ]
+    },
+    {
+      "id": "obgyn-x-025",
+      "number": 165,
+      "question": "How many tissue layers make up the intertwin membrane in a dichorionic diamniotic pregnancy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Two: one amnion layer from each twin"
+        },
+        {
+          "letter": "B",
+          "text": "Four: two chorion layers and two amnion layers"
+        },
+        {
+          "letter": "C",
+          "text": "Three: two amnion layers and one chorion layer"
+        },
+        {
+          "letter": "D",
+          "text": "One: a single shared chorion layer"
+        }
+      ],
+      "category": "Multiple Gestations",
+      "correctAnswer": "B",
+      "explanation": "In dichorionic twins each fetus has its own chorion and amnion, so the dividing membrane contains four layers and appears thick, usually over 2 mm. A monochorionic diamniotic membrane contains only the two amnion layers and appears thin.",
+      "hint": "Each twin contributes its own complete set of membranes when chorions are separate.",
+      "keywords": [
+        "dichorionic diamniotic",
+        "intertwin membrane",
+        "chorionicity"
+      ]
+    },
+    {
+      "id": "obgyn-x-029",
+      "number": 166,
+      "question": "Under the FIGO leiomyoma classification system, a pedunculated fibroid that lies entirely within the endometrial cavity is classified as type:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2"
+        },
+        {
+          "letter": "B",
+          "text": "5"
+        },
+        {
+          "letter": "C",
+          "text": "7"
+        },
+        {
+          "letter": "D",
+          "text": "0"
+        }
+      ],
+      "category": "Uterus & Cervix",
+      "correctAnswer": "D",
+      "explanation": "FIGO type 0 is a pedunculated intracavitary fibroid, types 1 and 2 are submucosal with increasing intramural extension, and types 5 to 7 are subserosal. Type 7 also describes a pedunculated fibroid, but one that projects from the outer serosal surface rather than into the cavity.",
+      "hint": "The system numbers fibroids by their relationship to the cavity versus the serosa, and pedunculated lesions occur at both ends of the scale.",
+      "keywords": [
+        "FIGO classification",
+        "leiomyoma",
+        "submucosal fibroid"
+      ]
+    },
+    {
+      "id": "obgyn-x-034",
+      "number": 167,
+      "question": "A 37-year-old with several prior pelvic surgeries for endometriosis has pelvic pain. A large fluid collection with thin septations conforms to the shape of the pelvis without a discrete wall of its own, and the left ovary lies at its margin, surrounded by the fluid. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Paraovarian cyst"
+        },
+        {
+          "letter": "B",
+          "text": "Mucinous cystadenoma"
+        },
+        {
+          "letter": "C",
+          "text": "Peritoneal inclusion cyst"
+        },
+        {
+          "letter": "D",
+          "text": "Hydrosalpinx"
+        }
+      ],
+      "category": "Ovaries & Adnexa",
+      "correctAnswer": "C",
+      "explanation": "Peritoneal inclusion cysts form when adhesions trap fluid produced by an active ovary, so the fluid takes the shape of the pelvic spaces and surrounds or abuts the ovary in a patient with prior surgery or inflammation. A paraovarian cyst is a round, separately walled cyst that lies apart from the ovary.",
+      "hint": "The fluid has no wall of its own and molds around nearby structures.",
+      "keywords": [
+        "peritoneal inclusion cyst",
+        "adhesions",
+        "adnexal cystic mass"
+      ]
+    },
+    {
+      "id": "obgyn-x-038",
+      "number": 168,
+      "question": "Before a frozen embryo transfer, which endometrial finding is generally associated with reduced implantation rates?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A trilaminar pattern measuring 9 mm"
+        },
+        {
+          "letter": "B",
+          "text": "Thickness of 11 mm with a clear central echo line"
+        },
+        {
+          "letter": "C",
+          "text": "A small amount of physiologic fluid in the cul-de-sac"
+        },
+        {
+          "letter": "D",
+          "text": "Endometrial thickness under 7 mm"
+        }
+      ],
+      "category": "Infertility, Procedures & Patient Care",
+      "correctAnswer": "D",
+      "explanation": "A thin endometrium, generally under 7 mm, is associated with lower implantation and pregnancy rates in assisted reproduction. A trilaminar endometrium of 8 mm or more is considered favorable for transfer.",
+      "hint": "Think about whether the lining has developed enough to receive an embryo.",
+      "keywords": [
+        "endometrial thickness",
+        "embryo transfer",
+        "IVF"
+      ]
+    },
+    {
+      "id": "obgyn-x-003",
+      "number": 169,
+      "question": "Which technique is correct when measuring the crown-rump length?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Include the yolk sac in the measurement when it lies directly against the embryo"
+        },
+        {
+          "letter": "B",
+          "text": "Measure with the embryo in maximal flexion to reduce measurement variability"
+        },
+        {
+          "letter": "C",
+          "text": "Average three diameters taken in sagittal, transverse, and coronal planes"
+        },
+        {
+          "letter": "D",
+          "text": "Use a midsagittal view with the embryo in a neutral position and measure the longest straight line from crown to rump, excluding the yolk sac"
+        }
+      ],
+      "category": "First Trimester",
+      "correctAnswer": "D",
+      "explanation": "The CRL is measured in a true midsagittal plane with the embryo in a neutral position, from the outer edge of the crown to the outer edge of the rump, without including the yolk sac or limbs. Measuring a flexed embryo underestimates the CRL, and averaging three orthogonal diameters describes the mean sac diameter, not the CRL.",
+      "hint": "Consider which posture and plane give a reproducible longest axis of the embryo.",
+      "keywords": [
+        "crown-rump length",
+        "measurement technique",
+        "dating"
+      ]
+    },
+    {
+      "id": "obgyn-x-008",
+      "number": 170,
+      "question": "A fetus is described as large for gestational age when its estimated fetal weight is:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Above 4,000 g at any gestational age"
+        },
+        {
+          "letter": "B",
+          "text": "More than 2 weeks ahead of dates by head size"
+        },
+        {
+          "letter": "C",
+          "text": "Above the 90th percentile for gestational age"
+        },
+        {
+          "letter": "D",
+          "text": "Above the 99th percentile for gestational age"
+        }
+      ],
+      "category": "Fetal Biometry & Growth",
+      "correctAnswer": "C",
+      "explanation": "Large for gestational age is defined as an estimated fetal weight above the 90th percentile for gestational age. Macrosomia is a different term that refers to an absolute weight, usually 4,000 g or 4,500 g, regardless of gestational age.",
+      "hint": "Distinguish a percentile-based definition from an absolute weight threshold.",
+      "keywords": [
+        "large for gestational age",
+        "estimated fetal weight",
+        "macrosomia"
+      ]
     }
   ],
   "exam2": [
@@ -9006,6 +9646,646 @@
       "hint": "Contrast must exit the tube to show it is open.",
       "keywords": [
         "agitated saline"
+      ]
+    },
+    {
+      "id": "obgyn-x-013",
+      "number": 151,
+      "question": "A fetal echocardiogram shows a large ventricular septal defect with the aorta overriding the septum and a small pulmonary artery. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tetralogy of Fallot"
+        },
+        {
+          "letter": "B",
+          "text": "Transposition of the great arteries"
+        },
+        {
+          "letter": "C",
+          "text": "Hypoplastic left heart syndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Truncus arteriosus"
+        }
+      ],
+      "category": "Fetal Anatomy & Anomalies",
+      "correctAnswer": "A",
+      "explanation": "Tetralogy of Fallot combines a malaligned ventricular septal defect, an overriding aorta, and right ventricular outflow obstruction with a small pulmonary artery; right ventricular hypertrophy usually develops after birth. Truncus arteriosus also has an overriding vessel, but it is a single great artery that gives rise to the pulmonary arteries, with no separate pulmonary trunk from the right ventricle.",
+      "hint": "Count how many separate great arteries leave the heart.",
+      "keywords": [
+        "tetralogy of Fallot",
+        "fetal echocardiography",
+        "outflow tracts"
+      ]
+    },
+    {
+      "id": "obgyn-x-018",
+      "number": 152,
+      "question": "A fetus at 19 weeks has amputation of two fingers on one hand, a constriction ring around one leg, and an off-midline facial cleft. Thin linear echoes cross the amniotic cavity and attach to the fetus. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Amniotic band sequence"
+        },
+        {
+          "letter": "B",
+          "text": "Uterine synechia (amniotic sheet)"
+        },
+        {
+          "letter": "C",
+          "text": "Limb-body wall complex"
+        },
+        {
+          "letter": "D",
+          "text": "Trisomy 13"
+        }
+      ],
+      "category": "Placenta, Cord & Amniotic Fluid",
+      "correctAnswer": "A",
+      "explanation": "Amniotic bands are strands of ruptured amnion that entangle fetal parts, causing asymmetric amputations, constriction rings, and atypical clefts. A uterine synechia is a thick sheet covered by membranes that the fetus moves freely around without entrapment or deformity.",
+      "hint": "Notice that the fetal defects are asymmetric and do not follow embryologic lines.",
+      "keywords": [
+        "amniotic band sequence",
+        "limb amputation",
+        "amnion"
+      ]
+    },
+    {
+      "id": "obgyn-x-022",
+      "number": 153,
+      "question": "A woman with Graves disease treated with antithyroid medication has a fetus at 30 weeks with a symmetric, homogeneous anterior neck mass, a hyperextended neck, and polyhydramnios. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fetal goiter"
+        },
+        {
+          "letter": "B",
+          "text": "Cervical teratoma"
+        },
+        {
+          "letter": "C",
+          "text": "Posterior cystic hygroma"
+        },
+        {
+          "letter": "D",
+          "text": "Cervical lymphangioma"
+        }
+      ],
+      "category": "Maternal Conditions & Fetal Well-Being",
+      "correctAnswer": "A",
+      "explanation": "Maternal thyroid disease and its treatment can cause fetal thyroid enlargement, seen as a symmetric, bilobed, homogeneous anterior neck mass that may cause neck hyperextension and polyhydramnios from esophageal compression. A cervical teratoma is usually a heterogeneous mixed cystic and solid mass, often with calcifications.",
+      "hint": "Link the maternal endocrine history to the organ in the anterior fetal neck.",
+      "keywords": [
+        "fetal goiter",
+        "maternal thyroid disease",
+        "neck mass"
+      ]
+    },
+    {
+      "id": "obgyn-x-026",
+      "number": 154,
+      "question": "Monochorionic diamniotic twins at 19 weeks have Quintero stage III twin-twin transfusion syndrome. Which treatment addresses the underlying cause?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Serial amnioreduction of the recipient twin's sac"
+        },
+        {
+          "letter": "B",
+          "text": "Maternal digoxin to treat recipient heart failure"
+        },
+        {
+          "letter": "C",
+          "text": "Fetoscopic laser photocoagulation of the placental vascular anastomoses"
+        },
+        {
+          "letter": "D",
+          "text": "Immediate delivery of both twins"
+        }
+      ],
+      "category": "Multiple Gestations",
+      "correctAnswer": "C",
+      "explanation": "Twin-twin transfusion syndrome results from unbalanced blood flow through placental vascular connections, and fetoscopic laser ablation of those anastomoses is the preferred treatment for stages II to IV before about 26 weeks. Amnioreduction relieves polyhydramnios and maternal symptoms but leaves the shared circulation unchanged.",
+      "hint": "Target the shared placental vessels rather than the fluid they produce.",
+      "keywords": [
+        "twin-twin transfusion syndrome",
+        "laser photocoagulation",
+        "monochorionic"
+      ]
+    },
+    {
+      "id": "obgyn-x-030",
+      "number": 155,
+      "question": "Six weeks after a dilation and curettage, a 34-year-old has heavy intermittent bleeding and a negative hCG. The myometrium contains clustered serpiginous anechoic spaces with intense mosaic color flow, high peak systolic velocity, and low-resistance waveforms. The endometrium is thin. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Retained products of conception"
+        },
+        {
+          "letter": "B",
+          "text": "Uterine arteriovenous malformation"
+        },
+        {
+          "letter": "C",
+          "text": "Adenomyosis"
+        },
+        {
+          "letter": "D",
+          "text": "Degenerating intramural leiomyoma"
+        }
+      ],
+      "category": "Uterus & Cervix",
+      "correctAnswer": "B",
+      "explanation": "Tangled myometrial vessels with turbulent, high-velocity, low-resistance arteriovenous flow after uterine instrumentation are typical of an arteriovenous malformation, and recognizing it matters because curettage can cause severe hemorrhage. Retained products are centered in a thickened endometrium, whereas here the endometrium is thin and the hCG is negative.",
+      "hint": "Note where the abnormal flow is located and what the endometrium looks like.",
+      "keywords": [
+        "arteriovenous malformation",
+        "color Doppler",
+        "postprocedural bleeding"
+      ]
+    },
+    {
+      "id": "obgyn-x-035",
+      "number": 156,
+      "question": "In a nulliparous woman, the ovary typically lies in the ovarian fossa. Which structures lie posterior to the ovary and serve as landmarks for locating it?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The ureter and internal iliac vessels"
+        },
+        {
+          "letter": "B",
+          "text": "The bladder and urethra"
+        },
+        {
+          "letter": "C",
+          "text": "The sigmoid colon and rectum"
+        },
+        {
+          "letter": "D",
+          "text": "The external iliac vessels and inguinal ligament"
+        }
+      ],
+      "category": "Ovaries & Adnexa",
+      "correctAnswer": "A",
+      "explanation": "The ovarian fossa is bounded posteriorly by the ureter and internal iliac vessels and superiorly by the external iliac vessels, so the internal iliac vessels are a useful landmark for finding the ovary. The external iliac vessels run along the lateral pelvic wall above and in front of the fossa, not behind it.",
+      "hint": "Consider which iliac branch runs deep into the pelvis.",
+      "keywords": [
+        "ovarian fossa",
+        "pelvic anatomy",
+        "iliac vessels"
+      ]
+    },
+    {
+      "id": "obgyn-x-039",
+      "number": 157,
+      "question": "During ultrasound-guided embryo transfer, which approach is standard?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Transvaginal needle puncture through the posterior fornix into the cavity"
+        },
+        {
+          "letter": "B",
+          "text": "Advancing the catheter until its tip touches the fundal endometrium"
+        },
+        {
+          "letter": "C",
+          "text": "Transabdominal imaging with an empty bladder to keep the uterus flexed"
+        },
+        {
+          "letter": "D",
+          "text": "Transabdominal imaging with a partially filled bladder, placing the catheter tip about 1 to 2 cm below the fundus"
+        }
+      ],
+      "category": "Infertility, Procedures & Patient Care",
+      "correctAnswer": "D",
+      "explanation": "Transabdominal guidance with a moderately full bladder straightens the cervicouterine angle and allows the embryos to be deposited in the upper cavity, about 1 to 2 cm from the fundus. Transvaginal needle puncture through the fornix is the technique for oocyte retrieval, not embryo transfer.",
+      "hint": "Think about what a full bladder does to the angle between the cervix and the uterine body.",
+      "keywords": [
+        "embryo transfer",
+        "ultrasound guidance",
+        "assisted reproduction"
+      ]
+    },
+    {
+      "id": "obgyn-x-004",
+      "number": 158,
+      "question": "At 12 weeks, the fetal head shows no ossified calvarium above the orbits. The brain tissue appears irregular and lobulated and is surrounded directly by amniotic fluid. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Occipital encephalocele with herniated brain tissue"
+        },
+        {
+          "letter": "B",
+          "text": "Normal incomplete ossification expected at this age"
+        },
+        {
+          "letter": "C",
+          "text": "Acrania-exencephaly sequence, the precursor of anencephaly"
+        },
+        {
+          "letter": "D",
+          "text": "Alobar holoprosencephaly with a single ventricle"
+        }
+      ],
+      "category": "First Trimester",
+      "correctAnswer": "C",
+      "explanation": "The calvarium is normally ossified and visible by about 11 weeks, so its absence with exposed, disorganized brain tissue indicates acrania with exencephaly, which progresses to anencephaly as the exposed brain is destroyed. An encephalocele herniates through a focal skull defect while the rest of the calvarium is present.",
+      "hint": "Ask whether the skull is focally defective or absent altogether, and when it normally ossifies.",
+      "keywords": [
+        "acrania",
+        "exencephaly",
+        "neural tube defect"
+      ]
+    },
+    {
+      "id": "obgyn-x-009",
+      "number": 159,
+      "question": "A sonographer reports an estimated fetal weight of 3,500 g at 38 weeks using a standard Hadlock formula. Approximately what margin of error should be expected?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "About plus or minus 10 to 15 percent"
+        },
+        {
+          "letter": "B",
+          "text": "About plus or minus 1 to 2 percent"
+        },
+        {
+          "letter": "C",
+          "text": "About plus or minus 3 to 5 percent"
+        },
+        {
+          "letter": "D",
+          "text": "About plus or minus 35 to 40 percent"
+        }
+      ],
+      "category": "Fetal Biometry & Growth",
+      "correctAnswer": "A",
+      "explanation": "Sonographic weight formulas typically have an error of about 10 to 15 percent, and the error tends to be larger at the extremes of weight, such as in macrosomia. Claiming an accuracy within a few percent overstates what biometric formulas can achieve.",
+      "hint": "Consider how small errors in several measurements combine in a weight formula.",
+      "keywords": [
+        "estimated fetal weight",
+        "Hadlock formula",
+        "accuracy"
+      ]
+    },
+    {
+      "id": "obgyn-x-014",
+      "number": 160,
+      "question": "At 18 weeks, a large, thin-walled, septated cystic mass extends from the posterior fetal neck, with generalized skin edema and pleural effusions. The fetus is female. Which chromosomal abnormality is most likely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Trisomy 21"
+        },
+        {
+          "letter": "B",
+          "text": "Trisomy 13"
+        },
+        {
+          "letter": "C",
+          "text": "Triploidy"
+        },
+        {
+          "letter": "D",
+          "text": "Turner syndrome (45,X)"
+        }
+      ],
+      "category": "Fetal Anatomy & Anomalies",
+      "correctAnswer": "D",
+      "explanation": "A large septated posterior cystic hygroma with hydrops in the second trimester is classically associated with Turner syndrome, which also has cardiac lesions such as coarctation and horseshoe kidney. Trisomy 21 more often has a thickened nuchal fold or increased nuchal translucency than a large hydropic hygroma at this stage.",
+      "hint": "Think about which aneuploidy is classically linked to failure of the jugular lymphatic sacs to drain, leading to hydrops.",
+      "keywords": [
+        "cystic hygroma",
+        "Turner syndrome",
+        "hydrops"
+      ]
+    },
+    {
+      "id": "obgyn-x-019",
+      "number": 161,
+      "question": "At 20 weeks, the placenta appears to cover the internal os, and a thick, rounded, hypoechoic area of myometrium bulges into the lower uterine segment. What should the sonographer do next?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Report a complete placenta previa based on this image"
+        },
+        {
+          "letter": "B",
+          "text": "Have the patient drink more water and rescan transabdominally"
+        },
+        {
+          "letter": "C",
+          "text": "Wait 20 to 30 minutes and reassess, preferably transvaginally with an empty bladder"
+        },
+        {
+          "letter": "D",
+          "text": "Recommend MRI because the finding indicates placenta accreta"
+        }
+      ],
+      "category": "Placenta, Cord & Amniotic Fluid",
+      "correctAnswer": "C",
+      "explanation": "A focal myometrial contraction in the lower uterine segment can make the placenta appear to cover the os, so the area should be reassessed after the contraction relaxes, ideally transvaginally. An overdistended bladder compresses the lower segment and also creates a false appearance of previa, so adding more fluid worsens the problem.",
+      "hint": "Consider which transient findings can make the lower uterine segment look longer and closed.",
+      "keywords": [
+        "placenta previa",
+        "myometrial contraction",
+        "pitfall"
+      ]
+    },
+    {
+      "id": "obgyn-x-023",
+      "number": 162,
+      "question": "A patient with a body mass index of 48 is referred for a fetal anatomy survey at 20 weeks. Which technique is most likely to improve image quality?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use the highest-frequency transducer available to improve resolution"
+        },
+        {
+          "letter": "B",
+          "text": "Scan through the periumbilical area or beneath the elevated pannus using a lower-frequency transducer"
+        },
+        {
+          "letter": "C",
+          "text": "Increase near-field time gain compensation to the maximum"
+        },
+        {
+          "letter": "D",
+          "text": "Activate the maximum number of focal zones throughout the image"
+        }
+      ],
+      "category": "Maternal Conditions & Fetal Well-Being",
+      "correctAnswer": "B",
+      "explanation": "In patients with obesity, scanning where the subcutaneous tissue is thinnest, such as the umbilicus or under a lifted pannus, together with a lower-frequency transducer, improves penetration; some laboratories also delay the survey to about 22 weeks. A high-frequency transducer attenuates too much to reach the fetus through thick tissue.",
+      "hint": "Weigh penetration against resolution when the target is deep.",
+      "keywords": [
+        "maternal obesity",
+        "scanning technique",
+        "anatomy survey"
+      ]
+    },
+    {
+      "id": "obgyn-x-027",
+      "number": 163,
+      "question": "Compared with dichorionic twins, monochorionic twins have a higher risk of which condition, so that fetal echocardiography is recommended for them?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Placental abruption"
+        },
+        {
+          "letter": "B",
+          "text": "Congenital heart disease"
+        },
+        {
+          "letter": "C",
+          "text": "Maternal gestational diabetes"
+        },
+        {
+          "letter": "D",
+          "text": "Rh alloimmunization"
+        }
+      ],
+      "category": "Multiple Gestations",
+      "correctAnswer": "B",
+      "explanation": "Monochorionic twins have a higher rate of structural anomalies, especially congenital heart defects, and recipients in twin-twin transfusion syndrome may develop acquired cardiac dysfunction, so fetal echocardiography is recommended. The other options are not specifically increased by a shared chorion.",
+      "hint": "Consider what a shared placenta and monozygotic twinning do to fetal development and circulation.",
+      "keywords": [
+        "monochorionic twins",
+        "fetal echocardiography",
+        "congenital heart disease"
+      ]
+    },
+    {
+      "id": "obgyn-x-031",
+      "number": 164,
+      "question": "A 36-year-old with two prior cesarean deliveries and a negative pregnancy test has postmenstrual spotting. A triangular anechoic defect in the anterior lower uterine segment at the scar site communicates with the endometrial canal, and the overlying myometrium is thinned. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bladder flap hematoma"
+        },
+        {
+          "letter": "B",
+          "text": "Nabothian cyst"
+        },
+        {
+          "letter": "C",
+          "text": "Cesarean scar defect (niche or isthmocele)"
+        },
+        {
+          "letter": "D",
+          "text": "Cesarean scar ectopic pregnancy"
+        }
+      ],
+      "category": "Uterus & Cervix",
+      "correctAnswer": "C",
+      "explanation": "A cesarean scar niche is a wedge-shaped myometrial defect at the hysterotomy site that connects with the cavity, and pooled blood in the niche commonly causes postmenstrual spotting. A cesarean scar ectopic pregnancy requires a gestational sac and a positive hCG.",
+      "hint": "Combine the scar location, the communication with the cavity, and the negative pregnancy test.",
+      "keywords": [
+        "cesarean scar niche",
+        "isthmocele",
+        "abnormal bleeding"
+      ]
+    },
+    {
+      "id": "obgyn-x-036",
+      "number": 165,
+      "question": "A 19-year-old has a rapidly enlarging, large, solid, lobulated ovarian mass with echogenic fibrovascular septa that show prominent color flow. Her serum lactate dehydrogenase is elevated. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mature cystic teratoma"
+        },
+        {
+          "letter": "B",
+          "text": "Serous cystadenoma"
+        },
+        {
+          "letter": "C",
+          "text": "Dysgerminoma"
+        },
+        {
+          "letter": "D",
+          "text": "Ovarian fibroma"
+        }
+      ],
+      "category": "Ovaries & Adnexa",
+      "correctAnswer": "C",
+      "explanation": "Dysgerminoma is the most common malignant germ cell tumor in young women and typically appears as a large, solid, lobulated mass with vascular fibrovascular septa, often with elevated LDH. A mature cystic teratoma is usually cystic with fat, hair, and a shadowing echogenic nodule rather than a solid vascular mass.",
+      "hint": "Consider the patient's age and which tumor marker is elevated.",
+      "keywords": [
+        "dysgerminoma",
+        "germ cell tumor",
+        "solid ovarian mass"
+      ]
+    },
+    {
+      "id": "obgyn-x-040",
+      "number": 166,
+      "question": "Before starting a sonographic examination, which step best ensures correct patient identification?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Confirm the patient's room or bed number before scanning"
+        },
+        {
+          "letter": "B",
+          "text": "Confirm at least two identifiers, such as full name and date of birth, against the order"
+        },
+        {
+          "letter": "C",
+          "text": "Ask the patient a yes-or-no question confirming her name"
+        },
+        {
+          "letter": "D",
+          "text": "Check that the name on the order matches the name on the chart"
+        }
+      ],
+      "category": "Infertility, Procedures & Patient Care",
+      "correctAnswer": "B",
+      "explanation": "Patient safety standards require at least two patient-specific identifiers, ideally stated by the patient, such as full name and date of birth. A room number is not a patient identifier, and yes-or-no questions invite a confused or hearing-impaired patient to agree with the wrong name.",
+      "hint": "Use information that belongs to the patient rather than to her location.",
+      "keywords": [
+        "patient identification",
+        "patient safety",
+        "two identifiers"
+      ]
+    },
+    {
+      "id": "obgyn-x-005",
+      "number": 167,
+      "question": "On the midsagittal view used for nuchal translucency at 11 to 13 weeks, the fourth ventricle normally appears as an anechoic space between the brainstem and the choroid plexus. Nonvisualization of this intracranial translucency should raise concern for which anomaly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Open spina bifida"
+        },
+        {
+          "letter": "B",
+          "text": "Trisomy 21"
+        },
+        {
+          "letter": "C",
+          "text": "Agenesis of the corpus callosum"
+        },
+        {
+          "letter": "D",
+          "text": "Gastroschisis"
+        }
+      ],
+      "category": "First Trimester",
+      "correctAnswer": "A",
+      "explanation": "In open spina bifida, leakage of cerebrospinal fluid causes caudal displacement of the hindbrain, compressing the fourth ventricle so the intracranial translucency is absent, an early counterpart of the Chiari II malformation. It is not a marker of trisomy 21, which is screened with nuchal translucency and the nasal bone.",
+      "hint": "Connect the first-trimester posterior fossa to the hindbrain herniation seen later in neural tube defects.",
+      "keywords": [
+        "intracranial translucency",
+        "spina bifida",
+        "first-trimester screening"
+      ]
+    },
+    {
+      "id": "obgyn-x-010",
+      "number": 168,
+      "question": "A patient with an uncertain last menstrual period and no prior prenatal care has her first ultrasound at 32 weeks by biometry. Which statement about dating is most accurate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Third-trimester biometry is as accurate for dating as a first-trimester CRL"
+        },
+        {
+          "letter": "B",
+          "text": "The due date should be assigned using the femur length alone"
+        },
+        {
+          "letter": "C",
+          "text": "Third-trimester biometry varies by about 3 weeks, so the pregnancy is considered suboptimally dated"
+        },
+        {
+          "letter": "D",
+          "text": "Dating should be deferred until a repeat scan at 36 weeks confirms the age"
+        }
+      ],
+      "category": "Fetal Biometry & Growth",
+      "correctAnswer": "C",
+      "explanation": "Biologic variability in fetal size increases with gestation, so third-trimester biometry has an accuracy of roughly plus or minus 3 weeks, and ACOG considers such a pregnancy suboptimally dated. A first-trimester CRL is the most accurate dating method, accurate to within about 5 to 7 days.",
+      "hint": "Think about how the spread of normal fetal size changes as pregnancy advances.",
+      "keywords": [
+        "pregnancy dating",
+        "third trimester",
+        "suboptimal dating"
+      ]
+    },
+    {
+      "id": "obgyn-x-015",
+      "number": 169,
+      "question": "At 22 weeks, the right fetal lung contains a mass with multiple cysts measuring 1 to 3 cm, causing mediastinal shift. Color Doppler shows its blood supply from the pulmonary artery. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bronchopulmonary sequestration"
+        },
+        {
+          "letter": "B",
+          "text": "Congenital diaphragmatic hernia"
+        },
+        {
+          "letter": "C",
+          "text": "Bronchogenic cyst"
+        },
+        {
+          "letter": "D",
+          "text": "Macrocystic congenital pulmonary airway malformation"
+        }
+      ],
+      "category": "Fetal Anatomy & Anomalies",
+      "correctAnswer": "D",
+      "explanation": "A congenital pulmonary airway malformation is a lung mass with cysts, often several centimeters in the macrocystic type, and it is supplied by the pulmonary circulation. A bronchopulmonary sequestration is usually a solid echogenic mass with a systemic feeding artery from the aorta.",
+      "hint": "The source of the feeding vessel separates the two most common fetal lung masses.",
+      "keywords": [
+        "CPAM",
+        "fetal lung mass",
+        "pulmonary artery supply"
+      ]
+    },
+    {
+      "id": "obgyn-x-032",
+      "number": 170,
+      "question": "In a healthy 6-year-old girl, how does the uterus typically appear on sonography?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tubular or spade-shaped, with the cervix equal to or larger than the uterine body"
+        },
+        {
+          "letter": "B",
+          "text": "Pear-shaped, with the body about twice the length of the cervix"
+        },
+        {
+          "letter": "C",
+          "text": "Globular, with a thick echogenic endometrium"
+        },
+        {
+          "letter": "D",
+          "text": "Bulbous fundus, anteflexed, with a 10 mm endometrium"
+        }
+      ],
+      "category": "Uterus & Cervix",
+      "correctAnswer": "A",
+      "explanation": "Before puberty the uterus is small and tubular, with a cervix-to-corpus ratio of about 1:1 or larger and a thin or barely visible endometrium. The pear shape, with the body larger than the cervix, develops under estrogen stimulation at puberty.",
+      "hint": "Consider how estrogen changes the relative size of the uterine body.",
+      "keywords": [
+        "prepubertal uterus",
+        "pediatric pelvis",
+        "uterine shape"
       ]
     }
   ]

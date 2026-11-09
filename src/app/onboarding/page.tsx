@@ -138,8 +138,8 @@ export default function OnboardingPage() {
             <p className="text-slate-500 text-[16px] mt-3 leading-relaxed">Practice questions, timed mock exams and flashcards for every major ARDMS registry.</p>
             <div className="mt-6 flex flex-col gap-3">
               {[
-                { icon: Layers, gradient: 'blue' as const, title: '2,700+ practice questions', sub: 'With explanations and hints for every one' },
-                { icon: Timer, gradient: 'violet' as const, title: 'Timed mock exams', sub: 'Paced like the real registry' },
+                { icon: Layers, gradient: 'blue' as const, title: '3,200+ practice questions', sub: 'With explanations and hints for every one' },
+                { icon: Timer, gradient: 'violet' as const, title: 'Full-length mock exams', sub: 'Same length and time limit as the real registry' },
                 { icon: BookMarked, gradient: 'amber' as const, title: 'Flashcards for every topic', sub: 'Study anywhere, swipe to review' },
               ].map((f) => (
                 <div key={f.title} className="bg-white surface rounded-[20px] p-3.5 flex items-center gap-3.5">

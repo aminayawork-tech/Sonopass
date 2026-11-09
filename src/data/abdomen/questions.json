@@ -4509,6 +4509,646 @@
       "keywords": [
         "ALARA principle"
       ]
+    },
+    {
+      "id": "ab-x-001",
+      "number": 151,
+      "question": "When performing two-dimensional shear wave elastography of the liver to stage fibrosis, which technique is recommended?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use an intercostal approach to the right lobe and place the sample box about 1.5 to 2 cm below the liver capsule during a neutral breath-hold"
+        },
+        {
+          "letter": "B",
+          "text": "Use a subcostal approach and place the sample box directly on the liver capsule during deep inspiration"
+        },
+        {
+          "letter": "C",
+          "text": "Place the sample box in the left lobe while the patient performs a Valsalva maneuver"
+        },
+        {
+          "letter": "D",
+          "text": "Center the sample box on a large hepatic vein to maximize the returning signal"
+        }
+      ],
+      "category": "Liver",
+      "correctAnswer": "A",
+      "explanation": "Consensus guidance (SRU, EFSUMB) calls for a fasting patient, an intercostal right-lobe window, a neutral breath-hold, and a sample box 1.5 to 2 cm deep to Glisson capsule, away from large vessels. Measuring at the capsule or in the left lobe, which moves with cardiac pulsation, gives falsely variable or high stiffness values.",
+      "hint": "Think about reverberation near the capsule and motion from the heart and breathing.",
+      "keywords": [
+        "shear wave elastography",
+        "liver fibrosis",
+        "technique"
+      ]
+    },
+    {
+      "id": "ab-x-006",
+      "number": 152,
+      "question": "An asymptomatic 52-year-old woman who had a cholecystectomy 3 years ago has normal liver function tests. The common bile duct measures 8 mm with no intraductal echoes and no intrahepatic duct dilatation. How should this be interpreted?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is within the range commonly accepted after cholecystectomy, up to about 10 mm"
+        },
+        {
+          "letter": "B",
+          "text": "It indicates distal common bile duct obstruction requiring urgent ERCP"
+        },
+        {
+          "letter": "C",
+          "text": "It is diagnostic of a type I choledochal cyst"
+        },
+        {
+          "letter": "D",
+          "text": "It indicates a retained stone even though none is visualized"
+        }
+      ],
+      "category": "Biliary System",
+      "correctAnswer": "A",
+      "explanation": "After cholecystectomy the common duct may be mildly larger than usual, and up to about 10 mm is generally accepted when the patient is asymptomatic with normal laboratory values. Obstruction would be suggested by symptoms, abnormal liver tests, progressive dilatation, or intrahepatic duct dilatation, none of which is present.",
+      "hint": "Consider how the duct behaves once the gallbladder reservoir is removed.",
+      "keywords": [
+        "post-cholecystectomy",
+        "common bile duct",
+        "normal variant"
+      ]
+    },
+    {
+      "id": "ab-x-011",
+      "number": 153,
+      "question": "In transverse imaging of the upper abdomen, which vessel arises from the celiac trunk and courses to the right along the superior margin of the pancreatic head and neck?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Splenic vein"
+        },
+        {
+          "letter": "B",
+          "text": "Superior mesenteric artery"
+        },
+        {
+          "letter": "C",
+          "text": "Common hepatic artery"
+        },
+        {
+          "letter": "D",
+          "text": "Left renal vein"
+        }
+      ],
+      "category": "Pancreas",
+      "correctAnswer": "C",
+      "explanation": "The common hepatic artery runs to the right from the celiac trunk along the superior border of the pancreas before giving off the gastroduodenal artery. The splenic vein runs along the posterior surface of the pancreatic body and tail, not its superior margin, and it is not a celiac branch.",
+      "hint": "Recall the three branches of the celiac trunk and which one heads toward the liver.",
+      "keywords": [
+        "common hepatic artery",
+        "celiac trunk",
+        "pancreatic landmarks"
+      ]
+    },
+    {
+      "id": "ab-x-015",
+      "number": 154,
+      "question": "A 58-year-old man with cirrhosis and portal hypertension has splenomegaly. A large, tortuous vessel runs from the splenic hilum to a dilated left renal vein, and flow in the splenic vein is directed away from the liver. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nutcracker syndrome"
+        },
+        {
+          "letter": "B",
+          "text": "Spontaneous splenorenal shunt"
+        },
+        {
+          "letter": "C",
+          "text": "Splenic arteriovenous fistula"
+        },
+        {
+          "letter": "D",
+          "text": "Splenic vein thrombosis"
+        }
+      ],
+      "category": "Spleen",
+      "correctAnswer": "B",
+      "explanation": "In portal hypertension, splenic venous blood can decompress through a spontaneous splenorenal collateral into the left renal vein, producing hepatofugal splenic vein flow and a dilated left renal vein. Splenic vein thrombosis would show no flow in the splenic vein rather than reversed flow.",
+      "hint": "Follow where the splenic venous blood is going instead of the portal vein.",
+      "keywords": [
+        "splenorenal shunt",
+        "portal hypertension",
+        "collaterals"
+      ]
+    },
+    {
+      "id": "ab-x-019",
+      "number": 155,
+      "question": "A triangular echogenic area is seen in the anterosuperior cortex of the right kidney at the junction of the upper and middle thirds. It is connected to the renal sinus by a thin echogenic line, the overlying cortex is otherwise normal, and no flow abnormality is present. What does this most likely represent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Angiomyolipoma"
+        },
+        {
+          "letter": "B",
+          "text": "Renal scar from vesicoureteral reflux"
+        },
+        {
+          "letter": "C",
+          "text": "Junctional parenchymal defect"
+        },
+        {
+          "letter": "D",
+          "text": "Acute renal infarct"
+        }
+      ],
+      "category": "Urinary Tract & Adrenals",
+      "correctAnswer": "C",
+      "explanation": "A junctional parenchymal defect is a normal variant caused by incomplete fusion of embryologic renunculi; it appears as a triangular echogenic notch in a typical location, linked to the sinus by an echogenic septum. A reflux scar causes focal cortical thinning directly over a calyx, usually at the poles, rather than a fixed triangular defect connected to the sinus.",
+      "hint": "Think about embryologic fusion lines of the kidney.",
+      "keywords": [
+        "junctional parenchymal defect",
+        "normal variant",
+        "renal anatomy"
+      ]
+    },
+    {
+      "id": "ab-x-024",
+      "number": 156,
+      "question": "During a Doppler study of the upper abdomen, a hepatic arterial branch is seen arising from the proximal superior mesenteric artery and coursing to the right, posterior to the portal vein, toward the liver. What does this most likely represent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The gastroduodenal artery"
+        },
+        {
+          "letter": "B",
+          "text": "The left gastric artery"
+        },
+        {
+          "letter": "C",
+          "text": "A replaced right hepatic artery, a common anatomic variant"
+        },
+        {
+          "letter": "D",
+          "text": "An inferior mesenteric artery collateral"
+        }
+      ],
+      "category": "Abdominal Vasculature & Retroperitoneum",
+      "correctAnswer": "C",
+      "explanation": "In roughly 10 to 15 percent of people the right hepatic artery arises from the SMA instead of the common hepatic artery and travels behind the portal vein to the liver. The gastroduodenal artery arises from the common hepatic artery and runs anterolateral to the pancreatic head, not from the SMA.",
+      "hint": "Consider the most frequent variation of hepatic arterial anatomy.",
+      "keywords": [
+        "replaced right hepatic artery",
+        "SMA",
+        "vascular variants"
+      ]
+    },
+    {
+      "id": "ab-x-029",
+      "number": 157,
+      "question": "A woman who delivered twins 6 months ago has a midline abdominal bulge that appears when she strains. Sonography shows the linea alba widened to 3.5 cm between the medial borders of the rectus abdominis muscles, with an intact fascial layer and no bowel or fat passing through a defect. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Spigelian hernia"
+        },
+        {
+          "letter": "B",
+          "text": "Umbilical hernia"
+        },
+        {
+          "letter": "C",
+          "text": "Diastasis recti"
+        },
+        {
+          "letter": "D",
+          "text": "Rectus sheath hematoma"
+        }
+      ],
+      "category": "GI Tract, Peritoneum & Abdominal Wall",
+      "correctAnswer": "C",
+      "explanation": "Diastasis recti is separation of the rectus muscles with thinning and widening of the linea alba but no true fascial defect, so contents bulge without herniating. An umbilical hernia requires a focal defect through which fat or bowel protrudes.",
+      "hint": "Ask whether there is an actual hole in the fascia.",
+      "keywords": [
+        "diastasis recti",
+        "linea alba",
+        "abdominal wall"
+      ]
+    },
+    {
+      "id": "ab-x-012",
+      "number": 158,
+      "question": "Which laboratory test is more specific than serum amylase for acute pancreatitis and remains elevated for a longer time after the onset of symptoms?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Serum alkaline phosphatase"
+        },
+        {
+          "letter": "B",
+          "text": "Serum lipase"
+        },
+        {
+          "letter": "C",
+          "text": "Serum aspartate aminotransferase"
+        },
+        {
+          "letter": "D",
+          "text": "Serum alpha-fetoprotein"
+        }
+      ],
+      "category": "Pancreas",
+      "correctAnswer": "B",
+      "explanation": "Serum lipase is more specific for pancreatic injury than amylase, which can also come from salivary glands and other sources, and lipase stays elevated for several days longer. Alkaline phosphatase is a marker of biliary obstruction, not pancreatic inflammation.",
+      "hint": "Think of the enzyme produced almost exclusively by the pancreas.",
+      "keywords": [
+        "lipase",
+        "acute pancreatitis",
+        "laboratory values"
+      ]
+    },
+    {
+      "id": "ab-x-016",
+      "number": 159,
+      "question": "How is splenic length most commonly measured on sonography?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "As the anteroposterior thickness at the level of the pancreatic tail"
+        },
+        {
+          "letter": "B",
+          "text": "As the transverse width measured perpendicular to the hilum in an axial plane"
+        },
+        {
+          "letter": "C",
+          "text": "As the longest dimension in a coronal oblique plane through the splenic hilum, from the superomedial tip to the inferolateral tip"
+        },
+        {
+          "letter": "D",
+          "text": "As the distance from the left hemidiaphragm to the upper pole of the left kidney"
+        }
+      ],
+      "category": "Spleen",
+      "correctAnswer": "C",
+      "explanation": "Splenic length is taken as the greatest longitudinal dimension in a coronal oblique view through the hilum, which is the measurement compared with the commonly used upper limit of about 12 to 13 cm. Thickness and width are secondary measurements and are not the standard length value.",
+      "hint": "The spleen's long axis lies obliquely along the posterior ribs.",
+      "keywords": [
+        "splenic length",
+        "measurement technique",
+        "splenomegaly"
+      ]
+    },
+    {
+      "id": "ab-x-034",
+      "number": 160,
+      "question": "In a boy with cryptorchidism, the most common location of an undescended testis is the:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Retroperitoneum near the lower pole of the kidney"
+        },
+        {
+          "letter": "B",
+          "text": "Perineum"
+        },
+        {
+          "letter": "C",
+          "text": "Pelvis posterior to the bladder"
+        },
+        {
+          "letter": "D",
+          "text": "Inguinal canal"
+        }
+      ],
+      "category": "Superficial Structures",
+      "correctAnswer": "D",
+      "explanation": "Most undescended testes are arrested along the normal path of descent, most commonly in the inguinal canal, where high-frequency sonography can usually detect them. Intra-abdominal locations such as the retroperitoneum or pelvis are less common and harder to image.",
+      "hint": "Think of the normal route of testicular descent and where it usually stops.",
+      "keywords": [
+        "undescended testis",
+        "cryptorchidism",
+        "inguinal canal"
+      ]
+    },
+    {
+      "id": "ab-x-038",
+      "number": 161,
+      "question": "Before assisting a patient to transfer from a wheelchair to a stretcher for a sonogram, what should the sonographer do first?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lock the wheels of both the wheelchair and the stretcher"
+        },
+        {
+          "letter": "B",
+          "text": "Raise the stretcher to its highest position"
+        },
+        {
+          "letter": "C",
+          "text": "Ask the patient to stand and pivot while holding the sonographer's arms"
+        },
+        {
+          "letter": "D",
+          "text": "Remove the footrests after the patient stands up"
+        }
+      ],
+      "category": "Patient Care, Procedures & Contrast",
+      "correctAnswer": "A",
+      "explanation": "Locking both wheelchair and stretcher wheels prevents them from rolling apart during the transfer, a leading cause of patient falls. The stretcher should be at about the height of the wheelchair seat, not raised to its highest position.",
+      "hint": "What could make the equipment move during the transfer?",
+      "keywords": [
+        "patient transfer",
+        "fall prevention",
+        "patient safety"
+      ]
+    },
+    {
+      "id": "ab-x-003",
+      "number": 162,
+      "question": "A 6-week-old infant has hepatomegaly and signs of high-output congestive heart failure. The liver contains multiple hypoechoic masses with prominent internal vascularity, the celiac axis and hepatic artery are enlarged, and the abdominal aorta tapers abruptly below the celiac origin. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hepatoblastoma"
+        },
+        {
+          "letter": "B",
+          "text": "Infantile hepatic hemangioma"
+        },
+        {
+          "letter": "C",
+          "text": "Multiple pyogenic liver abscesses"
+        },
+        {
+          "letter": "D",
+          "text": "Hepatic metastases from Wilms tumor"
+        }
+      ],
+      "category": "Liver",
+      "correctAnswer": "B",
+      "explanation": "Infantile hepatic hemangiomas contain arteriovenous shunts that steal flow through an enlarged celiac axis and hepatic artery, producing high-output heart failure and a smaller aorta below the celiac trunk. Hepatoblastoma usually occurs as a solitary mass in a slightly older child with marked AFP elevation and does not typically cause shunt-related heart failure.",
+      "hint": "Where would extra blood flow be going if the heart is failing from high output?",
+      "keywords": [
+        "infantile hemangioma",
+        "high-output heart failure",
+        "pediatric liver"
+      ]
+    },
+    {
+      "id": "ab-x-008",
+      "number": 163,
+      "question": "A 9-year-old child from an endemic region who has had no prior biliary procedures presents with biliary colic. The common bile duct contains a long, nonshadowing, tubular echogenic structure with a central anechoic line, and the structure is seen to move during real-time scanning. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An indwelling biliary stent"
+        },
+        {
+          "letter": "B",
+          "text": "Biliary ascariasis"
+        },
+        {
+          "letter": "C",
+          "text": "Hemobilia with a cast-like clot"
+        },
+        {
+          "letter": "D",
+          "text": "Polypoid cholangiocarcinoma"
+        }
+      ],
+      "category": "Biliary System",
+      "correctAnswer": "B",
+      "explanation": "Ascaris worms appear as long echogenic tubular structures, often with a central anechoic line representing the worm's gut, and spontaneous movement is diagnostic. A biliary stent can produce parallel echogenic lines but does not move on its own and would require a prior procedure.",
+      "hint": "What kind of intraductal structure moves by itself?",
+      "keywords": [
+        "ascariasis",
+        "bile duct",
+        "parasitic infection"
+      ]
+    },
+    {
+      "id": "ab-x-021",
+      "number": 164,
+      "question": "A 45-year-old woman has resistant hypertension, hypokalemia, an elevated plasma aldosterone, and a suppressed renin level. Sonography shows a 1.5 cm well-defined, homogeneous, hypoechoic left adrenal mass. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pheochromocytoma"
+        },
+        {
+          "letter": "B",
+          "text": "Aldosterone-producing adrenal adenoma (Conn syndrome)"
+        },
+        {
+          "letter": "C",
+          "text": "Adrenocortical carcinoma"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenal myelolipoma"
+        }
+      ],
+      "category": "Urinary Tract & Adrenals",
+      "correctAnswer": "B",
+      "explanation": "Primary hyperaldosteronism with hypertension and hypokalemia is most often caused by a small, homogeneous adrenal cortical adenoma. Pheochromocytoma also causes hypertension but presents with episodic symptoms and elevated metanephrines rather than high aldosterone with low renin.",
+      "hint": "Match the hormone abnormality to the adrenal layer that produces it.",
+      "keywords": [
+        "Conn syndrome",
+        "adrenal adenoma",
+        "hyperaldosteronism"
+      ]
+    },
+    {
+      "id": "ab-x-026",
+      "number": 165,
+      "question": "Which organ lies within the anterior pararenal space of the retroperitoneum?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pancreas"
+        },
+        {
+          "letter": "B",
+          "text": "Adrenal gland"
+        },
+        {
+          "letter": "C",
+          "text": "Kidney"
+        },
+        {
+          "letter": "D",
+          "text": "Spleen"
+        }
+      ],
+      "category": "Abdominal Vasculature & Retroperitoneum",
+      "correctAnswer": "A",
+      "explanation": "The anterior pararenal space contains the pancreas, the second through fourth parts of the duodenum, and the ascending and descending colon. The kidneys and adrenal glands lie within the perirenal space enclosed by the renal (Gerota) fascia, and the spleen is intraperitoneal.",
+      "hint": "This space lies between the posterior parietal peritoneum and the anterior renal fascia.",
+      "keywords": [
+        "retroperitoneal spaces",
+        "anterior pararenal space",
+        "pancreas"
+      ]
+    },
+    {
+      "id": "ab-x-031",
+      "number": 166,
+      "question": "Which set of views makes up the standard focused assessment with sonography for trauma (FAST) examination?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gallbladder, pancreas, abdominal aorta, and bladder views"
+        },
+        {
+          "letter": "B",
+          "text": "Right kidney, left kidney, abdominal aorta, and IVC views"
+        },
+        {
+          "letter": "C",
+          "text": "Liver, spleen, both inguinal canals, and pelvic views"
+        },
+        {
+          "letter": "D",
+          "text": "Right upper quadrant (hepatorenal), left upper quadrant (perisplenic), pelvic, and subxiphoid pericardial views"
+        }
+      ],
+      "category": "GI Tract, Peritoneum & Abdominal Wall",
+      "correctAnswer": "D",
+      "explanation": "The standard FAST examination looks for free fluid in the hepatorenal space, the perisplenic space, the pelvis, and the pericardium, the most dependent or clinically critical sites in a supine trauma patient. Organ-specific views such as the gallbladder or pancreas are part of a complete abdominal study, not FAST.",
+      "hint": "Think about where blood collects in a supine patient and around the heart.",
+      "keywords": [
+        "FAST",
+        "trauma",
+        "free fluid"
+      ]
+    },
+    {
+      "id": "ab-x-014",
+      "number": 167,
+      "question": "In adults, the upper limit of normal for the anteroposterior thickness of the pancreatic head is approximately:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3.0 cm"
+        },
+        {
+          "letter": "B",
+          "text": "1.0 cm"
+        },
+        {
+          "letter": "C",
+          "text": "5.0 cm"
+        },
+        {
+          "letter": "D",
+          "text": "6.5 cm"
+        }
+      ],
+      "category": "Pancreas",
+      "correctAnswer": "A",
+      "explanation": "The normal adult pancreatic head measures up to about 3.0 cm in anteroposterior dimension, with the body and tail slightly smaller. A 1.0 cm limit would label many normal glands as enlarged, while 5 cm or more would miss pathologic enlargement.",
+      "hint": "The head is the thickest part of the gland but still only a few centimeters.",
+      "keywords": [
+        "pancreatic head",
+        "normal measurements",
+        "pancreas size"
+      ]
+    },
+    {
+      "id": "ab-x-018",
+      "number": 168,
+      "question": "On a coronal view of the left upper quadrant, an anechoic fluid collection is identified. Which finding indicates that it is a left pleural effusion rather than a subphrenic collection?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The fluid lies between the diaphragm and the splenic capsule"
+        },
+        {
+          "letter": "B",
+          "text": "The fluid surrounds the inferior tip of the spleen"
+        },
+        {
+          "letter": "C",
+          "text": "The fluid lies between the spleen and the left kidney"
+        },
+        {
+          "letter": "D",
+          "text": "The fluid lies above the echogenic diaphragm, and the thoracic spine is visible through it above the diaphragm"
+        }
+      ],
+      "category": "Spleen",
+      "correctAnswer": "D",
+      "explanation": "Pleural fluid sits cephalad to the diaphragm and acts as an acoustic window that allows the thoracic spine to be seen above the diaphragm (spine sign), which aerated lung normally prevents. Fluid between the diaphragm and spleen is below the diaphragm and therefore subphrenic.",
+      "hint": "Use the diaphragm as the dividing line between chest and abdomen.",
+      "keywords": [
+        "pleural effusion",
+        "subphrenic fluid",
+        "spine sign"
+      ]
+    },
+    {
+      "id": "ab-x-036",
+      "number": 169,
+      "question": "A 60-year-old man with poorly controlled diabetes has fever and a painful, swollen, red scrotum. Sonography shows a markedly thickened scrotal wall containing bright echogenic foci with dirty posterior shadowing and reverberation artifacts, while both testes have normal size and color Doppler flow. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inguinoscrotal hernia containing bowel"
+        },
+        {
+          "letter": "B",
+          "text": "Acute epididymo-orchitis"
+        },
+        {
+          "letter": "C",
+          "text": "Fournier gangrene"
+        },
+        {
+          "letter": "D",
+          "text": "Scrotal calculi (scrotal pearls)"
+        }
+      ],
+      "category": "Superficial Structures",
+      "correctAnswer": "C",
+      "explanation": "Fournier gangrene is a necrotizing infection of the perineum and scrotal wall in which subcutaneous gas creates echogenic foci with dirty shadowing, often before crepitus is felt; it is a surgical emergency. A hernia would place gas inside bowel loops with peristalsis and visible bowel wall, not within a thickened scrotal wall.",
+      "hint": "Locate the gas: inside a lumen or inside the tissue itself?",
+      "keywords": [
+        "Fournier gangrene",
+        "scrotal wall gas",
+        "necrotizing infection"
+      ]
+    },
+    {
+      "id": "ab-x-040",
+      "number": 170,
+      "question": "Which displayed output index estimates the potential for nonthermal (cavitation) bioeffects?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Soft tissue thermal index"
+        },
+        {
+          "letter": "B",
+          "text": "Mechanical index"
+        },
+        {
+          "letter": "C",
+          "text": "Bone thermal index"
+        },
+        {
+          "letter": "D",
+          "text": "Cranial bone thermal index"
+        }
+      ],
+      "category": "Patient Care, Procedures & Contrast",
+      "correctAnswer": "B",
+      "explanation": "The mechanical index is related to peak rarefactional pressure divided by the square root of frequency and indicates the likelihood of cavitation and other mechanical effects. The thermal indices estimate potential tissue temperature rise, not cavitation.",
+      "hint": "Separate heating effects from pressure effects.",
+      "keywords": [
+        "mechanical index",
+        "bioeffects",
+        "cavitation"
+      ]
     }
   ],
   "exam2": [
@@ -9077,6 +9717,646 @@
       "hint": "Contraindications relate to the agent's own ingredients rather than to other contrast classes.",
       "keywords": [
         "microbubble contrast agent"
+      ]
+    },
+    {
+      "id": "ab-x-033",
+      "number": 151,
+      "question": "A 25-year-old man has a painless, firm testicular nodule. Sonography shows a well-circumscribed 1.5 cm intratesticular mass with alternating concentric hyperechoic and hypoechoic rings and no internal color flow. Serum tumor markers are normal. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Epidermoid cyst"
+        },
+        {
+          "letter": "B",
+          "text": "Seminoma"
+        },
+        {
+          "letter": "C",
+          "text": "Tubular ectasia of the rete testis"
+        },
+        {
+          "letter": "D",
+          "text": "Testicular hematoma"
+        }
+      ],
+      "category": "Superficial Structures",
+      "correctAnswer": "A",
+      "explanation": "Testicular epidermoid cysts contain laminated keratin that produces a characteristic onion-ring pattern, are avascular, and occur with normal tumor markers. Seminoma is typically homogeneous and hypoechoic with internal vascularity, not layered and avascular.",
+      "hint": "The layered pattern reflects how the contents are deposited.",
+      "keywords": [
+        "epidermoid cyst",
+        "onion ring sign",
+        "testicular mass"
+      ]
+    },
+    {
+      "id": "ab-x-037",
+      "number": 152,
+      "question": "A man calls the ultrasound department asking for the results of his adult wife's abdominal sonogram, performed earlier that day. What is the most appropriate response?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Read him the impression, because a spouse is the legal next of kin"
+        },
+        {
+          "letter": "B",
+          "text": "Release only the normal findings and withhold any abnormal ones"
+        },
+        {
+          "letter": "C",
+          "text": "Fax the report to him after verifying the patient's date of birth"
+        },
+        {
+          "letter": "D",
+          "text": "Politely decline and refer him to the patient or her ordering provider, because results may not be released without the patient's authorization"
+        }
+      ],
+      "category": "Patient Care, Procedures & Contrast",
+      "correctAnswer": "D",
+      "explanation": "Under HIPAA, protected health information may not be disclosed to family members, including a spouse, without the patient's authorization, and sonographers do not release results in any case. Knowing a patient's date of birth does not establish authorization to receive her information.",
+      "hint": "Who controls the release of an adult patient's health information?",
+      "keywords": [
+        "HIPAA",
+        "confidentiality",
+        "patient privacy"
+      ]
+    },
+    {
+      "id": "ab-x-002",
+      "number": 153,
+      "question": "An 18-month-old boy has a progressively enlarging abdomen and a markedly elevated serum alpha-fetoprotein. Sonography shows a large, solitary, heterogeneous solid mass in the right hepatic lobe containing coarse calcifications with posterior shadowing. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Infantile hepatic hemangioma"
+        },
+        {
+          "letter": "B",
+          "text": "Mesenchymal hamartoma"
+        },
+        {
+          "letter": "C",
+          "text": "Hepatoblastoma"
+        },
+        {
+          "letter": "D",
+          "text": "Focal nodular hyperplasia"
+        }
+      ],
+      "category": "Liver",
+      "correctAnswer": "C",
+      "explanation": "Hepatoblastoma is the most common primary liver malignancy in children under about 3 years and typically presents as a large solid, often calcified mass with a markedly elevated AFP. Infantile hemangioma presents earlier in infancy, is highly vascular, and lacks the marked AFP elevation beyond what is normal for age.",
+      "hint": "Consider the patient's age and the tumor marker together.",
+      "keywords": [
+        "hepatoblastoma",
+        "pediatric liver mass",
+        "alpha-fetoprotein"
+      ]
+    },
+    {
+      "id": "ab-x-007",
+      "number": 154,
+      "question": "A 47-year-old man has a palpable but nontender right upper quadrant mass. Sonography shows a tense gallbladder measuring 5.5 cm in transverse diameter with a stone impacted in the cystic duct, a thin wall, anechoic bile, no pericholecystic fluid, a negative sonographic Murphy sign, and a normal-caliber common bile duct. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acute acalculous cholecystitis"
+        },
+        {
+          "letter": "B",
+          "text": "Courvoisier gallbladder from a pancreatic head carcinoma"
+        },
+        {
+          "letter": "C",
+          "text": "Type II choledochal cyst"
+        },
+        {
+          "letter": "D",
+          "text": "Gallbladder hydrops (mucocele) from chronic cystic duct obstruction"
+        }
+      ],
+      "category": "Biliary System",
+      "correctAnswer": "D",
+      "explanation": "Prolonged cystic duct obstruction without infection causes the gallbladder to fill with mucus and distend beyond about 4 cm in transverse diameter while the wall stays thin and the patient lacks inflammatory signs. A Courvoisier gallbladder results from distal common duct obstruction, so the common bile duct would be dilated and the patient jaundiced.",
+      "hint": "Note where the obstruction lies and that there are no inflammatory findings.",
+      "keywords": [
+        "gallbladder hydrops",
+        "mucocele",
+        "cystic duct obstruction"
+      ]
+    },
+    {
+      "id": "ab-x-020",
+      "number": 155,
+      "question": "To estimate bladder volume or postvoid residual with the ellipsoid method, the length, width, and height of the bladder are multiplied by approximately:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.25"
+        },
+        {
+          "letter": "B",
+          "text": "0.52"
+        },
+        {
+          "letter": "C",
+          "text": "1.0"
+        },
+        {
+          "letter": "D",
+          "text": "3.14"
+        }
+      ],
+      "category": "Urinary Tract & Adrenals",
+      "correctAnswer": "B",
+      "explanation": "The prolate ellipsoid formula multiplies the three orthogonal dimensions by about 0.52 (pi divided by 6). Using 1.0 would nearly double the true volume, and 3.14 is pi itself rather than the ellipsoid correction factor.",
+      "hint": "Think about the geometric shape the bladder is assumed to approximate.",
+      "keywords": [
+        "bladder volume",
+        "postvoid residual",
+        "ellipsoid formula"
+      ]
+    },
+    {
+      "id": "ab-x-025",
+      "number": 156,
+      "question": "In a transverse plane through the upper abdomen, which vessel normally passes posterior to the inferior vena cava?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Left renal vein"
+        },
+        {
+          "letter": "B",
+          "text": "Superior mesenteric vein"
+        },
+        {
+          "letter": "C",
+          "text": "Main portal vein"
+        },
+        {
+          "letter": "D",
+          "text": "Right renal artery"
+        }
+      ],
+      "category": "Abdominal Vasculature & Retroperitoneum",
+      "correctAnswer": "D",
+      "explanation": "The right renal artery leaves the aorta and crosses behind the IVC to reach the right kidney, which makes it a useful landmark when imaging the IVC in transverse. The left renal vein passes anterior to the aorta, beneath the SMA, before entering the IVC; it does not pass behind the IVC.",
+      "hint": "Consider which side of the IVC the aorta lies on and which paired vessels must cross the midline to reach their organs.",
+      "keywords": [
+        "right renal artery",
+        "IVC",
+        "vascular landmarks"
+      ]
+    },
+    {
+      "id": "ab-x-030",
+      "number": 157,
+      "question": "A 50-year-old man has a soft, painless, mobile lump in the subcutaneous tissue of the flank that has been stable for years. Sonography shows a compressible, oval mass oriented parallel to the skin, isoechoic to slightly hyperechoic to surrounding fat, with thin internal echogenic lines parallel to the skin and no internal color flow. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lipoma"
+        },
+        {
+          "letter": "B",
+          "text": "Epidermoid inclusion cyst"
+        },
+        {
+          "letter": "C",
+          "text": "Desmoid tumor"
+        },
+        {
+          "letter": "D",
+          "text": "Reactive lymph node"
+        }
+      ],
+      "category": "GI Tract, Peritoneum & Abdominal Wall",
+      "correctAnswer": "A",
+      "explanation": "A subcutaneous lipoma is typically soft and compressible, oriented parallel to the skin, similar in echogenicity to fat, and contains thin echogenic striations with little or no flow. A desmoid tumor is firm, hypoechoic, arises in muscle or fascia, and often shows internal vascularity.",
+      "hint": "Compare the mass with the tissue surrounding it.",
+      "keywords": [
+        "lipoma",
+        "subcutaneous mass",
+        "abdominal wall"
+      ]
+    },
+    {
+      "id": "ab-x-013",
+      "number": 158,
+      "question": "A 55-year-old man with severe acute pancreatitis develops bluish ecchymosis of both flanks. Sonography shows an enlarged, heterogeneous pancreas with complex echogenic peripancreatic collections. What is the flank bruising called, and what does it suggest?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cullen sign, suggesting uncomplicated edematous pancreatitis"
+        },
+        {
+          "letter": "B",
+          "text": "Murphy sign, suggesting coexisting acute cholecystitis"
+        },
+        {
+          "letter": "C",
+          "text": "Kehr sign, suggesting splenic rupture"
+        },
+        {
+          "letter": "D",
+          "text": "Grey Turner sign, suggesting hemorrhagic pancreatitis with retroperitoneal bleeding"
+        }
+      ],
+      "category": "Pancreas",
+      "correctAnswer": "D",
+      "explanation": "Flank ecchymosis (Grey Turner sign) reflects retroperitoneal blood tracking from hemorrhagic pancreatitis, consistent with complex echogenic collections. Cullen sign is periumbilical bruising and also implies hemorrhage, so it neither matches the location nor indicates uncomplicated disease.",
+      "hint": "The pancreas is retroperitoneal; consider where its blood would spread.",
+      "keywords": [
+        "Grey Turner sign",
+        "hemorrhagic pancreatitis",
+        "clinical signs"
+      ]
+    },
+    {
+      "id": "ab-x-017",
+      "number": 159,
+      "question": "A 30-year-old who underwent splenectomy after trauma 4 years ago presents with sudden high fever, hypotension, and rapidly worsening confusion. Which type of organism poses the greatest risk of this overwhelming infection?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Encapsulated bacteria such as Streptococcus pneumoniae"
+        },
+        {
+          "letter": "B",
+          "text": "Fungi such as Candida albicans"
+        },
+        {
+          "letter": "C",
+          "text": "Hepatitis B virus"
+        },
+        {
+          "letter": "D",
+          "text": "Mycobacterium tuberculosis"
+        }
+      ],
+      "category": "Spleen",
+      "correctAnswer": "A",
+      "explanation": "The spleen filters and opsonizes encapsulated bacteria, so asplenic patients are at lifelong risk of overwhelming post-splenectomy infection, most often from Streptococcus pneumoniae, Haemophilus influenzae, and Neisseria meningitidis. Candida infection is associated mainly with neutropenia, not asplenia.",
+      "hint": "Consider which organisms rely on a capsule to evade the immune system.",
+      "keywords": [
+        "post-splenectomy infection",
+        "asplenia",
+        "encapsulated bacteria"
+      ]
+    },
+    {
+      "id": "ab-x-035",
+      "number": 160,
+      "question": "A 72-year-old man has painless enlargement of both testes over several weeks. Sonography shows diffuse, infiltrative, hypoechoic masses in both testes with markedly increased internal color Doppler flow, and the epididymides are also enlarged. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Seminoma"
+        },
+        {
+          "letter": "B",
+          "text": "Testicular lymphoma"
+        },
+        {
+          "letter": "C",
+          "text": "Bilateral epididymo-orchitis"
+        },
+        {
+          "letter": "D",
+          "text": "Embryonal cell carcinoma"
+        }
+      ],
+      "category": "Superficial Structures",
+      "correctAnswer": "B",
+      "explanation": "Lymphoma is the most common testicular malignancy in men over about 60 and is frequently bilateral, hypoechoic, hypervascular, and infiltrative, often involving the epididymis. Epididymo-orchitis can look hypervascular but is painful and acute, while seminoma usually affects younger men.",
+      "hint": "Patient age is a strong clue to the most likely testicular malignancy.",
+      "keywords": [
+        "testicular lymphoma",
+        "bilateral testicular mass",
+        "older men"
+      ]
+    },
+    {
+      "id": "ab-x-039",
+      "number": 161,
+      "question": "During an outpatient abdominal sonogram, the patient suddenly slumps and does not respond when spoken to. What is the most appropriate first action?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Leave the room to locate the interpreting radiologist"
+        },
+        {
+          "letter": "B",
+          "text": "Finish acquiring the remaining images quickly before calling anyone"
+        },
+        {
+          "letter": "C",
+          "text": "Check for responsiveness and breathing, and call for help to activate the emergency response system"
+        },
+        {
+          "letter": "D",
+          "text": "Give the patient a glass of water and wait for symptoms to resolve"
+        }
+      ],
+      "category": "Patient Care, Procedures & Contrast",
+      "correctAnswer": "C",
+      "explanation": "Basic life support begins with confirming unresponsiveness, checking breathing and pulse, and immediately calling for help or activating the code team, staying with the patient. Leaving the patient alone to find a physician delays resuscitation.",
+      "hint": "Think of the first steps in basic life support.",
+      "keywords": [
+        "emergency response",
+        "basic life support",
+        "unresponsive patient"
+      ]
+    },
+    {
+      "id": "ab-x-004",
+      "number": 162,
+      "question": "A 74-year-old woman with atrial fibrillation has severe abdominal pain out of proportion to the physical examination. Sonography shows tiny bright echogenic foci moving with flow inside the main portal vein and branching echogenic foci extending to the periphery of the liver. Spectral Doppler of the portal vein shows sharp bidirectional spikes superimposed on the venous signal. What do these findings indicate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pneumobilia from a recent sphincterotomy"
+        },
+        {
+          "letter": "B",
+          "text": "Portal vein tumor thrombus from hepatocellular carcinoma"
+        },
+        {
+          "letter": "C",
+          "text": "Calcified granulomas from prior histoplasmosis"
+        },
+        {
+          "letter": "D",
+          "text": "Portal venous gas, raising concern for mesenteric ischemia with bowel necrosis"
+        }
+      ],
+      "category": "Liver",
+      "correctAnswer": "D",
+      "explanation": "Gas bubbles traveling in portal blood produce moving echogenic foci, spiky Doppler artifacts, and peripheral hepatic echogenic foci because portal flow carries gas toward the liver periphery; in an older patient with atrial fibrillation this suggests embolic mesenteric ischemia. Pneumobilia tends to be central near the porta hepatis because bile flows toward the hilum, and it does not move within the portal vein.",
+      "hint": "Consider which direction each fluid carries the gas within the liver.",
+      "keywords": [
+        "portal venous gas",
+        "mesenteric ischemia",
+        "Doppler artifact"
+      ]
+    },
+    {
+      "id": "ab-x-009",
+      "number": 163,
+      "question": "A nonshadowing, polypoid, moderately echogenic mass lies along the dependent wall of the gallbladder. Which approach best distinguishes tumefactive sludge from a gallbladder neoplasm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reposition the patient to check for movement and use color and spectral Doppler to look for internal vascularity"
+        },
+        {
+          "letter": "B",
+          "text": "Increase the overall gain to bring out posterior shadowing"
+        },
+        {
+          "letter": "C",
+          "text": "Switch to a lower-frequency transducer to reduce artifacts"
+        },
+        {
+          "letter": "D",
+          "text": "Measure the common bile duct diameter to look for obstruction"
+        }
+      ],
+      "category": "Biliary System",
+      "correctAnswer": "A",
+      "explanation": "Tumefactive sludge shifts or changes shape slowly with position change and has no internal blood flow, whereas a neoplasm is fixed to the wall and may show internal arterial flow. Raising gain does not create shadowing from sludge and only degrades the image.",
+      "hint": "Think about the two properties that separate bile contents from wall tissue.",
+      "keywords": [
+        "tumefactive sludge",
+        "gallbladder mass",
+        "color Doppler"
+      ]
+    },
+    {
+      "id": "ab-x-022",
+      "number": 164,
+      "question": "A 3-year-old has a painless abdominal mass found by a parent while bathing. Sonography shows a large solid mass arising from the right kidney, with renal parenchyma stretched around the mass in a claw configuration, and echogenic thrombus extending into the right renal vein and IVC. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Neuroblastoma"
+        },
+        {
+          "letter": "B",
+          "text": "Mesoblastic nephroma"
+        },
+        {
+          "letter": "C",
+          "text": "Multicystic dysplastic kidney"
+        },
+        {
+          "letter": "D",
+          "text": "Wilms tumor"
+        }
+      ],
+      "category": "Urinary Tract & Adrenals",
+      "correctAnswer": "D",
+      "explanation": "Wilms tumor is the most common pediatric renal malignancy, usually seen at 2 to 5 years of age; it arises within the kidney (claw sign) and tends to invade the renal vein and IVC. Neuroblastoma arises from the adrenal gland, displaces rather than claws the kidney, and encases rather than invades vessels.",
+      "hint": "The claw sign tells you the organ of origin.",
+      "keywords": [
+        "Wilms tumor",
+        "claw sign",
+        "pediatric renal mass"
+      ]
+    },
+    {
+      "id": "ab-x-027",
+      "number": 165,
+      "question": "When measuring peak systolic velocity in the aorta or a renal artery with spectral Doppler, which angle of insonation should be used?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Exactly 90 degrees to the vessel to maximize the signal"
+        },
+        {
+          "letter": "B",
+          "text": "60 degrees or less, with the angle correction cursor aligned parallel to the direction of flow"
+        },
+        {
+          "letter": "C",
+          "text": "Greater than 70 degrees to reduce aliasing"
+        },
+        {
+          "letter": "D",
+          "text": "Any angle, because velocity calculation does not depend on angle"
+        }
+      ],
+      "category": "Abdominal Vasculature & Retroperitoneum",
+      "correctAnswer": "B",
+      "explanation": "Velocity calculation depends on the cosine of the Doppler angle, and errors rise sharply above 60 degrees, so the angle should be 60 degrees or less with the cursor parallel to flow. At 90 degrees the cosine is zero and no meaningful Doppler shift is detected.",
+      "hint": "Recall the role of the cosine in the Doppler equation.",
+      "keywords": [
+        "Doppler angle",
+        "angle correction",
+        "velocity measurement"
+      ]
+    },
+    {
+      "id": "ab-x-032",
+      "number": 166,
+      "question": "During graded compression for suspected appendicitis, the appendix cannot be found in its usual location anterior to the psoas muscle. Which maneuver is most likely to show a retrocecal appendix?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Have the patient drink 1 liter of water and rescan after 30 minutes"
+        },
+        {
+          "letter": "B",
+          "text": "Turn the patient into a left lateral decubitus or left posterior oblique position and scan from the right flank in a coronal plane"
+        },
+        {
+          "letter": "C",
+          "text": "Switch to a 2 MHz transducer and scan from the umbilicus"
+        },
+        {
+          "letter": "D",
+          "text": "Scan the right lower quadrant during a sustained Valsalva maneuver"
+        }
+      ],
+      "category": "GI Tract, Peritoneum & Abdominal Wall",
+      "correctAnswer": "B",
+      "explanation": "A retrocecal appendix lies behind the cecum, where bowel gas blocks an anterior approach; a coronal flank approach with the patient rolled to the left avoids the cecum and can display the appendix. Drinking water does not move the cecum and only delays the examination.",
+      "hint": "Find a window that avoids gas in the cecum.",
+      "keywords": [
+        "retrocecal appendix",
+        "appendicitis",
+        "scanning technique"
+      ]
+    },
+    {
+      "id": "ab-x-005",
+      "number": 167,
+      "question": "In a fasting adult scanned during quiet respiration, a main portal vein diameter greater than approximately which value supports the diagnosis of portal hypertension?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "8 mm"
+        },
+        {
+          "letter": "B",
+          "text": "18 mm"
+        },
+        {
+          "letter": "C",
+          "text": "13 mm"
+        },
+        {
+          "letter": "D",
+          "text": "25 mm"
+        }
+      ],
+      "category": "Liver",
+      "correctAnswer": "C",
+      "explanation": "A main portal vein diameter above about 13 mm, particularly with loss of normal respiratory variation, supports portal hypertension. A value of 8 mm is well within normal, while waiting for 18 to 25 mm would miss most cases.",
+      "hint": "Pathologic dilatation does not need to be dramatic; the threshold sits just beyond the normal adult range.",
+      "keywords": [
+        "portal vein diameter",
+        "portal hypertension",
+        "measurement"
+      ]
+    },
+    {
+      "id": "ab-x-010",
+      "number": 168,
+      "question": "Which technique is standard for measuring the extrahepatic bile duct diameter?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Measure from outer wall to outer wall so the echogenic duct walls are included"
+        },
+        {
+          "letter": "B",
+          "text": "Measure only while the patient performs a Valsalva maneuver to distend the duct"
+        },
+        {
+          "letter": "C",
+          "text": "Measure only after a fatty meal, when the duct is at its maximum caliber"
+        },
+        {
+          "letter": "D",
+          "text": "Measure from inner wall to inner wall in a longitudinal view, typically where the hepatic artery crosses between the duct and the portal vein"
+        }
+      ],
+      "category": "Biliary System",
+      "correctAnswer": "D",
+      "explanation": "The duct is measured as the internal lumen, inner wall to inner wall, usually in a longitudinal plane at the level where the right hepatic artery passes between the duct and the portal vein. Including the walls overestimates the diameter and can lead to a false diagnosis of dilatation.",
+      "hint": "The value of interest is the size of the lumen that carries bile.",
+      "keywords": [
+        "common bile duct",
+        "measurement technique",
+        "porta hepatis"
+      ]
+    },
+    {
+      "id": "ab-x-023",
+      "number": 169,
+      "question": "During a renal sonogram in an asymptomatic adult, a large anechoic renal pelvis is seen extending medially outside the renal sinus. The calyces and infundibula are not dilated, the cortex is of normal thickness, and the ureter is not seen. What is the most likely explanation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Extrarenal pelvis, a normal variant"
+        },
+        {
+          "letter": "B",
+          "text": "Ureteropelvic junction obstruction with hydronephrosis"
+        },
+        {
+          "letter": "C",
+          "text": "Parapelvic cyst"
+        },
+        {
+          "letter": "D",
+          "text": "Duplex collecting system with an obstructed upper moiety"
+        }
+      ],
+      "category": "Urinary Tract & Adrenals",
+      "correctAnswer": "A",
+      "explanation": "An extrarenal pelvis lies largely outside the renal sinus and can look prominent, but the calyces remain undilated and the parenchyma is normal. Ureteropelvic junction obstruction would cause calyceal dilatation communicating with the enlarged pelvis and, with time, cortical thinning.",
+      "hint": "Look at the calyces to decide whether there is obstruction.",
+      "keywords": [
+        "extrarenal pelvis",
+        "normal variant",
+        "hydronephrosis mimic"
+      ]
+    },
+    {
+      "id": "ab-x-028",
+      "number": 170,
+      "question": "A 30-year-old man with nephrotic syndrome has acute left flank pain and hematuria. The left kidney is enlarged and hypoechoic, no flow is detected in the left renal vein, and intrarenal arterial waveforms show reversed diastolic flow. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acute pyelonephritis"
+        },
+        {
+          "letter": "B",
+          "text": "Left renal artery stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Acute left renal vein thrombosis"
+        },
+        {
+          "letter": "D",
+          "text": "Obstructive hydronephrosis"
+        }
+      ],
+      "category": "Abdominal Vasculature & Retroperitoneum",
+      "correctAnswer": "C",
+      "explanation": "Nephrotic syndrome is a hypercoagulable state, and acute renal vein thrombosis causes an enlarged, edematous kidney with absent venous flow and high-resistance or reversed diastolic arterial flow. Renal artery stenosis would produce tardus parvus intrarenal waveforms rather than reversed diastolic flow, and the kidney would not be acutely enlarged.",
+      "hint": "Consider what happens to arterial inflow when the venous outflow is blocked.",
+      "keywords": [
+        "renal vein thrombosis",
+        "nephrotic syndrome",
+        "reversed diastolic flow"
       ]
     }
   ]

@@ -8,12 +8,12 @@
     "Bioeffects"
   ],
   "categoryTotals": {
-    "Ultrasound Physics": 43,
-    "Transducers": 50,
-    "Image Optimization": 104,
-    "Artifacts": 46,
-    "Doppler": 77,
-    "Bioeffects": 17
+    "Image Optimization": 114,
+    "Bioeffects": 19,
+    "Doppler": 87,
+    "Transducers": 56,
+    "Ultrasound Physics": 48,
+    "Artifacts": 48
   },
   "examModes": [
     {
@@ -31,28 +31,28 @@
     {
       "id": "mock-1",
       "name": "Mock Exam 1",
-      "description": "Full practice exam (111 questions)",
+      "description": "Full-length exam: 110 questions, 2 hours",
       "route": "/exam/mock-1"
     },
     {
       "id": "mock-2",
       "name": "Mock Exam 2",
-      "description": "Review exam (102 questions)",
+      "description": "Full-length exam: 110 questions, 2 hours",
       "route": "/exam/mock-2"
     },
     {
       "id": "mock-3",
       "name": "Mock Exam 3",
-      "description": "Practice exam (80 questions)",
+      "description": "Full-length exam: 110 questions, 2 hours",
       "route": "/exam/mock-3"
     },
     {
       "id": "mock-4",
-      "name": "Artifact Image Quiz",
-      "description": "Identify and fix artifacts (24 questions)",
+      "name": "Artifact Drill",
+      "description": "Artifact identification drill (24 questions)",
       "route": "/exam/mock-4"
     }
   ],
-  "totalQuestions": 326,
+  "totalQuestions": 372,
   "passingScore": 75
 }

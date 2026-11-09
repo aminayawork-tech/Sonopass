@@ -605,7 +605,7 @@
     },
     {
       "id": "spi-mock23-022",
-      "number": 22,
+      "number": 21,
       "question": "Which feature of an ultrasound machine best allows the sonographer to maintain recommended wrist, neck, eye and body position?",
       "options": [
         {
@@ -635,7 +635,7 @@
     },
     {
       "id": "spi-mock23-023",
-      "number": 23,
+      "number": 22,
       "question": "As the bandwidth of an ultrasound pulse increases, what happens to the single transmitted pulse?",
       "options": [
         {
@@ -665,7 +665,7 @@
     },
     {
       "id": "spi-mock23-025",
-      "number": 25,
+      "number": 23,
       "question": "What does ultrasound elastography assess?",
       "options": [
         {
@@ -695,7 +695,7 @@
     },
     {
       "id": "spi-mock23-026",
-      "number": 26,
+      "number": 24,
       "question": "What determines lateral resolution?",
       "options": [
         {
@@ -725,7 +725,7 @@
     },
     {
       "id": "spi-mock23-027",
-      "number": 27,
+      "number": 25,
       "question": "What could be created by increasing the spectral Doppler gain?",
       "options": [
         {
@@ -755,7 +755,7 @@
     },
     {
       "id": "spi-mock23-028",
-      "number": 28,
+      "number": 26,
       "question": "What is ensemble length (packet size)?",
       "options": [
         {
@@ -785,7 +785,7 @@
     },
     {
       "id": "spi-mock23-029",
-      "number": 29,
+      "number": 27,
       "question": "What is associated with power Doppler?",
       "options": [
         {
@@ -815,7 +815,7 @@
     },
     {
       "id": "spi-mock23-031",
-      "number": 31,
+      "number": 28,
       "question": "Which factor is an advantage of using a linear array transducer compared to a phased array transducer?",
       "options": [
         {
@@ -845,7 +845,7 @@
     },
     {
       "id": "spi-mock23-032",
-      "number": 32,
+      "number": 29,
       "question": "What provides the best lateral resolution of the ultrasound beam?",
       "options": [
         {
@@ -875,7 +875,7 @@
     },
     {
       "id": "spi-mock23-034",
-      "number": 34,
+      "number": 30,
       "question": "Which color artifact appears as a secondary vessel posterior to the actual vessel?",
       "options": [
         {
@@ -905,7 +905,7 @@
     },
     {
       "id": "spi-mock23-035",
-      "number": 35,
+      "number": 31,
       "question": "Which type of transducer array incorporates both electronic steering and focusing?",
       "options": [
         {
@@ -935,7 +935,7 @@
     },
     {
       "id": "spi-mock23-036",
-      "number": 36,
+      "number": 32,
       "question": "Which property is most closely associated with lateral resolution?",
       "options": [
         {
@@ -965,7 +965,7 @@
     },
     {
       "id": "spi-mock23-038",
-      "number": 38,
+      "number": 33,
       "question": "Which factor is most likely the reason partial volume artifact occurs?",
       "options": [
         {
@@ -995,7 +995,7 @@
     },
     {
       "id": "spi-mock23-039",
-      "number": 39,
+      "number": 34,
       "question": "What is the primary purpose of a time out before a procedure?",
       "options": [
         {
@@ -1025,7 +1025,7 @@
     },
     {
       "id": "spi-mock23-038b",
-      "number": 38,
+      "number": 35,
       "question": "If the minimum diameter of the ultrasound beam from an unfocused single element transducer is 0.5 cm, what is the diameter of the transducer element?",
       "options": [
         {
@@ -1055,7 +1055,7 @@
     },
     {
       "id": "spi-mock23-039b",
-      "number": 39,
+      "number": 36,
       "question": "What is the primary purpose of the transducer casing?",
       "options": [
         {
@@ -1085,7 +1085,7 @@
     },
     {
       "id": "spi-mock23-040",
-      "number": 40,
+      "number": 37,
       "question": "What is the fundamental frequency if the second harmonic frequency is 4 MHz?",
       "options": [
         {
@@ -1115,7 +1115,7 @@
     },
     {
       "id": "spi-mock23-041",
-      "number": 41,
+      "number": 38,
       "question": "Which statement best describes the advantage of phased array transducers?",
       "options": [
         {
@@ -1145,7 +1145,7 @@
     },
     {
       "id": "spi-mock23-042",
-      "number": 42,
+      "number": 39,
       "question": "What is the purpose of a transducer matching layer?",
       "options": [
         {
@@ -1175,7 +1175,7 @@
     },
     {
       "id": "spi-mock23-043",
-      "number": 43,
+      "number": 40,
       "question": "Which component of a transducer lowers the acoustic impedance mismatch between the transducer and patient?",
       "options": [
         {
@@ -1205,7 +1205,7 @@
     },
     {
       "id": "spi-mock23-044",
-      "number": 44,
+      "number": 41,
       "question": "Which spectral Doppler finding can occur when using a low PRF setting?",
       "options": [
         {
@@ -1235,7 +1235,7 @@
     },
     {
       "id": "spi-mock23-045",
-      "number": 45,
+      "number": 42,
       "question": "Duty factor is related to which concept?",
       "options": [
         {
@@ -1265,7 +1265,7 @@
     },
     {
       "id": "spi-mock23-046",
-      "number": 46,
+      "number": 43,
       "question": "Which factor corresponds to the imaging depth?",
       "options": [
         {
@@ -1295,7 +1295,7 @@
     },
     {
       "id": "spi-mock23-047",
-      "number": 47,
+      "number": 44,
       "question": "Which artifact can occur when the PRF is less than twice the Doppler shift frequency?",
       "options": [
         {
@@ -1325,7 +1325,7 @@
     },
     {
       "id": "spi-mock23-048",
-      "number": 48,
+      "number": 45,
       "question": "Which adjustment will have the same effect as increasing gain?",
       "options": [
         {
@@ -1354,38 +1354,8 @@
       ]
     },
     {
-      "id": "spi-mock23-049",
-      "number": 49,
-      "question": "Which ultrasound indicator measures the potential for inertial cavitation in tissue?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Thermal index"
-        },
-        {
-          "letter": "B",
-          "text": "Pulsatility index"
-        },
-        {
-          "letter": "C",
-          "text": "Mechanical index"
-        },
-        {
-          "letter": "D",
-          "text": "Resistive index"
-        }
-      ],
-      "correctAnswer": "C",
-      "explanation": "The mechanical index reflects peak rarefactional pressure relative to frequency and estimates the risk of inertial cavitation. The thermal index estimates heating.",
-      "category": "Bioeffects",
-      "hint": "Cavitation is a mechanical, pressure-driven effect.",
-      "keywords": [
-        "inertial cavitation"
-      ]
-    },
-    {
       "id": "spi-mock23-050",
-      "number": 50,
+      "number": 46,
       "question": "Which setting is most closely associated with axial resolution?",
       "options": [
         {
@@ -1415,7 +1385,7 @@
     },
     {
       "id": "spi-mock23-051",
-      "number": 51,
+      "number": 47,
       "question": "Which imaging performance parameter does a tissue mimicking phantom evaluate?",
       "options": [
         {
@@ -1445,7 +1415,7 @@
     },
     {
       "id": "spi-mock23-052",
-      "number": 52,
+      "number": 48,
       "question": "Which adjustment will detect low velocity blood flow?",
       "options": [
         {
@@ -1475,7 +1445,7 @@
     },
     {
       "id": "spi-mock23-053",
-      "number": 53,
+      "number": 49,
       "question": "What does a PZT transducer convert?",
       "options": [
         {
@@ -1505,7 +1475,7 @@
     },
     {
       "id": "spi-mock23-054",
-      "number": 54,
+      "number": 50,
       "question": "How are PRF and depth related?",
       "options": [
         {
@@ -1535,7 +1505,7 @@
     },
     {
       "id": "spi-mock23-055",
-      "number": 55,
+      "number": 51,
       "question": "Which Doppler will display mean flow velocity?",
       "options": [
         {
@@ -1565,7 +1535,7 @@
     },
     {
       "id": "spi-mock23-056",
-      "number": 56,
+      "number": 52,
       "question": "How is resolution affected by harmonic imaging?",
       "options": [
         {
@@ -1595,7 +1565,7 @@
     },
     {
       "id": "spi-mock23-057",
-      "number": 57,
+      "number": 53,
       "question": "A Doppler shift is 10,000 Hz at an angle to flow of 0 degrees. What is the Doppler shift at 60 degrees?",
       "options": [
         {
@@ -1625,7 +1595,7 @@
     },
     {
       "id": "spi-mock23-058",
-      "number": 58,
+      "number": 54,
       "question": "Which imaging control is described as the ratio of the largest to smallest signal that a system can process?",
       "options": [
         {
@@ -1655,7 +1625,7 @@
     },
     {
       "id": "spi-mock23-059",
-      "number": 59,
+      "number": 55,
       "question": "Which factor can decrease the color Doppler shift?",
       "options": [
         {
@@ -1685,7 +1655,7 @@
     },
     {
       "id": "spi-mock23-060",
-      "number": 60,
+      "number": 56,
       "question": "What happens to the ultrasound image if a linear array transducer has several adjacent defective transducer crystals?",
       "options": [
         {
@@ -1715,7 +1685,7 @@
     },
     {
       "id": "spi-mock23-061",
-      "number": 61,
+      "number": 57,
       "question": "Which position will improve ergonomics?",
       "options": [
         {
@@ -1745,7 +1715,7 @@
     },
     {
       "id": "spi-mock23-062",
-      "number": 62,
+      "number": 58,
       "question": "What is the effect of increasing the overall gain?",
       "options": [
         {
@@ -1775,7 +1745,7 @@
     },
     {
       "id": "spi-mock23-063",
-      "number": 63,
+      "number": 59,
       "question": "What is the effect of spatial compounding?",
       "options": [
         {
@@ -1805,7 +1775,7 @@
     },
     {
       "id": "spi-mock23-064",
-      "number": 64,
+      "number": 60,
       "question": "How is an ultrasound image affected if several adjacent crystals of a linear array transducer are damaged?",
       "options": [
         {
@@ -1835,7 +1805,7 @@
     },
     {
       "id": "spi-mock23-065",
-      "number": 65,
+      "number": 61,
       "question": "What is represented in each pixel in color Doppler?",
       "options": [
         {
@@ -1865,7 +1835,7 @@
     },
     {
       "id": "spi-mock23-066",
-      "number": 66,
+      "number": 62,
       "question": "Which adjustment will improve penetration of a far field structure?",
       "options": [
         {
@@ -1895,7 +1865,7 @@
     },
     {
       "id": "spi-mock23-067",
-      "number": 67,
+      "number": 63,
       "question": "Which artifact is most likely to occur with power Doppler imaging?",
       "options": [
         {
@@ -1925,7 +1895,7 @@
     },
     {
       "id": "spi-mock23-068",
-      "number": 68,
+      "number": 64,
       "question": "In a linear array, what is the advantage of using a group of elements rather than a single element to generate one scan line?",
       "options": [
         {
@@ -1955,7 +1925,7 @@
     },
     {
       "id": "spi-mock23-069",
-      "number": 69,
+      "number": 65,
       "question": "What reduces speckle artifact?",
       "options": [
         {
@@ -1985,7 +1955,7 @@
     },
     {
       "id": "spi-mock23-070",
-      "number": 70,
+      "number": 66,
       "question": "What should be adjusted when there is a lack of penetration at a greater depth?",
       "options": [
         {
@@ -2015,7 +1985,7 @@
     },
     {
       "id": "spi-mock23-071",
-      "number": 71,
+      "number": 67,
       "question": "What does the wall filter accomplish in color Doppler?",
       "options": [
         {
@@ -2045,7 +2015,7 @@
     },
     {
       "id": "spi-mock23-072",
-      "number": 72,
+      "number": 68,
       "question": "Which control determines the amount of amplification occurring in the receiver?",
       "options": [
         {
@@ -2075,7 +2045,7 @@
     },
     {
       "id": "spi-mock23-073",
-      "number": 73,
+      "number": 69,
       "question": "Why is a higher frequency transducer a better choice for imaging superficial structures?",
       "options": [
         {
@@ -2105,7 +2075,7 @@
     },
     {
       "id": "spi-mock23-074",
-      "number": 74,
+      "number": 70,
       "question": "Increasing which control will amplify the returning echoes at all depth levels displayed on an ultrasound image?",
       "options": [
         {
@@ -2135,7 +2105,7 @@
     },
     {
       "id": "spi-mock23-075",
-      "number": 75,
+      "number": 71,
       "question": "Which type of tissue has the highest attenuation coefficient?",
       "options": [
         {
@@ -2165,7 +2135,7 @@
     },
     {
       "id": "spi-mock23-076",
-      "number": 76,
+      "number": 72,
       "question": "Which control adjustment increases or decreases signal to noise ratio?",
       "options": [
         {
@@ -2195,7 +2165,7 @@
     },
     {
       "id": "spi-mock23-077",
-      "number": 77,
+      "number": 73,
       "question": "What is the duty factor if the PRP is 10 seconds and the pulse duration is 2 seconds?",
       "options": [
         {
@@ -2225,7 +2195,7 @@
     },
     {
       "id": "spi-mock23-078",
-      "number": 78,
+      "number": 74,
       "question": "What is dynamic range?",
       "options": [
         {
@@ -2255,7 +2225,7 @@
     },
     {
       "id": "spi-mock23-079",
-      "number": 79,
+      "number": 75,
       "question": "While imaging a depth of 2 cm, which adjustment will improve axial resolution?",
       "options": [
         {
@@ -2285,7 +2255,7 @@
     },
     {
       "id": "spi-mock23-080",
-      "number": 80,
+      "number": 76,
       "question": "What causes color flash artifact?",
       "options": [
         {
@@ -2315,7 +2285,7 @@
     },
     {
       "id": "spi-mock23-081",
-      "number": 81,
+      "number": 77,
       "question": "What term describes the change of an ultrasound beam as it passes through a medium with a different propagation speed and at an oblique angle?",
       "options": [
         {
@@ -2345,7 +2315,7 @@
     },
     {
       "id": "spi-mock23-082",
-      "number": 82,
+      "number": 78,
       "question": "Which function uses frame averaging to reduce speckle noise?",
       "options": [
         {
@@ -2375,7 +2345,7 @@
     },
     {
       "id": "spi-mock23-083",
-      "number": 83,
+      "number": 79,
       "question": "Which artifact occurs when a structure with a marked difference in acoustic impedance prohibits visualization of tissue distal to the structure?",
       "options": [
         {
@@ -2405,7 +2375,7 @@
     },
     {
       "id": "spi-mock23-084",
-      "number": 84,
+      "number": 80,
       "question": "What does a change to the color velocity scale affect?",
       "options": [
         {
@@ -2435,7 +2405,7 @@
     },
     {
       "id": "spi-mock23-085",
-      "number": 85,
+      "number": 81,
       "question": "Which adjustment will improve visualization of blood flow if color extends beyond the boundaries of the vessel walls?",
       "options": [
         {
@@ -2465,7 +2435,7 @@
     },
     {
       "id": "spi-mock23-086",
-      "number": 86,
+      "number": 82,
       "question": "What does TGC control?",
       "options": [
         {
@@ -2495,7 +2465,7 @@
     },
     {
       "id": "spi-mock23-087",
-      "number": 87,
+      "number": 83,
       "question": "What is increased when ultrasound contrast is used?",
       "options": [
         {
@@ -2525,7 +2495,7 @@
     },
     {
       "id": "spi-mock23-089",
-      "number": 89,
+      "number": 84,
       "question": "Which system control affects the dynamic range of a signal?",
       "options": [
         {
@@ -2555,7 +2525,7 @@
     },
     {
       "id": "spi-mock23-090",
-      "number": 90,
+      "number": 85,
       "question": "What is an advantage of read zoom compared to write zoom?",
       "options": [
         {
@@ -2585,7 +2555,7 @@
     },
     {
       "id": "spi-mock23-091",
-      "number": 91,
+      "number": 86,
       "question": "What is the difference between a 5 MHz transducer and a 10 MHz transducer?",
       "options": [
         {
@@ -2615,7 +2585,7 @@
     },
     {
       "id": "spi-mock23-092",
-      "number": 92,
+      "number": 87,
       "question": "Which adjustment decreases temporal resolution in color flow imaging?",
       "options": [
         {
@@ -2645,7 +2615,7 @@
     },
     {
       "id": "spi-mock23-093",
-      "number": 93,
+      "number": 88,
       "question": "Which machine setting could cause aliasing to occur?",
       "options": [
         {
@@ -2675,7 +2645,7 @@
     },
     {
       "id": "spi-mock23-094",
-      "number": 94,
+      "number": 89,
       "question": "Which term is defined as the ability of an exam to detect disease?",
       "options": [
         {
@@ -2705,7 +2675,7 @@
     },
     {
       "id": "spi-mock23-095",
-      "number": 95,
+      "number": 90,
       "question": "Which technique is used to fill in the data between the scan lines?",
       "options": [
         {
@@ -2735,7 +2705,7 @@
     },
     {
       "id": "spi-mock23-096",
-      "number": 96,
+      "number": 91,
       "question": "Which scanning technique integrates structures from multiple angles to improve the signal to noise ratio?",
       "options": [
         {
@@ -2765,7 +2735,7 @@
     },
     {
       "id": "spi-mock23-097",
-      "number": 97,
+      "number": 92,
       "question": "Which term describes blood flow changes in response to respiration?",
       "options": [
         {
@@ -2795,7 +2765,7 @@
     },
     {
       "id": "spi-mock23-098",
-      "number": 98,
+      "number": 93,
       "question": "Which situation can cause color Doppler noise to override anechoic or hypoechoic areas?",
       "options": [
         {
@@ -2825,7 +2795,7 @@
     },
     {
       "id": "spi-mock23-099",
-      "number": 99,
+      "number": 94,
       "question": "What determines axial resolution?",
       "options": [
         {
@@ -2855,7 +2825,7 @@
     },
     {
       "id": "spi-mock23-100",
-      "number": 100,
+      "number": 95,
       "question": "Which method of imaging expands the image beyond normal limits of a single frame?",
       "options": [
         {
@@ -2885,7 +2855,7 @@
     },
     {
       "id": "spi-mock23-101",
-      "number": 101,
+      "number": 96,
       "question": "Which change improves temporal resolution?",
       "options": [
         {
@@ -2915,7 +2885,7 @@
     },
     {
       "id": "spi-mock23-102",
-      "number": 102,
+      "number": 97,
       "question": "Which method of sanitizing the transducer will damage the PZT crystal?",
       "options": [
         {
@@ -2945,7 +2915,7 @@
     },
     {
       "id": "spi-mock23-103",
-      "number": 103,
+      "number": 98,
       "question": "What effect does a small aperture have on a sound beam?",
       "options": [
         {
@@ -2975,7 +2945,7 @@
     },
     {
       "id": "spi-mock23-104",
-      "number": 104,
+      "number": 99,
       "question": "Which statement is true about the physical properties of sound?",
       "options": [
         {
@@ -3005,7 +2975,7 @@
     },
     {
       "id": "spi-mock23-105",
-      "number": 105,
+      "number": 100,
       "question": "During a 3D volume acquisition the quality of the image is most dependent upon which factor?",
       "options": [
         {
@@ -3035,7 +3005,7 @@
     },
     {
       "id": "spi-mock23-106",
-      "number": 106,
+      "number": 101,
       "question": "Which unit is used in the measurement of dynamic range?",
       "options": [
         {
@@ -3065,7 +3035,7 @@
     },
     {
       "id": "spi-mock23-107",
-      "number": 107,
+      "number": 102,
       "question": "What is the effect on the Doppler spectral waveform when sampling a vessel at greater depth?",
       "options": [
         {
@@ -3094,38 +3064,8 @@
       ]
     },
     {
-      "id": "spi-mock23-108",
-      "number": 108,
-      "question": "What is the advantage of harmonic imaging?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Broader bandwidth"
-        },
-        {
-          "letter": "B",
-          "text": "Reduce clutter"
-        },
-        {
-          "letter": "C",
-          "text": "Increase penetration"
-        },
-        {
-          "letter": "D",
-          "text": "Narrow field of view"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Harmonic beams are not produced by weak side lobes or near-field reverberations, so clutter is reduced, especially in technically difficult patients. Harmonics use a narrower receive bandwidth and do not increase penetration.",
-      "category": "Image Optimization",
-      "hint": "Harmonic signals arise mostly in the strongest part of the beam.",
-      "keywords": [
-        "harmonic imaging"
-      ]
-    },
-    {
       "id": "spi-mock23-109",
-      "number": 109,
+      "number": 103,
       "question": "How can spectral Doppler crosstalk be reduced?",
       "options": [
         {
@@ -3155,7 +3095,7 @@
     },
     {
       "id": "spi-mock23-110",
-      "number": 110,
+      "number": 104,
       "question": "What will best resolve edge shadowing due to refraction?",
       "options": [
         {
@@ -3185,7 +3125,7 @@
     },
     {
       "id": "spi-mock23-111",
-      "number": 111,
+      "number": 105,
       "question": "Which setting should be adjusted to counter the effect of sound wave attenuation?",
       "options": [
         {
@@ -3215,7 +3155,7 @@
     },
     {
       "id": "spi-mock23-112",
-      "number": 112,
+      "number": 106,
       "question": "What does the x-axis of the Doppler spectral display represent?",
       "options": [
         {
@@ -3245,7 +3185,7 @@
     },
     {
       "id": "spi-mock23-113",
-      "number": 113,
+      "number": 107,
       "question": "What is required when interrogating high blood velocities at an angle closer to 0 degrees?",
       "options": [
         {
@@ -3274,38 +3214,8 @@
       ]
     },
     {
-      "id": "spi-mock23-114",
-      "number": 114,
-      "question": "What determines lateral resolution?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Focal zone"
-        },
-        {
-          "letter": "B",
-          "text": "Beam width"
-        },
-        {
-          "letter": "C",
-          "text": "PRP"
-        },
-        {
-          "letter": "D",
-          "text": "Pulse duration"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "Lateral resolution is equal to beam width at the depth of the structure. The focal zone is where beam width is narrowest, but beam width itself determines lateral resolution.",
-      "category": "Ultrasound Physics",
-      "hint": "Lateral resolution equals a beam dimension.",
-      "keywords": [
-        "lateral resolution"
-      ]
-    },
-    {
       "id": "spi-mock23-115",
-      "number": 115,
+      "number": 108,
       "question": "Which spectral Doppler artifact may result from using a higher PRF?",
       "options": [
         {
@@ -3331,6 +3241,70 @@
       "hint": "High PRF Doppler places additional sample gates along the line.",
       "keywords": [
         "higher PRF"
+      ]
+    },
+    {
+      "id": "spi-x-015",
+      "number": 109,
+      "question": "A 5 MHz pulsed Doppler beam is aligned parallel (0 degrees) to blood moving at 50 cm/s toward the transducer. Using 1,540 m/s for the speed of sound, approximately what is the Doppler shift?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "3.2 kHz"
+        },
+        {
+          "letter": "B",
+          "text": "1.6 kHz"
+        },
+        {
+          "letter": "C",
+          "text": "6.5 kHz"
+        },
+        {
+          "letter": "D",
+          "text": "0.3 kHz"
+        }
+      ],
+      "category": "Doppler",
+      "correctAnswer": "A",
+      "explanation": "The Doppler equation is shift = 2 x f0 x v x cos(angle) / c = 2 x 5,000,000 Hz x 0.5 m/s x 1 / 1,540 m/s, which is about 3,250 Hz. Answering 1.6 kHz omits the factor of 2 that accounts for the round trip of the sound.",
+      "hint": "Remember the factor of 2 in the Doppler equation and keep units consistent.",
+      "keywords": [
+        "Doppler equation",
+        "Doppler shift",
+        "calculation"
+      ]
+    },
+    {
+      "id": "spi-x-039",
+      "number": 110,
+      "question": "Diffuse low-level echoes appear in the lumen of an otherwise anechoic gallbladder next to bright duodenal gas, and they disappear when tissue harmonic imaging is turned on. Which artifact is most likely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ring-down artifact"
+        },
+        {
+          "letter": "B",
+          "text": "Mirror image artifact"
+        },
+        {
+          "letter": "C",
+          "text": "Posterior enhancement"
+        },
+        {
+          "letter": "D",
+          "text": "Side lobe artifact"
+        }
+      ],
+      "category": "Artifacts",
+      "correctAnswer": "D",
+      "explanation": "Weak side lobe energy striking a strong reflector off the main axis returns echoes that the system places inside the lumen along the main beam. Harmonic imaging suppresses side lobe energy, so the echoes clear; mirror image artifact would produce a duplicate structure deep to a strong reflector instead.",
+      "hint": "The echoes come from energy traveling outside the main beam.",
+      "keywords": [
+        "side lobe artifact",
+        "gallbladder",
+        "harmonic imaging"
       ]
     }
   ],
@@ -6413,6 +6387,262 @@
       "keywords": [],
       "imageUrl": "/images/spi/review/q102.jpg",
       "imageCaption": "Two color Doppler images of a vessel labeled A and B"
+    },
+    {
+      "id": "spi-x-033",
+      "number": 103,
+      "question": "What is the wavelength of a 2.5 MHz ultrasound wave traveling in soft tissue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.62 mm"
+        },
+        {
+          "letter": "B",
+          "text": "0.31 mm"
+        },
+        {
+          "letter": "C",
+          "text": "1.54 mm"
+        },
+        {
+          "letter": "D",
+          "text": "3.85 mm"
+        }
+      ],
+      "category": "Ultrasound Physics",
+      "correctAnswer": "A",
+      "explanation": "Wavelength equals propagation speed divided by frequency, so 1.54 mm per microsecond / 2.5 MHz = 0.616 mm. 1.54 mm is the wavelength of a 1 MHz wave, and 3.85 mm results from multiplying instead of dividing.",
+      "hint": "Divide 1.54 mm/microsecond by the frequency in MHz.",
+      "keywords": [
+        "wavelength",
+        "frequency",
+        "calculation"
+      ]
+    },
+    {
+      "id": "spi-x-044",
+      "number": 104,
+      "question": "During a second-trimester obstetric examination, which thermal index should be monitored when the beam is focused near fetal bone?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thermal index for soft tissue (TIS)"
+        },
+        {
+          "letter": "B",
+          "text": "Mechanical index (MI)"
+        },
+        {
+          "letter": "C",
+          "text": "Thermal index for cranial bone (TIC)"
+        },
+        {
+          "letter": "D",
+          "text": "Thermal index for bone (TIB)"
+        }
+      ],
+      "category": "Bioeffects",
+      "correctAnswer": "D",
+      "explanation": "TIB models heating when bone lies at or near the focus, which applies to fetal examinations after ossification begins, generally in the second and third trimesters. TIC applies when bone is at the skin surface, such as transcranial imaging, and MI estimates nonthermal (cavitation) risk rather than heating.",
+      "hint": "Match the index to where the bone lies relative to the focus.",
+      "keywords": [
+        "thermal index",
+        "TIB",
+        "obstetric scanning"
+      ]
+    },
+    {
+      "id": "spi-x-016",
+      "number": 105,
+      "question": "A 4 MHz pulsed Doppler measures a Doppler shift of 2.6 kHz with an angle of insonation of 60 degrees. What is the approximate blood flow velocity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "200 cm/s"
+        },
+        {
+          "letter": "B",
+          "text": "50 cm/s"
+        },
+        {
+          "letter": "C",
+          "text": "25 cm/s"
+        },
+        {
+          "letter": "D",
+          "text": "100 cm/s"
+        }
+      ],
+      "category": "Doppler",
+      "correctAnswer": "D",
+      "explanation": "Rearranging the Doppler equation, v = shift x c / (2 x f0 x cos angle) = 2,600 x 1,540 / (2 x 4,000,000 x 0.5), which is about 1.0 m/s or 100 cm/s. Answering 50 cm/s ignores the cosine of 60 degrees (0.5), which doubles the calculated velocity.",
+      "hint": "Solve the Doppler equation for velocity and use cos 60 = 0.5.",
+      "keywords": [
+        "velocity calculation",
+        "angle correction",
+        "Doppler equation"
+      ]
+    },
+    {
+      "id": "spi-x-040",
+      "number": 106,
+      "question": "A long, continuous echogenic streak extends deep to a small collection of gas bubbles in the bowel wall. Which mechanism best explains this ring-down artifact?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Resonant vibration of fluid trapped between gas bubbles"
+        },
+        {
+          "letter": "B",
+          "text": "Reflection off a strong reflector back toward a second reflector"
+        },
+        {
+          "letter": "C",
+          "text": "Low attenuation within a fluid-filled structure"
+        },
+        {
+          "letter": "D",
+          "text": "Refraction at the edge of a curved structure"
+        }
+      ],
+      "category": "Artifacts",
+      "correctAnswer": "A",
+      "explanation": "Ring-down artifact is thought to arise when fluid trapped among small gas bubbles resonates and continuously emits sound, producing a long streak deep to the gas. Comet tail artifact, by contrast, results from closely spaced reverberations between two strong reflectors.",
+      "hint": "This streak is caused by a vibrating source rather than repeated bouncing between surfaces.",
+      "keywords": [
+        "ring-down artifact",
+        "gas bubbles",
+        "bowel"
+      ]
+    },
+    {
+      "id": "spi-x-017",
+      "number": 107,
+      "question": "A pulsed wave Doppler sample volume is placed at a depth of 7.7 cm in soft tissue. Ignoring high PRF mode, what is the highest Nyquist limit available at this depth?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "10 kHz"
+        },
+        {
+          "letter": "B",
+          "text": "5 kHz"
+        },
+        {
+          "letter": "C",
+          "text": "2.5 kHz"
+        },
+        {
+          "letter": "D",
+          "text": "7.7 kHz"
+        }
+      ],
+      "category": "Doppler",
+      "correctAnswer": "B",
+      "explanation": "The round trip to 7.7 cm takes 7.7 x 13 microseconds, about 100 microseconds, so the maximum PRF is about 10,000 Hz. The Nyquist limit is half the PRF, or 5 kHz; 10 kHz is the PRF itself, not the Nyquist limit.",
+      "hint": "Find the maximum PRF from the round-trip time, then halve it.",
+      "keywords": [
+        "Nyquist limit",
+        "PRF",
+        "sample volume depth"
+      ]
+    },
+    {
+      "id": "spi-x-035",
+      "number": 108,
+      "question": "Using an attenuation coefficient of 0.5 dB/cm per MHz, what is the total attenuation of a 3 MHz beam traveling a 10 cm path through soft tissue?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "30 dB"
+        },
+        {
+          "letter": "B",
+          "text": "15 dB"
+        },
+        {
+          "letter": "C",
+          "text": "5 dB"
+        },
+        {
+          "letter": "D",
+          "text": "1.5 dB"
+        }
+      ],
+      "category": "Ultrasound Physics",
+      "correctAnswer": "B",
+      "explanation": "Attenuation coefficient in soft tissue is 0.5 dB/cm per MHz x 3 MHz = 1.5 dB/cm, and 1.5 dB/cm x 10 cm = 15 dB. Answering 5 dB ignores the frequency, which is why higher frequencies penetrate less.",
+      "hint": "Find the dB per cm at this frequency, then multiply by the path length.",
+      "keywords": [
+        "attenuation",
+        "decibels",
+        "calculation"
+      ]
+    },
+    {
+      "id": "spi-x-041",
+      "number": 109,
+      "question": "Two acoustic shadows are seen in the right upper quadrant: one deep to a gallstone and one deep to bowel gas. Which feature typically distinguishes the bowel gas shadow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It moves with the patient's heartbeat"
+        },
+        {
+          "letter": "B",
+          "text": "It contains low-level reverberation echoes, appearing dirty"
+        },
+        {
+          "letter": "C",
+          "text": "It is brighter than surrounding tissue"
+        },
+        {
+          "letter": "D",
+          "text": "It is completely anechoic and sharply defined"
+        }
+      ],
+      "category": "Artifacts",
+      "correctAnswer": "B",
+      "explanation": "Gas reflects nearly all of the sound, so reverberations fill its shadow with low-level echoes, giving a dirty shadow. A gallstone absorbs and reflects sound, producing a clean, anechoic, sharply marginated shadow; a brighter-than-tissue region would be enhancement, not shadowing.",
+      "hint": "Consider whether the strong reflector mainly absorbs sound or bounces nearly all of it back.",
+      "keywords": [
+        "clean shadow",
+        "dirty shadow",
+        "bowel gas"
+      ]
+    },
+    {
+      "id": "spi-x-046",
+      "number": 110,
+      "question": "A pulsed ultrasound beam has a spatial peak pulse average (SPPA) intensity of 200 W/square cm and a duty factor of 0.005. What is its spatial peak temporal average (SPTA) intensity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1 W/square cm"
+        },
+        {
+          "letter": "B",
+          "text": "200 W/square cm"
+        },
+        {
+          "letter": "C",
+          "text": "40 W/square cm"
+        },
+        {
+          "letter": "D",
+          "text": "0.1 W/square cm"
+        }
+      ],
+      "category": "Bioeffects",
+      "correctAnswer": "A",
+      "explanation": "Temporal average intensity equals pulse average intensity multiplied by the duty factor, so 200 x 0.005 = 1 W/square cm. Because the beam is off most of the time, the temporal average is always much lower than the pulse average; 200 W/square cm would apply only to continuous wave.",
+      "hint": "Average the pulse intensity over the time the system is both transmitting and listening.",
+      "keywords": [
+        "SPTA",
+        "duty factor",
+        "intensity"
+      ]
     }
   ],
   "exam3": [
@@ -6507,38 +6737,8 @@
       ]
     },
     {
-      "id": "spi-2024-004",
-      "number": 4,
-      "question": "Which control determines the amount of amplification occurring in the receiver?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Overall gain"
-        },
-        {
-          "letter": "B",
-          "text": "Output power"
-        },
-        {
-          "letter": "C",
-          "text": "Dynamic range"
-        },
-        {
-          "letter": "D",
-          "text": "Persistence"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Overall (receiver) gain amplifies all returning signals equally in the receiver. Output power changes the transmitted pulse strength, not receiver amplification.",
-      "category": "Image Optimization",
-      "hint": "Separate the controls that act on the transmitted pulse from those that act on returning echoes.",
-      "keywords": [
-        "amplification occurring in the receiver"
-      ]
-    },
-    {
       "id": "spi-2024-005",
-      "number": 5,
+      "number": 4,
       "question": "Which action may reduce the number of scan lines in a frame without a loss of spatial resolution (line density)?",
       "options": [
         {
@@ -6568,7 +6768,7 @@
     },
     {
       "id": "spi-2024-006",
-      "number": 6,
+      "number": 5,
       "question": "Which resolution is degraded when utilizing multiple focal zones?",
       "options": [
         {
@@ -6598,7 +6798,7 @@
     },
     {
       "id": "spi-2024-007",
-      "number": 7,
+      "number": 6,
       "question": "What does changing the display depth control directly affect?",
       "options": [
         {
@@ -6628,7 +6828,7 @@
     },
     {
       "id": "spi-2024-008",
-      "number": 8,
+      "number": 7,
       "question": "What is a potential negative consequence of using a high wall filter?",
       "options": [
         {
@@ -6658,7 +6858,7 @@
     },
     {
       "id": "spi-2024-009",
-      "number": 9,
+      "number": 8,
       "question": "Which technique averages individual frames together to improve the images?",
       "options": [
         {
@@ -6688,7 +6888,7 @@
     },
     {
       "id": "spi-2024-010",
-      "number": 10,
+      "number": 9,
       "question": "What produces increased attenuation within soft tissue?",
       "options": [
         {
@@ -6717,39 +6917,8 @@
       ]
     },
     {
-      "id": "spi-2024-011",
-      "number": 11,
-      "question": "What relates bandwidth to operating frequency?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Autocorrelation"
-        },
-        {
-          "letter": "B",
-          "text": "Nyquist limit"
-        },
-        {
-          "letter": "C",
-          "text": "Focal zone"
-        },
-        {
-          "letter": "D",
-          "text": "Quality factor"
-        }
-      ],
-      "correctAnswer": "D",
-      "explanation": "Quality factor (Q) equals operating (main) frequency divided by bandwidth; imaging transducers have low Q. The Nyquist limit relates PRF to the maximum detectable Doppler shift.",
-      "category": "Transducers",
-      "hint": "Find the unitless number that describes how wide or narrow a transducer's frequency range is.",
-      "keywords": [
-        "bandwidth",
-        "operating frequency"
-      ]
-    },
-    {
       "id": "spi-2024-012",
-      "number": 12,
+      "number": 10,
       "question": "What improves the temporal resolution of color flow imaging?",
       "options": [
         {
@@ -6779,7 +6948,7 @@
     },
     {
       "id": "spi-2024-013",
-      "number": 13,
+      "number": 11,
       "question": "What is the term for the change in direction of a sound wave crossing a tissue boundary at an oblique angle?",
       "options": [
         {
@@ -6810,7 +6979,7 @@
     },
     {
       "id": "spi-2024-014",
-      "number": 14,
+      "number": 12,
       "question": "Which adjustment can maintain the same frame rate when the depth is increased?",
       "options": [
         {
@@ -6841,7 +7010,7 @@
     },
     {
       "id": "spi-2024-015",
-      "number": 15,
+      "number": 13,
       "question": "How is the intensity of an ultrasound beam measured?",
       "options": [
         {
@@ -6871,7 +7040,7 @@
     },
     {
       "id": "spi-2024-016",
-      "number": 16,
+      "number": 14,
       "question": "Which component of a contrast agent causes a marked mismatch in impedance between the tissue?",
       "options": [
         {
@@ -6902,7 +7071,7 @@
     },
     {
       "id": "spi-2024-017",
-      "number": 17,
+      "number": 15,
       "question": "What can be increased to correct clutter artifact when using PW?",
       "options": [
         {
@@ -6931,38 +7100,8 @@
       ]
     },
     {
-      "id": "spi-2024-018",
-      "number": 18,
-      "question": "Which machine setting could cause aliasing to occur?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Doppler scale too high"
-        },
-        {
-          "letter": "B",
-          "text": "Doppler scale low"
-        },
-        {
-          "letter": "C",
-          "text": "Doppler gain high"
-        },
-        {
-          "letter": "D",
-          "text": "Doppler gain low"
-        }
-      ],
-      "correctAnswer": "B",
-      "explanation": "The scale sets PRF, and the Nyquist limit is PRF/2; a low scale lowers the Nyquist limit so higher shifts wrap around. Doppler gain changes brightness, not the Nyquist limit.",
-      "category": "Doppler",
-      "hint": "Relate the scale control to PRF and the Nyquist limit.",
-      "keywords": [
-        "aliasing"
-      ]
-    },
-    {
       "id": "spi-2024-019",
-      "number": 19,
+      "number": 16,
       "question": "Which index is related to likelihood of cavitation?",
       "options": [
         {
@@ -6992,7 +7131,7 @@
     },
     {
       "id": "spi-2024-020",
-      "number": 20,
+      "number": 17,
       "question": "Which factor influences color flow imaging frame rate?",
       "options": [
         {
@@ -7022,7 +7161,7 @@
     },
     {
       "id": "spi-2024-021",
-      "number": 21,
+      "number": 18,
       "question": "Which type of resolution will be improved with reducing the depth of field?",
       "options": [
         {
@@ -7052,7 +7191,7 @@
     },
     {
       "id": "spi-2024-022",
-      "number": 22,
+      "number": 19,
       "question": "Which change improves temporal resolution during color flow imaging?",
       "options": [
         {
@@ -7082,7 +7221,7 @@
     },
     {
       "id": "spi-2024-023",
-      "number": 23,
+      "number": 20,
       "question": "During a color Doppler scan, which angle to flow would most likely result in no color?",
       "options": [
         {
@@ -7112,7 +7251,7 @@
     },
     {
       "id": "spi-2024-024",
-      "number": 24,
+      "number": 21,
       "question": "Penetration can be improved by decreasing which setting?",
       "options": [
         {
@@ -7142,7 +7281,7 @@
     },
     {
       "id": "spi-2024-025",
-      "number": 25,
+      "number": 22,
       "question": "What does a string phantom evaluate?",
       "options": [
         {
@@ -7172,7 +7311,7 @@
     },
     {
       "id": "spi-2024-026",
-      "number": 26,
+      "number": 23,
       "question": "What affects the gray scale of a 2D image?",
       "options": [
         {
@@ -7202,7 +7341,7 @@
     },
     {
       "id": "spi-2024-027",
-      "number": 27,
+      "number": 24,
       "question": "What results from increasing the packet length when using color Doppler imaging?",
       "options": [
         {
@@ -7232,7 +7371,7 @@
     },
     {
       "id": "spi-2024-028",
-      "number": 28,
+      "number": 25,
       "question": "Which describes the reflected frequency when the reflector is moving towards the sound source?",
       "options": [
         {
@@ -7262,7 +7401,7 @@
     },
     {
       "id": "spi-2024-029",
-      "number": 29,
+      "number": 26,
       "question": "What is the effect of an increased aperture in a linear array transducer?",
       "options": [
         {
@@ -7292,7 +7431,7 @@
     },
     {
       "id": "spi-2024-030",
-      "number": 30,
+      "number": 27,
       "question": "Which resolution is improved by focusing?",
       "options": [
         {
@@ -7322,7 +7461,7 @@
     },
     {
       "id": "spi-2024-031",
-      "number": 31,
+      "number": 28,
       "question": "If the speed of sound in a medium is less than the average speed of sound, where is the reflector positioned?",
       "options": [
         {
@@ -7352,7 +7491,7 @@
     },
     {
       "id": "spi-2024-032",
-      "number": 32,
+      "number": 29,
       "question": "Which artifact misrepresents direction of flow?",
       "options": [
         {
@@ -7382,7 +7521,7 @@
     },
     {
       "id": "spi-2024-033",
-      "number": 33,
+      "number": 30,
       "question": "Which factor has a positive effect on temporal resolution?",
       "options": [
         {
@@ -7412,7 +7551,7 @@
     },
     {
       "id": "spi-2024-034",
-      "number": 34,
+      "number": 31,
       "question": "What causes posterior acoustic enhancement?",
       "options": [
         {
@@ -7442,7 +7581,7 @@
     },
     {
       "id": "spi-2024-035",
-      "number": 35,
+      "number": 32,
       "question": "Which of these modes has the highest duty factor?",
       "options": [
         {
@@ -7472,7 +7611,7 @@
     },
     {
       "id": "spi-2024-036",
-      "number": 36,
+      "number": 33,
       "question": "Which artifact can be corrected by reducing color gain?",
       "options": [
         {
@@ -7502,7 +7641,7 @@
     },
     {
       "id": "spi-2024-037",
-      "number": 37,
+      "number": 34,
       "question": "Name 2 types of cavitation in tissue.",
       "options": [
         {
@@ -7532,7 +7671,7 @@
     },
     {
       "id": "spi-2024-038",
-      "number": 38,
+      "number": 35,
       "question": "What is the primary determining factor of the fundamental frequency in a pulsed wave transducer?",
       "options": [
         {
@@ -7562,7 +7701,7 @@
     },
     {
       "id": "spi-2024-039",
-      "number": 39,
+      "number": 36,
       "question": "Which adjustment follows the ALARA principle?",
       "options": [
         {
@@ -7591,38 +7730,8 @@
       ]
     },
     {
-      "id": "spi-2024-040",
-      "number": 40,
-      "question": "What causes color flash artifact?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Tissue motion"
-        },
-        {
-          "letter": "B",
-          "text": "Aliasing"
-        },
-        {
-          "letter": "C",
-          "text": "High velocity blood flow"
-        },
-        {
-          "letter": "D",
-          "text": "Strong reflector"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Flash artifact is a burst of color from tissue or transducer motion, such as cardiac pulsation or breathing. Aliasing produces color wrap-around within a vessel, not random flashes.",
-      "category": "Artifacts",
-      "hint": "This artifact appears as a sudden burst of color outside vessels with no real flow.",
-      "keywords": [
-        "color flash artifact"
-      ]
-    },
-    {
       "id": "spi-2024-041",
-      "number": 41,
+      "number": 37,
       "question": "Which outcome is an advantage of more pulses in an ensemble length?",
       "options": [
         {
@@ -7652,7 +7761,7 @@
     },
     {
       "id": "spi-2024-042",
-      "number": 42,
+      "number": 38,
       "question": "Which setting will lead to the highest temporal resolution?",
       "options": [
         {
@@ -7682,7 +7791,7 @@
     },
     {
       "id": "spi-2024-043",
-      "number": 43,
+      "number": 39,
       "question": "Which artifact displays reflectors more shallow than their actual position?",
       "options": [
         {
@@ -7712,7 +7821,7 @@
     },
     {
       "id": "spi-2024-044",
-      "number": 44,
+      "number": 40,
       "question": "What happens to the amount of attenuation if the path length is doubled?",
       "options": [
         {
@@ -7742,7 +7851,7 @@
     },
     {
       "id": "spi-2024-045",
-      "number": 45,
+      "number": 41,
       "question": "What determines the resonant frequency of a pulsed wave transducer?",
       "options": [
         {
@@ -7772,7 +7881,7 @@
     },
     {
       "id": "spi-2024-046",
-      "number": 46,
+      "number": 42,
       "question": "At which angle to blood flow would the maximum Doppler shift occur?",
       "options": [
         {
@@ -7802,7 +7911,7 @@
     },
     {
       "id": "spi-2024-047",
-      "number": 47,
+      "number": 43,
       "question": "During 3D volume acquisition, the quality of the images is most dependent upon which factor?",
       "options": [
         {
@@ -7832,7 +7941,7 @@
     },
     {
       "id": "spi-2024-048",
-      "number": 48,
+      "number": 44,
       "question": "If the PRF is 3 kHz, what is the maximum Doppler shift that can be detected without aliasing?",
       "options": [
         {
@@ -7862,7 +7971,7 @@
     },
     {
       "id": "spi-2024-049",
-      "number": 49,
+      "number": 45,
       "question": "What is the primary factor that improves lateral resolution?",
       "options": [
         {
@@ -7892,7 +8001,7 @@
     },
     {
       "id": "spi-2024-050",
-      "number": 50,
+      "number": 46,
       "question": "Which factor is improved with spatial compounding?",
       "options": [
         {
@@ -7922,7 +8031,7 @@
     },
     {
       "id": "spi-2024-051",
-      "number": 51,
+      "number": 47,
       "question": "Which unfocused transducer will have the greatest divergence?",
       "options": [
         {
@@ -7952,7 +8061,7 @@
     },
     {
       "id": "spi-2024-052",
-      "number": 52,
+      "number": 48,
       "question": "What does damping in a pulsed wave transducer affect?",
       "options": [
         {
@@ -7982,7 +8091,7 @@
     },
     {
       "id": "spi-2024-053",
-      "number": 53,
+      "number": 49,
       "question": "Which feature is characteristic of a continuous wave transducer?",
       "options": [
         {
@@ -8012,7 +8121,7 @@
     },
     {
       "id": "spi-2024-054",
-      "number": 54,
+      "number": 50,
       "question": "Which artifact results from decreased attenuation?",
       "options": [
         {
@@ -8042,7 +8151,7 @@
     },
     {
       "id": "spi-2024-055",
-      "number": 55,
+      "number": 51,
       "question": "Which adjustment will improve axial resolution?",
       "options": [
         {
@@ -8072,7 +8181,7 @@
     },
     {
       "id": "spi-2024-056",
-      "number": 56,
+      "number": 52,
       "question": "What is the term for the ability of an ultrasound system to display low level echoes?",
       "options": [
         {
@@ -8102,7 +8211,7 @@
     },
     {
       "id": "spi-2024-057",
-      "number": 57,
+      "number": 53,
       "question": "Which artifact causes a reflector to be improperly positioned on the display?",
       "options": [
         {
@@ -8132,7 +8241,7 @@
     },
     {
       "id": "spi-2024-058",
-      "number": 58,
+      "number": 54,
       "question": "What reduces speckle and increases visualization of specular reflectors and attenuated structures?",
       "options": [
         {
@@ -8162,7 +8271,7 @@
     },
     {
       "id": "spi-2024-059",
-      "number": 59,
+      "number": 55,
       "question": "Which type of structure is best visualized with low persistence?",
       "options": [
         {
@@ -8192,7 +8301,7 @@
     },
     {
       "id": "spi-2024-060",
-      "number": 60,
+      "number": 56,
       "question": "What increases frame rate?",
       "options": [
         {
@@ -8222,7 +8331,7 @@
     },
     {
       "id": "spi-2024-061",
-      "number": 61,
+      "number": 57,
       "question": "What happens when the PRF is less than twice the Doppler shift frequency?",
       "options": [
         {
@@ -8252,7 +8361,7 @@
     },
     {
       "id": "spi-2024-062",
-      "number": 62,
+      "number": 58,
       "question": "Which resolution capability is most affected by SPL?",
       "options": [
         {
@@ -8282,7 +8391,7 @@
     },
     {
       "id": "spi-2024-063",
-      "number": 63,
+      "number": 59,
       "question": "What control changes contrast resolution?",
       "options": [
         {
@@ -8312,7 +8421,7 @@
     },
     {
       "id": "spi-2024-064",
-      "number": 64,
+      "number": 60,
       "question": "The ability to resolve 2 separate reflectors perpendicular to the path of the beam is which resolution?",
       "options": [
         {
@@ -8342,7 +8451,7 @@
     },
     {
       "id": "spi-2024-065",
-      "number": 65,
+      "number": 61,
       "question": "Which type of display rescans only the region of interest and improves visualization?",
       "options": [
         {
@@ -8372,7 +8481,7 @@
     },
     {
       "id": "spi-2024-066",
-      "number": 66,
+      "number": 62,
       "question": "Which color Doppler setting can be optimized to eliminate low Doppler frequency shifts?",
       "options": [
         {
@@ -8402,7 +8511,7 @@
     },
     {
       "id": "spi-2024-067",
-      "number": 67,
+      "number": 63,
       "question": "Which statement describes the purpose of using a spectral Doppler wall filter?",
       "options": [
         {
@@ -8432,7 +8541,7 @@
     },
     {
       "id": "spi-2024-068",
-      "number": 68,
+      "number": 64,
       "question": "What is the primary reason to use compression?",
       "options": [
         {
@@ -8462,7 +8571,7 @@
     },
     {
       "id": "spi-2024-069",
-      "number": 69,
+      "number": 65,
       "question": "What is affected by increasing color scale?",
       "options": [
         {
@@ -8492,7 +8601,7 @@
     },
     {
       "id": "spi-2024-070",
-      "number": 70,
+      "number": 66,
       "question": "What happens when a sound wave encounters a smooth flat surface?",
       "options": [
         {
@@ -8522,7 +8631,7 @@
     },
     {
       "id": "spi-2024-071",
-      "number": 71,
+      "number": 67,
       "question": "Which method of sanitizing the transducer will damage the PZT?",
       "options": [
         {
@@ -8552,7 +8661,7 @@
     },
     {
       "id": "spi-2024-072",
-      "number": 72,
+      "number": 68,
       "question": "What is the most effective way to reduce aliasing on color Doppler?",
       "options": [
         {
@@ -8582,7 +8691,7 @@
     },
     {
       "id": "spi-2024-073",
-      "number": 73,
+      "number": 69,
       "question": "What is an advantage of power Doppler over color Doppler?",
       "options": [
         {
@@ -8612,7 +8721,7 @@
     },
     {
       "id": "spi-2024-074",
-      "number": 74,
+      "number": 70,
       "question": "What is the function of M-mode?",
       "options": [
         {
@@ -8642,7 +8751,7 @@
     },
     {
       "id": "spi-2024-075",
-      "number": 75,
+      "number": 71,
       "question": "Which change can be made to avoid exceeding the Nyquist limit?",
       "options": [
         {
@@ -8672,7 +8781,7 @@
     },
     {
       "id": "spi-2024-076",
-      "number": 76,
+      "number": 72,
       "question": "A Doppler shift is 10,000 Hz at an angle to flow of 60 degrees. What is the Doppler shift at 0 degrees?",
       "options": [
         {
@@ -8703,7 +8812,7 @@
     },
     {
       "id": "spi-2024-077",
-      "number": 77,
+      "number": 73,
       "question": "According to Poiseuille's law, a change in which parameter would have the greatest influence on blood flow?",
       "options": [
         {
@@ -8732,68 +8841,8 @@
       ]
     },
     {
-      "id": "spi-2024-078",
-      "number": 78,
-      "question": "Which system control adjusts amplification of signal as a function of depth?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "TGC"
-        },
-        {
-          "letter": "B",
-          "text": "Reject"
-        },
-        {
-          "letter": "C",
-          "text": "Transmit focus"
-        },
-        {
-          "letter": "D",
-          "text": "Output power"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Time gain compensation amplifies echoes according to their arrival time (depth) to compensate for attenuation. Output power changes all echoes equally by changing the transmitted pulse.",
-      "category": "Image Optimization",
-      "hint": "Think of the control that compensates for attenuation with depth.",
-      "keywords": [
-        "function of depth"
-      ]
-    },
-    {
-      "id": "spi-2024-079",
-      "number": 79,
-      "question": "Which factor affects temporal resolution?",
-      "options": [
-        {
-          "letter": "A",
-          "text": "Display depth"
-        },
-        {
-          "letter": "B",
-          "text": "Log compression"
-        },
-        {
-          "letter": "C",
-          "text": "Overall gain"
-        },
-        {
-          "letter": "D",
-          "text": "TGC"
-        }
-      ],
-      "correctAnswer": "A",
-      "explanation": "Display depth determines the listening time per pulse and thus frame rate and temporal resolution. Compression, gain and TGC are receiver processing functions that do not change frame rate.",
-      "category": "Image Optimization",
-      "hint": "Choose the control that changes the time needed for each pulse-echo cycle.",
-      "keywords": [
-        "temporal resolution"
-      ]
-    },
-    {
       "id": "spi-2024-080",
-      "number": 80,
+      "number": 74,
       "question": "What happens to the Doppler shift when the angle is changed from 30 to 60 degrees?",
       "options": [
         {
@@ -8819,6 +8868,1158 @@
       "hint": "Compare the cosine values of the two angles.",
       "keywords": [
         "30 to 60 degrees"
+      ]
+    },
+    {
+      "id": "spi-x-001",
+      "number": 75,
+      "question": "A sonographer images to a display depth of 10 cm using 150 scan lines per frame and a single transmit focal zone. Assuming a propagation speed of 1,540 m/s, approximately what is the maximum achievable frame rate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "26 Hz"
+        },
+        {
+          "letter": "B",
+          "text": "77 Hz"
+        },
+        {
+          "letter": "C",
+          "text": "51 Hz"
+        },
+        {
+          "letter": "D",
+          "text": "100 Hz"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "C",
+      "explanation": "Each scan line needs 13 microseconds per cm of depth, so one line at 10 cm takes 130 microseconds and 150 lines take 19.5 ms; 1 / 0.0195 s is about 51 frames per second. About 100 Hz results from forgetting that the round trip doubles the travel time per line (6.5 microseconds per cm), and 77 Hz would be correct only for 100 lines per frame.",
+      "hint": "Multiply the round-trip time per line by the number of lines, then take the reciprocal.",
+      "keywords": [
+        "frame rate",
+        "13 microsecond rule",
+        "temporal resolution"
+      ]
+    },
+    {
+      "id": "spi-x-026",
+      "number": 76,
+      "question": "A PZT element is 0.4 mm thick, and the speed of sound in the PZT is 4.0 mm per microsecond. What is the resonant (operating) frequency of this pulsed transducer?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2.5 MHz"
+        },
+        {
+          "letter": "B",
+          "text": "5 MHz"
+        },
+        {
+          "letter": "C",
+          "text": "1.6 MHz"
+        },
+        {
+          "letter": "D",
+          "text": "10 MHz"
+        }
+      ],
+      "category": "Transducers",
+      "correctAnswer": "B",
+      "explanation": "The element thickness equals one-half wavelength in PZT, so frequency = speed / (2 x thickness) = 4.0 / 0.8 = 5 MHz. Answering 10 MHz assumes the thickness is a full wavelength rather than half.",
+      "hint": "The element's thickness is half of one wavelength in the crystal material.",
+      "keywords": [
+        "resonant frequency",
+        "element thickness",
+        "PZT"
+      ]
+    },
+    {
+      "id": "spi-x-002",
+      "number": 77,
+      "question": "While imaging a thyroid nodule, the frame rate is 45 Hz with one transmit focal zone. If the sonographer activates three transmit focal zones and leaves all other settings unchanged, what will the frame rate become?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15 Hz"
+        },
+        {
+          "letter": "B",
+          "text": "135 Hz"
+        },
+        {
+          "letter": "C",
+          "text": "45 Hz"
+        },
+        {
+          "letter": "D",
+          "text": "90 Hz"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "A",
+      "explanation": "Each transmit focal zone requires its own pulse along every scan line, so three focal zones triple the time needed per frame and divide the frame rate by three (45 / 3 = 15 Hz). Multiplying to 135 Hz reverses the relationship; more focal zones always cost frame rate.",
+      "hint": "Every additional focal zone adds another pulse-listen cycle per line.",
+      "keywords": [
+        "focal zones",
+        "frame rate",
+        "calculation"
+      ]
+    },
+    {
+      "id": "spi-x-027",
+      "number": 78,
+      "question": "What is the typical thickness of a transducer matching layer?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Twice the wavelength"
+        },
+        {
+          "letter": "B",
+          "text": "One-quarter of the wavelength"
+        },
+        {
+          "letter": "C",
+          "text": "One-half of the wavelength"
+        },
+        {
+          "letter": "D",
+          "text": "One full wavelength"
+        }
+      ],
+      "category": "Transducers",
+      "correctAnswer": "B",
+      "explanation": "A matching layer one-quarter wavelength thick, with impedance between that of PZT and skin, maximizes sound transmission into the patient. One-half wavelength describes the active element thickness, not the matching layer.",
+      "hint": "The element and the matching layer use different fractions of a wavelength.",
+      "keywords": [
+        "matching layer",
+        "quarter wavelength",
+        "impedance"
+      ]
+    },
+    {
+      "id": "spi-x-034",
+      "number": 79,
+      "question": "A reflector is located 6 cm deep in soft tissue. How long after the pulse is transmitted will its echo arrive at the transducer?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6.5 microseconds"
+        },
+        {
+          "letter": "B",
+          "text": "156 microseconds"
+        },
+        {
+          "letter": "C",
+          "text": "78 microseconds"
+        },
+        {
+          "letter": "D",
+          "text": "39 microseconds"
+        }
+      ],
+      "category": "Ultrasound Physics",
+      "correctAnswer": "C",
+      "explanation": "By the 13 microsecond rule, each centimeter of depth adds 13 microseconds of round-trip time, so 6 cm x 13 = 78 microseconds. Answering 39 microseconds accounts only for the one-way trip to the reflector.",
+      "hint": "Use the time the pulse needs per centimeter for the round trip.",
+      "keywords": [
+        "range equation",
+        "13 microsecond rule",
+        "depth"
+      ]
+    },
+    {
+      "id": "spi-x-045",
+      "number": 80,
+      "question": "According to AIUM guidance, a diagnostic exposure that produces a maximum in situ temperature rise of no more than how much above normal physiologic levels may be used clinically without reservation on thermal grounds?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.5 degrees C"
+        },
+        {
+          "letter": "B",
+          "text": "4 degrees C"
+        },
+        {
+          "letter": "C",
+          "text": "6 degrees C"
+        },
+        {
+          "letter": "D",
+          "text": "1.5 degrees C"
+        }
+      ],
+      "category": "Bioeffects",
+      "correctAnswer": "D",
+      "explanation": "AIUM states that exposures producing a maximum temperature rise of no more than 1.5 degrees C above normal physiologic levels (37 degrees C) may be used without reservation on thermal grounds. A rise of about 4 degrees C sustained for 5 minutes or longer is considered potentially hazardous to the embryo and fetus.",
+      "hint": "Recall the AIUM statement on the temperature rise considered safe for diagnostic exposures, not the one considered hazardous.",
+      "keywords": [
+        "AIUM",
+        "thermal bioeffects",
+        "temperature rise"
+      ]
+    },
+    {
+      "id": "spi-x-003",
+      "number": 81,
+      "question": "A scan converter stores 6 bits of memory for each pixel. How many different shades of gray can be represented?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "6"
+        },
+        {
+          "letter": "B",
+          "text": "12"
+        },
+        {
+          "letter": "C",
+          "text": "64"
+        },
+        {
+          "letter": "D",
+          "text": "36"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "C",
+      "explanation": "The number of gray shades equals 2 raised to the number of bits, and 2 to the 6th power is 64. Answering 12 or 36 treats bits as a simple multiple instead of a power of two.",
+      "hint": "Each additional bit doubles the number of possible values.",
+      "keywords": [
+        "bit depth",
+        "pixel",
+        "contrast resolution"
+      ]
+    },
+    {
+      "id": "spi-x-028",
+      "number": 82,
+      "question": "What happens if a PZT transducer is heated above its Curie point?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Its resonant frequency doubles permanently"
+        },
+        {
+          "letter": "B",
+          "text": "It temporarily stops working until it cools"
+        },
+        {
+          "letter": "C",
+          "text": "Its bandwidth becomes narrower but it still works"
+        },
+        {
+          "letter": "D",
+          "text": "It permanently loses its piezoelectric properties"
+        }
+      ],
+      "category": "Transducers",
+      "correctAnswer": "D",
+      "explanation": "Above the Curie temperature, the polarized dipoles in PZT become randomly oriented, so the element permanently loses its piezoelectric properties. This is why transducers must never be heat-sterilized, as in an autoclave; the damage does not reverse on cooling.",
+      "hint": "Think about what keeps the crystal's dipoles aligned after manufacturing.",
+      "keywords": [
+        "Curie point",
+        "PZT",
+        "transducer care"
+      ]
+    },
+    {
+      "id": "spi-x-004",
+      "number": 83,
+      "question": "After freezing a liver image, the sonographer wants to change its appearance before archiving. Which adjustment can still alter the frozen image?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Adjusting the time gain compensation"
+        },
+        {
+          "letter": "B",
+          "text": "Moving the transmit focal zone deeper"
+        },
+        {
+          "letter": "C",
+          "text": "Changing the post-processing gray scale map"
+        },
+        {
+          "letter": "D",
+          "text": "Increasing the transmit output power"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "C",
+      "explanation": "Post-processing functions such as gray scale maps act on data already stored in memory, so they can be applied to a frozen image. TGC, focus and output power act on echoes during acquisition (pre-processing or transmit), so they have no effect once the image is frozen.",
+      "hint": "Ask which functions operate on data that is already in the scan converter.",
+      "keywords": [
+        "post-processing",
+        "pre-processing",
+        "frozen image"
+      ]
+    },
+    {
+      "id": "spi-x-018",
+      "number": 84,
+      "question": "During a carotid exam, the sonographer sets the angle correction cursor to 60 degrees, but the true angle between the beam and flow is 70 degrees. How will the displayed velocity compare to the true velocity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It will be accurate because the error is small"
+        },
+        {
+          "letter": "B",
+          "text": "It will be overestimated by about double"
+        },
+        {
+          "letter": "C",
+          "text": "It will be underestimated by about one-third"
+        },
+        {
+          "letter": "D",
+          "text": "It will be overestimated by about one-third"
+        }
+      ],
+      "category": "Doppler",
+      "correctAnswer": "C",
+      "explanation": "The measured shift reflects cos 70 (about 0.34), but the system divides by cos 60 (0.5), so the displayed velocity is about 0.34 / 0.5 = 0.68 of the true value, roughly 32 percent too low. Errors are significant at steep angles because cosine changes rapidly above 60 degrees.",
+      "hint": "Compare the cosine the flow actually produced with the cosine the machine assumed.",
+      "keywords": [
+        "angle correction error",
+        "cosine",
+        "velocity accuracy"
+      ]
+    },
+    {
+      "id": "spi-x-029",
+      "number": 85,
+      "question": "An unfocused circular disc transducer has a diameter of 6 mm and an operating frequency of 5 MHz in soft tissue. Approximately what is its near zone length?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.5 cm"
+        },
+        {
+          "letter": "B",
+          "text": "3.0 cm"
+        },
+        {
+          "letter": "C",
+          "text": "6.0 cm"
+        },
+        {
+          "letter": "D",
+          "text": "0.6 cm"
+        }
+      ],
+      "category": "Transducers",
+      "correctAnswer": "B",
+      "explanation": "Near zone length in soft tissue is approximately diameter squared (mm) x frequency (MHz) / 6, so 36 x 5 / 6 = 30 mm, or 3.0 cm. Using diameter rather than diameter squared gives the much too short value of 0.5 to 0.6 cm.",
+      "hint": "Near zone length grows with the square of the aperture and with frequency.",
+      "keywords": [
+        "near zone length",
+        "focal depth",
+        "beam geometry"
+      ]
+    },
+    {
+      "id": "spi-x-036",
+      "number": 86,
+      "question": "A sonographer reduces the output power by 9 dB. What fraction of the original intensity remains?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "One-third"
+        },
+        {
+          "letter": "B",
+          "text": "One-quarter"
+        },
+        {
+          "letter": "C",
+          "text": "One-eighth"
+        },
+        {
+          "letter": "D",
+          "text": "One-ninth"
+        }
+      ],
+      "category": "Ultrasound Physics",
+      "correctAnswer": "C",
+      "explanation": "Each 3 dB decrease halves the intensity, so 9 dB is three halvings: 1/2 x 1/2 x 1/2 = 1/8, or 12.5 percent. Decibels are logarithmic, so -9 dB does not equal one-ninth.",
+      "hint": "Count how many 3 dB steps make up the change.",
+      "keywords": [
+        "decibels",
+        "intensity",
+        "output power"
+      ]
+    },
+    {
+      "id": "spi-x-042",
+      "number": 87,
+      "question": "Deep to a large fatty liver lesion, the diaphragm appears displaced, with a small step-off compared with the adjacent diaphragm. Which artifact best explains this appearance?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Propagation speed error"
+        },
+        {
+          "letter": "B",
+          "text": "Side lobe artifact"
+        },
+        {
+          "letter": "C",
+          "text": "Range ambiguity artifact"
+        },
+        {
+          "letter": "D",
+          "text": "Reverberation artifact"
+        }
+      ],
+      "category": "Artifacts",
+      "correctAnswer": "A",
+      "explanation": "Sound travels more slowly through fat than the assumed 1,540 m/s, so echoes from structures behind the lesion return late and are displayed too deep, causing a step-off in the diaphragm. Range ambiguity results from pulses sent before prior echoes return, not from speed differences.",
+      "hint": "The system assumes one speed of sound for all tissues.",
+      "keywords": [
+        "propagation speed error",
+        "fatty lesion",
+        "diaphragm"
+      ]
+    },
+    {
+      "id": "spi-x-005",
+      "number": 88,
+      "question": "A sonographer wants a higher-contrast image that displays fewer shades of gray, making boundaries appear more black and white. Which change accomplishes this?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increase the dynamic range"
+        },
+        {
+          "letter": "B",
+          "text": "Increase line density"
+        },
+        {
+          "letter": "C",
+          "text": "Increase frame persistence"
+        },
+        {
+          "letter": "D",
+          "text": "Decrease the dynamic range"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "D",
+      "explanation": "Narrowing the dynamic range (more compression) assigns the echo amplitudes to fewer gray levels, which produces a higher-contrast, more black-and-white image. Increasing the dynamic range does the opposite, giving a smoother image with more subtle gray shades.",
+      "hint": "Think about how many gray levels are displayed when the range of amplitudes is narrowed.",
+      "keywords": [
+        "dynamic range",
+        "compression",
+        "contrast"
+      ]
+    },
+    {
+      "id": "spi-x-019",
+      "number": 89,
+      "question": "In a patient with an internal carotid artery stenosis, the spectral window is filled in and the waveform shows a wide range of velocities just distal to the narrowing. What hemodynamic condition does this spectral broadening primarily represent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Disturbed or turbulent flow"
+        },
+        {
+          "letter": "B",
+          "text": "Absent diastolic flow"
+        },
+        {
+          "letter": "C",
+          "text": "Plug flow"
+        },
+        {
+          "letter": "D",
+          "text": "Laminar parabolic flow"
+        }
+      ],
+      "category": "Doppler",
+      "correctAnswer": "A",
+      "explanation": "Distal to a stenosis, red cells move in many directions and at many speeds, so the spectrum contains a broad range of frequencies that fills the window. Plug flow has nearly uniform velocities and therefore a narrow band with a clear window.",
+      "hint": "A clear window means red cells move at similar speeds; ask what fills it in.",
+      "keywords": [
+        "spectral broadening",
+        "turbulence",
+        "stenosis"
+      ]
+    },
+    {
+      "id": "spi-x-030",
+      "number": 90,
+      "question": "A transducer has a main frequency of 5 MHz and a bandwidth of 2.5 MHz. What is its quality factor (Q factor)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2.5"
+        },
+        {
+          "letter": "B",
+          "text": "2"
+        },
+        {
+          "letter": "C",
+          "text": "0.5"
+        },
+        {
+          "letter": "D",
+          "text": "12.5"
+        }
+      ],
+      "category": "Transducers",
+      "correctAnswer": "B",
+      "explanation": "The Q factor equals the main frequency divided by the bandwidth, so 5 MHz / 2.5 MHz = 2, a low-Q value typical of imaging transducers. Answering 0.5 inverts the ratio.",
+      "hint": "Divide the operating frequency by the bandwidth.",
+      "keywords": [
+        "Q factor",
+        "bandwidth",
+        "imaging transducer"
+      ]
+    },
+    {
+      "id": "spi-x-037",
+      "number": 91,
+      "question": "At normal incidence, sound passes from a medium with an acoustic impedance of 4 MRayls into one of 6 MRayls. What percentage of the intensity is reflected?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4 percent"
+        },
+        {
+          "letter": "B",
+          "text": "40 percent"
+        },
+        {
+          "letter": "C",
+          "text": "20 percent"
+        },
+        {
+          "letter": "D",
+          "text": "96 percent"
+        }
+      ],
+      "category": "Ultrasound Physics",
+      "correctAnswer": "A",
+      "explanation": "The intensity reflection coefficient is ((Z2 - Z1) / (Z2 + Z1)) squared = (2 / 10) squared = 0.04, or 4 percent; the other 96 percent is transmitted. Answering 20 percent forgets to square the ratio.",
+      "hint": "Find the impedance difference over the sum, then square it.",
+      "keywords": [
+        "intensity reflection coefficient",
+        "acoustic impedance",
+        "normal incidence"
+      ]
+    },
+    {
+      "id": "spi-x-043",
+      "number": 92,
+      "question": "While scanning the supraspinatus tendon, part of the tendon appears hypoechoic, but it becomes normally echogenic when the transducer is angled so the beam is perpendicular to the fibers. Which artifact is this?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Posterior enhancement"
+        },
+        {
+          "letter": "B",
+          "text": "Anisotropy"
+        },
+        {
+          "letter": "C",
+          "text": "Slice thickness artifact"
+        },
+        {
+          "letter": "D",
+          "text": "Refraction shadowing"
+        }
+      ],
+      "category": "Artifacts",
+      "correctAnswer": "B",
+      "explanation": "Tendon fibers are specular reflectors, so when the beam is not perpendicular the echoes are reflected away and the tendon falsely appears hypoechoic, mimicking tendinopathy or a tear. Correcting the beam angle restores normal echogenicity, which confirms anisotropy rather than true pathology.",
+      "hint": "The finding changes simply by changing the beam angle to the fibers.",
+      "keywords": [
+        "anisotropy",
+        "tendon",
+        "specular reflection"
+      ]
+    },
+    {
+      "id": "spi-x-006",
+      "number": 93,
+      "question": "In a patient with a large body habitus, the lumen of the gallbladder fills with haze and low-level clutter echoes that obscure a possible small polyp. Which adjustment is most likely to clean up the lumen while preserving detail?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing the dynamic range"
+        },
+        {
+          "letter": "B",
+          "text": "Increasing the overall receiver gain"
+        },
+        {
+          "letter": "C",
+          "text": "Turning on tissue harmonic imaging"
+        },
+        {
+          "letter": "D",
+          "text": "Adding frame persistence"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "C",
+      "explanation": "Harmonic signals are generated within tissue along the strongest central part of the beam, so harmonic imaging reduces reverberation and side lobe clutter that fill fluid-filled structures in large patients. Raising gain would amplify the clutter rather than remove it.",
+      "hint": "Choose the technique that builds the image from frequencies created inside the tissue.",
+      "keywords": [
+        "tissue harmonic imaging",
+        "clutter",
+        "large body habitus"
+      ]
+    },
+    {
+      "id": "spi-x-020",
+      "number": 94,
+      "question": "A patient with aortic stenosis has a peak velocity of 4 m/s across the valve. Using the simplified Bernoulli equation, what is the estimated peak pressure gradient?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "16 mmHg"
+        },
+        {
+          "letter": "B",
+          "text": "32 mmHg"
+        },
+        {
+          "letter": "C",
+          "text": "64 mmHg"
+        },
+        {
+          "letter": "D",
+          "text": "8 mmHg"
+        }
+      ],
+      "category": "Doppler",
+      "correctAnswer": "C",
+      "explanation": "The simplified Bernoulli equation is pressure gradient = 4 x v squared, with v in m/s, so 4 x 4 x 4 = 64 mmHg. Answering 16 mmHg forgets to multiply by 4, and 32 mmHg doubles instead of squaring the velocity.",
+      "hint": "Square the velocity in m/s before multiplying.",
+      "keywords": [
+        "Bernoulli equation",
+        "pressure gradient",
+        "aortic stenosis"
+      ]
+    },
+    {
+      "id": "spi-x-031",
+      "number": 95,
+      "question": "A phased array transducer has several defective elements. What image effect is most likely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Poor steering and focusing throughout the image"
+        },
+        {
+          "letter": "B",
+          "text": "A single vertical dropout line from top to bottom"
+        },
+        {
+          "letter": "C",
+          "text": "Loss of only the far field in the center of the image"
+        },
+        {
+          "letter": "D",
+          "text": "A rectangular image with no other change"
+        }
+      ],
+      "category": "Transducers",
+      "correctAnswer": "A",
+      "explanation": "In a phased array, every element contributes to every scan line through timed (phased) firing, so defective elements degrade steering and focusing across the whole image. A discrete vertical dropout is characteristic of a linear sequential array, where each element group forms specific lines.",
+      "hint": "Consider whether each scan line uses all elements or only a small group.",
+      "keywords": [
+        "phased array",
+        "defective elements",
+        "steering"
+      ]
+    },
+    {
+      "id": "spi-x-038",
+      "number": 96,
+      "question": "A pulse contains 3 cycles, and each cycle has a wavelength of 0.3 mm. What is the axial resolution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.45 mm"
+        },
+        {
+          "letter": "B",
+          "text": "0.3 mm"
+        },
+        {
+          "letter": "C",
+          "text": "0.9 mm"
+        },
+        {
+          "letter": "D",
+          "text": "0.1 mm"
+        }
+      ],
+      "category": "Ultrasound Physics",
+      "correctAnswer": "A",
+      "explanation": "Spatial pulse length is the number of cycles times the wavelength, 3 x 0.3 mm = 0.9 mm, and axial resolution is half the spatial pulse length, or 0.45 mm. 0.9 mm is the spatial pulse length itself, not the resolution.",
+      "hint": "First find spatial pulse length, then remember the factor relating it to axial resolution.",
+      "keywords": [
+        "axial resolution",
+        "spatial pulse length",
+        "calculation"
+      ]
+    },
+    {
+      "id": "spi-x-007",
+      "number": 97,
+      "question": "A sonographer suspects a 4 mm renal calculus at 12 cm depth, but no posterior shadow is seen. The transmit focus is set at 4 cm. What is the most appropriate next step?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Turn on spatial compounding"
+        },
+        {
+          "letter": "B",
+          "text": "Decrease the transmit frequency"
+        },
+        {
+          "letter": "C",
+          "text": "Increase the overall receiver gain"
+        },
+        {
+          "letter": "D",
+          "text": "Move the focal zone to the level of the calculus"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "D",
+      "explanation": "A small stone shadows best when the beam is narrowest at the stone, so the focus should be placed at or just below the level of the calculus. Spatial compounding and a lower frequency both tend to fill in or widen the beam, reducing the shadow rather than revealing it.",
+      "hint": "Shadowing from a small object depends on the beam being narrower than the object.",
+      "keywords": [
+        "focal zone",
+        "acoustic shadow",
+        "renal calculus"
+      ]
+    },
+    {
+      "id": "spi-x-021",
+      "number": 98,
+      "question": "Flow in a vessel segment with a cross-sectional area of 1.0 square cm has a velocity of 50 cm/s. Downstream, a stenosis reduces the area to 0.25 square cm. Assuming constant volume flow, what is the velocity within the stenosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100 cm/s"
+        },
+        {
+          "letter": "B",
+          "text": "400 cm/s"
+        },
+        {
+          "letter": "C",
+          "text": "200 cm/s"
+        },
+        {
+          "letter": "D",
+          "text": "12.5 cm/s"
+        }
+      ],
+      "category": "Doppler",
+      "correctAnswer": "C",
+      "explanation": "The continuity principle states that volume flow (area x velocity) is constant, so 1.0 x 50 = 0.25 x v, giving v = 200 cm/s. Answering 12.5 cm/s incorrectly assumes velocity falls as the area decreases.",
+      "hint": "Area times velocity stays the same before and within the narrowing.",
+      "keywords": [
+        "continuity equation",
+        "stenosis",
+        "velocity"
+      ]
+    },
+    {
+      "id": "spi-x-032",
+      "number": 99,
+      "question": "Which design feature reduces grating lobes in array transducers?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing the thickness of the backing material"
+        },
+        {
+          "letter": "B",
+          "text": "Subdicing elements so their spacing is less than half a wavelength"
+        },
+        {
+          "letter": "C",
+          "text": "Increasing the transmit output power"
+        },
+        {
+          "letter": "D",
+          "text": "Using a thicker matching layer"
+        }
+      ],
+      "category": "Transducers",
+      "correctAnswer": "B",
+      "explanation": "Grating lobes arise from the regular spacing of array elements; dividing each element into smaller subelements spaced closer than half a wavelength reduces them. Backing material controls ring-down and pulse length, not grating lobe formation.",
+      "hint": "Grating lobes are caused by the regular spacing of the elements.",
+      "keywords": [
+        "grating lobes",
+        "subdicing",
+        "array design"
+      ]
+    },
+    {
+      "id": "spi-x-008",
+      "number": 100,
+      "question": "Which is a recognized disadvantage of spatial compounding?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It can reduce diagnostically useful shadowing and enhancement"
+        },
+        {
+          "letter": "B",
+          "text": "It worsens visualization of curved specular boundaries"
+        },
+        {
+          "letter": "C",
+          "text": "It increases speckle throughout the image"
+        },
+        {
+          "letter": "D",
+          "text": "It raises the frame rate above useful limits"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "A",
+      "explanation": "Averaging frames acquired from several steering angles smooths speckle and improves boundaries, but it also fills in acoustic shadowing and posterior enhancement that help characterize stones, calcifications and cysts. It lowers, rather than raises, the frame rate and reduces speckle rather than increasing it.",
+      "hint": "Consider what happens to angle-dependent artifacts when several beam angles are averaged.",
+      "keywords": [
+        "spatial compounding",
+        "shadowing",
+        "enhancement"
+      ]
+    },
+    {
+      "id": "spi-x-022",
+      "number": 101,
+      "question": "When high PRF Doppler mode is activated to measure a high-velocity jet, additional sample volume markers appear along the Doppler line. What is the main disadvantage of this mode?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The spectral window can no longer be displayed"
+        },
+        {
+          "letter": "B",
+          "text": "Aliasing occurs at lower velocities than standard PW"
+        },
+        {
+          "letter": "C",
+          "text": "Angle correction can no longer be applied"
+        },
+        {
+          "letter": "D",
+          "text": "Range ambiguity about which gate produced the signal"
+        }
+      ],
+      "category": "Doppler",
+      "correctAnswer": "D",
+      "explanation": "High PRF mode sends new pulses before echoes from the deepest gate return, so signals from several depths are received together and the source depth is uncertain. It raises, rather than lowers, the velocity that can be measured before aliasing.",
+      "hint": "More than one pulse is in the body at once; think about what that does to depth information.",
+      "keywords": [
+        "high PRF Doppler",
+        "range ambiguity",
+        "sample gates"
+      ]
+    },
+    {
+      "id": "spi-x-009",
+      "number": 102,
+      "question": "Why does M-mode provide much better temporal resolution than 2D imaging?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It uses continuous wave transmission instead of pulses"
+        },
+        {
+          "letter": "B",
+          "text": "It averages consecutive frames to reduce noise"
+        },
+        {
+          "letter": "C",
+          "text": "Only one scan line is sampled, so it is updated at the PRF"
+        },
+        {
+          "letter": "D",
+          "text": "It uses a higher transmit frequency than 2D imaging"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "C",
+      "explanation": "Because M-mode interrogates a single line, that line is resampled with every pulse, giving sampling rates of thousands per second instead of a frame rate of tens per second. Frame averaging (persistence) would actually degrade temporal resolution.",
+      "hint": "Compare how often a single line is revisited in M-mode versus in a full 2D frame.",
+      "keywords": [
+        "M-mode",
+        "temporal resolution",
+        "PRF"
+      ]
+    },
+    {
+      "id": "spi-x-023",
+      "number": 103,
+      "question": "A color Doppler examination uses a velocity-variance color map. What does the addition of a green or yellow hue to the red and blue display indicate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Flow below the wall filter threshold"
+        },
+        {
+          "letter": "B",
+          "text": "Flow directly toward the transducer"
+        },
+        {
+          "letter": "C",
+          "text": "Flow perpendicular to the beam"
+        },
+        {
+          "letter": "D",
+          "text": "High variance, suggesting turbulent flow"
+        }
+      ],
+      "category": "Doppler",
+      "correctAnswer": "D",
+      "explanation": "Variance maps add a third color, often green, when the mean frequency estimates in a pixel vary widely, which suggests disturbed or turbulent flow. Direction is still shown by red and blue, and flow perpendicular to the beam produces little or no color.",
+      "hint": "This map adds information about the spread of velocities, not direction.",
+      "keywords": [
+        "variance map",
+        "color Doppler",
+        "turbulence"
+      ]
+    },
+    {
+      "id": "spi-x-010",
+      "number": 104,
+      "question": "Which adjustment changes how an image looks on the display screen but does NOT change the image data that is stored and sent to PACS?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Time gain compensation"
+        },
+        {
+          "letter": "B",
+          "text": "Receiver gain"
+        },
+        {
+          "letter": "C",
+          "text": "Dynamic range"
+        },
+        {
+          "letter": "D",
+          "text": "Monitor brightness and contrast"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "D",
+      "explanation": "Monitor brightness and contrast change only how the display shows the image, so a poorly set monitor can mislead the sonographer while stored images look different. Gain, TGC and dynamic range change the processed echo data itself and are saved with the image.",
+      "hint": "Think about which control belongs to the screen rather than to the ultrasound system's processing chain.",
+      "keywords": [
+        "display monitor",
+        "brightness",
+        "PACS"
+      ]
+    },
+    {
+      "id": "spi-x-024",
+      "number": 105,
+      "question": "According to Poiseuille's law, if the radius of a vessel is reduced by half while pressure difference, length and viscosity remain constant, what happens to volume flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It decreases to one-eighth"
+        },
+        {
+          "letter": "B",
+          "text": "It decreases to one-sixteenth"
+        },
+        {
+          "letter": "C",
+          "text": "It decreases to one-quarter"
+        },
+        {
+          "letter": "D",
+          "text": "It decreases to one-half"
+        }
+      ],
+      "category": "Doppler",
+      "correctAnswer": "B",
+      "explanation": "Volume flow is proportional to the radius raised to the fourth power, so halving the radius reduces flow by (1/2) to the 4th, or 1/16. One-quarter would apply if flow depended on area alone.",
+      "hint": "Radius enters Poiseuille's law with an exponent of four.",
+      "keywords": [
+        "Poiseuille's law",
+        "radius",
+        "volume flow"
+      ]
+    },
+    {
+      "id": "spi-x-011",
+      "number": 106,
+      "question": "Line density is increased while depth and sector width remain unchanged. What is the expected effect?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Improved temporal resolution with a lower frame rate"
+        },
+        {
+          "letter": "B",
+          "text": "Improved lateral resolution with a lower frame rate"
+        },
+        {
+          "letter": "C",
+          "text": "Improved axial resolution with a higher frame rate"
+        },
+        {
+          "letter": "D",
+          "text": "Improved contrast resolution with a higher frame rate"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "B",
+      "explanation": "Packing more scan lines into the same field reduces the gaps between lines, improving lateral (spatial) detail, but each extra line takes time and lowers the frame rate. Axial resolution depends on spatial pulse length, not line density.",
+      "hint": "More lines in the same space improves one kind of detail but costs time.",
+      "keywords": [
+        "line density",
+        "lateral resolution",
+        "frame rate"
+      ]
+    },
+    {
+      "id": "spi-x-025",
+      "number": 107,
+      "question": "Which change increases the likelihood that blood flow becomes turbulent, as predicted by the Reynolds number?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A decrease in blood density"
+        },
+        {
+          "letter": "B",
+          "text": "A decrease in vessel diameter with constant velocity"
+        },
+        {
+          "letter": "C",
+          "text": "An increase in flow velocity"
+        },
+        {
+          "letter": "D",
+          "text": "An increase in blood viscosity"
+        }
+      ],
+      "category": "Doppler",
+      "correctAnswer": "C",
+      "explanation": "The Reynolds number rises with density, velocity and vessel diameter and falls with viscosity; values above about 2,000 predict turbulence. Increasing viscosity, as in polycythemia, lowers the Reynolds number and favors laminar flow.",
+      "hint": "Identify which factors sit in the numerator of the Reynolds number.",
+      "keywords": [
+        "Reynolds number",
+        "turbulence",
+        "hemodynamics"
+      ]
+    },
+    {
+      "id": "spi-x-012",
+      "number": 108,
+      "question": "During a liver examination, a horizontal dark band appears across the entire width of the image at a depth of 8 cm, while tissue above and below it appears normal. What is the most likely cause?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Output power set too high"
+        },
+        {
+          "letter": "B",
+          "text": "A time gain compensation slider set too low at that depth"
+        },
+        {
+          "letter": "C",
+          "text": "Transmit focal zone placed at that depth"
+        },
+        {
+          "letter": "D",
+          "text": "Overall receiver gain set too low"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "B",
+      "explanation": "A band of reduced brightness confined to one depth and spanning the full image width is typical of a single TGC slider positioned too far to the left. Low overall gain would darken all depths, and a focal zone tends to create a brighter, not darker, band.",
+      "hint": "Which control acts on one depth only?",
+      "keywords": [
+        "time gain compensation",
+        "banding",
+        "depth"
+      ]
+    },
+    {
+      "id": "spi-x-013",
+      "number": 109,
+      "question": "When measuring the thickness of a thin structure such as the carotid intima-media complex, how should the structure be positioned relative to the beam for the most precise measurement?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "At a 60 degree angle to the beam"
+        },
+        {
+          "letter": "B",
+          "text": "Within the near zone, above the focal zone"
+        },
+        {
+          "letter": "C",
+          "text": "Parallel to the beam, so it is measured laterally"
+        },
+        {
+          "letter": "D",
+          "text": "Perpendicular to the beam, so it is measured axially"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "D",
+      "explanation": "Axial resolution is usually better than lateral resolution, so measurements made along the beam axis are most precise; this requires the structure's walls to be perpendicular to the beam. Measuring laterally relies on beam width, which is wider and less precise.",
+      "hint": "Use the direction in which the system resolves detail best.",
+      "keywords": [
+        "axial resolution",
+        "measurement",
+        "intima-media thickness"
+      ]
+    },
+    {
+      "id": "spi-x-014",
+      "number": 110,
+      "question": "During a contrast-enhanced ultrasound examination of a liver lesion, why is a low mechanical index (often below 0.2) typically selected?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To avoid destroying the microbubbles while allowing nonlinear bubble signals"
+        },
+        {
+          "letter": "B",
+          "text": "To raise the frame rate by shortening listening time"
+        },
+        {
+          "letter": "C",
+          "text": "To increase the transmit frequency for better axial resolution"
+        },
+        {
+          "letter": "D",
+          "text": "To eliminate the need for harmonic imaging"
+        }
+      ],
+      "category": "Image Optimization",
+      "correctAnswer": "A",
+      "explanation": "At low MI, microbubbles oscillate nonlinearly and produce strong harmonic signals without rupturing, allowing continuous real-time contrast imaging. High MI would destroy the bubbles; MI does not set frequency or frame rate.",
+      "hint": "Consider what high acoustic pressure does to gas-filled contrast agents.",
+      "keywords": [
+        "contrast-enhanced ultrasound",
+        "mechanical index",
+        "microbubbles"
       ]
     }
   ],

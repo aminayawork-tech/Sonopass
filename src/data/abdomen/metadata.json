@@ -11,15 +11,15 @@
     "Patient Care, Procedures & Contrast"
   ],
   "categoryTotals": {
-    "Liver": 34,
-    "Biliary System": 34,
-    "Pancreas": 33,
-    "Spleen": 33,
-    "Urinary Tract & Adrenals": 34,
-    "Abdominal Vasculature & Retroperitoneum": 34,
-    "GI Tract, Peritoneum & Abdominal Wall": 32,
-    "Superficial Structures": 33,
-    "Patient Care, Procedures & Contrast": 33
+    "Liver": 39,
+    "Biliary System": 39,
+    "Pancreas": 37,
+    "Spleen": 37,
+    "Urinary Tract & Adrenals": 39,
+    "Abdominal Vasculature & Retroperitoneum": 39,
+    "GI Tract, Peritoneum & Abdominal Wall": 36,
+    "Superficial Structures": 37,
+    "Patient Care, Procedures & Contrast": 37
   },
   "examModes": [
     {
@@ -37,16 +37,16 @@
     {
       "id": "mock-1",
       "name": "Mock Exam 1",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-1"
     },
     {
       "id": "mock-2",
       "name": "Mock Exam 2",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-2"
     }
   ],
-  "totalQuestions": 300,
+  "totalQuestions": 340,
   "passingScore": 555
 }

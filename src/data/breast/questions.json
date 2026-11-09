@@ -4499,6 +4499,646 @@
       "keywords": [
         "intramammary lymph node"
       ]
+    },
+    {
+      "id": "br-x-001",
+      "number": 151,
+      "question": "During color Doppler of the upper outer breast near the axillary tail in a 40-year-old woman, the sonographer follows an artery that arises from the axillary artery and descends along the lateral chest wall. Which artery supplies a substantial portion of the lateral breast?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Internal thoracic (internal mammary) artery"
+        },
+        {
+          "letter": "B",
+          "text": "Lateral thoracic artery"
+        },
+        {
+          "letter": "C",
+          "text": "Superior epigastric artery"
+        },
+        {
+          "letter": "D",
+          "text": "Musculophrenic artery"
+        }
+      ],
+      "category": "Anatomy & Physiology",
+      "correctAnswer": "B",
+      "explanation": "The lateral thoracic artery, a branch of the axillary artery, runs along the lateral chest wall and is the second major supply to the breast, mainly the upper outer and lateral portions. The internal thoracic artery provides the largest overall share, but its perforators enter medially near the sternal edge, not from the axilla.",
+      "hint": "Consider which vessel actually originates from the axillary artery and courses laterally.",
+      "keywords": [
+        "lateral thoracic artery",
+        "breast blood supply",
+        "axillary artery"
+      ]
+    },
+    {
+      "id": "br-x-013",
+      "number": 152,
+      "question": "A 14-year-old girl has a rapidly enlarging, painless mass in one breast, now 7 cm, with distended superficial veins. Sonography shows a large oval, circumscribed, parallel, hypoechoic solid mass with internal vascularity and no surrounding edema. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Juvenile (giant) fibroadenoma"
+        },
+        {
+          "letter": "B",
+          "text": "Invasive ductal carcinoma"
+        },
+        {
+          "letter": "C",
+          "text": "Galactocele"
+        },
+        {
+          "letter": "D",
+          "text": "Breast lipoma"
+        }
+      ],
+      "category": "Benign Breast Disease",
+      "correctAnswer": "A",
+      "explanation": "Juvenile fibroadenoma occurs in adolescents, grows rapidly, may exceed 5 cm, and appears as a large circumscribed, parallel, hypoechoic vascular solid mass. Carcinoma is extremely rare at this age and typically shows irregular, non-circumscribed margins.",
+      "hint": "Consider the patient's age and the benign-appearing margins despite large size.",
+      "keywords": [
+        "juvenile fibroadenoma",
+        "adolescent breast mass",
+        "giant fibroadenoma"
+      ]
+    },
+    {
+      "id": "br-x-019",
+      "number": 153,
+      "question": "A 56-year-old woman has a 7 mm irregular, spiculated, shadowing mass found on screening. Biopsy shows a well-differentiated invasive carcinoma made of angulated, open tubules lined by a single cell layer. Which statement about this tumor type is correct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is usually triple negative with a poor prognosis"
+        },
+        {
+          "letter": "B",
+          "text": "It usually presents as a large circumscribed enhancing mass"
+        },
+        {
+          "letter": "C",
+          "text": "It has an excellent prognosis and is often small when found"
+        },
+        {
+          "letter": "D",
+          "text": "It is the most common breast cancer type in men"
+        }
+      ],
+      "category": "Malignant Breast Disease",
+      "correctAnswer": "C",
+      "explanation": "Tubular carcinoma is a low-grade, hormone receptor-positive invasive cancer that is usually small, spiculated and shadowing, with an excellent prognosis. Large circumscribed masses with enhancement are more typical of triple-negative, mucinous or metaplastic tumors.",
+      "hint": "Well-differentiated tumors with orderly tubules behave favorably.",
+      "keywords": [
+        "tubular carcinoma",
+        "special type",
+        "prognosis"
+      ]
+    },
+    {
+      "id": "br-x-031",
+      "number": 154,
+      "question": "A 55-year-old woman has a biopsy-proven axillary node containing metastatic adenocarcinoma of probable breast origin. Diagnostic mammography and targeted breast ultrasound show no primary tumor. What is the most appropriate next imaging study?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Repeat mammography in 6 months"
+        },
+        {
+          "letter": "B",
+          "text": "Contrast-enhanced breast MRI"
+        },
+        {
+          "letter": "C",
+          "text": "Ultrasound of the contralateral axilla only"
+        },
+        {
+          "letter": "D",
+          "text": "Chest radiograph"
+        }
+      ],
+      "category": "Axilla, Lymph Nodes & Implants",
+      "correctAnswer": "B",
+      "explanation": "For axillary metastasis with an occult primary, contrast-enhanced breast MRI is the most sensitive test and finds the primary in a majority of cases, guiding treatment. Waiting 6 months for repeat mammography would delay care for a known malignancy.",
+      "hint": "The primary is probably in the breast but is hidden from both mammography and ultrasound, and treatment should not be delayed.",
+      "keywords": [
+        "occult primary",
+        "axillary metastasis",
+        "breast MRI"
+      ]
+    },
+    {
+      "id": "br-x-036",
+      "number": 155,
+      "question": "During ultrasound-guided vacuum-assisted biopsy of a small mass lying only 3 mm above the pectoralis fascia, the radiologist wants more distance between the lesion and the chest wall. Which technique accomplishes this?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing transducer compression over the lesion"
+        },
+        {
+          "letter": "B",
+          "text": "Injecting anesthetic or saline deep to the lesion to lift it"
+        },
+        {
+          "letter": "C",
+          "text": "Directing the needle perpendicular to the chest wall"
+        },
+        {
+          "letter": "D",
+          "text": "Switching to a spring-loaded device with a longer throw"
+        }
+      ],
+      "category": "Interventional Procedures & Patient Care",
+      "correctAnswer": "B",
+      "explanation": "Hydrodissection, injecting lidocaine or saline into the tissue plane deep to the lesion, separates it from the chest wall and creates a safety margin. A perpendicular approach or a longer throw would increase the risk of chest wall injury or pneumothorax.",
+      "hint": "Fluid can be used to create space between tissue planes.",
+      "keywords": [
+        "hydrodissection",
+        "chest wall safety",
+        "vacuum-assisted biopsy"
+      ]
+    },
+    {
+      "id": "br-x-008",
+      "number": 156,
+      "question": "Compared with handheld ultrasound, which is a recognized limitation of automated breast ultrasound (ABUS) used for supplemental screening?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It cannot produce coronal reconstructions"
+        },
+        {
+          "letter": "B",
+          "text": "It lacks Doppler and elastography and covers the axilla incompletely"
+        },
+        {
+          "letter": "C",
+          "text": "It exposes the patient to ionizing radiation"
+        },
+        {
+          "letter": "D",
+          "text": "Its image acquisition is more operator-dependent"
+        }
+      ],
+      "category": "Scanning Technique & Instrumentation",
+      "correctAnswer": "B",
+      "explanation": "ABUS acquires standardized volumetric data but does not provide Doppler or elastography, and the axilla and far periphery are often incompletely covered, so findings may need handheld targeted evaluation. Its coronal reconstructions are a strength, and its acquisition is less, not more, operator-dependent than handheld scanning.",
+      "hint": "Think about what a standardized volume sweep cannot do that a real-time handheld exam can.",
+      "keywords": [
+        "automated breast ultrasound",
+        "ABUS",
+        "supplemental screening"
+      ]
+    },
+    {
+      "id": "br-x-014",
+      "number": 157,
+      "question": "Which benign proliferative lesion, composed of enlarged lobules with compressed, distorted acini and surrounding fibrosis, often produces clustered mammographic calcifications or an irregular sonographic mass that can mimic carcinoma?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Duct ectasia"
+        },
+        {
+          "letter": "B",
+          "text": "Hamartoma"
+        },
+        {
+          "letter": "C",
+          "text": "Sclerosing adenosis"
+        },
+        {
+          "letter": "D",
+          "text": "Oil cyst"
+        }
+      ],
+      "category": "Benign Breast Disease",
+      "correctAnswer": "C",
+      "explanation": "Sclerosing adenosis is a lobular proliferation with fibrosis that distorts the acini and frequently calcifies, so it can resemble carcinoma on imaging and pathology. A hamartoma is a circumscribed, encapsulated mass of mixed fat and glandular tissue that rarely mimics cancer.",
+      "hint": "This lesion arises in the lobules, and its fibrosis is what makes it look suspicious.",
+      "keywords": [
+        "sclerosing adenosis",
+        "benign proliferative lesion",
+        "cancer mimic"
+      ]
+    },
+    {
+      "id": "br-x-020",
+      "number": 158,
+      "question": "A 63-year-old woman has a rapidly enlarging, painless breast mass without skin retraction. Sonography shows a 4 cm oval, markedly hypoechoic, hypervascular mass with indistinct margins and posterior enhancement, and mammography shows no calcifications or spiculation. Several enlarged hypoechoic axillary nodes are also present. Which malignancy is most likely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Invasive lobular carcinoma"
+        },
+        {
+          "letter": "B",
+          "text": "Primary breast lymphoma"
+        },
+        {
+          "letter": "C",
+          "text": "Tubular carcinoma"
+        },
+        {
+          "letter": "D",
+          "text": "Ductal carcinoma in situ"
+        }
+      ],
+      "category": "Malignant Breast Disease",
+      "correctAnswer": "B",
+      "explanation": "Breast lymphoma typically appears as a large, markedly hypoechoic, hypervascular mass with posterior enhancement and without calcifications, spiculation or skin retraction. Invasive lobular carcinoma more often shows ill-defined shadowing or architectural distortion.",
+      "hint": "The mass lacks the desmoplastic features (spiculation, shadowing, calcifications) of typical carcinomas.",
+      "keywords": [
+        "breast lymphoma",
+        "hypervascular mass",
+        "posterior enhancement"
+      ]
+    },
+    {
+      "id": "br-x-026",
+      "number": 159,
+      "question": "A screening mammogram in a 50-year-old woman shows a new circumscribed oval mass. According to BI-RADS guidance, which assessment should the screening mammogram receive?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Category 0, with recall for diagnostic evaluation"
+        },
+        {
+          "letter": "B",
+          "text": "Category 3, with 6-month follow-up"
+        },
+        {
+          "letter": "C",
+          "text": "Category 2, with routine screening"
+        },
+        {
+          "letter": "D",
+          "text": "Category 4A, with immediate biopsy"
+        }
+      ],
+      "category": "BI-RADS & Correlation",
+      "correctAnswer": "A",
+      "explanation": "BI-RADS reserves category 3 for findings that have undergone a complete diagnostic evaluation, so a new mass on screening mammography is assessed category 0 and recalled for diagnostic mammography and ultrasound. Assigning category 3 directly from a screening mammogram skips the workup that justifies short-interval follow-up.",
+      "hint": "A probably benign assessment requires a complete diagnostic workup first.",
+      "keywords": [
+        "BI-RADS 0",
+        "screening recall",
+        "probably benign"
+      ]
+    },
+    {
+      "id": "br-x-003",
+      "number": 160,
+      "question": "Which cells form a contractile layer between the luminal epithelium and the basement membrane of the breast ducts and acini, contract under oxytocin to eject milk, and are assessed by pathologists to distinguish in situ from invasive carcinoma?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Myoepithelial cells"
+        },
+        {
+          "letter": "B",
+          "text": "Fibroblasts of Cooper ligaments"
+        },
+        {
+          "letter": "C",
+          "text": "Intralobular adipocytes"
+        },
+        {
+          "letter": "D",
+          "text": "Squamous cells of the nipple"
+        }
+      ],
+      "category": "Anatomy & Physiology",
+      "correctAnswer": "A",
+      "explanation": "Ducts and lobules have two cell layers: inner luminal epithelial cells and outer myoepithelial cells resting on a basement membrane. Myoepithelial cells contract in response to oxytocin, and their preservation around tumor cells indicates in situ disease, whereas their absence indicates invasion; Cooper ligament fibroblasts form supporting stroma, not a duct lining.",
+      "hint": "Think of the two-layer lining of the ducts and which layer is contractile.",
+      "keywords": [
+        "myoepithelial cells",
+        "duct histology",
+        "in situ versus invasive"
+      ]
+    },
+    {
+      "id": "br-x-033",
+      "number": 161,
+      "question": "In a patient with breast cancer, which sonographic feature of a metastatic axillary node suggests extranodal (extracapsular) tumor extension?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Irregular, indistinct margins infiltrating the surrounding fat"
+        },
+        {
+          "letter": "B",
+          "text": "A thin, uniform cortex under 2 mm"
+        },
+        {
+          "letter": "C",
+          "text": "A central echogenic fatty hilum with hilar flow"
+        },
+        {
+          "letter": "D",
+          "text": "An oval shape parallel to the skin surface"
+        }
+      ],
+      "category": "Axilla, Lymph Nodes & Implants",
+      "correctAnswer": "A",
+      "explanation": "When tumor breaks through the nodal capsule, the node loses its smooth outline and shows irregular, indistinct or spiculated margins extending into perinodal fat. A thin uniform cortex and a preserved fatty hilum are features of a normal node.",
+      "hint": "Think about what happens to the node's outline when tumor escapes its capsule.",
+      "keywords": [
+        "extranodal extension",
+        "metastatic node",
+        "node margins"
+      ]
+    },
+    {
+      "id": "br-x-038",
+      "number": 162,
+      "question": "During excision of a nonpalpable cancer localized with a seed under ultrasound guidance, how is removal of the target lesion and marker confirmed before the procedure ends?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A follow-up ultrasound 6 months after surgery"
+        },
+        {
+          "letter": "B",
+          "text": "Visual inspection of the specimen by the surgeon alone"
+        },
+        {
+          "letter": "C",
+          "text": "A same-day contrast-enhanced breast MRI"
+        },
+        {
+          "letter": "D",
+          "text": "Specimen radiography or specimen ultrasound of the excised tissue"
+        }
+      ],
+      "category": "Interventional Procedures & Patient Care",
+      "correctAnswer": "D",
+      "explanation": "Imaging the excised specimen with radiography (or ultrasound for sonographically visible lesions) confirms that the lesion, seed and biopsy clip are within the tissue, allowing immediate re-excision if needed. Visual inspection cannot reliably confirm removal of a nonpalpable lesion or a small marker.",
+      "hint": "The confirmation is done on the removed tissue itself, in real time.",
+      "keywords": [
+        "specimen radiography",
+        "localization",
+        "surgical confirmation"
+      ]
+    },
+    {
+      "id": "br-x-010",
+      "number": 163,
+      "question": "A 37-year-old woman has a palpable lump that she points to, but sonography of that region shows only normal fibroglandular tissue. What is the best technique to confirm that the scanned area truly corresponds to the palpable finding?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increase overall gain to bring out subtle masses"
+        },
+        {
+          "letter": "B",
+          "text": "Scan the opposite breast at the same clock position"
+        },
+        {
+          "letter": "C",
+          "text": "Place a finger on the lump and scan directly over it"
+        },
+        {
+          "letter": "D",
+          "text": "Switch to a 5 MHz curvilinear transducer"
+        }
+      ],
+      "category": "Scanning Technique & Instrumentation",
+      "correctAnswer": "C",
+      "explanation": "Placing a finger on the palpable lump and scanning directly over or beside it confirms that the imaged tissue is the area of concern, and the correlation should be documented. Raising gain only adds noise and can obscure true findings rather than proving correlation.",
+      "hint": "Use the patient's or your own touch to link the image to the lump.",
+      "keywords": [
+        "palpable lump",
+        "finger correlation",
+        "targeted scanning"
+      ]
+    },
+    {
+      "id": "br-x-016",
+      "number": 164,
+      "question": "Core biopsy of a 7 mm oval mass in a 47-year-old woman shows a fibroadenoma with incidental classic lobular carcinoma in situ (LCIS), and the result is concordant with imaging. What does classic LCIS primarily represent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An invasive cancer that requires mastectomy"
+        },
+        {
+          "letter": "B",
+          "text": "A marker of increased risk of cancer in both breasts"
+        },
+        {
+          "letter": "C",
+          "text": "A benign finding that does not change cancer risk"
+        },
+        {
+          "letter": "D",
+          "text": "A lesion that always progresses to invasive cancer"
+        }
+      ],
+      "category": "Benign Breast Disease",
+      "correctAnswer": "B",
+      "explanation": "Classic LCIS is a noninvasive lobular proliferation that usually has no imaging correlate and mainly signals an increased lifetime risk of cancer in either breast. It does not inevitably progress, and it is not invasive cancer, although it may prompt enhanced surveillance or risk-reducing therapy.",
+      "hint": "Classic LCIS is noninvasive and does not progress inevitably, yet it still affects future surveillance.",
+      "keywords": [
+        "lobular carcinoma in situ",
+        "high-risk lesion",
+        "risk marker"
+      ]
+    },
+    {
+      "id": "br-x-022",
+      "number": 165,
+      "question": "A 46-year-old woman with a 3.5 cm HER2-positive invasive cancer is receiving neoadjuvant chemotherapy, and ultrasound is used to monitor response. Which practice is most important?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Measure only once, at the completion of therapy"
+        },
+        {
+          "letter": "B",
+          "text": "Vary transducer and settings at each visit to avoid bias"
+        },
+        {
+          "letter": "C",
+          "text": "Judge response by color Doppler intensity rather than size"
+        },
+        {
+          "letter": "D",
+          "text": "Measure in three dimensions at the documented site and compare with baseline"
+        }
+      ],
+      "category": "Malignant Breast Disease",
+      "correctAnswer": "D",
+      "explanation": "Reliable response assessment requires consistent technique: measuring the tumor in three dimensions at the same labeled location and comparing with baseline at regular intervals. Doppler signal varies with settings and pressure and is not a standardized measure of response.",
+      "hint": "Response is judged by comparing like with like over time.",
+      "keywords": [
+        "neoadjuvant chemotherapy",
+        "response monitoring",
+        "tumor measurement"
+      ]
+    },
+    {
+      "id": "br-x-028",
+      "number": 166,
+      "question": "In the BI-RADS ultrasound lexicon, elasticity assessment is an associated feature described with which terms?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Elastic, plastic and rigid"
+        },
+        {
+          "letter": "B",
+          "text": "Soft, intermediate and hard"
+        },
+        {
+          "letter": "C",
+          "text": "Compressible, noncompressible and fixed"
+        },
+        {
+          "letter": "D",
+          "text": "Low, medium and high strain ratio"
+        }
+      ],
+      "category": "BI-RADS & Correlation",
+      "correctAnswer": "B",
+      "explanation": "The 5th edition lexicon adds elasticity as an associated feature described as soft, intermediate or hard. Strain ratios are a quantitative strain elastography measure but are not the lexicon descriptors.",
+      "hint": "The lexicon uses three qualitative stiffness categories rather than numeric values.",
+      "keywords": [
+        "elasticity assessment",
+        "BI-RADS lexicon",
+        "elastography"
+      ]
+    },
+    {
+      "id": "br-x-005",
+      "number": 167,
+      "question": "In the adult woman, the base of the breast typically extends vertically over which ribs and horizontally from the sternal edge to which landmark?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "First to third ribs, to the anterior axillary line"
+        },
+        {
+          "letter": "B",
+          "text": "Fourth to eighth ribs, to the posterior axillary line"
+        },
+        {
+          "letter": "C",
+          "text": "Second to sixth ribs, to the midaxillary line"
+        },
+        {
+          "letter": "D",
+          "text": "Fifth to tenth ribs, to the scapular line"
+        }
+      ],
+      "category": "Anatomy & Physiology",
+      "correctAnswer": "C",
+      "explanation": "The breast base usually spans from the second to the sixth rib and from the lateral sternal border to about the midaxillary line, with the axillary tail extending further toward the axilla. Whole-breast scanning must cover this full extent; stopping at the anterior axillary line would miss lateral tissue.",
+      "hint": "The breast overlies the upper anterior chest and wraps laterally beyond the anterior axillary fold.",
+      "keywords": [
+        "breast extent",
+        "surface anatomy",
+        "ribs"
+      ]
+    },
+    {
+      "id": "br-x-035",
+      "number": 168,
+      "question": "During staging ultrasound of a patient with breast cancer, the sonographer extends the exam beyond the axilla. Metastasis to which ipsilateral nodal group is classified as N3 disease in the AJCC system?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mobile level I axillary nodes"
+        },
+        {
+          "letter": "B",
+          "text": "An intramammary lymph node"
+        },
+        {
+          "letter": "C",
+          "text": "Supraclavicular nodes"
+        },
+        {
+          "letter": "D",
+          "text": "Mobile level II axillary nodes"
+        }
+      ],
+      "category": "Axilla, Lymph Nodes & Implants",
+      "correctAnswer": "C",
+      "explanation": "Ipsilateral supraclavicular nodal metastasis is N3 (N3c), as is infraclavicular (level III) involvement, so imaging the supraclavicular fossa changes staging. Mobile level I and II nodes are N1 disease, and intramammary nodes are counted with axillary nodes.",
+      "hint": "N3 reflects the most extensive regional nodal spread in the AJCC system.",
+      "keywords": [
+        "nodal staging",
+        "supraclavicular nodes",
+        "AJCC N category"
+      ]
+    },
+    {
+      "id": "br-x-040",
+      "number": 169,
+      "question": "A male sonographer is assigned a diagnostic breast ultrasound for a female patient. Which practice best protects patient dignity and both parties?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Uncover both breasts throughout so either side can be compared"
+        },
+        {
+          "letter": "B",
+          "text": "Explain the exam, offer a chaperone, and expose only the area being scanned"
+        },
+        {
+          "letter": "C",
+          "text": "Offer a chaperone only if the patient appears anxious"
+        },
+        {
+          "letter": "D",
+          "text": "Avoid explaining the steps so as not to increase patient anxiety"
+        }
+      ],
+      "category": "Interventional Procedures & Patient Care",
+      "correctAnswer": "B",
+      "explanation": "Explaining the procedure, offering a chaperone consistently according to policy, and draping so that only the area being examined is exposed protect privacy and communication. Offering a chaperone only to patients who seem anxious is inconsistent and leaves both patient and sonographer unprotected.",
+      "hint": "Good practice is consistent, communicative and minimizes exposure.",
+      "keywords": [
+        "chaperone",
+        "patient dignity",
+        "communication"
+      ]
+    },
+    {
+      "id": "br-x-012",
+      "number": 170,
+      "question": "Changing from 12 MHz to 18 MHz on a linear transducer improves the ability to separate two closely spaced reflectors lying one above the other along the beam path. Why?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It increases the depth of penetration"
+        },
+        {
+          "letter": "B",
+          "text": "It widens the beam in the elevational plane"
+        },
+        {
+          "letter": "C",
+          "text": "It lengthens the pulse repetition period"
+        },
+        {
+          "letter": "D",
+          "text": "It shortens the spatial pulse length"
+        }
+      ],
+      "category": "Scanning Technique & Instrumentation",
+      "correctAnswer": "D",
+      "explanation": "Axial resolution equals half the spatial pulse length, and higher frequency produces shorter wavelengths and shorter pulses, improving separation of reflectors along the beam. Higher frequency actually reduces penetration, so that option is the reverse of what happens.",
+      "hint": "Reflectors along the beam path are separated by axial resolution; recall what determines it.",
+      "keywords": [
+        "axial resolution",
+        "transducer frequency",
+        "spatial pulse length"
+      ]
     }
   ],
   "exam2": [
@@ -8990,6 +9630,646 @@
       "category": "Scanning Technique & Instrumentation",
       "hint": "Ask what would be needed for another sonographer to find the exact same spot six months later.",
       "keywords": []
+    },
+    {
+      "id": "br-x-007",
+      "number": 151,
+      "question": "A palpable mass measures about 6.5 cm, longer than the 4 cm footprint of the linear transducer. Which technique allows the entire mass to be displayed and measured on a single image?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tissue harmonic imaging"
+        },
+        {
+          "letter": "B",
+          "text": "Spatial compound imaging"
+        },
+        {
+          "letter": "C",
+          "text": "Increasing the display depth"
+        },
+        {
+          "letter": "D",
+          "text": "Extended field-of-view (panoramic) imaging"
+        }
+      ],
+      "category": "Scanning Technique & Instrumentation",
+      "correctAnswer": "D",
+      "explanation": "Extended field-of-view imaging stitches together frames as the transducer slides, creating one image long enough to show and measure a large mass. Increasing depth adds tissue below the image but does not widen a linear array's superficial field of view.",
+      "hint": "Look for the option that builds a longer image as the transducer moves.",
+      "keywords": [
+        "extended field of view",
+        "panoramic imaging",
+        "large mass measurement"
+      ]
+    },
+    {
+      "id": "br-x-025",
+      "number": 152,
+      "question": "A 35-year-old woman reports a palpable area in the left breast at 2 o'clock. Targeted sonography with finger correlation shows only normal fibroglandular tissue and fat, with no mass, cyst or architectural distortion. What is the BI-RADS assessment for the ultrasound exam?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Category 0, incomplete"
+        },
+        {
+          "letter": "B",
+          "text": "Category 2, benign"
+        },
+        {
+          "letter": "C",
+          "text": "Category 3, probably benign"
+        },
+        {
+          "letter": "D",
+          "text": "Category 1, negative"
+        }
+      ],
+      "category": "BI-RADS & Correlation",
+      "correctAnswer": "D",
+      "explanation": "When the area of concern shows only normal tissue and there is nothing to describe, the exam is category 1, negative, while further management of the palpable finding rests on clinical judgment. Category 2 is used when a definitely benign finding, such as a simple cyst, is described in the report.",
+      "hint": "Ask whether there is any finding to describe at all.",
+      "keywords": [
+        "BI-RADS 1",
+        "palpable finding",
+        "negative exam"
+      ]
+    },
+    {
+      "id": "br-x-002",
+      "number": 153,
+      "question": "Breast cancer can metastasize to the vertebral bodies without passing through the lungs. Communication of breast veins with which venous system explains this route?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hepatic portal venous system"
+        },
+        {
+          "letter": "B",
+          "text": "Pulmonary venous system"
+        },
+        {
+          "letter": "C",
+          "text": "Thoracic duct and cisterna chyli"
+        },
+        {
+          "letter": "D",
+          "text": "Valveless vertebral venous plexus (Batson plexus)"
+        }
+      ],
+      "category": "Anatomy & Physiology",
+      "correctAnswer": "D",
+      "explanation": "Intercostal veins draining the breast connect with the valveless vertebral venous plexus (Batson plexus), allowing tumor cells to reach the spine and pelvis directly, bypassing the pulmonary capillary filter. The thoracic duct is a lymphatic channel, not a venous route.",
+      "hint": "The route bypasses the pulmonary capillary bed by way of the intercostal veins.",
+      "keywords": [
+        "venous drainage",
+        "Batson plexus",
+        "bone metastasis"
+      ]
+    },
+    {
+      "id": "br-x-032",
+      "number": 154,
+      "question": "A 50-year-old woman with implants placed 20 years ago is scanned. Each implant shows an inner shell containing silicone surrounded by a thin anechoic fluid compartment and a second smooth, continuous outer shell, symmetric on both sides, with no echogenic lines within the gel. What is the most likely explanation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Intracapsular rupture"
+        },
+        {
+          "letter": "B",
+          "text": "Extracapsular rupture"
+        },
+        {
+          "letter": "C",
+          "text": "A double-lumen implant"
+        },
+        {
+          "letter": "D",
+          "text": "Periprosthetic seroma"
+        }
+      ],
+      "category": "Axilla, Lymph Nodes & Implants",
+      "correctAnswer": "C",
+      "explanation": "A double-lumen implant has an inner silicone lumen and an outer saline lumen, each with its own shell, producing two smooth continuous envelopes that are normally symmetric. A periprosthetic seroma lies outside the implant shell, between the implant and the fibrous capsule, not inside a second shell.",
+      "hint": "Both shells are intact and the appearance is identical on both sides.",
+      "keywords": [
+        "double-lumen implant",
+        "implant types",
+        "rupture mimic"
+      ]
+    },
+    {
+      "id": "br-x-037",
+      "number": 155,
+      "question": "A 49-year-old woman with subglandular saline implants needs ultrasound-guided core biopsy of a 1 cm mass lying just anterior to the implant. Which approach is most appropriate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A path parallel to the implant with the needle tip seen at all times"
+        },
+        {
+          "letter": "B",
+          "text": "Cancel the biopsy because implants are an absolute contraindication"
+        },
+        {
+          "letter": "C",
+          "text": "Deflate the implant percutaneously before the biopsy"
+        },
+        {
+          "letter": "D",
+          "text": "A steep path toward the implant to anchor the lesion"
+        }
+      ],
+      "category": "Interventional Procedures & Patient Care",
+      "correctAnswer": "A",
+      "explanation": "Implants are not a contraindication to percutaneous biopsy; the needle is kept parallel to the implant surface with continuous tip visualization, and a short-throw or non-firing device may be used to avoid puncture. A steep approach toward the implant raises the risk of rupture.",
+      "hint": "The safest path never points the needle tip toward the structure you must avoid.",
+      "keywords": [
+        "biopsy with implants",
+        "needle approach",
+        "implant safety"
+      ]
+    },
+    {
+      "id": "br-x-009",
+      "number": 156,
+      "question": "Posterior acoustic enhancement deep to a simple breast cyst results from which mechanism?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Refraction of the beam at the curved cyst wall"
+        },
+        {
+          "letter": "B",
+          "text": "Lower attenuation of sound in fluid than in surrounding tissue"
+        },
+        {
+          "letter": "C",
+          "text": "Reverberation between the anterior and posterior cyst walls"
+        },
+        {
+          "letter": "D",
+          "text": "Higher propagation speed of sound in the cyst fluid"
+        }
+      ],
+      "category": "Scanning Technique & Instrumentation",
+      "correctAnswer": "B",
+      "explanation": "Fluid attenuates sound less than surrounding tissue, so echoes returning from behind the cyst are stronger than those at the same depth beside it, which time gain compensation does not correct. Refraction at curved walls produces edge (lateral) shadows, not central enhancement.",
+      "hint": "Compare how much energy is lost passing through fluid versus soft tissue.",
+      "keywords": [
+        "posterior enhancement",
+        "attenuation",
+        "cyst physics"
+      ]
+    },
+    {
+      "id": "br-x-015",
+      "number": 157,
+      "question": "A 38-year-old woman who had breast augmentation 2 years ago has a firm, enlarging mass fixed to the chest wall. Sonography shows a 2.5 cm irregular hypoechoic mass with spiculated margins arising from the pectoralis fascia. Core biopsy shows bland spindle cells without atypia and no epithelial component. What is the diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fat necrosis"
+        },
+        {
+          "letter": "B",
+          "text": "Phyllodes tumor"
+        },
+        {
+          "letter": "C",
+          "text": "Invasive lobular carcinoma"
+        },
+        {
+          "letter": "D",
+          "text": "Desmoid-type fibromatosis"
+        }
+      ],
+      "category": "Benign Breast Disease",
+      "correctAnswer": "D",
+      "explanation": "Desmoid-type fibromatosis is a nonmetastasizing but locally aggressive proliferation of bland spindle cells that often arises near the pectoralis fascia and is associated with prior surgery or implants. Phyllodes tumor is a fibroepithelial lesion, so it would contain an epithelial component.",
+      "hint": "The pathology shows only bland fibroblastic cells, with no epithelium.",
+      "keywords": [
+        "fibromatosis",
+        "desmoid",
+        "spindle cell lesion"
+      ]
+    },
+    {
+      "id": "br-x-021",
+      "number": 158,
+      "question": "Which molecular subtype of invasive breast cancer most often appears as an irregular, spiculated mass with posterior acoustic shadowing and carries the most favorable prognosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Luminal A (hormone receptor-positive, HER2-negative, low proliferation)"
+        },
+        {
+          "letter": "B",
+          "text": "Triple negative (ER, PR and HER2 negative)"
+        },
+        {
+          "letter": "C",
+          "text": "HER2-enriched (hormone receptor-negative, HER2-positive)"
+        },
+        {
+          "letter": "D",
+          "text": "Luminal B (hormone receptor-positive, high proliferation)"
+        }
+      ],
+      "category": "Malignant Breast Disease",
+      "correctAnswer": "A",
+      "explanation": "Luminal A cancers are slow-growing, hormone receptor-positive tumors that commonly incite a desmoplastic reaction, producing spiculated shadowing masses, and they have the best prognosis. Triple-negative tumors more often appear round or oval, circumscribed, with posterior enhancement and a worse prognosis.",
+      "hint": "Slow growth and desmoplasia go together with shadowing and spiculation.",
+      "keywords": [
+        "molecular subtypes",
+        "luminal A",
+        "imaging-biology correlation"
+      ]
+    },
+    {
+      "id": "br-x-027",
+      "number": 159,
+      "question": "Which set lists the vascularity descriptors in the BI-RADS ultrasound lexicon (5th edition)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Low, moderate and high"
+        },
+        {
+          "letter": "B",
+          "text": "Peripheral, central and mixed"
+        },
+        {
+          "letter": "C",
+          "text": "Absent, internal vascularity and vessels in rim"
+        },
+        {
+          "letter": "D",
+          "text": "Arterial, venous and mixed"
+        }
+      ],
+      "category": "BI-RADS & Correlation",
+      "correctAnswer": "C",
+      "explanation": "The BI-RADS ultrasound lexicon describes vascularity as an associated feature using absent, internal vascularity, or vessels in rim. Terms such as peripheral, central or mixed are used informally but are not the lexicon descriptors.",
+      "hint": "The lexicon terms focus on whether flow is present and whether it lies inside the mass or at its edge.",
+      "keywords": [
+        "BI-RADS lexicon",
+        "vascularity",
+        "associated features"
+      ]
+    },
+    {
+      "id": "br-x-004",
+      "number": 160,
+      "question": "A 45-year-old woman's craniocaudal mammogram shows a small triangular density at the far posteromedial edge of one breast that is not seen on the mediolateral oblique view. Targeted sonography shows a band of striated muscle running vertically parallel to the sternum, superficial to the pectoralis major, with no mass. What is the most likely explanation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Intramammary lymph node"
+        },
+        {
+          "letter": "B",
+          "text": "Fat necrosis after trauma"
+        },
+        {
+          "letter": "C",
+          "text": "Sternalis muscle, a normal anatomic variant"
+        },
+        {
+          "letter": "D",
+          "text": "Desmoid tumor of the chest wall"
+        }
+      ],
+      "category": "Anatomy & Physiology",
+      "correctAnswer": "C",
+      "explanation": "The sternalis muscle is a normal variant running parallel to the sternum superficial to the pectoralis major; it can appear as a medial density on the craniocaudal view only. Sonographic demonstration of normal striated muscle without a mass confirms it, whereas a desmoid would form an irregular hypoechoic mass.",
+      "hint": "The finding has the normal striated pattern of muscle and lies along the sternum.",
+      "keywords": [
+        "sternalis muscle",
+        "anatomic variant",
+        "mammographic correlation"
+      ]
+    },
+    {
+      "id": "br-x-034",
+      "number": 161,
+      "question": "Under current FDA labeling recommendations for asymptomatic women with silicone gel breast implants, when should imaging for silent rupture begin, and which modalities are acceptable?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "One year after surgery, with MRI only"
+        },
+        {
+          "letter": "B",
+          "text": "Ten years after surgery, with mammography only"
+        },
+        {
+          "letter": "C",
+          "text": "Only once symptoms develop, with CT"
+        },
+        {
+          "letter": "D",
+          "text": "Five to six years after surgery, then every 2 to 3 years, with MRI or ultrasound"
+        }
+      ],
+      "category": "Axilla, Lymph Nodes & Implants",
+      "correctAnswer": "D",
+      "explanation": "Updated FDA labeling recommends first imaging 5 to 6 years after implantation and then every 2 to 3 years, and accepts either MRI or high-resolution ultrasound for asymptomatic patients. Older guidance called for MRI starting 3 years after surgery; mammography is not sensitive for intracapsular rupture.",
+      "hint": "Current guidance starts screening years after surgery and now accepts a non-MRI option.",
+      "keywords": [
+        "silicone implant screening",
+        "FDA recommendation",
+        "silent rupture"
+      ]
+    },
+    {
+      "id": "br-x-039",
+      "number": 162,
+      "question": "Which practice best reduces a sonographer's risk of work-related musculoskeletal injury during breast ultrasound?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Keeping the scanning arm abducted more than 60 degrees for reach"
+        },
+        {
+          "letter": "B",
+          "text": "Gripping the transducer tightly to maintain steady pressure"
+        },
+        {
+          "letter": "C",
+          "text": "Bringing the patient close and keeping arm abduction under about 30 degrees"
+        },
+        {
+          "letter": "D",
+          "text": "Scanning from the same side of the bed for every exam"
+        }
+      ],
+      "category": "Interventional Procedures & Patient Care",
+      "correctAnswer": "C",
+      "explanation": "Positioning the patient close to the sonographer, adjusting table and chair height, and keeping shoulder abduction under about 30 degrees reduce shoulder and neck strain. A tight pinch grip increases forearm and wrist load and is a known risk factor for injury.",
+      "hint": "Ergonomic scanning keeps the elbow close to the body and the grip relaxed.",
+      "keywords": [
+        "ergonomics",
+        "musculoskeletal injury",
+        "sonographer safety"
+      ]
+    },
+    {
+      "id": "br-x-011",
+      "number": 163,
+      "question": "A sonographer activates four transmit focal zones to improve lateral resolution through the full thickness of the breast. Which trade-off results?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reduced frame rate and temporal resolution"
+        },
+        {
+          "letter": "B",
+          "text": "Reduced axial resolution"
+        },
+        {
+          "letter": "C",
+          "text": "Increased tissue attenuation"
+        },
+        {
+          "letter": "D",
+          "text": "Loss of posterior acoustic enhancement"
+        }
+      ],
+      "category": "Scanning Technique & Instrumentation",
+      "correctAnswer": "A",
+      "explanation": "Each focal zone requires separate transmit pulses for every scan line, so multiple focal zones lower the frame rate. Axial resolution depends on spatial pulse length, which focal zone number does not change.",
+      "hint": "Think about how many pulses must be sent to build each frame.",
+      "keywords": [
+        "focal zones",
+        "frame rate",
+        "temporal resolution"
+      ]
+    },
+    {
+      "id": "br-x-017",
+      "number": 164,
+      "question": "A 78-year-old woman admitted with decompensated heart failure reports bilateral breast heaviness. Sonography of both breasts shows diffuse skin thickening, increased echogenicity of the subcutaneous fat, and a reticular network of anechoic fluid-filled channels, with no mass and normal axillary nodes. What is the most likely cause?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bilateral inflammatory carcinoma"
+        },
+        {
+          "letter": "B",
+          "text": "Bilateral lactational mastitis"
+        },
+        {
+          "letter": "C",
+          "text": "Diabetic mastopathy"
+        },
+        {
+          "letter": "D",
+          "text": "Breast edema from systemic fluid overload"
+        }
+      ],
+      "category": "Benign Breast Disease",
+      "correctAnswer": "D",
+      "explanation": "Symmetric bilateral skin thickening and subcutaneous edema in a patient with heart failure, without a mass or abnormal nodes, points to a systemic cause such as fluid overload. Inflammatory carcinoma is usually unilateral and often accompanied by abnormal axillary nodes.",
+      "hint": "Bilateral, symmetric findings in a patient with a systemic condition suggest a systemic cause.",
+      "keywords": [
+        "breast edema",
+        "heart failure",
+        "skin thickening"
+      ]
+    },
+    {
+      "id": "br-x-023",
+      "number": 165,
+      "question": "A 59-year-old woman has a rapidly growing 5 cm mass. Sonography shows an oval, mostly circumscribed mass with a complex cystic and solid pattern, posterior enhancement, and internal vascularity in the solid portions. Biopsy shows a triple-negative carcinoma with squamous and spindle-cell differentiation. What is the diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tubular carcinoma"
+        },
+        {
+          "letter": "B",
+          "text": "Invasive lobular carcinoma"
+        },
+        {
+          "letter": "C",
+          "text": "Metaplastic carcinoma"
+        },
+        {
+          "letter": "D",
+          "text": "Mucinous carcinoma"
+        }
+      ],
+      "category": "Malignant Breast Disease",
+      "correctAnswer": "C",
+      "explanation": "Metaplastic carcinoma contains non-glandular elements such as squamous or spindle cells, is usually triple negative, grows rapidly, and often appears as a large circumscribed complex cystic and solid mass. Mucinous carcinoma can also be circumscribed but shows tumor cells in pools of mucin and is typically hormone receptor-positive.",
+      "hint": "The tumor has differentiated into tissue types not normally found in breast glands.",
+      "keywords": [
+        "metaplastic carcinoma",
+        "triple negative",
+        "complex cystic and solid mass"
+      ]
+    },
+    {
+      "id": "br-x-029",
+      "number": 166,
+      "question": "A 41-year-old woman has a 1.0 cm oval, circumscribed mass assessed as BI-RADS 3. At 6-month follow-up it measures 1.4 cm in longest diameter, with otherwise unchanged features. What is the most appropriate assessment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Upgrade to category 4 and recommend biopsy"
+        },
+        {
+          "letter": "B",
+          "text": "Keep category 3 and repeat in 6 months"
+        },
+        {
+          "letter": "C",
+          "text": "Downgrade to category 2 and return to screening"
+        },
+        {
+          "letter": "D",
+          "text": "Category 0 pending breast MRI"
+        }
+      ],
+      "category": "BI-RADS & Correlation",
+      "correctAnswer": "A",
+      "explanation": "A probably benign mass that grows substantially during surveillance (here 40 percent in longest diameter, above the commonly used 20 percent threshold) no longer meets category 3 criteria and should be biopsied. Continuing surveillance or downgrading ignores interval growth, which is a suspicious change.",
+      "hint": "Category 3 depends on stability; ask whether this mass has been stable.",
+      "keywords": [
+        "BI-RADS 3 follow-up",
+        "interval growth",
+        "biopsy"
+      ]
+    },
+    {
+      "id": "br-x-006",
+      "number": 167,
+      "question": "After axillary lymph node dissection, a 52-year-old woman develops winging of the scapula on that side. Injury to which nerve, which runs along the surface of the serratus anterior muscle on the medial axillary wall, is most likely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Long thoracic nerve"
+        },
+        {
+          "letter": "B",
+          "text": "Thoracodorsal nerve"
+        },
+        {
+          "letter": "C",
+          "text": "Intercostobrachial nerve"
+        },
+        {
+          "letter": "D",
+          "text": "Medial pectoral nerve"
+        }
+      ],
+      "category": "Anatomy & Physiology",
+      "correctAnswer": "A",
+      "explanation": "The long thoracic nerve innervates the serratus anterior, and its injury during axillary surgery causes scapular winging. The thoracodorsal nerve supplies the latissimus dorsi, and intercostobrachial nerve injury causes numbness of the inner upper arm rather than winging.",
+      "hint": "Match the deficit to the muscle that holds the scapula against the chest wall.",
+      "keywords": [
+        "long thoracic nerve",
+        "axillary dissection",
+        "serratus anterior"
+      ]
+    },
+    {
+      "id": "br-x-018",
+      "number": 168,
+      "question": "A 58-year-old woman completed whole-breast radiation after lumpectomy 4 months ago. Sonography of the treated breast shows skin thickening to 4 mm and increased echogenicity of the subcutaneous fat with mild edema, no mass, and a stable linear scar. What is the most appropriate interpretation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Expected post-radiation change that usually decreases over time"
+        },
+        {
+          "letter": "B",
+          "text": "Recurrent inflammatory carcinoma that needs urgent biopsy"
+        },
+        {
+          "letter": "C",
+          "text": "Breast abscess that needs percutaneous drainage"
+        },
+        {
+          "letter": "D",
+          "text": "Lymphoma infiltrating the treated breast"
+        }
+      ],
+      "category": "Benign Breast Disease",
+      "correctAnswer": "A",
+      "explanation": "Skin thickening and edema are expected after breast radiation, typically peaking within the first months and gradually decreasing over 1 to 2 years or more. Worsening thickening after initial improvement, or a new mass, would raise concern for recurrence, but that is not described here.",
+      "hint": "Consider the timing relative to treatment and the absence of any mass.",
+      "keywords": [
+        "post-radiation change",
+        "skin thickening",
+        "post-lumpectomy breast"
+      ]
+    },
+    {
+      "id": "br-x-024",
+      "number": 169,
+      "question": "Which site is the most common location of distant metastasis from breast cancer?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Brain"
+        },
+        {
+          "letter": "B",
+          "text": "Bone"
+        },
+        {
+          "letter": "C",
+          "text": "Ovary"
+        },
+        {
+          "letter": "D",
+          "text": "Adrenal gland"
+        }
+      ],
+      "category": "Malignant Breast Disease",
+      "correctAnswer": "B",
+      "explanation": "Bone, especially the spine, pelvis and ribs, is the most common site of distant breast cancer metastasis, followed by lung, liver and brain. Brain metastases occur more often in HER2-positive and triple-negative disease but are less common overall.",
+      "hint": "Brain metastases are clinically dramatic, but they are not the most frequent site overall.",
+      "keywords": [
+        "distant metastasis",
+        "bone",
+        "staging"
+      ]
+    },
+    {
+      "id": "br-x-030",
+      "number": 170,
+      "question": "Which BI-RADS assessment categories carry a management recommendation of tissue diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Categories 2 and 3"
+        },
+        {
+          "letter": "B",
+          "text": "Category 0 only"
+        },
+        {
+          "letter": "C",
+          "text": "Categories 3 and 6"
+        },
+        {
+          "letter": "D",
+          "text": "Categories 4 and 5"
+        }
+      ],
+      "category": "BI-RADS & Correlation",
+      "correctAnswer": "D",
+      "explanation": "Categories 4 (suspicious) and 5 (highly suggestive of malignancy) carry a recommendation for tissue diagnosis. Category 3 is managed with short-interval follow-up, and category 6 is used for already biopsy-proven cancer, so further diagnostic biopsy of that lesion is not the recommendation.",
+      "hint": "Which categories describe findings that are suspicious rather than benign or already proven?",
+      "keywords": [
+        "BI-RADS management",
+        "tissue diagnosis",
+        "categories 4 and 5"
+      ]
     }
   ]
 }

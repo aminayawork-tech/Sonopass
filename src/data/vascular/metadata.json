@@ -14,17 +14,17 @@
     "Arterial Disease"
   ],
   "categoryTotals": {
-    "Cerebrovascular": 44,
-    "Physics & Instrumentation": 22,
-    "Arterial Anatomy": 14,
-    "General & Other": 17,
-    "Treatment & Procedures": 15,
-    "Clinical Applications": 37,
-    "Venous Anatomy": 19,
-    "Venous Hemodynamics": 15,
-    "Venous Disease": 38,
-    "Arterial Hemodynamics": 32,
-    "Arterial Disease": 29
+    "Cerebrovascular": 84,
+    "Physics & Instrumentation": 39,
+    "Arterial Anatomy": 22,
+    "General & Other": 34,
+    "Treatment & Procedures": 22,
+    "Clinical Applications": 77,
+    "Venous Anatomy": 30,
+    "Venous Hemodynamics": 25,
+    "Venous Disease": 74,
+    "Arterial Hemodynamics": 52,
+    "Arterial Disease": 51
   },
   "examModes": [
     {
@@ -46,8 +46,8 @@
     {
       "id": "mock-1",
       "name": "Mock Exam 1",
-      "description": "Full practice exam (100 questions)",
-      "questionCount": 100,
+      "description": "Full-length exam: 170 questions, 3 hours",
+      "questionCount": 170,
       "shuffle": true,
       "showAnswers": false,
       "timed": false
@@ -55,8 +55,8 @@
     {
       "id": "mock-2",
       "name": "Mock Exam 2",
-      "description": "Full practice exam (84 questions)",
-      "questionCount": 84,
+      "description": "Full-length exam: 170 questions, 3 hours",
+      "questionCount": 170,
       "shuffle": true,
       "showAnswers": false,
       "timed": false
@@ -64,13 +64,13 @@
     {
       "id": "mock-3",
       "name": "Mock Exam 3",
-      "description": "Full practice exam (98 questions)",
-      "questionCount": 98,
+      "description": "Full-length exam: 170 questions, 3 hours",
+      "questionCount": 170,
       "shuffle": true,
       "showAnswers": false,
       "timed": false
     }
   ],
-  "totalQuestions": 282,
+  "totalQuestions": 510,
   "passingScore": 75
 }

@@ -81,7 +81,7 @@ export function ExamStartScreen({
 
         {timed && pace && (
           <p className="text-[12.5px] text-slate-500 mt-3 leading-relaxed">
-            Paced like the real exam ({pace.label}).
+            Same time limit and pace as the real exam ({pace.label}).
           </p>
         )}
 

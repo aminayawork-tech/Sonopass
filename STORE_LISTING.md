@@ -33,7 +33,7 @@ They appear only in the description, used descriptively alongside the "not affil
 ### Promotional text (170) — can be changed any time without a new version
 
 ```
-Launch deal: SonoPass Pro Lifetime at the launch price. 2,700+ practice questions, 21 timed mock exams and flashcards for all 9 registry exams.
+Launch deal: SonoPass Pro Lifetime at the launch price. 3,200+ practice questions, 20 full-length mock exams and flashcards for all 9 registry exams.
 ```
 
 ### Description (4,000)
@@ -41,7 +41,7 @@ Launch deal: SonoPass Pro Lifetime at the launch price. 2,700+ practice question
 ```
 Pass your ultrasound registry exam with confidence.
 
-SonoPass is the study companion for sonography students and working sonographers preparing for their registry exams. Practice with more than 2,700 exam-style questions, take timed mock exams paced like the real test, and review every topic with flashcards, all in one app.
+SonoPass is the study companion for sonography students and working sonographers preparing for their registry exams. Practice with more than 3,200 exam-style questions, take full-length mock exams timed like the real test, and review every topic with flashcards, all in one app.
 
 9 REGISTRY EXAMS IN ONE APP
 • Sonography Principles & Instrumentation (SPI)
@@ -56,9 +56,9 @@ SonoPass is the study companion for sonography students and working sonographers
 Switch between exams anytime.
 
 PRACTICE THAT FEELS LIKE THE REAL EXAM
-• 2,700+ practice questions, each with a clear explanation
+• 3,200+ practice questions, each with a clear explanation
 • Hints when you're stuck, so you learn the reasoning, not just the answer
-• 21 timed mock exams, at least two for every registry, with a question grid, flags and a review screen
+• 20 full-length mock exams with the real exam's length and time limit (SPI: 110 questions in 2 hours; RVT and specialties: 170 questions in 3 hours), with a question grid, flags and a review screen
 • Quick 10: a five-minute session for busy days
 • Study mode by category to drill your weak areas
 
@@ -133,7 +133,7 @@ No analytics, advertising or third-party tracking SDKs are included.
 Required: **6.9" iPhone** (1320 × 2868 or 1290 × 2796). Take them in the Simulator
 (iPhone 17 Pro Max) with ⌘S. Suggested order and captions:
 1. Home screen: "Pass your registry exam with confidence"
-2. A practice question with its explanation: "2,700+ questions with explanations"
+2. A practice question with its explanation: "3,200+ questions with explanations"
 3. A mock exam in progress: "Timed mock exams like the real thing"
 4. Flashcards: "Flashcards for every topic"
 5. Registry picker: "9 registry exams in one app"

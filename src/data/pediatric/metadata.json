@@ -10,14 +10,14 @@
     "Patient Care & Technique"
   ],
   "categoryTotals": {
-    "Neonatal Brain": 38,
-    "Pediatric Abdomen": 38,
-    "Pediatric GI Tract": 38,
-    "Urinary Tract & Adrenals": 38,
-    "Pelvis & Scrotum": 38,
-    "Spine, Hips & Musculoskeletal": 38,
-    "Neck, Chest & Oncology": 36,
-    "Patient Care & Technique": 36
+    "Neonatal Brain": 43,
+    "Pediatric Abdomen": 43,
+    "Pediatric GI Tract": 43,
+    "Urinary Tract & Adrenals": 43,
+    "Pelvis & Scrotum": 43,
+    "Spine, Hips & Musculoskeletal": 43,
+    "Neck, Chest & Oncology": 41,
+    "Patient Care & Technique": 41
   },
   "examModes": [
     {
@@ -35,16 +35,16 @@
     {
       "id": "mock-1",
       "name": "Mock Exam 1",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-1"
     },
     {
       "id": "mock-2",
       "name": "Mock Exam 2",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-2"
     }
   ],
-  "totalQuestions": 300,
+  "totalQuestions": 340,
   "passingScore": 555
 }
