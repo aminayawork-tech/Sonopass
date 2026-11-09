@@ -100,6 +100,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setLocalOwner(uid);
   }, [supabase, handleRevoked]);
 
+  // Plan from the account (Supabase entitlements, e.g. a website purchase) and admin status
+  const loadAccountPlan = useCallback(async (uid: string): Promise<Plan> => {
+    if (!supabase) return 'free';
+    const { data: ent } = await supabase.from('entitlements').select('plan, status, expires_at').eq('user_id', uid).maybeSingle();
+    const active = ent && ent.status === 'active' && (!ent.expires_at || new Date(ent.expires_at) > new Date());
+    const accountPlan: Plan = active ? (ent.plan as Plan) : 'free';
+    setPlan(accountPlan);
+    const { data: admin } = await supabase.from('admins').select('user_id').eq('user_id', uid).maybeSingle();
+    setIsAdmin(Boolean(admin));
+    return Boolean(admin) ? 'lifetime' : accountPlan;
+  }, [supabase]);
+
   const syncForUser = useCallback(async (u: User) => {
     if (!supabase || syncedFor.current === u.id) return;
     syncedFor.current = u.id;
@@ -158,17 +170,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         }).eq('id', u.id);
       }
 
-      const { data: ent } = await supabase.from('entitlements').select('plan, status, expires_at').eq('user_id', u.id).maybeSingle();
-      const active = ent && ent.status === 'active' && (!ent.expires_at || new Date(ent.expires_at) > new Date());
-      setPlan(active ? (ent.plan as Plan) : 'free');
-      const { data: admin } = await supabase.from('admins').select('user_id').eq('user_id', u.id).maybeSingle();
-      setIsAdmin(Boolean(admin));
+      await loadAccountPlan(u.id);
     } finally {
       setSyncing(false);
     }
     // switchModality is recreated each render by its provider; the sync runs once per user anyway
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [supabase, handleRevoked, pushNow]);
+  }, [supabase, handleRevoked, pushNow, loadAccountPlan]);
 
   // Session bootstrap and auth events
   useEffect(() => {
@@ -295,14 +303,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setIsAdmin(false);
   }, [supabase, pushNow]);
 
-  // Store app: check what this Apple ID / Google account has bought, at start and whenever the app comes back
+  // Re-check Pro: the account plan (website purchases) and, in the store app, what this Apple ID /
+  // Google account has bought. Runs at start, whenever the app comes back, and after a purchase.
   const refreshPro = useCallback(async () => {
-    if (!storeAvailable()) return false;
+    const u = userRef.current;
+    const accountPlan = u ? await loadAccountPlan(u.id) : 'free';
+    if (!storeAvailable()) return accountPlan !== 'free';
     const owned = await getStorePlan();
     setStorePlan(owned);
     setProReady(true);
-    return owned !== null;
-  }, []);
+    return owned !== null || accountPlan !== 'free';
+  }, [loadAccountPlan]);
 
   useEffect(() => {
     if (!storeAvailable()) return;

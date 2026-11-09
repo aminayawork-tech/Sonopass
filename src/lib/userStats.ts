@@ -269,8 +269,8 @@ export function recordExamComplete(
     total,
     date: new Date().toISOString(),
   });
-  // Exam completion bonus
-  const xpGained = 50;
+  // Completion bonus only for a passing score (70%+), so finishing with wrong answers earns nothing extra
+  const xpGained = total > 0 && score / total >= 0.7 ? 50 : 0;
   modalityStats.xp += xpGained;
   modalityStats.level = Math.floor(modalityStats.xp / 500) + 1;
 

@@ -270,7 +270,7 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
       setStats(latestStats);
     }
     if (examId) {
-      const result = recordExamComplete(examId, correctAnswers, isExam ? questions.length : answeredCount, modality);
+      const result = recordExamComplete(examId, correctAnswers, questions.length, modality);
       setStats(result.stats);
       if (result.newBadges.length > 0) {
         showBadgeNotification(result.newBadges[0]);

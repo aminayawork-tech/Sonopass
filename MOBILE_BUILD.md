@@ -131,9 +131,9 @@ To test before release: TestFlight builds use the sandbox automatically, so purc
 ### How Pro is decided
 - In the store apps: whatever the Apple ID / Google account has bought (checked at launch, when the
   app comes back to the foreground, and with **Restore purchases**).
-- On the website: the `entitlements` table in Supabase (set a row's `plan` to `monthly` or `lifetime`
-  by hand for anyone you want to give Pro on the web). App Store purchases are not copied to the
-  website automatically yet.
+- On the website: the `entitlements` table in Supabase. Website Lifetime purchases (Stripe, see
+  WEB_PAYMENTS.md) set it automatically and also unlock Pro in the app after signing in. App Store /
+  Google Play purchases are not copied to the website automatically yet.
 
 ## What the store apps do differently from the website
 
