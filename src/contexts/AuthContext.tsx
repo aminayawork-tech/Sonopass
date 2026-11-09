@@ -159,8 +159,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const { data: profile } = await supabase.from('profiles').select('exam_focus, exam_date, onboarded_at').eq('id', u.id).maybeSingle();
       const localOnboarding = getOnboarding();
       if (profile?.onboarded_at) {
-        saveOnboarding({ examFocus: profile.exam_focus, examDate: profile.exam_date, completedAt: profile.onboarded_at });
-        if (profile.exam_focus) switchModality(profile.exam_focus);
+        // Keep the exam date in sync, but only pick the registry on a device that hasn't chosen one yet,
+        // so switching registries in the app isn't undone on the next launch
+        const firstTimeHere = !localOnboarding.completedAt;
+        saveOnboarding({
+          examFocus: firstTimeHere ? profile.exam_focus : localOnboarding.examFocus,
+          examDate: profile.exam_date,
+          completedAt: profile.onboarded_at,
+        });
+        if (firstTimeHere && profile.exam_focus) switchModality(profile.exam_focus);
       } else if (localOnboarding.completedAt) {
         await supabase.from('profiles').update({
           exam_focus: localOnboarding.examFocus,

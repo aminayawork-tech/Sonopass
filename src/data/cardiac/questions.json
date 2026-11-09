@@ -4499,6 +4499,645 @@
       "keywords": [
         "three aortic cusps"
       ]
+    },
+    {
+      "id": "ae-x-001",
+      "number": 151,
+      "question": "In a healthy 25-year-old, which phase of diastole contributes the largest share of left ventricular filling?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Isovolumic relaxation"
+        },
+        {
+          "letter": "B",
+          "text": "Early rapid filling"
+        },
+        {
+          "letter": "C",
+          "text": "Diastasis"
+        },
+        {
+          "letter": "D",
+          "text": "Atrial contraction"
+        }
+      ],
+      "category": "Anatomy & Physiology",
+      "correctAnswer": "B",
+      "explanation": "In young healthy hearts, brisk active relaxation creates a suction effect so that roughly 70-80% of LV filling occurs during the early rapid filling phase (mitral E wave). Atrial contraction normally adds only about 15-25%, although its share increases with age and impaired relaxation; no filling occurs during isovolumic relaxation.",
+      "hint": "Think about which mitral inflow wave is dominant in a young, compliant ventricle.",
+      "keywords": [
+        "diastolic filling phases",
+        "E wave",
+        "LV relaxation"
+      ]
+    },
+    {
+      "id": "ae-x-005",
+      "number": 152,
+      "question": "A 60-year-old with chronic aortic regurgitation has a blood pressure of 130/60 mmHg. The CW Doppler AR end-diastolic velocity is 3 m/s. What is the estimated LV end-diastolic pressure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "12 mmHg"
+        },
+        {
+          "letter": "B",
+          "text": "18 mmHg"
+        },
+        {
+          "letter": "C",
+          "text": "24 mmHg"
+        },
+        {
+          "letter": "D",
+          "text": "36 mmHg"
+        }
+      ],
+      "category": "Measurements & Hemodynamics",
+      "correctAnswer": "C",
+      "explanation": "The end-diastolic AR gradient is 4 x 3² = 36 mmHg, which equals aortic diastolic pressure minus LVEDP. LVEDP is therefore 60 - 36 = 24 mmHg. Choosing 36 mmHg mistakes the gradient itself for the LV pressure.",
+      "hint": "The AR end-diastolic gradient is the difference between aortic diastolic pressure and LV end-diastolic pressure.",
+      "keywords": [
+        "aortic regurgitation",
+        "LVEDP",
+        "simplified Bernoulli"
+      ]
+    },
+    {
+      "id": "ae-x-010",
+      "number": 153,
+      "question": "A 69-year-old has a calcified aortic valve with a peak velocity of 3.4 m/s, a mean gradient of 26 mmHg, and an AVA of 1.2 cm². LVEF is normal. How should the aortic stenosis be graded?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aortic sclerosis without stenosis"
+        },
+        {
+          "letter": "B",
+          "text": "Mild aortic stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Moderate aortic stenosis"
+        },
+        {
+          "letter": "D",
+          "text": "Severe aortic stenosis"
+        }
+      ],
+      "category": "Valvular Stenosis",
+      "correctAnswer": "C",
+      "explanation": "Moderate AS is defined by a peak velocity of 3.0-3.9 m/s, a mean gradient of 20-39 mmHg, and an AVA of 1.0-1.5 cm², and all three parameters agree here. Mild AS has a velocity of 2.0-2.9 m/s and mean gradient under 20 mmHg, and sclerosis implies a velocity of 2.5 m/s or less.",
+      "hint": "Check each parameter against the guideline ranges; they are concordant.",
+      "keywords": [
+        "aortic stenosis grading",
+        "peak velocity",
+        "mean gradient"
+      ]
+    },
+    {
+      "id": "ae-x-015",
+      "number": 154,
+      "question": "A 58-year-old with mitral regurgitation has a stroke volume at the mitral annulus of 120 mL and an LVOT stroke volume of 70 mL, with no aortic regurgitation. What are the regurgitant volume and regurgitant fraction?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "50 mL and 42%, consistent with moderate MR"
+        },
+        {
+          "letter": "B",
+          "text": "50 mL and 71%, consistent with severe MR"
+        },
+        {
+          "letter": "C",
+          "text": "70 mL and 58%, consistent with severe MR"
+        },
+        {
+          "letter": "D",
+          "text": "50 mL and 29%, consistent with mild MR"
+        }
+      ],
+      "category": "Valvular Regurgitation & Prosthetic Valves",
+      "correctAnswer": "A",
+      "explanation": "Regurgitant volume is mitral inflow stroke volume minus LVOT stroke volume (120 - 70 = 50 mL), and regurgitant fraction is 50/120 = 42%. Both fall in the moderate range (30-59 mL and 30-49%); dividing by the LVOT stroke volume instead of the total mitral inflow gives the erroneous 71%.",
+      "hint": "The regurgitant fraction is the regurgitant volume divided by the total volume crossing the leaking valve.",
+      "keywords": [
+        "regurgitant volume",
+        "regurgitant fraction",
+        "volumetric method"
+      ]
+    },
+    {
+      "id": "ae-x-020",
+      "number": 155,
+      "question": "A 55-year-old man has a biplane LVEF of 46%. Using ASE 2015 chamber quantification ranges for men, how should LV systolic function be reported?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal"
+        },
+        {
+          "letter": "B",
+          "text": "Moderately abnormal"
+        },
+        {
+          "letter": "C",
+          "text": "Severely abnormal"
+        },
+        {
+          "letter": "D",
+          "text": "Mildly abnormal"
+        }
+      ],
+      "category": "Cardiomyopathies & Ventricular Function",
+      "correctAnswer": "D",
+      "explanation": "ASE 2015 ranges for men are normal 52-72%, mildly abnormal 41-51%, moderately abnormal 30-40%, and severely abnormal below 30%, so 46% is mildly abnormal. Moderately abnormal would require an EF of 40% or less.",
+      "hint": "The normal range for men begins at 52%.",
+      "keywords": [
+        "ejection fraction",
+        "ASE reference ranges",
+        "LV systolic function"
+      ]
+    },
+    {
+      "id": "ae-x-025",
+      "number": 156,
+      "question": "According to the ischemic cascade, which abnormality occurs first after a reduction in coronary blood flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Chest pain"
+        },
+        {
+          "letter": "B",
+          "text": "ST-segment changes on the ECG"
+        },
+        {
+          "letter": "C",
+          "text": "Regional wall motion abnormality"
+        },
+        {
+          "letter": "D",
+          "text": "Myocardial perfusion heterogeneity"
+        }
+      ],
+      "category": "Coronary Artery Disease",
+      "correctAnswer": "D",
+      "explanation": "The ischemic cascade proceeds from perfusion heterogeneity to metabolic changes, diastolic then systolic dysfunction, ECG changes, and finally angina. Wall motion abnormalities appear earlier than ECG changes or symptoms, which is why stress echo is more sensitive than the ECG, but they are not the first event.",
+      "hint": "Start with the event closest to the actual reduction in flow.",
+      "keywords": [
+        "ischemic cascade",
+        "stress echocardiography",
+        "perfusion"
+      ]
+    },
+    {
+      "id": "ae-x-029",
+      "number": 157,
+      "question": "Two days after coronary bypass surgery, a 67-year-old becomes hypotensive with rising filling pressures. TTE windows are limited and show no circumferential effusion, but a localized echodensity is suspected behind the left atrium. What is the best next step?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Report that tamponade has been excluded"
+        },
+        {
+          "letter": "B",
+          "text": "Repeat the TTE in 24 hours"
+        },
+        {
+          "letter": "C",
+          "text": "Perform TEE to look for a localized posterior hematoma compressing the atria"
+        },
+        {
+          "letter": "D",
+          "text": "Perform an agitated saline study"
+        }
+      ],
+      "category": "Pericardial Disease & Masses",
+      "correctAnswer": "C",
+      "explanation": "After cardiac surgery, tamponade is often caused by a loculated clot that compresses a single chamber, commonly the atria, without a circumferential effusion or classic signs on TTE. TEE images the posterior structures well and is the next step; a nondiagnostic TTE cannot exclude tamponade in an unstable patient.",
+      "hint": "Postoperative tamponade can be focal and posterior, beyond what a limited transthoracic window shows.",
+      "keywords": [
+        "postoperative tamponade",
+        "loculated effusion",
+        "TEE"
+      ]
+    },
+    {
+      "id": "ae-x-033",
+      "number": 158,
+      "question": "A 35-year-old with exertional dyspnea has a thin membrane dividing the left atrium, located above (proximal to) the left atrial appendage, with turbulent flow through an opening in the membrane. The mitral leaflets are normal. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Supravalvular mitral ring"
+        },
+        {
+          "letter": "B",
+          "text": "Cor triatriatum sinister"
+        },
+        {
+          "letter": "C",
+          "text": "Rheumatic mitral stenosis"
+        },
+        {
+          "letter": "D",
+          "text": "Prominent left atrial ridge"
+        }
+      ],
+      "category": "Adult Congenital & Aortic Disease",
+      "correctAnswer": "B",
+      "explanation": "In cor triatriatum sinister, a membrane separates the pulmonary venous chamber from the true LA, and it lies above the LA appendage, so the appendage communicates with the distal chamber. A supravalvular mitral ring lies below the appendage, close to the mitral annulus, and rheumatic MS involves the leaflets themselves.",
+      "hint": "The position of the membrane relative to the appendage distinguishes the two membrane lesions.",
+      "keywords": [
+        "cor triatriatum",
+        "left atrial membrane",
+        "inflow obstruction"
+      ]
+    },
+    {
+      "id": "ae-x-037",
+      "number": 159,
+      "question": "According to current US labeling for perflutren-based ultrasound enhancing agents, which is a contraindication to their use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A known patent foramen ovale"
+        },
+        {
+          "letter": "B",
+          "text": "Stable chronic kidney disease"
+        },
+        {
+          "letter": "C",
+          "text": "Use during pharmacologic stress testing"
+        },
+        {
+          "letter": "D",
+          "text": "Known hypersensitivity to perflutren or polyethylene glycol"
+        }
+      ],
+      "category": "Instrumentation, TEE & Contrast",
+      "correctAnswer": "D",
+      "explanation": "The current contraindication for perflutren agents is known or suspected hypersensitivity to the agent or its components, including polyethylene glycol. Known right-to-left or bidirectional shunts were removed from the contraindication list, and the agents are not renally toxic and are routinely used with stress echo.",
+      "hint": "Earlier shunt restrictions were dropped; the remaining contraindication concerns allergy.",
+      "keywords": [
+        "ultrasound enhancing agents",
+        "contraindications",
+        "perflutren"
+      ]
+    },
+    {
+      "id": "ae-x-002",
+      "number": 160,
+      "question": "During normal quiet inspiration in a healthy adult, the systolic blood pressure typically falls by how much?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "More than 30 mmHg"
+        },
+        {
+          "letter": "B",
+          "text": "20 to 30 mmHg"
+        },
+        {
+          "letter": "C",
+          "text": "12 to 20 mmHg"
+        },
+        {
+          "letter": "D",
+          "text": "Less than 10 mmHg"
+        }
+      ],
+      "category": "Anatomy & Physiology",
+      "correctAnswer": "D",
+      "explanation": "Inspiration normally causes a small fall in systolic pressure of less than 10 mmHg because of pooling in the pulmonary veins and mild ventricular interdependence. A fall greater than 10 mmHg is pulsus paradoxus, a clinical hallmark of tamponade, so the larger values describe pathologic, not normal, physiology.",
+      "hint": "Normal respiratory variation is small; a larger fall is a pathologic sign associated with tamponade.",
+      "keywords": [
+        "respiratory variation",
+        "pulsus paradoxus",
+        "ventricular interdependence"
+      ]
+    },
+    {
+      "id": "ae-x-006",
+      "number": 161,
+      "question": "A 55-year-old with suspected pulmonary hypertension has an early-diastolic peak pulmonic regurgitation velocity of 3 m/s and an estimated RA pressure of 5 mmHg. Using 4V² plus RA pressure, what is the estimated mean pulmonary artery pressure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "41 mmHg"
+        },
+        {
+          "letter": "B",
+          "text": "36 mmHg"
+        },
+        {
+          "letter": "C",
+          "text": "23 mmHg"
+        },
+        {
+          "letter": "D",
+          "text": "17 mmHg"
+        }
+      ],
+      "category": "Measurements & Hemodynamics",
+      "correctAnswer": "A",
+      "explanation": "The early-diastolic PR gradient approximates the mean PA to RV pressure difference: 4 x 3² = 36 mmHg, and adding RA pressure of 5 mmHg gives about 41 mmHg. Answering 36 mmHg forgets to add the RA pressure; PA diastolic pressure is instead estimated from the end-diastolic PR velocity.",
+      "hint": "Use the early (peak) PR velocity for the mean pressure and remember the RA pressure term.",
+      "keywords": [
+        "pulmonic regurgitation",
+        "mean PA pressure",
+        "pulmonary hypertension"
+      ]
+    },
+    {
+      "id": "ae-x-011",
+      "number": 162,
+      "question": "According to ACC/AHA guidelines, which Doppler finding defines very severe aortic stenosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Peak velocity of 4 m/s or more, or mean gradient of 40 mmHg or more"
+        },
+        {
+          "letter": "B",
+          "text": "Peak velocity of 5 m/s or more, or mean gradient of 60 mmHg or more"
+        },
+        {
+          "letter": "C",
+          "text": "Dimensionless index less than 0.50 with a calcified valve"
+        },
+        {
+          "letter": "D",
+          "text": "Peak velocity of 3.5 m/s with an AVA under 1.0 cm²"
+        }
+      ],
+      "category": "Valvular Stenosis",
+      "correctAnswer": "B",
+      "explanation": "Very severe AS is a peak velocity of at least 5 m/s or a mean gradient of at least 60 mmHg, a group with a high event rate even when asymptomatic. A peak velocity of 4 m/s or a mean gradient of 40 mmHg is the threshold for severe, not very severe, AS.",
+      "hint": "The answer is one step above the standard severe thresholds.",
+      "keywords": [
+        "very severe aortic stenosis",
+        "ACC/AHA staging"
+      ]
+    },
+    {
+      "id": "ae-x-016",
+      "number": 163,
+      "question": "Per ASE guidelines, which effective regurgitant orifice area indicates severe aortic regurgitation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.10 cm² or greater"
+        },
+        {
+          "letter": "B",
+          "text": "0.20 cm² or greater"
+        },
+        {
+          "letter": "C",
+          "text": "0.30 cm² or greater"
+        },
+        {
+          "letter": "D",
+          "text": "0.60 cm² or greater"
+        }
+      ],
+      "category": "Valvular Regurgitation & Prosthetic Valves",
+      "correctAnswer": "C",
+      "explanation": "For aortic regurgitation, an EROA of 0.30 cm² or more (with a regurgitant volume of 60 mL or more and a regurgitant fraction of 50% or more) indicates severe AR. An EROA of 0.10-0.29 cm² falls in the mild-to-moderate range, so 0.20 cm² is not sufficient.",
+      "hint": "The AR threshold is lower than the 0.40 cm² threshold used for primary MR.",
+      "keywords": [
+        "aortic regurgitation",
+        "EROA",
+        "severity grading"
+      ]
+    },
+    {
+      "id": "ae-x-021",
+      "number": 164,
+      "question": "A 46-year-old woman with bilateral hilar lymphadenopathy has palpitations and complete heart block. Echo shows thinning and akinesis of the basal anteroseptum in a pattern that does not follow a coronary distribution. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cardiac sarcoidosis"
+        },
+        {
+          "letter": "B",
+          "text": "Takotsubo cardiomyopathy"
+        },
+        {
+          "letter": "C",
+          "text": "Chagas cardiomyopathy"
+        },
+        {
+          "letter": "D",
+          "text": "Hypertrophic cardiomyopathy"
+        }
+      ],
+      "category": "Cardiomyopathies & Ventricular Function",
+      "correctAnswer": "A",
+      "explanation": "Cardiac sarcoidosis characteristically causes thinning or aneurysm of the basal septum, conduction block, and wall motion abnormalities outside a coronary distribution, and hilar adenopathy suggests systemic sarcoid. Chagas disease typically produces an apical aneurysm, and takotsubo affects the mid and apical segments.",
+      "hint": "Link the pulmonary finding and conduction disease to an infiltrative granulomatous process.",
+      "keywords": [
+        "cardiac sarcoidosis",
+        "basal septal thinning",
+        "heart block"
+      ]
+    },
+    {
+      "id": "ae-x-026",
+      "number": 165,
+      "question": "A 66-year-old with three-vessel coronary disease and chronic stable angina has a resting akinetic anterior wall of normal thickness. Low-dose dobutamine improves its contraction, and after bypass surgery the segment's function recovers over several months. Which term best describes the segment before surgery?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hibernating myocardium"
+        },
+        {
+          "letter": "B",
+          "text": "Stunned myocardium"
+        },
+        {
+          "letter": "C",
+          "text": "Transmural scar"
+        },
+        {
+          "letter": "D",
+          "text": "Infarct expansion"
+        }
+      ],
+      "category": "Coronary Artery Disease",
+      "correctAnswer": "A",
+      "explanation": "Hibernating myocardium is viable tissue with chronically reduced resting flow that downregulates contraction and recovers after revascularization. Stunned myocardium follows a brief episode of ischemia with restored flow and recovers on its own without revascularization, while transmural scar would not show contractile reserve.",
+      "hint": "Distinguish chronic reduced flow that needs revascularization from transient dysfunction after flow is restored.",
+      "keywords": [
+        "hibernating myocardium",
+        "viability",
+        "revascularization"
+      ]
+    },
+    {
+      "id": "ae-x-030",
+      "number": 166,
+      "question": "A 54-year-old undergoes pericardiocentesis for a large effusion with tamponade. After drainage the RA pressure remains elevated, and echo now shows a septal bounce with respiratory ventricular interdependence. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Rapid reaccumulation of tamponade"
+        },
+        {
+          "letter": "B",
+          "text": "Restrictive cardiomyopathy"
+        },
+        {
+          "letter": "C",
+          "text": "Right ventricular infarction"
+        },
+        {
+          "letter": "D",
+          "text": "Effusive-constrictive pericarditis"
+        }
+      ],
+      "category": "Pericardial Disease & Masses",
+      "correctAnswer": "D",
+      "explanation": "In effusive-constrictive pericarditis, a stiff visceral pericardium continues to constrain filling after the effusion is removed, so RA pressure stays high and constrictive features such as a septal bounce appear. Restrictive cardiomyopathy does not show exaggerated respiratory interdependence, and reaccumulation would show recurrent fluid.",
+      "hint": "The constraint persists even after the fluid is gone.",
+      "keywords": [
+        "effusive-constrictive pericarditis",
+        "pericardiocentesis",
+        "septal bounce"
+      ]
+    },
+    {
+      "id": "ae-x-034",
+      "number": 167,
+      "question": "A 70-year-old hypertensive with acute chest pain has smooth, crescentic thickening of the descending aortic wall measuring 9 mm on TEE, with no intimal flap and no color flow within the thickened area. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Classic dissection with a patent false lumen"
+        },
+        {
+          "letter": "B",
+          "text": "Mobile atherosclerotic plaque"
+        },
+        {
+          "letter": "C",
+          "text": "Aortic intramural hematoma"
+        },
+        {
+          "letter": "D",
+          "text": "Reverberation artifact"
+        }
+      ],
+      "category": "Adult Congenital & Aortic Disease",
+      "correctAnswer": "C",
+      "explanation": "Intramural hematoma appears as smooth, crescentic or circular aortic wall thickening greater than 5 mm without a visible intimal flap or flow, and it is managed as a variant of acute aortic syndrome. A patent false lumen would show flow and a flap, and atheroma is typically irregular and protrudes into the lumen.",
+      "hint": "This acute aortic syndrome has blood within the wall but no communication with the lumen.",
+      "keywords": [
+        "intramural hematoma",
+        "acute aortic syndrome",
+        "TEE"
+      ]
+    },
+    {
+      "id": "ae-x-038",
+      "number": 168,
+      "question": "On TEE, which view provides the best Doppler alignment with the LVOT and aortic valve for measuring transaortic velocity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Midesophageal aortic valve short-axis view"
+        },
+        {
+          "letter": "B",
+          "text": "Deep transgastric long-axis view"
+        },
+        {
+          "letter": "C",
+          "text": "Midesophageal four-chamber view"
+        },
+        {
+          "letter": "D",
+          "text": "Upper esophageal aortic arch short-axis view"
+        }
+      ],
+      "category": "Instrumentation, TEE & Contrast",
+      "correctAnswer": "B",
+      "explanation": "From the deep transgastric position the beam is directed up through the LV apex and aligns nearly parallel with LVOT and transaortic flow, similar to an apical window on TTE. The midesophageal aortic valve short-axis view is excellent for planimetry and cusp anatomy but places flow perpendicular to the beam.",
+      "hint": "Doppler needs a view that looks along the outflow tract from the apex.",
+      "keywords": [
+        "TEE views",
+        "deep transgastric",
+        "aortic valve Doppler"
+      ]
+    },
+    {
+      "id": "ae-x-003",
+      "number": 169,
+      "question": "Which muscular ridge in the right ventricle separates the tricuspid inflow portion from the smooth-walled outflow tract (infundibulum)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Crista supraventricularis"
+        },
+        {
+          "letter": "B",
+          "text": "Moderator band"
+        },
+        {
+          "letter": "C",
+          "text": "Crista terminalis"
+        },
+        {
+          "letter": "D",
+          "text": "Eustachian valve"
+        }
+      ],
+      "category": "Anatomy & Physiology",
+      "correctAnswer": "A",
+      "explanation": "The crista supraventricularis is a muscular ridge in the RV that divides the trabeculated inflow from the smooth infundibulum leading to the pulmonic valve. The moderator band is a different RV structure that runs from the septum to the anterior papillary muscle near the apex, while the crista terminalis and Eustachian valve are right atrial structures.",
+      "hint": "The answer is an RV structure located near the base, between the tricuspid and pulmonic valves.",
+      "keywords": [
+        "right ventricular anatomy",
+        "infundibulum",
+        "crista supraventricularis"
+      ]
+    },
+    {
+      "id": "ae-x-007",
+      "number": 170,
+      "question": "A 50-year-old with dyspnea has a peak tricuspid regurgitation velocity of 3.5 m/s and an RVOT VTI of 10 cm. What does the TR velocity to RVOT VTI ratio suggest?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A ratio of 0.035, indicating normal pulmonary vascular resistance"
+        },
+        {
+          "letter": "B",
+          "text": "A ratio of 0.35, indicating low cardiac output with normal resistance"
+        },
+        {
+          "letter": "C",
+          "text": "A ratio of 2.9, indicating elevated LA pressure"
+        },
+        {
+          "letter": "D",
+          "text": "A ratio of 0.35, suggesting PVR greater than 2 Wood units"
+        }
+      ],
+      "category": "Measurements & Hemodynamics",
+      "correctAnswer": "D",
+      "explanation": "The ratio of peak TR velocity (m/s) to RVOT VTI (cm) is 3.5/10 = 0.35, and a value above about 0.2 suggests pulmonary vascular resistance greater than 2 Wood units. A high TR velocity with a small RVOT VTI points to increased resistance rather than simply a high-flow or low-output state, and the ratio says nothing directly about LA pressure.",
+      "hint": "The ratio reflects pressure divided by flow, which is the definition of resistance.",
+      "keywords": [
+        "pulmonary vascular resistance",
+        "TRV/VTI ratio",
+        "RVOT VTI"
+      ]
     }
   ],
   "exam2": [
@@ -9010,6 +9649,646 @@
       "hint": "A steeper deceleration slope means aortic and LV diastolic pressures equalize faster.",
       "keywords": [
         "pressure half-time of 180 ms"
+      ]
+    },
+    {
+      "id": "ae-x-012",
+      "number": 151,
+      "question": "A 70-year-old woman with a small ascending aorta (2.6 cm at the sinotubular junction) has an aortic valve Doppler mean gradient of 42 mmHg, but catheterization shows a mean gradient of 28 mmHg. Which phenomenon most likely explains the discrepancy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Low-flow, low-gradient physiology"
+        },
+        {
+          "letter": "B",
+          "text": "Underestimation from a poor Doppler intercept angle"
+        },
+        {
+          "letter": "C",
+          "text": "Error in the pressure half-time method"
+        },
+        {
+          "letter": "D",
+          "text": "Pressure recovery"
+        }
+      ],
+      "category": "Valvular Stenosis",
+      "correctAnswer": "D",
+      "explanation": "Doppler records the gradient at the vena contracta, but downstream some kinetic energy converts back into pressure, which is most pronounced when the ascending aorta is small (under 3.0 cm). Catheterization measures pressure further downstream, so Doppler overestimates the net gradient; angle error would make Doppler read lower, not higher.",
+      "hint": "Ask where along the jet each technique measures pressure and how a narrow aorta affects that.",
+      "keywords": [
+        "pressure recovery",
+        "Doppler-catheter discrepancy",
+        "small aorta"
+      ]
+    },
+    {
+      "id": "ae-x-017",
+      "number": 152,
+      "question": "In the parasternal long-axis view, severe aortic regurgitation is indicated when the ratio of jet width to LVOT diameter is at least",
+      "options": [
+        {
+          "letter": "A",
+          "text": "25%"
+        },
+        {
+          "letter": "B",
+          "text": "65%"
+        },
+        {
+          "letter": "C",
+          "text": "45%"
+        },
+        {
+          "letter": "D",
+          "text": "10%"
+        }
+      ],
+      "category": "Valvular Regurgitation & Prosthetic Valves",
+      "correctAnswer": "B",
+      "explanation": "A central AR jet whose width is 65% or more of the LVOT diameter, measured just below the valve, supports severe AR. A ratio under 25% suggests mild AR, and intermediate values are consistent with moderate AR; eccentric jets make this measurement less reliable.",
+      "hint": "Severe AR fills most of the outflow tract width.",
+      "keywords": [
+        "aortic regurgitation",
+        "jet width ratio",
+        "LVOT"
+      ]
+    },
+    {
+      "id": "ae-x-022",
+      "number": 153,
+      "question": "In hypertrophic cardiomyopathy, a maximal LV wall thickness of at least what value is considered a major risk factor for sudden cardiac death?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "15 mm"
+        },
+        {
+          "letter": "B",
+          "text": "20 mm"
+        },
+        {
+          "letter": "C",
+          "text": "30 mm"
+        },
+        {
+          "letter": "D",
+          "text": "40 mm"
+        }
+      ],
+      "category": "Cardiomyopathies & Ventricular Function",
+      "correctAnswer": "C",
+      "explanation": "Massive hypertrophy with a maximal wall thickness of 30 mm or more in any segment is an established major risk factor for sudden death in HCM. A thickness of 15 mm is the usual diagnostic threshold, not a risk marker, so accurate measurement of the thickest segment is important.",
+      "hint": "The risk marker is 'massive' hypertrophy, far beyond the diagnostic threshold.",
+      "keywords": [
+        "hypertrophic cardiomyopathy",
+        "sudden cardiac death",
+        "massive hypertrophy"
+      ]
+    },
+    {
+      "id": "ae-x-027",
+      "number": 154,
+      "question": "In a standard dobutamine stress echocardiography protocol, dobutamine is infused in 3-minute stages starting at 5 mcg/kg/min and increased to a maximum of",
+      "options": [
+        {
+          "letter": "A",
+          "text": "20 mcg/kg/min"
+        },
+        {
+          "letter": "B",
+          "text": "40 mcg/kg/min"
+        },
+        {
+          "letter": "C",
+          "text": "60 mcg/kg/min"
+        },
+        {
+          "letter": "D",
+          "text": "100 mcg/kg/min"
+        }
+      ],
+      "category": "Coronary Artery Disease",
+      "correctAnswer": "B",
+      "explanation": "The typical protocol escalates dobutamine through 5, 10, 20, 30, and 40 mcg/kg/min in 3-minute stages, with atropine added if target heart rate is not reached. Stopping at 20 mcg/kg/min would usually provide inadequate stress, and doses beyond 40 mcg/kg/min are not standard.",
+      "hint": "After the low-dose viability stages of 5 and 10 mcg/kg/min, the dose climbs in 10 mcg/kg/min steps over the remaining 3-minute stages.",
+      "keywords": [
+        "dobutamine stress echo",
+        "protocol",
+        "peak dose"
+      ]
+    },
+    {
+      "id": "ae-x-031",
+      "number": 155,
+      "question": "What is the most common primary malignant cardiac tumor in adults, which typically arises in the right atrium?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Angiosarcoma"
+        },
+        {
+          "letter": "B",
+          "text": "Rhabdomyoma"
+        },
+        {
+          "letter": "C",
+          "text": "Lipoma"
+        },
+        {
+          "letter": "D",
+          "text": "Fibroma"
+        }
+      ],
+      "category": "Pericardial Disease & Masses",
+      "correctAnswer": "A",
+      "explanation": "Angiosarcoma is the most common primary cardiac malignancy in adults and usually arises from the right atrial free wall, often with pericardial involvement. Rhabdomyoma, lipoma, and fibroma are benign tumors, and rhabdomyoma occurs mainly in children with tuberous sclerosis.",
+      "hint": "Think of a vascular tumor that favors the right atrial free wall and often involves the pericardium.",
+      "keywords": [
+        "cardiac tumors",
+        "angiosarcoma",
+        "right atrial mass"
+      ]
+    },
+    {
+      "id": "ae-x-035",
+      "number": 156,
+      "question": "A 40-year-old who had mitral valve surgery has a 5 m/s systolic jet entering the right atrium just above the septal tricuspid leaflet. Treating it as TR would give an RVSP over 100 mmHg, yet the RV is normal in size and septal motion is normal. What is the most likely explanation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Severe pulmonary arterial hypertension"
+        },
+        {
+          "letter": "B",
+          "text": "Ruptured sinus of Valsalva aneurysm"
+        },
+        {
+          "letter": "C",
+          "text": "Flail tricuspid leaflet"
+        },
+        {
+          "letter": "D",
+          "text": "Left ventricle to right atrium (Gerbode) shunt"
+        }
+      ],
+      "category": "Adult Congenital & Aortic Disease",
+      "correctAnswer": "D",
+      "explanation": "A Gerbode defect, congenital or after valve surgery or endocarditis, shunts blood from the high-pressure LV into the RA, producing a high-velocity systolic jet that can be mistaken for TR and falsely suggests pulmonary hypertension. A normal RV and septum argue against true severe PH, and a ruptured sinus of Valsalva would cause continuous rather than purely systolic flow.",
+      "hint": "The jet velocity reflects the systolic pressure difference between two chambers other than the RV and RA.",
+      "keywords": [
+        "Gerbode defect",
+        "LV-RA shunt",
+        "RVSP pitfall"
+      ]
+    },
+    {
+      "id": "ae-x-039",
+      "number": 157,
+      "question": "While imaging a patient with a rapid heart rate, the sonographer needs a higher 2D frame rate to assess fast wall motion. Which adjustment most effectively increases frame rate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increase the number of focal zones"
+        },
+        {
+          "letter": "B",
+          "text": "Increase the line density"
+        },
+        {
+          "letter": "C",
+          "text": "Narrow the sector width and reduce the imaging depth"
+        },
+        {
+          "letter": "D",
+          "text": "Add a large color Doppler box"
+        }
+      ],
+      "category": "Instrumentation, TEE & Contrast",
+      "correctAnswer": "C",
+      "explanation": "Frame rate rises when each frame needs fewer scan lines (narrower sector) and each line takes less time to listen for echoes (shallower depth). Adding focal zones, increasing line density, or adding color Doppler all increase the time per frame and lower the frame rate.",
+      "hint": "Frame rate depends on how many pulses are needed per frame and how long each pulse takes to return.",
+      "keywords": [
+        "frame rate",
+        "temporal resolution",
+        "sector width"
+      ]
+    },
+    {
+      "id": "ae-x-004",
+      "number": 158,
+      "question": "What is the approximate normal mitral valve orifice area in an adult?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "1.0 to 1.5 cm²"
+        },
+        {
+          "letter": "B",
+          "text": "2.0 to 2.5 cm²"
+        },
+        {
+          "letter": "C",
+          "text": "4.0 to 6.0 cm²"
+        },
+        {
+          "letter": "D",
+          "text": "7.0 to 9.0 cm²"
+        }
+      ],
+      "category": "Anatomy & Physiology",
+      "correctAnswer": "C",
+      "explanation": "The normal adult mitral valve area is about 4 to 6 cm². Symptoms of mitral stenosis generally appear once the area falls below about 2.5 cm², and an area of 1.5 cm² or less is considered severe, so 1.0 to 1.5 cm² describes severe stenosis rather than normal.",
+      "hint": "The normal mitral orifice is larger than the normal aortic valve area of 3 to 4 cm².",
+      "keywords": [
+        "mitral valve area",
+        "normal values",
+        "mitral stenosis"
+      ]
+    },
+    {
+      "id": "ae-x-008",
+      "number": 159,
+      "question": "Why does the Doppler-derived peak gradient across a stenotic aortic valve typically exceed the peak-to-peak gradient reported from cardiac catheterization?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Doppler angle error systematically overestimates jet velocity"
+        },
+        {
+          "letter": "B",
+          "text": "Doppler gives the peak instantaneous gradient, while peak-to-peak compares maxima that occur at different times"
+        },
+        {
+          "letter": "C",
+          "text": "Catheters cannot record pressure in the left ventricle"
+        },
+        {
+          "letter": "D",
+          "text": "Sedation during catheterization lowers the cardiac output"
+        }
+      ],
+      "category": "Measurements & Hemodynamics",
+      "correctAnswer": "B",
+      "explanation": "Doppler measures the maximal instantaneous pressure difference, whereas the catheter peak-to-peak gradient subtracts peak aortic from peak LV pressure even though they do not occur simultaneously, so it is smaller. Angle error causes Doppler to underestimate, not overestimate, velocity; mean gradients correlate well between the two methods.",
+      "hint": "Consider whether the two peak pressures being compared happen at the same instant.",
+      "keywords": [
+        "peak instantaneous gradient",
+        "peak-to-peak gradient",
+        "aortic stenosis"
+      ]
+    },
+    {
+      "id": "ae-x-013",
+      "number": 160,
+      "question": "Which of the following is NOT one of the four components of the Wilkins echocardiographic score used to assess suitability for mitral balloon valvotomy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Leaflet mobility"
+        },
+        {
+          "letter": "B",
+          "text": "Leaflet thickening"
+        },
+        {
+          "letter": "C",
+          "text": "Subvalvular thickening"
+        },
+        {
+          "letter": "D",
+          "text": "Left atrial size"
+        }
+      ],
+      "category": "Valvular Stenosis",
+      "correctAnswer": "D",
+      "explanation": "The Wilkins score grades leaflet mobility, leaflet thickening, leaflet calcification, and subvalvular thickening, each from 1 to 4; a total of 8 or less favors balloon valvotomy. Left atrial size is relevant to the clinical picture but is not part of the score.",
+      "hint": "All four components describe the valve apparatus itself.",
+      "keywords": [
+        "Wilkins score",
+        "mitral stenosis",
+        "balloon valvotomy"
+      ]
+    },
+    {
+      "id": "ae-x-018",
+      "number": 161,
+      "question": "A non-obese 72-year-old with a body surface area of 2.0 m² has an aortic bioprosthesis with an effective orifice area of 1.2 cm² by continuity. Leaflets are thin and move normally. What does this indicate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Severe patient-prosthesis mismatch"
+        },
+        {
+          "letter": "B",
+          "text": "Normal prosthetic function without mismatch"
+        },
+        {
+          "letter": "C",
+          "text": "Moderate patient-prosthesis mismatch"
+        },
+        {
+          "letter": "D",
+          "text": "Structural valve degeneration"
+        }
+      ],
+      "category": "Valvular Regurgitation & Prosthetic Valves",
+      "correctAnswer": "A",
+      "explanation": "The indexed EOA is 1.2/2.0 = 0.60 cm²/m², and in a non-obese patient a value of 0.65 cm²/m² or less indicates severe patient-prosthesis mismatch (0.65-0.85 is moderate). Thin, normally moving leaflets argue against structural degeneration; the valve is simply too small for the patient.",
+      "hint": "Index the orifice area to body surface area before grading.",
+      "keywords": [
+        "patient-prosthesis mismatch",
+        "indexed EOA",
+        "aortic bioprosthesis"
+      ]
+    },
+    {
+      "id": "ae-x-023",
+      "number": 162,
+      "question": "Using pulsed tissue Doppler of the lateral tricuspid annulus, an RV index of myocardial performance (RIMP) greater than which value indicates RV dysfunction per ASE?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "0.15"
+        },
+        {
+          "letter": "B",
+          "text": "0.25"
+        },
+        {
+          "letter": "C",
+          "text": "0.35"
+        },
+        {
+          "letter": "D",
+          "text": "0.54"
+        }
+      ],
+      "category": "Cardiomyopathies & Ventricular Function",
+      "correctAnswer": "D",
+      "explanation": "RIMP is (isovolumic contraction time + isovolumic relaxation time) divided by ejection time, and ASE lists a tissue Doppler RIMP above 0.54 (or a pulsed Doppler RIMP above 0.43) as abnormal. Lower values such as 0.35 fall within the normal range.",
+      "hint": "RIMP rises as the isovolumic times lengthen relative to ejection time, and the tissue Doppler cutoff is higher than the pulsed Doppler cutoff.",
+      "keywords": [
+        "RIMP",
+        "Tei index",
+        "RV function"
+      ]
+    },
+    {
+      "id": "ae-x-028",
+      "number": 163,
+      "question": "During dobutamine stress echocardiography in a 64-year-old, which finding is an indication to stop the test?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Heart rate reaching 70% of age-predicted maximum"
+        },
+        {
+          "letter": "B",
+          "text": "Isolated premature ventricular contractions"
+        },
+        {
+          "letter": "C",
+          "text": "New wall motion abnormality in two or more contiguous segments"
+        },
+        {
+          "letter": "D",
+          "text": "Systolic blood pressure rising to 170 mmHg"
+        }
+      ],
+      "category": "Coronary Artery Disease",
+      "correctAnswer": "C",
+      "explanation": "Endpoints for dobutamine stress include reaching target heart rate (85% of age-predicted maximum), a new or worsening wall motion abnormality in at least two contiguous segments, significant arrhythmia, severe hypertension (systolic above about 220 mmHg), symptomatic hypotension, or intolerable symptoms. Isolated PVCs and a systolic pressure of 170 mmHg are expected responses, and 70% of maximum heart rate is submaximal.",
+      "hint": "The test can stop once it has produced a diagnostic positive result.",
+      "keywords": [
+        "dobutamine stress echo",
+        "test endpoints",
+        "ischemia"
+      ]
+    },
+    {
+      "id": "ae-x-032",
+      "number": 164,
+      "question": "TEE in a 72-year-old shows several thin, hair-like filamentous strands 2 to 4 mm long arising from the closure line on the ventricular side of the aortic cusps, with no stalk or frond-like head. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Papillary fibroelastoma"
+        },
+        {
+          "letter": "B",
+          "text": "Lambl excrescences"
+        },
+        {
+          "letter": "C",
+          "text": "Infective vegetations"
+        },
+        {
+          "letter": "D",
+          "text": "Atrial myxoma"
+        }
+      ],
+      "category": "Pericardial Disease & Masses",
+      "correctAnswer": "B",
+      "explanation": "Lambl excrescences are thin, filamentous, degenerative strands at the leaflet coaptation line, common in older adults and usually of no clinical significance. A papillary fibroelastoma is larger, with a pedicle and a frond-like head, and vegetations are typically irregular masses accompanied by clinical evidence of infection.",
+      "hint": "The finding is tiny, multiple, thread-like, and arises exactly where the cusps meet.",
+      "keywords": [
+        "Lambl excrescences",
+        "aortic valve strands",
+        "TEE"
+      ]
+    },
+    {
+      "id": "ae-x-036",
+      "number": 165,
+      "question": "A 22-year-old woman with short stature, a webbed neck, and primary amenorrhea is referred for echocardiography. Which pair of cardiovascular findings is most expected?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bicuspid aortic valve and coarctation of the aorta"
+        },
+        {
+          "letter": "B",
+          "text": "Primum ASD and cleft mitral valve"
+        },
+        {
+          "letter": "C",
+          "text": "Supravalvular aortic stenosis and branch pulmonary stenosis"
+        },
+        {
+          "letter": "D",
+          "text": "Aortic root dilation and mitral valve prolapse"
+        }
+      ],
+      "category": "Adult Congenital & Aortic Disease",
+      "correctAnswer": "A",
+      "explanation": "Turner syndrome (45,X) is strongly associated with bicuspid aortic valve, coarctation, and aortic dilation with a risk of dissection. Primum ASD with a cleft mitral valve is typical of Down syndrome, and supravalvular AS is typical of Williams syndrome.",
+      "hint": "Identify the chromosomal syndrome from the physical features first.",
+      "keywords": [
+        "Turner syndrome",
+        "bicuspid aortic valve",
+        "coarctation"
+      ]
+    },
+    {
+      "id": "ae-x-040",
+      "number": 166,
+      "question": "On TEE, which part of the thoracic aorta is most difficult to image because the air-filled trachea and left main bronchus lie between it and the esophagus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Distal ascending aorta and proximal arch"
+        },
+        {
+          "letter": "B",
+          "text": "Aortic root and sinuses of Valsalva"
+        },
+        {
+          "letter": "C",
+          "text": "Mid descending thoracic aorta"
+        },
+        {
+          "letter": "D",
+          "text": "Distal arch near the left subclavian artery"
+        }
+      ],
+      "category": "Instrumentation, TEE & Contrast",
+      "correctAnswer": "A",
+      "explanation": "The trachea and left main bronchus cross between the esophagus and the distal ascending aorta and proximal arch, creating a TEE blind spot that can hide dissections or plaque there. The aortic root and the descending aorta lie directly adjacent to the esophagus and are well seen, and the distal arch is usually visible from the upper esophagus.",
+      "hint": "Think about which airway structures sit in front of the esophagus at the level of the upper mediastinum.",
+      "keywords": [
+        "TEE blind spot",
+        "aortic arch",
+        "trachea"
+      ]
+    },
+    {
+      "id": "ae-x-009",
+      "number": 167,
+      "question": "Per ASE 2015 chamber quantification guidelines, a basal RV diameter greater than which value in an RV-focused apical four-chamber view indicates RV dilation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "41 mm"
+        },
+        {
+          "letter": "B",
+          "text": "33 mm"
+        },
+        {
+          "letter": "C",
+          "text": "50 mm"
+        },
+        {
+          "letter": "D",
+          "text": "28 mm"
+        }
+      ],
+      "category": "Measurements & Hemodynamics",
+      "correctAnswer": "A",
+      "explanation": "ASE 2015 lists a basal RV diameter above 41 mm (and a mid-cavity diameter above 35 mm) in the RV-focused view as dilated. Values such as 33 mm are within normal limits, and waiting until 50 mm would miss many dilated ventricles.",
+      "hint": "The dilation cutoff at the base of the RV-focused view is larger than the mid-cavity cutoff.",
+      "keywords": [
+        "RV size",
+        "basal RV diameter",
+        "ASE chamber quantification"
+      ]
+    },
+    {
+      "id": "ae-x-014",
+      "number": 168,
+      "question": "A 28-year-old with elfin facies, mild intellectual disability, and infantile hypercalcemia has a systolic murmur. Echo shows an hourglass narrowing of the ascending aorta just above the sinuses of Valsalva with high-velocity flow at that level. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bicuspid aortic valve stenosis"
+        },
+        {
+          "letter": "B",
+          "text": "Supravalvular aortic stenosis from Williams syndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Discrete subaortic membrane"
+        },
+        {
+          "letter": "D",
+          "text": "Coarctation of the aorta"
+        }
+      ],
+      "category": "Valvular Stenosis",
+      "correctAnswer": "B",
+      "explanation": "Supravalvular AS produces an hourglass narrowing at the sinotubular junction and is classically linked to Williams syndrome (elastin gene deletion), which also causes elfin facies and hypercalcemia. A subaortic membrane obstructs below the valve, and coarctation is found in the descending aorta near the ductus.",
+      "hint": "Locate the obstruction relative to the valve and match it with the syndrome described.",
+      "keywords": [
+        "supravalvular aortic stenosis",
+        "Williams syndrome",
+        "LVOT obstruction levels"
+      ]
+    },
+    {
+      "id": "ae-x-019",
+      "number": 169,
+      "question": "After transcatheter aortic valve replacement, a paravalvular jet is assessed in the short-axis view just below the stent. A circumferential extent of the jet of at least what percentage of the valve perimeter suggests severe paravalvular regurgitation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5%"
+        },
+        {
+          "letter": "B",
+          "text": "10%"
+        },
+        {
+          "letter": "C",
+          "text": "30%"
+        },
+        {
+          "letter": "D",
+          "text": "75%"
+        }
+      ],
+      "category": "Valvular Regurgitation & Prosthetic Valves",
+      "correctAnswer": "C",
+      "explanation": "Per ASE prosthetic valve guidance, a paravalvular jet involving under 10% of the circumference suggests mild, 10-29% moderate, and 30% or more severe regurgitation. A 10% extent is the lower bound of moderate, so it does not by itself indicate severe leak.",
+      "hint": "Paravalvular leaks are graded in bands of circumferential extent, with mild leaks involving less than 10%.",
+      "keywords": [
+        "TAVR",
+        "paravalvular regurgitation",
+        "circumferential extent"
+      ]
+    },
+    {
+      "id": "ae-x-024",
+      "number": 170,
+      "question": "A 52-year-old woman receiving doxorubicin had a baseline LVEF of 62%. Follow-up 3D echo shows an LVEF of 45%. How should this be interpreted according to the ASE/EACVI expert consensus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normal variation within test-retest variability"
+        },
+        {
+          "letter": "B",
+          "text": "Cancer therapy-related cardiac dysfunction"
+        },
+        {
+          "letter": "C",
+          "text": "Subclinical dysfunction requiring strain confirmation only"
+        },
+        {
+          "letter": "D",
+          "text": "Infiltrative cardiac amyloidosis"
+        }
+      ],
+      "category": "Cardiomyopathies & Ventricular Function",
+      "correctAnswer": "B",
+      "explanation": "A decrease in LVEF of more than 10 percentage points to a value below the normal limit (53%) meets the definition of cancer therapy-related cardiac dysfunction. A 17-point drop is far beyond the variability of 3D echo, and strain is mainly used to detect subclinical changes before EF falls.",
+      "hint": "Compare both the size of the drop and the final value with the consensus definition.",
+      "keywords": [
+        "cardio-oncology",
+        "CTRCD",
+        "anthracycline"
       ]
     }
   ]

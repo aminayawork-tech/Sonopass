@@ -10,7 +10,7 @@
       "color": "emerald",
       "gradient": "from-emerald-500 to-emerald-600",
       "enabled": true,
-      "questionCount": 282,
+      "questionCount": 510,
       "examModes": [
         {
           "id": "quick-10",
@@ -27,19 +27,19 @@
         {
           "id": "mock-1",
           "name": "Mock Exam 1",
-          "description": "Full practice exam (100 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-1"
         },
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Full practice exam (84 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-2"
         },
         {
           "id": "mock-3",
           "name": "Mock Exam 3",
-          "description": "Full practice exam (98 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-3"
         }
       ]
@@ -54,7 +54,7 @@
       "color": "blue",
       "gradient": "from-blue-500 to-blue-600",
       "enabled": true,
-      "questionCount": 326,
+      "questionCount": 372,
       "examModes": [
         {
           "id": "quick-10",
@@ -71,25 +71,25 @@
         {
           "id": "mock-1",
           "name": "Mock Exam 1",
-          "description": "Full practice exam (111 questions)",
+          "description": "Full-length exam: 110 questions, 2 hours",
           "route": "/exam/mock-1"
         },
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Review exam (102 questions)",
+          "description": "Full-length exam: 110 questions, 2 hours",
           "route": "/exam/mock-2"
         },
         {
           "id": "mock-3",
           "name": "Mock Exam 3",
-          "description": "Practice exam (80 questions)",
+          "description": "Full-length exam: 110 questions, 2 hours",
           "route": "/exam/mock-3"
         },
         {
           "id": "mock-4",
-          "name": "Artifact Image Quiz",
-          "description": "Identify and fix artifacts (24 questions)",
+          "name": "Artifact Drill",
+          "description": "Artifact identification drill (24 questions)",
           "route": "/exam/mock-4"
         }
       ]
@@ -104,7 +104,7 @@
       "color": "purple",
       "gradient": "from-purple-500 to-purple-600",
       "enabled": true,
-      "questionCount": 300,
+      "questionCount": 340,
       "examModes": [
         {
           "id": "quick-10",
@@ -121,13 +121,13 @@
         {
           "id": "mock-1",
           "name": "Mock Exam 1",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-1"
         },
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-2"
         }
       ]
@@ -142,7 +142,7 @@
       "color": "pink",
       "gradient": "from-pink-500 to-pink-600",
       "enabled": true,
-      "questionCount": 300,
+      "questionCount": 340,
       "examModes": [
         {
           "id": "quick-10",
@@ -159,13 +159,13 @@
         {
           "id": "mock-1",
           "name": "Mock Exam 1",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-1"
         },
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-2"
         }
       ]
@@ -180,7 +180,7 @@
       "color": "red",
       "gradient": "from-red-500 to-red-600",
       "enabled": true,
-      "questionCount": 300,
+      "questionCount": 340,
       "examModes": [
         {
           "id": "quick-10",
@@ -197,13 +197,13 @@
         {
           "id": "mock-1",
           "name": "Mock Exam 1",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-1"
         },
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-2"
         }
       ]
@@ -218,7 +218,7 @@
       "color": "rose",
       "gradient": "from-rose-500 to-rose-600",
       "enabled": true,
-      "questionCount": 300,
+      "questionCount": 340,
       "examModes": [
         {
           "id": "quick-10",
@@ -235,13 +235,13 @@
         {
           "id": "mock-1",
           "name": "Mock Exam 1",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-1"
         },
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-2"
         }
       ]
@@ -256,7 +256,7 @@
       "color": "amber",
       "gradient": "from-amber-500 to-amber-600",
       "enabled": true,
-      "questionCount": 300,
+      "questionCount": 340,
       "examModes": [
         {
           "id": "quick-10",
@@ -273,13 +273,13 @@
         {
           "id": "mock-1",
           "name": "Mock Exam 1",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-1"
         },
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-2"
         }
       ]
@@ -294,7 +294,7 @@
       "color": "fuchsia",
       "gradient": "from-fuchsia-500 to-fuchsia-600",
       "enabled": true,
-      "questionCount": 298,
+      "questionCount": 340,
       "examModes": [
         {
           "id": "quick-10",
@@ -311,13 +311,13 @@
         {
           "id": "mock-1",
           "name": "Mock Exam 1",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-1"
         },
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Full practice exam (148 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-2"
         }
       ]
@@ -332,7 +332,7 @@
       "color": "cyan",
       "gradient": "from-cyan-500 to-cyan-600",
       "enabled": true,
-      "questionCount": 300,
+      "questionCount": 340,
       "examModes": [
         {
           "id": "quick-10",
@@ -349,13 +349,13 @@
         {
           "id": "mock-1",
           "name": "Mock Exam 1",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-1"
         },
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Full practice exam (150 questions)",
+          "description": "Full-length exam: 170 questions, 3 hours",
           "route": "/exam/mock-2"
         }
       ]

@@ -4526,6 +4526,640 @@
       "keywords": [
         "premature ventricular contraction"
       ]
+    },
+    {
+      "id": "fe-x-001",
+      "number": 151,
+      "question": "On a transverse view of the normal fetal atria, how does the morphologic right atrial appendage differ from the left atrial appendage?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is narrow and finger-like, while the left is broad and triangular"
+        },
+        {
+          "letter": "B",
+          "text": "It is broad-based and triangular, while the left is narrow and finger-like"
+        },
+        {
+          "letter": "C",
+          "text": "It receives the pulmonary veins, while the left appendage does not"
+        },
+        {
+          "letter": "D",
+          "text": "It is a blind tubular pouch identical in shape to the left appendage"
+        }
+      ],
+      "category": "Normal Fetal Heart & Views",
+      "correctAnswer": "B",
+      "explanation": "The morphologic right atrial appendage is broad-based and triangular, whereas the left atrial appendage is long, narrow and finger-like. Reversing these shapes is the common error; appendage morphology is the most reliable way to define atrial situs, which matters in heterotaxy.",
+      "hint": "Think of the classic shape descriptions used to define atrial situs and isomerism.",
+      "keywords": [
+        "atrial appendage",
+        "atrial situs",
+        "cardiac anatomy"
+      ]
+    },
+    {
+      "id": "fe-x-012",
+      "number": 152,
+      "question": "The common atrioventricular valve in a complete atrioventricular septal defect typically has how many leaflets?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Two leaflets, resembling a normal mitral valve"
+        },
+        {
+          "letter": "B",
+          "text": "Three leaflets, resembling a normal tricuspid valve"
+        },
+        {
+          "letter": "C",
+          "text": "Five leaflets, including superior and inferior bridging leaflets"
+        },
+        {
+          "letter": "D",
+          "text": "Four leaflets, with no bridging leaflets"
+        }
+      ],
+      "category": "Septal & Atrioventricular Defects",
+      "correctAnswer": "C",
+      "explanation": "The common valve in a complete AVSD usually has five leaflets: superior and inferior bridging leaflets that cross the septum plus three mural leaflets. The bridging leaflets explain why the AV valves lie at the same level and lose normal offset.",
+      "hint": "Remember the leaflets that cross the defect from one ventricle to the other.",
+      "keywords": [
+        "common atrioventricular valve",
+        "AVSD",
+        "bridging leaflets"
+      ]
+    },
+    {
+      "id": "fe-x-018",
+      "number": 153,
+      "question": "Which lesion is NOT classified as a conotruncal anomaly?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Truncus arteriosus"
+        },
+        {
+          "letter": "B",
+          "text": "Double outlet right ventricle"
+        },
+        {
+          "letter": "C",
+          "text": "Ebstein anomaly"
+        },
+        {
+          "letter": "D",
+          "text": "Tetralogy of Fallot"
+        }
+      ],
+      "category": "Conotruncal Anomalies",
+      "correctAnswer": "C",
+      "explanation": "Conotruncal anomalies arise from abnormal development of the outflow tracts and great arteries and include tetralogy of Fallot, truncus arteriosus, DORV, transposition and interrupted arch. Ebstein anomaly is a malformation of the tricuspid valve and inlet, not of the outflow tracts.",
+      "hint": "Ask which lesion involves an inflow valve rather than the outflow tracts.",
+      "keywords": [
+        "conotruncal anomalies",
+        "classification"
+      ]
+    },
+    {
+      "id": "fe-x-023",
+      "number": 154,
+      "question": "When evaluating a fetus for possible coarctation of the aorta, the carotid-subclavian artery index is calculated from which measurements?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aortic isthmus velocity divided by ductus arteriosus velocity"
+        },
+        {
+          "letter": "B",
+          "text": "Ascending aorta diameter divided by main pulmonary artery diameter"
+        },
+        {
+          "letter": "C",
+          "text": "Transverse arch diameter divided by the distance between the left carotid and left subclavian arteries"
+        },
+        {
+          "letter": "D",
+          "text": "Left ventricular length divided by right ventricular length"
+        }
+      ],
+      "category": "Obstructive & Hypoplastic Lesions",
+      "correctAnswer": "C",
+      "explanation": "The carotid-subclavian artery index divides the transverse arch diameter at the left carotid by the distance between the left carotid and left subclavian arteries; a low index suggests coarctation because the arch is small and the segment elongated. Great artery and ventricular ratios support the suspicion but are not this index.",
+      "hint": "The index uses two measurements taken from the same sagittal arch view.",
+      "keywords": [
+        "coarctation",
+        "carotid-subclavian index",
+        "aortic arch"
+      ]
+    },
+    {
+      "id": "fe-x-028",
+      "number": 155,
+      "question": "A 25-year-old at 32 weeks has an irregular fetal rhythm caused by frequent premature atrial contractions. The heart is structurally normal, but a large, redundant foramen ovale flap billows deep into the left atrium. What is the significance of the flap?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It indicates a restrictive foramen ovale that requires early delivery"
+        },
+        {
+          "letter": "B",
+          "text": "Redundant atrial septal tissue is associated with atrial ectopy that usually resolves"
+        },
+        {
+          "letter": "C",
+          "text": "It is an early sign of evolving hypoplastic left heart syndrome"
+        },
+        {
+          "letter": "D",
+          "text": "It indicates a high risk of immune-mediated complete heart block"
+        }
+      ],
+      "category": "Arrhythmias & Heart Failure",
+      "correctAnswer": "B",
+      "explanation": "An aneurysmal or redundant septum primum flap is a recognized association of fetal premature atrial contractions, which are usually benign and resolve. A redundant flap moving freely into the left atrium does not indicate restriction or left heart hypoplasia.",
+      "hint": "Consider which benign arrhythmia is linked to atrial septal tissue touching the atrial wall.",
+      "keywords": [
+        "premature atrial contractions",
+        "foramen ovale flap"
+      ]
+    },
+    {
+      "id": "fe-x-033",
+      "number": 156,
+      "question": "According to AIUM fetal echocardiography guidance, which situation is an indication for fetal echocardiography because of an increased risk of congenital heart disease?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A prior uncomplicated cesarean delivery"
+        },
+        {
+          "letter": "B",
+          "text": "Pregnancy conceived by in vitro fertilization"
+        },
+        {
+          "letter": "C",
+          "text": "Maternal hypothyroidism treated with levothyroxine"
+        },
+        {
+          "letter": "D",
+          "text": "Gestational hypertension in a previous pregnancy"
+        }
+      ],
+      "category": "Associations & Maternal Factors",
+      "correctAnswer": "B",
+      "explanation": "Assisted reproductive technology, including in vitro fertilization, is associated with a modestly increased rate of congenital heart disease and is listed among indications for fetal echocardiography. A prior cesarean or treated hypothyroidism does not raise fetal cardiac risk enough to warrant a dedicated study.",
+      "hint": "Consider which conception method is linked to a higher rate of CHD.",
+      "keywords": [
+        "indications",
+        "in vitro fertilization",
+        "AIUM"
+      ]
+    },
+    {
+      "id": "fe-x-038",
+      "number": 157,
+      "question": "A sonographer switches from a 5 MHz to an 8 MHz transducer for an early fetal echocardiogram in a thin patient. Which trade-off results?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Better depth of penetration with reduced spatial resolution"
+        },
+        {
+          "letter": "B",
+          "text": "Better spatial resolution with reduced depth of penetration"
+        },
+        {
+          "letter": "C",
+          "text": "Higher frame rate with no change in spatial resolution"
+        },
+        {
+          "letter": "D",
+          "text": "Less attenuation with increased acoustic shadowing"
+        }
+      ],
+      "category": "Technique & Instrumentation",
+      "correctAnswer": "B",
+      "explanation": "Higher frequency shortens the wavelength and pulse length, improving resolution, but attenuation increases so penetration decreases. That is why higher frequencies suit early gestation and thin patients, while lower frequencies are needed for deep imaging.",
+      "hint": "Recall how attenuation changes with frequency.",
+      "keywords": [
+        "transducer frequency",
+        "resolution",
+        "penetration"
+      ]
+    },
+    {
+      "id": "fe-x-002",
+      "number": 158,
+      "question": "In the normal three-vessel view at 22 weeks, which vessel has the largest diameter?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ascending aorta"
+        },
+        {
+          "letter": "B",
+          "text": "Superior vena cava"
+        },
+        {
+          "letter": "C",
+          "text": "Azygos vein"
+        },
+        {
+          "letter": "D",
+          "text": "Main pulmonary artery"
+        }
+      ],
+      "category": "Normal Fetal Heart & Views",
+      "correctAnswer": "D",
+      "explanation": "Normally the vessels decrease in size from fetal left to right: pulmonary artery larger than aorta, aorta larger than superior vena cava. The aorta is the tempting choice, but because the right ventricle ejects slightly more than half of the combined output, the pulmonary artery is the largest.",
+      "hint": "Recall which ventricle is dominant in fetal life and which vessel it supplies.",
+      "keywords": [
+        "three-vessel view",
+        "pulmonary artery",
+        "vessel size"
+      ]
+    },
+    {
+      "id": "fe-x-008",
+      "number": 159,
+      "question": "Which property of the fetal myocardium makes fetal cardiac output depend heavily on heart rate rather than on increases in stroke volume?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Excess left ventricular preload delivered by the pulmonary veins"
+        },
+        {
+          "letter": "B",
+          "text": "Very low systemic vascular resistance created by the placenta"
+        },
+        {
+          "letter": "C",
+          "text": "Stiffer, less compliant myocardium with fewer organized contractile elements"
+        },
+        {
+          "letter": "D",
+          "text": "Complete absence of autonomic innervation of the fetal heart"
+        }
+      ],
+      "category": "Fetal Circulation & Physiology",
+      "correctAnswer": "C",
+      "explanation": "The immature fetal myocardium has a higher proportion of noncontractile tissue and is less compliant, so its ability to raise stroke volume through the Frank-Starling mechanism is limited and output tracks heart rate. This is why sustained bradycardia or tachycardia is poorly tolerated; the low-resistance placenta affects afterload but is not the limiting factor.",
+      "hint": "Consider why both very slow and very fast rhythms can lead to hydrops.",
+      "keywords": [
+        "fetal myocardium",
+        "cardiac output",
+        "Frank-Starling"
+      ]
+    },
+    {
+      "id": "fe-x-013",
+      "number": 160,
+      "question": "A 34-year-old at 23 weeks has a four-chamber view showing absence of the lower atrial septum at the crux, atrioventricular valves at the same level with two separate orifices, and a small inlet VSD with a narrow jet beneath the valves. Which lesion is most likely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Complete atrioventricular septal defect with a common valve"
+        },
+        {
+          "letter": "B",
+          "text": "Partial atrioventricular septal defect with an intact ventricular septum"
+        },
+        {
+          "letter": "C",
+          "text": "Intermediate (transitional) atrioventricular septal defect"
+        },
+        {
+          "letter": "D",
+          "text": "Perimembranous VSD combined with a secundum atrial septal defect"
+        }
+      ],
+      "category": "Septal & Atrioventricular Defects",
+      "correctAnswer": "C",
+      "explanation": "A primum atrial defect with two separate AV valve orifices and a small, restrictive inlet ventricular component describes the intermediate (transitional) form. A complete AVSD has a single common orifice and a large inlet VSD, while a partial AVSD has no ventricular-level shunt.",
+      "hint": "Combine the number of valve orifices with whether a ventricular-level shunt is present.",
+      "keywords": [
+        "transitional AVSD",
+        "primum defect",
+        "inlet VSD"
+      ]
+    },
+    {
+      "id": "fe-x-019",
+      "number": 161,
+      "question": "A 31-year-old at 24 weeks has a fetus with an intact ventricular septum. Color Doppler shows a direct communication between the ascending aorta and the main pulmonary artery just above two separate, normally formed semilunar valves. What is the diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Truncus arteriosus type I"
+        },
+        {
+          "letter": "B",
+          "text": "Patent ductus arteriosus"
+        },
+        {
+          "letter": "C",
+          "text": "Tetralogy with absent pulmonary valve"
+        },
+        {
+          "letter": "D",
+          "text": "Aortopulmonary window"
+        }
+      ],
+      "category": "Conotruncal Anomalies",
+      "correctAnswer": "D",
+      "explanation": "An aortopulmonary window is a communication between the ascending aorta and main pulmonary artery with two separate semilunar valves and usually an intact septum. Truncus arteriosus has a single semilunar (truncal) valve above a VSD, which is the key distinction.",
+      "hint": "Count the semilunar valves and check the ventricular septum.",
+      "keywords": [
+        "aortopulmonary window",
+        "truncus arteriosus"
+      ]
+    },
+    {
+      "id": "fe-x-024",
+      "number": 162,
+      "question": "A 30-year-old at 28 weeks has a fetus with hypoplastic left heart syndrome. Which additional finding most worsens the prognosis for staged single-ventricle palliation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Retrograde flow in the transverse aortic arch from the ductus"
+        },
+        {
+          "letter": "B",
+          "text": "Moderate to severe tricuspid regurgitation with reduced right ventricular function"
+        },
+        {
+          "letter": "C",
+          "text": "Left-to-right flow across the foramen ovale"
+        },
+        {
+          "letter": "D",
+          "text": "A small, slit-like left ventricle that does not form the apex"
+        }
+      ],
+      "category": "Obstructive & Hypoplastic Lesions",
+      "correctAnswer": "B",
+      "explanation": "Because the right ventricle becomes the systemic ventricle, significant tricuspid regurgitation or right ventricular dysfunction is an adverse prognostic factor. Retrograde arch flow, left-to-right atrial flow and a hypoplastic left ventricle are expected features of HLHS rather than added risk.",
+      "hint": "Ask which finding threatens the only ventricle the child will have.",
+      "keywords": [
+        "HLHS",
+        "tricuspid regurgitation",
+        "prognosis"
+      ]
+    },
+    {
+      "id": "fe-x-029",
+      "number": 163,
+      "question": "Which M-mode or Doppler pattern characterizes Mobitz type I (Wenckebach) second-degree atrioventricular block?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A constant AV interval with sudden, unpredictable nonconducted atrial beats"
+        },
+        {
+          "letter": "B",
+          "text": "Complete AV dissociation with an atrial rate faster than the ventricular rate"
+        },
+        {
+          "letter": "C",
+          "text": "A premature atrial beat that is not conducted, followed by a pause"
+        },
+        {
+          "letter": "D",
+          "text": "Progressive lengthening of the AV interval until an atrial beat is not conducted"
+        }
+      ],
+      "category": "Arrhythmias & Heart Failure",
+      "correctAnswer": "D",
+      "explanation": "In Mobitz type I block, the mechanical AV interval lengthens beat by beat until one atrial contraction fails to conduct, and the cycle then repeats. A constant AV interval with sudden dropped beats is Mobitz type II, and a blocked premature atrial beat is ectopy rather than AV block.",
+      "hint": "Watch what happens to the AV interval in the beats before the dropped one.",
+      "keywords": [
+        "second-degree AV block",
+        "Wenckebach",
+        "M-mode"
+      ]
+    },
+    {
+      "id": "fe-x-034",
+      "number": 164,
+      "question": "A 26-year-old whose father has butterfly vertebrae and chronic cholestatic liver disease has a 22-week fetus with narrowing of the branch pulmonary arteries. Which syndrome is most likely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Williams syndrome"
+        },
+        {
+          "letter": "B",
+          "text": "Noonan syndrome"
+        },
+        {
+          "letter": "C",
+          "text": "22q11.2 deletion syndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Alagille syndrome"
+        }
+      ],
+      "category": "Associations & Maternal Factors",
+      "correctAnswer": "D",
+      "explanation": "Alagille syndrome (JAG1, autosomal dominant) causes peripheral or branch pulmonary artery stenosis along with bile duct paucity, butterfly vertebrae and characteristic facies. Williams syndrome can also cause branch pulmonary stenosis but is defined by supravalvular aortic stenosis and lacks the liver and vertebral findings.",
+      "hint": "Link the parent's liver and spine findings to a dominant syndrome.",
+      "keywords": [
+        "Alagille syndrome",
+        "peripheral pulmonary stenosis"
+      ]
+    },
+    {
+      "id": "fe-x-039",
+      "number": 165,
+      "question": "During a fetal echocardiogram, the heart looks laterally blurred and the transmit focal zone is set in the near field at the level of the maternal abdominal wall. What is the best adjustment?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Move the focal zone to the level of the fetal heart"
+        },
+        {
+          "letter": "B",
+          "text": "Move the focal zone to the maximum image depth"
+        },
+        {
+          "letter": "C",
+          "text": "Add focal zones in the near field to improve frame rate"
+        },
+        {
+          "letter": "D",
+          "text": "Increase overall gain to sharpen the lateral borders"
+        }
+      ],
+      "category": "Technique & Instrumentation",
+      "correctAnswer": "A",
+      "explanation": "Lateral resolution is best at the focus, so a single focal zone should be placed at the level of the fetal heart. Adding focal zones lowers frame rate, and increasing gain brightens the image without improving resolution.",
+      "hint": "Lateral resolution is best where the beam is narrowest.",
+      "keywords": [
+        "focal zone",
+        "lateral resolution"
+      ]
+    },
+    {
+      "id": "fe-x-003",
+      "number": 166,
+      "question": "A sonographer at 21 weeks examines the atrioventricular valves on a four-chamber view and notes that chordae from one valve attach directly to the ventricular septum. In a normal heart, which valve has these septal chordal attachments?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tricuspid valve"
+        },
+        {
+          "letter": "B",
+          "text": "Mitral valve"
+        },
+        {
+          "letter": "C",
+          "text": "Both atrioventricular valves equally"
+        },
+        {
+          "letter": "D",
+          "text": "Neither valve, since both attach only to free-wall papillary muscles"
+        }
+      ],
+      "category": "Normal Fetal Heart & Views",
+      "correctAnswer": "A",
+      "explanation": "The tricuspid valve has chordal attachments to the ventricular septum, a feature of the morphologic right ventricle. The mitral valve attaches to two papillary muscles on the free wall and does not attach to the smooth left ventricular septum.",
+      "hint": "Septal attachments are one of the features used to identify the morphologic right ventricle.",
+      "keywords": [
+        "tricuspid valve",
+        "chordal attachment",
+        "ventricular morphology"
+      ]
+    },
+    {
+      "id": "fe-x-009",
+      "number": 167,
+      "question": "Which factors are chiefly responsible for keeping the fetal ductus arteriosus open?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Circulating prostaglandin E2 and relatively low oxygen tension"
+        },
+        {
+          "letter": "B",
+          "text": "High oxygen tension and circulating bradykinin"
+        },
+        {
+          "letter": "C",
+          "text": "High pulmonary blood flow and low prostaglandin levels"
+        },
+        {
+          "letter": "D",
+          "text": "Maternal estrogen and elevated fetal cortisol levels"
+        }
+      ],
+      "category": "Fetal Circulation & Physiology",
+      "correctAnswer": "A",
+      "explanation": "Ductal patency in utero is maintained by prostaglandin E2 (largely of placental origin) and the low fetal oxygen tension. After birth, rising oxygen and falling prostaglandin levels cause constriction, which is also why maternal NSAIDs can constrict the fetal ductus.",
+      "hint": "Consider why rising oxygen levels after birth and maternal NSAID use both narrow the duct.",
+      "keywords": [
+        "ductus arteriosus",
+        "prostaglandin",
+        "ductal patency"
+      ]
+    },
+    {
+      "id": "fe-x-014",
+      "number": 168,
+      "question": "A 29-year-old at 30 weeks has a fetus with a large, nonrestrictive perimembranous VSD and no cardiac failure. She asks when her baby might develop symptoms. When is heart failure from a large VSD typically expected?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "At about 4 to 8 weeks of age as pulmonary vascular resistance falls"
+        },
+        {
+          "letter": "B",
+          "text": "Within the first hours of life as the ductus arteriosus closes"
+        },
+        {
+          "letter": "C",
+          "text": "Only after several years, when Eisenmenger physiology develops"
+        },
+        {
+          "letter": "D",
+          "text": "Never, because large defects close spontaneously at birth"
+        }
+      ],
+      "category": "Septal & Atrioventricular Defects",
+      "correctAnswer": "A",
+      "explanation": "Left-to-right shunting across a large VSD increases as pulmonary vascular resistance falls over the first weeks of life, so failure symptoms typically appear at about 4 to 8 weeks. Ductal closure does not drive VSD shunting, and Eisenmenger physiology is a late consequence of an unrepaired defect rather than the cause of early symptoms.",
+      "hint": "Consider when the pressure difference driving the shunt becomes large after birth.",
+      "keywords": [
+        "VSD",
+        "pulmonary vascular resistance",
+        "postnatal course"
+      ]
+    },
+    {
+      "id": "fe-x-020",
+      "number": 169,
+      "question": "Which embryologic abnormality accounts for the features of tetralogy of Fallot?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Posterior deviation of the outlet septum into the left ventricle"
+        },
+        {
+          "letter": "B",
+          "text": "Anterior and superior deviation of the outlet (conal) septum"
+        },
+        {
+          "letter": "C",
+          "text": "Failure of fusion of the endocardial cushions"
+        },
+        {
+          "letter": "D",
+          "text": "Complete failure of septation of the common arterial trunk"
+        }
+      ],
+      "category": "Conotruncal Anomalies",
+      "correctAnswer": "B",
+      "explanation": "Anterosuperior deviation of the outlet septum narrows the right ventricular outflow, creates a malalignment VSD and causes the aorta to override; right ventricular hypertrophy follows postnatally. Posterior deviation instead narrows the subaortic region and is associated with interrupted aortic arch.",
+      "hint": "Think about which way the septum shifts to narrow the pulmonary outflow.",
+      "keywords": [
+        "tetralogy of Fallot",
+        "outlet septum",
+        "malalignment VSD"
+      ]
+    },
+    {
+      "id": "fe-x-025",
+      "number": 170,
+      "question": "Interrupted aortic arch type B occurs at which location?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Between the left common carotid and left subclavian arteries"
+        },
+        {
+          "letter": "B",
+          "text": "Distal to the left subclavian artery at the isthmus"
+        },
+        {
+          "letter": "C",
+          "text": "Between the brachiocephalic and left common carotid arteries"
+        },
+        {
+          "letter": "D",
+          "text": "Proximal to the origin of the brachiocephalic artery"
+        }
+      ],
+      "category": "Obstructive & Hypoplastic Lesions",
+      "correctAnswer": "A",
+      "explanation": "Type B interruption, the most common form and strongly associated with 22q11.2 deletion, lies between the left common carotid and left subclavian arteries. Type A is distal to the left subclavian artery, and type C is between the brachiocephalic and left carotid arteries.",
+      "hint": "Types A, B and C move progressively proximal along the arch.",
+      "keywords": [
+        "interrupted aortic arch",
+        "arch anatomy"
+      ]
     }
   ],
   "exam2": [
@@ -6662,7 +7296,7 @@
     },
     {
       "id": "fe-m2-073",
-      "number": 73,
+      "number": 72,
       "question": "A 31-year-old at 20 weeks has a fetus with the aorta and IVC on the same side of the spine with the IVC anterior, the stomach on the right, a complete AVSD, pulmonary atresia, and pulmonary veins draining to an extracardiac confluence. Which diagnosis and postnatal concern are most likely?",
       "options": [
         {
@@ -6692,7 +7326,7 @@
     },
     {
       "id": "fe-m2-074",
-      "number": 74,
+      "number": 73,
       "question": "A 26-year-old with phenylketonuria who has not followed her diet has a markedly elevated phenylalanine level at conception. Which fetal risks are most expected?",
       "options": [
         {
@@ -6722,7 +7356,7 @@
     },
     {
       "id": "fe-m2-075",
-      "number": 75,
+      "number": 74,
       "question": "Monochorionic diamniotic twins at 20 weeks: the recipient has polyhydramnios (deepest pocket 9 cm) and a reversed a-wave in the ductus venosus, the donor has oligohydramnios (deepest pocket 1.5 cm) with a visible bladder, and neither twin is hydropic. What is the Quintero stage?",
       "options": [
         {
@@ -6752,7 +7386,7 @@
     },
     {
       "id": "fe-m2-076",
-      "number": 76,
+      "number": 75,
       "question": "A 28-year-old at 26 weeks has a fetus with massive cardiomegaly, a markedly enlarged right atrium, and severe tricuspid regurgitation; the septal leaflet of the tricuspid valve attaches far more apically than the mitral valve hinge point. What is the diagnosis?",
       "options": [
         {
@@ -6782,7 +7416,7 @@
     },
     {
       "id": "fe-m2-077",
-      "number": 77,
+      "number": 76,
       "question": "A sonographer wants to demonstrate pulmonary venous return into the fetal left atrium with color Doppler. Which setting is most appropriate?",
       "options": [
         {
@@ -6812,7 +7446,7 @@
     },
     {
       "id": "fe-m2-078",
-      "number": 78,
+      "number": 77,
       "question": "A 28-year-old at 25 weeks has a fetus with ascites and skin edema only. Which definition of fetal hydrops does this satisfy?",
       "options": [
         {
@@ -6842,7 +7476,7 @@
     },
     {
       "id": "fe-m2-079",
-      "number": 79,
+      "number": 78,
       "question": "A 30-year-old at 34 weeks has a fetus with tetralogy of Fallot. The pulmonary valve is mildly small, there is antegrade flow across the right ventricular outflow tract, and ductal flow runs from the pulmonary artery to the aorta. What is the most likely postnatal implication?",
       "options": [
         {
@@ -6870,7 +7504,7 @@
     },
     {
       "id": "fe-m2-080",
-      "number": 80,
+      "number": 79,
       "question": "A 33-year-old at 21 weeks has a four-chamber view in which the lower atrial septum adjacent to the crux is absent, both AV valves insert at the same level, two separate AV valve orifices are seen, and the ventricular septum is intact. What is the diagnosis?",
       "options": [
         {
@@ -6900,7 +7534,7 @@
     },
     {
       "id": "fe-m2-081",
-      "number": 81,
+      "number": 80,
       "question": "During a fetal echo, the fetal spine is directly anterior at the 12 o'clock position and shadows the heart. What is the best approach?",
       "options": [
         {
@@ -6930,7 +7564,7 @@
     },
     {
       "id": "fe-m2-082",
-      "number": 82,
+      "number": 81,
       "question": "A 33-year-old at 26 weeks has a fetus with a VSD and overriding aorta, markedly dilated main and branch pulmonary arteries, and to-and-fro flow across a rudimentary pulmonary valve ring. The ductus arteriosus cannot be found. What is the diagnosis and the main postnatal concern?",
       "options": [
         {
@@ -6960,7 +7594,7 @@
     },
     {
       "id": "fe-m2-083",
-      "number": 83,
+      "number": 82,
       "question": "While imaging a fetal heart beating at 150 bpm, the frame rate is only 18 Hz with a wide sector and three focal zones. What is the best adjustment?",
       "options": [
         {
@@ -6990,7 +7624,7 @@
     },
     {
       "id": "fe-m2-084",
-      "number": 84,
+      "number": 83,
       "question": "A 32-year-old at 28 weeks has fetal left ventricular Doppler intervals of 40 ms isovolumetric contraction time, 45 ms isovolumetric relaxation time, and 170 ms ejection time. What is the myocardial performance index?",
       "options": [
         {
@@ -7020,7 +7654,7 @@
     },
     {
       "id": "fe-m2-085",
-      "number": 85,
+      "number": 84,
       "question": "A ductus venosus waveform in a 30-week fetus appears to show absent flow during atrial contraction, but the signal near the baseline looks cut off and the wall filter is set high. What is the best next step?",
       "options": [
         {
@@ -7050,7 +7684,7 @@
     },
     {
       "id": "fe-m2-086",
-      "number": 86,
+      "number": 85,
       "question": "A 28-year-old at 37 weeks carries a fetus with d-TGA and intact ventricular septum. The foramen ovale is small with a thickened, immobile septum primum, and the ductus arteriosus is narrow. What is the most appropriate delivery plan?",
       "options": [
         {
@@ -7080,7 +7714,7 @@
     },
     {
       "id": "fe-m2-088",
-      "number": 88,
+      "number": 86,
       "question": "Why is dextro-transposition of the great arteries frequently missed when screening relies on the four-chamber view alone?",
       "options": [
         {
@@ -7110,7 +7744,7 @@
     },
     {
       "id": "fe-m2-089",
-      "number": 89,
+      "number": 87,
       "question": "A 34-year-old at 22 weeks is found to have no identifiable ductus venosus; the umbilical vein bypasses the liver and drains directly into the right atrium, and the heart is enlarged. Which is the most likely diagnosis and concern?",
       "options": [
         {
@@ -7140,7 +7774,7 @@
     },
     {
       "id": "fe-m2-090",
-      "number": 90,
+      "number": 88,
       "question": "A 31-year-old whose brother died suddenly at age 22 has a 32-week fetus with a sustained heart rate of 105-110 bpm, 1:1 AV conduction, and a normal heart, plus brief runs in which the ventricular rate exceeds the atrial rate. What is the most likely diagnosis?",
       "options": [
         {
@@ -7170,7 +7804,7 @@
     },
     {
       "id": "fe-m2-091",
-      "number": 91,
+      "number": 89,
       "question": "A 26-year-old at 24 weeks has a fetus with a small, hypertrophied right ventricle, no forward flow across the pulmonary valve, reversed ductal flow, a small tricuspid valve, and color flow within the right ventricular myocardium communicating with the coronary arteries. Which finding is most important for surgical planning?",
       "options": [
         {
@@ -7200,7 +7834,7 @@
     },
     {
       "id": "fe-m2-092",
-      "number": 92,
+      "number": 90,
       "question": "A 35-year-old at 24 weeks has a fetus with a VSD and overriding aorta, no identifiable main pulmonary artery or ductus arteriosus, and several tortuous vessels arising from the descending aorta and coursing toward the lungs. What is the source of pulmonary blood flow?",
       "options": [
         {
@@ -7230,7 +7864,7 @@
     },
     {
       "id": "fe-m2-093",
-      "number": 93,
+      "number": 91,
       "question": "Which postnatal surgical pathway is standard for hypoplastic left heart syndrome?",
       "options": [
         {
@@ -7260,7 +7894,7 @@
     },
     {
       "id": "fe-m2-094",
-      "number": 94,
+      "number": 92,
       "question": "A 40-year-old at 19 weeks has a fetus with clenched hands and overlapping fingers, a strawberry-shaped skull, choroid plexus cysts, and a VSD with thickened dysplastic valves. What is the most likely diagnosis?",
       "options": [
         {
@@ -7290,7 +7924,7 @@
     },
     {
       "id": "fe-m2-095",
-      "number": 95,
+      "number": 93,
       "question": "A 32-week fetus of a 34-year-old with preeclampsia has an estimated weight under the 3rd percentile, an umbilical artery PI of 1.6, and a middle cerebral artery PI of 1.0. What is the cerebroplacental ratio and its interpretation?",
       "options": [
         {
@@ -7320,7 +7954,7 @@
     },
     {
       "id": "fe-m2-096",
-      "number": 96,
+      "number": 94,
       "question": "A 26-year-old at 27 weeks has a fetus whose M-mode shows a ventricular rate of 200 bpm and an atrial rate of 140 bpm with no consistent relationship between them. What is the diagnosis?",
       "options": [
         {
@@ -7350,7 +7984,7 @@
     },
     {
       "id": "fe-m2-097",
-      "number": 97,
+      "number": 95,
       "question": "A 27-year-old at 35 weeks has a fetus with a regular atrial rate of 440 bpm and a ventricular rate of 220 bpm. What is the most likely diagnosis?",
       "options": [
         {
@@ -7380,7 +8014,7 @@
     },
     {
       "id": "fe-m2-098",
-      "number": 98,
+      "number": 96,
       "question": "A 38-year-old at 20 weeks has a fetus with a single common atrioventricular valve bridging both ventricles and a defect at the crux involving the atrial and inlet ventricular septa. The stomach is on the left and systemic veins are normal. Which chromosomal abnormality is most likely?",
       "options": [
         {
@@ -7410,7 +8044,7 @@
     },
     {
       "id": "fe-m2-099",
-      "number": 99,
+      "number": 97,
       "question": "A 36-year-old at 24 weeks has a fetus with truncus arteriosus. Which associated finding most strongly influences fetal and postnatal outcome?",
       "options": [
         {
@@ -7438,7 +8072,7 @@
     },
     {
       "id": "fe-m2-100",
-      "number": 100,
+      "number": 98,
       "question": "A STIC volume of a 23-week fetal heart shows discontinuities and a distorted heart in the reconstructed planes because the fetus moved during acquisition. What is the best action?",
       "options": [
         {
@@ -7468,7 +8102,7 @@
     },
     {
       "id": "fe-m2-101",
-      "number": 101,
+      "number": 99,
       "question": "A 27-year-old with monochorionic diamniotic twins at 24 weeks has a recipient twin with right ventricular hypertrophy, tricuspid regurgitation, and a narrowed pulmonary valve with reduced forward flow. What is the most likely explanation?",
       "options": [
         {
@@ -7498,7 +8132,7 @@
     },
     {
       "id": "fe-m2-102",
-      "number": 102,
+      "number": 100,
       "question": "A 29-year-old at 28 weeks has a fetus with multiple round, homogeneous, echogenic masses within the ventricular walls and septum. They do not obstruct flow and there is no effusion. What is the most likely diagnosis?",
       "options": [
         {
@@ -7528,7 +8162,7 @@
     },
     {
       "id": "fe-m2-103",
-      "number": 103,
+      "number": 101,
       "question": "In a 20-week fetus, color Doppler shows flow crossing the foramen ovale from the left atrium into the right atrium. Which category of lesion does this suggest?",
       "options": [
         {
@@ -7558,7 +8192,7 @@
     },
     {
       "id": "fe-m2-104",
-      "number": 104,
+      "number": 102,
       "question": "A 27-year-old who had an ASD repaired as a child, and who has a hypoplastic thumb, has a 20-week fetus with bilateral radial hypoplasia, absent thumbs, and a muscular VSD. What is the most likely diagnosis?",
       "options": [
         {
@@ -7588,7 +8222,7 @@
     },
     {
       "id": "fe-m2-105",
-      "number": 105,
+      "number": 103,
       "question": "A 30-year-old with anti-Ro/SSA antibodies has a 20-week fetus with 1:1 AV conduction at a normal rate, but the mechanical PR interval measured from simultaneous mitral inflow and aortic outflow Doppler is 170 ms. How should this be interpreted?",
       "options": [
         {
@@ -7618,7 +8252,7 @@
     },
     {
       "id": "fe-m2-106",
-      "number": 106,
+      "number": 104,
       "question": "A 29-year-old at 23 weeks has a fetus whose five-chamber view shows a large aorta overriding a malaligned VSD and a small, anteriorly placed pulmonary artery with forward flow. Which classic postnatal component of this lesion is typically absent at this stage?",
       "options": [
         {
@@ -7648,7 +8282,7 @@
     },
     {
       "id": "fe-m2-107",
-      "number": 107,
+      "number": 105,
       "question": "Why is the thermal index more relevant than the mechanical index during fetal echocardiography without contrast agents?",
       "options": [
         {
@@ -7678,7 +8312,7 @@
     },
     {
       "id": "fe-m2-108",
-      "number": 108,
+      "number": 106,
       "question": "Which cardiovascular lesion is the hallmark of Williams syndrome (7q11.23 deletion)?",
       "options": [
         {
@@ -7708,7 +8342,7 @@
     },
     {
       "id": "fe-m2-109",
-      "number": 109,
+      "number": 107,
       "question": "A fetus with tricuspid atresia has transposed great arteries, so the aorta arises from the hypoplastic right ventricle. Which complication should be specifically sought?",
       "options": [
         {
@@ -7738,7 +8372,7 @@
     },
     {
       "id": "fe-m2-110",
-      "number": 110,
+      "number": 108,
       "question": "A 28-year-old elementary school teacher had a rash illness during a classroom outbreak 4 weeks ago. Her 22-week fetus has ascites, cardiomegaly, reduced contractility, and an MCA peak systolic velocity of 1.8 MoM. What is the most likely cause?",
       "options": [
         {
@@ -7768,7 +8402,7 @@
     },
     {
       "id": "fe-m2-111",
-      "number": 111,
+      "number": 109,
       "question": "A 29-year-old at 22 weeks has a fetus with a complete AVSD, stomach on the right, no IVC seen in the liver, and a vessel posterior to the aorta continuing into the chest. The atrial rate is 140 bpm and the ventricular rate is 55 bpm. What is the most likely diagnosis?",
       "options": [
         {
@@ -7798,7 +8432,7 @@
     },
     {
       "id": "fe-m2-112",
-      "number": 112,
+      "number": 110,
       "question": "A 30-year-old at 27 weeks has a fetus with a large, solid, highly vascular sacrococcygeal mass with high-velocity flow, cardiomegaly, a dilated IVC, and increased combined cardiac output. Which type of heart failure is developing?",
       "options": [
         {
@@ -7828,7 +8462,7 @@
     },
     {
       "id": "fe-m2-113",
-      "number": 113,
+      "number": 111,
       "question": "Which procedure is the standard definitive neonatal repair for dextro-transposition with an intact ventricular septum?",
       "options": [
         {
@@ -7858,7 +8492,7 @@
     },
     {
       "id": "fe-m2-114",
-      "number": 114,
+      "number": 112,
       "question": "Which motion of the foramen ovale flap is expected in a normal second-trimester fetus?",
       "options": [
         {
@@ -7888,7 +8522,7 @@
     },
     {
       "id": "fe-m2-115",
-      "number": 115,
+      "number": 113,
       "question": "A 22-year-old took isotretinoin for acne until she discovered her pregnancy at 9 weeks. Which cardiac anomalies are most associated with this exposure?",
       "options": [
         {
@@ -7918,7 +8552,7 @@
     },
     {
       "id": "fe-m2-116",
-      "number": 116,
+      "number": 114,
       "question": "A 29-year-old at 25 weeks has a fetus with a VSD in which the outlet septum is displaced posteriorly into the left ventricular outflow tract, narrowing the subaortic region. Which associated lesion should be sought?",
       "options": [
         {
@@ -7948,7 +8582,7 @@
     },
     {
       "id": "fe-m2-117",
-      "number": 117,
+      "number": 115,
       "question": "A 29-year-old had a first-trimester NT of 4.5 mm with a normal karyotype and microarray. At 22 weeks the fetus has a thickened, dysplastic pulmonary valve with stenosis, and later ventricular hypertrophy develops. What is the most likely diagnosis?",
       "options": [
         {
@@ -7978,7 +8612,7 @@
     },
     {
       "id": "fe-m2-118",
-      "number": 118,
+      "number": 116,
       "question": "A 33-year-old at 22 weeks has a four-chamber view showing a dilated tubular structure along the posterior left atrioventricular groove, and the three-vessel-trachea view shows an extra vessel to the left of the pulmonary artery. What is the most likely diagnosis?",
       "options": [
         {
@@ -8008,7 +8642,7 @@
     },
     {
       "id": "fe-m2-119",
-      "number": 119,
+      "number": 117,
       "question": "A 30-week fetus with severe tricuspid regurgitation from tricuspid valve dysplasia has umbilical vein Doppler showing pulsations synchronous with the fetal heart rate. What does this most likely indicate?",
       "options": [
         {
@@ -8038,7 +8672,7 @@
     },
     {
       "id": "fe-m2-120",
-      "number": 120,
+      "number": 118,
       "question": "When obtaining ductus venosus Doppler in a 22-week fetus, where should the sample volume be placed?",
       "options": [
         {
@@ -8068,7 +8702,7 @@
     },
     {
       "id": "fe-m2-121",
-      "number": 121,
+      "number": 119,
       "question": "A 30-year-old at 31 weeks is receiving indomethacin for preterm labor. The fetal ductus arteriosus shows a systolic velocity of 2.0 m/s, a diastolic velocity of 0.6 m/s, and a PI of 1.5, with new tricuspid regurgitation and right ventricular dilation. What is the most likely diagnosis?",
       "options": [
         {
@@ -8098,7 +8732,7 @@
     },
     {
       "id": "fe-m2-122",
-      "number": 122,
+      "number": 120,
       "question": "A 39-year-old at 21 weeks has a fetus diagnosed with double outlet right ventricle. Which associations should be specifically evaluated?",
       "options": [
         {
@@ -8128,7 +8762,7 @@
     },
     {
       "id": "fe-m2-123",
-      "number": 123,
+      "number": 121,
       "question": "According to AIUM fetal echocardiography guidelines, how large should the fetal heart be displayed for evaluation?",
       "options": [
         {
@@ -8158,7 +8792,7 @@
     },
     {
       "id": "fe-m2-124",
-      "number": 124,
+      "number": 122,
       "question": "A 30-year-old at 25 weeks has a fetus with a single large arterial trunk overriding a VSD, with one thickened regurgitant semilunar valve. A short main pulmonary segment arises from the left side of the trunk and then divides into branch pulmonary arteries. Which Collett-Edwards type of truncus arteriosus is this?",
       "options": [
         {
@@ -8188,7 +8822,7 @@
     },
     {
       "id": "fe-m2-125",
-      "number": 125,
+      "number": 123,
       "question": "A 28-year-old with Kell alloimmunization is scanned at 24 weeks for MCA peak systolic velocity. Which technique is correct?",
       "options": [
         {
@@ -8218,7 +8852,7 @@
     },
     {
       "id": "fe-m2-126",
-      "number": 126,
+      "number": 124,
       "question": "A 30-year-old with type 1 diabetes has a first-trimester HbA1c of 9.8 percent. Which statement is most accurate?",
       "options": [
         {
@@ -8248,7 +8882,7 @@
     },
     {
       "id": "fe-m2-127",
-      "number": 127,
+      "number": 125,
       "question": "Where should the pulsed-wave sample volume be placed to record mitral or tricuspid inflow E and A waves in a fetus?",
       "options": [
         {
@@ -8278,7 +8912,7 @@
     },
     {
       "id": "fe-m2-128",
-      "number": 128,
+      "number": 126,
       "question": "A 31-year-old at 32 weeks has a fetus with a regular heart rate of 240 bpm, 1:1 AV conduction, abrupt onset and termination, and a short VA interval on simultaneous Doppler. What is the most likely mechanism?",
       "options": [
         {
@@ -8308,7 +8942,7 @@
     },
     {
       "id": "fe-m2-129",
-      "number": 129,
+      "number": 127,
       "question": "Why is coarctation of the aorta difficult to confirm before birth?",
       "options": [
         {
@@ -8338,7 +8972,7 @@
     },
     {
       "id": "fe-m2-130",
-      "number": 130,
+      "number": 128,
       "question": "A 19-year-old at 13 weeks has a fetus with a large septated cystic hygroma and generalized skin edema; a later scan shows a small aortic isthmus. Which karyotype and cardiac lesion are most likely?",
       "options": [
         {
@@ -8368,7 +9002,7 @@
     },
     {
       "id": "fe-m2-131",
-      "number": 131,
+      "number": 129,
       "question": "A 27-year-old at 28 weeks has a fetus with a parachute mitral valve, subaortic narrowing, and coarctation of the aorta. Which term describes this combination?",
       "options": [
         {
@@ -8398,7 +9032,7 @@
     },
     {
       "id": "fe-m2-132",
-      "number": 132,
+      "number": 130,
       "question": "A 27-year-old at 22 weeks has a fetal echo in which no pulmonary veins can be seen entering the left atrium with low-velocity color Doppler. A venous confluence lies behind the left atrium, and the space between the left atrium and the descending aorta is increased. What is the most likely diagnosis?",
       "options": [
         {
@@ -8428,7 +9062,7 @@
     },
     {
       "id": "fe-m2-133",
-      "number": 133,
+      "number": 131,
       "question": "Adding color Doppler to a fetal outflow tract view causes the frame rate to drop dramatically. What is the best adjustment?",
       "options": [
         {
@@ -8458,7 +9092,7 @@
     },
     {
       "id": "fe-m2-134",
-      "number": 134,
+      "number": 132,
       "question": "A 34-year-old at 23 weeks has a fetus in which both great arteries arise mostly from the right ventricle, side by side and parallel, a muscular conus separates the aortic valve from the mitral valve, and there is a large VSD. What is the diagnosis?",
       "options": [
         {
@@ -8488,7 +9122,7 @@
     },
     {
       "id": "fe-m2-135",
-      "number": 135,
+      "number": 133,
       "question": "A 32-year-old has a first-trimester NT of 3.8 mm, and chromosomal microarray from CVS is normal. What is the most appropriate cardiac follow-up?",
       "options": [
         {
@@ -8518,7 +9152,7 @@
     },
     {
       "id": "fe-m2-136",
-      "number": 136,
+      "number": 134,
       "question": "A 27-year-old at 26 weeks has a fetal left ventricular M-mode with an end-diastolic dimension of 10.0 mm and an end-systolic dimension of 7.0 mm. What is the shortening fraction?",
       "options": [
         {
@@ -8548,7 +9182,7 @@
     },
     {
       "id": "fe-m2-137",
-      "number": 137,
+      "number": 135,
       "question": "A 33-year-old at 28 weeks is referred for a fetal ventricular rate of 75 bpm. M-mode shows two atrial contractions for every ventricular contraction, but the second atrial beat follows the first early, so atrial intervals alternate short-long. What is the most likely diagnosis?",
       "options": [
         {
@@ -8578,7 +9212,7 @@
     },
     {
       "id": "fe-m2-138",
-      "number": 138,
+      "number": 136,
       "question": "A 37-year-old at 20 weeks has a fetus with a midline anterior abdominal wall defect and a membrane-covered sac containing bowel and liver, with the cord inserting into the sac. What is recommended?",
       "options": [
         {
@@ -8608,7 +9242,7 @@
     },
     {
       "id": "fe-m2-139",
-      "number": 139,
+      "number": 137,
       "question": "A 30-year-old at 26 weeks has a fetus with an incessant tachycardia at 210 bpm with 1:1 conduction, in which the VA interval is longer than the AV interval. Which mechanism is most likely?",
       "options": [
         {
@@ -8638,7 +9272,7 @@
     },
     {
       "id": "fe-m2-140",
-      "number": 140,
+      "number": 138,
       "question": "A 33-year-old with poorly controlled pregestational diabetes (HbA1c 9 percent) has a 34-week fetus with a markedly thickened interventricular septum, a normal-sized left ventricular cavity, and mild flow acceleration in the left ventricular outflow tract. What is the most likely diagnosis and expected course?",
       "options": [
         {
@@ -8668,7 +9302,7 @@
     },
     {
       "id": "fe-m2-141",
-      "number": 141,
+      "number": 139,
       "question": "A 31-year-old at 26 weeks has a fetus with a large perimembranous VSD but no cardiomegaly or hydrops. Why does a large VSD rarely cause heart failure in utero?",
       "options": [
         {
@@ -8698,7 +9332,7 @@
     },
     {
       "id": "fe-m2-142",
-      "number": 142,
+      "number": 140,
       "question": "A 24-year-old at 20 weeks has a fetal echo showing a thin, mobile linear echo within the right atrium near the entrance of the inferior vena cava. There is no flow disturbance and the rest of the heart is normal. What is the most likely explanation?",
       "options": [
         {
@@ -8728,7 +9362,7 @@
     },
     {
       "id": "fe-m2-143",
-      "number": 143,
+      "number": 141,
       "question": "A consanguineous couple has a 22-week fetus with short limbs, a narrow thorax with short ribs, postaxial polydactyly of the hands, and a single large atrium without an identifiable atrial septum. What is the most likely diagnosis?",
       "options": [
         {
@@ -8758,7 +9392,7 @@
     },
     {
       "id": "fe-m2-144",
-      "number": 144,
+      "number": 142,
       "question": "Which statement about simple dextro-transposition of the great arteries is most accurate?",
       "options": [
         {
@@ -8788,7 +9422,7 @@
     },
     {
       "id": "fe-m2-145",
-      "number": 145,
+      "number": 143,
       "question": "A 31-year-old at 23 weeks has a fetus with a dilated, poorly contracting left ventricle with a brightly echogenic endocardium, a narrow jet across a thickened aortic valve, left-to-right flow at the foramen ovale, retrograde transverse arch flow, and monophasic mitral inflow. Which statement is most accurate?",
       "options": [
         {
@@ -8818,7 +9452,7 @@
     },
     {
       "id": "fe-m2-146",
-      "number": 146,
+      "number": 144,
       "question": "A pediatric cardiologist asks whether a 30-week fetus has a secundum ASD. What is the best response?",
       "options": [
         {
@@ -8848,7 +9482,7 @@
     },
     {
       "id": "fe-m2-147",
-      "number": 147,
+      "number": 145,
       "question": "A 32-year-old at 23 weeks has a fetus whose small ascending aorta runs straight up toward the neck without arching to join the descending aorta, which is supplied entirely by the ductus; there is a posterior malalignment VSD. Which diagnosis and genetic association are most likely?",
       "options": [
         {
@@ -8878,7 +9512,7 @@
     },
     {
       "id": "fe-m2-148",
-      "number": 148,
+      "number": 146,
       "question": "A 28-year-old Rh-negative woman with a rising anti-D titer is scanned at 26 weeks. The fetal middle cerebral artery peak systolic velocity is 1.7 multiples of the median. What is the most likely fetal condition?",
       "options": [
         {
@@ -8908,7 +9542,7 @@
     },
     {
       "id": "fe-m2-149",
-      "number": 149,
+      "number": 147,
       "question": "Which fetal venous stream is preferentially directed across the foramen ovale into the left atrium?",
       "options": [
         {
@@ -8938,7 +9572,7 @@
     },
     {
       "id": "fe-m2-150",
-      "number": 150,
+      "number": 148,
       "question": "A 35-year-old at 24 weeks is referred to exclude a sinus venosus defect after a prior child was diagnosed with one. Which view best displays the entry of both venae cavae into the right atrium?",
       "options": [
         {
@@ -8964,6 +9598,699 @@
       "hint": "Consider which standard view shows the superior atrial septum and the caval junctions in one plane.",
       "keywords": [
         "sinus venosus defect"
+      ]
+    },
+    {
+      "id": "fe-x-007",
+      "number": 149,
+      "question": "Unlike the postnatal heart, how do the fetal right and left ventricles function relative to each other?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "In series, with right ventricular output passing through the lungs to the left heart"
+        },
+        {
+          "letter": "B",
+          "text": "In parallel, with both ventricles contributing to systemic output through fetal shunts"
+        },
+        {
+          "letter": "C",
+          "text": "Independently, with the right ventricle supplying only the fetal lungs"
+        },
+        {
+          "letter": "D",
+          "text": "In series, with left ventricular output returning to the right heart via the placenta"
+        }
+      ],
+      "category": "Fetal Circulation & Physiology",
+      "correctAnswer": "B",
+      "explanation": "Because of the foramen ovale and ductus arteriosus, the fetal ventricles pump in parallel and both supply the systemic circulation. The series arrangement, in which right ventricular output must pass through the lungs, is established only after birth when the shunts close.",
+      "hint": "Think about what the foramen ovale and ductus arteriosus allow both ventricles to do.",
+      "keywords": [
+        "parallel circulation",
+        "fetal shunts"
+      ]
+    },
+    {
+      "id": "fe-x-030",
+      "number": 150,
+      "question": "Before transplacental antiarrhythmic therapy such as digoxin, flecainide or sotalol is started for fetal tachycardia, which maternal evaluation is standard?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Baseline maternal 12-lead electrocardiogram"
+        },
+        {
+          "letter": "B",
+          "text": "Maternal chest radiograph"
+        },
+        {
+          "letter": "C",
+          "text": "Maternal pulmonary function testing"
+        },
+        {
+          "letter": "D",
+          "text": "Maternal cardiac magnetic resonance imaging"
+        }
+      ],
+      "category": "Arrhythmias & Heart Failure",
+      "correctAnswer": "A",
+      "explanation": "These drugs can cause maternal conduction abnormalities and proarrhythmia, so a baseline maternal electrocardiogram (with electrolytes) is obtained and repeated during therapy. Chest radiography and lung testing do not assess the risks of antiarrhythmic drugs.",
+      "hint": "Think about what the drug could do to the mother's own rhythm.",
+      "keywords": [
+        "transplacental therapy",
+        "maternal ECG",
+        "antiarrhythmics"
+      ]
+    },
+    {
+      "id": "fe-x-035",
+      "number": 151,
+      "question": "Which syndrome combines coloboma, heart defects (often conotruncal), choanal atresia, growth retardation, genital anomalies and ear anomalies?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CHARGE syndrome"
+        },
+        {
+          "letter": "B",
+          "text": "VACTERL association"
+        },
+        {
+          "letter": "C",
+          "text": "Holt-Oram syndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Smith-Lemli-Opitz syndrome"
+        }
+      ],
+      "category": "Associations & Maternal Factors",
+      "correctAnswer": "A",
+      "explanation": "CHARGE syndrome, usually due to CHD7 variants, is named for coloboma, heart defects, choanal atresia, retarded growth, genital and ear anomalies, and conotruncal or arch defects are common. VACTERL instead combines vertebral, anorectal, cardiac, tracheoesophageal, renal and limb anomalies.",
+      "hint": "Two of the listed defects, involving the eye and the nasal passages, are the most distinctive clues.",
+      "keywords": [
+        "CHARGE syndrome",
+        "conotruncal defects"
+      ]
+    },
+    {
+      "id": "fe-x-040",
+      "number": 152,
+      "question": "Which technique is recommended for setting color Doppler gain during fetal cardiac imaging?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Set the gain to maximum so that small jets are never missed"
+        },
+        {
+          "letter": "B",
+          "text": "Set the gain to minimum to eliminate any color over the walls"
+        },
+        {
+          "letter": "C",
+          "text": "Increase gain until random color speckle appears in tissue, then reduce it just below that level"
+        },
+        {
+          "letter": "D",
+          "text": "Set color gain equal to the grayscale gain value on the display"
+        }
+      ],
+      "category": "Technique & Instrumentation",
+      "correctAnswer": "C",
+      "explanation": "Raising color gain until noise appears and then decreasing it slightly gives maximum sensitivity without color bleeding over walls and septa. Excessive gain can hide small VSDs by bleeding across the septum, while very low gain can miss low-velocity flow.",
+      "hint": "Find the noise threshold and work back from it.",
+      "keywords": [
+        "color Doppler",
+        "gain",
+        "optimization"
+      ]
+    },
+    {
+      "id": "fe-x-004",
+      "number": 153,
+      "question": "In a short-axis view through the normal fetal ventricles, how do the two ventricles appear?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The right ventricle is round and the left ventricle wraps around it posteriorly as a crescent"
+        },
+        {
+          "letter": "B",
+          "text": "Both ventricles appear as equal-sized circles lying side by side"
+        },
+        {
+          "letter": "C",
+          "text": "The left ventricle is round and the right ventricle wraps around it anteriorly as a crescent"
+        },
+        {
+          "letter": "D",
+          "text": "Both ventricles appear as crescents separated by a straight central septum"
+        }
+      ],
+      "category": "Normal Fetal Heart & Views",
+      "correctAnswer": "C",
+      "explanation": "In short axis the left ventricle appears circular, and the right ventricle wraps anteriorly around it in a crescent shape. In the fetus the two ventricles have similar size and wall thickness, but this geometry is still expected; a round right ventricle with a flattened septum suggests right ventricular volume or pressure loading or abnormal anatomy.",
+      "hint": "Picture the ventricle with the round cavity and the one draped around it.",
+      "keywords": [
+        "short-axis view",
+        "ventricular shape"
+      ]
+    },
+    {
+      "id": "fe-x-010",
+      "number": 154,
+      "question": "After birth, the fetal ductus venosus becomes which structure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ligamentum teres"
+        },
+        {
+          "letter": "B",
+          "text": "Ligamentum arteriosum"
+        },
+        {
+          "letter": "C",
+          "text": "Medial umbilical ligament"
+        },
+        {
+          "letter": "D",
+          "text": "Ligamentum venosum"
+        }
+      ],
+      "category": "Fetal Circulation & Physiology",
+      "correctAnswer": "D",
+      "explanation": "The obliterated ductus venosus becomes the ligamentum venosum in the fissure of the liver. The ligamentum teres is the remnant of the umbilical vein, and the ligamentum arteriosum is the remnant of the ductus arteriosus.",
+      "hint": "Each fetal shunt or vessel leaves a fibrous remnant; recall the one lying in a fissure of the liver.",
+      "keywords": [
+        "ductus venosus",
+        "postnatal remnants"
+      ]
+    },
+    {
+      "id": "fe-x-015",
+      "number": 155,
+      "question": "Multiple muscular ventricular septal defects scattered throughout the trabecular septum are commonly described by which term?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Gerbode defect"
+        },
+        {
+          "letter": "B",
+          "text": "Malalignment defect"
+        },
+        {
+          "letter": "C",
+          "text": "Doubly committed defect"
+        },
+        {
+          "letter": "D",
+          "text": "Swiss cheese septum"
+        }
+      ],
+      "category": "Septal & Atrioventricular Defects",
+      "correctAnswer": "D",
+      "explanation": "Numerous muscular defects in the trabecular septum are described as a Swiss cheese septum, which is surgically challenging. A Gerbode defect is a left ventricle to right atrium communication, and a doubly committed defect lies beneath both semilunar valves.",
+      "hint": "The term compares the septum's appearance to a familiar food.",
+      "keywords": [
+        "muscular VSD",
+        "multiple VSDs"
+      ]
+    },
+    {
+      "id": "fe-x-021",
+      "number": 156,
+      "question": "A 27-year-old at 26 weeks has a fetus with D-transposition of the great arteries, a large VSD, and significant pulmonary (left ventricular outflow) stenosis. Which surgical repair is most likely planned?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Norwood procedure"
+        },
+        {
+          "letter": "B",
+          "text": "Arterial switch operation alone"
+        },
+        {
+          "letter": "C",
+          "text": "Bidirectional Glenn shunt"
+        },
+        {
+          "letter": "D",
+          "text": "Rastelli procedure"
+        }
+      ],
+      "category": "Conotruncal Anomalies",
+      "correctAnswer": "D",
+      "explanation": "With transposition, VSD and significant left ventricular outflow obstruction, the Rastelli procedure baffles the left ventricle to the aorta through the VSD and places a right ventricle to pulmonary artery conduit. An arterial switch alone would leave the obstructed outflow as the new aortic outflow.",
+      "hint": "Consider which repair avoids using the stenotic outflow as the systemic outlet.",
+      "keywords": [
+        "transposition",
+        "Rastelli procedure",
+        "pulmonary stenosis"
+      ]
+    },
+    {
+      "id": "fe-x-026",
+      "number": 157,
+      "question": "Which congenital valve abnormality, present in about 1 to 2 percent of the population, is rarely diagnosed on fetal echocardiography?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ebstein anomaly"
+        },
+        {
+          "letter": "B",
+          "text": "Congenital mitral stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Pulmonary valve atresia"
+        },
+        {
+          "letter": "D",
+          "text": "Bicuspid aortic valve"
+        }
+      ],
+      "category": "Obstructive & Hypoplastic Lesions",
+      "correctAnswer": "D",
+      "explanation": "A bicuspid aortic valve is the most common congenital valve abnormality, but without stenosis it is hard to recognize prenatally because the valve is tiny and function is usually normal. Pulmonary atresia and Ebstein anomaly are rarer and produce obvious four-chamber or outflow abnormalities.",
+      "hint": "Think of the common valve lesion that usually causes no flow disturbance before birth.",
+      "keywords": [
+        "bicuspid aortic valve",
+        "prenatal detection limits"
+      ]
+    },
+    {
+      "id": "fe-x-031",
+      "number": 158,
+      "question": "A 33-year-old with anti-Ro/SSA antibodies has a 26-week fetus with complete heart block and a ventricular rate of 50 bpm without hydrops. Which maternal medication may be used to increase the fetal ventricular rate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Digoxin"
+        },
+        {
+          "letter": "B",
+          "text": "Flecainide"
+        },
+        {
+          "letter": "C",
+          "text": "A beta-sympathomimetic such as terbutaline"
+        },
+        {
+          "letter": "D",
+          "text": "Sotalol"
+        }
+      ],
+      "category": "Arrhythmias & Heart Failure",
+      "correctAnswer": "C",
+      "explanation": "Beta-sympathomimetics such as terbutaline or salbutamol given to the mother can raise the fetal ventricular rate in complete heart block, which is considered when the rate falls to about 55 bpm or below. Digoxin, flecainide and sotalol are used for tachycardias and may slow conduction further.",
+      "hint": "Choose the drug that stimulates rather than suppresses the heart.",
+      "keywords": [
+        "complete heart block",
+        "terbutaline",
+        "anti-Ro"
+      ]
+    },
+    {
+      "id": "fe-x-036",
+      "number": 159,
+      "question": "A 31-year-old at 20 weeks has polyhydramnios and a persistently absent fetal stomach, along with hemivertebrae, a single kidney, and a ventricular septal defect. Which diagnosis best explains these findings?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CHARGE syndrome"
+        },
+        {
+          "letter": "B",
+          "text": "Turner syndrome"
+        },
+        {
+          "letter": "C",
+          "text": "VACTERL association"
+        },
+        {
+          "letter": "D",
+          "text": "Trisomy 21"
+        }
+      ],
+      "category": "Associations & Maternal Factors",
+      "correctAnswer": "C",
+      "explanation": "Suspected esophageal atresia (absent stomach with polyhydramnios) plus vertebral, renal and cardiac anomalies fits VACTERL association, in which a VSD is a common cardiac finding. Trisomy 21 is linked with duodenal atresia and AVSD but not with hemivertebrae and renal agenesis.",
+      "hint": "Count how many organ systems match a well-known acronym.",
+      "keywords": [
+        "VACTERL",
+        "esophageal atresia",
+        "VSD"
+      ]
+    },
+    {
+      "id": "fe-x-041",
+      "number": 160,
+      "question": "Which technique measures myocardial wall motion velocities directly, such as annular e-prime and a-prime velocities, in the fetal heart?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Power Doppler imaging"
+        },
+        {
+          "letter": "B",
+          "text": "Spatiotemporal image correlation"
+        },
+        {
+          "letter": "C",
+          "text": "Tissue harmonic imaging"
+        },
+        {
+          "letter": "D",
+          "text": "Tissue Doppler imaging"
+        }
+      ],
+      "category": "Technique & Instrumentation",
+      "correctAnswer": "D",
+      "explanation": "Tissue Doppler imaging filters out low-amplitude, high-velocity blood signals and displays the high-amplitude, low-velocity motion of the myocardium and valve annuli. Power Doppler displays flow amplitude without velocity, and STIC is a volume acquisition method.",
+      "hint": "Choose the Doppler method tuned for slow, strong reflectors.",
+      "keywords": [
+        "tissue Doppler",
+        "myocardial velocity"
+      ]
+    },
+    {
+      "id": "fe-x-005",
+      "number": 161,
+      "question": "In the normal fetal heart, the right pulmonary artery courses toward the right lung in which relationship to the ascending aorta?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Posterior to the ascending aorta"
+        },
+        {
+          "letter": "B",
+          "text": "Anterior to the ascending aorta"
+        },
+        {
+          "letter": "C",
+          "text": "Anterior to the superior vena cava"
+        },
+        {
+          "letter": "D",
+          "text": "Posterior to the descending aorta"
+        }
+      ],
+      "category": "Normal Fetal Heart & Views",
+      "correctAnswer": "A",
+      "explanation": "After the main pulmonary artery bifurcates, the right pulmonary artery passes behind the ascending aorta (and superior vena cava) to reach the right lung. A vessel passing anterior to the aorta suggests anomalous anatomy, and the descending aorta lies further posterior beside the spine.",
+      "hint": "Follow the bifurcation in the short-axis or three-vessel plane toward the right lung.",
+      "keywords": [
+        "right pulmonary artery",
+        "great vessel relationships"
+      ]
+    },
+    {
+      "id": "fe-x-011",
+      "number": 162,
+      "question": "Fetal arterial oxygen saturation is much lower than an adult's, yet tissue oxygen delivery is adequate. Which feature contributes most to this?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fetal hemoglobin has a lower oxygen affinity than adult hemoglobin"
+        },
+        {
+          "letter": "B",
+          "text": "Fetal hemoglobin has a higher oxygen affinity than adult hemoglobin"
+        },
+        {
+          "letter": "C",
+          "text": "Fetal hematocrit is substantially lower than adult values"
+        },
+        {
+          "letter": "D",
+          "text": "Fetal lungs extract oxygen from inhaled amniotic fluid"
+        }
+      ],
+      "category": "Fetal Circulation & Physiology",
+      "correctAnswer": "B",
+      "explanation": "Fetal hemoglobin binds oxygen more avidly (its dissociation curve is shifted left), allowing efficient uptake at the low oxygen tension of the placenta. Together with a high hematocrit and high cardiac output, this maintains delivery; a lower affinity would hinder placental uptake.",
+      "hint": "Think about which way the fetal oxygen dissociation curve is shifted.",
+      "keywords": [
+        "fetal hemoglobin",
+        "oxygen delivery"
+      ]
+    },
+    {
+      "id": "fe-x-016",
+      "number": 163,
+      "question": "In an atrioventricular septal defect, how does the ventricular septum typically differ from normal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The inlet septum is longer than the outlet, displacing the valves apically"
+        },
+        {
+          "letter": "B",
+          "text": "The inlet septum is scooped out, so its length is shorter than the outlet length"
+        },
+        {
+          "letter": "C",
+          "text": "The muscular septum is absent at the apex with a normal inlet portion"
+        },
+        {
+          "letter": "D",
+          "text": "The outlet septum is deviated anteriorly into the right ventricular outflow"
+        }
+      ],
+      "category": "Septal & Atrioventricular Defects",
+      "correctAnswer": "B",
+      "explanation": "In AVSD the inlet portion of the septum is deficient (scooped), producing an inlet-outlet disproportion that also elongates the left ventricular outflow tract (the gooseneck). Anterior deviation of the outlet septum is the mechanism of tetralogy of Fallot, not AVSD.",
+      "hint": "Compare the septal length from crux to apex with the outlet length.",
+      "keywords": [
+        "AVSD",
+        "inlet septum",
+        "scooped septum"
+      ]
+    },
+    {
+      "id": "fe-x-022",
+      "number": 164,
+      "question": "In truncus arteriosus, which statement about the truncal valve is most accurate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It may have two to six cusps and is often thickened, stenotic or regurgitant"
+        },
+        {
+          "letter": "B",
+          "text": "It is always a normal trileaflet valve with no regurgitation"
+        },
+        {
+          "letter": "C",
+          "text": "It is atretic, so the trunk fills retrograde from the ductus"
+        },
+        {
+          "letter": "D",
+          "text": "It arises entirely from the left ventricle above an intact septum"
+        }
+      ],
+      "category": "Conotruncal Anomalies",
+      "correctAnswer": "A",
+      "explanation": "The truncal valve is frequently abnormal, with a variable number of cusps (commonly three, but two to six occur) and dysplasia causing stenosis or regurgitation; significant regurgitation worsens prognosis. The trunk overrides a VSD rather than arising above an intact septum.",
+      "hint": "Recall why truncal valve function is assessed carefully with color Doppler.",
+      "keywords": [
+        "truncus arteriosus",
+        "truncal valve"
+      ]
+    },
+    {
+      "id": "fe-x-027",
+      "number": 165,
+      "question": "A 32-year-old at 23 weeks has a fetus with severe aortic stenosis, a normal-length but poorly contracting left ventricle, retrograde transverse arch flow, and left-to-right flow at the foramen ovale. She asks about fetal aortic valvuloplasty. What is its main goal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To close the foramen ovale and increase left ventricular preload"
+        },
+        {
+          "letter": "B",
+          "text": "To create an atrial septal opening that decompresses the left atrium"
+        },
+        {
+          "letter": "C",
+          "text": "To relieve outflow obstruction and promote left ventricular growth toward a biventricular circulation"
+        },
+        {
+          "letter": "D",
+          "text": "To dilate the aortic isthmus and prevent later coarctation"
+        }
+      ],
+      "category": "Obstructive & Hypoplastic Lesions",
+      "correctAnswer": "C",
+      "explanation": "In selected fetuses with severe aortic stenosis evolving toward HLHS, balloon valvuloplasty aims to relieve obstruction so the left ventricle can grow and function, allowing a biventricular outcome. Atrial septal intervention is a different procedure used for HLHS with an intact or highly restrictive atrial septum.",
+      "hint": "Consider what the procedure is trying to prevent the left ventricle from becoming.",
+      "keywords": [
+        "fetal intervention",
+        "aortic stenosis",
+        "evolving HLHS"
+      ]
+    },
+    {
+      "id": "fe-x-032",
+      "number": 166,
+      "question": "A 27-year-old at 34 weeks has a temperature of 39.2 C. The fetal heart rate is 185 bpm with 1:1 AV conduction, normal variability, gradual rate changes, and a structurally normal heart. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Atrioventricular reentrant tachycardia"
+        },
+        {
+          "letter": "B",
+          "text": "Sinus tachycardia secondary to maternal fever"
+        },
+        {
+          "letter": "C",
+          "text": "Atrial flutter with 2:1 atrioventricular conduction"
+        },
+        {
+          "letter": "D",
+          "text": "Junctional ectopic tachycardia"
+        }
+      ],
+      "category": "Arrhythmias & Heart Failure",
+      "correctAnswer": "B",
+      "explanation": "A rate under about 200 bpm with 1:1 conduction, preserved variability and gradual changes in the setting of maternal fever indicates sinus tachycardia, which resolves when the cause is treated. Reentrant tachycardia typically starts and stops abruptly at a fixed rate above 200 bpm with no variability.",
+      "hint": "Look at the rate, the variability and the maternal clinical context.",
+      "keywords": [
+        "sinus tachycardia",
+        "maternal fever",
+        "fetal tachycardia"
+      ]
+    },
+    {
+      "id": "fe-x-037",
+      "number": 167,
+      "question": "First-trimester exposure to which antidepressant has been most associated with cardiac malformations, leading to recommendations to avoid it in pregnancy when possible?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Sertraline"
+        },
+        {
+          "letter": "B",
+          "text": "Bupropion"
+        },
+        {
+          "letter": "C",
+          "text": "Nortriptyline"
+        },
+        {
+          "letter": "D",
+          "text": "Paroxetine"
+        }
+      ],
+      "category": "Associations & Maternal Factors",
+      "correctAnswer": "D",
+      "explanation": "Paroxetine has been associated with an increased risk of cardiac malformations, mainly septal and right outflow defects, and ACOG advises avoiding it in women planning pregnancy when possible. Sertraline has a more reassuring cardiac safety record and is often preferred.",
+      "hint": "Think of the one SSRI singled out in obstetric guidance.",
+      "keywords": [
+        "paroxetine",
+        "teratogens",
+        "SSRI"
+      ]
+    },
+    {
+      "id": "fe-x-042",
+      "number": 168,
+      "question": "Which grayscale setting best improves blood-tissue contrast in the fetal heart, making thin septa and valve leaflets more distinct?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A narrower dynamic range for a higher-contrast image"
+        },
+        {
+          "letter": "B",
+          "text": "A wider dynamic range for smoother gray shading"
+        },
+        {
+          "letter": "C",
+          "text": "Higher persistence to average more frames together"
+        },
+        {
+          "letter": "D",
+          "text": "More spatial compounding angles per frame"
+        }
+      ],
+      "category": "Technique & Instrumentation",
+      "correctAnswer": "A",
+      "explanation": "Narrowing the dynamic range (higher compression contrast) makes blood darker and tissue brighter, sharpening septal and valve edges, which suits cardiac imaging. High persistence and heavy compounding blur rapidly moving structures and reduce frame rate.",
+      "hint": "Consider which setting makes the image look more black-and-white.",
+      "keywords": [
+        "dynamic range",
+        "image contrast"
+      ]
+    },
+    {
+      "id": "fe-x-006",
+      "number": 169,
+      "question": "A 28-year-old at 22 weeks has a three-vessel-trachea view showing a homogeneous, mildly hypoechoic structure anterior to the great vessels and directly behind the sternum. What is this structure most likely to be?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pericardial effusion"
+        },
+        {
+          "letter": "B",
+          "text": "Right lung lobe"
+        },
+        {
+          "letter": "C",
+          "text": "Esophagus"
+        },
+        {
+          "letter": "D",
+          "text": "Thymus"
+        }
+      ],
+      "category": "Normal Fetal Heart & Views",
+      "correctAnswer": "D",
+      "explanation": "The thymus lies anterior to the great vessels in the upper mediastinum and appears as a homogeneous, slightly hypoechoic structure on the three-vessel-trachea view. An effusion would be anechoic and surround the heart, and the esophagus lies posterior near the trachea; a small or absent thymus can suggest 22q11.2 deletion.",
+      "hint": "Consider the anterior mediastinal organ evaluated when 22q11.2 deletion is suspected.",
+      "keywords": [
+        "thymus",
+        "three-vessel-trachea view",
+        "mediastinum"
+      ]
+    },
+    {
+      "id": "fe-x-017",
+      "number": 170,
+      "question": "A 30-year-old at 25 weeks has a fetus with a large VSD. Chordae from one atrioventricular valve pass through the defect and attach to papillary muscles in the opposite ventricle. Which term describes this valve?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Straddling atrioventricular valve"
+        },
+        {
+          "letter": "B",
+          "text": "Overriding atrioventricular valve"
+        },
+        {
+          "letter": "C",
+          "text": "Cleft atrioventricular valve"
+        },
+        {
+          "letter": "D",
+          "text": "Double-orifice atrioventricular valve"
+        }
+      ],
+      "category": "Septal & Atrioventricular Defects",
+      "correctAnswer": "A",
+      "explanation": "A straddling valve has tension apparatus (chordae) attached in both ventricles, which can preclude a biventricular repair. An overriding valve describes an annulus that sits over the septal crest without chordae crossing to the other ventricle.",
+      "hint": "Distinguish between the annulus position and where the chordae attach.",
+      "keywords": [
+        "straddling valve",
+        "VSD",
+        "surgical planning"
       ]
     }
   ]

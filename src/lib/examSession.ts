@@ -4,7 +4,7 @@ const REGISTRY_PACE: Record<string, { questions: number; minutes: number; label:
   vascular: { questions: 170, minutes: 180, label: 'RVT: 170 questions in 3 hours' },
 };
 
-const SPECIALTY_PACE = { questions: 170, minutes: 180, label: 'typical ARDMS specialty pace: about 170 questions in 3 hours' };
+const SPECIALTY_PACE = { questions: 170, minutes: 180, label: 'ARDMS specialty exam: 170 questions in 3 hours' };
 for (const id of ['abdomen', 'obgyn', 'cardiac', 'breast', 'pediatric', 'fetal-echo', 'msk']) {
   REGISTRY_PACE[id] = SPECIALTY_PACE;
 }

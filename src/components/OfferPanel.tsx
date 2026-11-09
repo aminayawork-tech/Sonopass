@@ -10,8 +10,8 @@ import { cn } from '@/lib/utils';
 
 // Value stack: what each part of Pro would be worth on its own
 const VALUE_STACK: { icon: LucideIcon; gradient: GradientName; label: string; value: number }[] = [
-  { icon: Layers, gradient: 'blue', label: '2,700+ Practice Questions', value: 199 },
-  { icon: Timer, gradient: 'violet', label: '21 Timed Mock Exams', value: 149 },
+  { icon: Layers, gradient: 'blue', label: '3,200+ Practice Questions', value: 199 },
+  { icon: Timer, gradient: 'violet', label: '20 Full-Length Mock Exams', value: 149 },
   { icon: BookMarked, gradient: 'amber', label: 'Flashcards for All 9 Registries', value: 79 },
   { icon: Target, gradient: 'emerald', label: 'Study Mode by Category', value: 59 },
   { icon: Lightbulb, gradient: 'orange', label: 'Hints & Explanations', value: 49 },

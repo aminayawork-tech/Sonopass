@@ -4499,6 +4499,646 @@
       "keywords": [
         "wooden splinter"
       ]
+    },
+    {
+      "id": "ps-x-001",
+      "number": 151,
+      "question": "On parasagittal views of a preterm infant, a zone of mildly increased echogenicity is seen in the white matter just posterior to the trigones. Which feature favors a normal peritrigonal blush (halo) rather than early periventricular leukomalacia?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is brighter than the adjacent choroid plexus"
+        },
+        {
+          "letter": "B",
+          "text": "It is less echogenic than choroid plexus and fades on posterior fontanelle views"
+        },
+        {
+          "letter": "C",
+          "text": "It is coarse and globular and extends toward the cortex"
+        },
+        {
+          "letter": "D",
+          "text": "It persists for more than 2 weeks and develops small cysts"
+        }
+      ],
+      "category": "Neonatal Brain",
+      "correctAnswer": "B",
+      "explanation": "The normal peritrigonal blush is a partly anisotropic effect: it is less echogenic than the choroid plexus and diminishes or disappears when the same region is scanned through the posterior fontanelle. Periventricular leukomalacia is typically as bright as or brighter than choroid plexus, coarse, and persistent, and may evolve into cysts, so brightness exceeding choroid plexus is a warning sign, not a reassurance.",
+      "hint": "Compare the echogenicity with a normal internal reference and check it from a second window.",
+      "keywords": [
+        "peritrigonal blush",
+        "periventricular leukomalacia",
+        "choroid plexus comparison"
+      ]
+    },
+    {
+      "id": "ps-x-006",
+      "number": 152,
+      "question": "A 14-year-old with chronic hepatitis B infection has a new heterogeneous solid liver mass with internal vascularity and a markedly elevated serum alpha-fetoprotein. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hepatocellular carcinoma"
+        },
+        {
+          "letter": "B",
+          "text": "Hepatoblastoma"
+        },
+        {
+          "letter": "C",
+          "text": "Mesenchymal hamartoma"
+        },
+        {
+          "letter": "D",
+          "text": "Infantile hepatic hemangioma"
+        }
+      ],
+      "category": "Pediatric Abdomen",
+      "correctAnswer": "A",
+      "explanation": "Hepatocellular carcinoma is the most common primary hepatic malignancy in adolescents and is associated with chronic liver disease such as hepatitis B, and it usually raises alpha-fetoprotein. Hepatoblastoma also elevates alpha-fetoprotein but occurs mostly in children younger than 3 to 5 years, so the patient's age and liver disease favor hepatocellular carcinoma.",
+      "hint": "Both malignant options can raise alpha-fetoprotein; the patient's age and history decide.",
+      "keywords": [
+        "hepatocellular carcinoma",
+        "adolescent",
+        "alpha-fetoprotein"
+      ]
+    },
+    {
+      "id": "ps-x-011",
+      "number": 153,
+      "question": "A newborn has failed to pass meconium and has progressive abdominal distension. Sonography shows multiple dilated distal ileal loops filled with thick, echogenic meconium and a small, unused colon. Which underlying condition is most likely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hirschsprung disease"
+        },
+        {
+          "letter": "B",
+          "text": "Trisomy 21"
+        },
+        {
+          "letter": "C",
+          "text": "Maternal diabetes"
+        },
+        {
+          "letter": "D",
+          "text": "Cystic fibrosis"
+        }
+      ],
+      "category": "Pediatric GI Tract",
+      "correctAnswer": "D",
+      "explanation": "Meconium ileus, an obstruction of the distal ileum by thick, inspissated meconium with a microcolon distally, is strongly associated with cystic fibrosis. Hirschsprung disease can also present with failure to pass meconium, but it causes a functional obstruction at the aganglionic segment rather than echogenic inspissated meconium impacted in the ileum.",
+      "hint": "The abnormal consistency of the meconium itself points to an underlying secretory disorder.",
+      "keywords": [
+        "meconium ileus",
+        "cystic fibrosis",
+        "neonatal obstruction"
+      ]
+    },
+    {
+      "id": "ps-x-016",
+      "number": 154,
+      "question": "A 5-year-old has an empty left renal fossa. On the right is an elongated kidney with two separate collecting systems whose lower portion is fused to the upper portion, and the ureter draining the lower portion crosses the midline to insert into the left side of the bladder. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Horseshoe kidney"
+        },
+        {
+          "letter": "B",
+          "text": "Left renal agenesis with a right duplex kidney"
+        },
+        {
+          "letter": "C",
+          "text": "Crossed fused renal ectopia"
+        },
+        {
+          "letter": "D",
+          "text": "Left pelvic kidney"
+        }
+      ],
+      "category": "Urinary Tract & Adrenals",
+      "correctAnswer": "C",
+      "explanation": "In crossed fused renal ectopia, one kidney lies on the opposite side and is fused to the other, but its ureter still crosses back to insert in the normal position on the original side of the bladder. A right duplex kidney with left agenesis would have both ureters inserting on the right, so the crossing ureter is the distinguishing finding.",
+      "hint": "Follow the ureter of the lower portion; its insertion reveals the kidney's true side of origin.",
+      "keywords": [
+        "crossed fused ectopia",
+        "renal anomaly",
+        "ureteral insertion"
+      ]
+    },
+    {
+      "id": "ps-x-021",
+      "number": 155,
+      "question": "A sexually active 17-year-old has fever, pelvic pain and cervical motion tenderness. Sonography shows a thick-walled, multiloculated complex adnexal mass with internal debris in which the ovary cannot be separated, and an adjacent thick-walled, fluid-filled tubular structure. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hemorrhagic ovarian cyst"
+        },
+        {
+          "letter": "B",
+          "text": "Ovarian torsion"
+        },
+        {
+          "letter": "C",
+          "text": "Mature cystic teratoma"
+        },
+        {
+          "letter": "D",
+          "text": "Tubo-ovarian abscess"
+        }
+      ],
+      "category": "Pelvis & Scrotum",
+      "correctAnswer": "D",
+      "explanation": "Pelvic inflammatory disease can progress to a tubo-ovarian abscess, a complex multiloculated mass in which the ovary and tube are inseparable, often with a thick-walled, fluid-filled tube (pyosalpinx), in a febrile patient with cervical motion tenderness. A hemorrhagic cyst lies within an identifiable ovary and has a lacy internal pattern, without fever or a dilated tube.",
+      "hint": "Combine the infectious clinical picture with the inseparable tube and ovary.",
+      "keywords": [
+        "tubo-ovarian abscess",
+        "pelvic inflammatory disease",
+        "pyosalpinx"
+      ]
+    },
+    {
+      "id": "ps-x-026",
+      "number": 156,
+      "question": "Sonography for developmental dysplasia of the hip becomes progressively limited and is usually replaced by radiography after approximately what age?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2 weeks"
+        },
+        {
+          "letter": "B",
+          "text": "6 weeks"
+        },
+        {
+          "letter": "C",
+          "text": "2 years"
+        },
+        {
+          "letter": "D",
+          "text": "4 to 6 months"
+        }
+      ],
+      "category": "Spine, Hips & Musculoskeletal",
+      "correctAnswer": "D",
+      "explanation": "As the femoral head ossification center enlarges, usually by 4 to 6 months of age, it shadows the acetabulum and medial joint, limiting sonographic evaluation, so radiography becomes preferred. Before 6 weeks, sonography is often deferred for screening because of physiologic laxity, not because of ossification.",
+      "hint": "Consider when a growing bony structure in the femoral head begins to block the sound beam.",
+      "keywords": [
+        "DDH",
+        "femoral head ossification",
+        "age limit"
+      ]
+    },
+    {
+      "id": "ps-x-031",
+      "number": 157,
+      "question": "On lung sonography in a child, horizontal, regularly spaced echogenic lines parallel to the pleural line, together with normal lung sliding, indicate:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Interstitial edema"
+        },
+        {
+          "letter": "B",
+          "text": "Lobar consolidation"
+        },
+        {
+          "letter": "C",
+          "text": "A small pleural effusion"
+        },
+        {
+          "letter": "D",
+          "text": "Normally aerated lung"
+        }
+      ],
+      "category": "Neck, Chest & Oncology",
+      "correctAnswer": "D",
+      "explanation": "A-lines are reverberation artifacts of the pleural line that appear when air fills the lung beneath it, and with normal sliding they indicate normally aerated lung. Interstitial edema produces vertical B-lines, and A-lines without sliding would instead raise concern for pneumothorax.",
+      "hint": "Consider whether these artifacts are horizontal or vertical and what preserved sliding tells you.",
+      "keywords": [
+        "A-lines",
+        "lung sliding",
+        "lung ultrasound"
+      ]
+    },
+    {
+      "id": "ps-x-036",
+      "number": 158,
+      "question": "During a neonatal examination, the display shows a thermal index (TI) of 1.0. What does this value mean?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "There is a 1 percent chance of cavitation occurring in the tissue"
+        },
+        {
+          "letter": "B",
+          "text": "Under modeled worst-case conditions, tissue temperature could rise by about 1 degree Celsius"
+        },
+        {
+          "letter": "C",
+          "text": "Tissue temperature has been measured to have risen exactly 1 degree Celsius"
+        },
+        {
+          "letter": "D",
+          "text": "The regulatory output limit has been reached and scanning must stop"
+        }
+      ],
+      "category": "Patient Care & Technique",
+      "correctAnswer": "B",
+      "explanation": "The thermal index is a ratio of transmitted power to the power estimated to raise tissue temperature by 1 degree Celsius under reasonable worst-case assumptions, so a TI of 1.0 estimates a possible 1 degree Celsius rise. It is a model-based estimate, not a measured temperature, and cavitation risk is indicated by the mechanical index instead.",
+      "hint": "This index is a modeled estimate related to heating, not a direct measurement.",
+      "keywords": [
+        "thermal index",
+        "bioeffects",
+        "ALARA"
+      ]
+    },
+    {
+      "id": "ps-x-002",
+      "number": 159,
+      "question": "A healthy term newborn has a routine head sonogram showing a small row of rounded cysts along the superolateral margins of the frontal horns, anterior to the foramen of Monro. The rest of the brain is normal. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cystic periventricular leukomalacia"
+        },
+        {
+          "letter": "B",
+          "text": "Subependymal cysts from prior germinal matrix hemorrhage"
+        },
+        {
+          "letter": "C",
+          "text": "Porencephalic cysts from a prior infarction"
+        },
+        {
+          "letter": "D",
+          "text": "Connatal cysts, a normal variant"
+        }
+      ],
+      "category": "Neonatal Brain",
+      "correctAnswer": "D",
+      "explanation": "Connatal (coronal periventricular) cysts are small cysts in a string-of-pearls arrangement at the superolateral angles of the frontal horns, anterior to the foramen of Monro, and they are a benign normal variant. Subependymal cysts from germinal matrix hemorrhage lie at or below the caudothalamic groove, and cystic leukomalacia occurs in the white matter dorsolateral to the trigones.",
+      "hint": "Think about which cysts have a characteristic frontal, anterior-to-Monro location and no clinical significance.",
+      "keywords": [
+        "connatal cysts",
+        "frontal horns",
+        "normal variant"
+      ]
+    },
+    {
+      "id": "ps-x-007",
+      "number": 160,
+      "question": "A 3-week-old preterm infant on prolonged total parenteral nutrition with no enteral feeds has a distended gallbladder containing layering low-level echoes that shift slowly with position. There is no shadowing and the wall is normal. What is the most likely explanation?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acute calculous cholecystitis"
+        },
+        {
+          "letter": "B",
+          "text": "Biliary atresia"
+        },
+        {
+          "letter": "C",
+          "text": "Gallbladder hydrops from Kawasaki disease"
+        },
+        {
+          "letter": "D",
+          "text": "Biliary sludge related to fasting and parenteral nutrition"
+        }
+      ],
+      "category": "Pediatric Abdomen",
+      "correctAnswer": "D",
+      "explanation": "Prolonged fasting and parenteral nutrition cause biliary stasis, producing distension with mobile, nonshadowing, layering sludge that often clears once enteral feeding starts. Biliary atresia typically shows a small, irregular or absent gallbladder rather than a distended one, and cholecystitis would show wall thickening and tenderness.",
+      "hint": "Think about what happens to bile when the gallbladder is never stimulated to empty.",
+      "keywords": [
+        "biliary sludge",
+        "parenteral nutrition",
+        "neonatal gallbladder"
+      ]
+    },
+    {
+      "id": "ps-x-012",
+      "number": 161,
+      "question": "A 4-year-old has painless abdominal distension. Sonography shows a large, thin-walled, multiseptated cystic mass in the mesentery that insinuates between bowel loops. Its wall lacks the layered gut signature. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Enteric duplication cyst"
+        },
+        {
+          "letter": "B",
+          "text": "Mesenteric lymphatic malformation"
+        },
+        {
+          "letter": "C",
+          "text": "Ovarian follicular cyst"
+        },
+        {
+          "letter": "D",
+          "text": "Ileocolic intussusception"
+        }
+      ],
+      "category": "Pediatric GI Tract",
+      "correctAnswer": "B",
+      "explanation": "Mesenteric lymphatic malformations (mesenteric cysts) are thin-walled, often multiseptated cystic masses that insinuate around bowel and vessels. An enteric duplication cyst is usually unilocular and shows a gut signature, an inner echogenic mucosal layer and an outer hypoechoic muscular layer, which is absent here.",
+      "hint": "The absence of a layered wall and the septated, insinuating growth pattern are the key clues.",
+      "keywords": [
+        "lymphatic malformation",
+        "mesenteric cyst",
+        "gut signature"
+      ]
+    },
+    {
+      "id": "ps-x-017",
+      "number": 162,
+      "question": "A 3-month-old with prenatally detected hydronephrosis has a ureter that is dilated along its entire course to the bladder, ending in a narrow distal segment. The bladder wall and urethra are normal. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Primary obstructive megaureter"
+        },
+        {
+          "letter": "B",
+          "text": "Ureteropelvic junction obstruction"
+        },
+        {
+          "letter": "C",
+          "text": "Posterior urethral valves"
+        },
+        {
+          "letter": "D",
+          "text": "Neurogenic bladder"
+        }
+      ],
+      "category": "Urinary Tract & Adrenals",
+      "correctAnswer": "A",
+      "explanation": "Primary obstructive megaureter results from an adynamic distal ureteral segment at the ureterovesical junction, producing a dilated ureter down to the bladder with a normal bladder. Ureteropelvic junction obstruction dilates the pelvis and calyces but not the ureter, and posterior urethral valves or neurogenic bladder would produce an abnormal, thick-walled bladder.",
+      "hint": "Locate the level of obstruction using which segments are dilated and which are normal.",
+      "keywords": [
+        "megaureter",
+        "ureterovesical junction",
+        "hydroureter"
+      ]
+    },
+    {
+      "id": "ps-x-022",
+      "number": 163,
+      "question": "A 16-year-old with a positive serum hCG and vaginal spotting has an empty uterus on transvaginal sonography. An echogenic adnexal ring separate from the ovary is seen, along with moderate echogenic free fluid in the pelvis. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ectopic pregnancy"
+        },
+        {
+          "letter": "B",
+          "text": "Corpus luteum cyst"
+        },
+        {
+          "letter": "C",
+          "text": "Completed spontaneous abortion"
+        },
+        {
+          "letter": "D",
+          "text": "Pelvic inflammatory disease"
+        }
+      ],
+      "category": "Pelvis & Scrotum",
+      "correctAnswer": "A",
+      "explanation": "A positive hCG with no intrauterine pregnancy, an extraovarian adnexal ring (tubal ring) and echogenic free fluid suggesting hemoperitoneum is highly suggestive of ectopic pregnancy, which must be considered in any sexually active adolescent. A corpus luteum is located within the ovary and moves with it, so a ring separate from the ovary favors an ectopic pregnancy.",
+      "hint": "Check whether the adnexal ring is inside or outside the ovary.",
+      "keywords": [
+        "ectopic pregnancy",
+        "adolescent",
+        "tubal ring"
+      ]
+    },
+    {
+      "id": "ps-x-027",
+      "number": 164,
+      "question": "A 5-year-old has 8 weeks of morning stiffness and a swollen left knee without fever. Sonography shows joint fluid and thickened, hypoechoic, noncompressible synovium with increased color Doppler flow. Which diagnosis is most consistent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Active synovitis such as juvenile idiopathic arthritis"
+        },
+        {
+          "letter": "B",
+          "text": "Transient synovitis"
+        },
+        {
+          "letter": "C",
+          "text": "Popliteal (Baker) cyst"
+        },
+        {
+          "letter": "D",
+          "text": "Osgood-Schlatter disease"
+        }
+      ],
+      "category": "Spine, Hips & Musculoskeletal",
+      "correctAnswer": "A",
+      "explanation": "Thickened, hyperemic, noncompressible synovium with effusion lasting more than 6 weeks in a child is typical of active inflammatory arthritis such as juvenile idiopathic arthritis. Transient synovitis usually affects the hip, lasts only days and shows a simple effusion without marked synovial thickening or hyperemia.",
+      "hint": "Duration of symptoms and hyperemic synovial thickening point to a chronic inflammatory process.",
+      "keywords": [
+        "juvenile idiopathic arthritis",
+        "synovitis",
+        "power Doppler"
+      ]
+    },
+    {
+      "id": "ps-x-032",
+      "number": 165,
+      "question": "A 29-week preterm infant has grunting and retractions from birth. Lung sonography shows diffuse confluent B-lines in all lung fields (white lung), a thickened irregular pleural line and small subpleural consolidations, with no spared areas. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Respiratory distress syndrome from surfactant deficiency"
+        },
+        {
+          "letter": "B",
+          "text": "Transient tachypnea of the newborn"
+        },
+        {
+          "letter": "C",
+          "text": "Pneumothorax"
+        },
+        {
+          "letter": "D",
+          "text": "Congenital diaphragmatic hernia"
+        }
+      ],
+      "category": "Neck, Chest & Oncology",
+      "correctAnswer": "A",
+      "explanation": "Surfactant-deficient respiratory distress syndrome in preterm infants produces bilateral white lung with confluent B-lines, a thickened irregular pleural line and subpleural consolidations, without spared areas. Transient tachypnea typically shows a double lung point, with denser B-lines inferiorly and fewer above, and a normal pleural line.",
+      "hint": "Consider the gestational age and the uniform, diffuse pattern without spared areas.",
+      "keywords": [
+        "respiratory distress syndrome",
+        "white lung",
+        "preterm infant"
+      ]
+    },
+    {
+      "id": "ps-x-037",
+      "number": 166,
+      "question": "A portable abdominal sonogram is ordered for a child with suspected active pulmonary tuberculosis in an isolation room. Which precaution is required for the sonographer?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Contact precautions with gown and gloves only"
+        },
+        {
+          "letter": "B",
+          "text": "Airborne precautions with a fit-tested N95 respirator"
+        },
+        {
+          "letter": "C",
+          "text": "Droplet precautions with a surgical mask only"
+        },
+        {
+          "letter": "D",
+          "text": "Standard precautions only, because the abdomen is being scanned"
+        }
+      ],
+      "category": "Patient Care & Technique",
+      "correctAnswer": "B",
+      "explanation": "Tuberculosis spreads by airborne droplet nuclei, so staff entering the room must use airborne precautions, including a fit-tested N95 or higher respirator, with the patient in an airborne infection isolation room. A surgical mask under droplet precautions does not filter the small airborne particles, and the body part being scanned does not change the transmission route.",
+      "hint": "Base the precaution on how the organism is transmitted, not on the exam type.",
+      "keywords": [
+        "airborne precautions",
+        "tuberculosis",
+        "N95 respirator"
+      ]
+    },
+    {
+      "id": "ps-x-003",
+      "number": 167,
+      "question": "When measuring the Levene ventricular index to follow ventricular dilation in a preterm infant, how is the measurement obtained?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Coronal plane at the foramen of Monro, from the midline falx to the lateral wall of the lateral ventricle"
+        },
+        {
+          "letter": "B",
+          "text": "Midline sagittal plane, from the roof of the third ventricle to the floor of the fourth ventricle"
+        },
+        {
+          "letter": "C",
+          "text": "Axial plane through the mastoid fontanelle, across the atrium of the lateral ventricle"
+        },
+        {
+          "letter": "D",
+          "text": "Parasagittal plane, from the caudothalamic groove to the tip of the temporal horn"
+        }
+      ],
+      "category": "Neonatal Brain",
+      "correctAnswer": "A",
+      "explanation": "The Levene ventricular index is the distance from the falx to the lateral wall of the lateral ventricle, measured on a coronal image at the level of the foramen of Monro, and is plotted against gestational age. Other measurements such as anterior horn width and thalamo-occipital distance are useful supplements but are not the ventricular index.",
+      "hint": "This index is plotted on a centile chart against gestational age and reflects how far the ventricles extend laterally.",
+      "keywords": [
+        "ventricular index",
+        "ventriculomegaly",
+        "coronal plane"
+      ]
+    },
+    {
+      "id": "ps-x-008",
+      "number": 168,
+      "question": "A 6-year-old boy with chronic granulomatous disease has fever and right upper quadrant pain. Sonography shows a complex hypoechoic liver lesion with a thick irregular wall, internal debris, peripheral hyperemia and no internal flow. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hepatoblastoma"
+        },
+        {
+          "letter": "B",
+          "text": "Pyogenic liver abscess"
+        },
+        {
+          "letter": "C",
+          "text": "Hepatic hemangioma"
+        },
+        {
+          "letter": "D",
+          "text": "Simple hepatic cyst"
+        }
+      ],
+      "category": "Pediatric Abdomen",
+      "correctAnswer": "B",
+      "explanation": "Children with chronic granulomatous disease have defective neutrophil killing and are prone to liver abscesses, often from Staphylococcus aureus, which appear as thick-walled complex collections with debris, avascular centers and peripheral hyperemia. A hepatoblastoma is a solid mass with internal vascularity and occurs mainly in younger children with elevated alpha-fetoprotein.",
+      "hint": "Link the immune defect and fever to the avascular center with a hyperemic rim.",
+      "keywords": [
+        "liver abscess",
+        "chronic granulomatous disease",
+        "immunodeficiency"
+      ]
+    },
+    {
+      "id": "ps-x-013",
+      "number": 169,
+      "question": "During graded compression sonography for suspected appendicitis in a 9-year-old, the appendix cannot be found anterior to the cecum. Which maneuver best improves visualization of a possible retrocecal appendix?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Switch to a 2 MHz curved transducer and scan from the midline"
+        },
+        {
+          "letter": "B",
+          "text": "Apply posterior manual compression behind the right flank while compressing anteriorly"
+        },
+        {
+          "letter": "C",
+          "text": "Turn the child into the right lateral decubitus position"
+        },
+        {
+          "letter": "D",
+          "text": "Have the child drink water and rescan after 30 minutes"
+        }
+      ],
+      "category": "Pediatric GI Tract",
+      "correctAnswer": "B",
+      "explanation": "Pressing the right flank from behind with the free hand pushes retrocecal structures toward the anterior transducer, and a left lateral decubitus position can also help by moving the cecum away. A low-frequency transducer from the midline sacrifices the resolution needed for a small appendix, and right lateral decubitus places the cecum in a dependent position, making it harder to reach.",
+      "hint": "Think about how to bring a posterior structure closer to a high-frequency transducer.",
+      "keywords": [
+        "retrocecal appendix",
+        "posterior manual compression",
+        "graded compression"
+      ]
+    },
+    {
+      "id": "ps-x-018",
+      "number": 170,
+      "question": "A 4-year-old with fever, flank pain and a positive urine culture has a renal sonogram. Which finding is most consistent with acute pyelonephritis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A small kidney with focal cortical thinning over a calyx"
+        },
+        {
+          "letter": "B",
+          "text": "Bilaterally enlarged echogenic kidneys with innumerable tiny cysts"
+        },
+        {
+          "letter": "C",
+          "text": "Diffusely echogenic medullary pyramids in both kidneys"
+        },
+        {
+          "letter": "D",
+          "text": "A wedge-shaped area of altered echogenicity with decreased flow on power Doppler"
+        }
+      ],
+      "category": "Urinary Tract & Adrenals",
+      "correctAnswer": "D",
+      "explanation": "Acute pyelonephritis may show focal swelling or a wedge-shaped area of altered echogenicity with reduced perfusion on power Doppler, although the sonogram is often normal. A small kidney with focal cortical thinning reflects chronic scarring from prior infection rather than active infection.",
+      "hint": "Look for an acute, focal, perfusion-related change rather than a chronic or diffuse one.",
+      "keywords": [
+        "acute pyelonephritis",
+        "power Doppler",
+        "urinary tract infection"
+      ]
     }
   ],
   "exam2": [
@@ -8912,6 +9552,646 @@
       "category": "Patient Care & Technique",
       "hint": "Name the structures that lie exactly in the midline.",
       "keywords": []
+    },
+    {
+      "id": "ps-x-023",
+      "number": 151,
+      "question": "In a prepubertal boy, typical testicular volume measured by sonography is approximately:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Less than 0.2 mL"
+        },
+        {
+          "letter": "B",
+          "text": "4 to 6 mL"
+        },
+        {
+          "letter": "C",
+          "text": "1 to 2 mL"
+        },
+        {
+          "letter": "D",
+          "text": "12 to 15 mL"
+        }
+      ],
+      "category": "Pelvis & Scrotum",
+      "correctAnswer": "C",
+      "explanation": "Prepubertal testes are small, typically about 1 to 2 mL, and a volume of about 4 mL or more marks the onset of puberty, with adult volumes commonly 12 to 25 mL. Comparing measured volumes with age-appropriate norms and with the other side is important, for example when assessing varicocele-related volume asymmetry.",
+      "hint": "Puberty is considered to begin once the testis reaches about 4 mL, so prepubertal values are below that.",
+      "keywords": [
+        "testicular volume",
+        "prepubertal",
+        "puberty"
+      ]
+    },
+    {
+      "id": "ps-x-028",
+      "number": 152,
+      "question": "A 14-year-old football player has a firm, painful thigh mass 4 weeks after a direct blow. Sonography shows an intramuscular mass with a peripheral rim of echogenic, shadowing calcification surrounding a less mineralized hypoechoic center. The adjacent femoral cortex is intact. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Osteosarcoma"
+        },
+        {
+          "letter": "B",
+          "text": "Simple muscle hematoma"
+        },
+        {
+          "letter": "C",
+          "text": "Myositis ossificans"
+        },
+        {
+          "letter": "D",
+          "text": "Rhabdomyosarcoma"
+        }
+      ],
+      "category": "Spine, Hips & Musculoskeletal",
+      "correctAnswer": "C",
+      "explanation": "Myositis ossificans follows muscle trauma and shows a zonal pattern, with mineralization beginning at the periphery and a less mature center, appearing 3 to 6 weeks after injury. Osteosarcoma typically shows central or disorganized mineralization with cortical destruction, so peripheral rim calcification with an intact cortex favors myositis ossificans.",
+      "hint": "Note where the calcification begins and the timing after a known injury.",
+      "keywords": [
+        "myositis ossificans",
+        "zonal calcification",
+        "muscle trauma"
+      ]
+    },
+    {
+      "id": "ps-x-033",
+      "number": 153,
+      "question": "A 5-year-old has a slowly enlarging, painless midline submental mass that does not move with tongue protrusion. Sonography shows a well-defined lesion containing multiple small, round echogenic globules floating in hypoechoic fluid. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dermoid cyst"
+        },
+        {
+          "letter": "B",
+          "text": "Thyroglossal duct cyst"
+        },
+        {
+          "letter": "C",
+          "text": "Ranula"
+        },
+        {
+          "letter": "D",
+          "text": "Lymphatic malformation"
+        }
+      ],
+      "category": "Neck, Chest & Oncology",
+      "correctAnswer": "A",
+      "explanation": "Dermoid cysts of the floor of the mouth and submental region contain fat and keratin, which can form floating echogenic globules (a sack-of-marbles appearance), and they do not move with tongue protrusion. A thyroglossal duct cyst is also midline but is attached to the hyoid tract and moves upward with tongue protrusion or swallowing.",
+      "hint": "Fatty globules floating within the lesion point to its ectodermal contents.",
+      "keywords": [
+        "dermoid cyst",
+        "submental mass",
+        "sack of marbles"
+      ]
+    },
+    {
+      "id": "ps-x-038",
+      "number": 154,
+      "question": "A sonographer saves an image of a rare pediatric anomaly and wants to share it in a professional social media group. Which action is appropriate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Share only if institutional policy allows it and all identifiers, including name, dates and unique details, are removed"
+        },
+        {
+          "letter": "B",
+          "text": "Share it freely because educational use is exempt from privacy rules"
+        },
+        {
+          "letter": "C",
+          "text": "Share it as long as the child's face does not appear in the image"
+        },
+        {
+          "letter": "D",
+          "text": "Share it after cropping the name but leaving the exam date and facility visible"
+        }
+      ],
+      "category": "Patient Care & Technique",
+      "correctAnswer": "A",
+      "explanation": "Medical images are protected health information, so they may be shared only as allowed by institutional policy and HIPAA, with all identifiers, including dates, facility and rare identifying details, removed. Education is not an automatic exemption, and leaving dates or the facility name can still identify a child with a rare condition.",
+      "hint": "Ask whether any detail left on the image could still identify the patient.",
+      "keywords": [
+        "HIPAA",
+        "de-identification",
+        "social media"
+      ]
+    },
+    {
+      "id": "ps-x-004",
+      "number": 155,
+      "question": "A term newborn has a head sonogram through the mastoid fontanelle showing a cisterna magna measuring 12 mm. The cerebellar vermis is normal in size and position, the fourth ventricle is normal and there is no hydrocephalus. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dandy-Walker malformation"
+        },
+        {
+          "letter": "B",
+          "text": "Chiari II malformation"
+        },
+        {
+          "letter": "C",
+          "text": "Mega cisterna magna"
+        },
+        {
+          "letter": "D",
+          "text": "Vermian hypoplasia"
+        }
+      ],
+      "category": "Neonatal Brain",
+      "correctAnswer": "C",
+      "explanation": "An enlarged cisterna magna (greater than about 10 mm) with a normal vermis and a normal fourth ventricle is a mega cisterna magna, usually of no clinical significance. Dandy-Walker malformation requires vermian hypoplasia with upward rotation and a cystic fourth ventricle, and Chiari II produces a small, effaced posterior fossa rather than an enlarged one.",
+      "hint": "Focus on the fact that the vermis and fourth ventricle are completely normal.",
+      "keywords": [
+        "mega cisterna magna",
+        "posterior fossa",
+        "mastoid fontanelle"
+      ]
+    },
+    {
+      "id": "ps-x-009",
+      "number": 156,
+      "question": "In an infant younger than 1 year, the normal common bile duct diameter generally should not exceed approximately:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2 mm"
+        },
+        {
+          "letter": "B",
+          "text": "5 mm"
+        },
+        {
+          "letter": "C",
+          "text": "7 mm"
+        },
+        {
+          "letter": "D",
+          "text": "10 mm"
+        }
+      ],
+      "category": "Pediatric Abdomen",
+      "correctAnswer": "A",
+      "explanation": "The normal common bile duct in infants is tiny, generally about 2 mm or less, and the upper limit increases gradually with age to roughly 4 mm in older children and up to about 7 mm in adolescents. Applying adult or adolescent thresholds such as 5 to 7 mm to an infant would miss true ductal dilation.",
+      "hint": "Pediatric duct thresholds scale with body size and are far smaller than adult values in infancy.",
+      "keywords": [
+        "common bile duct",
+        "infant",
+        "normal measurement"
+      ]
+    },
+    {
+      "id": "ps-x-014",
+      "number": 157,
+      "question": "A 1-day-old has bilious vomiting and upper abdominal distension. Sonography shows a distended stomach and duodenum plus a few markedly dilated, fluid-filled proximal small bowel loops with vigorous peristalsis, and collapsed bowel distally. The SMV lies to the right of the SMA. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Duodenal atresia"
+        },
+        {
+          "letter": "B",
+          "text": "Hypertrophic pyloric stenosis"
+        },
+        {
+          "letter": "C",
+          "text": "Meconium plug syndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Jejunal atresia"
+        }
+      ],
+      "category": "Pediatric GI Tract",
+      "correctAnswer": "D",
+      "explanation": "Jejunal atresia causes dilation of the stomach, duodenum and a few proximal jejunal loops, sometimes called a triple bubble, with collapsed bowel beyond the atresia; the normal SMV-SMA relationship argues against malrotation. Duodenal atresia stops at the duodenum, producing only a double bubble without dilated jejunal loops.",
+      "hint": "Count how far down the bowel the dilation extends before it stops.",
+      "keywords": [
+        "jejunal atresia",
+        "bilious vomiting",
+        "triple bubble"
+      ]
+    },
+    {
+      "id": "ps-x-019",
+      "number": 158,
+      "question": "A newborn boy has a lax, wrinkled abdominal wall and bilateral nonpalpable testes. Sonography shows a large smooth-walled bladder and bilateral tortuous, dilated ureters. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Posterior urethral valves"
+        },
+        {
+          "letter": "B",
+          "text": "Prune belly (Eagle-Barrett) syndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Bladder exstrophy"
+        },
+        {
+          "letter": "D",
+          "text": "Neurogenic bladder from spina bifida"
+        }
+      ],
+      "category": "Urinary Tract & Adrenals",
+      "correctAnswer": "B",
+      "explanation": "Prune belly syndrome is the triad of deficient abdominal wall musculature, bilateral cryptorchidism and urinary tract dilation with a large, typically smooth-walled bladder and tortuous ureters. Posterior urethral valves also dilate the urinary tract, but the bladder is thick-walled and trabeculated with a dilated posterior urethra, and the abdominal wall is normal.",
+      "hint": "The abdominal wall appearance and the testes complete a classic triad.",
+      "keywords": [
+        "prune belly syndrome",
+        "cryptorchidism",
+        "megacystis"
+      ]
+    },
+    {
+      "id": "ps-x-024",
+      "number": 159,
+      "question": "A 6-year-old has painless, red swelling of both sides of the scrotum extending toward the perineum. Sonography shows a markedly thickened, edematous, striated scrotal wall with increased wall flow, while both testes and epididymides have normal size, echotexture and flow. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Testicular torsion"
+        },
+        {
+          "letter": "B",
+          "text": "Acute idiopathic scrotal edema"
+        },
+        {
+          "letter": "C",
+          "text": "Epididymo-orchitis"
+        },
+        {
+          "letter": "D",
+          "text": "Torsion of the appendix testis"
+        }
+      ],
+      "category": "Pelvis & Scrotum",
+      "correctAnswer": "B",
+      "explanation": "Acute idiopathic scrotal edema affects young boys and shows marked scrotal wall thickening and hyperemia with normal testes and epididymides, and it resolves with conservative treatment. Epididymo-orchitis would show an enlarged, hyperemic epididymis or testis, and torsion would show reduced or absent testicular flow.",
+      "hint": "All intrascrotal contents are normal; only the wall is abnormal.",
+      "keywords": [
+        "idiopathic scrotal edema",
+        "scrotal wall",
+        "acute scrotum"
+      ]
+    },
+    {
+      "id": "ps-x-029",
+      "number": 160,
+      "question": "A 3-year-old has a red, swollen, warm lower leg. Which sonographic finding indicates cellulitis without a drainable abscess?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A hypoechoic collection with debris that swirls under transducer pressure"
+        },
+        {
+          "letter": "B",
+          "text": "A rounded fluid collection with posterior enhancement and a hyperemic rim"
+        },
+        {
+          "letter": "C",
+          "text": "Thickened echogenic subcutaneous fat with branching anechoic fluid strands and no focal collection"
+        },
+        {
+          "letter": "D",
+          "text": "A walled-off anechoic collection with internal septations and no internal flow"
+        }
+      ],
+      "category": "Spine, Hips & Musculoskeletal",
+      "correctAnswer": "C",
+      "explanation": "Cellulitis produces thickened, echogenic subcutaneous fat separated by interlacing anechoic fluid strands (a cobblestone pattern) without a discrete collection, and it is treated medically. Swirling debris under pressure, posterior enhancement with a hyperemic rim, or a walled-off collection all indicate a drainable abscess.",
+      "hint": "Think about how inflammatory edema spreads through the fat lobules before any pus forms.",
+      "keywords": [
+        "cellulitis",
+        "cobblestone",
+        "soft tissue abscess"
+      ]
+    },
+    {
+      "id": "ps-x-034",
+      "number": 161,
+      "question": "A 4-year-old, 1 year after liver transplantation and on immunosuppression, has fever and Epstein-Barr virus viremia. Sonography shows multiple hypoechoic masses at the porta hepatis and enlarged hypoechoic mesenteric lymph nodes. Which diagnosis is most concerning?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Acute cellular rejection"
+        },
+        {
+          "letter": "B",
+          "text": "Hepatic artery thrombosis"
+        },
+        {
+          "letter": "C",
+          "text": "Post-transplant lymphoproliferative disorder"
+        },
+        {
+          "letter": "D",
+          "text": "Biliary anastomotic stricture"
+        }
+      ],
+      "category": "Neck, Chest & Oncology",
+      "correctAnswer": "C",
+      "explanation": "Post-transplant lymphoproliferative disorder is an Epstein-Barr virus-driven lymphoid proliferation in immunosuppressed transplant recipients, especially children, and it appears as hypoechoic masses, often at the porta hepatis, with lymphadenopathy. Hepatic artery thrombosis and biliary stricture produce vascular or ductal findings rather than solid hypoechoic masses and nodes.",
+      "hint": "Connect the viral infection, the immunosuppression and the new hypoechoic masses.",
+      "keywords": [
+        "PTLD",
+        "transplant",
+        "Epstein-Barr virus"
+      ]
+    },
+    {
+      "id": "ps-x-039",
+      "number": 162,
+      "question": "During spectral Doppler of a neonatal cerebral artery, the wall filter is set very high. What effect on the waveform is most likely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Aliasing of the systolic peaks"
+        },
+        {
+          "letter": "B",
+          "text": "A falsely low resistive index"
+        },
+        {
+          "letter": "C",
+          "text": "Increased spectral broadening throughout the cycle"
+        },
+        {
+          "letter": "D",
+          "text": "Removal of low-velocity diastolic flow, falsely raising the resistive index"
+        }
+      ],
+      "category": "Patient Care & Technique",
+      "correctAnswer": "D",
+      "explanation": "The wall filter removes low-frequency (low-velocity) signals, so an excessive setting can erase slow diastolic flow in small neonatal vessels, falsely raising the resistive index or mimicking absent diastolic flow. Aliasing is caused by a velocity scale (PRF) set too low relative to the flow velocity, not by the wall filter.",
+      "hint": "Consider which part of the cardiac cycle has the slowest velocities in these vessels.",
+      "keywords": [
+        "wall filter",
+        "resistive index",
+        "neonatal Doppler"
+      ]
+    },
+    {
+      "id": "ps-x-005",
+      "number": 163,
+      "question": "Why is cranial sonography routinely performed before and during extracorporeal membrane oxygenation (ECMO) in neonates?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To confirm the position of the arterial cannula tip in the aortic arch"
+        },
+        {
+          "letter": "B",
+          "text": "To measure cerebral blood flow so the pump rate can be set"
+        },
+        {
+          "letter": "C",
+          "text": "Systemic anticoagulation raises the risk of intracranial hemorrhage, which may contraindicate or alter therapy"
+        },
+        {
+          "letter": "D",
+          "text": "To detect hydrocephalus caused by the venous return cannula"
+        }
+      ],
+      "category": "Neonatal Brain",
+      "correctAnswer": "C",
+      "explanation": "ECMO requires systemic heparinization, so existing intracranial hemorrhage may be a contraindication and new hemorrhage during treatment must be detected promptly; serial bedside head sonograms serve this purpose. Cannula position is checked with radiography or echocardiography, not cranial sonography.",
+      "hint": "Consider which medication every ECMO patient receives and its main neurologic risk.",
+      "keywords": [
+        "ECMO",
+        "anticoagulation",
+        "intracranial hemorrhage"
+      ]
+    },
+    {
+      "id": "ps-x-010",
+      "number": 164,
+      "question": "In a child with biliary cirrhosis being evaluated for portal hypertension, which main portal vein Doppler finding most strongly indicates advanced portal hypertension?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Continuous hepatopetal flow with mild respiratory variation"
+        },
+        {
+          "letter": "B",
+          "text": "Hepatopetal flow velocity of about 25 cm/s"
+        },
+        {
+          "letter": "C",
+          "text": "Hepatofugal flow directed away from the liver"
+        },
+        {
+          "letter": "D",
+          "text": "Slight increase in vein diameter during inspiration"
+        }
+      ],
+      "category": "Pediatric Abdomen",
+      "correctAnswer": "C",
+      "explanation": "Reversed (hepatofugal) portal venous flow occurs when intrahepatic resistance exceeds portal pressure and is a sign of advanced portal hypertension, often accompanied by portosystemic collaterals and splenomegaly. Continuous hepatopetal flow with mild respiratory variation and a velocity around 25 cm/s are normal findings.",
+      "hint": "Consider what happens to flow direction when the liver resists inflow more than the collaterals do.",
+      "keywords": [
+        "portal hypertension",
+        "hepatofugal flow",
+        "portal vein Doppler"
+      ]
+    },
+    {
+      "id": "ps-x-015",
+      "number": 165,
+      "question": "A 10-year-old with right lower quadrant pain has a normal, compressible appendix arising from the cecum. A separate blind-ending, thick-walled tubular structure with a gut signature arises from the antimesenteric border of the distal ileum, with surrounding hyperemia and echogenic fat. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Meckel diverticulitis"
+        },
+        {
+          "letter": "B",
+          "text": "Appendicitis confined to the appendiceal tip"
+        },
+        {
+          "letter": "C",
+          "text": "Mesenteric adenitis"
+        },
+        {
+          "letter": "D",
+          "text": "Crohn disease of the terminal ileum"
+        }
+      ],
+      "category": "Pediatric GI Tract",
+      "correctAnswer": "A",
+      "explanation": "A Meckel diverticulum arises from the antimesenteric border of the distal ileum, and when inflamed it appears as a blind-ending, thick-walled tubular structure that can mimic appendicitis. Because the appendix itself is separately seen arising from the cecum and is normal, tip appendicitis is excluded.",
+      "hint": "Note where the abnormal blind-ending structure originates when the true appendix is normal.",
+      "keywords": [
+        "Meckel diverticulum",
+        "antimesenteric ileum",
+        "appendicitis mimic"
+      ]
+    },
+    {
+      "id": "ps-x-020",
+      "number": 166,
+      "question": "In an infant with an empty right renal fossa, the right adrenal gland appears elongated and flat, lying parallel to the spine (the lying-down adrenal sign). This finding most strongly suggests:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Adrenal hemorrhage"
+        },
+        {
+          "letter": "B",
+          "text": "Congenital adrenal hyperplasia"
+        },
+        {
+          "letter": "C",
+          "text": "Renal agenesis or congenital renal ectopia"
+        },
+        {
+          "letter": "D",
+          "text": "An adrenal neuroblastoma"
+        }
+      ],
+      "category": "Urinary Tract & Adrenals",
+      "correctAnswer": "C",
+      "explanation": "When a kidney never develops in its normal fossa, the adrenal is not molded by it and lies flat and elongated parallel to the spine, the lying-down adrenal sign, prompting a search for an ectopic kidney or confirming agenesis. Congenital adrenal hyperplasia causes enlarged, cerebriform adrenals in their normal configuration, not a flattened gland.",
+      "hint": "Think about what normally shapes the adrenal gland during fetal development.",
+      "keywords": [
+        "lying-down adrenal sign",
+        "renal agenesis",
+        "renal ectopia"
+      ]
+    },
+    {
+      "id": "ps-x-025",
+      "number": 167,
+      "question": "A 16-year-old girl has primary amenorrhea with normal breast development and normal pubic hair. Pelvic sonography shows no identifiable uterus and two normal-appearing ovaries with follicles. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Imperforate hymen with hematocolpos"
+        },
+        {
+          "letter": "B",
+          "text": "Mayer-Rokitansky-Kuster-Hauser syndrome"
+        },
+        {
+          "letter": "C",
+          "text": "Turner syndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Complete androgen insensitivity syndrome"
+        }
+      ],
+      "category": "Pelvis & Scrotum",
+      "correctAnswer": "B",
+      "explanation": "Mullerian agenesis (Mayer-Rokitansky-Kuster-Hauser syndrome) causes absence of the uterus and upper vagina with normal ovaries, so secondary sexual characteristics develop normally; the kidneys should also be checked for associated anomalies. Complete androgen insensitivity also has an absent uterus, but patients have sparse or absent pubic hair and testes rather than ovaries.",
+      "hint": "Match each option with the hormone sources and Mullerian structures it would leave intact.",
+      "keywords": [
+        "Mullerian agenesis",
+        "primary amenorrhea",
+        "absent uterus"
+      ]
+    },
+    {
+      "id": "ps-x-030",
+      "number": 168,
+      "question": "A 4-month-old with persistent right brachial plexus birth palsy (Erb palsy) has limited passive external rotation of the right shoulder. Posterior axial sonography of both shoulders is requested. Which complication is this examination primarily intended to detect?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Anterior glenohumeral dislocation from birth trauma"
+        },
+        {
+          "letter": "B",
+          "text": "Posterior subluxation of the humeral head with glenoid dysplasia"
+        },
+        {
+          "letter": "C",
+          "text": "Acromioclavicular joint separation"
+        },
+        {
+          "letter": "D",
+          "text": "Full-thickness rotator cuff tear"
+        }
+      ],
+      "category": "Spine, Hips & Musculoskeletal",
+      "correctAnswer": "B",
+      "explanation": "In brachial plexus birth palsy, weak external rotators and unopposed internal rotators lead to an internal rotation contracture with progressive posterior subluxation of the cartilaginous humeral head and glenoid dysplasia. A posterior axial sonogram shows the humeral head relative to the glenoid and scapula, allowing posterior displacement to be measured, compared with the normal side and followed during treatment. Anterior dislocation, acromioclavicular separation and rotator cuff tears are not the typical sequelae in infants.",
+      "hint": "Consider the effect of unbalanced shoulder muscle forces on a developing, largely cartilaginous joint.",
+      "keywords": [
+        "brachial plexus birth palsy",
+        "glenohumeral dysplasia",
+        "posterior subluxation"
+      ]
+    },
+    {
+      "id": "ps-x-035",
+      "number": 169,
+      "question": "A 3-year-old has a large solid upper abdominal mass. Which sonographic feature best indicates that the mass arises from the kidney rather than the adrenal gland?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fine stippled calcifications throughout the mass"
+        },
+        {
+          "letter": "B",
+          "text": "Extension across the midline encasing the aorta"
+        },
+        {
+          "letter": "C",
+          "text": "Inferolateral displacement of an otherwise intact kidney"
+        },
+        {
+          "letter": "D",
+          "text": "A beak of renal parenchyma wrapping around the edge of the mass"
+        }
+      ],
+      "category": "Neck, Chest & Oncology",
+      "correctAnswer": "D",
+      "explanation": "The claw sign, a beak of renal parenchyma stretched around the margin of the mass, shows that the mass arises within the kidney, as in Wilms tumor. Displacement of an intact kidney, calcifications and vascular encasement across the midline are typical of an extrarenal adrenal neuroblastoma.",
+      "hint": "Focus on the interface between the mass and the surrounding renal tissue.",
+      "keywords": [
+        "claw sign",
+        "Wilms tumor",
+        "neuroblastoma"
+      ]
+    },
+    {
+      "id": "ps-x-040",
+      "number": 170,
+      "question": "Before a bedside sonogram, a sonographer notes the vital signs of a healthy, calm term newborn. Which resting heart rate range is normal for this patient?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "60 to 100 beats/min"
+        },
+        {
+          "letter": "B",
+          "text": "80 to 120 beats/min"
+        },
+        {
+          "letter": "C",
+          "text": "120 to 160 beats/min"
+        },
+        {
+          "letter": "D",
+          "text": "180 to 220 beats/min"
+        }
+      ],
+      "category": "Patient Care & Technique",
+      "correctAnswer": "C",
+      "explanation": "A normal newborn resting heart rate is about 120 to 160 beats/min, with lower values during deep sleep and higher values with crying. A rate of 60 to 100 beats/min is the adult range and would represent significant bradycardia in a neonate, which requires immediate attention.",
+      "hint": "Infant heart rates are much faster than the adult range.",
+      "keywords": [
+        "vital signs",
+        "newborn heart rate",
+        "patient monitoring"
+      ]
     }
   ]
 }

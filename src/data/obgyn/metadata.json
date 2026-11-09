@@ -11,15 +11,15 @@
     "Infertility, Procedures & Patient Care"
   ],
   "categoryTotals": {
-    "First Trimester": 34,
-    "Fetal Biometry & Growth": 34,
-    "Fetal Anatomy & Anomalies": 34,
-    "Placenta, Cord & Amniotic Fluid": 34,
-    "Maternal Conditions & Fetal Well-Being": 32,
-    "Multiple Gestations": 32,
-    "Uterus & Cervix": 34,
-    "Ovaries & Adnexa": 34,
-    "Infertility, Procedures & Patient Care": 32
+    "First Trimester": 39,
+    "Placenta, Cord & Amniotic Fluid": 38,
+    "Maternal Conditions & Fetal Well-Being": 36,
+    "Multiple Gestations": 36,
+    "Fetal Biometry & Growth": 39,
+    "Fetal Anatomy & Anomalies": 39,
+    "Uterus & Cervix": 39,
+    "Ovaries & Adnexa": 38,
+    "Infertility, Procedures & Patient Care": 36
   },
   "examModes": [
     {
@@ -37,16 +37,16 @@
     {
       "id": "mock-1",
       "name": "Mock Exam 1",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-1"
     },
     {
       "id": "mock-2",
       "name": "Mock Exam 2",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-2"
     }
   ],
-  "totalQuestions": 300,
+  "totalQuestions": 340,
   "passingScore": 555
 }

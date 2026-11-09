@@ -9,13 +9,13 @@
     "Interventional Procedures & Patient Care"
   ],
   "categoryTotals": {
-    "Anatomy & Physiology": 44,
-    "Scanning Technique & Instrumentation": 43,
-    "Benign Breast Disease": 43,
-    "Malignant Breast Disease": 43,
-    "BI-RADS & Correlation": 43,
-    "Axilla, Lymph Nodes & Implants": 42,
-    "Interventional Procedures & Patient Care": 42
+    "Anatomy & Physiology": 50,
+    "Scanning Technique & Instrumentation": 49,
+    "Benign Breast Disease": 49,
+    "Malignant Breast Disease": 49,
+    "BI-RADS & Correlation": 49,
+    "Axilla, Lymph Nodes & Implants": 47,
+    "Interventional Procedures & Patient Care": 47
   },
   "examModes": [
     {
@@ -33,16 +33,16 @@
     {
       "id": "mock-1",
       "name": "Mock Exam 1",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-1"
     },
     {
       "id": "mock-2",
       "name": "Mock Exam 2",
-      "description": "Full practice exam (150 questions)",
+      "description": "Full-length exam: 170 questions, 3 hours",
       "route": "/exam/mock-2"
     }
   ],
-  "totalQuestions": 300,
+  "totalQuestions": 340,
   "passingScore": 555
 }

@@ -4497,6 +4497,646 @@
       "keywords": [
         "retraction gap"
       ]
+    },
+    {
+      "id": "msk-x-001",
+      "number": 151,
+      "question": "A 30-year-old cyclist fell directly onto the point of his shoulder. Coronal sonography over the top of the shoulder shows a widened joint between the clavicle and acromion, with the distal clavicle displaced superiorly relative to the acromion and adjacent hematoma. The coracoclavicular distance is greater than on the other side. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Distal clavicular osteolysis"
+        },
+        {
+          "letter": "B",
+          "text": "Acromioclavicular joint separation"
+        },
+        {
+          "letter": "C",
+          "text": "Unfused os acromiale"
+        },
+        {
+          "letter": "D",
+          "text": "Greater tuberosity fracture"
+        }
+      ],
+      "category": "Shoulder",
+      "correctAnswer": "B",
+      "explanation": "A direct fall on the shoulder that widens the acromioclavicular joint and elevates the distal clavicle, with an increased coracoclavicular distance, indicates acromioclavicular joint separation with coracoclavicular ligament injury. Distal clavicular osteolysis is a chronic overuse condition with cortical erosion, not acute superior displacement after trauma.",
+      "hint": "Think about which ligaments hold the clavicle down to the scapula and what happens when they fail.",
+      "keywords": [
+        "acromioclavicular joint",
+        "AC separation",
+        "coracoclavicular ligament"
+      ]
+    },
+    {
+      "id": "msk-x-006",
+      "number": 152,
+      "question": "Where is a small elbow joint effusion most readily detected with sonography?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Medial elbow over the ulnar collateral ligament during valgus stress"
+        },
+        {
+          "letter": "B",
+          "text": "Lateral elbow over the common extensor origin with the forearm pronated"
+        },
+        {
+          "letter": "C",
+          "text": "Posterior olecranon recess with the elbow flexed about 45 to 90 degrees"
+        },
+        {
+          "letter": "D",
+          "text": "Antecubital fossa superficial to the bicipital aponeurosis"
+        }
+      ],
+      "category": "Elbow, Wrist & Hand",
+      "correctAnswer": "C",
+      "explanation": "The posterior olecranon recess is the most dependent and distensible part of the elbow joint, and flexion displaces fluid into it, elevating the posterior fat pad. The antecubital fossa superficial to the aponeurosis is outside the joint capsule, so fluid there would not represent an effusion.",
+      "hint": "Think about the recess that also lifts the posterior fat pad on a lateral radiograph.",
+      "keywords": [
+        "elbow effusion",
+        "olecranon recess",
+        "posterior fat pad"
+      ]
+    },
+    {
+      "id": "msk-x-011",
+      "number": 153,
+      "question": "During infant hip sonography using the coronal view, what minimum percentage of femoral head coverage by the bony acetabulum is generally considered normal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "At least 25 percent"
+        },
+        {
+          "letter": "B",
+          "text": "At least 35 percent"
+        },
+        {
+          "letter": "C",
+          "text": "At least 40 percent"
+        },
+        {
+          "letter": "D",
+          "text": "At least 50 percent"
+        }
+      ],
+      "category": "Hip & Pelvis",
+      "correctAnswer": "D",
+      "explanation": "In the coronal view, the bony acetabulum normally covers at least half of the femoral head; coverage below about 50 percent suggests a shallow acetabulum or subluxation. Values in the 40 to 50 percent range are borderline in very young infants and are not considered clearly normal.",
+      "hint": "Picture how much of the round cartilaginous femoral head the normal acetabular roof encloses on the coronal image.",
+      "keywords": [
+        "developmental dysplasia of the hip",
+        "femoral head coverage",
+        "infant hip"
+      ]
+    },
+    {
+      "id": "msk-x-016",
+      "number": 154,
+      "question": "A 12-year-old basketball player has anterior knee pain with jumping. Sonography shows fragmentation and irregularity of the inferior pole of the patella with a thickened, hypoechoic proximal patellar tendon. The tibial tuberosity appears normal. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Osgood-Schlatter disease"
+        },
+        {
+          "letter": "B",
+          "text": "Sinding-Larsen-Johansson disease"
+        },
+        {
+          "letter": "C",
+          "text": "Bipartite patella"
+        },
+        {
+          "letter": "D",
+          "text": "Prepatellar bursitis"
+        }
+      ],
+      "category": "Knee",
+      "correctAnswer": "B",
+      "explanation": "Sinding-Larsen-Johansson disease is a traction apophysitis at the inferior pole of the patella in adolescents, with fragmentation and proximal patellar tendon thickening. Osgood-Schlatter disease involves the distal tendon at the tibial tuberosity, which is normal here.",
+      "hint": "Locate the abnormality: proximal or distal end of the patellar tendon.",
+      "keywords": [
+        "Sinding-Larsen-Johansson",
+        "inferior patellar pole",
+        "traction apophysitis"
+      ]
+    },
+    {
+      "id": "msk-x-021",
+      "number": 155,
+      "question": "A 14-year-old girl has medial midfoot pain and a bony prominence that rubs in her skates. Sonography shows the posterior tibial tendon inserting onto a separate ossicle medial to the navicular, with an irregular hypoechoic junction between the ossicle and navicular and local hyperemia. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Symptomatic accessory navicular"
+        },
+        {
+          "letter": "B",
+          "text": "Spring ligament tear"
+        },
+        {
+          "letter": "C",
+          "text": "Tarsal tunnel syndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Navicular stress fracture"
+        }
+      ],
+      "category": "Ankle & Foot",
+      "correctAnswer": "A",
+      "explanation": "An accessory navicular is an ossicle at the posterior tibial tendon insertion; stress across its fibrocartilaginous junction (synchondrosis) causes pain, irregularity, and hyperemia. A navicular stress fracture typically involves the central dorsal navicular body, not a separate ossicle within the tendon insertion.",
+      "hint": "The tendon is attaching to an extra bone rather than the navicular itself.",
+      "keywords": [
+        "accessory navicular",
+        "posterior tibial tendon",
+        "synchondrosis"
+      ]
+    },
+    {
+      "id": "msk-x-026",
+      "number": 156,
+      "question": "A 30-year-old man cannot make an OK sign because he cannot flex the thumb interphalangeal joint or the index finger distal interphalangeal joint. Sensation is normal. Sonography of which muscle would most likely show denervation changes such as increased echogenicity?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Abductor pollicis brevis"
+        },
+        {
+          "letter": "B",
+          "text": "First dorsal interosseous"
+        },
+        {
+          "letter": "C",
+          "text": "Supinator"
+        },
+        {
+          "letter": "D",
+          "text": "Pronator quadratus"
+        }
+      ],
+      "category": "Peripheral Nerves",
+      "correctAnswer": "D",
+      "explanation": "The anterior interosseous nerve is a pure motor branch of the median nerve that supplies the flexor pollicis longus, the index flexor digitorum profundus, and the pronator quadratus, which is easy to image over the distal forearm. The abductor pollicis brevis is supplied by the recurrent motor branch of the median nerve at the wrist, which is affected in carpal tunnel syndrome instead.",
+      "hint": "The deficit points to a pure motor branch of the median nerve in the forearm.",
+      "keywords": [
+        "anterior interosseous nerve",
+        "pronator quadratus",
+        "denervation"
+      ]
+    },
+    {
+      "id": "msk-x-031",
+      "number": 157,
+      "question": "A 50-year-old man with long-standing, poorly controlled diabetes and end-stage renal disease has acute severe thigh pain and swelling. He is afebrile with a normal white blood cell count. Sonography shows swollen, hypoechoic quadriceps muscle with preserved but separated fibers, no drainable collection, no gas, and little internal flow. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Necrotizing fasciitis"
+        },
+        {
+          "letter": "B",
+          "text": "Pyomyositis with intramuscular abscess"
+        },
+        {
+          "letter": "C",
+          "text": "Diabetic muscle infarction (myonecrosis)"
+        },
+        {
+          "letter": "D",
+          "text": "Myositis ossificans"
+        }
+      ],
+      "category": "Muscle, Tendon & Soft Tissue Pathology",
+      "correctAnswer": "C",
+      "explanation": "Diabetic myonecrosis occurs in patients with long-standing poorly controlled diabetes and microvascular disease, typically in the thigh, as painful swelling of muscle with preserved architecture, no abscess, and reduced flow. Pyomyositis would usually cause fever and a drainable collection with peripheral hyperemia.",
+      "hint": "Note the absence of fever, gas, and a drainable collection in a patient with severe small-vessel disease.",
+      "keywords": [
+        "diabetic myonecrosis",
+        "muscle infarction",
+        "thigh pain"
+      ]
+    },
+    {
+      "id": "msk-x-036",
+      "number": 158,
+      "question": "When imaging a tendon at a depth of 1.5 cm with a high-frequency linear transducer, where should the focal zone be placed?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "At the skin surface to sharpen the near field"
+        },
+        {
+          "letter": "B",
+          "text": "At or just below the level of the tendon"
+        },
+        {
+          "letter": "C",
+          "text": "At the deepest part of the image field"
+        },
+        {
+          "letter": "D",
+          "text": "Well above the tendon to reduce reverberation"
+        }
+      ],
+      "category": "Technique, Artifacts & Procedures",
+      "correctAnswer": "B",
+      "explanation": "Lateral resolution is best where the beam is narrowest, so the focal zone should be placed at or just below the structure of interest. Placing the focus at the deepest part of the field widens the beam at the tendon depth and blurs fine fibrillar detail.",
+      "hint": "The beam is narrowest at the focus, so put it where you need the best detail.",
+      "keywords": [
+        "focal zone",
+        "lateral resolution",
+        "image optimization"
+      ]
+    },
+    {
+      "id": "msk-x-002",
+      "number": 159,
+      "question": "A 34-year-old man felt a pop in the front of his chest and armpit while bench pressing. He has bruising over the upper arm and loss of the normal anterior axillary fold. Which portion of the injured muscle is most commonly torn?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The sternal head of the pectoralis major at its humeral insertion or myotendinous junction"
+        },
+        {
+          "letter": "B",
+          "text": "The clavicular head of the pectoralis major at its origin on the medial clavicle"
+        },
+        {
+          "letter": "C",
+          "text": "The pectoralis minor at its insertion on the coracoid process"
+        },
+        {
+          "letter": "D",
+          "text": "The long head of the biceps at the supraglenoid tubercle"
+        }
+      ],
+      "category": "Shoulder",
+      "correctAnswer": "A",
+      "explanation": "Pectoralis major tears from eccentric loading during bench press usually involve the sternal (inferior) head at its humeral tendon insertion or myotendinous junction, producing loss of the anterior axillary fold. Clavicular head origin tears are uncommon, and pectoralis minor injury would not efface the axillary fold.",
+      "hint": "Think about which portion of the muscle is under the greatest eccentric stretch as the bar is lowered to the chest.",
+      "keywords": [
+        "pectoralis major tear",
+        "bench press",
+        "anterior axillary fold"
+      ]
+    },
+    {
+      "id": "msk-x-007",
+      "number": 160,
+      "question": "A 52-year-old weightlifter fell onto an outstretched hand and now has weakness of elbow extension. Sonography of the posterior elbow shows a fluid-filled gap at the olecranon with a retracted, wavy tendon and a small shadowing echogenic fragment within the proximal stump. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Septic olecranon bursitis"
+        },
+        {
+          "letter": "B",
+          "text": "Distal triceps tendon avulsion"
+        },
+        {
+          "letter": "C",
+          "text": "Snapping triceps syndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Olecranon stress fracture"
+        }
+      ],
+      "category": "Elbow, Wrist & Hand",
+      "correctAnswer": "B",
+      "explanation": "A retracted tendon with a gap at the olecranon and a bony flake in the stump indicates avulsion of the distal triceps tendon, which commonly takes a cortical fragment with it. Olecranon bursitis is a superficial fluid collection with the tendon intact, and it would not cause weakness of extension.",
+      "hint": "The echogenic fragment travels with the retracted tendon away from its insertion.",
+      "keywords": [
+        "triceps tendon rupture",
+        "olecranon",
+        "avulsion fragment"
+      ]
+    },
+    {
+      "id": "msk-x-012",
+      "number": 161,
+      "question": "During dynamic infant hip sonography, which maneuver tests whether a located hip can be displaced out of the acetabulum?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ortolani maneuver: abduction of the flexed hip with an anterior lift of the femur"
+        },
+        {
+          "letter": "B",
+          "text": "Barlow maneuver: adduction of the flexed hip with gentle posterior pressure"
+        },
+        {
+          "letter": "C",
+          "text": "Galeazzi test: comparing knee heights with both hips and knees flexed"
+        },
+        {
+          "letter": "D",
+          "text": "Thompson test: squeezing the calf to observe passive plantarflexion"
+        }
+      ],
+      "category": "Hip & Pelvis",
+      "correctAnswer": "B",
+      "explanation": "The Barlow maneuver adducts the flexed hip while pushing posteriorly to see whether a seated femoral head can be subluxated or dislocated, and sonography shows the head moving posterolaterally. The Ortolani maneuver does the opposite, reducing an already dislocated hip with abduction and an anterior lift.",
+      "hint": "One maneuver tries to push the head out; the other tries to bring it back in.",
+      "keywords": [
+        "Barlow maneuver",
+        "dynamic hip stress",
+        "hip instability"
+      ]
+    },
+    {
+      "id": "msk-x-017",
+      "number": 162,
+      "question": "How should the knee be positioned and scanned to measure femoral trochlear cartilage thickness?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Knee fully extended with a longitudinal scan below the patella"
+        },
+        {
+          "letter": "B",
+          "text": "Patient prone with a transverse scan of the popliteal fossa"
+        },
+        {
+          "letter": "C",
+          "text": "Knee extended with a coronal scan of the medial joint line"
+        },
+        {
+          "letter": "D",
+          "text": "Knee maximally flexed with a transverse scan above the patella"
+        }
+      ],
+      "category": "Knee",
+      "correctAnswer": "D",
+      "explanation": "Maximal knee flexion moves the patella distally and exposes the femoral trochlea, allowing a transverse suprapatellar scan to show the anechoic cartilage over the condyles. With the knee extended, the patella covers the trochlea and the cartilage cannot be measured.",
+      "hint": "The patella must be moved out of the way to expose the trochlear groove.",
+      "keywords": [
+        "trochlear cartilage",
+        "knee flexion",
+        "suprapatellar transverse scan"
+      ]
+    },
+    {
+      "id": "msk-x-022",
+      "number": 163,
+      "question": "After an eversion ankle injury, which ligament complex is evaluated by placing the transducer with one end on the medial malleolus and fanning toward the navicular, talus, and calcaneus?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Spring (plantar calcaneonavicular) ligament"
+        },
+        {
+          "letter": "B",
+          "text": "Deltoid ligament"
+        },
+        {
+          "letter": "C",
+          "text": "Anterior talofibular ligament"
+        },
+        {
+          "letter": "D",
+          "text": "Calcaneofibular ligament"
+        }
+      ],
+      "category": "Ankle & Foot",
+      "correctAnswer": "B",
+      "explanation": "The deltoid ligament fans from the medial malleolus to the navicular, talus, and calcaneus and is stressed by eversion injuries. The spring ligament is also medial but runs from the sustentaculum tali to the navicular, not from the malleolus, and the anterior talofibular and calcaneofibular ligaments arise from the lateral malleolus and are injured by inversion.",
+      "hint": "Consider which medial ligament actually originates from the malleolus rather than from the hindfoot bones.",
+      "keywords": [
+        "deltoid ligament",
+        "eversion injury",
+        "medial ankle"
+      ]
+    },
+    {
+      "id": "msk-x-027",
+      "number": 164,
+      "question": "When the sciatic nerve is followed distally in short axis, where does it typically divide into the tibial and common peroneal nerves?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "In the distal thigh near the apex of the popliteal fossa"
+        },
+        {
+          "letter": "B",
+          "text": "At the greater sciatic notch just below the piriformis"
+        },
+        {
+          "letter": "C",
+          "text": "At the level of the fibular neck"
+        },
+        {
+          "letter": "D",
+          "text": "At the level of the ischial tuberosity"
+        }
+      ],
+      "category": "Peripheral Nerves",
+      "correctAnswer": "A",
+      "explanation": "The tibial and common peroneal components usually separate in the distal thigh near the apex of the popliteal fossa, although a higher division is a known variant. The fibular neck is where the common peroneal nerve itself divides into deep and superficial branches.",
+      "hint": "Follow the nerve down the posterior thigh until it reaches the top of the knee region.",
+      "keywords": [
+        "sciatic nerve",
+        "bifurcation",
+        "popliteal fossa"
+      ]
+    },
+    {
+      "id": "msk-x-032",
+      "number": 165,
+      "question": "Which sonographic appearance is most typical of cellulitis without abscess?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thickened, hyperechoic subcutaneous fat with branching anechoic fluid strands and no focal collection"
+        },
+        {
+          "letter": "B",
+          "text": "A well-defined anechoic collection with posterior enhancement and debris that swirls with pressure"
+        },
+        {
+          "letter": "C",
+          "text": "Echogenic foci with dirty posterior shadowing along the deep fascia"
+        },
+        {
+          "letter": "D",
+          "text": "An ovoid hypoechoic dermal lesion with a thin tract extending to the skin surface"
+        }
+      ],
+      "category": "Muscle, Tendon & Soft Tissue Pathology",
+      "correctAnswer": "A",
+      "explanation": "Cellulitis thickens and brightens the subcutaneous fat, with interlobular fluid producing a cobblestone pattern but no focal fluid collection; the pattern is not specific and needs clinical correlation. A swirling anechoic collection with posterior enhancement indicates an abscess that may need drainage.",
+      "hint": "Think about how edema distributes between fat lobules before any pus has formed.",
+      "keywords": [
+        "cellulitis",
+        "cobblestone pattern",
+        "subcutaneous edema"
+      ]
+    },
+    {
+      "id": "msk-x-037",
+      "number": 166,
+      "question": "Compared with healthy tendons, how do tendinopathic tendons such as the Achilles most often appear on shear wave elastography?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Stiffer, with higher shear wave velocity throughout"
+        },
+        {
+          "letter": "B",
+          "text": "Unchanged, because elastography cannot detect tendinopathy"
+        },
+        {
+          "letter": "C",
+          "text": "Softer, with lower shear wave velocity"
+        },
+        {
+          "letter": "D",
+          "text": "Stiffer only at the enthesis and normal elsewhere"
+        }
+      ],
+      "category": "Technique, Artifacts & Procedures",
+      "correctAnswer": "C",
+      "explanation": "Tendinopathy disrupts the organized collagen and increases ground substance and water, so affected tendons usually show reduced stiffness and lower shear wave velocity. Higher stiffness is not the typical finding, although measurements vary with tendon tension and joint position, which must be standardized.",
+      "hint": "Think about how disorganized collagen and added water change tissue firmness.",
+      "keywords": [
+        "shear wave elastography",
+        "tendinopathy",
+        "tissue stiffness"
+      ]
+    },
+    {
+      "id": "msk-x-003",
+      "number": 167,
+      "question": "When assessing fatty atrophy of the supraspinatus muscle with sonography, its echogenicity in the supraspinous fossa is commonly compared with which overlying reference muscle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pectoralis minor"
+        },
+        {
+          "letter": "B",
+          "text": "Subscapularis"
+        },
+        {
+          "letter": "C",
+          "text": "Trapezius"
+        },
+        {
+          "letter": "D",
+          "text": "Teres minor"
+        }
+      ],
+      "category": "Shoulder",
+      "correctAnswer": "C",
+      "explanation": "The trapezius lies directly over the supraspinatus in the same field of view, so a supraspinatus that is brighter than the trapezius, with poorly seen pennate pattern and central tendon, indicates fatty infiltration. The subscapularis is on the anterior scapula and cannot be compared side by side in the same image.",
+      "hint": "A useful reference muscle must appear in the same image so depth and gain settings are identical.",
+      "keywords": [
+        "fatty atrophy",
+        "supraspinatus muscle",
+        "rotator cuff tear chronicity"
+      ]
+    },
+    {
+      "id": "msk-x-008",
+      "number": 168,
+      "question": "A 27-year-old fell onto an outstretched hand and has dorsal wrist pain with normal radiographs. A dorsal transverse scan just distal to Lister tubercle shows a disrupted intercarpal ligament, and the interval between the two carpal bones it joins widens when the patient clenches the fist. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dorsal wrist ganglion cyst"
+        },
+        {
+          "letter": "B",
+          "text": "Lunotriquetral ligament tear"
+        },
+        {
+          "letter": "C",
+          "text": "Intersection syndrome"
+        },
+        {
+          "letter": "D",
+          "text": "Scapholunate ligament tear"
+        }
+      ],
+      "category": "Elbow, Wrist & Hand",
+      "correctAnswer": "D",
+      "explanation": "The dorsal segment of the scapholunate ligament is seen just distal to Lister tubercle, and disruption with dynamic widening of the scapholunate interval during fist clenching indicates a tear. The lunotriquetral ligament lies more ulnarly, between the lunate and triquetrum.",
+      "hint": "Use Lister tubercle as the landmark and recall which proximal carpal row bones lie directly beyond it.",
+      "keywords": [
+        "scapholunate ligament",
+        "dynamic clenched fist",
+        "carpal instability"
+      ]
+    },
+    {
+      "id": "msk-x-013",
+      "number": 169,
+      "question": "A newborn with breech presentation has a normal hip examination. Why is sonographic screening of the hips generally deferred until about 4 to 6 weeks of age?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Physiologic laxity and immaturity in the first weeks often resolve and can cause false-positive results"
+        },
+        {
+          "letter": "B",
+          "text": "The femoral head ossification center blocks visualization of the acetabulum before 6 weeks"
+        },
+        {
+          "letter": "C",
+          "text": "High-frequency linear transducers cannot resolve the cartilaginous femoral head in newborns"
+        },
+        {
+          "letter": "D",
+          "text": "Radiographs are more accurate than sonography during the first month of life"
+        }
+      ],
+      "category": "Hip & Pelvis",
+      "correctAnswer": "A",
+      "explanation": "Mild laxity and acetabular immaturity are common in the first weeks of life and usually resolve, so scanning too early produces many false-positive studies; a stable clinical exam allows deferral to about 4 to 6 weeks. The femoral head ossification center appears later, at several months, and it limits sonography only in older infants.",
+      "hint": "Consider what normally happens to newborn hip laxity during the first several weeks.",
+      "keywords": [
+        "hip screening timing",
+        "physiologic immaturity",
+        "breech risk factor"
+      ]
+    },
+    {
+      "id": "msk-x-018",
+      "number": 170,
+      "question": "A 55-year-old man has chronic painless swelling of the knee. Sonography shows a large suprapatellar effusion containing frond-like, villous hyperechoic synovial projections that sway with compression and show minimal Doppler flow. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lipoma arborescens"
+        },
+        {
+          "letter": "B",
+          "text": "Tenosynovial giant cell tumor (pigmented villonodular synovitis)"
+        },
+        {
+          "letter": "C",
+          "text": "Lipohemarthrosis"
+        },
+        {
+          "letter": "D",
+          "text": "Septic arthritis"
+        }
+      ],
+      "category": "Knee",
+      "correctAnswer": "A",
+      "explanation": "Lipoma arborescens is fatty villous proliferation of the synovium, seen as hyperechoic fronds floating in an effusion, most often in the suprapatellar recess. Tenosynovial giant cell tumor usually forms hypoechoic, vascular synovial masses rather than bright fatty fronds.",
+      "hint": "Bright, tree-like synovial fronds suggest fat within the synovium.",
+      "keywords": [
+        "lipoma arborescens",
+        "villous synovial proliferation",
+        "suprapatellar recess"
+      ]
     }
   ],
   "exam2": [
@@ -8995,6 +9635,646 @@
       "hint": "Consider what lies between the ligament stump and its attachment site.",
       "keywords": [
         "adductor aponeurosis"
+      ]
+    },
+    {
+      "id": "msk-x-023",
+      "number": 151,
+      "question": "A 32-year-old runner has posterior ankle pain and palpable crepitus. Sonography shows a normal-thickness Achilles tendon with preserved fibrillar echotexture, but hypoechoic thickening of the tissue surrounding the tendon with peritendinous hyperemia. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Midportion Achilles tendinopathy"
+        },
+        {
+          "letter": "B",
+          "text": "Retrocalcaneal bursitis"
+        },
+        {
+          "letter": "C",
+          "text": "Partial-thickness Achilles tear"
+        },
+        {
+          "letter": "D",
+          "text": "Achilles paratenonitis"
+        }
+      ],
+      "category": "Ankle & Foot",
+      "correctAnswer": "D",
+      "explanation": "The Achilles has no true synovial sheath; inflammation of its surrounding paratenon produces hypoechoic peritendinous thickening and hyperemia while the tendon itself stays normal. Midportion tendinopathy would show fusiform thickening and hypoechogenicity of the tendon itself.",
+      "hint": "Note that the tendon is normal and only the surrounding envelope is abnormal.",
+      "keywords": [
+        "paratenonitis",
+        "Achilles tendon",
+        "peritendinous inflammation"
+      ]
+    },
+    {
+      "id": "msk-x-028",
+      "number": 152,
+      "question": "A 26-year-old runner has exercise-related burning and numbness over the dorsum of the foot that spares the first web space. Sonography shows focal swelling of a small nerve where it passes through the crural fascia in the distal anterolateral leg, about 10 to 12 cm above the lateral malleolus, with a small fascial defect. Which nerve is involved?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Deep peroneal nerve"
+        },
+        {
+          "letter": "B",
+          "text": "Sural nerve"
+        },
+        {
+          "letter": "C",
+          "text": "Superficial peroneal nerve"
+        },
+        {
+          "letter": "D",
+          "text": "Saphenous nerve"
+        }
+      ],
+      "category": "Peripheral Nerves",
+      "correctAnswer": "C",
+      "explanation": "The superficial peroneal nerve becomes subcutaneous by piercing the crural fascia in the distal anterolateral leg and supplies most of the dorsal foot, sparing the first web space. The deep peroneal nerve supplies the first web space, and it stays deep to the fascia in the anterior compartment.",
+      "hint": "Map the dorsal foot sensory territories to the nerves that supply them and where each becomes subcutaneous.",
+      "keywords": [
+        "superficial peroneal nerve",
+        "crural fascia",
+        "dorsal foot numbness"
+      ]
+    },
+    {
+      "id": "msk-x-033",
+      "number": 153,
+      "question": "A 22-year-old woman has a soft, bluish forearm mass that enlarges when the arm hangs down. Sonography shows a compressible lesion of multiple hypoechoic channels containing small echogenic foci with posterior shadowing, and slow venous flow appears on release of compression. No high-velocity arterial flow is present. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Arteriovenous malformation"
+        },
+        {
+          "letter": "B",
+          "text": "Subcutaneous lipoma"
+        },
+        {
+          "letter": "C",
+          "text": "Organizing hematoma"
+        },
+        {
+          "letter": "D",
+          "text": "Venous malformation with phleboliths"
+        }
+      ],
+      "category": "Muscle, Tendon & Soft Tissue Pathology",
+      "correctAnswer": "D",
+      "explanation": "Venous malformations are compressible, enlarge with dependency, contain slow venous flow often seen only with compression release, and may contain shadowing phleboliths. An arteriovenous malformation is a high-flow lesion with arterialized waveforms and feeding arteries.",
+      "hint": "Weigh the flow velocity, the change with arm position and what the shadowing foci could represent.",
+      "keywords": [
+        "venous malformation",
+        "phleboliths",
+        "slow-flow vascular lesion"
+      ]
+    },
+    {
+      "id": "msk-x-038",
+      "number": 154,
+      "question": "Percutaneous ultrasound-guided needle tenotomy (fenestration) for chronic tendinosis works mainly by which mechanism?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Dissolving intratendinous calcium deposits with saline lavage"
+        },
+        {
+          "letter": "B",
+          "text": "Blocking the sensory nerves that supply the painful tendon"
+        },
+        {
+          "letter": "C",
+          "text": "Removing the inflamed bursa that overlies the tendon"
+        },
+        {
+          "letter": "D",
+          "text": "Creating controlled injury that stimulates a new healing response"
+        }
+      ],
+      "category": "Technique, Artifacts & Procedures",
+      "correctAnswer": "D",
+      "explanation": "Repeated needle passes through the abnormal tendon segment disrupt degenerated tissue and cause bleeding, which converts a chronic degenerative process into an acute healing response. Saline lavage of calcium is a different procedure (barbotage) used for calcific tendinopathy.",
+      "hint": "Chronic tendinosis lacks an effective repair response; the procedure tries to restart one.",
+      "keywords": [
+        "needle tenotomy",
+        "fenestration",
+        "tendinosis treatment"
+      ]
+    },
+    {
+      "id": "msk-x-004",
+      "number": 155,
+      "question": "Which scanning approach is most sensitive for detecting a small glenohumeral joint effusion?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Anterior coronal scan of the supraspinatus with the arm in the Crass position"
+        },
+        {
+          "letter": "B",
+          "text": "Coronal scan over the acromioclavicular joint with the arm at the side"
+        },
+        {
+          "letter": "C",
+          "text": "Transverse scan of the subscapularis with the arm in internal rotation"
+        },
+        {
+          "letter": "D",
+          "text": "Posterior transverse scan of the posterior recess with the arm in external rotation"
+        }
+      ],
+      "category": "Shoulder",
+      "correctAnswer": "D",
+      "explanation": "Glenohumeral joint fluid collects in the posterior recess between the posterior labrum and infraspinatus, and external rotation shifts fluid posteriorly, making small effusions easier to see. A supraspinatus scan in the Crass position shows the cuff and subacromial bursa, not the joint recess.",
+      "hint": "Look where the joint capsule has a dependent recess beneath the posterior cuff.",
+      "keywords": [
+        "glenohumeral effusion",
+        "posterior recess",
+        "external rotation"
+      ]
+    },
+    {
+      "id": "msk-x-009",
+      "number": 156,
+      "question": "A 40-year-old jammed the tip of his middle finger while catching a ball. The distal phalanx now droops, and he cannot actively extend the distal interphalangeal joint. Which sonographic finding is most expected?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Thickened A1 pulley at the metacarpophalangeal joint"
+        },
+        {
+          "letter": "B",
+          "text": "Disruption of the central slip at the base of the middle phalanx"
+        },
+        {
+          "letter": "C",
+          "text": "Discontinuity of the terminal extensor tendon at the dorsal distal phalanx"
+        },
+        {
+          "letter": "D",
+          "text": "Tear of the flexor digitorum profundus at the distal phalanx"
+        }
+      ],
+      "category": "Elbow, Wrist & Hand",
+      "correctAnswer": "C",
+      "explanation": "Inability to extend the DIP joint with a drooping fingertip is a mallet finger, caused by disruption of the terminal extensor tendon at the dorsal base of the distal phalanx. Central slip injury at the middle phalanx causes a boutonniere deformity at the PIP joint, not a DIP extension loss.",
+      "hint": "Match the joint that cannot be extended to the extensor component that inserts just beyond it.",
+      "keywords": [
+        "mallet finger",
+        "terminal extensor tendon",
+        "distal interphalangeal joint"
+      ]
+    },
+    {
+      "id": "msk-x-014",
+      "number": 157,
+      "question": "A 68-year-old woman has groin pain with active hip flexion, such as getting into a car, one year after total hip arthroplasty. Sonography shows a thickened hypoechoic iliopsoas tendon with surrounding fluid where the tendon crosses an anterior edge of the acetabular cup that protrudes beyond the bony rim. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Periprosthetic femoral fracture"
+        },
+        {
+          "letter": "B",
+          "text": "Gluteus medius tendon tear"
+        },
+        {
+          "letter": "C",
+          "text": "Femoral hernia"
+        },
+        {
+          "letter": "D",
+          "text": "Iliopsoas impingement from acetabular cup overhang"
+        }
+      ],
+      "category": "Hip & Pelvis",
+      "correctAnswer": "D",
+      "explanation": "An acetabular component that protrudes anteriorly can rub on the iliopsoas tendon, causing tendinopathy and bursal fluid with painful active flexion after arthroplasty. A gluteus medius tear causes lateral hip pain and abductor weakness, not anterior pain linked to hip flexion.",
+      "hint": "Relate the painful motion to the tendon that crosses directly over the anterior acetabulum.",
+      "keywords": [
+        "total hip arthroplasty",
+        "iliopsoas impingement",
+        "acetabular cup"
+      ]
+    },
+    {
+      "id": "msk-x-019",
+      "number": 158,
+      "question": "During a posterior knee examination, a small oval echogenic structure with posterior acoustic shadowing is seen within the lateral head of the gastrocnemius behind the lateral femoral condyle. The patient has no symptoms there. What is it most likely?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Loose body within a Baker cyst"
+        },
+        {
+          "letter": "B",
+          "text": "Fabella, a normal sesamoid bone"
+        },
+        {
+          "letter": "C",
+          "text": "Calcified plaque of the popliteal artery"
+        },
+        {
+          "letter": "D",
+          "text": "Avulsion fragment from the posterior cruciate ligament"
+        }
+      ],
+      "category": "Knee",
+      "correctAnswer": "B",
+      "explanation": "The fabella is a common sesamoid within the lateral gastrocnemius head, appearing as a smooth shadowing echogenic focus posterior to the lateral femoral condyle. A Baker cyst loose body would lie within fluid between the medial gastrocnemius and semimembranosus, on the medial side.",
+      "hint": "Some normal sesamoid bones live inside tendons of the posterior knee.",
+      "keywords": [
+        "fabella",
+        "sesamoid bone",
+        "lateral gastrocnemius"
+      ]
+    },
+    {
+      "id": "msk-x-024",
+      "number": 159,
+      "question": "A 45-year-old runner who received several corticosteroid injections for plantar fasciitis felt a sudden pop under the heel while running. Sonography shows discontinuity of the plantar fascia fibers about 2 cm distal to the calcaneal origin with a surrounding hypoechoic hematoma. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Plantar fibromatosis"
+        },
+        {
+          "letter": "B",
+          "text": "Calcaneal stress fracture"
+        },
+        {
+          "letter": "C",
+          "text": "Plantar fascia rupture"
+        },
+        {
+          "letter": "D",
+          "text": "Inferior calcaneal nerve entrapment"
+        }
+      ],
+      "category": "Ankle & Foot",
+      "correctAnswer": "C",
+      "explanation": "Repeated corticosteroid injections weaken the plantar fascia and predispose it to rupture, seen as fiber discontinuity with hematoma near the origin after an acute pop. Plantar fibromatosis forms well-defined nodules in the mid-fascia without acute discontinuity or hematoma.",
+      "hint": "Link the injection history and the acute pop to a loss of fiber continuity.",
+      "keywords": [
+        "plantar fascia rupture",
+        "corticosteroid injection",
+        "heel pain"
+      ]
+    },
+    {
+      "id": "msk-x-029",
+      "number": 160,
+      "question": "In the posterior calf, which superficial structure is the most useful landmark for locating the sural nerve?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Great saphenous vein"
+        },
+        {
+          "letter": "B",
+          "text": "Peroneal artery"
+        },
+        {
+          "letter": "C",
+          "text": "Posterior tibial artery"
+        },
+        {
+          "letter": "D",
+          "text": "Small saphenous vein"
+        }
+      ],
+      "category": "Peripheral Nerves",
+      "correctAnswer": "D",
+      "explanation": "The sural nerve runs in the subcutaneous tissue of the posterior calf alongside the small saphenous vein, which can be found easily and followed toward the lateral malleolus. The great saphenous vein runs with the saphenous nerve on the medial leg instead.",
+      "hint": "Choose a structure in the same subcutaneous plane that is easy to find with light transducer pressure.",
+      "keywords": [
+        "sural nerve",
+        "small saphenous vein",
+        "nerve landmark"
+      ]
+    },
+    {
+      "id": "msk-x-034",
+      "number": 161,
+      "question": "A 36-year-old man with a very high LDL cholesterol level and a family history of early myocardial infarction has painless bilateral thickening of the back of both ankles. Sonography shows diffuse fusiform thickening of both Achilles tendons with scattered hypoechoic foci, preserved continuity, and little Doppler flow. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tendon xanthomas from familial hypercholesterolemia"
+        },
+        {
+          "letter": "B",
+          "text": "Bilateral chronic Achilles tendon rupture"
+        },
+        {
+          "letter": "C",
+          "text": "Gouty tophi within the Achilles tendons"
+        },
+        {
+          "letter": "D",
+          "text": "Haglund deformity with retrocalcaneal bursitis"
+        }
+      ],
+      "category": "Muscle, Tendon & Soft Tissue Pathology",
+      "correctAnswer": "A",
+      "explanation": "Familial hypercholesterolemia causes lipid deposits in tendons, most often the Achilles, producing painless bilateral fusiform thickening with hypoechoic foci. Gouty tophi appear as hyperechoic aggregates and occur with hyperuricemia and inflammatory attacks, not with markedly elevated LDL.",
+      "hint": "Connect the lipid laboratory result to a deposit within the tendon.",
+      "keywords": [
+        "tendon xanthoma",
+        "familial hypercholesterolemia",
+        "Achilles thickening"
+      ]
+    },
+    {
+      "id": "msk-x-039",
+      "number": 162,
+      "question": "Before performing an ultrasound-guided musculoskeletal injection, what is the most appropriate step to reduce the risk of vascular injury?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Survey the planned needle path with color or power Doppler to identify vessels"
+        },
+        {
+          "letter": "B",
+          "text": "Increase the overall gain so the needle and vessels appear brighter"
+        },
+        {
+          "letter": "C",
+          "text": "Switch to an out-of-plane approach to shorten the needle path"
+        },
+        {
+          "letter": "D",
+          "text": "Apply firm transducer pressure to compress vessels along the path"
+        }
+      ],
+      "category": "Technique, Artifacts & Procedures",
+      "correctAnswer": "A",
+      "explanation": "Scanning the planned trajectory with color or power Doppler identifies arteries and veins so the needle path can be adjusted to avoid them. Firm transducer pressure can collapse veins so they become invisible, making them easier to puncture rather than avoid.",
+      "hint": "Use the tool that shows flowing blood before the needle enters the skin.",
+      "keywords": [
+        "procedure planning",
+        "Doppler survey",
+        "vascular injury"
+      ]
+    },
+    {
+      "id": "msk-x-005",
+      "number": 163,
+      "question": "A 34-year-old swimmer has chronic superior shoulder pain without trauma. Long-axis sonography along the acromion, posterior to the acromioclavicular joint, shows a cortical gap with smooth, well-corticated margins and a hypoechoic cleft, and a similar gap is present on the asymptomatic side. Gentle pressure on the anterior acromion produces slight motion at the gap. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Os acromiale (unfused acromial ossification center)"
+        },
+        {
+          "letter": "B",
+          "text": "Acute acromial fracture"
+        },
+        {
+          "letter": "C",
+          "text": "Acromioclavicular joint separation"
+        },
+        {
+          "letter": "D",
+          "text": "Distal clavicular osteolysis"
+        }
+      ],
+      "category": "Shoulder",
+      "correctAnswer": "A",
+      "explanation": "Os acromiale is failure of fusion of an acromial ossification center, which is normally complete by about age 25. It appears as a cortical gap in the acromion separate from and posterior to the acromioclavicular joint, with smooth corticated margins, is often bilateral, and can be mobile and contribute to impingement. An acute fracture follows trauma and has sharp, irregular margins with hematoma, and the acromioclavicular joint lies more medially between the acromion and the clavicle.",
+      "hint": "Compare the margins and the opposite shoulder: is this an acute injury or a developmental finding?",
+      "keywords": [
+        "os acromiale",
+        "acromion",
+        "developmental variant"
+      ]
+    },
+    {
+      "id": "msk-x-010",
+      "number": 164,
+      "question": "A 38-year-old woman has exquisite pinpoint pain beneath the fingernail that worsens with cold exposure. High-frequency sonography shows a 4 mm well-defined hypoechoic nodule in the nail bed beneath the nail plate with marked internal vascularity and slight scalloping of the distal phalanx cortex. What is the most likely diagnosis?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Glomus tumor"
+        },
+        {
+          "letter": "B",
+          "text": "Epidermal inclusion cyst"
+        },
+        {
+          "letter": "C",
+          "text": "Digital mucous cyst"
+        },
+        {
+          "letter": "D",
+          "text": "Giant cell tumor of tendon sheath"
+        }
+      ],
+      "category": "Elbow, Wrist & Hand",
+      "correctAnswer": "A",
+      "explanation": "A small, hypervascular, hypoechoic subungual nodule with cold sensitivity, point tenderness, and bony scalloping is classic for a glomus tumor. A digital mucous cyst is anechoic, avascular, and usually arises near the DIP joint dorsally rather than under the nail with marked flow.",
+      "hint": "Consider the subungual lesion known for a triad of pain, cold sensitivity, and point tenderness.",
+      "keywords": [
+        "glomus tumor",
+        "subungual mass",
+        "hypervascular nodule"
+      ]
+    },
+    {
+      "id": "msk-x-015",
+      "number": 165,
+      "question": "A Spigelian hernia protrudes through which location?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Hesselbach triangle, medial to the inferior epigastric vessels"
+        },
+        {
+          "letter": "B",
+          "text": "The femoral canal, below the inguinal ligament and medial to the femoral vein"
+        },
+        {
+          "letter": "C",
+          "text": "The semilunar line at the lateral edge of the rectus abdominis, usually near the arcuate line"
+        },
+        {
+          "letter": "D",
+          "text": "The umbilical ring in the midline of the anterior abdominal wall"
+        }
+      ],
+      "category": "Hip & Pelvis",
+      "correctAnswer": "C",
+      "explanation": "A Spigelian hernia passes through the Spigelian aponeurosis along the semilunar line at the lateral margin of the rectus abdominis, most often near or below the arcuate line, and is often concealed beneath an intact external oblique aponeurosis. A defect in Hesselbach triangle defines a direct inguinal hernia.",
+      "hint": "This hernia is typically interparietal, often hidden beneath an intact external oblique aponeurosis.",
+      "keywords": [
+        "Spigelian hernia",
+        "semilunar line",
+        "abdominal wall hernia"
+      ]
+    },
+    {
+      "id": "msk-x-020",
+      "number": 166,
+      "question": "A 24-year-old skier has an acute hemarthrosis after a pivoting injury. Which posterior-approach sonographic finding is an indirect sign of an anterior cruciate ligament tear?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Anechoic fluid in the prepatellar bursa"
+        },
+        {
+          "letter": "B",
+          "text": "Thickening of the pes anserinus tendons"
+        },
+        {
+          "letter": "C",
+          "text": "A hypoechoic collection along the lateral wall of the intercondylar notch"
+        },
+        {
+          "letter": "D",
+          "text": "Hypoechoic swelling of the semimembranosus insertion"
+        }
+      ],
+      "category": "Knee",
+      "correctAnswer": "C",
+      "explanation": "The ACL attaches to the medial surface of the lateral femoral condyle, so a tear often leaves a hypoechoic hematoma along the lateral wall of the intercondylar notch, seen from a posterior approach. Prepatellar bursal fluid is superficial and unrelated to cruciate injury.",
+      "hint": "Think about where the ACL attaches on the femur.",
+      "keywords": [
+        "anterior cruciate ligament",
+        "intercondylar notch hematoma",
+        "indirect sign"
+      ]
+    },
+    {
+      "id": "msk-x-025",
+      "number": 167,
+      "question": "In a patient with progressive collapsing flatfoot, which ligament lying deep to the posterior tibial tendon, extending from the sustentaculum tali to the navicular, should be evaluated?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Anterior talofibular ligament"
+        },
+        {
+          "letter": "B",
+          "text": "Spring (plantar calcaneonavicular) ligament"
+        },
+        {
+          "letter": "C",
+          "text": "Bifurcate ligament"
+        },
+        {
+          "letter": "D",
+          "text": "Posterior talofibular ligament"
+        }
+      ],
+      "category": "Ankle & Foot",
+      "correctAnswer": "B",
+      "explanation": "The spring ligament supports the talar head from below, runs from the sustentaculum tali to the navicular deep to the posterior tibial tendon, and is often thickened or torn with posterior tibial tendon dysfunction and flatfoot. The bifurcate ligament lies on the dorsolateral midfoot and does not support the medial arch.",
+      "hint": "Find the ligament that cradles the talar head on the medial side of the arch.",
+      "keywords": [
+        "spring ligament",
+        "flatfoot",
+        "posterior tibial tendon dysfunction"
+      ]
+    },
+    {
+      "id": "msk-x-030",
+      "number": 168,
+      "question": "A 45-year-old woman had a lymph node biopsy in the posterior triangle of the neck. She now has a drooping shoulder, difficulty raising the arm above horizontal, and mild scapular winging. Sonography shows a thin, hyperechoic trapezius compared with the other side. Which nerve was most likely injured?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Long thoracic nerve"
+        },
+        {
+          "letter": "B",
+          "text": "Spinal accessory nerve"
+        },
+        {
+          "letter": "C",
+          "text": "Suprascapular nerve"
+        },
+        {
+          "letter": "D",
+          "text": "Axillary nerve"
+        }
+      ],
+      "category": "Peripheral Nerves",
+      "correctAnswer": "B",
+      "explanation": "The spinal accessory nerve crosses the posterior triangle superficially, where it is at risk during lymph node biopsy, and its injury denervates the trapezius. The long thoracic nerve also causes winging, but it supplies the serratus anterior and does not lie in the posterior triangle at the biopsy site.",
+      "hint": "Match the atrophic muscle to its motor nerve and to where that nerve runs in the neck.",
+      "keywords": [
+        "spinal accessory nerve",
+        "trapezius atrophy",
+        "posterior triangle"
+      ]
+    },
+    {
+      "id": "msk-x-035",
+      "number": 169,
+      "question": "A 30-year-old has a painless, mobile oval lump in the groin. Sonography shows an oval hypoechoic structure with a central echogenic fatty hilum, central hilar vascularity, and a short-axis to long-axis ratio below 0.5. What does this most likely represent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Metastatic lymph node"
+        },
+        {
+          "letter": "B",
+          "text": "Indirect inguinal hernia"
+        },
+        {
+          "letter": "C",
+          "text": "Benign or reactive lymph node"
+        },
+        {
+          "letter": "D",
+          "text": "Femoral artery pseudoaneurysm"
+        }
+      ],
+      "category": "Muscle, Tendon & Soft Tissue Pathology",
+      "correctAnswer": "C",
+      "explanation": "An oval shape, preserved echogenic fatty hilum, and central hilar flow are features of a benign or reactive lymph node, which is common in the groin. Metastatic nodes tend to be rounded with loss of the fatty hilum and peripheral or chaotic vascularity.",
+      "hint": "Focus on the preserved central fatty structure and the oval shape.",
+      "keywords": [
+        "lymph node",
+        "fatty hilum",
+        "soft tissue mass mimic"
+      ]
+    },
+    {
+      "id": "msk-x-040",
+      "number": 170,
+      "question": "Which practice is recommended for ultrasound-guided musculoskeletal injections to reduce the risk of infection?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using ordinary bottle gel at the puncture site after an alcohol wipe of the transducer"
+        },
+        {
+          "letter": "B",
+          "text": "Skin antisepsis with a sterile transducer cover and sterile gel at the puncture site"
+        },
+        {
+          "letter": "C",
+          "text": "Cleaning the skin after the needle is inserted to avoid diluting anesthetic"
+        },
+        {
+          "letter": "D",
+          "text": "Wiping the transducer with water between patients and using an uncovered probe"
+        }
+      ],
+      "category": "Technique, Artifacts & Procedures",
+      "correctAnswer": "B",
+      "explanation": "Aseptic technique for guided injections includes skin antisepsis (such as chlorhexidine or povidone-iodine), a sterile transducer cover, and sterile single-use gel where the needle enters. Nonsterile bottle gel at the puncture site has been linked to contamination and infection, even if the probe is wiped.",
+      "hint": "Everything that touches the puncture site should be sterile.",
+      "keywords": [
+        "aseptic technique",
+        "sterile probe cover",
+        "infection control"
       ]
     }
   ]
