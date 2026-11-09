@@ -10,7 +10,7 @@
       "color": "emerald",
       "gradient": "from-emerald-500 to-emerald-600",
       "enabled": true,
-      "questionCount": 333,
+      "questionCount": 282,
       "examModes": [
         {
           "id": "quick-10",
@@ -27,26 +27,20 @@
         {
           "id": "mock-1",
           "name": "Mock Exam 1",
-          "description": "Full practice exam (128 questions)",
+          "description": "Full practice exam (100 questions)",
           "route": "/exam/mock-1"
         },
         {
           "id": "mock-2",
           "name": "Mock Exam 2",
-          "description": "Full practice exam (72 questions)",
+          "description": "Full practice exam (84 questions)",
           "route": "/exam/mock-2"
         },
         {
           "id": "mock-3",
           "name": "Mock Exam 3",
-          "description": "Full practice exam (102 questions)",
+          "description": "Full practice exam (98 questions)",
           "route": "/exam/mock-3"
-        },
-        {
-          "id": "mock-4",
-          "name": "Mock Exam 4",
-          "description": "Full practice exam - 110 questions",
-          "route": "/exam/mock-4"
         }
       ]
     },
@@ -60,7 +54,7 @@
       "color": "blue",
       "gradient": "from-blue-500 to-blue-600",
       "enabled": true,
-      "questionCount": 337,
+      "questionCount": 326,
       "examModes": [
         {
           "id": "quick-10",

@@ -2,24 +2,29 @@
   "modality": "vascular",
   "categories": [
     "Cerebrovascular",
-    "Arterial Anatomy",
-    "Arterial Hemodynamics",
     "Physics & Instrumentation",
-    "Arterial Disease",
+    "Arterial Anatomy",
     "General & Other",
+    "Treatment & Procedures",
+    "Clinical Applications",
     "Venous Anatomy",
     "Venous Hemodynamics",
     "Venous Disease",
-    "Treatment & Procedures",
-    "Clinical Applications"
+    "Arterial Hemodynamics",
+    "Arterial Disease"
   ],
   "categoryTotals": {
-    "Cerebrovascular": 53,
-    "Arterial Anatomy": 30,
-    "Arterial Hemodynamics": 28,
-    "Physics & Instrumentation": 18,
-    "Arterial Disease": 16,
-    "General & Other": 62
+    "Cerebrovascular": 44,
+    "Physics & Instrumentation": 22,
+    "Arterial Anatomy": 14,
+    "General & Other": 17,
+    "Treatment & Procedures": 15,
+    "Clinical Applications": 37,
+    "Venous Anatomy": 19,
+    "Venous Hemodynamics": 15,
+    "Venous Disease": 38,
+    "Arterial Hemodynamics": 32,
+    "Arterial Disease": 29
   },
   "examModes": [
     {
@@ -41,8 +46,8 @@
     {
       "id": "mock-1",
       "name": "Mock Exam 1",
-      "description": "Full practice exam (72 questions)",
-      "questionCount": 72,
+      "description": "Full practice exam (100 questions)",
+      "questionCount": 100,
       "shuffle": true,
       "showAnswers": false,
       "timed": false
@@ -50,13 +55,22 @@
     {
       "id": "mock-2",
       "name": "Mock Exam 2",
-      "description": "Full practice exam (72 questions)",
-      "questionCount": 72,
+      "description": "Full practice exam (84 questions)",
+      "questionCount": 84,
+      "shuffle": true,
+      "showAnswers": false,
+      "timed": false
+    },
+    {
+      "id": "mock-3",
+      "name": "Mock Exam 3",
+      "description": "Full practice exam (98 questions)",
+      "questionCount": 98,
       "shuffle": true,
       "showAnswers": false,
       "timed": false
     }
   ],
-  "totalQuestions": 200,
+  "totalQuestions": 282,
   "passingScore": 75
 }

@@ -1,0 +1,2050 @@
+{
+  "categories": [
+    {
+      "id": "vasc-cerebro",
+      "title": "Cerebrovascular",
+      "pieceRange": "Pieces 1-6",
+      "examType": "ARDMS RVT (Vascular Technology)",
+      "icon": "brain",
+      "color": "blue",
+      "description": "Carotid and vertebral duplex, stenosis grading, plaque and dissection, subclavian steal, TCD",
+      "topics": [
+        {
+          "id": "vasc-carotid-anatomy",
+          "pieceNumber": "Piece 1",
+          "title": "Carotid Anatomy and Normal Waveforms",
+          "frontClue": "One branch feeds a thirsty brain all through diastole; its twin feeds the face and tells you so when you tap the temple.",
+          "corePiece": "The right common carotid artery (CCA) arises from the brachiocephalic (innominate) trunk, while the left CCA arises directly from the aortic arch. Each CCA ascends without branches and usually divides near the upper border of the thyroid cartilage (about C3 to C4) into the internal (ICA) and external (ECA) carotid arteries. The ICA is usually larger, posterolateral, has no branches in the neck and supplies the low-resistance brain, so its spectrum shows a broad systolic peak with continuous forward diastolic flow. The ECA is smaller, anteromedial, gives off branches (the superior thyroid artery is first) and supplies the high-resistance face and scalp, so it shows a sharp systolic peak with low diastolic flow, sometimes a brief reversal. Tapping the superficial temporal artery produces sawtooth oscillations in the ECA. The CCA waveform is a blend of both. The carotid bulb normally shows boundary layer separation, a zone of low or reversed flow along the outer wall. Normal ICA peak systolic velocity (PSV) is below 125 cm/s.",
+          "whyLock": "Every carotid grading decision assumes you are sampling the correct vessel. Calling the ECA the ICA can turn a normal study into a false stenosis, or hide a true ICA occlusion when ECA collaterals look busy. Use several clues together: size, position, branches, waveform shape and the temporal tap, because none is perfect alone. The tap can transmit into the CCA and ICA, and the ECA can 'internalize' (gain diastolic flow) when the ICA is occluded. Flow reversal in the bulb is normal disturbed flow, not plaque-related turbulence, and should not be reported as disease.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 11",
+              "title": "High- and Low-Resistance Vascular Beds",
+              "link": "The ICA and ECA are the textbook pair for low- versus high-resistance waveforms."
+            },
+            {
+              "piece": "Piece 13",
+              "title": "Aortic Arch and Upper Extremity Arteries",
+              "link": "The arch anatomy explains why the right and left CCA origins differ."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Grading Carotid Stenosis",
+              "link": "Correct ICA identification is the starting point for every velocity criterion."
+            }
+          ],
+          "registryApplication": "Expect waveform images asking you to name the vessel, questions on which carotid branch has extracranial branches, and items on the temporal tap and normal bulb flow separation.",
+          "checkpoint": {
+            "pearl": "ICA: Inside the skull, Into diastole. ECA: External branches, Expect low diastole.",
+            "reflection": "If the vessel you think is the ECA shows strong continuous diastolic flow, what two explanations should you consider?"
+          },
+          "keyTerms": [
+            "Common carotid artery",
+            "Internal carotid artery",
+            "External carotid artery",
+            "Superior thyroid artery",
+            "Temporal tap",
+            "Carotid bulb",
+            "Flow separation"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-carotid-protocol",
+          "pieceNumber": "Piece 2",
+          "title": "Carotid Duplex Protocol and Technique",
+          "frontClue": "Walk the gate through the narrowing, keep the angle at sixty or less, and never trust a single sample.",
+          "corePiece": "Position the patient supine with the head slightly extended and turned away from the side being scanned. Use a 5 to 12 MHz linear transducer, dropping frequency for deep or heavily calcified vessels. Survey the carotid system in transverse from the clavicle to the mandible with grayscale and color, then image in long axis from anterior, lateral and posterior approaches to choose the best window. Record spectral Doppler in the proximal, mid and distal CCA, the bulb, the proximal, mid and distal ICA, the proximal ECA, the vertebral artery and the subclavian artery. Align the angle cursor parallel to the vessel wall or flow jet and keep the Doppler angle at 60 degrees or less, using a consistent angle between sides. Use a small sample volume and walk it through any narrowing to capture the highest velocity, then sample just beyond for poststenotic turbulence. Measure both brachial pressures. Optimize color scale, gain and wall filter, and document plaque location, extent and character.",
+          "whyLock": "Velocity criteria are only as good as the technique behind them. Angles above 60 degrees magnify cosine errors, so small cursor mistakes produce large velocity errors. Failing to walk the sample volume through a stenosis underestimates the peak, while sampling at an inconsistent angle makes side-to-side comparison meaningless. A common trap is aligning the cursor to the wall when the jet runs obliquely; follow the color jet. Brachial pressure asymmetry over 15 to 20 mmHg points to subclavian disease and may explain vertebral flow changes found later in the same exam.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 42",
+              "title": "The Doppler Equation and Angle Correction",
+              "link": "The 60 degree rule comes straight from the cosine term in the Doppler equation."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Spectral Broadening and Sample Volume",
+              "link": "Sample volume size and placement determine how the spectral window looks."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Vertebral Arteries and Subclavian Steal",
+              "link": "Bilateral brachial pressures in the protocol screen for the subclavian disease that causes steal."
+            }
+          ],
+          "registryApplication": "Questions ask for the correct Doppler angle, which segments must be sampled, how to find the peak velocity in a stenosis, and how to fix aliasing or missed slow flow.",
+          "checkpoint": {
+            "pearl": "Sixty or less, parallel to the jet, walk the gate.",
+            "reflection": "Your ICA velocity jumps from 180 to 260 cm/s when you change the angle from 50 to 70 degrees. Which value do you trust and why?"
+          },
+          "keyTerms": [
+            "Linear transducer",
+            "Angle of insonation",
+            "Angle correction",
+            "Sample volume",
+            "Walking the gate",
+            "Brachial pressures",
+            "Color scale"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-carotid-stenosis",
+          "pieceNumber": "Piece 3",
+          "title": "Grading Carotid Stenosis",
+          "frontClue": "One twenty-five opens the door, two thirty pushes past seventy, and the ratio of four agrees.",
+          "corePiece": "The 2003 Society of Radiologists in Ultrasound consensus grades ICA stenosis by diameter reduction using the NASCET method. ICA PSV is the primary parameter; the ICA/CCA PSV ratio and ICA end-diastolic velocity (EDV) are supporting parameters. Normal: PSV below 125 cm/s with no visible plaque or intimal thickening; ratio below 2.0 and EDV below 40 cm/s. Less than 50 percent: PSV below 125 cm/s with visible plaque. 50 to 69 percent: PSV 125 to 230 cm/s, ratio 2.0 to 4.0, EDV 40 to 100 cm/s. 70 percent or greater but less than near occlusion: PSV above 230 cm/s, ratio above 4.0, EDV above 100 cm/s. Near occlusion: velocities may be high, low or undetectable, and diagnosis rests on a markedly narrowed color lumen (string sign). Total occlusion: no detectable patent lumen and no flow. Many labs validate their own thresholds, and some add tiers such as EDV above 140 cm/s for 80 percent or greater.",
+          "whyLock": "Carotid grading drives decisions about endarterectomy and stenting, so it is the most heavily tested topic in the cerebrovascular section. The key trap is relying on one number. Contralateral occlusion raises velocities on the open side and overestimates disease, while low cardiac output, proximal CCA stenosis or tandem distal disease lowers them. The ICA/CCA ratio corrects for many systemic effects. Near occlusion is the classic exception where velocities fall as the lumen tightens, so a low PSV with a threadlike lumen is critical, not reassuring. Distinguish near occlusion from occlusion carefully, since only one may be treatable.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 12",
+              "title": "What a Stenosis Does to Flow",
+              "link": "The velocity rise and the paradoxical fall at near occlusion explain why the criteria look the way they do."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Key Velocity and Pressure Criteria",
+              "link": "The SRU thresholds are core entries in the quick-reference criteria."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Plaque, Intima-Media Thickness and Dissection",
+              "link": "Visible plaque separates normal from less than 50 percent stenosis when velocities are normal."
+            }
+          ],
+          "registryApplication": "Expect spectral images with PSV, EDV and CCA values to grade, plus scenarios with contralateral occlusion or low cardiac output asking which parameter to trust.",
+          "checkpoint": {
+            "pearl": "125, 230, ratio 2 and 4, EDV 40 and 100.",
+            "reflection": "Left ICA PSV is 260 cm/s and the right ICA is occluded. Why might you hesitate to call the left 70 percent or greater?"
+          },
+          "keyTerms": [
+            "SRU consensus",
+            "NASCET",
+            "ICA/CCA ratio",
+            "End-diastolic velocity",
+            "Near occlusion",
+            "String sign",
+            "Contralateral occlusion"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-carotid-plaque",
+          "pieceNumber": "Piece 4",
+          "title": "Plaque, Intima-Media Thickness and Dissection",
+          "frontClue": "Dark and soft is dangerous, bright and shadowed is old, and a flapping line in a young neck is a different story.",
+          "corePiece": "Plaque is a focal wall thickening that protrudes into the lumen, often defined as at least 1.5 mm or 50 percent thicker than the surrounding intima-media. Describe its location, length, echogenicity (hypoechoic plaque suggests lipid or hemorrhage and is more likely unstable; echogenic or calcified plaque casts acoustic shadows), texture (homogeneous or heterogeneous) and surface (smooth, irregular or ulcerated, with an ulcer crater usually 2 mm or more deep). Intima-media thickness (IMT) is measured on the far wall of the distal CCA about 1 cm below the bulb, at end diastole, from the leading edge of the lumen-intima interface to the leading edge of the media-adventitia interface. Values are compared with age and sex percentiles; routine IMT for risk prediction is no longer widely recommended. Dissection shows an intimal flap, true and false lumens or an intramural hematoma, often a smooth tapering ICA narrowing that starts beyond the bulb. Proximal flow may be high resistance or bidirectional.",
+          "whyLock": "Plaque character matters because heterogeneous, hypoechoic or ulcerated plaque is linked to embolic stroke even when stenosis is modest. Exam traps include measuring IMT on the near wall (less accurate), confusing a reverberation artifact with a flap, and calling shadowing plaque an occlusion without looking for flow beyond the shadow. Dissection is a leading stroke cause in young adults, often after minor neck trauma, with neck pain, headache or Horner syndrome. It typically spares the bulb, unlike atherosclerosis, which concentrates there. Fibromuscular dysplasia also involves the mid to distal ICA and can coexist with dissection.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 3",
+              "title": "Grading Carotid Stenosis",
+              "link": "Plaque presence defines the less than 50 percent category when velocities are normal."
+            },
+            {
+              "piece": "Piece 24",
+              "title": "Nonatherosclerotic Arterial Disease",
+              "link": "Dissection and fibromuscular dysplasia are nonatherosclerotic causes of carotid narrowing."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Color, Power Doppler and Artifacts",
+              "link": "Power Doppler helps outline ulcers and string-like lumens, while reverberation can mimic a flap."
+            }
+          ],
+          "registryApplication": "Questions show plaque images to characterize, ask where and when IMT is measured, and present a young patient with neck pain and a tapered ICA.",
+          "checkpoint": {
+            "pearl": "IMT: far wall, distal CCA, end diastole, leading edge to leading edge.",
+            "reflection": "A 38-year-old with neck pain after a chiropractic visit has a tapering ICA occlusion 2 cm above the bulb. What diagnosis fits and why does the bulb look normal?"
+          },
+          "keyTerms": [
+            "Heterogeneous plaque",
+            "Acoustic shadowing",
+            "Ulceration",
+            "Intima-media thickness",
+            "Intimal flap",
+            "Intramural hematoma",
+            "Dissection"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-vertebral-steal",
+          "pieceNumber": "Piece 5",
+          "title": "Vertebral Arteries and Subclavian Steal",
+          "frontClue": "When the arm is hungry and the subclavian is blocked, the brain lends it blood by running a neck artery backward.",
+          "corePiece": "The vertebral arteries usually arise from the first portion of the subclavian arteries, ascend through the transverse foramina from about C6 to C1, and join intracranially to form the basilar artery. The left is often dominant. On duplex the vertebral is seen between the acoustic shadows of the transverse processes with its vein alongside; normal flow is antegrade, low resistance and in the same direction as the CCA. Subclavian steal occurs when a proximal subclavian (more often left) or innominate stenosis or occlusion lowers pressure in the arm, so blood flows up one vertebral and down the other to supply it. Doppler stages progress from a midsystolic deceleration notch (latent or pre-steal), to alternating or bidirectional flow (partial steal), to complete reversal. The ipsilateral arm shows lower brachial pressure, typically by more than 15 to 20 mmHg, and monophasic subclavian or axillary waveforms. Arm exercise or reactive hyperemia after cuff release can unmask or augment steal.",
+          "whyLock": "Reversed vertebral flow is easy to miss if you do not compare its direction with the CCA, and easy to over-call if the color map is inverted. Most steal is asymptomatic, so the finding is important as a marker of subclavian disease, while true vertebrobasilar symptoms with arm exercise are uncommon. Right-sided innominate disease can also dampen the right CCA. Watch for look-alikes: a hypoplastic vertebral has high resistance and low velocity, and distal vertebral occlusion gives a high-resistance proximal signal without reversal.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 13",
+              "title": "Aortic Arch and Upper Extremity Arteries",
+              "link": "Subclavian and innominate anatomy determine which vertebral reverses."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Upper Extremity Arterial Disease and Raynaud Phenomenon",
+              "link": "The same subclavian lesion produces the brachial pressure difference and arm symptoms."
+            },
+            {
+              "piece": "Piece 19",
+              "title": "Exercise Testing and Reactive Hyperemia",
+              "link": "Reactive hyperemia of the arm is the provocative maneuver that augments steal."
+            }
+          ],
+          "registryApplication": "Expect spectral images showing systolic notching or reversal to stage, and questions asking where the causative lesion is and how arm pressures compare.",
+          "checkpoint": {
+            "pearl": "Notch, then alternate, then reverse: latent, partial, complete steal.",
+            "reflection": "Right brachial pressure is 150 mmHg and left is 118 mmHg. Which vertebral artery do you expect to show abnormal flow, and what pattern might you see?"
+          },
+          "keyTerms": [
+            "Vertebral artery",
+            "Basilar artery",
+            "Transverse foramina",
+            "Subclavian steal",
+            "Systolic deceleration",
+            "Bidirectional flow",
+            "Innominate artery"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-tcd",
+          "pieceNumber": "Piece 6",
+          "title": "Transcranial Doppler Essentials",
+          "frontClue": "Through the thin temple bone at a depth of about five centimeters, the brain's busiest artery runs straight toward you.",
+          "corePiece": "Transcranial Doppler (TCD) uses a 2 MHz pulsed transducer, either nonimaging or as transcranial color duplex. Windows: transtemporal for the middle (MCA), anterior (ACA) and posterior cerebral arteries and terminal ICA; transorbital for the ophthalmic artery and carotid siphon, with power reduced to about 10 percent or less; suboccipital (transforaminal) for the vertebral and basilar arteries; and submandibular for the distal extracranial ICA. The MCA lies at about 30 to 60 mm depth with flow toward the probe and a mean velocity around 55 to 65 cm/s in adults. The ACA, at 60 to 75 mm, flows away; the PCA lies at 60 to 70 mm. Time-averaged mean velocity is the main parameter, and pulsatility index normally runs about 0.6 to 1.1. After subarachnoid hemorrhage, MCA mean velocity above 120 cm/s with a Lindegaard ratio (MCA/extracranial ICA) above 3 suggests vasospasm, while a ratio below 3 suggests hyperemia; above 6 is severe. In children with sickle cell disease, mean velocity of 200 cm/s or more is abnormal and 170 to 199 cm/s is conditional.",
+          "whyLock": "TCD questions test window-to-vessel matching, depth and direction, because these are how vessels are identified without imaging. The Lindegaard ratio is the classic trap: high MCA velocity alone does not prove vasospasm, since hyperemia and anemia also raise velocities. Sickle cell screening uses the time-averaged mean of the maximum velocity, not peak systolic velocity. Temporal windows fail in a meaningful minority of patients, more often in older women. Brain death produces oscillating (reverberating) flow or small systolic spikes, and microembolic signals appear as brief high-intensity transients.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 46",
+              "title": "Resistive Index, Pulsatility Index, Acceleration Time and Safety",
+              "link": "Pulsatility index and output power limits, especially through the orbit, are central to TCD."
+            },
+            {
+              "piece": "Piece 1",
+              "title": "Carotid Anatomy and Normal Waveforms",
+              "link": "The terminal ICA feeds the MCA and ACA, and the extracranial ICA anchors the Lindegaard ratio."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Critical Findings and Follow-Up Intervals",
+              "link": "Abnormal sickle cell TCD and vasospasm are urgent findings requiring prompt communication."
+            }
+          ],
+          "registryApplication": "Questions give a window, depth and flow direction and ask for the vessel, or give MCA and ICA velocities and ask whether the pattern is vasospasm or hyperemia.",
+          "checkpoint": {
+            "pearl": "MCA: temporal, toward, 30 to 60 mm. Lindegaard over 3 means spasm.",
+            "reflection": "An MCA mean velocity is 140 cm/s and the ipsilateral extracranial ICA mean is 70 cm/s. What is the Lindegaard ratio and what does it suggest?"
+          },
+          "keyTerms": [
+            "Transtemporal window",
+            "Transorbital window",
+            "Suboccipital window",
+            "Middle cerebral artery",
+            "Mean flow velocity",
+            "Lindegaard ratio",
+            "Vasospasm",
+            "STOP criteria"
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "vasc-hemo",
+      "title": "Arterial Hemodynamics",
+      "pieceRange": "Pieces 7-12",
+      "examType": "ARDMS RVT (Vascular Technology)",
+      "icon": "activity",
+      "color": "blue",
+      "description": "Energy and resistance, flow patterns, waveform shapes and what a stenosis does to flow",
+      "topics": [
+        {
+          "id": "vasc-energy-resistance",
+          "pieceNumber": "Piece 7",
+          "title": "Energy, Pressure and Resistance",
+          "frontClue": "Halve the radius and the resistance does not double; it multiplies sixteen times.",
+          "corePiece": "Blood moves from regions of higher total fluid energy to lower total energy, not simply from higher to lower pressure. Total energy includes pressure (potential) energy, kinetic energy and gravitational (hydrostatic) energy. Bernoulli's principle states that where velocity rises, as in a stenosis, pressure falls because pressure energy is converted to kinetic energy. Poiseuille's law describes steady laminar flow: flow equals the pressure difference times pi times radius to the fourth power, divided by 8 times viscosity times length. Resistance therefore equals 8 times viscosity times length divided by pi times radius to the fourth power, so radius dominates; halving the radius raises resistance 16-fold. Flow equals pressure gradient divided by resistance, similar to Ohm's law. Resistances in series add, while parallel pathways such as collaterals lower total resistance. Energy is lost to viscous friction and to inertial effects at entrances, exits, curves and branch points. Hydrostatic pressure equals density times gravity times height, about 0.8 mmHg per cm below the heart.",
+          "whyLock": "This card underpins almost every hemodynamic question on the exam. Common traps: assuming flow follows pressure alone (gravity and kinetic energy matter), treating length or viscosity as equal to radius in importance, and forgetting that collaterals in parallel are always higher resistance than the native vessel they replace. Bernoulli explains why pressure falls across a stenosis and why the velocity jet is a usable marker. Hydrostatic pressure explains why standing ankle venous and arterial pressures are about 100 mmHg higher than supine, and why limb position changes measured pressures.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 12",
+              "title": "What a Stenosis Does to Flow",
+              "link": "Bernoulli and Poiseuille explain the velocity rise and pressure drop across a narrowing."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Hydrostatic Pressure and the Calf Muscle Pump",
+              "link": "Gravitational energy drives standing venous pressure that the calf pump must overcome."
+            },
+            {
+              "piece": "Piece 18",
+              "title": "Segmental Pressures and Pulse Volume Recordings",
+              "link": "Pressure gradients between limb levels reflect energy losses across diseased segments."
+            }
+          ],
+          "registryApplication": "Expect math-light concept questions on what happens to resistance or flow when radius, length or viscosity changes, and on pressure-velocity relationships in a stenosis.",
+          "checkpoint": {
+            "pearl": "Radius to the fourth power rules resistance.",
+            "reflection": "Why does a long collateral network never fully replace the flow of the occluded artery it bypasses?"
+          },
+          "keyTerms": [
+            "Total fluid energy",
+            "Bernoulli principle",
+            "Poiseuille law",
+            "Resistance",
+            "Viscosity",
+            "Hydrostatic pressure",
+            "Inertial losses"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-flow-patterns",
+          "pieceNumber": "Piece 8",
+          "title": "Laminar, Disturbed and Turbulent Flow",
+          "frontClue": "Neat layers leave a clear window; a chaotic jet fills it in and can make the tissue hum.",
+          "corePiece": "Laminar flow moves in concentric layers, fastest in the center and slowest at the wall. In small vessels and veins the velocity profile is parabolic; in large arteries during early systole it is blunt or plug-shaped, so most cells move at similar speeds and the spectral window under the systolic peak stays clear. Disturbed flow is a departure from orderly layers without true chaos, seen at bifurcations, curves and the carotid bulb, where boundary layer separation creates local reversal. Turbulent flow is chaotic, with eddies and vortices moving in many directions at once. The Reynolds number (density times velocity times diameter divided by viscosity) predicts turbulence; in steady pipe flow it begins around 2000, but pulsatile blood can become turbulent at lower values. High velocity, a larger diameter and lower viscosity, as in anemia, raise the Reynolds number. Turbulence appears as spectral broadening filling the window, simultaneous forward and reverse signals, color mosaic, and a bruit or palpable thrill from tissue vibration.",
+          "whyLock": "Distinguishing normal disturbed flow from pathologic turbulence prevents false positives, especially in the carotid bulb and at branch points. Turbulence wastes energy, which is why poststenotic zones add pressure loss. Traps include calling spectral broadening from a large sample volume, high gain or sampling near the wall 'turbulence'. Anemia, high cardiac output and dialysis fistulas can produce turbulence without stenosis. Remember the direction of change in the Reynolds number: viscosity is in the denominator, so thinner blood is more likely to become turbulent.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 44",
+              "title": "Spectral Broadening and Sample Volume",
+              "link": "Spectral broadening is the main Doppler sign of turbulence but has technical mimics."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "What a Stenosis Does to Flow",
+              "link": "Poststenotic turbulence is one of the downstream signatures of a significant lesion."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Dialysis Access Evaluation",
+              "link": "Fistulas show high-velocity turbulent flow and tissue vibration even when healthy."
+            }
+          ],
+          "registryApplication": "Questions ask which factors raise the Reynolds number, what profile is expected in large arteries, and which spectral feature indicates turbulence.",
+          "checkpoint": {
+            "pearl": "Faster, wider, thinner blood: more likely turbulent.",
+            "reflection": "A patient with severe anemia has spectral broadening throughout the CCA with normal velocities. Is this stenosis? What else explains it?"
+          },
+          "keyTerms": [
+            "Laminar flow",
+            "Parabolic profile",
+            "Plug flow",
+            "Disturbed flow",
+            "Turbulence",
+            "Reynolds number",
+            "Bruit",
+            "Thrill"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-waveform-phasicity",
+          "pieceNumber": "Piece 9",
+          "title": "Triphasic, Biphasic and Monophasic Waveforms",
+          "frontClue": "A resting leg artery says forward, back, forward; lose the reverse beat and ask why.",
+          "corePiece": "A normal resting peripheral artery feeds a high-resistance bed and shows a multiphasic (triphasic) waveform: a sharp systolic upstroke and peak, a brief early diastolic flow reversal caused by reflected waves meeting high distal resistance, and a small late diastolic forward component. Biphasic waveforms keep the reversal but lose the late forward phase, which can be normal in older or less compliant arteries. Monophasic waveforms flow in one direction only. They may be low resistance with continuous diastolic flow, seen distal to significant disease, after exercise, with warming, infection or vasodilating drugs, or high resistance with little or no diastolic flow, seen just proximal to an occlusion. The 2020 Society for Vascular Medicine and SVU consensus recommends describing arterial waveforms by flow direction (multiphasic or monophasic), resistance (high or low) and upstroke (normal or prolonged), rather than relying on the word triphasic alone, because terminology has been used inconsistently.",
+          "whyLock": "Waveform shape is the first clue to disease above or below the sampling site, and it drives questions about inflow and outflow. The trap is assuming monophasic always means disease: exercise, heat, inflammation and arteriovenous fistulas all lower resistance in a healthy limb. Equally, a multiphasic signal with a slow upstroke still suggests proximal disease. Always compare limbs at the same level and interpret upstroke time, not just phase count, since loss of reversal alone is a weak marker in elderly patients.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Proximal Disease and the Tardus Parvus Waveform",
+              "link": "Upstroke delay is the feature that turns a waveform description into a localization."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "High- and Low-Resistance Vascular Beds",
+              "link": "Phasicity reflects the resistance of the bed being supplied."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Peripheral Arterial Disease and Claudication",
+              "link": "Waveform changes along the leg help localize the disease that causes claudication."
+            }
+          ],
+          "registryApplication": "Expect waveform images to classify, scenarios asking why a normal limb shows monophasic flow after exercise, and items on the current consensus terminology.",
+          "checkpoint": {
+            "pearl": "Describe direction, resistance and upstroke, not just the number of phases.",
+            "reflection": "A febrile patient with cellulitis of the foot has monophasic low-resistance popliteal flow with a brisk upstroke. Is arterial disease likely?"
+          },
+          "keyTerms": [
+            "Triphasic",
+            "Multiphasic",
+            "Biphasic",
+            "Monophasic",
+            "Flow reversal",
+            "Reflected wave",
+            "Peripheral resistance"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-tardus-parvus",
+          "pieceNumber": "Piece 10",
+          "title": "Proximal Disease and the Tardus Parvus Waveform",
+          "frontClue": "Late and little: the waveform downstream of a tight lesion arrives slowly and arrives small.",
+          "corePiece": "Tardus means slow and parvus means small. A tardus parvus waveform has a delayed systolic upstroke (prolonged acceleration time), a rounded low-amplitude peak and relatively preserved diastolic flow, because the downstream bed dilates to compensate. It appears distal to a hemodynamically significant stenosis or occlusion. In the legs, a dampened monophasic common femoral waveform with a slow upstroke points to aortoiliac (inflow) disease, while a normal femoral signal with a dampened popliteal signal points to femoral disease between them. In renal arteries, an acceleration time over about 70 to 100 ms (labs vary) or an acceleration index below about 300 cm/s per second in segmental arteries suggests proximal main renal artery stenosis. Bilateral tardus parvus waveforms in both carotids suggest aortic valve stenosis or low cardiac output rather than local carotid disease. Proximal to an occlusion, the opposite occurs: a high-resistance, low-velocity 'thump' with little or no diastolic flow.",
+          "whyLock": "This waveform lets you detect disease you cannot image directly, such as iliac stenosis hidden by bowel gas or renal artery stenosis in a large patient. Exams test the side and direction of the lesion: the abnormal waveform is downstream of the problem. The bilateral trap is important, because symmetric dampening points upstream to the heart or aorta. Do not confuse a dampened distal signal with low-flow states from poor technique, high Doppler angles or heavy wall filter settings, all of which can blunt peaks artificially.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 37",
+              "title": "Renal Artery Duplex",
+              "link": "Segmental artery tardus parvus is an indirect sign of main renal artery stenosis."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Resistive Index, Pulsatility Index, Acceleration Time and Safety",
+              "link": "Acceleration time quantifies the tardus component."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Lower Extremity Arteries",
+              "link": "Knowing the sequence of leg arteries lets you place the lesion between normal and dampened sites."
+            }
+          ],
+          "registryApplication": "Questions present a dampened waveform at one site and ask where the lesion lies, or show bilateral dampened carotid signals and ask for the cause.",
+          "checkpoint": {
+            "pearl": "The bad waveform is downstream; look upstream for the lesion.",
+            "reflection": "Both common femoral arteries show monophasic, slow-upstroke waveforms. Where would you look next and what could explain both sides at once?"
+          },
+          "keyTerms": [
+            "Tardus parvus",
+            "Acceleration time",
+            "Acceleration index",
+            "Inflow disease",
+            "Aortoiliac disease",
+            "Dampened waveform",
+            "Aortic stenosis"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-resistance-beds",
+          "pieceNumber": "Piece 11",
+          "title": "High- and Low-Resistance Vascular Beds",
+          "frontClue": "Brain, kidney and liver never stop drinking; resting muscle and the fasting gut sip only in systole.",
+          "corePiece": "Organs that need constant perfusion are low-resistance beds and show continuous forward diastolic flow: the ICA and vertebral arteries, renal, hepatic and splenic arteries, the celiac artery, the postprandial SMA, the placenta and the testicles. High-resistance beds show sharp systolic peaks with little diastolic flow or early diastolic reversal: the ECA, resting extremity arteries, the fasting SMA and the infrarenal aorta. Resistance changes with physiology. A meal lowers SMA resistance, roughly doubling diastolic velocity and raising systolic velocity; exercise, heat and inflammation lower limb resistance; cold and sympathetic tone raise it. Resistive index (PSV minus EDV, divided by PSV) quantifies this; normal adult renal RI is below about 0.70. Distal obstruction raises the resistance seen proximally, so an ICA feeding an occluded distal segment can look like an ECA ('externalized'), while an ECA serving as collateral to an occluded ICA can gain diastolic flow ('internalized').",
+          "whyLock": "Knowing the expected resistance for each vessel lets you spot the wrong signal instantly, and many vessel-identification questions hinge on it. Traps include calling a fasting SMA abnormal because diastolic flow is low, or forgetting that the celiac stays low resistance whether fasting or fed because it supplies liver and spleen. A high-resistance signal in a normally low-resistance vessel suggests distal obstruction, edema or parenchymal disease; a low-resistance signal in a normally high-resistance vessel suggests downstream vasodilation, inflammation or an arteriovenous fistula.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 38",
+              "title": "Mesenteric Arteries and Ischemia",
+              "link": "Fasting and postprandial SMA waveforms are the classic resistance shift."
+            },
+            {
+              "piece": "Piece 1",
+              "title": "Carotid Anatomy and Normal Waveforms",
+              "link": "ICA versus ECA is the most tested low- versus high-resistance pair."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Resistive Index, Pulsatility Index, Acceleration Time and Safety",
+              "link": "RI and PI turn the resistance pattern into numbers."
+            }
+          ],
+          "registryApplication": "Expect items asking which vessel should have continuous diastolic flow, how a meal changes the SMA, and what an unexpected resistance pattern implies.",
+          "checkpoint": {
+            "pearl": "Celiac always low, SMA low only after eating.",
+            "reflection": "The ICA shows a high-resistance waveform with almost no diastolic flow, and the ECA looks normal. What lesion should you suspect and where?"
+          },
+          "keyTerms": [
+            "Low-resistance bed",
+            "High-resistance bed",
+            "Diastolic flow",
+            "Postprandial",
+            "Resistive index",
+            "Externalization",
+            "Internalization"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-stenosis-flow",
+          "pieceNumber": "Piece 12",
+          "title": "What a Stenosis Does to Flow",
+          "frontClue": "Before, at, just after and far beyond: one narrowing writes four different signatures.",
+          "corePiece": "Through a narrowing, the same volume flow must pass through a smaller area, so velocity rises (continuity equation: flow equals area times velocity), peaking in the jet at or just beyond the tightest point. Systolic and diastolic velocities both rise, and pressure falls as energy converts to kinetic form. Immediately downstream, within about 1 to 2 cm, the jet breaks up into poststenotic turbulence with spectral broadening and simultaneous forward and reverse flow. Further downstream, flow is dampened with a tardus parvus pattern. Upstream, the waveform may be normal or show increased resistance if the lesion is severe. A stenosis usually becomes hemodynamically significant at about 50 percent diameter reduction (75 percent area reduction), when pressure and flow begin to fall at rest; during exercise, milder lesions can become significant. As narrowing approaches near occlusion, volume flow drops sharply and peak velocity falls again. In peripheral arteries a PSV ratio of 2 or more suggests 50 percent or greater stenosis, and 4 or more suggests about 75 percent. Simplified Bernoulli: gradient in mmHg equals 4 times velocity (m/s) squared.",
+          "whyLock": "This sequence is how you prove a stenosis is real: a velocity step-up alone can be an angle error, but a step-up plus poststenotic turbulence plus distal dampening is convincing. Exams test where to find each feature and why velocity falls at near occlusion. Traps include missing a lesion because the sample volume was placed only proximal or distal to it, and over-calling turbulence at normal bifurcations. Long lesions and tandem lesions add resistance, so two moderate stenoses in series can act like one severe stenosis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 7",
+              "title": "Energy, Pressure and Resistance",
+              "link": "Bernoulli and Poiseuille are the physics behind each stenotic signature."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Proximal Disease and the Tardus Parvus Waveform",
+              "link": "Distal dampening is the far-downstream marker of the lesion."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Grading Carotid Stenosis",
+              "link": "Carotid criteria apply these principles to one specific vessel."
+            }
+          ],
+          "registryApplication": "Questions ask what happens to velocity, pressure and flow at, before and after a lesion, the diameter reduction at which a stenosis becomes significant, and peripheral velocity ratio thresholds.",
+          "checkpoint": {
+            "pearl": "Fifty percent diameter equals seventy-five percent area.",
+            "reflection": "Why might a 95 percent stenosis show a lower peak velocity than a 75 percent stenosis in the same artery?"
+          },
+          "keyTerms": [
+            "Continuity equation",
+            "Velocity ratio",
+            "Poststenotic turbulence",
+            "Critical stenosis",
+            "Area reduction",
+            "Simplified Bernoulli equation",
+            "Tandem lesions"
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "vasc-art-anatomy",
+      "title": "Arterial Anatomy",
+      "pieceRange": "Pieces 13-15",
+      "examType": "ARDMS RVT (Vascular Technology)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Aortic arch, upper and lower extremity arteries, abdominal aorta and visceral branches",
+      "topics": [
+        {
+          "id": "vasc-arch-ue-arteries",
+          "pieceNumber": "Piece 13",
+          "title": "Aortic Arch and Upper Extremity Arteries",
+          "frontClue": "Three branches leave the arch, the subclavian changes its name twice before the elbow, and two arches meet in the palm.",
+          "corePiece": "The usual aortic arch gives three branches from right to left: the brachiocephalic (innominate) trunk, which divides into the right subclavian and right common carotid arteries, the left common carotid artery and the left subclavian artery. Common variants include a shared origin of the innominate and left CCA (often called a bovine arch), a left vertebral artery arising directly from the arch, and an aberrant right subclavian artery passing behind the esophagus. Subclavian branches include the vertebral, internal thoracic (mammary), thyrocervical trunk and costocervical trunk. The subclavian becomes the axillary artery at the lateral border of the first rib, and the axillary becomes the brachial artery at the lower border of the teres major. The brachial artery divides just below the elbow into the radial and ulnar arteries. In the hand, the superficial palmar arch is supplied mainly by the ulnar artery and the deep palmar arch mainly by the radial artery. Normal resting arm waveforms are multiphasic and high resistance.",
+          "whyLock": "Upper extremity naming boundaries are classic exam material, as is knowing which arch branch feeds which side. Arch variants matter because they change what a proximal lesion affects; for example, innominate disease can lower both right arm pressure and right carotid flow. The internal thoracic artery is used for coronary bypass, and an incomplete palmar arch increases risk with radial artery harvest or cannulation, which is why an Allen test or Doppler assessment is done first. The subclavian passes between the anterior and middle scalenes, a key site for thoracic outlet compression.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 5",
+              "title": "Vertebral Arteries and Subclavian Steal",
+              "link": "Subclavian and innominate anatomy explains the side and pattern of steal."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Upper Extremity Arterial Disease and Raynaud Phenomenon",
+              "link": "Arm arterial disease is localized using these named segments."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Dialysis Access Evaluation",
+              "link": "Radial, ulnar and brachial anatomy and palmar arch patency guide access planning."
+            }
+          ],
+          "registryApplication": "Expect questions on the landmarks where the subclavian, axillary and brachial arteries change names, arch branch order and variants, and which artery dominates each palmar arch.",
+          "checkpoint": {
+            "pearl": "First rib makes it axillary; teres major makes it brachial.",
+            "reflection": "A patient has low right arm pressure and dampened right CCA flow, but the left side is normal. Which single lesion explains both?"
+          },
+          "keyTerms": [
+            "Brachiocephalic trunk",
+            "Bovine arch",
+            "Subclavian artery",
+            "Axillary artery",
+            "Brachial artery",
+            "Palmar arch",
+            "Allen test",
+            "Internal thoracic artery"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-abd-aorta-branches",
+          "pieceNumber": "Piece 14",
+          "title": "Abdominal Aorta and Visceral Branches",
+          "frontClue": "A seagull takes off first, a long artery runs beside the aorta below it, and the left renal vein squeezes through the gap.",
+          "corePiece": "The aorta enters the abdomen through the diaphragmatic hiatus at about T12 and bifurcates into the common iliac arteries at about L4, near the umbilicus. Normal diameter is under 3 cm and tapers distally. The first anterior branch is the celiac axis at about T12 to L1, a short trunk that divides into the common hepatic, splenic and left gastric arteries, giving a 'seagull' or T shape in transverse. About 1 cm below, the superior mesenteric artery (SMA) arises and runs parallel and anterior to the aorta. The left renal vein crosses between the SMA and aorta. The renal arteries arise laterally just below the SMA at about L1 to L2; the right renal artery passes behind the IVC. The inferior mesenteric artery arises from the left anterior aorta at about L3. Other branches include the inferior phrenic, gonadal, lumbar and median sacral arteries. Variants include a replaced right hepatic artery from the SMA and accessory renal arteries, present in roughly a quarter to a third of people.",
+          "whyLock": "Visceral vessel identification is the foundation of renal and mesenteric duplex. On the exam, expect relational anatomy: what lies between the SMA and aorta, which renal artery passes behind the IVC, and which branch comes first. Traps include mistaking a replaced hepatic artery or a large accessory renal artery for the main vessel, and missing an accessory renal artery that causes renovascular hypertension. Compression of the left renal vein between the SMA and aorta (nutcracker) and of the celiac by the median arcuate ligament are classic look-alikes for true disease.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 37",
+              "title": "Renal Artery Duplex",
+              "link": "Renal artery origins and accessory vessels are where the duplex exam begins."
+            },
+            {
+              "piece": "Piece 38",
+              "title": "Mesenteric Arteries and Ischemia",
+              "link": "Celiac, SMA and IMA anatomy define the mesenteric study and its collaterals."
+            },
+            {
+              "piece": "Piece 39",
+              "title": "Aorta, Iliacs and EVAR Endoleaks",
+              "link": "Aortic diameter and bifurcation landmarks set up aneurysm and EVAR assessment."
+            }
+          ],
+          "registryApplication": "Questions show transverse or sagittal images asking you to label branches, ask which structure crosses between the SMA and aorta, and test vertebral levels and variants.",
+          "checkpoint": {
+            "pearl": "Celiac first, SMA second, renals just below, IMA on the left near L3.",
+            "reflection": "In transverse, you see a vessel passing behind the IVC from the aorta. Which artery is it, and what would you expect its normal waveform to look like?"
+          },
+          "keyTerms": [
+            "Celiac axis",
+            "Superior mesenteric artery",
+            "Inferior mesenteric artery",
+            "Renal arteries",
+            "Left renal vein",
+            "Replaced hepatic artery",
+            "Accessory renal artery"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-le-arteries",
+          "pieceNumber": "Piece 15",
+          "title": "Lower Extremity Arteries",
+          "frontClue": "It changes names at a ligament, hides in a canal, crosses a membrane and ends on the top of the foot.",
+          "corePiece": "The common iliac artery divides into the internal and external iliac arteries near the sacroiliac joint. The external iliac becomes the common femoral artery (CFA) as it passes beneath the inguinal ligament. A few centimeters below, the CFA divides into the profunda femoris (deep femoral) artery, which runs posterolaterally to supply the thigh and serves as a major collateral, and the femoral artery (traditionally the superficial femoral artery), which descends medially through the adductor (Hunter) canal. Exiting the adductor hiatus, it becomes the popliteal artery behind the knee, which gives geniculate and sural branches. Below the knee the popliteal gives off the anterior tibial artery, which pierces the interosseous membrane into the anterior compartment and continues as the dorsalis pedis artery, and then continues as the tibioperoneal trunk. The trunk divides into the posterior tibial artery, which passes behind the medial malleolus, and the peroneal (fibular) artery. Velocities generally decrease distally, from about 100 cm/s in the CFA to around 50 to 70 cm/s at the popliteal and tibials.",
+          "whyLock": "Lower extremity duplex and segmental pressures depend on knowing where each named segment begins and ends. The adductor canal is the most common site of femoropopliteal atherosclerosis, and the profunda is the lifeline collateral when the femoral artery occludes. Traps include the renaming of the superficial femoral artery as the femoral artery, which causes confusion with the femoral vein, and the anterior tibial being the first branch, not part of the trunk. The CFA is also the main puncture site for catheterization, making it the usual location of pseudoaneurysms.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 16",
+              "title": "Peripheral Arterial Disease and Claudication",
+              "link": "Disease location along these segments predicts where claudication is felt."
+            },
+            {
+              "piece": "Piece 21",
+              "title": "Aneurysms and Pseudoaneurysms",
+              "link": "The CFA puncture site and popliteal artery are classic aneurysm locations."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Deep Veins of the Leg",
+              "link": "Each named artery has paired or single companion veins that share its name."
+            }
+          ],
+          "registryApplication": "Expect questions on where the external iliac becomes the CFA, which artery runs in the adductor canal, the first branch below the knee, and pulse sites at the ankle.",
+          "checkpoint": {
+            "pearl": "Anterior tibial leaves first and becomes dorsalis pedis.",
+            "reflection": "Why can a patient with a complete femoral artery occlusion in the adductor canal still have a palpable popliteal pulse?"
+          },
+          "keyTerms": [
+            "Common femoral artery",
+            "Profunda femoris",
+            "Femoral artery",
+            "Adductor canal",
+            "Popliteal artery",
+            "Tibioperoneal trunk",
+            "Dorsalis pedis",
+            "Peroneal artery"
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "vasc-art-disease",
+      "title": "Arterial Disease and Physiologic Testing",
+      "pieceRange": "Pieces 16-24",
+      "examType": "ARDMS RVT (Vascular Technology)",
+      "icon": "clipboard-list",
+      "color": "blue",
+      "description": "PAD, ABI and TBI, segmental pressures, exercise testing, aneurysms, grafts and stents, Raynaud",
+      "topics": [
+        {
+          "id": "vasc-pad-claudication",
+          "pieceNumber": "Piece 16",
+          "title": "Peripheral Arterial Disease and Claudication",
+          "frontClue": "The ache shows up one level below the blockage and leaves when the walking stops.",
+          "corePiece": "Peripheral arterial disease (PAD) is usually atherosclerotic, with risk factors of smoking, diabetes, hypertension, dyslipidemia, chronic kidney disease and age. Intermittent claudication is reproducible muscle pain, cramping or fatigue brought on by walking and relieved within about 10 minutes of standing still. Symptoms appear one level below the disease: buttock and hip pain points to aortoiliac disease, thigh pain to iliac or common femoral disease, calf pain (the most common) to femoropopliteal disease and foot pain to tibial disease. Leriche syndrome is aortoiliac occlusion with buttock claudication, erectile dysfunction and absent femoral pulses. Chronic limb-threatening ischemia includes rest pain in the forefoot, typically at night and eased by dangling the leg, nonhealing ulcers and gangrene; ankle pressure is often below about 50 mmHg and toe pressure below 30 mmHg. Diabetic disease favors the tibial vessels and calcifies the media. Arterial ulcers are painful, punched out and found on toes or the lateral malleolus. Fontaine and Rutherford classifications grade severity.",
+          "whyLock": "Most physiologic testing questions start with a symptom story, so linking symptom location to disease level is essential. The biggest trap is pseudoclaudication from lumbar spinal stenosis: pain with standing as well as walking, relieved by sitting or bending forward rather than by simply stopping. Venous claudication causes bursting thigh pain after iliac vein obstruction. Arterial ulcers differ from venous ulcers, which occur near the medial malleolus and are shallow. Calcified diabetic arteries can give falsely normal or high ankle pressures, hiding severe disease.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 17",
+              "title": "Ankle-Brachial and Toe-Brachial Indices",
+              "link": "The ABI confirms PAD and grades its severity."
+            },
+            {
+              "piece": "Piece 19",
+              "title": "Exercise Testing and Reactive Hyperemia",
+              "link": "Exercise testing confirms true claudication when resting studies look normal."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Lower Extremity Arteries",
+              "link": "Arterial segment anatomy turns symptom location into disease level."
+            }
+          ],
+          "registryApplication": "Questions give a symptom pattern and ask for the likely level of disease, distinguish claudication from pseudoclaudication, and list signs of limb-threatening ischemia.",
+          "checkpoint": {
+            "pearl": "Buttock means aortoiliac, calf means femoropopliteal, foot means tibial.",
+            "reflection": "A patient's leg pain starts after standing for 10 minutes at the sink and eases only when he sits down. Why is this unlikely to be arterial?"
+          },
+          "keyTerms": [
+            "Intermittent claudication",
+            "Pseudoclaudication",
+            "Leriche syndrome",
+            "Rest pain",
+            "Chronic limb-threatening ischemia",
+            "Arterial ulcer",
+            "Rutherford classification"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-abi-tbi",
+          "pieceNumber": "Piece 17",
+          "title": "Ankle-Brachial and Toe-Brachial Indices",
+          "frontClue": "Divide the best ankle by the best arm: 0.90 or below means disease, above 1.40 means the cuff could not squeeze.",
+          "corePiece": "The ankle-brachial index (ABI) for each leg equals the higher of the dorsalis pedis or posterior tibial systolic pressure divided by the higher of the two brachial pressures. The patient rests supine 5 to 10 minutes first. Pressures are taken with a continuous-wave Doppler (about 8 to 10 MHz) and a cuff whose width is about 20 percent greater than the limb diameter; a cuff that is too narrow gives falsely high readings. Current guideline ranges: 1.00 to 1.40 normal, 0.91 to 0.99 borderline, 0.90 or below diagnostic of PAD, and 0.40 or below severe, often with rest pain or tissue loss. Claudication typically corresponds to about 0.5 to 0.9. An ABI above 1.40 means noncompressible, calcified vessels, common in diabetes and kidney failure, so use a toe-brachial index (TBI) with a small toe cuff and photoplethysmography. A TBI of about 0.70 or above is normal, and a toe pressure below 30 mmHg predicts poor wound healing. A change in ABI greater than 0.15 is considered significant.",
+          "whyLock": "The ABI is the most common physiologic test and appears in calculation questions. Traps: using the lower brachial pressure instead of the higher, using the lower ankle pressure (some labs do this for sensitivity, but standard is higher), and trusting a normal or high ABI in a diabetic patient. Arm pressure differences above 15 to 20 mmHg suggest subclavian stenosis on the low side, which is why the higher arm value is used. A normal resting ABI does not exclude PAD in a patient with classic symptoms; exercise testing is next.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 18",
+              "title": "Segmental Pressures and Pulse Volume Recordings",
+              "link": "Segmental pressures extend the ABI to localize the level of disease."
+            },
+            {
+              "piece": "Piece 19",
+              "title": "Exercise Testing and Reactive Hyperemia",
+              "link": "Post-exercise ABI unmasks disease when resting values are normal."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Key Velocity and Pressure Criteria",
+              "link": "ABI and TBI cutoffs are core quick-reference values."
+            }
+          ],
+          "registryApplication": "Expect ABI calculations from listed pressures, interpretation of ranges, choice of test when the ABI is above 1.40, and cuff size errors.",
+          "checkpoint": {
+            "pearl": "Higher ankle over higher arm; above 1.40, go to the toes.",
+            "reflection": "Brachial pressures are 132 and 146 mmHg; right DP is 98 and right PT is 110 mmHg. What is the right ABI and how would you classify it?"
+          },
+          "keyTerms": [
+            "Ankle-brachial index",
+            "Toe-brachial index",
+            "Noncompressible vessels",
+            "Continuous-wave Doppler",
+            "Cuff width",
+            "Photoplethysmography",
+            "Toe pressure"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-segmental-pvr",
+          "pieceNumber": "Piece 18",
+          "title": "Segmental Pressures and Pulse Volume Recordings",
+          "frontClue": "A thirty-point drop between two cuffs marks the spot, and the volume trace still tells the truth when the arteries are stone-hard.",
+          "corePiece": "Segmental pressures are measured with cuffs at the high thigh, above the knee, below the knee and ankle (four-cuff method), or with one wide thigh cuff (three-cuff method). Because the narrow thigh cuff overestimates pressure, the normal high-thigh pressure is about 20 to 40 mmHg above brachial pressure, giving a high-thigh index above about 1.2; a value below brachial suggests aortoiliac or proximal femoral disease. A gradient of more than about 20 to 30 mmHg between adjacent levels in the same leg indicates significant disease between those cuffs, and a difference of more than about 20 mmHg between legs at the same level suggests disease on the lower side. Pulse volume recordings (PVR) use air-filled cuffs inflated to about 60 to 65 mmHg to record limb volume change with each beat. A normal PVR has a sharp upstroke, sharp peak and dicrotic notch. Mild disease loses the notch; moderate disease flattens and rounds the peak with a slower upstroke; severe disease produces a low, flat trace.",
+          "whyLock": "Segmental pressures localize disease that the ABI only detects. PVRs are valuable because they are not affected by arterial calcification, so they remain reliable in diabetic patients whose pressures are falsely elevated. Exam traps: forgetting the normal high-thigh overestimate, confusing a cuff artifact in a large thigh with disease, and missing that a low high-thigh pressure cannot distinguish iliac from common femoral or proximal profunda and femoral disease. Combining pressures with waveforms improves accuracy and catches multilevel disease, where gradients appear at more than one level.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 17",
+              "title": "Ankle-Brachial and Toe-Brachial Indices",
+              "link": "The ankle cuff of the segmental study is the same measurement used for the ABI."
+            },
+            {
+              "piece": "Piece 7",
+              "title": "Energy, Pressure and Resistance",
+              "link": "Pressure gradients reflect energy losses across diseased segments."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Proximal Disease and the Tardus Parvus Waveform",
+              "link": "Dampened PVR contours mirror the dampened Doppler waveforms seen distal to disease."
+            }
+          ],
+          "registryApplication": "Questions give a set of segmental pressures to localize disease, describe PVR tracings to grade, and test why PVRs help in calcified vessels.",
+          "checkpoint": {
+            "pearl": "Gradient over 20 to 30 between cuffs: disease lives between them.",
+            "reflection": "Right high-thigh 160, above-knee 150, below-knee 105 and ankle 98 mmHg, with brachial 130 mmHg. Where is the lesion?"
+          },
+          "keyTerms": [
+            "Segmental pressures",
+            "High-thigh index",
+            "Pressure gradient",
+            "Pulse volume recording",
+            "Dicrotic notch",
+            "Plethysmography",
+            "Multilevel disease"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-exercise-hyperemia",
+          "pieceNumber": "Piece 19",
+          "title": "Exercise Testing and Reactive Hyperemia",
+          "frontClue": "A healthy ankle holds its pressure after a walk; a diseased one drops and takes its time to recover.",
+          "corePiece": "Exercise testing confirms arterial claudication, measures functional limitation and separates arterial from nonarterial leg pain, especially when resting ABIs are normal or borderline. A common protocol is a treadmill at about 2 mph and a 10 to 12 percent grade for up to 5 minutes or until symptoms force a stop; constant-load and graded protocols both exist. Record resting ABIs, then ankle and brachial pressures immediately after exercise and every 1 to 2 minutes until they return to baseline. Normally, ankle pressure stays the same or rises. A drop in ankle pressure or ABI of more than about 20 percent, with slow recovery, confirms significant arterial disease; recovery times longer than about 10 to 15 minutes suggest multilevel disease. Note walking time, the symptoms and their location. Contraindications include rest pain, unstable angina, severe lung disease, uncontrolled hypertension and inability to walk. Alternatives include active pedal plantarflexion (repeated toe raises) and reactive hyperemia, in which a thigh cuff is inflated above systolic pressure for 3 to 5 minutes and released.",
+          "whyLock": "Exercise lowers peripheral resistance, so a fixed lesion that is silent at rest becomes a pressure-limiting obstruction under demand. That principle explains why a normal resting ABI does not exclude disease. Exam traps include assuming a normal patient's ankle pressure falls after walking (it does not), and confusing patient symptoms with test results: leg pain with no pressure drop points to a nonvascular cause such as spinal stenosis. Reactive hyperemia always causes some pressure drop, even in normal limbs, so the size of the drop and the speed of recovery matter; criteria vary between labs.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 16",
+              "title": "Peripheral Arterial Disease and Claudication",
+              "link": "Exercise testing confirms or excludes arterial claudication."
+            },
+            {
+              "piece": "Piece 17",
+              "title": "Ankle-Brachial and Toe-Brachial Indices",
+              "link": "Post-exercise ABI is compared with the resting index."
+            },
+            {
+              "piece": "Piece 9",
+              "title": "Triphasic, Biphasic and Monophasic Waveforms",
+              "link": "Exercise-induced vasodilation turns normal multiphasic waveforms monophasic."
+            }
+          ],
+          "registryApplication": "Questions describe post-exercise ankle pressures and recovery times to interpret, list contraindications, and ask why the test is ordered when resting studies are normal.",
+          "checkpoint": {
+            "pearl": "Normal ankles hold or rise after exercise; diseased ankles fall over 20 percent.",
+            "reflection": "A patient stops at 3 minutes with calf pain, but post-exercise ankle pressure equals the resting value. What does that suggest about the cause?"
+          },
+          "keyTerms": [
+            "Treadmill test",
+            "Post-exercise ABI",
+            "Recovery time",
+            "Pedal plantarflexion",
+            "Reactive hyperemia",
+            "Multilevel disease",
+            "Pseudoclaudication"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-acute-ischemia",
+          "pieceNumber": "Piece 20",
+          "title": "Acute Limb Ischemia and Embolism",
+          "frontClue": "Pale, pulseless and painful by morning: a clot from a quivering heart has landed at a fork.",
+          "corePiece": "Acute limb ischemia is a sudden loss of perfusion that threatens limb viability, often within hours. Classic signs are the six Ps: pain, pallor, pulselessness, paresthesia, paralysis and poikilothermia (coldness). Causes are embolism and thrombosis in situ. Emboli usually come from the heart, especially with atrial fibrillation, recent myocardial infarction with mural thrombus, endocarditis or valve disease, and less often from aneurysms or paradoxically through a patent foramen ovale. They lodge at branch points: the common femoral bifurcation most often, then the popliteal trifurcation, the aortic bifurcation (saddle embolus) and the brachial artery. Thrombosis develops on existing plaque, in a bypass graft or within a popliteal aneurysm. On duplex, embolic occlusion shows an abrupt cutoff with absent color and spectral flow, a high-resistance 'thump' just proximal, and few collaterals; chronic occlusion shows established collaterals and dampened reconstituted flow distally. Rutherford acute categories range from viable (I) to irreversible (III). Atheroembolism (blue toe syndrome) causes painful cyanotic toes despite palpable pedal pulses.",
+          "whyLock": "This is a vascular emergency, and duplex should never delay revascularization when the limb is clearly threatened. Exam questions test embolic sources, typical lodging sites and the difference between embolic and thrombotic occlusion. Collaterals are the key discriminator: a sudden embolus to a previously healthy artery has none, whereas thrombosis on chronic disease often does, making symptoms milder. Loss of sensation and motor function signals advanced ischemia. After reperfusion, swelling can produce compartment syndrome. Blue toe syndrome is a trap because pulses are present.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 21",
+              "title": "Aneurysms and Pseudoaneurysms",
+              "link": "Popliteal aneurysms are a classic source of distal emboli and acute thrombosis."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Critical Findings and Follow-Up Intervals",
+              "link": "Acute arterial occlusion is a critical finding requiring immediate communication."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "High- and Low-Resistance Vascular Beds",
+              "link": "A high-resistance thump proximal to an occlusion reflects the loss of the downstream bed."
+            }
+          ],
+          "registryApplication": "Expect scenarios with atrial fibrillation and a cold limb asking for the likely lodging site, and duplex descriptions to classify as acute embolic or chronic occlusion.",
+          "checkpoint": {
+            "pearl": "Emboli stop at forks; the femoral bifurcation is the favorite.",
+            "reflection": "Two patients both have popliteal artery occlusion, but one has numerous geniculate collaterals. Which is more likely embolic, and why?"
+          },
+          "keyTerms": [
+            "Six Ps",
+            "Embolism",
+            "Thrombosis in situ",
+            "Atrial fibrillation",
+            "Saddle embolus",
+            "Blue toe syndrome",
+            "Compartment syndrome"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-aneurysm-pseudo",
+          "pieceNumber": "Piece 21",
+          "title": "Aneurysms and Pseudoaneurysms",
+          "frontClue": "One bulge keeps all three wall layers; the other swirls red and blue and pumps through a neck.",
+          "corePiece": "A true aneurysm involves all three wall layers and is a permanent dilation of at least 50 percent above normal diameter; it may be fusiform or saccular. An abdominal aortic aneurysm (AAA) is 3.0 cm or larger, measured outer wall to outer wall perpendicular to the vessel's long axis. Elective repair is usually considered at 5.5 cm in men and about 5.0 cm in women, or with rapid growth (over about 1 cm per year) or symptoms. The popliteal artery is the most common peripheral aneurysm site, often defined as over about 2 cm or 1.5 times the adjacent artery; many are bilateral and many patients also have an AAA. Popliteal aneurysms threaten the limb through thrombosis and embolism rather than rupture. A pseudoaneurysm is a contained leak with no true wall layers, usually at the femoral puncture site after catheterization. Color shows a swirling 'yin-yang' sac connected by a neck with to-and-fro flow: into the sac in systole and out in diastole. Treatments include ultrasound-guided thrombin injection, guided compression or surgery.",
+          "whyLock": "Measurement technique and size thresholds are frequently tested, as is the to-and-fro neck signal that defines a pseudoaneurysm. Traps: measuring an oblique cut of a tortuous aorta overstates diameter, and calling a femoral hematoma or lymph node a pseudoaneurysm without demonstrating flow and a neck. Arteriovenous fistula, another puncture complication, shows continuous low-resistance high-velocity flow into an arterialized vein with tissue vibration. Thrombin injection is avoided when there is no defined neck, an associated arteriovenous fistula, infection or limb ischemia.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 39",
+              "title": "Aorta, Iliacs and EVAR Endoleaks",
+              "link": "AAA sizing leads directly into endovascular repair and endoleak surveillance."
+            },
+            {
+              "piece": "Piece 20",
+              "title": "Acute Limb Ischemia and Embolism",
+              "link": "Popliteal aneurysm thrombosis and embolism cause acute limb ischemia."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Lower Extremity Arteries",
+              "link": "The common femoral artery puncture site is where most pseudoaneurysms form."
+            }
+          ],
+          "registryApplication": "Questions show a groin color image to identify, ask for the neck Doppler pattern, and test AAA size definitions, measurement method and repair thresholds.",
+          "checkpoint": {
+            "pearl": "Pseudoaneurysm neck: to and fro. AV fistula: continuous, low resistance.",
+            "reflection": "After cardiac catheterization, a groin mass shows swirling color flow but you cannot find a neck. How does this change your report and treatment options?"
+          },
+          "keyTerms": [
+            "True aneurysm",
+            "Fusiform",
+            "Saccular",
+            "Popliteal aneurysm",
+            "Pseudoaneurysm",
+            "To-and-fro flow",
+            "Thrombin injection",
+            "Arteriovenous fistula"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-graft-stent",
+          "pieceNumber": "Piece 22",
+          "title": "Bypass Graft and Stent Surveillance",
+          "frontClue": "Over three hundred with a ratio over three and a half, or a whole graft crawling under forty-five: either way, call it in.",
+          "corePiece": "Lower extremity bypass grafts are autogenous vein (reversed, in situ or nonreversed translocated) or prosthetic (PTFE or Dacron). Vein grafts are surveyed with duplex at baseline, typically within the first month, then at about 3, 6 and 12 months and yearly afterward. Failure within 30 days is usually technical; from 30 days to about 2 years, intimal hyperplasia at anastomoses or valve sites dominates; after 2 years, atherosclerosis progresses in inflow or outflow vessels. Scan the inflow artery, proximal anastomosis, entire graft, distal anastomosis and outflow artery, and record ABIs. Commonly used vein graft criteria: PSV above 300 cm/s with a velocity ratio above 3.5 indicates a high-risk stenosis warranting intervention; PSV 180 to 300 cm/s with a ratio of 2.0 to 3.5 indicates a moderate (over 50 percent) stenosis; a mid-graft PSV below about 45 cm/s indicates low flow and risk of thrombosis; an ABI drop greater than 0.15 is significant. In situ grafts may show residual arteriovenous fistulas from unligated branches. Stent criteria are less standardized and vary by lab and territory.",
+          "whyLock": "Surveillance exists because repairing a failing graft before it occludes gives far better patency than rescuing a thrombosed one. Questions test the timing of failure mechanisms and the velocity thresholds. Traps include ignoring a globally low graft velocity because no focal stenosis is seen, and over-calling normal velocity increases at anastomoses where diameters change. In-stent restenosis criteria generally run higher than native artery criteria because stents stiffen the vessel. Always compare with the baseline study, since a change over time is often more important than a single number.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 12",
+              "title": "What a Stenosis Does to Flow",
+              "link": "Graft velocity ratios apply the same continuity principle as native stenoses."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Vein Mapping and Endovenous Ablation",
+              "link": "Preoperative vein mapping determines whether a usable conduit exists for bypass."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Critical Findings and Follow-Up Intervals",
+              "link": "High-risk graft stenosis and low graft flow require urgent referral."
+            }
+          ],
+          "registryApplication": "Expect graft velocity data to interpret, questions on the time course of graft failure, and items on what a residual arteriovenous fistula looks like in an in situ graft.",
+          "checkpoint": {
+            "pearl": "Early technical, middle hyperplasia, late atherosclerosis.",
+            "reflection": "A vein graft shows PSV of 40 cm/s throughout with no focal stenosis. Why is this concerning, and where might the problem lie?"
+          },
+          "keyTerms": [
+            "Reversed vein graft",
+            "In situ graft",
+            "PTFE",
+            "Intimal hyperplasia",
+            "Velocity ratio",
+            "Low-flow graft",
+            "In-stent restenosis"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-ue-raynaud",
+          "pieceNumber": "Piece 23",
+          "title": "Upper Extremity Arterial Disease and Raynaud Phenomenon",
+          "frontClue": "White, then blue, then red: the fingers tell whether the vessels are only spasming or truly blocked.",
+          "corePiece": "Upper extremity arterial disease is less common than leg disease. A brachial pressure difference above about 15 to 20 mmHg suggests subclavian or axillary stenosis on the lower side, more often the left subclavian. Arterial thoracic outlet syndrome results from compression of the subclavian artery by a cervical rib or anomalous first rib, sometimes causing poststenotic aneurysm and digital emboli; positional testing in abduction and external rotation may flatten Doppler or photoplethysmography (PPG) waveforms, although some healthy people show this too. Raynaud phenomenon is episodic digital vasospasm triggered by cold or emotion, with color changes from white to blue to red. Primary Raynaud is typically seen in young women, with normal resting digital pressures and waveforms. Secondary Raynaud is linked to connective tissue disease such as scleroderma, or other causes of fixed obstruction, and shows abnormal resting digital waveforms or pressures. A finger pressure more than about 15 to 20 mmHg below the others suggests digital artery obstruction. Cold immersion testing measures temperature recovery time, with prolonged recovery (often over 10 minutes) supporting vasospasm.",
+          "whyLock": "The key exam distinction is vasospastic versus obstructive disease. Normal resting digital PPG waveforms that flatten with cold suggest primary vasospasm, while abnormal resting waveforms point to fixed obstruction and secondary causes. A peaked PPG contour with a notch high on the downslope can appear in vasospastic patients. Look-alikes include hypothenar hammer syndrome (ulnar artery injury from repetitive palm trauma), Buerger disease and embolism from a thoracic outlet aneurysm. Positional compression in thoracic outlet testing is meaningful only with matching symptoms.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 13",
+              "title": "Aortic Arch and Upper Extremity Arteries",
+              "link": "Named arm segments and palmar arch anatomy localize disease."
+            },
+            {
+              "piece": "Piece 5",
+              "title": "Vertebral Arteries and Subclavian Steal",
+              "link": "Subclavian stenosis causing the arm pressure gap can also reverse vertebral flow."
+            },
+            {
+              "piece": "Piece 24",
+              "title": "Nonatherosclerotic Arterial Disease",
+              "link": "Buerger disease and vasculitis are nonatherosclerotic causes of digital ischemia."
+            }
+          ],
+          "registryApplication": "Questions give digital waveforms before and after cold exposure to classify, ask what an arm pressure difference means, and describe thoracic outlet positional testing.",
+          "checkpoint": {
+            "pearl": "Normal at rest and abnormal with cold: spasm. Abnormal at rest: obstruction.",
+            "reflection": "A 45-year-old with tight skin on her fingers has dampened resting PPG waveforms in several digits. Primary or secondary Raynaud, and why?"
+          },
+          "keyTerms": [
+            "Brachial pressure difference",
+            "Thoracic outlet syndrome",
+            "Cervical rib",
+            "Raynaud phenomenon",
+            "Digital photoplethysmography",
+            "Cold immersion test",
+            "Hypothenar hammer syndrome"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-nonathero",
+          "pieceNumber": "Piece 24",
+          "title": "Nonatherosclerotic Arterial Disease",
+          "frontClue": "A string of beads, a halo around the temple, a corkscrew in a smoker and a calf that squeezes its own artery.",
+          "corePiece": "Fibromuscular dysplasia (FMD) mostly affects women aged 20 to 60 and involves the mid to distal renal arteries and the mid to distal extracranial ICA; it causes a 'string of beads' appearance with focal velocity elevation and turbulence, and can lead to dissection or aneurysm. Takayasu arteritis affects young women, often of Asian descent, and involves the aorta and its major branches with long, smooth, concentric wall thickening (the 'macaroni sign' in the CCA). Giant cell (temporal) arteritis affects people over 50, causing headache, jaw claudication and vision loss; ultrasound shows a hypoechoic 'halo' of wall thickening around the superficial temporal artery that does not compress, and the axillary arteries may also be involved. Thromboangiitis obliterans (Buerger disease) affects young male smokers and involves small and medium distal arteries with corkscrew collaterals, often with superficial thrombophlebitis. Popliteal artery entrapment affects young athletes, with flow reduced or lost during active plantarflexion or dorsiflexion. Cystic adventitial disease places a mucinous cyst in the popliteal artery wall, narrowing the lumen.",
+          "whyLock": "These diseases are tested through the patient profile: age, sex, smoking history and the artery involved usually give the answer before the image does. Traps include attributing claudication in a young athlete to atherosclerosis, and calling the Takayasu macaroni sign atherosclerotic plaque. FMD spares the origins, unlike atherosclerosis, which concentrates at ostia. The halo in giant cell arteritis can be confused with normal wall at high gain; the noncompressibility test helps. Smoking cessation is essential in Buerger disease, and diagnosis matters because treatments differ sharply from those for atherosclerosis.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 37",
+              "title": "Renal Artery Duplex",
+              "link": "Renal FMD is a classic cause of renovascular hypertension in younger women."
+            },
+            {
+              "piece": "Piece 4",
+              "title": "Plaque, Intima-Media Thickness and Dissection",
+              "link": "Carotid FMD and arteritis can mimic plaque or predispose to dissection."
+            },
+            {
+              "piece": "Piece 16",
+              "title": "Peripheral Arterial Disease and Claudication",
+              "link": "Entrapment and cystic adventitial disease are causes of claudication in young patients without risk factors."
+            }
+          ],
+          "registryApplication": "Expect patient-profile scenarios asking you to name the disease, plus image descriptions of beading, wall halos or positional loss of popliteal flow.",
+          "checkpoint": {
+            "pearl": "Beads in the middle, macaroni in the arch branches, halo at the temple.",
+            "reflection": "A 26-year-old runner has calf claudication and normal resting ABIs that fall sharply with forced plantarflexion. What diagnosis fits?"
+          },
+          "keyTerms": [
+            "Fibromuscular dysplasia",
+            "Takayasu arteritis",
+            "Giant cell arteritis",
+            "Halo sign",
+            "Buerger disease",
+            "Popliteal entrapment",
+            "Cystic adventitial disease"
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "vasc-ven-anatomy",
+      "title": "Venous Anatomy",
+      "pieceRange": "Pieces 25-27",
+      "examType": "ARDMS RVT (Vascular Technology)",
+      "icon": "book-open",
+      "color": "blue",
+      "description": "Deep and superficial leg veins, saphenous compartment, perforators and arm veins",
+      "topics": [
+        {
+          "id": "vasc-deep-leg-veins",
+          "pieceNumber": "Piece 25",
+          "title": "Deep Veins of the Leg",
+          "frontClue": "Its old first name said superficial, yet a clot inside it is a true deep vein thrombosis.",
+          "corePiece": "The deep veins travel with the arteries and carry about 90 percent of lower extremity venous return. In the calf, paired anterior tibial, posterior tibial and peroneal veins accompany their arteries, and the gastrocnemius and soleal veins are muscular deep veins draining into the popliteal, posterior tibial and peroneal veins. The tibial and peroneal pairs join to form the popliteal vein, which lies superficial to the popliteal artery when imaged from behind. At the adductor (Hunter) canal it becomes the femoral vein, formerly called the superficial femoral vein; the old name was dropped because clinicians undertreated clot in it. The femoral and deep femoral (profunda) veins join to form the common femoral vein, which lies medial to the common femoral artery and receives the great saphenous vein at the saphenofemoral junction. Above the inguinal ligament it becomes the external iliac vein, which joins the internal iliac to form the common iliac vein. The left common iliac vein passes beneath the right common iliac artery. Duplicated femoral and popliteal veins are common.",
+          "whyLock": "Any thrombus in a deep vein, including the femoral vein despite its old name, is DVT and is usually anticoagulated. Exam traps include calling the femoral vein superficial, forgetting that the vein lies medial to the artery at the groin (NAVEL from lateral to medial: nerve, artery, vein, empty space, lymphatics), missing a duplicated femoral or popliteal trunk where a thrombosed channel hides beside a patent one, and confusing gastrocnemius veins (deep, muscular) with the small saphenous vein (superficial, in its own fascial compartment). Compression of the left common iliac vein by the right common iliac artery (May-Thurner) explains the left-sided predominance of iliofemoral DVT.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 31",
+              "title": "Compression Ultrasound for DVT",
+              "link": "Knowing each deep segment and its arterial companion is the map you follow when compressing for DVT."
+            },
+            {
+              "piece": "Piece 26",
+              "title": "Superficial Veins and the Saphenous Compartment",
+              "link": "The great and small saphenous veins join the deep system at the common femoral and popliteal veins."
+            },
+            {
+              "piece": "Piece 15",
+              "title": "Lower Extremity Arteries",
+              "link": "Each deep vein is named for and travels beside its artery, which is how you identify it on imaging."
+            }
+          ],
+          "registryApplication": "Questions ask which veins join to form a named vein, identify a vein by its relationship to the adjacent artery, or ask whether clot in the femoral vein is deep or superficial.",
+          "checkpoint": {
+            "pearl": "The femoral vein is deep; the word superficial was dropped for a reason.",
+            "reflection": "A report reads thrombus in the superficial femoral vein, and the clinician plans warm compresses only. What is wrong and why does it matter?"
+          },
+          "keyTerms": [
+            "femoral vein",
+            "common femoral vein",
+            "popliteal vein",
+            "deep femoral vein",
+            "paired tibial veins",
+            "gastrocnemius and soleal veins",
+            "duplicated veins",
+            "May-Thurner"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-superficial-veins",
+          "pieceNumber": "Piece 26",
+          "title": "Superficial Veins and the Saphenous Compartment",
+          "frontClue": "A straight vessel sitting in an eye of fascia is the trunk; anything wandering outside the eye is a tributary.",
+          "corePiece": "Superficial veins lie above the deep muscular fascia. The great saphenous vein (GSV) begins anterior to the medial malleolus, ascends the medial leg and thigh, and enters the common femoral vein at the saphenofemoral junction (SFJ), a few centimeters below and lateral to the pubic tubercle. In the thigh it runs in the saphenous compartment, bounded by the saphenous fascia above and the muscular fascia below, which creates the saphenous eye on transverse imaging. The SFJ has terminal and preterminal valves, and tributaries near it include the superficial epigastric, superficial circumflex iliac and external pudendal veins plus the anterior and posterior accessory saphenous veins. The anterior accessory saphenous vein runs parallel and lateral to the GSV and lies directly over the femoral vessels (alignment sign). The small saphenous vein (SSV) begins behind the lateral malleolus, ascends the posterior calf between the gastrocnemius heads in its own fascial compartment, and usually joins the popliteal vein at the saphenopopliteal junction, though its termination varies; a cranial extension, the Giacomini vein, may connect it to the GSV.",
+          "whyLock": "Vein mapping, reflux studies and ablation planning depend on knowing which vein is truly saphenous. A straight vein inside the fascial eye is the GSV or a duplicated GSV; a tortuous vein above the fascia is a tributary. Traps include mistaking the anterior accessory saphenous vein for the GSV, assuming the SSV always ends in the popliteal fossa, and treating superficial thrombosis near the SFJ as trivial when it behaves like DVT. The saphenous nerve runs with the GSV below the knee and the sural nerve with the SSV, which explains nerve injury risk with distal thermal ablation.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 36",
+              "title": "Vein Mapping and Endovenous Ablation",
+              "link": "Correctly identifying the saphenous trunk and its junction is the first step of mapping and ablation planning."
+            },
+            {
+              "piece": "Piece 33",
+              "title": "Calf Vein and Superficial Vein Thrombosis",
+              "link": "Superficial thrombus close to the SFJ or SPJ can extend into the deep system and is managed like DVT."
+            },
+            {
+              "piece": "Piece 25",
+              "title": "Deep Veins of the Leg",
+              "link": "The saphenous veins drain into the common femoral and popliteal veins, linking the two systems."
+            }
+          ],
+          "registryApplication": "Questions ask where the GSV and SSV terminate, how to recognize the saphenous compartment, and which nerves are at risk during ablation.",
+          "checkpoint": {
+            "pearl": "The GSV lives in the eye; tributaries wander outside it.",
+            "reflection": "Two parallel veins appear in the proximal thigh, and one sits directly over the femoral artery and vein. Which is likely the accessory saphenous vein, and why does it matter for ablation?"
+          },
+          "keyTerms": [
+            "great saphenous vein",
+            "saphenofemoral junction",
+            "saphenous eye",
+            "anterior accessory saphenous vein",
+            "small saphenous vein",
+            "saphenopopliteal junction",
+            "Giacomini vein",
+            "sural nerve"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-perforators-arm-veins",
+          "pieceNumber": "Piece 27",
+          "title": "Perforators and Upper Extremity Veins",
+          "frontClue": "Some veins pierce the fascia and should only drain inward; in the arm, the medial superficial vein ends up feeding the deep one.",
+          "corePiece": "Perforating veins pierce the muscular fascia to connect the superficial and deep systems, and their valves normally direct flow from superficial to deep. Key groups include the medial calf (posterior tibial) perforators, formerly Cockett, which connect the posterior accessory GSV (posterior arch vein) to the posterior tibial veins; paratibial perforators; and thigh perforators of the femoral canal. A pathologic perforator is generally defined by outward flow lasting 0.5 s or longer and a diameter of 3.5 mm or more, located beneath a healed or open ulcer. In the arm, paired radial and ulnar veins form paired brachial veins, which join the basilic vein to become the axillary vein at the lower border of the teres major. The axillary vein becomes the subclavian vein at the lateral border of the first rib; the subclavian joins the internal jugular to form the brachiocephalic vein, and the two brachiocephalic veins form the superior vena cava. The superficial cephalic vein runs laterally and joins the axillary vein below the clavicle; the basilic runs medially, and the median cubital vein links them at the elbow.",
+          "whyLock": "Incompetent perforators feed venous hypertension in the gaiter area and venous ulcers, so labs report their location, diameter and reflux duration. Upper extremity anatomy matters for catheter-related thrombosis and for dialysis and bypass conduit mapping. Traps: the basilic vein is superficial even though it joins the deep system; the brachial veins are deep and paired; and the medial subclavian vein cannot be compressed under the clavicle, so you rely on Doppler phasicity and pulsatility. Medial calf perforators drain the posterior arch vein rather than the GSV trunk itself.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 30",
+              "title": "Venous Valves and Reflux Timing",
+              "link": "Perforator incompetence uses the same spectral timing method, with a 0.5 s threshold plus a 3.5 mm diameter rule."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Upper Extremity and Central Venous Thrombosis",
+              "link": "Arm vein anatomy defines which segments are deep, which are superficial and which can be compressed."
+            },
+            {
+              "piece": "Piece 41",
+              "title": "Dialysis Access Evaluation",
+              "link": "Cephalic and basilic veins are the usual conduits mapped before fistula creation."
+            }
+          ],
+          "registryApplication": "Expect questions on the pathologic perforator definition, where the cephalic and basilic veins terminate, and which upper extremity segments cannot be compressed.",
+          "checkpoint": {
+            "pearl": "Perforators: 3.5 mm and half a second, near the ulcer.",
+            "reflection": "A patient with a medial ankle ulcer has a 4.2 mm perforator with 0.8 s of outward flow. Why does this finding matter for ulcer healing?"
+          },
+          "keyTerms": [
+            "perforating vein",
+            "posterior tibial perforators",
+            "3.5 mm",
+            "cephalic vein",
+            "basilic vein",
+            "axillary vein",
+            "subclavian vein",
+            "brachiocephalic vein"
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "vasc-ven-hemo",
+      "title": "Venous Hemodynamics",
+      "pieceRange": "Pieces 28-30",
+      "examType": "ARDMS RVT (Vascular Technology)",
+      "icon": "activity",
+      "color": "blue",
+      "description": "Normal venous Doppler, hydrostatic pressure, calf muscle pump, valves and reflux timing",
+      "topics": [
+        {
+          "id": "vasc-venous-doppler",
+          "pieceNumber": "Piece 28",
+          "title": "Normal Venous Doppler Signals",
+          "frontClue": "A healthy leg vein breathes with the patient and surges when squeezed; one that just hums steadily is telling you to look upstream.",
+          "corePiece": "A normal lower extremity venous Doppler signal is spontaneous, phasic, augmentable, competent and nonpulsatile. Spontaneous means flow is present without maneuvers in large veins; small calf veins may need augmentation. Phasic means flow varies with respiration: in the legs, inspiration lowers the diaphragm, raises abdominal pressure and decreases flow, while expiration increases it. In the arms and neck the pattern reverses, and flow increases with inspiration as intrathoracic pressure falls. Distal compression augments flow toward the heart, and release should produce no significant retrograde flow. A Valsalva maneuver briefly stops common femoral flow, confirming patency above. Continuous, nonphasic common femoral flow suggests proximal obstruction such as iliac thrombosis, May-Thurner compression or an extrinsic mass, so always compare both sides. Pulsatile femoral venous flow suggests raised right heart pressure from tricuspid regurgitation, right heart failure or fluid overload, although mild pulsatility can be normal in thin patients. Subclavian and jugular veins are normally both phasic and pulsatile because they are close to the right atrium.",
+          "whyLock": "Waveform analysis extends a compression exam to segments you cannot compress, chiefly the iliac veins, IVC and central chest veins. Unilateral loss of phasicity points to obstruction on that side, while bilateral loss suggests IVC obstruction or a central cause. Traps include confusing venous cardiac pulsatility with arterial contamination, calling the reversed respiratory pattern of arm veins abnormal, and accepting continuous flow as normal simply because it is spontaneous. Brisk augmentation does not exclude nonocclusive thrombus, so compression remains the primary test.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 29",
+              "title": "Hydrostatic Pressure and the Calf Muscle Pump",
+              "link": "Augmentation is a manual imitation of the calf pump pushing blood toward the heart."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Upper Extremity and Central Venous Thrombosis",
+              "link": "Central venous obstruction is detected mainly through loss of phasicity and pulsatility in arm and neck veins."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Hepatic and Portal Venous Flow",
+              "link": "Hepatic and portal waveforms also reflect right heart pressure, so pulsatility carries similar meaning there."
+            }
+          ],
+          "registryApplication": "Waveform questions show a common femoral venous spectrum that is phasic, continuous or pulsatile and ask for the likely proximal or cardiac cause.",
+          "checkpoint": {
+            "pearl": "Continuous means look upstream; pulsatile means look at the heart.",
+            "reflection": "The left common femoral vein shows continuous flow that does not change with breathing, while the right is phasic. Where would you look next, and for what?"
+          },
+          "keyTerms": [
+            "spontaneous",
+            "phasic",
+            "augmentation",
+            "Valsalva",
+            "continuous flow",
+            "pulsatile venous flow",
+            "tricuspid regurgitation"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-hydrostatic-calf-pump",
+          "pieceNumber": "Piece 29",
+          "title": "Hydrostatic Pressure and the Calf Muscle Pump",
+          "frontClue": "Standing adds the weight of a blood column to the ankle; walking is what pumps that weight away.",
+          "corePiece": "Hydrostatic pressure is the weight of the blood column, about 0.78 mm Hg per centimeter below the right atrium (often rounded to 0.8 mm Hg/cm, or about 2 mm Hg per inch). Supine, it is near zero throughout the body; standing adds roughly 90 to 100 mm Hg at the ankle of an average adult. It acts equally on arteries and veins, so it does not change the arteriovenous gradient that drives flow. Veins tolerate this load because they are collapsible and highly compliant: at low pressure they are elliptical and change volume greatly with small pressure changes, which is why veins hold most of the blood volume. The calf muscle pump, chiefly the soleal and gastrocnemius sinusoids enclosed by tight fascia, contracts during walking and ejects blood upward while competent valves prevent backflow. With exercise, ankle venous pressure normally falls from about 90 mm Hg to roughly 20 to 30 mm Hg, and the venous refill time afterward is normally longer than about 20 seconds. Reflux, obstruction or calf pump failure keeps pressure high, producing ambulatory venous hypertension.",
+          "whyLock": "Ambulatory venous hypertension causes the edema, skin changes and ulcers of chronic venous insufficiency, so this physiology underpins every reflux and CEAP question. It also explains why reflux is tested standing or in steep reverse Trendelenburg: veins need hydrostatic load to fill and to show retrograde flow. Traps include thinking standing lowers arterial perfusion pressure (it raises arterial and venous pressure equally), confusing hydrostatic pressure with the dynamic pressure that drives flow, and forgetting that a plethysmographic refill time under about 20 seconds suggests reflux. Elevation lowers venous pressure; dependency raises it.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 7",
+              "title": "Energy, Pressure and Resistance",
+              "link": "Hydrostatic pressure is one component of total fluid energy, alongside dynamic pressure and kinetic energy."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Venous Valves and Reflux Timing",
+              "link": "Valves are what let the calf pump lower pressure; reflux testing relies on hydrostatic load to reveal valve failure."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Chronic Venous Insufficiency and CEAP",
+              "link": "Failure of the calf pump and valves produces the ambulatory venous hypertension behind CEAP clinical classes."
+            }
+          ],
+          "registryApplication": "Expect calculations of hydrostatic pressure at a given distance below the heart, questions on patient position for reflux testing, and interpretation of venous refill times.",
+          "checkpoint": {
+            "pearl": "Stand up and you add the column; walk and the pump drains it.",
+            "reflection": "Why does a patient with deep venous reflux keep a high ankle venous pressure even while walking?"
+          },
+          "keyTerms": [
+            "hydrostatic pressure",
+            "0.78 mm Hg/cm",
+            "compliance",
+            "calf muscle pump",
+            "ambulatory venous pressure",
+            "venous refill time",
+            "reverse Trendelenburg"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-valves-reflux-timing",
+          "pieceNumber": "Piece 30",
+          "title": "Venous Valves and Reflux Timing",
+          "frontClue": "A valve gets a brief backward flick as it closes; the stopwatch decides when that flick becomes disease.",
+          "corePiece": "Venous valves are bicuspid endothelial folds, most numerous in the calf and rare or absent in the IVC and common iliac veins. A brief retrograde flow normally occurs while the cusps close; reflux is retrograde flow that lasts beyond a timing threshold. Widely used consensus cutoffs (SVU and IAC protocols, Society for Vascular Surgery and American Venous Forum guidance) are greater than 0.5 s in superficial veins such as the GSV, SSV and accessory saphenous veins, the deep femoral vein and the calf deep veins; greater than 1 s in the common femoral, femoral and popliteal veins; and outward flow of 0.5 s or longer with a diameter of 3.5 mm or more for pathologic perforators. Reflux is provoked with the patient standing on the opposite leg or in steep reverse Trendelenburg, using distal manual compression with quick release, automatic cuff inflation, or Valsalva at the common femoral vein and SFJ. Duration is measured on the spectral trace from the onset to the end of retrograde flow.",
+          "whyLock": "Reflux timing decides who qualifies for ablation and how disease is classified, so exact thresholds are heavily tested. Traps include applying the 0.5 s cutoff to the femoral or popliteal vein, testing supine and getting false negatives, measuring the antegrade augmentation instead of the retrograde phase, and calling a short closure flick reflux. Some labs use 0.5 s for all segments, so know the common consensus and note when a protocol differs. Valsalva tests only proximal segments because a competent proximal valve blocks the pressure wave from reaching lower veins.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 27",
+              "title": "Perforators and Upper Extremity Veins",
+              "link": "Perforator incompetence adds a diameter criterion to the same 0.5 s timing rule."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Chronic Venous Insufficiency and CEAP",
+              "link": "Documented reflux supplies the Pr code and anatomic segments in a CEAP classification."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Vein Mapping and Endovenous Ablation",
+              "link": "Saphenous reflux longer than 0.5 s, with symptoms, is the usual requirement before ablation."
+            }
+          ],
+          "registryApplication": "Questions show a spectral trace with a measured retrograde duration in a named vein and ask whether it is reflux, or ask for the correct position and provocation technique.",
+          "checkpoint": {
+            "pearl": "Superficial, deep femoral, calf and perforator: half a second. Common femoral, femoral and popliteal: one full second.",
+            "reflection": "The popliteal vein shows 0.8 s of retrograde flow after release of calf compression. Is it pathologic by consensus criteria, and would the answer differ in the GSV?"
+          },
+          "keyTerms": [
+            "bicuspid valve",
+            "reflux",
+            "0.5 s",
+            "1 s",
+            "reverse Trendelenburg",
+            "Valsalva",
+            "primary reflux",
+            "secondary reflux"
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "vasc-ven-disease",
+      "title": "Venous Testing and Disease",
+      "pieceRange": "Pieces 31-36",
+      "examType": "ARDMS RVT (Vascular Technology)",
+      "icon": "alert-triangle",
+      "color": "blue",
+      "description": "DVT protocol, acute versus chronic thrombus, SVT, arm DVT, CVI and CEAP, mapping and ablation",
+      "topics": [
+        {
+          "id": "vasc-dvt-compression",
+          "pieceNumber": "Piece 31",
+          "title": "Compression Ultrasound for DVT",
+          "frontClue": "The test is not what the clot looks like but whether the walls can kiss.",
+          "corePiece": "The primary criterion for DVT is noncompressibility. In transverse view, gentle probe pressure that just begins to deform the adjacent artery should fully coapt the walls of a normal vein. A complete whole-leg duplex examines the common femoral, proximal deep femoral, femoral, popliteal, posterior tibial and peroneal veins at intervals of about 1 to 2 cm, plus the GSV at the SFJ, with spectral Doppler of both common femoral veins and the popliteal vein for phasicity and augmentation. Limited two-point or three-region exams compress only the groin and popliteal regions and, when negative with ongoing suspicion, are repeated in about 5 to 7 days. Color Doppler helps show filling defects and find calf veins but does not replace compression, and compressing only in long axis is unreliable because the probe can slide off the vein. Position the patient supine in reverse Trendelenburg with the hip externally rotated and knee slightly bent, or prone or decubitus for the popliteal fossa. Supporting signs include intraluminal echoes, a distended vein, absent color filling and loss of phasicity or augmentation.",
+          "whyLock": "Missed proximal DVT can lead to pulmonary embolism, so technique questions dominate this topic. Traps include pressing too hard on a vein with soft acute clot or too lightly on a normal vein, relying on color alone when high gain can bleed over partial thrombus, struggling in the adductor canal where the femoral vein is deep (place a hand behind the thigh to compress against), and missing duplicated systems. Acute thrombus can be anechoic and invisible in grayscale, which is exactly why compression rather than appearance is the test.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 25",
+              "title": "Deep Veins of the Leg",
+              "link": "The protocol walks through each deep segment named in the anatomy, including duplications."
+            },
+            {
+              "piece": "Piece 32",
+              "title": "Acute versus Chronic Thrombus",
+              "link": "Once a vein fails to compress, the next question is whether the thrombus is new or old."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Normal Venous Doppler Signals",
+              "link": "Doppler waveforms extend the exam to iliac segments that cannot be compressed."
+            }
+          ],
+          "registryApplication": "Expect image questions showing a vein that does or does not coapt, protocol questions about required segments and views, and the repeat interval after a negative limited study.",
+          "checkpoint": {
+            "pearl": "If the walls do not touch, assume clot until proven otherwise.",
+            "reflection": "An echo-free femoral vein fails to collapse in the adductor canal, but color fills it partly. What is your next step, and how do you document it?"
+          },
+          "keyTerms": [
+            "noncompressibility",
+            "transverse compression",
+            "whole-leg ultrasound",
+            "two-point compression",
+            "adductor canal",
+            "augmentation",
+            "intraluminal echoes"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-acute-chronic-thrombus",
+          "pieceNumber": "Piece 32",
+          "title": "Acute versus Chronic Thrombus",
+          "frontClue": "New clot is fat, dark and loose; old clot is small, bright and stuck.",
+          "corePiece": "Acute thrombus, roughly within the first two weeks, is usually hypoechoic or anechoic, homogeneous and smooth, poorly attached to the wall, and it distends the vein beyond the size of its companion artery. It may deform slightly under pressure, and a free-floating tail that moves with respiration or augmentation can be present. Collaterals are few. Subacute thrombus, over weeks to months, becomes more echogenic and retracts, recanalization begins, and the vein returns toward normal size. Chronic post-thrombotic change, often called residual vein thrombosis, is echogenic, heterogeneous, irregular and adherent; the vein is normal or small, sometimes a fibrotic cord, with wall thickening, synechiae or webs, multiple recanalized channels, valve damage with reflux and prominent collaterals. Old thrombus may calcify. Because echogenicity depends on gain and depth, the strongest acute clues are vein distension and lack of attachment, while a contracted, thick-walled vein with multichannel flow points to chronic change. Comparison with a prior baseline study is the most reliable way to identify new clot, so labs record thrombus extent and residual diameter at follow-up.",
+          "whyLock": "Acute DVT is anticoagulated, while chronic residual change usually is not, so misclassification exposes patients to bleeding risk or to untreated clot. Recurrence on top of old scarring is the hardest scenario: involvement of a new segment, a diameter larger than baseline, or a newly noncompressible segment favors new thrombus. Traps include equating anechoic with no thrombus, calling every echogenic clot chronic, and labeling post-thrombotic webs as acute clot. Many labs now prefer descriptive terms such as chronic post-thrombotic change rather than chronic DVT.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 31",
+              "title": "Compression Ultrasound for DVT",
+              "link": "Compression detects the thrombus; these features date it."
+            },
+            {
+              "piece": "Piece 35",
+              "title": "Chronic Venous Insufficiency and CEAP",
+              "link": "Valve damage from old thrombus is the cause of secondary venous insufficiency and post-thrombotic syndrome."
+            },
+            {
+              "piece": "Piece 33",
+              "title": "Calf Vein and Superficial Vein Thrombosis",
+              "link": "The same acute versus chronic features apply when grading calf and superficial thrombus."
+            }
+          ],
+          "registryApplication": "Questions describe thrombus echogenicity, vein size, attachment and collaterals and ask whether it is acute or chronic, or show a distended anechoic vein.",
+          "checkpoint": {
+            "pearl": "Acute is fat, dark and loose; chronic is small, bright and stuck.",
+            "reflection": "A follow-up scan shows echogenic, wall-adherent popliteal thrombus with several flow channels in a vein smaller than its artery. Why would this alone not support treatment for new DVT?"
+          },
+          "keyTerms": [
+            "acute thrombus",
+            "vein distension",
+            "free-floating tail",
+            "recanalization",
+            "synechiae",
+            "residual vein thrombosis",
+            "collaterals",
+            "post-thrombotic syndrome"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-calf-superficial-thrombosis",
+          "pieceNumber": "Piece 33",
+          "title": "Calf Vein and Superficial Vein Thrombosis",
+          "frontClue": "Small clots below the knee and tender cords under the skin both seem minor until you measure how close they are to the deep system.",
+          "corePiece": "Isolated calf DVT involves the paired posterior tibial or peroneal veins or the muscular gastrocnemius and soleal veins without popliteal or more proximal clot. Calf veins are small and paired, so use color, augmentation and a lower color scale, scanning the posterior tibial veins from the medial calf and the peroneal veins along the fibula from a medial or posterolateral approach. Roughly 15 to 25 percent of untreated isolated calf DVTs propagate proximally, usually within two weeks, so management is either anticoagulation or serial ultrasound surveillance at about 1 to 2 weeks, depending on symptoms and risk. Superficial vein thrombosis (superficial thrombophlebitis) presents as a tender, warm, palpable cord. It is not always benign: thrombus can extend into the deep system through the SFJ, SPJ or perforators, and coexisting DVT is found in a meaningful minority. Guidelines generally treat superficial thrombosis 5 cm or longer with prophylactic-dose anticoagulation, while thrombus within about 3 cm of the SFJ is managed like DVT with therapeutic anticoagulation. Always report thrombus length and its distance from the junction.",
+          "whyLock": "Length and distance from the junction drive treatment, so the registry tests these thresholds. Traps include calling gastrocnemius vein thrombosis superficial (it is a deep muscular vein), mistaking a Baker cyst, hematoma or muscle tear for thrombus, and failing to check perforators for extension. A ruptured Baker cyst mimics DVT with calf pain and swelling; look for fluid tracking from the medial popliteal fossa between the medial gastrocnemius and semimembranosus tendons, and still compress the deep veins.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 26",
+              "title": "Superficial Veins and the Saphenous Compartment",
+              "link": "Junction anatomy defines the 3 cm distance that upgrades superficial thrombosis to DVT-level treatment."
+            },
+            {
+              "piece": "Piece 31",
+              "title": "Compression Ultrasound for DVT",
+              "link": "Calf veins are part of the whole-leg protocol and are often omitted from limited exams."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Critical Findings and Follow-Up Intervals",
+              "link": "Junctional superficial thrombus is a critical result, and calf DVT surveillance has defined repeat intervals."
+            }
+          ],
+          "registryApplication": "Expect questions on proximal propagation risk, the junction distance that triggers DVT-level treatment, and the differential diagnosis of calf pain and swelling.",
+          "checkpoint": {
+            "pearl": "Within 3 cm of the junction, treat it like DVT.",
+            "reflection": "A thrombosed GSV segment ends 2 cm below the SFJ. Why would you call this result to the provider immediately?"
+          },
+          "keyTerms": [
+            "isolated calf DVT",
+            "peroneal veins",
+            "soleal veins",
+            "gastrocnemius veins",
+            "superficial thrombophlebitis",
+            "saphenofemoral junction",
+            "Baker cyst",
+            "propagation"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-ue-central-dvt",
+          "pieceNumber": "Piece 34",
+          "title": "Upper Extremity and Central Venous Thrombosis",
+          "frontClue": "A line in the arm or a pitcher's overhead throw can both clot the vein that hides behind the collarbone.",
+          "corePiece": "Upper extremity DVT accounts for roughly 5 to 10 percent of all DVT. Secondary causes dominate: central venous catheters, PICC lines, pacemaker and defibrillator leads, and malignancy. The main primary cause is effort thrombosis (Paget-Schroetter syndrome), venous thoracic outlet compression of the subclavian vein between the first rib, clavicle and subclavius muscle, typically in young athletes or workers with repetitive overhead activity. The exam covers the internal jugular, subclavian, axillary, brachial, basilic and cephalic veins. Compress wherever possible; the medial subclavian and brachiocephalic veins lie behind the clavicle and sternum, so rely on Doppler there. Normal central veins show respiratory phasicity, transmitted cardiac pulsatility and brief collapse with a sniff. Loss of pulsatility and phasicity, monophasic flow, or prominent neck and chest wall collaterals suggest obstruction of the brachiocephalic vein or superior vena cava, so compare both sides. Superior vena cava syndrome causes facial and arm swelling with distended chest wall veins, usually from malignancy or devices. A fibrin sheath may persist around or after a catheter.",
+          "whyLock": "Upper extremity DVT can embolize and cause post-thrombotic arm symptoms, and ultrasound is the first-line test. Traps include calling the cephalic or basilic vein deep (clot there is superficial thrombosis, although clot near the axillary junction needs attention), expecting a leg-type respiratory pattern, and missing central obstruction by not comparing the opposite subclavian waveform. A functioning, needed catheter often stays in place during treatment. Venous thoracic outlet syndrome may need positional scanning with the arm abducted.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 27",
+              "title": "Perforators and Upper Extremity Veins",
+              "link": "Arm vein anatomy tells you which segments are deep, superficial or hidden behind bone."
+            },
+            {
+              "piece": "Piece 28",
+              "title": "Normal Venous Doppler Signals",
+              "link": "Central obstruction is inferred from lost phasicity and pulsatility, the reverse of normal arm vein signals."
+            },
+            {
+              "piece": "Piece 23",
+              "title": "Upper Extremity Arterial Disease and Raynaud Phenomenon",
+              "link": "Thoracic outlet compression can affect the subclavian artery as well as the vein, with positional testing in both."
+            }
+          ],
+          "registryApplication": "Questions ask which arm veins can be compressed, the cause and mechanism of Paget-Schroetter syndrome, and how waveform changes signal central obstruction.",
+          "checkpoint": {
+            "pearl": "If you cannot compress it, listen to it: lost pulsatility and phasicity point central.",
+            "reflection": "A patient with a right chest port has a dampened, nonphasic right subclavian waveform and a normal left side. Where is the likely obstruction?"
+          },
+          "keyTerms": [
+            "Paget-Schroetter syndrome",
+            "venous thoracic outlet syndrome",
+            "PICC thrombosis",
+            "subclavian vein",
+            "brachiocephalic vein",
+            "superior vena cava syndrome",
+            "sniff test",
+            "fibrin sheath"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-cvi-ceap",
+          "pieceNumber": "Piece 35",
+          "title": "Chronic Venous Insufficiency and CEAP",
+          "frontClue": "Four letters sort the legs: what you see, why it happened, where it is, and how the blood misbehaves.",
+          "corePiece": "Chronic venous insufficiency results from ambulatory venous hypertension caused by reflux, obstruction or both, worsened by calf pump failure. Primary disease reflects degenerative valve and wall weakness; secondary disease usually follows DVT (post-thrombotic syndrome); congenital disease includes malformations such as Klippel-Trenaunay syndrome. CEAP classifies Clinical, Etiologic, Anatomic and Pathophysiologic features. Clinical classes in the 2020 revision: C0 no visible signs; C1 telangiectasias or reticular veins; C2 varicose veins 3 mm or larger, C2r recurrent; C3 edema; C4 skin changes, split into C4a pigmentation or eczema, C4b lipodermatosclerosis or atrophie blanche, and C4c corona phlebectatica; C5 healed ulcer; C6 active ulcer, C6r recurrent. A suffix S means symptomatic and A asymptomatic. Etiology: Ep primary, Es secondary, Ec congenital, En none identified. Anatomy: As superficial, Ad deep, Ap perforator. Pathophysiology: Pr reflux, Po obstruction, Pr,o both, Pn none. Venous ulcers typically form in the gaiter area above the medial malleolus. The Venous Clinical Severity Score tracks change over time.",
+          "whyLock": "CEAP language appears throughout reflux reports and test items, so know each clinical class and the 2020 subdivisions. Traps include placing venous ulcers on the toes or lateral foot (an arterial pattern) rather than the medial gaiter area, calling edema C2, confusing lipodermatosclerosis (C4b) with simple pigmentation (C4a), and forgetting the 3 mm cutoff between reticular and varicose veins. Secondary disease often combines deep reflux with obstruction, which is why post-thrombotic legs respond less well to superficial ablation alone.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 30",
+              "title": "Venous Valves and Reflux Timing",
+              "link": "Measured reflux supplies the pathophysiologic and anatomic parts of the CEAP code."
+            },
+            {
+              "piece": "Piece 29",
+              "title": "Hydrostatic Pressure and the Calf Muscle Pump",
+              "link": "Ambulatory venous hypertension from pump and valve failure is the mechanism behind every clinical class."
+            },
+            {
+              "piece": "Piece 36",
+              "title": "Vein Mapping and Endovenous Ablation",
+              "link": "Symptomatic C2 to C6 disease with saphenous reflux is the usual indication for ablation."
+            }
+          ],
+          "registryApplication": "Expect clinical vignettes asking for the CEAP class, the typical location of venous ulcers, or the etiologic and pathophysiologic codes.",
+          "checkpoint": {
+            "pearl": "C3 swells, C4 stains, C5 healed, C6 open.",
+            "reflection": "A patient has varicose veins, ankle edema and lipodermatosclerosis but no ulcer. What is the highest clinical class, and how would a full CEAP report list the others?"
+          },
+          "keyTerms": [
+            "CEAP",
+            "telangiectasia",
+            "varicose vein",
+            "lipodermatosclerosis",
+            "corona phlebectatica",
+            "gaiter area",
+            "post-thrombotic syndrome",
+            "venous ulcer"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-vein-mapping-ablation",
+          "pieceNumber": "Piece 36",
+          "title": "Vein Mapping and Endovenous Ablation",
+          "frontClue": "The same saphenous vein can be saved as a bypass conduit or sealed shut with heat, and ultrasound decides which.",
+          "corePiece": "Preoperative vein mapping assesses superficial veins as bypass or access conduits. For arterial bypass, the GSV is traced from the SFJ to the ankle in reverse Trendelenburg or standing, recording diameter (about 3 mm or more is preferred, and below about 2 to 2.5 mm is often unsuitable), compressibility, wall thickening, duplications, large branches and depth, with skin marking. Arm cephalic and basilic veins are alternatives. Before endovenous thermal ablation (radiofrequency or laser) or nonthermal options (cyanoacrylate closure, mechanochemical ablation, foam sclerotherapy), duplex documents reflux duration, diameter, depth below the skin, tortuosity, aneurysmal segments and junction anatomy. During the procedure, ultrasound guides access, places the catheter tip about 2 to 2.5 cm below the SFJ, typically just distal to the superficial epigastric vein, and directs tumescent anesthesia into the saphenous compartment to compress the vein, absorb heat and protect skin and nerves. A follow-up duplex, usually within 72 hours to about a week, confirms closure and screens for endovenous heat-induced thrombosis (EHIT) extending into the common femoral vein.",
+          "whyLock": "Mapping errors lead to failed grafts, and ablation complications such as EHIT, DVT and nerve injury are exam favorites. EHIT is graded by extension: class 1 up to the junction, class 2 nonocclusive extension into the deep vein occupying under half its lumen, class 3 more than half, and class 4 occlusive DVT; higher classes are usually anticoagulated. Traps include measuring diameter supine when the vein is collapsed, skipping the tumescent halo check, and placing the tip too close to the junction. Veins lying very close to the skin raise burn risk with thermal methods.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 26",
+              "title": "Superficial Veins and the Saphenous Compartment",
+              "link": "Ablation targets the true saphenous trunk within its compartment, where tumescent fluid is placed."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Venous Valves and Reflux Timing",
+              "link": "Documented saphenous reflux longer than 0.5 s is the usual requirement for treatment."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Bypass Graft and Stent Surveillance",
+              "link": "A well-mapped vein becomes the bypass graft that later enters a surveillance program."
+            }
+          ],
+          "registryApplication": "Expect questions on minimum conduit diameter, catheter tip position relative to the SFJ, the purpose of tumescent anesthesia, and recognizing and grading EHIT.",
+          "checkpoint": {
+            "pearl": "Tip about 2 cm below the junction, a halo around the vein, a scan within 72 hours.",
+            "reflection": "Two days after GSV ablation, thrombus protrudes into the common femoral vein and fills about 30 percent of its lumen. How is this classified, and why does it matter?"
+          },
+          "keyTerms": [
+            "vein mapping",
+            "conduit diameter",
+            "radiofrequency ablation",
+            "endovenous laser ablation",
+            "tumescent anesthesia",
+            "EHIT",
+            "cyanoacrylate closure"
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "vasc-abdominal",
+      "title": "Abdominal and Visceral Vascular",
+      "pieceRange": "Pieces 37-41",
+      "examType": "ARDMS RVT (Vascular Technology)",
+      "icon": "clipboard-list",
+      "color": "blue",
+      "description": "Renal, mesenteric, aorta and EVAR, hepatic and portal flow, dialysis access",
+      "topics": [
+        {
+          "id": "vasc-renal-duplex",
+          "pieceNumber": "Piece 37",
+          "title": "Renal Artery Duplex",
+          "frontClue": "Compare the kidney's feeder to the aorta beside it, and a ratio over three and a half tells the story.",
+          "corePiece": "The renal arteries arise laterally from the aorta just below the SMA at about L1 to L2; the right passes behind the IVC, and accessory renal arteries occur in roughly a quarter to a third of people. The exam is done fasting through anterior, flank and decubitus windows, with angle-corrected spectral Doppler of the aorta near the renal origins and of the proximal, mid and distal main renal arteries, plus segmental or interlobar arteries within the kidney. Normal renal flow is low resistance, with continuous forward diastolic flow and a brisk systolic upstroke. Criteria for 60 percent or greater stenosis include renal PSV greater than about 180 to 200 cm/s (labs differ) with poststenotic turbulence and a renal-to-aortic ratio (RAR) greater than 3.5. Occlusion shows no flow in the main renal artery, low-amplitude intrarenal signals and usually a kidney under about 8 to 9 cm. An intrarenal tardus parvus pattern, with acceleration time above about 0.07 s, suggests severe proximal stenosis. Resistive index above about 0.8 suggests parenchymal disease. Normal kidney length is about 10 to 12 cm.",
+          "whyLock": "Renal artery stenosis causes renovascular hypertension and ischemic nephropathy. Atherosclerosis affects the ostium in older adults, while fibromuscular dysplasia affects the mid to distal artery, mainly in younger women, with a beaded appearance. Traps include using the RAR when aortic velocity is abnormal (an aortic PSV below about 40 or above 100 cm/s makes the ratio unreliable, so rely on renal PSV), missing accessory arteries, and overlooking a kidney length difference greater than about 1.5 to 2 cm, which supports significant disease on the smaller side. A high RI predicts a poorer response to revascularization in many studies.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 14",
+              "title": "Abdominal Aorta and Visceral Branches",
+              "link": "Renal artery origins are located relative to the SMA, aorta and left renal vein."
+            },
+            {
+              "piece": "Piece 10",
+              "title": "Proximal Disease and the Tardus Parvus Waveform",
+              "link": "Intrarenal tardus parvus is the downstream evidence of a severe main renal artery stenosis."
+            },
+            {
+              "piece": "Piece 46",
+              "title": "Resistive Index, Pulsatility Index, Acceleration Time and Safety",
+              "link": "RI and acceleration time are the intrarenal measurements used alongside main artery velocities."
+            }
+          ],
+          "registryApplication": "Expect RAR calculations, questions contrasting fibromuscular dysplasia with atherosclerotic location, and interpretation of intrarenal tardus parvus or an elevated resistive index.",
+          "checkpoint": {
+            "pearl": "About 200 cm/s at the renal and more than 3.5 times the aorta: think 60 percent.",
+            "reflection": "Renal PSV is 240 cm/s and aortic PSV is 30 cm/s. Why should you not rely on the RAR in this patient?"
+          },
+          "keyTerms": [
+            "renal-aortic ratio",
+            "fibromuscular dysplasia",
+            "accessory renal artery",
+            "resistive index",
+            "tardus parvus",
+            "acceleration time",
+            "renovascular hypertension"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-mesenteric",
+          "pieceNumber": "Piece 38",
+          "title": "Mesenteric Arteries and Ischemia",
+          "frontClue": "Fasting, one gut artery fights its bed with high resistance; feed the patient and it relaxes.",
+          "corePiece": "The celiac artery arises anteriorly at about T12 to L1 and branches into the common hepatic, splenic and left gastric arteries. The SMA arises about 1 cm lower, runs parallel to the aorta with the left renal vein passing between them, and supplies the small bowel and right colon; the IMA arises near L3 and supplies the left colon. The celiac has low resistance flow at all times because the liver and spleen need constant flow. The fasting SMA is high resistance with low or reversed diastolic flow, becoming low resistance after a meal as diastolic velocity rises. Commonly used criteria for 70 percent or greater stenosis are SMA PSV of 275 cm/s or more and celiac PSV of 200 cm/s or more; the EDV criteria (SMA above 45 cm/s, celiac above 55 cm/s) were validated for 50 percent or greater stenosis. Some labs use other, often higher, thresholds. Chronic mesenteric ischemia usually needs disease in at least two of the three vessels because of collaterals, causing postprandial pain, food fear and weight loss.",
+          "whyLock": "Median arcuate ligament compression is the classic look-alike: celiac velocity rises in expiration and normalizes in deep inspiration, and the celiac has a hooked upward course on sagittal view. Reversed common hepatic artery flow means severe celiac stenosis with collateral filling from the SMA through the gastroduodenal artery. Traps include scanning after a meal, assuming one stenosed vessel explains symptoms, and confusing chronic ischemia with acute mesenteric ischemia, which is usually embolic to the SMA beyond the middle colic origin and is a surgical emergency.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 14",
+              "title": "Abdominal Aorta and Visceral Branches",
+              "link": "Celiac, SMA and IMA anatomy and their collaterals explain why one stenosis rarely causes symptoms."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "High- and Low-Resistance Vascular Beds",
+              "link": "The fasting SMA is the textbook example of a bed that changes from high to low resistance after eating."
+            },
+            {
+              "piece": "Piece 47",
+              "title": "Key Velocity and Pressure Criteria",
+              "link": "The 275 and 200 cm/s mesenteric thresholds sit among the core numbers to memorize."
+            }
+          ],
+          "registryApplication": "Expect fasting versus postprandial waveform questions, SMA and celiac stenosis criteria, and recognition of median arcuate ligament syndrome by its respiratory change.",
+          "checkpoint": {
+            "pearl": "The fasting SMA is high resistance; feed it and it opens up.",
+            "reflection": "Celiac PSV is 320 cm/s in expiration and 150 cm/s in deep inspiration. What does this suggest, and how is it different from atherosclerotic stenosis?"
+          },
+          "keyTerms": [
+            "celiac artery",
+            "superior mesenteric artery",
+            "postprandial flow",
+            "median arcuate ligament syndrome",
+            "gastroduodenal collateral",
+            "chronic mesenteric ischemia",
+            "fasting study"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-aorta-evar-endoleak",
+          "pieceNumber": "Piece 39",
+          "title": "Aorta, Iliacs and EVAR Endoleaks",
+          "frontClue": "After the graft goes in, the question becomes where blood is still sneaking into the sac.",
+          "corePiece": "The normal aorta tapers from about 2.5 cm to about 2 cm at the bifurcation near L4. An abdominal aortic aneurysm is a diameter of 3 cm or more, or 1.5 times the adjacent normal segment, measured outer wall to outer wall perpendicular to the vessel axis. A common iliac aneurysm is usually defined as about 1.5 to 1.8 cm or more, depending on the source. Elective repair is generally considered at 5.5 cm in men and 5.0 to 5.4 cm in women, or with growth over 1 cm per year or symptoms. Endovascular aneurysm repair (EVAR) excludes the sac with a stent graft, and surveillance tracks sac diameter and endoleaks. Type I is a leak at the proximal (Ia) or distal (Ib) attachment site. Type II is retrograde filling from lumbar arteries or the IMA and is the most common. Type III leaks through a fabric tear or modular junction. Type IV reflects graft porosity, usually early. Type V, endotension, is sac growth without visible leak. Contrast-enhanced ultrasound improves detection of small or slow endoleaks.",
+          "whyLock": "Type I and III endoleaks are high-pressure leaks treated promptly, while type II leaks are often observed unless the sac grows. Traps include measuring obliquely, which overestimates diameter, measuring inner wall to inner wall, mistaking mural thrombus for the wall, and treating a stable sac with a small type II leak as an emergency. Spectral analysis helps: a to-and-fro signal in a lumbar or IMA feeder suggests a type II leak with inflow and outflow through branches. A symptomatic, rapidly enlarging or ruptured aneurysm is a critical finding.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 21",
+              "title": "Aneurysms and Pseudoaneurysms",
+              "link": "The aneurysm definitions and measurement rules carry directly into post-EVAR surveillance."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Abdominal Aorta and Visceral Branches",
+              "link": "Lumbar arteries and the IMA, the sources of type II leaks, are aortic branches."
+            },
+            {
+              "piece": "Piece 48",
+              "title": "Critical Findings and Follow-Up Intervals",
+              "link": "AAA size sets the surveillance interval, and type I or III leaks need urgent communication."
+            }
+          ],
+          "registryApplication": "Expect classification of an endoleak from a described leak site, AAA definition and measurement technique, and repair threshold questions.",
+          "checkpoint": {
+            "pearl": "One at the ends, two from the branches, three through the seams, four through the fabric, five with no leak seen.",
+            "reflection": "Color fills the posterior sac from a lumbar artery, but the sac has shrunk 4 mm since last year. How would you classify the leak, and how urgent is it?"
+          },
+          "keyTerms": [
+            "abdominal aortic aneurysm",
+            "outer-to-outer diameter",
+            "EVAR",
+            "type I endoleak",
+            "type II endoleak",
+            "endotension",
+            "sac diameter"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-hepatic-portal",
+          "pieceNumber": "Piece 40",
+          "title": "Hepatic and Portal Venous Flow",
+          "frontClue": "Healthy blood petals into the liver; under pressure it flees back out.",
+          "corePiece": "The main portal vein forms from the splenic vein and superior mesenteric vein behind the pancreatic neck and supplies about 70 to 75 percent of liver blood flow. Normal portal flow is hepatopetal, toward the liver, continuous with mild respiratory and cardiac variation, at roughly 15 to 40 cm/s (ranges vary by lab). The hepatic artery is low resistance, with an RI of about 0.55 to 0.7. Hepatic veins drain into the IVC with a triphasic or tetraphasic waveform (a, S, v and D waves) that mirrors right atrial pressure. Portal hypertension (a pressure gradient over about 5 mm Hg, clinically significant at 10 mm Hg) produces slow portal flow under about 15 cm/s, loss of respiratory variation, to-and-fro or hepatofugal flow, splenomegaly, ascites and portosystemic collaterals such as a recanalized paraumbilical vein, left gastric (coronary) varices and splenorenal shunts. A markedly pulsatile portal vein suggests right heart failure or tricuspid regurgitation. Flattened hepatic vein waveforms may reflect cirrhosis, and absent hepatic vein flow suggests Budd-Chiari syndrome. TIPS shunt velocities are typically about 90 to 190 cm/s.",
+          "whyLock": "Flow direction is the central concept: hepatopetal is normal, while hepatofugal portal flow and a recanalized paraumbilical vein signal portal hypertension. After TIPS, the intrahepatic portal branches normally flow toward the shunt; dysfunction is suggested by a shunt velocity under about 90 cm/s or above about 190 cm/s, a large change from baseline, or return of hepatopetal flow in those branches. Traps include misreading direction from the color map, accepting portal pulsatility as normal, and forgetting that hepatic veins mirror cardiac pressure. Portal vein thrombosis may lead to cavernous transformation with periportal collaterals.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 28",
+              "title": "Normal Venous Doppler Signals",
+              "link": "As in leg veins, pulsatility in hepatic and portal flow points to right heart pressure."
+            },
+            {
+              "piece": "Piece 14",
+              "title": "Abdominal Aorta and Visceral Branches",
+              "link": "The splenic and superior mesenteric veins that form the portal vein travel with these visceral arteries."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Color, Power Doppler and Artifacts",
+              "link": "Judging hepatopetal versus hepatofugal flow depends on reading the color bar and direction correctly."
+            }
+          ],
+          "registryApplication": "Expect questions on normal portal flow direction and velocity, signs of portal hypertension and TIPS dysfunction, and hepatic vein waveform interpretation.",
+          "checkpoint": {
+            "pearl": "Petal goes to the liver; fugal flees it.",
+            "reflection": "After TIPS placement, flow in the left portal vein has turned hepatopetal and shunt velocity is 60 cm/s. What does this suggest?"
+          },
+          "keyTerms": [
+            "hepatopetal",
+            "hepatofugal",
+            "portal hypertension",
+            "paraumbilical vein",
+            "TIPS",
+            "Budd-Chiari syndrome",
+            "cavernous transformation",
+            "hepatic vein waveform"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-dialysis-access",
+          "pieceNumber": "Piece 41",
+          "title": "Dialysis Access Evaluation",
+          "frontClue": "A mature fistula follows a rule where one number does all the work, repeated four times.",
+          "corePiece": "Before surgery, mapping looks for arteries about 2 mm or larger with normal flow and an intact palmar arch, and veins about 2.5 to 3 mm or larger for a fistula or 4 mm for a graft after tourniquet, compressible, continuous and draining into patent central veins. An arteriovenous fistula (AVF) joins an artery directly to a vein, most often radiocephalic or brachiocephalic; an arteriovenous graft (AVG) uses synthetic conduit. A mature AVF follows the Rule of 6s: flow volume over 600 mL/min, diameter over 6 mm and depth under 6 mm from the skin by about 6 weeks. The feeding artery changes to a low resistance waveform with high diastolic flow. Anastomotic velocities are normally high and turbulent, so stenosis is graded by a PSV ratio of about 3 or more at the arterial anastomosis or 2 or more in the outflow vein compared with the segment 2 cm upstream, plus diameter reduction of 50 percent or more. Low volume flow, under about 500 to 600 mL/min, predicts failure.",
+          "whyLock": "Stenosis and thrombosis cause most access failures, and falling volume flow predicts impending thrombosis. Dialysis access steal causes hand ischemia: look for reversed flow in the radial artery distal to the anastomosis that becomes antegrade when the fistula is compressed. Traps include calling normal anastomotic turbulence a stenosis, measuring volume flow in a tortuous or aneurysmal segment, and forgetting central venous stenosis, often from prior catheters, which causes arm swelling and lost phasicity. Pseudoaneurysms and hematomas occur at puncture sites.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 27",
+              "title": "Perforators and Upper Extremity Veins",
+              "link": "Cephalic and basilic anatomy determines which fistula configurations are possible."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Bypass Graft and Stent Surveillance",
+              "link": "Access surveillance uses the same logic of velocity ratios and low-flow warnings as graft surveillance."
+            },
+            {
+              "piece": "Piece 34",
+              "title": "Upper Extremity and Central Venous Thrombosis",
+              "link": "Central venous stenosis or thrombosis from prior lines can ruin an otherwise good fistula."
+            }
+          ],
+          "registryApplication": "Expect Rule of 6s questions, stenosis ratio interpretation, steal syndrome physiology and minimum vessel diameters for mapping.",
+          "checkpoint": {
+            "pearl": "Six hundred mL/min, six millimeters wide, six millimeters deep, six weeks.",
+            "reflection": "Brachial artery volume flow to a fistula has dropped from 900 to 350 mL/min in a month. What should you suspect and look for?"
+          },
+          "keyTerms": [
+            "arteriovenous fistula",
+            "arteriovenous graft",
+            "Rule of 6s",
+            "volume flow",
+            "steal syndrome",
+            "anastomotic stenosis",
+            "central venous stenosis"
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "vasc-physics",
+      "title": "Physics and Instrumentation",
+      "pieceRange": "Pieces 42-46",
+      "examType": "ARDMS RVT (Vascular Technology)",
+      "icon": "zap",
+      "color": "blue",
+      "description": "Doppler equation and angle, aliasing, spectral broadening, color and power Doppler, indices and safety",
+      "topics": [
+        {
+          "id": "vasc-doppler-equation",
+          "pieceNumber": "Piece 42",
+          "title": "The Doppler Equation and Angle Correction",
+          "frontClue": "At zero degrees you hear everything, at ninety you hear nothing, and past sixty your numbers start lying.",
+          "corePiece": "The Doppler shift is the difference between transmitted and received frequencies: fD = 2 x f0 x v x cos(angle) / c, where f0 is the transmitted frequency, v is reflector velocity, the angle is between the beam and flow, and c is the speed of sound in soft tissue, 1540 m/s. Solved for velocity, v = fD x c / (2 x f0 x cos(angle)). The shift is directly proportional to velocity, transmitted frequency and the cosine of the angle. The cosine is 1 at 0 degrees, giving the largest shift, 0.5 at 60 degrees and 0 at 90 degrees, where no shift is detected. Above 60 degrees the cosine changes steeply, so a small cursor error produces a large velocity error; vascular protocols therefore require an angle of 60 degrees or less, with the cursor parallel to the vessel wall or the flow jet. A lower transmitted frequency produces a smaller shift for the same velocity, which reduces aliasing and improves penetration for deep abdominal vessels.",
+          "whyLock": "Every velocity criterion in this deck assumes correct angle correction. Traps include thinking a lower transmitted frequency lowers the measured velocity (velocity belongs to the blood; only the shift changes), using angles above 60 degrees and reporting inflated velocities, and aligning the cursor with the wall when the jet is eccentric. At 90 degrees a patent vessel can show no color, a classic pitfall. Changing the angle between visits can create false progression of a stenosis, so consistency matters.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 43",
+              "title": "Aliasing, PRF and Scale",
+              "link": "A larger Doppler shift, from higher velocity or frequency, is what pushes a signal past the Nyquist limit."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Grading Carotid Stenosis",
+              "link": "Carotid velocity criteria are valid only with angles of 60 degrees or less."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Bypass Graft and Stent Surveillance",
+              "link": "Serial graft velocities must use consistent angles to show true change."
+            }
+          ],
+          "registryApplication": "Expect equation manipulation such as what happens to the shift when frequency doubles, cosine values at common angles, and why angles above 60 degrees are avoided.",
+          "checkpoint": {
+            "pearl": "The cosine of 60 is one half; above 60 the error explodes.",
+            "reflection": "Doubling the transmitted frequency with velocity and angle unchanged does what to the Doppler shift, and why could that cause trouble?"
+          },
+          "keyTerms": [
+            "Doppler shift",
+            "cosine",
+            "60 degrees",
+            "angle correction",
+            "1540 m/s",
+            "transmitted frequency",
+            "insonation angle"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-aliasing-prf",
+          "pieceNumber": "Piece 43",
+          "title": "Aliasing, PRF and Scale",
+          "frontClue": "Sample too slowly and the fast stuff wraps around to the wrong side of the line.",
+          "corePiece": "Pulsed Doppler samples flow intermittently, so the highest Doppler shift it can measure, the Nyquist limit, equals half the pulse repetition frequency (PRF). When the shift exceeds PRF/2, aliasing occurs: spectral peaks wrap around and appear below the baseline, and color jumps from the brightest shade of one color directly into the opposite color without passing through black. PRF is limited by depth because each pulse must return before the next is sent, so deeper sample volumes force a lower PRF and more aliasing. Ways to eliminate aliasing include raising the scale (PRF), lowering the baseline, using a lower transmitted frequency, moving the sample volume shallower with a different window, increasing the angle toward 60 degrees cautiously, or switching to continuous-wave Doppler, which never aliases but lacks range resolution. High PRF mode places multiple sample volumes and accepts range ambiguity. Conversely, a scale set too high for slow flow makes small signals disappear and can mimic occlusion. Color aliasing usefully marks the highest-velocity jet for spectral sampling.",
+          "whyLock": "Aliasing is one of the most frequent physics topics because it combines equations with images. Traps include confusing aliasing with true flow reversal (real reversal passes through black at the baseline color), believing a baseline shift raises the Nyquist limit (it only redistributes the display range), and forgetting that range ambiguity is the price of high PRF. In practice, color aliasing at a stenosis is expected and helpful, whereas an overly high scale can hide slow flow.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 42",
+              "title": "The Doppler Equation and Angle Correction",
+              "link": "The equation shows how velocity, frequency and angle set the shift that must stay under the Nyquist limit."
+            },
+            {
+              "piece": "Piece 45",
+              "title": "Color, Power Doppler and Artifacts",
+              "link": "Color scale and baseline settings follow the same Nyquist rules, and power Doppler avoids aliasing."
+            },
+            {
+              "piece": "Piece 44",
+              "title": "Spectral Broadening and Sample Volume",
+              "link": "Sample volume depth sets the PRF ceiling, linking gate placement to aliasing."
+            }
+          ],
+          "registryApplication": "Expect Nyquist limit calculations, recognition of spectral or color aliasing on images, and choose-the-best-correction questions.",
+          "checkpoint": {
+            "pearl": "Nyquist is half the PRF; deeper means slower sampling.",
+            "reflection": "The PRF is 6 kHz and the Doppler shift is 4 kHz. Will the signal alias, and what are two ways to fix it?"
+          },
+          "keyTerms": [
+            "Nyquist limit",
+            "pulse repetition frequency",
+            "aliasing",
+            "baseline shift",
+            "continuous-wave Doppler",
+            "range ambiguity",
+            "scale"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-spectral-broadening",
+          "pieceNumber": "Piece 44",
+          "title": "Spectral Broadening and Sample Volume",
+          "frontClue": "A clean black window under the peak means orderly flow; when it fills in, either the vessel or your settings are to blame.",
+          "corePiece": "The spectral display plots time on the horizontal axis, Doppler shift or velocity on the vertical axis, and signal amplitude, the number of reflectors, as brightness. Laminar flow in a normal artery produces a narrow band of velocities with a clear spectral window beneath the systolic peak. Spectral broadening is the filling in of that window as the range of velocities widens. True causes include disturbed or turbulent flow just beyond a stenosis, at branches and bifurcations, and in tortuous segments. Instrument causes include a sample volume that is too large or near the wall, excessive Doppler gain, an angle near 90 degrees, and small vessels in which the gate covers the whole lumen. For arterial velocity, use a small gate of about 1.5 to 2 mm centered in the lumen or in the jet; a gate spanning the lumen is used for volume flow and venous work. Poststenotic turbulence shows simultaneous forward and reverse components and a chaotic, bruit-like spectrum. Spectral mirror image, a copy of the signal across the baseline, results from high gain or near-perpendicular angles.",
+          "whyLock": "Spectral broadening signals flow disturbance, but it is only meaningful once instrument causes are excluded. Traps include calling the normal flow separation in a carotid bulb disease, diagnosing stenosis from broadening without a velocity increase, and mistaking mirror artifact for bidirectional flow. Small vessels such as tibial or vertebral arteries can show broadening simply because the gate fills the lumen. Poststenotic turbulence is valuable because it confirms that an elevated velocity comes from a real lesion.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 8",
+              "title": "Laminar, Disturbed and Turbulent Flow",
+              "link": "The spectral window is the visual signature of laminar flow, and broadening shows disturbance."
+            },
+            {
+              "piece": "Piece 12",
+              "title": "What a Stenosis Does to Flow",
+              "link": "Poststenotic turbulence is one of the downstream effects that confirms a significant lesion."
+            },
+            {
+              "piece": "Piece 43",
+              "title": "Aliasing, PRF and Scale",
+              "link": "Gate depth and placement also govern the PRF limit and aliasing."
+            }
+          ],
+          "registryApplication": "Expect questions on instrument causes of spectral broadening, the meaning of the spectral window, and correct gate size and placement.",
+          "checkpoint": {
+            "pearl": "A clear window means smooth flow; a filled window means find the lesion or fix the settings.",
+            "reflection": "A common carotid with normal velocity shows a filled spectral window, and the gate spans wall to wall. What would you change first?"
+          },
+          "keyTerms": [
+            "spectral window",
+            "spectral broadening",
+            "sample volume",
+            "Doppler gain",
+            "poststenotic turbulence",
+            "mirror image artifact",
+            "laminar flow"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-color-power-artifacts",
+          "pieceNumber": "Piece 45",
+          "title": "Color, Power Doppler and Artifacts",
+          "frontClue": "Red does not mean artery; it means toward the probe, and only if your settings are honest.",
+          "corePiece": "Color Doppler uses autocorrelation to estimate mean velocity and direction at many points, coding color by direction relative to the transducer, not by artery versus vein. The color bar shows the scale (Nyquist limit) and which color means flow toward the probe. Frame rate falls as box width, line density, depth and ensemble (packet) size increase, so keep the box small. The wall filter removes low-frequency clutter from wall motion; set too high, it erases slow flow. Power (amplitude or energy) Doppler displays the strength of the Doppler signal rather than velocity, usually without direction, is nearly angle independent, does not alias and is more sensitive to slow flow, at the cost of more flash artifact. Common artifacts include color bleed over walls and thrombus from excessive gain, flash from tissue or patient motion, mirror image of a vessel beneath a strong reflector such as the subclavian artery over the pleura, twinkling behind calcification, and absent color at 90 degrees.",
+          "whyLock": "Color settings decide whether you find slow flow, a residual lumen or a thrombus, so technique questions are common. Traps include equating red with arterial flow, overgaining so bleed covers nonocclusive thrombus or plaque, raising the wall filter or scale until a string sign vanishes, and calling a subclavian mirror image a duplicate artery. Before reporting occlusion, lower the scale and wall filter, raise color gain to just below noise, try power Doppler, and confirm with spectral Doppler.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 43",
+              "title": "Aliasing, PRF and Scale",
+              "link": "Color scale is the color Nyquist limit, and aliasing appears as an abrupt color wrap."
+            },
+            {
+              "piece": "Piece 3",
+              "title": "Grading Carotid Stenosis",
+              "link": "Distinguishing near occlusion with a string sign from true occlusion depends on slow-flow color settings."
+            },
+            {
+              "piece": "Piece 40",
+              "title": "Hepatic and Portal Venous Flow",
+              "link": "Hepatopetal versus hepatofugal portal flow is judged by reading the color bar correctly."
+            }
+          ],
+          "registryApplication": "Expect questions on settings that improve slow-flow sensitivity, power Doppler properties, factors that reduce frame rate, and artifact identification.",
+          "checkpoint": {
+            "pearl": "Power Doppler sees the trickle but not the direction.",
+            "reflection": "An internal carotid appears occluded on color imaging. Which three settings would you change before reporting occlusion?"
+          },
+          "keyTerms": [
+            "autocorrelation",
+            "color scale",
+            "wall filter",
+            "packet size",
+            "power Doppler",
+            "color bleed",
+            "mirror image",
+            "flash artifact"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-indices-safety",
+          "pieceNumber": "Piece 46",
+          "title": "Resistive Index, Pulsatility Index, Acceleration Time and Safety",
+          "frontClue": "Ratios do not care about angle, and the slow climb to a peak tells you trouble lies upstream.",
+          "corePiece": "Resistive index (RI, Pourcelot) equals (PSV minus EDV) divided by PSV; values near 1 indicate high resistance and lower values low resistance. Normal intrarenal RI is about 0.6 to 0.7, and values above about 0.7 to 0.8 are considered elevated. Pulsatility index (PI, Gosling) equals (PSV minus EDV) divided by the time-averaged mean velocity; it reflects waveform shape and can exceed 1. Normal resting leg arteries often have a PI above 5 to 6, transcranial PI is about 0.6 to 1.1, and a PI that falls from proximal to distal suggests disease in between. Acceleration time runs from the start of systole to the first systolic peak; values above about 0.07 s in intrarenal or tibial arteries indicate a tardus parvus pattern from proximal obstruction. For safety, the ALARA principle (as low as reasonably achievable) governs output and dwell time. The thermal index (TIS soft tissue, TIB bone, TIC cranial bone) estimates heating, and the mechanical index estimates cavitation risk, rising with peak rarefactional pressure and falling with higher frequency.",
+          "whyLock": "Because indices are ratios, they are independent of angle, which makes them useful for intrarenal and transcranial work where angle correction is unreliable. Traps include mixing up RI and PI formulas (PI divides by mean velocity), assuming a high RI always means disease (it rises with age, bradycardia and extrinsic compression), and forgetting that acceleration time lengthens distal to a stenosis. For safety items, raise receiver gain before raising output power, minimize dwell time, and remember that pulsed Doppler carries the greatest thermal risk.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 10",
+              "title": "Proximal Disease and the Tardus Parvus Waveform",
+              "link": "Prolonged acceleration time is the measurement that defines tardus parvus."
+            },
+            {
+              "piece": "Piece 11",
+              "title": "High- and Low-Resistance Vascular Beds",
+              "link": "RI and PI put numbers on the difference between high- and low-resistance beds."
+            },
+            {
+              "piece": "Piece 37",
+              "title": "Renal Artery Duplex",
+              "link": "Intrarenal RI and acceleration time are routine parts of the renal artery exam."
+            }
+          ],
+          "registryApplication": "Expect RI and PI calculations from given velocities, interpretation of prolonged acceleration time, and ALARA, thermal index and mechanical index questions.",
+          "checkpoint": {
+            "pearl": "RI divides by the peak; PI divides by the mean.",
+            "reflection": "PSV is 100 cm/s, EDV is 30 cm/s and mean velocity is 50 cm/s. Calculate RI and PI and explain why PI is larger."
+          },
+          "keyTerms": [
+            "resistive index",
+            "pulsatility index",
+            "acceleration time",
+            "tardus parvus",
+            "ALARA",
+            "thermal index",
+            "mechanical index"
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "vasc-quick-ref",
+      "title": "Quick Reference and Critical Values",
+      "pieceRange": "Pieces 47-48",
+      "examType": "ARDMS RVT (Vascular Technology)",
+      "icon": "alert-triangle",
+      "color": "blue",
+      "description": "Key velocity and pressure criteria, critical findings and follow-up intervals",
+      "topics": [
+        {
+          "id": "vasc-key-criteria",
+          "pieceNumber": "Piece 47",
+          "title": "Key Velocity and Pressure Criteria",
+          "frontClue": "One page of numbers that answers half the exam, as long as you do not swap them between vessels.",
+          "corePiece": "Carotid, SRU consensus, with ICA PSV as the primary parameter: normal ICA PSV under 125 cm/s with no plaque; under 50 percent, PSV under 125 cm/s with plaque and ICA/CCA ratio under 2; 50 to 69 percent, PSV 125 to 230 cm/s, ratio 2 to 4, EDV 40 to 100 cm/s; 70 percent or more, PSV over 230 cm/s, ratio over 4, EDV over 100 cm/s; near occlusion shows a string sign. Leg arteries: PSV ratio 2 or more means 50 percent or greater stenosis. ABI: over 1.4 noncompressible; 1.0 to 1.4 normal; 0.91 to 0.99 borderline; 0.9 or less PAD, and 0.4 or less severe. TBI under 0.7 is abnormal. Renal: PSV over 180 to 200 cm/s with RAR over 3.5. Mesenteric, fasting: SMA 275 cm/s or more, celiac 200 cm/s or more. Reflux: over 0.5 s superficial, deep femoral, calf and perforator veins; over 1 s common femoral, femoral and popliteal. AAA: 3 cm or more. Vein graft at high risk: PSV over 300 cm/s with a ratio over 3.5, or mid-graft PSV under 45 cm/s.",
+          "whyLock": "The registry rewards fast recall of thresholds, and many distractors are real numbers borrowed from a neighboring criterion. Traps include swapping carotid 125 and 230 cm/s cutoffs with renal or mesenteric values, applying the 0.5 s superficial reflux rule to the femoral vein, calling an ABI over 1.4 normal, and using a ratio when the reference segment is itself abnormal. Some criteria, such as renal and mesenteric thresholds, vary by lab, so registry answers usually follow the most widely cited consensus.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 3",
+              "title": "Grading Carotid Stenosis",
+              "link": "The carotid rows here condense the full SRU grading discussion."
+            },
+            {
+              "piece": "Piece 17",
+              "title": "Ankle-Brachial and Toe-Brachial Indices",
+              "link": "The ABI and TBI ranges summarized here come from the physiologic testing card."
+            },
+            {
+              "piece": "Piece 30",
+              "title": "Venous Valves and Reflux Timing",
+              "link": "The 0.5 s and 1 s reflux thresholds are explained in full there."
+            }
+          ],
+          "registryApplication": "Rapid-recall questions give a single number and ask for the category, or give two velocities and ask for the ratio and grade.",
+          "checkpoint": {
+            "pearl": "125, 230 and 4: the carotid trio.",
+            "reflection": "An ICA has PSV 260 cm/s, EDV 85 cm/s and an ICA/CCA ratio of 3.6. How do you reconcile parameters that point to different categories?"
+          },
+          "keyTerms": [
+            "SRU consensus",
+            "ICA/CCA ratio",
+            "ABI",
+            "renal-aortic ratio",
+            "SMA PSV",
+            "reflux time",
+            "velocity ratio",
+            "graft surveillance"
+          ],
+          "images": []
+        },
+        {
+          "id": "vasc-critical-findings",
+          "pieceNumber": "Piece 48",
+          "title": "Critical Findings and Follow-Up Intervals",
+          "frontClue": "Some results cannot wait in the report queue; the rest come back on a schedule set by how close they are to treatment.",
+          "corePiece": "Critical findings need direct, documented communication to a responsible provider, not just a written report: record who was told, when and how. Typical vascular critical results include acute proximal DVT (popliteal or above), superficial thrombus within about 3 cm of the SFJ or SPJ, free-floating thrombus, acute arterial occlusion or limb ischemia, a symptomatic, rapidly enlarging or ruptured aortic aneurysm, a new carotid occlusion or high-grade stenosis in a symptomatic patient, carotid dissection, a failing bypass graft (PSV over 300 cm/s with a ratio over 3.5, or mid-graft PSV under 45 cm/s), a postcatheterization pseudoaneurysm, a type I or III endoleak, and suspected acute mesenteric ischemia. Common follow-up intervals: a negative limited DVT exam with ongoing suspicion is repeated in 5 to 7 days; isolated calf DVT under surveillance in 1 to 2 weeks; AAA 3.0 to 3.9 cm about every 3 years, 4.0 to 4.9 cm yearly, and 5.0 to 5.4 cm every 6 months; after EVAR at about 1 and 12 months, then yearly; vein grafts at about 1, 3, 6 and 12 months, then yearly.",
+          "whyLock": "Recognizing and communicating a critical result is a professional duty and a frequent scenario question. Traps include leaving a voicemail or relying on the electronic report alone, delaying the call because the study was technically limited, and treating an incidental AAA as unimportant. Intervals vary by society and lab, so registry answers usually follow major guidelines; the logic is that the closer a finding is to an intervention threshold, the shorter the interval. Always document the communication in the report.",
+          "connectionEdges": [
+            {
+              "piece": "Piece 21",
+              "title": "Aneurysms and Pseudoaneurysms",
+              "link": "AAA size and pseudoaneurysm findings determine both urgency and surveillance timing."
+            },
+            {
+              "piece": "Piece 22",
+              "title": "Bypass Graft and Stent Surveillance",
+              "link": "High-risk graft criteria trigger urgent notification and set the surveillance schedule."
+            },
+            {
+              "piece": "Piece 33",
+              "title": "Calf Vein and Superficial Vein Thrombosis",
+              "link": "Junctional superficial thrombus is critical, and isolated calf DVT has a defined repeat interval."
+            }
+          ],
+          "registryApplication": "Scenario questions ask what to do after finding a critical result and when to repeat surveillance studies for AAA, grafts or negative limited DVT exams.",
+          "checkpoint": {
+            "pearl": "Call it, name it, time it, document it.",
+            "reflection": "At 6 pm you find a new 6.2 cm AAA in a patient with back pain. Whom do you notify, how, and what goes in the report?"
+          },
+          "keyTerms": [
+            "critical result",
+            "direct communication",
+            "documentation",
+            "AAA surveillance",
+            "graft surveillance",
+            "repeat DVT exam",
+            "endoleak"
+          ],
+          "images": []
+        }
+      ]
+    }
+  ]
+}
