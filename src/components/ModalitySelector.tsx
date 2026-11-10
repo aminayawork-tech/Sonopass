@@ -63,7 +63,7 @@ export function ModalitySelectorDropdown() {
             <div className="w-10 h-1 rounded-full bg-slate-200 mx-auto mb-4" />
             <p className="eyebrow">Registry exam</p>
             <p className="text-[19px] font-extrabold text-ink tracking-tight mt-1 mb-4">What are you studying for?</p>
-            <div className="flex flex-col gap-2 max-h-[60vh] overflow-y-auto -mx-1 px-1 pb-1">
+            <div className="flex flex-col gap-2 max-h-[60vh] overflow-y-auto no-scrollbar">
               {enabled.map((modality) => {
                 const s = styleFor(modality);
                 const active = modality.id === currentModality.id;
@@ -74,7 +74,7 @@ export function ModalitySelectorDropdown() {
                       switchModality(modality.id);
                       setIsOpen(false);
                     }}
-                    className={`surface rounded-2xl p-3 flex items-center gap-3 text-left active:scale-[0.98] transition-transform ${active ? 'ring-2 ring-[#2ea873]' : ''}`}
+                    className={`rounded-2xl p-3 flex items-center gap-3 text-left border-2 active:scale-[0.98] transition-transform ${active ? 'border-[#2ea873] bg-[#EEF9F3]' : 'surface border-transparent'}`}
                   >
                     <GradientIcon icon={s.icon} gradient={s.gradient} size={40} />
                     <div className="flex-1 min-w-0">
