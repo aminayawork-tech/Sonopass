@@ -7,7 +7,7 @@ android {
         applicationId "com.sonopass.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 2026110818
+        versionCode 1
         versionName "1.9"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
