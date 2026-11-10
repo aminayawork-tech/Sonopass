@@ -169,7 +169,7 @@ export default function OnboardingPage() {
                   <button
                     key={m.id}
                     onClick={() => setExamFocus(m.id)}
-                    className={cn('bg-white surface rounded-2xl p-3 flex items-center gap-3 text-left active:scale-[0.99] transition-transform', active && 'ring-2 ring-[#2ea873]')}
+                    className={cn('rounded-2xl p-3 flex items-center gap-3 text-left border-2 active:scale-[0.99] transition-transform', active ? 'border-[#2ea873] bg-[#EEF9F3]' : 'bg-white surface border-transparent')}
                   >
                     <GradientIcon icon={s.icon} gradient={s.gradient} size={40} />
                     <span className="flex-1 min-w-0">
