@@ -23,11 +23,44 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 }
 
-// Hides the native scroll bars; scrolling still works
+// The web pages scroll inside the page itself, so the web view's own scroll view must stay at the
+// top. iOS could otherwise leave it shifted up by the status-bar height (cutting off the header) with
+// no way to swipe it back. Scroll bars are hidden; scrolling inside the page still works.
 class SonoPassViewController: CAPBridgeViewController {
+    private var offsetObservation: NSKeyValueObservation?
+    private var keyboardVisible = false
+
     override func capacitorDidLoad() {
         super.capacitorDidLoad()
-        webView?.scrollView.showsVerticalScrollIndicator = false
-        webView?.scrollView.showsHorizontalScrollIndicator = false
+        guard let scrollView = webView?.scrollView else { return }
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.bounces = false
+        scrollView.contentInsetAdjustmentBehavior = .never
+
+        // While the keyboard is up, iOS may move the view to keep the text field visible; allow that,
+        // then put it back once the keyboard is gone.
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidHide), name: UIResponder.keyboardDidHideNotification, object: nil)
+
+        offsetObservation = scrollView.observe(\.contentOffset, options: [.new]) { [weak self] view, _ in
+            guard let self = self, !self.keyboardVisible else { return }
+            if view.contentOffset != .zero {
+                view.setContentOffset(.zero, animated: false)
+            }
+        }
+    }
+
+    @objc private func keyboardWillShow() {
+        keyboardVisible = true
+    }
+
+    @objc private func keyboardDidHide() {
+        keyboardVisible = false
+        webView?.scrollView.setContentOffset(.zero, animated: false)
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 }

@@ -109,6 +109,9 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
   const [reviewing, setReviewing] = useState(false);
   const warned = useRef<Set<number>>(new Set());
   const [furthestIndex, setFurthestIndex] = useState(0);
+  // Guards against a fast double tap counting one answer twice (two hearts) and a double submit
+  const recordedRef = useRef<Set<string>>(new Set());
+  const finishedRef = useRef(false);
 
   useEffect(() => {
     setStats(getStats());
@@ -202,6 +205,10 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
 
   const handleAnswer = (letter: string) => {
     if (showAnswer && mode === 'practice') return;
+    if (mode === 'practice') {
+      if (recordedRef.current.has(currentQuestion.id)) return;
+      recordedRef.current.add(currentQuestion.id);
+    }
 
     setAnswers(prev => ({
       ...prev,
@@ -257,13 +264,16 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
   };
 
   const finishExam = (timedOut = false) => {
+    if (finishedRef.current) return;
+    finishedRef.current = true;
     if (mode === 'exam') {
       let latestStats = getStats();
       for (const [id, answer] of Object.entries(answers)) {
         const q = questions.find(q => q.id === id);
         if (q) {
           const isCorrect = q.correctAnswer === answer;
-          const result = recordAnswer(isCorrect, q.category, modality);
+          // Mock exams count toward progress but never cost or earn hearts
+          const result = recordAnswer(isCorrect, q.category, modality, { hearts: false });
           latestStats = result.stats;
         }
       }
@@ -325,6 +335,8 @@ export default function ExamInterface({ questions: initialQuestions, title, mode
 
   const restartExam = () => {
     clearExamSession(modality, examId);
+    recordedRef.current = new Set();
+    finishedRef.current = false;
     setQuestions(initialQuestions);
     setCurrentIndex(0);
     setAnswers({});

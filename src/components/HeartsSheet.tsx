@@ -8,7 +8,7 @@ import {
 } from '@/lib/userStats';
 import GradientIcon from '@/components/GradientIcon';
 import { webOrigin } from '@/lib/platform';
-import { refillHeartsFromPurchase } from '@/lib/userStats';
+import { refillHeartsFromPurchase, getStats } from '@/lib/userStats';
 import { buyHearts, getHeartsPrice, storeAvailable, FALLBACK_HEARTS_PRICE } from '@/lib/store';
 
 // Opens the installed app straight to the hearts screen (registered URL scheme)
@@ -63,6 +63,12 @@ export default function HeartsSheet({
     const id = setInterval(() => setNow(Date.now()), 30000);
     return () => clearInterval(id);
   }, []);
+
+  // When the refill time passes while this is open, show the full hearts
+  const due = getHeartRefillAt(stats);
+  useEffect(() => {
+    if (due !== null && now >= due) onStatsChange(getStats());
+  }, [due, now, onStatsChange]);
 
   const refillAt = getHeartRefillAt(stats);
   const streak = getCurrentModalityStats(stats).correctStreak % STREAK_HEART_EVERY;

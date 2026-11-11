@@ -421,6 +421,18 @@ html.native-app body {
 html.native-app body {
   padding-top: env(safe-area-inset-top);
 }
+/* Store app: the outer web view never scrolls (iOS could leave it shifted up by the status-bar
+   height, cutting off the top of the screen). Pages scroll inside <body> instead. */
+html.native-app {
+  height: 100%;
+  overflow: hidden;
+}
+html.native-app body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
 html.native-app .h-\[100dvh\] {
   height: calc(100dvh - env(safe-area-inset-top));
 }

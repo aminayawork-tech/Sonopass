@@ -64,6 +64,9 @@ export function getStats(): UserStats {
       stats.modalities = { vascular: getDefaultModalityStats() };
     }
 
+    // Hearts refill on the clock, not only when the next question is answered
+    if (refreshHearts(stats)) saveStats(stats);
+
     return stats;
   } catch {
     return getDefaultStatsFromMigration();
@@ -139,12 +142,18 @@ export const HEART_REFILL_MS = 6 * 60 * 60 * 1000;
 export const STREAK_HEART_EVERY = 5;
 export const SHARE_HEART_REWARD = 2;
 
-function refreshHearts(stats: UserStats): void {
+// Returns true when the hearts were refilled
+function refreshHearts(stats: UserStats): boolean {
+  if (typeof stats.hearts !== 'number' || Number.isNaN(stats.hearts)) stats.hearts = MAX_HEARTS;
+  if (stats.hearts >= MAX_HEARTS) return false;
   const lastRefill = new Date(stats.lastHeartRefill).getTime();
-  if (stats.hearts < MAX_HEARTS && Date.now() - lastRefill >= HEART_REFILL_MS) {
+  // A missing or unreadable timestamp would otherwise block refills forever
+  if (!Number.isFinite(lastRefill) || Date.now() - lastRefill >= HEART_REFILL_MS) {
     stats.hearts = MAX_HEARTS;
     stats.lastHeartRefill = new Date().toISOString();
+    return true;
   }
+  return false;
 }
 
 // The refill clock starts when you first drop below full, not at the last refill.
@@ -162,7 +171,8 @@ function gainHearts(stats: UserStats, amount: number): number {
 
 export function getHeartRefillAt(stats: UserStats): number | null {
   if (stats.hearts >= MAX_HEARTS) return null;
-  return new Date(stats.lastHeartRefill).getTime() + HEART_REFILL_MS;
+  const last = new Date(stats.lastHeartRefill).getTime();
+  return Number.isFinite(last) ? last + HEART_REFILL_MS : Date.now();
 }
 
 export function spendHintHeart(): UserStats | null {
@@ -217,8 +227,10 @@ export function addXP(amount: number, modality?: string): { stats: UserStats; le
 export function recordAnswer(
   correct: boolean,
   category: string,
-  modality?: string
+  modality?: string,
+  options: { hearts?: boolean } = {}
 ): { stats: UserStats; xpGained: number; newBadges: string[]; heartEarned: boolean } {
+  const useHearts = options.hearts !== false;
   const stats = getStats();
   const modalityId = modality || stats.currentModality || 'vascular';
 
@@ -252,12 +264,12 @@ export function recordAnswer(
     xpGained = modalityStats.correctStreak >= 3 ? 15 : 10;
     modalityStats.xp += xpGained;
     modalityStats.level = Math.floor(modalityStats.xp / 500) + 1;
-    if (modalityStats.correctStreak % STREAK_HEART_EVERY === 0) {
+    if (useHearts && modalityStats.correctStreak % STREAK_HEART_EVERY === 0) {
       heartEarned = gainHearts(stats, 1) > 0;
     }
   } else {
     modalityStats.correctStreak = 0;
-    loseHeart(stats);
+    if (useHearts) loseHeart(stats);
   }
 
   const newBadges = checkBadges(stats, modalityId);
