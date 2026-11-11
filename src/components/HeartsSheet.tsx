@@ -9,6 +9,7 @@ import {
 import GradientIcon from '@/components/GradientIcon';
 import { webOrigin } from '@/lib/platform';
 import { refillHeartsFromPurchase, getStats } from '@/lib/userStats';
+import { storePlatform } from '@/lib/platform';
 import { buyHearts, getHeartsPrice, storeAvailable, FALLBACK_HEARTS_PRICE } from '@/lib/store';
 
 // Opens the installed app straight to the hearts screen (registered URL scheme)
@@ -70,6 +71,10 @@ export default function HeartsSheet({
     if (due !== null && now >= due) onStatsChange(getStats());
   }, [due, now, onStatsChange]);
 
+  const platform = storePlatform();
+  const topUpLine = platform === 'ios' ? 'Instant top-up through the App Store'
+    : platform === 'android' ? 'Instant top-up through Google Play'
+    : 'Instant top-up in the SonoPass app';
   const refillAt = getHeartRefillAt(stats);
   const streak = getCurrentModalityStats(stats).correctStreak % STREAK_HEART_EVERY;
   const shareAvailable = canClaimShareReward(stats);
@@ -142,7 +147,7 @@ export default function HeartsSheet({
           <GradientIcon icon={Heart} gradient="rose" size={42} />
           <div className="flex-1 min-w-0 relative">
             <p className="text-[15px] font-bold text-white">Refill to {MAX_HEARTS} hearts</p>
-            <p className="text-[12px] text-slate-400 font-medium mt-0.5">Instant top-up with Apple Pay or Google Pay</p>
+            <p className="text-[12px] text-slate-400 font-medium mt-0.5">{topUpLine}</p>
           </div>
           <button
             type="button"
@@ -158,7 +163,7 @@ export default function HeartsSheet({
           <div className="mt-3 surface rounded-2xl p-4">
             <p className="text-[14px] font-bold text-ink">Get hearts in the SonoPass app</p>
             <p className="text-[12.5px] text-slate-500 mt-1 leading-relaxed">
-              Hearts are bought with Apple Pay or Google Pay in the app. Sign in with the same account and your hearts sync here.
+              Hearts are bought in the SonoPass iPhone or Android app. Sign in with the same account and your hearts sync here.
             </p>
             <div className="flex flex-col gap-2 mt-3">
               <a href={OPEN_APP_HEARTS} className="btn-primary h-11 rounded-xl flex items-center justify-center text-[14px] font-bold">Open SonoPass app</a>

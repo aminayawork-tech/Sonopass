@@ -15,3 +15,10 @@ export function isNativeApp(): boolean {
 export function webOrigin(): string {
   return isNativeApp() ? WEB_ORIGIN : window.location.origin;
 }
+
+// Which store handles purchases on this device: 'ios', 'android', or null on the website
+export function storePlatform(): 'ios' | 'android' | null {
+  if (!isNativeApp()) return null;
+  const p = Capacitor.getPlatform();
+  return p === 'ios' || p === 'android' ? p : null;
+}
