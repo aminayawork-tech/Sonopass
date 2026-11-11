@@ -7,6 +7,7 @@ import GradientIcon, { type GradientName } from '@/components/GradientIcon';
 import { useAuth } from '@/contexts/AuthContext';
 import { buy, restore, getStorePrices, storeAvailable, FALLBACK_PRICES, type PaidPlan } from '@/lib/store';
 import { cn } from '@/lib/utils';
+import { storePlatform } from '@/lib/platform';
 
 // Value stack: what each part of Pro would be worth on its own
 const VALUE_STACK: { icon: LucideIcon; gradient: GradientName; label: string; value: number }[] = [
@@ -36,6 +37,13 @@ export default function OfferPanel({
   continueFreeLabel?: string;
 }) {
   const { notify, refreshPro } = useAuth();
+  const platform = storePlatform();
+  const account = platform === 'ios' ? 'Apple ID' : platform === 'android' ? 'Google Play account' : 'Apple ID or Google Play account';
+  const cancelHow = platform === 'ios'
+    ? 'Cancel anytime in your App Store account settings at least 24 hours before the renewal date.'
+    : platform === 'android'
+      ? 'Cancel anytime in Google Play under Payments & subscriptions at least 24 hours before the renewal date.'
+      : 'Cancel anytime in your account settings at least 24 hours before the renewal date.';
   const [selected, setSelected] = useState<PaidPlan>('lifetime');
   const [prices, setPrices] = useState<Record<PaidPlan, string>>(FALLBACK_PRICES);
   const [busy, setBusy] = useState<'buy' | 'restore' | null>(null);
@@ -158,8 +166,8 @@ export default function OfferPanel({
 
       <p className="text-[11.5px] text-slate-400 text-center mt-4 leading-relaxed">
         {selected === 'monthly'
-          ? `Pro Monthly is ${prices.monthly} per month and renews automatically until you cancel. Payment is charged to your Apple ID or Google Play account. Cancel anytime in your account settings at least 24 hours before the renewal date.`
-          : `Lifetime is a single ${prices.lifetime} payment charged to your Apple ID or Google Play account. No subscription.`}
+          ? `Pro Monthly is ${prices.monthly} per month and renews automatically until you cancel. Payment is charged to your ${account}. ${cancelHow}`
+          : `Lifetime is a single ${prices.lifetime} payment charged to your ${account}. No subscription.`}
       </p>
       <div className="flex items-center justify-center gap-4 mt-2 text-[12px] font-semibold text-slate-400">
         <button onClick={handleRestore} disabled={busy !== null}>{busy === 'restore' ? 'Restoring…' : 'Restore purchases'}</button>
