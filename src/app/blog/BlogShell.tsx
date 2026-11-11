@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { ARDMS_DISCLAIMER } from '@/components/Disclaimer';
 
-const APP_STORE_URL = 'https://apps.apple.com/app/sonopass';
+import { DOWNLOAD_URL } from '@/lib/storeLinks';
 
 // Simple marketing-site frame for the blog (same look as the home page)
 export function BlogShell({ children }: { children: ReactNode }) {
@@ -15,7 +15,7 @@ export function BlogShell({ children }: { children: ReactNode }) {
           </Link>
           <div className="flex items-center gap-2 sm:gap-3">
             <Link href="/blog" className="text-sm font-semibold text-gray-600 hover:text-gray-900 px-3 py-2">Blog</Link>
-            <a href={APP_STORE_URL} className="inline-flex items-center text-white px-4 py-2 rounded-xl text-sm font-semibold hover:opacity-90" style={{ backgroundColor: '#3abc83' }}>
+            <a href={DOWNLOAD_URL} className="inline-flex items-center text-white px-4 py-2 rounded-xl text-sm font-semibold hover:opacity-90" style={{ backgroundColor: '#3abc83' }}>
               Download App
             </a>
           </div>

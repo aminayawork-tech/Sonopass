@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAllPosts, getPost, formatPostDate } from '@/lib/blog';
+import { DOWNLOAD_URL } from '@/lib/storeLinks';
 import { BlogShell } from '../BlogShell';
 
 export const dynamicParams = false;
@@ -77,7 +78,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <p className="text-sm font-semibold uppercase tracking-widest" style={{ color: '#4fd49a' }}>Study smarter with SonoPass</p>
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight mt-2">3,200+ questions. 20 full-length mock exams. All 9 registries.</h2>
           <p className="text-slate-300 mt-3 leading-relaxed">Practice with detailed explanations, take mock exams timed like the real thing, and track your weak spots on your phone and the web. Start free with a daily Quick 10.</p>
-          <a href="https://apps.apple.com/app/sonopass" className="inline-flex mt-6 items-center px-5 py-3 rounded-xl font-bold text-gray-900" style={{ backgroundColor: '#4fd49a' }}>Download SonoPass</a>
+          <a href={DOWNLOAD_URL} className="inline-flex mt-6 items-center px-5 py-3 rounded-xl font-bold text-gray-900" style={{ backgroundColor: '#4fd49a' }}>Download SonoPass</a>
         </section>
 
         {others.length > 0 && (

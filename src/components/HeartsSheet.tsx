@@ -14,8 +14,7 @@ import { buyHearts, getHeartsPrice, storeAvailable, FALLBACK_HEARTS_PRICE } from
 
 // Opens the installed app straight to the hearts screen (registered URL scheme)
 const OPEN_APP_HEARTS = 'com.sonopass.app://open?path=/hearts';
-const APP_STORE_URL = 'https://apps.apple.com/app/sonopass';
-const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.sonopass.app';
+import { APP_STORE_URL, PLAY_STORE_URL } from '@/lib/storeLinks';
 
 function formatDuration(ms: number) {
   const totalMinutes = Math.max(1, Math.ceil(ms / 60000));
@@ -168,7 +167,11 @@ export default function HeartsSheet({
             <div className="flex flex-col gap-2 mt-3">
               <a href={OPEN_APP_HEARTS} className="btn-primary h-11 rounded-xl flex items-center justify-center text-[14px] font-bold">Open SonoPass app</a>
               <div className="grid grid-cols-2 gap-2">
-                <a href={APP_STORE_URL} className="btn-secondary h-10 rounded-xl flex items-center justify-center text-[13px] font-semibold">App Store</a>
+                {APP_STORE_URL ? (
+                  <a href={APP_STORE_URL} className="btn-secondary h-10 rounded-xl flex items-center justify-center text-[13px] font-semibold">App Store</a>
+                ) : (
+                  <span className="btn-secondary h-10 rounded-xl flex items-center justify-center text-[13px] font-semibold opacity-60">App Store · soon</span>
+                )}
                 <a href={PLAY_STORE_URL} className="btn-secondary h-10 rounded-xl flex items-center justify-center text-[13px] font-semibold">Google Play</a>
               </div>
             </div>
