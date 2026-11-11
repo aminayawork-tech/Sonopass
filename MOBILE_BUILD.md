@@ -60,7 +60,7 @@ rewrite `package-lock.json`, which then blocks the next update.
 
 Before each store upload, raise the version:
 - **iOS**: Xcode → App target → General → *Version* (e.g. 1.9, 1.10) and *Build*. Start Build at 1 for each new Version and go 2, 3… if you upload that Version again.
-- **Android**: `android/app/build.gradle` → `versionCode` (must go up by 1 each upload) and `versionName`.
+- **Android**: `android/app/build.gradle` → `versionCode` (a whole number that must go up by 1 on every upload to Google Play, never reused) and `versionName` (the version people see, e.g. 1.9).
 
 ---
 

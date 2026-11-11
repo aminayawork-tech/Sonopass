@@ -13,6 +13,7 @@ import { ModalityProvider } from "@/contexts/ModalityContext";
 import AppInitializer from "@/components/AppInitializer";
 import { AuthProvider } from "@/contexts/AuthContext";
 import AccessGuard from "@/components/AccessGuard";
+import WebAnalytics from "@/components/WebAnalytics";
 
 export const metadata: Metadata = {
   title: "SonoPass - Ultrasound Registry Exam Prep",
@@ -71,6 +72,7 @@ export default function RootLayout({
             </AppInitializer>
           </AuthProvider>
         </ModalityProvider>
+        <WebAnalytics />
       </body>
     </html>
   );

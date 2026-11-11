@@ -22,6 +22,9 @@ export default function PrivacyPage() {
           <p className="text-gray-600 mb-4">
             We collect information you provide directly to us, such as your study progress, quiz results, and account preferences.
           </p>
+          <p className="text-gray-600 mb-4">
+            On the sonopass.com website only, we use Vercel Web Analytics to count page views and see which pages are used. It does not use cookies and does not track you across other websites. The SonoPass iPhone and Android apps do not include analytics or advertising.
+          </p>
 
           <h3 className="text-lg font-bold text-gray-900 mb-2">How We Use Your Information</h3>
           <p className="text-gray-600 mb-4">
