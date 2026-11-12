@@ -65,13 +65,16 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        <ModalityProvider>
-          <AuthProvider>
-            <AppInitializer>
-              <AccessGuard>{children}</AccessGuard>
-            </AppInitializer>
-          </AuthProvider>
-        </ModalityProvider>
+        {/* In the store app every screen scrolls inside this box (see globals.css); on the web it's a plain wrapper */}
+        <div id="app-scroll">
+          <ModalityProvider>
+            <AuthProvider>
+              <AppInitializer>
+                <AccessGuard>{children}</AccessGuard>
+              </AppInitializer>
+            </AuthProvider>
+          </ModalityProvider>
+        </div>
         <WebAnalytics />
       </body>
     </html>
