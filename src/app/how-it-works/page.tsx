@@ -7,9 +7,9 @@ import { Info, BookOpen, Brain, TrendingUp } from 'lucide-react';
 export default function HowItWorksPage() {
   return (
     <AppLayout>
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+      <div className="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 pt-8 pb-6 space-y-6">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">How does this work</h1>
+          <h1 className="text-[30px] font-extrabold tracking-[-0.03em] text-ink leading-tight mb-1">How does this work</h1>
           <p className="text-gray-600">Learn how SonoPass helps you ace your ultrasound registry exam</p>
         </div>
 

@@ -518,3 +518,9 @@ html.native-app::-webkit-scrollbar {
 }
 .no-scrollbar { scrollbar-width: none; }
 .no-scrollbar::-webkit-scrollbar { display: none; width: 0; height: 0; }
+
+/* Store app: screens with the bottom bar fill the scroll area exactly, so it never scrolls by itself
+   (only <main> inside it scrolls) */
+html.native-app .app-frame {
+  height: 100%;
+}
