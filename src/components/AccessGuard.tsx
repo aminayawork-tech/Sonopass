@@ -36,7 +36,7 @@ export function ProPaywall({ title = 'Unlock SonoPass Pro', message }: { title?:
         <p className="eyebrow mt-5">SonoPass Pro</p>
         <h1 className="text-[30px] font-extrabold tracking-[-0.03em] text-ink leading-[1.1] mt-1">{title}</h1>
         <p className="text-slate-500 text-[15px] mt-2 leading-relaxed mb-5">
-          {message ?? 'Mock exams, study mode, flashcards and every question are part of Pro. Free members get one Quick 10 a day.'}
+          {message ?? 'Mock exams, study mode, flashcards and every question for all 9 registries are part of Pro. Free members get one Quick 10 a day.'}
         </p>
         <OfferPanel
           onContinueFree={free?.allowed ? () => router.push('/exam/quick-10') : () => router.push('/dashboard')}

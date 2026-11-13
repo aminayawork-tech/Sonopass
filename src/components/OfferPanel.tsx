@@ -8,6 +8,8 @@ import { useAuth } from '@/contexts/AuthContext';
 import { buy, restore, getStorePrices, storeAvailable, FALLBACK_PRICES, type PaidPlan } from '@/lib/store';
 import { cn } from '@/lib/utils';
 import { storePlatform } from '@/lib/platform';
+import { styleFor } from '@/components/ModalitySelector';
+import modalitiesData from '@/data/modalities.json';
 
 // Value stack: what each part of Pro would be worth on its own
 const VALUE_STACK: { icon: LucideIcon; gradient: GradientName; label: string; value: number }[] = [
@@ -19,6 +21,33 @@ const VALUE_STACK: { icon: LucideIcon; gradient: GradientName; label: string; va
   { icon: CloudUpload, gradient: 'cyan', label: 'Progress Synced Everywhere', value: 29 },
 ];
 const TOTAL_VALUE = VALUE_STACK.reduce((sum, v) => sum + v.value, 0);
+
+// Every registry Pro unlocks (the big difference from prep that's sold one exam at a time)
+const SHORT_LABEL: Record<string, string> = {
+  vascular: 'Vascular', spi: 'SPI', abdomen: 'Abdomen', obgyn: 'OB/GYN', cardiac: 'Adult Echo',
+  breast: 'Breast', pediatric: 'Pediatric', 'fetal-echo': 'Fetal Echo', msk: 'MSK',
+};
+type ModalityRow = { id: string; name: string; icon: string; enabled?: boolean };
+const ALL_REGISTRIES = ((Array.isArray(modalitiesData) ? modalitiesData : (modalitiesData as { modalities: ModalityRow[] }).modalities) as ModalityRow[])
+  .filter((m) => m.enabled !== false);
+
+// Black Friday sale: shown until the end of Cyber Monday (local time), then hidden automatically.
+// The price itself always comes from the App Store / Google Play, so set the sale price there.
+const SALE_NAME = 'Black Friday';
+const SALE_ENDS = new Date(2026, 11, 1); // midnight starting Dec 1 = end of Mon Nov 30
+const SALE_ENDS_LABEL = 'Nov 30';
+const REGULAR_LIFETIME_USD = 49.99;
+
+function saleActive(): boolean {
+  return Date.now() < SALE_ENDS.getTime();
+}
+
+// Cross out the regular price only when the store's price really is lower (US dollar prices)
+function isDiscounted(price: string): boolean {
+  if (!price.trim().startsWith('$')) return false;
+  const n = parseFloat(price.replace(/[^0-9.]/g, ''));
+  return Number.isFinite(n) && n < REGULAR_LIFETIME_USD;
+}
 
 // What students typically spend elsewhere (approximate, US)
 const ALTERNATIVES = [
@@ -46,6 +75,8 @@ export default function OfferPanel({
       : 'Cancel anytime in your account settings at least 24 hours before the renewal date.';
   const [selected, setSelected] = useState<PaidPlan>('lifetime');
   const [prices, setPrices] = useState<Record<PaidPlan, string>>(FALLBACK_PRICES);
+  const onSale = saleActive();
+  const lifetimeDiscounted = isDiscounted(prices.lifetime);
   const [busy, setBusy] = useState<'buy' | 'restore' | null>(null);
 
   useEffect(() => {
@@ -84,6 +115,46 @@ export default function OfferPanel({
 
   return (
     <div>
+      {onSale && (
+        <div className="mb-4 rounded-[20px] px-4 py-3 flex items-center justify-between gap-3" style={{ background: 'linear-gradient(135deg, #0E1726 0%, #1B2A44 100%)' }}>
+          <div>
+            <p className="text-[12px] font-extrabold uppercase tracking-widest" style={{ color: '#4fd49a' }}>{SALE_NAME} sale</p>
+            <p className="text-[14px] font-bold text-white leading-snug mt-0.5">
+              Pro Lifetime {lifetimeDiscounted ? <>for <span style={{ color: '#4fd49a' }}>{prices.lifetime}</span></> : 'deal'} · all 9 registries
+            </p>
+          </div>
+          <span className="shrink-0 px-2.5 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider text-ink bg-white">
+            Ends {SALE_ENDS_LABEL}
+          </span>
+        </div>
+      )}
+
+      {/* All registries in one plan */}
+      <div className="bg-white rounded-[24px] p-4 mb-4" style={{ boxShadow: '0 10px 30px -18px rgba(14,23,38,0.35)' }}>
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-[17px] font-extrabold text-ink tracking-tight leading-tight">
+            All {ALL_REGISTRIES.length} registries. One plan.
+          </p>
+          <span className="shrink-0 px-2.5 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider text-ink" style={{ backgroundColor: '#4fd49a' }}>
+            Included
+          </span>
+        </div>
+        <p className="text-[13px] text-slate-500 mt-1 leading-snug">
+          Most exam prep is sold one registry at a time. Pro unlocks every one, now and for your next credential.
+        </p>
+        <div className="grid grid-cols-3 gap-2 mt-3">
+          {ALL_REGISTRIES.map((m) => {
+            const st = styleFor(m);
+            return (
+              <div key={m.id} className="flex flex-col items-center gap-1.5 rounded-2xl bg-slate-50 px-1 py-2.5">
+                <GradientIcon icon={st.icon} gradient={st.gradient} size={30} />
+                <span className="text-[11.5px] font-bold text-ink text-center leading-tight">{SHORT_LABEL[m.id] ?? m.name}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
       {/* Value stack */}
       <div className="bg-white rounded-[24px] divide-y divide-slate-100 overflow-hidden" style={{ boxShadow: '0 10px 30px -18px rgba(14,23,38,0.35)' }}>
         {VALUE_STACK.map((v) => (
@@ -113,14 +184,20 @@ export default function OfferPanel({
         </p>
         <div className="flex items-end justify-between gap-3 mt-1">
           <p className="text-[30px] font-extrabold text-white leading-none tracking-tight">
-            Today: <span style={{ color: '#4fd49a' }}>{selected === 'lifetime' ? prices.lifetime : prices.monthly}</span>
+            Today:{' '}
+            {selected === 'lifetime' && lifetimeDiscounted && (
+              <span className="text-[18px] font-bold text-slate-400 line-through mr-1">${REGULAR_LIFETIME_USD}</span>
+            )}
+            <span style={{ color: '#4fd49a' }}>{selected === 'lifetime' ? prices.lifetime : prices.monthly}</span>
           </p>
           <span className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-extrabold uppercase tracking-wider text-ink" style={{ backgroundColor: '#4fd49a' }}>
             {selected === 'lifetime' ? 'One-time' : 'Per month'}
           </span>
         </div>
         {selected === 'lifetime' && (
-          <p className="text-[12.5px] font-semibold mt-2" style={{ color: '#4fd49a' }}>Launch price · goes up after launch</p>
+          <p className="text-[12.5px] font-semibold mt-2" style={{ color: '#4fd49a' }}>
+            {onSale ? `${SALE_NAME} sale · ends ${SALE_ENDS_LABEL}` : 'Launch price · goes up after launch'}
+          </p>
         )}
       </div>
 
