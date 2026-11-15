@@ -32,10 +32,11 @@ export default function AppInitializer({ children }: AppInitializerProps) {
 
   const pathname = usePathname();
 
-  // Store app: pages scroll inside <body> (see globals.css), so start each new screen at the top
+  // Store app: screens scroll inside #app-scroll (see globals.css), so start each new screen at the top
   useEffect(() => {
     if (!document.documentElement.classList.contains('native-app')) return;
-    document.body.scrollTop = 0;
+    const scroller = document.getElementById('app-scroll');
+    if (scroller) scroller.scrollTop = 0;
     if (window.scrollY !== 0) window.scrollTo(0, 0);
   }, [pathname]);
 

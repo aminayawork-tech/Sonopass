@@ -2,6 +2,7 @@
 
 import { X, Info, Shield, FileText, HelpCircle, CreditCard, BookOpen, Brain, Users, User } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { isNativeApp } from '@/lib/platform';
 
 interface MenuModalProps {
@@ -36,20 +37,19 @@ export default function MenuModal({ isOpen, onClose }: MenuModalProps) {
   }, [isOpen]);
 
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-
+    // Clear the inline style afterwards ('' rather than 'unset') so the app's own scroll settings
+    // in globals.css apply again; 'unset' overrode them and could stop screens from scrolling.
+    if (!isOpen) return;
+    document.body.style.overflow = 'hidden';
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = '';
     };
   }, [isOpen]);
 
   if (!isOpen) return null;
 
-  return (
+  // Rendered at the top level of the page so nothing on the screen (like the bottom bar) can sit on top of it
+  return createPortal(
     <>
       {/* Backdrop */}
       <div
@@ -126,13 +126,14 @@ export default function MenuModal({ isOpen, onClose }: MenuModalProps) {
           </div>
 
           {/* Footer */}
-          <div className="p-4 border-t">
+          <div className="p-4 border-t" style={{ paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}>
             <div className="text-sm text-gray-500 text-center">
               SonoPass {version}
             </div>
           </div>
         </div>
       </div>
-    </>
+    </>,
+    document.body,
   );
 }
