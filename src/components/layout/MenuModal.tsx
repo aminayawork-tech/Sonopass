@@ -1,6 +1,6 @@
 'use client';
 
-import { X, Info, Shield, FileText, HelpCircle, CreditCard, BookOpen, Brain, Users, User } from 'lucide-react';
+import { X, Info, Shield, FileText, HelpCircle, CreditCard, User } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { isNativeApp } from '@/lib/platform';
@@ -12,8 +12,6 @@ interface MenuModalProps {
 
 const quickAccessItems = [
   { id: 'account', label: 'Account', icon: User, href: '/account' },
-  { id: 'study-guide', label: 'Study Guide', icon: BookOpen, href: '/study-guide' },
-  { id: 'mock-exams', label: 'Mock Exams', icon: Brain, href: '/exam/mock-exams' },
 ];
 
 const menuItems = [
@@ -76,7 +74,7 @@ export default function MenuModal({ isOpen, onClose }: MenuModalProps) {
             <div className="p-4 space-y-1">
               {/* Quick Access Section */}
               <div className="mb-4">
-                <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-4">Quick Access</h3>
+                <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-4">Your Account</h3>
                 {quickAccessItems.map((item) => {
                   const Icon = item.icon;
                   return (
