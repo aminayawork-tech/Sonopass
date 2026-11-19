@@ -145,7 +145,7 @@ SonoPass includes **340 original Abdomen practice questions** and **2 full-lengt
 
 Every question has a **detailed explanation and a hint**. Use **Study Mode** to drill one category at a time (biliary or vasculature, for example), run a **Quick 10** session in about 5 minutes, and review with the **Abdomen flashcard study guide**. Your progress screen tracks accuracy, streak and weak categories, and the exam-date countdown keeps your timeline honest. It all syncs across iPhone, Android and sonopass.com.
 
-**[Start free](/)** with one Quick 10 a day. **SonoPass Pro** unlocks every question and mock for **$9.99/month** or **$49.99 one-time** for Pro Lifetime at the launch price (it goes up after launch).
+**[Start free](/#download)** with one Quick 10 a day. **SonoPass Pro** unlocks every question and mock for **$9.99/month** or **$49.99 one-time** for Pro Lifetime at the launch price (it goes up after launch).
 
 Haven't taken the SPI yet? Start with [how to pass the ARDMS SPI exam on your first try](/blog/how-to-pass-ardms-spi-exam-first-try), and when your date gets close, read our [ARDMS exam day tips](/blog/ardms-exam-day-tips).
 
