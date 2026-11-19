@@ -111,7 +111,7 @@ Whatever you choose, make sure your plan includes three things: **active practic
 
 ## Try SonoPass free
 
-The best way to know if a resource fits is to use it. **[Start free with SonoPass](/)**: no commitment, one Quick 10 a day, on iPhone or Android.
+The best way to know if a resource fits is to use it. **[Start free with SonoPass](/#download)**: no commitment, one Quick 10 a day, on iPhone or Android.
 
 Getting ready for the SPI? Read [how to pass the ARDMS SPI exam on your first try](/blog/how-to-pass-ardms-spi-exam-first-try). Preparing for Abdomen? See [what's on the ARDMS Abdomen exam](/blog/ardms-abdomen-exam-content-breakdown).
 

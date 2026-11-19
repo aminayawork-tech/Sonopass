@@ -106,7 +106,7 @@ The best way to make exam day feel familiar is to rehearse it. SonoPass includes
 
 Every question comes with a **detailed explanation and a hint**, and your progress screen tracks accuracy, streaks and weak categories across all **9 registries**: SPI, Vascular (RVT), Abdomen, OB/GYN, Adult Echo, Breast, Pediatric, Fetal Echo and MSK. That makes it easy to build your final-week review around what you actually need, on iPhone, Android or sonopass.com.
 
-**[Start free](/)** with one Quick 10 a day, or unlock every mock exam with **SonoPass Pro**: $9.99/month or **$49.99 one-time** for Pro Lifetime at the launch price (it goes up after launch).
+**[Start free](/#download)** with one Quick 10 a day, or unlock every mock exam with **SonoPass Pro**: $9.99/month or **$49.99 one-time** for Pro Lifetime at the launch price (it goes up after launch).
 
 Still in the early stages? Start with our guide on [how to pass the ARDMS SPI exam on your first try](/blog/how-to-pass-ardms-spi-exam-first-try).
 

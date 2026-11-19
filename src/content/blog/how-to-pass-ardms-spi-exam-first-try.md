@@ -110,7 +110,7 @@ You'll receive a **score report** after the exam, and it will also be available 
 
 Passing the SPI on your first try comes down to three things: study what the current outline emphasizes (Doppler and image optimization), practice with active recall instead of re-reading, and rehearse under real timing.
 
-**[Start free with SonoPass](/)** and get one Quick 10 a day on the free plan. When you're ready for the full question bank, all mock exams and flashcards, **SonoPass Pro** is $9.99/month or **$49.99 one-time** for Pro Lifetime at our launch price (it goes up after launch).
+**[Start free with SonoPass](/#download)** and get one Quick 10 a day on the free plan. When you're ready for the full question bank, all mock exams and flashcards, **SonoPass Pro** is $9.99/month or **$49.99 one-time** for Pro Lifetime at our launch price (it goes up after launch).
 
 Want to know what to expect on test day itself? Read our [ARDMS exam day tips](/blog/ardms-exam-day-tips).
 
